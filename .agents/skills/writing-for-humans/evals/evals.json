@@ -12,35 +12,41 @@
         {
           "name": "facts_preserved",
           "text": "All facts from the original page are preserved — nothing material added, nothing lost.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "wikilinks_intact",
           "text": "Wikilinks remain intact and resolve to the same targets.",
-          "type": "structural"
+          "type": "structure"
         },
         {
           "name": "frontmatter_unchanged",
           "text": "Frontmatter fields are unchanged.",
-          "type": "structural"
+          "type": "structure"
         },
         {
           "name": "drawable_portrait",
           "text": "DM sections give specific, performable details (a habit, a want, what they do next) rather than a role or job label; the [!narration] portrait is left to theatre-of-the-mind.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "no_dead_weight",
           "text": "No lines that fail the removal test — every line changes a DM choice, ruling, or improv handle.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "no_ai_voice",
           "text": "No AI tell phrases: 'tapestry of', 'nestled between', 'a sense of', 'it's worth noting', 'the air is thick with'.",
-          "type": "structural"
+          "type": "structure"
         },
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -54,30 +60,36 @@
         {
           "name": "glance_five_seconds",
           "text": "At a Glance is usable in a five-second scan — hook, stakes, identity only.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "narration_speakable",
           "text": "The [!narration] block is unchanged, or flagged for theatre-of-the-mind if it needs work.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "no_encyclopedia",
           "text": "No Encyclopedia entry pattern — classifying what the place IS instead of placing the reader in it.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "body_scale",
           "text": "At least one body-scale geographic feature or affordance cue.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "wikilinks_intact",
           "text": "Wikilinks remain intact and resolve to the same targets.",
-          "type": "structural"
+          "type": "structure"
         },
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -91,25 +103,31 @@
         {
           "name": "resists_flowery",
           "text": "Does not add flowery descriptions or literary atmosphere that obscures actionable information.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "signal_dense",
           "text": "Every line changes a DM choice, ruling, risk, or spoken picture — nothing decorative.",
-          "type": "qualitative"
+          "type": "quality"
         },
         {
           "name": "mechanics_preserved",
           "text": "Mechanics block is preserved with all numbers and rules intact.",
-          "type": "structural"
+          "type": "structure"
         },
         {
           "name": "narration_improved",
           "text": "The [!narration] block is unchanged (owned by theatre-of-the-mind).",
-          "type": "qualitative"
+          "type": "quality"
         },
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -117,13 +135,34 @@
       "prompt": "Rewrite the DM-facing copy (not the [!narration] blocks) of wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md so a DM can run it mid-session. Keep its facts, links, and structure.",
       "expected_output": "The Climax page's DM layer reads as short, complete, named sentences; coaching lines in the Pressure table become world responses; narration blocks are untouched.",
       "assertions": [
-        {"text": "Pressure and outcome rows state what the world does in each case; coaching lines such as 'Do not script a successful theft' are replaced with the world response they protected.", "type": "content"},
-        {"text": "Every person, place, and item is named with its wikilink; no 'the thief' or 'someone'.", "type": "content"},
-        {"text": "The [!narration] blocks are unchanged.", "type": "guardrail"},
-        {"text": "No new facts, mechanics, or DCs are added; an undefined consequence (Aruhe's convergence) is reported as a gap rather than invented.", "type": "guardrail"},
-        {"text": "Frontmatter, wikilink targets, and required headings are unchanged.", "type": "guardrail"},
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Pressure and outcome rows state what the world does in each case; coaching lines such as 'Do not script a successful theft' are replaced with the world response they protected.",
+          "type": "content"
+        },
+        {
+          "text": "Every person, place, and item is named with its wikilink; no 'the thief' or 'someone'.",
+          "type": "content"
+        },
+        {
+          "text": "The [!narration] blocks are unchanged.",
+          "type": "guardrail"
+        },
+        {
+          "text": "No new facts, mechanics, or DCs are added; an undefined consequence (Aruhe's convergence) is reported as a gap rather than invented.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Frontmatter, wikilink targets, and required headings are unchanged.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -131,12 +170,30 @@
       "prompt": "Run-guide pass 1 produced this cockpit copy: 'Scene ends when: Skarn gone/Spinner safe. ~30m. Glance: theft, JC down, plums. Now: party river stones; S 5ft C; grass 40ft.' Do pass 2 on it.",
       "expected_output": "Scene ends when leads with the end condition in a sentence; At a Glance is five-second bullets; Now is one paragraph of positions in feet with names; narration stubs stay empty.",
       "assertions": [
-        {"text": "Scene ends when starts with the end condition as a complete sentence, then the time budget.", "type": "structure"},
-        {"text": "At a Glance is scannable in about five seconds: stakes, goal or exit, danger, and what pulls players in.", "type": "structure"},
-        {"text": "Now names Skarn, Crissdalynn, and the grass edge with distances in feet in complete sentences.", "type": "content"},
-        {"text": "Does not write any [!narration] text.", "type": "guardrail"},
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Scene ends when starts with the end condition as a complete sentence, then the time budget.",
+          "type": "structure"
+        },
+        {
+          "text": "At a Glance is scannable in about five seconds: stakes, goal or exit, danger, and what pulls players in.",
+          "type": "structure"
+        },
+        {
+          "text": "Now names Skarn, Crissdalynn, and the grass edge with distances in feet in complete sentences.",
+          "type": "content"
+        },
+        {
+          "text": "Does not write any [!narration] text.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -144,11 +201,26 @@
       "prompt": "Rewrite the At a Glance of an owner page that currently reads: 'The Anchor & Line is a working tavern for general traffic in Calveno, with seating and drinks on offer. It is a popular social hub.' Use only facts on wiki/entities/place/anchor-and-line.md.",
       "expected_output": "Three to five bullets or two to four sentences giving what makes this tavern specific, why it matters now, and a hook, all from the owner page.",
       "assertions": [
-        {"text": "Replaces the category description with facts specific to this tavern from the owner page.", "type": "quality"},
-        {"text": "Includes why it matters now and at least one usable hook, if the page supports them; otherwise names the gap.", "type": "content"},
-        {"text": "Three to five bullets or two to four sentences.", "type": "structure"},
-        {"text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.", "type": "structure"},
-        {"text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).", "type": "quality"}
+        {
+          "text": "Replaces the category description with facts specific to this tavern from the owner page.",
+          "type": "quality"
+        },
+        {
+          "text": "Includes why it matters now and at least one usable hook, if the page supports them; otherwise names the gap.",
+          "type": "content"
+        },
+        {
+          "text": "Three to five bullets or two to four sentences.",
+          "type": "structure"
+        },
+        {
+          "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
+          "type": "structure"
+        },
+        {
+          "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -156,10 +228,22 @@
       "prompt": "You just rewrote the DM copy on two owner pages (wiki/entities/npc/celia-parel.md and wiki/entities/npc/oren-vask.md) and found that neither page says who buried the first grave. Write the report to the DM.",
       "expected_output": "A short report: first sentence says what was done, then what changed where, then the gap as one line.",
       "assertions": [
-        {"text": "The first sentence says what was done.", "type": "structure"},
-        {"text": "Changes are listed by path.", "type": "content"},
-        {"text": "The missing fact is stated as one gap line.", "type": "content"},
-        {"text": "No preamble, process narration, or closing pleasantries.", "type": "quality"}
+        {
+          "text": "The first sentence says what was done.",
+          "type": "structure"
+        },
+        {
+          "text": "Changes are listed by path.",
+          "type": "content"
+        },
+        {
+          "text": "The missing fact is stated as one gap line.",
+          "type": "content"
+        },
+        {
+          "text": "No preamble, process narration, or closing pleasantries.",
+          "type": "quality"
+        }
       ]
     }
   ]

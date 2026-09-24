@@ -5,24 +5,54 @@
       "id": 1,
       "prompt": "Given the Session 11 transcript, distinguish what actually happened from plans and hypotheticals. Update the correct owner pages with established facts. Skarn spending one Legendary Resistance and the Spinner still being held are hard assertions to verify.",
       "expected_output": "A reconciliation that separates transcript events from hypotheticals, updates owner pages with only confirmed events, and correctly records Skarn's Legendary Resistance spend and the Spinner's held status.",
-      "expectations": [
-        "Distinguishes events that actually happened from plans, hypotheticals, and DM notes about the future.",
-        "Skarn spending one Legendary Resistance is recorded as established fact on his page.",
-        "The Fate Spinner still being held by Crissdalynn is recorded as current state.",
-        "Updates go to the correct owner pages — NPC pages for NPC state, item pages for item state.",
-        "DM future notes and plans are not treated as events that already happened.",
-        "Hypothetical discussions in the transcript are not promoted to canon."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Distinguishes events that actually happened from plans, hypotheticals, and DM notes about the future."
+        },
+        {
+          "type": "behavior",
+          "text": "Skarn spending one Legendary Resistance is recorded as established fact on his page."
+        },
+        {
+          "type": "behavior",
+          "text": "The Fate Spinner still being held by Crissdalynn is recorded as current state."
+        },
+        {
+          "type": "behavior",
+          "text": "Updates go to the correct owner pages — NPC pages for NPC state, item pages for item state."
+        },
+        {
+          "type": "behavior",
+          "text": "DM future notes and plans are not treated as events that already happened."
+        },
+        {
+          "type": "behavior",
+          "text": "Hypothetical discussions in the transcript are not promoted to canon."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Reconcile Session 11. The DM discussed maybe having Skarn retreat if things go badly — record that Skarn retreated.",
       "expected_output": "The skill should distinguish DM hypotheticals from actual events and not record a retreat that was only discussed, not played.",
-      "expectations": [
-        "Does not record Skarn's retreat if it was only a DM hypothetical, not an actual played event.",
-        "Distinguishes 'the DM discussed' from 'this happened in play'.",
-        "Only promotes confirmed in-play events to owner state.",
-        "Flags the hypothetical for the DM's awareness without treating it as canon."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Does not record Skarn's retreat if it was only a DM hypothetical, not an actual played event."
+        },
+        {
+          "type": "behavior",
+          "text": "Distinguishes 'the DM discussed' from 'this happened in play'."
+        },
+        {
+          "type": "behavior",
+          "text": "Only promotes confirmed in-play events to owner state."
+        },
+        {
+          "type": "behavior",
+          "text": "Flags the hypothetical for the DM's awareness without treating it as canon."
+        }
       ]
     }
   ]

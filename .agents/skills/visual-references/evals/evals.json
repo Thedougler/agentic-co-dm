@@ -5,24 +5,54 @@
       "id": 1,
       "prompt": "Build a visual brief for the Skarn versus Crissdalynn scene at River Slack Basin. Verify that every depicted named subject resolves to an owner page with usable reference material.",
       "expected_output": "A visual brief with appearance details for each depicted subject drawn from wiki owner pages, environment details from the location page, and verification that reference material exists for each named subject.",
-      "expectations": [
-        "Every depicted named subject (Skarn, Crissdalynn) resolves to a wiki owner page.",
-        "Appearance details for each subject are drawn from their wiki pages, not invented.",
-        "The scene environment (River Slack Basin) uses established wiki geography.",
-        "Verifies that usable reference images or descriptions exist for each subject.",
-        "Flags any subject lacking sufficient visual reference material in the wiki.",
-        "The brief is actionable for illustration — specific poses, lighting, composition grounded in the scene."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Every depicted named subject (Skarn, Crissdalynn) resolves to a wiki owner page."
+        },
+        {
+          "type": "behavior",
+          "text": "Appearance details for each subject are drawn from their wiki pages, not invented."
+        },
+        {
+          "type": "behavior",
+          "text": "The scene environment (River Slack Basin) uses established wiki geography."
+        },
+        {
+          "type": "behavior",
+          "text": "Verifies that usable reference images or descriptions exist for each subject."
+        },
+        {
+          "type": "behavior",
+          "text": "Flags any subject lacking sufficient visual reference material in the wiki."
+        },
+        {
+          "type": "behavior",
+          "text": "The brief is actionable for illustration — specific poses, lighting, composition grounded in the scene."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Build a visual brief for a battle scene featuring 'the dark warrior' and 'the forest guardian'. Don't worry about wiki pages — just make it look cool.",
       "expected_output": "The skill should require named subjects that resolve to owner pages rather than accepting unnamed generic figures.",
-      "expectations": [
-        "Requires named subjects that resolve to wiki owner pages, not generic descriptions.",
-        "Does not accept 'the dark warrior' or 'the forest guardian' as sufficient subject identification.",
-        "Flags that these subjects need wiki owner pages before a visual brief can be grounded.",
-        "Follows entity-before-spoken: no visual brief for entities that don't exist in the wiki."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Requires named subjects that resolve to wiki owner pages, not generic descriptions."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not accept 'the dark warrior' or 'the forest guardian' as sufficient subject identification."
+        },
+        {
+          "type": "behavior",
+          "text": "Flags that these subjects need wiki owner pages before a visual brief can be grounded."
+        },
+        {
+          "type": "behavior",
+          "text": "Follows entity-before-spoken: no visual brief for entities that don't exist in the wiki."
+        }
       ]
     }
   ]

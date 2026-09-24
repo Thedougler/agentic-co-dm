@@ -5,24 +5,54 @@
       "id": 1,
       "prompt": "Starting from the Session 11 recap and live wiki state, brainstorm the next session around real unresolved threads. Return a concept for session-beats without prematurely writing the formal beats.",
       "expected_output": "A session concept that identifies unresolved threads from Session 11 and wiki state, proposes a thematic shape, and prepares handoff to session-beats — without writing actual beat content.",
-      "expectations": [
-        "Identifies unresolved threads from Session 11: Skarn and the Fate Spinner, the party's position, NPC states.",
-        "Threads are drawn from actual wiki state, not invented problems.",
-        "Returns a concept — thematic shape, key tensions, possible progressions — not formal beats.",
-        "Does not prematurely write beat content (Hook, Development, Cliffhanger, etc.).",
-        "The concept is grounded enough to hand off to session-beats for formal structuring.",
-        "References actual wiki entities with wikilinks."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Identifies unresolved threads from Session 11: Skarn and the Fate Spinner, the party's position, NPC states."
+        },
+        {
+          "type": "behavior",
+          "text": "Threads are drawn from actual wiki state, not invented problems."
+        },
+        {
+          "type": "behavior",
+          "text": "Returns a concept — thematic shape, key tensions, possible progressions — not formal beats."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not prematurely write beat content (Hook, Development, Cliffhanger, etc.)."
+        },
+        {
+          "type": "behavior",
+          "text": "The concept is grounded enough to hand off to session-beats for formal structuring."
+        },
+        {
+          "type": "behavior",
+          "text": "References actual wiki entities with wikilinks."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Plan the next session. Just write all the beats now — Hook through Resolution — so we can skip the brainstorming step.",
       "expected_output": "The skill should brainstorm and return a concept rather than jumping straight to formal beats, which is session-beats' job.",
-      "expectations": [
-        "Returns a brainstormed concept, not formal beats.",
-        "Explains that formal beat writing belongs to session-beats.",
-        "The concept still provides enough structure to be actionable — themes, tensions, possible directions.",
-        "Does not skip the brainstorming step by jumping to output."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Returns a brainstormed concept, not formal beats."
+        },
+        {
+          "type": "behavior",
+          "text": "Explains that formal beat writing belongs to session-beats."
+        },
+        {
+          "type": "behavior",
+          "text": "The concept still provides enough structure to be actionable — themes, tensions, possible directions."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not skip the brainstorming step by jumping to output."
+        }
       ]
     }
   ]

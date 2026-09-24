@@ -5,141 +5,333 @@
       "id": 1,
       "prompt": "Turn the existing two-graves / Memorial Grove material into a quest-shaped situation. Include objective, stakes, world motion, and multiple leads. Use what the wiki establishes about Two Grave Orders and the Memorial Grove.",
       "expected_output": "A quest situation with clear objective, stakes grounded in wiki facts, world motion from established faction/NPC trajectories, and multiple approach paths — without prescribing player action order.",
-      "expectations": [
-        "Objective, stakes, and world motion are drawn from existing Two Grave Orders and Memorial Grove wiki content.",
-        "Multiple leads or approach paths exist — the quest does not prescribe the order of player actions.",
-        "Named entities (NPCs, locations, items) resolve to existing wiki pages.",
-        "World motion reflects established faction trajectories, not invented urgency.",
-        "The quest situation presents a problem, not a solution — player agency determines resolution.",
-        "Does not invent quest-giver NPCs or reward structures not in the wiki.",
-        "Output includes Situation section describing the unstable situation and active forces.",
-        "Output includes What the party knows section.",
-        "Output includes At a Glance table with Quest giver, Region, Scope, Opposition, Reward, Last change."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Objective, stakes, and world motion are drawn from existing Two Grave Orders and Memorial Grove wiki content."
+        },
+        {
+          "type": "behavior",
+          "text": "Multiple leads or approach paths exist — the quest does not prescribe the order of player actions."
+        },
+        {
+          "type": "behavior",
+          "text": "Named entities (NPCs, locations, items) resolve to existing wiki pages."
+        },
+        {
+          "type": "behavior",
+          "text": "World motion reflects established faction trajectories, not invented urgency."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest situation presents a problem, not a solution — player agency determines resolution."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not invent quest-giver NPCs or reward structures not in the wiki."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes Situation section describing the unstable situation and active forces."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes What the party knows section."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes At a Glance table with Quest giver, Region, Scope, Opposition, Reward, Last change."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Make the Memorial Grove quest linear: the party must talk to NPC A, then go to location B, then fight boss C, in that exact order.",
       "expected_output": "The skill should present the quest as a situation with multiple entry points and approaches rather than a prescribed sequence.",
-      "expectations": [
-        "Does not prescribe a mandatory sequence of player actions.",
-        "Presents the quest as a situation with multiple entry points.",
-        "Each lead or approach is independently viable, not gated by the others.",
-        "NPCs and locations used are from the wiki, not invented for the linear path."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Does not prescribe a mandatory sequence of player actions."
+        },
+        {
+          "type": "behavior",
+          "text": "Presents the quest as a situation with multiple entry points."
+        },
+        {
+          "type": "behavior",
+          "text": "Each lead or approach is independently viable, not gated by the others."
+        },
+        {
+          "type": "behavior",
+          "text": "NPCs and locations used are from the wiki, not invented for the linear path."
+        }
       ]
     },
     {
       "id": "agency-audit",
       "prompt": "Create a quest page for the Velvet Noose intercept situation: Mave Sorn carries the Magistrate's Warding Chip during an open-water encounter near the Central Strait. The party must board the Velvet Noose, defeat Mave, and take the chip. That is the only approach.",
       "expected_output": "The skill rejects the single-approach mandate and writes a situation with multiple viable approaches — negotiation, ambush, deception, trade, avoidance — grounded in Mave's established role as an information broker.",
-      "expectations": [
-        "Agency: the party can refuse, approach differently, or walk away. At least three viable approaches exist.",
-        "Causality: Mave's actions follow from her established want (supernatural confirmation to sell) not from plot convenience.",
-        "Activity: Mave has a next move if uninterrupted (file and sell the irregularity).",
-        "Connectivity: multiple leads point to the intercept from different directions (chip trail, Crown patrols, Black Pennants).",
-        "Gravity: the chip connects to an existing PC interest or campaign thread.",
-        "Persistence: outcomes name lasting world changes (Mave's ledger, chip's absence from figurehead, Crown attention).",
-        "Vault integrity: Mave Sorn, Velvet Noose, Magistrate's Warding Chip, and Central Strait resolve to existing wiki pages."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Agency: the party can refuse, approach differently, or walk away. At least three viable approaches exist."
+        },
+        {
+          "type": "behavior",
+          "text": "Causality: Mave's actions follow from her established want (supernatural confirmation to sell) not from plot convenience."
+        },
+        {
+          "type": "behavior",
+          "text": "Activity: Mave has a next move if uninterrupted (file and sell the irregularity)."
+        },
+        {
+          "type": "behavior",
+          "text": "Connectivity: multiple leads point to the intercept from different directions (chip trail, Crown patrols, Black Pennants)."
+        },
+        {
+          "type": "behavior",
+          "text": "Gravity: the chip connects to an existing PC interest or campaign thread."
+        },
+        {
+          "type": "behavior",
+          "text": "Persistence: outcomes name lasting world changes (Mave's ledger, chip's absence from figurehead, Crown attention)."
+        },
+        {
+          "type": "behavior",
+          "text": "Vault integrity: Mave Sorn, Velvet Noose, Magistrate's Warding Chip, and Central Strait resolve to existing wiki pages."
+        }
       ]
     },
     {
       "id": "frozen-island",
       "prompt": "Write a quest page for The Red Wake. Umberlee's escalation should wait indefinitely for the party — the Dead Lady appears the night after the party arrives at any port, no matter when that is.",
       "expected_output": "The skill replaces the freeze with a tide: Umberlee's escalation has its own timeline driven by established fiction (one week since Branca's command, three weeks since the fleet's destruction). Arrival time changes the situation.",
-      "expectations": [
-        "Activity: the escalation has its own timeline — portents advance whether the party is present or not.",
-        "Early arrival sees gathering weather; mid sees Dead Lady taking boats; late sees direct confrontation.",
-        "The tide is driven by Umberlee's established want and constraints, not by party arrival.",
-        "Causality: each portent follows from the prior through Umberlee's established methods (weather, Dead Lady, Waveservants).",
-        "The quest frame sentence names incompatible wants, live pressure, and what changes if nobody interrupts."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Activity: the escalation has its own timeline — portents advance whether the party is present or not."
+        },
+        {
+          "type": "behavior",
+          "text": "Early arrival sees gathering weather; mid sees Dead Lady taking boats; late sees direct confrontation."
+        },
+        {
+          "type": "behavior",
+          "text": "The tide is driven by Umberlee's established want and constraints, not by party arrival."
+        },
+        {
+          "type": "behavior",
+          "text": "Causality: each portent follows from the prior through Umberlee's established methods (weather, Dead Lady, Waveservants)."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest frame sentence names incompatible wants, live pressure, and what changes if nobody interrupts."
+        }
       ]
     },
     {
       "id": "quantum-island",
       "prompt": "Write a quest for the party's next port stop. They might go to Kalowe, Corvenna, or Ferrymoor. Whichever they pick, they find the same smuggler NPC with the same offer and the same combat encounter. Just change the port name.",
       "expected_output": "The skill rejects the quantum island and anchors each port's situation to its own fiction. Kalowe's Waveservant shrine, Corvenna's political tensions, and Ferrymoor's harbor each produce different encounters.",
-      "expectations": [
-        "Causality: each port's situation is anchored to its own people, geography, and faction dynamics.",
-        "Agency: choosing Kalowe vs Corvenna vs Ferrymoor produces materially different information, costs, and relationships.",
-        "The smuggler NPC (if used) has a reason to be at a specific port, not all ports simultaneously.",
-        "Connectivity: each port has its own bridges to other campaign threads.",
-        "Persistence: the unchosen ports continue on their own timelines."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Causality: each port's situation is anchored to its own people, geography, and faction dynamics."
+        },
+        {
+          "type": "behavior",
+          "text": "Agency: choosing Kalowe vs Corvenna vs Ferrymoor produces materially different information, costs, and relationships."
+        },
+        {
+          "type": "behavior",
+          "text": "The smuggler NPC (if used) has a reason to be at a specific port, not all ports simultaneously."
+        },
+        {
+          "type": "behavior",
+          "text": "Connectivity: each port has its own bridges to other campaign threads."
+        },
+        {
+          "type": "behavior",
+          "text": "Persistence: the unchosen ports continue on their own timelines."
+        }
       ]
     },
     {
       "id": "lore-island",
       "prompt": "Write a quest about Long Sight — the faction has existed for centuries monitoring the boundary between planes. Include their full history, founding myths, organizational structure, and philosophical debates. Make it rich lore content.",
       "expected_output": "The skill converts lore into pressure: what is Long Sight doing about the boundary this week? Who benefits from keeping the current arrangement, and what just changed?",
-      "expectations": [
-        "Activity: Long Sight has a current action, not just a history.",
-        "The quest names what Long Sight wants now and what pressure makes delay matter.",
-        "Gravity: the quest connects to a PC interest, not just world-building.",
-        "Lore exists to create pressure — somebody wants something now.",
-        "The quest page has Situation, Stakes, and World in motion sections, not a history article."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Activity: Long Sight has a current action, not just a history."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest names what Long Sight wants now and what pressure makes delay matter."
+        },
+        {
+          "type": "behavior",
+          "text": "Gravity: the quest connects to a PC interest, not just world-building."
+        },
+        {
+          "type": "behavior",
+          "text": "Lore exists to create pressure — somebody wants something now."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest page has Situation, Stakes, and World in motion sections, not a history article."
+        }
       ]
     },
     {
       "id": "keyhole-island",
       "prompt": "Write a quest about recovering Grigori and the Crown Hunt. There is exactly one NPC who knows the location, one path to reach them, and one correct approach. If the party misses any of these, the quest fails permanently.",
       "expected_output": "The skill replaces the keyhole with redundant bridges and affordances. Multiple NPCs, clues, or consequences can reveal the information. The quest survives ordinary failure and creativity.",
-      "expectations": [
-        "Connectivity: at least two independent discovery vectors exist — losing one does not erase the quest.",
-        "Agency: multiple approaches work — the objective may be difficult, but access to play survives failure.",
-        "The quest does not have a single required NPC, path, or approach as a chokepoint.",
-        "Affordances: the world contains exploitable facts that enable action from different angles.",
-        "Walk-away names what continues without the party — the quest is not a one-shot gate."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Connectivity: at least two independent discovery vectors exist — losing one does not erase the quest."
+        },
+        {
+          "type": "behavior",
+          "text": "Agency: multiple approaches work — the objective may be difficult, but access to play survives failure."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest does not have a single required NPC, path, or approach as a chokepoint."
+        },
+        {
+          "type": "behavior",
+          "text": "Affordances: the world contains exploitable facts that enable action from different angles."
+        },
+        {
+          "type": "behavior",
+          "text": "Walk-away names what continues without the party — the quest is not a one-shot gate."
+        }
       ]
     },
     {
       "id": "situation-not-story",
       "prompt": "Write a quest: the party investigates missing ships near the Midchain, discovers the Countless are responsible, defeats their patrol, learns the Chain Council funded the operation, and confronts the Council at the next Assembly. Write it in that order.",
       "expected_output": "The skill extracts the situation from the prescribed sequence: who wants what, what forces are in motion, what the party can discover. The verbs belong to the world, not the PCs.",
-      "expectations": [
-        "The quest describes forces before the outcome is known, not events after they happen.",
-        "Important verbs belong to the world (the Countless patrol, the Council funds) not the PCs (investigates, discovers, defeats, confronts).",
-        "The party might expose the Council, ally with the Countless, blackmail the Council, warn the Midchain, or ignore it.",
-        "Causality: the Countless and Chain Council each have wants, constraints, and next moves independent of the party.",
-        "Multiple leads exist — the party is not locked into investigate → discover → defeat → confront."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "The quest describes forces before the outcome is known, not events after they happen."
+        },
+        {
+          "type": "behavior",
+          "text": "Important verbs belong to the world (the Countless patrol, the Council funds) not the PCs (investigates, discovers, defeats, confronts)."
+        },
+        {
+          "type": "behavior",
+          "text": "The party might expose the Council, ally with the Countless, blackmail the Council, warn the Midchain, or ignore it."
+        },
+        {
+          "type": "behavior",
+          "text": "Causality: the Countless and Chain Council each have wants, constraints, and next moves independent of the party."
+        },
+        {
+          "type": "behavior",
+          "text": "Multiple leads exist — the party is not locked into investigate → discover → defeat → confront."
+        }
       ]
     },
     {
       "id": "walk-away-test",
       "prompt": "Write a quest about Penance Bar's Fear Siege. If the party walks away, nothing happens — the quest just sits there waiting for them to come back.",
       "expected_output": "The skill requires the walk-away entry to name what continues without the party. Ignoring the quest has consequences driven by the world's own momentum.",
-      "expectations": [
-        "The walk-away entry names a material world change that happens without the party.",
-        "Activity: the situation evolves on its own timeline — ignoring it does not freeze it.",
-        "Persistence: the walk-away consequence reshapes the campaign state.",
-        "The world does not wait for the party — the tide advances, bridges change, opportunities close.",
-        "The quest page has a World in motion section with a driver, next move, and end state."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "The walk-away entry names a material world change that happens without the party."
+        },
+        {
+          "type": "behavior",
+          "text": "Activity: the situation evolves on its own timeline — ignoring it does not freeze it."
+        },
+        {
+          "type": "behavior",
+          "text": "Persistence: the walk-away consequence reshapes the campaign state."
+        },
+        {
+          "type": "behavior",
+          "text": "The world does not wait for the party — the tide advances, bridges change, opportunities close."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest page has a World in motion section with a driver, next move, and end state."
+        }
       ]
     },
     {
       "id": "quest-update",
       "prompt": "The party completed several sessions since the Pearl Signal Across the Boundary quest was last touched. They allied with a faction, lost a crew member, and discovered a new route. Update the quest page but keep the original situation text unchanged — just add a log entry.",
       "expected_output": "The skill rewrites Situation to the new present, advances portents, updates leads, and changes People & factions — not just a log entry. The page reflects the current playable situation.",
-      "expectations": [
-        "Situation section is rewritten to the new present, not left as the original text.",
-        "Portents are advanced, altered, or cancelled based on what happened.",
-        "Leads reflect what the party found, invalidated, or opened.",
-        "People & factions reflect the new alliance and changed relationships.",
-        "A Quest log row records what changed.",
-        "Frontmatter last_advanced and updated are current.",
-        "Persistence: the page reflects accumulated play, not just the original prep."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Situation section is rewritten to the new present, not left as the original text."
+        },
+        {
+          "type": "behavior",
+          "text": "Portents are advanced, altered, or cancelled based on what happened."
+        },
+        {
+          "type": "behavior",
+          "text": "Leads reflect what the party found, invalidated, or opened."
+        },
+        {
+          "type": "behavior",
+          "text": "People & factions reflect the new alliance and changed relationships."
+        },
+        {
+          "type": "behavior",
+          "text": "A Quest log row records what changed."
+        },
+        {
+          "type": "behavior",
+          "text": "Frontmatter last_advanced and updated are current."
+        },
+        {
+          "type": "behavior",
+          "text": "Persistence: the page reflects accumulated play, not just the original prep."
+        }
       ]
     },
     {
       "id": "template-structure",
       "prompt": "Write a quest page for Countless Through the Maw Seal. Use wiki entities for NPCs, places, and factions. The quest involves the Countless faction's interest in the Drowned Maw and whatever the party can learn about the seal.",
       "expected_output": "A complete quest page filed from wiki/templates/quest.md with all required sections and frontmatter. The page is a situation, not a plot.",
-      "expectations": [
-        "Frontmatter includes all required fields: title, category, tags, sources, created, updated, type: quest, reveal, campaign, visibility, status, scope, region, quest_giver, factions, deadline, last_advanced, summary.",
-        "Output includes: At a Glance table, Situation with What the party knows and What is really happening, Stakes with success/failure/walk-away/questions, World in motion with driver/wants/current move/next move/end state, Progress portents, Leads & routes with at least two independent leads, People & factions, Relevant places, Complications, Rewards & consequences.",
-        "Agency: at least two independent leads and no required sequence.",
-        "Causality: the Countless have a want and constraint grounded in established wiki facts.",
-        "Activity: the driver has a concrete next move if uninterrupted.",
-        "Connectivity: leads point to different wiki entities from different directions.",
-        "The quest frame sentence names incompatible wants, live pressure, and what changes uninterrupted."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Frontmatter includes all required fields: title, category, tags, sources, created, updated, type: quest, reveal, campaign, visibility, status, scope, region, quest_giver, factions, deadline, last_advanced, summary."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes: At a Glance table, Situation with What the party knows and What is really happening, Stakes with success/failure/walk-away/questions, World in motion with driver/wants/current move/next move/end state, Progress portents, Leads & routes with at least two independent leads, People & factions, Relevant places, Complications, Rewards & consequences."
+        },
+        {
+          "type": "behavior",
+          "text": "Agency: at least two independent leads and no required sequence."
+        },
+        {
+          "type": "behavior",
+          "text": "Causality: the Countless have a want and constraint grounded in established wiki facts."
+        },
+        {
+          "type": "behavior",
+          "text": "Activity: the driver has a concrete next move if uninterrupted."
+        },
+        {
+          "type": "behavior",
+          "text": "Connectivity: leads point to different wiki entities from different directions."
+        },
+        {
+          "type": "behavior",
+          "text": "The quest frame sentence names incompatible wants, live pressure, and what changes uninterrupted."
+        }
       ]
     }
   ]

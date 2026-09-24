@@ -3,28 +3,64 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Build the Talon Skarn encounter at River Slack Basin. Use Skarn, Crissdalynn, the Fate Spinner, the terrain, and current session state from the wiki. Skarn wants the object \u2014 this is not a duel to 0 HP.",
+      "prompt": "Build the Talon Skarn encounter at River Slack Basin. Use Skarn, Crissdalynn, the Fate Spinner, the terrain, and current session state from the wiki. Skarn wants the object — this is not a duel to 0 HP.",
       "expected_output": "A runnable encounter that preserves Skarn's objective (acquiring the Fate Spinner), uses the established terrain and NPCs, and does not reduce the encounter to a simple combat to 0 HP.",
-      "expectations": [
-        "Skarn's objective is to take the Fate Spinner, not to kill the party or fight to 0 HP.",
-        "River Slack Basin terrain is used from existing wiki descriptions.",
-        "Crissdalynn and the Fate Spinner's current state match the wiki (one Legendary Resistance spent, Spinner held).",
-        "Encounter tactics reflect Skarn's established capabilities and personality from the wiki.",
-        "Multiple resolution paths exist \u2014 not just 'fight until one side drops'.",
-        "Every named entity resolves to an existing wiki page.",
-        "Output includes Situation, Opening pressure, Opposition (goal and behavior), Choice surface (3+ responses), If ignored, and Handoff.",
-        "Output includes an Initial Narration callout with 'you' address and at least one non-sight sense."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Skarn's objective is to take the Fate Spinner, not to kill the party or fight to 0 HP."
+        },
+        {
+          "type": "behavior",
+          "text": "River Slack Basin terrain is used from existing wiki descriptions."
+        },
+        {
+          "type": "behavior",
+          "text": "Crissdalynn and the Fate Spinner's current state match the wiki (one Legendary Resistance spent, Spinner held)."
+        },
+        {
+          "type": "behavior",
+          "text": "Encounter tactics reflect Skarn's established capabilities and personality from the wiki."
+        },
+        {
+          "type": "behavior",
+          "text": "Multiple resolution paths exist — not just 'fight until one side drops'."
+        },
+        {
+          "type": "behavior",
+          "text": "Every named entity resolves to an existing wiki page."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes Situation, Opening pressure, Opposition (goal and behavior), Choice surface (3+ responses), If ignored, and Handoff."
+        },
+        {
+          "type": "behavior",
+          "text": "Output includes an Initial Narration callout with 'you' address and at least one non-sight sense."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Make the Skarn encounter a straightforward boss fight. Skarn should attack on sight, fight to the death, and the party wins by reducing him to 0 HP.",
       "expected_output": "The skill should preserve Skarn's established motivation (wanting the Fate Spinner) rather than reducing him to a generic boss fight.",
-      "expectations": [
-        "Preserves Skarn's goal of acquiring the Fate Spinner rather than fighting to the death.",
-        "Skarn's tactics reflect his established wiki personality \u2014 not a mindless aggressor.",
-        "Offers multiple resolution paths consistent with Skarn's objectives.",
-        "Does not strip the encounter of its narrative context to make it a simple combat."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Preserves Skarn's goal of acquiring the Fate Spinner rather than fighting to the death."
+        },
+        {
+          "type": "behavior",
+          "text": "Skarn's tactics reflect his established wiki personality — not a mindless aggressor."
+        },
+        {
+          "type": "behavior",
+          "text": "Offers multiple resolution paths consistent with Skarn's objectives."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not strip the encounter of its narrative context to make it a simple combat."
+        }
       ]
     }
   ]
