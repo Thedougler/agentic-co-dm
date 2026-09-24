@@ -26,7 +26,7 @@ factions:
   - "[[grung-clans]]"
 deadline: "None established."
 last_advanced: 2026-09-12
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Family-pressure thread around Simone's report, leak hunt, and toxin stock against Jean-Claude and his allies."

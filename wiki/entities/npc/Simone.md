@@ -8,7 +8,7 @@ created: 2026-09-12T00:00:00Z
 updated: 2026-09-12T00:00:00Z
 type: npc
 lifecycle: proposed
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 status: alive
 role: rival

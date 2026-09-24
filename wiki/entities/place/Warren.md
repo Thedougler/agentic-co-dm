@@ -15,7 +15,7 @@ tier: supporting
 created: 2026-09-13T06:31:54Z
 updated: 2026-09-18
 type: place
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: site

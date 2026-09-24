@@ -22,7 +22,7 @@ tier: supporting
 created: 2026-09-13T21:00:00Z
 updated: 2026-09-18
 type: faction
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 status: active
