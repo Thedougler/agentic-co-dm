@@ -11,7 +11,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A Dravosi Crown support officer who turns shipboard supplies, medicinals, and weaponized compounds into tactical leverage."

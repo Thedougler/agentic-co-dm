@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Fifteen-year-old ship's cook (learning) aboard the HCS Surety, driven to bridge sailing manuals and real sailing experience."

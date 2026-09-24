@@ -19,7 +19,7 @@ tier: supporting
 created: 2026-09-13T20:05:00Z
 updated: 2026-09-13
 type: creature
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 relationships:

@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Beaumont Sel's capuchin companion for eleven years, a quick-witted thief and courier on the Midchain route."

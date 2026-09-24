@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: creature
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "CR 8 fey species native to Murrat; blood-economy mercenaries who hire out of Kalowe as the Five Blades."

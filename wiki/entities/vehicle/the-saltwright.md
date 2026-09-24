@@ -12,7 +12,7 @@ updated: 2026-09-13
 type: vehicle
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A plain merchant brig serving the Midchain cargo run out of Kalowe under Captain Beaumont Sel, boarded and fought through in Session 01."
