@@ -7,113 +7,206 @@ description: >-
   wiki/templates/spell.md.
 ---
 
-# Spell Design
+# Spell design
+
+A named spell is a **choice with a signature**: the caster gets a lever no
+other spell gives, the target gets a way to answer it, and anyone watching
+knows what they saw. A good campaign spell is peer-balanced against 2024 spells
+of its level, grows from the world's own magic, and comes with a source the
+party can reach and a cost for reaching it.
+
+File what constitution X makes canon. Follow `docs/agents/work.md`.
+
 ## Boundary contract
 
-### Input
+- **Input:** A named spell (existing page or one to mint), the caller's
+  objective and brief, `wiki/templates/spell.md`, and the vault canon it
+  touches: casters, creatures or items that use it, its source, the party's
+  casters.
+- **Work:** The steps below, for this one spell. Keep the caller's objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** A named teacher, book, scroll, patron, or site the
+  spell's discovery needs is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits comes first, and its owner skill (`npc-design`,
+  `item-design`, `place-design`, `faction-design`) mints one only when none
+  fits, before any text depends on it (AGENTS.md **HARD:
+  entity-before-spoken**). Saves, DCs, and edge rulings → `dnd5e-mechanics`.
+  The casting look → `theatre-of-the-mind` with the packet from step 7. Each
+  child returns its page path or prose and its completion result; resume at the
+  step that waited on it.
 
-Take a named spell owner, the caller's objective, the relevant brief,
-`wiki/templates/spell.md`, and linked caster, source, and 2024 peer evidence.
-The owner is a durable spell identity with a runnable effect, not a scroll item
-or a prose-only magical flourish.
+## Page rules
 
-### Owner-specific Work
+These hold in every step.
 
-Work only the spell: establish the identity sentence, preserve canon, write
-perceivable narration, and fill concrete casting fields plus the peer-anchored
-2024 effect. Keep Discovery/Lore on this page when needed; label invention and
-route checks, saves, and adjudication to the mechanics owner.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  spell needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
+- **Preserve.** Improving an existing page keeps every established detail
+  (name, level, school, components, users, history); fold each one into the
+  section that now owns it. A statblock that already uses the effect stays
+  consistent with the page, or the response names the change.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
+- **Own words.** Write the effect in your own words; reference official spells
+  by name as peers. A scroll item page is an item, not a spell exemplar.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). The source,
+  the cost, and every truth behind the casting's look are on the page by name.
+- **Process stays off the page.** The inventory, identity sentence, peer
+  comparison, and packet are working notes; the page carries only their facts.
 
-### Capability Handoff
+## Steps
 
-Casting checks → `dnd5e-mechanics`. Scroll/item → `item-design`.
-Place → `place-design`. Spoken delivery → `theatre-of-the-mind`.
+### 1. Take the canon inventory
 
-### Done
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval (`.agents/skills/qmd`).
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named spell page path, spell-template and runnable-effect checks, narration and
-mechanics routing, and any child return evidence are reported.
+1. Read the spell page if it exists and every page that links to it: run
+   `grep -rliF "[[<name>" wiki/entities` once for the slug, the title, and each
+   alias. Read every statblock or item that already produces the effect.
+2. Search QMD for the spell, its effect in plain words, its tradition or
+   school in this setting, its casters, and the party's spellcasters.
+3. `qmd get` every hit you will use. Snippets are leads, not facts.
 
+Write the **canon inventory** in working notes, one line per owner page:
+`[[slug]]` · kind · what it says about this spell or its magic.
 
-Prep only. Follow `docs/agents/work.md`.
+Done when every backlink and relevant hit is in the inventory or dropped with a
+one-line reason, and every inventory page was read in full.
 
-## Refuse gates
+### 2. Find the lever
 
-- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
-  after DM acceptance. Workspace outputs allowed before acceptance. A missing
-  named spell is work to propose now — not out of scope.
-- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
-  mark proposed), cite `[[pages]]`, show contradictions, propose for acceptance.
-  No silent canon — including invented provenance, ancient-druid origin myths, or
-  undeclared doctrine tied to established lore.
-- **Template lock.** Copy `wiki/templates/spell.md` only. Fill narration,
-  classification, casting fields, and runnable effect with substance — not empty
-  headings or blank Casting Time/Range/Components/Duration labels.
-- **Narration.** `> [!narration] Narration` is theatre of the mind: what a
-  bystander sees, hears, and feels. No secrets, DCs, unearned names, or DM
-  plumbing in player-facing prose — move those to DM-facing sections.
-- **Identity first.** Before the page draft:
+In working notes, write the **identity sentence**:
 
-  > This is a [level/school] spell that [table effect], recognized by
-  > [casting signature], and it gives players [choice or pressure].
+> This is a [level/school] spell that [table effect], recognized by
+> [casting signature], and it gives players [choice or pressure].
 
-  If that lacks table effect, source, or consequence, keep retrieving or ask.
-- **Peer anchor.** Anchor level, damage, control, and range against 2024 peers of
-  the same level and role. Reskin a close spell when canon is silent; mark
-  material changes as invention. Refuse packing nova into a cantrip — raise level
-  or redesign.
-- **No auto-win.** Refuse no-roll, no-choice, no-cost spells that skip climax or
-  confrontation. Effects need failure modes, costs, limits, or contested
-  resolution.
-- **No proprietary paste.** Never paste WotC Player's Handbook (or equivalent)
-  spell text verbatim. Use SRD-safe paraphrase, reference-by-name, or original
-  homebrew marked invention.
-- **Scroll ≠ spell page.** Do not cite or treat `spell-scroll-*.md` item pages as
-  `type: spell` exemplars.
-- **Discovery/Lore stay here.** When filled, they remain on the spell page — not
-  separate `type: lore` notes. Label invented history.
+Then name the **lever**: the one thing this spell lets a caster do that no
+2024 peer at its level does, and the decision it puts in front of the caster
+each time (where to aim it, what to spend, when to drop it). A spell that is a
+peer with new paint needs a lever or a campaign tie that earns the page.
 
-## Spell job
+Done when the lever is one sentence and the choice it offers is named.
 
-A named spell page is runnable casting look + classification + exact 2024 effect.
-Use when the spell has durable identity players can learn, cast, seek, identify,
-counter, fear, bargain for, research, or return to. Store under
-`wiki/<campaign>/spells/`. Keep one-off magical color on the owning beat, place,
-NPC, or item until it has a name or recurring consequence.
+### 3. Tie it to the world
 
-## Build the spell
+1. **Tradition.** Who in this setting casts it, where they learned it, and
+   what that says about them (a sea-witch's hex, a navy weather-rite, a
+   thieves' trick).
+2. **Signature.** What the casting looks, sounds, or smells like, rooted in
+   that tradition, so a witness can name the kind of caster.
+3. **Price.** What using it costs beyond the slot: a material the setting
+   makes scarce, a mark it leaves, a law it breaks, a rival it alerts.
+4. **Swap test.** Put a generic spell name in place of this one. Every
+   sentence that stays true is furniture; replace it from the inventory or the
+   tradition.
 
-1. **Retrieve.** Brief, `wiki/templates/spell.md`, and relevant caster/faction/
-   place/item/teacher/book/patron/hazard/prior-spell notes. Preserve established
-   names, level, school, components, limits, sources, open questions. Do not
-   contradict established wiki facts.
-2. **Identity sentence** before drafting (see refuse gate).
-3. **Scaffold.** Copy `wiki/templates/spell.md`. Frontmatter: `type: spell`,
-   reveal/campaign/visibility, `level`, `school`, `ritual`, `summary`.
-4. **Runnable fill.** Narration (perceivable); Level/School/(Ritual); Casting
-   Time, Range, Components, Duration with concrete 2024 values; one short effect
-   block (save/attack, DC, damage, conditions, targets/area, Concentration
-   breakpoints, end, scaling when it scales).
-5. **Discovery / Lore only when needed.** Source, access cost, clue, and change
-   on obtain — or history that changes a present choice. Omit unused.
+Done when the tradition names a person, faction, or creature page, and the
+signature and price each fail the swap test.
 
-Read `references/spell-craft.md` for craft basis, section fill detail, audit
-questions, and failure modes.
+### 4. Set the numbers
 
-## Handoffs
+Read [references/spell-craft.md](references/spell-craft.md). Pick two or three
+2024 peers of the same role (single-target damage, area control, mobility,
+utility, ward) and set the level where the effect matches them; use the damage
+table there for damage spells. Then fill: Casting Time, Range (and area or
+target count), Components (with the material and any cost), Duration
+(Concentration when it lingers), save or attack with the ability, damage dice
+and type, conditions, how it ends, and scaling with slot level or character
+level.
 
-Narration → `theatre-of-the-mind`; items/scrolls → `item-design`;
-places → `place-design`; lore pages → `lore-design` (spell Discovery/Lore stay on
-the spell page); vault lookup → `.agents/skills/qmd`.
+Done when every field holds a 2024 value and the peers and their levels are in
+the working notes.
+
+### 5. Write the rulings and the counterplay
+
+- **Rulings.** The three to five tricks players will try with it (on an
+  object, on an ally, in water, around a corner, stacked with a common spell),
+  each with the answer.
+- **Counterplay.** How a target or rival caster answers it: the save, cover,
+  distance, breaking Concentration, *counterspell* or *dispel magic*, a
+  countermeasure the tradition knows.
+- **In enemy hands.** Which named creature or NPC casts it against the party,
+  and how they open with it.
+
+Done when every likely trick has one answer and a DM could run the spell from
+either side of the table.
+
+### 6. Place the discovery
+
+- **Source.** One specific source with its own page under
+  `wiki/entities/npc/`, `item/`, or `place/`: a named teacher, a book or
+  scroll, a patron, or a site, cast before minting. A creature page describes
+  a kind of caster, so when the teacher is one of a kind (one tidehex captain,
+  one sea hag), cast or mint that individual through `npc-design` and link the
+  kind from their page. The source has its own reason to teach or sell, a want
+  the party can meet.
+- **Access.** The price of learning it (coin, favour, a task, a risk) and the
+  copying or training time.
+- **Clue.** How the party learns the source exists.
+- **Consequence.** Who notices when a PC casts it, and what they do.
+
+Done when the source is one named NPC, item, or place page with a reason to
+deal, the clue says where and how the party meets it, and access has a
+concrete price.
+
+### 7. Hand the look to theatre-of-the-mind and file
+
+Build the **narration packet**: what a bystander sees, hears, and feels during
+the casting and the effect; the signature from step 3; leave out DCs, names
+not earned, and the truth of the tradition. Load
+`.agents/skills/theatre-of-the-mind`, portrait mode, technique recipe, and
+give it the packet.
+
+Copy `wiki/templates/spell.md` to `wiki/entities/spell/<kebab-name>.md` with
+`type: spell`, `level`, `school`, and `ritual`. Omit empty sections. Write
+complete sentences. Wikilink every owner page.
+
+| Section | Carries |
+|---|---|
+| Narration | The narration, nothing else |
+| Classification and casting fields | Level, school, ritual; the four casting fields |
+| Effect | The runnable effect block and scaling |
+| Rulings | Likely tricks with answers; counterplay; how enemies use it |
+| Discovery | Source, access price, clue, and who notices a casting |
+| Lore | The tradition, its casters, and history that changes a present choice |
+
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
+
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
-- Fills `wiki/templates/spell.md` under `wiki/<campaign>/spells/` with
-  `type: spell`; no second template.
-- Identity sentence before draft; narration perceivable-only.
-- Level/school/ritual filled; casting fields concrete; effect peer-anchored and
-  runnable — no cantrip-nova, auto-win, or proprietary paste.
-- Discovery/Lore on-page only when needed; invention labeled/cited/proposed;
-  wiki write only after accept.
-- DM can cast/adjudicate tonight without a format guide.
+- The canon inventory is complete; every established detail is kept and every
+  statblock using the effect agrees with the page.
+- The lever gives the caster a choice no peer at its level gives.
+- The tradition, signature, and price tie the spell to named campaign pages
+  and fail the swap test.
+- Level and numbers match named 2024 peers; every casting field and the effect
+  are concrete and runnable; scaling is stated when it scales.
+- Rulings answer the likely tricks; counterplay and enemy use are on the page.
+- Discovery names one specific source whose link resolves under
+  `wiki/entities/npc/`, `item/`, or `place/`, with its reason to deal, a concrete access price, a clue that says where to meet it,
+  and who notices a casting.
+- The narration came from theatre-of-the-mind and holds no DC or unearned name.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit (`docs/agents/table-ready.md` §
+  Cast before minting).
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

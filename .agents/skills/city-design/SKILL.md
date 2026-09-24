@@ -9,115 +9,217 @@ description: >-
   kind: city page work here.
 ---
 
-# City Design
+# City design
 
-Prep only. Follow `docs/agents/work.md`.
+A city page is a **table interface for a crowd**: the party arrives, finds its
+way, gets what it came for, and walks into trouble already in motion. The DM
+needs districts the party can choose between, places they can seek on
+purpose, local rules that change a choice, named people with wants, and two or
+more **situations**: opposed wants between named sides, each heading somewhere
+soon if nobody steps in. Everything a newcomer can see leaves a **tell**; the
+DM page carries the truth.
+
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Boundary contract
 
-### Input
+- **Input:** A named city (existing page or one to mint), the caller's
+  objective and brief, `wiki/templates/city.md`, and the vault canon it
+  touches: region, districts, landmarks, factions, NPCs, quests, sessions.
+- **Work:** The steps below, for this one city. Keep the caller's objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** A named person, faction, site, item, or creature the
+  city needs is cast before it is minted (`docs/agents/table-ready.md` § Cast
+  before minting): an in-play or unrevealed page that fits comes first, and its
+  owner skill (`npc-design`, `faction-design`, `place-design`, `item-design`,
+  `monster-design`) mints one only when none fits, before any text depends on
+  it (AGENTS.md **HARD: entity-before-spoken**, **Focused minting**). Full
+  faction agendas stay on faction pages; off-screen turns → `world-tick`. The
+  Arrival → `theatre-of-the-mind` with the packet from step 6. Each child
+  returns its page path or prose and its completion result; resume at the step
+  that waited on it.
 
-Take a named city owner, the caller's objective, and the relevant brief, city
-template, and linked region/place/faction notes. When the owner is a city,
-enter this skill directly; do not route through a generic place planner.
+## Page rules
 
-### Owner-specific Work
+These hold in every step.
 
-Work only the named city: preserve its canon, fill `wiki/templates/city.md`,
-and apply the arrival, orientation, gazetteer, local-rule, and active-situation
-craft below. Keep the caller's session or situation objective intact.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  city needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
+- **Preserve.** Improving an existing page keeps every established detail
+  (districts, landmarks, customs, population, authorities, history); fold each
+  one into the section that now owns it. Closed campaign history stays history.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
+- **Template.** `type: place`, `kind: city`, on `wiki/templates/city.md`;
+  sections that change no current play are omitted, never left empty.
+- **Choices stay with the players.** The page gives what the city does and
+  what each approach costs; the party's civic choices are left to play.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell,
+  rumor, and situation has its truth on the page: who, what, why, and what is
+  at stake, by name. `[!narration]` is the only callout.
+- **Process stays off the page.** The inventory, identity sentence, and packet
+  are working notes; the page carries only their facts.
 
-### Capability Handoff
+## Steps
 
-Faction → `faction-design`. Non-city place → `place-design`. Off-screen
-motion → `world-tick`. The child does not re-plan the city.
+Read [references/city-craft.md](references/city-craft.md) before step 3.
 
-### Done
+### 1. Take the canon inventory
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named city page path, city template contract, playable urban choices, and any
-child return evidence are reported.
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval (`.agents/skills/qmd`).
 
-## Refuse gates
+1. Read the city page if it exists, its region page, and every page that links
+   to it: run `grep -rliF "[[<name>" wiki/entities` once for the slug, the
+   title, and each alias.
+2. Search QMD for the city, its districts and landmarks, its authorities,
+   every faction and NPC tied to it, and every session set there.
+3. `qmd get` every hit you will use. Snippets are leads, not facts.
 
-- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
-  after DM acceptance. A missing named city is work to propose now — not out of
-  scope.
-- **Invention.** Never present invention as wiki fact. Set `invention: true`,
-  cite `[[pages]]`, show contradictions, and propose for acceptance. No silent
-  canon.
-- **No invented crisis.** Do not invent plague, siege, invasion, or disaster as
-  established pressure. Derive **If-nobody-intervenes** only from established
-  pressure — or state none / labeled invention.
-- **Closed canon stays history.** Preserve closed Season threads as history, not
-  live crisis. Do not reopen them as forced sequences.
-- **Template lock.** Copy `wiki/templates/city.md` only. Keep `type: place` and
-  `kind: city`. No second template; do not retarget to region, faction, lore, or
-  quest.
-- **Arrival.** `> [!narration] Arrival` is immediately perceivable only
-  (scale, silhouette, motion, sound, smell, landmark). No secrets, DCs, hidden
-  history, or unearned names.
-- **Faction agendas/clocks** stay on faction pages. City `# Power` is local
-  posture only (public position, local objective, leverage, current move here).
-- **Hub deferral.** `place-design` defers `kind: city` page work here.
+Write the **canon inventory** in working notes, one line per owner page:
+`[[slug]]` · kind · the fact that puts it in this city.
 
-Also refuse: single mandatory plot rails; authoring PC civic outcomes as page
-fact; clue-less single-lever situations; combat-only district rails. Keep
-Orientation/Gazetteer as choice space (≥2 viable responses or ignore/fail/
-redirect costs).
+Done when every backlink and relevant hit is in the inventory or dropped with a
+one-line reason, and every inventory page was read in full. A person, faction,
+business, or creature based in the city always gets a place on the page (in
+Power, the gazetteer, a situation, or the street); only pages that mention the
+city in passing are dropped.
 
-## City job
+### 2. Find the city's engine
 
-A city page makes a named city runnable: arrival, orientation, deliberate
-travel, local rules that change choices, active pressure, and what changes if
-nobody intervenes. Use when districts, public authority, services, factions,
-routes, laws, or urban pressure exceed a site-place page.
+In working notes, write the **identity sentence**:
 
-## Build the city
+> This is a [kind/scope] city known for [public identity], pressured by
+> [current instability], and it gives players [choice or opportunity].
 
-1. **Retrieve.** Read the brief, `wiki/templates/city.md`, and relevant region,
-   route, district, landmark, faction, NPC, quest, lore, session, and prior city
-   notes. Preserve established names, aliases, districts, routes, laws,
-   pressure, rumors, party history, and open questions.
-2. **Identity sentence** before drafting:
+Then the **engine**: what the city lives on (a trade, a toll, a shrine, a yard,
+a court) and who controls each part of it. The situations in step 4 grow from
+the engine: whoever controls it, whoever wants it, whoever it squeezes.
 
-   > This is a [kind/scope] city known for [public identity], pressured by
-   > [current instability], and it gives players [choice or opportunity].
+Done when the engine names what the city lives on and who holds each part by
+page.
 
-   If there is no current pressure or player opening, keep retrieving or ask.
-3. **Scaffold.** Copy `wiki/templates/city.md`. Fill frontmatter: `type: place`,
-   `kind: city`, reveal/campaign/visibility, region, status,
-   population, government, ruler, controlling_faction, summary.
-4. **Runnable fill.** Arrival (perceivable); At a glance (character, known-for,
-   visible power, **current pressure**, opportunity, population, one-sentence DM
-   thesis of play function — not closed-history summary); Orientation
-   (districts + getting around); Gazetteer (arrive/leave, stay, buy/sell,
-   services); Rules that matter (only choice-changing local realities); Power
-   (city-local posture only).
-5. **Active situations.** Use plain `## Situation` headings for active situation cards; keep the heading unlinked because it is a structural slot, not an entity. Establish at least one when pressure exists: actors, visible signs, want, opposition, **If nobody intervenes**, trigger/date. Link quest pages for pursuable objectives; propose missing quests — do not bury full quests here. If no established pressure, say so; do not invent crisis.
-6. **Current state + change log.** Live deltas only on the city page; fold normalized deltas into baseline and archive in `# Change log`.
+### 3. Lay out the city
 
-Read `references/city-craft.md` for craft basis, section fill detail, audit
-questions, and failure modes.
+- **Districts.** Three to six, each with its street-level look, the reason a
+  visitor goes there, who holds it, and one danger or opportunity there now.
+- **Landmarks.** Two or three a newcomer steers by.
+- **Getting around.** How long crossing takes, what changes after dark, where
+  movement is restricted and by whom.
+- **Gazetteer.** Arrive and leave (who meets a ship, what it costs, what
+  papers), stay, buy supplies, sell cargo and loot (a named buyer and the rate
+  they pay, and a fence for goods with a history), services: each entry a named
+  place and its keeper, a price, and one detail that makes it this city's.
+- **Rules that matter.** Two to four local laws or customs that change a
+  choice, each with who enforces it, how, and the penalty.
 
-## Handoffs
+Done when a party could arrive, find lodging, sell cargo, and cross the city
+from the page alone, and each rule names its enforcer and penalty.
 
-Narration → `theatre-of-the-mind`; places → `place-design` (non-city);
-factions → `faction-design`; NPCs → `npc-design`; quests → quest skill;
-off-screen → `world-tick`; vault lookup → `.agents/skills/qmd`.
+### 4. Set the situations in motion
+
+Two or more **situations**. A situation is opposed wants: someone named wants
+a change here that someone else named will act to stop, take, or expose. For
+each: the sides by page, the visible signs a newcomer could notice, what each
+side wants, **If nobody intervenes** (what happens, and when: within days of
+the party's arrival), and two or more handles the party could pick up, with
+what each costs. At least one situation touches something the party already
+cares about (a PC's tie, a thread from play, the reason they came).
+
+Then **Power**: each faction's local posture (public position, local
+objective, leverage, current move here). And **Current state**: headlines,
+pressure clocks with ticks, upcoming events with dates. Each faction in Power
+has a **local face**: the named person (an NPC page) who carries its current
+move in this city and whom the party can meet, bribe, or cross.
+
+At least one situation turns physical: a heist, chase, raid, brawl, rescue,
+storm, or creature the party meets with steel or daring, staged at a
+**set piece**, a city location built for action (a bridge, a crane, a reef
+gap, a rooftop), with its size and two features a fight or chase can use.
+
+Done when every situation has named sides, signs, a trajectory with a time,
+and two handles with costs; one of them is physical and staged at a set
+piece; and every faction in Power has a named local face.
+
+### 5. Fill the street
+
+- **Rumors.** A d6 or d8 table of what people say, each marked with its truth
+  on the DM layer.
+- **Encounters.** A d6 or d8 table of street moments, each tied to a
+  situation, a district, or a faction, with what happens if the party engages.
+- **Names on demand.** Six to ten names in the city's naming style, for
+  improvised people.
+- **Faces.** Everyone who drives a situation, holds power, or keeps a gazetteer
+  place the party will use this arc is a named NPC page, cast first; a person no
+  page covers is minted through `npc-design` at Incidental or Scene scale.
+- **Numbers.** The watch, guards, or gangs the party could fight: a count and
+  a statblock with compact numbers.
+
+Done when every rumor has its truth, every encounter has its hook, and every
+face named on the page links an NPC page.
+
+### 6. Hand the Arrival to theatre-of-the-mind
+
+Build the **narration packet** as fragments, each with its source: scale and
+silhouette from the approach, movement at the gate or harbour, one sound and
+one smell with sources, the landmark a newcomer steers by, and the tells of the
+situations a newcomer could see. Leave out truths, DCs, and names not earned.
+Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give
+it the packet.
+
+Done when the returned narration passes theatre-of-the-mind's final check and
+carries the situations' visible signs.
+
+### 7. File the page
+
+Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md`. Fill
+frontmatter (`type: place`, `kind: city`, region, status, population,
+government, ruler, controlling_faction, summary). At a Glance carries the
+current pressure, the opportunity, and a one-sentence DM thesis of the city's
+job in play. Omit sections with no job. Write complete sentences. Wikilink
+every owner page.
+
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
+
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
-- Fills `wiki/templates/city.md`; `type: place` + `kind: city`; no second
-  template / no retarget.
-- Arrival is `[!narration]` and perceivable-only.
-- At a glance has current pressure + opportunity; DM thesis is play-function.
-- Orientation has districts + getting around; gazetteer supports intentional
-  seek; rules name choice-changing local realities.
-- ≥1 active situation with actors, signs, want, opposition, if-nobody-intervenes
-  from established pressure (or none / labeled invention).
-- Faction full agendas/clocks stay on faction pages.
-- Current state = live deltas; change log on the city page.
-- Invention labeled, cited, proposed; wiki write only after accept.
-- DM can arrive, find a district, seek a place, name a local rule, and say what
-  happens if nobody intervenes — without a single mandatory rail.
+- The canon inventory is complete; every established detail is kept.
+- The engine names what the city lives on and who holds it.
+- Every person, faction, business, or creature based in the city has a place
+  on the page.
+- Districts, landmarks, getting around, and the gazetteer let a party arrive,
+  lodge, buy, sell cargo, and cross the city from the page alone; gazetteer
+  entries have keepers and prices.
+- Each local rule names its enforcer and penalty.
+- Two or more situations have named sides, visible signs, a trajectory within
+  days of arrival, and two handles with costs; one touches what the party
+  already cares about; one is physical and staged at a set piece with its
+  features.
+- Every faction in Power has a named local face with an NPC page.
+- Rumors carry their truths; encounters tie to situations; the fighters the
+  party could face have numbers.
+- Every face named on the page links an NPC page.
+- The Arrival came from theatre-of-the-mind and holds no truth, DC, or unearned
+  name.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit (`docs/agents/table-ready.md` §
+  Cast before minting).
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

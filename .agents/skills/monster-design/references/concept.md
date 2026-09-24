@@ -5,21 +5,21 @@ axes that keep creatures diverse, and weak-to-strong concepts.
 
 ## Archetypes
 
-Pick the archetype that fits, then take its shaping and its exemplars. The
-exemplars are live vault pages; read one or two for concept and world weave.
-Their statblock notation and narration predate current standards, so the
-format comes from [statblock.md](statblock.md) and theatre-of-the-mind.
+Pick the archetype that fits and take its shaping. The published monsters
+named beside it are patterns to learn from, never names or text to copy.
+Vault creature pages are canon to keep, not models: the format comes from
+[statblock.md](statblock.md) and theatre-of-the-mind.
 
-| Archetype | Shape it around | Exemplars |
+| Archetype | Shape it around | Published patterns |
 |---|---|---|
-| Predator or beast | One hunting method from one sense and one body part; a hunt cycle of signs, opening, shut-down, aftermath; a habitat it owns and one it refuses | `bloodhawk`, `spiguar`, `blackrail` |
-| Swarm, colony, or plant | Behaves like terrain that chooses; area denial; one environmental weakness (fire, wind, light, open ground) | `snakewood`, `silence-moths`, `vine-lash` |
-| Troop or crew | Roles that combo (grappler pins, thief grabs, caster fogs); orders, morale, and a leader whose loss changes the fight | `rigging-cutpurse`, `pirate-bosun`, `dravosi-enforcer` |
-| Lure or trickster | The bait is the ability; a strong first impression that is wrong; rules players can uncover before they commit | `island-mimic`, `unsaid-macaw` |
-| Mastermind, lich, or high-level caster | One rule of the archetype broken (a phylactery that is a bloodline or a place); the weakness is a quest; forms or stages keyed to the fiction; ties to named NPCs, factions, and history | `hierarch`, `blight`, `necromaton` |
-| Aberration, planar, or horror | One impossible rule, made legible by testing; what stays constant; dread through signs | `leviathan`, `krakling`, `minor-slaad` |
-| Fey or social | Bargains, charms with explicit rules, social terrain; the fight can be talked into or out of | `gentle-hag`, `moucheron` |
-| Mythic apex or dragon | Presence felt across a region; a lair that fights with it; a reputation locals act on | `ash-caldera-dragon`, `arclight-phoenix` |
+| Predator or beast | One hunting method from one sense and one body part; a hunt cycle of signs, opening, shut-down, aftermath; a habitat it owns and one it refuses | displacer beast, bulette |
+| Swarm, colony, or plant | Behaves like terrain that chooses; area denial; one environmental weakness (fire, wind, light, open ground) | shambling mound, swarm of insects |
+| Troop or crew | Roles that combo (grappler pins, thief grabs, caster fogs); orders, morale, and a leader whose loss changes the fight | bandit captain with thugs and scouts |
+| Lure or trickster | The bait is the ability; a strong first impression that is wrong; rules players can uncover before they commit | mimic, will-o'-wisp |
+| Mastermind, lich, or high-level caster | One rule of the archetype broken (a phylactery that is a bloodline or a place); the weakness is a quest; forms or stages keyed to the fiction; ties to named NPCs, factions, and history | lich, beholder |
+| Aberration, planar, or horror | One impossible rule, made legible by testing; what stays constant; dread through signs | aboleth, gibbering mouther |
+| Fey or social | Bargains, charms with explicit rules, social terrain; the fight can be talked into or out of | green hag, rakshasa |
+| Mythic apex or dragon | Presence felt across a region; a lair that fights with it; a reputation locals act on | adult dragon in its lair |
 
 ## Diversity axes
 

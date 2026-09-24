@@ -41,18 +41,28 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
   page belongs to `npc-design`, and this skill supplies the statblocks and
   encounter rule for its Combat section. The encounter it appears in belongs
   to `encounter-prep`; its lair or habitat place to `place-design`; items made
-  from its body, or the item a creature disguises itself as, to `item-design`. A named owner the creature needs
-  and the vault lacks is minted first by its owner skill (AGENTS.md **HARD:
+  from its body, or the item a creature disguises itself as, to
+  `item-design`. A named owner the creature needs is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits the role comes first, and its owner skill mints
+  one only when none fits, before any text depends on it (AGENTS.md **HARD:
   entity-before-spoken**). Each child returns its page path or result; resume
-  at the step that waited on it, or report the named gap.
+  at the step that waited on it.
 
 ## Page rules
 
-- **Canon.** User-said facts file immediately on the live path. Invented
-  additions are shown to the DM as a proposal, marked as invention and citing
-  the `[[pages]]` they grow from, and filed after the DM accepts.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  page needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
 - **Preserve.** Improving an existing page keeps every established fact; a
   retuned number replaces the old one and the proposal names the change.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
 - **One callout.** `[!narration]` is the only callout. Truths, origins, and
   secrets are plain complete sentences in Biology or Behavior.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). What it is,
@@ -103,7 +113,7 @@ keeps its numbers, and the party read may still send it through step 5.
 ### 3. Make it this creature and no other
 
 Read [references/concept.md](references/concept.md) for archetypes, diversity
-axes, and exemplars.
+axes, and weak-to-strong concepts.
 
 1. **Stock version.** One line: "a big wolf", "a lich", "a giant jellyfish".
    Everything that line predicts is the default.
@@ -181,8 +191,11 @@ Write the three-round script and run
 [references/audit-and-revise.md](references/audit-and-revise.md). Send every
 check, save, and escape to `dnd5e-mechanics`.
 
-Done when the three-round script against this party meets the difficulty
-target and every audit item passes.
+Done when the response states four figures against this party, each inside
+the difficulty target: rounds it lasts (effective HP ÷ the party's damage per
+round against it), rounds to drop the most exposed PC, and the CR its defense
+matches and the CR its offense matches, with the statblock's label their
+average; and every audit item passes.
 
 ### 6. Make it real in the world
 
@@ -250,13 +263,21 @@ the world knows about the creature. Statblock format:
 Omit empty sections, write complete sentences, and wikilink every owner page.
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
+
 ## Done
 
 - The party read and canon inventory are complete.
 - The twist, niche, and signature fail the swap test.
-- Against this party, the three-round script meets the difficulty target. The
-  monster survives the nova long enough to use its signature, threatens a PC at
-  Hard and above, and has an escalation if it is a solo or boss.
+- Against this party, the three-round script meets the difficulty target: the
+  response states rounds it lasts, rounds to drop the most exposed PC, and the
+  defensive and offensive CR, with the label their average. The monster
+  survives the nova long enough to use its signature, threatens a PC at Hard
+  and above, and has an escalation if it is a solo or boss.
 - The signature move has a tell, at least two answers, and a payoff; every
   feature expresses the concept.
 - Every check and save passed `dnd5e-mechanics`; the statblock uses 2024
@@ -264,6 +285,11 @@ Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 - Every signature ability has a sign in the world and a tell in the narration.
 - The narration came from theatre-of-the-mind and passes its final check.
 - `[!narration]` is the only callout; the DM layer states the truth by name.
-- Invention was proposed and accepted before filing; user-said canon is filed.
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Each new mint names, in the response, the candidates considered and why none
+  fit (`docs/agents/table-ready.md` § Cast before minting).
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
+  Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

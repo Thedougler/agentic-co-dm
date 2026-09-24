@@ -30,10 +30,14 @@ Level, School (Ritual when it is a ritual)
 
 Write the runnable 2024 effect: saves, damage, conditions. Scaling when it scales. One short block.
 
+## Rulings
+
+The tricks players will try, each with its answer; how a target counters it; how a named enemy uses it.
+
 ## Discovery
 
-Fill when the spell needs a scroll, book, teacher, or patron. Omit when placement is unused.
+Where the party can learn it (a named teacher, book, scroll, patron, or site), the price of access, the clue that points there, and who notices when it is cast.
 
 ## Lore
 
-Fill when the spell needs history. Omit when history is unused.
+The tradition that casts it and the history that changes a present choice. Omit when unused.

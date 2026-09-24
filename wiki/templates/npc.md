@@ -15,7 +15,7 @@ faction: none
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold. This template, `wiki/templates/contracts/npc.yml`, `npc-design`, `theatre-of-the-mind`, and `wiki-lint` form one output contract. Keep headings, frontmatter, callouts, layout markers, and DM-facing jobs synchronized before repairing pages. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat omit-if-empty. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout.
+<!-- Copy-start scaffold. This template, `wiki/templates/contracts/npc.yml`, `npc-design`, `theatre-of-the-mind`, and `wiki-lint` form one output contract. Keep headings, frontmatter, callouts, layout markers, and DM-facing jobs synchronized before repairing pages. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat carries every fighter in reach. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout.
      DM-visible labels: Title Case / spaced words only — never snake_case (`Primary goal`, not `primary_goal`). YAML keys may stay snake_case. -->
 
 # {{title}}
@@ -75,4 +75,4 @@ Word choice, rhythm, one verbal habit, and the subject they avoid. Three sample 
 | [[page]]   | What this tie does at the table. |
 
 <!-- Shared heading Connections (not Relationships). Omit when unused. -->
-<!-- Combat: omit unless they can fight. Encounter rule plus sheet or one pointer. -->
+<!-- Combat: numbers for every fighter in the party's reach (the NPC, guards, beasts they would loose): a named standard statblock with its compact numbers (AC, HP, Speed, attacks or save DCs), or custom forms from monster-design with their encounter rule. -->

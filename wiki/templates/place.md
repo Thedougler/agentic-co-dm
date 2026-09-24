@@ -33,7 +33,7 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Who
 
-- State who is here, in what numbers, and what they do. If nobody is here, record the sign of absence. Wikilink creatures and people. Do not invent occupants.
+- State who is here, in what numbers, and what they do. If nobody is here, record the sign of absence. Wikilink each creature and person to its owner page.
 
 ---
 ## What
@@ -43,7 +43,7 @@ Write what this place is now, which linked places it sits between, and which edg
 ---
 ## Where
 
-- Linked neighbors and how this place connects. Record an unresolved canon gap when a direction is unknown.
+- Linked neighbors and how this place connects. Where canon names no neighbour, say what lies that way (open water, unmapped jungle).
 
 ---
 ## Why

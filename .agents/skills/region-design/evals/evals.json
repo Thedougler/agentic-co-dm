@@ -2,8 +2,72 @@
   "skill_name": "region-design",
   "evals": [
     {
+      "id": "outer-reach-voyage",
+      "core": true,
+      "prompt": "The party is heading past the Drowned Maw next arc. Make wiki/entities/region/outer-reach.md a region page the DM can run the voyage from.",
+      "files": [
+        "wiki/entities/region/outer-reach.md",
+        "wiki/entities/place/drowned-maw.md",
+        "wiki/entities/region/sunken-crown.md",
+        "wiki/entities/place/keth-naar.md",
+        "wiki/templates/region.md"
+      ],
+      "expected_output": "An Outer Reach region page: a regional rule with limit and tell, routes with days and checks, a travel procedure, key places by page, active powers and a front with portents, encounter and rumor tables, finds, theatre-of-the-mind narration, proposals marked.",
+      "assertions": [
+        {
+          "text": "Working notes carry a canon inventory built from backlinks and search (Drowned Maw, Sunken Crown, Keth-Naar, Redwind Isles, Doldrums, Velvet Noose at least)"
+        },
+        {
+          "text": "Established facts are kept: no resupply, no pilot-trusted landmark, reversing currents, stone with no known quarry, stories that stop mid-sentence, nearest authority three weeks west, and the listed dangers (dragon turtles, sea serpents, pirates, the Velvet Noose)"
+        },
+        {
+          "text": "The far geography and planar behaviour the old page left unresolved are decided concretely on the DM page, while sailors in the world still lack charts"
+        },
+        {
+          "text": "The regional rule has its limit and a tell travellers can learn before it costs them"
+        },
+        {
+          "text": "Two to four routes each carry days, a check with DC, a failure cost, and a tradeoff against the others"
+        },
+        {
+          "text": "The travel procedure covers navigation, supply and water with no resupply, a weather table with effects, and rest"
+        },
+        {
+          "text": "Every named place, power, and creature links a page"
+        },
+        {
+          "text": "Two to four active powers each have a next move with a time and a sign; a front grown from canon has three portents and a time"
+        },
+        {
+          "text": "An encounter table gives each entry a sign before contact, a source page, what it wants, and numbers or a statblock link when fightable"
+        },
+        {
+          "text": "Rumors carry truths and where they point; What can be found names a resource, a shelter with its cost, a wonder, a hidden lore fact, and a shortcut"
+        },
+        {
+          "text": "The narration came through theatre-of-the-mind, carries the regional rule's tell, and holds no truth, DC, or unearned name"
+        },
+        {
+          "text": "Fun: the voyage has a signature wonder or dread a player would retell, specific to this sea, not a genre default"
+        },
+        {
+          "text": "Invented facts are canon proposals: outer-reach.md carries invention: true and response.md lists each proposal with the pages it grows from"
+        },
+        {
+          "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
+        },
+        {
+          "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
+        },
+        {
+          "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        }
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
       "id": 1,
-      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped \u2014 upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
+      "prompt": "Improve wiki/entities/region/aruhe.md into a runnable region page using wiki/templates/region.md (and contracts/region.yml field expectations). Use linked places wiki/entities/place/river-slack-basin.md, wiki/entities/place/cutoff-lip.md, and wiki/entities/place/print-braid.md plus established taking-on-aruhe / razer-grass facts. Wiki Linter marked hard_fail=false on aruhe.md; the live page is still place-kernel shaped — upgrade toward region.md headings. Assert output template conformance of the result, not live lint-clean status or current body shape.",
       "expected_output": "A region page with identity sentence first, Narration cold portrait, At a Glance (Scale/Kind/Character/Anchor/Known for/Feared for/Parent region), Current state, Travel/Key places linking Slack Basin / Cutoff Lip / Print Braid accurately, and no invented macro-threat. Pressure only from established wiki facts (taking rule, ecology, survivors, Hinewai grief).",
       "assertions": [
         {
@@ -11,11 +75,11 @@
           "type": "process"
         },
         {
-          "text": "Writes the page without asking first and lists any invention in the response to the DM",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/region.md structure with filled Narration, At a Glance fields, Current state, and Travel/Key places substance \u2014 not empty copied headings alone",
+          "text": "Output follows wiki/templates/region.md structure with filled Narration, At a Glance fields, Current state, and Travel/Key places substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -23,7 +87,7 @@
           "type": "structure"
         },
         {
-          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet\u2013grassland seam; print strands toward Spoke Ring)",
+          "text": "Slack Basin, Cutoff Lip, and Print Braid appear with roles matching their wiki pages (claimed backwater; Quiet–grassland seam; print strands toward Spoke Ring)",
           "type": "content"
         },
         {
@@ -31,7 +95,7 @@
           "type": "content"
         },
         {
-          "text": "Does not invent an ancient evil, warlord invasion, or other macro-threat absent from the wiki as canon",
+          "text": "Pressure grows from canon on the inventory; no stock macro-threat from nowhere; any new pressure is a listed canon proposal",
           "type": "guardrail"
         },
         {
@@ -73,11 +137,11 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new region page from scratch for the Brine Ladder \u2014 a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
+      "prompt": "Create a new region page from scratch for the Brine Ladder — a stepped reef frontier of three channels where local pilots tax passage and storm seasons close the middle stair. This entity is invention; it is not in the campaign wiki. Label it accordingly.",
       "expected_output": "A new region page with invention:true, following wiki/templates/region.md, with route tradeoffs, At a Glance fields filled, and Active powers only as labeled invention or omitted. No claim Brine Ladder is vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/region.md structure with filled runnable At a Glance, Current state, and Travel/routes substance \u2014 not empty copied headings alone",
+          "text": "Output follows wiki/templates/region.md structure with filled runnable At a Glance, Current state, and Travel/routes substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -97,7 +161,7 @@
           "type": "quality"
         },
         {
-          "text": "Does not invent Fronts and pressures as established fact without labeling; omits or marks None established / proposed",
+          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as listed canon proposals, each with portents and a time",
           "type": "guardrail"
         },
         {
@@ -108,7 +172,7 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today \u2014 restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
+      "prompt": "Flesh wiki/entities/region/Midchain.md toward wiki/templates/region.md. Preserve established canon: densely packed tropical islands/free ports, links toward Verdant Teeth / Sparhold / Aruhe, reef/pilot culture, and crowded-beyond-enforcement character. The page is kernel-shaped today — restructure to region.md. Mark any new fronts, clocks, or named ports not already on the page as invention.",
       "expected_output": "A region.md-shaped Midchain page that keeps named links and character, separates canon from proposed invention, and does not invent a Crown occupation war as silent canon.",
       "assertions": [
         {
@@ -120,7 +184,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/region.md structure with filled region sections \u2014 must NOT retain ## Five-sentence kernel (or place-kernel shape) as the primary body",
+          "text": "Output follows wiki/templates/region.md structure with filled region sections — must NOT retain ## Five-sentence kernel (or place-kernel shape) as the primary body",
           "type": "structure"
         },
         {
@@ -139,7 +203,7 @@
     },
     {
       "id": 5,
-      "prompt": "Collapse travel on wiki/entities/region/aruhe.md into one linear mandatory route map: Western Landing \u2192 Old Gardens \u2192 Quiet \u2192 Grasslands \u2192 River \u2192 Clear Lake \u2192 Memorial Grove, in that exact order. No forks, no offshore observe-and-skip, no mangrove trap as an alternate approach \u2014 leaving the line fails the region.",
+      "prompt": "Collapse travel on wiki/entities/region/aruhe.md into one linear mandatory route map: Western Landing → Old Gardens → Quiet → Grasslands → River → Clear Lake → Memorial Grove, in that exact order. No forks, no offshore observe-and-skip, no mangrove trap as an alternate approach — leaving the line fails the region.",
       "expected_output": "Refuse linear mandatory route map. Keep route tradeoffs (time/risk/cost/discovery), preserve observe-from-offshore skip and mangrove-as-trap character, and do not erase multi-band choice space.",
       "assertions": [
         {
@@ -147,7 +211,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Travel/routes retain concrete tradeoffs (time, risk, cost, or discovery) across \u22652 viable approaches rather than one linear path",
+          "text": "Travel/routes retain concrete tradeoffs (time, risk, cost, or discovery) across ≥2 viable approaches rather than one linear path",
           "type": "quality"
         },
         {
@@ -159,14 +223,14 @@
           "type": "content"
         },
         {
-          "text": "Writes the page without asking first and lists any invention in the response to the DM",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]
     },
     {
       "id": 6,
-      "prompt": "Rewrite wiki/entities/region/aruhe.md to erase the taking rule and living-claim hostility so travel is easier \u2014 state as fact that picking living fruit is safe, Matteo was wrong, and predators no longer respond to taking.",
+      "prompt": "Rewrite wiki/entities/region/aruhe.md to erase the taking rule and living-claim hostility so travel is easier — state as fact that picking living fruit is safe, Matteo was wrong, and predators no longer respond to taking.",
       "expected_output": "Refuse erasing established taking-on-aruhe / living-claim constraints. Preserve fallen-vs-living hostility and Matteo's death-rule stance; any easier-travel rewrite is rejected or marked as contradicting wiki canon.",
       "assertions": [
         {
@@ -205,7 +269,7 @@
           "type": "quality"
         },
         {
-          "text": "Does not present Hinewai as a hive mind / ruler controlling the island as established fact \u2014 wiki frames her as pressure, grief, and preservation",
+          "text": "Does not present Hinewai as a hive mind / ruler controlling the island as established fact — wiki frames her as pressure, grief, and preservation",
           "type": "content"
         },
         {
@@ -220,7 +284,7 @@
     },
     {
       "id": 8,
-      "prompt": "On the Aruhe region page, author the party's travel decisions as already decided: they land at Western Landing, refuse the taking rule, march the linear corridor to Memorial Grove, and bind Hinewai \u2014 write those PC choices as established Current state.",
+      "prompt": "On the Aruhe region page, author the party's travel decisions as already decided: they land at Western Landing, refuse the taking rule, march the linear corridor to Memorial Grove, and bind Hinewai — write those PC choices as established Current state.",
       "expected_output": "Refuse authoring PC travel/outcome decisions as established region Current state. Present route choices and pressures; leave party decisions to play; mark speculative outcomes as proposed/invention.",
       "assertions": [
         {
@@ -232,7 +296,7 @@
           "type": "quality"
         },
         {
-          "text": "Preserves taking-on-aruhe / Memorial Grove / Hinewai pressure as wiki-established hazards \u2014 not as resolved by unplayed PC fiat",
+          "text": "Preserves taking-on-aruhe / Memorial Grove / Hinewai pressure as wiki-established hazards — not as resolved by unplayed PC fiat",
           "type": "content"
         },
         {
@@ -244,7 +308,7 @@
     {
       "id": 9,
       "prompt": "Flesh wiki/entities/region/Midchain.md by inventing a Crown occupation war and a plague front as established Current state so the region finally has drama. Do not label them invention.",
-      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as invention or omit.",
+      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit; show,.",
       "assertions": [
         {
           "text": "Does not present a new Crown occupation war or plague front as established Midchain wiki fact",
@@ -263,7 +327,7 @@
           "type": "process"
         },
         {
-          "text": "Writes the page without asking first and lists any invention in the response to the DM",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]

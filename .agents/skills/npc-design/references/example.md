@@ -57,10 +57,26 @@ your own person from your own vault and your own party.
 - **Posture changes:** opens up to anyone who names a lost ship correctly;
   closes when asked about weights; the evening bell takes priority over
   everything.
+- **Influence:** letting the party carry the book alone is Charisma
+  (Persuasion) DC 15. Success: she hands it over and follows ten paces behind.
+  Failure: she carries it herself, and the Saltwardens meet her on the stair.
+- **Likely moves:**
+  - *Buy the scuttled-ship list:* the price is the book's safe delivery,
+    nothing less.
+  - *Ask about the Gannet:* she lies ("him on the *Gannet* lands honest
+    weights"). Wisdom (Insight) DC 13 notices the abacus speeding up.
+  - *Threaten her:* she rings the tally bell, and two Saltwardens arrive within
+    a minute.
+  - *Lift the book:* Dexterity (Sleight of Hand) DC 14 past her elbow. On a
+    failure she shouts for the watch.
 
-## 5. Fight
+## 5. Arm everyone in reach
 
-Skipped: she cannot fight.
+Ysolde never draws steel. When blades come out, she clutches the book and runs
+for the Court. The two Saltwardens who come for the book use the standard
+Guard statblock: AC 16, HP 11, Speed 30 ft.; Spear, Melee Attack Roll +3, Hit:
+4 (1d6 + 1) Piercing damage. They back off when one of them drops, because a
+salt tax is not worth dying over.
 
 ## 6. Packet, portrait, and lines
 

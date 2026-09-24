@@ -19,7 +19,7 @@ summary: ""
      At a Glance → Connections → At the Table → Provenance → Art.
      Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
 
-     Known/Unknown distill: blank sheet/component lines are Unknown — do not repeat "not established" absences.
+     Every sheet and component line carries a number; where canon is silent, the peer craft's figure is a canon proposal.
      Numbers one-home: hull AC/HP (and other sheet numbers) live under Components/Sheet headings, not an unheaded blob.
      Handling vs At the Table: one play loop — do not duplicate the same run advice in both.
      Provenance is ownership/history facts only — forbid meta ingest Provenance on DM pages.
@@ -47,9 +47,13 @@ summary: ""
 - **Movement.**
 - **Weapons.** Armed craft only. Omit when unarmed.
 
+## Decks
+
+Areas at body scale (size in feet), one usable feature each, and who stands watch. Omit for a craft too small to walk.
+
 ## Crew stations
 
-Named stations and current vs minimum complement.
+Named stations, who mans them now against the minimum, and compact numbers for every fighter aboard.
 
 ## Handling
 
@@ -61,7 +65,7 @@ Initiative, ramming, boarding, and destruction when the craft fights. Omit when 
 
 ## At a Glance
 
-Write a short block about the craft's current role, location, and table use. Omit when Sheet and narration already cover it.
+Name the captain, the errand this week, standing orders on meeting the party, and the next step with a time.
 
 ## Hidden Cargo & History
 

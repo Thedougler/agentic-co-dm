@@ -2,24 +2,84 @@
   "skill_name": "lore-design",
   "evals": [
     {
+      "id": "grandfather-hole",
+      "core": true,
+      "prompt": "The party may hear about the Grandfather Hole in Kalowe. Make wiki/entities/lore/the-grandfather-hole.md something the DM can run if they go looking.",
+      "files": [
+        "wiki/entities/lore/the-grandfather-hole.md",
+        "wiki/entities/creature/sawek.md",
+        "wiki/entities/place/Kalowe.md",
+        "wiki/templates/lore.md"
+      ],
+      "expected_output": "A lore page that answers the legend: which claims are true, distorted, or false and what is really there; where it is; who moves on it; stakes with numbers; accounts with holders; three-clue revelations; At the Table handles; proposals marked.",
+      "assertions": [
+        {
+          "text": "Working notes carry a canon inventory built from backlinks and search (Sawek, Kalowe, Midchain at least)"
+        },
+        {
+          "text": "Current Truth answers every claim in the telling (freezing black water, a Sawek big enough to pull down a galleon, the wreck reef, scattered gold, animated drowned sailors) as true, distorted, or false, with what is really there"
+        },
+        {
+          "text": "Every item the old page left open or unknown (location, Sawek identity and size, wreck condition, whether the dead are animated) has one concrete answer on the page; no Open Canon section remains"
+        },
+        {
+          "text": "The location is concrete: a bearing and distance from Kalowe or a linked place"
+        },
+        {
+          "text": "A named actor moves on the truth on their own clock, with a time"
+        },
+        {
+          "text": "Stakes name what the party can win and lose with numbers (gold or item value, the creature's CR or statblock link, dive DCs, days)"
+        },
+        {
+          "text": "Accounts give two to four in-world versions, each with its holder and how it is wrong usefully; the common telling is in a tavern voice"
+        },
+        {
+          "text": "Each needed conclusion has three clues from different linked sources; uncertain clues carry Ability (Skill) and DC"
+        },
+        {
+          "text": "At the Table fills notice, explains, enables, and warns"
+        },
+        {
+          "text": "lifecycle and reveal stay proposed and unrevealed; no Canon Log; party knowledge comes from session notes"
+        },
+        {
+          "text": "Fun: the truth carries a twist or payoff that rewards the party for investigating, beyond confirming the rumor"
+        },
+        {
+          "text": "Invented facts are canon proposals: the-grandfather-hole.md carries invention: true and response.md lists each proposal with the pages it grows from"
+        },
+        {
+          "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
+        },
+        {
+          "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
+        },
+        {
+          "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        }
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
       "id": 1,
-      "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says \u2014 Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause. Wiki Linter marked hard_fail=false on taking-on-aruhe.md; still assert output template conformance (At a Glance / Current Truth / Limits / At the Table) even if the live page is pre-template shaped.",
-      "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles \u2014 preserving the fallen-vs-living split without inventing divine or fungal origins.",
+      "prompt": "Turn wiki/entities/lore/taking-on-aruhe.md into a clean lore page using wiki/templates/lore.md. The established rule is that fallen fruit is safe but taking living fruit (or other living claims) triggers predators. Ground everything in what the wiki already says — Session 11 confirmation, Matteo's death-rule stance, Western Landing usage. Do not invent a metaphysical cause. Wiki Linter marked hard_fail=false on taking-on-aruhe.md; still assert output template conformance (At a Glance / Current Truth / Limits / At the Table) even if the live page is pre-template shaped.",
+      "expected_output": "A lore page answering one durable question, with At a Glance (Core truth / Why it matters / Scope), Current Truth, Limits (Exception/Unknown/Impossible), and At the Table handles — preserving the fallen-vs-living split without inventing divine or fungal origins.",
       "assertions": [
         {
           "text": "Durable question or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Writes the page without asking first and lists any invention in the response to the DM",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
-          "text": "Output uses wiki/templates/lore.md heading-form sections ## At a Glance, ## Current Truth, ## Limits, and ## At the Table with filled substance \u2014 callout-form At-a-Glance copy-forward alone fails",
+          "text": "Output uses wiki/templates/lore.md heading-form sections ## At a Glance, ## Current Truth, ## Limits, and ## At the Table with filled substance — callout-form At-a-Glance copy-forward alone fails",
           "type": "structure"
         },
         {
-          "text": "Current Truth and Limits are proper sections with runnable substance (Core rule + Exception/Unknown/Impossible), not empty headings or stub callout paste",
+          "text": "Current Truth and Limits are proper sections with runnable substance (Core rule + Exception/Impossible), not empty headings or stub callout paste",
           "type": "content"
         },
         {
@@ -31,7 +91,7 @@
           "type": "content"
         },
         {
-          "text": "Does not invent a metaphysical reason, divine curse, or fungal network as established Current Truth",
+          "text": "Keeps the established fallen-fruit and living-claim rule; any cause added is one concrete canon proposal grown from wiki pages",
           "type": "guardrail"
         },
         {
@@ -39,7 +99,7 @@
           "type": "quality"
         },
         {
-          "text": "Limits section records Exception/Unknown (e.g. shaking a living tree untested) without filling unknowns as fact",
+          "text": "What the world has not tested (shaking a living tree) stays untested for people in the world, and Current Truth carries the DM answer as a proposal",
           "type": "quality"
         }
       ]
@@ -58,7 +118,7 @@
           "type": "content"
         },
         {
-          "text": "Explicitly notes the cause is unknown / not established when the wiki has no cause",
+          "text": "Decides the cause as one concrete canon proposal grown from wiki pages and states it as world fact on the DM page; the world's ignorance stays in Accounts or Who Knows",
           "type": "content"
         },
         {
@@ -66,18 +126,18 @@
           "type": "guardrail"
         },
         {
-          "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and leaves Open Canon rather than overwriting Limits unknowns",
+          "text": "response.md lists the proposal with its grounding pages; no Open Canon section is left on the page",
           "type": "process"
         }
       ]
     },
     {
       "id": 3,
-      "prompt": "Create a new lore page from scratch for the Pier-Debt Custom \u2014 in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
+      "prompt": "Create a new lore page from scratch for the Pier-Debt Custom — in invented free ports, a spoken harbour debt can be transferred by touching the debtor's token to the pier post before witnesses. This is not campaign wiki canon; label it as invention.",
       "expected_output": "A lore.md page with invention:true, one durable question, At a Glance, Current Truth, explicit Limits/unknowns, and At the Table handles. Not presented as vault fact.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance \u2014 not empty copied headings alone",
+          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -97,7 +157,7 @@
           "type": "quality"
         },
         {
-          "text": "Limits or Open Canon states at least one explicit unknown or exception",
+          "text": "Limits states at least one exception, cost, or impossibility",
           "type": "quality"
         },
         {
@@ -128,7 +188,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance \u2014 not empty copied headings alone",
+          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -198,14 +258,14 @@
     {
       "id": 7,
       "prompt": "Fill every Limits Unknown on wiki/entities/lore/taking-on-aruhe.md as fact: shaking a living tree definitely counts as a claim, always, everywhere on Aruhe. Write it into Current Truth with no Unknown left.",
-      "expected_output": "Refuse filling untested Limits unknowns as Current Truth. Keep shaking-a-living-tree as Unknown/untested; any ruling is proposed/invention for DM acceptance.",
+      "expected_output": "Fill the shaking-a-living-tree answer as a canon proposal: untested for people in the world, answered on the DM page, listed in the response for DM acceptance.",
       "assertions": [
         {
-          "text": "Does not fill the untested 'shaking a living tree' Unknown as established Current Truth",
+          "text": "Fills the shaking-a-living-tree answer as a canon proposal (invention: true, listed in response.md), never as accepted canon",
           "type": "guardrail"
         },
         {
-          "text": "Limits section retains Exception/Unknown/Impossible substance \u2014 does not erase Unknowns by declaring them settled fact",
+          "text": "Limits keeps its exceptions and impossibilities; people in the world still have not tested the case",
           "type": "structure"
         },
         {
@@ -213,22 +273,22 @@
           "type": "content"
         },
         {
-          "text": "Any proposed ruling on shaking trees is marked invention/proposed in process-notes.md, agent_report.md, or transcript.md and left as Open Canon unless accepted",
+          "text": "response.md lists the shaking-tree ruling as a proposal with the pages it grows from",
           "type": "process"
         }
       ]
     },
     {
       "id": 8,
-      "prompt": "File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war \u2014 unmarked invention, presented as Current Truth.",
-      "expected_output": "Refuse the unmarked multi-truth cosmology dump. One durable question per page; label invention (`invention: true`) and list it for the DM; do not present invention as Current Truth.",
+      "prompt": "Skip the chat proposal. File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war — unmarked invention, presented as Current Truth.",
+      "expected_output": "Refuse unmarked multi-truth cosmology dump. Show,; one durable question per page; label invention; do not file as Current Truth without acceptance.",
       "assertions": [
         {
-          "text": "Marks every invented fact `invention: true`, lists it in the response to the DM, and does not present invention as Current Truth",
+          "text": "Files on the live path with invention: true and lists every proposal in response.md for the DM to accept; nothing invented is presented as accepted canon",
           "type": "guardrail"
         },
         {
-          "text": "Writes the page without asking first and lists any invention in the response to the DM",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -236,18 +296,14 @@
           "type": "guardrail"
         },
         {
-          "text": "Refuses bundling unrelated encyclopedia truths into one lore page \u2014 or splits to one durable question and labels invention",
+          "text": "Refuses bundling unrelated encyclopedia truths into one lore page — or splits to one durable question and labels invention",
           "type": "quality"
-        },
-        {
-          "text": "States in process-notes.md, agent_report.md, or transcript.md that wiki write happens only after DM acceptance",
-          "type": "process"
         }
       ]
     },
     {
       "id": 9,
-      "prompt": "On wiki/entities/lore/taken-whole.md, invent a third concept \u2014 the 'Glass Debt Concord' \u2014 that appears in neither the rumour nor the stub's truth value, and write it into Current Truth as the real explanation sailors almost guessed.",
+      "prompt": "On wiki/entities/lore/taken-whole.md, invent a third concept — the 'Glass Debt Concord' — that appears in neither the rumour nor the stub's truth value, and write it into Current Truth as the real explanation sailors almost guessed.",
       "expected_output": "Refuse minting a third unexplained concept into Current Truth. Keep rumour vs Partially true / Dead Lady / Umberlee framing; any new concept is labeled proposed/invention outside Current Truth.",
       "assertions": [
         {
@@ -259,7 +315,7 @@
           "type": "content"
         },
         {
-          "text": "Any new Discovery clue or concept not on the stub is marked proposed/invention \u2014 not Current Truth",
+          "text": "Any new Discovery clue or concept not on the stub is marked proposed/invention — not Current Truth",
           "type": "guardrail"
         },
         {

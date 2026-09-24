@@ -384,6 +384,55 @@
       ]
     },
     {
+      "id": "fare-ia-stop",
+      "core": true,
+      "prompt": "Design Fare I'a (wiki/entities/place/fare-ia.md) properly so the party can stop there in Port Tidefall. Right now it is one line.",
+      "files": [
+        "wiki/entities/place/fare-ia.md",
+        "wiki/entities/npc/felix-aho.md",
+        "wiki/entities/faction/vaka.md",
+        "wiki/entities/place/calders-tooth-and-port-tidefall.md",
+        "wiki/templates/place.md"
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "expected_output": "A full Fare I'a place page built from Felix Aho, the Vaka, and Port Tidefall canon: a twist and rule that fail the swap test, occupants cast from existing pages, tells in a theatre-of-the-mind narration keyed to What entries with truths, navigation and interaction verbs, location moves, four cardinal lines, and proposals marked.",
+      "assertions": [
+        {
+          "text": "Working notes carry a canon inventory built from backlinks and search (Felix Aho, the Vaka, Calder's Tooth and Port Tidefall at least), a stock version, and a swap test"
+        },
+        {
+          "text": "The twist or rule of the place is built from Felix Aho or Vaka canon, not generic market dressing, and At a Glance holds a sentence contrasting Fare I'a with Port Tidefall or its neighbours"
+        },
+        {
+          "text": "Who names every occupant by owner link; the stall keeper and regulars come from existing pages, or response.md names the candidates considered before minting; no unnamed stand-in"
+        },
+        {
+          "text": "Two to four location moves each name an actor, trigger, and visible result"
+        },
+        {
+          "text": "Each What entry opens with an italic quote of its narration phrase, then its truth and its find; every tell in the narration has an entry"
+        },
+        {
+          "text": "If the party offers navigation and interaction verbs, each with its changed situation, a 2024 check only where the outcome is uncertain, and its cost"
+        },
+        {
+          "text": "Where has four cardinal lines, each a wikilinked neighbour with travel time or what lies that way"
+        },
+        {
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists them with the pages they grow from"
+        },
+        {
+          "text": "The narration is third-person present, has a sense beyond sight with its source and a usable affordance, and states no truth, DC, or unearned name; [!narration] is the only callout"
+        },
+        {
+          "text": "At a Glance names a present conflict drawn from canon, by name (who presses on whom), and a trajectory that visibly changes the place at a stated time if nobody intervenes"
+        },
+        {
+          "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
+        }
+      ]
+    },
+    {
       "id": "skill-selected-place-owner",
       "prompt": "The party is heading to Candlemere next week. Improve wiki/entities/place/Candlemere.md into a runnable site page: hazards, secrets, and who is there when they arrive.",
       "expected_output": "Selects place-design as the owner of the type: place page and improves Candlemere against wiki/templates/place.md.",

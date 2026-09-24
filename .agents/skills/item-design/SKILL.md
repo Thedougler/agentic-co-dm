@@ -35,18 +35,30 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
   `npc-design` (step 5). The portrait goes to `theatre-of-the-mind` with the
   packet from step 7. A creature the item summons, commands, or becomes goes
   to `monster-design`; a spell it grants that does not exist yet to
-  `spell-design`; the place it is hidden in to `place-design`. A named owner
-  the item needs and the vault lacks is minted first by its owner skill
-  (AGENTS.md **HARD: entity-before-spoken**). Each child returns its page path
-  or result; resume at the step that waited on it, or report the named gap.
+  `spell-design`; the place it is hidden in to `place-design`. A named owner the item needs is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits the role comes first, and its owner skill mints
+  one only when none fits, before any text depends on it (AGENTS.md **HARD:
+  entity-before-spoken**). Each child returns its page path or result; resume
+  at the step that waited on it.
 
 ## Page rules
 
-- **Canon.** User-said facts file immediately on the live path. Invented
-  additions are shown to the DM as a proposal, marked as invention and citing
-  the `[[pages]]` they grow from, and filed after the DM accepts.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  page needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
 - **Preserve.** Improving an existing page keeps every established fact; a
-  changed number replaces the old one and the proposal names the change.
+  changed number replaces the old one and the proposal names the change. A
+  recorded unknown (no appraiser can name its maker) is a fact about what
+  people in the world know: keep it true for them, and write the DM answer
+  behind it.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
 - **One callout.** `[!narration]` is the only callout. The item text is plain
   paragraphs with bold labels; curses and truths are plain sentences under
   Hidden Properties.
@@ -193,10 +205,13 @@ How the item shows up in the world, for place pages, beats, and the DM:
   drifts); name "none" when it gives none.
 - **Concealment:** how it can be hidden, and what finds it (a check with its
   DC, a spell, a person who knows).
-- **Wanted by:** who looks for it, and the sign they are looking.
+- **Wanted by:** who looks for it, by owner link (cast from the vault first),
+  why, the sign they are looking, and what they do when they learn the party
+  carries it. A magic, plot, or artifact item has at least one seeker.
 
-Done when every field is filled or marked none, and a place or beat could
-place the item from these fields alone.
+Done when every field is filled or marked none, Wanted by names a seeker for
+any magic, plot, or artifact item, and a place or beat could place the item
+from these fields alone.
 
 ### 7. Hand the look to theatre-of-the-mind
 
@@ -230,6 +245,12 @@ empty sections, write complete sentences, and wikilink every owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
+
 ## Done
 
 - The canon inventory and bearer line are complete.
@@ -242,9 +263,17 @@ Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
   passed `dnd5e-mechanics`.
 - Curse, sentience, evolution, and artifact branches have tells, truths, and
   exits; a sentient item's personality came from `npc-design`.
-- Presence is filled, so a place or beat can place it seen or hidden.
+- Presence is filled, so a place or beat can place it seen or hidden; a
+  magic, plot, or artifact item has a named seeker who acts when it surfaces.
+- Every recorded unknown and every tell has its DM answer under Hidden
+  Properties.
 - The portrait came from theatre-of-the-mind and carries every tell.
 - `[!narration]` is the only callout; each fact appears once.
-- Invention was proposed and accepted before filing; user-said canon is filed.
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Each new mint names, in the response, the candidates considered and why none
+  fit (`docs/agents/table-ready.md` § Cast before minting).
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
+  Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

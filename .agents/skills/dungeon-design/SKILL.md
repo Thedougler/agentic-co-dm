@@ -10,37 +10,68 @@ description: >-
 ---
 
 # Dungeon design
-## Boundary contract
 
-### Input
-
-Take a named dungeon/site or expedition owner, the caller's objective, the
-relevant brief, applicable place template/skeleton, and canon/evidence for its
-scale, topology, factions, pressure, and prior state. The owner is a playable
-site or expedition loop, not room prose or an encounter list.
-
-### Owner-specific Work
-
-Work only the dungeon: run the seven-part test, choose scale, build the
-decision graph before keys, then stock factions, information, obstacles,
-encounters, pressure, rest, and persistence. Preserve agency, honest
-capabilities, and the keying order; keep player-facing prose and owner
-mechanics on their proper surfaces.
-
-### Capability Handoff
-
-Encounter → `encounter-prep`. Hazard → `traps-trials`. Checks →
-`dnd5e-mechanics`. Creature math → `monster-design`. Spoken room text →
-`theatre-of-the-mind`.
-
-### Done
-
-Use the existing seven-part test, skeletons, procedures, and review gates below.
-Completion is observable when the named site/expedition path, scale/graph/
-template checks, runnable pressure and rest procedure, modular keys, and any
-child return evidence are reported.
+A dungeon is a **site the party explores by choosing routes under
+pressure**: something is happening inside, someone wants something there, the
+ways through branch and reconnect, and every room gives the players something
+to learn, use, alter, or decide. The DM needs a decision graph, keyed areas
+findable in seconds, a pressure procedure that moves when the party dawdles,
+and the numbers for everything they could fight.
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
+
+## Boundary contract
+
+- **Input:** A named dungeon, site, or expedition (existing page or one to
+  mint), the caller's objective and brief, `wiki/templates/place.md`, the
+  skeletons in `references/`, and the vault canon the site touches: builders,
+  occupants, factions, creatures, items, the party's level and goals.
+- **Work:** The seven-part test, the construction pipeline, and the filing step
+  below, for this one site. Keep the caller's objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** A named occupant, faction, creature, item, or
+  neighbouring place the dungeon needs is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits comes first, and its owner skill (`npc-design`,
+  `faction-design`, `monster-design`, `item-design`, `place-design`) mints one
+  only when none fits, before any key depends on it (AGENTS.md **HARD:
+  entity-before-spoken**, **Focused minting**). Encounter difficulty →
+  `encounter-prep`; hazards → `traps-trials`; checks → `dnd5e-mechanics`. The
+  site's spoken look and room first impressions → `theatre-of-the-mind`. Each
+  child returns its page path or prose and its completion result; resume at the
+  step that waited on it.
+
+## Page rules
+
+These hold in every step.
+
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  dungeon needs that canon leaves silent, records as unknown, or contradicts
+  (rooms, defenders, entrances, contents), decide now as a **canon proposal**
+  (`docs/agents/table-ready.md` § Fill the silence): one concrete answer,
+  stated on the page as world fact where the DM uses it, with the page marked
+  `invention: true`. The response lists each proposal with the `[[pages]]` it
+  grows from; a proposal that settles a contradiction names the sources and the
+  reading it chose, so the DM picks the winner.
+- **Preserve.** Improving an existing page keeps every established detail;
+  fold each one into the key or section that now owns it.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the seven-part test, the pipeline, and
+  `## Done` below.
+- **Honest capabilities.** Flight, teleportation, and divination work here;
+  the site answers them with costs, exposure, or limits that have a reason in
+  the fiction.
+- **The owner's power shows.** A site made or held by a powerful creature
+  carries that power: wards, guardians, and lair features in its style, and the
+  owner's awareness or return on the pressure clock. Danger beyond the party's
+  level is telegraphed and avoidable; the way to the objective runs through
+  danger the party can beat.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell,
+  secret, and hidden route has its truth on the page by name. Truths, clocks,
+  and DCs stay out of `[!narration]`.
+- **Process stays off the page.** The seven-part test, truth sentences, graph
+  notes, and stocking ledger are working notes; the page carries the facts,
+  the graph, the keys, and the procedures.
 
 ## Run the seven-part test
 
@@ -73,6 +104,14 @@ matter. If the intended use is one session, do not build campaign machinery.
 If the intended use is a campaign, do not make one linear clear-the-site quest.
 
 ## Ordinary construction pipeline
+
+Start with the **canon inventory**: read the site page if it exists and every
+page that links to it (`grep -rliF "[[<name>" wiki/entities` for the slug,
+title, and each alias), search QMD per AGENTS.md § Vault retrieval for its
+builders, occupants, factions, creatures, items, and sessions, and `qmd get`
+every hit you use. Write one working-note line per owner page: `[[slug]]` ·
+kind · the fact that puts it in this site. Each history layer, faction, and
+payoff below comes from the inventory before it is invented.
 
 1. **Write dungeon truth in five sentences:** Original purpose; Rupture;
    Current conflict; Immediate promise; Deep truth. Keep these as GM truth, not
@@ -163,28 +202,83 @@ incomplete rather than silently cancelling it. An inhabited outdoor dungeon is
 not a monster room to empty; progress means changing a political landscape,
 relationships, access, or obligations without turning a society into loot.
 
-## Handoff and review
+## File the dungeon
 
-Use the copyable forms in [references/ordinary-skeleton.md](references/ordinary-skeleton.md)
-and [references/megadungeon-skeleton.md](references/megadungeon-skeleton.md).
-Run [references/procedures.md](references/procedures.md) for pressure, rest,
-stocking, encounters, obstacles, table procedure, and QC. Use only the public
+Use the forms in [references/ordinary-skeleton.md](references/ordinary-skeleton.md)
+or [references/megadungeon-skeleton.md](references/megadungeon-skeleton.md) as
+working notes, and run [references/procedures.md](references/procedures.md) for
+pressure, rest, stocking, encounters, obstacles, and QC. Cite only the public
 links in [references/sources.md](references/sources.md).
 
-Hand player-facing room, landmark, NPC, and encounter prose to
-theatre-of-the-mind. Retrieve vault facts through qmd-retrieval; when the vault is
-silent, fill the gap with canon under the rule in `llm-wiki` (`invention: true`,
-listed for the DM). Keep design truth, clocks, DCs, and hidden information out
-of player-facing prose. Write keyed checks and saves with the at-table grammar
-in `obsidian-markdown`. File location keys as **facts** on `wiki/templates/place.md`
-(plus keyed subsections when the site is a dungeon). Seven-part tests and
-skeletons stay in this skill.
+Copy `wiki/templates/place.md` to `wiki/entities/place/<kebab-name>.md` (or
+improve the existing page) with `type: place` and `kind: dungeon`. Fill:
 
-## GM-prep and world-bible gates
+| Section | Carries |
+|---|---|
+| Overview | The approach, from `theatre-of-the-mind`: what the party perceives where they first reach the site, with a tell for each entrance and for the pressure; room contents stay in their keys |
+| At a Glance | The promise, the present conflict by name, the pressure and what happens if nobody intervenes (with a time), and the site's scale and session count |
+| If the party | The approaches and big choices: each entrance, the bargain, the bypass, the retreat |
+| Who | Each occupant or faction by page, with want, fear, offer, response, and what they do between visits; fighters with compact numbers or statblock links |
+| What | Treasure, items, hazards, and clues, each by owner link or with its numbers. Treasure fits the party's level and the danger: coin by amount and at least one magic item, cast from existing item pages first (`item-design` mints one when none fits) |
+| Where | The neighbours and what lies outside each exit |
+| Why | Why a party comes, and what they leave with |
+| Map and keys | The decision graph as a node list with edges (route, cost, what it reveals), then one keyed subsection per area in the keying order: first impression, current activity, interactives, hidden information, mechanics |
+| Running the dungeon | The pressure procedure (site turn, alert states, advance triggers, the clock with its ticks), rest safety, and restocking after a visit |
 
-Prepare only the dungeon machinery the DM will not improvise, then render it as
-modular keys findable in under 30 seconds. File those keys as facts on the
-location note. Keep secrets, clocks, and DCs out of `[!narration]`. Maintain a
-lean site ledger and nearest MOC link rather than a lore dump. Depth comes from
-routes, factions, relationships, restocking, and responsive clocks. Keep an
-off-map parachute situation available when a party leaves the prepared dungeon.
+Each keyed area names its size in feet where position matters, carries every
+check as Ability (Skill) and DC, and every creature by count, page link, and
+compact numbers. Encounters carry their job, 2024 difficulty for the party's
+level, and an off-ramp.
+
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
+
+Then run the **cross-reference pass**: for every key, list each other area,
+creature, item, or count it names, open that area's key, and make both say
+the same thing (where a route leads, how many guards, where the key or item
+lies); then check each graph edge against both areas' keys. Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
+
+## Done
+
+- All seven parts of the test are answered on the page: promise, purpose,
+  pressure, paths, powers, payoffs, persistence.
+- The decision graph has two entrances where the fiction allows, a loop, a
+  bypass, an unusual connection, a retreat, and two approaches to each major
+  objective; no hidden answer is the only way forward.
+- Every keyed area gives something to learn, use, alter, or decide, in the
+  keying order, with checks as Ability (Skill) and DC.
+- Every occupant and faction links a page and states want, offer, and response;
+  every fighter has compact numbers; every encounter has a job, a 2024
+  difficulty for the party, and an off-ramp. Ordinary fights sit at Moderate,
+  at least one fight reaches High by the 2024 XP budget, and anything deadlier
+  is telegraphed with a way around it.
+- The owner's power shows in wards, guardians, or lair features, and its
+  awareness or return sits on the pressure clock.
+- One signature area, built from the owner's canon, changes during play (it
+  floods, wakes, collapses, turns, or burns).
+- Each essential revelation has three vectors; each obstacle has sign,
+  trigger, effect, counterplay, bypass, and leverage.
+- The pressure procedure has a visible clock with ticks and triggers; rest
+  safety and what occupants do while the party rests are stated.
+- Payoffs name the treasure (coin by amount, and at least one magic item by
+  owner link), information, and leverage, sized for the party's level and the
+  danger faced.
+- Every keyed area appears in the decision graph, and every edge in the graph
+  appears in the keys of both areas it joins.
+- Every mechanic that more than one key mentions (a trigger, a clock tick, a
+  door, a timing) reads the same in each.
+- The Overview came from theatre-of-the-mind, shows the approach rather than a
+  list of rooms, and holds no truth, DC, or unearned name.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit (`docs/agents/table-ready.md` §
+  Cast before minting).
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

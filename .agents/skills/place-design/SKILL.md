@@ -30,23 +30,31 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 - **Done:** Every item in `## Done` holds for the reported page path.
 - **Capability Handoff:** `kind: city` → `city-design`; region → `region-design`;
   a deep dungeon graph → `dungeon-design`. A named person, creature, item,
-  faction, lore, or quest the place needs and the vault lacks → its owner skill
-  mints it first (AGENTS.md **HARD: entity-before-spoken**, **Focused
-  minting**). The spoken look → `theatre-of-the-mind` with the packet from
-  step 6. Each child returns its page path or prose and its completion result;
-  resume at the step that waited on it. A child that cannot finish returns a
-  named gap; leave the dependent work open and report the gap.
+  faction, lore, or quest the place needs is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits comes first, and its owner skill mints one only
+  when none fits, before any text depends on it (AGENTS.md **HARD:
+  entity-before-spoken**, **Focused minting**). The spoken look →
+  `theatre-of-the-mind` with the packet from step 6. Each child returns its
+  page path or prose and its completion result; resume at the step that waited
+  on it.
 
 ## Page rules
 
 These hold in every step.
 
-- **Canon.** User-said place facts file immediately on the live path. Invented
-  additions are shown to the DM as a proposal, marked as invention and citing
-  the `[[pages]]` they grow from, and are filed after the DM accepts. A
-  contradiction between sources is shown, never settled by you.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  place needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
 - **Preserve.** Improving an existing page keeps every established detail;
   fold each one into the section that now owns it.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
 - **One callout.** `[!narration]` in Overview is the only callout on the page.
   Truths, DCs, mechanics, and GM notes are plain complete sentences in the
   section that owns the feature.
@@ -55,8 +63,6 @@ These hold in every step.
   canon is silent, the truth is decided and becomes canon under the rule in `llm-wiki`
   (`docs/agents/table-ready.md` § Fill the silence); a gap is never written as
   mystery ("something waits below").
-- **Canon gaps stay gaps.** A cardinal direction with no established neighbour
-  is written as a gap, never filled with an invented site stated as fact.
 - **Honest capabilities.** Flight, teleportation, burrowing, darkvision, and
   social authority work here; give them costs, exposure, or limits with a
   reason in the fiction.
@@ -93,7 +99,16 @@ Five sentences, in working notes: **Function** (what the place is for),
 **Fantastic element**, **Present conflict**, **Player promise** (one or two of
 discovery, danger, intrigue, exploitation, wonder, refuge, transformation,
 mastery), and **Trajectory** (what happens if nobody intervenes). Take the
-fantastic element and the conflict from the inventory whenever it offers them.
+fantastic element and the conflict from the inventory whenever it offers them:
+a hunt, a debt, a rival, or a threat already on a canon page. A **conflict**
+is opposed wants: someone named wants something here that someone else named
+will act to stop, take, or expose. A refuge has a conflict too: what threatens
+it. A routine (opening hours, a daily delivery) is life, not conflict.
+
+Done when the conflict names who presses on whom, by name, and the trajectory
+names what the other side does here, and when, if nobody intervenes (the
+place is taken, closed, exposed, destroyed, or claimed), soon enough that the
+party's visit can change it.
 
 ### 3. Make it this place and no other
 
@@ -146,18 +161,28 @@ the node card, faction sheet, location moves, and pressure; read
 - **Topology.** Nodes and edges before prose. Aim for two or more approaches, a
   loop, a bypass, a retreat, and a route tradeoff. Every edge changes a choice.
 - **Neighbours.** North, East, South, and West, each a wikilink with
-  `~n days of travel` (or hours, for a site inside a settlement), or a named
-  canon gap.
+  `~n days of travel` (or hours, for a site inside a settlement). Where canon
+  names no neighbour, say what lies that way at the scale play needs (open
+  water, unbroken jungle); when play will travel there, cast a neighbour from
+  existing places or propose one.
 - **Verb test.** Every significant node invites a verb that changes a route,
   clue, resource, relationship, or pressure.
 - **Life.** Who is here now, doing what, wanting what; or the sign of who is
-  gone. Two to four location moves with actor, trigger, visible result, new
-  opportunity, and lasting consequence.
+  gone. A working place (a shop, stall, inn, or post) has its keeper on duty.
+  Anyone the party will talk to, bargain with, or be stopped by is a named
+  person with an NPC page, cast before minting; a person no page covers is
+  minted through `npc-design` at Incidental or Scene scale before the page
+  names them. Only rank-and-file the party will not single out share one
+  faction or creature page. Two to four location
+  moves with a named actor, trigger, visible result, new opportunity, and lasting
+  consequence; at least one runs on its actor's own clock (the conflict's next
+  step), whatever the party does.
 - **Enemies vanished.** With every hostile removed, players still have things
   to learn, use, alter, bargain over, navigate, or choose.
 
-Done when every significant node passes the verb test and every row of the
-weave map sits on a node.
+Done when every significant node passes the verb test, every row of the
+weave map sits on a node, and every person the party will deal with is named
+and links an NPC page.
 
 ### 6. Hand the look to theatre-of-the-mind
 
@@ -193,11 +218,11 @@ page; numbers and stat blocks stay on their owner page ("resolve on
 | Section | Carries |
 |---|---|
 | Overview | The narration from step 6, nothing else |
-| At a Glance | What the place is now, what it sits between, the relative-identity sentence, the rule of the place, the current pressure and trajectory, and what skipping it costs |
+| At a Glance | What the place is now, what it sits between, the relative-identity sentence, the rule of the place, the present conflict by name and its trajectory with a time, and what skipping it costs |
 | If the party | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs |
 | Who | Who is here, how many, doing what, wanting what; location moves with trigger and visible result; or the sign of absence and who is not here |
 | What | Features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find |
-| Where | **North:** / **East:** / **South:** / **West:** lines with wikilinks and travel time, or the named canon gap |
+| Where | **North:** / **East:** / **South:** / **West:** lines with wikilinks and travel time, or what lies that way |
 | Why | Why a party comes, stays, returns, or cares |
 
 The quoted phrase in What is the **narration key**: when a player pulls on a
@@ -205,6 +230,12 @@ detail from the spoken look, the DM finds its truth in one glance.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
+
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
@@ -217,10 +248,18 @@ and rerun until green.
 - The narration came from theatre-of-the-mind, passes its final check, and
   holds no truth, DC, or unearned name; its tells read as ordinary description.
 - Topology offers real choices; every significant node passes the verb test;
-  Where has four cardinal lines with travel time or named gaps.
+  Where has four cardinal lines, each a neighbour with travel time or what
+  lies that way.
+- The conflict has named sides and a trajectory with a time; at least one
+  location move runs on its actor's own clock; everyone the party will deal
+  with is named and links an NPC page.
+- Each new mint names, in the response, the candidates considered and why none
+  fit (`docs/agents/table-ready.md` § Cast before minting).
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
+  Fill the silence).
 - The enemies-vanished test passes; a revisited place keeps its history.
 - `[!narration]` is the only callout; the DM layer names who, what, and why.
-- Missing owners were minted first; invention was proposed and accepted before
-  filing; user-said canon is filed.
+- Every owner was cast or minted first. User-said canon is filed; every
+  invention is a canon proposal, marked on the page and listed in the response.
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.
