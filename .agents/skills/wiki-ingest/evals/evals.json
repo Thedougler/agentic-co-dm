@@ -1,4 +1,5 @@
 {
+  "skill_name": "wiki-ingest",
   "trajectory_records": [
     {
       "case_id": "C07",
@@ -17,7 +18,10 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Cold executor unavailable in this session",
-      "hard_gates": {"captured": false, "exactly_once_finalization": null},
+      "hard_gates": {
+        "captured": false,
+        "exactly_once_finalization": null
+      },
       "semantic_review": null
     }
   ],
@@ -196,10 +200,22 @@
       "prompt": "Ingest a named source that produces two destination owners. Re-observe each destination after its child return; do not finalize source tracking until both are complete. If one child is incomplete, block and do not retry an unchanged path.",
       "expected_output": "Both bounded destinations close with evidence before exactly one manifest/index/log/hot/QMD finalization, or an incomplete-child blocker with no finalization.",
       "assertions": [
-        {"text": "Keeps source-level objective and destination dependencies explicit.", "type": "scope"},
-        {"text": "Requires changed destination state or completion evidence from every child before dependent work resumes.", "type": "process"},
-        {"text": "Performs manifest/index/log/hot tracking and QMD refresh exactly once after all children close.", "type": "guardrail"},
-        {"text": "Reports owner, boundary, observation, attempted paths, reason, and parent effect for an incomplete child.", "type": "quality"}
+        {
+          "text": "Keeps source-level objective and destination dependencies explicit.",
+          "type": "scope"
+        },
+        {
+          "text": "Requires changed destination state or completion evidence from every child before dependent work resumes.",
+          "type": "process"
+        },
+        {
+          "text": "Performs manifest/index/log/hot tracking and QMD refresh exactly once after all children close.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Reports owner, boundary, observation, attempted paths, reason, and parent effect for an incomplete child.",
+          "type": "quality"
+        }
       ]
     }
   ]

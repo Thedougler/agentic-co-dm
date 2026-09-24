@@ -1,4 +1,5 @@
 {
+  "skill_name": "wiki-capture",
   "trajectory_records": [
     {
       "case_id": "C08",
@@ -17,7 +18,11 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Cold executor unavailable in this session",
-      "hard_gates": {"captured": false, "mode_contract": null, "exactly_once_finalization": null},
+      "hard_gates": {
+        "captured": false,
+        "mode_contract": null,
+        "exactly_once_finalization": null
+      },
       "semantic_review": null
     }
   ],
@@ -180,10 +185,22 @@
       "prompt": "A full capture has written its page but one child validation return is unchanged and incomplete. Re-observe the same page boundary, take a different sanctioned action or block, and finalize tracking exactly once only after the owner and validation guards pass.",
       "expected_output": "A complete full capture with one tracking/finalization pass, or a specific blocker; quick mode remains _raw-only.",
       "assertions": [
-        {"text": "Re-observes the same mode and page boundary after child validation.", "type": "process"},
-        {"text": "Does not repeat an equivalent unchanged validation action.", "type": "guardrail"},
-        {"text": "Finalizes full mode exactly once only after page and scoped validation evidence close.", "type": "quality"},
-        {"text": "Preserves quick mode's no-manifest/no-index/no-log/no-hot/no-QMD contract.", "type": "guardrail"}
+        {
+          "text": "Re-observes the same mode and page boundary after child validation.",
+          "type": "process"
+        },
+        {
+          "text": "Does not repeat an equivalent unchanged validation action.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Finalizes full mode exactly once only after page and scoped validation evidence close.",
+          "type": "quality"
+        },
+        {
+          "text": "Preserves quick mode's no-manifest/no-index/no-log/no-hot/no-QMD contract.",
+          "type": "guardrail"
+        }
       ]
     }
   ]

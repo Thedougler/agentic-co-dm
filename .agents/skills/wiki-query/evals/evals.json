@@ -1,4 +1,5 @@
 {
+  "skill_name": "wiki-query",
   "trajectory_records": [
     {
       "case_id": "C01",
@@ -17,7 +18,10 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Cold executor unavailable in this session",
-      "hard_gates": {"captured": false, "read_isolation": null},
+      "hard_gates": {
+        "captured": false,
+        "read_isolation": null
+      },
       "semantic_review": null
     },
     {
@@ -37,7 +41,10 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Cold executor unavailable in this session",
-      "hard_gates": {"captured": false, "specific_blocker": null},
+      "hard_gates": {
+        "captured": false,
+        "specific_blocker": null
+      },
       "semantic_review": null
     }
   ],
@@ -235,10 +242,22 @@
       "prompt": "Answer what current pressure is established for wiki/entities/place/mercatura.md. Start with that owner, deepen only through an unexplored supporting, conflicting, or gap path, and stop when sufficient. If the candidate set remains unchanged, report a specific retrieval blocker rather than repeating the same read.",
       "expected_output": "A cited answer with retrieval counts, sufficient-evidence stop or a blocker naming the owner, boundary, surviving evidence, attempted paths, and reason; no canonical mutation.",
       "assertions": [
-        {"text": "Begins from a fresh owner-relative Mercatura observation and re-observes the same boundary after focused retrieval.", "type": "process"},
-        {"text": "Continues only when supporting, conflicting, or gap evidence changes.", "type": "quality"},
-        {"text": "Does not repeat equivalent retrieval against an unchanged candidate set and reports the blocker fields when blocked.", "type": "guardrail"},
-        {"text": "Leaves pages, index, hot cache, manifest, and log unchanged.", "type": "guardrail"}
+        {
+          "text": "Begins from a fresh owner-relative Mercatura observation and re-observes the same boundary after focused retrieval.",
+          "type": "process"
+        },
+        {
+          "text": "Continues only when supporting, conflicting, or gap evidence changes.",
+          "type": "quality"
+        },
+        {
+          "text": "Does not repeat equivalent retrieval against an unchanged candidate set and reports the blocker fields when blocked.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Leaves pages, index, hot cache, manifest, and log unchanged.",
+          "type": "guardrail"
+        }
       ]
     }
   ]
