@@ -70,6 +70,8 @@ class Transaction:
         deleted: list[Path] = []
         try:
             for path, text in self._resolved.items():
+                if self._originals.get(path) == text:  # a no-op mutation writes nothing (FR-036)
+                    continue
                 atomic_write(path, text)
                 written.append(path)
             for path in self._deleted:
@@ -86,7 +88,7 @@ class Transaction:
             changed = written + deleted
             return {"status": "failed", "error": str(exc), "files_changed": [str(p.relative_to(self.vault)) for p in changed]}
         self.status = "committed"
-        changed = set(self._resolved) | self._deleted
+        changed = sorted(set(written) | set(deleted))
         return {"status": "committed", "mutations_applied": len(self.operations), "files_changed": [str(p.relative_to(self.vault)) for p in changed]}
 
     def finalize(self) -> dict[str, Any]:

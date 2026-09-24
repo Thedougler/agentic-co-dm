@@ -536,7 +536,7 @@ def _bulk_result(command: str, backend: Any, dry_run: bool) -> tuple[dict[str, A
     """Normalize a wiki-bulk-ops mutate/transact result to the FR-038 shape."""
     raw = backend if isinstance(backend, dict) else {"status": "error", "error": "backend returned no JSON"}
     status = str(raw.get("status", ""))
-    changed = sorted({str(path) for path in raw.get("changed_files") or []})
+    changed = sorted({str(path) for path in raw.get("changed_files") or raw.get("files_changed") or []})
     if not changed and raw.get("changed") is True and raw.get("target"):
         changed = [str(raw["target"])]
     if status in {"rejected", "error", "failed"} or raw.get("accepted") is False:

@@ -781,6 +781,14 @@ def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
     assert first["changed"] == ["entities/npc/current.md"], first
     second = payload(run_cli_stdin(tmp_path, op, "mutate", "--stdin"))
     assert second["status"] == "already_done" and second["changed"] == []
+    plan = json.dumps({"actions": [{"target": "entities/npc/current.md", "mutation": {
+        "kind": "add_tag", "target": "entities/npc/current.md", "selector": {}, "payload": {"tag": "y"}}}]})
+    preview = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin", "--dry-run"))
+    assert preview["status"] == "planned" and preview["changed"] == []
+    repaired = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin"))
+    assert repaired["changed"] == ["entities/npc/current.md"], repaired
+    again = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin"))
+    assert again["status"] == "already_done" and again["changed"] == [], again
 
 
 def test_success_keys_and_health_next(tmp_path: Path):
