@@ -4,6 +4,7 @@ updated: 2026-09-24T06:35:21Z
 ## Recent Activity
 - Rebuilt [[bisou]], [[ket]], [[thunk]], and [[zort]] to the current npc page shape and kebab basenames, with ports, posture changes, voice lines, and connection tables; fight content sits in `[!mechanic]` callouts.
 - Rewrote [[story-so-far]] as one narrated telling of Sessions 01–11, from the boarding in the Saltwright's hold to the Aruhe river camp, ending inside the live fight. Open threads now sit under Wiki facts.
+- Session 00 prologue minted as a player-facing world primer, and the Session 01 and 02 spoken blocks rewritten to the theatre-of-the-mind recap standard.
 - Filed the Talon Vantyrus update: [[talon-vantyrus]] is now a CR 17 sheet with the Fatespinner, doctrine, voice, running-the-fight, visual language, and secrets sections; [[talon-vantyrus-banner.png|banner]] and [[talon-vantyrus-reference.png|reference sheet]] attached, raw source archived.
 - Corrected the identity spine across [[Osset]] and [[master-kyzil]]: Osset was Kyzil's teacher and a senior High Eyrie master, an aged snowy-owl aarakocra, and Kyzil believes him decades dead.
 - Added the [[long-sight]] blind spot: probable futures only, so irrational and self-sacrificing action weakens Vantyrus's read.
