@@ -34,14 +34,18 @@ action, and every player character has a moment.
 
 Build the recap around the moment list. The moments get the words; everything
 between them is connective tissue that passes in a clause (you camped by the
-river, the walk took two days) or drops out. A recap that gives every event
-the same weight is a **chronicle**: accurate, and nobody wants to read it.
+river, the walk took two days) or drops out. An event earns a sentence of its
+own only when it is a moment or the next session needs it (what the party now
+carries, who is still with them). A recap that gives every event the same
+weight is a **chronicle**: accurate, and nobody wants to read it.
 
 - **Each moment:** the setup, the character's choice made in their own
   style, what it caused, and the one detail that made the table react.
 - **Heroics:** the risk, the choice, the payoff.
-- **Comedy:** the setup, then the turn, told straight. The narration never
-  explains the joke.
+- **Comedy:** the setup, then the turn, told straight. The setup is what
+  made the turn funny (the confident boast before the fall, the solemn
+  speech the goat interrupted), so it gets its own sentence. The narration
+  never explains the joke.
 - **Dice and rules become fiction:** a critical hit is a shot that goes
   exactly where it was aimed, a failed save is a body that stops obeying, a
   spell is what it looked like from where the party stood.

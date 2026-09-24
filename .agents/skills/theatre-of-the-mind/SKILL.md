@@ -187,7 +187,10 @@ Done when a full pass of the final check changes nothing.
   week ("the old man with fishhooks braided into his beard"), and the rest of
   their clothes, gear, and coloring waits for a closer look. A creature is
   its silhouette, how it moves, the one dangerous part about to be used, and
-  its scale, named only when the characters would know it. Companions the
+  its scale, named only when the characters would know it. Someone the
+  table already knows (a returning villain, the enemy from last session's
+  fight) needs no reintroduction: their name, what they are doing now, and
+  the one part about to be used. Companions the
   players already know are already in their picture: one enters the block
   only by doing something that matters now, and a line of known faces is a
   **roll call**. One specific noun beats a stack of
@@ -198,8 +201,11 @@ Done when a full pass of the final check changes nothing.
   on the characters' bodies (spray on their faces, mud sucking at their
   boots, heat off the forge on their skin): that is what turns a scene from
   seen into felt. The world acts; the reaction is the player's.
-- **Show, don't tell.** Give the evidence and let the players reach the
-  conclusion: "small muddy footprints cross the dust toward the stairs", not
+- **Show, don't tell.** The schema says plainly what kind of place or
+  situation this is, as anyone standing there would (a charcoal burners'
+  camp, a toll gate, a shrine). Everything the players should work out for themselves
+  (who, why, how recently, how dangerous) comes as evidence. Give the
+  evidence and let the players reach the conclusion: "small muddy footprints cross the dust toward the stairs", not
   the verdict that someone came through. Every judgment word (abandoned,
   recent, dangerous, strange, unusually, angry, afraid, important) is a
   conclusion you reached from something you saw, so say the thing you saw:
@@ -284,7 +290,10 @@ These hold in every block.
    evidence: leave out what the sources do not say, including claims that
    something is absent.
 5. **No echoes.** Take facts from the parent, the old block, the art, and
-   your own art note; take none of their phrasing. Repeating narration
+   your own art note; take none of their phrasing. The source's nouns said
+   back in the source's order are still an echo; say the fact through a new
+   specific detail instead (a broken cart becomes an axle snapped clean
+   through, one wheel still turning). Repeating narration
    verbatim does nothing for the players: they have heard it or will read it
    on the page, and hearing it again makes it no clearer. Describing the same
    fact fresh does work, because each new description adds a specific detail
@@ -357,7 +366,8 @@ the list again.
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
       knows (no north, south, east, or west), no grid distance, no
-      semicolon or colon, and one paragraph (two when loaded) that moves
+      semicolon, colon, or em dash (search the block for each), and one
+      paragraph (two when loaded) that moves
       the eye?
 - [ ] **Hands off.** Does every "you" place the characters, let the world act
       on them, or give what their senses plainly take in, with nothing
