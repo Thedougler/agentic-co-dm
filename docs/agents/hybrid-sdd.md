@@ -75,6 +75,8 @@ For every incomplete owner boundary, use the existing route and owner guard:
 3. **Re-observe** that boundary.
 4. Continue only when the owner guard passes or the re-observation proves meaningful progress.
 
+**Friction branch:** act → friction → fix the authoritative source → re-observe → continue the original task. The rule is stated once in [`AGENTS.md` Friction rule](../../AGENTS.md#friction-rule).
+
 If the observation is unchanged, do not repeat an equivalent action. Choose a materially different sanctioned path, or stop with a specific blocker naming the owner, boundary, surviving observation, attempted paths, reason no path remains, and parent effect. A child return cannot advance a parent without changed dependency, artifact state, or completion evidence. Outer request and runtime limits remain safety bounds, not completion.
 
 Progress is owner-relative; paraphrased prose, changed tool encoding, and repeated completion claims do not count. This procedure adds no persistent state or second planner.

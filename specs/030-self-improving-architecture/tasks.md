@@ -194,8 +194,8 @@ description: "Task list for feature 030: Self-Improving Architecture"
 
 **Independent Test**: Quickstart V-17 (seeded friction, at least 4/5 cold subjects fix the source, add a regression, and finish)
 
-- [ ] T069 [P] [US5] Add one friction-rule paragraph to `AGENTS.md` next to "Capability loop" (line ~72): act → friction → identify cause → fix the authoritative source (smallest change) → verify → continue the original task. Add no new workflow, command, or skill (FR-001, FR-002, FR-005).
-- [ ] T070 [P] [US5] Add the friction branch (act → friction → fix source → re-observe → continue) to the capability loop in `docs/agents/hybrid-sdd.md`, linking to the `AGENTS.md` paragraph rather than restating it (FR-001, constitution XVI)
+- [X] T069 [P] [US5] Add one friction-rule paragraph to `AGENTS.md` next to "Capability loop" (line ~72): act → friction → identify cause → fix the authoritative source (smallest change) → verify → continue the original task. Add no new workflow, command, or skill (FR-001, FR-002, FR-005).
+- [X] T070 [P] [US5] Add the friction branch (act → friction → fix source → re-observe → continue) to the capability loop in `docs/agents/hybrid-sdd.md`, linking to the `AGENTS.md` paragraph rather than restating it (FR-001, constitution XVI)
 - [ ] T071 [US5] Run V-17. On a scratch branch, make one owner `SKILL.md` name a retired command path, then run 5 cold `scripts/luna-eval` subjects on one of that owner's evals. At least 4/5 must fix the source, add a regression, and finish the owner task with no new `errors.md` entry. Record the result in the `specs/030-self-improving-architecture/quickstart.md` V-17 row. Discard the scratch branch. This runs after T080 so the new ledger format is in place.
 
 **Checkpoint**: Friction handling is documented in one place and behaviorally proven
