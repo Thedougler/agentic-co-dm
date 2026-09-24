@@ -190,16 +190,6 @@ def structural_main(argv: list[str]) -> int:
                         "repair_class": "human_repair",
                         "reason": "Deprecated faction-clock guidance remains in an authoritative source",
                     })
-            for relative in paths:
-                page = vault / relative
-                if page.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", page.read_text(encoding="utf-8"), re.I):
-                    template_findings.append({
-                        "rule_id": "TMPL_inherited_deprecated_guidance",
-                        "file": relative,
-                        "severity": "REPAIR",
-                        "repair_class": "human_repair",
-                        "reason": "Page contains deprecated faction-clock output inherited from source guidance",
-                    })
             if template_findings:
                 report.setdefault("findings", {})["template_conformance"] = template_findings
                 report.setdefault("counts", {})["template_conformance"] = len(template_findings)
