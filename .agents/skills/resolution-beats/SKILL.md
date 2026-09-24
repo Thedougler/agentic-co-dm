@@ -100,7 +100,7 @@ page:
 
 - each outcome's rewards are named with values: the loot the defeated side
   carried (owner links), coin amounts, favors and access with who grants
-  them, and a milestone or XP proposal. These are canon proposals where canon
+  them, and a milestone or XP proposal. These are canon under the rule in `llm-wiki` where canon
   is silent; "none" stands only when the fiction offers nothing;
 - each actor's closing response is written, with what it changes;
 - What Is True Now states values, not instructions to record them later.

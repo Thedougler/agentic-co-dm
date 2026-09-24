@@ -2,7 +2,7 @@
 
 **Decide the world; leave the party's choices open.** Every fact about the
 world is decided on the page: who wants what and why, what the opposition does
-next and when, where each clue sits (a canon proposal where canon is silent).
+next and when, where each clue sits (canon under the rule in `llm-wiki` where canon is silent).
 Only the party's choices and the dice stay open. A Beat Chart is a palette of
 pressures, not a sequence of required scenes. Chart rules live in `SKILL.md` § The three chart rules.
 

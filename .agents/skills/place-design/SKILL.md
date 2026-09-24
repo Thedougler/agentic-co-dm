@@ -52,7 +52,7 @@ These hold in every step.
   section that owns the feature.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell has
   its truth on the page: who, what, why, and what is at stake, by name. When
-  canon is silent, the truth is a marked canon proposal
+  canon is silent, the truth is decided and becomes canon under the rule in `llm-wiki`
   (`docs/agents/table-ready.md` § Fill the silence); a gap is never written as
   mystery ("something waits below").
 - **Canon gaps stay gaps.** A cardinal direction with no established neighbour

@@ -142,7 +142,7 @@ callouts). Report what changed and where, plus any gaps.
 | Design diary, balance commentary, rules comparisons, agent-process notes | Not playable. Keep it off the page. |
 | The same fact in Glance, Situation, and narration | Keep it in the one place the DM uses it. |
 | AI tells ("tapestry of", "nestled", "it's worth noting", "delve", "the air is thick with") | Say the thing plainly. |
-| Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources, or with a marked canon proposal (`docs/agents/table-ready.md` § Fill the silence). |
+| Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources, or decide it as canon under the rule in `llm-wiki` (`docs/agents/table-ready.md` § Fill the silence). |
 
 ## Hard lines
 
