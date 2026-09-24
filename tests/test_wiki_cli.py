@@ -580,3 +580,53 @@ def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path
     reasons = {item["reason"] for item in result["skipped"]}
 
     assert reasons <= {"unsupported", "unsafe", "conflict", "precondition"}
+
+
+
+
+def _vale_scratch(tmp_path: Path, config_root: Path = ROOT) -> str:
+    import shutil
+
+    import pytest
+
+    vale = shutil.which("vale") or str(ROOT / ".venv/bin/vale")
+    if not Path(vale).is_file():
+        pytest.skip("vale binary is absent")
+    scratch = tmp_path / "scratch.md"
+    scratch.write_text("# Scratch\n\nThe DM Thesis section names the villain.\n", encoding="utf-8")
+    proc = subprocess.run(
+        [vale, "--output=line", f"--config={config_root / '.vale.ini'}", str(scratch)],
+        cwd=config_root,
+        capture_output=True,
+        text=True,
+    )
+    return proc.stdout + proc.stderr
+
+
+def test_vale_config_loads_without_e100(tmp_path: Path):
+    output = _vale_scratch(tmp_path)
+    assert "E100" not in output, output
+
+
+import pytest as _pytest
+
+
+@_pytest.mark.xfail(
+    strict=True,
+    reason=(
+        "spec gap (030 T007/T013): the CoDM vocabulary generated from the live vault accepts 'DM', "
+        "and Vale adds accepted terms to every rule's exception list, so 'DM Thesis' never matches"
+    ),
+)
+def test_vale_deprecated_dmthesis_fires_with_live_vocabulary(tmp_path: Path):
+    import shutil
+
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE, render_vocab
+
+    config_root = tmp_path / "config"
+    shutil.copytree(ROOT / "styles", config_root / "styles")
+    shutil.copy(ROOT / ".vale.ini", config_root / ".vale.ini")
+    (config_root / VOCAB_RELATIVE).write_text(render_vocab(ROOT / "wiki"), encoding="utf-8")
+    output = _vale_scratch(tmp_path, config_root)
+    assert "E100" not in output, output
+    assert "Deprecated.DMThesis" in output, output
