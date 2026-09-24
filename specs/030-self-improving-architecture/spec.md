@@ -8,6 +8,8 @@
 
 **Input**: User description: "The architecture should collapse, not expand. One loop, one evaluation path, one error surface, one ownership model, and a small set of reliable commands. Make normal agent work continuously improve the repository: when the system makes a task unnecessarily difficult, fix the source of that difficulty, prove the fix, then continue the task." Full request: `/workspace/specify-inbox/self-improving-architecture.md` (20 sections, three-phase implementation order). Addendum: improve the wiki CLI using the `cli-for-agents` guidance.
 
+**Guiding principle** (Nick, 2026-09-24; binding, see FR-046 and SC-014): the overall goal is simplification, reliability, and ease of future development. The work improves, fixes, simplifies, and consolidates the existing systems rather than extending them. New code is allowed where it is used well, but sprawling extra code is not, and the result must be maintainable. There is no line-count limit.
+
 ## Clarifications
 
 ### Session 2026-09-24
@@ -21,6 +23,7 @@
 - Q: What time bound does `wiki health` meet, and may lint keep rewriting tracked cache files? (SC-007, FR-017, FR-028) → A: Decided by Nick, 2026-09-24: health must finish under 50 s whenever the identity index is current, including after a lint-rules change that empties the lint cache, and under 10 s when only a few pages changed. A from-scratch rebuild is recorded, not bounded. `wiki/_meta/lint-cache.json`, `wiki/_meta/identity-index.json`, and `styles/config/vocabularies/CoDM/accept.txt` stay tracked and count as FR-028 bookkeeping, not read-side mutation. Basis: e-208's harness kill at 52 s; health measured at 82.0 s cold and 2.6 s warm.
 - Q: How are semantic quality, non-inferiority, and measurable reduction measured for promotion? (FR-016, FR-044, SC-012) → A: Decided by Nick, 2026-09-24: semantic quality is the pass rate of the eval's `quality`-type assertions. A candidate is non-inferior when, with one run per configuration on the same evals, no eval's task outcome is worse and no assertion that passed for the incumbent fails. A measurable reduction is a lower median of tool calls, retries, or tokens, with none of the three higher.
 - Q: Which consistency fixes came out of analysis, plan, and checklist review? → A: Applied without a product choice: (1) identity candidates include cached character-profile prefilter passes (> 0.6), so FR-026 holds (FR-024, US4-1, SC-007); (2) FR-007 "same cause" means the same `source` plus the same normalized cause, and a forced attach cannot cross sources; (3) `expected_output` is optional (all 533 records have one; the request's examples omit it); (4) the assertion type list is fixed, with `qualitative`/`structural` folded into `quality`/`structure`; (5) the SC-009 window stays an assumption; (6) stale text corrected (XIII dependency met, nine ledger entries, SC-007 measurements with Vale); (7) SC-003 counts all records; (8) "cold agent" and "invocation error" defined for SC-010; (9) the FR-019 baseline model and effort are pinned; (10) FR-017's read-side mutation scope is defined.
+- Q: What overriding goal constrains how this feature is built? → A: Decided by Nick, 2026-09-24: simplify, make it reliable, keep it maintainable, and improve and fix existing systems rather than extend them. This is not zero code, but every piece of new code must be used well. No line-count limit. Recorded as FR-046 and SC-014.
 
 ## Classification and Scope
 
@@ -279,6 +282,27 @@ As an agent loading an owner skill, I want it to answer only when I own the task
 - **FR-044**: Promotion comparison MUST rank success and semantic quality first; among non-inferior candidates, fewer tool calls, retries, tokens, less latency, and narrower scope MUST win. A candidate is non-inferior when, with one run per configuration on the same evals, no eval's task outcome is worse and no assertion that passed for the incumbent fails.
 - **FR-045**: New, merged, split, or retired skills MUST require repeated recorded evidence of need; improving an existing owner or tool MUST be attempted first.
 
+**Simplify and consolidate (cross-cutting; Nick, 2026-09-24)**
+
+- **FR-046**: Every requirement in this feature MUST be delivered under these rules. Plan, Tasks, Converge, and Review check them.
+  1. **Modify the owner of the concern.** Each capability is delivered by changing or consolidating the existing module that owns it:
+     - error surface: `scripts/error-ledger.py` and `errors.md`;
+     - skill evaluation: `scripts/luna-eval`, with `skill-creator`'s `agents/grader.md` and `scripts/aggregate-benchmark.py`;
+     - wiki command surface and repo/vault discovery: `scripts/wiki` and `tools/wiki_ops/cli.py`;
+     - lint engine: `scripts/wiki-lint`, `tools/lint_wiki.py`, and `tools/creative_lint/`;
+     - identity: `tools/wiki_ops/identity.py`;
+     - lint caching: `tools/wiki_ops/lint_cache.py`;
+     - manifest reasoning: `scripts/manifest.py`;
+     - OMP baseline: `scripts/check-omp-baseline.sh`;
+     - Vale: `.vale.ini`;
+     - tests: the existing `tests/` files for that module.
+
+     Before adding any new module, file, command, subcommand, config key, or data store (including derived caches and result files), the plan MUST name the existing one it extends or replaces and state why that one cannot be improved instead.
+  2. **One implementation per concern.** No two modules, commands, or data formats may own the same concern. Where this feature touches a duplicate, dead, or superseded path (for example `skill-creator`'s `scripts/run-eval.py`, `run-loop.py`, and `improve-description.py`), the same change removes it and updates its references.
+  3. **Reuse before adding.** New code MUST reuse the existing helpers, CLIs (`wiki`, `wiki-lint`, `luna-eval`, `error-ledger.py`, `manifest.py`), and data formats (`evals.json`, the `luna-eval` run directory, the `errors.md` JSON lines, `lint-cache.json`) rather than add parallel ones.
+  4. **Root cause at the authoritative source.** A fix changes the source of the defect (for example the OMP checker's parsing, not the config value; the missing `CoDM` style reference in `.vale.ini`, not a suppression). It MUST NOT be a wrapper, special case, or workaround layered on top (constitution XXV).
+  5. There is no numeric line-count limit; these rules are judged by module ownership, not size.
+
 ### Key Entities
 
 - **Owner skill**: The direct owner of a task kind; holds its own ownership statement, completion guard, allowed children, and evals.
@@ -306,6 +330,7 @@ As an agent loading an owner skill, I want it to answer only when I own the task
 - **SC-011**: In seeded-friction trials, at least 4 of 5 cold agents fix the source, add a regression, and complete the original task in the same session.
 - **SC-012**: At least one owner skill is promoted through incumbent-vs-candidate comparison with non-inferior success and quality (FR-044) and a lower median of tool calls, retries, or tokens, with none of the three higher, against the incumbent on the same evals.
 - **SC-013**: Owner skills touched by this feature are no longer than before, and each answers the five FR-040 questions.
+- **SC-014**: At Converge and at Review, the feature diff passes three checks. (a) Every new file, module, command, subcommand, config key, or data store maps to a named existing module that it replaces, extends, or consolidates, with the reason recorded in plan.md. (b) No two modules own the same concern. (c) Every duplicate, dead, or superseded path that plan.md identifies is deleted and no longer referenced. No numeric line limit applies.
 
 ## Assumptions
 
