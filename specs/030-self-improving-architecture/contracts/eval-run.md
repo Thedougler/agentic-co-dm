@@ -1,0 +1,7 @@
+# Contract: eval records and the one runner (FR-012–FR-016)
+
+- **Record schema**: data-model.md §2. **Run directory and result files**: data-model.md §3.
+- **Runner**: `scripts/luna-eval --skill <skill-dir> --eval <id> --out <iteration-dir> [--config with_skill|without_skill|old_skill] [--subject-skill <dir>] [--run n]`. The flags stay as they are today. Added: repo-root discovery, `metrics.json`, and the `skill_selected` grade written into `grading.json`.
+- **Exit codes** (unchanged): 0 ok, 3 usage limit before start, 4 no outputs, 5 usage limit mid-run. On 3 or 5, completed runs are kept and a rerun skips a run directory that already has `timing.json` with exit 0 (spec Edge Case).
+- **skill-creator**: `SKILL.md` "Running and evaluating test cases" calls `scripts/luna-eval` once per eval and config. The grader writes `grading.json` for the other assertion types. `aggregate-benchmark.py` and `eval-viewer` read those files unchanged. `run-eval.py`, `run-loop.py`, and `improve-description.py` are removed.
+- **Identical shape (SC-004)**: a record run through skill-creator and the same record run directly through `luna-eval` produce the same set of files and keys, because they are the same process.
