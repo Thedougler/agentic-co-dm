@@ -1,17 +1,42 @@
 <!--
 Sync Impact Report
-- Version change: 4.0.0 -> 5.0.0
-- Modified principles: Product Invariant (names *table quality* once), VII (structure belongs to
-  templates), IX (uses *table quality*), X (canon proposals; the DM picks winners), XI (decide the
-  world, leave the party's choices open), XII (cast before minting; proposals fill silence and
-  contradictions), XVI (templates are a layer), XVII (defers canon filing to X), XXVI (weakest
-  sufficient model and effort; lean evals composed from real Wiki content)
+- Version change: 5.0.0 -> 6.0.0 (MAJOR: XIII redefined; the log-every-friction and
+  different-agent-diagnosis rules are removed)
+- Modified principles:
+  - XIII. Self-Improvement Is Evidence-Driven: the self-reporting SOP is replaced by a friction
+    rule. The agent that meets friction fixes the source, verifies it, and continues; `errors.md`
+    holds only reusable, unresolved defects; a matching source and cause add an occurrence to the
+    open entry; a verified fix drains its entry in the same change. Removed: "MUST record the issue
+    in `errors.md` before continuing" and "MUST be diagnosed by a different agent".
+  - VI. Software and Instructions Are Agent-Shaped: "log it, fix or remove the cause" -> fix or
+    remove the cause under XIII; record it in `errors.md` only when it stays unresolved.
+  - XIX. User Corrections Become Durable Source Fixes: "Every error-identifying correction MUST be
+    recorded in the error ledger and, when recurring, fixed at the producing
+    skill/template/instruction" -> fixed and verified at the producing skill/template/instruction;
+    recorded in `errors.md` only when that fix cannot land in the current task (XIII).
+  - XXIV. Synchronized Content Systems: "validation rules (Vale)" -> "validation rules (`wiki
+    lint` Python checks and Vale prose packages)", since repository-specific checks belong in the
+    Python wiki tooling (specs/030-self-improving-architecture FR-022, FR-023).
 - Added sections: none
-- Removed sections: inline historical Sync Impact Reports (git holds amendment history)
-- Lower layers updated: AGENTS.md "Canon and done-summary"; docs/agents/work.md; CONTEXT.md
-  "Canon proposal"; docs/agents/table-ready.md "Cast before minting" and "Fill the silence"
-- Follow-up TODOs: remove finding tiers from lint tooling, specs, docs, and skills that still grade
-  findings into kinds (carried from 4.0.0; see XXI)
+- Removed sections: none (the 5.0.0 Sync Impact Report is replaced; git holds amendment history)
+- Templates requiring updates:
+  - .specify/templates/constitution-template.md: no change needed (resolved scaffold; structure
+    unchanged)
+  - .specify/templates/plan-template.md: no change needed (Constitution Check reads the
+    constitution at runtime; no XIII-specific text)
+  - .specify/templates/spec-template.md: no change needed (no `errors.md` or XIII text)
+  - .specify/templates/tasks-template.md: no change needed (no `errors.md` or XIII text)
+  - .specify/templates/checklist-template.md: no change needed (no `errors.md` or XIII text)
+- Lower layers pending (not edited by the constitution step):
+  - AGENTS.md "errors.md" procedure ("On runtime failure, append to `errors.md` before the sitting
+    is complete."): pending; must record only unresolved, reusable defects per XIII
+  - .agents/skills/wiki-lint/SKILL.md ("record the mismatch in `errors.md` and reconcile the
+    authoritative sources"): pending; reconcile first, record only if unresolved
+  - scripts/error-ledger.py and errors.md format (`status`, `cause_fixed`; no `source` or
+    `evidence`): pending; implemented by specs/030-self-improving-architecture FR-006-FR-010
+  - .vale.ini and styles/Deprecated/ (XXIV wording): pending; FR-022, FR-023
+- Follow-up TODOs: carried from 4.0.0 (see XXI): remove finding tiers from lint tooling, specs,
+  docs, and skills that still grade findings into kinds
 -->
 
 # Agentic Co-DM Constitution
@@ -68,8 +93,8 @@ Scripts, tools, and software MUST be agent-operable: arguments in, text/JSON out
 stderr, exit status. Agent-facing documents MUST state positive instructions, completion criteria,
 and named failure modes. `writing-for-agents` is the authority on agent-facing prose structure.
 
-Agent-shaped software that inhibits wiki quality or slows operations is a defect — log it, fix or
-remove the cause.
+Agent-shaped software that inhibits wiki quality or slows operations is a defect — fix or remove
+the cause (XIII). Record it in `errors.md` only when it stays unresolved.
 
 ### VII. Creative Judgment Is Protected
 
@@ -129,9 +154,15 @@ defect. Evidence and citations MUST never be fabricated.
 Improvements MUST be demonstrated, not asserted — addressing observed failures or measured waste,
 comparing equivalent work. Uncertain changes remain reversible until evidence supports promotion.
 
-Self-reporting SOP: when an agent experiences friction on any agent-facing surface, it MUST record
-the issue in `errors.md` before continuing. Every recorded error MUST be diagnosed by a different
-agent and remediated at its authoritative source; continued progress is not resolution.
+Friction rule: an agent that meets friction on any agent-facing surface MUST identify the cause,
+fix the authoritative source, verify the fix, and continue the original task. Chat
+acknowledgement or ledger text alone is not resolution.
+
+`errors.md` MUST contain only reusable, unresolved defects. A friction the agent fixes and
+verifies in the same task MUST NOT create an entry. A defect that cannot be fixed in the current
+task, including one whose source is outside the repository, is recorded once; a failure whose
+source and cause match an open entry adds an occurrence to that entry rather than a new one. A
+verified fix MUST drain its entry in the same change that lands the fix.
 
 ### XIV. The Simplest Adequate Tool
 
@@ -178,7 +209,9 @@ immediately. MUST NOT finish while an actionable step remains unchecked.
 
 ### XIX. User Corrections Become Durable Source Fixes
 
-Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki corrections update the page durably under principle X. Every error-identifying correction MUST be recorded in the error ledger and, when recurring, fixed at the producing skill/template/instruction.
+Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki corrections update the page durably under principle X. Every error-identifying correction MUST be fixed and verified at the producing
+skill/template/instruction; it is recorded in `errors.md` only when that fix cannot land in the
+current task (XIII).
 
 `==text==` in production prose is a user-marked quality error. Fix the language; removing only
 the marker is non-compliant. Correct at the applicable skill/instruction level.
@@ -215,7 +248,7 @@ evidence.
 ### XXIV. Synchronized Content Systems
 
 The three systems — compiled Wiki, authoring guidance (templates/skills), and validation rules
-(Vale) — stay synchronized. Changes to one MUST update relevant counterparts in the same change.
+(`wiki lint` Python checks and Vale prose packages) — stay synchronized. Changes to one MUST update relevant counterparts in the same change.
 Agents proactively maintain all three using observed failures, corrections, and evidence.
 
 ### XXV. Carve-Outs Are Retrospective
@@ -265,4 +298,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 5.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-23
+**Version**: 6.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
