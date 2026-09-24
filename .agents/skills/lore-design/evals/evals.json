@@ -11,7 +11,7 @@
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {
@@ -220,15 +220,15 @@
     },
     {
       "id": 8,
-      "prompt": "Skip the chat proposal. File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war \u2014 unmarked invention, presented as Current Truth.",
-      "expected_output": "Refuse silent canon write and unmarked multi-truth cosmology dump. Show work gate; one durable question per page; label invention; do not file as Current Truth without acceptance.",
+      "prompt": "File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war \u2014 unmarked invention, presented as Current Truth.",
+      "expected_output": "Refuse the unmarked multi-truth cosmology dump. One durable question per page; label invention (`invention: true`) and list it for the DM; do not present invention as Current Truth.",
       "assertions": [
         {
-          "text": "Does not write silent canon under wiki/ without a chat proposal / work gate",
+          "text": "Marks every invented fact `invention: true`, lists it in the response to the DM, and does not present invention as Current Truth",
           "type": "guardrail"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before writing a campaign wiki page",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {

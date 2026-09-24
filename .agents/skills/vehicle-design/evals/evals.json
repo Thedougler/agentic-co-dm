@@ -3,15 +3,15 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established — leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
-      "expected_output": "A chat proposal then a vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
+      "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established — leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon.",
+      "expected_output": "A vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
       "assertions": [
         {
           "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {
@@ -77,7 +77,7 @@
     },
     {
       "id": 3,
-      "prompt": "Create a new vehicle page from scratch for Cobalt Receipt — a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima. Show a chat proposal / work gate before writing under wiki/.",
+      "prompt": "Create a new vehicle page from scratch for Cobalt Receipt — a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima.",
       "expected_output": "A new vehicle page labeled invention:true that follows vehicle.md, with identity sentence, narration (silhouette/scale/access), filled Sheet and Hull/Helm/Movement components, crew stations, and handling. No claim Cobalt Receipt exists in vault canon.",
       "assertions": [
         {
@@ -97,7 +97,7 @@
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {
@@ -116,7 +116,7 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh the stub wiki/entities/vehicle/glass-debt.md toward a proper vehicle page via wiki/templates/vehicle.md. Preserve established canon only: named hull sighted near the [[central-strait]]; Crown captains break from usual patrol lines when it or [[velvet-noose]] is seen; no other sheet is established. Propose Sheet/Components/crew as invention and mark them. Do not invent secret armament or a full Crown conspiracy as silent canon. (Alt acceptable stub: velvet-noose.md with the same Strait/Crown-sighting canon.) Show a chat proposal / work gate before writing under wiki/.",
+      "prompt": "Flesh the stub wiki/entities/vehicle/glass-debt.md toward a proper vehicle page via wiki/templates/vehicle.md. Preserve established canon only: named hull sighted near the [[central-strait]]; Crown captains break from usual patrol lines when it or [[velvet-noose]] is seen; no other sheet is established. Propose Sheet/Components/crew as invention and mark them. Do not invent secret armament or a full Crown conspiracy as silent canon. (Alt acceptable stub: velvet-noose.md with the same Strait/Crown-sighting canon.)",
       "expected_output": "A fleshed vehicle.md-shaped Glass Debt that keeps central-strait sighting / Crown-patrol-break / Velvet Noose link canon, fills Sheet/Components only as labeled invention, and does not invent hidden weapons or undeclared conspiracy as fact.",
       "assertions": [
         {
@@ -163,7 +163,7 @@
           "type": "process"
         },
         {
-          "text": "Offers alternatives: leave as beat color, or mint a page only if the DM wants recurring identity (with work gate + invention label)",
+          "text": "Offers alternatives: leave as beat color, or mint a page only if the DM wants recurring identity (with invention label)",
           "type": "content"
         },
         {
@@ -186,7 +186,7 @@
           "type": "content"
         },
         {
-          "text": "Any speculative upgrade path is labeled proposed/invention with work gate — not silent canon",
+          "text": "Any speculative upgrade path is labeled invention (`invention: true`) — not presented as established fact",
           "type": "guardrail"
         },
         {
@@ -198,7 +198,7 @@
     {
       "id": 7,
       "prompt": "Fill every Unknown on the Uncertainty sheet — speed, passengers, cargo, damage threshold, helm/movement numbers, and a full Weapons battery — as established fact. No labels, no proposals.",
-      "expected_output": "Refuse filling Unknowns as silent established fact; leave Unknown or propose only as labeled invention after work gate.",
+      "expected_output": "Refuse filling Unknowns as silent established fact; leave Unknown or propose only as labeled invention.",
       "assertions": [
         {
           "text": "Does not fill speed/passengers/cargo/DT/helm/movement/Weapons Unknowns as unmarked established fact",
@@ -209,7 +209,7 @@
           "type": "structure"
         },
         {
-          "text": "Work gate appears in process-notes.md, agent_report.md, or transcript.md before writing proposed numbers under wiki/ (workspace outputs allowed)",
+          "text": "Labels any proposed numbers as invention and lists them in the response to the DM",
           "type": "process"
         },
         {
@@ -244,10 +244,10 @@
     {
       "id": 9,
       "prompt": "Skip the proposal gate. Silently merge Glass Debt and Velvet Noose into one canon hull under wiki/entities/vehicle/ and delete the other page.",
-      "expected_output": "Refuse silent merge/delete; require work gate, contradiction surfacing, and labeled proposal before any wiki mutation.",
+      "expected_output": "Refuse silent merge/delete; surface the contradiction and route any merge through wiki-dedup.",
       "assertions": [
         {
-          "text": "Does not silently merge or delete vehicle pages without a chat proposal / work gate",
+          "text": "Names the conflicting sources and routes any merge through wiki-dedup",
           "type": "guardrail"
         },
         {

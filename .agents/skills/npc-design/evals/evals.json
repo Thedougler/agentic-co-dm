@@ -4,14 +4,14 @@
     {
       "id": 1,
       "prompt": "Improve wiki/entities/npc/varn.md into a fully runnable NPC page using wiki/templates/npc.md. Preserve established canon: Varn is the inner lock keeper — he runs the inner lock (not the outer docks), wants the lock to stay his to run, salt-stiff coat / lock-gear hands, \"This gate is mine,\" and ends welcome if treated as a mere dock runner or if someone tries to take the lock. Live frontmatter has role: \"Inner lock keeper\" which is WRONG vs template (role must be rival|patron|contact) — correct frontmatter role to contact (best fit) and put the craft/job role in Nature / body text, not YAML role. Do not invent a secret Crown betrayal or rich unused biography.",
-      "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; frontmatter role corrected to contact (or another fitting enum value); craft \"inner lock keeper\" identity preserved in Nature/body. Chat proposal before wiki write.",
+      "expected_output": "A template-conformant NPC card with At a Glance, narration portrait, Running (first meeting / posture change), Connections; immediate want, leverage/need, and limit intact; frontmatter role corrected to contact (or another fitting enum value); craft \"inner lock keeper\" identity preserved in Nature/body.",
       "assertions": [
         {
           "text": "Function and identity role (rival|patron|contact) framing appears in process-notes.md, agent_report.md, or transcript.md before or as part of drafting; craft job is not left as YAML role",
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {

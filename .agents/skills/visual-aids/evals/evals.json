@@ -51,7 +51,7 @@
         },
         {
           "type": "behavior",
-          "text": "Any proposed additions are clearly marked as DM-approval-needed rather than canonical."
+          "text": "Any proposed additions are clearly marked as invention (`invention: true`) rather than canonical."
         }
       ]
     }

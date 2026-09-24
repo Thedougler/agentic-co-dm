@@ -69,7 +69,7 @@
   "evals": [
     {
       "id": "existing-page-reshape",
-      "prompt": "Improve wiki/entities/item/fate-spinner.md into a runnable item page using wiki/templates/item.md. Preserve established canon: also called the dreidel; [[crissdalynn-khinriss]] holds it; [[master-kyzil]] gave it before her pilgrimage; attunement requires knowingly risking one's own life to save another (satisfied when she pulled [[delmar-fisk|Delmar]] through solid water as the [[red-lady]] went down); The Changed Record — once per day, same-plane vision on a personally known creature, donate advantage via parallel rolls, sight only, cannot aid a fight she is already in; Session 11 [[talon-skarn]] theft attempt at [[river-slack-basin]] left it Held on her. Show a chat proposal before writing under wiki/.",
+      "prompt": "Improve wiki/entities/item/fate-spinner.md into a runnable item page using wiki/templates/item.md. Preserve established canon: also called the dreidel; [[crissdalynn-khinriss]] holds it; [[master-kyzil]] gave it before her pilgrimage; attunement requires knowingly risking one's own life to save another (satisfied when she pulled [[delmar-fisk|Delmar]] through solid water as the [[red-lady]] went down); The Changed Record — once per day, same-plane vision on a personally known creature, donate advantage via parallel rolls, sight only, cannot aid a fight she is already in; Session 11 [[talon-skarn]] theft attempt at [[river-slack-basin]] left it Held on her.",
       "expected_output": "A reshaped Fate Spinner page where item text is the centerpiece: classification line → runnable Changed Record mechanics with trigger, frequency, limits, and edge cases → then supporting sections. No At a Glance restating the mechanics.",
       "assertions": [
         {
@@ -101,7 +101,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Chat proposal appears before any live wiki/ write.",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM.",
           "type": "process"
         }
       ]
@@ -131,7 +131,7 @@
     },
     {
       "id": "new-item-from-scratch",
-      "prompt": "Create a new magic item page for Tideglass Compass — an uncommon wondrous item that points toward the nearest safe berth the bearer has previously docked at, but fogs when Crown warships are within a day's sail. Mark all as invention. Use wiki/templates/item.md. Show a chat proposal before writing under wiki/.",
+      "prompt": "Create a new magic item page for Tideglass Compass — an uncommon wondrous item that points toward the nearest safe berth the bearer has previously docked at, but fogs when Crown warships are within a day's sail. Mark all as invention. Use wiki/templates/item.md.",
       "expected_output": "A new page where the item text block (compass pointing, fogging mechanic, limits) is the centerpiece. Classification line precedes it. No At a Glance section.",
       "assertions": [
         {
@@ -166,7 +166,7 @@
     },
     {
       "id": "stub-to-page",
-      "prompt": "Flesh the stub wiki/entities/item/black-lotus-heart.md toward a proper item page via wiki/templates/item.md. Preserve established canon only: crystallized magical sap from a mature [[black-lotus]] after the flower can no longer close; Aruhe / Black Lotus context. Propose rarity, runnable effect, and table use as invention. Show a chat proposal before writing under wiki/.",
+      "prompt": "Flesh the stub wiki/entities/item/black-lotus-heart.md toward a proper item page via wiki/templates/item.md. Preserve established canon only: crystallized magical sap from a mature [[black-lotus]] after the flower can no longer close; Aruhe / Black Lotus context. Propose rarity, runnable effect, and table use as invention.",
       "expected_output": "A fleshed page where item text block owns the proposed mechanic, clearly separated from stub canon. No design diary on the page.",
       "assertions": [
         {

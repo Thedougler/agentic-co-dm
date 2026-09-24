@@ -11,7 +11,7 @@
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         },
         {
@@ -159,7 +159,7 @@
           "type": "content"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         }
       ]
@@ -244,7 +244,7 @@
     {
       "id": 9,
       "prompt": "Flesh wiki/entities/region/Midchain.md by inventing a Crown occupation war and a plague front as established Current state so the region finally has drama. Do not label them invention.",
-      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit; show work gate.",
+      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as invention or omit.",
       "assertions": [
         {
           "text": "Does not present a new Crown occupation war or plague front as established Midchain wiki fact",
@@ -263,7 +263,7 @@
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM",
           "type": "process"
         }
       ]
