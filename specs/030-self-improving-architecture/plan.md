@@ -127,7 +127,7 @@ tests/test_error_ledger_repairs.py, tests/test_wiki_cli.py, tests/test_wiki_ops.
 - **Friction rule (FR-001/002/005)**: add one paragraph to `AGENTS.md` next to the capability loop: act → friction → identify cause → fix source → verify → continue. `docs/agents/hybrid-sdd.md` gains the branch. Skills link to it rather than restating it.
 - **Ledger (FR-006–FR-010)**: see [contracts/error-ledger.md](contracts/error-ledger.md). `append` needs `--source`. It attaches an occurrence when an open entry has the same `source` and the same normalized cause key, and otherwise creates an entry. `drain --id` removes the entry. `recurrence` reports the total and per-sitting counts. `migrate` runs once and is idempotent. Rewrite `AGENTS.md` line ~196 and `wiki-lint/SKILL.md` line ~47.
 - **Regression per fix (FR-011)**: the owning skill's eval or a `tests/` case, landed in the same change as the fix.
-- **CLI (FR-027–FR-039)**: see [contracts/wiki-cli.md](contracts/wiki-cli.md).
+- **CLI (FR-027–FR-039)**: see [contracts/wiki-cli.md](contracts/wiki-cli.md). SC-010 is checked from the cold-agent `luna-eval` runs: each run's `metrics.json` `invocation_errors` must be 0 (data-model §3), and each mutating command's second run must report `already_done`.
 
 ### Phase 3: optimize (US8–US9)
 

@@ -10,7 +10,8 @@ This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mut
 ## Shape (FR-031, FR-034)
 - Bare `wiki` prints one line per subcommand (`lint`, `lint fix`, `query`, `health`, `mutate`, `repair`) and exits 0.
 - `wiki <sub> --help` prints only that subcommand's usage, options, and an `Examples:` block.
-- `lint fix` is a subparser. `wiki lint fix …` and `wiki lint … fix` parse the same way. The old `fix` positional token is kept as an alias.
+- `lint fix` MUST be a real subcommand, not a positional `fix` token inside the path list (FR-034). It is an argparse subparser under `lint`, and the only accepted form is `wiki lint fix [paths…] [options]`.
+- A bare `fix` token among the lint paths (e.g. `wiki lint entities/place/Belumara.md fix`) exits 2 with the FR-035 error object: `"error":"'fix' is not a lint path"`, `"hint":"lint fix is a subcommand"`, `"example":"wiki lint fix entities/place/Belumara.md"`. Nothing is linted or written.
 - Options may appear before or after positionals.
 
 ## Inputs (FR-030, FR-033)
@@ -25,7 +26,7 @@ This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mut
  "hint":"paths are vault-relative","example":"wiki lint entities/place/Belumara.md",
  "list_valid":"wiki lint --help"}
 ```
-Cases that must produce this error: an unknown path, a `wiki/`-prefixed path, a scope without `:`, an unknown scope kind (list the allowed kinds), and an option the subcommand does not take.
+Cases that must produce this error: an unknown path, a `wiki/`-prefixed path, a bare `fix` token in the lint path list, a scope without `:`, an unknown scope kind (list the allowed kinds), and an option the subcommand does not take.
 
 ## Mutation safety (FR-036, FR-037)
 - `lint fix`, `mutate`, `repair`, `error-ledger error append|drain|migrate` accept `--dry-run`. A dry run returns `"planned": [...]` and writes nothing.

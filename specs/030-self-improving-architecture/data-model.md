@@ -61,9 +61,13 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 
 ```json
 {"tool_calls": {"command": 7, "file_change": 2}, "total_tool_calls": 9, "retries": 1,
+ "invocation_errors": 1, "invocation_error_commands": ["scripts/wiki lint wiki/entities/place/Belumara.md"],
  "duplicate_actions": 0, "tokens": {"input": 0, "output": 0, "total": 0},
  "completion_reason": "ok|no_output|usage_limit|error", "skills_read": [".agents/skills/place-design/SKILL.md"]}
 ```
+
+- `retries`: a failed command re-run with identical argv.
+- `invocation_errors`: the number of `command_execution` items in `events.jsonl` that invoke an FR-027 command (`scripts/wiki`, `scripts/wiki-lint`, `scripts/luna-eval`, `scripts/error-ledger.py`, `scripts/manifest.py`) and were rejected as a usage error. A usage error is either the FR-035 error object on stdout (`"status":"error"` with an `example` key; see contracts/wiki-cli.md) or argparse's `usage: … error:` on stderr, with a non-zero exit. Such a call counts whether or not it is later corrected. `invocation_error_commands` lists the offending command lines. Exit codes alone are not used, because exit 2 also means "rejected" (`tools/wiki_ops/cli.py` `EXIT_REJECTED`). This is the SC-010 measure: a cold-agent run passes SC-010 only with `invocation_errors == 0`.
 
 `grading.json`: the existing `skill-creator` schema (`expectations[{text, passed, evidence}]`, `summary`), plus `type` on each item and the new top-level fields `task_outcome` (`pass|fail|blocked`) and `semantic_quality` (1–5 rubric score from `agents/grader.md`). A `skill_selected` item is graded by `luna-eval`: it passes when the first owner `SKILL.md` in `skills_read` matches `text`. Latency is taken from `timing.json`. Together, `timing.json`, `metrics.json`, and `grading.json` carry every FR-016 metric.
 
