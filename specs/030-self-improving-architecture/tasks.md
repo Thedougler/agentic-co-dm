@@ -424,3 +424,9 @@ Task: "T103 Shorten .agents/skills/wiki-query/SKILL.md"
 - [P] tasks touch different files and have no dependency on incomplete tasks.
 - Every fix lands with its regression and its `errors.md` drain in one commit (FR-008, FR-011).
 - Scratch output under `/tmp/030/` is never committed. FR-028 bookkeeping files are committed with the change that caused them and reverted after scratch measurement runs.
+
+---
+
+## Phase 13: Convergence
+
+- [ ] T113 Keep lint's vocabulary bookkeeping inside the requested vault per FR-028 (partial). Today `tools/creative_lint/vale_adapter.py` `run_vale` calls `tools/creative_lint/vale_vocab.py` `refresh_vocab(root, vault)`, which rewrites the tracked `styles/config/vocabularies/CoDM/accept.txt` from whatever vault is linted, so `scripts/wiki lint --vault <temp vault>` (13 cases in `tests/test_wiki_cli.py`, e.g. `test_cache_hits_and_byte_change`) replaces the live-wiki vocabulary with fixture titles and leaves the tree dirty after `pytest -q`. Test first in `tests/test_creative_lint.py`: run `run_vale` on a temp vault outside `<repo>/wiki` and assert the tracked `accept.txt` bytes are unchanged; confirm it fails. Then make `refresh_vocab` write the tracked file only when the vault resolves to `<repo>/wiki` (a temp vault gets no tracked write), leaving `Vocab = CoDM` and `_RULE_TOKEN_WORDS` unchanged (FR-022). Afterwards `pytest -q` passes and `git status --short` is empty.
