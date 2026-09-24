@@ -3,7 +3,8 @@
 This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mutate`, `repair`), `scripts/luna-eval`, and `scripts/error-ledger.py`. It extends feature 027: default output is compact JSON on stdout, `--pretty` is for humans, and there are no fuzzy paths.
 
 ## Discovery (FR-027)
-- The repo root is found from the script's own location. The command works from any working directory.
+- There is one helper, `tools/wiki_ops/cli.py` (`repo_root`, `resolve_vault`), used by `scripts/wiki`, `scripts/wiki-lint`, `tools/lint_wiki.py`, `scripts/luna-eval`, and `scripts/error-ledger.py`. The repo root is found from the package location, so the command works from any working directory.
+- `scripts/wiki` is the only lint front door and owns all lint help. `scripts/wiki-lint --help` names `wiki lint --help`.
 - Vault order: `--vault` > `OBSIDIAN_VAULT_PATH` > repo `.env` > `<repo>/wiki` > `~/.obsidian-wiki/config`.
 - Every result includes `"vault": "<absolute path>"`.
 
@@ -29,12 +30,13 @@ This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mut
 Cases that must produce this error: an unknown path, a `wiki/`-prefixed path, a bare `fix` token in the lint path list, a scope without `:`, an unknown scope kind (list the allowed kinds), and an option the subcommand does not take.
 
 ## Mutation safety (FR-036, FR-037)
-- `lint fix`, `mutate`, `repair`, `error-ledger error append|drain|migrate` accept `--dry-run`. A dry run returns `"planned": [...]` and writes nothing.
+- `lint fix`, `mutate`, `repair`, `error-ledger error append|drain|detach` accept `--dry-run`. A dry run returns `"planned": [...]` and writes nothing.
 - A second run with the same inputs returns `"changed": []` and `"status": "already_done"`.
 - No confirmation prompt exists. If one is ever added, `--yes` bypasses it.
 
 ## Success output (FR-038)
-Required keys: `status`, `vault`, `changed` (paths or ids), `counts` (`before`/`after` where applicable), `timing.duration_ms`, and `next` (the next actionable target, or `null`). `health` adds `next` as one concrete command, e.g. `wiki lint fix dir:entities/npc`.
+Required keys: `status`, `vault`, `changed` (paths or ids), `counts` (`before`/`after` where applicable), `timing.duration_ms`, and `next` (the next actionable target, or `null`). `health` reports facts only. `focus` lists up to 5 existing paths in the fixed order lint → remorph → layout → open ledger entries (`tools/wiki_ops/health.py` `build_focus`), and `next` is the first `focus` row. It is a fact, not a recommendation; choosing the work is the agent's call under `wiki-lint` or the owning skill.
+- Slow-checker notice (stderr, plain report): `wiki lint: slowest checker <script> <ms> ms; next <script> <ms> ms`. It gives no instruction.
 
 ## Examples blocks (FR-032). The real invocations each `--help` shows:
 - `wiki lint entities/place/Belumara.md`

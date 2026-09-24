@@ -6,14 +6,14 @@
 
 ## Summary
 
-Collapse, don't add. Every change edits an existing file: `scripts/error-ledger.py` + `errors.md`, `scripts/check-omp-baseline.sh`, `.vale.ini`, `tools/wiki_ops/identity.py` (+ one derived cache file), `tools/wiki_ops/cli.py` + `scripts/wiki`, `scripts/luna-eval`, the `skill-creator` skill, the 60 `evals/evals.json` files, `AGENTS.md`, `.agents/skills/wiki-lint/SKILL.md`, and the feature 026/029 documents. No new command, skill, workflow, or runtime.
+Collapse, don't add (FR-046). Every change edits the module that owns the concern: `scripts/error-ledger.py` + `errors.md`, `scripts/check-omp-baseline.sh`, `.vale.ini`, `tools/creative_lint/vale_adapter.py`, `tools/wiki_ops/identity.py` + `tools/wiki_ops/lint_cache.py`, `tools/wiki_ops/cli.py` + `scripts/wiki`, `tools/lint_wiki.py`, `scripts/luna-eval`, the `skill-creator` skill, the 60 `evals/evals.json` files, `AGENTS.md`, `.agents/skills/wiki-lint/SKILL.md`, and the feature 026/029 documents. Code only detects, measures, checks, indexes, reports, or applies fixes that have exactly one correct output. Every judgment (duplicate choice, same root cause beyond an exact match, promotion, repair choice, next step) belongs to the agent, and the table in "Simplify and consolidate" names the skill that governs it. The net file count goes down: 1 new data file and 1 new test file; 8 scripts deleted.
 
 The data shapes come first. Each one is defined in [data-model.md](data-model.md):
 
-1. **Error entry**: `{id, cause, source, evidence:[{sitting, detail}]}`. Only open entries exist. Recurrence = occurrences after the first.
+1. **Error entry**: `{id, cause, source, evidence:[{sitting, detail}]}`. Only open entries exist. Auto-attach happens only on the same `source` with identical, whitespace-trimmed `cause`. Recurrence = occurrences after the first, reported as a field of `error list`.
 2. **Eval file**: `{skill_name, evals:[{id, prompt, files?, context?, outputs?, subject_skill?, core?, expected_output, assertions:[{type, text}]}]}`. `skill_selected` and `behavior` are added to the type vocabulary.
 3. **Eval run directory** (one result format): the existing `luna-eval` layout plus `metrics.json`, which `luna-eval` derives from `events.jsonl`, plus `grading.json` in the shape the `skill-creator` viewer already reads.
-4. **Identity index**: `wiki/_meta/identity-index.json`, one cheap row per page keyed by content hash. It lets a scoped lint stop reading and profiling the whole vault.
+4. **Identity index**: `wiki/_meta/identity-index.json`, one cheap row per page keyed by content hash, loaded and saved by `tools/wiki_ops/lint_cache.py`. It lets a scoped lint stop reading and profiling the whole vault. Its thresholds only report candidates and gate mutations as `ambiguous`.
 
 Phase order is binding (spec Assumptions): Phase 1 = US1–US4, Phase 2 = US5–US7, Phase 3 = US8–US9.
 
@@ -23,9 +23,9 @@ Phase order is binding (spec Assumptions): Phase 1 = US1–US4, Phase 2 = US5–
 
 **Primary Dependencies**: stdlib only for new logic. Project-declared: `PyYAML`, `tiktoken`, `vale==3.21.0.0` (PyPI wrapper that installs the Vale binary), dev `pytest`. Vale packages ai-tells, proselint, write-good, and Readability, plus repo-local `styles/Deprecated/`. `codex` CLI (used by `scripts/luna-eval`).
 
-**Storage**: Files. `errors.md` (JSON lines under a heading), `sittings.jsonl`, `.agents/skills/*/evals/evals.json`, eval run dirs under `<skill>-workspace/iteration-N/`, `wiki/_meta/lint-cache.json` (existing), and `wiki/_meta/identity-index.json` (new derived cache, same lifecycle as the lint cache).
+**Storage**: Files. `errors.md` (JSON lines under a heading), `sittings.jsonl`, `.agents/skills/*/evals/evals.json`, eval run dirs under `<skill>-workspace/iteration-N/`, `wiki/_meta/lint-cache.json` (existing), and `wiki/_meta/identity-index.json` (new derived cache, read and written through `lint_cache.py`, tracked as FR-028 bookkeeping).
 
-**Testing**: `pytest` under `tests/`. The existing files are `test_error_ledger_repairs.py`, `test_wiki_cli.py`, and `test_wiki_ops.py`; new regression tests go in them or in one new `tests/test_omp_baseline.py`. Behavioral evidence runs through `scripts/luna-eval` (constitution IV, XXIII, XXVI).
+**Testing**: `pytest` under `tests/`. New tests go in the existing file for each module: `test_error_ledger_repairs.py` (ledger), `test_wiki_cli.py` (`scripts/wiki`), `test_wiki_ops.py` (identity, cache), `test_creative_lint.py` (`vale_adapter`), and `test_policy_conflicts.py` (repo-contract checkers: OMP baseline, cited paths, SC-014 diff check). The one new file is `tests/test_luna_eval.py`, because `scripts/luna-eval` has no test file today. Behavioral evidence runs through `scripts/luna-eval` (constitution IV, XXIII, XXVI).
 
 **Target Platform**: Linux box and the maintainer workstation (macOS). Both run the same CLI.
 
@@ -52,18 +52,19 @@ No NEEDS CLARIFICATION remains. The open design choices are settled in [research
 | VIII Safe automation | PASS | Ledger migration, `lint fix`, and mutation are idempotent and support dry-run. |
 | IX / XX Lean | PASS | The design removes the `run-eval.py`/`run-loop.py`/`improve-description.py` trigger path and the stale ledger entries. Skills must not grow (SC-013). |
 | XIII Friction rule (v6) | PASS (dependency met) | v6.0.0 (590af34e), kept in v6.0.1, redefines XIII to match FR-006–FR-008 and US5/US6. The blocking prerequisite in spec Assumptions is satisfied. |
-| XIV Simplest tool | PASS | Stdlib JSON caches and argparse. No new dependency. Declared deps get installed when missing. |
+| XIV Simplest tool | PASS | Stdlib JSON and argparse. No new dependency. The identity index reuses `lint_cache.py`'s load/save, and checks live in existing tools (see Simplify and consolidate). |
 | XVI Layering | PASS | The friction rule is stated once in `AGENTS.md` (FR-002). Skills link to it and do not restate it. |
 | XIX Corrections | PASS | `AGENTS.md` line 196 and `wiki-lint/SKILL.md` line 47 are rewritten to "fix and verify; record only if unresolved". |
-| XXI One linter | PASS | Rules are not weakened. Removing the missing `CoDM` style drops no check, because the style never loaded. `Deprecated` stays. |
+| XXI One linter | PASS | `wiki lint` becomes the only lint front door. The unique checks in `lint-obsidian-markdown` and `lint-literal-newlines` fold into `tools/lint_wiki.py`, and the three side scripts are deleted. Removing `CoDM` drops no check, because the style never loaded. `TMPL_inherited_deprecated_guidance` is removed as an exact duplicate of `Deprecated.FactionClock` on vault pages (research R8). `TMPL_deprecated_guidance` stays. |
 | XXIII Real surfaces | PASS | Timing and identity parity are measured on the live `wiki/`. Evals compose real wiki content. |
 | XXIV Synchronized content systems | PASS | v6.0.1 reads "`wiki lint` Python checks, and Vale with the repo-local `Deprecated` style and the `CoDM` vocabulary". That matches FR-022/FR-023, so the only Vale change is removing `CoDM` from `BasedOnStyles`. |
-| XXV Uniform path | PASS | One identity path serves scoped and whole-vault runs. No special cases. |
+| XXV Uniform path | PASS | One identity path serves scoped and whole-vault runs. There is one vault/root discovery helper (`tools/wiki_ops/cli.py`). No special cases. |
 | XXVI Weakest model | PASS | `luna-eval` defaults are kept. The baseline uses the weakest sufficient model and effort. |
+| Spec FR-046 / SC-014 (binding) | PASS | Every new file, subcommand, flag, and data store is justified against an existing module. Deleted and folded paths are listed. Each code change is labelled diagnostic or deterministic, and each judgment names its skill (see Simplify and consolidate). |
 
 **Gate result: PASS.** No violations, so Complexity Tracking is empty.
 
-**Post-design re-check (after Phase 1): PASS.** The data model adds one derived cache file and one derived per-run file (`metrics.json`). Neither is a competing source.
+**Post-design re-check (after Phase 1): PASS.** The data model adds one derived cache file (`identity-index.json`, via `lint_cache.py`). `metrics.json` is not new: it is `skill-creator`'s existing `references/schemas.md` metrics file, now written by `luna-eval`. Neither is a competing source.
 
 ## Project Structure
 
@@ -85,62 +86,119 @@ specs/030-self-improving-architecture/
 ### Source Code (repository root): affected files
 
 ```text
-errors.md                                   # migrate to 4-field entries; merge dups; drop drained (FR-010)
-scripts/error-ledger.py                     # new format, append-or-attach, drain-by-fix, recurrence (FR-006–FR-010, FR-036)
+errors.md                                   # one-off migration to 4-field entries; agent-supplied merge groups/sources (FR-010)
+scripts/error-ledger.py                     # new format; exact-match auto-attach; --attach source refusal; detach undo; list reports recurrence + missing sources (FR-006–FR-010, FR-036)
 scripts/check-omp-baseline.sh               # memory backend false|"off" passes; enabled/missing fails naming value (FR-020)
 .vale.ini                                   # remove CoDM from every BasedOnStyles line; Deprecated + Vocab = CoDM unchanged (FR-022)
-tools/wiki_ops/identity.py                  # identity index + candidate selection (FR-024–FR-026)
-tools/wiki_ops/cli.py                       # vault discovery order (FR-027)
-scripts/wiki                                # per-subcommand help/examples, `lint fix` subparser, stdin lists, errors (FR-030–FR-038)
-scripts/wiki-lint                           # report identity.compared; pass through index (SC-007)
-scripts/manifest.py                         # absorbs manifest reasoning named in trajectories (FR-029)
-scripts/luna-eval                           # repo-root discovery, metrics.json from events.jsonl, skill_selected grading (FR-012, FR-014, FR-016)
-.agents/skills/skill-creator/SKILL.md       # invoke luna-eval; drop run-eval/run-loop description loop (FR-012, FR-015)
+tools/creative_lint/vale_adapter.py         # Deprecated.* findings labelled human_repair, no repair_action (FR-023)
+tools/wiki_ops/identity.py                  # index-backed candidate selection; resolve_identity/_path_for read the index (FR-024–FR-026)
+tools/wiki_ops/lint_cache.py                # load/save identity-index.json with the existing atomic writer (FR-025)
+tools/wiki_ops/cli.py                       # the one repo/vault discovery helper (FR-027)
+tools/lint_wiki.py                          # absorbs lint-obsidian-markdown + lint-literal-newlines rules; default vault via cli.py (FR-046, XXI)
+scripts/wiki                                # only lint front door; per-subcommand help/examples; lint fix subparser; stdin; errors; _tune plain report (FR-030–FR-038)
+scripts/wiki-lint                           # engine only: identity.compared; drop TMPL_inherited_deprecated_guidance; vault via cli.py; --help points at `wiki lint`
+scripts/manifest.py                         # reports manifest facts only (FR-029)
+scripts/luna-eval                           # root via cli.py; evals.json schema check in load; metrics.json; skill_selected grade (FR-012–FR-016)
+scripts/hybrid-sdd-check.py                 # new `diff` subcommand: SC-014 (a)/(c) mechanical checks
+scripts/check-current-commands              # also checks cited scripts/ and tests/ paths in specs/026 (SC-008)
+.agents/skills/skill-creator/SKILL.md       # invoke luna-eval; promotion decision rule lives here (FR-012, FR-044); drop description loop
 .agents/skills/skill-creator/references/schemas.md   # evals.json = repo schema; grading/metrics = run contract
-.agents/skills/skill-creator/scripts/run-eval.py, run-loop.py, improve-description.py   # removed (FR-012, FR-015)
-.agents/skills/skill-creator/agents/grader.md        # grade assertions[] {type,text}; skill_selected from events; no rubric score
-.agents/skills/skill-creator/scripts/aggregate-benchmark.py   # per-eval regressions + medians for promotion (FR-044, SC-012)
-.agents/skills/*/evals/evals.json           # 60 files: one schema, skill_name, Work-gate wording fixed, skill_selected evals for the six owners place-design, faction-design, session-beats, run-guide, wiki-query, wiki-lint (FR-013–FR-017, SC-005)
-AGENTS.md                                   # line ~196 "Error ledger" + friction rule once (FR-002, FR-006–FR-010); SPECKIT block → this plan
-.agents/skills/wiki-lint/SKILL.md           # line ~47 "record the mismatch in errors.md" → reconcile first, record only if unresolved
-.agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md   # five FR-040 answers; remove text moved into tools (FR-029, FR-040)
+.agents/skills/skill-creator/agents/grader.md        # grade assertions[] {type,text}; no rubric score
+.agents/skills/skill-creator/scripts/aggregate-benchmark.py   # report per-eval regressions + medians; never decides (FR-044)
+.agents/skills/*/evals/evals.json           # 60 files: one schema, skill_name, Work-gate wording fixed, skill_selected evals for the six owners (FR-013–FR-017, SC-005)
+.agents/skills/obsidian-markdown/SKILL.md   # line 35: `./scripts/lint-wiki-write` -> `./scripts/wiki lint`
+AGENTS.md                                   # "Error ledger" (~196): fix first, exact-match attach, same-cause judgment rule, detach undo; friction rule once (FR-002, FR-006–FR-010)
+.agents/skills/wiki-lint/SKILL.md           # line ~47 reconcile first, record only if unresolved; Deprecated.* and identity judgments governed here
+.agents/skills/wiki-dedup/SKILL.md          # governs ambiguous-identity resolution (FR-024); no code picks a winner
+.agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md   # five FR-040 answers; remove deterministic text moved into tools (FR-029, FR-040)
 docs/agents/hybrid-sdd.md                   # friction branch of the capability loop (FR-001)
+docs/creative-linting.md, docs/architecture.md, README.md   # point lint usage at `wiki lint`
+package.json                                # unchanged (lint:vale kept; see research R8 rejected candidates)
 specs/026-agent-autonomy-scope/{spec,plan,research,data-model,quickstart,tasks}.md, contracts/agent-autonomy.md   # FR-018
 specs/029-agent-loop-closure/tasks.md, quickstart.md   # T003…T049 evidence (FR-019)
-tests/test_error_ledger_repairs.py, tests/test_wiki_cli.py, tests/test_wiki_ops.py, tests/test_omp_baseline.py (new)
+tests/test_error_ledger_repairs.py, test_wiki_cli.py, test_wiki_ops.py, test_creative_lint.py, test_policy_conflicts.py, test_luna_eval.py (new)
 ```
 
-**Structure Decision**: This is a single repository with no new directories. The only new file is the derived `wiki/_meta/identity-index.json`, which sits beside `lint-cache.json`, plus possibly `tests/test_omp_baseline.py` if no existing test file fits.
+**Structure Decision**: This is a single repository with no new directories. There are two new files, `wiki/_meta/identity-index.json` and `tests/test_luna_eval.py`, and eight deleted scripts. The full ledger is in "Simplify and consolidate".
 
 ## Design by phase
 
 ### Phase 1: coherent baseline (US1–US4)
 
-- **OMP (FR-020/021)**: parse the `memory:` block's `backend:` value. `false`, `"false"`, `off`, and `"off"` count as disabled. Any other value fails with `memory enabled: backend=<value>`. A missing block fails with `memory key missing`. The test runs the script against a temp copy of the repo files with each config.
-- **Vale (FR-022/023)**: `BasedOnStyles = CoDM, Deprecated, …` becomes `BasedOnStyles = Deprecated, …` in all 6 sections. That includes region, creature, and npc, where only `Deprecated` remains. `styles/Deprecated/*.yml`, `Vocab = CoDM`, and `tools/creative_lint/vale_vocab.py` do not change. No `VALE_Deprecated` test changes. Drain e-212, e-214, e-215, e-216, e-218 in the same commit.
-- **026 references (FR-018)**: rewrite each of the 66 references to the current enforcing surface. That is `luna-eval` evals for agent behavior and `wiki lint` for wiki structure. A reference with no current surface is removed with a one-line "replaced by" note.
-- **Evaluator (FR-012–FR-017)**: see [contracts/eval-run.md](contracts/eval-run.md). `luna-eval` stays the only runner. It gains repo-root discovery, a deterministic `metrics.json` built from `events.jsonl`, and a deterministic `skill_selected` grade: the first owner `SKILL.md` the subject reads. `grader.md` grades the other assertion types into `grading.json`, which keeps the viewer's `text`/`passed`/`evidence` fields and adds `type`. The corpus conversion is scripted once and not kept (VIII does not apply to one-offs): each `expectations[]` string becomes `{type: "behavior", text}`, the drift types become `qualitative→quality` and `structural→structure`, and `skill_name` is added to the 7 files missing it. The Work-gate, approval, read-mutation, and retired-path wording in 13 files is edited by hand per record, because the assertion stays and only its behavior is updated (spec Edge Cases).
+- **OMP (FR-020/021)**: parse the `memory:` block's `backend:` value. `false`, `"false"`, `off`, and `"off"` count as disabled. Any other value fails with `memory enabled: backend=<value>`. A missing block fails with `memory key missing`. The test goes in `tests/test_policy_conflicts.py` and runs the script against a temp copy of the repo files with each config.
+- **Vale (FR-022/023)**: `BasedOnStyles = CoDM, Deprecated, …` becomes `BasedOnStyles = Deprecated, …` in all 6 sections. That includes region, creature, and npc, where only `Deprecated` remains. `styles/Deprecated/*.yml`, `Vocab = CoDM`, and `tools/creative_lint/vale_vocab.py` do not change. No `VALE_Deprecated` test changes. Drain e-212, e-214, e-215, e-216, e-218 in the same commit. In `vale_adapter.py`, repo-local (`is_custom`) findings such as `Deprecated.DMThesis` change from `deterministic_repair` + `delete_section` action to `human_repair` with no `repair_action`, so `wiki lint fix` never applies them. `wiki-lint` governs the removal or relocation (FR-023). Test in `test_creative_lint.py`.
+- **One linter (XXI, FR-046)**: fold the rules of `scripts/lint-obsidian-markdown` into `tools/lint_wiki.py` findings: `md_internal_link`, `title_only_frontmatter`, `dc_in_narration`, `broken_image_link`, `table_wikilink_unescaped_pipe`, and `forbidden_tree`. Its `missing_frontmatter` already exists in `lint_wiki.py`. Fold `scripts/lint-literal-newlines` in as `literal_newline`, scoped to session pages and Session templates as today. Delete both scripts and `scripts/lint-wiki-write`, whose `wiki-lint file` step exits 2 today (research R8). `table_wikilink_unescaped_pipe` has one correct output (`|` → `\|` inside a table-cell wikilink), so it is `deterministic_repair`. The rest are `human_repair`. Remove `TMPL_inherited_deprecated_guidance` from `scripts/wiki-lint` and keep `TMPL_deprecated_guidance`.
+- **026 references (FR-018)**: rewrite each of the 66 references to the current enforcing surface. That is `luna-eval` evals for agent behavior and `wiki lint` for wiki structure. A reference with no current surface is removed with a one-line "replaced by" note. `scripts/check-current-commands` gains `scripts/…`/`tests/…` path citations and `specs/026-agent-autonomy-scope/` in its scan roots. A `test_policy_conflicts.py` case runs it and also fails on `AGENT00[1-3]` in those docs (SC-008).
+- **Work-gate wording (SC-003)**: a `tests/test_luna_eval.py` case fails when any assertion `text` contains the retired terms `Work gate`, `chat proposal`, or `approval before write`, matched case-insensitively. Records that test current behavior phrase it positively ("writes without asking first"), per spec Edge Cases.
+- **Evaluator (FR-012–FR-017)**: see [contracts/eval-run.md](contracts/eval-run.md). `luna-eval` stays the only runner. It gains the shared root discovery, an `evals.json` schema check inside `load_eval` (it validates the whole file and exits 2 naming each bad record before any subject run; chosen over `quick-validate.py` because FR-046 names `luna-eval` the eval owner, while `quick-validate.py` validates `SKILL.md` for packaging), a deterministic `metrics.json` built from `events.jsonl`, and a deterministic `skill_selected` grade: the first owner `SKILL.md` the subject reads. `grader.md` grades the other assertion types into `grading.json`, which keeps the viewer's `text`/`passed`/`evidence` fields and adds `type`. The corpus conversion is scripted once and not kept (VIII does not apply to one-offs): each `expectations[]` string becomes `{type: "behavior", text}`, the drift types become `qualitative→quality` and `structural→structure`, and `skill_name` is added to the 7 files missing it. The Work-gate, approval, read-mutation, and retired-path wording in 13 files is edited by hand per record, because the assertion stays and only its behavior is updated (spec Edge Cases).
 - **029 baseline (FR-019)**: run the nine categories (at least 10 cases) through `luna-eval` at its default model and effort. Each run's `metrics.json` records both, and SC-012 comparisons reuse the same pair. Record them in `specs/029-agent-loop-closure/quickstart.md`, closing T003…T049. The from-scratch `wiki health` wall time is recorded beside them (SC-007, V-08c).
-- **Identity (FR-024–FR-026)**: see research R4 and data-model §4. Rows for unchanged pages come from the index keyed by `content_sha256`, so only changed pages are read and profiled. Candidates for a selected page are pages of the same `type` that share an exact cheap signal (norm title, alias, stem, manifest provenance with stem ratio > 0.7, merge transition), plus pages that pass the existing character-profile prefilter (> 0.6), as FR-024 now states. That prefilter is computed from cached profiles. `SequenceMatcher` runs only on those candidates, and each pair ratio is cached by the two content hashes, so a warm whole-vault or health run recomputes only pairs that touch changed pages. `wiki-lint` reports `identity: {scanned, compared, index: {hits, misses}}`. Whole-vault output is unchanged, because the candidate rule is the current rule evaluated from cached data.
+- **Identity (FR-024–FR-026)**: see research R4 and data-model §4. The index is loaded and saved through `lint_cache.py`, and `resolve_identity` (mutation gate) and `_path_for` read it too. `scripts/wiki-identity` is deleted, because its only callers are 3 tests and the `wiki lint` result already carries the `identity` block. Thresholds (> 0.6 prefilter, > 0.7 shared-source stem ratio) only list candidates and gate mutations as `ambiguous`. Choosing the canonical page is the agent's call under `wiki-dedup` and `wiki-lint`. Rows for unchanged pages come from the index keyed by `content_sha256`, so only changed pages are read and profiled. Candidates for a selected page are pages of the same `type` that share an exact cheap signal (norm title, alias, stem, manifest provenance with stem ratio > 0.7, merge transition), plus pages that pass the existing character-profile prefilter (> 0.6), as FR-024 now states. That prefilter is computed from cached profiles. `SequenceMatcher` runs only on those candidates, and each pair ratio is cached by the two content hashes, so a warm whole-vault or health run recomputes only pairs that touch changed pages. `wiki-lint` reports `identity: {scanned, compared, index: {hits, misses}}`. Whole-vault output is unchanged, because the candidate rule is the current rule evaluated from cached data.
 
 ### Phase 2: close the loop (US5–US7)
 
 - **Friction rule (FR-001/002/005)**: add one paragraph to `AGENTS.md` next to the capability loop: act → friction → identify cause → fix source → verify → continue. `docs/agents/hybrid-sdd.md` gains the branch. Skills link to it rather than restating it.
-- **Ledger (FR-006–FR-010)**: see [contracts/error-ledger.md](contracts/error-ledger.md). `append` needs `--source`. It attaches an occurrence when an open entry has the same `source` and the same normalized cause key, and otherwise creates an entry. `drain --id` removes the entry. `recurrence` reports the total and per-sitting counts. `migrate` runs once and is idempotent. Rewrite `AGENTS.md` line ~196 and `wiki-lint/SKILL.md` line ~47.
+- **Ledger (FR-006–FR-010)**: see [contracts/error-ledger.md](contracts/error-ledger.md). `append` needs `--source` (it must be an existing repo path or `external:<name>`, which is a deterministic check). It auto-attaches only when an open entry has the same `source` and identical whitespace-trimmed `cause`, and reports the matched id and occurrence index. `--attach e-N` is the agent's same-root-cause call and is refused across sources. `detach --id e-N --index k` is the one documented undo. `drain --id` removes the entry. `list` returns `{entries, recurrence, missing_sources}`, and `scripts/wiki`'s two `error list` callers read `entries`. Migration is a one-off, uncommitted conversion (same precedent as the eval conversion). Its merge groups and sources are agent-authored input data, recorded in research R3, and no group ids are hardcoded in `error-ledger.py`. Rewrite `AGENTS.md` "Error ledger" (~196) with the same-cause rule, and `wiki-lint/SKILL.md` line ~47.
 - **Regression per fix (FR-011)**: the owning skill's eval or a `tests/` case, landed in the same change as the fix.
-- **CLI (FR-027–FR-039)**: see [contracts/wiki-cli.md](contracts/wiki-cli.md). SC-010 is checked from the cold-agent `luna-eval` runs: each run's `metrics.json` `invocation_errors` must be 0 (data-model §3), and each mutating command's second run must report `already_done`.
+- **CLI (FR-027–FR-039)**: see [contracts/wiki-cli.md](contracts/wiki-cli.md). Discovery is the one `tools/wiki_ops/cli.py` helper (repo root from the package location; vault order `--vault` > `OBSIDIAN_VAULT_PATH` > repo `.env` > `<repo>/wiki` > `~/.obsidian-wiki/config`). `scripts/wiki-lint`, `tools/lint_wiki.py`, `scripts/luna-eval`, and `scripts/error-ledger.py` call it instead of computing cwd-relative or `git rev-parse` roots. Lint help and discovery live only in `scripts/wiki`. `scripts/wiki-lint` stays the engine that `wiki` calls, and its `--help` names `wiki lint --help`. `_tune`'s "Fix that checker this sitting." becomes a plain report (`wiki lint: slowest checker <script> <ms> ms; next <script> <ms> ms`). `wiki health` reports facts, and `next` is chosen by a fixed documented rule (data in contracts/wiki-cli.md), not a recommendation. SC-010 is checked from the cold-agent `luna-eval` runs: each run's `metrics.json` `invocation_errors` must be 0 (data-model §3), and each mutating command's second run must report `already_done`.
 
 ### Phase 3: optimize (US8–US9)
 
-- **Promotion (FR-041–FR-044)**: incumbent = the skill file at HEAD, snapshotted with `luna-eval --subject-skill <snapshot> --config old_skill`. Candidate = the working-tree edit. Each config gets one run on the same eval ids, with the same `model`/`effort` as the FR-019 baseline. The decision reads per-eval `grading.json` + `metrics.json`. Refuse if any eval's `task_outcome` is worse, or if any assertion that passed for the incumbent fails for the candidate (FR-044). Otherwise, promote only on a measurable reduction: a lower median of `total_tool_calls`, `retries`, or `tokens.total`, with none of the three higher (SC-012). Latency and scope break ties only. `aggregate-benchmark.py` is extended to emit these per-eval regressions and medians. Promotion does not use its mean ± stddev summary. No new script.
-- **Small skills (FR-029, FR-040, SC-013)**: for each of the six named owners, move procedure into `wiki lint fix`, `scripts/manifest.py`, and `wiki health` `next`, then delete that skill text and rerun its evals.
+- **Promotion (FR-041–FR-044)**: incumbent = the skill file at HEAD, snapshotted with `luna-eval --subject-skill <snapshot> --config old_skill`. Candidate = the working-tree edit. Each config gets one run on the same eval ids, with the same `model`/`effort` as the FR-019 baseline. `aggregate-benchmark.py` reports, per eval, task-outcome regressions and incumbent-pass → candidate-fail assertions, plus the medians of tool calls, retries, tokens, and latency. It never promotes or refuses. The agent decides keep or refuse following the promotion rule written in `skill-creator/SKILL.md` (FR-044, SC-012). No new script.
+- **Small skills (FR-029, FR-040, SC-013)**: for each of the six named owners, move only deterministic procedure (repair bookkeeping, manifest facts, path discovery, health facts) into `wiki lint fix`, `scripts/manifest.py`, and `wiki health`. Keep every judgment in the skill, then delete the moved text and rerun its evals.
+
+## Simplify and consolidate (FR-046, SC-014)
+
+### New files, subcommands, flags, and data (SC-014 a)
+
+| New item | Extends / replaces | Why the existing one cannot simply be improved | Kind (rule 5) |
+|---|---|---|---|
+| `wiki/_meta/identity-index.json` | `wiki/_meta/lint-cache.json`, via `tools/wiki_ops/lint_cache.py` (same load/save/atomic write) | Lint-cache entries are invalidated by the rules digest. Identity rows must survive a rules change for SC-007's < 50 s bound, and they cover every page, not only linted ones. The spec names the file (FR-028). | derived index |
+| `tests/test_luna_eval.py` | the `tests/` suite | `scripts/luna-eval` has no test file. Putting its tests (schema check, `metrics.json`, `skill_selected`, `invocation_errors`, Work-gate wording) in another module's file would split ownership. | test |
+| `error detach --id e-N --index k` | `scripts/error-ledger.py` | FR-007 requires one documented undo for an attach. `drain` removes the whole entry, so it cannot serve. | deterministic fix |
+| `error append --source`, `--attach`, `--detail`, `--dry-run`; `error list --ids-only` | `scripts/error-ledger.py` | FR-006/FR-007/FR-033/FR-037 fields and flags on the existing subcommands | deterministic |
+| `hybrid-sdd-check.py diff --plan <plan.md> --base <ref>` | `scripts/hybrid-sdd-check.py` (existing deterministic SDD checker) | SC-014 (a)/(c) are mechanical: added files missing from this table, and deleted paths still referenced in maintained surfaces. There is no other checker for plan-vs-diff. | diagnostic |
+| `wiki lint fix` subparser; `--stdin`, `--paths-only`, `--dry-run` | `scripts/wiki` (replaces the positional `fix` token) | FR-033/FR-034/FR-037 | deterministic |
+| `metrics.json` in the run dir | `skill-creator/references/schemas.md` metrics file, now written by `luna-eval` | Not a new format. `luna-eval` fills the existing schema plus `retries`, `invocation_errors`, `model`, `effort`. | diagnostic |
+| `grading.json` fields `type`, `task_outcome`, `semantic_quality` | existing `grading.json` | FR-016 metrics. `semantic_quality` is the pass rate of `quality` assertions. | diagnostic |
+| `wiki-lint --json` `identity.compared`, `identity.index` | existing `identity` block | SC-007 compared count | diagnostic |
+| `tools/lint_wiki.py` findings `md_internal_link`, `title_only_frontmatter`, `dc_in_narration`, `broken_image_link`, `table_wikilink_unescaped_pipe`, `forbidden_tree`, `literal_newline` | moved from the deleted `lint-obsidian-markdown` / `lint-literal-newlines` | One linter (XXI). The checks are unique today (research R8). | diagnostic; only the table pipe escape is deterministic |
+
+No new module, skill, config key, or command.
+
+### Deleted or folded (SC-014 c)
+
+| Path | Evidence (research R8) | Replacement |
+|---|---|---|
+| `scripts/wiki-identity` | Callers: `tests/test_wiki_ops.py` (3) and specs/025 only | `wiki lint` `identity` block; tests call `scan_identities`/`resolve_identity` or `wiki lint` |
+| `scripts/lint-wiki-write` | Its `wiki-lint file` step exits 2 (usage error, observed 2026-09-24). Callers: `obsidian-markdown/SKILL.md:35`, `tests/test_error_ledger_repairs.py:46` | `wiki lint` |
+| `scripts/lint-obsidian-markdown` | Unique rules; 540 live findings invisible to `wiki lint` (519 table pipes, 21 broken images) | rules in `tools/lint_wiki.py` |
+| `scripts/lint-literal-newlines` | Unique rule; 0 current findings over 41 session files | `literal_newline` in `tools/lint_wiki.py` |
+| `skill-creator/scripts/run-eval.py`, `run-loop.py`, `improve-description.py` | Second runner (e-210). Referenced only by each other and `skill-creator/SKILL.md` (1 line) | `luna-eval` + `skill_selected` evals |
+| `skill-creator/scripts/generate-report.py` | Only consumes `run-loop.py` output (its own docstring) | none (dead with `run-loop.py`) |
+| `TMPL_inherited_deprecated_guidance` (`scripts/wiki-lint`) | Same faction/agenda-clock regex over the same vault pages as Vale `Deprecated.FactionClock` | Vale `Deprecated.FactionClock` |
+| `wiki-lint` `consolidate_main` cwd vault resolution, `tools/lint_wiki.py` cwd default, `luna-eval` `git rev-parse` root | Three ad hoc root/vault lookups | `tools/wiki_ops/cli.py` helper |
+| `_tune` directive text; `error recurrence`; `error migrate`; `tests/test_omp_baseline.py`; `--cause-fixed` | Earlier plan items, now superseded | `_tune` plain report; `error list` field; one-off uncommitted migration; `test_policy_conflicts.py`; removed |
+
+Net result: 2 files added, 8 deleted, and 3 ad hoc discovery paths merged into 1.
+
+### Judgments and their governing skill (SC-014 e)
+
+| Judgment | Code reports | Governing skill |
+|---|---|---|
+| Which page wins an ambiguous identity | candidates, signals, ratios; mutation gate `ambiguous` | `wiki-dedup`, `wiki-lint` |
+| Whether a differently worded cause is the same root cause (`--attach`) | exact-match attach and the matched id | `AGENTS.md` "Error ledger" (FR-007; no skill exists) |
+| Keep or refuse a candidate instruction | per-eval regressions and medians | `skill-creator` |
+| Removing or relocating `Deprecated.*` content; broken image targets; markdown→wikilink rewrites | `human_repair` findings | `wiki-lint` |
+| What to work on next after `wiki health` | facts and targets ranked by a fixed rule | `wiki-lint` or the owning skill |
+| Merge groups and `source` values for the one-off ledger migration | old entries | `AGENTS.md` "Error ledger" |
 
 ## Risks and dependencies
 
 - **XIII dependency**: met by v6.0.0/v6.0.1. US5/US6 can land in Phase 2.
+- **Folded lint rules raise the backlog**: `wiki lint` will report the 540 existing obsidian-markdown findings. The 519 table pipes are fixed by `wiki lint fix` (deterministic). The 21 broken images are agent work under `wiki-lint` (spec gap below).
 - **Identity parity**: FR-025/FR-026 require identical findings. Parity is proven by diffing `scan_identities` output cold vs index-warm on the live vault (quickstart V-06).
 - **Where the time goes**: for one page, `lint_wiki.py` is the largest cost (1.66 s of 3.44 s; identity 0.84 s), and SC-007's 5 s is already met with Vale. For a cold whole-vault or health run, identity dominates (55.1 s of 82.3 s), from pairwise ratios. The pair cache targets that. The creative engine (15.7 s) and Vale (13.1 s) stay unchanged unless V-08b shows the 50 s bound is missed.
-- **Box setup**: the repo has no committed venv. Timing needs `uv venv .venv && uv pip install tiktoken PyYAML vale==3.21.0.0` (as done 2026-09-24), with `.venv/bin` on `PATH` and `OBSIDIAN_VAULT_PATH` set to the clone's `wiki/`, because `~/.obsidian-wiki/config` points at `/home/box/agentic-co-dm/wiki`. FR-027's discovery order fixes that trap.
+- **Box setup**: the repo has no committed venv. Timing needs `uv venv .venv && uv pip install tiktoken PyYAML vale==3.21.0.0` (as done 2026-09-24), with `.venv/bin` on `PATH` and `OBSIDIAN_VAULT_PATH` set to the clone's `wiki/`, because `~/.obsidian-wiki/config` points at `/home/box/agentic-co-dm/wiki`. The single discovery helper (repo `wiki/` before the global config) fixes that trap.
 
 ## Measurements taken (2026-09-24, /workspace clone @ bf021f03, 8-core Linux box)
 
@@ -158,8 +216,16 @@ Before the fix, Vale with the unmodified `.vale.ini` fails with `E100 … style 
 ## Spec gaps for Clarify (resolved by cae8bb44)
 
 1. **FR-024 vs FR-026 (identity candidates)**: resolved. FR-024 now includes cached character-profile prefilter passes (> 0.6) as candidates, and SC-007's compared count includes them. The plan already did this.
-2. **FR-007 "same cause"**: resolved. Same `source` plus the same normalized cause. A forced attach cannot cross sources (contracts/error-ledger.md).
+2. **FR-007 "same cause"**: resolved, then tightened by b14ea71b to the same `source` plus identical trimmed `cause`; anything broader is the agent's `--attach` call. A forced attach cannot cross sources (contracts/error-ledger.md).
 3. **FR-013 `expected_output`**: resolved. It is optional.
 4. **Assertion types**: resolved. FR-014 fixes the vocabulary, keeps `scope`/`handoff`/`coverage`, and folds `qualitative`/`structural`.
 5. **SC-009 20-sitting window**: resolved. It stays an assumption.
 6. **Lint writes tracked files**: resolved. FR-028 keeps `lint-cache.json`, `identity-index.json`, and `accept.txt` tracked as bookkeeping. FR-017 scopes read-side mutation to canonical pages, manifests, indexes, and logs.
+
+## Spec gaps for Clarify (round 3, from b14ea71b)
+
+1. **SC-014 (c) scope**: are completed feature specs (e.g. `specs/025-*` citing `scripts/wiki-identity`, `specs/024-*` citing the lint scripts) "references" that must go? The plan checks maintained surfaces only (`AGENTS.md`, `docs/`, `.agents/`, `scripts/`, `tools/`, `tests/`, `package.json`, `README.md`) and leaves historical specs as records, as FR-018 does only for 026.
+2. **Folded lint findings**: folding `lint-obsidian-markdown` into `wiki lint` surfaces 540 existing findings (XXI makes them all issues). Is fixing the 21 broken image links in this feature's scope, or tracked as follow-up lint work?
+3. **FR-010 "on first run of the new format"**: the plan runs the migration once as an uncommitted, agent-driven conversion with agent-supplied groups and sources, not as a committed command. Confirm this satisfies FR-010.
+4. **Judgment code outside this feature's touch set**: `wiki-lint --consolidate` promotes `draft` → `reviewed` by threshold (`base_confidence > 0.7`, `.agents/skills/wiki-lint/consolidate.md`). FR-046 rule 5 applies only "where this feature touches" such code, so the plan leaves it alone. Confirm, or add it to scope.
+5. **Rejected duplicates** (research R8): `tools/check_wiki_pages.py` (overlaps `lint_wiki.py` page checks; imported by `scripts/wiki-reveal`, cited in `README.md`) and `scripts/vale-vocab` (the `package.json` `lint:vale` target; `wiki lint` already refreshes the vocabulary) are still referenced, so they stay. Confirm whether to fold them in this feature.

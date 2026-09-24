@@ -11,9 +11,9 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 | `source` | string | The authoritative file (repo-relative path) or component the fix lands in. An external source is written as `external:<name>`, e.g. `external:codex-cli`. |
 | `evidence` | list of `{sitting, detail}`, length ≥ 1 | Append-only while open. `sitting` uses the same labels as `sittings.jsonl` (e.g. `"lint: aggregate repair loop"`). |
 
-- **Invariants**: every entry is open. No two entries share `(source, cause_key(cause))`. The fields `status` and `cause_fixed` do not exist.
-- **Transitions**: absent → open (`append`, no match) → open with +1 occurrence (`append`, match) → removed (`drain`, in the same commit as the verified fix).
-- **Recurrence**: `total = Σ(len(evidence) − 1)`; `by_sitting[s]` counts the non-first occurrences with `sitting == s`.
+- **Invariants**: every entry is open. No two entries share `(source, cause.strip())`. Whether two differently worded causes are the same root is the agent's `--attach` call, governed by `AGENTS.md` "Error ledger". The fields `status` and `cause_fixed` do not exist.
+- **Transitions**: absent → open (`append`, no exact match) → open with +1 occurrence (`append` with exact match, or `--attach e-N` on the same `source`) → open with −1 occurrence (`detach --id e-N --index k`, the undo; never removes the last occurrence) → removed (`drain`, in the same commit as the verified fix).
+- **Recurrence**: reported by `error list` as `recurrence: {total, by_sitting}`, where `total = Σ(len(evidence) − 1)` and `by_sitting[s]` counts the non-first occurrences with `sitting == s`. `error list` also reports `missing_sources`: ids whose `source` path no longer exists.
 
 ## 2 Eval file (`.agents/skills/<skill>/evals/evals.json`)
 
@@ -72,7 +72,7 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 
 `grading.json`: the existing `skill-creator` schema (`expectations[{text, passed, evidence}]`, `summary`), plus `type` on each item and the new top-level fields `task_outcome` (`pass|fail|blocked`) and `semantic_quality` = pass rate of that eval's `quality`-type assertions (passed / total, `null` when the eval has none), computed from the graded items (FR-016). The grader assigns no separate score. A `skill_selected` item is graded by `luna-eval`: it passes when the first owner `SKILL.md` in `skills_read` matches `text`. Latency is taken from `timing.json`. Together, `timing.json`, `metrics.json`, and `grading.json` carry every FR-016 metric.
 
-## 4 Identity index (`wiki/_meta/identity-index.json`, derived)
+## 4 Identity index (`wiki/_meta/identity-index.json`, derived; I/O in `tools/wiki_ops/lint_cache.py`)
 
 ```json
 {"version": 1, "manifest_sha256": "…",
@@ -88,4 +88,5 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 - `pairs` holds `SequenceMatcher.ratio()` for pairs that passed the prefilter, keyed by the sorted content hashes. Entries whose hashes no longer match any row are pruned on save.
 - **Validity**: a row is reused when `(size, mtime_ns)` matches, or when the rehashed `content_sha256` matches. A changed `version`, a JSON error, or a changed `manifest_sha256` refreshes the affected state; version and parse errors rebuild everything.
 - **Result shape added to `wiki-lint --json`**: `"identity": {"status", "ambiguous", "scanned": <selected>, "compared": <|selected ∪ candidates|>, "index": {"hits", "misses"}}`.
+- **Use**: `scan_identities`, `resolve_identity`, and `_path_for` all read this index. The thresholds (prefilter > 0.6; shared-source stem ratio > 0.7) only put a page in `candidates` and set `status: ambiguous`, which gates mutations. No code picks the canonical page; that is the agent's call under `wiki-dedup` and `wiki-lint`.
 - **Tracking**: `wiki/_meta/lint-cache.json`, `wiki/_meta/identity-index.json`, and `styles/config/vocabularies/CoDM/accept.txt` stay tracked. They are FR-028 bookkeeping written by lint, not read-side mutation (FR-017), and are committed with the change that caused them.
