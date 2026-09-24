@@ -1,9 +1,0 @@
-{
-  "expectations": [
-    {"text": "At a Glance is usable in a five-second scan.", "passed": true, "evidence": "Opens with identity ('Umberlee's older shrine in the Sunken Crown'), then key visual (dark blue hole, reef-path), then stakes (Pearl theft). Scannable."},
-    {"text": "The [!narration] block reads naturally aloud.", "passed": true, "evidence": "Concrete sensory: black stone, dark blue hole, narrow reef-path, kelp-wrapped pillars, soft footsteps, steady candles. Reads aloud smoothly."},
-    {"text": "No Encyclopedia entry pattern.", "passed": true, "evidence": "Places reader at the hole, walking the reef-path. No 'Vel Orn is a...' classification."},
-    {"text": "At least one body-scale geographic feature or affordance cue.", "passed": true, "evidence": "Narrow reef-path, slick rock footing, surge timing, sheer cliff. Multiple body-scale cues."},
-    {"text": "Wikilinks remain intact and resolve to the same targets.", "passed": true, "evidence": "All aliases preserved (Vel-Orn, Umberlee's Hidden Shrine, Vafnar). All wikilinks intact: [[Sunken Crown]], [[pearl-of-souls]], [[delmar-fisk]], [[Waveservants]], [[Umberlee]]."}
-  ]
-}

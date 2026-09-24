@@ -1,8 +1,0 @@
-{
-  "expectations": [
-    {"text": "Identifies the multiplication risk in unbounded every-hit effect.", "passed": false, "evidence": "Report: designed 1d8 psychic per hit with 'Every Attack Counts' mechanic explicitly covering all attack types. No mention of identifying multiplication risk — treated the every-hit rider as the feature, not a problem to calibrate."},
-    {"text": "Item text block states exact trigger, damage, AND calibrated frequency (once-per-turn or equivalent) including Extra Attack and reaction interaction.", "passed": false, "evidence": "Report: '1d8 psychic damage on every hit' — 4.5 avg per hit unbounded across Extra Attack, TWF, opportunity attacks. No frequency calibration applied."},
-    {"text": "Imposes once-per-turn or calibrated frequency rather than unbounded every-hit.", "passed": false, "evidence": "Report: 'Explicit Every Attack Counts mechanic covering Extra Attack, two-weapon fighting, opportunity attacks' — this is the opposite of calibrating; it explicitly enables stacking."},
-    {"text": "Edge cases (Extra Attack, TWF, reactions, opportunity attacks) addressed inline in item text.", "passed": true, "evidence": "Report: edge cases are explicitly covered, though in the wrong direction (enabling rather than limiting)."}
-  ]
-}

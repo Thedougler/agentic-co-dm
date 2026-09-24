@@ -1,2 +1,0 @@
-> [!narration] Hinewai - First Sighting
-> A figure stands motionless on the game trail ahead, tall and narrow, with pale cool-gray skin and long black hair plastered to her shoulders by the rain. Her dark cloak hangs in ragged layers that drip steadily onto dark boots, gray highlights catching in what little night light shows, and her amber-gold eyes are unblinking, fixed on you. The rainforest closes around her—moss and roots and the smell of wet earth, the drip and hiss of rain through a hundred leaves—and she does not move, does not speak, only watches.
