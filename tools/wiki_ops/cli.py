@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import json
+import sys
 import os
 from pathlib import Path
 from typing import Any
@@ -11,9 +12,13 @@ EXIT_ERROR = 1
 EXIT_REJECTED = 2
 
 
+PACKAGE_ROOT = Path(__file__).resolve().parents[2]
+SCOPE_KINDS = "files|directory(dir)|entity_type(type)|identity_set|changed|bundle"
+
+
 def repo_root(start: str | Path | None = None) -> Path:
-    """Find the nearest repository root, falling back to this package root."""
-    current = Path(start or Path.cwd()).expanduser().resolve()
+    """The repository root: the nearest .git above `start`, which defaults to this package (never the cwd)."""
+    current = Path(start or PACKAGE_ROOT).expanduser().resolve()
     for candidate in (current, *current.parents):
         if (candidate / ".git").exists():
             return candidate
@@ -38,16 +43,16 @@ def _dotenv_value(path: Path, key: str) -> str | None:
 
 
 def configured_vault(start: str | Path | None = None) -> str | None:
-    """Resolve the configured vault without requiring infrastructure arguments."""
+    """Vault order after --vault: OBSIDIAN_VAULT_PATH > repo .env > <repo>/wiki > ~/.obsidian-wiki/config."""
     if os.environ.get("OBSIDIAN_VAULT_PATH"):
         return os.environ["OBSIDIAN_VAULT_PATH"]
     root = repo_root(start)
-    for candidate in (root, *root.parents):
-        value = _dotenv_value(candidate / ".env", "OBSIDIAN_VAULT_PATH")
-        if value:
-            return value
-    global_config = Path.home() / ".obsidian-wiki" / "config"
-    return _dotenv_value(global_config, "OBSIDIAN_VAULT_PATH")
+    value = _dotenv_value(root / ".env", "OBSIDIAN_VAULT_PATH")
+    if value:
+        return value
+    if (root / "wiki").is_dir():
+        return str(root / "wiki")
+    return _dotenv_value(Path.home() / ".obsidian-wiki" / "config", "OBSIDIAN_VAULT_PATH")
 
 
 def resolve_vault(raw: str | Path | None = None, *, start: str | Path | None = None) -> Path:
@@ -71,3 +76,10 @@ def emit_json(value: Any) -> None:
 def emit_error(message: str, *, code: int = EXIT_ERROR) -> int:
     print(json.dumps({"status": "error", "error": message}, sort_keys=True, separators=(",", ":")))
     return code
+
+
+def usage_error(error: str, *, hint: str, example: str, list_valid: str) -> int:
+    """The FR-035 error object: JSON on stdout, the same message on stderr, exit 2."""
+    emit_json({"status": "error", "error": error, "hint": hint, "example": example, "list_valid": list_valid})
+    print(f"error: {error}", flush=True, file=sys.stderr)
+    return EXIT_REJECTED

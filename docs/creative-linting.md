@@ -10,7 +10,7 @@ The implementation has three cooperating layers:
 - Vale runs the configured third-party and deprecated-term packages; the retained `CoDM` style namespace is available for future rules but has no active uppercase custom styles.
 - `tools/creative_lint/` owns registry loading, bundle routing, symbolic evaluators, the finding schema, severity/status computation, waivers, shadow telemetry, and the repair loop.
 
-The CLI entry point is `scripts/wiki-lint`:
+Page lint goes through one front door, `scripts/wiki lint` (and `wiki lint fix` for deterministic repairs); `wiki lint --help` owns its usage. `scripts/wiki-lint` is the checker it drives, and keeps the rule-registry subcommands below:
 
 - No-subcommand invocations delegate structural checks to `tools/lint_wiki.py`; default output is sparse (actual findings or `status: "clean"`), and `--verbose` restores the full zero-count matrix.
 - `queue` emits a stateless smallest-first list of pages with safe findings; `template` derives and compares the mapped runtime template.
@@ -74,10 +74,12 @@ Task runs resolve one named bundle and accept optional paths. File runs evaluate
 
 `template` resolves the template from page `type`/`kind`, derives its frontmatter, headings, callouts, tables, and formatting markers, and reports `TMPL001`–`TMPL005`. It is detection-only. Agents manually fix a nonconformant page after reviewing the finding; no command mutates templates or page prose.
 
-The existing structural mode remains compatible:
+Structural lint of pages, directories, or scopes runs through the front door:
 
 ```bash
-./scripts/wiki-lint --json wiki
+./scripts/wiki lint entities/place/Belumara.md
+./scripts/wiki lint dir:entities/place
+./scripts/wiki lint fix dir:entities/place --dry-run
 ```
 
 Consolidation is explicit and approval-gated:

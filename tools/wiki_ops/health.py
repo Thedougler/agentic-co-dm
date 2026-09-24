@@ -525,6 +525,11 @@ def build_focus(
         else:
             add(item, None, "layout", "layout plan")
 
+    for row in _rows(open_errors, ("entries", "records", "errors", "items")):
+        source = row.get("source")
+        if isinstance(source, str) and not source.startswith("external:"):
+            add(source, row.get("cause"), "tracker", "open ledger entry")
+
     return items
 def _compact_lint(lint: Any) -> dict[str, Any]:
     if not isinstance(lint, Mapping):

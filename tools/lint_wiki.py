@@ -309,7 +309,7 @@ def links(text: str) -> list[str]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("vault", type=Path, nargs="?", default=Path("wiki"))
+    parser.add_argument("vault", type=Path, nargs="?", default=None, help="vault (default: tools/wiki_ops/cli.py resolve_vault)")
     parser.add_argument("--json", action="store_true", help="emit JSON")
     parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
     parser.add_argument("--hard-only", action="store_true", help=argparse.SUPPRESS)
@@ -690,7 +690,9 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
 
 def main() -> int:
     args = parse_args()
-    vault = args.vault.resolve()
+    from tools.wiki_ops.cli import resolve_vault
+
+    vault = resolve_vault(args.vault)
     pages, lookup = load(vault)
     # ponytail: full registry for link resolution; scope filters finding emission only (e-28/e-39)
     resolve_pages, resolve_lookup = pages, lookup
