@@ -1,0 +1,83 @@
+from __future__ import annotations
+
+import json
+import os
+import re
+import subprocess
+import sys
+from pathlib import Path
+
+import pytest
+
+ROOT = Path(__file__).resolve().parents[1]
+LUNA = ROOT / "scripts" / "luna-eval"
+EVAL_FILES = sorted((ROOT / ".agents" / "skills").glob("*/evals/evals.json"))
+
+
+def _record(**overrides) -> dict:
+    record = {"id": 1, "prompt": "Add a place.", "assertions": [{"type": "behavior", "text": "Writes the page"}]}
+    record.update(overrides)
+    return record
+
+
+def _run_bad(tmp_path: Path, payload: dict, skill_dir: str = "demo-skill") -> subprocess.CompletedProcess[str]:
+    skill = tmp_path / skill_dir
+    (skill / "evals").mkdir(parents=True)
+    (skill / "evals" / "evals.json").write_text(json.dumps(payload), encoding="utf-8")
+    env = {**os.environ, "PATH": str(tmp_path / "no-codex")}  # a subject run would fail loudly
+    return subprocess.run(
+        [sys.executable, str(LUNA), "--skill", str(skill), "--eval", "1", "--out", str(tmp_path / "out")],
+        cwd=tmp_path, capture_output=True, text=True, env=env,
+    )
+
+
+def test_all_skill_eval_files_pass_the_schema_check():
+    assert len(EVAL_FILES) == 60
+    import importlib.util
+    from importlib.machinery import SourceFileLoader
+
+    loader = SourceFileLoader("luna_eval", str(LUNA))
+    spec = importlib.util.spec_from_loader("luna_eval", loader)
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+    problems = [problem for path in EVAL_FILES for problem in module.validate_evals(path)]
+    assert problems == []
+
+
+@pytest.mark.parametrize(
+    "payload, needle",
+    [
+        ({"evals": [_record()]}, "skill_name"),
+        ({"skill_name": "other-skill", "evals": [_record()]}, "skill_name"),
+        ({"skill_name": "demo-skill", "evals": [_record(assertions=[])]}, "assertions"),
+        ({"skill_name": "demo-skill", "evals": [{"id": 1, "prompt": "x"}]}, "assertions"),
+        ({"skill_name": "demo-skill", "evals": [_record(expectations=["old"])]}, "expectations"),
+        ({"skill_name": "demo-skill", "evals": [_record(assertions=[{"type": "qualitative", "text": "x"}])]}, "type"),
+        (
+            {"skill_name": "demo-skill", "evals": [_record(assertions=[{"type": "skill_selected", "text": "no-such-skill"}])]},
+            "skill_selected",
+        ),
+    ],
+)
+def test_schema_check_rejects_bad_records_before_any_subject_run(tmp_path: Path, payload: dict, needle: str):
+    proc = _run_bad(tmp_path, payload)
+    assert proc.returncode == 2, proc.stdout + proc.stderr
+    error = json.loads(proc.stdout)
+    assert error["status"] == "error"
+    assert error["hint"] == "see data-model §2"
+    assert "example" in error
+    assert re.match(r".+evals\.json: eval \S+: .+", error["error"]), error["error"]
+    assert needle in error["error"]
+    assert not (tmp_path / "out").exists()
+
+
+def test_no_eval_assertion_uses_work_gate_wording():
+    pattern = re.compile(r"work gate|chat proposal|approval before write", re.I)
+    offenders = []
+    for path in EVAL_FILES:
+        for record in json.loads(path.read_text(encoding="utf-8")).get("evals", []):
+            for item in record.get("assertions", []) or []:
+                text = item.get("text", "") if isinstance(item, dict) else str(item)
+                if pattern.search(text):
+                    offenders.append(f"{path.parent.parent.name}:{record.get('id')}: {text[:80]}")
+    assert offenders == []

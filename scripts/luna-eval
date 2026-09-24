@@ -44,8 +44,15 @@ import time
 from datetime import datetime
 from pathlib import Path
 
-REPO = Path(subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True,
-                           text=True, check=True).stdout.strip())
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from tools.wiki_ops.cli import repo_root  # noqa: E402
+
+REPO = repo_root(Path(__file__).resolve().parent)
+ASSERTION_TYPES = frozenset({
+    "skill_selected", "behavior", "quality", "guardrail", "process", "content",
+    "structure", "scope", "handoff", "coverage",
+})
+SCHEMA_EXAMPLE = '{"type":"behavior","text":"…"}'
 DEFAULT_OUTPUTS = (
     "Write every page or file you would create or edit under {outputs}/ at its "
     "repo-relative path (for example {outputs}/wiki/journal/sessions/<campaign>/<NN>/<page>.md), "
@@ -54,8 +61,60 @@ DEFAULT_OUTPUTS = (
 )
 
 
+def validate_evals(path: Path) -> list[str]:
+    """Check a whole evals.json against data-model §2; return one problem per bad record."""
+    try:
+        data = json.loads(path.read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        return [f"{path}: eval -: unreadable JSON ({exc})"]
+    problems: list[str] = []
+    skill_dir = path.parent.parent.name
+    name = data.get("skill_name")
+    records = data.get("evals")
+    if not isinstance(records, list) or not records:
+        return [f"{path}: eval -: missing or empty evals[]"]
+    for record in records:
+        rid = record.get("id", "?") if isinstance(record, dict) else "?"
+        issues: list[str] = []
+        if not isinstance(record, dict):
+            problems.append(f"{path}: eval ?: record is not an object")
+            continue
+        if name is None:
+            issues.append("missing skill_name")
+        elif name != skill_dir:
+            issues.append(f"skill_name '{name}' does not equal directory '{skill_dir}'")
+        if "id" not in record or not record.get("prompt"):
+            issues.append("missing id or prompt")
+        if "expectations" in record:
+            issues.append("leftover expectations[]; convert to assertions[]")
+        assertions = record.get("assertions")
+        if not isinstance(assertions, list) or not assertions:
+            issues.append("missing or empty assertions[]")
+        else:
+            for item in assertions:
+                if not isinstance(item, dict) or not str(item.get("text", "")).strip():
+                    issues.append("assertion needs {type, text}")
+                    continue
+                kind = item.get("type")
+                if kind not in ASSERTION_TYPES:
+                    issues.append(f"assertion type '{kind}' is not one of {sorted(ASSERTION_TYPES)}")
+                elif kind == "skill_selected" and not (REPO / ".agents" / "skills" / str(item["text"])).is_dir():
+                    issues.append(f"skill_selected text '{item['text']}' is not a directory under .agents/skills/")
+        problems.extend(f"{path}: eval {rid}: {issue}" for issue in issues)
+    return problems
+
+
 def load_eval(skill: Path, eval_id: str) -> dict:
     path = skill / "evals" / "evals.json"
+    problems = validate_evals(path)
+    if problems:
+        error = {"status": "error", "error": problems[0], "hint": "see data-model §2", "example": SCHEMA_EXAMPLE}
+        if len(problems) > 1:
+            error["problems"] = problems
+        print(json.dumps(error))
+        for problem in problems:
+            print(problem, file=sys.stderr)
+        sys.exit(2)
     evals = json.loads(path.read_text())["evals"]
     found = next((e for e in evals if str(e.get("id")) == eval_id), None)
     if found is None:
