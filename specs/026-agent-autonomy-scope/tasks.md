@@ -4,11 +4,13 @@ description: "Task list for Agent Autonomy Scope"
 
 # Tasks: Agent Autonomy Scope
 
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
 **Input**: Design documents from `/specs/026-agent-autonomy-scope/`
 
 **Prerequisites**: plan.md (required), spec.md (required), research.md, data-model.md, contracts/agent-autonomy.md, quickstart.md
 
-**Tests**: Plan requires one pytest (`tests/test_agent_standards.py`) plus `scripts/check-agent-standards.py`. Behavioral validation is `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 (cold-context, live vault). Skill/instruction diffs use existing `skill-creator` evals. Do not add a review checklist, GitHub PR template, or review skill (FR-007).
+**Tests**: Plan requires one pytest (`tests/test_luna_eval.py`) plus `scripts/luna-eval`. Behavioral validation is `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 (cold-context, live vault). Skill/instruction diffs use existing `skill-creator` evals. Do not add a review checklist, GitHub PR template, or review skill (FR-007).
 
 **Organization**: Tasks are grouped by user story. Constitution, `AGENTS.md`, and `rules/registry.yml` have one writer at a time — never parallelize two tasks that edit the same of those files. Skills MUST NOT copy the four-line canon. Do not say "autonomous GM".
 
@@ -31,11 +33,11 @@ docs/agents/hybrid-sdd.md
 docs/agents/policy-owners.yml
 .agents/skills/**/SKILL.md
 rules/registry.yml
-scripts/check-agent-standards.py
-tests/test_agent_standards.py
+scripts/luna-eval
+tests/test_luna_eval.py
 ```
 
-Canon owner after implement: constitution principle X. Executable rules: `AGENT001` `AGENT002` `AGENT003` via `scripts/check-agent-standards.py`. `AGENTS.md` is why/examples only.
+Canon owner after implement: constitution principle X. Executable rules: `luna-eval` evals via `scripts/luna-eval`. `AGENTS.md` is why/examples only.
 
 ---
 
@@ -54,8 +56,8 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete. T002 then T003 then T004 are sequential (constitution → `AGENTS.md` → registry).
 
 - [X] T002 Amend `.specify/memory/constitution.md` MAJOR `3.0.0` (`2.12.0` → `3.0.0`, Last Amended `2026-09-18`, Sync Impact Report): principle X is exactly "If the user said it, it is canon. If the user said it more recently, that is more canon. If a transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as long as they do not contradict 1–3." (`user_said`, `more_recent_user_said`, `corrected_transcript`, `dm_placed_ingest`); Co-DM files what those lines make canon; do not invent what the user did not say (XII); do not pick a winner among contradictions unless the user picked; principle XV: agents complete requested work and unattended maintenance with no approval wait and a done-summary after green; principle XVII: wiki files user/transcript/non-contradicting ingest immediately; Operating Boundaries delete campaign-facts-remain-DM-gated
-- [X] T003 In `AGENTS.md` delete heading **Autonomy classification**, the `autonomous` / `dm-gated` table, and the wait rule; point at constitution X for canon (do not copy the four lines); point at `AGENT001`–`AGENT003` / wiki-lint for the contract; keep **Project identity** (skills/instructions/guidance primary; scripts support; `skill-creator` eval bar; MUST NOT add a checklist, PR template, or review skill); state done-summary shape (what changed, where; no question; no wait); replace `Load docs/agents/work.md` so it is not "wiki write after DM accept"; HARD entity-before-spoken files the named owner then spoken (not a wait for accept); mixed request does both then one done-summary after green; Helpers: FR-002 unattended, unsaid invention is not canon; dedup merge without user ask still confirms
-- [X] T004 Register `AGENT001`, `AGENT002`, and `AGENT003` in `rules/registry.yml` with `evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`, `lifecycle: ACTIVE`; `AGENT001` encodes FR-001/FR-005 (fail on `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`); `AGENT002` encodes FR-013 (paths `.agents/skills/<kebab>/SKILL.md`, `.agents/skills/<kebab>/<kebab>.md`, `docs/agents/<kebab>.md`, `docs/agents/<kebab>.yml`, `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`); `AGENT003` encodes FR-004/FR-011 (a `specs/*/spec.md` Functional Requirement containing `agent-facing` MUST cite at least one `rules/registry.yml` id)
+- [X] T003 In `AGENTS.md` delete heading **Autonomy classification**, the `autonomous` / `dm-gated` table, and the wait rule; point at constitution X for canon (do not copy the four lines); point at `luna-eval` evals / wiki-lint for the contract; keep **Project identity** (skills/instructions/guidance primary; scripts support; `skill-creator` eval bar; MUST NOT add a checklist, PR template, or review skill); state done-summary shape (what changed, where; no question; no wait); replace `Load docs/agents/work.md` so it is not "wiki write after DM accept"; HARD entity-before-spoken files the named owner then spoken (not a wait for accept); mixed request does both then one done-summary after green; Helpers: FR-002 unattended, unsaid invention is not canon; dedup merge without user ask still confirms
+- [X] T004 (Replaced by `luna-eval` evals.) Register the three agent-standard rules in `rules/registry.yml` with `evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`, `lifecycle: ACTIVE`; `luna-eval` Work-gate evals encodes FR-001/FR-005 (fail on `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`); the placement rule (no current checker) encodes FR-013 (paths `.agents/skills/<kebab>/SKILL.md`, `.agents/skills/<kebab>/<kebab>.md`, `docs/agents/<kebab>.md`, `docs/agents/<kebab>.yml`, `AGENTS.md`, `wiki/AGENTS.md`, `.omp/AGENTS.md`); the spec-citation rule (no current checker) encodes FR-004/FR-011 (a `specs/*/spec.md` Functional Requirement containing `agent-facing` MUST cite at least one `rules/registry.yml` id)
 
 **Checkpoint**: Foundation ready — constitution X is the canon owner; `AGENTS.md` has no competing gate; registry ids exist
 
@@ -101,20 +103,20 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ## Phase 5: User Story 5 - Agent-Facing Standards Are Checkable (Priority: P1)
 
-**Goal**: AGENT001–AGENT003 are the executable contract. Agents iterate until green. `AGENTS.md` is why/examples only. Same checker on agent path and human path (FR-014).
+**Goal**: `luna-eval` evals are the executable contract. Agents iterate until green. `AGENTS.md` is why/examples only. Same checker on agent path and human path (FR-014).
 
-**Independent Test**: `.venv/bin/python scripts/check-agent-standards.py --json` exits 0 when instruction files match; re-insert `## Work gate` → AGENT001 fail (`quickstart.md` V-007). A later feature that adds an agent-facing FR with no registry id is incomplete (AGENT003).
+**Independent Test**: `scripts/luna-eval --skill <owner skill> --eval <id> --out /tmp/<run>/iteration-1` exits 0 when instruction files match; re-insert `## Work gate` → `luna-eval` Work-gate evals fail (`quickstart.md` V-007). A later feature that adds an agent-facing FR with no registry id is incomplete (the spec-citation rule (no current checker)).
 
 ### Tests for User Story 5 ⚠️
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [X] T017 [P] [US5] Add `tests/test_agent_standards.py` copying `tests/test_policy_conflicts.py` shape: run `scripts/check-agent-standards.py --json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert AGENT002 fail on `.agents/skills/My Skill/notes.txt`; assert AGENT003 fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
+- [X] T017 [P] [US5] (Replaced by the Work-gate wording case in `tests/test_luna_eval.py`.) Add the agent-standards pytest copying `tests/test_policy_conflicts.py` shape: run the checker with `--json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert the placement rule (no current checker) fail on `.agents/skills/My Skill/notes.txt`; assert the spec-citation rule (no current checker) fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
 
 ### Implementation for User Story 5
 
-- [X] T018 [US5] Implement `scripts/check-agent-standards.py` (Python 3 stdlib + PyYAML like `scripts/check-policy-conflicts`): args in, JSON out, exit 0 clean / 1 findings / 2 error; scan `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` for AGENT001; scan the live agent-facing tree for AGENT002 path/name; scan `specs/*/spec.md` Functional Requirements for AGENT003; no new CI job
-- [X] T019 [US5] Cite at least one `rules/registry.yml` id on every Functional Requirement containing `agent-facing` in `specs/*/spec.md`, including `specs/026-agent-autonomy-scope/spec.md` (`AGENT001`, `AGENT002`, `AGENT003`)
+- [X] T018 [US5] (Replaced by `scripts/luna-eval` evals.) Implement the agent-standards checker (Python 3 stdlib + PyYAML like `scripts/check-policy-conflicts`): args in, JSON out, exit 0 clean / 1 findings / 2 error; scan `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md` for `luna-eval` Work-gate evals; scan the live agent-facing tree for the placement rule (no current checker) path/name; scan `specs/*/spec.md` Functional Requirements for the spec-citation rule (no current checker); no new CI job
+- [X] T019 [US5] Cite at least one `rules/registry.yml` id on every Functional Requirement containing `agent-facing` in `specs/*/spec.md`, including `specs/026-agent-autonomy-scope/spec.md` (`luna-eval` evals)
 - [X] T020 [US5] Execute V-007 in `specs/026-agent-autonomy-scope/quickstart.md` (checker green; negative `## Work gate` and ad-hoc skill path fail)
 
 **Checkpoint**: Lint is the contract; prose is not a substitute (SC-006, SC-007)
@@ -123,14 +125,14 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 
 ## Phase 6: User Story 6 - Predictable Agent-Facing Files (Priority: P1)
 
-**Goal**: Every agent-facing file matches AGENT002. This feature bulk-renames the existing tree. No grandfathering. Carve-outs only after a problem already experienced.
+**Goal**: Every agent-facing file matches the placement rule (no current checker). This feature bulk-renames the existing tree. No grandfathering. Carve-outs only after a problem already experienced.
 
-**Independent Test**: An agent-facing file that is not at the predicted path or that uses an ad-hoc unsearchable name fails AGENT002, including files that predate this feature (SC-008).
+**Independent Test**: An agent-facing file that is not at the predicted path or that uses an ad-hoc unsearchable name fails the placement rule (no current checker), including files that predate this feature (SC-008).
 
 ### Implementation for User Story 6
 
-- [X] T021 [US6] Remorph non-conforming companions to kebab and update references in the same pass: `.agents/skills/wiki-lint/checks.md` → `.agents/skills/wiki-lint/checks.md`, `.agents/skills/wiki-lint/consolidate.md` → `.agents/skills/wiki-lint/consolidate.md`, `.agents/skills/llm-wiki/paper-template.md`, `.agents/skills/obsidian-markdown/upstream.md`, `.agents/skills/obsidian-markdown/references/callouts.md`, `columns.md`, `embeds.md`, `properties.md`, `.agents/skills/wiki-capture/references/raw-format.md`, plus every other live agent-facing path that does not match AGENT002 in `specs/026-agent-autonomy-scope/contracts/agent-autonomy.md`; no proactive exclude list
-- [X] T022 [US6] Run `.venv/bin/python scripts/check-agent-standards.py --json` and repair remaining AGENT002 (and AGENT001) findings until exit 0
+- [X] T021 [US6] Remorph non-conforming companions to kebab and update references in the same pass: `.agents/skills/wiki-lint/checks.md` → `.agents/skills/wiki-lint/checks.md`, `.agents/skills/wiki-lint/consolidate.md` → `.agents/skills/wiki-lint/consolidate.md`, `.agents/skills/llm-wiki/paper-template.md`, `.agents/skills/obsidian-markdown/upstream.md`, `.agents/skills/obsidian-markdown/references/callouts.md`, `columns.md`, `embeds.md`, `properties.md`, `.agents/skills/wiki-capture/references/raw-format.md`, plus every other live agent-facing path that does not match the placement rule (no current checker) in `specs/026-agent-autonomy-scope/contracts/agent-autonomy.md`; no proactive exclude list
+- [X] T022 [US6] Run `scripts/luna-eval --skill <owner skill> --eval <id> --out /tmp/<run>/iteration-1` and repair remaining the placement rule (no current checker)  findings until exit 0
 
 **Checkpoint**: 100% of shipped agent-facing files satisfy the path/name rule (SC-008)
 
@@ -158,7 +160,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 - [X] T025 Apply `.agents/skills/writing-for-agents/SKILL.md` to the files this feature changed so each change is a positive instruction with a completion criterion and no copied four-line canon or Autonomy table
 - [X] T026 Confirm none of the scanned instruction files use "autonomous GM"; confirm `.agents/skills/wiki-dedup/SKILL.md` unattended merge without a user ask still confirms; confirm `.agents/skills/skill-creator/SKILL.md` eval loop is unchanged
 - [X] T027 Execute V-005 in `specs/026-agent-autonomy-scope/quickstart.md` (two independent cold-context agents, same one-line task, both file lint repair and NPC, green, done-summary, neither waits) (SC-005)
-- [X] T028 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 and `.venv/bin/python scripts/check-agent-standards.py --json` until exit 0
+- [X] T028 Re-run any not-yet-green scenario in `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 and `scripts/luna-eval --skill <owner skill> --eval <id> --out /tmp/<run>/iteration-1` until exit 0
 
 ---
 
@@ -171,8 +173,8 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 - **User Stories (Phase 3+)**: All depend on Foundational
   - US1 (P1) after foundation; skill/loop files only
   - US2 (P1) after foundation; `work.md` / `wiki/AGENTS.md` / hybrid-sdd / policy-owners / harness / skill strips; do not write `AGENTS.md` (T003 owns it)
-  - US5 (P1) after US2 strips so AGENT001 can go green; checker then spec cites
-  - US6 (P1) after US5 checker exists; remorph until AGENT002 green
+  - US5 (P1) after US2 strips so `luna-eval` Work-gate evals can go green; checker then spec cites
+  - US6 (P1) after US5 checker exists; remorph until the placement rule (no current checker) green
   - US3 (P2) after T003 Project identity exists
 - **Polish (Phase 8)**: After desired user stories
 
@@ -181,7 +183,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 - **User Story 1 (P1)**: After Foundational — independently testable via V-001
 - **User Story 2 (P1)**: After Foundational — independently testable via V-002/V-003/V-004/V-008
 - **User Story 5 (P1)**: After US2 instruction strips — independently testable via V-007
-- **User Story 6 (P1)**: After US5 checker — independently testable via AGENT002 exit 0
+- **User Story 6 (P1)**: After US5 checker — independently testable via the placement rule (no current checker) exit 0
 - **User Story 3 (P2)**: After Foundational — independently testable via V-006
 
 ### Within Each User Story
@@ -189,7 +191,7 @@ Canon owner after implement: constitution principle X. Executable rules: `AGENT0
 - Tests (US5) MUST be written and FAIL before the checker
 - Models/owners (constitution, registry) before consumers
 - Story complete before moving to the next writer on a shared file
-- Green-before-done: do not mark a story done while AGENT001–003 for that work still fail
+- Green-before-done: do not mark a story done while `luna-eval` evals for that work still fail
 
 ### Parallel Opportunities
 

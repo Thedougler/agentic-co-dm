@@ -1,5 +1,7 @@
 # Research: Agent Autonomy Scope
 
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
 ```text
 work_class: agent-system
 route: full-sdd
@@ -72,9 +74,9 @@ Do not retrofit existing prose-only standards (FR-011 last sentence).
 
 | Rule | Encodes | Evaluator | Why this surface |
 |------|---------|-----------|------------------|
-| AGENT001 | FR-001, FR-005 | New `scripts/check-agent-standards.py` + `rules/registry.yml` | Vale `[*]` would false-positive wiki mentions of Work; `creative_lint` symbolic.py is wiki-loader scoped |
-| AGENT002 | FR-013 | Same script | Filename/path is not a Vale token check |
-| AGENT003 | FR-004, FR-011 | Same script | Later `specs/*/spec.md` agent-facing FRs must cite a `rules/registry.yml` id |
+| `luna-eval` Work-gate evals | FR-001, FR-005 | `scripts/luna-eval` evals (replaced the original checker) | Vale `[*]` would false-positive wiki mentions of Work; `creative_lint` symbolic.py is wiki-loader scoped |
+| the placement rule (no current checker) | FR-013 | No current checker | Filename/path is not a Vale token check |
+| the spec-citation rule (no current checker) | FR-004, FR-011 | No current checker | Later `specs/*/spec.md` agent-facing FRs must cite a `rules/registry.yml` id |
 
 Copy pattern: `scripts/check-policy-conflicts` (args in, JSON out, exit 0/1) + `tests/test_policy_conflicts.py`. Register ids in `rules/registry.yml` (`evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`). One pytest runs the script. No new CI job; existing pytest catches it.
 
@@ -82,11 +84,11 @@ Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template 
 
 **Alternatives considered**: Extend `evaluate_symbolic` (rejected: wiki loader). Vale existence on `## Work gate` (rejected: path scoping + wiki false positives). New Vale package (rejected: XIV).
 
-## R-006: AGENT001 / AGENT002 / AGENT003 mechanics
+## R-006: luna-eval evals mechanics
 
-**AGENT001**: Fail if agent-facing instruction files still describe Work-gate / DM-approval-wait / extra canon workflow. Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md`. Forbidden procedure language after this feature: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`. Existing files in that scan MUST be edited until green.
+**`luna-eval` Work-gate evals**: Fail if agent-facing instruction files still describe Work-gate / DM-approval-wait / extra canon workflow. Scan: `AGENTS.md`, `wiki/AGENTS.md`, `docs/agents/**/*.md`, `.agents/skills/**/*.md`. Forbidden procedure language after this feature: `## Work gate`, `dm-gated`, `file nothing until accept`, `wiki write after DM accept`, `Work-propose`, `wait for accept`. Existing files in that scan MUST be edited until green.
 
-**AGENT002**: Scan the live agent-facing tree. Paths must match:
+**the placement rule (no current checker)**: Scan the live agent-facing tree. Paths must match:
 
 - `.agents/skills/<kebab>/SKILL.md`
 - `.agents/skills/<kebab>/<kebab>.md`
@@ -95,7 +97,7 @@ Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template 
 
 Non-conforming files MUST be renamed in this feature; references updated. `checks.md` / `consolidate.md` remorph to kebab.
 
-**AGENT003**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md cites AGENT001–AGENT003. Every existing spec that uses that phrase MUST cite an id.
+**the spec-citation rule (no current checker)**: A `specs/*/spec.md` Functional Requirement that uses `agent-facing` must cite at least one `rules/registry.yml` `id`. This feature’s spec.md cites `luna-eval` evals. Every existing spec that uses that phrase MUST cite an id.
 
 **Alternatives considered**: Grandfather existing tree (rejected: later user statement). Proactive adapter exclude-list (rejected: carve-outs only after a problem already experienced).
 
@@ -118,9 +120,9 @@ Hottest surfaces:
 
 Skill-design class: `not` (established-file strips + AGENTS.md). No designated-writer dispatch.
 
-**Rationale**: FR-005. AGENT001 will fail until these are gone.
+**Rationale**: FR-005. `luna-eval` Work-gate evals will fail until these are gone.
 
-**Alternatives considered**: Leave Work-gate headers as pointers to work.md (rejected: AGENT001 and FR-005). New skill (rejected: XIV, FR-007).
+**Alternatives considered**: Leave Work-gate headers as pointers to work.md (rejected: `luna-eval` Work-gate evals and FR-005). New skill (rejected: XIV, FR-007).
 
 ## R-008: Wiki writes go live
 

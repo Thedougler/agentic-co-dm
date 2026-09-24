@@ -1,6 +1,8 @@
 # Quickstart Validation: Agent Autonomy Scope
 
-Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/check-agent-standards.py` is green (`AGENT001`–`AGENT003`). Wiki writes go to live vault paths.
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
+Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/luna-eval` is green (`luna-eval` evals). Wiki writes go to live vault paths.
 
 Cold-context means a new agent session that has not seen this feature’s chat, only repo files.
 
@@ -65,12 +67,12 @@ Cite [contracts/agent-autonomy.md](contracts/agent-autonomy.md) and [data-model.
 **Run**:
 
 ```bash
-.venv/bin/python scripts/check-agent-standards.py --json
+scripts/luna-eval --skill <owner skill> --eval <id> --out /tmp/<run>/iteration-1
 ```
 
-**Expected**: exit 0 when instruction files match AGENT001–003.
+**Expected**: exit 0 when instruction files match `luna-eval` evals.
 
-**Negative**: Re-insert `## Work gate` in a skill → AGENT001 fail, exit ≠ 0. Add `.agents/skills/My Skill/notes.txt` on a branch → AGENT002 fail.
+**Negative**: Re-insert `## Work gate` in a skill → `luna-eval` Work-gate evals fail, exit ≠ 0. Add `.agents/skills/My Skill/notes.txt` on a branch → the placement rule (no current checker) fail.
 
 **Fail**: Script missing, or fail does not block done.
 

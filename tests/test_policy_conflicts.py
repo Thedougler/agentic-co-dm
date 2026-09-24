@@ -70,3 +70,37 @@ def test_omp_baseline_rejects_enabled_or_missing_memory(tmp_path: Path):
     proc = _omp_check(_omp_copy(tmp_path / "no-line", "memory:\n  scoping: none"))
     assert proc.returncode == 1
     assert "memory key missing" in proc.stderr
+
+
+def test_feature_026_docs_cite_only_existing_paths(tmp_path: Path):
+    import re
+
+    spec_dir = "specs/026-agent-autonomy-scope"
+    seeded = tmp_path / spec_dir
+    seeded.mkdir(parents=True)
+    (seeded / "plan.md").write_text("Run `tests/test_missing_surface.py` and `scripts/check-current-commands`.\n", encoding="utf-8")
+    (tmp_path / "scripts").mkdir()
+    (tmp_path / "scripts/check-current-commands").write_text("", encoding="utf-8")
+    seeded_proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/check-current-commands"), "--json", "--root", str(tmp_path)],
+        capture_output=True, text=True,
+    )
+    seeded_hits = json.loads(seeded_proc.stdout)["hits"]
+    assert [(hit["path"], hit["command"]) for hit in seeded_hits] == [
+        (f"{spec_dir}/plan.md", "tests/test_missing_surface.py")
+    ], seeded_hits
+
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/check-current-commands"), "--json"],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    hits = [hit for hit in json.loads(proc.stdout)["hits"] if hit["path"].startswith(spec_dir + "/")]
+    assert hits == []
+
+    retired = [
+        f"{path.relative_to(ROOT)}:{number}"
+        for path in sorted((ROOT / spec_dir).rglob("*.md"))
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1)
+        if re.search(r"AGENT00[1-3]", line)
+    ]
+    assert retired == []

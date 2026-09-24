@@ -1,5 +1,7 @@
 # Data Model: Agent Autonomy Scope
 
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
 No persisted classification store. Canon and done-state are evaluated per request.
 
 ## Entities
@@ -29,9 +31,9 @@ Machine-checkable rules that encode new agent-facing standards from this feature
 
 | id | Encodes | Input | Fail when |
 |----|---------|-------|-----------|
-| AGENT001 | FR-001, FR-005 | Agent-facing instruction files | Work-gate / approval-wait / extra canon-step procedures remain |
-| AGENT002 | FR-013 | Live agent-facing tree | Path or name is ad-hoc |
-| AGENT003 | FR-004, FR-011 | `specs/*/spec.md` FRs containing `agent-facing` | No cited `rules/registry.yml` id |
+| `luna-eval` Work-gate evals | FR-001, FR-005 | Agent-facing instruction files | Work-gate / approval-wait / extra canon-step procedures remain |
+| the placement rule (no current checker) | FR-013 | Live agent-facing tree | Path or name is ad-hoc |
+| the spec-citation rule (no current checker) | FR-004, FR-011 | `specs/*/spec.md` FRs containing `agent-facing` | No cited `rules/registry.yml` id |
 
 Wiki HARD lint (links, frontmatter, templates, Vale on wiki) already exists. This feature does not duplicate it. Green-before-done (FR-012) means: every checkable rule that applies to the work just done is exit 0 before the done-summary.
 
@@ -65,9 +67,9 @@ No Propose / Decide / accept states.
 
 - Canon Rule → wiki page write (immediate; staging flag may redirect path)
 - Lint Contract → done-summary (blocks until green)
-- AGENT001 → instruction files in R-007; existing files updated until green
-- AGENT002 → whole scanned tree; bulk-rename + reference updates
-- AGENT003 → this spec and later specs that use `agent-facing`
+- `luna-eval` Work-gate evals → instruction files in R-007; existing files updated until green
+- the placement rule (no current checker) → whole scanned tree; bulk-rename + reference updates
+- the spec-citation rule (no current checker) → this spec and later specs that use `agent-facing`
 - `docs/agents/work.md` → no longer a gate; may keep table-aim / reflection that is not an approval wait
 
 ## Edge-case resolution
@@ -79,8 +81,8 @@ No Propose / Decide / accept states.
 | "Clean up and expand" | Do both; one done-summary after green |
 | Ingest contradicts user/transcript | Ingest is not canon; do not file that contradiction as truth; no ask |
 | Session prep needs a named owner the user asked to introduce | File the owner page; spoken may follow |
-| Later feature adds agent-facing standard in prose only | AGENT003 fail; feature incomplete |
-| Existing instruction file predates this feature | Update and/or rename until AGENT001–AGENT002 green |
-| Agent-facing file in an ad-hoc path | AGENT002 fail until renamed |
+| Later feature adds agent-facing standard in prose only | the spec-citation rule (no current checker) fail; feature incomplete |
+| Existing instruction file predates this feature | Update and/or rename until `luna-eval` evals green |
+| Agent-facing file in an ad-hoc path | the placement rule (no current checker) fail until renamed |
 | Dedup merge without user ask | Not FR-002 unattended; destructive confirm remains |
 | User asked to merge duplicates | File the merge; green; done-summary |
