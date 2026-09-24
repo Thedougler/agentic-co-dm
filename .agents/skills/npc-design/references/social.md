@@ -12,7 +12,8 @@ scene, and what a confrontation protects.
 3. **Choose an approach.** Conversation, evidence, favor, gift, threat, appeal,
    or leverage. Explain why it fits the NPC’s need, limit, and contradiction.
 4. **Decide whether to roll.** Roll only if the outcome is uncertain, the stakes
-   matter, and a miss will change the situation. Otherwise state the result.
+   matter, and a miss will change the situation; write the roll as Ability
+   (Skill) and DC. Otherwise state the result.
 5. **Resolve movement.** Success improves attitude, willingness, access, or the
    concession. A miss spends time, leverage, trust, safety, or an opportunity.
    Neither result rewrites beliefs or removes agency.

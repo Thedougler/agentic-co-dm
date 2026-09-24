@@ -65,8 +65,10 @@ Full design: no existing creature grabs from the air and swallows.
 
 ## 5. Numbers
 
-CR 9 (PB +4): its HP runs high and its AC low for CR 9, and its damage is
-about right. Tuned against the party read: +9 hits average AC 16.5 about 67%
+Target: Deadly. Its defense matches CR 10 (HP 190 is high, AC 14 is low) and
+its offense matches CR 8 (about 60 damage per round at +9), so the label is
+CR 9 (PB +4). It lasts about 4.5 party rounds (Deadly: 4) and can drop Sefa, the
+most exposed PC, in about 2 (Deadly: about 2). Tuned against the party read: +9 hits average AC 16.5 about 67%
 of the time and Bram 50%. DC 15 Con fails about 60% against their weak Con.
 Effective HP about 215 after bludgeoning resistance lasts about 4.5 party
 rounds across both forms. It survives the nova (190 minus 70) to act twice.

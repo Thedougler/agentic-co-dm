@@ -53,7 +53,7 @@ Do not predict a required sequence of future events.
 Record exceptions, boundaries, costs, or circumstances under which the statement above stops being true.
 
 * **Exception.**
-* **Unknown.**
+* **Unknown to the world.** What no one in the world knows; Current Truth carries the answer.
 * **Impossible or forbidden.**
 
 ---
@@ -169,16 +169,6 @@ The characters can learn that…
 | Page     | Relationship                | Table relevance                                    |
 | -------- | --------------------------- | -------------------------------------------------- |
 | [[page]] | How it relates to this lore | What this connection can cause, reveal, or explain |
-
----
-
-## Open Canon
-
-<!-- Preserve uncertainty instead of inventing answers before they matter. -->
-
-* [ ] **Unknown.** Record a question the setting has not answered yet.
-* [ ] **Contradiction.** Record a disagreement between established sources or observations.
-* [ ] **Decide when needed.** Record detail whose answer can safely remain fluid until play makes it relevant.
 
 ---
 

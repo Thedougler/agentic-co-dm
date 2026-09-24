@@ -10,128 +10,209 @@ description: >-
   work here.
 ---
 
-# Region Design
+# Region design
 
-Prep only. Follow `docs/agents/work.md`.
+A region page is a **map of choices and motion**: the party asks "which way do
+we go?" and the page answers with routes that trade time, risk, supply, and
+discovery; then the region answers back with powers that move, hazards with
+signs, and things worth finding. A good region gives travel its own play:
+navigation that can go wrong, encounters that tell a story about who lives
+there, and at least one pressure heading somewhere soon.
+
+File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Boundary contract
 
-### Input
+- **Input:** A named region (existing page or one to mint), the caller's
+  objective and brief, `wiki/templates/region.md`, and the vault canon it
+  touches: parent and neighbouring regions, places, routes, powers, creatures,
+  sessions.
+- **Work:** The steps below, for this one region. Keep the caller's objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** A named place, faction, NPC, creature, or quest the
+  region needs is cast before it is minted (`docs/agents/table-ready.md` § Cast
+  before minting): an in-play or unrevealed page that fits comes first, and its
+  owner skill (`place-design`, `city-design`, `faction-design`, `npc-design`,
+  `monster-design`) mints one only when none fits, before any text depends on it
+  (AGENTS.md **HARD: entity-before-spoken**, **Focused minting**). Full faction
+  agendas stay on faction pages; off-screen turns → `world-tick`. The travel
+  look → `theatre-of-the-mind` with the packet from step 6. Each child returns
+  its page path or prose and its completion result; resume at the step that
+  waited on it.
 
-Take a named region owner, the caller's objective, and the relevant brief,
-`wiki/templates/region.md`, and linked geography, route, place, faction, and
-session notes. When the owner is a region, enter this skill directly rather
-than a generic place or campaign orchestrator.
+## Page rules
 
-### Owner-specific Work
+These hold in every step.
 
-Work only the named region: preserve its scale and canon, fill the region
-template, and apply the identity, route-choice, active-power, and pressure
-craft below. Keep the caller's objective intact while retrieving local facts.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  region needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner. An uncharted region stays uncharted for sailors in the world; the DM
+  page carries its geography.
+- **Preserve.** Improving an existing page keeps every established detail
+  (scale, boundaries, landmarks, hazards, powers, tone, history); fold each one
+  into the section that now owns it.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
+- **Named means paged.** A place, power, or creature the page names links a
+  page. A feature the party only crosses (a current, a reef line, a fog bank)
+  is described, not named.
+- **Choices stay with the players.** The page gives routes, costs, and what
+  the region does; the party's travel choices are left to play.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every sign,
+  rumor, and hazard has its truth on the page by name. `[!narration]` is the
+  only callout. `type: region`; `type: front` stays retired.
+- **Process stays off the page.** The inventory, identity sentence, and packet
+  are working notes; the page carries only their facts.
 
-### Capability Handoff
+## Steps
 
-City → `city-design`. Site → `place-design`. Faction → `faction-design`.
-Off-screen motion → `world-tick`. The child does not re-plan the region.
+Read [references/region-craft.md](references/region-craft.md) before step 3.
 
-### Done
+### 1. Take the canon inventory
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named region page path, region template contract, route choices, active powers,
-and any child return evidence are reported.
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval (`.agents/skills/qmd`).
 
-## Refuse gates
+1. Read the region page if it exists, its parent and neighbours, and every page
+   that links to it: run `grep -rliF "[[<name>" wiki/entities` once for the
+   slug, the title, and each alias.
+2. Search QMD for the region, its landmarks, routes, hazards, creatures,
+   powers, and every session set in or bound for it.
+3. `qmd get` every hit you will use. Snippets are leads, not facts.
 
-- **Work gate.** Show a chat proposal before writing under `wiki/`. Write only
-  after DM acceptance. A missing named region is work to propose now — not out
-  of scope. Workspace outputs allowed before acceptance.
-- **Invention.** Never present invention as wiki fact. Set `invention: true` (or
-  mark proposed), cite `[[pages]]`, show contradictions, and propose for
-  acceptance. No silent canon.
-- **No invented pressure.** Do not invent an ancient evil, warlord invasion,
-  Crown occupation war, plague, front, clock, villain plan, or other
-  macro-threat as established fact. Use `## Fronts and pressures` only for
-  pressures already stated by wiki, session, or accepted brief — or omit / mark
-  `None established yet` / proposed. A pressure-free region still passes.
-- **No type: front.** Do not create or revive `type: front`. Pursuable pressure
-  links or proposes a quest page.
-- **Template lock.** Copy `wiki/templates/region.md` only. Keep `type: region`.
-  No second template; do not retarget to place, quest, faction, lore, or front.
-- **Narration.** `> [!narration] Narration` is traveler-perceivable only
-  (horizon, terrain, weather, motion, sound, one unmistakable feature). No
-  secrets, save DCs, hidden history, secret coordinates, or unearned names.
-- **Identity first.** Before the page draft:
+Write the **canon inventory** in working notes, one line per owner page:
+`[[slug]]` · kind · the fact that puts it in this region.
 
-  > This is a [scale/kind] region known for [public identity], crossed by [route
-  > choices], and changeable by [active powers].
+Done when every backlink and relevant hit is in the inventory or dropped with a
+one-line reason, and every inventory page was read in full.
 
-  If that lacks route choices or who can change the region, keep retrieving or
-  ask. Do not invent pressure to make the sentence dramatic.
-- **Route choice space.** Travel/routes need concrete tradeoffs (time, cost,
-  risk, advantage, discovery) across ≥2 viable approaches — refuse a single
-  mandatory ordered corridor that erases keyed places.
-- **No PC authorship.** Do not present PC travel outcomes, refused rules, or
-  bound pressures as established Current state. Present options; leave choices
-  to play.
-- **Hub deferral.** `place-design` defers region page work here.
+### 2. Name the region's character
 
-Also refuse: encyclopedia DM thesis with no table function; overwriting
-established named links/hazards with invented crisis; treating taking-rule /
-ecology hazards as safe without surfacing the contradiction.
+In working notes, write the **identity sentence**:
 
-## Region job
+> This is a [scale/kind] region known for [public identity], crossed by [route
+> choices], and changeable by [active powers].
 
-A region page makes an area runnable for travel and off-screen motion: first-
-travel look, kind/scale, route choices, who can change it, and what changed
-since the last stable state. Use when identity, travel structure, powers,
-landmarks, routes, or nested places exceed a site-place page.
+Then the **regional rule**: one thing that works differently here for
+travellers (the current runs backwards at the new moon, compasses swing near
+the drowned towers, no fire stays lit on the flats), its limit, and how a
+traveller learns it before it costs them.
 
-## Build the region
+Done when the identity sentence names routes and powers, and the regional rule
+has its limit and its tell.
 
-1. **Retrieve.** Brief, `wiki/templates/region.md`, and relevant parent region,
-   subregion, city, place, route, faction, NPC, quest, lore, session, and prior
-   region notes. Preserve established names, aliases, scale, kind, boundaries,
-   routes, anchors, landmarks, powers, active pressure, party history, current
-   state, and open questions.
-2. **Identity sentence** before drafting (see refuse gate).
-3. **Scaffold.** Copy `wiki/templates/region.md`. Frontmatter: `type: region`,
-   lifecycle/reveal/campaign/visibility, parent `region`, `scale`
-   (macro|regional|local), `kind`, `structure`, `as_of`, `summary`.
-4. **Runnable fill.** Narration (perceivable); At a glance (scale, kind,
-   character, anchor, known-for, feared-for, parent; DM thesis = table function:
-   route choices / who can change the region — not encyclopedia lore); Current
-   state (status quo now; link pressure only when already stated); Geography +
-   Travel (boundaries, landmarks, route tradeoffs); Key places (table-ready
-   durable places only); Active powers (few groups that can change it now: hold,
-   want, next move, reveal — full agendas stay on faction pages).
-5. **Pressure without creating it.** Link existing owner notes; omit or mark
-   none when absent. Do not invent crisis for the template section.
-6. **Omit by scale + change log.** MACRO/REGIONAL/LOCAL keep only headings that
-   create choices. Current state = live status; Change log = deltas (fold
-   normalized deltas into baseline).
+### 3. Lay out the ground and the routes
 
-Read `references/region-craft.md` for craft basis, section fill detail, omit-by-
-scale, audit questions, and failure modes.
+- **Shape.** Boundaries, what changes across each edge, and scale in days of
+  travel. Every edge names what lies beyond it, past the charts too: the DM
+  knows what the sailors do not.
+- **Landmarks.** Three to five a navigator steers by, each with what it tells
+  a traveller.
+- **Routes.** Two to four ways across or through, each with days, the check
+  that keeps it (Ability (Skill) or tool, and DC), what failure costs (days,
+  supplies, a hazard, an encounter), what the route passes, and what it offers
+  that the others do not.
+- **Travel procedure.** How a day of travel runs here: navigation, supply and
+  water, weather (a d6 or d8 table with effects), and rest.
+- **Key places.** The places the party can reach, each a linked page with one
+  line on why they would go.
 
-## Handoffs
+Done when every route has days, a check with DC, a failure cost, and a
+tradeoff against the others, and every key place links a page.
 
-Narration → `theatre-of-the-mind`; places → `place-design`; cities →
-`city-design`; factions → `faction-design`; NPCs → `npc-design`; quests → quest
-skill; off-screen → `world-tick`; vault lookup → `.agents/skills/qmd`.
+### 4. Set the powers moving
+
+- **Active powers.** Two to four groups or creatures that can change the
+  region now, each a linked page: hold, want now, next move with a time, and
+  what reveals that move.
+- **Pressure.** One or two fronts grown from the inventory (a power's want, a
+  hazard's season, a debt, a hunt), each with its impending consequence, a time,
+  and three portents from subtle to unmistakable.
+- **Stakes.** One to three questions that play will answer.
+
+Done when each power's next move has a time and a sign, and each front has
+three portents.
+
+### 5. Fill the road
+
+- **Encounters.** A d6 or d8 table of who and what the party meets (creatures,
+  crews, travellers, wonders that act; weather and terrain live in the weather
+  table), each with its sign before contact, its source page, what it wants,
+  what it does if the party does nothing, and numbers or a statblock link when
+  it can be fought. Every creature or group the canon places in the region
+  appears in the table or elsewhere on the page.
+- **Rumors and leads.** A d6 table, each with its truth and where it points.
+  The truth is a fact about the world (the dragon is there, in this lair, or
+  the dragon is a wreck's figurehead), never a note on what is confirmed or
+  recorded.
+- **What can be found.** A resource, a shelter with its cost, a wonder, a
+  hidden lore fact, and a shortcut: each a thing the party can take, use, or
+  visit. The wonder is a sight a traveller would sail out of the way for, and
+  it gives something back.
+- **History still in play.** Past facts that leave evidence a traveller can
+  find.
+
+Done when every encounter has a sign and a source, every rumor has its truth,
+and every fightable encounter has numbers.
+
+### 6. Hand the travel look to theatre-of-the-mind
+
+Build the **narration packet** as fragments, each with its source: horizon,
+terrain or water, weather, light, movement, one sound and one smell with
+sources, the one feature no traveller forgets, and the tell of the regional
+rule. Leave out truths, DCs, secret coordinates, and names not earned. Load
+`.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give it
+the packet.
+
+Done when the returned narration passes theatre-of-the-mind's final check and
+carries the regional rule's tell.
+
+### 7. File the page
+
+Copy `wiki/templates/region.md` to `wiki/entities/region/<kebab-name>.md` with
+`type: region`, parent `region`, `scale`, `kind`, `structure`, `as_of`, and
+`summary`. At a Glance carries scale, kind, character, anchor, known-for,
+feared-for, parent, and a DM thesis of the region's job at the table. Keep the
+sections that create choices at this scale; omit the rest. Write complete
+sentences. Wikilink every owner page.
+
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
+
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
-- Fills `wiki/templates/region.md`; `type: region`; no second template / no
-  retarget / no `type: front`.
-- Identity sentence before draft; narration is `[!narration]` and
-  perceivable-only.
-- At a glance has scale, kind, character, anchor, parent when known; DM thesis
-  is table function.
-- Current state states status quo now; geography/travel offer real route
-  choices (≥2 tradeoffs).
-- Active powers name who can change the region and next visible moves.
-- Existing pressure linked; absent pressure not invented and still passes.
-- Extra headings omitted by scale; change log records deltas.
-- Invention labeled, cited, proposed; wiki write only after accept.
-- DM can describe arrival, offer routes, name who can change the region, and say
-  what changed since the last stable state.
+- The canon inventory is complete; every established detail is kept.
+- The regional rule has its limit and its tell.
+- Two or more routes each carry days, a check with DC, a failure cost, and a
+  tradeoff; the travel procedure covers navigation, supply, weather, and rest.
+- Every named place, power, and creature links a page.
+- Each active power has a next move with a time and a sign; each front has
+  three portents and a time.
+- Every edge names what lies beyond it.
+- Encounters are creatures, crews, or wonders that act, with signs, sources,
+  and numbers where fightable; every canon creature or group of the region
+  appears on the page.
+- Every rumor's truth is a world fact; What can be found lists things the
+  party can take, use, or visit, and the wonder gives something back.
+- The narration came from theatre-of-the-mind and holds no truth, DC, or
+  unearned name.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit (`docs/agents/table-ready.md` §
+  Cast before minting).
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

@@ -45,9 +45,15 @@ party read wins.
 - **Control.** Count the party's hard control effects per round. A boss meant
   to last needs enough Legendary Resistance, second bodies, or phase changes
   to shrug off that many in the first two rounds.
-- **Honest label.** Set the statblock's CR from what the numbers match, using
-  the formulas and peers. Never label a monster lower than its numbers to make
-  it look fair. The working notes say how it plays against this party.
+- **Honest label.** Find the CR its defense matches (HP, then AC) and the CR
+  its offense matches (damage per round if every attack hits and every save
+  fails, off-turn and legendary actions included, then attack bonus or save
+  DC), using
+  the formulas and peers. The label is their average, rounded to the nearest
+  CR, so the DM's encounter budget reads the monster as it really plays. When
+  offense and defense sit more than two CR apart, move the weaker side toward
+  the role's trade instead of letting one number carry the label. The working
+  notes say how it plays against this party.
 
 ## PB by rank/CR
 | Rank/CR | PB |

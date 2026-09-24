@@ -40,11 +40,18 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Page rules
 
-- **Canon.** User-said facts file immediately on the live path. Invented
-  additions are shown to the DM as a proposal, marked as invention and citing
-  the `[[pages]]` they grow from, and filed after the DM accepts.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  page needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner.
 - **Preserve.** Improving an existing page keeps every established fact and
   the NPC's existing face words; add only what changed.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
 - **Role.** Frontmatter `role` is exactly `rival`, `patron`, or `contact`,
   chosen from how the NPC stands toward the party. Their job (gatekeeper,
   informant, smith) goes in Nature.
@@ -105,12 +112,17 @@ reason, and every PC has a line (or "no thread").
   document, a consequence).
 - **What they know:** the facts they carry, which they share freely, which
   they sell, and which they lie about.
+- **Open questions:** every question their page raises (a missing crew, a
+  rumour, a debt), with the DM answer: what actually happened, even when the
+  NPC does not know it. The page states the truth and, separately, how much of
+  it they know.
 - **If ignored:** what they do next without the party.
 - **PC threads:** one optional reason for each relevant PC to engage, drawn
   from step 1. An invitation, never a forced bond.
 
-Done when every field is concrete enough to change a choice, and the secret
-has its truth, its stakes, and its discovery paths.
+Done when every field is concrete enough to change a choice, the secret has
+its truth, its stakes, and its discovery paths, and every open question has
+its DM answer written as one concrete fact.
 
 ### 3. Make them this person and no other
 
@@ -147,9 +159,13 @@ has a tell.
   Hesitant, Unwilling).
 - **Posture changes:** what opens them up, what closes the door, and what
   takes priority over the party.
-- **Influence:** the approaches that fit their need and limit, and what a
-  success or miss moves. Procedure:
-  [references/social.md](references/social.md).
+- **Influence:** the approaches that fit their need and limit, each roll as
+  Ability (Skill) and DC from `dnd5e-mechanics`, and what a success or miss
+  moves. Procedure: [references/social.md](references/social.md).
+- **Likely moves:** each thing the party will plausibly ask of or try on
+  them, drawn from the brief, the PC threads, and what they guard (buy,
+  haggle, beg, threaten, steal, set free), with their answer, its price, and
+  the roll when the outcome is uncertain.
 - **Next move and activity log** (recurring and villain): what they do between
   appearances; one log line per appearance with what play changed.
 - **Villain or faction face:** build the front in
@@ -158,14 +174,23 @@ has a tell.
 - **Allies:** capable, limited, and player-directed; they have a want and a
   cost and leave the central problem to the party.
 
-Done when the DM could run the first five minutes of the meeting and the
-moment the NPC's posture changes from the page alone.
+Done when the DM could run the first five minutes of the meeting, the moment
+the NPC's posture changes, and every likely move from the page alone.
 
-### 5. Hand off the fight
+### 5. Arm everyone in reach
 
-When they can fight, hand `monster-design` their concept, face, tells, and
-brief. It returns statblocks tuned to the live party and an encounter rule
-(the fiction that picks a form). Combat numbers live only there.
+A likely move that goes wrong ends in a fight: anyone the party could attack,
+rob, or arrest can fight back, and so can whatever the NPC would loose or call
+(guards, beasts, a crew). Each of them carries compact numbers in the Combat
+section: AC, HP, Speed, the attacks or save DCs the DM will roll, and what they
+do when violence starts (fight, flee, call the watch, loose the animals). A
+standard statblock used unchanged needs no custom features: name it and copy
+those numbers. New or changed combat forms come from `monster-design`, given
+the NPC's concept, face, tells, and brief; it returns statblocks tuned to the
+live party and an encounter rule (the fiction that picks a form).
+
+Done when every fighter the page puts in the party's reach carries numbers,
+the NPC included: someone who flees can still be grabbed, chased, or struck.
 
 ### 6. Hand the look and voice to theatre-of-the-mind
 
@@ -200,12 +225,18 @@ owner page.
 | At a Glance | Role, Nature (job and what they are like), Home, Wants; rows for Secret, Leverage, or Limit when they change how the DM runs them; the one-sentence DM thesis |
 | Narration | The portrait from step 6 |
 | First meeting | Opening move and one sample line |
-| When posture changes | What opens them, what closes the door, what takes priority, and what they will and will not share |
+| When posture changes | What opens them, what closes the door, what takes priority, what they will and will not share, and the truth behind each open question |
 | Voice | Voice notes and the three sample lines |
-| Connections | Each tie by wikilink and what it does at the table, including PC threads |
-| Combat | Encounter rule and statblocks from `monster-design`, only when they can fight |
+| Connections | Each tie by wikilink and what it does at the table, including each PC thread; a PC with no thread stays in the working notes |
+| Combat | Numbers for every fighter in reach from step 5, and the encounter rule for custom forms |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
+
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
@@ -218,10 +249,19 @@ Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 - The twist, face, and voice fail the swap test; every hidden truth has a
   tell.
 - The portrait and three sample lines came from theatre-of-the-mind and pass
-  its final check.
+  its final check; the portrait keeps every face word the old page had.
 - A villain has an active, interruptible front and several possible endings.
-- Combat forms, when present, came from `monster-design`.
+- Every question the page raises has its DM answer; every likely move has
+  an answer, a price, and a roll where the outcome is uncertain.
+- Each new mint names, in the response, the candidates considered and why none
+  fit (`docs/agents/table-ready.md` § Cast before minting).
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
+  Fill the silence).
+- Each new owner page came from its owner skill, loaded and followed.
+- Every fighter in reach carries compact numbers, the NPC included; custom
+  forms came from `monster-design`.
 - `role` is rival, patron, or contact; `[!narration]` is the only callout.
-- Invention was proposed and accepted before filing; user-said canon is filed.
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

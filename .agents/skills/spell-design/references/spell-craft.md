@@ -7,17 +7,11 @@ effect. Prefer DM-facing craft that sharpens table utility: visible magic before
 rules, compare against peer spells for level pressure, and keep prep runnable at
 the table instead of exhaustively simulating edge cases.
 
-Ground invention in wiki pages and/or 2024 D&D spell patterns. When reskinning a
-close peer, name the peer role (not proprietary book text) and mark material
-deltas as invention.
+Ground invention in wiki pages and 2024 spell patterns. When reskinning a close
+peer, name the peer and write the effect in your own words; every change from
+the peer is a canon proposal.
 
 ## Section fill detail
-
-### Identity sentence
-
-Before drafting the page, state level/school, table effect, casting signature,
-and player choice or pressure in one sentence. Missing any of those four means
-keep retrieving or ask — do not invent a silent premise.
 
 ### Narration
 
@@ -57,15 +51,43 @@ treat item spell-scroll pages as the spell page itself.
 ### Lore
 
 Fill when the spell needs history: old truth, who still cares, surviving
-evidence, and how that history changes a present choice. Speculative provenance
-(ancient creators, doctrine origins) is proposed/invention unless the wiki
-already establishes it. Do not rewrite established lore observables (e.g.
-taking-on-aruhe fallen-fruit vs living-claim rules) as caused by a new spell.
+evidence, and how that history changes a present choice. Provenance the wiki
+leaves silent is a canon proposal stated as world fact. Established lore keeps
+its causes: a new spell explains nothing a lore page already explains
+differently.
 
 Discovery and Lore stay on the spell page. They are spell sections, not separate
 `type: lore` notes.
 
+### Rulings
+
+The tricks players will try, each with one answer: targeting objects, allies,
+or the caster; underwater, in darkness, through cover; stacking with common
+spells; what it does to summoned or incorporeal creatures. Then counterplay
+(save, cover, range, Concentration, *counterspell*, *dispel magic*, a
+tradition's countermeasure) and how a named enemy opens with it.
+
 ## Peer anchoring and balance
+
+Damage by spell level (single target / multiple targets, average-friendly
+dice):
+
+| Level | One target | Several targets |
+|---|---|---|
+| Cantrip | 1d10 | 1d6 |
+| 1st | 2d10 | 2d6 |
+| 2nd | 3d10 | 4d6 |
+| 3rd | 5d10 | 6d6 |
+| 4th | 6d10 | 7d6 |
+| 5th | 8d10 | 8d6 |
+| 6th | 10d10 | 11d6 |
+| 7th | 11d10 | 12d6 |
+| 8th | 12d10 | 13d6 |
+| 9th | 15d10 | 14d6 |
+
+A rider (a condition, forced movement, a disarm) costs roughly one damage die;
+a save-for-half spell carries the full column, an attack spell that deals
+nothing on a miss can carry a die more.
 
 Compare against existing 2024 spells of the same level and role before locking
 numbers. Cantrips stay cantrip-scoped; if the fantasy needs large damage,
@@ -81,8 +103,10 @@ grant info, leverage, or a risky gambit — never an automatic campaign win.
 - Are Casting Time/Range/Components/Duration concrete and peer-usable?
 - Can the DM run the effect tonight (save/attack, targets, end, scaling)?
 - What 2024 peers calibrate level and pressure?
-- Are Discovery/Lore on-page only when needed, with invention labeled?
-- Was the work gate shown, and is wiki write gated on DM acceptance?
+- Does Discovery name a source page, a price, and who notices a casting?
+- Do Rulings answer the likely tricks, counterplay, and enemy use?
+- Is every invention a canon proposal, stated as world fact and listed in the
+  response?
 
 ## Failure modes
 
@@ -90,11 +114,11 @@ grant info, leverage, or a risky gambit — never an automatic campaign win.
 | --- | --- |
 | Empty casting-field labels | Fill concrete 2024 values |
 | Secrets/DCs in narration | Move to DM-facing sections |
-| Silent canon / unmarked invention | Work gate; `invention: true`; cite; propose |
+| Silent canon / unmarked invention | `invention: true`; list the proposal in the response |
 | Spell-scroll item as spell exemplar | Point to `type: spell` page / template only |
 | Cantrip nova (huge dmg + no-save + mile range) | Raise level or cut axes to peer scope |
 | Auto-win climax spell | Add cost, contest, failure, or choice |
 | Verbatim PHB paste | SRD paraphrase, name-only ref, or homebrew |
-| Lore provenance as Current Truth | Label proposed; preserve established facts |
+| No source, or "found somewhere" | Named teacher, book, patron, or site with a price |
 | Discovery/Lore spun into separate lore note | Keep sections on the spell page |
 | One-off color forced into a spell page | Leave on beat/place/NPC/item until named |

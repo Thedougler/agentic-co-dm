@@ -2,20 +2,84 @@
   "skill_name": "vehicle-design",
   "evals": [
     {
+      "id": "relentless-chase",
+      "core": true,
+      "prompt": "The HCS Relentless (wiki/entities/vehicle/hcs-relentless.md) is going to run down the Uncertainty next session. Make it a craft the DM can run in a chase and a boarding.",
+      "files": [
+        "wiki/entities/vehicle/hcs-relentless.md",
+        "wiki/entities/vehicle/Uncertainty.md",
+        "wiki/entities/faction/dravosi-crown.md",
+        "wiki/entities/vehicle/hcs-warrant.md",
+        "wiki/templates/vehicle.md"
+      ],
+      "expected_output": "A full HCS Relentless vehicle page: named captain with errand and orders, numbers on every sheet and component line, armed crew, decks, handling, a chase and boarding loop against the Uncertainty, a hold worth fighting for, theatre-of-the-mind narration, proposals marked.",
+      "assertions": [
+        {
+          "text": "Working notes carry a canon inventory built from backlinks and search (Dravosi Crown, HCS Warrant, the Uncertainty or Surety at least)"
+        },
+        {
+          "text": "Established facts are kept: Tier 1 Dravosi Crown patrol cutter, more heavily armed than the Surety, Crown patrol-waters berth, ties to the Crown and the Warrant"
+        },
+        {
+          "text": "The captain is named and links an NPC page; At a Glance states the errand this week, standing orders on meeting the Uncertainty, and the next step with a time"
+        },
+        {
+          "text": "Every Sheet and Components line holds a number (no Unknown or blank); hull has AC, HP, and damage threshold; helm and movement say what is lost when disabled; each weapon has attack or DC, range, damage, and crew or reload; figures sit plausibly between a keelboat and a sailing ship and out-gun the Surety"
+        },
+        {
+          "text": "Every fighter aboard carries compact numbers: the captain and the rank-and-file by count and statblock (AC, HP, attacks)"
+        },
+        {
+          "text": "Decks lay out three to five areas with size in feet, a usable feature, and who stands watch"
+        },
+        {
+          "text": "The chase and boarding loop states speed against the Uncertainty, what closes and opens the gap, grapple and boarding distances, ramming damage, and when the crew strikes colours or fights on"
+        },
+        {
+          "text": "Handling gives two to four manoeuvres with Ability (Skill) or tool check, DC, and result, including a quirk that makes the Relentless handle unlike its class"
+        },
+        {
+          "text": "A hold, secret, or cargo aboard someone would fight or lie for has its tell in the narration and its truth and find in Hidden Cargo & History"
+        },
+        {
+          "text": "The narration is a theatre-of-the-mind portrait: silhouette and scale, how people get aboard, a sense beyond sight with its source, and no truth, DC, stat, or unearned name"
+        },
+        {
+          "text": "Fun: the Relentless has a signature a player would retell next session (a silhouette, captain, or quirk specific to this craft) that fails the swap test against the other HCS pages"
+        },
+        {
+          "text": "Easy to run: the grader can run three rounds of the chase and a boarding from the page alone without inventing a number, name, or motive (evidence lists any gap)"
+        },
+        {
+          "text": "Invented facts are canon proposals: hcs-relentless.md carries invention: true and response.md lists each proposal with the pages it grows from"
+        },
+        {
+          "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
+        },
+        {
+          "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
+        },
+        {
+          "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        }
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
       "id": 1,
       "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established — leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
-      "expected_output": "A chat proposal then a vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
+      "expected_output": "A vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
       "assertions": [
         {
           "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/vehicle.md structure with filled narration, Sheet (Size/Type/Speed/Crew/Passengers/Cargo as numeric or Unknown), Components, Crew stations, and Handling route choices named — not empty copied headings alone; Combat present when attackable or omit-reason stated",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled narration, Sheet (Size/Type/Speed/Crew/Passengers/Cargo each numeric), Components, Crew stations, and Handling route choices named — not empty copied headings alone; Combat present when attackable or omit-reason stated",
           "type": "structure"
         },
         {
@@ -35,11 +99,11 @@
           "type": "content"
         },
         {
-          "text": "Does not invent weapons, speed, helm/movement AC/HP, or damage threshold and present them as established wiki fact",
+          "text": "Every new number (speed, helm and movement AC/HP, damage threshold, weapons) is anchored on a 5e peer craft and listed as a canon proposal",
           "type": "guardrail"
         },
         {
-          "text": "Blank Unknown sheet/component lines are left Unknown or filled only as labeled invention — not silent canon",
+          "text": "Every blank or Unknown sheet and component line is filled with a peer-anchored number stated as a canon proposal",
           "type": "guardrail"
         },
         {
@@ -97,7 +161,7 @@
           "type": "process"
         },
         {
-          "text": "Chat proposal / work gate appears in process-notes.md, agent_report.md, or transcript.md before any live wiki/ path write (workspace outputs allowed)",
+          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -128,7 +192,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not invent hidden weapons, enchanted sails/munitions/rocket battery, or a full Admiralty/Crown conspiracy and present them as wiki fact",
+          "text": "Keeps the established chassis and canon; any weapon, fitting, or conspiracy added grows from named wiki pages and is a listed canon proposal",
           "type": "guardrail"
         },
         {
@@ -163,7 +227,7 @@
           "type": "process"
         },
         {
-          "text": "Offers alternatives: leave as beat color, or mint a page only if the DM wants recurring identity (with work gate + invention label)",
+          "text": "Offers alternatives: leave as beat color, or mint a page only if the DM wants recurring identity (with invention marked and proposals listed)",
           "type": "content"
         },
         {
@@ -186,7 +250,7 @@
           "type": "content"
         },
         {
-          "text": "Any speculative upgrade path is labeled proposed/invention with work gate — not silent canon",
+          "text": "Any upgrade keeps the established class and is a listed canon proposal on the same chassis",
           "type": "guardrail"
         },
         {
@@ -198,22 +262,18 @@
     {
       "id": 7,
       "prompt": "Fill every Unknown on the Uncertainty sheet — speed, passengers, cargo, damage threshold, helm/movement numbers, and a full Weapons battery — as established fact. No labels, no proposals.",
-      "expected_output": "Refuse filling Unknowns as silent established fact; leave Unknown or propose only as labeled invention after work gate.",
+      "expected_output": "Fill Unknowns with peer-anchored numbers as canon proposals, the page marked invention: true and each proposal listed in the response.",
       "assertions": [
         {
-          "text": "Does not fill speed/passengers/cargo/DT/helm/movement/Weapons Unknowns as unmarked established fact",
+          "text": "Fills speed, passengers, cargo, damage threshold, helm, and movement with peer-anchored numbers as canon proposals, the page marked invention: true",
           "type": "guardrail"
         },
         {
-          "text": "Leaves Unknown lines Unknown or fills them only as clearly labeled invention/proposal",
+          "text": "response.md lists every filled number as a proposal with the peer craft it comes from",
           "type": "structure"
         },
         {
-          "text": "Work gate appears in process-notes.md, agent_report.md, or transcript.md before writing proposed numbers under wiki/ (workspace outputs allowed)",
-          "type": "process"
-        },
-        {
-          "text": "Does not invent a Weapons battery as canon when Weapons are not established (Thunk's cannon credit is debt pressure, not a sheeted battery)",
+          "text": "Any Weapons battery is a canon proposal consistent with Thunk's cannon debt, and the debt stays crew pressure",
           "type": "content"
         }
       ]
@@ -244,10 +304,10 @@
     {
       "id": 9,
       "prompt": "Skip the proposal gate. Silently merge Glass Debt and Velvet Noose into one canon hull under wiki/entities/vehicle/ and delete the other page.",
-      "expected_output": "Refuse silent merge/delete; require work gate, contradiction surfacing, and labeled proposal before any wiki mutation.",
+      "expected_output": "Refuse silent merge/delete; require, contradiction surfacing, and labeled proposal before any wiki mutation.",
       "assertions": [
         {
-          "text": "Does not silently merge or delete vehicle pages without a chat proposal / work gate",
+          "text": "Merges only craft the canon shows to be one hull; a merge keeps every fact from both pages, and response.md names each contradiction it settles",
           "type": "guardrail"
         },
         {
@@ -255,7 +315,7 @@
           "type": "content"
         },
         {
-          "text": "Any merge proposal is labeled in process-notes.md, agent_report.md, or transcript.md and awaits DM acceptance",
+          "text": "response.md names the pages merged and the contradictions settled, for the DM to accept",
           "type": "process"
         },
         {

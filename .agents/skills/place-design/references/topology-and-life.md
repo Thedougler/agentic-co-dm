@@ -89,8 +89,9 @@ trigger; a room entered is not a trigger.
 
 ## Location moves
 
-A location move is a concrete change the place or an inhabitant makes in
-response to play. Prepare two to four:
+A location move is a concrete change the place or an inhabitant makes, on its
+own clock or in response to play. Prepare two to four, at least one on the
+actor's own clock:
 
 ```markdown
 **Move:** [actor] [action]

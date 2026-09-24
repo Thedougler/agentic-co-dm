@@ -67,8 +67,9 @@ interferes. Each entry needs:
 - visible signs before deep investigation;
 - what the active side wants;
 - what opposes them;
-- **If nobody intervenes:** next meaningful change (from established pressure, or
-  none / labeled invention — never invent plague/siege as silent canon);
+- **If nobody intervenes:** next meaningful change, with a time, grown from
+  pressure the canon already carries (a debt, a rival, a shortage) and stated as
+  a canon proposal where canon is silent;
 - trigger or date when timing matters.
 
 Prefer discoverable signs and ≥2 approaches or a costly bypass. Refuse
@@ -93,23 +94,23 @@ new normal, fold it into the baseline section and archive the old delta in
 
 - Can the table arrive and orient without inventing districts on the fly?
 - What pressure is live **now** (not closed history)?
-- What happens if nobody intervenes — and is that grounded?
+- What happens if nobody intervenes, and when, and which canon page does it grow from?
 - Can the party intentionally seek at least one place, service, or route?
 - Which local rules actually change a choice this session?
 - Where do faction wants collide with districts or the party?
-- What is labeled invention vs established wiki fact?
+- Is every invention a canon proposal, stated as world fact and listed in the response?
 
 ## Failure modes
 
 | Failure mode | Repair |
 | --- | --- |
 | Encyclopedia without pressure | Add current instability + player opening |
-| Invented plague/siege as canon | Strip; derive from established pressure or label invention |
+| Pressure bolted on from nowhere (a stock plague or siege) | Grow it from a canon debt, rival, or shortage; state it as a proposal |
 | Closed canon reopened as live crisis | Keep as history; find live pressure elsewhere |
 | Secrets/DCs in Arrival | Move to DM-facing sections |
 | Faction agendas on city page | Point to faction pages; keep local posture only |
 | Single plot rail / combat-only stack | Restore Orientation/Gazetteer choice space |
 | PC civic outcomes as established fact | Present pressure; leave outcomes to play |
 | Clue-less single lever | Add visible signs + ≥2 approaches or costly bypass |
-| Silent wiki write / unmarked invention | Work gate first; label + cite + propose |
+| Unmarked invention | `invention: true`; list the proposal in the response |
 | Site-place stuffed into city | Stay on city template; defer non-city to place-design |
