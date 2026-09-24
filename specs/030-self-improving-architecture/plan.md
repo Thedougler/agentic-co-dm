@@ -6,7 +6,7 @@
 
 ## Summary
 
-Collapse, don't add (FR-046). Every change edits the module that owns the concern: `scripts/error-ledger.py` + `errors.md`, `scripts/check-omp-baseline.sh`, `.vale.ini`, `tools/creative_lint/vale_adapter.py`, `tools/wiki_ops/identity.py` + `tools/wiki_ops/lint_cache.py`, `tools/wiki_ops/cli.py` + `scripts/wiki`, `tools/lint_wiki.py`, `scripts/luna-eval`, the `skill-creator` skill, the 60 `evals/evals.json` files, `AGENTS.md`, `.agents/skills/wiki-lint/SKILL.md`, and the feature 026/029 documents. Code only detects, measures, checks, indexes, reports, or applies fixes that have exactly one correct output. Every judgment (duplicate choice, same root cause beyond an exact match, promotion, repair choice, next step) belongs to the agent, and the table in "Simplify and consolidate" names the skill that governs it. The net file count goes down: 1 new data file and 1 new test file; 8 scripts deleted.
+Collapse, don't add (FR-046). Every change edits the module that owns the concern: `scripts/error-ledger.py` + `errors.md`, `scripts/check-omp-baseline.sh`, `.vale.ini`, `tools/creative_lint/vale_adapter.py`, `tools/wiki_ops/identity.py` + `tools/wiki_ops/lint_cache.py`, `tools/wiki_ops/cli.py` + `scripts/wiki`, `tools/lint_wiki.py`, `scripts/luna-eval`, the `skill-creator` skill, the 60 `evals/evals.json` files, `AGENTS.md`, `.agents/skills/wiki-lint/SKILL.md`, and the feature 026/029 documents. Code only detects, measures, checks, indexes, reports, or applies fixes that have exactly one correct output. Every judgment (duplicate choice, same root cause beyond an exact match, promotion, repair choice, next step) belongs to the agent, and the table in "Simplify and consolidate" names the skill that governs it. The net file count goes down: 1 new data file and 1 new test file; 10 scripts deleted.
 
 The data shapes come first. Each one is defined in [data-model.md](data-model.md):
 
@@ -112,14 +112,15 @@ AGENTS.md                                   # "Error ledger" (~196): fix first, 
 .agents/skills/wiki-dedup/SKILL.md          # governs ambiguous-identity resolution (FR-024); no code picks a winner
 .agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md   # five FR-040 answers; remove deterministic text moved into tools (FR-029, FR-040)
 docs/agents/hybrid-sdd.md                   # friction branch of the capability loop (FR-001)
-docs/creative-linting.md, docs/architecture.md, README.md   # point lint usage at `wiki lint`
-package.json                                # unchanged (lint:vale kept; see research R8 rejected candidates)
+docs/creative-linting.md, docs/architecture.md, README.md   # point lint usage at `wiki lint`; README.md:105 `python3 tools/check_wiki_pages.py` -> `./scripts/wiki lint`
+package.json                                # lint:vale -> `./scripts/wiki lint` (run_vale already refreshes the vocab); scripts/vale-vocab deleted (FR-046)
+scripts/wiki-reveal                         # frontmatter from tools/lint_wiki.py; tools/check_wiki_pages.py deleted (FR-046)
 specs/026-agent-autonomy-scope/{spec,plan,research,data-model,quickstart,tasks}.md, contracts/agent-autonomy.md   # FR-018
 specs/029-agent-loop-closure/tasks.md, quickstart.md   # T003…T049 evidence (FR-019)
 tests/test_error_ledger_repairs.py, test_wiki_cli.py, test_wiki_ops.py, test_creative_lint.py, test_policy_conflicts.py, test_luna_eval.py (new)
 ```
 
-**Structure Decision**: This is a single repository with no new directories. There are two new files, `wiki/_meta/identity-index.json` and `tests/test_luna_eval.py`, and eight deleted scripts. The full ledger is in "Simplify and consolidate".
+**Structure Decision**: This is a single repository with no new directories. There are two new files, `wiki/_meta/identity-index.json` and `tests/test_luna_eval.py`, and ten deleted scripts. The full ledger is in "Simplify and consolidate".
 
 ## Design by phase
 
@@ -176,10 +177,12 @@ No new module, skill, config key, or command.
 | `skill-creator/scripts/run-eval.py`, `run-loop.py`, `improve-description.py` | Second runner (e-210). Referenced only by each other and `skill-creator/SKILL.md` (1 line) | `luna-eval` + `skill_selected` evals |
 | `skill-creator/scripts/generate-report.py` | Only consumes `run-loop.py` output (its own docstring) | none (dead with `run-loop.py`) |
 | `TMPL_inherited_deprecated_guidance` (`scripts/wiki-lint`) | Same faction/agenda-clock regex over the same vault pages as Vale `Deprecated.FactionClock` | Vale `Deprecated.FactionClock` |
+| `scripts/vale-vocab` | Only caller `package.json` `lint:vale`. It calls `refresh_vocab`, which `vale_adapter.run_vale` already calls before every Vale run (`wiki lint` → `wiki-lint` → creative engine). The current `lint:vale` fails anyway (bare `vale --config=.vale.ini` exits 2, E100) | `lint:vale` → `./scripts/wiki lint` |
+| `tools/check_wiki_pages.py` | Outdated `TYPES`/`LIFECYCLES` duplicate `lint_wiki.py` `REQUIRED`/`CAMPAIGN_REQUIRED`, `bad_type`, `bad_lifecycle`; manifest checks duplicate `lint_wiki` provenance and `scripts/manifest.py`. Callers: `scripts/wiki-reveal:29` (`frontmatter` only), `README.md:105` | `tools.lint_wiki.frontmatter` in `wiki-reveal` (skip when block is None); `./scripts/wiki lint` in README |
 | `wiki-lint` `consolidate_main` cwd vault resolution, `tools/lint_wiki.py` cwd default, `luna-eval` `git rev-parse` root | Three ad hoc root/vault lookups | `tools/wiki_ops/cli.py` helper |
 | `_tune` directive text; `error recurrence`; `error migrate`; `tests/test_omp_baseline.py`; `--cause-fixed` | Earlier plan items, now superseded | `_tune` plain report; `error list` field; one-off uncommitted migration; `test_policy_conflicts.py`; removed |
 
-Net result: 2 files added, 8 deleted, and 3 ad hoc discovery paths merged into 1.
+Net result: 2 files added, 10 deleted, and 3 ad hoc discovery paths merged into 1.
 
 ### Judgments and their governing skill (SC-014 e)
 
@@ -195,7 +198,7 @@ Net result: 2 files added, 8 deleted, and 3 ad hoc discovery paths merged into 1
 ## Risks and dependencies
 
 - **XIII dependency**: met by v6.0.0/v6.0.1. US5/US6 can land in Phase 2.
-- **Folded lint rules raise the backlog**: `wiki lint` will report the 540 existing obsidian-markdown findings. The 519 table pipes are fixed by `wiki lint fix` (deterministic). The 21 broken images are agent work under `wiki-lint` (spec gap below).
+- **Folded lint rules raise the backlog**: `wiki lint` will report the 540 existing obsidian-markdown findings. The 519 table pipes are fixed by `wiki lint fix` (deterministic). The 21 broken images are agent work under `wiki-lint` (spec gap 2, round 3: plan default kept).
 - **Identity parity**: FR-025/FR-026 require identical findings. Parity is proven by diffing `scan_identities` output cold vs index-warm on the live vault (quickstart V-06).
 - **Where the time goes**: for one page, `lint_wiki.py` is the largest cost (1.66 s of 3.44 s; identity 0.84 s), and SC-007's 5 s is already met with Vale. For a cold whole-vault or health run, identity dominates (55.1 s of 82.3 s), from pairwise ratios. The pair cache targets that. The creative engine (15.7 s) and Vale (13.1 s) stay unchanged unless V-08b shows the 50 s bound is missed.
 - **Box setup**: the repo has no committed venv. Timing needs `uv venv .venv && uv pip install tiktoken PyYAML vale==3.21.0.0` (as done 2026-09-24), with `.venv/bin` on `PATH` and `OBSIDIAN_VAULT_PATH` set to the clone's `wiki/`, because `~/.obsidian-wiki/config` points at `/home/box/agentic-co-dm/wiki`. The single discovery helper (repo `wiki/` before the global config) fixes that trap.
@@ -222,10 +225,10 @@ Before the fix, Vale with the unmodified `.vale.ini` fails with `E100 … style 
 5. **SC-009 20-sitting window**: resolved. It stays an assumption.
 6. **Lint writes tracked files**: resolved. FR-028 keeps `lint-cache.json`, `identity-index.json`, and `accept.txt` tracked as bookkeeping. FR-017 scopes read-side mutation to canonical pages, manifests, indexes, and logs.
 
-## Spec gaps for Clarify (round 3, from b14ea71b)
+## Spec gaps for Clarify (round 3, from b14ea71b; answered by Clarify)
 
-1. **SC-014 (c) scope**: are completed feature specs (e.g. `specs/025-*` citing `scripts/wiki-identity`, `specs/024-*` citing the lint scripts) "references" that must go? The plan checks maintained surfaces only (`AGENTS.md`, `docs/`, `.agents/`, `scripts/`, `tools/`, `tests/`, `package.json`, `README.md`) and leaves historical specs as records, as FR-018 does only for 026.
-2. **Folded lint findings**: folding `lint-obsidian-markdown` into `wiki lint` surfaces 540 existing findings (XXI makes them all issues). Is fixing the 21 broken image links in this feature's scope, or tracked as follow-up lint work?
-3. **FR-010 "on first run of the new format"**: the plan runs the migration once as an uncommitted, agent-driven conversion with agent-supplied groups and sources, not as a committed command. Confirm this satisfies FR-010.
-4. **Judgment code outside this feature's touch set**: `wiki-lint --consolidate` promotes `draft` → `reviewed` by threshold (`base_confidence > 0.7`, `.agents/skills/wiki-lint/consolidate.md`). FR-046 rule 5 applies only "where this feature touches" such code, so the plan leaves it alone. Confirm, or add it to scope.
-5. **Rejected duplicates** (research R8): `tools/check_wiki_pages.py` (overlaps `lint_wiki.py` page checks; imported by `scripts/wiki-reveal`, cited in `README.md`) and `scripts/vale-vocab` (the `package.json` `lint:vale` target; `wiki lint` already refreshes the vocabulary) are still referenced, so they stay. Confirm whether to fold them in this feature.
+1. **SC-014 (c) scope**: resolved by Clarify, plan default kept. Only maintained surfaces count (`AGENTS.md`, `docs/`, `.agents/`, `scripts/`, `tools/`, `tests/`, `package.json`, `README.md`). Completed feature specs (e.g. `specs/025-*` citing `scripts/wiki-identity`, `specs/024-*` citing the lint scripts) stay as records. 026 is the exception under FR-018.
+2. **Folded lint findings**: resolved by Clarify, plan default kept. The 519 table pipes are fixed by `wiki lint fix`. The 21 broken image links are `human_repair` agent work under `wiki-lint`, not deterministic code.
+3. **FR-010 "on first run of the new format"**: resolved by Clarify, plan default kept. The migration runs once as an uncommitted, agent-driven conversion with agent-supplied groups and sources (research R3). It is not a committed command.
+4. **Judgment code outside this feature's touch set**: pending with Nick. `wiki-lint --consolidate` promotes `draft` → `reviewed` by threshold (`base_confidence > 0.7`, `.agents/skills/wiki-lint/consolidate.md`). Until he answers, the default stands: FR-046 rule 5 applies only "where this feature touches" such code, so the plan leaves it alone.
+5. **Former rejected duplicates**: resolved by Clarify, and the plan changed. Both are folded under FR-046 rule 2. `scripts/vale-vocab` is deleted and `package.json` `lint:vale` runs `./scripts/wiki lint`. `tools/check_wiki_pages.py` is deleted, `scripts/wiki-reveal` reads frontmatter through `tools/lint_wiki.py`, and `README.md:105` cites `./scripts/wiki lint` (research R8, quickstart V-04d).
