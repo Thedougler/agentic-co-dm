@@ -8,7 +8,7 @@ sources:
   - "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"
   - "wiki/journal/Session 02 - Recap.md"
   - "campaign-os:beaumont-sel.md"
-summary: Passage operative and family-linked courier who named Perrin a Friend of the Passage.
+summary: Passage operative and family-linked courier who introduced himself to the crew as a Friend of the Passage.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -18,7 +18,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T06:31:54Z
-updated: 2026-09-13
+updated: 2026-09-23
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -58,7 +58,7 @@ Wants the Saltwright and its passengers alive, paid for, and clear of Crown trou
 
 **Session 01** held Barnaby Rook's attention at the Saltwright's wheel during the hold ambush while his passengers fought below. Joined the fight on deck. The Salvaged Antheri Plate deflected Rook's flintlock shot at him.
 
-**Session 02** solved the cannon problem by throwing [[Bisou]] through a gun port (she pissed in the powder), after which the [[Uncertainty|Surety]] came under his control and he settled accounts, giving Perrin "Friend of The Passage" status and passing on Nona Black-Jaw's message (she was looking for her lost grandson and believed someone had already sent Anzolo). He slid a Truth Stone across the decking to Jean-Claude, who used it to tell the truth about himself, while Crissdalynn fished Rook's admiral hat out of the water with a boat hook and Beaumont said it belonged to the captain. The next morning he read the weather toward Calveno, said he would return to [[Kalowe]] when off route, and listened as Delmar told him he had a friend in [[Admiral Fisk]], while [[Bisou]] spent the morning removing 15 gp of shinies from the Surety, which Beaumont called fair business. The Saltwright pulled away.
+**Session 02** solved the cannon problem by throwing [[Bisou]] through a gun port (she pissed in the powder), after which the [[Uncertainty|Surety]] came under his control and he settled accounts, introducing himself as a Friend of the Passage and passing on Nona Black-Jaw's message (she was looking for her lost grandson and believed someone had already sent Anzolo). He slid a Truth Stone across the decking to Jean-Claude, who used it to tell the truth about himself, while Crissdalynn fished Rook's admiral hat out of the water with a boat hook and Beaumont said it belonged to the captain. The next morning he read the weather toward Calveno, said he would return to [[Kalowe]] when off route, and listened as Delmar told him he had a friend in [[Admiral Fisk]], while [[Bisou]] spent the morning removing 15 gp of shinies from the Surety, which Beaumont called fair business. The Saltwright pulled away.
 
 ## Stats & Combat
 
@@ -126,7 +126,7 @@ All three depend on Bisou being conscious and reachable, most often his shoulder
 - [[crissdalynn-khinriss]], [[delmar-fisk]] (both pulled from the water after her fleet went down, given passage west).
 
 - [[barnaby-rook]] (Crown captain). The Salvaged Antheri Plate deflected his flintlock shot in Session 01. The Plate patches a dent in his shell and throws off ranged attacks.
-- [[perrin-black-jaw]], [[the-passage]] (given "Friend of The Passage" status after Beaumont took the Surety). The status runs through this network.
+- [[perrin-black-jaw]], [[the-passage]] (the crew's first contact with the network, made when Beaumont identified himself as a Friend of the Passage after he took the Surety).
 - [[jean-claude-tabarnack]] (given the Truth Stone).
 - [[nona-black-jaw]] (passed on her message about her lost grandson). She believed someone had already sent [[Anzolo]].
 

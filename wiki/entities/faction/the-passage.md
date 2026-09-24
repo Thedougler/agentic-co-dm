@@ -7,7 +7,7 @@ tags: [shattered-sea, faction]
 sources:
   - "campaign-os:the-passage.md"
 created: 2026-09-13
-updated: 2026-09-18
+updated: 2026-09-23
 type: faction
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
@@ -139,13 +139,13 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 | [[dravosi-crown|Dravosi Crown]] | Hostile | Freedom from inspection and colonial record-keeping | The Crown controls official roads, harbors, and patrols |
 | [[tessarine-concordat|Tessarine Concordat]] | Rival | Commercial cover when it keeps a route off Crown charts | No formal deal exists |
 | [[grung-clans|The Grung Clans]] | Hostile | An end to coastal raids and bondage | Their operations violate the Passage's One Law |
-| [[beaumont-sel|Beaumont Sel]] | Friendly | Trusted recognition of Passage status | He granted Perrin the title “Friend of The Passage” |
+| [[beaumont-sel|Beaumont Sel]] | Friendly | Trusted recognition of Passage status | He introduced himself to the crew as a Friend of the Passage |
 
 ### Party
 
-**Standing:** Friendly through [[perrin-black-jaw|Perrin Black-Jaw]]'s status as a Friend of The Passage.
+**Standing:** Friendly, opened when [[beaumont-sel|Beaumont Sel]] introduced himself to the crew as a Friend of the Passage.
 
-**Why:** Beaumont granted Perrin that status after the [[the-saltwright|Saltwright]] boarding; Nona later called off attacks on Perrin and called in her favor.
+**Why:** Beaumont introduced himself to the crew as a Friend of the Passage after the [[the-saltwright|Saltwright]] boarding; Nona later called off attacks on Perrin and called in her favor.
 
 **They currently want from the party:** A trustworthy response to the Grung warning and respect for Passage routes and boundaries.
 
@@ -190,5 +190,5 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 ## History
 
 - **1240 DR:** The Passage formed out of [[Warren|the Warren]] to avoid colonial pressure from the [[tessarine-concordat|Tessarine Concordat]] and [[dravosi-crown|Dravosi Crown]].
-- **Session 02:** Beaumont granted Perrin Friend of The Passage status after the Saltwright boarding.
+- **Session 02:** Beaumont Sel introduced himself to the crew as a Friend of the Passage after the Saltwright boarding.
 - **Session 04:** [[oleandro-fuschi|Ponte Bassa]] became the crew's base, a tavern near La Vasca and a Passage front.

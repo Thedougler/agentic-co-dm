@@ -37,7 +37,7 @@
 - [[bazzoth|Bazzoth]] — Grung operative of unknown color named among the clans' current faces.
 - [[bazzoth-the-steeped]] — An old red-caste Grung alchemist and CR 6 magazine guardian in the Calveno Sewers, killed in Session 05.
 - [[bear-elk]] — CR 11 solitary territorial bruiser with a predictable patrol.
-- [[beaumont-sel]] — Passage operative and family-linked courier who named Perrin a Friend of the Passage.
+- [[beaumont-sel]] — Passage operative and family-linked courier who introduced himself to the crew as a Friend of the Passage.
 - [[beaumonts-crew]] — All of them are competent professionals. None of them are remarkable or ambitious. [[saltwright|Saltwright]] — the ship they crew.
 - [[bela-silt-paw]] — Rattkin scout trapped in the Warren's flooded sub-chamber, waiting for rescue.
 - [[bell-tone-draught]] — A vial of clear liquor that holds one sustained note when tapped, steadying a caster's grip on a spell for the hour after it is drunk.

@@ -15,7 +15,7 @@ lifecycle: proposed
 lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-13T06:31:54Z
+updated: 2026-09-23T00:00:00Z
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
@@ -114,7 +114,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | [[nona-black-jaw]] | Route face | Keep the network alive and recover the taken. | She will not expose the whole Passage to save one request. |
-| [[beaumont-sel]] | Operative | Family-linked courier work. | Named Perrin a Friend of the Passage. |
+| [[beaumont-sel]] | Operative | Family-linked courier work. | Identified himself to the crew as a Friend of the Passage. |
 | Family-linked couriers | Agents | Move people and proof along existing kitchens. | Trust is coded; a bad proof closes the door. |
 
 **Who decides:** [[nona-black-jaw]]
@@ -147,7 +147,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 **Standing:** Allied
 
-**Why:** Beaumont named Perrin a Friend of the Passage, and the crew reached Aruhe while following the Calveno raid's survivors.
+**Why:** Beaumont identified himself to the crew as a Friend of the Passage, and the crew reached Aruhe while following the Calveno raid's survivors.
 
 **They currently want from the party:** Help moving people the Crown must not own.
 
