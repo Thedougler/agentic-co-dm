@@ -39,6 +39,11 @@ own only when it is a moment or the next session needs it (what the party now
 carries, who is still with them). A recap that gives every event the same
 weight is a **chronicle**: accurate, and nobody wants to read it.
 
+- **But and therefore.** Link the beats by cause, never by "and then": each
+  one happens because of the last (so, which meant, until) or cuts across it
+  (but, just as, before anyone could). A string of short standalone
+  sentences is a chronicle even when every moment is in it; a sentence that
+  carries a cause and its effect is a story.
 - **Each moment:** the setup, the character's choice made in their own
   style, what it caused, and the one detail that made the table react.
 - **Heroics:** the risk, the choice, the payoff.
@@ -102,5 +107,7 @@ Speakable (apart from its paragraph count) still apply.
       words than the routine events around it?
 - [ ] Could each player retell their character's best moment from it?
 - [ ] Does every comic moment have its setup before its turn?
+- [ ] Is each beat linked to the last by cause (but, therefore), with no
+      run of short standalone sentences?
 - [ ] Is every rule, roll, and spell name turned into what it looked like?
 - [ ] Does it end inside the cliffhanger, or on where the party stands?
