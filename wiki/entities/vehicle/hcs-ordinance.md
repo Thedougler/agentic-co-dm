@@ -19,7 +19,7 @@ tier: supporting
 created: 2026-09-13T02:55:00Z
 updated: 2026-09-13
 type: vehicle
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: ship
