@@ -2,6 +2,71 @@
   "skill_name": "faction-design",
   "evals": [
     {
+      "id": "five-blades-hire",
+      "core": true,
+      "prompt": "The party may hire the Five Blades in Kalowe. Make wiki/entities/faction/five-blades.md ready for play.",
+      "files": [
+        "wiki/entities/faction/five-blades.md",
+        "wiki/entities/place/Kalowe.md",
+        "wiki/templates/faction.md"
+      ],
+      "expected_output": "A full Five Blades faction page: engine, faces with NPC pages, a clocked agenda, a hiring offer with pay and catch, Running the Faction rows, a hidden truth with clues, squad numbers, a theatre-of-the-mind public face, proposals marked.",
+      "assertions": [
+        {
+          "text": "Working notes carry a canon inventory built from backlinks and search (Varet, Toa, Suke, Wirra, Ket, Barnaby Rook, Kalowe at least)"
+        },
+        {
+          "text": "Established facts are kept: Moucheron company out of Kalowe, squads of four that will not split, loyal to contract, blood-feeding clause, clay keeps of preserved blood, the four members' roles, and the Rook and Ket history as told"
+        },
+        {
+          "text": "Want, method, pressure, and collision are concrete and named by page; the DM thesis is one sentence of pressure"
+        },
+        {
+          "text": "The leader and each face link NPC pages; each face has a personal want the company does not share"
+        },
+        {
+          "text": "A fracture and a custom are on the page and usable in play"
+        },
+        {
+          "text": "The agenda has three to five milestones, each with a time, a portent, and a changed fact; the first lands by the party's next session"
+        },
+        {
+          "text": "The hiring offer names who makes it, the rate in coin, the feeding-clause terms, and the catch"
+        },
+        {
+          "text": "Running the Faction says what happens when encountered, helped, opposed, ignored, and broken, by name"
+        },
+        {
+          "text": "A hidden truth has three clues from different sources"
+        },
+        {
+          "text": "Squad fighters carry compact numbers or statblock links (as hirelings and as enemies)"
+        },
+        {
+          "text": "No template section is left empty; unused sections are omitted"
+        },
+        {
+          "text": "The public face came through theatre-of-the-mind and holds no secret or unearned name"
+        },
+        {
+          "text": "Fun: hiring the Five Blades is a scene with a real choice (the feeding clause, the split rule, a face's want) that players would remember"
+        },
+        {
+          "text": "Invented facts are canon proposals: five-blades.md carries invention: true and response.md lists each proposal with the pages it grows from"
+        },
+        {
+          "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
+        },
+        {
+          "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
+        },
+        {
+          "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        }
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
       "id": 1,
       "prompt": "Improve sentinels-of-the-eyrie.md into a runnable faction page. Preserve Kyzil, Vantyrus, High Eyrie, and the non-intervention doctrine. Use only what the wiki already establishes about the Sentinels.",
       "expected_output": "A complete faction page grounded in existing wiki material — concrete want, method, player opening, and DM thesis. No invented politics or schisms not in the wiki.",
@@ -15,7 +80,7 @@
           "type": "content"
         },
         {
-          "text": "Does not invent internal politics, schisms, or power struggles not present in the wiki",
+          "text": "Any fracture or internal politics added grows from named wiki pages and is a listed canon proposal; the non-intervention doctrine is kept",
           "type": "guardrail"
         },
         {
@@ -126,9 +191,18 @@
       "prompt": "The session brief names the Ember Cartel as the faction owner and asks for its active agenda. Select the correct owner skill and produce only the faction-design work; do not start a generic place or session plan.",
       "expected_output": "Enters faction-design directly for the named Ember Cartel, preserves the brief's objective, and returns a faction-template-shaped agenda with observable player opening and completion evidence.",
       "assertions": [
-        {"text": "Selects faction-design directly from the named faction owner instead of a generic orchestrator.", "type": "process"},
-        {"text": "Works only the named faction and preserves the caller's active-agenda objective.", "type": "quality"},
-        {"text": "Reports faction template completion and an observable player opening.", "type": "structure"}
+        {
+          "text": "Selects faction-design directly from the named faction owner instead of a generic orchestrator.",
+          "type": "process"
+        },
+        {
+          "text": "Works only the named faction and preserves the caller's active-agenda objective.",
+          "type": "quality"
+        },
+        {
+          "text": "Reports faction template completion and an observable player opening.",
+          "type": "structure"
+        }
       ]
     },
     {
@@ -136,9 +210,18 @@
       "prompt": "While designing the named Ember Cartel, the brief needs one local dock city posture. Hand off only that city seam, then finish the faction page without redesigning the campaign.",
       "expected_output": "Sends a bounded city request with the faction owner, objective, evidence, and requested section; incorporates returned city-section evidence while keeping faction-design responsible for the faction page.",
       "assertions": [
-        {"text": "Hands off only the explicitly requested city subtype seam to city-design.", "type": "process"},
-        {"text": "Bounds the child request with owner, objective, evidence, and requested section.", "type": "quality"},
-        {"text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.", "type": "structure"}
+        {
+          "text": "Hands off only the explicitly requested city subtype seam to city-design.",
+          "type": "process"
+        },
+        {
+          "text": "Bounds the child request with owner, objective, evidence, and requested section.",
+          "type": "quality"
+        },
+        {
+          "text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.",
+          "type": "structure"
+        }
       ]
     },
     {
@@ -146,9 +229,18 @@
       "prompt": "A session plan's objective is to expose the Countless's search pattern; use the named faction's agenda as supporting pressure, but do not let faction prep replace or broaden that session objective.",
       "expected_output": "Keeps the session objective as the parent constraint, designs only the faction pressure that advances it, and reports how the faction result returns to the session.",
       "assertions": [
-        {"text": "Preserves the parent session objective while scoping faction work to supporting pressure.", "type": "guardrail"},
-        {"text": "Does not expand the faction handoff into a replacement session plan.", "type": "guardrail"},
-        {"text": "States the returned faction evidence and how it advances the parent's objective.", "type": "quality"}
+        {
+          "text": "Preserves the parent session objective while scoping faction work to supporting pressure.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Does not expand the faction handoff into a replacement session plan.",
+          "type": "guardrail"
+        },
+        {
+          "text": "States the returned faction evidence and how it advances the parent's objective.",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -156,9 +248,18 @@
       "prompt": "Complete the named faction owner under wiki/entities/faction/. Re-observe the page and child seam after each bounded action. If the owner path or child return is unchanged, do not repeat it; report the faction boundary, surviving evidence, attempted paths, reason, and parent effect.",
       "expected_output": "A faction page at the canonical owner path with completion evidence, or a specific blocker instead of legacy-path completion or repetition.",
       "assertions": [
-        {"text": "Uses wiki/entities/faction/ as the owner path and applies the faction template guard.", "type": "structure"},
-        {"text": "Requires changed artifact/dependency/completion evidence before parent resumption.", "type": "process"},
-        {"text": "Reports a complete specific blocker when no sanctioned path remains.", "type": "quality"}
+        {
+          "text": "Uses wiki/entities/faction/ as the owner path and applies the faction template guard.",
+          "type": "structure"
+        },
+        {
+          "text": "Requires changed artifact/dependency/completion evidence before parent resumption.",
+          "type": "process"
+        },
+        {
+          "text": "Reports a complete specific blocker when no sanctioned path remains.",
+          "type": "quality"
+        }
       ]
     }
   ]

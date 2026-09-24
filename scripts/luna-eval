@@ -74,8 +74,11 @@ def build_prompt(task: str, skill: Path | None, spec: dict, outputs: Path) -> st
     lines.append("- Outputs: " + (spec.get("outputs") or DEFAULT_OUTPUTS).replace("{outputs}", str(outputs)))
     lines.append(f"- Also write {outputs}/process.md: a plain ordered list of every file you "
                  "opened or searched for (image files included) and every shell search you ran.")
+    lines.append(f"- Keep your working notes (anything a skill says to write in working notes: "
+                 f"inventories, drafts, audits) in {outputs}/notes.md.")
     if spec.get("context"):
         lines.append(f"- Context: {spec['context']}")
+    lines.append("- Skip `wiki lint`: staged outputs sit outside the vault, so it cannot resolve their links.")
     lines += ["", f"Do not modify anything in the repo outside {outputs}/. Paths above are exact."]
     return "\n".join(lines)
 

@@ -127,7 +127,16 @@ so a beat that waits for the party to start it has not been prepped.
 
 Canon that records something as unknown, unconfirmed, or open is silence
 too: it names what has not been decided yet, and prep decides it with a
-proposal when the beat needs it.
+proposal when the beat needs it. The unknown stays true for the people in the
+world (no appraiser can name the maker); the DM page carries the answer.
+
+The page states each proposal as world fact. The proposal list, its sources,
+and any contradiction it settles live in the response to the DM. **World-voice
+search:** search the finished page for *propos*, *establish*, *canon*,
+*unknown*, *unresolved*, *confirm*, *reading*, *page*, and *source*, and rewrite each hit as a world fact or
+cut it when play does not need it. Then search for *not know*, *no one*, and *nobody*: each
+hit about what people do not know keeps their ignorance and states, on the
+page, the truth they do not know.
 
 A fact the page leaves open hands the DM an invention job mid-session and
 fails **HARD: dm-facing-explicit**. Fill it with a proposal, and make each

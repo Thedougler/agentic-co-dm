@@ -13,12 +13,6 @@ portent, and consequence structure when a pressure already exists.
 
 ## Section fill detail
 
-### Identity sentence
-
-Before drafting, name scale/kind, public identity, route choices, and who can
-change the region. Missing route choices or change agents means keep retrieving
-or ask — do not invent pressure for drama.
-
 ### Narration
 
 Theatre-of-the-mind first-travel look. Horizon, terrain, weather, movement,
@@ -34,10 +28,9 @@ the kind of exploration it enables — not a closed-history encyclopedia summary
 
 ### Current state
 
-Status quo now: recent change, opportunity, next visible change, and linked
-pressure when one already exists. If no pressure is stated, write
-`Pressure: None established yet` or omit the bullet. Keep short and current;
-fold obsolete states into Change log.
+Status quo now: recent change, opportunity, next visible change with a time,
+and the live pressure by name. Keep short and current; fold obsolete states
+into Change log.
 
 ### Geography and travel
 
@@ -71,15 +64,14 @@ histories stay on faction pages.
 
 ### Fronts and pressures
 
-Only pressures already stated by a wiki note, session note, or accepted brief.
-Link the owner note. Summarize regionally: impulse/goal, impending consequence,
-affected places/routes/powers, visible signals, portents if they already exist
-or are accepted as invention.
-
-When none is stated, omit the section or leave a short "None established yet"
-note. Do not create a front, threat, plague, war, clock, villain plan, or crisis
-because the template has a pressure section. If pursuable as an objective, link
-or propose a quest — never revive `type: front`.
+Grow each pressure from the canon inventory: a power's want, a hazard's
+season, a debt, a hunt, a shortage already on a page. Link the owner note.
+Summarize regionally: impulse or goal, impending consequence with a time,
+affected places, routes, and powers, and visible portents. Where canon names a
+power but not its next move, the move is a canon proposal. A stock crisis with
+no root in the inventory (a plague, a war, an ancient evil from nowhere) is
+furniture; replace it with something the inventory supports. A pursuable
+objective links or proposes a quest; `type: front` stays retired.
 
 ### Omit by scale
 
@@ -103,11 +95,11 @@ old event in Change log.
 ## Audit questions
 
 - Can the table arrive and choose a route without inventing the map on the fly?
-- What pressure is live **now** (not invented crisis / closed history)?
+- What pressure is live **now**, which canon page does it grow from, and when does it move next?
 - Who can change the region, and what is their next visible move?
 - Do routes offer real tradeoffs (≥2 approaches), not one corridor?
 - Which headings earn their place at this scale?
-- What is labeled invention vs established wiki fact / canon gap?
+- Is every invention a canon proposal, stated as world fact and listed in the response?
 - Are secrets/DCs out of player-facing Narration?
 
 ## Failure modes
@@ -115,13 +107,13 @@ old event in Change log.
 | Failure mode | Repair |
 | --- | --- |
 | Encyclopedia without route/motion | Add route tradeoffs + who can change it |
-| Invented ancient evil / war / plague as canon | Strip; use established pressure or label invention |
+| Stock crisis with no root in canon | Grow pressure from the inventory; state it as a proposal |
 | Secrets/DCs in Narration | Move to DM-facing sections |
 | Single mandatory corridor | Restore ≥2 approaches; keep keyed places |
-| Pressure invented for template section | Omit or mark None established / proposed |
+| "None established" or "unresolved" left for the DM | Decide it as a canon proposal |
 | `type: front` revived | Link/propose quest; keep type: region |
 | Faction agendas on region page | Point to faction pages; keep local next-move only |
 | PC outcomes as Current state | Present options; leave choices to play |
-| Silent wiki write / unmarked invention | Work gate first; label + cite + propose |
+| Unmarked invention | `invention: true`; list the proposal in the response |
 | Site-place stuffed into region | Stay on region template; defer sites to place-design |
-| Overwriting established hazards as safe | Surface contradiction; preserve wiki hazards |
+| Overwriting established hazards as safe | Keep the hazard; a contradiction is a proposal naming both sources |

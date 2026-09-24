@@ -8,164 +8,191 @@ description: >-
   wiki/templates/lore.md.
 ---
 
-# Lore Design
+# Lore design
+
+A lore page answers **one durable question** about the world and turns the
+answer into play. The DM gets the truth, stated plainly; the players get
+**accounts** (what people in the world say, each wrong in a useful way),
+**signs** they can notice, and **clues** that lead them to the truth if they
+chase it. Lore earns its page when knowing it changes a choice: where to sail,
+whom to trust, what to fear, what a thing is worth.
+
+File what constitution X makes canon. Follow `docs/agents/work.md`.
+
 ## Boundary contract
 
-### Input
+- **Input:** A named lore question (existing page or one to mint), the
+  caller's objective and brief, `wiki/templates/lore.md`, and the vault canon
+  it touches: sessions, places, factions, NPCs, creatures, items, prior lore.
+- **Work:** The steps below, for this one question. Keep the caller's
+  objective.
+- **Done:** Every item in `## Done` holds for the reported page path.
+- **Capability Handoff:** A named person, creature, place, item, or faction the
+  truth or its clues need is cast before it is minted
+  (`docs/agents/table-ready.md` § Cast before minting): an in-play or
+  unrevealed page that fits comes first, and its owner skill mints one only
+  when none fits, before any text depends on it (AGENTS.md **HARD:
+  entity-before-spoken**, **Focused minting**). A site the party will enter is a
+  place page (`place-design`); a creature they will fight is a creature page
+  (`monster-design`). Checks → `dnd5e-mechanics`. A spoken telling →
+  `theatre-of-the-mind`. Each child returns its page path or prose and its
+  completion result; resume at the step that waited on it.
 
-Take a named lore owner, the caller's objective, the relevant brief,
-`wiki/templates/lore.md`, and linked canon/evidence from sessions, places,
-factions, NPCs, items, spells, vehicles, and prior lore. The owner is the
-durable truth being clarified, not a request for generic setting exposition.
+## Page rules
 
-### Owner-specific Work
+These hold in every step.
 
-Work only the lore question: preserve established, contested, and unknown
-truth; separate fact from interpretation; and fill the lore template's Current
-Truth, discovery, and At the Table handles. Draft the entity truth before any
-spoken reveal, keep invention proposed and cited, and leave player conclusions
-open to play.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  question needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  silence): one concrete answer, stated on the page as world fact where the DM
+  uses it, with the page marked `invention: true`. The response lists each
+  proposal with the `[[pages]]` it grows from; a proposal that settles a
+  contradiction names the sources and the reading it chose, so the DM picks the
+  winner. What the world does not know stays unknown to the world, in Accounts
+  and Who Knows; Current Truth carries the answer.
+- **Table history is the table's.** What the party did, learned, or believes
+  comes from session notes; the page records it and leaves their next
+  conclusion to play.
+- **Preserve.** Improving an existing page keeps every established detail
+  (claims, tellings, witnesses, sources); fold each into the section that now
+  owns it. A detail the new truth shows to be false becomes an account.
+- **Bar.** Existing vault pages are canon to keep, never a quality model; many
+  predate this skill. The bar is the steps and `## Done` below.
+- **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every sign,
+  account, and clue has its truth on the page by name. `lifecycle` and
+  `reveal` stay `proposed` and `unrevealed` until play reveals the lore.
+- **Process stays off the page.** The inventory and question are working
+  notes; the page carries only their facts.
 
-### Capability Handoff
+## Steps
 
-Named entity → its owner skill. Checks → `dnd5e-mechanics`. Spoken delivery
-→ `theatre-of-the-mind`.
+### 1. Take the canon inventory
 
-### Done
+Retrieve before inventing (constitution XII), using QMD per AGENTS.md § Vault
+retrieval (`.agents/skills/qmd`).
 
-Use the existing `## Done` checklist below. Completion is observable when the
-named lore page path, durable-question/template checks, table-useful handles,
-and any child return evidence are reported.
+1. Read the lore page if it exists and every page that links to it: run
+   `grep -rliF "[[<name>" wiki/entities` once for the slug, the title, and each
+   alias. Read every page it links to.
+2. Search QMD for the question's subject, its places, creatures, people, and
+   every session where it came up.
+3. `qmd get` every hit you will use. Snippets are leads, not facts.
 
+Write the **canon inventory** in working notes, one line per owner page:
+`[[slug]]` · kind · what it claims or shows about this question.
 
-## Work Gate
+Done when every backlink and relevant hit is in the inventory or dropped with a
+one-line reason, and every inventory page was read in full.
 
-Prep only. Follow `docs/agents/work.md`.
+### 2. Answer the question
 
-Show a chat proposal before writing a campaign wiki page. Write under `wiki/`
-only after DM acceptance. If a needed named lore note is missing, that lore page
-is work to do now: propose it instead of treating the missing note as out of
-scope. Ground invention in wiki pages and/or D&D campaign patterns; set
-`invention: true`, cite `[[pages]]`, and show contradictions. Never invent table
-history or present invention as established wiki fact.
+Write the **question** in working notes: what this lore lets the DM answer or
+the players act on. Several unrelated truths become linked pages.
 
-## Lore Job
+Then write the **truth**: the answer, one concrete fact at a time. For a legend,
+say which parts are real, which are distorted, and what is really behind each
+distortion; where it is (a linked place or region, with a bearing and
+distance); who or what is there now; and what happened to the people who went
+before. Build the truth from the inventory: a creature, faction, event, or
+place already on a canon page makes a better answer than a new one.
 
-A lore page answers one durable question about the world: what is true, why it
-matters, how the characters can notice or use it, and what it explains or warns
-about. The page is done when one question, At a Glance, Current Truth, and At
-the Table are filled without another format guide.
+Make the truth **at least as good as the tale**, and **keep the wonder**. A
+fantastic claim (a curse, the walking dead, a monster of impossible size)
+either stays true in some form or gives way to a different wonder of equal
+size: the drowned do not walk, but something wears their faces; the beast is
+ordinary, but what it guards is not. A mundane explanation earns its place
+only when it opens a bigger opportunity than the tale did (a smuggler's lie
+that hides a cache). A legend explained away into weather and bones is a dead
+lead. The truth also fits the canon's scale: distances, dangers,
+and rewards match what the tellings imply (divers who avoid a hole dive near
+it) and the party's level (treasure by the 2024 guidance for their tier).
 
-Create or edit a named lore page when the truth has a durable identity and
-players can witness, investigate, misunderstand, exploit, challenge, fear,
-teach, bargain over, or return to it. Store the note under the campaign wiki
-folder that owns this kind of lore.
+Done when every claim in the canon's tellings is marked true, distorted (and
+what is really there), or false (and why people believe it), and every
+unknown or open item the old page listed has its answer.
 
-Keep one-off color, item properties, spell history, vehicle lore, faction
-history, place backstory, and quest context in the owning page until the lore
-has its own durable question. Actual items stay `type: item`; ingest remapping
-belongs outside this skill.
+### 3. Make it bite now
 
-## Procedure
+- **Why now.** What makes this truth matter to the current campaign: a person
+  who acts on it this month, a deadline, a prize someone else is racing for.
+- **Actors.** Who else knows or wants the truth or its prize: a named person
+  or group with an NPC or faction page (a creature doing what it always does
+  is scenery), what they do next, and when.
+- **Stakes.** What the party gains by acting on it (the prize, the route, the
+  ally) and what it costs or risks, in numbers where numbers apply (gold,
+  days, the creature's CR, the DC of the dive).
 
-### 1. Retrieve The Lore
+Done when at least one named NPC or faction moves on this truth on their own
+clock, and the stakes name what the party can win and lose, sized for their
+level.
 
-Read the brief, `wiki/templates/lore.md`, and relevant session, place, faction,
-NPC, quest, item, spell, vehicle, creature, and prior lore notes. Preserve
-established names, witnessed facts, party knowledge, in-world accounts,
-exceptions, contradictions, sources, and open questions.
+### 4. Build the accounts and the clue path
 
-Write one question before the page:
+- **Accounts.** Two to four in-world versions (a sailors' telling, a scholar's
+  note, a faction's official line, a survivor's story), each with who holds it
+  and how it relates to the truth. Each is wrong or partial in a way that
+  sends a believer somewhere interesting.
+- **Common telling.** The version a tavern would actually say, in voice.
+- **Revelation.** For each conclusion the party needs, three independent
+  clues from different sources (a person, a place, a document, a physical
+  sign), each naming its source page, what it reveals, and the check if one
+  is uncertain (Ability (Skill) and DC).
+- **Signs.** What the players notice in the world before anyone explains it.
 
-> What does this lore let the DM answer or the players act on?
+Done when each account names its holder, each needed conclusion has three
+clues from different sources, and each source is a linked page.
 
-If the answer is several unrelated truths, split them into linked notes. If the
-answer depends on table history, use only events the notes establish; otherwise
-mark it as invention or an open canon question.
+### 5. File the page
 
-### 2. Start From The Template
+Copy `wiki/templates/lore.md` to `wiki/entities/lore/<kebab-name>.md` with
+`type: lore`, `kind`, `truth`, `scope`, `region`, and `era`. Omit sections with
+no job. Write complete sentences. Wikilink every owner page.
 
-Copy `wiki/templates/lore.md`. Keep its frontmatter and headings unless an
-unused template section says it may be omitted. Fill these frontmatter fields:
+| Section | Carries |
+|---|---|
+| At a Glance | Core truth, why it matters now, scope |
+| Current Truth | The truth from step 2; Limits carry exceptions and costs |
+| At the Table | Players notice, this explains, this enables, this warns of, relevant now |
+| Who Knows | Each knower, what they know, certainty, basis; Party Knowledge from session notes |
+| Accounts | The accounts and the common telling |
+| Discovery | Each revelation with its three clues |
+| If This Is Changing | The actors from step 3, what they do next, and when |
+| Consequences | Because true, if exposed, if exploited |
 
-```yaml
-type: lore
-lifecycle: proposed
-reveal: unrevealed
-campaign: <campaign slug>
-visibility: dm
-kind: <fact|history|belief|rumor|legend|doctrine|custom|law|cosmology|prophecy|revelation>
-truth: <established|partial|contested|false|unknown>
-scope: "<where, when, or for whom this is true, or blank>"
-region: "<known region or blank>"
-era: "<known era or blank>"
-summary: "<one runnable sentence>"
-```
+Leave out Canon Log until play witnesses the lore.
 
-Do not add a second lore template. Do not set lifecycle or reveal to canon-level
-status before the players interact with or witness the lore.
+Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
+and rerun until green.
 
-### 3. Fill The Page
-
-Fill `> [!abstract] At a Glance`:
-
-- **Core truth:** the smallest useful answer to the durable question.
-- **Why it matters:** the decision, danger, opportunity, relationship, or
-  interpretation this truth changes.
-- **Scope:** where, when, or for whom the truth applies, when bounded.
-
-Fill `## Current Truth` with what is actually true now in complete sentences.
-Separate fact from interpretation. Link important people, factions, places,
-objects, events, creatures, spells, and other lore concepts that already have
-their own notes. Record limits, exceptions, unknowns, and impossibilities when
-they change play.
-
-Fill `## At the Table` with the handles that make the lore usable:
-
-- **Players notice:** an observable sign, behavior, phrase, symbol, consequence,
-  or environmental detail.
-- **This explains:** a linked page, event, mystery, practice, or condition the
-  players may misread.
-- **This enables:** a choice or course of action that becomes possible once the
-  characters understand the lore.
-- **This warns of:** a danger or consequence attentive characters can anticipate.
-
-Omit unused optional sections. Use `## Who Knows`, `## Accounts`, `## Discovery`,
-`## History`, `## If This Is Changing`, `## Consequences`, `## Connections`,
-`## Open Canon`, and `## Sources` only when they help run play or preserve a
-real source.
-
-### 4. Handle Discovery And Canon
-
-For hidden or contested lore, write revelations as conclusions the players can
-reach, not scenes they must follow. Give structurally important revelations
-multiple independent clues from plausible sources; background revelations can
-stay lighter.
-
-Lore remains changeable prep until players interact with or witness it. Omit
-`## Canon Log` until that happens. After table witness, Campaign Editor /
-`reconciling-session-evidence` (not `session-recap`) updates Current Truth and
-appends Canon Log rows. `session-recap` only files the narrative recap.
-
-## Craft Basis
-
-Use lore as a table tool, not an encyclopedia entry: one portable truth, visible
-signs, player choices, and consequences. Practical inputs: Justin Alexander's
-revelation and clue practice, Mike Shea's secrets-and-clues prep, and
-situation-based campaign prep that records current truth and pressure instead
-of scripting future plot.
+Then **audit**: for each item in `## Done`, write in the working notes the page
+line that satisfies it, and fix the page wherever no line does. For the item
+that keeps established canon, copy every sentence, list item, and table row of
+the old page into the notes as its own line, and beside each write the new
+line that carries it; a line with nothing beside it goes back on the page.
 
 ## Done
 
-The page is done when:
-
-- It fills `wiki/templates/lore.md` without adding another template.
-- It has `type: lore` and is not remapped to `type: item`.
-- It answers one durable question; unrelated truths are split into linked notes.
-- At a Glance states the core truth and why it matters.
-- Current Truth states what is actually true now.
-- At the Table includes notice, explains, enables, and warns handles.
-- Pre-witness lore stays proposed/unrevealed and changeable by the DM.
-- Canon Log is omitted until players interact with or witness the lore.
-- Table history is cited from notes or left open; it is not invented.
-- Invention is labeled, cited, and proposed for DM acceptance.
+- The canon inventory is complete; every established claim is kept, as truth
+  or as an account.
+- The page answers one question; Current Truth answers every claim and every
+  formerly open item with one concrete fact.
+- The truth is at least as good as the tale and keeps the wonder: each
+  fantastic claim stays true in some form or gives way to a wonder of equal
+  size, at the canon's scale.
+- A named NPC or faction moves on the truth on their own clock; the stakes name
+  what the party can win and lose, with numbers sized for their level.
+- Accounts name their holders; each needed conclusion has three clues from
+  different linked sources; uncertain clues carry Ability (Skill) and DC.
+- At the Table fills notice, explains, enables, and warns.
+- Party knowledge comes from session notes; lifecycle and reveal stay proposed
+  and unrevealed.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit (`docs/agents/table-ready.md` §
+  Cast before minting).
+- User-said canon is filed; every invention is a canon proposal, marked on the
+  page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.

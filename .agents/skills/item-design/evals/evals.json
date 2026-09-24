@@ -441,6 +441,53 @@
           "type": "structure"
         }
       ]
+    },
+    {
+      "id": "reef-song-shard-worth-it",
+      "core": true,
+      "prompt": "The party can find the Reef-Song Shard at Slackwater's Trust Market. Make it worth picking up.",
+      "files": [
+        "wiki/entities/item/reef-song-shard.md",
+        "wiki/entities/place/slackwater.md",
+        "wiki/templates/item.md"
+      ],
+      "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "expected_output": "The Reef-Song Shard as a runnable item page: its unknown material and origin decided as one concrete proposal tied to existing canon, runnable 2024 item text or an exact plot use, tells with truths, presence with a named seeker, and a third-person theatre-of-the-mind portrait.",
+      "assertions": [
+        {
+          "text": "Preserves canon: a pale, coral-smooth fragment with ridges too regular for weather, one sustained note when air moves across it, no maker's mark, surfaced at Slackwater's Trust Market with no seller naming its source"
+        },
+        {
+          "text": "Fills the recorded unknown: the page states what the shard is made of and where it came from as one concrete answer tied to an existing wiki page, marked as a canon proposal (invention: true, listed in response.md)"
+        },
+        {
+          "text": "The item text is runnable at the table: in 2024 language it states action, frequency, range or target, effect, duration, and charges or recovery; a plot property states exactly what it does or opens in play"
+        },
+        {
+          "text": "Classification line sits directly before the item text; each fact appears once on the page; kind, rarity, and attunement frontmatter match the item text"
+        },
+        {
+          "text": "Every tell on the object has its truth stated plainly under Hidden Properties; no mystery is left without a DM answer"
+        },
+        {
+          "text": "Presence is filled (seen, held, active, unseen, concealment, wanted by) and names who wants it by an existing owner page and the sign they are looking"
+        },
+        {
+          "text": "Working notes carry comparators and an audit verdict that support the rarity"
+        },
+        {
+          "text": "The narration is third-person present with no 'you', carries every tell, and states no effect, rarity, or truth"
+        },
+        {
+          "text": "[!narration] is the only callout"
+        },
+        {
+          "text": "The item changes a choice at the table: using it costs or risks something named, and someone in the world reacts to it being carried"
+        },
+        {
+          "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
+        }
+      ]
     }
   ]
 }

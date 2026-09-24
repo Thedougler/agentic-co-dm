@@ -478,18 +478,6 @@ When a change becomes the durable new normal, fold it into the relevant baseline
 
 ---
 
-# Open threads
-
-<!--
-Questions are useful. Do not invent answers until play or preparation actually needs them.
--->
-
-* [ ] What remains unresolved about {{title}}?
-* [ ] Which faction will react to the party's latest action?
-* [ ] Which district needs detail only if the party chooses to go there?
-* [ ] Which established element has not appeared in play recently?
-* [ ] What consequence is already in motion but not yet visible?
-
 # Linked notes
 
 ```query
