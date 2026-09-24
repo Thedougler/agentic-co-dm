@@ -111,3 +111,77 @@ def test_help_shows_examples_and_missing_flag_exits_2_with_example(tmp_path: Pat
     assert payload["example"] == example
     assert payload["hint"]
     assert "--out" in missing.stderr
+
+
+def _luna_module():
+    import importlib.util
+    from importlib.machinery import SourceFileLoader
+
+    loader = SourceFileLoader("luna_eval", str(LUNA))
+    spec = importlib.util.spec_from_loader("luna_eval", loader)
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+    return module
+
+
+def _cmd(command: str, output: str = "", exit_code: int = 0) -> dict:
+    return {"type": "item.completed", "item": {
+        "type": "command_execution", "command": f"/bin/zsh -lc '{command}'",
+        "aggregated_output": output, "exit_code": exit_code, "status": "completed"}}
+
+
+FR035 = '{"status": "error", "error": "bad path", "hint": "h", "example": "wiki lint entities/place/a.md"}'
+EVENTS = [
+    {"type": "thread.started", "thread_id": "t"},
+    {"type": "item.completed", "item": {"type": "agent_message", "text": "hi"}},
+    _cmd("cat .agents/skills/place-design/SKILL.md && cat .agents/skills/obsidian-markdown/SKILL.md", "..."),
+    _cmd("sed -n 1,40p .agents/skills/place-design/SKILL.md", "..."),
+    _cmd("scripts/wiki lint wiki/entities/place/a.md", FR035, 2),          # FR-035 usage error
+    _cmd("scripts/wiki lint entities/place/a.md", '{"status": "ok"}', 0),
+    _cmd("scripts/wiki lint --bogus", "usage: wiki lint\nwiki lint: error: unrecognized arguments", 2),
+    _cmd("scripts/wiki lint --bogus", "usage: wiki lint\nwiki lint: error: unrecognized arguments", 2),  # retry
+    _cmd("scripts/wiki lint entities/place/b.md", '{"status": "rejected"}', 2),  # exit 2 alone: not a usage error
+    _cmd("rg Candlemere wiki", "x", 0),
+    _cmd("rg Candlemere wiki", "x", 0),                                    # duplicate after success
+    {"type": "item.completed", "item": {"type": "file_change", "changes": [{"path": "/o/a.md", "kind": "add"}], "status": "completed"}},
+    {"type": "turn.completed", "usage": {"input_tokens": 1000, "cached_input_tokens": 400, "output_tokens": 50}},
+]
+
+
+def test_metrics_derive_from_events(tmp_path: Path):
+    events = tmp_path / "events.jsonl"
+    events.write_text("\n".join(json.dumps(e) for e in EVENTS) + "\n", encoding="utf-8")
+    m = _luna_module().build_metrics(events, model="gpt-6-luna", effort="high", exit_code=0, delivered=True)
+    assert set(m) == {"tool_calls", "total_tool_calls", "retries", "invocation_errors", "invocation_error_commands",
+                      "duplicate_actions", "tokens", "completion_reason", "model", "effort", "skills_read"}
+    assert m["tool_calls"] == {"command": 9, "file_change": 1} and m["total_tool_calls"] == 10
+    assert m["retries"] == 1
+    assert m["invocation_errors"] == 3
+    assert m["invocation_error_commands"] == [
+        "scripts/wiki lint wiki/entities/place/a.md", "scripts/wiki lint --bogus", "scripts/wiki lint --bogus"]
+    assert m["duplicate_actions"] == 1
+    assert m["tokens"] == {"input": 1000, "output": 50, "total": 1050}
+    assert m["completion_reason"] == "ok"
+    assert (m["model"], m["effort"]) == ("gpt-6-luna", "high")
+    assert m["skills_read"] == [".agents/skills/place-design/SKILL.md", ".agents/skills/obsidian-markdown/SKILL.md"]
+
+
+def test_metrics_record_absent_events_as_null(tmp_path: Path):
+    events = tmp_path / "events.jsonl"
+    events.write_text(json.dumps({"type": "thread.started"}) + "\n", encoding="utf-8")
+    m = _luna_module().build_metrics(events, model="gpt-6-luna", effort="high", exit_code=1, delivered=False)
+    assert m["tokens"] is None
+    assert m["completion_reason"] == "error"
+    assert m["skills_read"] == [] and m["total_tool_calls"] == 0
+
+
+def test_skill_selected_grades_the_first_owner_skill_read():
+    grade = _luna_module().grade_skill_selected
+    metrics = {"skills_read": [".agents/skills/place-design/SKILL.md", ".agents/skills/city-design/SKILL.md"]}
+    items = grade([{"type": "skill_selected", "text": "place-design"}, {"type": "behavior", "text": "x"}], metrics)
+    assert items == [{"text": "place-design", "passed": True, "type": "skill_selected",
+                      "evidence": "first SKILL.md read: .agents/skills/place-design/SKILL.md"}]
+    miss = grade([{"type": "skill_selected", "text": "city-design"}], metrics)[0]
+    assert miss["passed"] is False
+    none = grade([{"type": "skill_selected", "text": "city-design"}], {"skills_read": []})[0]
+    assert none["passed"] is False and "no SKILL.md" in none["evidence"]
