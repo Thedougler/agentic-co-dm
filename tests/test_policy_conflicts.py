@@ -104,3 +104,57 @@ def test_feature_026_docs_cite_only_existing_paths(tmp_path: Path):
         if re.search(r"AGENT00[1-3]", line)
     ]
     assert retired == []
+
+
+def _diff_repo(tmp_path: Path, *, new_listed: bool, reference_deleted: bool) -> subprocess.CompletedProcess[str]:
+    def git(*args: str) -> None:
+        subprocess.run(["git", *args], cwd=tmp_path, check=True, capture_output=True)
+
+    def write(relative: str, text: str) -> None:
+        path = tmp_path / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+
+    tmp_path.mkdir(parents=True, exist_ok=True)
+    git("init", "-q", "-b", "main")
+    git("config", "user.email", "t@example.com")
+    git("config", "user.name", "t")
+    write("scripts/old-tool", "#!/bin/sh\n")
+    write("AGENTS.md", "Run the linter.\n")
+    write("specs/001-old/plan.md", "Historical: scripts/old-tool\n")
+    git("add", "-A")
+    git("commit", "-q", "-m", "base")
+    git("rm", "-q", "scripts/old-tool")
+    write("tools/new_index.json", "{}\n")
+    listed = "| `tools/new_index.json` | extends x | why | derived |\n" if new_listed else ""
+    write(
+        "specs/002-demo/plan.md",
+        "# Plan\n\n### New files, subcommands, flags, and data (SC-014 a)\n\n"
+        "| New item | Extends | Why | Kind |\n|---|---|---|---|\n" + listed
+        + "\n### Deleted or folded (SC-014 c)\n\n| Path | Evidence | Replacement |\n|---|---|---|\n"
+        "| `scripts/old-tool` | unused | `wiki lint` |\n",
+    )
+    if reference_deleted:
+        write("AGENTS.md", "Run ./scripts/old-tool first.\n")
+    git("add", "-A")
+    git("commit", "-q", "-m", "change")
+    return subprocess.run(
+        [sys.executable, str(ROOT / "scripts/hybrid-sdd-check.py"), "diff", "--plan", "specs/002-demo/plan.md", "--base", "main~1"],
+        cwd=tmp_path, capture_output=True, text=True,
+    )
+
+
+def test_hybrid_sdd_diff_checks_new_and_deleted_tables(tmp_path: Path):
+    ok = _diff_repo(tmp_path / "ok", new_listed=True, reference_deleted=False)
+    assert ok.returncode == 0, ok.stdout + ok.stderr
+    assert json.loads(ok.stdout)["status"] == "pass"
+
+    unlisted = _diff_repo(tmp_path / "unlisted", new_listed=False, reference_deleted=False)
+    assert unlisted.returncode == 1
+    report = json.loads(unlisted.stdout)
+    assert report["unlisted_added"] == ["tools/new_index.json"]
+
+    referenced = _diff_repo(tmp_path / "referenced", new_listed=True, reference_deleted=True)
+    assert referenced.returncode == 1
+    report = json.loads(referenced.stdout)
+    assert [(item["path"], item["file"]) for item in report["deleted_referenced"]] == [("scripts/old-tool", "AGENTS.md")]

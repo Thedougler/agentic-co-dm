@@ -541,6 +541,85 @@ def check_preset(package: Path) -> None:
         fail("preset must not install third-party presets")
 
 
+MAINTAINED = ("AGENTS.md", "docs", ".agents", "scripts", "tools", "tests", "package.json", "README.md")
+RULE_ID = re.compile(r"^[A-Z]{2,}[0-9]{3}$")
+
+
+def _git(root: Path, *args: str) -> str:
+    import subprocess
+
+    proc = subprocess.run(["git", *args], cwd=root, capture_output=True, text=True)
+    if proc.returncode != 0:
+        fail(proc.stderr.strip() or f"git {' '.join(args)} failed")
+    return proc.stdout
+
+
+def _plan_section_tokens(text: str, heading: str) -> list[str]:
+    """Backticked tokens from the first column of the table under a ``###`` heading."""
+    tokens: list[str] = []
+    inside = False
+    for line in text.splitlines():
+        if line.startswith("#"):
+            inside = line.lstrip("#").strip().startswith(heading)
+            continue
+        if not inside or not line.startswith("|") or set(line) <= {"|", "-", " "}:
+            continue
+        first = line.strip().strip("|").split("|")[0]
+        tokens.extend(re.findall(r"`([^`]+)`", first))
+    return tokens
+
+
+def check_diff(plan: Path, base: str, root: Path) -> dict[str, Any]:
+    """SC-014 a/c: added files must be in the plan's New files table; deleted paths stay unreferenced."""
+    text = (root / plan).read_text(encoding="utf-8")
+    new_tokens = set(_plan_section_tokens(text, "New files"))
+    deleted_tokens = _plan_section_tokens(text, "Deleted or folded")
+    status_lines = _git(root, "diff", "--name-status", "--no-renames", f"{base}...HEAD").splitlines()
+    added = sorted(line.split("\t", 1)[1] for line in status_lines if line.startswith("A\t"))
+    deleted = sorted(line.split("\t", 1)[1] for line in status_lines if line.startswith("D\t"))
+    unlisted = [path for path in added if not path.startswith("specs/") and path not in new_tokens]
+
+    needles: dict[str, str] = {}
+    for token in deleted_tokens:
+        token = token.strip()
+        if RULE_ID.match(token):
+            needles[token] = token
+            continue
+        matches = [
+            path for path in deleted
+            if path == token or path.endswith("/" + token) or (token.endswith("/") and (path.startswith(token) or ("/" + token) in path))
+        ]
+        for path in matches:
+            needles[path] = path
+            if token.endswith("/"):
+                needles[token] = token
+    present = sorted(path for path in needles if "/" in path and not path.endswith("/") and (root / path).exists())
+
+    tracked = [
+        line for line in _git(root, "ls-files", "--", *MAINTAINED).splitlines()
+        if (root / line).is_file()
+    ]
+    referenced: list[dict[str, Any]] = []
+    for relative in tracked:
+        try:
+            lines = (root / relative).read_text(encoding="utf-8").splitlines()
+        except (UnicodeDecodeError, OSError):
+            continue
+        for number, line in enumerate(lines, 1):
+            for needle in needles:
+                if needle in line:
+                    referenced.append({"path": needle, "file": relative, "line": number})
+    status = "fail" if unlisted or present or referenced else "pass"
+    return {
+        "status": status,
+        "added": added,
+        "deleted": deleted,
+        "unlisted_added": unlisted,
+        "deleted_still_present": present,
+        "deleted_referenced": referenced,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
@@ -549,8 +628,16 @@ def main() -> int:
         command.add_argument("--fixtures", required=True, type=Path)
     preset = sub.add_parser("preset")
     preset.add_argument("--package", required=True, type=Path)
+    diff = sub.add_parser("diff", help="diagnostic: plan New files / Deleted or folded tables against a git diff")
+    diff.add_argument("--plan", required=True, type=Path)
+    diff.add_argument("--base", required=True)
     args = parser.parse_args()
     try:
+        if args.command == "diff":
+            root = Path(_git(Path.cwd(), "rev-parse", "--show-toplevel").strip())
+            report = check_diff(args.plan, args.base, root)
+            print(json.dumps(report, indent=2))
+            return 0 if report["status"] == "pass" else 1
         if args.command == "preset":
             check_preset(args.package)
             print("PASS preset: creative-llm-wiki package validated")
