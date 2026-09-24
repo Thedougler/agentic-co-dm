@@ -101,8 +101,25 @@ def _delete_redirect_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationO
     return MutationOp("delete_file", target, selector={"content_hash": section_hash(text)}), None
 
 
+def _escape_table_pipe_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationOp | None, str | None]:
+    target = str(finding.get("file") or finding.get("page") or "").replace("\\", "/")
+    path = vault / target
+    if not target or not path.is_file():
+        return None, "target_missing"
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return None, "target_unreadable"
+    return MutationOp("escape_table_wikilink_pipes", target, selector={"content_hash": section_hash(text)}), None
+
+
 _FIXERS: dict[str, Callable[[Path, dict[str, Any]], tuple[MutationOp | None, str | None]]] = {
     "delete_redirect_stub": _delete_redirect_op,
+    "escape_table_wikilink_pipe": _escape_table_pipe_op,
+}
+_APPLIED_RULE = {
+    "delete_file": ("TMPL_redirect_stub", "delete_redirect_stub"),
+    "escape_table_wikilink_pipes": ("table_wikilink_unescaped_pipe", "escape_table_wikilink_pipe"),
 }
 
 
@@ -131,7 +148,7 @@ def build_safe_fix_plan(
         operation, reason = _FIXERS[action](root, finding)
         if operation is None:
             skipped.append(_record_skip(finding, reason or "precondition_failed"))
-        else:
+        elif operation not in operations:
             operations.append(operation)
     return operations, skipped
 
@@ -153,8 +170,8 @@ def apply_safe_fix_plan(vault: str | Path, operations: list[MutationOp]) -> tupl
     changed_files = sorted({str(path) for path in result.get("files_changed", [])})
     return [
         {
-            "rule": "TMPL_redirect_stub",
-            "action": "delete_redirect_stub",
+            "rule": _APPLIED_RULE[operation.kind][0],
+            "action": _APPLIED_RULE[operation.kind][1],
             "target": operation.target,
             "status": "applied",
             "changed_files": [operation.target] if operation.target in changed_files else changed_files,

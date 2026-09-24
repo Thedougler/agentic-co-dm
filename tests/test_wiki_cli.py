@@ -630,3 +630,22 @@ def test_vale_deprecated_dmthesis_fires_with_live_vocabulary(tmp_path: Path):
     output = _vale_scratch(tmp_path, config_root)
     assert "E100" not in output, output
     assert "Deprecated.DMThesis" in output, output
+
+
+def test_lint_fix_escapes_table_wikilink_pipes(tmp_path: Path):
+    page(tmp_path, "entities/npc/keeper.md", title="Keeper")
+    table = tmp_path / "entities/npc/table.md"
+    table.write_text(
+        "---\ntitle: Table\n---\n\n| Who |\n| --- |\n| [[keeper|The Keeper]] |\n\n[[keeper|prose link]]\n",
+        encoding="utf-8",
+    )
+    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    rules = {item["rule"] for group in before["files"] for item in group["findings"]}
+    assert "table_wikilink_unescaped_pipe" in rules
+    fixed = run_cli(tmp_path, "lint", "fix", "entities/npc/table.md")
+    assert fixed.returncode in (0, 1), fixed.stderr
+    assert "| [[keeper\\|The Keeper]] |" in table.read_text(encoding="utf-8")
+    assert "[[keeper|prose link]]" in table.read_text(encoding="utf-8")
+    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    rules = {item["rule"] for group in after["files"] for item in group["findings"]}
+    assert "table_wikilink_unescaped_pipe" not in rules

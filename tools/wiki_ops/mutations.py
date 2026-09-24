@@ -731,6 +731,11 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
     elif kind == "delete_file":
         _verify_hash(op, current, [], required=False)
         result = ""
+    elif kind == "escape_table_wikilink_pipes":
+        from tools.lint_wiki import escape_table_wikilink_pipes
+
+        _verify_hash(op, current, [], required=True)
+        result = escape_table_wikilink_pipes(current)
     elif kind in {"rename_page", "merge_page", "rename_or_merge_page"}:
         _fail("unsupported_context", f"{kind} requires apply_mutation for multi-file semantics")
     else:

@@ -131,6 +131,7 @@ def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
     page("journal/sessions/x/Session-11-01-Hook.md", title="Hook", type="session-prep", kind="hook", reveal="unrevealed")
     page("_raw/draft.md", title="Draft", type="npc", reveal="unrevealed")
     page("index.md", title="Index")
+    (tmp_path / "entities/npc/no-frontmatter.md").write_text("Body without a frontmatter block.\n", encoding="utf-8")
 
     listed = assert_json(run_cli("scripts/wiki-reveal", "--json", vault=tmp_path))
     assert listed["state"] == "unrevealed" and listed["total"] == 3
@@ -151,6 +152,7 @@ def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
 
     counted = assert_json(run_cli("scripts/wiki-reveal", "all", "--count", "--json", vault=tmp_path))
     assert "pages" not in counted and counted["total"] == 4
+    assert counted["counts"] == {"npc": 2, "place": 1, "session-prep": 1}
 
     text = run_cli("scripts/wiki-reveal", "revealed", vault=tmp_path)
     assert text.returncode == 0
@@ -926,3 +928,61 @@ def test_run_pytest_wrapper_reports_version():
     result = subprocess.run([PYTHON, str(ROOT / "scripts" / "run-pytest"), "--version"], cwd=ROOT, capture_output=True, text=True)
     assert result.returncode == 0, result.stderr
     assert "pytest" in result.stdout.casefold()
+
+
+def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
+    vault = tmp_path / "wiki"
+    (tmp_path / "concepts").mkdir()
+    front = (
+        "---\ntitle: {title}\ncategory: test\ntags: []\nsources: []\ncreated: 2026-09-01\n"
+        "updated: 2026-09-01\ntype: {type}\nlifecycle: proposed\nreveal: dm\n---\n\n"
+    )
+
+    def write(relative: str, text: str) -> None:
+        path = vault / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(text, encoding="utf-8")
+
+    write(
+        "entities/place/harbor.md",
+        front.format(title="Harbor", type="place")
+        + "See [the quay](quay.md).\n\n"
+        + "![[attachments/missing-map.png]]\n\n"
+        + "| Who | Link |\n| --- | --- |\n| Keeper | [[harbor|The Harbor]] |\n| Fine | [[harbor\\|Escaped]] |\n\n"
+        + "A literal \\n in a non-session page is not flagged.\n",
+    )
+    write("attachments/present.png", "png")
+    write("journal/notes.md", "---\ntitle: Notes\ncreated: 2026-09-01\n---\n\nBody [[harbor]].\n")
+    write(
+        "journal/sessions/c/01/beats.md",
+        front.format(title="Beats", type="session-prep").replace("reveal: dm\n", "reveal: dm\nsummary: a\\nb\n")
+        + "> [!narration]\n> The lock needs a DC 15 check.\n\n"
+        + "Prose with a literal \\n token.\n\n"
+        + "```statblock\nname: x\\ny\n```\n\n![[present.png]]\n",
+    )
+    proc = subprocess.run(
+        [PYTHON, str(ROOT / "tools/lint_wiki.py"), "--json", str(vault)],
+        cwd=ROOT, capture_output=True, text=True,
+    )
+    assert proc.returncode == 1, proc.stderr
+    findings = json.loads(proc.stdout)["findings"]
+
+    def only(rule: str) -> list[dict]:
+        return findings.get(rule, [])
+
+    assert [item["page"] for item in only("md_internal_link")] == ["entities/place/harbor.md"]
+    assert [item["page"] for item in only("title_only_frontmatter")] == ["journal/notes.md"]
+    assert [item["page"] for item in only("dc_in_narration")] == ["journal/sessions/c/01/beats.md"]
+    assert [(item["page"], item["target"]) for item in only("broken_image_link")] == [
+        ("entities/place/harbor.md", "attachments/missing-map.png")
+    ]
+    pipes = only("table_wikilink_unescaped_pipe")
+    assert [(item["page"], item["line"]) for item in pipes] == [("entities/place/harbor.md", 19)]
+    assert [item["tree"] for item in only("forbidden_tree")] == ["concepts/"]
+    newlines = only("literal_newline")
+    assert [(item["page"], item["line"]) for item in newlines] == [("journal/sessions/c/01/beats.md", 17)]
+
+    assert pipes[0]["repair_class"] == "deterministic_repair"
+    assert pipes[0]["repair_action"]["kind"] == "escape_table_wikilink_pipe"
+    for rule in ("md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link", "forbidden_tree", "literal_newline"):
+        assert all(item["repair_class"] == "human_repair" for item in only(rule)), rule
