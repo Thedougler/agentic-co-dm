@@ -20,7 +20,7 @@ tier: supporting
 created: 2026-09-13T19:30:00Z
 updated: 2026-09-19
 type: quest
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 status: active

@@ -20,7 +20,7 @@ tier: supporting
 created: 2026-09-13T03:04:18Z
 updated: 2026-09-13
 type: npc
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 relationships:

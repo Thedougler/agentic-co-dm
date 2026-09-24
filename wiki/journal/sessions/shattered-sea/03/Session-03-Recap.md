@@ -17,6 +17,8 @@ tier: supporting
 created: 2026-09-12T04:56:01Z
 updated: 2026-09-12T04:56:01Z
 type: recap
+campaign: shattered-sea
+visibility: dm
 reveal: revealed
 relationships:
   - target: "[[Uncertainty]]"
@@ -29,24 +31,24 @@ relationships:
 Played 2026-05-25. Landfall at Calveno.
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you ambushed a Crown boarding party. Geoffrey Draves joined you, and you seized the HCS Surety. You freed Ket and set heading for Calveno. A storm rose, and three blows struck the hull from below. The cutter lurched hard to port.
+> The prize was still on her side when Perrin took the watch, and the thing that had been working on the hull from underneath came back for another run at her. Something out of that water put Perrin inside a body sixty feet long and left one word in it, *Grow*. The shark came up where the crew could reach it, and Crissdalynn hooked her talons into it and held it clear of the water while the others killed it. Delmar cut the barb off it and kept it. Jean-Claude took three of its eggs. Its scales went into the patch that still covers that hole in your hull. Perrin drummed the crew through the whole fight, and afterwards Grigori ran a red light out of his wrist over Jean-Claude, a light Perrin could not put a name to.
 >
-> Perrin Black-Jaw stood watch. A vision from below put him in a sixty-foot body, and one word came with it: Grow. You then killed the whip-shark that had been striking the hull. Delmar Fisk recovered the barb. Jean-Claude Tabarnack took three fertilized eggs. Shepherd Grigori worked a red light from his wrist over Jean-Claude, a light Perrin could not name.
+> The rest of the crossing ran five days. Crissdalynn went through Rook's chart archive in his old cabin and found the Drowned Maw written in it twice, both crossings against Imperial law and not one word of what he found out there. Something pale and lit came up alongside and kept pace with you a while, holding the same course, and never showed a sail or a hull. Down in the hold Jean-Claude mended the hole the shark had made, and Sem Holst went along behind him quietly fixing what he missed. And in that crossing Delmar went into Admiral Fisk, and stayed in him until Crissdalynn got him back.
 >
-> Five days at sea. Barnaby Rook had twice broken Imperial rules about the Drowned Maw. A glowing outline held a parallel heading. Delmar slipped into Admiral Fisk until Crissdalynn Khinriss brought him back.
+> The main approach into Calveno was too busy to bring a Crown prize through, so the Imperial prefix came off her and she went in as *Uncertainty*, with nothing in front of the name. La Vasca had a cradle waiting up a canal in Le Paludi, Cobb at the water's edge with the gate open, and the crew put her in it. Grigori said his goodbye at the basin, with a handshake for Delmar colder than it should have been, and walked off into the city for a week or two. Once, on that landing, the water reached up for Delmar and said his name out loud, and then it was only water.
 >
-> Calveno was too busy for Crown colours on the main approach. You renamed the prize with no prefix: Uncertainty. La Vasca had a cradle waiting. The water reached for Delmar and spoke his name, then it was gone. Grigori left for a week or two.
+> Branca, who serves Umberlee in Calveno, stopped Delmar and Crissdalynn in the street. She would not sleep, she said, until he came to the shrine. He walked on.
 >
-> Umberlee's servant Branca stopped Delmar and Crissdalynn. She would not sleep until he came to the shrine. He kept walking.
+> At Nona Black-Jaw's kitchen you told her the Vestra was lost. She counted that loss in money and said so, called off the attacks that were already running, and then asked Perrin for a favor without telling him what it was. He agreed before she finished asking, and she put a sending stone in his hand.
 >
-> At Nona Black-Jaw's kitchen you told her Vestra was lost. She mourned the money, called off the attacks already underway, and asked an unspecified favor. Perrin agreed before he heard it. She put a sending stone in his hand.
+> That afternoon Kyzil came down out of the sun in silence and knocked Crissdalynn back before she could turn around, and then he had her up and held her, and she had known his smell before she ever saw him. He had already walked Kalowe and Port Tidefall looking for her. He told her the wind had turned foul, and then he was in the air again, and she stood in the street and broke down.
 >
-> That afternoon Master Kyzil dropped out of the sun and found Crissdalynn. You are ashore in Calveno. Uncertainty sits in the cradle. Nona's stone is in Perrin's hand. The shrine is still waiting, and Kyzil is in the city.
+> You have Calveno under your feet and a sending stone in Perrin's hand. *Uncertainty* lies in La Vasca's cradle with nothing of the Crown left on her name. The shrine is still waiting for Delmar, and Kyzil is somewhere in this city.
 
 ## Wiki facts
 
-The prize is now *[[Uncertainty]]* with no Imperial prefix. [[calven-and-calveno]] has her in La Vasca's cradle. Nona Black-Jaw called off attacks for an unnamed favor. Master Kyzil found Crissdalynn. Next: [[Session-04-Recap]].
+Crissdalynn found [[barnaby-rook]]'s two lawless crossings of the [[drowned-maw]] in his own chart archive aboard the prize, and he left no account of what he saw there. The barb off the [[whip-shark]] sits with the scarlet coat in Delmar's Calveno chest, and the scales patch [[Uncertainty]]'s hull. [[jean-claude-tabarnack]] sold the three eggs in [[journal/sessions/shattered-sea/04/Session-04-Recap|Session 04]]. [[shepherd-grigori]] healed Jean-Claude on deck with the red light, and [[perrin-black-jaw]] failed to identify that magic, which is the second of the three clues on [[grigori-and-the-crown-hunt]]. Sem Holst repaired the hull behind [[jean-claude-tabarnack]]'s Mending during the crossing.
 
-## Loose threads
+[[calven-and-calveno|Calveno]] took the prize in without Crown colours, [[la-vasca]] cradled her with [[Cobb]] on the gate, and [[shepherd-grigori]] left the crew there. [[umberlee-branca|Branca]] delivered nothing in Session 03 beyond the appointment, and [[umberlee]]'s command on the [[pearl-of-souls]] came from her in Session 04. The pale lit thing that held pace with the prize is unresolved, and so is the voice that spoke [[delmar-fisk]]'s name off the water.
 
-Umberlee's shrine is still waiting. Nona's favor is unnamed. Perrin's vision said *Grow*.
+[[nona-black-jaw]] called off the Black-Jaw Run's attacks because [[perrin-black-jaw]] was never captured, and she holds his unnamed favor under an [[sending-stone-nonas|sending stone]]. [[master-kyzil]] searched [[Kalowe]] and [[calders-tooth-and-port-tidefall|Port Tidefall]] before he found [[crissdalynn-khinriss]] in [[le-paludi|Le Paludi]], and his foul wind is the thread Session 04 picks up. [[perrin-black-jaw]]'s *Grow* vision is still unexplained, and [[umberlee]]'s shrine is still waiting for [[delmar-fisk]]. Next: [[Session-04-Recap]].

@@ -12,7 +12,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Sawdust in dark hair, pitch-stained canvas, ink-marked fingers always tracing timber."

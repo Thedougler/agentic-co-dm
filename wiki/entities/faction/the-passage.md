@@ -11,7 +11,7 @@ updated: 2026-09-23
 type: faction
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: organization

@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: npc
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Young Rattkin dockworker and runner for Nona Black-Jaw at La Vasca who greets the Uncertainty crew and carries messages to Perrin."

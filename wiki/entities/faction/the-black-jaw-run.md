@@ -13,7 +13,7 @@ updated: 2026-09-18
 type: faction
 lifecycle: proposed
 lifecycle_changed: "2026-09-13"
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "Kin call them the Black-Jaw Run. Outsiders call them the Black-Jaw Family. A travelling family and Passage route-network anchored at the Warren beneath Calveno."
