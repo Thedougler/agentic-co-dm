@@ -242,7 +242,7 @@ def test_canon_rules_and_category_are_gone():
 
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     ids = {rule.id for rule in registry.rules}
-    assert not {"CANON001", "CANON002"} & ids
+    assert not [rule_id for rule_id in ids if rule_id.startswith("CANON")]
     assert all(rule.category != "canon" for rule in registry.rules)
     bundles = yaml.safe_load((ROOT / "rules" / "bundles.yml").read_text(encoding="utf-8"))
     for bundle in bundles["bundles"].values():
