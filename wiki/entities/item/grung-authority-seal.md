@@ -16,7 +16,7 @@ tier: supporting
 created: 2026-09-13T07:20:00Z
 updated: 2026-09-16
 type: item
-reveal: unrevealed
+reveal: revealed
 campaign: shattered-sea
 visibility: dm
 region: aruhe
