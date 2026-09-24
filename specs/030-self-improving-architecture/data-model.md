@@ -78,7 +78,7 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 {"version": 1, "manifest_sha256": "…",
  "rows": {"entities/place/belumara.md": {
    "size": 5123, "mtime_ns": 0, "content_sha256": "…",
-   "stem": "belumara", "title": "Belumara", "type": "place", "lifecycle": "canon",
+   "stem": "belumara", "title": "Belumara", "type": "place",
    "aliases": ["…"], "redirects_to": "", "body_len": 4800,
    "profile": {"e": 512, "a": 390}}},
  "pairs": {"<sha_a>|<sha_b>": 0.7312}}
@@ -90,3 +90,13 @@ The file is a `# Error ledger` heading, a blank line, then one JSON object per l
 - **Result shape added to `wiki-lint --json`**: `"identity": {"status", "ambiguous", "scanned": <selected>, "compared": <|selected ∪ candidates|>, "index": {"hits", "misses"}}`.
 - **Use**: `scan_identities`, `resolve_identity`, and `_path_for` all read this index. The thresholds (prefilter > 0.6; shared-source stem ratio > 0.7) only put a page in `candidates` and set `status: ambiguous`, which gates mutations. No code picks the canonical page; that is the agent's call under `wiki-dedup` and `wiki-lint`.
 - **Tracking**: `wiki/_meta/lint-cache.json`, `wiki/_meta/identity-index.json`, and `styles/config/vocabularies/CoDM/accept.txt` stay tracked. They are FR-028 bookkeeping written by lint, not read-side mutation (FR-017), and are committed with the change that caused them.
+- **No lifecycle (FR-047)**: rows carry no `lifecycle`. `identity.py` drops the field at lines 108, 139, and 202 (today it falls back to `status`). The index lands after the canon migration, so `version` stays 1.
+
+## 5 Wiki page frontmatter (FR-047)
+
+Removed from every page, template, contract, and fixture: `lifecycle`, `lifecycle_changed`, `lifecycle_reason`, `base_confidence`, `canon_status`. Kept: `reveal`, `visibility`, `truth`, `invention`, entity `status`, `sources`, `tier`, `relationships`, `redirects_to`.
+
+- Campaign required fields become `type`, `reveal` (`tools/lint_wiki.py` `CAMPAIGN_REQUIRED`) plus the generic `title`, `category`, `tags`, `sources`, `created`, `updated`.
+- Canon is not stored. The agent decides it under the rule in `.agents/skills/llm-wiki/SKILL.md`. A DM ruling is cited in `sources:` (session log under `wiki/journal/sessions/<campaign>/<NN>/`, recap `## Wiki facts`, or the filed DM statement).
+- Template-contract `when:` blocks key on entity `status` alone (`template_contracts.py:160`), falling back to `default`.
+- **Lint cache**: the migration changes the rules digest and 833 content hashes, so `lint-cache.json` is rebuilt once and committed with the migration (FR-028). Findings `bad_lifecycle` and `missing_trust`, the `stale_pages[].lifecycle` key, and `schema.allowed_lifecycles`/`required_trust_fields` disappear from `lint_wiki --json`.
