@@ -154,8 +154,24 @@ def hit_usage_limit(events: Path) -> bool:
     return False
 
 
+EXAMPLE = "scripts/luna-eval --skill .agents/skills/place-design --eval 1 --out /tmp/pd/iteration-1"
+
+
+class _Parser(argparse.ArgumentParser):
+    """Report usage errors as the JSON error object (exit 2), plus the message on stderr."""
+
+    def error(self, message: str) -> None:  # type: ignore[override]
+        print(json.dumps({"status": "error", "error": message, "hint": "run scripts/luna-eval --help", "example": EXAMPLE}))
+        print(f"luna-eval: error: {message}", file=sys.stderr)
+        raise SystemExit(2)
+
+
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = _Parser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=f"Examples:\n  {EXAMPLE}\n  scripts/luna-eval --skill .agents/skills/place-design --eval 1 --config without_skill --no-skill --out /tmp/pd/iteration-1",
+    )
     src = ap.add_mutually_exclusive_group(required=True)
     src.add_argument("--eval", help="eval id in <skill>/evals/evals.json")
     src.add_argument("--task", help="free-form task text")

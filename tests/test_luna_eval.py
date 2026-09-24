@@ -93,3 +93,21 @@ def test_rerun_skips_a_completed_run(tmp_path: Path):
     assert proc.returncode == 0, proc.stdout + proc.stderr
     assert "skip" in proc.stdout
     assert json.loads((done / "timing.json").read_text(encoding="utf-8"))["exit"] == 0
+
+
+def test_help_shows_examples_and_missing_flag_exits_2_with_example(tmp_path: Path):
+    helped = subprocess.run([sys.executable, str(LUNA), "--help"], capture_output=True, text=True)
+    assert helped.returncode == 0
+    assert "Examples:" in helped.stdout
+    example = "scripts/luna-eval --skill .agents/skills/place-design --eval 1 --out /tmp/pd/iteration-1"
+    assert example in helped.stdout
+    missing = subprocess.run(
+        [sys.executable, str(LUNA), "--skill", ".agents/skills/place-design", "--eval", "1"],
+        cwd=tmp_path, capture_output=True, text=True,
+    )
+    assert missing.returncode == 2
+    payload = json.loads(missing.stdout)
+    assert payload["status"] == "error" and "--out" in payload["error"]
+    assert payload["example"] == example
+    assert payload["hint"]
+    assert "--out" in missing.stderr
