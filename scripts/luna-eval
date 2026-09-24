@@ -1,0 +1,81 @@
+#!/usr/bin/env bash
+# Run one skill eval on Luna 6 (Codex CLI) as the behavioral test subject.
+# Policy (who grades, dispatch all at once, stop on usage limit): CLAUDE.md
+# § Behavioral Test Subject. This script owns the command.
+#
+# Usage (repo root):
+#   ./scripts/luna-eval <skill-dir> <eval-id> <iteration-dir> [config]
+#
+#   skill-dir      skill whose evals/evals.json holds <eval-id>
+#   eval-id        the eval's "id"
+#   iteration-dir  e.g. <skill-name>-workspace/iteration-3 (gitignored)
+#   config         with_skill (default) or a baseline label such as old_skill;
+#                  set SUBJECT_SKILL=<dir> to point a baseline at a snapshot
+#
+# The subject skill is SUBJECT_SKILL, else the eval's "subject_skill", else
+# <skill-dir>. Writes <iteration-dir>/<eval-id>/eval_metadata.json and
+# <iteration-dir>/<eval-id>/<config>/run-1/{outputs/output.md,
+# outputs/process.md, events.jsonl, final.txt, timing.json}.
+#
+# Run one call per eval, each in its own background shell.
+# Exit: 0 done, 2 bad args or eval, 3 usage-limit marker present (dispatch
+# nothing until it resets, then delete <workspace>/CODEX_LIMIT), 4 subject
+# finished without outputs/output.md, 5 this run hit the usage limit.
+set -uo pipefail
+
+[ $# -ge 3 ] || { sed -n '2,24p' "$0"; exit 2; }
+REPO=$(git rev-parse --show-toplevel)
+SKILL=$(cd "$1" && pwd); ID=$2; ITER=$(mkdir -p "$3" && cd "$3" && pwd); CONFIG=${4:-with_skill}
+MODEL=${LUNA_MODEL:-gpt-6-luna}
+LIMIT=$(dirname "$ITER")/CODEX_LIMIT
+[ -f "$LIMIT" ] && { echo "usage-limit marker present: $LIMIT"; cat "$LIMIT"; exit 3; }
+
+EVAL_DIR="$ITER/$ID"; RUN="$EVAL_DIR/$CONFIG/run-1"; mkdir -p "$RUN/outputs"
+META=$(python3 - "$SKILL" "$ID" "$EVAL_DIR" <<'PY'
+import json, sys
+skill, eid, out = sys.argv[1:]
+evals = json.load(open(f"{skill}/evals/evals.json"))["evals"]
+e = next((x for x in evals if str(x.get("id")) == eid), None)
+if e is None:
+    sys.exit(f"no eval '{eid}' in {skill}/evals/evals.json")
+json.dump({"eval_id": e["id"], "eval_name": e["id"], "prompt": e["prompt"],
+           "assertions": e.get("assertions", [])}, open(f"{out}/eval_metadata.json", "w"), indent=1)
+print(json.dumps(e["prompt"]))
+print(e.get("subject_skill", skill))
+PY
+) || exit 2
+TASK=$(python3 -c 'import json,sys; print(json.loads(sys.argv[1]))' "$(sed -n 1p <<<"$META")")
+SUBJECT=$(sed -n 2p <<<"$META")
+SUBJECT=${SUBJECT_SKILL:-$SUBJECT}; case "$SUBJECT" in /*) ;; *) SUBJECT="$REPO/$SUBJECT";; esac
+
+PROMPT="Execute this task. Repo root: $REPO.
+
+- Skill path: $SUBJECT (read SKILL.md first and follow it, including any references it points you to)
+- Task: $TASK
+- Save outputs to: $RUN/outputs/ (this exact path)
+- Outputs to save: \`output.md\` (exactly what you would return: the finished deliverable plus anything you would return alongside it), and \`process.md\` (a plain ordered list of every file you opened or searched for, including image files, and every shell search you ran).
+
+Read-only: do NOT modify anything under wiki/ or .agents/. Only write the two output files."
+
+start=$(date +%s)
+codex exec -m "$MODEL" -s workspace-write -C "$REPO" --skip-git-repo-check --json \
+  -o "$RUN/final.txt" "$PROMPT" > "$RUN/events.jsonl" 2> "$RUN/stderr.txt" < /dev/null
+rc=$?
+secs=$(( $(date +%s) - start ))
+echo "{\"duration_ms\": $((secs * 1000)), \"total_duration_seconds\": $secs, \"exit\": $rc}" > "$RUN/timing.json"
+
+if python3 - "$RUN/events.jsonl" <<'PY'
+import json, re, sys
+for line in open(sys.argv[1]):
+    try: e = json.loads(line)
+    except ValueError: continue
+    if e.get("type") in ("error", "turn.failed") or e.get("item", {}).get("type") == "error":
+        if re.search(r"usage limit|rate.?limit|quota|hit your", json.dumps(e), re.I): sys.exit(0)
+sys.exit(1)
+PY
+then
+  echo "$(date) $RUN" >> "$LIMIT"; pkill -f "codex exec -m $MODEL"
+  echo "Codex usage limit: stopped every Luna run; marker at $LIMIT"; exit 5
+fi
+[ -s "$RUN/outputs/output.md" ] || { echo "$ID: no outputs/output.md (check final.txt for a misplaced path)"; exit 4; }
+echo "$ID done in ${secs}s: $RUN/outputs/output.md"

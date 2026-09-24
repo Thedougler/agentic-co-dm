@@ -1331,56 +1331,106 @@
   {
    "id": "otter-hole-initial-narration",
    "prompt": "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md. The current one reads like a grid inventory of distances instead of a scene the DM can speak.",
-   "expected_output": "Second-person Initial Narration built on the beat's embedded and related art (including the unembedded session-11-05 battlemap), ending on a windup before contact and before 'What do you do?'.",
+   "expected_output": "Scene opening led by the trapped man and the otters, built from the beat, owner pages, and related art.",
    "assertions": [
     {
-     "text": "Opens the embedded aruhe-river-slack-basin.jpg",
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
      "type": "process"
     },
     {
-     "text": "Searches by name or session number and opens an unembedded related image (session-11-05-otter-hole-base.jpg or aruhe-river-otter-of-aruhe.jpg)",
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The first sentence gives the situation or the danger (who is here or was here, what is happening), not a terrain caption",
+     "type": "quality"
+    },
+    {
+     "text": "One anchor the players will remember, with the block arranged around it",
+     "type": "quality"
+    },
+    {
+     "text": "Every entry handle is in the block, and the handle note routes the other handles (including ones beyond the beat page) to their slots",
      "type": "process"
     },
     {
-     "text": "The last sentence stops on a windup: no grab or pull completes, and the block ends before 'What do you do?'",
+     "text": "Each person or creature comes across as one feature and one behavior; known figures are not reintroduced; no roll call of companions",
      "type": "quality"
     },
     {
-     "text": "At most two numeric foot distances",
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
      "type": "quality"
     },
     {
-     "text": "No em dashes in the narration",
+     "text": "Felt: something is already moving, one nonvisual sense does a second job, and something lands on the characters' bodies",
+     "type": "quality"
+    },
+    {
+     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
     }
-   ]
+   ],
+   "core": true
   },
   {
    "id": "hinewai-first-look",
    "prompt": "Write the NPC first look for the party's first sighting of Hinewai in her woman-in-the-woods form: she stands on a game trail in the rainforest near the Memorial Grove, at night, in the rain. She has not spoken yet. Source: wiki/entities/npc/Hinewai.md.",
-   "expected_output": "Two to four sentences of second-person first look grounded in the woman-in-the-woods art, carrying durable pixel identity (not the art's pose or gesture), with no blight-form details, name, or secrets.",
+   "expected_output": "NPC first look: a first read, one feature, and one behavior, unnamed, ending as her attention lands on the party.",
    "assertions": [
     {
-     "text": "Opens the woman-in-the-woods overview or the reference sheet image",
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
      "type": "process"
     },
     {
-     "text": "Weaves a durable pixel identity detail missing from page prose (e.g. pointed ears, shredded dark shroud); copies no pose or gesture from the art",
+     "text": "First read, one feature, and one behavior (drawn from how she holds the pose), not a feature list",
      "type": "quality"
     },
     {
-     "text": "No blight-form features, no name spoken, no lich or undead nature",
+     "text": "No name, blight-form features, or undead nature",
      "type": "quality"
     },
     {
-     "text": "2-4 sentences",
+     "text": "Felt: the rain lands on the characters, and one sense does a second job",
      "type": "quality"
     },
     {
-     "text": "No em dashes in the narration",
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Ends as her attention lands on the party",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
     }
-   ]
+   ],
+   "core": true
   },
   {
    "id": "session-11-recap",
@@ -1427,7 +1477,349 @@
      "text": "Felt professional quality: an engaging retelling the players would enjoy reading aloud and that makes them want to play the next session",
      "type": "quality"
     }
-   ]
+   ],
+   "core": true,
+   "subject_skill": ".agents/skills/session-recap"
+  },
+  {
+   "id": "false-help-initial-narration",
+   "prompt": "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-07-False-Help.md so it plays at the table: something the players can picture and feel the moment the DM says it.",
+   "expected_output": "Scene opening led by the voice the characters actually hear, with survivors reacting.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The first sentence gives the situation or the danger (who is here or was here, what is happening), not a terrain caption",
+     "type": "quality"
+    },
+    {
+     "text": "One anchor the players will remember, with the block arranged around it",
+     "type": "quality"
+    },
+    {
+     "text": "Every entry handle is in the block, and the handle note routes the other handles (including ones beyond the beat page) to their slots",
+     "type": "process"
+    },
+    {
+     "text": "Each person or creature comes across as one feature and one behavior; known figures are not reintroduced; no roll call of companions",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Felt: something is already moving, one nonvisual sense does a second job, and something lands on the characters' bodies",
+     "type": "quality"
+    },
+    {
+     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "The voice is given as heard (its words and where they come from), not by a page label",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "hook-open-on",
+   "prompt": "Rewrite the `Open on` narration for the Hook beat wiki/journal/sessions/shattered-sea/12/Session-12-01-River-Slack-Reprise.md so it plays at the table.",
+   "expected_output": "Hook resuming mid-fight on the exact frozen moment.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The first sentence gives the situation or the danger (who is here or was here, what is happening), not a terrain caption",
+     "type": "quality"
+    },
+    {
+     "text": "One anchor the players will remember, with the block arranged around it",
+     "type": "quality"
+    },
+    {
+     "text": "Every entry handle is in the block, and the handle note routes the other handles (including ones beyond the beat page) to their slots",
+     "type": "process"
+    },
+    {
+     "text": "Each person or creature comes across as one feature and one behavior; known figures are not reintroduced; no roll call of companions",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Felt: something is already moving, one nonvisual sense does a second job, and something lands on the characters' bodies",
+     "type": "quality"
+    },
+    {
+     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the frozen moment of the resumed fight and brings back only the anchor, what changed, and what the party needs to act this turn",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "development-initial-narration",
+   "prompt": "Rewrite the `Initial Narration` for the Development beat wiki/journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md so it plays at the table.",
+   "expected_output": "Development opening led by the evidence of who was here, ending on the detail that does not fit.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The first sentence gives the situation or the danger (who is here or was here, what is happening), not a terrain caption",
+     "type": "quality"
+    },
+    {
+     "text": "One anchor the players will remember, with the block arranged around it",
+     "type": "quality"
+    },
+    {
+     "text": "Every entry handle is in the block, and the handle note routes the other handles (including ones beyond the beat page) to their slots",
+     "type": "process"
+    },
+    {
+     "text": "Each person or creature comes across as one feature and one behavior; known figures are not reintroduced; no roll call of companions",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Felt: something is already moving, one nonvisual sense does a second job, and something lands on the characters' bodies",
+     "type": "quality"
+    },
+    {
+     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "The evidence of who was here leads; the block ends on the detail that does not fit",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "climax-opening-image",
+   "prompt": "Rewrite the `Opening image` narration for the Climax beat wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md so it plays at the table.",
+   "expected_output": "Climax opening at the brink, with an unseen attacker shown only through what the characters sense.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The first sentence gives the situation or the danger (who is here or was here, what is happening), not a terrain caption",
+     "type": "quality"
+    },
+    {
+     "text": "One anchor the players will remember, with the block arranged around it",
+     "type": "quality"
+    },
+    {
+     "text": "Every entry handle is in the block, and the handle note routes the other handles (including ones beyond the beat page) to their slots",
+     "type": "process"
+    },
+    {
+     "text": "Each person or creature comes across as one feature and one behavior; known figures are not reintroduced; no roll call of companions",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Felt: something is already moving, one nonvisual sense does a second job, and something lands on the characters' bodies",
+     "type": "quality"
+    },
+    {
+     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "An unseen attacker is shown only through what the characters sense",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "resolution-closing-image",
+   "prompt": "Rewrite the `Closing image` narration for the Resolution beat wiki/journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial.md so it plays at the table.",
+   "expected_output": "Closing image that lets the session's change land, with the new figure seen but not named.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "The visible consequence of the session lands, with companions reacting through what they do",
+     "type": "quality"
+    },
+    {
+     "text": "The newcomer gets a first read, one feature, and one behavior, and is not named",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: nothing is decided, felt, or concluded for a player character",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on a still, clear final image, with no question",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
+  },
+  {
+   "id": "fate-spinner-portrait",
+   "prompt": "Rewrite the `[!narration]` portrait on wiki/entities/item/fate-spinner.md so a DM can read it aloud the first time the players see the item.",
+   "expected_output": "Item portrait carrying every Build item and every tell from the page's At the Table views, in fresh words.",
+   "assertions": [
+    {
+     "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
+     "type": "process"
+    },
+    {
+     "text": "Leads with the plain noun and its most distinctive feature, not the item's name",
+     "type": "quality"
+    },
+    {
+     "text": "Every Build item the sources give and every At the Table tell (seen, held, active) appears, the visible sign of magic included and its effects left out",
+     "type": "quality"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: evidence instead of verdicts, moods, or page labels; anything the characters cannot see appears only as what they sense; nobody is named before the party has learned the name",
+     "type": "quality"
+    },
+    {
+     "text": "Third person, present tense, no scene, party, or viewer",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    },
+    {
+     "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    }
+   ],
+   "core": true
   }
  ]
 }
