@@ -74,6 +74,9 @@ flexGrow=1
 Lavinia's posture changes when the party treats cursed stock as harmless, presses her about the Dravosi prison records, or connects her to the Sentinel schism through [[osset]]. The source does not establish her exact response.
 ```
 ````
+### Voice
+
+Lavinia speaks like a careful seller: attentive, dry, and always counting the curse before the price. She never promises clean safety, and she lets the buyer decide whether knowledge is worth the risk. **Ask:** “What history can you afford?” **Refusal:** “I sell the object. I do not sell you a clean conscience.” **Under pressure:** “You knew it was cursed before you asked what it cost.”
 
 ## Connections
 
