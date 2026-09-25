@@ -489,7 +489,7 @@
 - [[session-12-03-terror-birds]] — The column crosses the Long Meadow's open Gap between two terror-birds with a carried man and three frightened civilians.
 - [[session-12-04-orders-in-the-ash]] — On the Burnt Road Jean-Claude reads the Gold caste's orders on eleven dead, and Hinewai's voice names him kidnapper.
 - [[session-12-05-consume]] — At the Pantry, Auralis tells Perrin to CONSUME the living fruit, and invisible Skarn makes his last try for the Spinner.
-- [[session-12-06-the-raft]] — Nine Calveno get a raft, a river road, and the rules for Aruhe; three stay under the vine.
+- [[session-12-06-the-way-out]] — Nine Calveno walk out behind the party toward the ship with the rules for Aruhe; three stay under the vine.
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea.
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page.
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques.

@@ -29,7 +29,7 @@ summary: "Four Calveno hiding in a lava tube are lifted out and point further in
 > [!narration] Opening
 > The falcon is a speck over the river by the time the camp is packed, and Matteo keeps close at your heels, his cut sling knotted empty. All morning the prints lead you inland, past a ring of four empty sleeping mats, until a line of smoke rises straight out of the forest floor ahead. It is climbing from a ragged hole wide enough to drop a wagon through, where pale roots hang over the lip like a torn curtain. Warm air breathes up past your faces with woodsmoke in it, and under the smoke, the sweetness of fruit gone soft.
 >
-> Far below, four men sit around a small fire on a shelf of black rock, and the moment your shadows cross the hole, three faces turn up to you. A lanky boy keeps counting under his breath even as he stares. Beside him, a man with his leg lashed straight to two sticks tries to push himself up and cannot. The broad one sitting apart against the rock never takes his eyes off the flames. It is the wiry man who is already on his feet, cupping rope-scarred hands to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
+> Far below, four men sit around a small fire on a shelf of black rock, and the moment your shadows cross the hole, three faces turn up to you. A lanky boy keeps counting under his breath even as he stares. Beside him, a man with his leg lashed straight to two sticks tries to push himself up on his arms and sags back. The broad one sitting apart against the rock keeps staring into the flames. It is the wiry man who is already on his feet, cupping rope-scarred hands to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
 
 ## Run the Beat
 

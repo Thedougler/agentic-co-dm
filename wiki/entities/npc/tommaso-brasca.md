@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Session 12 plan (DM-approved 2026-09-24)"]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -14,7 +14,7 @@ location: "[[the-pantry]]"
 faction: none
 visibility: dm
 invention: true
-summary: Boatwright's son who built a deadfall raft at the Pantry from fallen wood and shed fibre only. It is the way out, and he wants to take everyone who will come.
+summary: Boatwright's son who built the Pantry's deadfall raft from fallen things only, then leaves it moored to walk out with the party.
 ---
 # Tommaso Brasca
 
@@ -30,7 +30,7 @@ flexGrow=2
 | **Home**   | [[the-pantry]], a clearing deep in [[the-quiet]] under a living vine |
 | **Wants**  | Out to the River and the coast, with everyone who will come |
 
-> **DM thesis:** Tommaso built the raft moored at the Pantry's channel bank from fallen wood and fibre the vine shed, so it is receiving and not a claim. He knows which River stretches the [[river-otter]] families own and where to pole past them. He is the party's way out and the survivors' knowledge of how to live on Aruhe.
+> **DM thesis:** Tommaso built the raft moored at the Pantry's channel bank from fallen wood and fibre the vine shed, so it is receiving and not a claim. He knows which River stretches the [[river-otter]] families own and where to pole past them. The coast is days away, so the raft is no way out; on the walk back his knowledge of the otters' river stretches and of how to live on Aruhe is what he brings.
 ```
 
 ```col-md

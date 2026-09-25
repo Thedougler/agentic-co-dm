@@ -27,9 +27,9 @@ summary: "The trail meets the Burnt Road, where eleven sealed Grung died trying 
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> Past the meadow the fruit piles lead back under the trees, and for an hour the forest presses so close you can barely see the back in front of you. Then all at once the trees fall away, and a straight road wide as a village street opens ahead. Black flowers carpet it so thickly that they give under your boots, and each step squeezes out a smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. Nothing sings here, and not one fruit hangs over the road.
+> Past the meadow the fruit piles lead back under the trees, and for an hour the forest presses so close you can barely see the back in front of you. Then all at once the trees fall away, and a straight road wide as a village street opens ahead. Charred flowers carpet it so thickly that they give under your boots, and each step squeezes out a smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. The only sound is the soft crush of flowers underfoot, and the branches over the road carry leaves alone.
 >
-> The fruit piles you have been following lead on up it. A short walk ahead, the next pile of guavas sits on a broad leaf. Beside it a small body lies sunk to the shoulders in flowers, roots threaded through its ribs. Past it lies another, and another beyond that, each one a Grung no bigger than Jean-Claude. The roots in the nearest ribcage have closed around a cracked gold disc whose curling script catches the light. By the dead one's hand lies a broken clay pot, its lip still black with soot.
+> The fruit piles you have been following lead on up it. A short walk ahead, the next pile of guavas sits on a broad leaf. Beside it a small body lies sunk to the shoulders in flowers, roots threaded through its ribs. Past it lies another, and another beyond that, each one a Grung about Jean-Claude's size. The roots in the nearest ribcage have closed around a cracked gold disc whose curling script catches the light. By the dead one's hand lies a broken clay pot, its lip still black with soot.
 
 ## Run the Beat
 

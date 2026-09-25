@@ -9,7 +9,7 @@ updated: 2026-09-24T12:00:00Z
 - Corrected the identity spine across [[osset]] and [[master-kyzil]]: Osset was Kyzil's teacher and a senior High Eyrie master, an aged snowy-owl aarakocra, and Kyzil believes him decades dead.
 - Added the [[long-sight]] blind spot: probable futures only, so irrational and self-sacrificing action weakens Vantyrus's read.
 ## Active Threads
-- Session 12 is filed as [[session-12-00-the-garden-keeps-its-own]]: Skarn's dawn attempt fails and he takes Matteo's ghost plums; four Calveno are lifted from a lava tube; the column crosses [[the-long-meadow]]'s terror-birds; Jean-Claude reads the Gold caste's orders on [[the-burnt-road]] while [[hinewai]] calls him kidnapper; at [[the-pantry]] Auralis tells Perrin to CONSUME and invisible Skarn makes his last try; nine Calveno leave by raft and three stay.
+- Session 12 is filed as [[session-12-00-the-garden-keeps-its-own]]: Skarn's dawn attempt fails and he takes Matteo's ghost plums; four Calveno are lifted from a lava tube; the column crosses [[the-long-meadow]]'s terror-birds; Jean-Claude reads the Gold caste's orders on [[the-burnt-road]] while [[hinewai]] calls him kidnapper; at [[the-pantry]] Auralis tells Perrin to CONSUME and invisible Skarn makes his last try; nine Calveno set out on foot behind the party to walk the days back to the ship, and three stay.
 - Session 11 remains open mid-fight at [[Aruhe - River Slack Basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held.
 - Vantyrus himself stays off-screen until the Osset identity can matter. Do not reveal him physically before then.
 ## Key Takeaways

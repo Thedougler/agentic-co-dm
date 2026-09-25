@@ -27,12 +27,12 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 **Memorable element.** A three-foot rat gorging on living fruit because a voice said so, and the whole vine turning on him while the invisible falcon gets tangled instead.
 **Budget.** About 60 minutes. **If behind:** skip phase 3's second Tempest; Skarn leaves at 110 HP instead of 97.
 
-**Next:** [[session-12-06-the-raft]]
+**Next:** [[session-12-06-the-way-out]]
 
 > [!narration] Opening image
-> Nothing more comes out of the trees along the black road, and by dusk Luca is out in front, counting piles aloud. Where they turn off the road toward firelight, the trees open on a clearing roofed by a single vine as thick as a mast. It hangs so heavy with guavas and stonepears that the wood creaks whenever the air moves, and bundles of bare cords sway down between the fruit. Beneath it, around a small fire, seven thin men are getting to their feet. The tallest, a grey streak through his beard, looks straight past you to the man being carried in, and then he stops moving altogether. Behind the men a deep channel slides by with a deadwood raft tied to its bank, and along the treeline pale pollen hangs in the last light without settling.
+> By dusk Luca is walking out in front, counting aloud each pile of fallen fruit he passes. Where the piles turn off the road of charred flowers toward firelight, the trees open on a clearing roofed by a single vine as thick as a mast. It hangs so heavy with guavas and stonepears that the wood creaks whenever the air moves, and bundles of bare cords sway down between the fruit. Beneath it, around a small fire, seven thin men are getting to their feet. The tallest, a grey streak through his beard, looks straight past you to the man being carried in, and then he stops moving altogether. Behind the men a deep channel slides by with a deadwood raft tied to its bank, and along the treeline pale pollen drifts in the last light.
 >
-> Perrin, the vine dips so low where you stand that a guava and a stonepear sway a hand's width from your nose. Their sweet, musky smell fills your whiskers. Then pale blue light gathers around your cloak in the shape of a whale, and a voice with no mouth fills your skull with a single word. **CONSUME.**
+> Perrin, the vine dips so low where you stand that a guava and a stonepear sway a hand's width from your nose. Their sweet, musky smell fills your whiskers. Then pale blue light gathers around your cloak in the shape of a whale, and a voice fills your skull with a single word. **CONSUME.**
 
 ## Thread harvest
 
@@ -108,7 +108,7 @@ flexGrow=2
 | ------- | ------------------------------ | --------------------- |
 | **The great vine** | Pick its fruit; climb it (Athletics DC 12); hide in its hanging fruit | A claim wakes the vine-lashes (above). Its canopy blocks every stoop lane. |
 | **The fire and sleeping ground** | Kick coals at Skarn's shimmer, light a torch, herd civilians behind the fire | Kicked coals reveal an Invisible creature's square to anyone watching until the end of the next turn. |
-| **The channel and raft** | Wade in, pole the raft out, stand on the bank | Deep water, 20 feet wide, 30 feet of movement per 5 feet. The sky over it is Skarn's only exit and his only stoop lane. If the raft's mooring cord is cut, the raft drifts downstream and the way out goes with it. |
+| **The channel and raft** | Wade in, pole the raft out, stand on the bank | Deep water, 20 feet wide, 30 feet of movement per 5 feet. The sky over it is Skarn's only exit and his only stoop lane. If the raft's mooring cord is cut, the raft drifts downstream. |
 | **The pollen drift (north and west treeline)** | Stand in it, fight in it, drive Skarn into it | Transforms the fight: inside the drift, Skarn is fully visible to anyone who looks. |
 
 **Movement / zones.** The clearing is 90 feet across. The fire is at the centre, under the vine. The channel bank is 40 feet east of the fire, the drift 45 feet north and west, and the sleeping ground 20 feet south.
@@ -148,7 +148,7 @@ flexGrow=2
 
 - **Objective achieved.** Skarn tears free and goes up over the channel with nothing: bloodied, both plums spent. He does not come back tonight.
 - **Opposition broken.** Grappled at 0 Speed and dropped to 0 HP, he is unconscious and can be taken; he never surrenders.
-- **Objective lost.** He leaves over the channel with the Spinner. [[session-12-06-the-raft]] runs with the loss.
+- **Objective lost.** He leaves over the channel with the Spinner. [[session-12-06-the-way-out]] runs with the loss.
 - **Escape / pursuit.** Over the channel sky, north-east over the canopy toward the coast. Pursuit in open sky over Aruhe is bloodhawk country.
 
 ## PC moments
@@ -171,7 +171,7 @@ flexGrow=2
 
 **Survivors / loose ends.** Skarn, if he fled. The vine-lashes go back into the canopy when their minute ends. Perrin's mark lasts until dawn.
 
-**Hand off to Resolution.** When Skarn is gone or down, stop, and move to [[session-12-06-the-raft]].
+**Hand off to Resolution.** When Skarn is gone or down, stop, and move to [[session-12-06-the-way-out]].
 
 ## Live notes
 

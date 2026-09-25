@@ -16,4 +16,4 @@ summary: Folder index of Session 12.
 - [[journal/sessions/shattered-sea/12/session-12-03-terror-birds|Session 12 — Terror-Birds]]
 - [[journal/sessions/shattered-sea/12/session-12-04-orders-in-the-ash|Session 12 — Orders in the Ash]]
 - [[journal/sessions/shattered-sea/12/session-12-05-consume|Session 12 — Consume]]
-- [[journal/sessions/shattered-sea/12/session-12-06-the-raft|Session 12 — The Raft]]
+- [[journal/sessions/shattered-sea/12/session-12-06-the-way-out|Session 12 — The Way Out]]

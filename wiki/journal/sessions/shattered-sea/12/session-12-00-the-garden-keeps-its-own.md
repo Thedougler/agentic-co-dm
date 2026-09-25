@@ -6,7 +6,7 @@ sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
   - "journal/sessions/shattered-sea/11/Session-11-Recap.md"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: session-plan
 reveal: unrevealed
@@ -44,8 +44,8 @@ summary: "Four-hour inland rescue: Skarn's dawn attempt fails, the party follows
 | 02 | [[session-12-02-the-smoking-skylight]] | Development | The survivors' prints run north past [[star-cut]] to smoke rising out of the ground. | The four in the lava tube are found and lifted out. They point further in: [[carlo-ferrante]] walked toward the voice. | [[session-12-03-terror-birds]] | 30 min |
 | 03 | [[session-12-03-terror-birds]] | Cliffhanger | The way further in crosses [[the-long-meadow]]. | The column crosses two [[terror-bird]] territories with a carried man and three frightened civilians. | [[session-12-04-orders-in-the-ash]] | 40 min |
 | 04 | [[session-12-04-orders-in-the-ash]] | Development | Past the meadow, the only open way through the deep Quiet is [[the-burnt-road]]. | Jean-Claude reads the Gold caste's orders on the dead; [[hinewai]]'s voice names him kidnapper; the road leads to the Pantry. | [[session-12-05-consume]] | 30 min |
-| 05 | [[session-12-05-consume]] | **Climax** | Dusk at [[the-pantry]]; Auralis says "CONSUME"; invisible Skarn strikes. | Skarn's second and last attempt at the Spinner is decided; Perrin is marked by the island or not. | [[session-12-06-the-raft]] | 60 min |
-| 06 | [[session-12-06-the-raft]] | **Resolution** | Skarn is gone. | The survivors who want to leave board [[tommaso-brasca]]'s raft; three stay. | Session 13 | 15 min |
+| 05 | [[session-12-05-consume]] | **Climax** | Dusk at [[the-pantry]]; Auralis says "CONSUME"; invisible Skarn strikes. | Skarn's second and last attempt at the Spinner is decided; Perrin is marked by the island or not. | [[session-12-06-the-way-out]] | 60 min |
+| 06 | [[session-12-06-the-way-out]] | **Resolution** | Skarn is gone. | The survivors who want to leave set out behind the party to walk back to the ship; three stay. | Session 13 | 15 min |
 
 ### Cards, threads, and tiers
 
@@ -56,7 +56,7 @@ summary: "Four-hour inland rescue: Skarn's dawn attempt fails, the party follows
 | 03 | Monster | Calveno survivors | Horror | Two mossed trunks with one yellow eye each, and the ground starts to shake. |
 | 04 | Revelation | Grave orders · Hinewai | — | Eleven Grung sunk in black flowers, and a voice from the trees calling Jean-Claude a kidnapper. |
 | 05 | Final Battle | All | Villain | A three-foot rat gorging on living fruit because a voice said so. |
-| 06 | Villain Escapes + Happy Ending | Calveno survivors · Perrin | — | The raft pushes off with nine aboard while three stay under the vine. |
+| 06 | Villain Escapes + Happy Ending | Calveno survivors · Perrin | — | Nine Calveno shoulder their bundles behind the party while three stay under the vine. |
 
 ### Branches & Skips
 
@@ -65,17 +65,17 @@ summary: "Four-hour inland rescue: Skarn's dawn attempt fails, the party follows
 | [[session-12-01-dawn-strike]] | Kills or captures Skarn. | Skip his Climax role; [[session-12-05-consume]] runs CONSUME with the island's responders and the Pantry's choice as the whole Climax. | [[talon-vantyrus]] loses his apprentice; Countless sends someone else later. |
 | [[session-12-02-the-smoking-skylight]] | Takes the four back to the coast instead of going further in. | Rebuild toward [[old-gardens]]; the Pantry seven stay Hinewai's. | The session question closes as a partial rescue; Skarn strikes at the coastal camp at dusk. |
 | [[session-12-03-terror-birds]] | Loses a survivor to a swallow. | [[session-12-04-orders-in-the-ash]] opens with the loss carried. | The dead survivor stays dead; the others trust the party less. |
-| [[session-12-05-consume]] | Perrin refuses to eat. | The fight runs without the island's chaos. | Skarn is harder; Auralis goes silent in [[session-12-06-the-raft]]. |
+| [[session-12-05-consume]] | Perrin refuses to eat. | The fight runs without the island's chaos. | Skarn is harder; Auralis goes silent in [[session-12-06-the-way-out]]. |
 
 ## Threads
 
 | Thread | Source | Planted | Tested | Harvested |
 | ------ | ------ | ------- | ------ | --------- |
-| The Calveno survivors | Party goal since Session 11 | [[session-12-02-the-smoking-skylight]] | [[session-12-03-terror-birds]] | [[session-12-06-the-raft]] |
+| The Calveno survivors | Party goal since Session 11 | [[session-12-02-the-smoking-skylight]] | [[session-12-03-terror-birds]] | [[session-12-06-the-way-out]] |
 | [[fate-spinner]] and [[talon-skarn]] | Opposition agenda | [[session-12-01-dawn-strike]] | [[session-12-01-dawn-strike]] | [[session-12-05-consume]] |
 | [[two-grave-orders]] | Mystery; Jean-Claude's people | [[session-12-04-orders-in-the-ash]] | [[session-12-04-orders-in-the-ash]] | Session 13 |
-| [[hinewai]] and the Grung | Relationship under pressure | [[session-12-02-the-smoking-skylight]] (Gianni's account) | [[session-12-04-orders-in-the-ash]] | [[session-12-06-the-raft]] |
-| Perrin and [[auralis]] | PC patron bond | [[session-12-01-dawn-strike]] (Auralis stirs as Skarn nears) | [[session-12-05-consume]] | [[session-12-06-the-raft]] |
+| [[hinewai]] and the Grung | Relationship under pressure | [[session-12-02-the-smoking-skylight]] (Gianni's account) | [[session-12-04-orders-in-the-ash]] | [[session-12-06-the-way-out]] |
+| Perrin and [[auralis]] | PC patron bond | [[session-12-01-dawn-strike]] (Auralis stirs as Skarn nears) | [[session-12-05-consume]] | [[session-12-06-the-way-out]] |
 
 ## Critical Routes
 
@@ -99,7 +99,7 @@ flexGrow=2
 | 1 | Bloodied, he breaks off with the two ghost plums and rests out of sight. | [[session-12-01-dawn-strike]] |
 | 2 | He shadows the party from high air. When the Quiet's roof closes, he loses his stoop lanes and must come in on foot. | Not shown; no middle appearance. |
 | 3 | At dusk the party stops among civilians at the Pantry. He eats one plum (1 hour Invisible) and walks in through the treeline. | [[session-12-05-consume]] |
-| 4 | He strikes for the Spinner. Bloodied again, or with the Spinner kept, he leaves for good with nothing. | [[session-12-05-consume]] · [[session-12-06-the-raft]] |
+| 4 | He strikes for the Spinner. Bloodied again, or with the Spinner kept, he leaves for good with nothing. | [[session-12-05-consume]] · [[session-12-06-the-way-out]] |
 ```
 
 ```col-md
@@ -123,7 +123,7 @@ flexGrow=2
 - [ ] Ghost-plum pollen at the Pantry's treeline shows an invisible mover as a pale shimmer within the drift.
 - [ ] [[terror-bird]]s will not follow into eight-foot grass, deep water, or white [[razer-grass]].
 - [ ] [[carlo-ferrante]] believes his brother and nephew died in the dark.
-- [ ] [[tommaso-brasca]]'s raft is built only from what fell, so the island lets it float.
+- [ ] [[tommaso-brasca]]'s raft is built only from what fell, so the island lets it float. The coast is days away, so the survivors leave on foot with the party.
 - [ ] Matteo knew [[renzo-canale]] and Tommaso in the first days after the wreck; he split from them when Renzo chose the voice.
 - [ ] Skarn watched Matteo vanish at the otter hole in Session 11, which is why he goes for the sling.
 
@@ -165,7 +165,7 @@ flexGrow=2
 - [ ] [[session-12-03-terror-birds]]
 - [ ] [[session-12-04-orders-in-the-ash]]
 - [ ] [[session-12-05-consume]]
-- [ ] [[session-12-06-the-raft]]
+- [ ] [[session-12-06-the-way-out]]
 
 ### Prep Audit
 
