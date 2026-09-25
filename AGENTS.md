@@ -191,7 +191,7 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
 
-If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
+If a job will repeat and no existing command does it, create an agent-shaped helper without being asked; load `cli-for-agents` first (constitution VI). Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
 ### Error ledger
 
@@ -461,6 +461,7 @@ stderr `tune` names a checker. Fix it this sitting.
 | User says something like… | Skill |
 |---|---|
 | "search the wiki" / `qmd query` / semantic retrieval | `qmd` |
+| create or change a repository command: new script, flags, `--help`, errors, output | `cli-for-agents` |
 | "create a new skill" | `skill-creator` |
 | "/vault-skill-factory" / "make a skill from my wiki" | `vault-skill-factory` |
 | "research X" (general, not wiki-research) | `research` |

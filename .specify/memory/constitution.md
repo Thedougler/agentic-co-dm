@@ -1,60 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: 6.0.1 -> 7.0.0 (MAJOR: X redefined; the canon-proposal lifecycle, where Co-DM
-  writing stays a marked proposal until the DM accepts it, is removed and replaced by Nick's
-  three-rule canon, specs/030-self-improving-architecture FR-047 and SC-015 at 5ce37294)
+- Version change: 7.0.0 -> 7.1.0 (MINOR: VI gains a named authority for command design)
 - Modified principles:
-  - X. DM Owns Canon: the four canon sources (`user_said`, `more_recent_user_said`,
-    `corrected_transcript`, `dm_placed_ingest`) and "Everything else it writes is a **canon
-    proposal** (XII): marked, listed for the DM, and canon only once the DM accepts it" are
-    replaced by Nick's rule, verbatim and in precedence order, with
-    `.agents/skills/llm-wiki/SKILL.md` as its single owner; agents apply it and code only reports conflicts and single-source facts
-    (FR-047 items 1-3). The boundary paragraph (DM truth, player-visible, unrevealed) is unchanged.
-  - XII. Evidence Precedes Invention: "Current accepted canon outranks legacy, proposed, and
-    external context" -> "Current canon (X) outranks legacy and external context"; "agents decide
-    it as a canon proposal (X), distinguishable from retrieved fact" -> silence is decided under X,
-    contradictions name the conflicting sources under X.
-  - XVII. The Wiki Is Additive and Self-Sealing: "Canon files immediately under principle X; canon
-    proposals stay marked until the DM accepts them." -> "Canon is decided under principle X."
-  - Reviewed, no change: I and Operating Boundaries ("accepted canon", "Filed wiki facts follow
-    principle X") do not require proposals; XIII "evidence supports promotion" concerns
-    self-improvement changes, not wiki page promotion; XVII "accepted facts" names existing canon.
-  - Carried unchanged from 6.0.0/6.0.1: VI, XIII, XIX, XXIV.
+  - VI. Software and Instructions Are Agent-Shaped: adds `cli-for-agents` as the authority on
+    command design, loaded before creating or changing any repository command, beside
+    `writing-for-agents` for agent-facing prose (Nick, 2026-09-24).
 - Added sections: none
-- Removed sections: none (the 6.0.1 Sync Impact Report is replaced; git holds amendment history)
-- Templates requiring updates:
-  - .specify/templates/constitution-template.md: no change needed (structure unchanged)
-  - .specify/templates/plan-template.md: no change needed (Constitution Check reads the
-    constitution at runtime)
-  - .specify/templates/spec-template.md, tasks-template.md, checklist-template.md: no change
-    needed (no canon-proposal, promotion, or confidence text; checklist "lifecycle" is Spec Kit's)
-- Lower layers pending (not edited by the constitution step; FR-047, SC-015):
-  - .agents/skills/llm-wiki/SKILL.md: does not yet contain the rule; its "Confidence and
-    Lifecycle" section (`base_confidence`, lifecycle, promotion to `core`) is still present
-  - AGENTS.md line 87 ("Everything else is a marked canon proposal the DM accepts (XII)"):
-    pending; point to llm-wiki
-  - wiki/AGENTS.md line 54 (`lifecycle` field) and line 62: pending
-  - docs/agents/work.md lines 7 and 51 ("marked canon proposal"): pending
-  - CONTEXT.md line 123 and "Canon proposal" term (line 248): pending
-  - docs/agents/table-ready.md lines 99 and 115 (`lifecycle: proposed`, "canon proposal"): pending
-  - docs/adr/0003-canon-changes-are-proposals.md: pending; conflicts with X
-  - .agents/skills/plan-session/SKILL.md line 107 ("offer a canon proposal"): pending
-  - .agents/skills/wiki-lint/consolidate.md section 3 "Lifecycle corrections": pending; FR-047
-    deletes it
-  - wiki/templates/*.md (`lifecycle: proposed`; work.md line 30 "`lifecycle` stays `proposed`")
-    and wiki/templates/contracts/*.yml (`lifecycle` required, `base_confidence` optional): pending
-  - lifecycle/confidence fields and rules in .agents/skills (wiki-import, wiki-export,
-    vehicle-design and evals), tools/, scripts/wiki-lint, rules/registry.yml, tests/: pending
-  - Carried from 6.0.0: AGENTS.md line 196 ("On runtime failure, append to `errors.md` before the
-    sitting is complete."): pending; record only unresolved, reusable defects per XIII
-  - Carried from 6.0.0: .agents/skills/wiki-lint/SKILL.md line 47 ("record the mismatch in
-    `errors.md`"): pending; reconcile first, record only if unresolved
-  - Carried from 6.0.0: scripts/error-ledger.py and errors.md format (`status`, `cause_fixed`; no
-    `source` or `evidence`): pending; FR-006-FR-010
-  - Carried from 6.0.1: .vale.ini `BasedOnStyles` still names the absent `CoDM` style: pending;
-    FR-022 removes only that reference (`styles/Deprecated/*.yml` and `Vocab = CoDM` stay)
-- Follow-up TODOs: carried from 4.0.0 (see XXI): remove finding tiers from lint tooling, specs,
-  docs, and skills that still grade findings into kinds
+- Removed sections: none (the 7.0.0 Sync Impact Report is replaced; git holds amendment history)
+- Templates requiring updates: none (plan, spec, tasks, and checklist templates read the
+  constitution at runtime; no template names command-design rules)
+- Follow-up: AGENTS.md Skill Routing and Helpers point at `cli-for-agents`.
 -->
 
 # Agentic Co-DM Constitution
@@ -109,7 +64,9 @@ of Truth."
 
 Scripts, tools, and software MUST be agent-operable: arguments in, text/JSON out, errors on
 stderr, exit status. Agent-facing documents MUST state positive instructions, completion criteria,
-and named failure modes. `writing-for-agents` is the authority on agent-facing prose structure.
+and named failure modes. `writing-for-agents` is the authority on agent-facing prose structure;
+`cli-for-agents` is the authority on command design, and agents load it before creating or
+changing any repository command (flags, `--help`, errors, stdin/output, dry-run, idempotency).
 
 Agent-shaped software that inhibits wiki quality or slows operations is a defect — fix or remove
 the cause (XIII). Record it in `errors.md` only when it stays unresolved.
@@ -322,4 +279,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 7.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
+**Version**: 7.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
