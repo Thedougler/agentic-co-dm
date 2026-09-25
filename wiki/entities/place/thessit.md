@@ -31,33 +31,38 @@ relationships:
 ## Overview
 
 > [!narration] Narration
-> A dozen ships sit run aground above the tideline, hulls whole, sails still rigged, not a plank sprung.
-> 
-> Salt crust dulls every railing, and the decks are empty in a way that feels different from abandoned.
-> 
-Thessit collects wrecks that shouldn't be able to reach it: whole ships, undamaged, that went down somewhere else months prior. Nobody has explained how they arrive, or where their crews went.
+> A dozen ships sit run aground above the tideline, hulls whole, sails still rigged, not a plank sprung. Salt crust dulls every railing, and the decks are empty in a way that feels different from abandoned.
 
+Thessit collects wrecks that should not be able to reach it: whole ships, undamaged, that went down somewhere else months prior. Nobody has explained how they arrive, or where their crews went.
+
+---
 ## At a Glance
 
-| Field | Detail |
-|---|---|
-| Type | Wreck-collecting mystery island |
-| Region | [[midchain-north\|The Northern Midchain]] |
-| Controlled By | Unclaimed |
-| Known For | Whole ships arriving long after they sank elsewhere |
+Thessit is a wreck-collecting mystery island in the [[midchain-north|Northern Midchain]], connected by routes to [[the-foundling-shoals|The Foundling Shoals]], [[tor-vessane|Tor Vessane]], [[verdant-teeth|The Verdant Teeth]], and [[vetau|Vetau]]. The island is unclaimed. Skipping it costs the party the chance to inspect a delayed wreck, trace a vanished crew, or learn whether the wrecks preserve a route that the living cannot follow.
 
-## Where
+---
+## Who
 
-- North: [[the-foundling-shoals|The Foundling Shoals]]
-- East: [[tor-vessane|Tor Vessane]]
-- South: [[verdant-teeth|The Verdant Teeth]]
-- West: [[vetau|Vetau]]
+Nobody claims Thessit. The crews of the collected ships are absent, and the island's only regular life is scavenging wildlife: giant crabs at the waterline, gulls in old rigging, giant rats in long-settled holds, and reef sharks in the channels.
 
+---
 ## What
 
-- Salt-scrub and dune grass: wind-flattened cover no taller than a knee, so nothing on the interior blocks a sightline back to the next line of hulls.
-- Sea-purslane: fleshy, salt-tolerant greens crowd the tideline pools between wrecks, foraged raw or pickled by anyone who has run out of ship's stores.
-- Giant crabs: work the waterline under every hull at low tide, scavenging whatever spills from a wreck's hold.
-- Gulls: nest thick in the standing rigging of the older ships, and their noise is the first thing a party hears crossing the tideline.
-- Giant rats: infest the holds of the ships that have sat longest, bred fat on cargo no one ever came back to claim.
-- [[reef-shark|Reef sharks]]: hold the channels between hulls at high tide, close enough to a beached keel that wading from ship to ship is worse than swimming open water.
+- Salt-scrub, dune grass, and sea-purslane cover the tideline between wrecks. The low cover leaves sightlines open, and the greens can extend a party's ship's stores.
+- Giant crabs work under every hull at low tide, scavenging anything that spills from a hold.
+- Gulls nest in the standing rigging of older ships; their noise announces movement across the tideline.
+- Giant rats infest ships that have sat longest, fat on cargo nobody reclaimed.
+- [[reef-shark|Reef sharks]] hold the channels between hulls at high tide. Wading from ship to ship is worse than swimming open water.
+
+---
+## Where
+
+**North:** [[the-foundling-shoals|The Foundling Shoals]].  
+**East:** [[tor-vessane|Tor Vessane]].  
+**South:** [[verdant-teeth|The Verdant Teeth]].  
+**West:** [[vetau|Vetau]].
+
+---
+## Why
+
+The party comes to inspect a ship that arrived whole months after it sank, search for a missing crew, or recover cargo nobody claimed. They stay because every wreck can preserve evidence of a route, a disaster, or a person who never reached shore. They leave when the tide closes the channels or when the island's wildlife makes a salvage attempt cost more than the cargo.
