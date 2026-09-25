@@ -175,6 +175,13 @@ def test_metrics_record_absent_events_as_null(tmp_path: Path):
     assert m["skills_read"] == [] and m["total_tool_calls"] == 0
 
 
+def test_inner_strips_single_and_double_quoted_shell_wrappers():
+    inner = _luna_module()._inner
+    assert inner("/bin/zsh -lc 'scripts/wiki lint a.md'") == "scripts/wiki lint a.md"
+    assert inner('/bin/zsh -lc "rg x; scripts/wiki lint \\"a b.md\\""') == 'rg x; scripts/wiki lint "a b.md"'
+    assert inner("scripts/wiki lint a.md") == "scripts/wiki lint a.md"
+
+
 def test_skill_selected_grades_the_first_owner_skill_read():
     grade = _luna_module().grade_skill_selected
     metrics = {"skills_read": [".agents/skills/place-design/SKILL.md", ".agents/skills/city-design/SKILL.md"]}

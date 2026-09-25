@@ -171,7 +171,10 @@ NOT_TOOLS = {"agent_message", "reasoning", "error", "todo_list"}
 def _inner(command: str) -> str:
     """Strip Codex's shell wrapper: /bin/zsh -lc '<cmd>' -> <cmd>."""
     m = re.fullmatch(r"\S*sh -l?c '(.*)'", command, re.S)
-    return m.group(1).replace("'\\''", "'") if m else command
+    if m:
+        return m.group(1).replace("'\\''", "'")
+    m = re.fullmatch(r'\S*sh -l?c "(.*)"', command, re.S)
+    return re.sub(r'\\(["\\$`])', r"\1", m.group(1)) if m else command
 
 
 def _usage_error(output: str) -> bool:
