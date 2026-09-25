@@ -11,13 +11,14 @@ sources:
   - "wiki/_archive/sin-and-sanctuary.md"
   - "campaign-os:corvin-ashe.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: rival
 location: "[[sorrowbell]]"
+faction: none
 visibility: dm
 summary: "Bishop of Tyr at Sorrowbell. He scapegoats a woods coven to protect his standing, and he can no longer hear Tyr's warnings."
 provenance:
@@ -70,6 +71,10 @@ flexGrow=1
 A question that treats the coven as framed, or a look at the locked quarters and true ledger, ends the welcome. The locked climax is a demon walking into the empty Tyr box, telling him Tyr is not there, then kissing him into a devil-touched form.
 ```
 ````
+## Voice
+
+Ashe uses grand, public blessings to cover a frightened, defensive private voice. He speaks as though Tyr's approval is still immediate, then drops his head when the lie is exposed. Sample line: “Tyr's blessings upon me.”
+
 
 ## Connections
 
