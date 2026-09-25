@@ -32,32 +32,50 @@ relationships:
 
 > [!narration] Narration
 > Harvesters surface along the reef line one by one, glowing blue-green kelp held high in their baskets, water sluicing off in bright sheets.
-> 
+>
 > On shore, women braid the harvest into long ropes, laughing in a language that's not trade-pidgin, the wet kelp smelling of salt and green rot.
-> 
-Ilo Maren's free-diving culture harvests bioluminescent kelp beds found almost nowhere else, and their annual harvest-night bonfire lights the entire bay gold-blue until dawn.
 
+---
 ## At a Glance
 
-| Field | Detail |
-|---|---|
-| Type | Free-diving harvest island |
-| Region | [[midchain-north\|The Northern Midchain]] |
-| Controlled By | A matriarchal diving culture |
-| Known For | A bioluminescent-kelp harvest festival that lights the whole bay |
+Ilo Maren is a free-diving harvest island in the [[midchain-north|Northern Midchain]], controlled by a matriarchal diving culture. Its bioluminescent kelp beds are found almost nowhere else. The annual harvest-night bonfire burns the whole harvest and lights the entire bay gold-blue until dawn.
 
-## Where
+---
+## If the party
 
-- North: [[yssenmoor|Yssenmoor]]
-- East: [[nemwe|Nemwe]]
-- South: [[verdant-teeth|The Verdant Teeth]]
-- West: [[drovannis|Drovannis]]
+- **Watch the reef line.** The party can observe harvesters surface at dawn with baskets of kelp without entering the water.
+- **Join the shore braiding.** They can help braid the harvest into long ropes while the women work and speak in a language that is not trade-pidgin.
+- **Wade the tide pools.** At low water, crabs provide easy food before the harvesters return.
+- **Dive the kelp beds.** The party enters the same currents used by the kelp-cutters; reef sharks patrol the beds, and a harvester who surfaces too fast surfaces among them.
+- **Reach into a deep reef hollow.** A diver may find a giant octopus instead of the hand-sized opening's expected catch.
 
+---
+## Who
+
+The island's matriarchal diving culture sends harvesters into the reef-side kelp beds every dawn. Women braid the harvest into ropes on shore, and the community burns the yearly harvest at the harvest-night bonfire. Vultures ride the cliff thermals above the reef, while [[reef-shark|reef sharks]] and giant octopuses occupy the water.
+
+---
 ## What
 
-- Bioluminescent kelp: the reef-side beds glow blue-green even under moonlight. The whole culture's livelihood runs through them, harvested every dawn and burned whole at the yearly bonfire.
-- Salt-fig scrub: low, wind-flattened fig thickets hold the dune line above the tide, and their fruit ferments into a sharp wine traded up and down the strait.
-- Crabs: pick through the exposed tide pools at low water, easy food for anyone willing to wade in before the harvesters return.
-- Vultures: ride the cliff thermals above the reef and strip whatever the tide leaves behind before a diver can claim it.
-- [[reef-shark|Reef sharks]]: patrol the kelp beds in loose packs, drawn by the same currents the kelp-cutters work. A harvester who surfaces too fast surfaces among them.
-- Giant octopuses: den in the reef's deeper hollows below the kelp line, and a diver who reaches too far into a crevice pulls back a stump instead of a hand.
+- *“Glowing blue-green kelp held high in their baskets.”* Bioluminescent kelp grows in reef-side beds and sustains the island's livelihood.
+- *“Women braid the harvest into long ropes.”* The shore work turns the daily harvest into usable rope.
+- *“The wet kelp smelling of salt and green rot.”* The harvest carries the reef's smell onto the shore.
+- *“The whole bay gold-blue until dawn.”* The annual bonfire burns the yearly kelp harvest whole.
+- *“Low, wind-flattened fig thickets hold the dune line.”* Salt-fig scrub protects the dunes, and its fruit ferments into sharp wine traded along the strait.
+- *“Crabs pick through the exposed tide pools.”* They are easy food for anyone willing to wade in before the harvesters return.
+- *“Vultures ride the cliff thermals.”* They strip whatever the tide leaves behind before a diver can claim it.
+- *“Reef sharks patrol the kelp beds.”* The sharks follow the same currents as the kelp-cutters.
+- *“A diver pulls back a stump instead of a hand.”* Giant octopuses den in deeper reef hollows below the kelp line.
+
+---
+## Where
+
+**North:** [[yssenmoor|Yssenmoor]].  
+**East:** [[nemwe|Nemwe]].  
+**South:** [[verdant-teeth|The Verdant Teeth]].  
+**West:** [[drovannis|Drovannis]].
+
+---
+## Why
+
+The party comes to trade for kelp rope or salt-fig wine, witness the harvest-night bonfire, or learn the free-divers' route through the reef. They stay to help with the harvest, gather food from the tide pools, or risk the kelp beds. They care because Ilo Maren's rare kelp supports an entire culture and its yearly fire makes the island visible across the bay.
