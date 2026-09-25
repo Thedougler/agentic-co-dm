@@ -67,6 +67,9 @@ flexGrow=1
 Fen becomes hesitant when the party asks him to disobey Beaumont Sel or abandon a ship task. He returns to cooperation when someone gives him a clear, safe duty that fits the chain of command.
 ```
 ````
+### Voice
+
+Fen speaks plainly and checks his words against the last order he heard. He sounds earnest rather than timid, with the careful seriousness of someone doing a first real sea job correctly. His repeated line is, “Captain said it goes there, so there it goes.” When confused, he asks for a clear duty instead of improvising.
 
 ## Connections
 
