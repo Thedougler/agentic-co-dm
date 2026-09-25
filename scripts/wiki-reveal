@@ -4,13 +4,13 @@
 Frontmatter read only — page bodies are never opened. Pages without
 `reveal:` (root index/log/hot notes, redirect stubs) are not listed.
 
-Usage (repo root):
-  ./scripts/wiki-reveal                                  # every unrevealed page
-  ./scripts/wiki-reveal revealed                         # every revealed page
-  ./scripts/wiki-reveal all                              # both gates
-  ./scripts/wiki-reveal unrevealed --type npc            # unrevealed NPCs
-  ./scripts/wiki-reveal all --type npc,place --json      # machine-readable
-  ./scripts/wiki-reveal unrevealed --count               # per-type totals only
+Examples:
+  ./scripts/wiki-reveal
+  ./scripts/wiki-reveal revealed
+  ./scripts/wiki-reveal all
+  ./scripts/wiki-reveal unrevealed --type npc
+  ./scripts/wiki-reveal all --type npc,place --json
+  ./scripts/wiki-reveal unrevealed --count
 """
 from __future__ import annotations
 
@@ -89,6 +89,7 @@ def fail(message: str) -> int:
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
         description="List live wiki pages by reveal gate, filtered by content type.",
+        epilog="Examples: scripts/wiki-reveal | scripts/wiki-reveal unrevealed --type npc | scripts/wiki-reveal all --json",
     )
     parser.add_argument(
         "state",

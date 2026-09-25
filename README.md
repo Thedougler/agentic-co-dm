@@ -108,12 +108,12 @@ qmd status
 npm run check:python
 npm test
 npm run lint:markdown -- --no-globs README.md
-./scripts/wiki-maintain --report --summary-only
+./scripts/wiki health
 ```
 
 If QMD is not initialized or its collections are stale, run `./scripts/qmd-maintain.sh` before `qmd status`.
 
-`wiki-maintain` A3 runs `scripts/token-count.py` when present (it is on main); soft-skips only if the CLI is absent. A noisy vault (HARD lint) is expected during migration — quiet keep-ahead only when Layer A is clean.
+`wiki health` includes tiktoken counts via `scripts/token-count.py`. A noisy vault (HARD lint) is expected during migration — quiet keep-ahead only when Layer A is clean.
 
 ## Working with the project
 
@@ -131,7 +131,7 @@ Design lock: `docs/agents/wiki-maintenance-loop.md` (issue #90).
 
 | Task | Command / pointer |
 | --- | --- |
-| Layer A report (lint + waste leads + `_raw/` + plans) | `./scripts/wiki-maintain --report` |
+| Layer A report (lint + waste leads + `_raw/` + plans) | `./scripts/wiki health` |
 | Wiki lint (all checker findings) | `./scripts/wiki lint` |
 | Context-waste leads | `python3 scripts/context-waste-scan.py` |
 | Objective tokens | `python3 scripts/token-count.py --sum wiki` / `--footprint` — default `cl100k_base`; **not** `bytes/4` |

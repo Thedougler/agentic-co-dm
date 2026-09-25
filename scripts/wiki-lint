@@ -4,6 +4,11 @@
 Invocations without a creative subcommand delegate unchanged to
 ``tools/lint_wiki.py``. Creative commands are ``task``, ``file``, ``corpus``,
 ``changed``, ``rule``, and ``candidate``.
+
+Examples:
+  ./scripts/wiki-lint --json
+  ./scripts/wiki-lint file wiki/entities/npc/example.md --json
+  ./scripts/wiki-lint corpus wiki --severity HARD
 """
 from __future__ import annotations
 
@@ -97,7 +102,10 @@ def _iter_grouped_findings(rule: str, value: Any):
 
 def structural_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(
-        description=__doc__, epilog="Front door: scripts/wiki lint owns lint usage; see wiki lint --help and wiki lint fix --help.")
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="Examples:\n  scripts/wiki-lint --json\n  scripts/wiki-lint wiki --verbose\n  wiki lint --help",
+    )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
@@ -331,7 +339,10 @@ def _snapshot(vault: Path, report: dict[str, Any]) -> str:
 
 
 def consolidate_main(argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(prog="wiki-lint --consolidate")
+    parser = argparse.ArgumentParser(
+        prog="wiki-lint --consolidate",
+        epilog="Examples: scripts/wiki-lint --consolidate wiki --json",
+    )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--approve", action="store_true")
@@ -375,7 +386,10 @@ def creative_main(argv: list[str]) -> int:
         print(f"wiki-lint: {exc}", file=sys.stderr)
         return 2
     if command == "rule":
-        parser = argparse.ArgumentParser(prog="wiki-lint rule")
+        parser = argparse.ArgumentParser(
+            prog="wiki-lint rule",
+            epilog="Examples: scripts/wiki-lint rule narration-wordcount",
+        )
         parser.add_argument("rule_id")
         args = parser.parse_args(argv[1:])
         try:
@@ -403,7 +417,10 @@ def creative_main(argv: list[str]) -> int:
     if command == "candidate":
         return candidate_main(argv[1:], registry)
     if command == "queue":
-        parser = argparse.ArgumentParser(prog="wiki-lint queue")
+        parser = argparse.ArgumentParser(
+            prog="wiki-lint queue",
+            epilog="Examples: scripts/wiki-lint queue --json",
+        )
         parser.add_argument("--json", action="store_true")
         args = parser.parse_args(argv[1:])
         try:
@@ -414,7 +431,10 @@ def creative_main(argv: list[str]) -> int:
         print(json.dumps(data, indent=2, sort_keys=True) if args.json else render_queue(data))
         return 0
     if command == "template":
-        parser = argparse.ArgumentParser(prog="wiki-lint template")
+        parser = argparse.ArgumentParser(
+            prog="wiki-lint template",
+            epilog="Examples: scripts/wiki-lint template wiki/entities/npc/example.md --json",
+        )
         parser.add_argument("path")
         parser.add_argument("--json", action="store_true")
         args = parser.parse_args(argv[1:])
@@ -445,7 +465,10 @@ def creative_main(argv: list[str]) -> int:
             print(render_human(LintResult("repair_required" if findings else "clean", None, 1, 5, findings,
                                           {"REPAIR": len(findings)}, []), command="template"))
         return 1 if findings else 0
-    parser = argparse.ArgumentParser(prog=f"wiki-lint {command}")
+    parser = argparse.ArgumentParser(
+        prog=f"wiki-lint {command}",
+        epilog=f"Examples: scripts/wiki-lint {command} wiki --json",
+    )
     if command == "task":
         parser.add_argument("bundle")
         parser.add_argument("paths", nargs="*")
@@ -481,7 +504,10 @@ def creative_main(argv: list[str]) -> int:
 
 
 def candidate_main(argv: list[str], registry) -> int:
-    parser = argparse.ArgumentParser(prog="wiki-lint candidate")
+    parser = argparse.ArgumentParser(
+        prog="wiki-lint candidate",
+        epilog="Examples: scripts/wiki-lint candidate 'Avoid vague placeholder names' --json",
+    )
     parser.add_argument("correction", nargs="+")
     parser.add_argument("--json", action="store_true")
     args = parser.parse_args(argv)

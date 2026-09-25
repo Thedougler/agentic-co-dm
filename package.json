@@ -18,7 +18,7 @@
     "lint:wiki": "./scripts/wiki lint",
     "lint:vale": "./scripts/wiki lint",
     "lint:markdown": "markdownlint-cli2",
-    "maintain": "./scripts/wiki-maintain",
+    "maintain": "./scripts/wiki health",
     "verify": "./scripts/check-omp-baseline.sh",
     "test": "./scripts/run-pytest"
   }

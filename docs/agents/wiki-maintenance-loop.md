@@ -60,7 +60,7 @@ Layer A MAY apply FR-002 structural repairs unattended (links, required frontmat
 
 **Quiet rule:** if A1 HARD count = 0 and A5 clear and no P0 waste leads, stay silent (no Nick ping).
 
-Optional thin facade (ATE): `scripts/wiki-maintain --report` → one JSON bundling A1–A6 without new policy.
+Layer A JSON is `wiki health` (lint, waste, staging, remorph counts, tokens). No second report CLI.
 
 ### Layer B — Fleet route (CoS orchestrates; no ack-only)
 
@@ -147,15 +147,9 @@ CoS expands the existing Wiki lint keep-ahead routine; do not spawn duplicate ac
 
 ---
 
-## ATE packet (optional facade)
+## Report
 
-```text
-ATE: optional scripts/wiki-maintain --report
-Issue: #90
-Bundles Layer A JSON (wiki-lint, context-waste-scan, raw empty check; token-count when present)
-No new policy; no prose scoring; no auto remorph/merge
-Cite: docs/agents/wiki-maintenance-loop.md
-```
+`wiki health` is the Layer A JSON. Cite: this page.
 
 ## Acceptance
 

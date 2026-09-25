@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Deterministic checks for the hybrid SDD public contract."""
+"""Deterministic checks for the hybrid SDD public contract.
+
+Examples:
+  python3 scripts/hybrid-sdd-check.py classify --fixtures fixtures.json
+  python3 scripts/hybrid-sdd-check.py preset --package package.json
+  python3 scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main
+"""
 from __future__ import annotations
 
 import argparse
@@ -624,11 +630,14 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
     for name in ("classify", "agency", "canon", "topology", "plan", "verify"):
-        command = sub.add_parser(name)
+        command = sub.add_parser(
+            name,
+            epilog=f"Examples: scripts/hybrid-sdd-check.py {name} --fixtures fixtures.json",
+        )
         command.add_argument("--fixtures", required=True, type=Path)
-    preset = sub.add_parser("preset")
+    preset = sub.add_parser("preset", epilog="Examples: scripts/hybrid-sdd-check.py preset --package package.json")
     preset.add_argument("--package", required=True, type=Path)
-    diff = sub.add_parser("diff", help="diagnostic: plan New files / Deleted or folded tables against a git diff")
+    diff = sub.add_parser("diff", help="diagnostic: plan New files / Deleted or folded tables against a git diff", epilog="Examples: scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main")
     diff.add_argument("--plan", required=True, type=Path)
     diff.add_argument("--base", required=True)
     args = parser.parse_args()

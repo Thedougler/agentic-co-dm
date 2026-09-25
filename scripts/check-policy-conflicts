@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
-"""Check policy consumers against the single ownership registry."""
+"""Check policy consumers against the single ownership registry.
+
+Examples:
+  ./scripts/check-policy-conflicts
+  ./scripts/check-policy-conflicts --json
+  ./scripts/check-policy-conflicts --registry docs/agents/policy-owners.yml --root .
+"""
 from __future__ import annotations
 
 import argparse

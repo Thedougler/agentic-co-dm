@@ -624,18 +624,66 @@ def _load_jsonl(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
-def _load_maintenance_module():
-    import importlib.machinery
-    import importlib.util
+def _context_waste(vault: Path) -> dict[str, Any]:
+    data = _run_json(
+        [sys.executable, str(ROOT / "scripts/context-waste-scan.py"), "--vault", str(vault)],
+        ROOT,
+    )
+    if not isinstance(data, dict):
+        return {"metric": {"hits": 0, "hard_hits": 0}}
+    hits = [hit for hit in (data.get("hits") or []) if isinstance(hit, dict)]
+    hard = sum(1 for hit in hits if hit.get("severity") == "hard")
+    return {"metric": {"hits": len(hits), "hard_hits": hard}}
 
-    path = str(ROOT / "scripts/wiki-maintain")
-    loader = importlib.machinery.SourceFileLoader("wiki_maintain", path)
-    spec = importlib.util.spec_from_loader(loader.name, loader)
-    if spec is None:
-        raise RuntimeError("unable to load Layer A maintenance module")
-    module = importlib.util.module_from_spec(spec)
-    loader.exec_module(module)
-    return module
+
+def _raw_staging(vault: Path) -> dict[str, Any]:
+    raw = vault / "_raw"
+    if not raw.is_dir():
+        return {"metric": {"leftover_count": 0}}
+    ignore = {".gitkeep", ".gitignore", ".DS_Store"}
+    leftover = sum(1 for path in raw.rglob("*") if path.is_file() and path.name not in ignore)
+    return {"metric": {"leftover_count": leftover}}
+
+
+def _remorph_plan(vault: Path) -> dict[str, Any]:
+    script = ROOT / "scripts/remorph-page-filename-kebab"
+    empty = {"metric": {"plan_count": 0, "skip_count": 0, "error_count": 0}}
+    if not script.is_file():
+        return empty
+    data = _run_json(
+        [sys.executable, str(script), "--dry-run", "--json", "--wiki", str(vault)],
+        ROOT,
+    )
+    if not isinstance(data, dict):
+        return empty
+    plans = data.get("plans") or []
+    count = data.get("count")
+    return {
+        "metric": {
+            "plan_count": int(count) if count is not None else len(plans) if isinstance(plans, list) else 0,
+            "skip_count": len(data.get("skips") or []),
+            "error_count": len(data.get("errors") or []),
+        }
+    }
+
+
+def _policy_conflicts() -> dict[str, Any]:
+    proc = subprocess.run(
+        [sys.executable, str(ROOT / "scripts/check-policy-conflicts"), "--json"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+    )
+    try:
+        data = json.loads(proc.stdout or "{}")
+    except json.JSONDecodeError:
+        data = {}
+    conflicts = data.get("conflicts") if isinstance(data, dict) else None
+    return {
+        "ok": proc.returncode == 0,
+        "conflict_count": len(conflicts) if isinstance(conflicts, list) else 0,
+    }
+
 
 
 def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | None:
@@ -665,11 +713,10 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     paths = _resolve_paths(vault, args.paths)
     pages = [vault / relative for relative in paths]
     bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
-    maintenance = _timed("scripts/wiki-maintain", _load_maintenance_module, times)
-    a2 = _timed("scripts/wiki-maintain:context-waste", lambda: maintenance.step_context_waste(str(vault), ROOT), times)
-    a5 = _timed("scripts/wiki-maintain:raw-empty", lambda: maintenance.step_raw_empty(str(vault), ROOT), times)
-    a6 = _timed("scripts/wiki-maintain:remorph", lambda: maintenance.step_a6_dry_run_plans(str(vault), ROOT), times)
-    policy = _timed("scripts/wiki-maintain:policy", lambda: maintenance.step_policy_conflicts(ROOT), times)
+    a2 = _timed("health.waste", lambda: _context_waste(vault), times)
+    a5 = _timed("health.staging", lambda: _raw_staging(vault), times)
+    a6 = _timed("health.remorph", lambda: _remorph_plan(vault), times)
+    policy = _timed("health.policy", lambda: _policy_conflicts(), times)
     tracker = _tracker_root()
     sittings = _timed(
         "scripts/error-ledger.py:sitting",

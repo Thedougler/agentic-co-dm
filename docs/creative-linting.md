@@ -137,10 +137,4 @@ Queue workflow:
 3. Manually apply and review the exact safe finding.
 4. Re-run the queue; judgment-only pages may remain.
 
-Run the normal structural maintenance report as before. Add creative lint only when desired:
-
-```bash
-./scripts/wiki-maintain --report --creative-lint
-```
-
-The optional A7 payload reports the corpus status and compact finding metrics; it uses the same registry, bundles, Vale adapter, and symbolic evaluators as `scripts/wiki-lint`. The two project-specific Markdown scripts are deprecated compatibility checks: markdownlint-cli2 owns repository structure, while those scripts remain available only for their not-yet-migrated Obsidian and literal-newline checks.
+Creative findings already run through `wiki lint`. Queue workflow above is the corpus path. markdownlint-cli2 owns repository Markdown structure.

@@ -5,7 +5,7 @@ or cite a `scripts/…` or `tests/…` path that does not exist.
 FR-049 / SC-031. Skills and AGENTS must name current tools only.
 after-write is retired: a mention is a fail even if the file returns.
 
-Usage (repo root):
+Examples:
   ./scripts/check-current-commands
   ./scripts/check-current-commands --json
 """

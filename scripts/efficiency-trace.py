@@ -1,5 +1,12 @@
 #!/usr/bin/env python3
-"""Record, report, retain, and promote redacted efficiency traces."""
+"""Record, report, retain, and promote redacted efficiency traces.
+
+Examples:
+  python3 scripts/efficiency-trace.py record --input trace.json
+  python3 scripts/efficiency-trace.py report
+  python3 scripts/efficiency-trace.py retain --days 30
+  python3 scripts/efficiency-trace.py promote --input trace.json --risk low
+"""
 from __future__ import annotations
 
 import argparse
@@ -305,24 +312,23 @@ def report(records: list[dict[str, Any]]) -> dict[str, Any]:
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     sub = parser.add_subparsers(dest="command", required=True)
-    record = sub.add_parser("record")
+    record = sub.add_parser("record", epilog="Examples: scripts/efficiency-trace.py record --input trace.json")
     record.add_argument("--input", required=True, type=Path)
     record.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
     record.add_argument("--quarantine", type=Path, default=ROOT / ".local/efficiency/quarantine/rejected.jsonl")
-    report_cmd = sub.add_parser("report")
+    report_cmd = sub.add_parser("report", epilog="Examples: scripts/efficiency-trace.py report --trace .local/efficiency/traces.jsonl")
     report_cmd.add_argument("--input", type=Path)
     report_cmd.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
-    retain = sub.add_parser("retain")
+    retain = sub.add_parser("retain", epilog="Examples: scripts/efficiency-trace.py retain --days 30")
     retain.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
     retain.add_argument("--days", type=int)
-    promote = sub.add_parser("promote")
+    promote = sub.add_parser("promote", epilog="Examples: scripts/efficiency-trace.py promote --input trace.json --risk low")
     promote.add_argument("--input", required=True, type=Path)
     promote.add_argument("--risk", required=True, choices=("low", "moderate", "high"))
     promote.add_argument("--canary", type=float, default=0.0)
     promote.add_argument("--shadow", action="store_true")
     promote.add_argument("--human-review", action="store_true")
     return parser.parse_args()
-
 
 def main() -> int:
     args = parse_args()

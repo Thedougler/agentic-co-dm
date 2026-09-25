@@ -1,16 +1,29 @@
 #!/usr/bin/env bash
 # Sync local main to origin/main. Does not push. Does not touch other branches.
 #
-# Usage (repo root or any worktree):
+# Examples (repo root or any worktree):
 #   ./scripts/git-sync-main
 #   ./scripts/git-sync-main --force-clean
 set -euo pipefail
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/git-sync-main [--force-clean]
+
+Examples:
+  ./scripts/git-sync-main
+  ./scripts/git-sync-main --force-clean
+EOF
+}
+
 
 force_clean=0
-if [[ "${1:-}" == "--force-clean" ]]; then
+if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
+  usage
+  exit 0
+elif [[ "${1:-}" == "--force-clean" ]]; then
   force_clean=1
 elif [[ -n "${1:-}" ]]; then
-  echo "usage: $0 [--force-clean]" >&2
+  usage >&2
   exit 2
 fi
 

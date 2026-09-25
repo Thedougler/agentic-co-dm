@@ -14,7 +14,7 @@ Top-level paths, one purpose each; the vault itself is explored under "Vault map
 | `docs/agents/` | Procedure docs: Work, table-ready casting, hybrid SDD, maintenance loop, token and context measurement, harness and skill-design dispatch. |
 | `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
 | `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template contracts), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
-| `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-maintain`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
+| `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
 | `tests/` | Pytest suite over `scripts/` and `tools/`. Run `./scripts/run-pytest`. |
 | `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
 | `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |

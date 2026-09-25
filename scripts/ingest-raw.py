@@ -1,5 +1,10 @@
 #!/usr/bin/env python3
-"""Promote named wiki/_raw campaign drops without improvising the bookkeeping."""
+"""Promote named wiki/_raw campaign drops without improvising the bookkeeping.
+
+Examples:
+  python3 scripts/ingest-raw.py wiki/_raw/source.md
+  python3 scripts/ingest-raw.py wiki/_raw/one.md wiki/_raw/two.md --wiki wiki --skip-qmd
+"""
 from __future__ import annotations
 
 import argparse

@@ -2,7 +2,9 @@
 """Grading aid for any eval whose output carries player-facing `[!narration]` prose
 (scene openings, beat pages, portraits, recaps). For the grader only, never the subject.
 
-usage: python3 scripts/check-narration.py <file-or-dir> ... [--source <page.md> ...]
+Examples:
+  python3 scripts/check-narration.py output.md
+  python3 scripts/check-narration.py output/ --source wiki/entities/npc/example.md
 
 paths     subject outputs: files or directories; every `[!narration]` callout
           in every .md is checked (a file with none is checked whole)

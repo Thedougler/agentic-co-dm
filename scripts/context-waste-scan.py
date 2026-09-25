@@ -8,7 +8,7 @@ S3 (skill bytes) and S4 (page lines) are investigation leads for
 redundancy/conflict/infra — not mandates to shorten or delete craft,
 narrative, or mechanics. No HARD size gates.
 
-Usage:
+Examples:
   python3 scripts/context-waste-scan.py
   python3 scripts/context-waste-scan.py --vault wiki --skills .agents/skills
   python3 scripts/context-waste-scan.py --text

@@ -1,6 +1,24 @@
 #!/usr/bin/env bash
-# Observe the OMP + Spec Kit baseline. Cwd: repository root. No flags.
+# Observe the OMP + Spec Kit baseline. Cwd: repository root.
 set -euo pipefail
+
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/check-omp-baseline.sh
+
+Examples:
+  ./scripts/check-omp-baseline.sh
+  npm run verify
+EOF
+}
+
+if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
+  usage
+  exit 0
+elif [[ "$#" -ne 0 ]]; then
+  usage >&2
+  exit 2
+fi
 
 fail() {
   echo "$1" >&2

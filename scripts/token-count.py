@@ -3,11 +3,11 @@
 
 Method of record: docs/agents/token-measurement.md
 
-Usage (repo root):
-  python3 scripts/token-count.py path [path ...]
-  python3 scripts/token-count.py --stdin
-  python3 scripts/token-count.py --sum PATH
-  python3 scripts/token-count.py --footprint [--vault wiki]
+Examples:
+  python3 scripts/token-count.py README.md docs/
+  printf 'text' | python3 scripts/token-count.py --stdin
+  python3 scripts/token-count.py --sum wiki
+  python3 scripts/token-count.py --footprint --vault wiki
 
 Stdout is JSON (default). No file bodies in stdout.
 
@@ -122,7 +122,8 @@ def build_payload(
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(
-        description="Objective tiktoken counts (JSON). See docs/agents/token-measurement.md"
+        description="Objective tiktoken counts (JSON). See docs/agents/token-measurement.md",
+        epilog="Examples: scripts/token-count.py README.md docs/ | scripts/token-count.py --sum wiki | printf 'text' | scripts/token-count.py --stdin",
     )
     parser.add_argument(
         "paths",

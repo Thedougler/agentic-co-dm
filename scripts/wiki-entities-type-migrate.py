@@ -18,9 +18,9 @@ Formula (ASE wiki-entities-type-migrate, depth 1):
 
   Skip _archive, _raw, attachments. Depth <= 1. No synonym/rarity/facet dirs.
 
-Usage:
-  python3 scripts/wiki-entities-type-migrate.py --dry-run [--wiki wiki]
-  python3 scripts/wiki-entities-type-migrate.py --apply [--wiki wiki]
+Examples:
+  python3 scripts/wiki-entities-type-migrate.py --dry-run --wiki wiki
+  python3 scripts/wiki-entities-type-migrate.py --apply --wiki wiki
 
 Dry-run always exits 0 (even with needs_journal_home). Apply exits nonzero
 on collisions or refused moves. Idempotent: second dry-run is empty after apply.

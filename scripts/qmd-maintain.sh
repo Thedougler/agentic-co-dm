@@ -18,6 +18,10 @@ Usage: ./scripts/qmd-maintain.sh [--embed] [--max-embed-docs N] [--max-embed-mb 
 
 Routine maintenance updates the index, reports embedding backlog, and probes
 wiki search. Use --embed explicitly for a foreground embedding pass.
+
+Examples:
+  ./scripts/qmd-maintain.sh
+  ./scripts/qmd-maintain.sh --embed --max-embed-docs 64 --max-embed-mb 8
 EOF
 }
 

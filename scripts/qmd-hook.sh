@@ -1,5 +1,25 @@
 #!/usr/bin/env bash
 set -eu
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/qmd-hook.sh
+
+Internal post-write hook. Configuration is supplied through QMD_HOOK_* environment variables.
+
+Examples:
+  ./scripts/qmd-hook.sh
+  QMD_HOOK_MAX_DOCS=64 QMD_HOOK_MAX_MB=8 ./scripts/qmd-hook.sh
+EOF
+}
+
+if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
+  usage
+  exit 0
+elif [[ "$#" -ne 0 ]]; then
+  usage >&2
+  exit 2
+fi
+
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$ROOT"

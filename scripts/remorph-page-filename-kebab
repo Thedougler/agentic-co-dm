@@ -11,9 +11,9 @@ GREENLIT 2026-09-14 (Nick): legacy strips (kebab / Aruhe / leading 00 / 00-).
 Implements strip in this script (live rename+link rewrite; archive/templates plain rename).
 Prefer GitHub PR diffs. Dry-run first; no lore invent.
 
-Usage (repo root):
-  ./scripts/remorph-page-filename-kebab --dry-run [--wiki wiki|--vault wiki]
-  ./scripts/remorph-page-filename-kebab --apply [--wiki wiki|--vault wiki]
+Examples:
+  ./scripts/remorph-page-filename-kebab --dry-run --wiki wiki
+  ./scripts/remorph-page-filename-kebab --apply --wiki wiki
   ./scripts/remorph-page-filename-kebab --dry-run --json
 
 GREENLIT — legacy filename remorph apply allowed (kebab / Aruhe / 00 strips). Prefer PR diffs.

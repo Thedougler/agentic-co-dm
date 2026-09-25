@@ -3,18 +3,18 @@
 
 Vault arg is the wiki root (the directory that contains .manifest.json).
 
-Usage:
-  python3 scripts/manifest.py stats <vault>
-  python3 scripts/manifest.py has <vault> <source>
-  python3 scripts/manifest.py get <vault> <source>
-  python3 scripts/manifest.py lookup <vault> --page <vault-rel-page>
-  python3 scripts/manifest.py list <vault> [--project NAME] [--since ISO] [--limit N]
-  python3 scripts/manifest.py --format tsv list <vault> --limit 20
-  python3 scripts/manifest.py delta <vault> --paths-file <file|->
-  python3 scripts/manifest.py record <vault> <source> --pages <page1> [page2 ...]
-  python3 scripts/manifest.py upsert <vault> <source> --json '{...}'
-  python3 scripts/manifest.py normalize <vault> [--dry-run]
-  python3 scripts/manifest.py tool-pages <vault> [--tool NAME] [--limit N]
+Examples:
+  python3 scripts/manifest.py stats wiki
+  python3 scripts/manifest.py has wiki source-id
+  python3 scripts/manifest.py get wiki source-id
+  python3 scripts/manifest.py lookup wiki --page entities/npc/example.md
+  python3 scripts/manifest.py list wiki --project campaign --limit 20
+  python3 scripts/manifest.py --format tsv list wiki --limit 20
+  python3 scripts/manifest.py delta wiki --paths-file -
+  python3 scripts/manifest.py record wiki source-id --pages entities/npc/example.md
+  python3 scripts/manifest.py upsert wiki source-id --json '{"status":"complete"}'
+  python3 scripts/manifest.py normalize wiki --dry-run
+  python3 scripts/manifest.py tool-pages wiki --tool codex --limit 20
 """
 from __future__ import annotations
 

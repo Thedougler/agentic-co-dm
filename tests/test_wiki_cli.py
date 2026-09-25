@@ -253,22 +253,10 @@ def test_query_compact_hits_and_backend_failure(tmp_path: Path):
     assert "hits" not in error
 
 
-def test_health_alias_trends_focus_and_empty_trackers(tmp_path: Path):
+def test_health_trends_focus_and_empty_trackers(tmp_path: Path):
     page(tmp_path, "one.md")
     traces = tmp_path / "_tracker" / "traces.jsonl"
     health = run_cli(tmp_path, "health", traces=traces)
-    env = os.environ | {
-        "OBSIDIAN_VAULT_PATH": str(tmp_path),
-        "WIKI_TRACKER_ROOT": str(tmp_path / "_tracker"),
-        "WIKI_EFFICIENCY_TRACE": str(traces),
-    }
-    alias = subprocess.run(
-        [PYTHON, str(ROOT / "scripts/wiki-maintain"), "--report"],
-        cwd=ROOT,
-        env=env,
-        capture_output=True,
-        text=True,
-    )
     assert health.returncode in (0, 1), health.stderr
     data = payload(health)
     required = {"pages", "bytes", "tokens", "lint", "trends", "focus", "next", "timing", "waste", "staging", "remorph", "policy", "context"}
@@ -281,12 +269,7 @@ def test_health_alias_trends_focus_and_empty_trackers(tmp_path: Path):
     assert {"sittings", "skills", "errors", "efficiency", "slowest_commands", "token_heaviest"} <= trends.keys()
     assert trends["sittings"]["count"] == 0
     assert "skill_eval" not in data and "evals" not in trends
-    assert alias.returncode == health.returncode, alias.stderr
-    alias_data = payload(alias)
-    assert set(alias_data) == set(data)
-    assert alias_data["pages"] == data["pages"]
-    assert alias_data["next"] == data["next"]
-    assert "files" not in alias_data
+
 
     run_cli(tmp_path, "lint", traces=traces)
     run_cli(tmp_path, "query", "x", extra_env={"PATH": tmp_path.as_posix()}, traces=traces)

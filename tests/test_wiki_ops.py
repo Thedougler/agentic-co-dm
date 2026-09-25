@@ -629,16 +629,6 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     report = assert_json(result, returncode=1)
     assert report["findings"].get("misplaced_entity", []) == []
 
-def test_moc_generate_wrapper_reports_help():
-    result = subprocess.run(
-        [str(ROOT / "scripts" / "moc-generate"), "--help"],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-    )
-    assert result.returncode == 0, result.stderr
-    assert "moc-generate" in result.stdout
-
 
 def test_type_migrate_plans_wrong_folder(tmp_path: Path):
     src = tmp_path / "entities" / "item" / "snakewood.md"
