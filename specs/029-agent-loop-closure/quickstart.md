@@ -258,3 +258,22 @@ modified outside this feature and was not touched.
   model-generated checks are qualitative: they do not supply owner execution,
   tool-call, or token-count evidence. They therefore do not promote the
   missing paired trajectory tasks.
+
+## Luna baseline (feature 030 US3, SC-006, FR-016, FR-019)
+
+Recorded with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseline/iteration-1` at `luna-eval`'s default model and effort, one run each (`--config with_skill`). Every later SC-012 comparison reuses the same model and effort pair. Latency is from `timing.json`; tool calls, retries, duplicate actions, tokens, completion reason, model, and effort are from `metrics.json`; task outcome and semantic quality (the `quality`-assertion pass rate, `null` when the eval has none) are from `grading.json`.
+
+| Category | Eval record | Model / effort | Task outcome | Tool calls | Retries | Duplicate actions | Tokens (total) | Latency (s) | Completion | Semantic quality |
+|---|---|---|---|---|---|---|---|---|---|---|
+| owner completion | `faction-design:canonical-faction-owner-and-blocker` | | | | | | | | | |
+| specific blocking | `wiki-lint:progress-delta-and-stall-blocker` | | | | | | | | | |
+| scope preservation | `city-design:preserve-parent-objective` | | | | | | | | | |
+| read isolation | `wiki-context-pack:bounded-terminal-retrieval-blocker` | | | | | | | | | |
+| retrieval convergence | `wiki-query:owner-relative-retrieval-convergence` | | | | | | | | | |
+| child handoff | `faction-design:local-subtype-handoff` | | | | | | | | | |
+| parent resumption | `session-beats:parent-resume-requires-child-progress` | | | | | | | | | |
+| write finalization | `wiki-capture:capture-mode-progress-and-finalize-once` | | | | | | | | | |
+| recovery | `wiki-update:delta-noop-and-recovery-convergence` | | | | | | | | | |
+| child handoff + parent resumption | `place-design:bounded-child-return-and-parent-resume` | | | | | | | | | |
+
+`wiki health` from scratch (feature 030 V-08c: `wiki/_meta/identity-index.json` and `wiki/_meta/lint-cache.json` deleted, 837 pages), maintainer workstation 2026-09-24: finished in 72 648 ms with no harness timeout. Warm with two pages edited (V-08): 4201 ms.

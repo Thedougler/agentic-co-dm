@@ -504,8 +504,15 @@ def _query(args: argparse.Namespace, start: float) -> int:
     environment.pop("CI", None)
     command = ["qmd", "query", args.phrase, "-c", args.collection, "-n", str(args.count), "--format", "json"]
     proc = subprocess.run(command, cwd=ROOT, env=environment, capture_output=True, text=True)
+    mode, query_error = "query", None
     if proc.returncode:
-        code = _machine_error(proc.stderr.strip() or "qmd query failed", pretty=args.pretty)
+        # qmd query runs its local models (node-llama-cpp); where they cannot load, keyword search still answers
+        query_error = (proc.stderr.strip().splitlines() or ["qmd query failed"])[-1][:300]
+        mode = "search"
+        command = ["qmd", "search", args.phrase, "-c", args.collection, "-n", str(args.count), "--json"]
+        proc = subprocess.run(command, cwd=ROOT, env=environment, capture_output=True, text=True)
+    if proc.returncode:
+        code = _machine_error(proc.stderr.strip() or "qmd query and qmd search failed", pretty=args.pretty)
         append_command_record("query", max(0, elapsed_ms(start)), code, trace_path=_trace_path())
         return code
     try:
@@ -528,7 +535,10 @@ def _query(args: argparse.Namespace, start: float) -> int:
             "id": str(item.get("id") or item.get("docid") or item.get("source") or ""),
         })
 
-    result = {"status": "ok", "collection": args.collection, "hits": hits[: args.count], "counts": {"hits": len(hits[: args.count])}}
+    result = {"status": "ok", "collection": args.collection, "mode": mode, "hits": hits[: args.count],
+              "counts": {"hits": len(hits[: args.count])}}
+    if query_error:
+        result["query_error"] = query_error
     _progress("query", hits=len(result["hits"]), ms=elapsed_ms(start))
     return _finish("query", start, 0, result, pretty=args.pretty, renderer=render_query)
 
@@ -732,7 +742,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
 SUBCOMMANDS = [
     ("lint", "lint pages, a directory, or a kind:value scope; JSON worklist"),
     ("lint fix", "apply deterministic lint repairs (one correct output each); --dry-run plans"),
-    ("query", "search the wiki collection through qmd"),
+    ("query", "search the wiki collection through qmd (qmd query; qmd search if its local model fails)"),
     ("health", "facts: lint, remorph, layout, ledger, context load; next target"),
     ("mutate", "apply one typed semantic mutation; --dry-run plans"),
     ("repair", "apply a typed repair plan; --dry-run previews"),
