@@ -67,6 +67,9 @@ flexGrow=1
 When paperwork fails, Nigel becomes concerned rather than hostile. He explains the problem, offers the correct form, and refuses to bypass posted Crown prices or inspection requirements.
 ```
 ````
+### Voice
+
+Nigel speaks in careful, polite sentences and returns to the exact line or rule that needs correction. He uses “of course” to soften refusals, straightens the papers while he talks, and avoids discussing exceptions he cannot document. **Ask:** “Which line should I correct?” **Refusal:** “Of course I can help, but I cannot release an order with that omission.” **Under pressure:** “The rule is still the rule; let us fix the form.”
 
 ## Connections
 
