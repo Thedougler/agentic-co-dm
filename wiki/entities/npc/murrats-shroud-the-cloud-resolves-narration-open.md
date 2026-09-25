@@ -59,3 +59,6 @@ Read this when the apparent cloud is close enough for the drone to reach the dec
 
 Stop after the swarm resolves into wings. Its next action is not established by the source.
 Read this as the [[uncertainty]] closes distance and the dark mass resolves into wings. The source does not establish the swarm's next action.
+### Voice
+
+The swarm has no individual voice. Its communication is the layered drone described in the narration, a pressure that travels through the deck and into bone. It does not speak, bargain, or answer; treat the rising pitch as the only change in its posture before its next action is established.
