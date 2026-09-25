@@ -58,6 +58,9 @@ Serafina arrives because her precognitive pull brought her to a specific person 
 
 Serafina stops explaining or resisting the pull when it has chosen its next destination. She concedes that her readings are not infallible, but she does not let certainty become an order; the decision remains with the people who hear her.
 
+### Voice
+
+Serafina speaks gently and precisely, separating what the cards show from what a person chooses to do. She names the pull of precognition without claiming ownership of it, and leaves a pause before the decision. **Ask:** “Who brought you to this table?” **Refusal:** “I can read the direction; I cannot command your feet.” **Under pressure:** “The pull is certain. Its meaning is not.”
 ## Connections
 
 | Connection | Meaning |
