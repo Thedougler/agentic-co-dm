@@ -46,12 +46,11 @@ Adwe's mangrove channels rearrange themselves after every storm strong enough to
 | Controlled By | Ungoverned |
 | Known For | Channels that don't match the last chart after a storm |
 
-## Where
+The island sits among the Northern Midchain routes, with channels that can make a chart obsolete after one storm. The party can skip Adwe by taking the open-water route around it, but loses the herons' only reliable guidance through the mangroves.
 
-- North: [[central-strait|The Central Strait]]
-- East: [[barrow-ait|Barrow Ait]]
-- South: [[corrigans-rest|Corrigan's Rest]]
-- West: [[midchain-west|The Western Midchain]]
+## Who
+
+No settled inhabitants are named on Adwe. Herons watch the channel forks, crocodiles hold the deeper channels, and mosquito swarms rise from standing pools at dusk.
 
 ## What
 
@@ -61,3 +60,14 @@ Adwe's mangrove channels rearrange themselves after every storm strong enough to
 - Herons: stand motionless at the channel forks, reading water the mud won't show. A party that loses the one it's following loses Adwe's only reliable guide.
 - Crocodiles: hold the deeper channels and take a boat's wake as an opening. Most of the danger on Adwe's water comes from what a rocking hull can't see over the side.
 - Mosquito swarms: rise off the standing pools at dusk, thick enough to drive a camp back onto open water. The fever they leave behind outlasts the bites by a week.
+
+## Where
+
+- North: [[central-strait|The Central Strait]]
+- East: [[barrow-ait|Barrow Ait]]
+- South: [[corrigans-rest|Corrigan's Rest]]
+- West: [[midchain-west|The Western Midchain]]
+
+## Why
+
+A party comes to Adwe to cross the mangrove routes, use the herons as guides, gather what the island provides, or test whether a familiar chart still matches the channels. A party that stays must watch the storm-shifted water, because the island's routes are not stable.
