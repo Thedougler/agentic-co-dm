@@ -18,13 +18,15 @@ campaign: shattered-sea
 status: alive
 role: contact
 location: "[[fathomrush]]"
+faction: none
 visibility: dm
 summary: "Independent keeper of the Last Berth at Fathomrush, and of the only complete list of divers who never came back."
+invention: true
 provenance:
   extracted: 0.90
   inferred: 0.10
   ambiguous: 0.00
-tier: supporting
+  tier: supporting
 ---
 # Petera Ngata
 
@@ -36,18 +38,18 @@ flexGrow=2
 
 | **Role**   | Boardinghouse keeper |
 | ---------- | -------------------- |
-| **Nature** | Independent of both dive companies |
+| **Nature** | Independent keeper of the complete death list |
 | **Home**   | Last Berth, [[fathomrush]] |
-| **Wants**  | Keep the death list complete, and keep company law off her floor. |
+| **Wants**  | Keep the death list complete and keep company law off her floor |
 
-> **DM thesis:** She is the only honest count of who the shelf has taken.
+> **DM thesis:** Petera is the honest count of who the shelf has taken, and she will not let either company turn grief into property.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Petera Ngata
-> She keeps the Last Berth book in reach. No settled face is on file beyond that.
+> Petera keeps the Last Berth book in reach, her settled face giving away nothing before she decides whether a visitor is asking for the dead or for leverage.
 ```
 ````
 
@@ -59,7 +61,7 @@ flexGrow=1
 ===
 ### First meeting
 
-She is the landlady, not a company face. Ask for the ledger of divers who went down and did not come up. No sample line is on file.
+Petera meets the party as the Last Berth landlady, not as a company face. She points to the ledger of divers who went down and did not come up. **Sample line:** “Ask for a name, not a story.”
 ```
 
 ```col-md
@@ -67,18 +69,22 @@ flexGrow=1
 ===
 ### When posture changes
 
-Either company pressing her floor for the false log, or a name on the memorial wall that is not on her list, ends the welcome.
+Either company pressing her floor for the false log, or a name on the memorial wall that is not on her list, ends the welcome. She shares the complete death list but not the false log's secret without a reason to trust the party.
 ```
 ````
 
+### Voice
+
+Petera speaks in short, level sentences and names the dead before she discusses the companies that employed them. She uses “the list” to mean the complete ledger and avoids calling the false log a death record. **Ask:** “Whose name are you looking for?” **Refusal:** “That is a company's paper, not mine.” **Under pressure:** “You do not get to make the dead convenient.”
+
 ## Connections
 
-| Relationship | Meaning |
-| ------------ | ------- |
-| [[fathomrush]] | No mayor. She is the independent count between the two compounds. |
-| [[sunkline]] | Tessarine money. The false log sits under a loose floorboard at the Last Berth. She holds the complete death list, not that log. |
-| [[Voyvode]] | Crown money. Fresh memorial names are mostly their crews. Her ledger is clue two on which rig killed a diver. |
-| [[adriana-tarquine]] | [[sunkline]] chief engineer. Certificate and false log are her problem, not Peter's. |
+| Connection | Meaning |
+| ---------- | ------- |
+| [[fathomrush]] | No mayor; Petera is the independent count between the two compounds. |
+| [[sunkline]] | Tessarine money; its false log sits under a loose floorboard at the Last Berth. |
+| [[Voyvode]] | Crown money; fresh memorial names are mostly its crews. |
+| [[adriana-tarquine]] | [[sunkline]] chief engineer whose certificate and false log are her problem, not Petera's. |
 
 > [!secret] Last Berth floor
 > The false mid-shelf log is under a loose floorboard at the Last Berth. Petera keeps the complete death list. Those are not the same book.
