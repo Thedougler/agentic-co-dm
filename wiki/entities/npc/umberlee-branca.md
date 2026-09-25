@@ -73,6 +73,10 @@ Her priority changes when the [[pearl-of-souls]] is delivered; the source then m
 ```
 ````
 
+## Voice
+
+Branca speaks in clipped, formal instructions. She names the required offering first and refuses to discuss the commissioners until the [[pearl-of-souls]] is delivered. Sample line: “Bring me the pearl. We will talk then.”
+
 ## Connections
 
 | Connection | Meaning |
