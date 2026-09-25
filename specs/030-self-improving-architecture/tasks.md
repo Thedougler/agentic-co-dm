@@ -138,9 +138,9 @@ description: "Task list for feature 030: Self-Improving Architecture"
 **Independent Test**: Quickstart V-12
 
 - [X] T054 [US3] Select at least 10 existing owner eval records covering all nine US3 categories: owner completion, specific blocking, scope preservation, read isolation, retrieval convergence, child handoff, parent resumption, write finalization, and recovery. List category → `<skill>:<eval id>` in `specs/029-agent-loop-closure/quickstart.md`.
-- [ ] T055 [US3] Run each selected case with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseline/iteration-1` at `luna-eval`'s default model and effort (constitution XXVI). Confirm each run's `metrics.json` records `model` and `effort` and that all runs share one pair; SC-012 comparisons must reuse it (FR-019). On exit 3 or 5, rerun only the missing cases (T043).
-- [ ] T056 [US3] Record each case in `specs/029-agent-loop-closure/quickstart.md` with model, effort, task outcome, tool calls, retries, duplicate actions, tokens, latency, completion reason, and semantic quality. Latency comes from `timing.json`; tool calls, retries, tokens, model, and effort from `metrics.json`; task outcome and semantic quality (the `quality`-assertion pass rate, or `null`) from `grading.json` (FR-016, FR-019).
-- [ ] T057 [US3] Check off T003, T011, T018, T030, T037, T044, T046, T047, and T049 in `specs/029-agent-loop-closure/tasks.md`, each with a pointer to its evidence (FR-019, SC-006)
+- [X] T055 [US3] Run each selected case with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseline/iteration-1` at `luna-eval`'s default model and effort (constitution XXVI). Confirm each run's `metrics.json` records `model` and `effort` and that all runs share one pair; SC-012 comparisons must reuse it (FR-019). On exit 3 or 5, rerun only the missing cases (T043).
+- [X] T056 [US3] Record each case in `specs/029-agent-loop-closure/quickstart.md` with model, effort, task outcome, tool calls, retries, duplicate actions, tokens, latency, completion reason, and semantic quality. Latency comes from `timing.json`; tool calls, retries, tokens, model, and effort from `metrics.json`; task outcome and semantic quality (the `quality`-assertion pass rate, or `null`) from `grading.json` (FR-016, FR-019).
+- [X] T057 [US3] Check off T003, T011, T018, T030, T037, T044, T046, T047, and T049 in `specs/029-agent-loop-closure/tasks.md`, each with a pointer to its evidence (FR-019, SC-006)
 
 **Checkpoint**: A baseline exists for the SC-012 comparisons
 

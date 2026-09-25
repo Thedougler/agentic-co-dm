@@ -24,7 +24,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 - [X] T001 Link or create the accountable implementation issue and record its URL in `specs/029-agent-loop-closure/plan.md`
 - [X] T002 Define at least ten comparable baseline/replay case IDs, categories, success/stall variants, and weakest-sufficient executor assignments in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T003 Capture pre-change cold trajectory records for the cases defined by T002 in the existing named-owner `.agents/skills/*/evals/evals.json` files, recording outcome, observations, actions, turns, tool calls, retrieval attempts, duplicate equivalent actions, handoffs, validation passes, tokenizer-identified trajectory tokens, termination reason, hard gates, and semantic review
+- [X] T003 Capture pre-change cold trajectory records for the cases defined by T002 in the existing named-owner `.agents/skills/*/evals/evals.json` files, recording outcome, observations, actions, turns, tool calls, retrieval attempts, duplicate equivalent actions, handoffs, validation passes, tokenizer-identified trajectory tokens, termination reason, hard gates, and semantic review — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 ---
 
@@ -57,7 +57,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 ### Implementation for User Story 1
 
 - [X] T010 [US1] Reconcile T008 failures by tightening the common iteration, completion, equivalent-action, and blocker rules in `docs/agents/hybrid-sdd.md`
-- [ ] T011 [US1] Run the T008 cold cases with the weakest sufficient executor and record passing outcome plus owner, boundary, surviving observation, attempted paths, reason, and parent effect for every blocker in the same `.agents/skills/*/evals/evals.json` records
+- [X] T011 [US1] Run the T008 cold cases with the weakest sufficient executor and record passing outcome plus owner, boundary, surviving observation, attempted paths, reason, and parent effect for every blocker in the same `.agents/skills/*/evals/evals.json` records — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: The common loop independently converges or blocks with evidence.
 
@@ -80,7 +80,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 - [X] T015 [P] [US2] Preserve the selected path through lint observation, deterministic fix, semantic repair, and re-observation in `.agents/skills/wiki-lint/SKILL.md`
 - [X] T016 [P] [US2] Replace the legacy faction completion path with the canonical `wiki/entities/faction/` owner path in `.agents/skills/faction-design/SKILL.md`
 - [X] T017 [P] [US2] Remove the separate acceptance wait for user-said canon while retaining owner completion and filing guards in `.agents/skills/place-design/SKILL.md`
-- [ ] T018 [US2] Run quickstart V-001 and record the four passing coherence results in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T018 [US2] Run quickstart V-001 and record the four passing coherence results in `specs/029-agent-loop-closure/quickstart.md` — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: Loop guards target current authority and requested scope.
 
@@ -124,7 +124,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 
 - [X] T028 [P] [US4] Add evidence-sufficiency, unexplored-path, unchanged-candidate, and evidenced-gap termination rules to `.agents/skills/wiki-query/SKILL.md`
 - [X] T029 [P] [US4] Add evidence-budget completion, documented fallback, unchanged-candidate, and specific-blocker rules to `.agents/skills/wiki-context-pack/SKILL.md`
-- [ ] T030 [US4] Run quickstart V-006/V-007 and record passing retrieval convergence and read-isolation evidence in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T030 [US4] Run quickstart V-006/V-007 and record passing retrieval convergence and read-isolation evidence in `specs/029-agent-loop-closure/quickstart.md` — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: Read owners gather enough evidence and stop without mutation or repeated retrieval.
 
@@ -147,7 +147,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 - [X] T034 [P] [US5] Require typed-beat child evidence to change a dependency, artifact state, or completion evidence before parent resumption in `.agents/skills/session-beats/SKILL.md`
 - [X] T035 [P] [US5] Require bounded child evidence, preserve the place objective, and block unchanged seam re-entry in `.agents/skills/place-design/SKILL.md`
 - [X] T036 [P] [US5] Require each guide pass to satisfy its completion evidence before the next pass and stop missing-owner/path/section cases precisely in `.agents/skills/run-guide/SKILL.md`
-- [ ] T037 [US5] Run quickstart V-010/V-011/V-012 and record passing parent-resumption, dependency, context-reset, and blocker evidence in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T037 [US5] Run quickstart V-010/V-011/V-012 and record passing parent-resumption, dependency, context-reset, and blocker evidence in `specs/029-agent-loop-closure/quickstart.md` — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: Composed parents retain objectives and advance only on complete child evidence.
 
@@ -170,7 +170,7 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 - [X] T041 [P] [US6] Make source/destination progress and parent-owned exactly-once manifest/index/log/hot/QMD finalization explicit in `.agents/skills/wiki-ingest/SKILL.md`
 - [X] T042 [P] [US6] Make mode-relative progress and exactly-once tracking/finalization explicit without changing quick-capture ownership in `.agents/skills/wiki-capture/SKILL.md`
 - [X] T043 [P] [US6] Make delta/no-op termination, documented recovery, and exactly-once finalization explicit in `.agents/skills/wiki-update/SKILL.md`
-- [ ] T044 [US6] Run quickstart V-008/V-009/V-013 and record bounded progress, incomplete-child blocking, exactly-once finalization, and tool-recovery evidence in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T044 [US6] Run quickstart V-008/V-009/V-013 and record bounded progress, incomplete-child blocking, exactly-once finalization, and tool-recovery evidence in `specs/029-agent-loop-closure/quickstart.md` — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: Write parents account for every bounded destination and finalize once.
 
@@ -185,10 +185,10 @@ description: "Dependency-ordered implementation tasks for agent loop closure"
 ### Behavioral Tests for User Story 7
 
 - [X] T045 [US7] Add paired grading assertions for outcome, invariant compliance, alternative valid strategies, hard gates, and semantic non-inferiority to `.agents/skills/skill-creator/evals/evals.json`
-- [ ] T046 [US7] Replay the T002 case matrix with the weakest sufficient executor and store comparable post-change trajectory evidence beside each baseline in the existing named-owner `.agents/skills/*/evals/evals.json` files
-- [ ] T047 [US7] Perform blind paired fixed-rubric review of playability, specificity, continuity, player agency, and DM usefulness and record results in the matching `.agents/skills/*/evals/evals.json` records
+- [X] T046 [US7] Replay the T002 case matrix with the weakest sufficient executor and store comparable post-change trajectory evidence beside each baseline in the existing named-owner `.agents/skills/*/evals/evals.json` files — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
+- [X] T047 [US7] Perform blind paired fixed-rubric review of playability, specificity, continuity, player agency, and DM usefulness and record results in the matching `.agents/skills/*/evals/evals.json` records — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 - [X] T048 [US7] Count trajectory tokens with `scripts/token-count.py`, record tokenizer/model compatibility, and record either a qualified five-percent median improvement claim or explicitly no token-improvement claim in `specs/029-agent-loop-closure/quickstart.md`
-- [ ] T049 [US7] Record promotion results for at least ten pairs, including zero duplicate equivalent actions, lost objectives, duplicate finalizations, read mutations, and unspecific intentional stalls, in `specs/029-agent-loop-closure/quickstart.md`
+- [X] T049 [US7] Record promotion results for at least ten pairs, including zero duplicate equivalent actions, lost objectives, duplicate finalizations, read mutations, and unspecific intentional stalls, in `specs/029-agent-loop-closure/quickstart.md` — evidence: `specs/029-agent-loop-closure/quickstart.md` § Luna baseline (feature 030 US3)
 
 **Checkpoint**: Promotion is backed by comparable trajectory and semantic-quality evidence.
 

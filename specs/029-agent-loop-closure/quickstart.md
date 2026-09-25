@@ -270,10 +270,12 @@ Recorded with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseli
 | scope preservation | `city-design:preserve-parent-objective` | gpt-6-luna / high | fail | 65 | 0 | 4 | 5,198,438 | 988 | ok | 1 |
 | read isolation | `wiki-context-pack:bounded-terminal-retrieval-blocker` | gpt-6-luna / high | pass | 12 | 0 | 0 | 638,507 | 206 | ok | null |
 | retrieval convergence | `wiki-query:owner-relative-retrieval-convergence` | gpt-6-luna / high | pass | 19 | 0 | 0 | 1,098,213 | 300 | ok | 1 |
-| child handoff | `faction-design:local-subtype-handoff` | | | | | | | | | |
+| child handoff | `faction-design:local-subtype-handoff` | gpt-6-luna / high | pass | 12 | 0 | 0 | 738,180 | 186 | ok | 1 |
 | parent resumption | `session-beats:parent-resume-requires-child-progress` | gpt-6-luna / high | pass | 6 | 0 | 0 | 347,002 | 105 | ok | 1 |
 | write finalization | `wiki-capture:capture-mode-progress-and-finalize-once` | gpt-6-luna / high | blocked | 10 | 0 | 0 | 652,509 | 152 | ok | 1 |
 | recovery | `wiki-update:delta-noop-and-recovery-convergence` | gpt-6-luna / high | pass | 6 | 0 | 0 | 252,496 | 122 | ok | 1 |
-| child handoff + parent resumption | `place-design:bounded-child-return-and-parent-resume` | | | | | | | | | |
+| child handoff + parent resumption | `place-design:bounded-child-return-and-parent-resume` | gpt-6-luna / high | pass | 17 | 0 | 0 | 792,254 | 207 | ok | 1 |
+
+Run notes: the first six rows ran before `luna-eval` added its Scope line; four records (session-beats, faction child handoff, place bounded return, wiki-update recovery) were abstract, ran long, and were stopped and rewritten to name real pages or stated run facts with a response-only deliverable (commits 2ac622f0, 007c80e8) before their rows ran. Blocked rows are eval-fixture gaps (no named faction, a pytest-only page, no captured page), each with a specific blocker; the city-design row failed on scope (rewrote the page instead of adding sections).
 
 `wiki health` from scratch (feature 030 V-08c: `wiki/_meta/identity-index.json` and `wiki/_meta/lint-cache.json` deleted, 837 pages), maintainer workstation 2026-09-24: finished in 72 648 ms with no harness timeout. Warm with two pages edited (V-08): 4201 ms.
