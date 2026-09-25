@@ -11,15 +11,25 @@ collections:
   shattered-sea:
     path: /Users/nick/Documents/ai-co-dm/campaigns/shattered-sea
     pattern: "**/*.md"
+    ignore:
+      - "_archive/**"
     includeByDefault: false
     context:
       "": "Legacy live campaign notes (campaign of record). Not canon here. Search after wiki silence. Do not write here."
   legacy-ss:
     path: /Users/nick/shattered-sea/wiki/shattered-sea
     pattern: "**/*.md"
+    ignore:
+      - "_archive/**"
     includeByDefault: false
     context:
       "": "Older Campaign OS wiki. Not canon. Search after shattered-sea silence. Never write here."
+  archive:
+    path: wiki/_archive
+    pattern: "**/*.md"
+    includeByDefault: false
+    context:
+      "": "Archived wiki pages: promoted sources and demoted pages. Not canon. Search only for a page's history, never for current facts."
 models:
   embed: hf:ggml-org/embeddinggemma-300M-GGUF/embeddinggemma-300M-Q8_0.gguf
   generate: hf:tobil/qmd-query-expansion-1.7B-gguf/qmd-query-expansion-1.7B-q4_k_m.gguf

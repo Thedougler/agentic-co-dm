@@ -344,7 +344,7 @@ When `multi-get` rejects an identifier, do not retry with a different format —
 
 **`qmd skill show` may time out** (~30s). If it does, skip it and use `qmd query` / `qmd get` directly — the bootstrap skill in `.agents/skills/qmd/SKILL.md` is sufficient.
 
-Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
+Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent. `-c archive` holds `wiki/_archive/` (not canon, out of default search): use it only for a page's history.
 
 Wiki hit = current canon. Legacy hit = campaign-of-record context. File user-said canon immediately. Wiki vs legacy disagreement → cite wiki.
 

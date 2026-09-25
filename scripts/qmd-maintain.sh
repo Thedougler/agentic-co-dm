@@ -98,6 +98,7 @@ ensure_collection() {
 ensure_collection wiki "${ROOT}/wiki"
 ensure_collection shattered-sea "/Users/nick/Documents/ai-co-dm/campaigns/shattered-sea"
 ensure_collection legacy-ss "/Users/nick/shattered-sea/wiki/shattered-sea"
+ensure_collection archive "${ROOT}/wiki/_archive"
 
 qmd_ok update
 qmd_ok status
