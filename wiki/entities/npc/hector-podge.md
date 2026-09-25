@@ -67,6 +67,9 @@ flexGrow=1
 Hector's posture changes when a direct question threatens the tavern's hospitality or when Crown officers press him for a name. He redirects first; the source establishes no personal limit, leverage beyond the tavern, or exact signal that makes him answer.
 ```
 ````
+### Voice
+
+Hector speaks as if every answer is hospitality: he offers wine, forms, or harbour talk before he offers a name. His deflections are calm and practiced, never hurried. **Ask:** “Which table is free?” **Refusal:** “Wine, forms, or the Strait? Those are the subjects that keep a harbour civil.” **Under pressure:** “A tavern can remember a face without repeating a name.”
 
 ## Connections
 
