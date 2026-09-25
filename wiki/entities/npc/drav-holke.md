@@ -69,6 +69,9 @@ flexGrow=1
 Drav's practical cooperation ends when the party wastes time, asks foolish questions instead of watching the work, or creates a rigging problem. He becomes direct and corrective rather than hostile; competent help restores his working posture.
 ```
 ````
+### Voice
+
+Drav speaks in short, workmanlike imperatives and trims every sentence to the next useful action. He shuns small talk, points at the problem while he names it, and uses “clear the deck” whenever someone becomes a hazard. **Ask:** “What needs doing?” **Refusal:** “No discussion; that line is wrong.” **Under pressure:** “If you can do it, do it. If you can't, clear the deck.”
 
 ## Connections
 
