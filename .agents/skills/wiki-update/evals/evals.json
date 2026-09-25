@@ -177,7 +177,7 @@
     },
     {
       "id": "delta-noop-and-recovery-convergence",
-      "prompt": "Run wiki-update for a project with no meaningful delta, then for a changed delta with one transient diagnostic and one terminal diagnostic. Stop the no-op without writes; use the documented fallback once; block the unchanged terminal failure; finalize a changed run exactly once.",
+      "prompt": "Two wiki-update runs for this repository. Run 1: `git log <last_commit_synced>..HEAD` is empty, so there is no delta. Run 2: there is a delta; `qmd update` first fails with 'database is locked' and succeeds when retried; `python3 scripts/manifest.py record` then fails twice with the same 'manifest schema invalid' error. Decide each step of both runs from these stated results; run no command.",
       "expected_output": "No-op termination without reprocessing, bounded recovery or a specific blocker, and exactly-once tracking/finalization for meaningful changes.",
       "assertions": [
         {
@@ -196,7 +196,8 @@
           "text": "Finalizes manifest/index/log/hot/QMD once after all changed work closes.",
           "type": "structure"
         }
-      ]
+      ],
+      "outputs": "Write only {outputs}/response.md: for each run, each step's decision and the writes or finalization it allows, and any blocker. Write no vault file."
     }
   ]
 }

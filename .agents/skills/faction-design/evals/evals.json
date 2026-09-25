@@ -224,7 +224,7 @@
     },
     {
       "id": "local-subtype-handoff",
-      "prompt": "While designing the named Ember Cartel, the brief needs one local dock city posture. Hand off only that city seam, then finish the faction page without redesigning the campaign.",
+      "prompt": "While improving the Dravosi Crown faction page, its Assets need one local posture: how the Crown holds Calveno's harbour. Hand off only that city seam to city-design, then say how its return fits the faction page.",
       "expected_output": "Sends a bounded city request with the faction owner, objective, evidence, and requested section; incorporates returned city-section evidence while keeping faction-design responsible for the faction page.",
       "assertions": [
         {
@@ -239,7 +239,12 @@
           "text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.",
           "type": "structure"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/faction/dravosi-crown.md",
+        "wiki/entities/place/calven-and-calveno.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: the bounded child request, and how the returned section fits the faction page. Write no wiki page."
     },
     {
       "id": "preserve-parent-objective",

@@ -250,7 +250,7 @@
     },
     {
       "id": "bounded-child-return-and-parent-resume",
-      "prompt": "Improve High Eyrie while a named faction seam is needed for the Who section. Send only that seam with the place objective and evidence, wait for the faction owner return, then resume the place template without redesigning the site.",
+      "prompt": "Improve High Eyrie's Who section, which needs the Sentinels of the Eyrie's current posture at the site. Send only that seam to faction-design. Its return came back without the Sentinels' current want or who leads them at High Eyrie. Decide whether the place work resumes.",
       "expected_output": "Keeps place-design responsible for High Eyrie, sends a bounded faction packet, and resumes only after the returned section and completion evidence satisfy the child owner contract.",
       "assertions": [
         {
@@ -269,7 +269,12 @@
           "text": "Leaves dependent place work open and reports a specific blocker when the owner return is incomplete.",
           "type": "process"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/place/high-eyrie.md",
+        "wiki/entities/faction/sentinels-of-the-eyrie.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: the bounded child request, the resume or block decision, and its evidence. Write no wiki page."
     },
     {
       "id": "user-said-canon-immediate-and-bounded-return",
