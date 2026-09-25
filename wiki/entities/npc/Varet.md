@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -21,7 +19,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Varet
@@ -78,5 +75,5 @@ Varet speaks in exact contract terms and avoids letting courtesy blur an obligat
 | Connection | Meaning |
 | ---------- | ------- |
 | [[five-blades]] | Mercenary company Varet speaks contracts for. |
-| [[the-flat-water|The Flat Water]] | Kalowe venue where she brokers contracts. |
+| [[the-flat-water\|The Flat Water]] | Kalowe venue where she brokers contracts. |
 | [[Ket]] | Varet recognizes him as a fellow [[Murrat]] native if the party reaches Murrat. |

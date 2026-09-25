@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +19,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Vrtek
@@ -76,4 +73,4 @@ He becomes wary only when someone tries to take his pockets or rushes him. A cal
 | [[calders-tooth-and-port-tidefall]] | Port he is passing through between ships. |
 | [[Anchor and Line]] | Dockside establishment where he sorts his pockets. |
 | [[detto-kalash]] | Unwitting source of the buried-cache note. |
-| [[perrin-black-jaw|Perrin]] | Can learn from Sosse that Vrtek carries something official that does not belong to him. |
+| [[perrin-black-jaw\|Perrin]] | Can learn from Sosse that Vrtek carries something official that does not belong to him. |

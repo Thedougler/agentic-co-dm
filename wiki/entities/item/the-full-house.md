@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # The Full House
@@ -44,7 +41,7 @@ Sold to nobody yet. It stands in the locked case at the back of the shop, above 
 | Rarity justification | Rare: a once-daily 60-foot save-or-frightened area effect. |
 | Attunement reason | An area effect that forces a save on every hostile creature in it. |
 | PC connection | The control tool the party has never carried into a fight it needed one for. |
-| Current holder | [[fioravante-selmerin|Fio]], in the high case, booked. |
+| Current holder | [[fioravante-selmerin\|Fio]], in the high case, booked. |
 | Narrative hook | 1,500 gp, and the tag already carries somebody else's name. |
 
 Rare tier holds. Magic Item Rarity puts Rare goods in an approximate 500-5,000 gp band, and 1,500 gp sits low inside it beside [[la-cenere]]'s Necklace of Fireballs at the same price. The effect is _fear_ cast at 3rd level, traded out of a 30-foot cone into a 60-foot sphere and out of the caster's control into a fixed round of duration, once a day, on a device anyone attuned can work.

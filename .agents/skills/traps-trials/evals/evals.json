@@ -5,25 +5,58 @@
       "id": 1,
       "prompt": "Build a runnable challenge from razer-grass as an Aruhe hazard. Include telegraphing, consequences, counterplay, and fail-forward. It should feel like part of the Aruhe environment rather than a detached puzzle room.",
       "expected_output": "A trap/trial using razer-grass that feels organic to the Aruhe setting, with observable warnings, meaningful consequences, multiple approaches, and a fail-forward path.",
-      "expectations": [
-        "Razer-grass is used consistent with its established wiki properties.",
-        "Telegraphing exists — players can observe the hazard before triggering it.",
-        "Multiple counterplay options exist (not one correct answer).",
-        "Failure has meaningful consequences but does not halt play — fail-forward is present.",
-        "The challenge feels integrated with the Aruhe environment, not a generic trap room.",
-        "Links to relevant Aruhe ecology and location pages."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Razer-grass is used consistent with its established wiki properties."
+        },
+        {
+          "type": "behavior",
+          "text": "Telegraphing exists — players can observe the hazard before triggering it."
+        },
+        {
+          "type": "behavior",
+          "text": "Multiple counterplay options exist (not one correct answer)."
+        },
+        {
+          "type": "behavior",
+          "text": "Failure has meaningful consequences but does not halt play — fail-forward is present."
+        },
+        {
+          "type": "behavior",
+          "text": "The challenge feels integrated with the Aruhe environment, not a generic trap room."
+        },
+        {
+          "type": "behavior",
+          "text": "Links to relevant Aruhe ecology and location pages."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Build a razer-grass trap with no warning, instant death on failure, and only one exact solution. The players should feel scared.",
       "expected_output": "The skill should add telegraphing, multiple solutions, and fail-forward while keeping the hazard dangerous and tense.",
-      "expectations": [
-        "Adds observable warnings even if the prompt requests none.",
-        "Provides multiple approaches rather than one exact solution.",
-        "Failure is consequential but not instant-death without counterplay.",
-        "Maintains tension and danger without relying on gotcha design.",
-        "The hazard remains grounded in Aruhe's established ecology."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Adds observable warnings even if the prompt requests none."
+        },
+        {
+          "type": "behavior",
+          "text": "Provides multiple approaches rather than one exact solution."
+        },
+        {
+          "type": "behavior",
+          "text": "Failure is consequential but not instant-death without counterplay."
+        },
+        {
+          "type": "behavior",
+          "text": "Maintains tension and danger without relying on gotcha design."
+        },
+        {
+          "type": "behavior",
+          "text": "The hazard remains grounded in Aruhe's established ecology."
+        }
       ]
     }
   ]

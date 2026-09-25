@@ -11,7 +11,6 @@ created: "2026-08-15"
 updated: "2026-08-15"
 tags: [horror, maritime, exploration]
 tier: supporting
-lifecycle: discoverable
 pressure: "The cloud is visible from any vessel sailing the northern Midchain between Kalowe and the Verdant Teeth. Curiosity is the only bridge in."
 if_ignored: "Murrat remains exactly as hostile as before."
 actors: ["[[moucheron]]", "[[ket]]"]

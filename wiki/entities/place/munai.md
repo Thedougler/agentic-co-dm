@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -45,7 +42,7 @@ A shipwrecked botanist planted Munai's orchard long ago. It has run wild ever si
 | Field | Detail |
 |---|---|
 | Type | Feral orchard island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Ungoverned |
 | Known For | A feral orchard of unnervingly effective poisons and cures |
 

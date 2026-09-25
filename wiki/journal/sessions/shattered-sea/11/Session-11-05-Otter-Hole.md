@@ -8,8 +8,6 @@ created: 2026-09-13
 updated: 2026-09-13
 type: session-prep
 kind: cliffhanger
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 summary: Cliffhanger rescue at Slack Basin. Two otters have taken a game of tag too far with a separated survivor; joining the game can pull them off him until they tire or get hungry.
 campaign: shattered-sea

@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Chain-Brake Winch
@@ -41,7 +38,7 @@ _Gear (Winch), Common._
 | One thing | Every foot of chain the drum takes in stays in, so a hauled weight never loses ground. |
 | Rarity justification | Non-magical shipwright's machinery, priced above the [[reinforced-specimen-cage]] (60 gp) for the ironwork in it and well under the Rope of Climbing (90 gp) in what it actually does. It grants no bonus to any roll. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[perrin-black-jaw|Perrin]] saves at Strength -1 with disadvantage on top, so anything that grabs him takes him wherever it wants and the crew has to win the ground back another way. |
+| PC connection | [[perrin-black-jaw\|Perrin]] saves at Strength -1 with disadvantage on top, so anything that grabs him takes him wherever it wants and the crew has to win the ground back another way. |
 | Current holder | [[kettil-ormsson]], bolted to the counter edge at [[Ormsson's Fittings]] for customers to try. |
 | Narrative hook | A [[Sawek]] drags what it grabs toward its hole at twenty feet a round, and nobody has out-swum one yet. |
 

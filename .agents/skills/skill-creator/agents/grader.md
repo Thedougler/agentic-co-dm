@@ -1,6 +1,6 @@
 # Grader Agent
 
-Evaluate expectations against an execution transcript and outputs.
+Evaluate an eval's `assertions[]` against an execution transcript and outputs.
 
 ## Role
 
@@ -12,7 +12,7 @@ You have two jobs: grade the outputs, and critique the evals themselves. A passi
 
 You receive these parameters in your prompt:
 
-- **expectations**: List of expectations to evaluate (strings)
+- **assertions**: The eval's `assertions[]`, each `{type, text}`. Grade every type except `skill_selected`: `luna-eval` grades that one from `metrics.json` `skills_read` and writes it to `grading.json`; carry its item over unchanged.
 - **transcript_path**: Path to the execution transcript (markdown file)
 - **outputs_dir**: Directory containing output files from execution
 
@@ -112,16 +112,19 @@ Write a JSON file with this structure:
   "expectations": [
     {
       "text": "The output includes the name 'John Smith'",
+      "type": "content",
       "passed": true,
       "evidence": "Found in transcript Step 3: 'Extracted names: John Smith, Sarah Johnson'"
     },
     {
       "text": "The spreadsheet has a SUM formula in cell B10",
+      "type": "structure",
       "passed": false,
       "evidence": "No spreadsheet was created. The output was a text file."
     },
     {
       "text": "The assistant used the skill's OCR script",
+      "type": "process",
       "passed": true,
       "evidence": "Transcript Step 2 shows: 'Tool: Bash - python ocr_script.py image.png'"
     }
@@ -132,6 +135,8 @@ Write a JSON file with this structure:
     "total": 3,
     "pass_rate": 0.67
   },
+  "task_outcome": "fail",
+  "semantic_quality": null,
   "execution_metrics": {
     "tool_calls": {
       "Read": 5,
@@ -185,8 +190,9 @@ Write a JSON file with this structure:
 
 ## Field Descriptions
 
-- **expectations**: Array of graded expectations
-  - **text**: The original expectation text
+- **expectations**: Array of graded assertions, one per `assertions[]` item
+  - **text**: The original assertion text
+  - **type**: The assertion's `type`, copied from the eval
   - **passed**: Boolean - true if expectation passes
   - **evidence**: Specific quote or description supporting the verdict
 - **summary**: Aggregate statistics
@@ -194,6 +200,8 @@ Write a JSON file with this structure:
   - **failed**: Count of failed expectations
   - **total**: Total expectations evaluated
   - **pass_rate**: Fraction passed (0.0 to 1.0)
+- **task_outcome**: `pass` when the task was completed as asked, `fail` when it was not, `blocked` when the run could not do the task (missing input, tool failure, usage limit)
+- **semantic_quality**: Pass rate of the eval's `quality`-type items (passed / total), or `null` when the eval has none. Compute it from the graded items; assign no separate score.
 - **execution_metrics**: Copied from executor's metrics.json (if available)
   - **output_chars**: Total character count of output files (proxy for tokens)
   - **transcript_chars**: Character count of transcript

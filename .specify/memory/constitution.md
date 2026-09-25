@@ -1,17 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: 4.0.0 -> 5.0.0
-- Modified principles: Product Invariant (names *table quality* once), VII (structure belongs to
-  templates), IX (uses *table quality*), X (canon proposals; the DM picks winners), XI (decide the
-  world, leave the party's choices open), XII (cast before minting; proposals fill silence and
-  contradictions), XVI (templates are a layer), XVII (defers canon filing to X), XXVI (weakest
-  sufficient model and effort; lean evals composed from real Wiki content)
+- Version change: 7.0.0 -> 7.1.0 (MINOR: VI gains a named authority for command design)
+- Modified principles:
+  - VI. Software and Instructions Are Agent-Shaped: adds `cli-for-agents` as the authority on
+    command design, loaded before creating or changing any repository command, beside
+    `writing-for-agents` for agent-facing prose (Nick, 2026-09-24).
 - Added sections: none
-- Removed sections: inline historical Sync Impact Reports (git holds amendment history)
-- Lower layers updated: AGENTS.md "Canon and done-summary"; docs/agents/work.md; CONTEXT.md
-  "Canon proposal"; docs/agents/table-ready.md "Cast before minting" and "Fill the silence"
-- Follow-up TODOs: remove finding tiers from lint tooling, specs, docs, and skills that still grade
-  findings into kinds (carried from 4.0.0; see XXI)
+- Removed sections: none (the 7.0.0 Sync Impact Report is replaced; git holds amendment history)
+- Templates requiring updates: none (plan, spec, tasks, and checklist templates read the
+  constitution at runtime; no template names command-design rules)
+- Follow-up: AGENTS.md Skill Routing and Helpers point at `cli-for-agents`.
 -->
 
 # Agentic Co-DM Constitution
@@ -66,10 +64,12 @@ of Truth."
 
 Scripts, tools, and software MUST be agent-operable: arguments in, text/JSON out, errors on
 stderr, exit status. Agent-facing documents MUST state positive instructions, completion criteria,
-and named failure modes. `writing-for-agents` is the authority on agent-facing prose structure.
+and named failure modes. `writing-for-agents` is the authority on agent-facing prose structure;
+`cli-for-agents` is the authority on command design, and agents load it before creating or
+changing any repository command (flags, `--help`, errors, stdin/output, dry-run, idempotency).
 
-Agent-shaped software that inhibits wiki quality or slows operations is a defect — log it, fix or
-remove the cause.
+Agent-shaped software that inhibits wiki quality or slows operations is a defect — fix or remove
+the cause (XIII). Record it in `errors.md` only when it stays unresolved.
 
 ### VII. Creative Judgment Is Protected
 
@@ -93,14 +93,18 @@ and duplicate instructions are waste.
 
 ### X. DM Owns Canon
 
-If the user said it, it is canon. If the user said it more recently, that is more canon. If a
-transcript says it, after ASR issues are fixed, it is canon. DM-placed ingest files are canon as
-long as they do not contradict those three.
+Canon is decided by Nick's rule, in precedence order:
 
-The Co-DM files what those lines make canon (`user_said`, `more_recent_user_said`,
-`corrected_transcript`, `dm_placed_ingest`). Everything else it writes is a **canon proposal**
-(XII): marked, listed for the DM, and canon only once the DM accepts it. The DM picks the winner
-among contradictions; the Co-DM proposes a reading and names the conflicting sources.
+> Something is canon if the DM says so > something is canon if it's present in the wiki in
+> multiple places > something is canon if it doesn't conflict with the wiki.
+
+That is the entire system: there is no page lifecycle, promotion, or confidence gate. The rule's
+single owner is `.agents/skills/llm-wiki/SKILL.md`; other lower layers link to it and MUST NOT
+restate it. Agents apply the rule; code MUST NOT assign, store, or gate on canon, and MAY only
+report the facts that feed it (declared conflicts and single-source facts). A DM ruling is
+recorded where the repo already records it (session log, recap `## Wiki facts`, or the DM's chat
+statement filed on the owner page) and cited in that page's `sources:`. Where wiki sources
+conflict, the agent names the conflicting sources; `retcon` handles corrections.
 
 The system preserves boundaries between DM truth, player-visible information, and unrevealed
 information. A presentation surface MUST NOT expose information outside its intended boundary.
@@ -117,11 +121,11 @@ failure, and unexpected approaches, and no predetermined player outcome is the o
 
 ### XII. Evidence Precedes Invention
 
-Agents MUST retrieve authoritative knowledge before inventing. Current accepted canon outranks
-legacy, proposed, and external context. Existing content is cast before new content is minted: a
+Agents MUST retrieve authoritative knowledge before inventing. Current canon (X) outranks
+legacy and external context. Existing content is cast before new content is minted: a
 page already in play, or an unrevealed page that fits the role, fills it first. Where canon is
-silent or contradicts itself on something the Work needs, agents decide it as a canon proposal
-(X), distinguishable from retrieved fact; a gap left open where the DM needs an answer is a
+silent on something the Work needs, agents decide it under X; where it contradicts itself, agents
+name the conflicting sources under X. A gap left open where the DM needs an answer is a
 defect. Evidence and citations MUST never be fabricated.
 
 ### XIII. Self-Improvement Is Evidence-Driven
@@ -129,9 +133,15 @@ defect. Evidence and citations MUST never be fabricated.
 Improvements MUST be demonstrated, not asserted — addressing observed failures or measured waste,
 comparing equivalent work. Uncertain changes remain reversible until evidence supports promotion.
 
-Self-reporting SOP: when an agent experiences friction on any agent-facing surface, it MUST record
-the issue in `errors.md` before continuing. Every recorded error MUST be diagnosed by a different
-agent and remediated at its authoritative source; continued progress is not resolution.
+Friction rule: an agent that meets friction on any agent-facing surface MUST identify the cause,
+fix the authoritative source, verify the fix, and continue the original task. Chat
+acknowledgement or ledger text alone is not resolution.
+
+`errors.md` MUST contain only reusable, unresolved defects. A friction the agent fixes and
+verifies in the same task MUST NOT create an entry. A defect that cannot be fixed in the current
+task, including one whose source is outside the repository, is recorded once; a failure whose
+source and cause match an open entry adds an occurrence to that entry rather than a new one. A
+verified fix MUST drain its entry in the same change that lands the fix.
 
 ### XIV. The Simplest Adequate Tool
 
@@ -162,7 +172,7 @@ MUST NOT restate shared behavior.
 
 ### XVII. The Wiki Is Additive and Self-Sealing
 
-The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land as traceable additive operations with provenance. Agents MUST NOT overwrite history or silently merge competing facts. Canon files immediately under principle X; canon proposals stay marked until the DM accepts them.
+The Wiki is the single compiled, citable knowledge layer. Raw evidence is immutable. Changes land as traceable additive operations with provenance. Agents MUST NOT overwrite history or silently merge competing facts. Canon is decided under principle X.
 Incompatible records MUST be quarantined with an observable error.
 
 Safe deterministic maintenance repairs structural drift without inventing lore or changing
@@ -178,7 +188,9 @@ immediately. MUST NOT finish while an actionable step remains unchecked.
 
 ### XIX. User Corrections Become Durable Source Fixes
 
-Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki corrections update the page durably under principle X. Every error-identifying correction MUST be recorded in the error ledger and, when recurring, fixed at the producing skill/template/instruction.
+Corrections MUST be applied at the authoritative source, not merely acknowledged in chat. Wiki corrections update the page durably under principle X. Every error-identifying correction MUST be fixed and verified at the producing
+skill/template/instruction; it is recorded in `errors.md` only when that fix cannot land in the
+current task (XIII).
 
 `==text==` in production prose is a user-marked quality error. Fix the language; removing only
 the marker is non-compliant. Correct at the applicable skill/instruction level.
@@ -215,7 +227,9 @@ evidence.
 ### XXIV. Synchronized Content Systems
 
 The three systems — compiled Wiki, authoring guidance (templates/skills), and validation rules
-(Vale) — stay synchronized. Changes to one MUST update relevant counterparts in the same change.
+(`wiki lint` Python checks, and Vale with the repo-local `Deprecated` style and the `CoDM`
+vocabulary) — stay synchronized. Changes to one MUST update relevant counterparts in the same
+change.
 Agents proactively maintain all three using observed failures, corrections, and evidence.
 
 ### XXV. Carve-Outs Are Retrospective
@@ -265,4 +279,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 5.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-23
+**Version**: 7.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24

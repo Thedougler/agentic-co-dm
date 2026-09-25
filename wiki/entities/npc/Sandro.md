@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13T21:40:00Z
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +19,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 # Sandro
@@ -74,6 +71,6 @@ He becomes guarded when anyone pressures him to trust an untested object, route,
 | Connection | Meaning |
 | --- | --- |
 | [[Nino]] | Swam ashore with Sandro onto [[Aruhe]]; Sandro has not told her what happened to Tomo. |
-| [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe|La Finestra]]. |
+| [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe\|La Finestra]]. |
 | [[Grung]] | His captors on the raid; two were already dead on the beach after the wreck, and Sandro has not told Nino what killed them. |
 | [[Vethka]] | Wrecked fleet ship where Sandro and Nino shelter after it sailed for [[Karath]] and was wrecked on Aruhe. |

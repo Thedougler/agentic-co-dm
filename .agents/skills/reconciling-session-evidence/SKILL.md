@@ -14,7 +14,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 `session-transcript-ingest` owns capture, raw files, manifest, transcript indexing, and initial
 filing. Load this skill for interpretation after ingest. Agent/chat history is not campaign-play
-evidence; route it to the history-ingest procedure. If several page kinds or runtime components
+evidence; route it to `wiki-agent`. If several page kinds or runtime components
 are affected, load `decomposing-campaign-content` after the claim ledger exists.
 
 ## Workflow

@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -23,7 +21,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Bala Tane
@@ -77,4 +74,4 @@ She becomes immovable when someone disputes a ruling, tries to bypass entry, or 
 | ---------- | ------- |
 | [[The Mud Pits]] | The fighting pit she has run for fifteen years; she controls entry, matchups, betting runners, and bout endings. |
 | [[Kalowe]] | Her home island and the setting for the pit. |
-| [[the-kessen|The Kessen]] | The pit is connected through Vort Kessen's retirement there, but is not part of that league. |
+| [[the-kessen\|The Kessen]] | The pit is connected through Vort Kessen's retirement there, but is not part of that league. |

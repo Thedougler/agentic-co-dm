@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Bilge Lamp
@@ -41,7 +38,7 @@ _Gear (Lamp), Common._
 | One thing | It keeps burning underwater and through any knock a fight can give it. |
 | Rarity justification | Non-magical gear, a step above the Hooded Lantern (5 gp) and priced with the [[reinforced-specimen-cage]] (60 gp). It sheds less light than Light and grants no bonus to any roll. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[delmar-fisk|Delmar]] does the searching, and six weeks of debris on the floor of a [[Sawek]]'s blue hole gives up nothing in the dark. |
+| PC connection | [[delmar-fisk\|Delmar]] does the searching, and six weeks of debris on the floor of a [[Sawek]]'s blue hole gives up nothing in the dark. |
 | Current holder | [[kettil-ormsson]] keeps one lit in a bucket on the counter at [[Ormsson's Fittings]] and sells the rest off the shelf behind him. |
 | Narrative hook | The inter-island channel closes after dark, and everything worth finding down there sits twenty feet under it. |
 

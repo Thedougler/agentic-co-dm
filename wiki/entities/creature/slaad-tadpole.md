@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: creature
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 region: ""
 role: ""
@@ -81,9 +78,9 @@ Otar's own transformation stalled between red and blue and never finished — hi
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
-| Hit a cluster with an AoE (Thunder Wave, fire, etc.) | Several tadpoles are grouped together | Most drop outright at 10 HP each, but one can shrug it off on a Constitution save and stay put | The party's area damage cleared a cluster from [[otar-the-foul|Otar]]'s brood in Session 07 |
-| Finish a downed tadpole before it acts again | It's dropped to 0 HP but still on its feet near an ally | Denies its opportunity attack outright — a cheap action against a swarm this weak | Same Session 07 fight against [[otar-the-foul|Otar]] |
-| Examine a fresh bite closely (Medicine or Nature) | A party member or ally was bitten this scene | Confirms the wound carries the same infection risk as [[otar-the-foul|Otar]]'s own Bite, before symptoms show | Direct byproduct of Otar's stalled molt |
+| Hit a cluster with an AoE (Thunder Wave, fire, etc.) | Several tadpoles are grouped together | Most drop outright at 10 HP each, but one can shrug it off on a Constitution save and stay put | The party's area damage cleared a cluster from [[otar-the-foul\|Otar]]'s brood in Session 07 |
+| Finish a downed tadpole before it acts again | It's dropped to 0 HP but still on its feet near an ally | Denies its opportunity attack outright — a cheap action against a swarm this weak | Same Session 07 fight against [[otar-the-foul\|Otar]] |
+| Examine a fresh bite closely (Medicine or Nature) | A party member or ally was bitten this scene | Confirms the wound carries the same infection risk as [[otar-the-foul\|Otar]]'s own Bite, before symptoms show | Direct byproduct of Otar's stalled molt |
 
 **Prepped Reveals.**
 

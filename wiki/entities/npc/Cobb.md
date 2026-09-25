@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -17,7 +15,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Cobb
@@ -82,7 +79,7 @@ Read while recording: [[voice-profile script]]
 | Consistent method | Shows the work step-by-step, responds directly, and won't rush the paint-hardening no matter what's offered. |
 | Active problem | The paint is still tacky and won't be ready for three days. The crew has just arrived wanting to set sail immediately. |
 | Performance hooks | Young Black-Jaw runner vibe. Wraps the rag tighter around his shoulder when uncertain, then forces focus back to the work. |
-| Link of relevance | [[perrin-black-jaw|Perrin]]'s childhood contact. The crew's trust in the refit depends on Cobb's pride in his work. |
+| Link of relevance | [[perrin-black-jaw\|Perrin]]'s childhood contact. The crew's trust in the refit depends on Cobb's pride in his work. |
 
 **Voice & Delivery:** light, slightly scratchy tenor with a warm Italian accent. When showing off work, he speaks quickly with rising pride and energy. Otherwise, he keeps his words sparse and measured, answering only what's asked. Glances at exits from habit, a runner's instinct. Emotional default: cautious warmth. Cracks when asked to choose between Nona's instructions and Perrin's safety.
 

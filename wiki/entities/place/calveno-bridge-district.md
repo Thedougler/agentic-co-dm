@@ -7,8 +7,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A tiered canal-city location referenced by shops and item records."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 kind: district

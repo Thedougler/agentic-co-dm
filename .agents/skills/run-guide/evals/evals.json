@@ -6,14 +6,38 @@
       "prompt": "Turn the Session 11 prep (wiki/journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather.md) — a 5-hour inland Aruhe hunt with bloodhawk stoop, survivor tracks, and Fate Spinner theft — into a DM-only run guide. The beat map has 10 beats. Do not invent canon.",
       "expected_output": "One cockpit per live beat in play order. Pass 1 writes mechanical cards with empty [!narration] stubs. Pass 2 edits DM copy. Pass 3 fills spoken stubs. Pass 4 checks Reading view. Column layout uses col/col-md fences. The only callout is [!narration].",
       "assertions": [
-        {"text": "Scene ends when is the first ## heading in each cockpit, with an end condition on its first line and a time budget.", "type": "structure"},
-        {"text": "At a Glance contains bullets for stakes, goal or exit, danger, and situation magnets.", "type": "structure"},
-        {"text": "Each live card is one cockpit — no dual Now/Run-now pair, no Scene menu, no separate Ask callout.", "type": "guardrail"},
-        {"text": "Pass 1 leaves every [!narration] body empty; pass 3 fills them. No spoken prose appears before pass 3.", "type": "process"},
-        {"text": "dnd5e-mechanics is loaded before any check, save, DC, or player action mapped to a roll.", "type": "process"},
-        {"text": "writing-for-humans and theatre-of-the-mind are not loaded during pass 1.", "type": "guardrail"},
-        {"text": "Action cards carry the opposition loop — opening move, adaptation, break point, exit — beside compact numbers.", "type": "content"},
-        {"text": "Every consequence term on each card is defined on the card or flagged in Diagnose as missing prep.", "type": "content"}
+        {
+          "text": "Scene ends when is the first ## heading in each cockpit, with an end condition on its first line and a time budget.",
+          "type": "structure"
+        },
+        {
+          "text": "At a Glance contains bullets for stakes, goal or exit, danger, and situation magnets.",
+          "type": "structure"
+        },
+        {
+          "text": "Each live card is one cockpit — no dual Now/Run-now pair, no Scene menu, no separate Ask callout.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Pass 1 leaves every [!narration] body empty; pass 3 fills them. No spoken prose appears before pass 3.",
+          "type": "process"
+        },
+        {
+          "text": "dnd5e-mechanics is loaded before any check, save, DC, or player action mapped to a roll.",
+          "type": "process"
+        },
+        {
+          "text": "writing-for-humans and theatre-of-the-mind are not loaded during pass 1.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Action cards carry the opposition loop — opening move, adaptation, break point, exit — beside compact numbers.",
+          "type": "content"
+        },
+        {
+          "text": "Every consequence term on each card is defined on the card or flagged in Diagnose as missing prep.",
+          "type": "content"
+        }
       ]
     },
     {
@@ -21,9 +45,18 @@
       "prompt": "A session-prep inventory contains character sheets, scene descriptions, location descriptions, secrets, monster stat blocks, treasure tables, densify-sync notes, WIP status, and a multi-region archive dump from the Shattered Sea wiki. Render a run surface from it.",
       "expected_output": "Recognizes a prep dump is not a runnable cockpit. Asks for a primary chronological run file or routes to session-beats for a missing chart. Does not copy the dump wholesale.",
       "assertions": [
-        {"text": "Recognizes the prep inventory is not a runnable cockpit and names the gap.", "type": "process"},
-        {"text": "Routes to session-beats or asks for a primary session file rather than rendering the dump as-is.", "type": "process"},
-        {"text": "Densify/WIP/archive material does not appear on the run surface.", "type": "guardrail"}
+        {
+          "text": "Recognizes the prep inventory is not a runnable cockpit and names the gap.",
+          "type": "process"
+        },
+        {
+          "text": "Routes to session-beats or asks for a primary session file rather than rendering the dump as-is.",
+          "type": "process"
+        },
+        {
+          "text": "Densify/WIP/archive material does not appear on the run surface.",
+          "type": "guardrail"
+        }
       ]
     },
     {
@@ -31,12 +64,30 @@
       "prompt": "Given the Session 11 Hook beat (wiki/journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md) — bloodhawk stoop with Crown Squid, escape to cover — produce a DM-only run guide for this one opening beat. The following beat is not written yet. Owner links: bloodhawk (wiki/entities/creature/bloodhawk.md), Crown Squid (wiki/entities/creature/crown-squid.md).",
       "expected_output": "One cockpit file. Scene ends when first, then Glance, Now in feet, action cards, empty Initial Narration stub, procedure, zones with Narration column, Be ready for table, clock with Narration column, ![[Bloodhawk#Statblock]] embed under Roster. No Exit block (next beat not on file).",
       "assertions": [
-        {"text": "Scene ends when is the first ## heading with a time budget and end condition.", "type": "structure"},
-        {"text": "Now states positions and speeds in feet; compass directions where tactical distance matters.", "type": "content"},
-        {"text": "![[Bloodhawk#Statblock]] embed under Roster; the owner's Multiattack/HP table is not retyped above the embed.", "type": "structure"},
-        {"text": "Exit narration is absent because the next beat is not on the file.", "type": "guardrail"},
-        {"text": "Every [!narration] body is empty on pass 1.", "type": "process"},
-        {"text": "The Bloodhawk's stoop and Crown Squid's hookline tactics reference their wiki owner pages, not invented mechanics.", "type": "content"}
+        {
+          "text": "Scene ends when is the first ## heading with a time budget and end condition.",
+          "type": "structure"
+        },
+        {
+          "text": "Now states positions and speeds in feet; compass directions where tactical distance matters.",
+          "type": "content"
+        },
+        {
+          "text": "![[Bloodhawk#Statblock]] embed under Roster; the owner's Multiattack/HP table is not retyped above the embed.",
+          "type": "structure"
+        },
+        {
+          "text": "Exit narration is absent because the next beat is not on the file.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every [!narration] body is empty on pass 1.",
+          "type": "process"
+        },
+        {
+          "text": "The Bloodhawk's stoop and Crown Squid's hookline tactics reference their wiki owner pages, not invented mechanics.",
+          "type": "content"
+        }
       ]
     },
     {
@@ -44,9 +95,18 @@
       "prompt": "Render a DM-only run guide whose card inputs include telegram shorthand: 'bloodhawk stoop → party scatter; if cover → safe; LR exhaustion check; after LR Skarn approach → warn re: Spinner.'",
       "expected_output": "DM-facing card lines are complete grammatical sentences. Telegram shorthand, letter codes, and slash-stacks rewritten into scannable prose. The writing-for-humans earn-it test applies.",
       "assertions": [
-        {"text": "Every DM-facing line is a complete grammatical sentence or a short list of complete sentences.", "type": "quality"},
-        {"text": "No telegram shorthand, letter-code-only clauses, or slash-stacks survive on the card.", "type": "guardrail"},
-        {"text": "The writing-for-humans earn-it test is applied: lines that change no ruling, risk, or spoken picture are cut.", "type": "quality"}
+        {
+          "text": "Every DM-facing line is a complete grammatical sentence or a short list of complete sentences.",
+          "type": "quality"
+        },
+        {
+          "text": "No telegram shorthand, letter-code-only clauses, or slash-stacks survive on the card.",
+          "type": "guardrail"
+        },
+        {
+          "text": "The writing-for-humans earn-it test is applied: lines that change no ruling, risk, or spoken picture are cut.",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -54,14 +114,38 @@
       "prompt": "Render one 30-minute opening beat as the sole-authority run card. A Spiguar (wiki/entities/creature/spiguar.md) ambushes from grassland cover. A second pressure creature (Deer-Stalker, wiki/entities/creature/Deer-Stalker.md) will attack in default mode but has no owner page with combat stats yet. Ordinary movement (flight, swim, mounts) is how the party already travels, not a plot item. The next beat is not on the run file. Independent quality bar: a tired DM can run this slice without opening another note.",
       "expected_output": "One cockpit. Scene ends when first with cut lines. Now in feet. One named escape-mode procedure. Be ready for table with named creatures and places. ![[Spiguar#Statblock]] embed. Flags the missing Deer-Stalker combat stats. No ordinary-movement roster.",
       "assertions": [
-        {"text": "Scene ends when is the first ## heading with a time budget and cut lines.", "type": "structure"},
-        {"text": "![[Spiguar#Statblock]] embed under Roster; owner's full stat table is not retyped above it.", "type": "structure"},
-        {"text": "One named procedure (escape mode or equivalent); Be ready for failures do not also tick the clock.", "type": "content"},
-        {"text": "Initial Narration includes three independent tells and visible cover/routes before the question.", "type": "quality"},
-        {"text": "Ordinary movement (flight, swim, mounts) does not appear in Roster or as a plot reminder.", "type": "guardrail"},
-        {"text": "Every Be ready for and clock consequence is a 5.5e ruling or named vault-homebrew feature; no minted action types.", "type": "guardrail"},
-        {"text": "The missing Deer-Stalker combat stats are flagged rather than its math invented.", "type": "process"},
-        {"text": "Pass boundary: dnd5e-mechanics loaded on pass 1; writing-for-humans only on pass 2; theatre-of-the-mind only on pass 3.", "type": "process"}
+        {
+          "text": "Scene ends when is the first ## heading with a time budget and cut lines.",
+          "type": "structure"
+        },
+        {
+          "text": "![[Spiguar#Statblock]] embed under Roster; owner's full stat table is not retyped above it.",
+          "type": "structure"
+        },
+        {
+          "text": "One named procedure (escape mode or equivalent); Be ready for failures do not also tick the clock.",
+          "type": "content"
+        },
+        {
+          "text": "Initial Narration includes three independent tells and visible cover/routes before the question.",
+          "type": "quality"
+        },
+        {
+          "text": "Ordinary movement (flight, swim, mounts) does not appear in Roster or as a plot reminder.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every Be ready for and clock consequence is a 5.5e ruling or named vault-homebrew feature; no minted action types.",
+          "type": "guardrail"
+        },
+        {
+          "text": "The missing Deer-Stalker combat stats are flagged rather than its math invented.",
+          "type": "process"
+        },
+        {
+          "text": "Pass boundary: dnd5e-mechanics loaded on pass 1; writing-for-humans only on pass 2; theatre-of-the-mind only on pass 3.",
+          "type": "process"
+        }
       ]
     },
     {
@@ -69,13 +153,34 @@
       "prompt": "Render a DM-only run guide for a Development beat where the party finds a camp and learns a local rule from the survivors. The beat is talk-mode with no combat. Use established wiki NPCs. The next beat is a Cliffhanger that tests what the party learns here.",
       "expected_output": "One cockpit filed from the session-prep template. Talk-mode: no threat clock (or a social/time-pressure clock instead of combat rounds). Zones table has Narration column with italic stubs. Be ready for covers social outcomes. Action cards for NPCs with wants and posture, not combat stats.",
       "assertions": [
-        {"text": "Scene ends when is the first ## heading with an end condition and time budget.", "type": "structure"},
-        {"text": "At a Glance col-md block contains stakes, goal or exit, danger, and situation magnets.", "type": "structure"},
-        {"text": "Action cards name NPC wants, posture, and what changes their posture — not combat stat blocks.", "type": "content"},
-        {"text": "Zones table includes a Narration column with _italic_ stubs on pass 1.", "type": "structure"},
-        {"text": "Be ready for table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.", "type": "content"},
-        {"text": "How the Scene Resolves has an options table with at least three outcomes and their carry-forward to the next beat.", "type": "structure"},
-        {"text": "No threat clock in combat-round form — talk-mode uses a social or time-pressure clock if any.", "type": "guardrail"}
+        {
+          "text": "Scene ends when is the first ## heading with an end condition and time budget.",
+          "type": "structure"
+        },
+        {
+          "text": "At a Glance col-md block contains stakes, goal or exit, danger, and situation magnets.",
+          "type": "structure"
+        },
+        {
+          "text": "Action cards name NPC wants, posture, and what changes their posture — not combat stat blocks.",
+          "type": "content"
+        },
+        {
+          "text": "Zones table includes a Narration column with _italic_ stubs on pass 1.",
+          "type": "structure"
+        },
+        {
+          "text": "Be ready for table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.",
+          "type": "content"
+        },
+        {
+          "text": "How the Scene Resolves has an options table with at least three outcomes and their carry-forward to the next beat.",
+          "type": "structure"
+        },
+        {
+          "text": "No threat clock in combat-round form — talk-mode uses a social or time-pressure clock if any.",
+          "type": "guardrail"
+        }
       ]
     },
     {
@@ -83,10 +188,22 @@
       "prompt": "Run the four-pass cockpit workflow for a named beat. Re-observe each pass before advancing. If an owner, path, or required section remains unchanged and incomplete, stop with a blocker and do not advance later passes.",
       "expected_output": "A Reading-view-ready cockpit only after every pass has completion evidence, or a precise blocker naming the missing owner/path/section and parent session objective.",
       "assertions": [
-        {"text": "Pass 2 does not begin before pass 1 mechanical and empty-stub evidence is complete.", "type": "process"},
-        {"text": "Pass 3 does not begin before pass 2 DM-facing evidence is complete, and pass 4 checks Reading view.", "type": "process"},
-        {"text": "An unchanged incomplete pass takes a different sanctioned path or returns a specific blocker.", "type": "guardrail"},
-        {"text": "Preserves the parent session objective through every handoff.", "type": "quality"}
+        {
+          "text": "Pass 2 does not begin before pass 1 mechanical and empty-stub evidence is complete.",
+          "type": "process"
+        },
+        {
+          "text": "Pass 3 does not begin before pass 2 DM-facing evidence is complete, and pass 4 checks Reading view.",
+          "type": "process"
+        },
+        {
+          "text": "An unchanged incomplete pass takes a different sanctioned path or returns a specific blocker.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Preserves the parent session objective through every handoff.",
+          "type": "quality"
+        }
       ]
     },
     {
@@ -94,11 +211,41 @@
       "prompt": "Build a DM-only run guide for the Session 12 Climax (wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md).",
       "expected_output": "Diagnose flags 'Aruhe convergence' as an undefined consequence (missing prep) and either defines it from an owner that states it or routes back to climax-beats; the cockpit carries Skarn's numbers and loop.",
       "assertions": [
-        {"text": "Diagnose runs the table-ready cold read and marks the undefined Aruhe convergence as missing prep.", "type": "process"},
-        {"text": "The convergence is defined from an owner that states it, or the beat is routed back to climax-beats with a named gap — not invented at pass 1.", "type": "process"},
-        {"text": "Skarn's action card carries AC, HP, Speed, Stunning Strike DC, reach, and his loop: opening move, adaptation, break point, exit.", "type": "content"},
-        {"text": "No spoken block forecasts a consequence ('taking it draws Aruhe's convergence').", "type": "content"},
-        {"text": "The table gate checks that each PC present has a reason to act.", "type": "content"}
+        {
+          "text": "Diagnose runs the table-ready cold read and marks the undefined Aruhe convergence as missing prep.",
+          "type": "process"
+        },
+        {
+          "text": "The convergence is defined from an owner that states it, or the beat is routed back to climax-beats with a named gap — not invented at pass 1.",
+          "type": "process"
+        },
+        {
+          "text": "Skarn's action card carries AC, HP, Speed, Stunning Strike DC, reach, and his loop: opening move, adaptation, break point, exit.",
+          "type": "content"
+        },
+        {
+          "text": "No spoken block forecasts a consequence ('taking it draws Aruhe's convergence').",
+          "type": "content"
+        },
+        {
+          "text": "The table gate checks that each PC present has a reason to act.",
+          "type": "content"
+        }
+      ]
+    },
+    {
+      "id": "skill-selected-run-tonight",
+      "prompt": "We run tonight and my session prep is hard to scan. Build me a DM-only run guide from the prep and the pages it links.",
+      "expected_output": "Selects run-guide to assemble a table-ready DM-only cockpit from existing prep and owner pages, without composing new beats.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "run-guide"
+        },
+        {
+          "type": "behavior",
+          "text": "Builds the cockpit from existing prep and the pages it links, without composing new beats."
+        }
       ]
     }
   ]

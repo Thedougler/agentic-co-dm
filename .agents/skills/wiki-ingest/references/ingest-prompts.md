@@ -7,7 +7,7 @@ These are the mental frameworks to use when distilling a source into wiki pages.
 When reading a source document, ask yourself:
 
 1. **What are the discrete ideas in this document?**
-   Claims, creative decisions, mechanics, descriptions, relationships. Each idea gets a destination: an existing page, a justified new page, staged/unresolved, or a canon proposal.
+   Claims, creative decisions, mechanics, descriptions, relationships. Each idea gets a destination: an existing page, a justified new page, staged/unresolved, or canon under the rule in `llm-wiki`.
 
 2. **Who or what is mentioned that already has a page, or deserves a justified new one?**
    Prefer the existing page. People, tools, organizations, projects → entity pages only when the idea has coherent standalone scope.

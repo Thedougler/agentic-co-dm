@@ -10,8 +10,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -20,7 +18,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Old Faas
@@ -35,7 +32,7 @@ tier: supporting
 |               |                                                                |
 | ------------- | -------------------------------------------------------------- |
 | **Species**   | [[Human]]                                                           |
-| **Post**      | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**      | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**      | Rated Bosun                                                     |
 | **Crew Role** | Bosun / Rigger                                                  |
 | **Wage**      | 8 gp/week (bosun rate)                                          |

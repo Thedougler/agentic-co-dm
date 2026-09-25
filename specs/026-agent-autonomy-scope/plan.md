@@ -1,5 +1,7 @@
 # Implementation Plan: Agent Autonomy Scope
 
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
 **Branch**: `026-agent-autonomy-scope` | **Date**: 2026-09-18 | **Spec**: [spec.md](spec.md)
 
 **Input**: Feature specification from `/specs/026-agent-autonomy-scope/spec.md`
@@ -12,7 +14,7 @@ reason: reusable agent-system rules for four-line canon, lint-as-contract, no ap
 
 ## Summary
 
-Replace Work gates with the four-line canon rule. File what those lines make canon. Encode FR-001–FR-003 and FR-013 as checkable rules (`AGENT001`–`AGENT003`). Bulk-rename existing agent-facing files to that placement rule and update old instruction files until green. Amend constitution X/XV/XVII and Operating Boundaries in the same change so AGENTS.md does not contradict XVI. Skill/instruction review stays on existing `skill-creator` evals. No new checklist, PR template, review skill, or lint framework.
+Replace Work gates with the four-line canon rule. File what those lines make canon. Encode FR-001–FR-003 and FR-013 as checkable rules (`luna-eval` evals). Bulk-rename existing agent-facing files to that placement rule and update old instruction files until green. Amend constitution X/XV/XVII and Operating Boundaries in the same change so AGENTS.md does not contradict XVI. Skill/instruction review stays on existing `skill-creator` evals. No new checklist, PR template, review skill, or lint framework.
 
 ## Technical Context
 
@@ -22,7 +24,7 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 
 **Storage**: Vault markdown + YAML frontmatter. Canon is not a separate store.
 
-**Testing**: `scripts/check-agent-standards.py` + one pytest; cold-context quickstart V-001–V-008; skill/instruction diffs use existing `skill-creator` evals.
+**Testing**: `scripts/luna-eval` + one pytest; cold-context quickstart V-001–V-008; skill/instruction diffs use existing `skill-creator` evals.
 
 **Target Platform**: Agent instruction surface (OMP, Codex, Claude Code) plus wiki write path
 
@@ -30,7 +32,7 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 
 **Performance Goals**: N/A
 
-**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST bulk-rename existing agent-facing files to AGENT002. MUST update every old instruction file to the new checkable standards. Wiki writes go to live vault paths.
+**Constraints**: MUST NOT add Work gates or extra canon steps. MUST NOT use avoided term "autonomous GM". MUST NOT add a review checklist, PR template, or review skill (FR-007). MUST bulk-rename existing agent-facing files to the placement rule (no current checker). MUST update every old instruction file to the new checkable standards. Wiki writes go to live vault paths.
 
 **Scale/Scope**: Constitution MAJOR `3.0.0`; `AGENTS.md` / `wiki/AGENTS.md` / `docs/agents/*` / skill strips + kebab remorph of non-conforming agent-facing paths; three registry rules + one script + one test.
 
@@ -43,7 +45,7 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 | I. Domain Language | PASS | Canon / done-summary / lint contract. Avoid "autonomous GM". |
 | II. Issues Are the Work Surface | PASS | Feature branch `026-agent-autonomy-scope`. |
 | III. Spec Before System Change | PASS | [spec.md](spec.md) has testable FR/SC. |
-| IV. Behavioral Tests | PASS | Quickstart + AGENT001–003 + skill-eval for instruction diffs. |
+| IV. Behavioral Tests | PASS | Quickstart + `luna-eval` evals + skill-eval for instruction diffs. |
 | V. Single Source of Truth | PASS | Four-line canon in constitution; AGENTS.md points; rules execute. |
 | VI. Agent-Shaped | PASS | Checker: args in, JSON out, exit status. |
 | VII. Creative Judgment | PASS | No voice/method rules. |
@@ -56,7 +58,7 @@ Replace Work gates with the four-line canon rule. File what those lines make can
 | XVI. Layering | PASS | Constitution owns the principle; AGENTS.md why/examples; rules/ the check. |
 | XVII. Wiki Additive | PASS **after amendment** | File user/transcript/non-contradicting ingest; still no silent history overwrite. |
 | XX. Lean | PASS | Strip Work-gate headers; do not copy the four lines into every skill. |
-| XXI. Linter Root-Cause | PASS | Green-before-done; do not weaken AGENT001–003. |
+| XXI. Linter Root-Cause | PASS | Green-before-done; do not weaken `luna-eval` evals. |
 | XXIII. Real Surfaces | PASS | Quickstart uses live vault/agent. |
 | XXIV. Synchronized Content | PASS | Constitution + AGENTS.md + skills + registry/script in one feature. |
 
@@ -91,14 +93,13 @@ docs/agents/hybrid-sdd.md                # dm_acceptance not-required for user-s
 docs/agents/policy-owners.yml            # drop acceptance_semantics wait
 .agents/skills/**/SKILL.md               # delete ## Work gate sections
 .agents/skills/**/*.md                   # kebab remorph of companions (checks.md, consolidate.md, …)
-rules/registry.yml                       # AGENT001 AGENT002 AGENT003
-scripts/check-agent-standards.py         # the checker
-tests/test_agent_standards.py            # one pytest
+scripts/luna-eval                        # evals (replaced the original checker)
+tests/test_luna_eval.py                  # Work-gate wording case
 ```
 
 **Structure Decision**: Instruction + constitution edits. One stdlib checker. Bulk-rename non-conforming agent-facing paths in the same change. Canonical four-line rule in constitution; AGENTS.md points; registry/script enforces.
 
-**Owners**: one writer per file at implement time. Constitution then AGENTS.md then work.md then skill strips then remorph then checker (AGENT001/002 fail until strips and renames land). No parallel writes to `AGENTS.md` or constitution.
+**Owners**: one writer per file at implement time. Constitution then AGENTS.md then work.md then skill strips then remorph then checker (the luna-eval Work-gate evals fail until strips and renames land). No parallel writes to `AGENTS.md` or constitution.
 
 ## Post-Design Constitution Check
 
@@ -109,7 +110,7 @@ tests/test_agent_standards.py            # one pytest
 | XIV | PASS | One script; reuse skill-creator evals. |
 | XVI | PASS | Principles in constitution; checks in registry; AGENTS.md why/examples. |
 | XX | PASS | Skills lose Work-gate headers; they do not gain a copied table. |
-| IV | PASS | Quickstart V-001–V-008; AGENT001–003; skill-eval. |
+| IV | PASS | Quickstart V-001–V-008; `luna-eval` evals; skill-eval. |
 | XXI | PASS | Green-before-done is FR-012; checker BLOCK. |
 
 **Post-design gate**: PASS. No `NEEDS CLARIFICATION`. Session 2026-09-18 clarifications absorbed (file user-said canon, mixed one summary, lint contract, bulk-rename + update every old instruction file).

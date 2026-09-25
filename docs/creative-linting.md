@@ -10,7 +10,7 @@ The implementation has three cooperating layers:
 - Vale runs the configured third-party and deprecated-term packages; the retained `CoDM` style namespace is available for future rules but has no active uppercase custom styles.
 - `tools/creative_lint/` owns registry loading, bundle routing, symbolic evaluators, the finding schema, severity/status computation, waivers, shadow telemetry, and the repair loop.
 
-The CLI entry point is `scripts/wiki-lint`:
+Page lint goes through one front door, `scripts/wiki lint` (and `wiki lint fix` for deterministic repairs); `wiki lint --help` owns its usage. `scripts/wiki-lint` is the checker it drives, and keeps the rule-registry subcommands below:
 
 - No-subcommand invocations delegate structural checks to `tools/lint_wiki.py`; default output is sparse (actual findings or `status: "clean"`), and `--verbose` restores the full zero-count matrix.
 - `queue` emits a stateless smallest-first list of pages with safe findings; `template` derives and compares the mapped runtime template.
@@ -29,18 +29,18 @@ Every evaluator emits the same fields:
 
 ```json
 {
-  "rule_id": "CANON001",
+  "rule_id": "WIKI001",
   "result": "fail",
   "severity": "BLOCK",
   "location": {
     "file": "wiki/path/to/file.md",
-    "line": 42,
-    "col": 5,
-    "text": "[[dead-npc]]"
+    "line": 1,
+    "col": 1,
+    "text": "---"
   },
-  "evidence": "Unresolved wikilink: [[dead-npc]]",
-  "reason": "The page references an entity that is not current canon",
-  "repair_target": "Retarget the wikilink to a current canonical page",
+  "evidence": "Missing required frontmatter: reveal",
+  "reason": "Wiki page is missing required frontmatter",
+  "repair_target": "Add the missing owner-schema fields before linting the page again",
   "evaluator": "symbolic"
 }
 ```
@@ -62,7 +62,7 @@ Aggregate status is `repair_required` when any unwaived `BLOCK` or `REPAIR` find
 ./scripts/wiki-lint file wiki/entities/npc/archivist-vel.md --json
 ./scripts/wiki-lint corpus wiki --json
 ./scripts/wiki-lint changed --json
-./scripts/wiki-lint rule CANON001
+./scripts/wiki-lint rule WIKI001
 ./scripts/wiki-lint queue --json
 ./scripts/wiki-lint template wiki/journal/sessions/campaign/01/Session-01.md --json
 ./scripts/wiki-lint candidate "Stop having NPCs know things they could not know" --json
@@ -74,10 +74,12 @@ Task runs resolve one named bundle and accept optional paths. File runs evaluate
 
 `template` resolves the template from page `type`/`kind`, derives its frontmatter, headings, callouts, tables, and formatting markers, and reports `TMPL001`–`TMPL005`. It is detection-only. Agents manually fix a nonconformant page after reviewing the finding; no command mutates templates or page prose.
 
-The existing structural mode remains compatible:
+Structural lint of pages, directories, or scopes runs through the front door:
 
 ```bash
-./scripts/wiki-lint --json wiki
+./scripts/wiki lint entities/place/Belumara.md
+./scripts/wiki lint dir:entities/place
+./scripts/wiki lint fix dir:entities/place --dry-run
 ```
 
 Consolidation is explicit and approval-gated:
@@ -98,7 +100,7 @@ To add a rule:
 3. Add `fail_*.md`, `pass_*.md`, and an `ambiguous_*.md` acceptable-region fixture under `tests/fixtures/creative_lint/<ID>/`. Ambiguous cases are recorded for review rather than treated as suite failures.
 4. Add the rule category to the appropriate bundle in `rules/bundles.yml` only once, under `block`, `review`, or `diagnostics`.
 
-The static Vale rule set is intentionally empty; symbolic rules cover CANON001-002, WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
+The static Vale rule set is intentionally empty; symbolic rules cover WIKI001-002, and RETRIEVAL001; DIVERSITY001 remains an INFO diagnostic. Rules with `diversity` categories may never exceed `WARN`. The bundle's gate caps effective severity, while the registry remains the inherent-severity source.
 
 A correction should first search existing titles, messages, and tags with `wiki-lint candidate`. A match routes the correction to the existing rule and its fixtures. A no-match candidate is written under `rules/candidates/` with lifecycle `SHADOW`; it must accumulate fixtures and telemetry before promotion. Promotion requires greater than 90% human agreement and less than 10% false positives, followed by a deliberate `SHADOW` → `ACTIVE` lifecycle change. Creative diagnostics can reach `WARN`, never `BLOCK`.
 
@@ -122,7 +124,7 @@ Waivers live in `rules/waivers.json` and require exact `rule_id`, `target`, `rea
 
 Vale and symbolic fixture families define the acceptable region:
 
-- `CANON001/`, `CANON002/`, `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
+- `WIKI001/`, `WIKI002/`, `RETRIEVAL001/`, and `DIVERSITY001/` contain symbolic fail/pass/ambiguous cases and counterexamples.
 - `template/` contains a mapped page, a baseline template, and a changed-template mutation for profile comparison. Template drift is manually corrected; fixtures never authorize unattended edits.
 - `integration/session_prep_violations.md` combines an authored PC decision with a stale/dead canonical reference for the agent-loop scenario.
 - `registry/` contains valid, duplicate, malformed, missing-style, unresolved-reference, invalid-enum, and severity-ceiling metadata fixtures.

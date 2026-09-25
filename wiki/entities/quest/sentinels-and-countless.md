@@ -14,9 +14,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:30:00Z
 updated: 2026-09-20
@@ -46,7 +43,7 @@ last_advanced: 2026-09-20
 |                 |                                                                    |
 | --------------- | ------------------------------------------------------------------ |
 | **Quest giver** | None recorded.                                                     |
-| **Region**      | [[midchain-east|Midchain]] and the [[drowned-maw]] watch.          |
+| **Region**      | [[midchain-east\|Midchain]] and the [[drowned-maw]] watch.          |
 | **Scope**       | Regional                                                            |
 | **Opposition**  | [[Countless]] and the Sentinel schism's competing doctrines.       |
 | **Reward**      | Access to records, protected carriers, or leverage over the schism. |
@@ -125,7 +122,7 @@ The Sentinels' refusal to interpret or intervene protects their record but leave
 | Entity                              | Use in play                                             |
 | ----------------------------------- | ------------------------------------------------------- |
 | Sentinel observation ledgers        | Continuous records of the Maw since 1295 DR.            |
-| [[fate-spinner|Fate Spinner]]       | Identifies the gift that makes carriers the target.     |
+| [[fate-spinner\|Fate Spinner]]       | Identifies the gift that makes carriers the target.     |
 | Missing names and blank ledgers     | Mark where Countless has acted without exposing patrons. |
 | [[countless-through-the-maw-seal]] | A linked pressure connecting Countless to the Maw seal. |
 

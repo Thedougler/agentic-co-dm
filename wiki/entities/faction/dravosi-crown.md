@@ -20,9 +20,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.75
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T02:55:00Z
 updated: 2026-09-13
@@ -135,7 +132,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | [[governor-voss]] | Local governor | Administer Crown harbour authority. | He never saw the orders for the extra garrison detachments. |
-| [[barnaby-rook]] | Bureaucrat | Serve the Crown's inspection machinery. | He never learned [[aldric-drave|Aldric Drave]]'s founding role. |
+| [[barnaby-rook]] | Bureaucrat | Serve the Crown's inspection machinery. | He never learned [[aldric-drave\|Aldric Drave]]'s founding role. |
 | [[aleksander-malone]] | Reserved instrument | Act against confirmed heresy or infiltration. | He is not used for ordinary crime. |
 | [[aldric-drave]] | Hidden founder | Preserve a bloodline map through the Crown's dynastic houses. | The public service does not know he founded the colonial project. |
 | [[geoffrey-draves]] and [[aldous-draves]] | Related bloodline | Preserve or exploit the Draves branch. | Geoffrey defected; Aldous placed him. |
@@ -170,7 +167,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 | --- | --- | --- | --- |
 | [[tessarine-concordat]] | Rival | Recognition that Crown inspection defines western access. | Tessarine credit competes with Crown papers and force. |
 | [[khlysty-the-flock]] | Hostile | No infiltration of Crown noble houses or service. | Confirmed infiltration brings [[aleksander-malone]] into the response. |
-| [[the-passage|The Passage]] | Hostile | Compliance with official roads, harbours, and patrols. | Passage movement seeks freedom from Crown records. |
+| [[the-passage\|The Passage]] | Hostile | Compliance with official roads, harbours, and patrols. | Passage movement seeks freedom from Crown records. |
 | [[Waveservants]] | Complicated | Usable routes and stable harbour infrastructure. | Both powers pay [[Umberlee]] while competing over movement. |
 | [[aldric-drave]] | Hidden | No public relationship is acknowledged. | The Crown is the bloodline map he founded. |
 

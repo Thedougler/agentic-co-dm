@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -24,7 +22,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # The Galewall Runner's Drop
@@ -113,7 +110,7 @@ Before the wreck disappeared, the crew reportedly rowed heavy lockboxes onto bla
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
 | [[Galewall]] | Storm belt that wrecked the escape. | Sets the hazard and route history. |
-| [[ashwall-islands|Ashwall Islands]] | Volcanic chain containing the possible drop site. | Defines the search area without fixing one island. |
+| [[ashwall-islands\|Ashwall Islands]] | Volcanic chain containing the possible drop site. | Defines the search area without fixing one island. |
 | [[dravosi-crown]] | Owner of the missing payroll. | Provides records, authority, and pressure. |
 
 ---

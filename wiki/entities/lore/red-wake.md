@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:00:00Z
 updated: 2026-09-13T03:00:00Z
@@ -65,7 +62,7 @@ The Red Wake is the pressure pattern associated with the Dead Lady, a raised wre
 | Knower | Knowledge | Certainty | Basis |
 | ------ | -------- | --------- | ----- |
 | [[Umberlee]] | The divine pressure expressed through the Dead Lady and its collection route. | knows | Directly drives the pressure. |
-| [[red-lady-dead-lady|The Dead Lady]] | Its own route and collection behaviour. | knows | Enacts the collection. |
+| [[red-lady-dead-lady\|The Dead Lady]] | Its own route and collection behaviour. | knows | Enacts the collection. |
 | Midchain crews and port witnesses | Boats are found empty after a red-wake pattern, but the cause is not securely identified. | suspects | Rumour and observation. |
 | The party | The Red Wake is connected to the Dead Lady's pressure on their route. | suspects | Encounters and linked evidence are still unrevealed. |
 

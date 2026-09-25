@@ -16,7 +16,7 @@
     "test:python:coverage": "./scripts/run-pytest --cov=tools --cov=scripts --cov-report=term-missing",
     "check:python": "npm run lint:python && npm run typecheck:python && npm run test:python",
     "lint:wiki": "./scripts/wiki lint",
-    "lint:vale": ".venv/bin/python scripts/vale-vocab && .venv/bin/vale --config=.vale.ini",
+    "lint:vale": "./scripts/wiki lint",
     "lint:markdown": "markdownlint-cli2",
     "maintain": "./scripts/wiki-maintain",
     "verify": "./scripts/check-omp-baseline.sh",

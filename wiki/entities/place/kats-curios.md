@@ -8,8 +8,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A curios shop referenced as a source of arcane items and artillery."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

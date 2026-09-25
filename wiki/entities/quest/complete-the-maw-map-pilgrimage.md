@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.50
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 tier: supporting
 created: 2026-09-13T19:30:00Z
 updated: 2026-09-20T00:00:00Z
@@ -48,7 +45,7 @@ last_advanced: "2026-09-13"
 | **Scope** | Regional |
 | **Opposition** | The storm, reversed currents, and the Maw's changing conditions |
 | **Reward** | A completed map and account; the assignment carries Master Kyzil's reputation |
-| **Last change** | The pilgrimage remains active, and [[soul-incarnates-watch|Soul Incarnate's Watch]] remains dormant until it is completed. |
+| **Last change** | The pilgrimage remains active, and [[soul-incarnates-watch\|Soul Incarnate's Watch]] remains dormant until it is completed. |
 
 ## Situation
 
@@ -79,7 +76,7 @@ The Sentinels are watching and recording the Maw while Crissdalynn's pilgrimage 
 | **Wants** | To preserve an uninterrupted account of the Drowned Maw while keeping control of access to the watch and its records. |
 | **Current move** | The order records the Maw's time, weather, position, water, and occurrence while the pilgrimage proceeds. |
 | **Next move** | If nothing interrupts it, the order continues the watch and treats the returned map as another observation in its ledger. |
-| **End state** | A completed pilgrimage activates [[soul-incarnates-watch|Soul Incarnate's Watch]] and gives the Sentinels a new account; the exact consequences remain open. |
+| **End state** | A completed pilgrimage activates [[soul-incarnates-watch\|Soul Incarnate's Watch]] and gives the Sentinels a new account; the exact consequences remain open. |
 
 ### Progress
 
@@ -105,7 +102,7 @@ The Sentinels are watching and recording the Maw while Crissdalynn's pilgrimage 
 | [[crissdalynn-khinriss]] | Pilgrim and assigned mapmaker | Complete the hardest Sentinel pilgrimage and return an account. |
 | [[master-kyzil]] | Senior master and quest giver | Confirm Crissdalynn's readiness and protect the Sentinel watch. |
 | [[sentinels-of-the-eyrie]] | Order responsible for the Maw watch | Keep the ledgers continuous and control access to the records. |
-| [[soul-incarnates-watch|Soul Incarnate's Watch]] | Dormant consequence tied to completion | Remains dormant until the Maw pilgrimage is complete. |
+| [[soul-incarnates-watch\|Soul Incarnate's Watch]] | Dormant consequence tied to completion | Remains dormant until the Maw pilgrimage is complete. |
 
 ## Relevant places
 

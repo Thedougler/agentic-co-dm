@@ -18,6 +18,11 @@ choices made inevitable; a final battle is one shape among several.
 
 ## Gates
 
+**Session plan first.** Before reading further or loading any other skill,
+find this session's filed plan (`Session-<NN>-00-*.md` in its session
+folder). With none, stop here: load `plan-session` and plan with the DM;
+this skill resumes from the plan's row once `session-beats` files it.
+
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
@@ -26,6 +31,8 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 - **Input:** A named Climax beat, its session-plan row (card, trigger), the
   preceding carry-forward, every live thread with the beats that planted and
   tested it, and opposition, place, and item owner pages.
+- **Session plan:** the short form of the DM's intent for the session; this
+  beat is written from its row (see Gates).
 - **Work:** Build one Climax to the table-ready bar with the Climax craft
   below; spoken text is filled through `theatre-of-the-mind`.
 - **Done:** The cold read passes and the completion test holds for every
@@ -36,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; keep **Final Battle** or **Final Revelation** sections only for the shape in play.
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; keep **Final Battle** or **Final Revelation** sections only for the shape in play.
 
 ## Fill a Climax
 

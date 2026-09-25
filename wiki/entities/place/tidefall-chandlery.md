@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A Crown-sanctioned naval outfitter in Port Tidefall."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

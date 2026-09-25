@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Fail if maintained agent files mention a missing or retired ./scripts command.
+"""Fail if maintained agent files mention a missing or retired ./scripts command,
+or cite a `scripts/…` or `tests/…` path that does not exist.
 
 FR-049 / SC-031. Skills and AGENTS must name current tools only.
 after-write is retired: a mention is a fail even if the file returns.
@@ -19,11 +20,13 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 RETIRED = frozenset({"after-write"})
 CMD = re.compile(r"\./scripts/([A-Za-z0-9][A-Za-z0-9._-]*)(?![A-Za-z0-9._/-])")
+PATH_REF = re.compile(r"(?<![A-Za-z0-9_./-])(?:\./)?((?:scripts|tests)/[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*)")
 SCAN_ROOTS = (
     Path("AGENTS.md"),
     Path("wiki/AGENTS.md"),
     Path(".agents/skills"),
     Path("docs/agents"),
+    Path("specs/026-agent-autonomy-scope"),
 )
 SKIP_PARTS = {".git", "evals"}
 
@@ -81,6 +84,19 @@ def scan(root: Path) -> list[dict]:
                         "kind": kind,
                     }
                 )
+            for m in PATH_REF.finditer(line):
+                if m.group(0).startswith("./scripts/"):
+                    continue  # covered by the command check above
+                cited = m.group(1).rstrip(".")
+                if "." not in cited.rsplit("/", 1)[-1] and cited.count("/") < 2:
+                    continue  # prose such as "scripts/tools", not a cited file
+                if (root / cited).exists():
+                    continue
+                key = (rel, i, cited)
+                if key in seen:
+                    continue
+                seen.add(key)
+                hits.append({"path": rel, "line": i, "command": cited, "kind": "missing"})
     return hits
 
 

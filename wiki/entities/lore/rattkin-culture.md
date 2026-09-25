@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -24,7 +22,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Rattkin Culture
@@ -129,7 +126,7 @@ The vocabulary is shared across the network: **Kin** means other Rattkin; **Dry*
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
 | [[Rattkin]] | People whose traits and shared terms this note describes | Gives a creature a social context |
-| [[Warren|The Warren]] | Fixed origin point in the current account | Anchors the network beneath [[calven-and-calveno]] |
+| [[Warren\|The Warren]] | Fixed origin point in the current account | Anchors the network beneath [[calven-and-calveno]] |
 | [[the-passage]] | Living Rattkin route network | Supplies Holds and hidden movement |
 | [[rattkin-runs-and-black-jaw-run]] | Run and faction context | Grounds [[perrin-black-jaw]]'s standing |
 | [[perrin-black-jaw]] | Fancy Rat Rattkin PC | Makes the lore immediately playable |

@@ -12,7 +12,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: quest
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -28,7 +27,6 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.42
 tier: supporting
 ---
 # Warren, Grung in the Sewers
@@ -42,8 +40,8 @@ tier: supporting
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
-| **Quest giver** | [[nona-black-jaw|Nona Black-Jaw]]                              |
-| **Region**      | [[calven-and-calveno|Calveno]]                                  |
+| **Quest giver** | [[nona-black-jaw\|Nona Black-Jaw]]                              |
+| **Region**      | [[calven-and-calveno\|Calveno]]                                  |
 | **Scope**       | Local                                                           |
 | **Opposition**  | [[Grung]] bombers and the network supplying their powder.       |
 | **Reward**      | No explicit reward for the party is recorded. Nona protected Felix Aho for one month. |
@@ -93,25 +91,25 @@ The Grung operation was a coordinated bombing campaign. Powder moved by ship int
 
 | Lead | Points toward | Found? | State |
 | ---- | ------------- | ------ | ----- |
-| Question Felix Aho about the Grung's leaders, ships, and kill-on-sight treatment of defectors. | [[felix-aho|Felix Aho]] | Yes | Available through Nona's protection arrangement |
-| Follow the maintenance hatch opened by Fen's stolen key. | [[Warren|the Warren]] | No | Available |
-| Investigate the destroyed and surviving Calveno magazine rooms. | [[calven-and-calveno|Calveno]] | Yes | Room 8's ritual purpose remains unknown |
+| Question Felix Aho about the Grung's leaders, ships, and kill-on-sight treatment of defectors. | [[felix-aho\|Felix Aho]] | Yes | Available through Nona's protection arrangement |
+| Follow the maintenance hatch opened by Fen's stolen key. | [[Warren\|the Warren]] | No | Available |
+| Investigate the destroyed and surviving Calveno magazine rooms. | [[calven-and-calveno\|Calveno]] | Yes | Room 8's ritual purpose remains unknown |
 
 ## People & factions
 
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
-| [[nona-black-jaw|Nona Black-Jaw]] | Sponsor and protector of Felix Aho. | Stop the immediate Grung threat while keeping Felix alive for useful intelligence. |
-| [[felix-aho|Felix Aho]] | Captured green-caste laborer and witness. | Survive and trade information for one month of protection. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Sponsor and protector of Felix Aho. | Stop the immediate Grung threat while keeping Felix alive for useful intelligence. |
+| [[felix-aho\|Felix Aho]] | Captured green-caste laborer and witness. | Survive and trade information for one month of protection. |
 | [[Grung]] | Bombing force and sewer operators. | Move powder and strike Calveno during the festival. |
-| [[solange-barret|Solange Barret]] | Ritual leader in Room 8 of the Calveno magazines. | Complete a ritual whose purpose is not established. |
+| [[solange-barret\|Solange Barret]] | Ritual leader in Room 8 of the Calveno magazines. | Complete a ritual whose purpose is not established. |
 
 ## Relevant places
 
 | Place | Why it matters now |
 | ----- | ------------------ |
-| [[Warren|The Warren]] | The sewer settlement where the Grung appeared and the party burned the powder boat. |
-| [[calven-and-calveno|Calveno]] | The city whose festival crowds were threatened and whose sewer magazines held the next stage of the operation. |
+| [[Warren\|The Warren]] | The sewer settlement where the Grung appeared and the party burned the powder boat. |
+| [[calven-and-calveno\|Calveno]] | The city whose festival crowds were threatened and whose sewer magazines held the next stage of the operation. |
 | Calveno sewer magazines | The underground powder stores where Magazine Beta was destroyed and Room 8's ritual was interrupted. |
 
 ## Useful things

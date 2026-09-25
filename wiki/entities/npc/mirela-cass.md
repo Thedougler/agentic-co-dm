@@ -8,7 +8,6 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -17,7 +16,6 @@ location: unknown
 faction: none
 visibility: dm
 summary: "A named person whose name Reeve Sula Marn keeps strangers away from; Ysolde Cass is her sister."
-base_confidence: 0.20
 ---
 # Mirela Cass
 

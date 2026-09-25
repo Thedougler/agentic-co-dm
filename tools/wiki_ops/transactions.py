@@ -20,6 +20,14 @@ class Validation:
         return not self.failures
 
 
+def qmd_hook_runner(vault: Path) -> Callable[[], int] | None:
+    """The repo's QMD refresh (scripts/qmd-hook.sh beside the vault), or None where there is none."""
+    script = Path(vault).parent / "scripts" / "qmd-hook.sh"
+    if not script.is_file():
+        return None
+    return lambda: subprocess.run([str(script)], cwd=Path(vault).parent, check=False).returncode
+
+
 class Transaction:
     def __init__(self, vault: str | Path, *, qmd_runner: Callable[[], int] | None = None):
         self.vault = Path(vault).resolve()
@@ -70,6 +78,8 @@ class Transaction:
         deleted: list[Path] = []
         try:
             for path, text in self._resolved.items():
+                if self._originals.get(path) == text:  # a no-op mutation writes nothing (FR-036)
+                    continue
                 atomic_write(path, text)
                 written.append(path)
             for path in self._deleted:
@@ -86,7 +96,7 @@ class Transaction:
             changed = written + deleted
             return {"status": "failed", "error": str(exc), "files_changed": [str(p.relative_to(self.vault)) for p in changed]}
         self.status = "committed"
-        changed = set(self._resolved) | self._deleted
+        changed = sorted(set(written) | set(deleted))
         return {"status": "committed", "mutations_applied": len(self.operations), "files_changed": [str(p.relative_to(self.vault)) for p in changed]}
 
     def finalize(self) -> dict[str, Any]:
@@ -114,14 +124,7 @@ class Transaction:
                 from .manifest_ops import update_manifest
                 update_manifest(manifest, transition)
                 finalization["manifest_updated"] = True
-            runner = self.qmd_runner
-            if runner is None:
-                script = self.vault.parent / "scripts" / "qmd-hook.sh"
-                if script.is_file():
-                    def run_qmd_hook() -> int:
-                        return subprocess.run([str(script)], cwd=self.vault.parent, check=False).returncode
-
-                    runner = run_qmd_hook
+            runner = self.qmd_runner or qmd_hook_runner(self.vault)
             if runner is not None:
                 code = int(runner())
                 finalization["qmd_exit_code"] = code

@@ -11,14 +11,12 @@ sources:
 created: 2026-09-19
 updated: 2026-09-19
 type: place
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 kind: shrine
 region: "Sunken Crown"
 visibility: dm
 summary: "Umberlee's older cliff shrine on Vel Orn keeps drowned names and water-debt beside the Pearl of Souls' former tidal pool."
-base_confidence: 0.55
 ---
 # Umberlee's Shrine
 

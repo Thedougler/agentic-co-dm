@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Fio's Own Curtain
@@ -43,8 +40,8 @@ Sold as the finishing touch for a doorway that deserves better. Fio demonstrates
 | One thing | Hung in a doorway, it hides everything behind it from outside eyes. |
 | Rarity justification | Uncommon: functional stock, priced at the Uncommon band. |
 | Attunement reason | None. No roll bonus, one power. |
-| PC connection | Gives [[jean-claude-tabarnack|Jean-Claude]] a doorway nobody reads. |
-| Current holder | [[fioravante-selmerin|Fio]], hung in the front window. |
+| PC connection | Gives [[jean-claude-tabarnack\|Jean-Claude]] a doorway nobody reads. |
+| Current holder | [[fioravante-selmerin\|Fio]], hung in the front window. |
 | Narrative hook | Bought for 200 gp, or borrowed off the window rod. |
 
 Uncommon tier holds. Magic Item Rarity prices Common goods at 100 gp and Uncommon goods at 400 gp, with an approximate Uncommon range of 100-500 gp; the curtain's 200 gp asking price sits inside that band, not Common's. [[the-interrogator]] (250 gp) and [[ricochet-red]] (300 gp) are this shop's own Uncommon stock at the same price point. Heavy mundane drapery already stops a line of sight under the vision rules, but the curtain does something plain cloth cannot: it holds itself over any doorway up to 10 feet wide and tall, blocks darkvision along with normal sight, and answers only to a deliberate sweep. That's a standing magical effect held in the cloth.

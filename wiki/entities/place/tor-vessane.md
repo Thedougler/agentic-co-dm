@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -47,7 +44,7 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 | Field | Detail |
 |---|---|
 | Type | Universally-avoided island |
-| Within | [[midchain-north|The Northern Midchain]] |
+| Within | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Unclaimed |
 | Access | No pilot approaches on purpose; the only landings on record are wrecks and dares |
 | Known For | A curse nobody agrees on the shape of |

@@ -15,8 +15,6 @@ sources:
 created: 2026-09-22
 updated: 2026-09-22
 type: npc
-lifecycle: proposed
-base_confidence: 0.42
 reveal: unrevealed
 campaign: shattered-sea
 status: alive

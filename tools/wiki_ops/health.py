@@ -166,7 +166,7 @@ def _error_entries(value: Any, *, limit: int = 5) -> list[dict[str, Any]]:
     rows = _rows(value, ("records", "errors", "entries", "items"))
     entries: list[dict[str, Any]] = []
     for row in rows:
-        status = row.get("status")
+        status = row.get("status", "open")  # errors.md entries carry no status: every entry is open
         if not isinstance(status, str) or status.casefold() != "open":
             continue
         entry: dict[str, Any] = {"status": "open"}
@@ -201,7 +201,7 @@ def _error_trends(errors: TrackerInput) -> dict[str, Any]:
     causes: Counter[str] = Counter()
     open_count = 0
     for row in rows:
-        status = row.get("status")
+        status = row.get("status", "open")  # errors.md entries carry no status: every entry is open
         if not isinstance(status, str) or status.casefold() != "open":
             continue
         open_count += 1
@@ -439,9 +439,9 @@ def _focus_action(source: str, path: str, reason: str) -> str:
 def _error_path(row: Any) -> str | None:
     if not isinstance(row, Mapping):
         return None
-    for key in ("path", "file", "page"):
+    for key in ("path", "file", "page", "source"):
         path = _relative_path(row.get(key))
-        if path:
+        if path and not path.startswith("external:"):
             return path
     sitting = row.get("sitting")
     if isinstance(sitting, Mapping):
@@ -524,6 +524,11 @@ def build_focus(
             )
         else:
             add(item, None, "layout", "layout plan")
+
+    for row in _rows(open_errors, ("entries", "records", "errors", "items")):
+        source = row.get("source")
+        if isinstance(source, str) and not source.startswith("external:"):
+            add(source, row.get("cause"), "tracker", "open ledger entry")
 
     return items
 def _compact_lint(lint: Any) -> dict[str, Any]:
@@ -897,4 +902,6 @@ def build_health_snapshot(
             "act": [],
         },
     }
+    if isinstance(lint.get("identity"), Mapping):
+        snapshot["identity"] = _clone(lint["identity"])
     return snapshot

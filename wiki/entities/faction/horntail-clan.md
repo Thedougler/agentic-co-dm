@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ region: "Western Totemo Tokage"
 base: "[[Hōnteiru no Mura]]"
 summary: "Western Tokage clan of elite archers and samurai-style swordsmen who defend the island openly."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Horntail Clan
@@ -71,7 +68,7 @@ The clan competes with the other Tokage clans but shares kinship with the [[akai
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[akibana-besko|Akibana Besko]] | Leader | Protect western Tokage | Leads the clan |
+| [[akibana-besko\|Akibana Besko]] | Leader | Protect western Tokage | Leads the clan |
 
 ### Chain of Action
 

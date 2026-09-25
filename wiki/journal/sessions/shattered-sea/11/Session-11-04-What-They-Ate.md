@@ -8,8 +8,6 @@ created: 2026-09-13
 updated: 2026-09-13
 type: session-prep
 kind: development
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 summary: Development on Line Bank. Fallen fruit and fish remains are safe evidence; blood sits only under snapped living stems, and delay lets the smoke thin.
 campaign: shattered-sea

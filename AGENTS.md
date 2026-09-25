@@ -67,9 +67,11 @@ Spec Kit auto-commit is enabled for the configured before/after hooks. The commi
 
 ## Hybrid SDD routing
 
-Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, lifecycle, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
+Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
 
 **Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
+
+<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix with the check or test that catches the cause, adding one when none exists (for a script path in a skill or AGENTS.md, run `scripts/check-current-commands` and see that file pass), then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
 
 ## Carve-outs
 
@@ -84,7 +86,7 @@ the failure on it.
 
 ## Canon and done-summary
 
-Canon owner: constitution principle X. File what it makes canon. Everything else is a marked canon proposal the DM accepts (XII).
+Canon: apply the rule in [`llm-wiki`](.agents/skills/llm-wiki/SKILL.md#canon) (constitution X) and file what it makes canon.
 
 Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
@@ -123,7 +125,7 @@ You can maintain multiple vaults (each a `~/.obsidian-wiki/config.<name>` file m
 
 ## Campaign Co-DM
 
-Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `lifecycle`, `reveal`, complete-sentence prose).
+Load `wiki/AGENTS.md` before any write to `wiki/` (campaign `type`, `reveal`, complete-sentence prose).
 Load `docs/agents/work.md` before Co-DM prep or wrapup output (table aim and reflection; file what constitution X makes canon).
 
 The 019 loop lives in this file plus `docs/agents/work.md`. Reflection is offered after a session sitting outside `session-recap` (that skill is narrative recap only). No new skill.
@@ -189,16 +191,13 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
 
-If a job will repeat and no existing command does it, create an agent-shaped helper without being asked. Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
+If a job will repeat and no existing command does it, create an agent-shaped helper without being asked; load `cli-for-agents` first (constitution VI). Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
 ### Error ledger
 
-On runtime failure, append to `errors.md` before the sitting is complete. Drain matching entries when a wiki improvement or other landed fix actually removes the cause. Leftover entries for already-fixed causes are wasted context. The DM MUST NOT fill, review, or drain the ledger. Drain after the fixing write lands.
+A runtime failure is friction: fix and verify its source, then continue ([friction rule](#friction-rule)). `errors.md` holds only causes still open. Record one with `error append --source <path the fix lands in>` only when that fix cannot land in the current task. Drain it with `error drain --id e-N` in the same commit as the verified fix; an entry whose cause is already fixed is wasted context, so drain it when you find it. The ledger is agent-owned: the DM never fills, reviews, or drains it.
 
-Examples:
-- `python3 scripts/error-ledger.py error append --cause "…" --sitting "prep: …"`
-- `python3 scripts/error-ledger.py error drain --id e-N --cause-fixed true`
-- `python3 scripts/error-ledger.py error list`
+Same cause: `append` attaches an identical cause on the same source by itself. For a differently worded failure, pass `--attach e-N` when the fix for e-N would also remove it; otherwise `append` creates a new entry. Undo a wrong attach with `error detach --id e-N --index k`, using the `occurrence_index` that `append` reported. Invocations and examples: `python3 scripts/error-ledger.py error append --help`.
 
 ### Layout
 
@@ -264,7 +263,7 @@ and `wiki/AGENTS.md` for wiki semantics. Neither duplicates owner procedure.
 | Write, edit, or create content for a Climax | `climax-beats` |
 | Write, edit, or create content for a Resolution | `resolution-beats` |
 
-Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first via the **owner skill**) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Every beat and run guide is written from the session's filed session plan (the short form of the DM's intent); when none exists, `plan-session` shapes the intent with the DM and `session-beats` files the plan first. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first via the **owner skill**) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
 
 ## Wiki kind routing
 
@@ -345,7 +344,7 @@ When `multi-get` rejects an identifier, do not retry with a different format —
 
 **`qmd skill show` may time out** (~30s). If it does, skip it and use `qmd query` / `qmd get` directly — the bootstrap skill in `.agents/skills/qmd/SKILL.md` is sufficient.
 
-Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent.
+Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent. `-c archive` holds `wiki/_archive/` (not canon, out of default search): use it only for a page's history.
 
 Wiki hit = current canon. Legacy hit = campaign-of-record context. File user-said canon immediately. Wiki vs legacy disagreement → cite wiki.
 
@@ -376,7 +375,6 @@ Match the user's intent to the right skill. Beat-type routing and wiki-kind rout
 | User says something like… | Skill |
 |---|---|
 | "set up my wiki" / "initialize" | `wiki-setup` |
-| "/wiki-history-ingest claude" / "import my Claude history" / "mine my Copilot sessions" / any agent-history ingest | `wiki-history-ingest` |
 | "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
@@ -462,6 +460,7 @@ stderr `tune` names a checker. Fix it this sitting.
 | User says something like… | Skill |
 |---|---|
 | "search the wiki" / `qmd query` / semantic retrieval | `qmd` |
+| create or change a repository command: new script, flags, `--help`, errors, output | `cli-for-agents` |
 | "create a new skill" | `skill-creator` |
 | "/vault-skill-factory" / "make a skill from my wiki" | `vault-skill-factory` |
 | "research X" (general, not wiki-research) | `research` |
@@ -476,13 +475,12 @@ Spec Kit adapters (`speckit-*`) are generated harness integrations, not primary 
 
 ### Session history: ingest vs. retrieve
 
-Three skills read agent session caches, and they are not interchangeable:
+Two kinds of skill read agent session caches, and they are not interchangeable:
 
-- `wiki-history-ingest` **ingests** — distils sessions into permanent vault pages. Handles all agent variants (Claude, Copilot, Codex, Hermes, OpenClaw, Pi) as modes.
-- `wiki-agent` **ingests a slice** — finds sessions about one topic in another agent's history and pulls them into the vault.
+- `wiki-agent` **ingests** — finds sessions about one topic in an agent's history and distils them into vault pages.
 - `session-brain` / `session-search` **retrieve** — build a topic graph over the raw sessions and find or load one. They write a sidecar at `~/.claude/session-brain/` and never touch the vault.
 
-If the user wants knowledge preserved, ingest. If they want to find the session where something happened, retrieve.
+If the user wants knowledge preserved, ingest with `wiki-agent`. If they want to find the session where something happened, retrieve.
 
 ## Cross-Project Usage
 
@@ -584,5 +582,5 @@ The vault format is structurally conformant with the [Open Knowledge Format (OKF
 <!-- SPECKIT START -->
 For additional context about technologies to be used, project structure,
 shell commands, and other important information, read the current plan
-at specs/029-agent-loop-closure/plan.md
+at specs/030-self-improving-architecture/plan.md
 <!-- SPECKIT END -->

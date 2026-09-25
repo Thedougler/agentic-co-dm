@@ -8,8 +8,6 @@ created: 2026-09-13
 updated: 2026-09-13
 type: session-prep
 kind: development
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 summary: The single current-hazards table for Session-11-00-Birds-of-a-Feather. No Grung. Do not restage beat 9 (Talon Skarn).
 campaign: shattered-sea

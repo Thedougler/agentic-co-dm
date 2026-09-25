@@ -6,7 +6,6 @@ sources: []
 created: 2026-09-16
 updated: 2026-09-16
 type: impossible
-lifecycle: draft
 reveal: dm
 ---
 

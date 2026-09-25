@@ -52,8 +52,8 @@ new compiled knowledge pages.
 5. Exclude `_readouts/`, `_raw/`, `_archives/`, `_meta/`, `index.md`, `log.md`,
    `hot.md`, and `_insights.md` from candidates.
 6. Read matching sections before full pages, and read full pages only when a factual
-   claim cannot otherwise be established. Preserve relevant lifecycle and freshness
-   annotations; do not upgrade a page's trust.
+   claim cannot otherwise be established. Preserve relevant freshness
+   annotations.
 
 ## Claim Ledger and Citation Audit
 

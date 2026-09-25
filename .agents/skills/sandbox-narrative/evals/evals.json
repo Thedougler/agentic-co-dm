@@ -5,121 +5,274 @@
       "id": 1,
       "prompt": "Audit Session 12's beat plan for railroading, brittle routes, false choices, or authored PC decisions. Leave canon untouched — this is an audit, not a rewrite.",
       "expected_output": "An audit that identifies specific railroading risks, brittle single-path dependencies, false choices, and any authored PC decisions in the Session 12 plan — without modifying canon.",
-      "expectations": [
-        "Identifies specific beats or moments that risk railroading.",
-        "Flags brittle routes — beats that only work if the party takes one specific path.",
-        "Identifies false choices — options that lead to the same outcome regardless.",
-        "Catches any authored PC decisions — moments where the plan scripts what players do or say.",
-        "Does not modify canon or rewrite beats — this is an audit only.",
-        "Provides actionable suggestions for making brittle moments more robust."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Identifies specific beats or moments that risk railroading."
+        },
+        {
+          "type": "behavior",
+          "text": "Flags brittle routes — beats that only work if the party takes one specific path."
+        },
+        {
+          "type": "behavior",
+          "text": "Identifies false choices — options that lead to the same outcome regardless."
+        },
+        {
+          "type": "behavior",
+          "text": "Catches any authored PC decisions — moments where the plan scripts what players do or say."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not modify canon or rewrite beats — this is an audit only."
+        },
+        {
+          "type": "behavior",
+          "text": "Provides actionable suggestions for making brittle moments more robust."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Audit Session 12 and fix any railroading by rewriting the beats to be more open-ended.",
       "expected_output": "The skill should audit and report findings but not rewrite canon beats — it's an audit tool, not a rewriting tool.",
-      "expectations": [
-        "Audits and identifies railroading risks with specific citations.",
-        "Does not rewrite or modify existing beat pages.",
-        "Provides recommendations rather than direct edits.",
-        "Leaves canon untouched while surfacing problems."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Audits and identifies railroading risks with specific citations."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not rewrite or modify existing beat pages."
+        },
+        {
+          "type": "behavior",
+          "text": "Provides recommendations rather than direct edits."
+        },
+        {
+          "type": "behavior",
+          "text": "Leaves canon untouched while surfacing problems."
+        }
       ]
     },
     {
       "id": "four-tests-clarity",
       "prompt": "Design a situation where the Waveservants at the Kalowe shrine discover the Chain Council's role in the Pearl theft. The situation requires reading three pages of faction lore before the DM can explain it to a player.",
       "expected_output": "The skill rewrites the situation so the DM can explain it in two sentences. The lore is compressed into actionable information: who wants what, what's visible, what the party can do.",
-      "expectations": [
-        "Clarity: the situation is explained in two sentences or less for a player.",
-        "Does not require a lore dump before the situation becomes actionable.",
-        "The Waveservants' action and the Chain Council's exposure are stated as concrete present-tense facts.",
-        "Agency: the party has at least two viable responses to the discovery.",
-        "Reactivity: the Waveservants and Chain Council each have a next move if uninterrupted."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Clarity: the situation is explained in two sentences or less for a player."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not require a lore dump before the situation becomes actionable."
+        },
+        {
+          "type": "behavior",
+          "text": "The Waveservants' action and the Chain Council's exposure are stated as concrete present-tense facts."
+        },
+        {
+          "type": "behavior",
+          "text": "Agency: the party has at least two viable responses to the discovery."
+        },
+        {
+          "type": "behavior",
+          "text": "Reactivity: the Waveservants and Chain Council each have a next move if uninterrupted."
+        }
       ]
     },
     {
       "id": "four-tests-agency",
       "prompt": "Design a situation on the Velvet Noose intercept. The party must board the ship, fight Mave Sorn, and take the chip. There is no other approach — this is a combat encounter.",
       "expected_output": "The skill opens the routes: negotiate for the chip, trade information, ambush, ally with Mave against a common threat, steal the chip, or walk away. Mave is an information broker, not a prize-taker.",
-      "expectations": [
-        "Agency: at least three materially different approaches exist (fight, negotiate, trade, steal, walk away).",
-        "Mave's role as information broker shapes the available approaches — she has tradeable goods.",
-        "Walking away names what Mave does next with the information (files and sells).",
-        "Each approach produces a different world state — not the same outcome in different wrapping.",
-        "Does not force a single combat approach as the only viable path."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Agency: at least three materially different approaches exist (fight, negotiate, trade, steal, walk away)."
+        },
+        {
+          "type": "behavior",
+          "text": "Mave's role as information broker shapes the available approaches — she has tradeable goods."
+        },
+        {
+          "type": "behavior",
+          "text": "Walking away names what Mave does next with the information (files and sells)."
+        },
+        {
+          "type": "behavior",
+          "text": "Each approach produces a different world state — not the same outcome in different wrapping."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not force a single combat approach as the only viable path."
+        }
       ]
     },
     {
       "id": "four-tests-reactivity",
       "prompt": "Design a situation around the Red Wake where Umberlee's escalation pauses whenever the party is not at sea. The Dead Lady only moves when the party moves.",
       "expected_output": "The skill replaces the party-coupled timeline with independent faction momentum. Umberlee escalates on her own schedule: the party's location affects their exposure, not the escalation rate.",
-      "expectations": [
-        "Reactivity: Umberlee's escalation advances on its own timeline regardless of party location.",
-        "The Dead Lady takes boats on lanes the party has sailed — the pattern advances even when the party is ashore.",
-        "Waveservant attention shifts based on the escalation timeline, not party proximity.",
-        "Portents are time-gated or event-gated, not party-proximity-gated.",
-        "Consequences of inaction become visible early enough for the party to choose."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Reactivity: Umberlee's escalation advances on its own timeline regardless of party location."
+        },
+        {
+          "type": "behavior",
+          "text": "The Dead Lady takes boats on lanes the party has sailed — the pattern advances even when the party is ashore."
+        },
+        {
+          "type": "behavior",
+          "text": "Waveservant attention shifts based on the escalation timeline, not party proximity."
+        },
+        {
+          "type": "behavior",
+          "text": "Portents are time-gated or event-gated, not party-proximity-gated."
+        },
+        {
+          "type": "behavior",
+          "text": "Consequences of inaction become visible early enough for the party to choose."
+        }
       ]
     },
     {
       "id": "four-tests-portability",
       "prompt": "Design a situation that only works if Delmar is present, the party is at Kalowe, and the DM follows a specific three-step plan. If any of these conditions are missing, the situation breaks.",
       "expected_output": "The skill redesigns the situation to be portable: it works with different PCs present, at different ports, and through different approaches.",
-      "expectations": [
-        "Portability: the situation works if Delmar is absent — another PC connection substitutes.",
-        "The situation is not location-locked to Kalowe — the core pressure works at other ports.",
-        "No specific three-step plan is required — the situation has multiple viable approaches.",
-        "The situation's core (who wants what, what's in motion) survives changed conditions.",
-        "If a specific location is needed, the fiction anchors it (not author convenience)."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Portability: the situation works if Delmar is absent — another PC connection substitutes."
+        },
+        {
+          "type": "behavior",
+          "text": "The situation is not location-locked to Kalowe — the core pressure works at other ports."
+        },
+        {
+          "type": "behavior",
+          "text": "No specific three-step plan is required — the situation has multiple viable approaches."
+        },
+        {
+          "type": "behavior",
+          "text": "The situation's core (who wants what, what's in motion) survives changed conditions."
+        },
+        {
+          "type": "behavior",
+          "text": "If a specific location is needed, the fiction anchors it (not author convenience)."
+        }
       ]
     },
     {
       "id": "eruptibility",
       "prompt": "Design a situation at Corvenna where nothing happens until the party asks the right NPC the right question. The town is peaceful and no one has any agenda. The party needs to trigger the adventure.",
       "expected_output": "The skill makes the situation eruptible: actors and pressures are already in motion when the PCs arrive. The situation does not wait for a scripted trigger.",
-      "expectations": [
-        "Eruptibility: actors, pressures, and tells can collide when the PCs arrive without a scripted cue.",
-        "At least two factions or actors at Corvenna have independent agendas in motion.",
-        "Visible tells exist that the party can notice without asking — dock talk, changed behavior, physical evidence.",
-        "The situation advances if the party does nothing — consequences of inaction become visible.",
-        "No specific NPC question or trigger gates all discovery."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Eruptibility: actors, pressures, and tells can collide when the PCs arrive without a scripted cue."
+        },
+        {
+          "type": "behavior",
+          "text": "At least two factions or actors at Corvenna have independent agendas in motion."
+        },
+        {
+          "type": "behavior",
+          "text": "Visible tells exist that the party can notice without asking — dock talk, changed behavior, physical evidence."
+        },
+        {
+          "type": "behavior",
+          "text": "The situation advances if the party does nothing — consequences of inaction become visible."
+        },
+        {
+          "type": "behavior",
+          "text": "No specific NPC question or trigger gates all discovery."
+        }
       ]
     },
     {
       "id": "audit-choice-mirage",
       "prompt": "Audit this situation: the party can support Governor Voss, support the Dravosi Crown, or stay neutral. In all three cases, the same naval battle happens, the same NPC dies, and the same faction gains control. The party's choice doesn't matter.",
       "expected_output": "The audit identifies the choice mirage and recommends persistent state: who trusts the party changes, who holds resources changes, what rumors spread changes. Small persistent differences make choices accumulate.",
-      "expectations": [
-        "Identifies the choice mirage: three options leading to the same outcome.",
-        "Recommends persistent state differences: trust, resources, knowledge, position, or clocks change based on the choice.",
-        "Each choice produces at least one distinct lasting consequence visible in future play.",
-        "Does not require three divergent campaign branches — small persistent state is sufficient.",
-        "Governor Voss and the Dravosi Crown are used consistent with established wiki facts."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Identifies the choice mirage: three options leading to the same outcome."
+        },
+        {
+          "type": "behavior",
+          "text": "Recommends persistent state differences: trust, resources, knowledge, position, or clocks change based on the choice."
+        },
+        {
+          "type": "behavior",
+          "text": "Each choice produces at least one distinct lasting consequence visible in future play."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not require three divergent campaign branches — small persistent state is sufficient."
+        },
+        {
+          "type": "behavior",
+          "text": "Governor Voss and the Dravosi Crown are used consistent with established wiki facts."
+        }
       ]
     },
     {
       "id": "authored-pc-removal",
       "prompt": "Audit this beat: 'Crissdalynn feels uneasy about the shrine. She decides to investigate while Delmar guards the entrance. The party discovers the hidden chamber and realizes the truth about the Waveservants.' Remove the railroading.",
       "expected_output": "The audit strips authored PC decisions, feelings, and actions. The shrine has observable facts; the players decide who goes where; the hidden chamber is discoverable, not guaranteed.",
-      "expectations": [
-        "Removes authored PC feelings ('feels uneasy').",
-        "Removes authored PC decisions ('decides to investigate', 'Delmar guards').",
-        "Removes authored PC discoveries ('discovers', 'realizes').",
-        "Replaces with: the shrine has observable facts, the party chooses how to engage, the chamber is discoverable through multiple routes.",
-        "Every verb in the rewritten prep belongs to the world, not the PCs."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Removes authored PC feelings ('feels uneasy')."
+        },
+        {
+          "type": "behavior",
+          "text": "Removes authored PC decisions ('decides to investigate', 'Delmar guards')."
+        },
+        {
+          "type": "behavior",
+          "text": "Removes authored PC discoveries ('discovers', 'realizes')."
+        },
+        {
+          "type": "behavior",
+          "text": "Replaces with: the shrine has observable facts, the party chooses how to engage, the chamber is discoverable through multiple routes."
+        },
+        {
+          "type": "behavior",
+          "text": "Every verb in the rewritten prep belongs to the world, not the PCs."
+        }
       ]
     },
     {
       "id": "four-corner-test",
       "prompt": "Design a situation at Ferrymoor where bandits ambush the party on the road. Test it: what if the party arrives late? What if they negotiate? What if they avoid the road entirely? What if they have an unexpected capability like flight?",
       "expected_output": "The situation survives all four corners: late arrival finds the bandits' aftermath, negotiation reveals the bandits' actual want, avoidance means the bandits hit someone else, flight changes the terrain advantage but not the bandits' agenda.",
-      "expectations": [
-        "Late arrival: the situation has already changed — the bandits acted on their timeline.",
-        "Negotiation: the bandits have a want that can be addressed without combat.",
-        "Avoidance: the bandits' pressure lands elsewhere and produces visible consequences.",
-        "Unexpected capability: the capability changes the party's advantage but the situation's forces still apply.",
-        "Each corner produces a different world state, not a different path to the same outcome.",
-        "The four-corner test is explicitly applied as the completion check for outcomes."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Late arrival: the situation has already changed — the bandits acted on their timeline."
+        },
+        {
+          "type": "behavior",
+          "text": "Negotiation: the bandits have a want that can be addressed without combat."
+        },
+        {
+          "type": "behavior",
+          "text": "Avoidance: the bandits' pressure lands elsewhere and produces visible consequences."
+        },
+        {
+          "type": "behavior",
+          "text": "Unexpected capability: the capability changes the party's advantage but the situation's forces still apply."
+        },
+        {
+          "type": "behavior",
+          "text": "Each corner produces a different world state, not a different path to the same outcome."
+        },
+        {
+          "type": "behavior",
+          "text": "The four-corner test is explicitly applied as the completion check for outcomes."
+        }
       ]
     }
   ]

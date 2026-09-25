@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ region: "Central Totemo Tokage"
 base: "[[Kurogane-mura]]"
 summary: "Mountain-base clan of blacksmiths and ore miners whose weapons and armor supply the other Tokage clans."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Kento Clan
@@ -71,7 +68,7 @@ The clan's products are purchased by the other Tokage clans. Its settlement sits
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[takayama-kongo|Takayama Kongo]] | Leader | Keep production running | Leads the clan |
+| [[takayama-kongo\|Takayama Kongo]] | Leader | Keep production running | Leads the clan |
 
 ### Chain of Action
 

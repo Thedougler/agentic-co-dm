@@ -23,9 +23,9 @@ def test_task_json_contract_and_exit_code():
 
 
 def test_rule_human_output_and_unknown_rule():
-    proc = run_cli("rule", "CANON001")
+    proc = run_cli("rule", "WIKI001")
     assert proc.returncode == 0
-    assert "CANON001" in proc.stdout and "Bundles:" in proc.stdout
+    assert "WIKI001" in proc.stdout and "Bundles:" in proc.stdout
     missing = run_cli("rule", "NOPE999")
     assert missing.returncode == 2
     assert "Unknown rule ID" in missing.stderr

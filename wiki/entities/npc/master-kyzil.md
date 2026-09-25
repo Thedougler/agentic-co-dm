@@ -14,9 +14,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
 updated: 2026-09-23
@@ -56,7 +53,7 @@ He asks questions instead of making statements, even while teaching, and agrees 
 | Consistent method | Asks questions instead of giving orders. Channels worry into action, not words. Never repeats himself. |
 | Active problem | Something foul from the south is moving beneath Calveno, pulling his attention in two directions. |
 | Performance hooks | Composed sentinel master vibe. Smooths his robes, refolds his wings right over left, then adjusts his hood when his composure threatens to crack. |
-| Link of relevance | Assigned [[crissdalynn-khinriss|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
+| Link of relevance | Assigned [[crissdalynn-khinriss\|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
 
 The "foul wind from the south" he named when the ship went down was right. Talon Vantyrus and [[talon-skarn]] of [[the Countless]] operated in the Midchain at the time. Introduce that thread only once the crew of the [[Uncertainty]] travels into or reaches the Midchain. His outstanding business is to determine what the Eyrie needs to know about current Maw conditions. He has not disclosed what brought him to Calveno beyond Crissdalynn. Does he know about the [[soul-incarnate]]? No. Under the Sentinels of the Eyrie doctrine, he does not know that [[soul-incarnate]] exists as a conscious entity. He knows only that the order's founding documents are ancient.
 

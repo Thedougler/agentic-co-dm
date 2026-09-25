@@ -96,7 +96,8 @@ def _iter_grouped_findings(rule: str, value: Any):
 
 
 def structural_main(argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(
+        description=__doc__, epilog="Front door: scripts/wiki lint owns lint usage; see wiki lint --help and wiki lint fix --help.")
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
@@ -108,7 +109,6 @@ def structural_main(argv: list[str]) -> int:
     parser.add_argument("--from", dest="findings_file")
     parser.add_argument("--hard", action="store_true", default=True)
     parser.add_argument("--all", action="store_true")
-    parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
     args = parser.parse_args(argv)
     try:
@@ -119,15 +119,14 @@ def structural_main(argv: list[str]) -> int:
         if scope:
             scope.resolve(vault)
         identities = []
+        identity_stats = {"scanned": 0, "compared": 0, "index": {"hits": 0, "misses": 0}}
         started = time.monotonic()
         if scope:
-            from tools.wiki_ops.identity import scan_identities
-            identities = scan_identities(vault, scope=scope)
+            from tools.wiki_ops.identity import scan_identity_report
+            identities, identity_stats = scan_identity_report(vault, scope=scope, persist=True)
         timing["tools/wiki_ops/identity.py"] = int((time.monotonic() - started) * 1000)
         ambiguous_identities = [item.to_dict() for item in identities if item.status == "ambiguous"]
         extra: list[str] = []
-        for value in args.allow_lifecycle:
-            extra.extend(["--allow-lifecycle", value])
         if args.verbose:
             extra.append("--verbose")
         for value in args.allow_relationship_type:
@@ -141,7 +140,7 @@ def structural_main(argv: list[str]) -> int:
         else:
             code, report = 0, source
         timing["tools/lint_wiki.py"] = int((time.monotonic() - started) * 1000)
-        report["identity"] = {"status": "ambiguous" if ambiguous_identities else "resolved", "ambiguous": ambiguous_identities, "scanned": len(identities)}
+        report["identity"] = {"status": "ambiguous" if ambiguous_identities else "resolved", "ambiguous": ambiguous_identities, "scanned": identity_stats["scanned"], "compared": identity_stats["compared"], "index": identity_stats["index"]}
         if ambiguous_identities:
             report["identity_ambiguous"] = True
         if args.template:
@@ -189,16 +188,6 @@ def structural_main(argv: list[str]) -> int:
                         "severity": "BLOCK",
                         "repair_class": "human_repair",
                         "reason": "Deprecated faction-clock guidance remains in an authoritative source",
-                    })
-            for relative in paths:
-                page = vault / relative
-                if page.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", page.read_text(encoding="utf-8"), re.I):
-                    template_findings.append({
-                        "rule_id": "TMPL_inherited_deprecated_guidance",
-                        "file": relative,
-                        "severity": "REPAIR",
-                        "repair_class": "human_repair",
-                        "reason": "Page contains deprecated faction-clock output inherited from source guidance",
                     })
             if template_findings:
                 report.setdefault("findings", {})["template_conformance"] = template_findings
@@ -343,15 +332,14 @@ def _snapshot(vault: Path, report: dict[str, Any]) -> str:
 
 def consolidate_main(argv: list[str]) -> int:
     parser = argparse.ArgumentParser(prog="wiki-lint --consolidate")
-    parser.add_argument("vault", nargs="?", default="wiki")
+    parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
     parser.add_argument("--approve", action="store_true")
     args = parser.parse_args(argv)
-    vault = Path(args.vault)
-    if not vault.is_absolute():
-        vault = (Path.cwd() / vault).resolve()
-    if not vault.is_dir():
-        print(f"wiki-lint: vault not found: {vault}", file=sys.stderr)
+    try:
+        vault = resolve_vault(args.vault)
+    except ValueError as exc:
+        print(f"wiki-lint: {exc}", file=sys.stderr)
         return 2
     try:
         _, report = run_lint(vault, ["--hard-only"])

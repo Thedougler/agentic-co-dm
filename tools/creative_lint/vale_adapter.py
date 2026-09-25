@@ -65,7 +65,6 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
             if alert.get("Match") is not None:
                 location["text"] = str(alert["Match"])
             message = str(alert.get("Message") or alert.get("Match") or (rule.message if rule else check))
-            action_kind = "delete_section" if check.casefold().startswith("deprecated.") else "replace_section"
             default_severity = "REPAIR" if is_custom else rule.severity if rule else "BLOCK"
             findings.append(Finding(
                 rule_id=f"VALE_{check}" if is_custom else lookup_id,
@@ -76,11 +75,10 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
                 reason=rule.message if rule else message,
                 repair_target=rule.repair if rule else message,
                 evaluator="vale",
-                repair_class="deterministic_repair" if is_custom else getattr(rule, "repair_class", "diagnostic"),
-                repair_action=(
-                    {"kind": action_kind, "target": location["file"], "selector": {"line": location["line"]}}
-                    if is_custom else None
-                ),
+                # Repo-local styles (e.g. Deprecated.*) need an agent's call under wiki-lint:
+                # removing or relocating the content has more than one correct output.
+                repair_class="human_repair" if is_custom else getattr(rule, "repair_class", "diagnostic"),
+                repair_action=None,
             ))
     return findings
 

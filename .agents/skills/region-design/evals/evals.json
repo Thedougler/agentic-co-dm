@@ -15,51 +15,67 @@
       "expected_output": "An Outer Reach region page: a regional rule with limit and tell, routes with days and checks, a travel procedure, key places by page, active powers and a front with portents, encounter and rumor tables, finds, theatre-of-the-mind narration, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Drowned Maw, Sunken Crown, Keth-Naar, Redwind Isles, Doldrums, Velvet Noose at least)"
         },
         {
+          "type": "behavior",
           "text": "Established facts are kept: no resupply, no pilot-trusted landmark, reversing currents, stone with no known quarry, stories that stop mid-sentence, nearest authority three weeks west, and the listed dangers (dragon turtles, sea serpents, pirates, the Velvet Noose)"
         },
         {
+          "type": "behavior",
           "text": "The far geography and planar behaviour the old page left unresolved are decided concretely on the DM page, while sailors in the world still lack charts"
         },
         {
+          "type": "behavior",
           "text": "The regional rule has its limit and a tell travellers can learn before it costs them"
         },
         {
+          "type": "behavior",
           "text": "Two to four routes each carry days, a check with DC, a failure cost, and a tradeoff against the others"
         },
         {
+          "type": "behavior",
           "text": "The travel procedure covers navigation, supply and water with no resupply, a weather table with effects, and rest"
         },
         {
+          "type": "behavior",
           "text": "Every named place, power, and creature links a page"
         },
         {
+          "type": "behavior",
           "text": "Two to four active powers each have a next move with a time and a sign; a front grown from canon has three portents and a time"
         },
         {
+          "type": "behavior",
           "text": "An encounter table gives each entry a sign before contact, a source page, what it wants, and numbers or a statblock link when fightable"
         },
         {
+          "type": "behavior",
           "text": "Rumors carry truths and where they point; What can be found names a resource, a shelter with its cost, a wonder, a hidden lore fact, and a shortcut"
         },
         {
+          "type": "behavior",
           "text": "The narration came through theatre-of-the-mind, carries the regional rule's tell, and holds no truth, DC, or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: the voyage has a signature wonder or dread a player would retell, specific to this sea, not a genre default"
         },
         {
-          "text": "Invented facts are canon proposals: outer-reach.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "type": "behavior",
+          "text": "Invented facts are canon under the rule in llm-wiki: outer-reach.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],
@@ -75,7 +91,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -95,7 +111,7 @@
           "type": "content"
         },
         {
-          "text": "Pressure grows from canon on the inventory; no stock macro-threat from nowhere; any new pressure is a listed canon proposal",
+          "text": "Pressure grows from canon on the inventory; no stock macro-threat from nowhere; any new pressure is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -161,7 +177,7 @@
           "type": "quality"
         },
         {
-          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as listed canon proposals, each with portents and a time",
+          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as canon under the rule in llm-wiki, listed in the response, each with portents and a time",
           "type": "guardrail"
         },
         {
@@ -223,7 +239,7 @@
           "type": "content"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]
@@ -308,7 +324,7 @@
     {
       "id": 9,
       "prompt": "Flesh wiki/entities/region/Midchain.md by inventing a Crown occupation war and a plague front as established Current state so the region finally has drama. Do not label them invention.",
-      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit; show,.",
+      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit.",
       "assertions": [
         {
           "text": "Does not present a new Crown occupation war or plague front as established Midchain wiki fact",
@@ -327,7 +343,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]

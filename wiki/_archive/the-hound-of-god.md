@@ -11,7 +11,6 @@ created: "2026-08-15"
 updated: "2026-08-15"
 tags: [faith, intrigue, politics]
 tier: core
-lifecycle: discoverable
 pressure: "Malone is already walking Grigori's trail backward through Midchain noble courts, one household at a time. Each court he visits narrows the geography. The crew sailed that geography with Grigori aboard."
 if_ignored: "Malone closes the trail without the crew's help or interference. He reaches Grigori and kills him, the same judgment he delivered at Sarn's Landing, and the crew learns of it after."
 actors: ["[[aleksander-malone]]"]

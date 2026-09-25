@@ -42,7 +42,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 - **Canon.** User-said facts file immediately on the live path. Whatever the
   page needs that canon leaves silent, records as unknown, or contradicts,
-  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  decide now as canon under the rule in `llm-wiki` (`docs/agents/table-ready.md` § Fill the
   silence): one concrete answer, stated on the page as world fact where the DM
   uses it, with the page marked `invention: true`. The response lists each
   proposal with the `[[pages]]` it grows from; a proposal that settles a
@@ -261,7 +261,7 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Every fighter in reach carries compact numbers, the NPC included; custom
   forms came from `monster-design`.
 - `role` is rival, patron, or contact; `[!narration]` is the only callout.
-- User-said canon is filed; every invention is a canon proposal, marked on the
+- User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

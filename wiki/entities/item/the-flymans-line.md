@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # The Flyman's Line
@@ -43,8 +40,8 @@ Sold for the flies over a stage, where a performer has to be somewhere high befo
 | One thing | The loop takes an anchor 40 feet up and hauls one person to it in a turn. |
 | Rarity justification | Uncommon: one movement power, and a turn spent to use it. |
 | Attunement reason | None. One power, and any hand can work it. |
-| PC connection | Puts [[crissdalynn-khinriss|Crissdalynn]] on the high ground the crew's melee lanes keep giving away. |
-| Current holder | [[fioravante-selmerin|Fio]], on a hook beneath the window stand. |
+| PC connection | Puts [[crissdalynn-khinriss\|Crissdalynn]] on the high ground the crew's melee lanes keep giving away. |
+| Current holder | [[fioravante-selmerin\|Fio]], on a hook beneath the window stand. |
 | Narrative hook | 140 gp, and Fio demonstrates it on the shop's own beam every time. |
 
 Uncommon tier holds. Magic Item Rarity prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the line's 140 gp sits at the low end of that band, alongside [[Kat's]] Wand of Secrets at 130 gp. A mundane grappling hook and 50 feet of rope costs 3 gp and takes minutes of climbing; the line does the ascent in one action and never asks for a check.

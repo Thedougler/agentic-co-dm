@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: "2026-09-22"
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -23,7 +21,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Serafina Windfall Fisk
@@ -65,7 +62,7 @@ Serafina stops explaining or resisting the pull when it has chosen its next dest
 
 | Connection | Meaning |
 | --- | --- |
-| [[delmar-fisk|Delmar Fisk]] | Her husband; their work keeps them apart more often than not. |
+| [[delmar-fisk\|Delmar Fisk]] | Her husband; their work keeps them apart more often than not. |
 | The Duchess | Delmar's musket, named for Serafina. |
 | [[red-lady]] | The ship she was not aboard when the fleet went down. |
 | [[the Maw]] | The loss that swallowed much of Delmar's old life but not Serafina. |

@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: vehicle
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Uncertainty - Manifest
@@ -96,7 +93,7 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 | Item | Qty | Notes |
 |---|---|---|
 | Workbench, vise | 1 | Bolted, forward alcove off the mess |
-| Tinker's tools | 1 set | [[catarina-davirelli|Catarina]] outfitted this rack |
+| Tinker's tools | 1 set | [[catarina-davirelli\|Catarina]] outfitted this rack |
 | Carpenter's tools | 1 set | Backs up Sem Holst's own kit |
 | Jeweler's tools | 1 set | |
 | Glassblower's tools | 1 set | |
@@ -109,7 +106,7 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 |---|---|---|
 | Survey charts, [[crown-islands]] and [[central-strait]] | n/a | Admiralty marks scraped, [[calven-and-calveno]] notation laid over. Good coverage, no provenance |
 | Navigation dividers | 1 set | |
-| [[barnaby-rook|Rook]]'s captain's log | 1 | Still worth reading |
+| [[barnaby-rook\|Rook]]'s captain's log | 1 | Still worth reading |
 | [[letters-of-marque]] | 1 set | Rook's privateer authority. A forger could do a great deal with them |
 
 ### Crew Quarters and Mess

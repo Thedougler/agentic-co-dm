@@ -10,8 +10,6 @@ sources:
 created: 2026-09-13T07:30:00Z
 updated: 2026-09-20
 type: region
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -25,7 +23,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 # Verdant Scatter
@@ -43,7 +40,7 @@ tier: supporting
 | **Anchor** | [[central-strait]] |
 | **Known for** | Green island arcs, forest cargo, free ports, and routes learned outside official charts |
 | **Feared for** | Reef travel, inspection calls, and incomplete charting |
-| **Parent region** | [[shattered-sea|Shattered Sea]] |
+| **Parent region** | [[shattered-sea\|Shattered Sea]] |
 
 > **DM thesis.** The Verdant Scatter makes every crossing a route choice: take the official road through inspection, or trust a learned unofficial route through reef and small ground while active powers watch the movement.
 
@@ -71,17 +68,17 @@ The Verdant Scatter is an inhabited chain of two green island arcs between the G
 
 | Edge | Neighbor | Crossing / boundary | What changes across it |
 | --- | --- | --- | --- |
-| North | [[crown-islands|Crown Islands]] | Crown water and forts | Pilots, officials, and inspection calls become more visible |
-| South | [[midchain|Midchain]] | Crowded small ground and reef routes | Councils, free ports, and southern traffic shape movement |
+| North | [[crown-islands\|Crown Islands]] | Crown water and forts | Pilots, officials, and inspection calls become more visible |
+| South | [[midchain\|Midchain]] | Crowded small ground and reef routes | Councils, free ports, and southern traffic shape movement |
 | West | Galewall / Ashwalls | Island-arc approach; exact route is not established | The chain's green island traffic gives way to the Galewall/Ashwalls |
-| East | [[tail|Tail]] / Maw | The arcs meet at the Tail; exact route beyond is not established | The chain connects toward the Tail/Maw rather than another named island arc |
+| East | [[tail\|Tail]] / Maw | The arcs meet at the Tail; exact route beyond is not established | The chain connects toward the Tail/Maw rather than another named island arc |
 
 ### Subregions
 
 | Subregion | Character | Current pressure | Why go there |
 | --- | --- | --- | --- |
-| [[crown-islands|Crown Islands]] | Northern arc with Crown water and forts | Pilots, officials, and inspection calls | Use or avoid the official northern road |
-| [[midchain|Midchain]] | Southern arc of crowded small ground, councils, and free ports | Reef movement and unofficial routes | Find local routes, pilots, and southern ports |
+| [[crown-islands\|Crown Islands]] | Northern arc with Crown water and forts | Pilots, officials, and inspection calls | Use or avoid the official northern road |
+| [[midchain\|Midchain]] | Southern arc of crowded small ground, councils, and free ports | Reef movement and unofficial routes | Find local routes, pilots, and southern ports |
 
 ### Landmarks
 
@@ -105,10 +102,10 @@ The Verdant Scatter is an inhabited chain of two green island arcs between the G
 
 | Route | Connects | Time | Cost / requirement | Risk | Advantage | Known |
 | --- | --- | ---: | --- | --- | --- | --- |
-| Official northern road | [[crown-islands|Crown Islands]] ↔ [[central-strait]] | Unknown | Pilot or official passage | Inspection calls | Legible route through Crown water | Yes |
-| Southern reef road | [[central-strait]] ↔ [[midchain|Midchain]] | Unknown | Reef knowledge or a local pilot | Reef and incomplete charting | Access to crowded small ground and free ports | Yes |
+| Official northern road | [[crown-islands\|Crown Islands]] ↔ [[central-strait]] | Unknown | Pilot or official passage | Inspection calls | Legible route through Crown water | Yes |
+| Southern reef road | [[central-strait]] ↔ [[midchain\|Midchain]] | Unknown | Reef knowledge or a local pilot | Reef and incomplete charting | Access to crowded small ground and free ports | Yes |
 | Unofficial learned route | Named island ↔ named island | Unknown | Someone who learned the route first | Unofficial, partly charted movement | May avoid the official road and its inspection calls | Yes |
-| Arc meeting route | [[central-strait]] ↔ [[tail|Tail]] | Unknown | Route knowledge | Exact approach not established | Reaches the point where the arcs meet | Yes |
+| Arc meeting route | [[central-strait]] ↔ [[tail\|Tail]] | Unknown | Route knowledge | Exact approach not established | Reaches the point where the arcs meet | Yes |
 
 ### Hidden and broken connections
 
@@ -120,19 +117,19 @@ The Verdant Scatter is an inhabited chain of two green island arcs between the G
 | Place | Kind | Current state | What it offers or threatens | Lead |
 | --- | --- | --- | --- | --- |
 | [[central-strait]] | Route | Connects the two arcs | Official and unofficial crossings | Ask a pilot how the route is inspected |
-| [[crown-islands|Crown Islands]] | Island arc | Crown water and forts | Officials, pilots, and inspection | Follow the northern road or find a way around it |
-| [[midchain|Midchain]] | Island arc | Crowded small ground, councils, and free ports | Local routes, supplies, and traffic | Find who learned a route first |
-| [[tail|Tail]] | Landmark / connection | The arcs meet here | A route toward the Maw | Identify the approach from either arc |
-| [[verdant-teeth|Verdant Teeth]] | Island band | Distinct from the broader chain | A separate five-island identity | Keep the two names separate when mapping |
+| [[crown-islands\|Crown Islands]] | Island arc | Crown water and forts | Officials, pilots, and inspection | Follow the northern road or find a way around it |
+| [[midchain\|Midchain]] | Island arc | Crowded small ground, councils, and free ports | Local routes, supplies, and traffic | Find who learned a route first |
+| [[tail\|Tail]] | Landmark / connection | The arcs meet here | A route toward the Maw | Identify the approach from either arc |
+| [[verdant-teeth\|Verdant Teeth]] | Island band | Distinct from the broader chain | A separate five-island identity | Keep the two names separate when mapping |
 
 ## Active powers
 
 | Power | Hold / presence | Wants now | Next move | What reveals that move |
 | --- | --- | --- | --- | --- |
-| [[dravosi-crown|Dravosi Crown]] | Crown water, forts, pilots, and officials | Keep the official northern road legible and inspected | Continue pilot and inspection activity | Inspection calls and Crown vessels |
+| [[dravosi-crown\|Dravosi Crown]] | Crown water, forts, pilots, and officials | Keep the official northern road legible and inspected | Continue pilot and inspection activity | Inspection calls and Crown vessels |
 | Midchain councils and free ports | Southern small ground and port traffic | Keep southern routes and exchange moving | Offer or withhold local passage | Port signals, pilots, and changing route advice |
-| [[grung-clans|Grung clans]] | Island and forest traffic across the chain | Move through their own territories and exchanges | Keep clan routes and boundaries meaningful | Clan marks, forest cargo, and guarded approaches |
-| [[the-passage|Passage]] | Crews moving between arcs | Move people and cargo through the chain | Use available official or learned routes | Passage vessels and route rumors |
+| [[grung-clans\|Grung clans]] | Island and forest traffic across the chain | Move through their own territories and exchanges | Keep clan routes and boundaries meaningful | Clan marks, forest cargo, and guarded approaches |
+| [[the-passage\|Passage]] | Crews moving between arcs | Move people and cargo through the chain | Use available official or learned routes | Passage vessels and route rumors |
 
 ## Fronts and pressures
 
@@ -147,10 +144,10 @@ None established yet. Do not add an invasion, war, plague, or other macro-threat
 | d6 | Rumor / lead | Truth behind it | Points toward |
 | -: | --- | --- | --- |
 | 1 | There is an official road and a route someone learned first. | Both official and unofficial routes are part of the region's identity. | [[central-strait]] |
-| 2 | The northern and southern arcs are different waters. | Crown Islands are north; Midchain is south. | [[crown-islands|Crown Islands]] |
-| 3 | The two arcs meet at the Tail. | The Tail is the established meeting point. | [[tail|Tail]] |
-| 4 | Verdant Scatter and Verdant Teeth are the same name. | They are distinct: Verdant Teeth is the five-island band. | [[verdant-teeth|Verdant Teeth]] |
-| 5 | Grung clans and Passage move through the chain. | Both are named as groups moving between its islands and routes. | [[grung-clans|Grung clans]] |
+| 2 | The northern and southern arcs are different waters. | Crown Islands are north; Midchain is south. | [[crown-islands\|Crown Islands]] |
+| 3 | The two arcs meet at the Tail. | The Tail is the established meeting point. | [[tail\|Tail]] |
+| 4 | Verdant Scatter and Verdant Teeth are the same name. | They are distinct: Verdant Teeth is the five-island band. | [[verdant-teeth\|Verdant Teeth]] |
+| 5 | Grung clans and Passage move through the chain. | Both are named as groups moving between its islands and routes. | [[grung-clans\|Grung clans]] |
 | 6 | The central strait is the only route. | It is the anchor, but unofficial routes also exist. | [[central-strait]] |
 
 ## Encounter ecology
@@ -159,12 +156,12 @@ None established yet. Do not add an invasion, war, plague, or other macro-threat
 
 | d6 | Encounter | Sign / track / warning | Source or destination |
 | -: | --- | --- | --- |
-| 1 | Crown pilot or official inspection | Inspection call and Crown vessel | [[crown-islands|Crown Islands]] |
-| 2 | Midchain free-port crew | Port signal, local route advice, or cargo transfer | [[midchain|Midchain]] |
-| 3 | Grung clan movement | Forest cargo, clan mark, or guarded approach | [[grung-clans|Grung clans]] |
-| 4 | Passage vessel | Sails choosing a route between arcs | [[the-passage|Passage]] |
+| 1 | Crown pilot or official inspection | Inspection call and Crown vessel | [[crown-islands\|Crown Islands]] |
+| 2 | Midchain free-port crew | Port signal, local route advice, or cargo transfer | [[midchain\|Midchain]] |
+| 3 | Grung clan movement | Forest cargo, clan mark, or guarded approach | [[grung-clans\|Grung clans]] |
+| 4 | Passage vessel | Sails choosing a route between arcs | [[the-passage\|Passage]] |
 | 5 | Reef crossing | Surf, exposed rock, and a pilot's warning | [[central-strait]] |
-| 6 | Unofficial-route lead | A traveler names a landmark but not a chart | [[tail|Tail]] or a named island |
+| 6 | Unofficial-route lead | A traveler names a landmark but not a chart | [[tail\|Tail]] or a named island |
 
 ### Regional signs
 
@@ -184,9 +181,9 @@ None established yet. Do not add an invasion, war, plague, or other macro-threat
 
 | Past fact | Present consequence | Evidence in the world |
 | --- | --- | --- |
-| The chain was named as two arcs in the regional dump. | Keep Crown Islands and Midchain distinct when routing travel. | [[crown-islands|Crown Islands]] and [[midchain|Midchain]] |
+| The chain was named as two arcs in the regional dump. | Keep Crown Islands and Midchain distinct when routing travel. | [[crown-islands\|Crown Islands]] and [[midchain\|Midchain]] |
 | The central strait runs between the arcs. | Crossings have a shared regional anchor without making every island a government. | [[central-strait]] |
-| The dump distinguishes Verdant Scatter from Verdant Teeth. | Maps and notes must preserve the distinction. | [[verdant-teeth|Verdant Teeth]] |
+| The dump distinguishes Verdant Scatter from Verdant Teeth. | Maps and notes must preserve the distinction. | [[verdant-teeth\|Verdant Teeth]] |
 
 ## Stakes
 
@@ -198,7 +195,7 @@ None established yet. Do not add an invasion, war, plague, or other macro-threat
 
 | Date | Change | Cause | Fallout / pages affected |
 | --- | --- | --- | --- |
-| Current campaign state | Two-arc inhabited chain recorded with Crown water north, Midchain south, central strait between, and Tail meeting point. | Regional source material | [[crown-islands|Crown Islands]], [[midchain|Midchain]], [[central-strait]], [[tail|Tail]] |
+| Current campaign state | Two-arc inhabited chain recorded with Crown water north, Midchain south, central strait between, and Tail meeting point. | Regional source material | [[crown-islands\|Crown Islands]], [[midchain\|Midchain]], [[central-strait]], [[tail\|Tail]] |
 
 ## Regional index
 

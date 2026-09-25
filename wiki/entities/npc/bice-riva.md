@@ -10,8 +10,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -20,7 +18,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Bice Riva
@@ -33,7 +30,7 @@ tier: supporting
 |             |                                                |
 | ----------- | ---------------------------------------------- |
 | **Species** | Halfling                                        |
-| **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva|Aldo]] runs the kitchen) |
+| **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva\|Aldo]] runs the kitchen) |
 | **Location**| [[Al Fondale]], [[le-paludi]], [[calven-and-calveno]]         |
 
 Halfling, white-haired, barely clears the tabletops. Moves between them with the economy of someone who stopped thinking about the route twenty years ago. Hands are flour-dusted in the morning, oil-stained in the evening. Wears an apron faded pale from decades of washing. Says *caro* to everyone regardless of gender, age, or threat level. Speaks in short declarative sentences. Does not repeat herself. Puts food on the table before asking what you want, then looks at you with the expression of someone who already knows the answer is yes.

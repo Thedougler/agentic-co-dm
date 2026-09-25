@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -23,7 +21,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Oswald Crench
@@ -75,6 +72,6 @@ He closes the conversation when customers browse without purpose, demand certain
 
 | Connection | Meaning |
 | --- | --- |
-| [[shelf-instrument-dealer|Shelf Instrument Dealer]] | The navigation shop he owns and runs. |
+| [[shelf-instrument-dealer\|Shelf Instrument Dealer]] | The navigation shop he owns and runs. |
 | [[calders-tooth-and-port-tidefall]] | His home port and the source of his Crown customers. |
 | [[dravosi-crown]] | Crown officers use his calibrated navigation equipment, but the source does not make him a Crown member. |

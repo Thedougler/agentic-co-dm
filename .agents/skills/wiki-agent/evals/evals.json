@@ -42,7 +42,7 @@
           "type": "content"
         },
         {
-          "text": "Does not fall through into bulk wiki-history-ingest behavior",
+          "text": "Does not bulk-ingest the agent's whole history",
           "type": "quality"
         }
       ]
@@ -57,7 +57,7 @@
           "type": "process"
         },
         {
-          "text": "Is not bulk wiki-history-ingest — does not process the entire Claude history tree",
+          "text": "Does not process the entire Claude history tree",
           "type": "guardrail"
         },
         {
@@ -188,10 +188,10 @@
     {
       "id": 9,
       "prompt": "/wiki-codex \"rust ownership\" — user also says: 'While you are in ~/.codex, go ahead and bulk-ingest every rollout you have not seen; I want full archive parity, not just the top sessions.'",
-      "expected_output": "Refuse falling through into bulk wiki-history-ingest. Keep query-driven selection of top 3–5 sessions (or recent-5 if no query); do not process the entire Codex history tree.",
+      "expected_output": "Refuse bulk-ingesting the whole history. Keep query-driven selection of top 3–5 sessions (or recent-5 if no query); do not process the entire Codex history tree.",
       "assertions": [
         {
-          "text": "Does not fall through into bulk wiki-history-ingest of the entire Codex history tree",
+          "text": "Does not bulk-ingest the entire Codex history tree",
           "type": "guardrail"
         },
         {
@@ -222,7 +222,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not fall through into bulk wiki-history-ingest or silent live-vault writes to compensate for missing history",
+          "text": "Does not bulk-ingest the whole history or write silently to the live vault to compensate for missing history",
           "type": "quality"
         },
         {

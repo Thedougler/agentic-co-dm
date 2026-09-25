@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: creature
-lifecycle: proposed
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm

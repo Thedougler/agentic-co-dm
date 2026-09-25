@@ -14,8 +14,6 @@ provenance:
   extracted: 0.93
   inferred: 0.07
   ambiguous: 0.0
-base_confidence: 0.50
-lifecycle: canon
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-23
 type: npc
@@ -213,7 +211,7 @@ legendary_actions:
 | [[Osset]] | Original name. This page is the live alias and current identity. |
 | [[master-kyzil]] | His most gifted student at [[high-eyrie]], who refused to leave the order with him and now believes his old master is decades dead. Vantyrus does not primarily want Kyzil dead; he wants Kyzil to finally admit that watching was not enough. |
 | [[talon-skarn]] | His apprentice and eventual executioner, prepared by design under the [[rule-of-two]]. Their contest for Vantyrus's life remains open, and neither has called it off. |
-| [[crissdalynn-khinriss]] | Unaware target. Her unexplained [[long-sight|Long Sight]] is the one crack in whatever protects the [[soul-incarnate|Soul Incarnate]] technique. He wants to know what Kyzil taught her, and more importantly what Kyzil refused to teach her. |
+| [[crissdalynn-khinriss]] | Unaware target. Her unexplained [[long-sight\|Long Sight]] is the one crack in whatever protects the [[soul-incarnate\|Soul Incarnate]] technique. He wants to know what Kyzil taught her, and more importantly what Kyzil refused to teach her. |
 | [[sentinels-of-the-eyrie]] | The order he broke from over that old rift with Kyzil. He works against it now. |
 | [[Countless]] | The order he leads now, built on the Sentinels' own reach with none of its restraint. |
 | [[fate-spinner]] | A divinatory focus he carries and a weapon against probability itself. |

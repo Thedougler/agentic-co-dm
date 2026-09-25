@@ -9,7 +9,6 @@ sources:
 created: 2026-09-17
 updated: 2026-09-17
 type: faction
-lifecycle: accepted
 reveal: public
 aliases:
   - Fisk's Fleet

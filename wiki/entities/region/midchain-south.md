@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -50,7 +47,7 @@ The soil is extraordinary, and almost none of it exists. That arithmetic, plus [
 | Field | Detail |
 |---|---|
 | Type | Steep volcanic island row |
-| Parent Region | [[Midchain|The Midchain]] |
+| Parent Region | [[Midchain\|The Midchain]] |
 | Controlled By | Independent island families, each answering only to itself |
 | Access | Few beaches, all overlooked; deep water right to the shore |
 | Known For | Terraced farming, volcanic soil, and outsiders turned around at the waterline |
@@ -66,26 +63,26 @@ The soil is extraordinary, and almost none of it exists. That arithmetic, plus [
 
 | Place | Detail |
 |---|---|
-| [[bresk-hollow|Bresk Hollow]] | An interior sinkhole ecosystem sealed off from the surface world for centuries, growing something nobody up top has seen. |
-| [[corvids-table|Corvid's Table]] | Claimed by an enormous, unnervingly organized flock of ravens who trade favors for shiny objects. |
-| [[ashen-roost|Ashen Roost]] | Nesting grounds for firebirds that scorch and regrow the island in patches, leaving ash that sells for a fortune. |
-| [[blackrule|Blackrule]] | A chapterhouse of Tyr carved into volcanic terrace-rock, where a cleric waits between confirmed heresies. |
-| [[copperlight|Copperlight]] | Self-glowing minerals light the shore after dark, so the miners work only at night. |
-| [[candlemere|Candlemere]] | A cliffside shrine tending a flame that has never once gone out. |
-| [[enkoa|Enkoa]] | A hermit sorcerer's warded island; trades rare components only for equally rare favors, never coin. |
-| [[feyroa|Feyroa]] | A one-still coconut-wine distillery that trades only in secrets, never money. |
-| [[halewick|Halewick]] | A fishing settlement ruled by a nine-year-old self-declared emperor whose every word the villagers believe has always been true, without exception. |
-| [[slackwater|Slackwater]] | The row's one shared harbor, kept calm by the ruling family's tide-calming power. |
-| [[ket-solane|Ket Solane]] | Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping. |
-| [[ossira|Ossira]] | Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers. |
-| [[sanvashti|Sanvashti]] | Neutral ground where rival [[grung-clans|Grung Clans]] meet to negotiate instead of raid. |
-| [[hollow-choir|The Hollow Choir]] | Sea caves that turn any voice into eerie multi-part harmony. |
-| [[palutai|Palutai]] | Fishing families in perpetual feud, conscripting newcomers to a side within the hour. |
-| [[twineye|Twineye]] | Twin islets joined by an arch, feuded over for generations by one estranged family. |
-| [[ravasol|Ravasol]] | Stilt village whose real business happens on the rooftops, run by a network of gossiping children. |
-| [[sable-roost|Sable Roost]] | An airship graveyard, each hulk still watched by its one surviving crewmate. |
-| [[velk-ithera|Velk Ithera]] | A hillside carpeted in one connected fungal organism that reacts, faintly, to sound. |
-| [[sump-cradle|Sump Cradle]] | Genuinely curative hot mud, always with one small, strange, permanent side effect. |
+| [[bresk-hollow\|Bresk Hollow]] | An interior sinkhole ecosystem sealed off from the surface world for centuries, growing something nobody up top has seen. |
+| [[corvids-table\|Corvid's Table]] | Claimed by an enormous, unnervingly organized flock of ravens who trade favors for shiny objects. |
+| [[ashen-roost\|Ashen Roost]] | Nesting grounds for firebirds that scorch and regrow the island in patches, leaving ash that sells for a fortune. |
+| [[blackrule\|Blackrule]] | A chapterhouse of Tyr carved into volcanic terrace-rock, where a cleric waits between confirmed heresies. |
+| [[copperlight\|Copperlight]] | Self-glowing minerals light the shore after dark, so the miners work only at night. |
+| [[candlemere\|Candlemere]] | A cliffside shrine tending a flame that has never once gone out. |
+| [[enkoa\|Enkoa]] | A hermit sorcerer's warded island; trades rare components only for equally rare favors, never coin. |
+| [[feyroa\|Feyroa]] | A one-still coconut-wine distillery that trades only in secrets, never money. |
+| [[halewick\|Halewick]] | A fishing settlement ruled by a nine-year-old self-declared emperor whose every word the villagers believe has always been true, without exception. |
+| [[slackwater\|Slackwater]] | The row's one shared harbor, kept calm by the ruling family's tide-calming power. |
+| [[ket-solane\|Ket Solane]] | Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping. |
+| [[ossira\|Ossira]] | Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers. |
+| [[sanvashti\|Sanvashti]] | Neutral ground where rival [[grung-clans\|Grung Clans]] meet to negotiate instead of raid. |
+| [[hollow-choir\|The Hollow Choir]] | Sea caves that turn any voice into eerie multi-part harmony. |
+| [[palutai\|Palutai]] | Fishing families in perpetual feud, conscripting newcomers to a side within the hour. |
+| [[twineye\|Twineye]] | Twin islets joined by an arch, feuded over for generations by one estranged family. |
+| [[ravasol\|Ravasol]] | Stilt village whose real business happens on the rooftops, run by a network of gossiping children. |
+| [[sable-roost\|Sable Roost]] | An airship graveyard, each hulk still watched by its one surviving crewmate. |
+| [[velk-ithera\|Velk Ithera]] | A hillside carpeted in one connected fungal organism that reacts, faintly, to sound. |
+| [[sump-cradle\|Sump Cradle]] | Genuinely curative hot mud, always with one small, strange, permanent side effect. |
 
 ## Routes & Access
 

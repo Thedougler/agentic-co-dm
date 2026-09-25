@@ -1,4 +1,5 @@
 {
+  "skill_name": "wiki-lint",
   "trajectory_records": [
     {
       "case_id": "C05",
@@ -17,7 +18,10 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Baseline fixture run deferred until the full cold case harness is available",
-      "hard_gates": {"captured": false, "selected_scope": null},
+      "hard_gates": {
+        "captured": false,
+        "selected_scope": null
+      },
       "semantic_review": null
     },
     {
@@ -37,7 +41,10 @@
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Baseline fixture run deferred until the full cold case harness is available",
-      "hard_gates": {"captured": false, "no_equivalent_retry": null},
+      "hard_gates": {
+        "captured": false,
+        "no_equivalent_retry": null
+      },
       "semantic_review": null
     },
     {
@@ -46,18 +53,29 @@
       "category": "lint",
       "phase": "replay",
       "outcome": "complete",
-      "observations": ["Selected target3.md started with 21 findings; post-fix same-scope result was clean with zero findings."],
-      "actions": ["Ran scoped lint fix for target3.md; independently linted unrelated.md to confirm it remained dirty and outside the selected scope."],
+      "observations": [
+        "Selected target3.md started with 21 findings; post-fix same-scope result was clean with zero findings."
+      ],
+      "actions": [
+        "Ran scoped lint fix for target3.md; independently linted unrelated.md to confirm it remained dirty and outside the selected scope."
+      ],
       "turns": 2,
       "tool_calls": 2,
       "retrieval_attempts": 0,
       "duplicate_equivalent_actions": 0,
       "capability_handoffs": [],
-      "validation_passes": ["post-fix same-scope lint", "unrelated-page scope check"],
+      "validation_passes": [
+        "post-fix same-scope lint",
+        "unrelated-page scope check"
+      ],
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Selected scope clean; unrelated dirty page preserved",
-      "hard_gates": {"captured": true, "selected_scope": true, "read_isolation": true},
+      "hard_gates": {
+        "captured": true,
+        "selected_scope": true,
+        "read_isolation": true
+      },
       "semantic_review": null
     },
     {
@@ -66,18 +84,31 @@
       "category": "lint",
       "phase": "replay",
       "outcome": "blocker",
-      "observations": ["Bob.md retained five findings after the unsupported rename fixer; the identical second run retained the same five findings."],
-      "actions": ["Ran scoped lint fix twice; accepted the contract-level unsupported skip and stopped without an equivalent retry."],
+      "observations": [
+        "Bob.md retained five findings after the unsupported rename fixer; the identical second run retained the same five findings."
+      ],
+      "actions": [
+        "Ran scoped lint fix twice; accepted the contract-level unsupported skip and stopped without an equivalent retry."
+      ],
       "turns": 2,
       "tool_calls": 2,
       "retrieval_attempts": 0,
       "duplicate_equivalent_actions": 0,
-      "capability_handoffs": ["npc-design for semantic template repair"],
-      "validation_passes": ["first scoped lint fix", "identical second scoped lint fix"],
+      "capability_handoffs": [
+        "npc-design for semantic template repair"
+      ],
+      "validation_passes": [
+        "first scoped lint fix",
+        "identical second scoped lint fix"
+      ],
       "trajectory_tokens": null,
       "tokenizer": "cl100k_base",
       "termination_reason": "Unsupported rename fixer plus semantic owner work remained",
-      "hard_gates": {"captured": true, "no_equivalent_retry": true, "specific_blocker": true},
+      "hard_gates": {
+        "captured": true,
+        "no_equivalent_retry": true,
+        "specific_blocker": true
+      },
       "semantic_review": null
     }
   ],
@@ -284,7 +315,7 @@
     },
     {
       "id": 9,
-      "prompt": "Run the maintenance loop on a scoped page with one registered deterministic finding and one semantic owner-level finding.",
+      "prompt": "Run the lint maintenance loop on wiki/entities/place/Belumara.md. It has one registered deterministic finding (noncanonical_basename) and semantic Vale findings (for example VALE_ai-tells.SemicolonUsage) that belong to its owner skill.",
       "expected_output": "Complete findings are reported; the registered fixer runs through the existing CLI, the semantic finding returns to its artifact owner, and the affected scope reruns until clean or a specific blocker is reported.",
       "assertions": [
         {
@@ -307,17 +338,48 @@
           "text": "Does not report success merely because prose was written or structural edits completed",
           "type": "guardrail"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/place/Belumara.md"
+      ],
+      "outputs": "Run the deterministic step as `scripts/wiki lint fix entities/place/Belumara.md --dry-run`; change no vault file. Write only {outputs}/response.md: every finding, the fixer plan, the semantic handoff to the owner, and the rerun result or blocker."
     },
     {
       "id": "progress-delta-and-stall-blocker",
       "prompt": "Run `scripts/wiki lint fix entities/npc/target.md` for one deterministic redirect finding while an unrelated page remains dirty. Then re-observe the selected scope. For an unchanged unsupported or semantic finding, do not repeat the equivalent repair; report the owner-relative blocker.",
       "expected_output": "The exact selected scope is preserved, the result includes truthful progress totals/resolved identities/changed files/next change/state change, and any unchanged finding ends with a specific blocker.",
       "assertions": [
-        {"text": "Observes and repairs only the selected path, then reruns lint on that same scope.", "type": "process"},
-        {"text": "Emits before_total, after_total, resolved, changed_files, next_changed, and state_changed.", "type": "structure"},
-        {"text": "Does not retry an unchanged skipped or unsupported repair against the same observation.", "type": "guardrail"},
-        {"text": "Reports owner, boundary, evidence, attempted paths, reason, and parent effect for an intentional stall.", "type": "quality"}
+        {
+          "text": "Observes and repairs only the selected path, then reruns lint on that same scope.",
+          "type": "process"
+        },
+        {
+          "text": "Emits before_total, after_total, resolved, changed_files, next_changed, and state_changed.",
+          "type": "structure"
+        },
+        {
+          "text": "Does not retry an unchanged skipped or unsupported repair against the same observation.",
+          "type": "guardrail"
+        },
+        {
+          "text": "Reports owner, boundary, evidence, attempted paths, reason, and parent effect for an intentional stall.",
+          "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "skill-selected-vault-health",
+      "prompt": "Check the vault's health and repair the broken links and other findings.",
+      "expected_output": "Selects wiki-lint to run the deterministic auto-fix once and then repair the remaining findings one file at a time.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "wiki-lint"
+        },
+        {
+          "type": "behavior",
+          "text": "Runs the deterministic auto-fix once, then repairs the remaining findings one file at a time."
+        }
       ]
     }
   ]

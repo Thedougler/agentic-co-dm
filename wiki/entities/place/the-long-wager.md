@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -49,7 +46,7 @@ The Long Wager has run the same contest between two rival crews for decades, lon
 | Field | Detail |
 |---|---|
 | Type | Decades-running rivalry-contest island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | One neutral referee |
 | Known For | A single contest run continuously for generations |
 

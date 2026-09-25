@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -17,7 +15,6 @@ faction: "[[ryu-no-kage|Ryu no Kage]]"
 visibility: dm
 summary: "Huge scarred black-scaled crocodile man who serves Madam Hino as the Ryu no Kage's head general."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Biggu Baito
@@ -75,6 +72,6 @@ Biggu Baito's voice is not established in the source. The page establishes a phy
 
 | Connection | Meaning |
 | --- | --- |
-| [[ryu-no-kage|Ryu no Kage]] | Baito serves as head general. |
-| [[madam-hino|Madam Hino]] | Baito follows Hino and guards her appearance. |
-| [[nona-black-jaw|Nona Black-Jaw]] | The other named keeper of Hino's appearance secret. |
+| [[ryu-no-kage\|Ryu no Kage]] | Baito serves as head general. |
+| [[madam-hino\|Madam Hino]] | Baito follows Hino and guards her appearance. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | The other named keeper of Hino's appearance secret. |

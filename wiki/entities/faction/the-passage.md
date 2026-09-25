@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-23
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -24,7 +22,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
 tier: supporting
 ---
 # The Passage
@@ -97,17 +94,17 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| [[Warren|The Warren]] | Access / Refuge | Beneath Calveno | Shelter, elders, route teaching, and a secure anchor Run | Hidden |
-| Hidden Overland Track | Access / Information | Beneath [[overland-track|the Overland Track]] | A roughly six-hour island crossing that avoids official tolls and patrols | Crown-controlled surface; Passage-controlled tunnels |
-| [[oshas-slip|Osha's Slip]] | Access | Calveno coast | Night landings for small, high-value cargo | Favored and difficult for armored pursuit |
-| [[oleandro-fuschi|Ponte Bassa]] | Information / Influence | Calveno crossing | A commercial front and access to ship-movement knowledge | Active front |
+| [[Warren\|The Warren]] | Access / Refuge | Beneath Calveno | Shelter, elders, route teaching, and a secure anchor Run | Hidden |
+| Hidden Overland Track | Access / Information | Beneath [[overland-track\|the Overland Track]] | A roughly six-hour island crossing that avoids official tolls and patrols | Crown-controlled surface; Passage-controlled tunnels |
+| [[oshas-slip\|Osha's Slip]] | Access | Calveno coast | Night landings for small, high-value cargo | Favored and difficult for armored pursuit |
+| [[oleandro-fuschi\|Ponte Bassa]] | Information / Influence | Calveno crossing | A commercial front and access to ship-movement knowledge | Active front |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[Tangle|The Tangle]] | Seven senior elders | Keep the Calveno Run and its routes alive | Must balance secrecy against the bombing warning |
-| [[nona-black-jaw|Nona Black-Jaw]] | Leader of the Warren's anchor Run | Keep the Run and its people alive | Acts for the Passage but carries local responsibility |
+| [[Tangle\|The Tangle]] | Seven senior elders | Keep the Calveno Run and its routes alive | Must balance secrecy against the bombing warning |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Leader of the Warren's anchor Run | Keep the Run and its people alive | Acts for the Passage but carries local responsibility |
 | [[Enzo]] | Nona's order-carrier | Carry out Nona's decisions | Loyal to Nona |
 | [[Ruk]] | Kitchen guard | Protect the Warren's people and food | Holds the anchor community together |
 | [[Cobb]] | Dry-dock operator | Keep La Vasca useful under Black-Jaw colors | Supports the anchor Run |
@@ -127,19 +124,19 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Warren|The Warren]] | Headquarters / Hidden | Elders, shelters, route teaching, and the anchor Run | Exposure from the Grung threat |
-| [[calven-and-calveno|Calven and Calveno]] | Strong / Hidden | Canal routes, fronts, and movement through the city | Crown authority and bombing risk |
-| [[calders-tooth-and-port-tidefall|Calder's Tooth]] | Hidden | Limestone caves beneath the official road | Crown patrols must not find the crossing |
-| [[oshas-slip|Osha's Slip]] | Temporary / Hidden | Small high-value night landings | Mud slows pursuit but does not remove exposure |
+| [[Warren\|The Warren]] | Headquarters / Hidden | Elders, shelters, route teaching, and the anchor Run | Exposure from the Grung threat |
+| [[calven-and-calveno\|Calven and Calveno]] | Strong / Hidden | Canal routes, fronts, and movement through the city | Crown authority and bombing risk |
+| [[calders-tooth-and-port-tidefall\|Calder's Tooth]] | Hidden | Limestone caves beneath the official road | Crown patrols must not find the crossing |
+| [[oshas-slip\|Osha's Slip]] | Temporary / Hidden | Small high-value night landings | Mud slows pursuit but does not remove exposure |
 
 ## Connections
 
 | Faction / person | Stance | What The Passage wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[dravosi-crown|Dravosi Crown]] | Hostile | Freedom from inspection and colonial record-keeping | The Crown controls official roads, harbors, and patrols |
-| [[tessarine-concordat|Tessarine Concordat]] | Rival | Commercial cover when it keeps a route off Crown charts | No formal deal exists |
-| [[grung-clans|The Grung Clans]] | Hostile | An end to coastal raids and bondage | Their operations violate the Passage's One Law |
-| [[beaumont-sel|Beaumont Sel]] | Friendly | Trusted recognition of Passage status | He introduced himself to the crew as a Friend of the Passage |
+| [[dravosi-crown\|Dravosi Crown]] | Hostile | Freedom from inspection and colonial record-keeping | The Crown controls official roads, harbors, and patrols |
+| [[tessarine-concordat\|Tessarine Concordat]] | Rival | Commercial cover when it keeps a route off Crown charts | No formal deal exists |
+| [[grung-clans\|The Grung Clans]] | Hostile | An end to coastal raids and bondage | Their operations violate the Passage's One Law |
+| [[beaumont-sel\|Beaumont Sel]] | Friendly | Trusted recognition of Passage status | He introduced himself to the crew as a Friend of the Passage |
 
 ### Party
 
@@ -185,7 +182,7 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 
 | Date / session | Move | Result / changed fact | Ripple | Signal | Cause |
 | --- | --- | --- | --- | --- | --- |
-| Session 03–04 | Nona called off attacks on Perrin and obtained Grung bombing intelligence | Perrin retained Passage standing and the warning entered the Warren's decision space | The Passage must choose secrecy or an open warning | Nona's contacts and the Warren's altered activity | [[nona-black-jaw|Nona Black-Jaw]] |
+| Session 03–04 | Nona called off attacks on Perrin and obtained Grung bombing intelligence | Perrin retained Passage standing and the warning entered the Warren's decision space | The Passage must choose secrecy or an open warning | Nona's contacts and the Warren's altered activity | [[nona-black-jaw\|Nona Black-Jaw]] |
 
 ## History
 

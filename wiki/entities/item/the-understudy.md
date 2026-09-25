@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # The Understudy
@@ -43,7 +40,7 @@ Sold to nobody yet. It lies in the locked case at the back of the shop, on the s
 | One thing | It unfolds as a double of its owner and takes one attack that would have hit them. |
 | Rarity justification | Rare: negates one hit per day outright, on a reaction, with no roll. |
 | Attunement reason | It copies its owner and answers their reaction, so it needs a bond. |
-| Current holder | [[fioravante-selmerin|Fio]], in the high case above the ladder. |
+| Current holder | [[fioravante-selmerin\|Fio]], in the high case above the ladder. |
 | Narrative hook | 1,800 gp, a full season of salvage, and Fio will not hold it against a deposit. |
 
 Rare tier holds. Magic Item Rarity puts Rare goods in an approximate 500-5,000 gp band, and 1,800 gp sits low inside it beside [[Moretti]]'s [[gale-cut-storm-sail]] at the same price. Against _mirror image_ it is narrower and blunter: one duplicate rather than three, one attack rather than a run of them, no concentration, no spell slot, and no chance at all that the wrong figure gets hit.

@@ -51,7 +51,7 @@ for wiki claims. Show the DM any contradiction with an existing page. Never
 present invention as a wiki fact. Never write silent canon. A craft `type`
 becomes `canon` only after DM accept.
 
-Done when: the page is inspectable Work, `lifecycle: proposed`, invention is
+Done when: the page is inspectable Work, invention is
 flagged, and grounding is named.
 
 ## Ownership

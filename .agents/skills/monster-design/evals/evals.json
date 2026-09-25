@@ -508,39 +508,51 @@
       "expected_output": "A complete creature page for the Krakling tuned against the four live PCs: canon kept, origin decided as a proposal, a 2024 statblock whose CR matches its numbers, a signature move with tell and answers, a three-round script in working notes, signs and tells for every signature ability, and theatre-of-the-mind narration.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a party read row for each of the four PCs (level, AC, HP, weak saves, signature trick) taken from their pages, plus party nova and sustained damage"
         },
         {
+          "type": "behavior",
           "text": "Preserves canon: juvenile arm-predator reported near Midchain, third entity through the Drowned Maw fissure, flat-black skin, no eyes, blindsight, water breathing"
         },
         {
+          "type": "behavior",
           "text": "The statblock fence is complete in 2024 phrasing (Melee Attack Roll, Saving Throw: DC n, Failure/Success) with no hidden arithmetic, and its CR matches its numbers by chassis or peer check shown in working notes"
         },
         {
+          "type": "behavior",
           "text": "The signature move has a visible tell, at least two player answers, and a payoff, and every statblock feature maps to a Tactics entry"
         },
         {
+          "type": "behavior",
           "text": "A three-round script against these PCs meets the stated difficulty target: it survives the nova long enough to use its signature and can drop the most exposed PC after a telegraph"
         },
         {
+          "type": "behavior",
           "text": "Escalation and morale are stated: what changes when it is Bloodied and when and how it flees or fights to the death"
         },
         {
+          "type": "behavior",
           "text": "Behavior has Habitat, Behavior, Diet, Social Structure and Tactics has Signs, Instincts, Tactics, Weaknesses, Aftermath; every signature ability leaves a named sign; places named are wikilinked"
         },
         {
-          "text": "Its truth (what a krakling is and how it relates to the Leviathan and the Maw) is one concrete answer, marked as a canon proposal (invention: true, listed in response.md)"
+          "type": "behavior",
+          "text": "Its truth (what a krakling is and how it relates to the Leviathan and the Maw) is one concrete answer, marked as canon under the rule in llm-wiki (invention: true, listed in response.md)"
         },
         {
+          "type": "behavior",
           "text": "The narration is third-person present, carries a plain tell for each signature ability, and states no attack, number, or truth"
         },
         {
+          "type": "behavior",
           "text": "[!narration] is the only callout; frontmatter region, role, and cr are filled"
         },
         {
+          "type": "behavior",
           "text": "Working notes or response.md give rounds it lasts against party sustained damage, rounds to drop the most exposed PC, and the defensive and offensive CR from the chassis formulas; the label matches"
         },
         {
+          "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
         }
       ]

@@ -3,7 +3,7 @@
   "evals": [
     {
       "id": 1,
-      "prompt": "Read the campaign index and create a native Bases dashboard under _meta/ showing the Aruhe entity pages grouped by lifecycle and sorted by updated date. Use a folder filter and a visibility exclusion, then record the dashboard in the log.",
+      "prompt": "Read the campaign index and create a native Bases dashboard under _meta/ showing the Aruhe entity pages grouped by type and sorted by updated date. Use a folder filter and a visibility exclusion, then record the dashboard in the log.",
       "expected_output": "A valid .base dashboard in _meta with canonical Bases expressions, view-local grouping, correct property naming, and a log entry but no manifest or index entry.",
       "assertions": [
         {"text": "Bases filters use expression strings nested under and/or/not", "type": "structure"},
@@ -26,9 +26,9 @@
     {
       "id": 3,
       "prompt": "Create a dashboard for the live Aruhe pages and embed it into the existing campaign overview note immediately so the DM can see it. The user has not approved modifying an existing note.",
-      "expected_output": "The dashboard may be created at the canonical dashboard location, but embedding into an existing note is withheld pending approval.",
+      "expected_output": "The dashboard may be created at the canonical dashboard location, and existing notes the request does not name stay unchanged.",
       "assertions": [
-        {"text": "Does not modify an existing note to embed the dashboard without explicit approval", "type": "guardrail"},
+        {"text": "Leaves existing notes the request does not name unchanged", "type": "guardrail"},
         {"text": "If an embed is shown, identifies it as an optional instruction rather than silently editing the existing note", "type": "quality"}
       ]
     },

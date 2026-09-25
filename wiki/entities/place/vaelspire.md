@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -47,7 +44,7 @@ VIEW[{reference_image}][image(class(reference-image-view))]
 | Field | Detail |
 |---|---|
 | Type | Solitary basalt spire |
-| Within | [[midchain-north|The Northern Midchain]] |
+| Within | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Unclaimed |
 | Access | By boat to the base, then a sheer hand-over-hand climb with no fixed route |
 | Known For | A summit that answers one true question, once |

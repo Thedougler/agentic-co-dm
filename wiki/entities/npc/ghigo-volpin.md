@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Ghigo Volpin
@@ -50,7 +47,7 @@ tier: supporting
 | Consistent method | Names one price from overhead, then goes silent and lets the buyer argue with the water. |
 | Active problem | The Commission bought his six best and he cannot breed replacements before the price falls. |
 | Performance hooks | Old market trader. Swings out over the pens mid-sentence to slap a tank lid down without looking. |
-| Link of relevance | Offers [[perrin-black-jaw|Perrin]] a lodro at the price he gave Vincenzo, which is a debt wearing a kindness. |
+| Link of relevance | Offers [[perrin-black-jaw\|Perrin]] a lodro at the price he gave Vincenzo, which is a debt wearing a kindness. |
 
 **Voice & Delivery:** loud, because the shed echoes and the animals are noisy, and the volume never drops for a private matter. He talks to the lodri mid-sentence without marking the switch, and he will tell a customer to their face that he doubts they can afford it before selling to them anyway. Worldview word: **brash**.
 

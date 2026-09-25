@@ -9,6 +9,8 @@ from pathlib import Path
 from typing import Any, Mapping, TypedDict, cast
 CACHE_NAME = "lint-cache.json"
 CACHE_VERSION = 2
+IDENTITY_INDEX_NAME = "identity-index.json"
+IDENTITY_INDEX_VERSION = 1
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 
 
@@ -203,9 +205,13 @@ def save_cache(vault: str | Path, cache: LintCache) -> None:
     """Persist a pruned cache with deterministic JSON and an atomic replacement."""
     root = Path(vault).expanduser().resolve()
     cleaned = prune_missing(cache, root)
-    target = cache_path(root)
-    target.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(cleaned, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n"
+    _atomic_write(cache_path(root), payload)
+
+
+def _atomic_write(target: Path, payload: str) -> None:
+    """Replace *target* with *payload* through a synced temporary file."""
+    target.parent.mkdir(parents=True, exist_ok=True)
     temporary_name: str | None = None
     try:
         descriptor, temporary_name = tempfile.mkstemp(
@@ -275,6 +281,69 @@ def update_entry(
     cache.setdefault("entries", {})[key] = entry
     cache["config_digest"] = config_digest
     return entry
+
+
+def identity_index_path(vault: str | Path) -> Path:
+    """Return the derived identity index location for *vault* (data-model §4)."""
+    return Path(vault).expanduser().resolve() / "_meta" / IDENTITY_INDEX_NAME
+
+
+def manifest_sha256(vault: str | Path) -> str:
+    """Hash the vault manifest, or return "" when it is absent."""
+    path = Path(vault).expanduser().resolve() / ".manifest.json"
+    return sha256_file(path) if path.is_file() else ""
+
+
+def empty_identity_index() -> dict[str, Any]:
+    return {"version": IDENTITY_INDEX_VERSION, "manifest_sha256": "", "rows": {}, "pairs": {}}
+
+
+def load_identity_index(vault: str | Path) -> dict[str, Any]:
+    """Load the identity index; a parse error or changed version rebuilds everything."""
+    try:
+        raw = json.loads(identity_index_path(vault).read_text(encoding="utf-8"))
+    except (OSError, UnicodeError, json.JSONDecodeError, TypeError):
+        return empty_identity_index()
+    if (
+        not isinstance(raw, Mapping)
+        or raw.get("version") != IDENTITY_INDEX_VERSION
+        or not isinstance(raw.get("rows"), Mapping)
+        or not isinstance(raw.get("pairs"), Mapping)
+    ):
+        return empty_identity_index()
+    rows = {
+        key: dict(row) for key, row in raw["rows"].items()
+        if isinstance(key, str) and isinstance(row, Mapping) and isinstance(row.get("content_sha256"), str)
+    }
+    pairs = {
+        key: float(value) for key, value in raw["pairs"].items()
+        if isinstance(key, str) and isinstance(value, (int, float))
+    }
+    manifest = raw.get("manifest_sha256")
+    return {
+        "version": IDENTITY_INDEX_VERSION,
+        "manifest_sha256": manifest if isinstance(manifest, str) else "",
+        "rows": rows,
+        "pairs": pairs,
+    }
+
+
+def save_identity_index(vault: str | Path, index: Mapping[str, Any]) -> None:
+    """Persist the index atomically, pruning pairs whose hashes match no row."""
+    rows = dict(index.get("rows") or {})
+    hashes = {row.get("content_sha256") for row in rows.values()}
+    pairs = {
+        key: value for key, value in (index.get("pairs") or {}).items()
+        if all(part in hashes for part in key.split("|"))
+    }
+    document = {
+        "version": IDENTITY_INDEX_VERSION,
+        "manifest_sha256": str(index.get("manifest_sha256") or ""),
+        "rows": rows,
+        "pairs": pairs,
+    }
+    payload = json.dumps(document, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n"
+    _atomic_write(identity_index_path(vault), payload)
 
 
 # Verbose names are the primary API; these aliases keep integration call sites terse.

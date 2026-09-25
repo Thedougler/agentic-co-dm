@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
 updated: 2026-09-13
@@ -34,7 +31,7 @@ visibility: dm
 |              |                                                              |
 | ------------ | ------------------------------------------------------------ |
 | **Species**  | [[Human]] (Dravosi)                                             |
-| **Post**     | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**     | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**     | Seaman                                                      |
 | **Crew Role**| Carpenter's Apprentice (post-refit, retained under [[sem-holst]], now the ship's promoted Carpenter) |
 | **Wage**     | 6 gp/week with the crew of the Saltwright (carpenter rate, no boarding duties) |

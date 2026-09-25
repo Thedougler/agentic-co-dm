@@ -1,4 +1,5 @@
 {
+  "skill_name": "session-beats",
   "trajectory_records": [
     {
       "case_id": "C09",
@@ -426,7 +427,7 @@
     },
     {
       "id": "parent-resume-requires-child-progress",
-      "prompt": "Build Session-12's chart when a typed Development child is required. Resume the parent only after the child returns its bounded artifact/slot, changed dependency or artifact state, and completion evidence; preserve the original objective and block an unchanged incomplete return.",
+      "prompt": "Session 12's plan needs its beat 04 Development, Two-Grave Orders, before the chart can resume. The Development child has returned twice with the same incomplete slot: Required conclusion still does not say where Nello is hidden, and the page is unchanged since the first return. Decide whether the parent chart resumes.",
       "expected_output": "A recomputed parent chart from complete child evidence, or a specific blocker with the parent objective preserved.",
       "assertions": [
         {
@@ -445,7 +446,12 @@
           "text": "Stops an unchanged incomplete child return with a specific blocker.",
           "type": "quality"
         }
-      ]
+      ],
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: the resume or block decision with its evidence. Change no plan or beat page."
     },
     {
       "id": "budget-math",
@@ -865,6 +871,21 @@
         "wiki/entities/pc/delmar-fisk.md",
         "wiki/entities/pc/jean-claude-tabarnack.md",
         "wiki/entities/pc/perrin-black-jaw.md"
+      ]
+    },
+    {
+      "id": "skill-selected-session-plan",
+      "prompt": "Plan next session for me: about three and a half hours, pick up the open threads from last session, and give me the beats with an escalation ladder.",
+      "expected_output": "Selects session-beats as the primary skill for planning the session and produces a Beat Chart within the half-hour budget.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "session-beats"
+        },
+        {
+          "type": "behavior",
+          "text": "Produces a Beat Chart within the half-hour budget."
+        }
       ]
     }
   ]

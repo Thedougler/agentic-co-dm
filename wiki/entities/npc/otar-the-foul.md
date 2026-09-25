@@ -10,9 +10,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T07:50:00Z
 updated: 2026-09-13
@@ -48,7 +45,7 @@ The summoning circle sits in the [[Calveno Sewer Magazines]]' primary detonation
 | Consistent method | Erupts chaotically, lashing and pulsing to shred prey, while regeneration sustains through all wounds. |
 | Active problem | Surrounded by adventurers in the plaza with townsfolk trapped in rubble within reach. |
 | Performance hooks | Primal chaos incarnate · weeps ichor from deepening cracks as he molts. |
-| Link of relevance | Summoned to destroy Mercatura plaza, ultimately defeated by [[delmar-fisk|Delmar]] and the adventurers. |
+| Link of relevance | Summoned to destroy Mercatura plaza, ultimately defeated by [[delmar-fisk\|Delmar]] and the adventurers. |
 
 ## Stats & Combat
 

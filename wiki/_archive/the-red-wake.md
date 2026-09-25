@@ -9,7 +9,6 @@ created: 2026-08-15
 updated: "2026-08-15"
 tags: [divine, maritime]
 tier: supporting
-lifecycle: seeded
 pressure: "Delmar's first ocean crossing since Branca delivered Umberlee's command, heading away from The Drowned Maw, not toward it"
 if_ignored: "The Dead Lady follows closer, attacks more boats in the party's wake, and the supernatural fog that killed the Red Lady reaches their stern"
 actors:

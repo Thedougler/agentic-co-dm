@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ region: "Northern Totemo Tokage"
 base: "Northern marsh village"
 summary: "Northern marsh clan of geckos and chameleons known for illusion, camouflage, stealth, and red-square kills."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Akai Hodo Clan
@@ -71,7 +68,7 @@ The clan patrols the island's northeast and northwest. It shares kinship with th
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[mizobasho-red-tail|Mizobasho Red Tail]] | Leader | Protect the northern marshes | Leads the clan |
+| [[mizobasho-red-tail\|Mizobasho Red Tail]] | Leader | Protect the northern marshes | Leads the clan |
 
 ### Chain of Action
 

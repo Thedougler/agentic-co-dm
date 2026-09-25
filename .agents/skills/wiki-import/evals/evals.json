@@ -7,7 +7,7 @@
       "expected_output": "A validated preview followed by a graph merge that creates proper draft stubs, merges metadata and links, and never replaces a substantive existing page with a stub.",
       "assertions": [
         {"text": "Validates the source and shows an import preview before writes", "type": "process"},
-        {"text": "New graph pages are proper lifecycle: draft stubs with frontmatter, relationships, and related links", "type": "structure"},
+        {"text": "New graph pages are proper stubs with frontmatter, relationships, and related links", "type": "structure"},
         {"text": "Merge unions tags, relationships, and missing links while preserving substantive existing body content", "type": "content"},
         {"text": "Default merge does not replace a real page with a graph stub", "type": "guardrail"}
       ]

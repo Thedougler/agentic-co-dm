@@ -13,8 +13,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -26,7 +24,6 @@ provenance:
   extracted: 0.80
   inferred: 0.10
   ambiguous: 0.10
-base_confidence: 0.62
 tier: supporting
 ---
 # Corvin Ashe

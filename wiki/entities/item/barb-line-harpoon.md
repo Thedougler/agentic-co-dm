@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Barb-Line Harpoon
@@ -41,7 +38,7 @@ _Weapon (Harpoon), Common._
 | One thing | A set barb plus a shackled chain end keeps the target inside sixty feet of the anchor. |
 | Rarity justification | Non-magical rigger's gear, priced beside the [[reinforced-specimen-cage]] (60 gp) and the [[grung-resistant-climbing-harness]] (35 gp). It grants no bonus to any roll and does far less at range than Rope of Entanglement. |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[jean-claude-tabarnack|Jean-Claude]] throws better than anyone aboard, and the [[Sawek]] holding the [[Kalowe]] channel wins any fight it can break off and take back down its hole. |
+| PC connection | [[jean-claude-tabarnack\|Jean-Claude]] throws better than anyone aboard, and the [[Sawek]] holding the [[Kalowe]] channel wins any fight it can break off and take back down its hole. |
 | Current holder | [[kettil-ormsson]], on the chain wall at [[Ormsson's Fittings]]. |
 | Narrative hook | The harbour bounty pays for a ridge-plate, and you cut a ridge-plate off something still where you left it. |
 

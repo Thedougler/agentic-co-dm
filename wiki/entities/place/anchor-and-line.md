@@ -9,14 +9,12 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-20
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: "Port Tidefall"
 summary: "A Tidefall dockside establishment where Vrtek sorts his pockets and hears rumours."
-base_confidence: 0.20
 ---
 # The Anchor and Line
 

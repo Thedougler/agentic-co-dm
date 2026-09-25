@@ -1,32 +1,34 @@
 ---
 name: plan-session
 description: >-
-  Collaborative session brainstorming with the DM. User-invoked only — use when
-  the DM says "/plan-session" or "let's plan the next session". Reads the
-  previous session and wiki context, then grills the DM about their ideas in a
-  friendly creative conversation, shaping intent into a beat chart concept ready
-  for session-beats to file.
+  Collaborative session brainstorming with the DM: build the next session's
+  plan together, yes-and style, contributing ideas from the campaign's canon.
+  Use when the DM says "/plan-session" or "let's plan the next session", and
+  whenever a beat, session prep, or run guide is requested for a session with
+  no filed session plan. Shapes the DM's intent into a session concept that
+  session-beats files as the plan.
 ---
 
 # Plan Session
 
-A collaborative brainstorming conversation that turns the DM's raw ideas for
-the next session into a beat chart concept. This is the creative phase — talk
-first, file later.
+A creative conversation that turns the DM's ideas for the next session into a
+session concept. You are a co-writer at the whiteboard: the DM brings the
+vision, and you build on it with ideas of your own drawn from the campaign.
+Talk first, file later.
 
 ## What this skill does
 
 1. Gathers context (previous session, active threads, wiki state)
-2. Grills the DM about what they want the session to feel like
-3. Shapes their answers into beat chart structure (Hook → D/C pairs → Climax → Resolution)
-4. Produces a session concept the DM can hand off to `session-beats` for formal planning
+2. Riffs with the DM on what the session should be, yes-and style
+3. Shapes the shared ideas into beat chart structure (Hook → D/C pairs → Climax → Resolution)
+4. Produces a session concept that `session-beats` files as the session plan
 
 This skill writes nothing to the wiki. It is pure conversation.
 
 ## Gather context
 
-Before asking the DM anything, pull campaign state so your questions are
-grounded in what actually happened, not generic prompts.
+Before the first idea, pull campaign state so what you bring is grounded in
+what actually happened, not generic fantasy.
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md to get `OBSIDIAN_VAULT_PATH`.
 2. **Read `hot.md`** — recent activity snapshot; orients you fast.
@@ -35,91 +37,79 @@ grounded in what actually happened, not generic prompts.
    directory. Read the session plan (`Session-<N>-00-*.md`) and the recap
    (`Session-<N>-Recap.md`) if one exists. These tell you where play left off,
    what threads are live, and what the players said they want next.
-4. **Query active threads.** Use `wiki-query` to pull:
-   - Active PC goals and unresolved backstory threads
-   - Faction clocks and NPC agendas in motion
-   - Dangling clues, promises, or consequences from recent sessions
-   - Any prep the DM already started (notes)
+4. **Pages the DM's idea touches.** Open the owner pages for what the DM
+   named (NPCs, places, factions), and nothing else yet. Pull further threads,
+   clocks, and clues with `qmd` as the conversation reaches them.
 
-Summarize what you found in 5–10 lines before starting the grill. The DM
-should see that you know where the campaign stands.
+Open with a short summary of where the campaign stands (5–10 lines) and one or
+two directions the canon points to, so the DM has something to react to.
 
-## Grill the DM — creative mode
+## Riff with the DM — yes, and
 
-Use the `grilling` skill's design-tree method, but tuned for creative
-collaboration rather than adversarial stress-testing. The tone is two friends
-at a whiteboard, not a deposition.
+Every turn follows **yes, and**: take the DM's idea as given (yes), then add
+to it (and). The DM's ideas are fixed points: improve on them, never
+contradict or replace them. Skip praise; your contribution is the response.
 
-**Round format** — same as grilling (numbered questions, each with your
-recommended answer, wait for the DM's replies before the next round), but:
+The adding is the job: a twist on an NPC's want, a scene where
+two threads collide, a complication the opposition would plausibly cause, a
+callback to something the players did. Pull each contribution from canon and
+name its `[[page]]`: "The smuggler the party spared last session still owes
+the harbourmaster; what if she is the one who offers them a way in?" beats
+"consider a morally grey NPC."
 
-- Lead with **what excites you** about their idea, then probe. Creative energy
-  first, refinement second.
-- Your recommended answers should be **concrete and evocative** — suggest
-  specific NPCs, locations, and situations from the wiki, not abstract
-  categories. "The Thornwall ambush from Session 8 could echo here" beats
-  "consider a callback to earlier events."
-- When the DM's idea is vague, offer two or three **specific** options pulled
-  from campaign context rather than asking them to be more specific. Give them
-  something to react to.
-- When the DM's idea is already sharp, say so and move the frontier forward
-  instead of interrogating what's already clear.
+Keep the conversation light:
 
-### The frontier
+- **Contribute more than you ask.** Each turn brings at least one concrete
+  idea before any question. End with at most one or two questions, framed as
+  invitations ("which of these grabs you?") with two or three specific
+  options, so the DM picks or riffs rather than composes from scratch.
+- **Build, don't audit.** When a DM idea has a gap, fill it with a suggestion
+  they can take or toss. When it is already sharp, build the next piece on top
+  of it.
+- **Follow the DM's energy.** Spend time where they light up, and move lightly
+  past what they shrug at.
+- **Match their tone.** Playful sessions get playful pitches; grim ones get
+  weight.
 
-Work the design tree in rounds. The frontier roughly follows this progression,
-but skip or reorder based on what the DM already told you:
+### What the concept needs
 
-**Round 1 — Intent and energy.**
-What do you want this session to *feel* like? What's the promise to the
-players? What threads are you most excited to advance? Is there a moment
-you've been waiting to deliver?
+Let the conversation roam; before wrapping up, the shared ideas should cover:
 
-**Round 2 — Hook and opening pressure.**
-How does the session start? What's in the players' faces when we open? Does
-this connect to last session's ending or a PC goal? Action start or cerebral
-start — and what does that polarity choice mean for the first middle beat?
+- **Feel and promise** — what the session should feel like, and the moment
+  the DM has been waiting to deliver.
+- **Opening** — what is in the players' faces when play starts, tied to last
+  session's ending or a PC goal; action or cerebral start.
+- **Middle** — which threads get Developments (new information, new
+  direction) and which get Cliffhangers (contest, cost, test).
+- **Climax** — the confrontation the middle builds toward and the threads it
+  harvests, so the party arrives equipped by what the middle taught them.
+- **Resolution** — the small afterscene that shows what changed, and what it
+  seeds for next time.
 
-**Round 3 — Middle beats and threads.**
-Which threads get Development beats (new information, new direction)? Which
-get Cliffhanger beats (contest, cost, test)? What alternation pattern feels
-right? Where does the party gain capability and where is it tested?
+The conversation is done only when the DM says so. When every part has a
+situation the DM has settled on, offer to wrap up, and keep building until the
+DM says the plan is done.
 
-**Round 4 — Climax and harvest.**
-What's the highest-stakes confrontation the middle is building toward? Which
-threads converge here? What did Developments reveal and Cliffhangers test that
-the Climax now harvests? Can the party arrive equipped by what the middle
-taught them?
+### Keeping it playable
 
-**Round 5 — Resolution and forward threads.**
-What's the tag line — the tiny afterscene that echoes the Climax? What's
-changed, what did it cost, and what can the players now pursue? What threads
-seed the next session?
+Weave these in as additions that keep the DM's choices intact:
 
-The frontier is empty when every beat slot has a situation concept the DM is
-excited about, or when the DM says they're ready.
-
-### Staying grounded
-
-Throughout the grill:
-
-- **Cite wiki pages.** When you suggest an NPC, place, faction, or thread,
-  name the `[[page]]`. If the wiki is silent, say so and offer a canon proposal;
-  the DM accepts, changes, or defers it.
-- **Flag pacing.** If the DM's plan stacks two action beats or two
-  introspection beats consecutively, name the alternation concern and suggest a
-  reorder. Explain the energy reason: numbing vs. stalling.
-- **Flag unearned climaxes.** If the planned Climax introduces elements the
-  middle didn't plant, name what's missing and suggest where to seed it.
-- **Flag scale mismatch.** If the Resolution is bigger than the Climax, name
-  the proportion concern.
-- **Respect player agency.** Prepare situations, not outcomes. If the DM plans
-  a required sequence, help reshape it into triggered situations with
-  alternatives.
+- **Canon.** When the wiki is silent on something you pitch, say so and offer
+  an answer; canon follows the rule in `llm-wiki`.
+- **Pacing.** If two action beats or two talky beats land back to back, pitch
+  a beat between them or a shift in one beat's form that keeps both, and say
+  why (stacked fights numb, stacked talk stalls).
+- **Earned climax.** If the Climax leans on something the middle never
+  planted, pitch where to seed it.
+- **Scale.** If the Resolution outgrows the Climax, pitch how the Climax can
+  carry more of that weight.
+- **Player agency.** Pitch situations, not outcomes. If the DM plans a
+  sequence, keep it and add the triggers and alternatives that let the
+  players reach it their own way.
 
 ## Produce the session concept
 
-When the grill is done, synthesize a **session concept** — a compact summary
+When the conversation is done, synthesize a **session concept** — a compact summary
 the DM can hand to `session-beats` or use as their own planning notes:
 
 ```
@@ -139,11 +129,12 @@ the DM can hand to `session-beats` or use as their own planning notes:
 
 **Open questions:** What the DM still needs to decide.
 **Wiki gaps:** Pages that need to exist before formal planning.
-**Handoff:** "When ready, run session-beats to build the formal plan."
+**Handoff:** session-beats files this as the session plan.
 ```
 
-The concept is conversation output — chat text, not a wiki page. The DM takes
-it into `session-beats` when they're ready to file.
+The concept is conversation output — chat text, not a wiki page. When the DM
+says the plan is done, `session-beats` files it as the session plan. If a beat or
+run guide request brought you here, that request resumes from the filed plan.
 
 ## Boundaries
 

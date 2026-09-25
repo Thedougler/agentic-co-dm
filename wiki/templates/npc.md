@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: npc
-lifecycle: proposed
 reveal: unrevealed
 campaign: "{{campaign}}"
 status: alive

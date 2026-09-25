@@ -3,8 +3,7 @@ name: wiki-agent
 description: >
   Query-driven targeted ingest from a specific AI agent's raw history. Use this skill when the user
   invokes /wiki-claude, /wiki-codex, /wiki-hermes, /wiki-openclaw, /wiki-copilot, /wiki-pi — with or without a
-  search topic. Different from wiki-history-ingest (which bulk-ingests everything new): this skill finds
-  sessions about a SPECIFIC TOPIC in a specific agent's history and ingests just those, then returns a
+  search topic. This skill finds sessions about a SPECIFIC TOPIC in a specific agent's history and ingests just those, then returns a
   synthesized answer immediately usable in the current session. Primary use case: you're working in
   agent A and want to pull in how you solved X in agent B's history. Cross-referencing, not archiving.
   Also trigger on: "what did I work on in codex about X", "search my claude sessions for Y",
@@ -40,7 +39,7 @@ Parse the invocation to determine the target agent and optional query:
 | `/wiki-copilot [query]` | Copilot chat history | `/wiki-copilot "test strategy for API routes"` |
 | `/wiki-pi [query]` | Pi agent history | `/wiki-pi "how did I refactor the auth module"` |
 
-If no query is given, default to **recent sessions mode**: ingest the last 5 unprocessed sessions from that agent and return a summary of what was found. This is equivalent to a focused `wiki-history-ingest` for that agent only.
+If no query is given, default to **recent sessions mode**: ingest the last 5 unprocessed sessions from that agent and return a summary of what was found.
 
 ## Before You Start
 
@@ -204,8 +203,6 @@ For each extracted blob, determine where it belongs in the wiki:
    sources: [<agent>://<path/to/session>]
    created: <date>
    updated: <date>
-   confidence: high|medium|low
-   lifecycle: stable|draft
    ---
    ```
    Set `sources` with the agent prefix so `memory-bridge` can find it later.

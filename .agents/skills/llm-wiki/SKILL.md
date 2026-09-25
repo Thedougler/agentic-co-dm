@@ -2,7 +2,7 @@
 name: llm-wiki
 description: >
   Three-layer wiki architecture (raw → wiki → schema), page templates, provenance, and trust model.
-  Use for wiki architecture, page templates, provenance markers, confidence/lifecycle, wiki environment variables, or a format/trust question the operating skill does not own.
+  Use for wiki architecture, page templates, provenance markers, canon, wiki environment variables, or a format/trust question the operating skill does not own.
 ---
 
 # LLM Wiki — Knowledge Distillation Pattern
@@ -124,9 +124,6 @@ provenance:
   extracted: 0.72
   inferred: 0.25
   ambiguous: 0.03
-base_confidence: 0.65
-lifecycle: draft
-lifecycle_changed: 2024-03-15
 tier: supporting
 created: 2024-03-15T10:30:00Z
 updated: 2024-03-15T10:30:00Z
@@ -228,88 +225,11 @@ The table below is the framework default allowlist. A vault's `AGENTS.md` may ex
 
 Consumers: `wiki-export` (typed edges), `cross-linker` (writes typed entries), `wiki-query` (multi-hop path queries via bounded BFS over `relationships:` adjacency, frontmatter-only).
 
-## Confidence and Lifecycle
+## Canon
 
-Every page carries two orthogonal trust signals plus an optional supersession link. Framework defaults below — a vault's `AGENTS.md` may extend lifecycle values or make trust fields optional.
+Something is canon if the DM says so > something is canon if it's present in the wiki in multiple places > something is canon if it doesn't conflict with the wiki.
 
-Lint/trust consumer schema: `OBSIDIAN_ALLOWED_LIFECYCLES`, `OBSIDIAN_ALLOWED_RELATIONSHIP_TYPES`, `OBSIDIAN_REQUIRED_TRUST_FIELDS`, `OBSIDIAN_SCHEMA_SOURCE`. Precedence: CLI > environment/config > framework defaults (lifecycle and relationship extensions additive). Explicit blank values fail closed. `wiki-lint/SKILL.md` owns invocation.
-
-### Required fields
-
-```yaml
-base_confidence: 0.65          # [0.0, 1.0] — time-independent quality estimate. Stored once, recomputed on content change.
-lifecycle: draft               # draft | reviewed | verified | disputed | archived
-lifecycle_changed: 2024-03-15  # ISO date of last state transition
-# lifecycle_reason: "..."      # optional free-text — why the state changed; surfaced by wiki-query
-# superseded_by: "[[new-page]]" # wikilink; only when lifecycle=archived
-```
-
-`lifecycle_reason` and `superseded_by` are optional. Never fabricate them.
-
-### Confidence formula
-
-The formula is a **manual base score**, not a deterministic URL classifier:
-
-```
-base_confidence = lineage_count_score * 0.5 + source_quality_score * 0.5
-
-lineage_count_score  = min(independent_evidence_lineages / 3, 1.0)
-source_quality_score = avg(reviewed quality score per independent lineage)
-```
-
-After calculating the raw score, assess whether the evidence covers the page's material claims. Partial coverage may justify keeping or lowering the score; unsupported material claims require source/claim repair before any confidence change. Avoid small score churn without meaningful epistemic change.
-
-**Source-quality scores** (use the highest-matching bucket):
-
-| Bucket | Score | Examples |
-|---|---|---|
-| `paper` | 1.0 | arXiv, conference proceedings |
-| `official` | 0.9 | `*.gov`, vendor docs |
-| `documentation` | 0.85 | well-maintained third-party docs |
-| `book` | 0.8 | books, technical references |
-| `repository` | 0.75 | content-addressed repository/code evidence |
-| `blog` | 0.55 | personal blogs |
-| `session_transcript` | 0.5 | conversation history or completed operation |
-| `forum` | 0.4 | Stack Overflow, HN, Reddit, issue-grade reports |
-| `unknown` | 0.4 | catch-all/current config |
-| `llm_generated` | 0.3 | LLM synthesis or unvalidated memory seed |
-
-**An independent evidence lineage** is an origin that can corroborate a claim independently. Canonical source IDs remain useful for identity, but identity alone does not prove independence. Collapse dependent evidence before counting:
-
-- files, releases, and commits from one repository → one repository lineage;
-- retry/review/fix tasks in one workstream → one task lineage;
-- parent/child Kanban records → one task lineage;
-- byte-identical memories across profiles → one memory lineage;
-- a snapshot plus the mutable source it captures → one lineage;
-- aliases or metadata references resolving to one origin → one lineage.
-
-
-**Per-skill defaults** (ingest skills compute this automatically):
-
-| Skill | base_confidence | lifecycle |
-|---|---|---|
-| `wiki-ingest` (URL) | `0.17 + 0.5 × classify(url)` | `draft` |
-| `wiki-ingest` (single doc) | per-source classifier | `draft` |
-| `wiki-ingest` (multi-doc) | `min(N/3,1)×0.5 + avg_q×0.5` | `draft` |
-| `wiki-research` | varies, often 0.85+ | `draft` |
-| `wiki-capture` | 0.42 | `draft` |
-| `*-history-ingest` | 0.42 | `draft` |
-| `wiki-update` | 0.59 | `draft` |
-| `wiki-synthesize` | `min(input_pages.base_confidence)` | `draft` |
-
-### Lifecycle state machine
-
-Five states. **`stale` is not a state** — it is a computed overlay: `is_stale = (today − updated) > 90 days`.
-
-| State | Entered by | Notes |
-|---|---|---|
-| `draft` | Any ingest skill on first write | Default for all new pages |
-| `reviewed` | Human edit only | |
-| `verified` | Human edit only | Time alone never demotes verified pages |
-| `disputed` | Manual edit only | Overrides every state except `archived` in display |
-| `archived` | Manual edit, or ingest skill setting `superseded_by` | Terminal |
-
-Only ingest skills set `draft`. All other transitions require a human editor. Update `lifecycle_changed` whenever the state changes.
+Agents apply this rule; code only reports the facts that feed it (declared conflicts and single-source facts). A DM ruling is cited through the page's existing `sources:`: the session log under `wiki/journal/sessions/<campaign>/<NN>/`, the recap `## Wiki facts`, or the filed DM statement.
 
 ## Importance Tiering
 
@@ -425,7 +345,7 @@ Configured via `.env` (see `.env.example`). Only `OBSIDIAN_VAULT_PATH` is requir
 - `OBSIDIAN_VAULT_PATH` — Where the wiki lives **(required)**
 - `OBSIDIAN_SOURCES_DIR` — Where raw source documents are
 - `OBSIDIAN_CATEGORIES` — Comma-separated list of categories
-- `WIKI_SKIP_PROJECTS` — Comma-separated substrings; any project dir whose name contains one is excluded from history ingest (scan + delta + manifest). See the "Project Scoping" step in the history-ingest skills.
+- `WIKI_SKIP_PROJECTS` — Comma-separated substrings; any project dir whose name contains one is excluded when `wiki-agent` reads agent history (scan + delta + manifest).
 - `CLAUDE_HISTORY_PATH` — Where to find Claude conversation data
 - `CODEX_HISTORY_PATH` — Where to find Codex session data
 - `HERMES_HOME` — Where to find Hermes agent data

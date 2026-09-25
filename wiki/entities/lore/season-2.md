@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13T21:50:00Z
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -24,7 +22,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 
@@ -68,9 +65,9 @@ Named optional stops include [[sparhold|Sparhold]], [[fathomrush|Fathomrush]], a
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| The crew aboard the [[uncertainty-manifest|Uncertainty]] | Their ship is repaired and choices are open; current signals point toward a storm and wrecked Grung hulls | knows | Current campaign premise |
-| [[nona-black-jaw|Nona Black-Jaw]]'s Passage ships | The storm and wrecked Grung hulls are active signals | knows | Radio report |
-| [[talon-vantyrus|Talon Vantyrus]] | His cursed-item movement can generate an island hook | knows | Current campaign design |
+| The crew aboard the [[uncertainty-manifest\|Uncertainty]] | Their ship is repaired and choices are open; current signals point toward a storm and wrecked Grung hulls | knows | Current campaign premise |
+| [[nona-black-jaw\|Nona Black-Jaw]]'s Passage ships | The storm and wrecked Grung hulls are active signals | knows | Radio report |
+| [[talon-vantyrus\|Talon Vantyrus]] | His cursed-item movement can generate an island hook | knows | Current campaign design |
 
 ### Party Knowledge
 
@@ -123,7 +120,7 @@ The characters can learn that the season's freedom is a real choice with consequ
 | --- | --- | --- |
 | Season 2 opening | The *Uncertainty* came fresh out of repair in [[calven-and-calveno]]. | The crew can sail instead of taking a sanctioned assignment. |
 | Season 2 opening | Passage ships reported a storm and wrecked Grung hulls. | The first active chase can lead toward [[aruhe]]. |
-| Season 2 planning | Optional stops and independent clocks were named. | [[sparhold|Sparhold]], [[fathomrush|Fathomrush]], [[halythion|Halythion]], and other hooks remain available without a fixed sequence. |
+| Season 2 planning | Optional stops and independent clocks were named. | [[sparhold\|Sparhold]], [[fathomrush\|Fathomrush]], [[halythion\|Halythion]], and other hooks remain available without a fixed sequence. |
 
 ---
 
@@ -151,11 +148,11 @@ The characters can learn that the season's freedom is a real choice with consequ
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[midchain|Midchain]] | Region | The open sandbox where the season takes place. |
-| [[uncertainty-manifest|Uncertainty]] | Ship and campaign starting point | Carries the crew into the first storm signal. |
+| [[midchain\|Midchain]] | Region | The open sandbox where the season takes place. |
+| [[uncertainty-manifest\|Uncertainty]] | Ship and campaign starting point | Carries the crew into the first storm signal. |
 | [[sentinels-of-the-eyrie]] | Confirmed deep-dive clock | Advances independently of the crew's route. |
 | [[aruhe]] | Possible first chase destination | Offers a smash-and-grab rather than a full survey. |
-| [[penance-bar-siege|Penance Bar Siege]] | Later filed direction | Resolves which older ride direction is current. |
+| [[penance-bar-siege\|Penance Bar Siege]] | Later filed direction | Resolves which older ride direction is current. |
 
 ---
 

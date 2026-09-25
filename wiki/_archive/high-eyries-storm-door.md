@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [exploration, mystery]
 tier: supporting
-lifecycle: discoverable
 pressure: "Maw weather is closing the southern stair while the Sentinels' records, Kyzil, and Crissdalynn's unfinished pilgrimage remain above it."
 if_ignored: "Breaking water cuts off the southern stair to non-fliers, the Sentinels keep recording without intervening, and Talon Vantyrus gains more time to study Crissdalynn away from Kyzil."
 actors: ["[[sentinels-of-the-eyrie]]", "[[master-kyzil]]", "[[talon-vantyrus]]"]

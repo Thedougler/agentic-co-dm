@@ -10,8 +10,6 @@ sources:
   - "campaign-os:fish-broth.md"
   - "campaign-os:oleandro-fuschi.md"
 summary: "A canal-side tavern built into Calveno's main crossing, where Oleandro Fuschi keeps ship records and serves fish broth."
-base_confidence: 0.55
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 kind: site

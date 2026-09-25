@@ -6,20 +6,24 @@ This document defines the JSON schemas used by skill-creator.
 
 ## evals.json
 
-Defines the evals for a skill. Located at `evals/evals.json` within the skill directory.
+Defines the evals for a skill. Located at `evals/evals.json` within the skill directory. `scripts/luna-eval` checks the whole file against this schema before any subject run and exits 2 naming each bad record.
 
 ```json
 {
-  "skill_name": "example-skill",
+  "skill_name": "place-design",
+  "trajectory_records": "...optional, kept",
+  "principles": ["...optional, kept"],
   "evals": [
     {
       "id": 1,
-      "prompt": "User's example prompt",
-      "expected_output": "Description of expected result",
-      "files": ["evals/files/sample1.pdf"],
-      "expectations": [
-        "The output includes X",
-        "The skill used script Y"
+      "prompt": "Add the Salt Stair as a place under High Eyrie.",
+      "files": [], "context": "", "outputs": "wiki/entities/place/",
+      "subject_skill": null,
+      "core": true,
+      "expected_output": "optional human description",
+      "assertions": [
+        {"type": "skill_selected", "text": "place-design"},
+        {"type": "behavior", "text": "Writes the page without asking for approval first"}
       ]
     }
   ]
@@ -27,12 +31,11 @@ Defines the evals for a skill. Located at `evals/evals.json` within the skill di
 ```
 
 **Fields:**
-- `skill_name`: Name matching the skill's frontmatter
-- `evals[].id`: Unique integer identifier
-- `evals[].prompt`: The task to execute
-- `evals[].expected_output`: Human-readable description of success
-- `evals[].files`: Optional list of input file paths (relative to skill root)
-- `evals[].expectations`: List of verifiable statements
+- `skill_name`: required; equals the skill directory name
+- `evals[].id`, `evals[].prompt`: required
+- `evals[].files`, `context`, `outputs`, `core`, `expected_output`: optional
+- `evals[].subject_skill`: optional repo-relative skill path that `luna-eval` honors ahead of `--skill`
+- `evals[].assertions[]`: required, non-empty, each `{type, text}`. `type` is one of `skill_selected`, `behavior`, `quality`, `guardrail`, `process`, `content`, `structure`, `scope`, `handoff`, `coverage`. For `skill_selected`, `text` is an existing directory name under `.agents/skills/`.
 
 ---
 
@@ -85,18 +88,20 @@ Tracks version progression in Improve mode. Located at workspace root.
 
 ## grading.json
 
-Output from the grader agent. Located at `<run-dir>/grading.json`.
+Output from the grader agent. Located at `<run-dir>/grading.json`. `luna-eval` grades `skill_selected` items (pass when the first owner `SKILL.md` in `metrics.json` `skills_read` matches `text`); the grader grades every other type.
 
 ```json
 {
   "expectations": [
     {
       "text": "The output includes the name 'John Smith'",
+      "type": "content",
       "passed": true,
       "evidence": "Found in transcript Step 3: 'Extracted names: John Smith, Sarah Johnson'"
     },
     {
       "text": "The spreadsheet has a SUM formula in cell B10",
+      "type": "structure",
       "passed": false,
       "evidence": "No spreadsheet was created. The output was a text file."
     }
@@ -107,6 +112,8 @@ Output from the grader agent. Located at `<run-dir>/grading.json`.
     "total": 3,
     "pass_rate": 0.67
   },
+  "task_outcome": "fail",
+  "semantic_quality": null,
   "execution_metrics": {
     "tool_calls": {
       "Read": 5,
@@ -150,8 +157,10 @@ Output from the grader agent. Located at `<run-dir>/grading.json`.
 ```
 
 **Fields:**
-- `expectations[]`: Graded expectations with evidence
+- `expectations[]`: Graded assertions `{text, type, passed, evidence}`
 - `summary`: Aggregate pass/fail counts
+- `task_outcome`: `pass`, `fail`, or `blocked`
+- `semantic_quality`: pass rate of the eval's `quality`-type items, `null` when there are none
 - `execution_metrics`: Tool usage and output size (from executor's metrics.json)
 - `timing`: Wall clock timing (from timing.json)
 - `claims`: Extracted and verified claims from the output
@@ -162,7 +171,7 @@ Output from the grader agent. Located at `<run-dir>/grading.json`.
 
 ## metrics.json
 
-Output from the executor agent. Located at `<run-dir>/outputs/metrics.json`.
+Derived from `events.jsonl` by `scripts/luna-eval`. Located at `<run-dir>/metrics.json`.
 
 ```json
 {
@@ -179,7 +188,11 @@ Output from the executor agent. Located at `<run-dir>/outputs/metrics.json`.
   "files_created": ["filled_form.pdf", "field_values.json"],
   "errors_encountered": 0,
   "output_chars": 12450,
-  "transcript_chars": 3200
+  "transcript_chars": 3200,
+  "retries": 1,
+  "invocation_errors": 0,
+  "model": "gpt-6-luna",
+  "effort": "high"
 }
 ```
 
@@ -191,28 +204,21 @@ Output from the executor agent. Located at `<run-dir>/outputs/metrics.json`.
 - `errors_encountered`: Number of errors during execution
 - `output_chars`: Total character count of output files
 - `transcript_chars`: Character count of transcript
+- `retries`: failed commands re-run with identical argv
+- `invocation_errors`: FR-027 command calls rejected as usage errors (FR-035 error object or argparse usage error, non-zero exit)
+- `model`, `effort`: the values `luna-eval` passed to codex; comparisons must use one pair
 
 ---
 
 ## timing.json
 
-Wall clock timing for a run. Located at `<run-dir>/timing.json`.
-
-**How to capture:** When a subagent task completes, the task notification includes `total_tokens` and `duration_ms`. Save these immediately — they are not persisted anywhere else and cannot be recovered after the fact.
+Wall clock timing for a run, written by `scripts/luna-eval`. Located at `<run-dir>/timing.json`.
 
 ```json
-{
-  "total_tokens": 84852,
-  "duration_ms": 23332,
-  "total_duration_seconds": 23.3,
-  "executor_start": "2026-01-15T10:30:00Z",
-  "executor_end": "2026-01-15T10:32:45Z",
-  "executor_duration_seconds": 165.0,
-  "grader_start": "2026-01-15T10:32:46Z",
-  "grader_end": "2026-01-15T10:33:12Z",
-  "grader_duration_seconds": 26.0
-}
+{"duration_ms": 165000, "total_duration_seconds": 165, "exit": 0}
 ```
+
+A rerun skips any run whose `timing.json` records `exit: 0`.
 
 ---
 

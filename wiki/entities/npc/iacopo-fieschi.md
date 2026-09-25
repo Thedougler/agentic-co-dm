@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
 updated: 2026-09-13
@@ -50,7 +47,7 @@ visibility: dm
 | Consistent method | Writes everything in advance and leads with the Concordat name alone. Never explains operational details aloud. |
 | Active problem | The city prices his word at a discount, treating his admission as evidence of weakness. |
 | Performance hooks | Diplomatic functionary vibe. Holds correspondence and refolds it while listening, never fully setting it down. |
-| Link of relevance | Negotiated a reward with [[delmar-fisk|Delmar]], [[crissdalynn-khinriss|Crissdalynn]], [[catarina-davirelli|Catarina]], and [[jean-claude-tabarnack|Jean-Claude]] after the [[Mercatura]] raid. |
+| Link of relevance | Negotiated a reward with [[delmar-fisk\|Delmar]], [[crissdalynn-khinriss\|Crissdalynn]], [[catarina-davirelli\|Catarina]], and [[jean-claude-tabarnack\|Jean-Claude]] after the [[Mercatura]] raid. |
 
 **Voice & Delivery:** he speaks flat and businesslike with formal speech. Every word comes from notes. Concordat orders arrive as statements, never his own. When pushed, he blames rules and process, not his errors. Control is his only feeling. He stiffens when things stray from his written plan. Jean-Claude's refusal of tea showed even this could change.
 

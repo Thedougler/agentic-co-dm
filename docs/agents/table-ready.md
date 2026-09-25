@@ -96,9 +96,9 @@ role, and cast in this order:
    returning, a place the party has been, an item they carry.
 2. **Unrevealed.** A page with `reveal: unrevealed` that fits the role. The
    players have not met it, so it lands as a discovery while paying off prep
-   already made. A `lifecycle: proposed` page may be reshaped for the beat (its
-   want, location, or ties) through its owner skill; an `accepted` or `canon`
-   page keeps its facts. A page an unplayed beat already depends on stays
+   already made. A page's canon facts (the rule in [`llm-wiki`](../../.agents/skills/llm-wiki/SKILL.md#canon)) stay;
+   unrevealed details may be reshaped for the beat (its want, location, or
+   ties) through its owner skill. A page an unplayed beat already depends on stays
    consistent with that beat.
 3. **Mint.** Only when no page fits: the role needs a fact no existing page
    carries, or every candidate would contradict canon or the beat. Mint it
@@ -112,13 +112,11 @@ the response to the DM, the candidates considered and why none fit.
 **Decide the world; leave the party's choices open.** Prep is where invention happens. Retrieve first; where canon is silent or
 contradicts itself on something the beat needs (a motive, a name, a statblock, a reaction, a
 reward, the opposition's next move, a deadline), decide it (constitution XII).
-Each decision is a **canon proposal** (`CONTEXT.md`): stated plainly where the DM will use it,
-filed on its owner page when it belongs to an owner, marked by the page's
-`invention: true`, and listed in the response to the DM for accept. A proposal that resolves a
-contradiction names the conflicting sources and the reading it chose, so the
-DM picks the winner (constitution X). A proposal
-becomes canon only when the DM accepts it (constitution X); until then it is
-still the DM's answer at the table.
+Each decision is stated plainly where the DM will use it, filed on its owner
+page when it belongs to an owner, marked by the page's `invention: true`, and
+listed in the response to the DM. A decision that resolves a contradiction
+names the conflicting sources and the reading it chose. Canon follows the rule
+in [`llm-wiki`](../../.agents/skills/llm-wiki/SKILL.md#canon).
 
 The world is proactive. The opposition, the clocks, and the people with wants
 act on their own schedule whether or not the party engages, and the page says

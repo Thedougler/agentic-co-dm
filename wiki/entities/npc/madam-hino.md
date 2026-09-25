@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -17,7 +15,6 @@ faction: "[[ryu-no-kage|Ryu no Kage]]"
 visibility: dm
 summary: "Secretive Ryu no Kage leader who sends disguised ninjas and appears only in black cloth and an Oni mask."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Madam Hino
@@ -74,6 +71,6 @@ Madam Hino speaks in brief, formal commands and avoids discussing her true appea
 
 | Connection | Meaning |
 | --- | --- |
-| [[ryu-no-kage|Ryu no Kage]] | Madam Hino leads the shadow organization. |
-| [[biggu-baito|Biggu Baito]] | Head general and one of the only people said to know her appearance. |
-| [[nona-black-jaw|Nona Black-Jaw]] | One of the only people said to know Hino's appearance; sworn to secrecy. |
+| [[ryu-no-kage\|Ryu no Kage]] | Madam Hino leads the shadow organization. |
+| [[biggu-baito\|Biggu Baito]] | Head general and one of the only people said to know her appearance. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | One of the only people said to know Hino's appearance; sworn to secrecy. |

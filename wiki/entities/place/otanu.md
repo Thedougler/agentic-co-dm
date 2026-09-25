@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -50,7 +47,7 @@ The vent stays active. Locals have built their weather-reading practice around i
 | Field | Detail |
 |---|---|
 | Type | Active volcanic island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Local volcano-watchers |
 | Known For | A living vent islanders navigate by, not around |
 

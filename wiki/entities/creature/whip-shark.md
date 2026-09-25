@@ -8,12 +8,10 @@ sources: []
 created: 2026-09-19
 updated: 2026-09-19
 type: creature
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
 summary: "A dangerous sea creature known through hull damage, survivor stories, eggs, and a hunt through its body."
-base_confidence: 0.20
 region: ""
 role: ""
 cr: ""

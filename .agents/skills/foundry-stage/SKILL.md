@@ -17,7 +17,7 @@ description: >-
 # Foundry Stage
 ## Accepted-Work gate
 
-Prep only. Follow `docs/agents/work.md`. Precondition: local `mcp.json` (copied from `Documents/ai-co-dm/mcp.json`) and `foundry-data` symlink to the same Foundry Data directory as `Documents/ai-co-dm/foundry-data`. Do not create a second world. Precondition: source wiki page `lifecycle: accepted` (or `canon`). Refuse `draft`, `proposed`, or `rejected` and name which gate failed. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
+Prep only. Follow `docs/agents/work.md`. Precondition: local `mcp.json` (copied from `Documents/ai-co-dm/mcp.json`) and `foundry-data` symlink to the same Foundry Data directory as `Documents/ai-co-dm/foundry-data`. Do not create a second world. Precondition: the source page is canon under the rule (`llm-wiki`). If it is not, refuse and name that gate. If `reveal: unrevealed`, do not stage player-visible text until the DM accepts a reveal. Wording matches accepted text.
 
 Push vault content into FoundryVTT so the table can play it.
 

@@ -21,13 +21,11 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-OWNER_LIFECYCLES = {"draft", "proposed", "accepted", "rejected", "canon"}
-DEFAULT_LIFECYCLES = set(OWNER_LIFECYCLES)
 DEFAULT_RELATIONSHIPS = {
     "extends", "implements", "contradicts", "derived_from", "uses", "replaces", "related_to"
 }
 REQUIRED = ("title", "category", "tags", "sources", "created", "updated")
-CAMPAIGN_REQUIRED = ("type", "lifecycle", "reveal")
+CAMPAIGN_REQUIRED = ("type", "reveal")
 OWNER_TYPES = {
     "npc", "pc", "place", "faction", "item", "creature", "vehicle", "spell",
     "lore", "quest", "region",
@@ -38,7 +36,6 @@ HARD_KEYS = (
     "broken_links",
     "missing_frontmatter",
     "bad_type",
-    "bad_lifecycle",
     "typed_relationships",
     "pc_identity_mismatch",
     "misplaced_entity",
@@ -193,19 +190,16 @@ def normalize(value: str) -> str:
     return value.casefold()
 
 
-def parse_owner_schema(path: Path) -> tuple[set[str], set[str]]:
+def parse_owner_schema(path: Path) -> set[str]:
     types: set[str] = set()
-    lifecycles: set[str] = set()
     if not path.is_file():
-        return types, lifecycles
+        return types
     for line in path.read_text(encoding="utf-8").splitlines():
         stripped = line.lstrip()
         tokens = TOKEN.findall(line)
         if stripped.startswith("| `type`"):
             types.update(token for token in tokens if token != "type")
-        elif stripped.startswith("| `lifecycle`"):
-            lifecycles.update(token for token in tokens if token != "lifecycle")
-    return types, lifecycles
+    return types
 
 
 def load(vault: Path) -> tuple[dict[str, dict], dict[str, list[str]]]:
@@ -298,10 +292,13 @@ def resolve(raw: str, pages: dict[str, dict], lookup: dict[str, list[str]]) -> l
     return [str(target) for target in targets]
 
 def link_occurrences(text: str) -> list[tuple[str, int]]:
-    """Return wikilink targets with their 1-based source lines."""
+    """Return wikilink targets with their 1-based source lines.
+
+    A table-cell link writes its alias pipe as `\\|`; the backslash is not part of the target.
+    """
     scrubbed = TOKEN.sub(lambda m: " " * len(m.group(0)), text)
     return [
-        (m.group(1).split("|", 1)[0].strip(), text.count("\n", 0, m.start()) + 1)
+        (m.group(1).split("|", 1)[0].strip().removesuffix("\\").strip(), text.count("\n", 0, m.start()) + 1)
         for m in re.finditer(r"(?<!!)\[\[([^\]]+)\]\]", scrubbed)
     ]
 
@@ -312,14 +309,12 @@ def links(text: str) -> list[str]:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("vault", type=Path, nargs="?", default=Path("wiki"))
+    parser.add_argument("vault", type=Path, nargs="?", default=None, help="vault (default: tools/wiki_ops/cli.py resolve_vault)")
     parser.add_argument("--json", action="store_true", help="emit JSON")
     parser.add_argument("--verbose", action="store_true", help="include clean checks and zero counts")
     parser.add_argument("--hard-only", action="store_true", help=argparse.SUPPRESS)
     parser.add_argument("--schema-source", type=Path, help="Owner AGENTS.md (default: <vault>/AGENTS.md)")
-    parser.add_argument("--allow-lifecycle", action="append", default=[])
     parser.add_argument("--allow-relationship-type", action="append", default=[])
-    parser.add_argument("--required-trust-field", action="append", choices=("base_confidence", "lifecycle", "lifecycle_changed", "updated"), default=["base_confidence", "lifecycle"])
     parser.add_argument("--scope", help="scope specification (dir:, type:, files:, changed:)")
     parser.add_argument("--today", default=dt.date.today().isoformat(), help="ISO date for stale-page checks")
     return parser.parse_args()
@@ -548,9 +543,156 @@ def snake_case_owner_basenames(pages: dict[str, dict]) -> list[dict[str, object]
             out.append({"page": rel, "stem": stem, "kind": "snake", "line": 1})
     return out
 
+# Obsidian Markdown rules. Only the table pipe escape has one correct output;
+# every other finding needs an agent's call under wiki-lint.
+FENCE_OPEN = re.compile(r"`{3,}")
+MD_LINK = re.compile(r"(?<!!)\[([^\]]*)\]\((?!https?://)(?!mailto:)([^)]+\.md(?:#[^)]*)?)\)", re.I)
+MD_LINK_PATH = re.compile(r"(?<!!)\[([^\]]*)\]\((?!https?://)(?!mailto:)((?:wiki|attachments)/[^)]+)\)", re.I)
+TYPE_LINE = re.compile(r"^type:\s*\S+", re.M | re.I)
+TITLE_OR_DATE = re.compile(r"^(title|date|created|updated):\s*", re.M | re.I)
+NARRATION_BLOCK = re.compile(r">\s*\[!narration\][^\n]*\n(?:>(?:[^\n]*)\n)*", re.I)
+DC_IN_TEXT = re.compile(r"\bDC\s*\d+\b|\bdifficulty class\b|\bpassive perception\s*\d+", re.I)
+IMAGE_WIKI = re.compile(
+    r"!?\[\[([^\]|#]+?\.(?:png|jpe?g|gif|webp|svg|pdf|mp3|mp4|webm))(?:#[^\]|]*)?(?:\|[^\]]*)?\]\]", re.I
+)
+WIKILINK_ANY = re.compile(r"!?\[\[(.*?)\]\]")
+UNESCAPED_PIPE = re.compile(r"(?<!\\)\|")
+TABLE_SEP = re.compile(r"^\s*\|[\s:|-]+\|\s*$")
+LITERAL_NEWLINE = re.compile(r"\\n")
+FORBIDDEN_TREES = ("concepts", "sources")
+
+
+def blank_fences(text: str) -> str:
+    """Replace fenced code lines with empty lines so line numbers are kept."""
+    out: list[str] = []
+    fence_len = 0
+    for line in text.splitlines(keepends=True):
+        ticks = FENCE_OPEN.match(line.lstrip())
+        ending = "\n" if line.endswith("\n") else ""
+        if ticks and (fence_len == 0 or len(ticks.group(0)) >= fence_len):
+            fence_len = 0 if fence_len else len(ticks.group(0))
+            out.append(ending)
+        elif fence_len:
+            out.append(ending)
+        else:
+            out.append(line)
+    return "".join(out)
+
+
+def _table_row(line: str) -> bool:
+    stripped = line.lstrip()
+    return stripped.startswith("|") and not TABLE_SEP.match(stripped)
+
+
+def escape_table_wikilink_pipes(text: str) -> str:
+    r"""Write every unescaped `|` inside a table-cell wikilink as `\|`."""
+    visible = blank_fences(text).splitlines(keepends=True)
+    lines = text.splitlines(keepends=True)
+    for index, line in enumerate(lines):
+        if index < len(visible) and visible[index] == line and _table_row(line):
+            lines[index] = WIKILINK_ANY.sub(
+                lambda m: m.group(0).replace(m.group(1), UNESCAPED_PIPE.sub(r"\\|", m.group(1)), 1), line
+            )
+    return "".join(lines)
+
+
+def _line_at(text: str, offset: int) -> int:
+    return text.count("\n", 0, offset) + 1
+
+
+def _media_exists(vault: Path, target: str) -> bool:
+    target = target.strip().replace("\\", "/")
+    return any(
+        candidate.is_file()
+        for candidate in (vault / target, vault / "attachments" / target, vault / "attachments" / Path(target).name)
+    )
+
+
+def _literal_newline_target(rel: str) -> bool:
+    path = Path(rel)
+    return rel.startswith("journal/sessions/") or (path.parts[:1] == ("templates",) and path.name.startswith("Session"))
+
+
+def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: bool) -> dict[str, list[dict[str, object]]]:
+    human = {"repair_class": "human_repair", "repair_action": None}
+    found: dict[str, list[dict[str, object]]] = {
+        key: [] for key in (
+            "md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link",
+            "table_wikilink_unescaped_pipe", "forbidden_tree", "literal_newline",
+        )
+    }
+    if not scoped:
+        for name in FORBIDDEN_TREES:
+            if (vault.parent / name).is_dir():
+                found["forbidden_tree"].append({
+                    "tree": f"{name}/", "line": 1, **human,
+                    "reason": f"parallel {name}/ tree next to the vault; use the vault structure",
+                })
+    targets = {rel: item["text"] for rel, item in pages.items()}
+    if not scoped:
+        for path in sorted((vault / "templates").rglob("Session*.md")) if (vault / "templates").is_dir() else ():
+            targets.setdefault(path.relative_to(vault).as_posix(), path.read_text(encoding="utf-8"))
+    for rel, text in targets.items():
+        visible = blank_fences(text)
+        if rel in pages:
+            for pattern in (MD_LINK, MD_LINK_PATH):
+                for m in pattern.finditer(visible):
+                    target = m.group(2)
+                    if pattern is MD_LINK_PATH and (target.lower().endswith(".md") or ".md#" in target.lower()):
+                        continue
+                    found["md_internal_link"].append({
+                        "page": rel, "line": _line_at(visible, m.start()), "text": m.group(0), **human,
+                        "reason": f"[{m.group(1)}]({target}) is a Markdown link; use a [[wikilink]]",
+                    })
+            block = pages[rel]["block"]
+            if rel.startswith("journal/") and block and TITLE_OR_DATE.search(block) and not TYPE_LINE.search(block):
+                found["title_only_frontmatter"].append({
+                    "page": rel, "line": 1, **human,
+                    "reason": "frontmatter has title/date but no type; add the owner fields",
+                })
+            for m in NARRATION_BLOCK.finditer(text):
+                if DC_IN_TEXT.search(m.group(0)):
+                    found["dc_in_narration"].append({
+                        "page": rel, "line": _line_at(text, m.start()), **human,
+                        "reason": "DC or difficulty inside a [!narration] callout; move it to [!mechanic] or [!secret]-",
+                    })
+            for m in IMAGE_WIKI.finditer(visible):
+                target = m.group(1).strip()
+                if not _media_exists(vault, target):
+                    found["broken_image_link"].append({
+                        "page": rel, "line": _line_at(visible, m.start()), "target": target, **human,
+                        "reason": f"missing media target: {target} (expected under attachments/)",
+                    })
+            for number, line in enumerate(visible.splitlines(), 1):
+                if not _table_row(line):
+                    continue
+                for m in WIKILINK_ANY.finditer(line):
+                    if UNESCAPED_PIPE.search(m.group(1)):
+                        found["table_wikilink_unescaped_pipe"].append({
+                            "page": rel, "line": number, "text": m.group(0),
+                            "reason": "unescaped | inside a table-cell wikilink splits the cell; write it as \\|",
+                            "repair_class": "deterministic_repair",
+                            "repair_action": {"kind": "escape_table_wikilink_pipe", "target": rel},
+                        })
+        if _literal_newline_target(rel):
+            scanned = text
+            match = re.match(r"^---\s*\n(.*?)\n---\s*\n?", text, re.S)
+            if match:
+                scanned = " " * len(match.group(0)) + text[len(match.group(0)):]
+            scanned = re.sub(r"```[\s\S]*?```", lambda m: " " * len(m.group(0)), scanned)
+            for m in LITERAL_NEWLINE.finditer(scanned):
+                found["literal_newline"].append({
+                    "page": rel, "line": _line_at(text, m.start()), **human,
+                    "reason": "literal \\n in prose; use a real newline (frontmatter and fences are fine)",
+                })
+    return found
+
+
 def main() -> int:
     args = parse_args()
-    vault = args.vault.resolve()
+    from tools.wiki_ops.cli import resolve_vault
+
+    vault = resolve_vault(args.vault)
     pages, lookup = load(vault)
     # ponytail: full registry for link resolution; scope filters finding emission only (e-28/e-39)
     resolve_pages, resolve_lookup = pages, lookup
@@ -564,18 +706,15 @@ def main() -> int:
         pages = {key: value for key, value in pages.items() if key in selected}
         lookup = {key: [item for item in values if item in selected] for key, values in lookup.items()}
     schema_path = args.schema_source.resolve() if args.schema_source else vault / "AGENTS.md"
-    owner_types, owner_lifecycles = parse_owner_schema(schema_path)
+    owner_types = parse_owner_schema(schema_path)
     types = CAMPAIGN_TYPES | owner_types
-    lifecycles = DEFAULT_LIFECYCLES | owner_lifecycles | set(args.allow_lifecycle)
     relationships = DEFAULT_RELATIONSHIPS | set(args.allow_relationship_type)
     result: dict[str, object] = {
         "scope": {"vault": str(vault), "pages": len(pages), "excluded_dirs": sorted(SKIP_DIRS)},
         "schema": {
             "source": str(schema_path) if schema_path.is_file() else None,
             "allowed_types": sorted(types),
-            "allowed_lifecycles": sorted(lifecycles),
             "allowed_relationship_types": sorted(relationships),
-            "required_trust_fields": args.required_trust_field,
             "hard": list(HARD_KEYS),
         },
         "findings": {},
@@ -612,11 +751,6 @@ def main() -> int:
         for rel, item in pages.items()
         if len(item["fields"].get("summary", "")) > 200
     ]
-    findings["bad_lifecycle"] = [
-        {"page": rel, "line": field_line(item["text"], "lifecycle"), "value": item["fields"].get("lifecycle")}
-        for rel, item in pages.items()
-        if item["fields"].get("lifecycle") and item["fields"]["lifecycle"].strip("\"'") not in lifecycles
-    ]
     findings["bad_type"] = [
         {"page": rel, "line": field_line(item["text"], "type"), "value": item["fields"].get("type")}
         for rel, item in pages.items()
@@ -646,17 +780,6 @@ def main() -> int:
     findings["noncanonical_basename"] = noncanonical_basenames(pages)
     findings["duplicate_slugs"] = duplicate_slugs(pages)
     findings["snake_case_owner_basename"] = snake_case_owner_basenames(pages)
-    findings["missing_trust"] = [
-        {
-            "page": rel,
-            "line": field_line(item["text"], next(
-                (key for key in args.required_trust_field if not item["fields"].get(key)), ""
-            )),
-            "missing": [key for key in args.required_trust_field if not item["fields"].get(key)],
-        }
-        for rel, item in pages.items()
-        if any(not item["fields"].get(key) for key in args.required_trust_field)
-    ]
 
     documents = {}
     for path in sorted(vault.rglob("*.md")):
@@ -814,9 +937,9 @@ def main() -> int:
                 "line": field_line(item["text"], "updated"),
                 "updated": value,
                 "days": age,
-                "lifecycle": item["fields"].get("lifecycle", ""),
             })
     findings["stale_pages"] = stale
+    findings.update(obsidian_markdown_findings(vault, pages, scoped=bool(args.scope)))
 
     def count(key: str, value: Any) -> int:
         if key == "missing_frontmatter":
@@ -849,7 +972,7 @@ def main() -> int:
             print(f"Wiki lint scope: {len(pages)} pages ({vault})")
             for key, value in counts.items():
                 print(f"{key}: {value}")
-            for key in ("missing_frontmatter", "missing_trust", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
+            for key in ("missing_frontmatter", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
                 items = findings.get(key, [])
                 if items:
                     print(f"\n{key}")

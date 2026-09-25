@@ -6,10 +6,8 @@ sources: []
 created: 2026-09-17
 updated: 2026-09-17
 type: lore
-lifecycle: proposed
 reveal: unrevealed
 summary: Folder index of Factions.
-base_confidence: 0.55
 ---
 
 - [[entities/faction/antheri|Antheri]]

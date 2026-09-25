@@ -8,8 +8,6 @@ tags: [shattered-sea, place]
 sources:
   - "campaign-os:prospero-morsani.md"
 summary: "A Velo Quarter curio shop where Prospero Morsani sells magic and rare objects together with their stories."
-base_confidence: 0.55
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 kind: shop

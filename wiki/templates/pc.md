@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: pc
-lifecycle: proposed
 reveal: revealed
 campaign: "{{campaign}}"
 visibility: dm

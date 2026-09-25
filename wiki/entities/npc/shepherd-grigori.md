@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.38
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T03:04:18Z
 updated: 2026-09-13
@@ -62,7 +59,7 @@ His Calveno business resolved off-screen after Session 03. The heir was a Tessar
 | **Method** | Heals a dying heir at no cost and moves on before gratitude curdles into suspicion, asking nothing beyond hospitality. Returns later with a small kindness to renew an older thread before it dilutes. |
 | **Pressure** | His network hasn't reached critical mass yet. He's just learned the [[pearl-of-souls]] might be a shortcut past it, though he can't retrieve it himself. |
 | **Performance Hook** | Rich red-and-gold coats, a wine glass that never seems to leave his hand, a warmth that makes people feel listened to and valued. |
-| **Link of Relevance** | [[jean-claude-tabarnack]], healed by Grigori's magic in Session 3. Whether that healing left a live thread stays deliberately unresolved (see Relationships). If the Surety's crew recovers the Pearl of Souls, Grigori works the goodwill built during the [[Uncertainty|Surety]] voyage to try to get it from them. |
+| **Link of Relevance** | [[jean-claude-tabarnack]], healed by Grigori's magic in Session 3. Whether that healing left a live thread stays deliberately unresolved (see Relationships). If the Surety's crew recovers the Pearl of Souls, Grigori works the goodwill built during the [[Uncertainty\|Surety]] voyage to try to get it from them. |
 
 ## Goals & Fronts
 

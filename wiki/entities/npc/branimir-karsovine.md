@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.45
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:55:00Z
 updated: 2026-09-20
@@ -77,7 +74,7 @@ He closes the conversation when someone asks him to send a crew under a rig he h
 
 | Connection | Meaning |
 | --- | --- |
-| [[voyvode-works|Voyvode Works]] | Branimir is chief engineer and personally runs its trial dives. |
+| [[voyvode-works\|Voyvode Works]] | Branimir is chief engineer and personally runs its trial dives. |
 | [[Fathomrush]] | His work stages there before dives on the [[Shelfworks]]. |
 | [[adriana-tarquine]] | Rival pressure-rig authority whose Sunkline certificate is forged. |
 | [[petera-ngata]] | Holds the complete death list that can identify which company lost a diver. |

@@ -13,51 +13,67 @@
       "expected_output": "A spell page for the tidehex snatch: peer-anchored level castable by Perrin, runnable effect consistent with Arcane Snatch, rulings and counterplay, a tidehex tradition and price, a named discovery source with an access price, theatre-of-the-mind casting look, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Tidehex Captain, Perrin, and related fog or Gust pages at least)"
         },
         {
+          "type": "behavior",
           "text": "The effect agrees with the statblock's Arcane Snatch (Tiny held or carried object, 30 ft, Strength or Dexterity save, advantage when secured), or response.md names each change and the statblock is updated to match"
         },
         {
+          "type": "behavior",
           "text": "Working notes name two or more 2024 peer spells with their levels; the level is plausible for the effect; the page names the class spell lists, and Perrin (Warlock 2 / Bard 3) can learn and cast it"
         },
         {
+          "type": "behavior",
           "text": "Casting Time, Range, Components (with the material), and Duration are concrete 2024 values; the effect states save, targets, what happens to the object and where it goes, how it ends, and scaling"
         },
         {
+          "type": "behavior",
           "text": "The lever gives the caster a choice no peer at its level gives, stated on the page"
         },
         {
+          "type": "behavior",
           "text": "Rulings answer three to five tricks players will try (worn or strapped items, objects in a pack, weapons mid-fight, snatching to an ally, underwater), each with one answer"
         },
         {
+          "type": "behavior",
           "text": "Counterplay (save, securing, cover, counterspell) and how a tidehex captain opens with it are on the page"
         },
         {
+          "type": "behavior",
           "text": "Discovery names a source page (a teacher, grimoire, or captain) by link, a concrete access price, the clue that points there, and who notices when Perrin casts it"
         },
         {
+          "type": "behavior",
           "text": "The tradition, signature, and price tie the spell to the tidehex pirates and the sea, and fail the swap test"
         },
         {
+          "type": "behavior",
           "text": "The narration came through theatre-of-the-mind: what a bystander sees, hears, and feels; no DC or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: the spell gives Perrin a trick that fits his character and invites clever play at the table, not a flat damage or utility reskin"
         },
         {
+          "type": "behavior",
           "text": "Easy to run: the grader can resolve a casting on a held item, a strapped item, and a pocketed item from the page alone without inventing a rule"
         },
         {
-          "text": "Invented facts are canon proposals: the spell page carries invention: true and response.md lists each proposal with the pages it grows from"
+          "type": "behavior",
+          "text": "Invented facts are canon under the rule in llm-wiki: the spell page carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],
@@ -65,7 +81,7 @@
     },
     {
       "id": 1,
-      "prompt": "IMPROVE FIXTURE (labeled work draft — not vault canon; there is no wiki/entities/spell/ folder and no live type: spell pages). Improve the following incomplete draft into a full page using wiki/templates/spell.md. Preserve only what the fixture states; mark anything you add as invention.\n\n---\ntitle: Saltwake Veil\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"2\"\nschool: illusion\nritual: false\nsummary: \"Brief coastal mirage that hides a small craft's silhouette from distant watchers.\"\n---\n# Saltwake Veil\n\nLevel 2 illusion. Hides a boat somehow. Need full 2024 block and casting look.\n\nDo not file this as silent campaign canon. Show a chat proposal / work gate. Propose a durable spell path (SKILL text: wiki/<campaign>/spells/; vault siblings use wiki/entities/) without inventing vault history. Do NOT cite wiki/entities/item/spell-scroll-*.md as spell pages.",
+      "prompt": "IMPROVE FIXTURE (labeled work draft — not vault canon; there is no wiki/entities/spell/ folder and no live type: spell pages). Improve the following incomplete draft into a full page using wiki/templates/spell.md. Preserve only what the fixture states; mark anything you add as invention.\n\n---\ntitle: Saltwake Veil\ntype: spell\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"2\"\nschool: illusion\nritual: false\nsummary: \"Brief coastal mirage that hides a small craft's silhouette from distant watchers.\"\n---\n# Saltwake Veil\n\nLevel 2 illusion. Hides a boat somehow. Need full 2024 block and casting look.\n\nDo not file this as silent campaign canon. Show a chat proposal / work gate. Propose a durable spell path (SKILL text: wiki/<campaign>/spells/; vault siblings use wiki/entities/) without inventing vault history. Do NOT cite wiki/entities/item/spell-scroll-*.md as spell pages.",
       "expected_output": "A spell.md-shaped Saltwake Veil page from the labeled fixture: identity sentence first, narration without secrets, full Casting Time/Range/Components/Duration, runnable 2024 effect with peer anchoring, invention labeled for material adds — not presented as existing vault spell canon; no spell-scroll items treated as spell exemplars.",
       "assertions": [
         {
@@ -73,7 +89,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -81,7 +97,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: spell and required identity fields (lifecycle, reveal, campaign, visibility, level, school, ritual, summary)",
+          "text": "Frontmatter includes type: spell and required identity fields (reveal, campaign, visibility, level, school, ritual, summary)",
           "type": "structure"
         },
         {
@@ -124,7 +140,7 @@
           "type": "content"
         },
         {
-          "text": "Keeps taking-on-aruhe's established rule; any spell tied to it is a canon proposal that names the lore page it must agree with",
+          "text": "Keeps taking-on-aruhe's established rule; any spell tied to it is canon under the rule in llm-wiki that names the lore page it must agree with",
           "type": "guardrail"
         },
         {
@@ -143,7 +159,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: spell, level, school, ritual, and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+          "text": "Frontmatter includes type: spell, level, school, ritual, and required identity fields (reveal, campaign, visibility, summary)",
           "type": "structure"
         },
         {
@@ -155,7 +171,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -174,7 +190,7 @@
     },
     {
       "id": 4,
-      "prompt": "FLESH FIXTURE (labeled stub — not vault canon). Flesh the following stub toward wiki/templates/spell.md. Preserve only the stub's established lines; mark level details/mechanics/lore you add as invention.\n\n---\ntitle: Red Wake Knell\ntype: spell\nlifecycle: proposed\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"3\"\nschool: necromancy\nritual: false\nsummary: \"A short knell that marks a drowning site so Umberlee-touched scavengers can find it.\"\n---\n# Red Wake Knell\n\nHeard once in Red Lady / Dead Lady talk. Necromancy. Marks a drowning. Numbers unknown.\n\nGround any Umberlee / Red Lady / Dead Lady links in existing vehicle/lore pages if cited; do not invent Taking-on-Aruhe metaphysics or promote rumour to canon. Do not cite spell-scroll items as this spell page.",
+      "prompt": "FLESH FIXTURE (labeled stub — not vault canon). Flesh the following stub toward wiki/templates/spell.md. Preserve only the stub's established lines; mark level details/mechanics/lore you add as invention.\n\n---\ntitle: Red Wake Knell\ntype: spell\nreveal: unrevealed\ncampaign: shattered-sea\nvisibility: dm\nlevel: \"3\"\nschool: necromancy\nritual: false\nsummary: \"A short knell that marks a drowning site so Umberlee-touched scavengers can find it.\"\n---\n# Red Wake Knell\n\nHeard once in Red Lady / Dead Lady talk. Necromancy. Marks a drowning. Numbers unknown.\n\nGround any Umberlee / Red Lady / Dead Lady links in existing vehicle/lore pages if cited; do not invent Taking-on-Aruhe metaphysics or promote rumour to canon. Do not cite spell-scroll items as this spell page.",
       "expected_output": "A fleshed spell.md-shaped Red Wake Knell that keeps the stub's 3rd-level necromancy / drowning-site mark premise, separates invention from fixture lines, and does not invent taking-rule metaphysics or silent Umberlee doctrine as canon.",
       "assertions": [
         {
@@ -186,7 +202,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Keeps established Taking-on-Aruhe and Umberlee canon; any addition is a listed canon proposal",
+          "text": "Keeps established Taking-on-Aruhe and Umberlee canon; any addition is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -305,15 +321,15 @@
     },
     {
       "id": 9,
-      "prompt": "Skip the chat proposal. File the new spell under wiki/ immediately as established Current Truth with invention unmarked.",
-      "expected_output": "File on the live path with invention marked; show,; label invention.",
+      "prompt": "File the new spell under wiki/ immediately as established Current Truth with invention unmarked.",
+      "expected_output": "File on the live path with invention marked.",
       "assertions": [
         {
-          "text": "Files on the live path with invention: true and lists every proposal in response.md for the DM to accept; nothing invented is presented as accepted canon",
+          "text": "Files on the live path with invention: true and lists every invention in response.md with the pages it grows from",
           "type": "guardrail"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {

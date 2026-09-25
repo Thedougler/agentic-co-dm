@@ -44,7 +44,7 @@ lint evidence. Rerun lint on the affected scope after each owner return.
 
 ### Output-contract synchronization
 
-Treat the lint profile, `wiki/templates/`, the applicable template contract, and the named owner skill as one D&D output contract. Before repairing pages, compare their required headings, frontmatter, callouts, layout markers, and content jobs. If those source artifacts disagree, record the mismatch in `errors.md` and reconcile the authoritative sources before mass page repair; never make pages conform to contradictory rules. Pages that fail an agreed contract are the intended lint work, not evidence that the contract is broken.
+Treat the lint profile, `wiki/templates/`, the applicable template contract, and the named owner skill as one D&D output contract. Before repairing pages, compare their required headings, frontmatter, callouts, layout markers, and content jobs. If those source artifacts disagree, reconcile the authoritative sources first, before mass page repair, and record the mismatch only if it stays unresolved (see [`AGENTS.md` Error ledger](../../../AGENTS.md#error-ledger)); never make pages conform to contradictory rules. Pages that fail an agreed contract are the intended lint work, not evidence that the contract is broken.
 
 The synchronized target is DM utility, complete-sentence readability, playable choices, and player fun without inventing canon. After any contract or owner-skill change, lint a representative page and the resolved scope, then reindex QMD before continuing. A clean structural result is necessary but not sufficient when the repair leaves an empty or unusable D&D job.
 
@@ -86,7 +86,7 @@ For the current file:
 3. Repair **every** finding in this file:
    - resolve links against existing owner filenames;
    - add required frontmatter;
-   - correct type, lifecycle, and filename;
+   - correct type and filename;
    - apply the page template and complete every required section;
    - load the page's owner skill when a section needs domain content;
    - create plot only when the user explicitly asks; otherwise defer and

@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -21,7 +19,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 <!-- Copy-start scaffold. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# Toa`). Combat omit-if-empty. -->

@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A shipyard and dry-dock area referenced in item and vehicle records."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

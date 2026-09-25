@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # The Chimney
@@ -44,7 +41,7 @@ _Weapon (Arrow), Uncommon._
 | One thing | It fills a fifteen-foot ball of air with smoke nobody can see through, at whatever distance a bow reaches. |
 | Rarity justification | Cover that stays put, where Dust of Disappearance hides bodies and Dust of Sneezing and Choking disables them. |
 | Attunement reason | A lone power, gone in one shot, adding nothing to attack, damage, save, or AC rolls. The attunement tree never opens. |
-| PC connection | Removes a watcher's sightline without giving [[jean-claude-tabarnack|Jean-Claude]] a target. |
+| PC connection | Removes a watcher's sightline without giving [[jean-claude-tabarnack\|Jean-Claude]] a target. |
 | Current holder | [[ettore-lupo]], in the drawer beneath the till at [[Casa Lupo]]. |
 | Narrative hook | Anybody in [[calven-and-calveno]] whose work depends on nobody following them home carries two or three of these. |
 

@@ -8,8 +8,6 @@ sources:
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-20
 type: region
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -23,7 +21,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.53
 tier: supporting
 ---
 
@@ -39,10 +36,10 @@ tier: supporting
 | **Scale** | Local island region |
 | **Kind** | Dry-ground rainforest island |
 | **Character** | A sanctioned western beach below a closed, stacked canopy |
-| **Anchor** | [[veth-west-beach|Veth West Beach]] |
+| **Anchor** | [[veth-west-beach\|Veth West Beach]] |
 | **Known for** | Bone, resin, and pigment trade; living root stairs; high pools |
 | **Feared for** | No pier, exposed outsider tracks, and patrol pressure above the beach |
-| **Parent region** | [[verdant-teeth|Verdant Teeth]] |
+| **Parent region** | [[verdant-teeth\|Verdant Teeth]] |
 
 > **DM thesis.** Veth offers a safe-looking beach concession and a dangerous choice: trade openly, climb the blue root-stair, or reconnect by water without opening the interior.
 
@@ -74,7 +71,7 @@ Veth is a large island of old dry-ground rainforest. A shallow reef approach rea
 | North | No named neighbor established | Stacked canopy and wet cuts | Ground trade gives way to watched vertical routes |
 | East | No named neighbor established | Closed rainforest interior | Outsider movement becomes exposed and traceable |
 | South | No named neighbor established | High pools and clan routes | Retreat becomes difficult after a climb |
-| West | [[veth-west-beach|Veth West Beach]] | Short, shallow boat approach over reef | Visible trade is possible without a pier |
+| West | [[veth-west-beach\|Veth West Beach]] | Short, shallow boat approach over reef | Visible trade is possible without a pier |
 
 ### Landmarks
 
@@ -100,7 +97,7 @@ Veth is a large island of old dry-ground rainforest. A shallow reef approach rea
 
 | Route | Connects | Time | Cost / requirement | Risk | Advantage | Known |
 | --- | --- | ---: | --- | --- | --- | --- |
-| Reef approach | Reef ↔ [[veth-west-beach|Veth West Beach]] | Unknown | Short boat approach | Shallow and visible; no pier | Sanctioned access to trade | Yes |
+| Reef approach | Reef ↔ [[veth-west-beach\|Veth West Beach]] | Unknown | Short boat approach | Shallow and visible; no pier | Sanctioned access to trade | Yes |
 | Blue root-stair | Beach ↔ closed mid-story | Unknown | Climb the living stair | Breaks protocol and exposes tracks | Fast interior access | Yes |
 | Canopy climb | Mid-story ↔ high pools ↔ clan routes | Unknown | Vertical climbing | Exposed and difficult to retreat from | Information and access to clan routes | Yes |
 | Water route | Veth ↔ Sorn / Orak | Unknown | Boat or water travel | Does not open the interior | Reconnects to the island cluster | Yes |
@@ -114,7 +111,7 @@ Veth is a large island of old dry-ground rainforest. A shallow reef approach rea
 
 | Place | Kind | Current state | What it offers or threatens | Lead |
 | --- | --- | --- | --- | --- |
-| [[veth-west-beach|Veth West Beach]] | Trade beach | Sanctioned shallow approach | Exchange and a visible invitation | Start with the go-betweens |
+| [[veth-west-beach\|Veth West Beach]] | Trade beach | Sanctioned shallow approach | Exchange and a visible invitation | Start with the go-betweens |
 | Blue root-stair | Landmark | Living stair behind the beach | Fast access and broken protocol | Watch the second root |
 | Closed mid-story | Canopy layer | Closed and traceable | Interior routes and patrol pressure | Climb or retreat |
 | High pools | Landmark | Along vertical clan routes | Information, exposure, difficult retreat | Follow canopy water |
@@ -139,7 +136,7 @@ None established yet. Do not add a war, plague, occupation, or other macro-threa
 
 | d6 | Rumor / lead | Truth behind it | Points toward |
 | -: | --- | --- | --- |
-| 1 | Veth has a pier hidden behind the beach. | Veth has no pier; the approach is short, shallow, and visible. | [[veth-west-beach|Veth West Beach]] |
+| 1 | Veth has a pier hidden behind the beach. | Veth has no pier; the approach is short, shallow, and visible. | [[veth-west-beach\|Veth West Beach]] |
 | 2 | The beach trade concession includes the first roots. | The canopy behind the beach is closed; the blue root-stair breaks protocol. | Blue root-stair |
 | 3 | The blue root-stair is the fastest way inward. | It is fast access, but it exposes a protocol breach. | Closed mid-story |
 | 4 | The island has a charted town. | No charted town is established; Grung live in canopy and wet cuts. | Wet cuts |
@@ -152,7 +149,7 @@ None established yet. Do not add a war, plague, occupation, or other macro-threa
 
 | d6 | Encounter | Sign / track / warning | Source or destination |
 | -: | --- | --- | --- |
-| 1 | Blue-caste trade exchange | Bone, resin, pigment, food, timber, metal, or rope | [[veth-west-beach|Veth West Beach]] |
+| 1 | Blue-caste trade exchange | Bone, resin, pigment, food, timber, metal, or rope | [[veth-west-beach\|Veth West Beach]] |
 | 2 | Treeline observation | Higher-caste Grung watching from green shade | Closed canopy |
 | 3 | Root-stair crossing | Blue living roots and a second-root boundary | Closed mid-story |
 | 4 | Outsider trail | Disturbed shade or traces left by climbing | Canopy routes |
@@ -192,7 +189,7 @@ None established yet. Do not add a war, plague, occupation, or other macro-threa
 
 | Date | Change | Cause | Fallout / pages affected |
 | --- | --- | --- | --- |
-| Current campaign state | Veth recorded as a large rainforest island with a western trade concession, closed canopy, and water reconnections. | Regional source material | [[veth-west-beach|Veth West Beach]], [[verdant-teeth|Verdant Teeth]], [[grung-clans|Grung clans]] |
+| Current campaign state | Veth recorded as a large rainforest island with a western trade concession, closed canopy, and water reconnections. | Regional source material | [[veth-west-beach\|Veth West Beach]], [[verdant-teeth\|Verdant Teeth]], [[grung-clans\|Grung clans]] |
 
 ## Regional index
 

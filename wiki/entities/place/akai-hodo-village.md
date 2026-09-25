@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: place
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -16,7 +14,6 @@ kind: site
 region: "Northern marshlands of Totemo Tokage"
 summary: "Hidden northern village surrounded by marsh, thick forest, and constant red mist where the Akai Hodo patrol."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Akai Hodo Village

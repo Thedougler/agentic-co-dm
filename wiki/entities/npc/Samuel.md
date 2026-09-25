@@ -14,9 +14,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.45
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:35:00Z
 updated: 2026-09-13
@@ -49,7 +46,7 @@ visibility: dm
 | Consistent method | Shows up on time, listens carefully and asks permission before acting. |
 | Active problem | Nobody has ever stated the job's actual scope or expectations. |
 | Performance hooks | Earnest, almost apologetic vibe. Fidgets with the beak-wax in his pocket when he's uncertain. |
-| Link of relevance | Runs messages between [[catarina-davirelli|Catarina]] and the crew at [[Cat's Curios]]. |
+| Link of relevance | Runs messages between [[catarina-davirelli\|Catarina]] and the crew at [[Cat's Curios]]. |
 
 ## Session Log
 

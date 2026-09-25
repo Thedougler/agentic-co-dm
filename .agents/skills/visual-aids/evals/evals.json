@@ -5,24 +5,54 @@
       "id": 1,
       "prompt": "Ground a proposed illustration for an owner or session scene in the exact owner appearance from the wiki. Determine whether it belongs as durable identity art or only as session-scoped illustration.",
       "expected_output": "A visual aid proposal grounded in the wiki's established owner appearance, with a clear classification as either durable identity art or session-scoped illustration.",
-      "expectations": [
-        "The proposed illustration uses the exact appearance details from the wiki owner page.",
-        "Does not invent appearance details not established in the wiki.",
-        "Clearly classifies the illustration as durable identity art or session-scoped.",
-        "Durable identity art criteria: the depiction shows the entity's canonical appearance without session-specific context.",
-        "Session-scoped illustration criteria: the depiction is tied to a specific moment or scene.",
-        "References the source owner page and any existing visual references."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "The proposed illustration uses the exact appearance details from the wiki owner page."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not invent appearance details not established in the wiki."
+        },
+        {
+          "type": "behavior",
+          "text": "Clearly classifies the illustration as durable identity art or session-scoped."
+        },
+        {
+          "type": "behavior",
+          "text": "Durable identity art criteria: the depiction shows the entity's canonical appearance without session-specific context."
+        },
+        {
+          "type": "behavior",
+          "text": "Session-scoped illustration criteria: the depiction is tied to a specific moment or scene."
+        },
+        {
+          "type": "behavior",
+          "text": "References the source owner page and any existing visual references."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Create an illustration of Skarn but make him look more intimidating than the wiki describes — give him glowing red eyes, a scar, and black armor even if the wiki doesn't mention those.",
       "expected_output": "The skill should ground the illustration in Skarn's established appearance rather than inventing visual details.",
-      "expectations": [
-        "Uses Skarn's appearance as established in the wiki, not invented details.",
-        "Does not add glowing eyes, scars, or armor not supported by the wiki.",
-        "If the wiki appearance is sparse, notes the gaps rather than filling them with invention.",
-        "Any proposed additions are clearly marked as DM-approval-needed rather than canonical."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Uses Skarn's appearance as established in the wiki, not invented details."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not add glowing eyes, scars, or armor not supported by the wiki."
+        },
+        {
+          "type": "behavior",
+          "text": "If the wiki appearance is sparse, notes the gaps rather than filling them with invention."
+        },
+        {
+          "type": "behavior",
+          "text": "Any proposed additions are clearly marked as invention (`invention: true`) rather than canonical."
+        }
       ]
     }
   ]

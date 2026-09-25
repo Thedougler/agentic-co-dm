@@ -13,9 +13,6 @@ provenance:
   extracted: 0.95
   inferred: 0.05
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:35:00Z
 updated: 2026-09-20
@@ -41,8 +38,8 @@ last_advanced: "Unknown"
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
-| **Opposition**  | [[Countless]], a breakaway Sentinel order led by [[talon-vantyrus|Vantyrus]]. |
-| **Target**      | [[crissdalynn-khinriss|Crissdalynn Khinriss]] and other Fate Spinner carriers. |
+| **Opposition**  | [[Countless]], a breakaway Sentinel order led by [[talon-vantyrus\|Vantyrus]]. |
+| **Target**      | [[crissdalynn-khinriss\|Crissdalynn Khinriss]] and other Fate Spinner carriers. |
 | **Scope**       | Midchain pilgrim routes, grey markets, and Sentinel waystations. |
 | **Reward**      | No reward is promised; protecting the carrier or exposing the order chain is the useful result. |
 | **Last change** | Countless's hunt is active while the Rule of Two turns inward. |
@@ -92,7 +89,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 | Lead | Points toward | Found? | State |
 | ---- | ------------- | ------ | ----- |
 | Follow missing names and blank ledgers. | [[Countless]] | No | Available |
-| Protect or question the named carrier. | [[crissdalynn-khinriss|Crissdalynn]] | Yes | Active |
+| Protect or question the named carrier. | [[crissdalynn-khinriss\|Crissdalynn]] | Yes | Active |
 | Track Sentinel visitors after the Uncertainty enters Midchain waters. | [[Yssenmoor]] and Sentinel waystations | No | Available |
 
 ## People & factions
@@ -100,9 +97,9 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
 | [[Countless]] | Hunting order. | Find a Fate Spinner carrier while hiding its chain of command. |
-| [[talon-vantyrus|Talon Vantyrus]] | Leader and beneficiary. | Wants the transformation gift and Countless's surviving route network. |
-| [[talon-skarn|Talon Skarn]] | Internal challenger. | Openly schemes to overthrow Vantyrus while the hunt continues. |
-| [[crissdalynn-khinriss|Crissdalynn Khinriss]] | Current carrier in the crossfire. | Avoid becoming Countless's leverage. |
+| [[talon-vantyrus\|Talon Vantyrus]] | Leader and beneficiary. | Wants the transformation gift and Countless's surviving route network. |
+| [[talon-skarn\|Talon Skarn]] | Internal challenger. | Openly schemes to overthrow Vantyrus while the hunt continues. |
+| [[crissdalynn-khinriss\|Crissdalynn Khinriss]] | Current carrier in the crossfire. | Avoid becoming Countless's leverage. |
 
 ## Relevant places
 
@@ -117,7 +114,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 
 | Entity | Use in play |
 | ------ | ----------- |
-| [[fate-spinner|Fate Spinner]] | Identifies the gift Countless wants and the reason carriers are hunted. |
+| [[fate-spinner\|Fate Spinner]] | Identifies the gift Countless wants and the reason carriers are hunted. |
 | Missing names and blank ledgers | Mark where the order has acted without exposing its patron. |
 | [[Uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
 

@@ -12,7 +12,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: quest
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -28,7 +27,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.20
 tier: supporting
 kind: situation
 ---
@@ -104,7 +102,7 @@ Mave Sorn is an information broker, not a prize-taker. She keeps the chip on her
 |---|---|---|
 | [[Mave Sorn]] | Information broker and chip holder | Wants supernatural confirmation that she can sell. |
 | [[Velvet Noose]] | Named hull at the center of the intercept | Its sighting pulls Crown captains off ordinary patrol lines. |
-| [[dravosi-crown|Dravosi Crown]] | Institutional pressure | Its captains react to the Velvet Noose and track supernatural irregularities. |
+| [[dravosi-crown\|Dravosi Crown]] | Institutional pressure | Its captains react to the Velvet Noose and track supernatural irregularities. |
 
 ## Relevant places
 

@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -45,7 +42,7 @@ Kwoss has one of the [[Midchain|Midchain]]'s largest sea turtle nesting grounds.
 | Field | Detail |
 |---|---|
 | Type | Sea turtle nesting island |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | Contested seasonally between locals and poachers |
 | Known For | A nesting ground and a yearly poaching fight |
 

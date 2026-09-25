@@ -10,7 +10,6 @@ sources:
 created: 2026-09-19
 updated: 2026-09-20
 type: place
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +20,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.42
 tier: supporting
 ---
 # Drave Vaults

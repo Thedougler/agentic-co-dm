@@ -10,8 +10,6 @@ sources:
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-20
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-12"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -25,7 +23,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 relationships:
   - target: "[[grung-clans]]"
@@ -74,7 +71,7 @@ The established record does not make every detail of the capture, escape, or bur
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
 | [[Hinewai]] | The crime's aftermath and the grief-bound law it produced | knows | Personal and inherited memory |
-| [[grung-clans|Grung clans]] | Their historical connection to the capture and its consequences | knows / disputes | Clan history; exact accounts are not recorded |
+| [[grung-clans\|Grung clans]] | Their historical connection to the capture and its consequences | knows / disputes | Clan history; exact accounts are not recorded |
 | [[the-unnamed-companion]] | The companion's role in the escape | deceased / historical record | The established account of the escape |
 
 ### Party Knowledge

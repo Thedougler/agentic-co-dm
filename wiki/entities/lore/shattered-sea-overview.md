@@ -21,14 +21,12 @@ sources:
 created: 2026-09-18
 updated: 2026-09-18
 type: lore
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: fact
 truth: established
 summary: "Campaign State hub for Shattered Sea: table aim, live Aruhe state, sitting index, party goals, and contract facts drawn from the wiki."
-base_confidence: 0.55
 ---
 <!--
 Campaign State hub for shattered-sea. Region geography stays on [[shattered-sea]].

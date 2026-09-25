@@ -10,7 +10,7 @@ FR-002 actions apply without `"Apply these N changes? [yes / no / select]"`. If 
 
 1. Run all lint checks (deterministic pass + checks 1–14 from [checks.md](checks.md)).
 2. Print planned actions as structured list (see Dry-Run Output below).
-3. Apply FR-002 actions without `"Apply these N changes? [yes / no / select]"`: broken-link rewrites, required frontmatter, nearest-valid type/lifecycle, template conformance that relocates existing content, kebab remorph, contradiction flags (do not resolve).
+3. Apply FR-002 actions without `"Apply these N changes? [yes / no / select]"`: broken-link rewrites, required frontmatter, nearest-valid type, template conformance that relocates existing content, kebab remorph, contradiction flags (do not resolve).
 4. If the user asked to merge duplicates, file the merge. Ask `"Apply these N changes? [yes / no / select]"` only for unattended merge, tier demotion, and other non-FR-002 actions without a user ask. Selective application honored.
 5. Duplicate pages (Check 14) without a user ask stay confirm-gated.
 
@@ -40,13 +40,6 @@ Per orphan from Check 1:
 - Grep vault for plain-text mentions of title/aliases (case-insensitive).
 - Replace mentions with `[[wikilinks]]`. Cap 3 insertions per orphan.
 
-### 3. Lifecycle corrections
-
-Automatic state-machine enforcement (no human judgment required):
-- **`draft` → `reviewed`:** `created` > 30d AND `base_confidence > 0.7`. Set `lifecycle: reviewed`, `lifecycle_changed: <today>`, `lifecycle_reason: "auto-promoted by wiki-lint --consolidate: age>30d, confidence>0.7"`.
-- **Stale `verified`:** `(today − updated) > 180 days` → add callout at top of body: `> ⚠️ **Stale**: This page was last updated <date>. Verify before relying on it.` Skip if already present. Not a lifecycle transition — `stale` is computed, not stored.
-- No other transitions — `reviewed → verified` is human-only.
-
 ### 4. Tier demotion
 
 Pages with `tier: supporting` (or unset), 0 incoming links, 90+ days since update → set `tier: peripheral`. Do not demote `tier: core`. List demotions for review.
@@ -72,15 +65,13 @@ category: synthesis
 tags: [maintenance, consolidation]
 sources: []
 summary: Auto-generated consolidation report from wiki-lint --consolidate run on <date>.
-lifecycle: draft
-lifecycle_changed: <date>
 tier: peripheral
 created: <ISO timestamp>
 updated: <ISO timestamp>
 ---
 ```
 
-Sections: Summary (counts per action type), Broken Link Fixes, Cross-References Added, Lifecycle Updates, Tier Demotions, Tag Normalizations, Contradiction Callouts. Each with specific file paths and changes made.
+Sections: Summary (counts per action type), Broken Link Fixes, Cross-References Added, Tier Demotions, Tag Normalizations, Contradiction Callouts. Each with specific file paths and changes made.
 
 ## Dry-Run Output
 
@@ -89,5 +80,5 @@ Numbered list of planned actions, one per line: `[N] <action-type>: <file:line> 
 ## Log Entry
 
 ```
-- [TIMESTAMP] LINT_CONSOLIDATE links_fixed=N orphans_rescued=M lifecycle_updates=K tier_demotions=D tag_fixes=T contradiction_callouts=C report=synthesis/consolidation-YYYY-MM-DD.md
+- [TIMESTAMP] LINT_CONSOLIDATE links_fixed=N orphans_rescued=M tier_demotions=D tag_fixes=T contradiction_callouts=C report=synthesis/consolidation-YYYY-MM-DD.md
 ```

@@ -7,8 +7,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A navigation shop in Port Tidefall where Oswald Crench sells and identifies navigation tools and several spell scrolls."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

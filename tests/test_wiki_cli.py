@@ -99,7 +99,6 @@ def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
         "created: 2026-09-01\n"
         "updated: 2026-09-19\n"
         "type: npc\n"
-        "lifecycle: draft\n"
         "reveal: dm\n"
         "---\n\n"
         "# Vale fixture\n\n"
@@ -146,7 +145,9 @@ def test_unknown_path_is_structured_error_without_scan(tmp_path: Path):
     result = run_cli(tmp_path, "lint", "entities/npcs")
     elapsed = time.monotonic() - started
     assert result.returncode == 2
-    assert payload(result) == {"error": "path not found in vault: 'entities/npcs'", "status": "error"}
+    data = payload(result)
+    assert data["error"] == "path not found in vault: 'entities/npcs'" and data["status"] == "error"
+    assert data["hint"] and data["example"] and data["list_valid"]
     assert elapsed < 1
     pretty = run_cli(tmp_path, "lint", "entities/npcs", "--pretty")
     assert pretty.returncode == 2
@@ -325,7 +326,9 @@ def test_health_explains_blockers_and_small_error_ledger():
         policy=None,
         trends=build_trends(
             None,
-            [{"id": f"e-{index}", "cause": f"cause-{index}", "status": "open"} for index in range(5)],
+            {"entries": [{"id": f"e-{index}", "cause": f"cause-{index}", "source": "scripts/wiki",
+                          "evidence": [{"sitting": "lint: a", "detail": f"cause-{index}"}]} for index in range(5)],
+             "recurrence": {"total": 0, "by_sitting": {}}, "missing_sources": []},
             None,
         ),
         focus=[{"path": "page-0.md", "reason": "template_conformance lint findings", "source": "lint"}],
@@ -429,11 +432,10 @@ def test_lint_reports_open_ledger_separately(tmp_path: Path):
         "# Error ledger\n\n"
         + json.dumps({
             "cause": "open operational failure",
-            "cause_fixed": False,
+            "evidence": [{"detail": "open operational failure", "sitting": "test"}],
             "id": "e-1",
-            "sitting": "test",
-            "status": "open",
-        })
+            "source": "scripts/wiki",
+        }, sort_keys=True)
         + "\n",
         encoding="utf-8",
     )
@@ -580,3 +582,244 @@ def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path
     reasons = {item["reason"] for item in result["skipped"]}
 
     assert reasons <= {"unsupported", "unsafe", "conflict", "precondition"}
+
+
+
+
+def _vale_scratch(tmp_path: Path, config_root: Path = ROOT) -> str:
+    import shutil
+
+    import pytest
+
+    vale = shutil.which("vale") or str(ROOT / ".venv/bin/vale")
+    if not Path(vale).is_file():
+        pytest.skip("vale binary is absent")
+    scratch = tmp_path / "scratch.md"
+    scratch.write_text("# Scratch\n\nThe DM Thesis section names the villain.\n", encoding="utf-8")
+    proc = subprocess.run(
+        [vale, "--output=line", f"--config={config_root / '.vale.ini'}", str(scratch)],
+        cwd=config_root,
+        capture_output=True,
+        text=True,
+    )
+    return proc.stdout + proc.stderr
+
+
+def test_vale_config_loads_without_e100(tmp_path: Path):
+    output = _vale_scratch(tmp_path)
+    assert "E100" not in output, output
+
+
+def test_vale_deprecated_dmthesis_fires_with_live_vocabulary(tmp_path: Path):
+    import shutil
+
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE, render_vocab
+
+    config_root = tmp_path / "config"
+    shutil.copytree(ROOT / "styles", config_root / "styles")
+    shutil.copy(ROOT / ".vale.ini", config_root / ".vale.ini")
+    (config_root / VOCAB_RELATIVE).write_text(render_vocab(ROOT / "wiki"), encoding="utf-8")
+    output = _vale_scratch(tmp_path, config_root)
+    assert "E100" not in output, output
+    assert "Deprecated.DMThesis" in output, output
+
+
+def test_lint_fix_escapes_table_wikilink_pipes(tmp_path: Path):
+    page(tmp_path, "entities/npc/keeper.md", title="Keeper")
+    table = tmp_path / "entities/npc/table.md"
+    table.write_text(
+        "---\ntitle: Table\n---\n\n| Who |\n| --- |\n| [[keeper|The Keeper]] |\n\n[[keeper|prose link]]\n",
+        encoding="utf-8",
+    )
+    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    rules = {item["rule"] for group in before["files"] for item in group["findings"]}
+    assert "table_wikilink_unescaped_pipe" in rules
+    fixed = run_cli(tmp_path, "lint", "fix", "entities/npc/table.md")
+    assert fixed.returncode in (0, 1), fixed.stderr
+    assert "| [[keeper\\|The Keeper]] |" in table.read_text(encoding="utf-8")
+    assert "[[keeper|prose link]]" in table.read_text(encoding="utf-8")
+    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    rules = {item["rule"] for group in after["files"] for item in group["findings"]}
+    assert "table_wikilink_unescaped_pipe" not in rules
+    assert "broken_links" not in rules
+
+
+# --- FR-027–FR-039 contract (contracts/wiki-cli.md), one test per rule class ---
+
+WIKI = [PYTHON, str(ROOT / "scripts/wiki")]
+
+
+def _bare(*args: str, cwd: Path = ROOT, env: dict[str, str] | None = None, stdin: str | None = None):
+    base = os.environ | (env or {})
+    base.pop("CI", None)
+    return subprocess.run([*WIKI, *args], cwd=cwd, capture_output=True, text=True, env=base,
+                          input=stdin if stdin is not None else "", timeout=120)
+
+
+def _error(result, *, needle: str) -> dict:
+    assert result.returncode == 2, result.stdout + result.stderr
+    data = payload(result)
+    assert {"status", "error", "hint", "example", "list_valid"} <= set(data), data
+    assert data["status"] == "error" and needle in data["error"], data
+    assert data["error"] in result.stderr
+    return data
+
+
+def test_discovery_from_any_cwd_and_vault_precedence(tmp_path: Path):
+    from tools.wiki_ops.cli import repo_root, resolve_vault
+
+    assert repo_root() == ROOT
+    elsewhere = tmp_path / "elsewhere"
+    elsewhere.mkdir()
+    one, two = tmp_path / "one", tmp_path / "two"
+    for vault in (one, two):
+        page(vault, "a.md")
+    env = os.environ | {"OBSIDIAN_VAULT_PATH": str(one)}
+    old = os.environ.get("OBSIDIAN_VAULT_PATH")
+    try:
+        os.environ["OBSIDIAN_VAULT_PATH"] = str(one)
+        assert resolve_vault(None) == one.resolve()
+        assert resolve_vault(str(two)) == two.resolve()
+        del os.environ["OBSIDIAN_VAULT_PATH"]
+        assert resolve_vault(None) == (ROOT / "wiki").resolve() or (ROOT / ".env").is_file()
+    finally:
+        if old is not None:
+            os.environ["OBSIDIAN_VAULT_PATH"] = old
+    result = run_cli(one, "lint", "a.md", "--vault", str(two))
+    assert payload(result)["vault"] == str(two.resolve())
+    result = _bare("lint", "a.md", cwd=elsewhere, env={"OBSIDIAN_VAULT_PATH": str(one), "WIKI_TRACKER_ROOT": str(elsewhere)})
+    assert payload(result)["vault"] == str(one.resolve())
+
+
+def test_bare_wiki_lists_subcommands_only():
+    result = _bare()
+    assert result.returncode == 0
+    names = [line.split()[0] + (" fix" if line.split()[:2] == ["lint", "fix"] else "") for line in result.stdout.splitlines() if line.strip()]
+    assert names == ["lint", "lint fix", "query", "health", "mutate", "repair"]
+
+
+def test_subcommand_help_is_scoped_with_examples():
+    for sub, example in (("lint", "wiki lint entities/place/Belumara.md"), ("query", 'wiki query "Belumara" -n 5'),
+                         ("health", "wiki health"), ("mutate", "wiki mutate --stdin --dry-run < op.json")):
+        helped = _bare(sub, "--help")
+        assert helped.returncode == 0 and "Examples:" in helped.stdout and example in helped.stdout, sub
+        others = {"query", "health", "mutate", "repair"} - {sub}
+        assert not any(f"wiki {o}" in helped.stdout for o in others), sub
+    fix = _bare("lint", "fix", "--help")
+    assert "wiki lint fix dir:entities/place --dry-run" in fix.stdout
+    legacy = subprocess.run([PYTHON, str(ROOT / "scripts/wiki-lint"), "--help"], capture_output=True, text=True)
+    assert "wiki lint --help" in legacy.stdout
+
+
+def test_no_prompts_with_stdin_closed(tmp_path: Path):
+    page(tmp_path, "a.md")
+    result = subprocess.run([*WIKI, "lint", "a.md"], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL,
+                            env=os.environ | {"OBSIDIAN_VAULT_PATH": str(tmp_path), "WIKI_TRACKER_ROOT": str(tmp_path)},
+                            timeout=120)
+    assert result.returncode in (0, 1)
+    missing = _bare("query", env={"OBSIDIAN_VAULT_PATH": str(tmp_path)})
+    _error(missing, needle="phrase")
+
+
+def test_stdin_and_paths_only(tmp_path: Path):
+    page(tmp_path, "a.md")
+    page(tmp_path, "b.md")
+    result = run_cli_stdin(tmp_path, "a.md\nb.md\n", "lint", "--stdin")
+    assert payload(result)["files_checked"] == 2
+    paths = run_cli_stdin(tmp_path, "a.md\n", "lint", "--stdin", "--paths-only")
+    assert paths.stdout.split() == ["a.md"] or paths.stdout.split() == []
+
+
+def run_cli_stdin(vault: Path, stdin: str, *args: str):
+    env = {"OBSIDIAN_VAULT_PATH": str(vault), "WIKI_TRACKER_ROOT": str(vault / "_tracker")}
+    (vault / "_tracker").mkdir(exist_ok=True)
+    return _bare(*args, env=env, stdin=stdin)
+
+
+def test_options_before_or_after_positionals(tmp_path: Path):
+    page(tmp_path, "a.md")
+    before = payload(run_cli(tmp_path, "lint", "--json", "a.md"))
+    after = payload(run_cli(tmp_path, "lint", "a.md", "--json"))
+    assert before["files_checked"] == after["files_checked"] == 1
+
+
+def test_bare_fix_token_is_rejected(tmp_path: Path):
+    page(tmp_path, "entities/place/Belumara.md")
+    result = run_cli(tmp_path, "lint", "entities/place/Belumara.md", "fix")
+    data = _error(result, needle="'fix' is not a lint path")
+    assert data["hint"] == "lint fix is a subcommand"
+    assert data["example"] == "wiki lint fix entities/place/Belumara.md"
+    assert not (tmp_path / "_meta" / "lint-cache.json").exists()
+
+
+def test_invalid_inputs_give_the_error_object(tmp_path: Path):
+    page(tmp_path, "entities/place/Belumara.md")
+    _error(run_cli(tmp_path, "lint", "entities/place/Nowhere.md"), needle="path not found")
+    prefixed = _error(run_cli(tmp_path, "lint", "wiki/entities/place/Belumara.md"), needle="path not found")
+    assert prefixed["example"] == "wiki lint entities/place/Belumara.md"
+    _error(run_cli(tmp_path, "lint", "--scope", "dir"), needle="kind:value")
+    kinds = _error(run_cli(tmp_path, "lint", "folder:entities"), needle="unknown scope kind")
+    assert "files|directory(dir)|entity_type(type)|identity_set|changed|bundle" in kinds["list_valid"]
+    _error(run_cli(tmp_path, "lint", "--bogus"), needle="--bogus")
+
+
+def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
+    stub = tmp_path / "entities/npc/legacy.md"
+    stub.parent.mkdir(parents=True, exist_ok=True)
+    stub.write_text("---\ntitle: Legacy\ntype: npc\nredirects_to: entities/npc/current.md\n---\n\n# Legacy\n", encoding="utf-8")
+    page(tmp_path, "entities/npc/current.md", title="Current")
+    planned = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc", "--dry-run"))
+    assert planned["status"] == "planned" and planned["planned"] and stub.exists()
+    again = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc", "--dry-run"))
+    assert again["planned"] == planned["planned"]
+    applied = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc"))
+    assert applied["changed"] == ["entities/npc/legacy.md"]
+    repeat = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc"))
+    assert repeat["status"] == "already_done" and repeat["changed"] == []
+    op = json.dumps({"kind": "add_tag", "target": "entities/npc/current.md", "selector": {}, "payload": {"tag": "x"}})
+    first = payload(run_cli_stdin(tmp_path, op, "mutate", "--stdin"))
+    assert first["changed"] == ["entities/npc/current.md"], first
+    second = payload(run_cli_stdin(tmp_path, op, "mutate", "--stdin"))
+    assert second["status"] == "already_done" and second["changed"] == []
+    plan = json.dumps({"actions": [{"target": "entities/npc/current.md", "mutation": {
+        "kind": "add_tag", "target": "entities/npc/current.md", "selector": {}, "payload": {"tag": "y"}}}]})
+    preview = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin", "--dry-run"))
+    assert preview["status"] == "planned" and preview["changed"] == []
+    repaired = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin"))
+    assert repaired["changed"] == ["entities/npc/current.md"], repaired
+    again = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin"))
+    assert again["status"] == "already_done" and again["changed"] == [], again
+
+
+def test_success_keys_and_health_next(tmp_path: Path):
+    page(tmp_path, "a.md")
+    for args in (("lint", "a.md"), ("lint", "fix", "a.md"), ("health",)):
+        data = payload(run_cli(tmp_path, *args))
+        assert {"status", "vault", "changed", "counts", "timing", "next"} <= set(data), (args, sorted(data))
+        assert "duration_ms" in data["timing"]
+    health = payload(run_cli(tmp_path, "health"))
+    assert health["next"] == (health["focus"][0] if health["focus"] else None)
+
+
+def test_slow_checker_notice_is_a_plain_report(tmp_path: Path, capsys):
+    import importlib.machinery
+    import importlib.util
+
+    loader = importlib.machinery.SourceFileLoader("wiki_cli", str(ROOT / "scripts/wiki"))
+    spec = importlib.util.spec_from_loader(loader.name, loader)
+    module = importlib.util.module_from_spec(spec)
+    loader.exec_module(module)
+    module._tune("lint", [("scripts/wiki-lint:vale", 4000), ("scripts/wiki-lint:template", 900)])
+    assert capsys.readouterr().err.strip() == (
+        "wiki lint: slowest checker scripts/wiki-lint:vale 4000 ms; next scripts/wiki-lint:template 900 ms")
+
+
+def test_lint_fix_renames_noncanonical_basename_and_rewrites_backlinks(tmp_path: Path):
+    page(tmp_path, "entities/place/Belumara.md", title="Belumara")
+    (tmp_path / "entities/place/harbor.md").write_text("---\ntitle: harbor\n---\n\nSee [[Belumara]].\n", encoding="utf-8")
+    first = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    assert "entities/place/belumara.md" in first["changed"], first
+    assert "belumara.md" in os.listdir(tmp_path / "entities/place")  # case-only rename kept the page
+    assert "[[belumara]]" in (tmp_path / "entities/place/harbor.md").read_text(encoding="utf-8")
+    repeat = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    assert repeat["status"] == "already_done" and repeat["changed"] == []

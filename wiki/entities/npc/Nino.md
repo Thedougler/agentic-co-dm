@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13T21:40:00Z
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -21,7 +19,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 # Nino
@@ -77,6 +74,6 @@ Nino stops observing and acts when the horizon changes, someone approaches the i
 | [[vethka]] | The wrecked ship Nino rode ashore on and shelters in; the fleet had been sailing south for [[karath]] before an easterly storm drove it onto Aruhe. |
 | [[aruhe]] | The island where Nino is stranded and serves as the camp's only working lookout. Tomo was dragged into the treeline after breaking its rule and eating from a shore bush. |
 | [[calven-and-calveno]] | Nino's home; he was a dyer's apprentice from its Beffa quarter before the raid. |
-| [[grung-clans|Grung]] | The raiders who took Nino and roughly 500 others captive from La Finestra. |
+| [[grung-clans\|Grung]] | The raiders who took Nino and roughly 500 others captive from La Finestra. |
 | [[nona-black-jaw]] | Counts Nino among roughly 500 people missing from the Beffa raid. |
 | [[perrin-black-jaw]] | PC connection; Perrin's vow to chase Nona's missing makes Nino's survival part of his debt. |

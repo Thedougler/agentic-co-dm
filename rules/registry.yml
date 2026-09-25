@@ -1,30 +1,4 @@
 rules:
-  - id: CANON001
-    title: Rejected entity presented as present
-    category: canon
-    scope: corpus
-    severity: REPAIR
-    evaluator: symbolic
-    lifecycle: ACTIVE
-    message: A rejected or dead canonical entity is referenced as present
-    repair: Update the reference to match the canonical lifecycle or route it through a flashback
-    auto_repair: false
-    tags: [canon, world-state]
-    conflicts: []
-    depends: []
-  - id: CANON002
-    title: Stale entity state
-    category: canon
-    scope: corpus
-    severity: REPAIR
-    evaluator: symbolic
-    lifecycle: ACTIVE
-    message: Session preparation references an entity whose canonical state is stale
-    repair: Re-check the canonical owner page and update the reference before DM review
-    auto_repair: false
-    tags: [canon, world-state]
-    conflicts: []
-    depends: []
   - id: WIKI001
     title: Missing required frontmatter
     category: wiki
@@ -45,8 +19,8 @@ rules:
     severity: BLOCK
     evaluator: symbolic
     lifecycle: ACTIVE
-    message: Wiki page contains an invalid type or lifecycle value
-    repair: Use a type and lifecycle from the owner schema
+    message: Wiki page contains an invalid type value
+    repair: Use a type from the owner schema
     auto_repair: false
     tags: [schema, wiki]
     conflicts: []

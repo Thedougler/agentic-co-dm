@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -46,7 +43,7 @@ For generations, infants arrive at the Foundling Shoals, safe but mysterious. Th
 | Field | Detail |
 |---|---|
 | Type | Foundling-producing reef |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | The local fisherfolk |
 | Known For | Unexplained infants appearing unharmed on the reef |
 

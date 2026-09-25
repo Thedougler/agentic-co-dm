@@ -19,6 +19,11 @@ established fiction.
 
 ## Gates
 
+**Session plan first.** Before reading further or loading any other skill,
+find this session's filed plan (`Session-<NN>-00-*.md` in its session
+folder). With none, stop here: load `plan-session` and plan with the DM;
+this skill resumes from the plan's row once `session-beats` files it.
+
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
@@ -26,6 +31,8 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 - **Input:** A named Resolution beat, the Climax's outcome rows and
   carry-forward, the session's threads and costs, and linked owner pages.
+- **Session plan:** the short form of the DM's intent for the session; this
+  beat is written from its row (see Gates).
 - **Work:** Build one Resolution to the table-ready bar with the Resolution
   craft below; spoken text is filled through `theatre-of-the-mind`.
 - **Done:** The cold read passes and the completion test holds for every
@@ -36,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Resolution never spends it.
+Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Resolution never spends it.
 
 ## Fill a Resolution
 
@@ -100,7 +107,7 @@ page:
 
 - each outcome's rewards are named with values: the loot the defeated side
   carried (owner links), coin amounts, favors and access with who grants
-  them, and a milestone or XP proposal. These are canon proposals where canon
+  them, and a milestone or XP proposal. These are canon under the rule in `llm-wiki` where canon
   is silent; "none" stands only when the fiction offers nothing;
 - each actor's closing response is written, with what it changes;
 - What Is True Now states values, not instructions to record them later.

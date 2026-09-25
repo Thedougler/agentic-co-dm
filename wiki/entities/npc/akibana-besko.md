@@ -6,8 +6,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -17,7 +15,6 @@ faction: "[[horntail-clan|Horntail Clan]]"
 visibility: dm
 summary: "Dark red-scaled rock agama-type lizardfolk leader of the Horntail Clan in western Tokage."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Akibana Besko
@@ -75,6 +72,6 @@ Akibana Besko's voice is not established in the source. The page establishes an 
 
 | Connection | Meaning |
 | --- | --- |
-| [[horntail-clan|Horntail Clan]] | Besko leads the western clan. |
+| [[horntail-clan\|Horntail Clan]] | Besko leads the western clan. |
 | [[Hōnteiru no Mura]] | Besko's fortified settlement. |
 | [[Totemo Tokage]] | Besko defends the island. |

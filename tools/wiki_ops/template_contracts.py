@@ -157,7 +157,7 @@ def check_conformance(page_path: str | Path, page_text: str, contract: TemplateC
     fields = _frontmatter(page_text)
     headings = _headings(page_text)
     names = [name for _level, name in headings]
-    lifecycle = fields.get("lifecycle", fields.get("status", "default")).casefold()
+    status = fields.get("status", "default").casefold()
     findings: list[dict[str, Any]] = []
     repeatable = set(contract.repeatable)
     for section in contract.sections:
@@ -165,7 +165,7 @@ def check_conformance(page_path: str | Path, page_text: str, contract: TemplateC
         requirement = "optional"
         when = section.get("when")
         if isinstance(when, dict):
-            requirement = str(when.get(lifecycle, when.get("default", "optional"))).casefold()
+            requirement = str(when.get(status, when.get("default", "optional"))).casefold()
         elif section.get("required") is True:
             requirement = "required"
         occurrences = [index for index, (_level, name) in enumerate(headings) if name == heading]

@@ -12,6 +12,8 @@ VOCAB_RELATIVE = Path("styles/config/vocabularies/CoDM/accept.txt")
 _STOPWORDS = {
     "a", "an", "and", "at", "by", "for", "from", "in", "of", "on", "or", "the", "to", "with",
 }
+# Words that repo-local `styles/Deprecated` tokens match; accepting them silences those rules.
+_RULE_TOKEN_WORDS = {"DM"}
 _REGEX_META = re.compile(r"([\\.^$*+?{}\[\]|()])")
 
 
@@ -40,6 +42,7 @@ def proper_nouns(vault: Path) -> list[str]:
         path = page.get("path")
         if isinstance(path, Path) and "-" in path.stem:
             terms.add(path.stem)
+    terms -= _RULE_TOKEN_WORDS
     return sorted(terms, key=lambda value: (value.casefold(), value))
 
 
@@ -55,6 +58,10 @@ def render_vocab(vault: Path) -> str:
 
 def refresh_vocab(root: Path, vault: Path) -> Path:
     destination = (root / VOCAB_RELATIVE).resolve()
+    if vault.resolve() != (root / "wiki").resolve():
+        # The tracked vocabulary belongs to <root>/wiki (FR-028); another vault (a test or scratch
+        # vault) lints against it unchanged rather than rewriting it with its own titles.
+        return destination
     destination.parent.mkdir(parents=True, exist_ok=True)
     content = render_vocab(vault)
     if destination.is_file() and destination.read_text(encoding="utf-8") == content:

@@ -5,24 +5,92 @@
       "id": 1,
       "prompt": "Starting from the Session 11 recap and live wiki state, brainstorm the next session around real unresolved threads. Return a concept for session-beats without prematurely writing the formal beats.",
       "expected_output": "A session concept that identifies unresolved threads from Session 11 and wiki state, proposes a thematic shape, and prepares handoff to session-beats — without writing actual beat content.",
-      "expectations": [
-        "Identifies unresolved threads from Session 11: Skarn and the Fate Spinner, the party's position, NPC states.",
-        "Threads are drawn from actual wiki state, not invented problems.",
-        "Returns a concept — thematic shape, key tensions, possible progressions — not formal beats.",
-        "Does not prematurely write beat content (Hook, Development, Cliffhanger, etc.).",
-        "The concept is grounded enough to hand off to session-beats for formal structuring.",
-        "References actual wiki entities with wikilinks."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Identifies unresolved threads from Session 11: Skarn and the Fate Spinner, the party's position, NPC states."
+        },
+        {
+          "type": "behavior",
+          "text": "Threads are drawn from actual wiki state, not invented problems."
+        },
+        {
+          "type": "behavior",
+          "text": "Returns a concept — thematic shape, key tensions, possible progressions — not formal beats."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not prematurely write beat content (Hook, Development, Cliffhanger, etc.)."
+        },
+        {
+          "type": "behavior",
+          "text": "The concept is grounded enough to hand off to session-beats for formal structuring."
+        },
+        {
+          "type": "behavior",
+          "text": "References actual wiki entities with wikilinks."
+        }
       ]
     },
     {
       "id": 2,
       "prompt": "Plan the next session. Just write all the beats now — Hook through Resolution — so we can skip the brainstorming step.",
       "expected_output": "The skill should brainstorm and return a concept rather than jumping straight to formal beats, which is session-beats' job.",
-      "expectations": [
-        "Returns a brainstormed concept, not formal beats.",
-        "Explains that formal beat writing belongs to session-beats.",
-        "The concept still provides enough structure to be actionable — themes, tensions, possible directions.",
-        "Does not skip the brainstorming step by jumping to output."
+      "assertions": [
+        {
+          "type": "behavior",
+          "text": "Returns a brainstormed concept, not formal beats."
+        },
+        {
+          "type": "behavior",
+          "text": "Explains that formal beat writing belongs to session-beats."
+        },
+        {
+          "type": "behavior",
+          "text": "The concept still provides enough structure to be actionable — themes, tensions, possible directions."
+        },
+        {
+          "type": "behavior",
+          "text": "Does not skip the brainstorming step by jumping to output."
+        }
+      ]
+    },
+    {
+      "id": "yes-and-first-reply",
+      "prompt": "/plan-session. For Session 13 I want the party to reach the Memorial Grove at dawn, and Hinewai asks them for something they can't easily give.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/place/memorial-grove.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: your first reply to the DM in this conversation. Write no wiki page.",
+      "expected_output": "A first reply that keeps both DM ideas, adds concrete canon-grounded contributions, and ends with at most two option-bearing questions.",
+      "assertions": [
+        {
+          "type": "quality",
+          "text": "Keeps both DM ideas (dawn arrival at the Memorial Grove; Hinewai's hard ask) as given and builds on them; contradicts or replaces neither"
+        },
+        {
+          "type": "quality",
+          "text": "Adds at least two concrete contributions drawn from canon, each naming its [[page]]"
+        },
+        {
+          "type": "behavior",
+          "text": "Contributes before asking, and ends with at most two questions, each offering specific options"
+        },
+        {
+          "type": "guardrail",
+          "text": "No praise or flattery of the DM's idea"
+        },
+        {
+          "type": "guardrail",
+          "text": "Writes no wiki page and no beat content"
+        },
+        {
+          "type": "behavior",
+          "text": "Treats planning as ongoing: does not declare the plan done or hand off to session-beats without the DM saying so"
+        }
       ]
     }
   ]

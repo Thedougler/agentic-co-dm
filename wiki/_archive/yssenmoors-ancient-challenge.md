@@ -10,7 +10,6 @@ created: "2026-08-15"
 updated: "2026-08-15"
 tags: [faith, mystery]
 tier: supporting
-lifecycle: discoverable
 pressure: "The Fate Spinner warms as the Uncertainty sails past Yssenmoor, old magic recognizing old magic beneath the fog. Quackers has started reciting his challenge to empty water."
 if_ignored: "Quackers stops issuing the challenge and withdraws into the moor. The Fate Spinner's reaction goes unexamined, and the Countless' Long Sight Hunt sweeps the Midchain without the party knowing what triggered it."
 actors: ["[[sir-quackers-the-fowl]]", "[[the-countless]]"]

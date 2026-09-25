@@ -1,6 +1,6 @@
 # Hybrid Spec-Driven Development
 
-This is the detailed operating contract for substantial work. It extends the existing Spec Kit lifecycle; it does not replace the constitution, wiki, campaign lifecycle, reveal/visibility rules, QMD precedence, or content skills.
+This is the detailed operating contract for substantial work. It extends the existing Spec Kit lifecycle; it does not replace the constitution, wiki, reveal/visibility rules, QMD precedence, or content skills.
 
 ## 1. Classify before writing
 
@@ -14,7 +14,7 @@ reason: <observable system, reusable-rule, campaign-structure, or future-agent b
 
 Use `engineering` for normal software, CLI, automation, storage, retrieval, and test changes. Use `agent-system` for skills, agent instructions, wiki operating behavior, or harness behavior. Use `campaign-architecture` for durable multi-session campaign structures. Use `creative-system` for reusable game systems such as reputation, faction turns, quests, encounters, clues, progression, or beats.
 
-Route routine established NPC, location, item, spell, creature, individual beat, recap, and equivalent campaign content through its existing skill, template, lifecycle, and Work protocol. It has no feature directory. A mixed request records the SDD route for the system-changing slice and the existing skill route for routine content; never force both into one route.
+Route routine established NPC, location, item, spell, creature, individual beat, recap, and equivalent campaign content through its existing skill, template, and Work protocol. It has no feature directory. A mixed request records the SDD route for the system-changing slice and the existing skill route for routine content; never force both into one route.
 
 Completion criterion: the artifact or completion evidence contains one `work_class`, `route`, and reason, or explicitly records the routine route and its skill.
 
@@ -75,6 +75,8 @@ For every incomplete owner boundary, use the existing route and owner guard:
 3. **Re-observe** that boundary.
 4. Continue only when the owner guard passes or the re-observation proves meaningful progress.
 
+**Friction branch:** act → friction → fix the authoritative source → re-observe → continue the original task. The rule is stated once in [`AGENTS.md` Friction rule](../../AGENTS.md#friction-rule).
+
 If the observation is unchanged, do not repeat an equivalent action. Choose a materially different sanctioned path, or stop with a specific blocker naming the owner, boundary, surviving observation, attempted paths, reason no path remains, and parent effect. A child return cannot advance a parent without changed dependency, artifact state, or completion evidence. Outer request and runtime limits remain safety bounds, not completion.
 
 Progress is owner-relative; paraphrased prose, changed tool encoding, and repeated completion claims do not count. This procedure adds no persistent state or second planner.
@@ -96,7 +98,7 @@ Completion criterion: every task has an owner, artifact, evidence, state, and re
 
 ## 4. Preserve canon and agency
 
-Reuse an equivalent existing owner. If identity remains uncertain, report the collision evidence and require an explicit distinction before minting a new owner. Use repository kind and path conventions; never introduce opaque IDs, a parallel canon database, or a second lifecycle or owner model.
+Reuse an equivalent existing owner. If identity remains uncertain, report the collision evidence and require an explicit distinction before minting a new owner. Use repository kind and path conventions; never introduce opaque IDs, a parallel canon database, or a second owner model.
 
 Keep accepted current truth, affected truth, proposal/conditional material, and player-owned outcomes distinguishable. Preserve provenance, reveal, and visibility boundaries. Campaign-facing Work is inspectable. User-said canon files immediately. Specification, plan, and tasks still do not invent unsaid events.
 
@@ -106,7 +108,7 @@ Completion criterion: owner resolution, canon state, and reveal/visibility are e
 
 ## 5. Verify at the correct boundary
 
-Use deterministic checks for objective class, route, schema, closed vocabulary, filename, link, owner, lifecycle, canon precedence, entity-before-spoken, DM-facing explicitness, reveal/visibility, file-under-constitution-X, dependency, attribution, and compatibility failures. Existing wiki, link, schema, token, QMD, OMP, and Spec Kit checks remain their own authorities.
+Use deterministic checks for objective class, route, schema, closed vocabulary, filename, link, owner, entity-before-spoken, DM-facing explicitness, reveal/visibility, file-under-constitution-X, dependency, attribution, and compatibility failures. Existing wiki, link, schema, token, QMD, OMP, and Spec Kit checks remain their own authorities.
 
 Use an independent blind paired evaluator with a fixed rubric for playability, specificity, continuity, player agency, and DM usefulness. Do not turn creative judgment or prose preference into deterministic lint. Record semantic review separately from hard-gate results.
 

@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13T07:50:00Z
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 status: dead
@@ -23,7 +21,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 # Vincenzo Black-Jaw

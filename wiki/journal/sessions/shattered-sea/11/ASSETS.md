@@ -7,13 +7,11 @@ created: 2026-09-14
 updated: 2026-09-20
 type: session-prep
 kind: session-plan
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 session: 11
 visibility: dm
 summary: Canonical drop map for Session 11 recap, transcript, and recording assets.
-base_confidence: 0.90
 provenance:
   extracted: 1.0
   inferred: 0.0

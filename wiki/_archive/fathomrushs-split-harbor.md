@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [intrigue, maritime, exploration]
 tier: supporting
-lifecycle: seeded
 pressure: "Each company treats a new hull's first berth as public allegiance while Sunkline's fraud and Voyvode's lethal trial clock both near visible consequences."
 if_ignored: "Voyvode adds another name to the memorial wall while Sunkline recruits on forged proof. When either Front fills, crews cross the harbor to the surviving company."
 actors: ["[[sunkline-company]]", "[[voyvode-works]]", "[[adriana-tarquine]]", "[[branimir-karsovine]]", "[[petera-ngata]]"]

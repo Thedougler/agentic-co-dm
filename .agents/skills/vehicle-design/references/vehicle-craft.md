@@ -7,8 +7,8 @@ cargo, AC, HP, damage threshold) and on the component model (hull, helm,
 movement, weapons) used for 5e ship combat. Put the ship on the table in the
 order the DM needs it: spoken look, numbers, decks and crew, how it moves and
 fights. Every Sheet and Components line carries a number; where canon is
-silent, take the peer craft's figure, adjust it by the quirk, and state it as a
-canon proposal.
+silent, take the peer craft's figure, adjust it by the quirk, and state it as
+canon under the rule in `llm-wiki`.
 
 ### Peer craft (DMG vehicle table)
 
@@ -114,7 +114,7 @@ crewman). Ownership and rename history as world facts.
 - Does every Sheet and Components line hold a number anchored on a peer?
 - Does every fighter aboard carry compact numbers?
 - Can the DM run a chase, a boarding, and a stowaway from the page alone?
-- Is every invention a canon proposal, stated as world fact and listed in the
+- Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the
   response?
 
 ## Failure modes

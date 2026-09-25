@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, npc]
 sources: []
 summary: "A harbour crew member whose waking-salts purchase becomes evidence when Ilaria notices a Passage-marked ring on his wounded hand."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 status: alive

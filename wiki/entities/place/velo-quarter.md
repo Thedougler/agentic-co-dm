@@ -7,8 +7,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A district of Calveno referenced by several shops and NPCs."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 kind: district

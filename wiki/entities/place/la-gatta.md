@@ -6,8 +6,6 @@ category: entities
 tags: [shattered-sea, place]
 sources: []
 summary: "A vending board on the bottom tier of the Bridge."
-base_confidence: 0.20
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

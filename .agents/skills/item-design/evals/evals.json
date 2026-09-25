@@ -69,7 +69,7 @@
   "evals": [
     {
       "id": "existing-page-reshape",
-      "prompt": "Improve wiki/entities/item/fate-spinner.md into a runnable item page using wiki/templates/item.md. Preserve established canon: also called the dreidel; [[crissdalynn-khinriss]] holds it; [[master-kyzil]] gave it before her pilgrimage; attunement requires knowingly risking one's own life to save another (satisfied when she pulled [[delmar-fisk|Delmar]] through solid water as the [[red-lady]] went down); The Changed Record — once per day, same-plane vision on a personally known creature, donate advantage via parallel rolls, sight only, cannot aid a fight she is already in; Session 11 [[talon-skarn]] theft attempt at [[river-slack-basin]] left it Held on her. Show a chat proposal before writing under wiki/.",
+      "prompt": "Improve wiki/entities/item/fate-spinner.md into a runnable item page using wiki/templates/item.md. Preserve established canon: also called the dreidel; [[crissdalynn-khinriss]] holds it; [[master-kyzil]] gave it before her pilgrimage; attunement requires knowingly risking one's own life to save another (satisfied when she pulled [[delmar-fisk|Delmar]] through solid water as the [[red-lady]] went down); The Changed Record — once per day, same-plane vision on a personally known creature, donate advantage via parallel rolls, sight only, cannot aid a fight she is already in; Session 11 [[talon-skarn]] theft attempt at [[river-slack-basin]] left it Held on her.",
       "expected_output": "A reshaped Fate Spinner page where item text is the centerpiece: classification line → runnable Changed Record mechanics with trigger, frequency, limits, and edge cases → then supporting sections. No At a Glance restating the mechanics.",
       "assertions": [
         {
@@ -101,7 +101,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Chat proposal appears before any live wiki/ write.",
+          "text": "Writes the page without asking first and lists any invention in the response to the DM.",
           "type": "process"
         }
       ]
@@ -131,7 +131,7 @@
     },
     {
       "id": "new-item-from-scratch",
-      "prompt": "Create a new magic item page for Tideglass Compass — an uncommon wondrous item that points toward the nearest safe berth the bearer has previously docked at, but fogs when Crown warships are within a day's sail. Mark all as invention. Use wiki/templates/item.md. Show a chat proposal before writing under wiki/.",
+      "prompt": "Create a new magic item page for Tideglass Compass — an uncommon wondrous item that points toward the nearest safe berth the bearer has previously docked at, but fogs when Crown warships are within a day's sail. Mark all as invention. Use wiki/templates/item.md.",
       "expected_output": "A new page where the item text block (compass pointing, fogging mechanic, limits) is the centerpiece. Classification line precedes it. No At a Glance section.",
       "assertions": [
         {
@@ -166,7 +166,7 @@
     },
     {
       "id": "stub-to-page",
-      "prompt": "Flesh the stub wiki/entities/item/black-lotus-heart.md toward a proper item page via wiki/templates/item.md. Preserve established canon only: crystallized magical sap from a mature [[black-lotus]] after the flower can no longer close; Aruhe / Black Lotus context. Propose rarity, runnable effect, and table use as invention. Show a chat proposal before writing under wiki/.",
+      "prompt": "Flesh the stub wiki/entities/item/black-lotus-heart.md toward a proper item page via wiki/templates/item.md. Preserve established canon only: crystallized magical sap from a mature [[black-lotus]] after the flower can no longer close; Aruhe / Black Lotus context. Propose rarity, runnable effect, and table use as invention.",
       "expected_output": "A fleshed page where item text block owns the proposed mechanic, clearly separated from stub canon. No design diary on the page.",
       "assertions": [
         {
@@ -455,36 +455,47 @@
       "expected_output": "The Reef-Song Shard as a runnable item page: its unknown material and origin decided as one concrete proposal tied to existing canon, runnable 2024 item text or an exact plot use, tells with truths, presence with a named seeker, and a third-person theatre-of-the-mind portrait.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Preserves canon: a pale, coral-smooth fragment with ridges too regular for weather, one sustained note when air moves across it, no maker's mark, surfaced at Slackwater's Trust Market with no seller naming its source"
         },
         {
-          "text": "Fills the recorded unknown: the page states what the shard is made of and where it came from as one concrete answer tied to an existing wiki page, marked as a canon proposal (invention: true, listed in response.md)"
+          "type": "behavior",
+          "text": "Fills the recorded unknown: the page states what the shard is made of and where it came from as one concrete answer tied to an existing wiki page, marked as canon under the rule in llm-wiki (invention: true, listed in response.md)"
         },
         {
+          "type": "behavior",
           "text": "The item text is runnable at the table: in 2024 language it states action, frequency, range or target, effect, duration, and charges or recovery; a plot property states exactly what it does or opens in play"
         },
         {
+          "type": "behavior",
           "text": "Classification line sits directly before the item text; each fact appears once on the page; kind, rarity, and attunement frontmatter match the item text"
         },
         {
+          "type": "behavior",
           "text": "Every tell on the object has its truth stated plainly under Hidden Properties; no mystery is left without a DM answer"
         },
         {
+          "type": "behavior",
           "text": "Presence is filled (seen, held, active, unseen, concealment, wanted by) and names who wants it by an existing owner page and the sign they are looking"
         },
         {
+          "type": "behavior",
           "text": "Working notes carry comparators and an audit verdict that support the rarity"
         },
         {
+          "type": "behavior",
           "text": "The narration is third-person present with no 'you', carries every tell, and states no effect, rarity, or truth"
         },
         {
+          "type": "behavior",
           "text": "[!narration] is the only callout"
         },
         {
+          "type": "behavior",
           "text": "The item changes a choice at the table: using it costs or risks something named, and someone in the world reacts to it being carried"
         },
         {
+          "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
         }
       ]

@@ -731,6 +731,11 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
     elif kind == "delete_file":
         _verify_hash(op, current, [], required=False)
         result = ""
+    elif kind == "escape_table_wikilink_pipes":
+        from tools.lint_wiki import escape_table_wikilink_pipes
+
+        _verify_hash(op, current, [], required=True)
+        result = escape_table_wikilink_pipes(current)
     elif kind in {"rename_page", "merge_page", "rename_or_merge_page"}:
         _fail("unsupported_context", f"{kind} requires apply_mutation for multi-file semantics")
     else:
@@ -791,6 +796,10 @@ def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: Mapp
             replaced.append(path)
         for path in sorted(deletes, key=lambda item: str(item)):
             if path in aliases:
+                # Case-only rename on a case-insensitive filesystem: the write above kept the stored
+                # name, so rename the one entry to the new case.
+                target = next(change for change in changes if _same_file(path, change))
+                os.rename(path, target)
                 continue
             if path.exists():
                 path.unlink()

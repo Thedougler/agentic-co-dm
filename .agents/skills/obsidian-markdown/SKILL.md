@@ -14,12 +14,12 @@ description: >-
 Vault: `$OBSIDIAN_VAULT_PATH` (this repo's `wiki/`). Schema: `wiki/AGENTS.md`.
 Load this `SKILL.md` before every vault `.md` write; open `references/` only when stuck.
 Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, and
-`wiki/AGENTS.md` properties (`type`, `lifecycle`, `reveal`, `campaign`, `visibility` plus llm-wiki required fields).
+`wiki/AGENTS.md` properties (`type`, `reveal`, `campaign`, `visibility` plus llm-wiki required fields).
 
 ## Hard rules
 
 - **Wikilinks in-vault:** `[[Note]]` / `[[Note|text]]` / `[[Note#Heading]]`. Markdown links only for external `https://` URLs. In a Markdown table cell, write the alias or size pipe as `\|` so the cell stays one cell: `[[Note\|text]]`, `![[image.png\|400]]`. Bare `[[Note]]` needs no escape.
-- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `lifecycle`, `reveal`, `campaign`, and `visibility`. `type` enum: `npc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `lifecycle`: `draft` | `proposed` | `accepted` | `rejected` | `canon`. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
+- **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `reveal`, `campaign`, and `visibility`. `type` enum: `npc` | `place` | `faction` | `item` | `creature` | `session` | `recap` | `work`. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
 - **`summary` frontmatter:** one sentence — what the note is and anything non-obvious or unexpected. Use it to assess a note without reading the full file. Create on every new note; update whenever the note changes. Keep it concise, specific, and direct. Quote the value when it contains `: ` (colon-space) — unquoted `: ` breaks YAML.
 - **Player prose:** owner pages use leading `> [!narration] Narration` (empty until TotM fill). Session/run beats use mandatory `> [!narration] Initial Narration` plus titled stubs per `run-guide` TotM slots. Unconditional spoken stays in `[!narration]`. Conditional spoken lives in a table cell as `_italic_`. Empty on mechanical pass 1; fill on pass 2. No secrets/DCs/unearned names inside `[!narration]` or those highlighted cells.
 - **Live session surfaces:** In run-guide, session-prep, session, and beat notes, never use collapsed callouts (`[!…]-`); keep DM information open so session cards do not hide it. Collapsed secrets remain allowed on long-lived owner pages (NPC/PC/faction) when useful.
@@ -32,12 +32,12 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 - **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Put default-mode compact numbers on the action cards (`run-guide`). Do not retype the owner's full Multiattack/HP table into the card body. Do not embed the whole monster essay.
 - **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/embeds.md](references/embeds.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
 - **Surgical edits only:** Edit the elements in scope for the current pass. Preserve existing image embeds, wikilink paths, frontmatter fields, and structure unless that exact element is broken and verified broken. A copy pass edits copy; it does not rewrite embeds or paths.
-- **Lint:** Run `./scripts/lint-wiki-write` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
+- **Lint:** Run `./scripts/wiki lint` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
 
 ## Write workflow
 
 1. Copy matching `wiki/templates/` note as a scaffold when creating. Omit empty sections.
-2. Fill frontmatter (`type`, `lifecycle`, `reveal`, `campaign`, `visibility` + llm-wiki fields + `summary`). On file, `type` is `creature` not `monster`.
+2. Fill frontmatter (`type`, `reveal`, `campaign`, `visibility` + llm-wiki fields + `summary`). On file, `type` is `creature` not `monster`.
 3. If `type: creature` → optional `## Statblock`, then the `statblock` fence.
 4. Leading `[!narration]` when the template expects it.
 5. Body: one topic/note; facts to run, say, or know; wikilink nearest index/MOC/`hot` as needed. Drop `## Do not` and other author-process bans.
@@ -181,7 +181,6 @@ On a `run-guide` Be ready for table, the same treatments apply inside cells: app
 title: Example NPC
 category: entities
 type: npc
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm

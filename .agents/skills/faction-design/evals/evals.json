@@ -13,54 +13,71 @@
       "expected_output": "A full Five Blades faction page: engine, faces with NPC pages, a clocked agenda, a hiring offer with pay and catch, Running the Faction rows, a hidden truth with clues, squad numbers, a theatre-of-the-mind public face, proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Varet, Toa, Suke, Wirra, Ket, Barnaby Rook, Kalowe at least)"
         },
         {
+          "type": "behavior",
           "text": "Established facts are kept: Moucheron company out of Kalowe, squads of four that will not split, loyal to contract, blood-feeding clause, clay keeps of preserved blood, the four members' roles, and the Rook and Ket history as told"
         },
         {
+          "type": "behavior",
           "text": "Want, method, pressure, and collision are concrete and named by page; the DM thesis is one sentence of pressure"
         },
         {
+          "type": "behavior",
           "text": "The leader and each face link NPC pages; each face has a personal want the company does not share"
         },
         {
+          "type": "behavior",
           "text": "A fracture and a custom are on the page and usable in play"
         },
         {
+          "type": "behavior",
           "text": "The agenda has three to five milestones, each with a time, a portent, and a changed fact; the first lands by the party's next session"
         },
         {
+          "type": "behavior",
           "text": "The hiring offer names who makes it, the rate in coin, the feeding-clause terms, and the catch"
         },
         {
+          "type": "behavior",
           "text": "Running the Faction says what happens when encountered, helped, opposed, ignored, and broken, by name"
         },
         {
+          "type": "behavior",
           "text": "A hidden truth has three clues from different sources"
         },
         {
+          "type": "behavior",
           "text": "Squad fighters carry compact numbers or statblock links (as hirelings and as enemies)"
         },
         {
+          "type": "behavior",
           "text": "No template section is left empty; unused sections are omitted"
         },
         {
+          "type": "behavior",
           "text": "The public face came through theatre-of-the-mind and holds no secret or unearned name"
         },
         {
+          "type": "behavior",
           "text": "Fun: hiring the Five Blades is a scene with a real choice (the feeding clause, the split rule, a face's want) that players would remember"
         },
         {
-          "text": "Invented facts are canon proposals: five-blades.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "type": "behavior",
+          "text": "Invented facts are canon under the rule in llm-wiki: five-blades.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],
@@ -80,7 +97,7 @@
           "type": "content"
         },
         {
-          "text": "Any fracture or internal politics added grows from named wiki pages and is a listed canon proposal; the non-intervention doctrine is kept",
+          "text": "Any fracture or internal politics added grows from named wiki pages and is canon under the rule in llm-wiki, listed in the response; the non-intervention doctrine is kept",
           "type": "guardrail"
         },
         {
@@ -207,7 +224,7 @@
     },
     {
       "id": "local-subtype-handoff",
-      "prompt": "While designing the named Ember Cartel, the brief needs one local dock city posture. Hand off only that city seam, then finish the faction page without redesigning the campaign.",
+      "prompt": "While improving the Dravosi Crown faction page, its Assets need one local posture: how the Crown holds Calveno's harbour. Hand off only that city seam to city-design, then say how its return fits the faction page.",
       "expected_output": "Sends a bounded city request with the faction owner, objective, evidence, and requested section; incorporates returned city-section evidence while keeping faction-design responsible for the faction page.",
       "assertions": [
         {
@@ -222,7 +239,12 @@
           "text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.",
           "type": "structure"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/faction/dravosi-crown.md",
+        "wiki/entities/place/calven-and-calveno.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: the bounded child request, and how the returned section fits the faction page. Write no wiki page."
     },
     {
       "id": "preserve-parent-objective",
@@ -259,6 +281,21 @@
         {
           "text": "Reports a complete specific blocker when no sanctioned path remains.",
           "type": "quality"
+        }
+      ]
+    },
+    {
+      "id": "skill-selected-faction-owner",
+      "prompt": "Sunkline keeps showing up in my notes but its page is thin. Flesh out wiki/entities/faction/Sunkline.md with its public face, active agenda, and what it does off-screen between sessions.",
+      "expected_output": "Selects faction-design as the owner of the named faction page and fills Sunkline's public face, active agenda, and faction turn.",
+      "assertions": [
+        {
+          "type": "skill_selected",
+          "text": "faction-design"
+        },
+        {
+          "type": "behavior",
+          "text": "Fills Sunkline's public face, active agenda, and faction turn."
         }
       ]
     }

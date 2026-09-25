@@ -6,8 +6,6 @@ sources:
   - "Nona Black-Jaw"
   - "campaign-os:ruk.md"
 summary: Bodyguard at Nona Black-Jaw's kitchen who has guarded Passage witnesses.
-lifecycle: canon
-base_confidence: 0.42
 created: 2026-09-12T06:23:47Z
 updated: 2026-09-13
 type: npc

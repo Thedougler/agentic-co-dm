@@ -13,8 +13,6 @@ created: 2026-09-22
 updated: 2026-09-22
 type: session-prep
 kind: cliffhanger
-lifecycle: proposed
-base_confidence: 0.55
 reveal: unrevealed
 campaign: shattered-sea
 session: 12

@@ -6,7 +6,6 @@ sources: []
 created: 2026-09-01
 updated: 2026-09-16
 type: session-prep
-lifecycle: draft
 reveal: dm
 ---
 

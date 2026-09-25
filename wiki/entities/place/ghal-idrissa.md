@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -46,8 +43,8 @@ Ghal Idrissa is where the [[dravosi-crown|Dravosi Crown]] sends ships suspected 
 | Field | Detail |
 |---|---|
 | Type | Quarantine island |
-| Region | [[midchain-north|The Northern Midchain]] |
-| Controlled By | [[dravosi-crown|Dravosi Crown]] (quarantine authority) |
+| Region | [[midchain-north\|The Northern Midchain]] |
+| Controlled By | [[dravosi-crown\|Dravosi Crown]] (quarantine authority) |
 | Known For | Ships sent here are not expected to leave |
 
 ## Where

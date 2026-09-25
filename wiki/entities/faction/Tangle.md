@@ -9,14 +9,10 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:30:00Z
 updated: 2026-09-13T20:30:00Z
 type: faction
-lifecycle: proposed
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -110,8 +106,8 @@ flexGrow=1
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | Seven Tangle elders | Senior council | Keep the Run and teachings alive | Must balance secrecy against protection. |
-| [[nona-black-jaw|Nona Black-Jaw]] | Anchor Run leader | Keep Warren people and routes alive | Local responsibility within the wider network. |
-| [[perrin-black-jaw|Perrin Black-Jaw]] | Operative and successor | Carry the Run's obligations forward | Connected to the party through the family Run. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Anchor Run leader | Keep Warren people and routes alive | Local responsibility within the wider network. |
+| [[perrin-black-jaw\|Perrin Black-Jaw]] | Operative and successor | Carry the Run's obligations forward | Connected to the party through the family Run. |
 
 ### Chain of Action
 
@@ -136,7 +132,7 @@ flexGrow=1
 | --- | --- | --- | --- |
 | [[rattkin-runs-and-black-jaw-run]] | Allied | Preserve the elder teachings through living Runs. | The wider network can refuse a route that would price it out of those teachings. |
 | [[the-passage]] | Allied | Keep Calveno movement and hidden routes usable. | The Passage's open-warning choices expose the same secrecy the Tangle protects. |
-| [[nona-black-jaw|Nona Black-Jaw]] | Allied | Lead the Warren's anchor Run. | Local responsibility can conflict with regional secrecy. |
+| [[nona-black-jaw\|Nona Black-Jaw]] | Allied | Lead the Warren's anchor Run. | Local responsibility can conflict with regional secrecy. |
 
 ### Party
 

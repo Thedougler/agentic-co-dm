@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -45,7 +42,7 @@ For generations, Whitmoth Hollow's pale apes have kept an old druid garden alive
 | Field | Detail |
 |---|---|
 | Type | Ape-tended garden hollow |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | The ape colony |
 | Known For | A vanished druidic order's garden, still tended by its apes |
 

@@ -10,7 +10,6 @@ created: "2026-08-13"
 updated: "2026-08-13"
 tags: [maritime, exploration]
 tier: supporting
-lifecycle: seeded
 pressure: "The Uncertainty has floated off La Vasca's cradle with all four facility berths filled, but the crew has not yet turned the refit into habits, claims, names, or working roles."
 if_ignored: "The ship leaves La Vasca functional but socially unsettled; the first voyage exposes unused facilities, open crew posts, and small refit flaws only when weather, pursuit, or hunger makes them costly."
 actors: ["[[uncertainty]]", "[[delmar-fisk]]", "[[old-faas]]", "[[sem-holst]]", "[[geoffrey-draves]]", "[[thunk]]", "[[nona-black-jaw]]"]

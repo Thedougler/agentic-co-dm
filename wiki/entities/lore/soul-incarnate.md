@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.35
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T19:50:00Z
 updated: 2026-09-13
@@ -35,7 +32,7 @@ scope: "Linked to ley-line phenomena at Yssenmoor"
 | State | Trigger | Behavior |
 |---|---|---|
 | **Observing** | Default, no trigger condition has fired | Never initiates contact, and does not act, respond, or reveal itself even under direct threat to anything but its own sealed body. It only records |
-| **Engaged** | Something breaches its seal, or the trigger condition on [[soul-incarnates-watch|Soul Incarnate's Watch]] fires | Breaks two centuries of pure observation and fights without restraint, using its full combat suite |
+| **Engaged** | Something breaches its seal, or the trigger condition on [[soul-incarnates-watch\|Soul Incarnate's Watch]] fires | Breaks two centuries of pure observation and fights without restraint, using its full combat suite |
 
 **Wants:** to keep [[drowned-maw]]'s unbroken, uninterpreted record running past its own death. The current escalation breaks that pattern entirely.
 **Morale:** it never flees. Bound to the sealed body beneath [[high-eyrie|the High Eyrie]], it simply stops fighting and returns to observation the moment the threat that forced it to act ends, dead intruder or resolved crisis alike.
@@ -107,7 +104,7 @@ The Soul Incarnate's body has not moved since the seal closed over it two centur
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Bring it a complete, uninterpreted account of the current Maw crisis, delivered by someone trained in the order's own doctrine | The account comes from [[crissdalynn-khinriss]], the one living Sentinel whose pilgrimage has drawn her closest to its attention | It weighs the account against two centuries of its own record and may share a fragment of that record in answer, the first exchange it has permitted since the seal closed | [[crissdalynn-khinriss]] |
-| Damage or expose the sealed, mummified body beneath [[high-eyrie|the High Eyrie]] | Someone breaches the seal itself, not merely the chamber around it | It abandons pure observation and intervenes directly for the first time in two centuries, an act the order's own founding claim cannot survive once anyone sees it happen | [[sentinels-of-the-eyrie]], via the Soul Incarnate's Watch Front |
+| Damage or expose the sealed, mummified body beneath [[high-eyrie\|the High Eyrie]] | Someone breaches the seal itself, not merely the chamber around it | It abandons pure observation and intervenes directly for the first time in two centuries, an act the order's own founding claim cannot survive once anyone sees it happen | [[sentinels-of-the-eyrie]], via the Soul Incarnate's Watch Front |
 | Ask it directly what it has recorded of [[Auralis]] | The crew of the *[[Uncertainty]]* can already prove they know the Soul Incarnate exists as a conscious entity, not merely an old founding document | It confirms two centuries of surface observation have found no trace of Auralis at all, though both watch the Maw from opposite sides, each unaware of the other | [[Auralis]] |
 
 ## Prepped Reveals

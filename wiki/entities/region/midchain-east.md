@@ -13,9 +13,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -50,43 +47,43 @@ These are the oldest waters in the chain and the ones charts agree on least. Sta
 | Field | Detail |
 |---|---|
 | Type | Scattered reef islands and open shallows |
-| Parent Region | [[Midchain|The Midchain]] |
-| Controlled By | Nobody at the surface; local pilots and salvage crews work it, [[halythion|Halythion]] below |
+| Parent Region | [[Midchain\|The Midchain]] |
+| Controlled By | Nobody at the surface; local pilots and salvage crews work it, [[halythion\|Halythion]] below |
 | Access | Long shallow reaches, pilot recommended; charts unreliable, blue holes unmarked |
-| Known For | Ruins nobody claims, [[sea-elf|Sea Elf]] water, wrecks that arrive late, and cold-upwelling fog near the Maw |
+| Known For | Ruins nobody claims, [[sea-elf\|Sea Elf]] water, wrecks that arrive late, and cold-upwelling fog near the Maw |
 
 ## Locations Within
 
 | Place | Detail |
 |---|---|
-| [[aruhe|Aruhe]] | Deserted inner-edge island near the Verdant Teeth; [[grung|Grung]] patrol the reefs but refuse to land. |
-| [[amberfall|Amberfall]] | Amber-mining island whose petrified specimens preserve small creatures mid-motion. Some swear they're still moving. |
-| [[coeur-bris|Coeur Brisé]] | Site of a centuries-old broken marriage pact between two feuding families, still technically unresolved. |
-| [[torvalline|Torvalline]] | Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here. |
-| [[lethys|Lethys]] | A colony of feral griffons, generations wild since a dead aristocrat's menagerie got loose. |
-| [[windrow|Windrow]] | Disputes, courtships, and trade deals settled by competitive kite-flying. |
-| [[thistlewick|Thistlewick]] | Brambles that produce a mild narcotic effect on contact. |
-| [[nallowick|Nallowick]] | A drifting peat-bog island with no fixed position, tracing the same slow circuit season after season. |
-| [[cambreys-fold|Cambrey's Fold]] | A pocket of terrain that folds space. Walk far enough and you loop back sooner than the distance should allow. |
-| [[otel-karn|Otel Karn]] | Quarantined generations ago for a plague long since burned out. The superstition against landing never lifted. |
-| [[vantrys-choice|Vantry's Choice]] | Identical harbors side by side, one universally and inexplicably avoided. |
-| [[ashglass|Ashglass]] | A dead volcano that glows after dark; a young red dragon has killed every salvage crew that's gone looking for the source. |
-| [[rowans-hush|Rowan's Hush]] | A silent monastic order that communicates entirely by hand-sign. |
-| [[corvenna|Corvenna]] | Neutral dueling grounds where Midchain disputes get settled by champion combat instead of war. |
-| [[gullmoth-reach|Gullmoth Reach]] | Thousands of flame-drawn fey moths roost here. Sailors extinguish lanterns a mile out. |
-| [[vresh|Vresh]] | The remains of an ancient elemental forge, still faintly active, pulling loose metal toward it. |
-| [[rasalgethi|Rasalgethi]] | Astronomers chart stars from a patch of sky no storm has ever crossed. |
-| [[belumara|Belumara]] | Sacred freshwater sinkhole lake, free to draw from if a pilot leaves an offering in one of the rim's bowls. |
-| [[halythion|Halythion]] | Ancient settlement built into the Teikhinos Reef, invisible from the surface, older than any colonial record. |
-| [[duskveil|Duskveil]] | A permanent illusion of dusk blankets the island, source unknown. |
-| [[the-gilded-cage|The Gilded Cage]] | Kept in flawless condition by an unseen caretaker, for guests who never arrive. |
-| [[wracks-end|Wrack's End]] | Every message-in-a-bottle in the Sea eventually washes up here, read by a hermit who answers none. |
-| [[ferrymoor|Ferrymoor]] | Departure point for a schedule-less, fog-bound ferry captained by someone who doesn't age. |
-| [[thoon-adar|Thoon Adar]] | A ring of standing stones that reorient themselves overnight, slow enough nobody's caught them moving. |
-| [[the-petrified-court|The Petrified Court]] | Eerily lifelike statues arranged like a royal court mid-conversation. |
-| [[the-unplotted|The Unplotted]] | Never in the same place on two charts, yet ships always find it exactly where they need it. |
-| [[old-harrows-bones|Old Harrow's Bones]] | A single derelict ship so massive it's become an island, with a whole economy built into its ribs. |
-| [[fathomrush|Fathomrush]] | Company-town boomtown staging Shelfworks dives near the Drowned Maw's western edge, rival pressure-rig ventures racing to engineer a way deeper. |
+| [[aruhe\|Aruhe]] | Deserted inner-edge island near the Verdant Teeth; [[grung\|Grung]] patrol the reefs but refuse to land. |
+| [[amberfall\|Amberfall]] | Amber-mining island whose petrified specimens preserve small creatures mid-motion. Some swear they're still moving. |
+| [[coeur-bris\|Coeur Brisé]] | Site of a centuries-old broken marriage pact between two feuding families, still technically unresolved. |
+| [[torvalline\|Torvalline]] | Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here. |
+| [[lethys\|Lethys]] | A colony of feral griffons, generations wild since a dead aristocrat's menagerie got loose. |
+| [[windrow\|Windrow]] | Disputes, courtships, and trade deals settled by competitive kite-flying. |
+| [[thistlewick\|Thistlewick]] | Brambles that produce a mild narcotic effect on contact. |
+| [[nallowick\|Nallowick]] | A drifting peat-bog island with no fixed position, tracing the same slow circuit season after season. |
+| [[cambreys-fold\|Cambrey's Fold]] | A pocket of terrain that folds space. Walk far enough and you loop back sooner than the distance should allow. |
+| [[otel-karn\|Otel Karn]] | Quarantined generations ago for a plague long since burned out. The superstition against landing never lifted. |
+| [[vantrys-choice\|Vantry's Choice]] | Identical harbors side by side, one universally and inexplicably avoided. |
+| [[ashglass\|Ashglass]] | A dead volcano that glows after dark; a young red dragon has killed every salvage crew that's gone looking for the source. |
+| [[rowans-hush\|Rowan's Hush]] | A silent monastic order that communicates entirely by hand-sign. |
+| [[corvenna\|Corvenna]] | Neutral dueling grounds where Midchain disputes get settled by champion combat instead of war. |
+| [[gullmoth-reach\|Gullmoth Reach]] | Thousands of flame-drawn fey moths roost here. Sailors extinguish lanterns a mile out. |
+| [[vresh\|Vresh]] | The remains of an ancient elemental forge, still faintly active, pulling loose metal toward it. |
+| [[rasalgethi\|Rasalgethi]] | Astronomers chart stars from a patch of sky no storm has ever crossed. |
+| [[belumara\|Belumara]] | Sacred freshwater sinkhole lake, free to draw from if a pilot leaves an offering in one of the rim's bowls. |
+| [[halythion\|Halythion]] | Ancient settlement built into the Teikhinos Reef, invisible from the surface, older than any colonial record. |
+| [[duskveil\|Duskveil]] | A permanent illusion of dusk blankets the island, source unknown. |
+| [[the-gilded-cage\|The Gilded Cage]] | Kept in flawless condition by an unseen caretaker, for guests who never arrive. |
+| [[wracks-end\|Wrack's End]] | Every message-in-a-bottle in the Sea eventually washes up here, read by a hermit who answers none. |
+| [[ferrymoor\|Ferrymoor]] | Departure point for a schedule-less, fog-bound ferry captained by someone who doesn't age. |
+| [[thoon-adar\|Thoon Adar]] | A ring of standing stones that reorient themselves overnight, slow enough nobody's caught them moving. |
+| [[the-petrified-court\|The Petrified Court]] | Eerily lifelike statues arranged like a royal court mid-conversation. |
+| [[the-unplotted\|The Unplotted]] | Never in the same place on two charts, yet ships always find it exactly where they need it. |
+| [[old-harrows-bones\|Old Harrow's Bones]] | A single derelict ship so massive it's become an island, with a whole economy built into its ribs. |
+| [[fathomrush\|Fathomrush]] | Company-town boomtown staging Shelfworks dives near the Drowned Maw's western edge, rival pressure-rig ventures racing to engineer a way deeper. |
 
 ## Routes & Access
 

@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.45
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:20:00Z
 updated: 2026-09-20
@@ -64,7 +61,7 @@ The [[sentinels-of-the-eyrie|Sentinels of the Eyrie]] teach Long Reach to every 
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| [[sentinels-of-the-eyrie|Sentinels of the Eyrie]] | Teach Long Reach to every apprentice. | knows | Established in the Sentinel faction source. |
+| [[sentinels-of-the-eyrie\|Sentinels of the Eyrie]] | Teach Long Reach to every apprentice. | knows | Established in the Sentinel faction source. |
 | Sentinel apprentices | Have Long Reach as part of their training. | knows | The technique is defined as universal apprentice instruction. |
 
 ## Party Knowledge
@@ -113,8 +110,8 @@ No canonical common telling is recorded. The name may be used at the table witho
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[sentinels-of-the-eyrie|Sentinels of the Eyrie]] | Teaches Long Reach to every apprentice. | Establishes the technique's scope and institutional owner. |
-| [[high-eyrie|High Eyrie]] | Named source location for Sentinel lore. | Gives the DM a place to connect questions about the technique to Sentinel training. |
+| [[sentinels-of-the-eyrie\|Sentinels of the Eyrie]] | Teaches Long Reach to every apprentice. | Establishes the technique's scope and institutional owner. |
+| [[high-eyrie\|High Eyrie]] | Named source location for Sentinel lore. | Gives the DM a place to connect questions about the technique to Sentinel training. |
 ## Open Canon
 
 * [ ] **Unknown.** What does Long Reach do mechanically or physically?

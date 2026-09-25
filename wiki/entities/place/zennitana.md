@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: place
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +19,6 @@ ruler: "[[kinryu-omusubi|Kinryu Omusubi]]"
 controlling_faction: "[[omusubi-family|Omusubi Family]]"
 summary: "Bustling southwest capital attached to a huge harbor and surrounded by fishing villages, rivers, rice fields, and sake makers."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Zennitana
@@ -35,7 +32,7 @@ tier: supporting
 | --- | --- |
 | **Character** | A busy harbor capital where fishing wealth, rice wealth, and royal ceremony meet. |
 | **Known for** | Boat makers, swimmers, fishing traditions, and the yearly fishing competition. |
-| **Power** | The self-proclaimed [[omusubi-family|Omusubi Family]] and its shadow arm, the [[ryu-no-kage|Ryu no Kage]]. |
+| **Power** | The self-proclaimed [[omusubi-family\|Omusubi Family]] and its shadow arm, the [[ryu-no-kage\|Ryu no Kage]]. |
 | **Pressure** | The source establishes no current civic crisis. |
 | **Opportunity** | The harbor offers trade, information, and access to Tokage's political center. |
 | **Population** | The source does not establish a population. |
@@ -98,7 +95,7 @@ The source does not establish named districts. The harbor, surrounding fishing v
 | Weapons & armor | Not established | — | No source-specific supplier is named. |
 | Rare goods | Not established | — | No source-specific supplier is named. |
 | Magic | Not established | — | No source-specific supplier is named. |
-| Fence / illicit market | [[ryu-no-kage|Ryu no Kage]] | Harbor and capital | The organization operates covertly; its market is not specified. |
+| Fence / illicit market | [[ryu-no-kage\|Ryu no Kage]] | Harbor and capital | The organization operates covertly; its market is not specified. |
 | Crafting / commissions | Boat makers | Harbor | Boat makers are known locally; terms are not established. |
 
 ## Services
@@ -109,7 +106,7 @@ The source does not establish named districts. The harbor, surrounding fishing v
 | Information | Harbor fishers and boat traffic | Harbor | Information is tied to coastal movement, not a named broker. |
 | Hirelings | Not established | — | The source names no hireling market. |
 | Scholars / research | Not established | — | The source names no scholar. |
-| Legal help | [[omusubi-family|Omusubi Family]] | Capital | The family's authority is self-proclaimed. |
+| Legal help | [[omusubi-family\|Omusubi Family]] | Capital | The family's authority is self-proclaimed. |
 | Religious service | Not established | — | The source names no local religious service. |
 | Transport | Boat makers and harbor traffic | Harbor | Water access is the established transport option. |
 
@@ -174,8 +171,8 @@ The source does not establish named districts. The harbor, surrounding fishing v
 
 | Faction | Public position | Wants here | Leverage | Current move |
 | --- | --- | --- | --- | --- |
-| [[omusubi-family|Omusubi Family]] | Self-proclaimed royal house. | Maintain authority over the city and island. | Harbor and rice wealth, public legitimacy, and court access. | Continue ruling from the capital. |
-| [[ryu-no-kage|Ryu no Kage]] | Hidden service to the royal family. | Protect the Omusubi Family covertly. | Assassins, thieves, magic users, ninjas, agents, and decoys. | Operate from the capital without public exposure. |
+| [[omusubi-family\|Omusubi Family]] | Self-proclaimed royal house. | Maintain authority over the city and island. | Harbor and rice wealth, public legitimacy, and court access. | Continue ruling from the capital. |
+| [[ryu-no-kage\|Ryu no Kage]] | Hidden service to the royal family. | Protect the Omusubi Family covertly. | Assassins, thieves, magic users, ninjas, agents, and decoys. | Operate from the capital without public exposure. |
 
 ## Authority
 
@@ -192,8 +189,8 @@ The source does not establish named districts. The harbor, surrounding fishing v
 
 | Side | Relationship | Side | What keeps this unstable |
 | --- | --- | --- | --- |
-| [[omusubi-family|Omusubi Family]] | dependent | [[ryu-no-kage|Ryu no Kage]] | Public authority depends on covert protection. |
-| [[Totemo Tokage]] | political center | [[omusubi-family|Omusubi Family]] | Other clans retain their own interests. |
+| [[omusubi-family\|Omusubi Family]] | dependent | [[ryu-no-kage\|Ryu no Kage]] | Public authority depends on covert protection. |
+| [[Totemo Tokage]] | political center | [[omusubi-family\|Omusubi Family]] | Other clans retain their own interests. |
 
 ---
 
@@ -240,7 +237,7 @@ The city connects coastal fishing and boat work to rivers, rice fields, and sake
 
 | Hidden node | Layer | Becomes accessible when |
 | --- | --- | --- |
-| [[ryu-no-kage|Ryu no Kage]] | Faction activity | A party follows covert protection around the Omusubi Family. |
+| [[ryu-no-kage\|Ryu no Kage]] | Faction activity | A party follows covert protection around the Omusubi Family. |
 
 ---
 
@@ -288,12 +285,12 @@ The city connects coastal fishing and boat work to rivers, rice fields, and sake
 
 | d6 | Person | Detail |
 | -: | --- | --- |
-| 1 | [[kinryu-omusubi|Kinryu Omusubi]] | Named leader of the royal family. |
-| 2 | [[madam-hino|Madam Hino]] | Leader of the Ryu no Kage. |
-| 3 | [[biggu-baito|Biggu Baito]] | Head general of the shadow organization. |
-| 4 | [[nona-black-jaw|Nona Black-Jaw]] | Keeper of Hino's appearance secret. |
-| 5 | [[ranga-gex|Ranga Gex]] | Leader of the Ebony Scales. |
-| 6 | [[rango-gex|Rango Gex]] | Leader of the Ebony Scales. |
+| 1 | [[kinryu-omusubi\|Kinryu Omusubi]] | Named leader of the royal family. |
+| 2 | [[madam-hino\|Madam Hino]] | Leader of the Ryu no Kage. |
+| 3 | [[biggu-baito\|Biggu Baito]] | Head general of the shadow organization. |
+| 4 | [[nona-black-jaw\|Nona Black-Jaw]] | Keeper of Hino's appearance secret. |
+| 5 | [[ranga-gex\|Ranga Gex]] | Leader of the Ebony Scales. |
+| 6 | [[rango-gex\|Rango Gex]] | Leader of the Ebony Scales. |
 
 ## Places on demand
 
@@ -366,8 +363,8 @@ The source establishes a functioning harbor capital whose royal claim and covert
 
 | Faction | Next move | Trigger / timing |
 | --- | --- | --- |
-| [[omusubi-family|Omusubi Family]] | Maintain the royal court's authority. | Ongoing. |
-| [[ryu-no-kage|Ryu no Kage]] | Protect the family through covert action. | Ongoing. |
+| [[omusubi-family\|Omusubi Family]] | Maintain the royal court's authority. | Ongoing. |
+| [[ryu-no-kage\|Ryu no Kage]] | Protect the family through covert action. | Ongoing. |
 
 ---
 
@@ -375,7 +372,7 @@ The source establishes a functioning harbor capital whose royal claim and covert
 
 | Date | Change | Cause | Affected notes |
 | --- | --- | --- | --- |
-| 2026-09-20 | Zennitana was filed as the southwest capital of Tokage. | [[Tokage-Island.md]] | [[Totemo Tokage]], [[omusubi-family|Omusubi Family]] |
+| 2026-09-20 | Zennitana was filed as the southwest capital of Tokage. | [[Tokage-Island.md]] | [[Totemo Tokage]], [[omusubi-family\|Omusubi Family]] |
 
 ---
 

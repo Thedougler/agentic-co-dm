@@ -6,7 +6,6 @@ sources: []
 created: unknown
 updated: unknown
 type: session-prep
-lifecycle: draft
 reveal: dm
 ---
 

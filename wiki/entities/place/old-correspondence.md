@@ -11,9 +11,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -48,7 +45,7 @@ Old Correspondence's sole resident has been drafting the same letter for as long
 | Field | Detail |
 |---|---|
 | Type | Single-resident islet |
-| Region | [[midchain-north|The Northern Midchain]] |
+| Region | [[midchain-north\|The Northern Midchain]] |
 | Controlled By | One resident scribe |
 | Known For | A decades-unfinished letter to an unknown recipient |
 

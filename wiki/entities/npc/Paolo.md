@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -21,7 +19,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Paolo
@@ -78,7 +75,7 @@ Paolo talks brightly through embarrassment and avoids letting a capsize define h
 | Connection | Meaning |
 | --- | --- |
 | [[calven-and-calveno]] | Paolo works its canals as a gondolier. |
-| [[crissdalynn-khinriss|Crissdalynn]] | Grabbed Paolo after the capsize and recovered his dropped belongings. |
-| [[perrin-black-jaw|Perrin]] | Jumped in and righted the gondola. |
-| [[delmar-fisk|Delmar]] | Threw Paolo a line. |
+| [[crissdalynn-khinriss\|Crissdalynn]] | Grabbed Paolo after the capsize and recovered his dropped belongings. |
+| [[perrin-black-jaw\|Perrin]] | Jumped in and righted the gondola. |
+| [[delmar-fisk\|Delmar]] | Threw Paolo a line. |
 | [[Mercatura]] | The canal-wall accident occurred nearby. |

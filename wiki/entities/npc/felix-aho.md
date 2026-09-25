@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
-lifecycle: proposed
-lifecycle_changed: "2026-09-12"
 tier: supporting
 created: 2026-09-12T00:00:00Z
 updated: 2026-09-13
@@ -37,7 +34,7 @@ relationships:
 | ------------- | ------------------------------------------------------ |
 | **Species**   | [[Grung]] (Green caste)                          |
 | **Role**      | Captured laborer, prisoner of [[nona-black-jaw]]. A DM prep profile names a different Felix Aho identity; unconfirmed, see DM Only |
-| **Location**  | [[Warren|The Warren]] (held prisoner, Session 04)     |
+| **Location**  | [[Warren\|The Warren]] (held prisoner, Session 04)     |
 | **Status**    | Cooperating captive, traded intel for one month's protection |
 
 Green-caste [[Grung]] laborer caught in the [[calven-and-calveno]] sewers during the Grung bombing investigation. Someone hired him for the work. He is not ideological, just terrified and willing to cooperate with his captors. He is no leader.

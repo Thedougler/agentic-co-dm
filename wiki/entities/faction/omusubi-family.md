@@ -7,8 +7,6 @@ sources: ["Tokage-Island.md"]
 created: 2026-09-20
 updated: 2026-09-20
 type: faction
-lifecycle: proposed
-lifecycle_changed: "2026-09-20"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ region: "Southwest Totemo Tokage"
 base: "[[Zennitana]]"
 summary: "Self-proclaimed royal family whose authority grew from control of rice and fishing wealth in southwest Tokage."
 provenance: {extracted: 1.0, inferred: 0.0, ambiguous: 0.0}
-base_confidence: 0.42
 tier: supporting
 ---
 # Omusubi Family
@@ -66,14 +63,14 @@ The family shares the capital with its loyal shadow organization, the [[ryu-no-k
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | Harbor and rice wealth | Wealth | [[Zennitana]] | Royal authority and trade | Active |
-| [[ryu-no-kage|Ryu no Kage]] | Force | [[Zennitana]] | Covert protection | Loyal |
+| [[ryu-no-kage\|Ryu no Kage]] | Force | [[Zennitana]] | Covert protection | Loyal |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[kinryu-omusubi|Kinryu Omusubi]] | Leader | Maintain royal authority | Leads the family |
-| [[ryu-no-kage|Ryu no Kage]] | Shadow organization | Protect the family | Loyal but covert |
+| [[kinryu-omusubi\|Kinryu Omusubi]] | Leader | Maintain royal authority | Leads the family |
+| [[ryu-no-kage\|Ryu no Kage]] | Shadow organization | Protect the family | Loyal but covert |
 
 ### Chain of Action
 

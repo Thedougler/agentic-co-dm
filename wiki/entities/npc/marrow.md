@@ -7,8 +7,6 @@ sources:
 created: 2026-09-13T20:45:00Z
 updated: 2026-09-20
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
@@ -21,7 +19,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.37
 tier: supporting
 ---
 
@@ -74,8 +71,8 @@ Marrow becomes **Unwilling** when the party lacks a Kin introduction, makes the 
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[marrows|Marrow's]] | Marrow's alcove and place of business. |
-| [[warren|The Warren]] | His home and the setting for his Passage-adjacent work. |
-| [[warren-marrows-crate|Marrow's Crate]] | The crate currently on his shelf, containing the Vretek/Brol letter, silver, and a signet ring. |
-| [[serin-haut|Serin Haut]] | Killed courier Dren, who was transporting the crate. |
-| [[tangle|The Tangle]] | Regards Marrow's work as Passage-adjacent and leaves him to it. |
+| [[marrows\|Marrow's]] | Marrow's alcove and place of business. |
+| [[warren\|The Warren]] | His home and the setting for his Passage-adjacent work. |
+| [[warren-marrows-crate\|Marrow's Crate]] | The crate currently on his shelf, containing the Vretek/Brol letter, silver, and a signet ring. |
+| [[serin-haut\|Serin Haut]] | Killed courier Dren, who was transporting the crate. |
+| [[tangle\|The Tangle]] | Regards Marrow's work as Passage-adjacent and leaves him to it. |

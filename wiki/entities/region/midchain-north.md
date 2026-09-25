@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.55
-lifecycle: proposed
-lifecycle_changed: "2026-09-14"
 tier: supporting
 created: 2026-09-14
 updated: 2026-09-14
@@ -49,40 +46,40 @@ Villagers build everything here to escape notice. Settlements sit in coves on th
 | Field | Detail |
 |---|---|
 | Type | Defended island strip |
-| Parent Region | [[Midchain|The Midchain]] |
-| Controlled By | Individual village councils; [[moucheron|Moucheron]] at [[murrat|Murrat]] |
+| Parent Region | [[Midchain\|The Midchain]] |
+| Controlled By | Individual village councils; [[moucheron\|Moucheron]] at [[murrat\|Murrat]] |
 | Access | Narrow inner channels; approach seen long before it arrives |
-| Known For | Hidden coves, stockades and lookouts, and a hard line against the [[grung-clans|Grung Clans]] |
+| Known For | Hidden coves, stockades and lookouts, and a hard line against the [[grung-clans\|Grung Clans]] |
 
 ## Locations Within
 
 | Place | Detail |
 |---|---|
-| [[adwe|Adwe]] | Mangrove maze whose channels rearrange after every storm, known only to the herons. |
-| [[corrigans-rest|Corrigan's Rest]] | A retired pirate crew's suspiciously comfortable retirement island, silent about what's buried where. |
-| [[barrow-ait|Barrow Ait]] | An artificial island built from a forgotten war's burial mounds, where grave-robbers never leave with their prizes. |
-| [[drovannis|Drovannis]] | A druid bird sanctuary seabirds return to each year, often carrying small lost objects from elsewhere in the Sea. |
-| [[calders-verge|Calder's Verge]] | A glassblowing guild worked off a natural silica vent; prized glasswork, a dangerous apprenticeship. |
-| [[chronehall|Chronehall]] | A clockmakers' guild that times something they have never explained to outsiders. |
-| [[old-correspondence|Old Correspondence]] | A lone scribe has drafted the same unfinished letter for decades. |
-| [[ilo-maren|Ilo Maren]] | A free-diving culture that harvests glowing kelp. Their yearly bonfire lights the whole bay. |
-| [[yssenmoor|Yssenmoor]] | A permanent fog moor where sound arrives before whoever's speaking it does. |
-| [[munai|Munai]] | Wild orchard planted generations ago by a shipwrecked botanist, whose poisons and cures work well and look alike. |
-| [[kwoss|Kwoss]] | Giant sea turtle nesting ground, where egg season turns the beach into a standing fight between locals and poachers. |
-| [[the-unplotted|The Unplotted]] | An island that wasn't on yesterday's chart, sitting where open water should be. |
-| [[nemwe|Nemwe]] | Abandoned Dravosi watchtower with a still-working signal-fire, ready for whoever claims it. |
-| [[whitmoth-hollow|Whitmoth Hollow]] | Albino apes tend a vanished druidic order's garden with ritual care. |
-| [[murrat|Murrat]] | settlement | Limestone reef island between [[kalowe|Kalowe]] and the Verdant Teeth; [[moucheron|Moucheron]]-held, non-Moucheron attacked on sight. |
-| [[vetau|Vetau]] | Hot-spring atoll where the shallows boil at midday, sealing the only safe anchorage shut for an hour. |
-| [[otanu|Otanu]] | Mildly active volcanic island, where locals read the smoke plume like weather and won't sail when it "leans wrong." |
-| [[thessit|Thessit]] | Whole, undamaged wrecks wash ashore months after they sank somewhere else entirely. |
-| [[the-foundling-shoals|The Foundling Shoals]] | Unexplained, unharmed infants have appeared on this reef for generations. |
-| [[quillane|Quillane]] | Scholar-mages who study tide magic from a slowly sinking tower. They trade knowledge for strange specimens. |
-| [[tor-vessane|Tor Vessane]] | Every captain routes wide around it; a real curse sits here, though no two sailors agree on its shape. |
-| [[sparhold|Sparhold]] | settlement | Walled fortress-market at the strip's southern edge, closest harbor to the Verdant Teeth; undercuts [[kalowe|Kalowe]] on price and looser rules. |
-| [[ghal-idrissa|Ghal Idrissa]] | [[dravosi-crown|Dravosi Crown]] island for plague ships, where no one sent here leaves. |
-| [[the-long-wager|The Long Wager]] | One rivalry contest, run without a break for generations, judged by a referee who never ages. |
-| [[vaelspire|Vaelspire]] | A basalt spire said to answer one true question, once, to whoever reaches the summit. |
+| [[adwe\|Adwe]] | Mangrove maze whose channels rearrange after every storm, known only to the herons. |
+| [[corrigans-rest\|Corrigan's Rest]] | A retired pirate crew's suspiciously comfortable retirement island, silent about what's buried where. |
+| [[barrow-ait\|Barrow Ait]] | An artificial island built from a forgotten war's burial mounds, where grave-robbers never leave with their prizes. |
+| [[drovannis\|Drovannis]] | A druid bird sanctuary seabirds return to each year, often carrying small lost objects from elsewhere in the Sea. |
+| [[calders-verge\|Calder's Verge]] | A glassblowing guild worked off a natural silica vent; prized glasswork, a dangerous apprenticeship. |
+| [[chronehall\|Chronehall]] | A clockmakers' guild that times something they have never explained to outsiders. |
+| [[old-correspondence\|Old Correspondence]] | A lone scribe has drafted the same unfinished letter for decades. |
+| [[ilo-maren\|Ilo Maren]] | A free-diving culture that harvests glowing kelp. Their yearly bonfire lights the whole bay. |
+| [[yssenmoor\|Yssenmoor]] | A permanent fog moor where sound arrives before whoever's speaking it does. |
+| [[munai\|Munai]] | Wild orchard planted generations ago by a shipwrecked botanist, whose poisons and cures work well and look alike. |
+| [[kwoss\|Kwoss]] | Giant sea turtle nesting ground, where egg season turns the beach into a standing fight between locals and poachers. |
+| [[the-unplotted\|The Unplotted]] | An island that wasn't on yesterday's chart, sitting where open water should be. |
+| [[nemwe\|Nemwe]] | Abandoned Dravosi watchtower with a still-working signal-fire, ready for whoever claims it. |
+| [[whitmoth-hollow\|Whitmoth Hollow]] | Albino apes tend a vanished druidic order's garden with ritual care. |
+| [[murrat\|Murrat]] | settlement | Limestone reef island between [[kalowe\|Kalowe]] and the Verdant Teeth; [[moucheron\|Moucheron]]-held, non-Moucheron attacked on sight. |
+| [[vetau\|Vetau]] | Hot-spring atoll where the shallows boil at midday, sealing the only safe anchorage shut for an hour. |
+| [[otanu\|Otanu]] | Mildly active volcanic island, where locals read the smoke plume like weather and won't sail when it "leans wrong." |
+| [[thessit\|Thessit]] | Whole, undamaged wrecks wash ashore months after they sank somewhere else entirely. |
+| [[the-foundling-shoals\|The Foundling Shoals]] | Unexplained, unharmed infants have appeared on this reef for generations. |
+| [[quillane\|Quillane]] | Scholar-mages who study tide magic from a slowly sinking tower. They trade knowledge for strange specimens. |
+| [[tor-vessane\|Tor Vessane]] | Every captain routes wide around it; a real curse sits here, though no two sailors agree on its shape. |
+| [[sparhold\|Sparhold]] | settlement | Walled fortress-market at the strip's southern edge, closest harbor to the Verdant Teeth; undercuts [[kalowe\|Kalowe]] on price and looser rules. |
+| [[ghal-idrissa\|Ghal Idrissa]] | [[dravosi-crown\|Dravosi Crown]] island for plague ships, where no one sent here leaves. |
+| [[the-long-wager\|The Long Wager]] | One rivalry contest, run without a break for generations, judged by a referee who never ages. |
+| [[vaelspire\|Vaelspire]] | A basalt spire said to answer one true question, once, to whoever reaches the summit. |
 
 ## Geography
 

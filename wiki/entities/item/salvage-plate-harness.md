@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: item
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Salvage-Plate Harness
@@ -41,7 +38,7 @@ _Armor (Harness), Uncommon._
 | One thing | The first critical hit against the wearer each short rest lands as an ordinary hit. |
 | Rarity justification | Strictly weaker than Adamantine Armor (uncommon, every critical hit against the wearer becomes a normal hit, no limit and no repair), and narrower than Brooch of Shielding (uncommon, force resistance and Magic Missile immunity outright). |
 | Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[crissdalynn-khinriss|Crissdalynn]] fights at the front on the thinnest effective hit-point cushion in the crew, and one open critical hit is what ends her round. |
+| PC connection | [[crissdalynn-khinriss\|Crissdalynn]] fights at the front on the thinnest effective hit-point cushion in the crew, and one open critical hit is what ends her round. |
 | Current holder | [[kettil-ormsson]], on a stand at the end of the counter at [[Ormsson's Fittings]]. |
 | Narrative hook | The crushed panel came back for repair on a body that walked in, and Ormsson names the yard hand who wore it to anyone who asks straight. |
 

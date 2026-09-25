@@ -12,9 +12,6 @@ provenance:
   extracted: 1.0
   inferred: 0.0
   ambiguous: 0.0
-base_confidence: 0.45
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 tier: supporting
 created: 2026-09-13T20:20:00Z
 updated: 2026-09-13T20:20:00Z
@@ -46,7 +43,7 @@ visibility: dm
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
 | **Quest giver** | Unknown |
-| **Region**      | [[high-eyrie|High Eyrie]] |
+| **Region**      | [[high-eyrie\|High Eyrie]] |
 | **Scope**       | Regional |
 | **Opposition**  | The hidden trigger and any force that breaches the Soul Incarnate's seal |
 | **Reward**      | Access to the Soul Incarnate's record or a fragment of its two-century observation; no guaranteed reward is established. |

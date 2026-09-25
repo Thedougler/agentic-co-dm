@@ -7,7 +7,6 @@ created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: session-prep
 kind: hook
-lifecycle: proposed
 reveal: unrevealed
 campaign: "{{campaign}}"
 session: ""

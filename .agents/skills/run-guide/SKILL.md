@@ -14,6 +14,12 @@ description: >-
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
 
+**Session plan first.** Before reading further or loading any other skill,
+find this session's filed plan (`Session-<NN>-00-*.md` in its session
+folder). With none, stop here: load `plan-session` and plan with the DM;
+this skill resumes from the plan once `session-beats` files it.
+
+
 ## Workflow — four passes
 
 Each pass loads only its listed skills. The pass boundary is a skill-load
@@ -25,6 +31,8 @@ current pass's job before it is done.
 - **Input:** A named session or 30-minute beat cockpit, its existing prep and
   owner pages, the session plan's Beat Map and entry state, and the evidence
   needed to run this slice.
+- **Session plan:** the guide renders the complete planned session from its
+  filed plan and beat pages.
 - **Work:** Preserve the four-pass contract: pass 1 keeps the mechanical card
   and empty narration stubs; pass 2 keeps DM-facing procedure; pass 3 keeps
   spoken-text craft; pass 4 keeps the Reading-view/table gate. Each pass stays
@@ -185,7 +193,8 @@ a cell is `_italic_` (`obsidian-markdown`).
 
 When rendering a **full** 3–5 hour night (not a single 30-minute beat), write
 one lean card per live beat in likely-play order. Overflow material after the
-live cards as owner links or short bullets only when it saves table hunting.
+live cards as owner links or short bullets only when it saves table hunting. Link
+the session plan once at the top; the guide does not restate it.
 
 ## Untyped cockpit assembly
 

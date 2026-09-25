@@ -10,12 +10,10 @@ sources:
 created: 2026-09-19
 updated: 2026-09-19
 type: spell
-lifecycle: proposed
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 summary: "A second-level wind spell that redirects toxin clouds, disperses fog, and drives creatures back."
-base_confidence: 0.55
 level: 2
 school: Evocation
 ritual: false

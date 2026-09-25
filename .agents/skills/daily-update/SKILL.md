@@ -122,8 +122,7 @@ Append to `$OBSIDIAN_VAULT_PATH/log.md`:
 - hot.md: refreshed / up to date
 
 Stale sources (run to sync):
-  /wiki-history-ingest claude   — N sessions since last ingest
-  /wiki-history-ingest codex    — N sessions since last ingest
+  wiki-ingest <source>          — changed since last ingest
 ```
 
 ### Setup Mode (triggered by "set up the daily cron" or "install terminal notification")

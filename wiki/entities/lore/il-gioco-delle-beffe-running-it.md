@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: lore
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Il Gioco delle Beffe - Running It
@@ -131,7 +128,7 @@ Side betting: the crew may bet on themselves at registration, max 50 gp at 2:1 (
 | 5 years ago | The Blind Canal | Looped rope | Matteo Carver | Rerouted a maintenance canal so he filed four reports on the same stretch. |
 | 6 years ago | Il Velo | Half-mask | [[oleandro-fuschi]] | Adjusted every tavern element by inches and swapped each wine for a near match. |
 | 7 years ago | The Usual Suspects | Crossed quills | Piet Ondra | Convinced a [[chain-council]] observer that [[calven-and-calveno]] redefined a fathom. |
-| 8 years ago | The Devout | Closed eye | [[Waveservants|Waveservant]] Senior Matha | Forged a tide-tithe prophecy in the shrine donation box. |
+| 8 years ago | The Devout | Closed eye | [[Waveservants\|Waveservant]] Senior Matha | Forged a tide-tithe prophecy in the shrine donation box. |
 | 9 years ago | The Flagmen | Three-color band | Crob | Created a fake canal-boat health flag regulation. |
 | 10 years ago | The Quiet Tide | Still waterline | Valco | Replaced inventory contents with equal-weight substitutes before audit. |
 

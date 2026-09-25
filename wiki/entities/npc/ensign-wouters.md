@@ -9,8 +9,6 @@ sources:
 created: 2026-09-13
 updated: 2026-09-13
 type: npc
-lifecycle: proposed
-lifecycle_changed: "2026-09-13"
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
@@ -19,7 +17,6 @@ provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
-base_confidence: 0.55
 tier: supporting
 ---
 # Ensign Wouters
@@ -30,7 +27,7 @@ tier: supporting
 |              |                                                              |
 | ------------ | ------------------------------------------------------------ |
 | **Species**  | [[Human]] (Dravosi)                                              |
-| **Post**     | Formerly [[Uncertainty|HCS Surety]], under [[barnaby-rook]] |
+| **Post**     | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**     | Ensign, Navigator                                             |
 | **Status**   | Deceased (shot by Delmar Fisk's musket during the Session 02 boarding) |
 

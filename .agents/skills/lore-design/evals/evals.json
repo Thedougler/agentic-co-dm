@@ -14,48 +14,63 @@
       "expected_output": "A lore page that answers the legend: which claims are true, distorted, or false and what is really there; where it is; who moves on it; stakes with numbers; accounts with holders; three-clue revelations; At the Table handles; proposals marked.",
       "assertions": [
         {
+          "type": "behavior",
           "text": "Working notes carry a canon inventory built from backlinks and search (Sawek, Kalowe, Midchain at least)"
         },
         {
+          "type": "behavior",
           "text": "Current Truth answers every claim in the telling (freezing black water, a Sawek big enough to pull down a galleon, the wreck reef, scattered gold, animated drowned sailors) as true, distorted, or false, with what is really there"
         },
         {
+          "type": "behavior",
           "text": "Every item the old page left open or unknown (location, Sawek identity and size, wreck condition, whether the dead are animated) has one concrete answer on the page; no Open Canon section remains"
         },
         {
+          "type": "behavior",
           "text": "The location is concrete: a bearing and distance from Kalowe or a linked place"
         },
         {
+          "type": "behavior",
           "text": "A named actor moves on the truth on their own clock, with a time"
         },
         {
+          "type": "behavior",
           "text": "Stakes name what the party can win and lose with numbers (gold or item value, the creature's CR or statblock link, dive DCs, days)"
         },
         {
+          "type": "behavior",
           "text": "Accounts give two to four in-world versions, each with its holder and how it is wrong usefully; the common telling is in a tavern voice"
         },
         {
+          "type": "behavior",
           "text": "Each needed conclusion has three clues from different linked sources; uncertain clues carry Ability (Skill) and DC"
         },
         {
+          "type": "behavior",
           "text": "At the Table fills notice, explains, enables, and warns"
         },
         {
-          "text": "lifecycle and reveal stay proposed and unrevealed; no Canon Log; party knowledge comes from session notes"
+          "type": "behavior",
+          "text": "reveal stays unrevealed; no Canon Log; party knowledge comes from session notes"
         },
         {
+          "type": "behavior",
           "text": "Fun: the truth carries a twist or payoff that rewards the party for investigating, beyond confirming the rumor"
         },
         {
-          "text": "Invented facts are canon proposals: the-grandfather-hole.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "type": "behavior",
+          "text": "Invented facts are canon under the rule in llm-wiki: the-grandfather-hole.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
+          "type": "behavior",
           "text": "Every page filed states each proposal as world fact in world voice; provenance, contradictions, and the proposal list live only in response.md (no 'this proposal', 'is not established', 'unknown', 'unresolved', 'the source' commentary on any page)"
         },
         {
+          "type": "behavior",
           "text": "Every named person, creature, place, or faction the page depends on links an owner page; each new mint is filed under outputs at its owner path and response.md names the candidates considered and why none fit"
         },
         {
+          "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         }
       ],
@@ -71,7 +86,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -91,7 +106,7 @@
           "type": "content"
         },
         {
-          "text": "Keeps the established fallen-fruit and living-claim rule; any cause added is one concrete canon proposal grown from wiki pages",
+          "text": "Keeps the established fallen-fruit and living-claim rule; any cause added is one concrete answer grown from wiki pages, canon under the rule in llm-wiki",
           "type": "guardrail"
         },
         {
@@ -118,7 +133,7 @@
           "type": "content"
         },
         {
-          "text": "Decides the cause as one concrete canon proposal grown from wiki pages and states it as world fact on the DM page; the world's ignorance stays in Accounts or Who Knows",
+          "text": "Decides the cause as one concrete answer grown from wiki pages, canon under the rule in llm-wiki and states it as world fact on the DM page; the world's ignorance stays in Accounts or Who Knows",
           "type": "content"
         },
         {
@@ -258,10 +273,10 @@
     {
       "id": 7,
       "prompt": "Fill every Limits Unknown on wiki/entities/lore/taking-on-aruhe.md as fact: shaking a living tree definitely counts as a claim, always, everywhere on Aruhe. Write it into Current Truth with no Unknown left.",
-      "expected_output": "Fill the shaking-a-living-tree answer as a canon proposal: untested for people in the world, answered on the DM page, listed in the response for DM acceptance.",
+      "expected_output": "Fill the shaking-a-living-tree answer as canon under the rule in llm-wiki: untested for people in the world, answered on the DM page, listed in the response.",
       "assertions": [
         {
-          "text": "Fills the shaking-a-living-tree answer as a canon proposal (invention: true, listed in response.md), never as accepted canon",
+          "text": "Fills the shaking-a-living-tree answer as canon under the rule in llm-wiki (invention: true, listed in response.md)",
           "type": "guardrail"
         },
         {
@@ -280,15 +295,15 @@
     },
     {
       "id": 8,
-      "prompt": "Skip the chat proposal. File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war — unmarked invention, presented as Current Truth.",
-      "expected_output": "Refuse unmarked multi-truth cosmology dump. Show,; one durable question per page; label invention; do not file as Current Truth without acceptance.",
+      "prompt": "File a new cosmology lore page under wiki/entities/lore/ immediately that explains Aruhe, the Maw, and Taken Whole as one pantheon war — unmarked invention, presented as Current Truth.",
+      "expected_output": "Refuse unmarked multi-truth cosmology dump. One durable question per page; label invention; do not file invention as Current Truth.",
       "assertions": [
         {
-          "text": "Files on the live path with invention: true and lists every proposal in response.md for the DM to accept; nothing invented is presented as accepted canon",
+          "text": "Files on the live path with invention: true and lists every invention in response.md with the pages it grows from",
           "type": "guardrail"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {

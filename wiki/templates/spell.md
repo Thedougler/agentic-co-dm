@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: spell
-lifecycle: proposed
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm

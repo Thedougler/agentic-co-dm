@@ -6,7 +6,7 @@ description: >
 
 # Retcon
 
-Correct a campaign wiki error only when the user's current message explicitly asks for a retcon; that request is the authorization to repair the live wiki directly, overriding FR-019 and lifecycle gates for this correction only.
+Correct a campaign wiki error only when the user's current message explicitly asks for a retcon; that request is the authorization to repair the live wiki directly, overriding FR-019 for this correction only.
 
 ## Start
 

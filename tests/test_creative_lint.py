@@ -44,28 +44,31 @@ def test_bundle_resolution_caps_diagnostics():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
     resolved = dict((rule.id, severity) for rule, severity in bundles.get("session-prep").resolve(registry))
-    assert set(resolved) == {"CANON001", "CANON002", "WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
+    assert set(resolved) == {"WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
 
 
 
-def test_vale_deprecated_output_gets_typed_repair():
+def test_vale_repo_local_style_is_human_repair(tmp_path):
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     findings = map_vale_output(
         {"wiki/example.md": [{"Check": "Deprecated.DMThesis", "Line": 15,
                               "Span": [1, 12], "Match": "## DM Thesis",
-                              "Message": "delete the deprecated section"}]},
+                              "Message": "DM Thesis is deprecated"}]},
         registry,
         root=ROOT,
     )
     assert findings[0].rule_id == "VALE_Deprecated.DMThesis"
     assert findings[0].severity == "REPAIR"
-    assert findings[0].repair_class == "deterministic_repair"
-    assert findings[0].repair_action["kind"] == "delete_section"
+    assert findings[0].repair_class == "human_repair"
+    assert findings[0].repair_action is None
 
+    from tools.wiki_ops.repair_plans import build_safe_fix_plan
 
-
-
-
+    (tmp_path / "example.md").write_text("# Example\n\n## DM Thesis\n", encoding="utf-8")
+    finding = findings[0].to_dict() | {"file": "example.md"}
+    operations, skipped = build_safe_fix_plan(tmp_path, [finding], scope={"paths": ["example.md"]})
+    assert operations == []
+    assert skipped == []
 
 
 def test_shadow_recorder_writes_jsonl(tmp_path):
@@ -111,23 +114,6 @@ def test_bundle_validation_rejects_duplicate_categories(tmp_path):
         BundleRegistry.load(path)
 
 
-def test_symbolic_rules_detect_dead_and_stale_entities(tmp_path):
-    vault = tmp_path / "wiki"
-    (vault / "entities").mkdir(parents=True)
-    (vault / "journal").mkdir()
-    owner = "---\ntitle: Dead NPC\ncategory: npc\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: npc\nlifecycle: rejected\nreveal: dm\n---\n"
-    (vault / "entities" / "dead-npc.md").write_text(owner, encoding="utf-8")
-    source = "---\ntitle: Prep\ncategory: session\ntags: []\nsources: []\ncreated: 2026-01-01\nupdated: 2026-01-01\ntype: session-prep\nlifecycle: draft\nreveal: dm\n---\n[[dead-npc]]\n"
-    source_path = vault / "journal" / "prep.md"
-    source_path.write_text(source, encoding="utf-8")
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    bundles = BundleRegistry.load(ROOT / "rules" / "bundles.yml")
-    result = LintEngine(registry, bundles, root=tmp_path, vault=vault).run(
-        bundle="session-prep", paths=[source_path]
-    )
-    assert any(f.rule_id == "CANON001" and f.evaluator == "symbolic" for f in result.findings)
-
-
 def test_shadow_rules_are_excluded_from_active_result(tmp_path):
     vault = tmp_path / "wiki"
     vault.mkdir()
@@ -150,7 +136,7 @@ def test_shadow_rules_are_excluded_from_active_result(tmp_path):
 def test_fixture_families_have_fail_and_pass_cases():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     for rule in registry.active():
-        if rule.id.startswith(("DIVERSITY", "CANON", "WIKI", "RETRIEVAL")):
+        if rule.id.startswith(("DIVERSITY", "WIKI", "RETRIEVAL")):
             directory = FIXTURES / rule.id
             assert list(directory.glob("fail_*.md")), rule.id
             assert list(directory.glob("pass_*.md")), rule.id
@@ -216,3 +202,67 @@ def test_bloodhawk_keeps_linear_creature_layout():
 
     _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
     assert not any("Extra formatting marker" in item.evidence for item in findings)
+
+
+def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
+    import shutil
+    import subprocess
+
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE, render_vocab
+
+    root = Path(__file__).resolve().parents[1]
+    vocab = render_vocab(root / "wiki")
+    assert "DM" not in vocab.splitlines()
+
+    vale = shutil.which("vale") or str(root / ".venv/bin/vale")
+    if not Path(vale).is_file():
+        pytest.skip("vale binary is absent")
+    config_root = tmp_path / "config"
+    shutil.copytree(root / "styles", config_root / "styles")
+    shutil.copy(root / ".vale.ini", config_root / ".vale.ini")
+    (config_root / VOCAB_RELATIVE).write_text(vocab, encoding="utf-8")
+    scratch = tmp_path / "scratch.md"
+    scratch.write_text(
+        "# Scratch\n\nThe DM Thesis section names the villain.\n\nTrack the faction clock here.\n",
+        encoding="utf-8",
+    )
+    proc = subprocess.run(
+        [vale, "--output=line", f"--config={config_root / '.vale.ini'}", str(scratch)],
+        cwd=config_root,
+        capture_output=True,
+        text=True,
+    )
+    output = proc.stdout + proc.stderr
+    assert "Deprecated.DMThesis" in output, output
+    assert "Deprecated.FactionClock" in output, output
+
+
+def test_canon_rules_and_category_are_gone():
+    import yaml
+
+    registry = Registry.load(ROOT / "rules" / "registry.yml")
+    ids = {rule.id for rule in registry.rules}
+    assert not [rule_id for rule_id in ids if rule_id.startswith("CANON")]
+    assert all(rule.category != "canon" for rule in registry.rules)
+    bundles = yaml.safe_load((ROOT / "rules" / "bundles.yml").read_text(encoding="utf-8"))
+    for bundle in bundles["bundles"].values():
+        for key in ("block", "review", "diagnostics"):
+            assert "canon" not in bundle[key], bundle
+    from tools.creative_lint.constants import CATEGORIES
+
+    assert "canon" not in CATEGORIES
+
+
+def test_linting_a_temp_vault_leaves_the_tracked_vocabulary_alone(tmp_path: Path):
+    from tools.creative_lint.vale_adapter import run_vale
+    from tools.creative_lint.vale_vocab import VOCAB_RELATIVE
+
+    root = Path(__file__).resolve().parents[1]
+    tracked = root / VOCAB_RELATIVE
+    before = tracked.read_bytes()
+    vault = tmp_path / "vault"
+    (vault / "entities/npc").mkdir(parents=True)
+    page = vault / "entities/npc/zorblax-quennifer.md"
+    page.write_text("---\ntitle: Zorblax Quennifer\ntype: npc\n---\n\n# Zorblax Quennifer\n", encoding="utf-8")
+    run_vale([page], Registry.load(root / "rules/registry.yml"), root=root, vault=vault)
+    assert tracked.read_bytes() == before

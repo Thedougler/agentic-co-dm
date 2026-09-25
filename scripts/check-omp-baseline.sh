@@ -45,7 +45,13 @@ passed+=("sticky-rules")
 grep -q 'maxConcurrency: 4' .omp/config.yml || fail ".omp/config.yml maxConcurrency is not 4"
 grep -q 'maxRecursionDepth: 1' .omp/config.yml || fail ".omp/config.yml maxRecursionDepth is not 1"
 grep -A1 '^advisor:' .omp/config.yml | grep -q 'enabled: false' || fail ".omp/config.yml advisor not disabled"
-grep -A1 '^memory:' .omp/config.yml | grep -qE 'backend: "?off"?' || fail ".omp/config.yml memory not off"
+# memory.backend must be false or off (quoted or not); read the backend: line inside the memory: block.
+backend="$(awk '/^memory:/ { inside = 1; next } inside && /^[^[:space:]#]/ { exit } inside && $1 == "backend:" { sub(/^[[:space:]]*backend:[[:space:]]*/, ""); sub(/[[:space:]]+#.*$/, ""); print; exit }' .omp/config.yml)"
+[[ -n "$backend" ]] || fail "memory key missing"
+case "$backend" in
+  false | '"false"' | "'false'" | off | '"off"' | "'off'") ;;
+  *) fail "memory enabled: backend=$backend" ;;
+esac
 grep -A1 '^autolearn:' .omp/config.yml | grep -q 'enabled: false' || fail ".omp/config.yml autolearn not off"
 passed+=("config-caps")
 

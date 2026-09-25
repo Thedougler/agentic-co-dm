@@ -1,5 +1,7 @@
 # Feature Specification: Agent Autonomy Scope
 
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+
 **Feature Branch**: `026-agent-autonomy-scope`
 
 **Created**: 2026-09-18
@@ -114,7 +116,7 @@ Agent-facing files use predictable paths and consistent searchable names. That p
 **Acceptance Scenarios**:
 
 1. **Given** this feature or a later feature adds a new agent-facing file, **When** it is offered as done, **Then** its path and name match the checkable placement rule
-2. **Given** an existing agent-facing file whose path or name does not match the placement rule, **When** this feature ships, **Then** it has been renamed and references updated; AGENT002 is green
+2. **Given** an existing agent-facing file whose path or name does not match the placement rule, **When** this feature ships, **Then** it has been renamed and references updated; the placement rule (no current checker) is green
 
 ### Edge Cases
 
@@ -124,7 +126,7 @@ Agent-facing files use predictable paths and consistent searchable names. That p
 - Ingest file placed by the DM contradicts the user or a corrected transcript — that ingest is not canon
 - Session prep needs a new named owner the user asked to introduce — file the page
 - A later feature adds an agent-facing standard with no checkable rule — the feature is incomplete; do not treat AGENTS.md prose as a substitute
-- Existing instruction files that predate this feature are updated and renamed until AGENT001–AGENT002 are green
+- Existing instruction files that predate this feature are updated and renamed until `luna-eval` evals are green
 - An agent-facing file in an ad-hoc path — the checkable placement rule fails; the work is not done
 
 
@@ -133,19 +135,19 @@ Agent-facing files use predictable paths and consistent searchable names. That p
 ### Functional Requirements
 
 
-- **FR-001**: This feature MUST remove Work gates, DM-approval pauses, and extra canon workflow from agent-facing instructions. Requested work is done, then a short done-summary. Checkable rule: `AGENT001`.
+- **FR-001**: This feature MUST remove Work gates, DM-approval pauses, and extra canon workflow from agent-facing instructions. Requested work is done, then a short done-summary. Checkable rule: `luna-eval` Work-gate evals.
 - **FR-002**: Agents MUST complete: linting, template conformance, frontmatter normalization, link repair, ingest processing, structural migration, index/log/hot maintenance, manifest recording, staging-area management, and user-requested new content
 - **FR-003**: Canon is only this: if the user said it, it is canon; a more recent user statement is more canon; a transcript is canon after ASR issues are fixed; a DM-placed ingest file is canon when it does not contradict those.
-- **FR-004**: FR-001–FR-003 MUST be encoded as checkable rules (`AGENT001` plus constitution X as the four-line owner). `AGENTS.md` MUST state why and examples only and MUST point at those rules.
+- **FR-004**: FR-001–FR-003 MUST be encoded as checkable rules (`luna-eval` Work-gate evals plus constitution X as the four-line owner). `AGENTS.md` MUST state why and examples only and MUST point at those rules.
 - **FR-005**: Skills and instructions that still describe Work gates, DM-approval pauses, or extra canon steps MUST have those procedures removed
 - **FR-006**: The project's development practices MUST treat agent skills, instructions, and guidance documents as primary deliverables, with helper scripts and tooling as supporting infrastructure
 - **FR-007**: Review of skill/instruction changes MUST use the existing skill-eval method (held-out prompts, with-skill vs without-skill, graded assertions). It MUST NOT add a new checklist, PR template, or review skill, and MUST NOT treat coverage or type-safety as the primary bar
 - **FR-008**: The only required user-facing report after completed work is one short done-summary. Agents MUST NOT add extra questions.
 - **FR-009**: After checkable rules are green, the agent MUST report one short done-summary naming what changed and where. Work is not done while rules for that work still fail.
 - **FR-010**: When a single request mixes maintenance and user-requested new content, the agent MUST complete all of it, reach green, and issue one done-summary
-- **FR-011**: Each agent-facing standard — this feature's, later features', and existing instruction files this feature updates — MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. Existing instruction files MUST be updated until green. Checkable rule: `AGENT003`.
+- **FR-011**: Each agent-facing standard — this feature's, later features', and existing instruction files this feature updates — MUST ship as a machine-checkable rule. Agents MUST iterate until that rule is green. `AGENTS.md` MAY explain why and give examples and MUST NOT be treated as a sufficient substitute for the rule. Existing instruction files MUST be updated until green. Checkable rule: the spec-citation rule (no current checker).
 - **FR-012**: Every task the agent executes is in scope for the green-before-done loop
-- **FR-013**: Agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule (`AGENT002`). This feature MUST bulk-rename the existing tree to satisfy that rule. References MUST be updated with the rename.
+- **FR-013**: Agent-facing files MUST use predictable paths and consistent searchable names, encoded as a checkable rule (the placement rule (no current checker)). This feature MUST bulk-rename the existing tree to satisfy that rule. References MUST be updated with the rename.
 - **FR-014**: The same checkable rules MUST apply on the agent path and the human path. Do not keep an agent-only honor system.
 
 
@@ -177,6 +179,6 @@ Agent-facing files use predictable paths and consistent searchable names. That p
 - `AGENTS.md` explains why and examples; the checkable rule is the contract
 - Helper scripts and tooling continue to follow Constitution VI ("Software and Instructions Are Agent-Shaped")
 - Skill evaluation for instruction changes reuses the existing `skill-creator` eval loop
-- Existing instruction files are updated and renamed in this feature until AGENT001–AGENT002 are green.
+- Existing instruction files are updated and renamed in this feature until `luna-eval` evals are green.
 - The four-line canon rule is the entire canon workflow
 - Checkable rules are shared by agents and humans (FR-014)

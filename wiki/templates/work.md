@@ -6,7 +6,6 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: work
-lifecycle: proposed
 reveal: unrevealed
 grounded_in: []
 invention: true
@@ -27,4 +26,4 @@ Write the Work in complete grammatical sentences. Mark what is invented. Cite `[
 
 ## Decision
 
-The DM accepts, edits, or rejects. `lifecycle` stays `proposed` until that decision.
+The DM accepts, edits, or rejects.
