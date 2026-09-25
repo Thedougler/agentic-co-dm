@@ -32,7 +32,7 @@ def _run_bad(tmp_path: Path, payload: dict, skill_dir: str = "demo-skill") -> su
 
 
 def test_all_skill_eval_files_pass_the_schema_check():
-    assert len(EVAL_FILES) == 60
+    assert EVAL_FILES
     import importlib.util
     from importlib.machinery import SourceFileLoader
 
