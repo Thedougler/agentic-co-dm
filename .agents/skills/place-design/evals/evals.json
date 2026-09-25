@@ -432,7 +432,7 @@
         },
         {
           "type": "behavior",
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists them with the pages they grow from"
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists them with the pages they grow from"
         },
         {
           "type": "behavior",

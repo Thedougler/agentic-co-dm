@@ -72,7 +72,7 @@ Lint rewrites the tracked bookkeeping files `wiki/_meta/lint-cache.json`, `wiki/
 | V-04b | The scratch "DM Thesis" finding is `human_repair` (covered by the `tests/test_creative_lint.py` regression). |
 | V-04c | The four folded scripts are absent. |
 | V-04d | `scripts/vale-vocab` and `tools/check_wiki_pages.py` absent; `lint:vale` is `./scripts/wiki lint`; `rg` finds nothing. |
-| V-04e | Pages: no lifecycle/confidence field. Code and contracts: only exempt rule-status and test-assertion hits. Open: the PR #170 design skills merged from main keep "canon proposal" wording (11 skills, their references and evals, `wiki/templates/vehicle.md`) and lore-design keeps two `lifecycle` lines; they were left as written at Nick's direction during the merge, so SC-015 (a) is not met for that text. |
+| V-04e | Pages: no lifecycle/confidence field. Code and contracts: only exempt rule-status and test-assertion hits. The PR #170 design skills merged from main, their references and evals, and `wiki/templates/vehicle.md` now state invention as canon under the rule in `llm-wiki` (no DM-acceptance step), and lore-design no longer names `lifecycle`; the `canon proposal` search returns nothing, so SC-015 (a) is met. |
 | V-04f | The canon rule has one hit, in `.agents/skills/llm-wiki/SKILL.md`; both AGENTS.md files link to it; `Sunkline.md` (`status: active`) reports `Required section 'Active Agenda' is missing`. |
 | V-09 | `tests/test_luna_eval.py` passes: all 60 eval files pass the schema check; no Work-gate wording. |
 | V-11 | `tests/test_policy_conflicts.py` passes. |

@@ -9,7 +9,7 @@ the table instead of exhaustively simulating edge cases.
 
 Ground invention in wiki pages and 2024 spell patterns. When reskinning a close
 peer, name the peer and write the effect in your own words; every change from
-the peer is a canon proposal.
+the peer is canon under the rule in `llm-wiki`.
 
 ## Section fill detail
 
@@ -52,7 +52,7 @@ treat item spell-scroll pages as the spell page itself.
 
 Fill when the spell needs history: old truth, who still cares, surviving
 evidence, and how that history changes a present choice. Provenance the wiki
-leaves silent is a canon proposal stated as world fact. Established lore keeps
+leaves silent is canon under the rule in `llm-wiki`, stated as world fact. Established lore keeps
 its causes: a new spell explains nothing a lore page already explains
 differently.
 
@@ -105,7 +105,7 @@ grant info, leverage, or a risky gambit — never an automatic campaign win.
 - What 2024 peers calibrate level and pressure?
 - Does Discovery name a source page, a price, and who notices a casting?
 - Do Rulings answer the likely tricks, counterplay, and enemy use?
-- Is every invention a canon proposal, stated as world fact and listed in the
+- Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the
   response?
 
 ## Failure modes

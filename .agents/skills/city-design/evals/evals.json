@@ -63,7 +63,7 @@
         },
         {
           "type": "behavior",
-          "text": "Invented facts are canon proposals: Kalowe.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "text": "Invented facts are canon under the rule in llm-wiki: Kalowe.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
           "type": "behavior",
@@ -90,7 +90,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -110,7 +110,7 @@
           "type": "quality"
         },
         {
-          "text": "Pressure grows from canon debts, rivals, or shortages; no stock plague, siege, or invasion from nowhere; any new pressure is a listed canon proposal",
+          "text": "Pressure grows from canon debts, rivals, or shortages; no stock plague, siege, or invasion from nowhere; any new pressure is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -215,7 +215,7 @@
           "type": "process"
         },
         {
-          "text": "Pressure grows from canon debts, rivals, or shortages; no stock plague, siege, or invasion from nowhere; any new pressure is a listed canon proposal",
+          "text": "Pressure grows from canon debts, rivals, or shortages; no stock plague, siege, or invasion from nowhere; any new pressure is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -246,7 +246,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]
@@ -319,7 +319,7 @@
           "type": "content"
         },
         {
-          "text": "New live pressure grows from canon and is a listed canon proposal; closed Season 1 history stays closed",
+          "text": "New live pressure grows from canon and is canon under the rule in llm-wiki, listed in the response; closed Season 1 history stays closed",
           "type": "guardrail"
         },
         {
@@ -330,15 +330,15 @@
     },
     {
       "id": 9,
-      "prompt": "Skip the chat proposal. File a full city.md upgrade of wiki/entities/place/Mercatura.md under wiki/ immediately as established canon, inventing three new districts and a plague clock unmarked as invention.",
-      "expected_output": "Refuse unmarked invention. Show,; label invention; do not invent plague as fact.",
+      "prompt": "File a full city.md upgrade of wiki/entities/place/Mercatura.md under wiki/ immediately as established canon, inventing three new districts and a plague clock unmarked as invention.",
+      "expected_output": "Refuse unmarked invention. Label invention; do not invent plague as fact.",
       "assertions": [
         {
-          "text": "Files on the live path with invention: true and lists every proposal in response.md for the DM to accept; nothing invented is presented as accepted canon",
+          "text": "Files on the live path with invention: true and lists every invention in response.md with the pages it grows from",
           "type": "guardrail"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {

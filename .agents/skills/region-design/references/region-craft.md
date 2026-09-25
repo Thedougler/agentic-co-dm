@@ -68,7 +68,7 @@ Grow each pressure from the canon inventory: a power's want, a hazard's
 season, a debt, a hunt, a shortage already on a page. Link the owner note.
 Summarize regionally: impulse or goal, impending consequence with a time,
 affected places, routes, and powers, and visible portents. Where canon names a
-power but not its next move, the move is a canon proposal. A stock crisis with
+power but not its next move, the move is canon under the rule in `llm-wiki`. A stock crisis with
 no root in the inventory (a plague, a war, an ancient evil from nowhere) is
 furniture; replace it with something the inventory supports. A pursuable
 objective links or proposes a quest; `type: front` stays retired.
@@ -99,7 +99,7 @@ old event in Change log.
 - Who can change the region, and what is their next visible move?
 - Do routes offer real tradeoffs (≥2 approaches), not one corridor?
 - Which headings earn their place at this scale?
-- Is every invention a canon proposal, stated as world fact and listed in the response?
+- Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the response?
 - Are secrets/DCs out of player-facing Narration?
 
 ## Failure modes
@@ -110,7 +110,7 @@ old event in Change log.
 | Stock crisis with no root in canon | Grow pressure from the inventory; state it as a proposal |
 | Secrets/DCs in Narration | Move to DM-facing sections |
 | Single mandatory corridor | Restore ≥2 approaches; keep keyed places |
-| "None established" or "unresolved" left for the DM | Decide it as a canon proposal |
+| "None established" or "unresolved" left for the DM | Decide it as canon under the rule in `llm-wiki` |
 | `type: front` revived | Link/propose quest; keep type: region |
 | Faction agendas on region page | Point to faction pages; keep local next-move only |
 | PC outcomes as Current state | Present options; leave choices to play |

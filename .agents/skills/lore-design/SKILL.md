@@ -44,7 +44,7 @@ These hold in every step.
 
 - **Canon.** User-said facts file immediately on the live path. Whatever the
   question needs that canon leaves silent, records as unknown, or contradicts,
-  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  decide now as canon under the rule in `llm-wiki` (`docs/agents/table-ready.md` § Fill the
   silence): one concrete answer, stated on the page as world fact where the DM
   uses it, with the page marked `invention: true`. The response lists each
   proposal with the `[[pages]]` it grows from; a proposal that settles a
@@ -60,8 +60,8 @@ These hold in every step.
 - **Bar.** Existing vault pages are canon to keep, never a quality model; many
   predate this skill. The bar is the steps and `## Done` below.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every sign,
-  account, and clue has its truth on the page by name. `lifecycle` and
-  `reveal` stay `proposed` and `unrevealed` until play reveals the lore.
+  account, and clue has its truth on the page by name. `reveal` stays
+  `unrevealed` until play reveals the lore.
 - **Process stays off the page.** The inventory and question are working
   notes; the page carries only their facts.
 
@@ -185,12 +185,12 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Accounts name their holders; each needed conclusion has three clues from
   different linked sources; uncertain clues carry Ability (Skill) and DC.
 - At the Table fills notice, explains, enables, and warns.
-- Party knowledge comes from session notes; lifecycle and reveal stay proposed
-  and unrevealed.
+- Party knowledge comes from session notes; `reveal` stays
+  `unrevealed`.
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §
   Cast before minting).
-- User-said canon is filed; every invention is a canon proposal, marked on the
+- User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
 - Every page filed passes the world-voice search (`docs/agents/table-ready.md`
   § Fill the silence).

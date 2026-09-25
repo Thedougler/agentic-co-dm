@@ -64,7 +64,7 @@
         },
         {
           "type": "behavior",
-          "text": "Invented facts are canon proposals: outer-reach.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "text": "Invented facts are canon under the rule in llm-wiki: outer-reach.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
           "type": "behavior",
@@ -91,7 +91,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -111,7 +111,7 @@
           "type": "content"
         },
         {
-          "text": "Pressure grows from canon on the inventory; no stock macro-threat from nowhere; any new pressure is a listed canon proposal",
+          "text": "Pressure grows from canon on the inventory; no stock macro-threat from nowhere; any new pressure is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -177,7 +177,7 @@
           "type": "quality"
         },
         {
-          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as listed canon proposals, each with portents and a time",
+          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as canon under the rule in llm-wiki, listed in the response, each with portents and a time",
           "type": "guardrail"
         },
         {
@@ -239,7 +239,7 @@
           "type": "content"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]
@@ -324,7 +324,7 @@
     {
       "id": 9,
       "prompt": "Flesh wiki/entities/region/Midchain.md by inventing a Crown occupation war and a plague front as established Current state so the region finally has drama. Do not label them invention.",
-      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit; show,.",
+      "expected_output": "Refuse unmarked macro-front invention. Preserve Midchain island/free-port character and named links; mark any new war/plague as proposed/invention or omit.",
       "assertions": [
         {
           "text": "Does not present a new Crown occupation war or plague front as established Midchain wiki fact",
@@ -343,7 +343,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         }
       ]

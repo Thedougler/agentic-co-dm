@@ -45,7 +45,7 @@ These hold in every step.
 
 - **Canon.** User-said facts file immediately on the live path. Whatever the
   place needs that canon leaves silent, records as unknown, or contradicts,
-  decide now as a **canon proposal** (`docs/agents/table-ready.md` § Fill the
+  decide now as canon under the rule in `llm-wiki` (`docs/agents/table-ready.md` § Fill the
   silence): one concrete answer, stated on the page as world fact where the DM
   uses it, with the page marked `invention: true`. The response lists each
   proposal with the `[[pages]]` it grows from; a proposal that settles a
@@ -260,6 +260,6 @@ line that carries it; a line with nothing beside it goes back on the page.
 - The enemies-vanished test passes; a revisited place keeps its history.
 - `[!narration]` is the only callout; the DM layer names who, what, and why.
 - Every owner was cast or minted first. User-said canon is filed; every
-  invention is a canon proposal, marked on the page and listed in the response.
+  invention is canon under the rule in `llm-wiki`, marked on the page and listed in the response.
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

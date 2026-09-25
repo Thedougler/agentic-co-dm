@@ -19,7 +19,7 @@ summary: ""
      At a Glance → Connections → At the Table → Provenance → Art.
      Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
 
-     Every sheet and component line carries a number; where canon is silent, the peer craft's figure is a canon proposal.
+     Every sheet and component line carries a number; where canon is silent, the peer craft's figure is canon under the rule in `llm-wiki`.
      Numbers one-home: hull AC/HP (and other sheet numbers) live under Components/Sheet headings, not an unheaded blob.
      Handling vs At the Table: one play loop — do not duplicate the same run advice in both.
      Provenance is ownership/history facts only — forbid meta ingest Provenance on DM pages.

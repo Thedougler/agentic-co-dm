@@ -64,7 +64,7 @@
         },
         {
           "type": "behavior",
-          "text": "Invented facts are canon proposals: hcs-relentless.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "text": "Invented facts are canon under the rule in llm-wiki: hcs-relentless.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
           "type": "behavior",
@@ -91,7 +91,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -99,7 +99,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (lifecycle, reveal, campaign, visibility, summary; region/berth when known)",
+          "text": "Frontmatter includes type: vehicle, kind: ship (or valid kind), and required identity fields (reveal, campaign, visibility, summary; region/berth when known)",
           "type": "structure"
         },
         {
@@ -115,11 +115,11 @@
           "type": "content"
         },
         {
-          "text": "Every new number (speed, helm and movement AC/HP, damage threshold, weapons) is anchored on a 5e peer craft and listed as a canon proposal",
+          "text": "Every new number (speed, helm and movement AC/HP, damage threshold, weapons) is anchored on a 5e peer craft and listed as canon under the rule in llm-wiki",
           "type": "guardrail"
         },
         {
-          "text": "Every blank or Unknown sheet and component line is filled with a peer-anchored number stated as a canon proposal",
+          "text": "Every blank or Unknown sheet and component line is filled with a peer-anchored number stated as canon under the rule in llm-wiki",
           "type": "guardrail"
         },
         {
@@ -165,7 +165,7 @@
           "type": "structure"
         },
         {
-          "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (lifecycle, reveal, campaign, visibility, summary)",
+          "text": "Frontmatter includes type: vehicle, kind (ship|boat|other), and required identity fields (reveal, campaign, visibility, summary)",
           "type": "structure"
         },
         {
@@ -177,7 +177,7 @@
           "type": "process"
         },
         {
-          "text": "Invented facts are canon proposals: the page carries invention: true and response.md lists each proposal with the pages it grows from",
+          "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
         },
         {
@@ -208,7 +208,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Keeps the established chassis and canon; any weapon, fitting, or conspiracy added grows from named wiki pages and is a listed canon proposal",
+          "text": "Keeps the established chassis and canon; any weapon, fitting, or conspiracy added grows from named wiki pages and is canon under the rule in llm-wiki, listed in the response",
           "type": "guardrail"
         },
         {
@@ -266,7 +266,7 @@
           "type": "content"
         },
         {
-          "text": "Any upgrade keeps the established class and is a listed canon proposal on the same chassis",
+          "text": "Any upgrade keeps the established class and is canon under the rule in llm-wiki, listed in the response on the same chassis",
           "type": "guardrail"
         },
         {
@@ -278,10 +278,10 @@
     {
       "id": 7,
       "prompt": "Fill every Unknown on the Uncertainty sheet — speed, passengers, cargo, damage threshold, helm/movement numbers, and a full Weapons battery — as established fact. No labels, no proposals.",
-      "expected_output": "Fill Unknowns with peer-anchored numbers as canon proposals, the page marked invention: true and each proposal listed in the response.",
+      "expected_output": "Fill Unknowns with peer-anchored numbers as canon under the rule in llm-wiki, the page marked invention: true and each proposal listed in the response.",
       "assertions": [
         {
-          "text": "Fills speed, passengers, cargo, damage threshold, helm, and movement with peer-anchored numbers as canon proposals, the page marked invention: true",
+          "text": "Fills speed, passengers, cargo, damage threshold, helm, and movement with peer-anchored numbers as canon under the rule in llm-wiki, the page marked invention: true",
           "type": "guardrail"
         },
         {
@@ -289,7 +289,7 @@
           "type": "structure"
         },
         {
-          "text": "Any Weapons battery is a canon proposal consistent with Thunk's cannon debt, and the debt stays crew pressure",
+          "text": "Any Weapons battery is canon under the rule in llm-wiki consistent with Thunk's cannon debt, and the debt stays crew pressure",
           "type": "content"
         }
       ]
@@ -331,7 +331,7 @@
           "type": "content"
         },
         {
-          "text": "response.md names the pages merged and the contradictions settled, for the DM to accept",
+          "text": "response.md names the pages merged and the contradictions settled",
           "type": "process"
         },
         {

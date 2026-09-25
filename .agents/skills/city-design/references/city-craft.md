@@ -69,7 +69,7 @@ interferes. Each entry needs:
 - what opposes them;
 - **If nobody intervenes:** next meaningful change, with a time, grown from
   pressure the canon already carries (a debt, a rival, a shortage) and stated as
-  a canon proposal where canon is silent;
+  canon under the rule in `llm-wiki` where canon is silent;
 - trigger or date when timing matters.
 
 Prefer discoverable signs and ≥2 approaches or a costly bypass. Refuse
@@ -98,7 +98,7 @@ new normal, fold it into the baseline section and archive the old delta in
 - Can the party intentionally seek at least one place, service, or route?
 - Which local rules actually change a choice this session?
 - Where do faction wants collide with districts or the party?
-- Is every invention a canon proposal, stated as world fact and listed in the response?
+- Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the response?
 
 ## Failure modes
 

@@ -66,7 +66,7 @@
         },
         {
           "type": "behavior",
-          "text": "Invented facts are canon proposals: five-blades.md carries invention: true and response.md lists each proposal with the pages it grows from"
+          "text": "Invented facts are canon under the rule in llm-wiki: five-blades.md carries invention: true and response.md lists each proposal with the pages it grows from"
         },
         {
           "type": "behavior",
@@ -97,7 +97,7 @@
           "type": "content"
         },
         {
-          "text": "Any fracture or internal politics added grows from named wiki pages and is a listed canon proposal; the non-intervention doctrine is kept",
+          "text": "Any fracture or internal politics added grows from named wiki pages and is canon under the rule in llm-wiki, listed in the response; the non-intervention doctrine is kept",
           "type": "guardrail"
         },
         {
