@@ -67,3 +67,7 @@ flexGrow=1
 Ferran's posture changes when Ashe's interest threatens the ledger or the shop's survival. He prioritizes keeping the ledger out of Ashe's hands and outliving whoever Ashe names next.
 ```
 ````
+
+### Voice
+
+Ferran speaks in exact quantities and quiet qualifications, treating every request as a line that belongs in the ledger. **Ask:** “What will you be needing, and when will you settle it?” **Refusal:** “That item is already promised.” **Under pressure:** “I keep records so I can survive the people who think records belong to them.”
