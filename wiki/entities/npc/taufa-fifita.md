@@ -59,6 +59,10 @@ Taufa receives a customer without hurry, checks what is in stock, and names one 
 
 Taufa's welcome closes when a customer presses him to repeat what he has heard from ships or asks about [[Fifita's Slip]] from the main counter. He says he keeps no records and stops answering rather than expose what he knows.
 
+### Voice
+
+Taufa speaks in a flat, patient voice and leaves long pauses for customers to fill. **Ask:** “What are you actually buying?” **Refusal:** “I keep no records.” **Under pressure:** “If I do not stock it, I know one source.”
+
 ## Connections
 
 | Connection | Meaning |
