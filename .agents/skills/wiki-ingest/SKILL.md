@@ -12,7 +12,7 @@ description: >
   drafts", "promote my raw pages", or any reference to the _raw/ staging directory. Also a
   5etools JSON, bestiary export, or markdown statblock fence (Campaign OS combatant drops).
   This is the general catch-all ingest skill for any document, text, or URL source not covered
-  by a more specific ingest skill (claude-history-ingest, etc.).
+  by a more specific ingest skill (`wiki-agent` for agent history, etc.).
 ---
 
 # Obsidian Ingest — Document Distillation

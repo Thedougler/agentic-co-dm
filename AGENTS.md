@@ -375,7 +375,6 @@ Match the user's intent to the right skill. Beat-type routing and wiki-kind rout
 | User says something like… | Skill |
 |---|---|
 | "set up my wiki" / "initialize" | `wiki-setup` |
-| "/wiki-history-ingest claude" / "import my Claude history" / "mine my Copilot sessions" / any agent-history ingest | `wiki-history-ingest` |
 | "ingest" / "add this to the wiki" / "process these docs" / "/ingest-url <url>" / logs, transcripts | `wiki-ingest` |
 | "what's the status" / "what's been ingested" / "show the delta" | `wiki-status` |
 | "wiki insights" / "hubs" / "wiki structure" | `wiki-status` (insights mode) |
@@ -476,13 +475,12 @@ Spec Kit adapters (`speckit-*`) are generated harness integrations, not primary 
 
 ### Session history: ingest vs. retrieve
 
-Three skills read agent session caches, and they are not interchangeable:
+Two kinds of skill read agent session caches, and they are not interchangeable:
 
-- `wiki-history-ingest` **ingests** — distils sessions into permanent vault pages. Handles all agent variants (Claude, Copilot, Codex, Hermes, OpenClaw, Pi) as modes.
-- `wiki-agent` **ingests a slice** — finds sessions about one topic in another agent's history and pulls them into the vault.
+- `wiki-agent` **ingests** — finds sessions about one topic in an agent's history and distils them into vault pages.
 - `session-brain` / `session-search` **retrieve** — build a topic graph over the raw sessions and find or load one. They write a sidecar at `~/.claude/session-brain/` and never touch the vault.
 
-If the user wants knowledge preserved, ingest. If they want to find the session where something happened, retrieve.
+If the user wants knowledge preserved, ingest with `wiki-agent`. If they want to find the session where something happened, retrieve.
 
 ## Cross-Project Usage
 

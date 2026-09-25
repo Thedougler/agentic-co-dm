@@ -168,4 +168,4 @@ Append to `$OBSIDIAN_VAULT_PATH/log.md`:
 - Always show page counts so the user can calibrate how much knowledge is in each tool's silo.
 - Use `[[wikilinks]]` for page references (or standard Markdown links if `OBSIDIAN_LINK_FORMAT=markdown` is set).
 - In diff mode, call out the most *surprising* asymmetry explicitly — that's the insight the user came for.
-- If `manifest.py stats` shows empty/missing ledger, say so clearly and suggest running `/wiki-history-ingest` first. Do not open `.manifest.json` to check.
+- If `manifest.py stats` shows empty/missing ledger, say so clearly and suggest ingesting with `wiki-agent` first. Do not open `.manifest.json` to check.

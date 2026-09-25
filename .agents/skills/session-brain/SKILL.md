@@ -7,7 +7,7 @@ description: >
   in a browser. Use when the user says "/session-brain", "build my session map", "cluster my
   claude sessions", "map my session history", "rebuild the session graph", "show me my session
   graph", "what have I been working on lately", "what topics have gone stale". Different from
-  wiki-history-ingest, which distils sessions into vault pages: this builds a retrieval index
+  wiki-agent, which distils sessions into vault pages: this builds a retrieval index
   over the raw sessions and never writes to the vault.
 ---
 
@@ -25,7 +25,7 @@ name the clusters, which takes exactly one turn and requires reading no transcri
 |---|---|
 | Build or refresh the graph; survey topics | `session-brain` (this one) |
 | Find and load a specific past session | `session-search` |
-| Distil sessions into permanent vault pages | `wiki-history-ingest` / `claude-history-ingest` |
+| Distil sessions into permanent vault pages | `wiki-agent` |
 
 ## Step 1: Build
 
@@ -94,7 +94,7 @@ gold borders are bookmarked ones. The time slider and search box filter together
 ## Notes
 
 - **Never write to the vault** from this skill. If the user wants session knowledge in the vault,
-  that is `wiki-history-ingest`.
+  that is `wiki-agent`.
 - **History-only sessions are real.** Roughly 40% of a long-lived cache exists only as prompts in
   `history.jsonl`; those get graph nodes and are findable, but can never be loaded. Say so plainly
   rather than implying they are missing.

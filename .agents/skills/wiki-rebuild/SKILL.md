@@ -37,7 +37,7 @@ blocker, not a reason to roll back valid markdown.
 ### Capability Handoff
 
 After archive plus rebuild, return control to the user to select
-`wiki-ingest`/history-ingest owners. After restore, hand the restored scope to
+`wiki-ingest` or `wiki-agent` owners. After restore, hand the restored scope to
 `wiki-lint` for validation. The receiving result returns to this operation;
 never claim a clean scope from the archive action alone.
 
@@ -129,9 +129,8 @@ Reset `index.md` to the empty template. Reset `log.md` with just the rebuild ent
 Tell the user the vault is cleared and ready for a full re-ingest. They can now run:
 
 1. `wiki-status` — to see all sources as "new"
-2. `claude-history-ingest` — to reprocess Claude history
-3. `codex-history-ingest` — to reprocess Codex session history
-4. `wiki-ingest` — to reprocess documents and any other raw data
+2. `wiki-ingest` — to reprocess documents and any other raw data
+3. `wiki-agent` — to pull agent history back in by topic
 
 Each of these will rebuild the manifest as they go.
 

@@ -345,7 +345,7 @@ Configured via `.env` (see `.env.example`). Only `OBSIDIAN_VAULT_PATH` is requir
 - `OBSIDIAN_VAULT_PATH` — Where the wiki lives **(required)**
 - `OBSIDIAN_SOURCES_DIR` — Where raw source documents are
 - `OBSIDIAN_CATEGORIES` — Comma-separated list of categories
-- `WIKI_SKIP_PROJECTS` — Comma-separated substrings; any project dir whose name contains one is excluded from history ingest (scan + delta + manifest). See the "Project Scoping" step in the history-ingest skills.
+- `WIKI_SKIP_PROJECTS` — Comma-separated substrings; any project dir whose name contains one is excluded when `wiki-agent` reads agent history (scan + delta + manifest).
 - `CLAUDE_HISTORY_PATH` — Where to find Claude conversation data
 - `CODEX_HISTORY_PATH` — Where to find Codex session data
 - `HERMES_HOME` — Where to find Hermes agent data
