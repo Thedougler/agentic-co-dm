@@ -15,6 +15,7 @@ role: contact
 location: "[[calders-tooth-and-port-tidefall]]"
 faction: none
 summary: "Small Rattkin dockhand with too many pockets, unwittingly carrying [[detto-kalash]]'s buried cache note through Port Tidefall."
+invention: true
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -65,6 +66,9 @@ flexGrow=1
 He becomes wary only when someone tries to take his pockets or rushes him. A calm explanation or a trade keeps him cooperative; he does not know the note is [[detto-kalash]]'s buried-cache directions.
 ```
 ````
+### Voice
+
+Vrtek speaks in quick, practical classifications, naming each object as useful, pretty, mysterious, or food. He sounds curious rather than secretive and returns to sorting whenever the conversation stalls. **Ask:** “This one is official, I think. It has a stamp.” **Refusal:** “No taking. You can trade or you can look.” **Under pressure:** “Slow down; I need to know which pocket it belongs in.”
 
 ## Connections
 
