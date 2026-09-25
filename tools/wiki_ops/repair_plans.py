@@ -5,7 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from typing import Any, Callable, Iterable
-from .mutations import MutationOp, section_hash
+from .mutations import MutationOp, apply_mutation, section_hash
 from .transactions import Transaction
 
 
@@ -113,13 +113,32 @@ def _escape_table_pipe_op(vault: Path, finding: dict[str, Any]) -> tuple[Mutatio
     return MutationOp("escape_table_wikilink_pipes", target, selector={"content_hash": section_hash(text)}), None
 
 
+def _rename_page_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationOp | None, str | None]:
+    """noncanonical_basename: rename to the lowercase kebab basename lint computed, rewriting backlinks."""
+    action = finding.get("repair_action") if isinstance(finding.get("repair_action"), dict) else {}
+    source, target = str(action.get("from") or ""), str(action.get("to") or "")
+    path = vault / source
+    if not source or not target or not path.is_file():
+        return None, "target_missing"
+    if (vault / target).exists() and not (vault / target).samefile(path):
+        return None, "target_exists"
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return None, "target_unreadable"
+    return MutationOp("rename_page", source, selector={"content_hash": section_hash(text)},
+                      payload={"new_target": target, "rewrite_backlinks": True}), None
+
+
 _FIXERS: dict[str, Callable[[Path, dict[str, Any]], tuple[MutationOp | None, str | None]]] = {
     "delete_redirect_stub": _delete_redirect_op,
     "escape_table_wikilink_pipe": _escape_table_pipe_op,
+    "rename_page": _rename_page_op,
 }
 _APPLIED_RULE = {
     "delete_file": ("TMPL_redirect_stub", "delete_redirect_stub"),
     "escape_table_wikilink_pipes": ("table_wikilink_unescaped_pipe", "escape_table_wikilink_pipe"),
+    "rename_page": ("noncanonical_basename", "rename_page"),
 }
 
 
@@ -154,7 +173,20 @@ def build_safe_fix_plan(
 
 
 def apply_safe_fix_plan(vault: str | Path, operations: list[MutationOp]) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
-    """Apply a batch atomically; a failed precondition rejects the complete batch."""
+    """Apply single-file repairs as one atomic batch, then each rename on its own (a rename spans backlinks)."""
+    renames = [operation for operation in operations if operation.kind == "rename_page"]
+    applied, skipped = _apply_batch(vault, [operation for operation in operations if operation.kind != "rename_page"])
+    for operation in renames:
+        result = apply_mutation(vault, operation)
+        if result.get("accepted") and result.get("changed"):
+            applied.append({"rule": "noncanonical_basename", "action": "rename_page", "target": operation.target,
+                            "status": "applied", "changed_files": list(result.get("changed_files") or [])})
+        elif not result.get("accepted"):
+            skipped.append({"target": operation.target, "reason": str(result.get("error") or "mutation_failed")})
+    return applied, skipped
+
+
+def _apply_batch(vault: str | Path, operations: list[MutationOp]) -> tuple[list[dict[str, Any]], list[dict[str, str]]]:
     if not operations:
         return [], []
     transaction = Transaction(vault)

@@ -812,3 +812,14 @@ def test_slow_checker_notice_is_a_plain_report(tmp_path: Path, capsys):
     module._tune("lint", [("scripts/wiki-lint:vale", 4000), ("scripts/wiki-lint:template", 900)])
     assert capsys.readouterr().err.strip() == (
         "wiki lint: slowest checker scripts/wiki-lint:vale 4000 ms; next scripts/wiki-lint:template 900 ms")
+
+
+def test_lint_fix_renames_noncanonical_basename_and_rewrites_backlinks(tmp_path: Path):
+    page(tmp_path, "entities/place/Belumara.md", title="Belumara")
+    (tmp_path / "entities/place/harbor.md").write_text("---\ntitle: harbor\n---\n\nSee [[Belumara]].\n", encoding="utf-8")
+    first = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    assert "entities/place/belumara.md" in first["changed"], first
+    assert "belumara.md" in os.listdir(tmp_path / "entities/place")  # case-only rename kept the page
+    assert "[[belumara]]" in (tmp_path / "entities/place/harbor.md").read_text(encoding="utf-8")
+    repeat = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    assert repeat["status"] == "already_done" and repeat["changed"] == []

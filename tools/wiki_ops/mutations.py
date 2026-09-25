@@ -796,6 +796,10 @@ def _atomic_commit(changes: dict[Path, str], deletes: set[Path], originals: Mapp
             replaced.append(path)
         for path in sorted(deletes, key=lambda item: str(item)):
             if path in aliases:
+                # Case-only rename on a case-insensitive filesystem: the write above kept the stored
+                # name, so rename the one entry to the new case.
+                target = next(change for change in changes if _same_file(path, change))
+                os.rename(path, target)
                 continue
             if path.exists():
                 path.unlink()
