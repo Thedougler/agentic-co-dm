@@ -12,6 +12,9 @@ updated: 2026-09-13
 type: vehicle
 reveal: unrevealed
 campaign: shattered-sea
+kind: ship
+region: "Calven"
+berth: "[[calders-tooth-and-port-tidefall]]"
 visibility: dm
 summary: "Fast Tessarine Concordat dispatch sloop for courier service, armed with two cannon."
 provenance:
@@ -21,6 +24,9 @@ provenance:
 tier: supporting
 ---
 # Tessarine Courier Silkvane
+> [!narration] Narration
+> A fast, pale-grey one-masted sloop sits at [[calders-tooth-and-port-tidefall]], clean rigging drawn tight and a Tessarine pennant lifting from the mast. One gun mount marks each side. The transom's registry mark and the ship's locked stern cabin make clear that it carries more than ordinary cargo.
+
 
 A fast Tessarine Concordat sloop built for speed, not cargo, with one mast and a pale grey hull. The transom bears a Concordat registry mark, and a Tessarine pennant flies when underway. It has one gun mount per side and clean rigging. Nothing about it suggests a cargo ship. Currently anchored in Port Tidefall harbour.
 
@@ -33,7 +39,7 @@ Below decks is a locked stern cabin with a desk and iron lockbox. Forward are fo
 
 You can remove both the pennant and registry mark. The ship needs 2 crew for short runs or 8 crew for long runs. The crew work for the Concordat, not the navy. It has no bastion but has 4 cargo units. The locked hold works as hidden storage but is not a true bastion.
 
-## Stats & Combat
+## Sheet
 
 | | |
 |---|---|
@@ -48,10 +54,17 @@ You can remove both the pennant and registry mark. The ship needs 2 crew for sho
 | **Weapons** | 2 × Cannon |
 | **Upkeep** | ~28 gp/week |
 
-## Crew
+## Components
 
-- Captain: none named in source.
-- Notable crew consists of Tessarine Concordat personnel rather than naval ratings. Crew count ranges from 2 to 8 by route.
+- **Hull.** AC 10, 115 hull points; the clean one-mast hull is built for speed.
+- **Helm.** One helm; the minimum short-run crew is two.
+- **Movement.** 75 miles/day in good wind and 38 miles/day in poor wind.
+- **Weapons.** Two cannon, one gun mount per side.
+
+## Crew stations
+
+- **Captain.** None named in the source.
+- **Crew.** Tessarine Concordat personnel rather than naval ratings; 2 crew for short runs and 8 for long runs.
 
 ## Connections
 
