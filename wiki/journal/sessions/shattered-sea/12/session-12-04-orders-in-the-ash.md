@@ -27,9 +27,9 @@ summary: "The trail meets the Burnt Road, where eleven sealed Grung died trying 
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> For an hour the forest has pressed so close you could barely see the back in front of you. Then the trees fall away on both sides, and a straight open road, wide as a village street, runs on ahead. Its whole floor is black flowers, packed so tight they give under your boots like a mattress, and they smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. Nothing sings here, and not one fruit hangs over the road.
+> Past the meadow the fruit piles lead back under the trees, and for an hour the forest presses so close you can barely see the back in front of you. Then all at once the trees fall away, and a straight road wide as a village street opens ahead. Black flowers carpet it so thickly that they give under your boots, and each step squeezes out a smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. Nothing sings here, and not one fruit hangs over the road.
 >
-> A short walk up it, someone has set a small pile of fallen guavas on a broad leaf. Beside the pile a small body lies sunk to the shoulders in flowers, with roots threaded through its ribs. Past it lies another, and another, each one a Grung no bigger than Jean-Claude. A cracked gold disc sits in the nearest one's ribcage, its face crowded with curling script, and a broken clay pot lies by its hand, blackened at the lip.
+> The fruit piles you have been following lead on up it. A short walk ahead, the next pile of guavas sits on a broad leaf. Beside it a small body lies sunk to the shoulders in flowers, roots threaded through its ribs. Past it lies another, and another beyond that, each one a Grung no bigger than Jean-Claude. The roots in the nearest ribcage have closed around a cracked gold disc whose curling script catches the light. By the dead one's hand lies a broken clay pot, its lip still black with soot.
 
 ## Run the Beat
 

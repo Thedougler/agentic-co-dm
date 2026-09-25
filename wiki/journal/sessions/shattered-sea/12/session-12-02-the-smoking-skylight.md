@@ -27,9 +27,9 @@ summary: "Four Calveno hiding in a lava tube are lifted out and point further in
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> The prints lead you inland all morning, past the ring of four empty sleeping mats, until a line of smoke stands straight up out of the forest floor ahead. It climbs from a ragged hole in the ground, wide enough to drop a wagon through, with pale roots hanging over its lip like a torn curtain. Warm air pushes up past your faces, carrying woodsmoke and the sweetness of fruit gone soft.
+> The falcon is a speck over the river by the time the camp is packed, and Matteo keeps close at your heels, his cut sling knotted empty. All morning the prints lead you inland, past a ring of four empty sleeping mats, until a line of smoke rises straight out of the forest floor ahead. It is climbing from a ragged hole wide enough to drop a wagon through, where pale roots hang over the lip like a torn curtain. Warm air breathes up past your faces with woodsmoke in it, and under the smoke, the sweetness of fruit gone soft.
 >
-> Far below, a small fire burns on a shelf of black rock. Three men stare up at you from beside it. One sits with his left leg stuck out stiff and bound to a pair of sticks. A lanky boy with his shirt knotted at the waist still has his lips moving on some count. A broad man sits apart with his back to the rock and his eyes on the fire, the only one who has not looked up. The fourth, a wiry man with rope-scarred hands, is already on his feet and cupping them to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
+> Far below, four men sit around a small fire on a shelf of black rock, and the moment your shadows cross the hole, three faces turn up to you. A lanky boy keeps counting under his breath even as he stares. Beside him, a man with his leg lashed straight to two sticks tries to push himself up and cannot. The broad one sitting apart against the rock never takes his eyes off the flames. It is the wiry man who is already on his feet, cupping rope-scarred hands to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
 
 ## Run the Beat
 

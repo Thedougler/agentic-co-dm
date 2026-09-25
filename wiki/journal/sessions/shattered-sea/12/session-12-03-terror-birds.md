@@ -29,9 +29,9 @@ summary: "The column must cross a 100-foot open gap in the Long Meadow where two
 **Memorable element.** Two mossed trunks at the rims, each with one yellow eye, and the ground shaking under a charge you can feel before you see it.
 
 > [!narration] Open on Action
-> Gianni steps out of the tall grass first, and a tremor runs through the dirt under his feet. Down the meadow to your right, where the open grass meets the shade, a mossy stump rises on two grey scaly legs. Ferns sprout from the black feathers of its neck, and one yellow eye rolls toward Gianni above a hooked beak lined with teeth. Then it runs at him, head low and ragged wings held out stiff, and each footfall thumps up through the soles of your boots.
+> Through the afternoon the fruit piles lead the column on, Ettore's splint bumping against whoever carries him, until the trail breaks into a long meadow. Gianni steps out of the tall grass first, and the dirt under his feet begins to tremble. Down the meadow to your right, a mossy stump at the edge of the shade unfolds two long scaly legs and rises until its head stands higher than a rider's. Its yellow eye finds Gianni and its hooked beak opens on rows of teeth, and then it is coming at him, head low and ragged wings held stiff. Every footfall thumps up through the soles of your boots.
 >
-> Ahead, short-cropped grass runs open all the way to the far wall of tall grass, with deep grey water sliding along its foot. Halfway across, a stand of white blades glitters like broken glass. Behind you, Luca says, very quietly, "There's another one." Far off to the left, at the other end of the open ground, a second mossy stump has one yellow eye open.
+> Ahead, the short grass runs open to the far wall of tall grass, with deep grey water sliding along its foot. Halfway across, a stand of white blades glitters like broken glass. Behind you, Luca says, very quietly, "There's another one." He is looking left, to the far end of the open ground, where a second mossy stump has opened one yellow eye.
 
 ## Run the Beat
 

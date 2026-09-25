@@ -30,9 +30,9 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 **Next:** [[session-12-06-the-raft]]
 
 > [!narration] Opening image
-> At dusk the fruit piles turn off the road toward firelight. The trees open on a clearing roofed by one vine as thick as a mast, slung from trunk to trunk overhead. Every length of it sags under fruit, heavy guavas ribbed pink and gold beside grey, scaly stonepears, and bundles of bare, leafless cords hang among them. Seven thin men are getting to their feet around a small fire beneath it. The tallest, a grey streak through his beard, looks past you to the man you are carrying and stops moving. Beyond the fire a deep channel slides by with a raft of lashed deadwood tied to its bank. Along the treeline behind you, pale pollen hangs in the last light without settling.
+> Nothing more comes out of the trees along the black road, and by dusk Luca is out in front, counting piles aloud. Where they turn off the road toward firelight, the trees open on a clearing roofed by a single vine as thick as a mast. It hangs so heavy with guavas and stonepears that the wood creaks whenever the air moves, and bundles of bare cords sway down between the fruit. Beneath it, around a small fire, seven thin men are getting to their feet. The tallest, a grey streak through his beard, looks straight past you to the man being carried in, and then he stops moving altogether. Behind the men a deep channel slides by with a deadwood raft tied to its bank, and along the treeline pale pollen hangs in the last light without settling.
 >
-> Perrin, the vine dips low where you stand, and a guava and a stonepear sway side by side a hand's width from your nose, the guava's smell sweet and musky. Pale blue light gathers around your cloak in the shape of a whale, and a voice with no mouth behind it fills your skull with a single word. **CONSUME.**
+> Perrin, the vine dips so low where you stand that a guava and a stonepear sway a hand's width from your nose. Their sweet, musky smell fills your whiskers. Then pale blue light gathers around your cloak in the shape of a whale, and a voice with no mouth fills your skull with a single word. **CONSUME.**
 
 ## Thread harvest
 

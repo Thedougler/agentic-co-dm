@@ -41,7 +41,7 @@ summary: "Skarn is gone. The survivors who want to leave have Tommaso's raft, a 
 5. **End on an image.** First light, and the raft pushing off.
 
 > [!narration] Closing image
-> The raft pushes off at first light with nine men packed onto its lashed deadwood, knees drawn up to leave room for Ettore, whose splinted leg lies along the middle. Tommaso works the pole from the back, and the channel carries them off so slowly that the ripples barely reach the bank. Luca bends over the logs with his knife and scratches one last mark into the wood.
+> Nobody under the vine sleeps much after the fight. The raft pushes off at first light with nine men packed onto its lashed deadwood, knees drawn up to leave room for Ettore, whose splinted leg lies along the middle. Tommaso works the pole from the back, and the channel carries them off so slowly that the ripples barely reach the bank. Luca bends over the logs with his knife and scratches one last mark into the wood.
 >
 > On the bank under the great vine, three men stay where they are. The old one with the big clean hands raises one of them. Above the three of them the fruit hangs heavy and untouched, and not one of them lifts his eyes to it.
 
