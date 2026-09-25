@@ -65,6 +65,9 @@ flexGrow=1
 He remembers faces and reacts when someone lingers under his stare, makes noise before he decides, or threatens the den. [[old-faas]] answers in the same flat cadence and is waved through; [[Thunk]] was admitted on Faas's word.
 ```
 ````
+### Voice
+
+Grukan speaks in short, flat challenges and lets silence do the rest of the work. He asks for the Draconic password rather than explaining the den's rules, and his tone stays level until someone threatens the room. A satisfied answer earns the same quiet cadence as [[old-faas]]; a failed answer earns only another long look.
 
 ## Connections
 
