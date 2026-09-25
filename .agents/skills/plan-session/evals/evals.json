@@ -86,6 +86,10 @@
         {
           "type": "guardrail",
           "text": "Writes no wiki page and no beat content"
+        },
+        {
+          "type": "behavior",
+          "text": "Treats planning as ongoing: does not declare the plan done or hand off to session-beats without the DM saying so"
         }
       ]
     }
