@@ -68,6 +68,10 @@ Toa stays cheerful while discussing a tactical failure, but becomes intent when 
 ```
 ````
 
+### Voice
+
+Toa speaks in cheerful, practical sentences and turns every exchange toward what went wrong and what can be learned. He often counts failures aloud. He avoids explaining why he keeps other companies' contract seals. Sample lines: “Tell me what you saw first.” “No, that was not the part that failed.” “Three mistakes, and now you want to call it bad luck?”
+
 ## Connections
 
 | Connection | Meaning |
