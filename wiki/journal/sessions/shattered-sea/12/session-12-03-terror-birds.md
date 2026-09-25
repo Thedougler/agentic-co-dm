@@ -5,7 +5,7 @@ tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: cliffhanger
 reveal: unrevealed
@@ -24,18 +24,14 @@ summary: "The column must cross a 100-foot open gap in the Long Meadow where two
 **Trigger.** The trail runs up the west band of eight-foot grass and then stops at the Gap: 100 feet of open short grass to the east band. When the first person steps out of the grass, the ground starts to shake.
 **PC objective.** Get every member of the column across the Gap and into the east grass band.
 **Opposition objective.** Each [[terror-bird]] wants one body to swallow and carry back to its rim.
-**Stakes.** A civilian's life; a swallowed PC's HP.
+**Stakes.** A civilian can be swallowed and die, and a swallowed PC takes acid damage every round.
 **Ends when.** The column is in the east band (the birds will not enter eight-foot grass), or both birds have fed or broken off, about four rounds.
 **Memorable element.** Two mossed trunks at the rims, each with one yellow eye, and the ground shaking under a charge you can feel before you see it.
 
 > [!narration] Open on Action
-> Gianni is the first one out of the tall grass, and the ground starts to shake under his feet.
+> Gianni steps out of the tall grass first, and a tremor runs through the dirt under his feet. Down the meadow to your right, where the open grass meets the shade, a mossy stump rises on two grey scaly legs. Ferns sprout from the black feathers of its neck, and one yellow eye rolls toward Gianni above a hooked beak lined with teeth. Then it runs at him, head low and ragged wings held out stiff, and each footfall thumps up through the soles of your boots.
 >
-> Across the open grass, what you took for a dead trunk at the edge of the trees has one yellow eye, and it is looking at him. It stands up. It is taller than a horse, black feathers furred with moss, a beak like a split axe-head, and it is already running, straight at him, wings flung out for balance, dust jumping with every stride.
->
-> Behind you, Luca says, very quietly, "There's another one."
->
-> What do you do?
+> Ahead, short-cropped grass runs open all the way to the far wall of tall grass, with deep grey water sliding along its foot. Halfway across, a stand of white blades glitters like broken glass. Behind you, Luca says, very quietly, "There's another one." Far off to the left, at the other end of the open ground, a second mossy stump has one yellow eye open.
 
 ## Run the Beat
 
@@ -55,7 +51,7 @@ flexGrow=1
 ### Opposition
 
 - **[[terror-bird]] × 2.** **AC 16**, **HP 200**, Speed 60 ft. Multiattack: **Serrated Beak** (+12, reach 10 ft, 22 piercing, target Grappled with escape DC 18 and Restrained) and **Talon Rake** (+12, reach 10 ft, 17 slashing). **Swallow:** a Beak attack against a Medium or smaller creature it is grappling; on a hit the target is swallowed (Blinded, Restrained, total cover) and takes 4d6 acid at the start of each of the bird's turns. **Tremor Stride:** anyone touching the ground within 30 feet feels it coming, so it cannot surprise them. Passive Perception 17.
-- **Intent.** Eat, not kill everyone. Each bird wants one body.
+- **Intent.** Each bird wants one body to eat, not a fight with everyone.
 - **Opening move.** Charge: a straight line up to 60 feet at the nearest creature in the open, then Multiattack. A charge cannot turn more than 45 degrees along its line.
 - **Adapts.** If its target reaches grass, water, or the razer stand, it stops at the edge, rakes the nearest creature in the open, and charges again next turn.
 - **Breaking point.** After it swallows one creature, it turns and runs back to its rim. At 140 HP or fewer (60 damage taken), it backs off to its rim without prey.

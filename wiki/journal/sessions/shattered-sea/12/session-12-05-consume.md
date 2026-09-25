@@ -5,7 +5,7 @@ tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: climax
 reveal: unrevealed
@@ -30,11 +30,9 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 **Next:** [[session-12-06-the-raft]]
 
 > [!narration] Opening image
-> The fruit piles lead off the road to firelight. A clearing opens under a single enormous vine, strung between the trunks like a ship's rigging and hanging so heavy with fruit the wood groans. Giant guavas the size of a man's head. Stonepears, grey and fat. Under it, around a small fire, men are standing up: Calveno faces, thin and staring. One of them, tall, with a grey streak in his beard, is looking past you at the man being carried in.
+> At dusk the fruit piles turn off the road toward firelight. The trees open on a clearing roofed by one vine as thick as a mast, slung from trunk to trunk overhead. Every length of it sags under fruit, heavy guavas ribbed pink and gold beside grey, scaly stonepears, and bundles of bare, leafless cords hang among them. Seven thin men are getting to their feet around a small fire beneath it. The tallest, a grey streak through his beard, looks past you to the man you are carrying and stops moving. Beyond the fire a deep channel slides by with a raft of lashed deadwood tied to its bank. Along the treeline behind you, pale pollen hangs in the last light without settling.
 >
-> Perrin. Right in front of your face, close enough to touch, a guava and a stonepear hang side by side on the living vine, ripe to bursting. The whale-light stirs around your cloak, and a voice that is not a voice fills your head, one word, enormous and certain:
->
-> **CONSUME.**
+> Perrin, the vine dips low where you stand, and a guava and a stonepear sway side by side a hand's width from your nose, the guava's smell sweet and musky. Pale blue light gathers around your cloak in the shape of a whale, and a voice with no mouth behind it fills your skull with a single word. **CONSUME.**
 
 ## Thread harvest
 
@@ -70,7 +68,7 @@ flexGrow=2
 
 ## Pressure
 
-**Tick when.** At the end of each round Skarn keeps the initiative on the Spinner's carrier.
+**Tick when.** Tick one step at the end of each round in which Skarn is still working on the Spinner's carrier.
 
 - [ ] **1. Warning.** Before round 1: the plants lean toward Perrin if he picked fruit, and every insect in the clearing stops for one breath. In that breath, something heavy lands on the packed ground behind the carrier.
 - [ ] **2. Escalation.** Skarn cuts straps and pouches on the carrier, unseen.
@@ -98,7 +96,6 @@ flexGrow=2
 ### Assets
 
 **The island's answer, only if Perrin picked fruit.**
-
 
 - **[[vine-lash]] × 3**, coiled in the great vine's canopy. Each fruit Perrin picks is a claim that wakes one vine-lash, up to three. They wake at the end of Perrin's next turn. **AC 12**, **52 HP**, Speed 10 ft, climb 10 ft. Multiattack: two **Tendril** (+4, reach 15 ft, 7 bludgeoning and Grappled, escape DC 12; each vine-lash holds two creatures at most), or one Tendril and **Constrict** (9 bludgeoning to a grappled creature). A grasping bundle has AC 12 and 8 HP; destroying it frees its captive.
 - **How the island targets.** A woken vine-lash attacks the marked creature (Perrin) with its first Tendril. Its second Tendril goes to the nearest creature within reach of the vine that is not one of the Calveno, since the island never attacks [[hinewai]]'s own. Near the fire and the carrier, that creature is usually Skarn. Tendrils find what touches or moves through the vine's reach by feel, so they have no Disadvantage against an Invisible creature.

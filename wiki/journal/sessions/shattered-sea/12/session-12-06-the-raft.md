@@ -5,7 +5,7 @@ tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: resolution
 reveal: unrevealed
@@ -35,15 +35,15 @@ summary: "Skarn is gone. The survivors who want to leave have Tommaso's raft, a 
 ## Run the Beat
 
 1. **Confirm the outcome.** Skarn is gone over the channel, or down.
-2. **Show the consequence.** The brothers. [[carlo-ferrante]] says Ettore's name for the first time in nineteen days.
+2. **Show the consequence.** The brothers come first. [[carlo-ferrante]] kneels by [[ettore-ferrante]] and says his name for the first time in nineteen days.
 3. **Pay off the stakes.** [[tommaso-brasca]] loads the raft and counts nine seats. [[renzo-canale]], Beppe Sarti, and Marco Lenzi say they are staying, and nothing moves them.
 4. **Let them react.** The epilogue prompts below. If Perrin ate, Renzo steps back from him and will not come within arm's reach until dawn.
 5. **End on an image.** First light, and the raft pushing off.
 
 > [!narration] Closing image
-> The raft goes out at first light, because Piero will not float a river in the dark. Nine men sit on it shoulder to shoulder, with Ettore's splinted leg stretched down the middle and Tommaso at the back with the pole. The channel takes it slowly.
+> The raft pushes off at first light with nine men packed onto its lashed deadwood, knees drawn up to leave room for Ettore, whose splinted leg lies along the middle. Tommaso works the pole from the back, and the channel carries them off so slowly that the ripples barely reach the bank. Luca bends over the logs with his knife and scratches one last mark into the wood.
 >
-> Under the great vine, three men stand and watch it go. One of them lifts a hand. The fruit hangs over their heads, heavy and still, and none of them looks up at it.
+> On the bank under the great vine, three men stay where they are. The old one with the big clean hands raises one of them. Above the three of them the fruit hangs heavy and untouched, and not one of them lifts his eyes to it.
 
 ````col
 ```col-md

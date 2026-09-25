@@ -5,7 +5,7 @@ tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: development
 reveal: unrevealed
@@ -27,13 +27,13 @@ summary: "The trail meets the Burnt Road, where eleven sealed Grung died trying 
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> The forest opens onto a road nobody built. It is twenty feet wide and runs straight as a thrown spear to the north-east, and its whole floor is flowers, black-petaled, packed so close you cannot see the dirt. The trees on either side have grown back around burnt black cores. There is no fruit anywhere on it.
+> For an hour the forest has pressed so close you could barely see the back in front of you. Then the trees fall away on both sides, and a straight open road, wide as a village street, runs on ahead. Its whole floor is black flowers, packed so tight they give under your boots like a mattress, and they smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. Nothing sings here, and not one fruit hangs over the road.
 >
-> Fifty feet up, on a broad leaf in the middle of the road, someone has left a small pile of fallen guavas. Beside it, half-sunk in the flowers, is a small body with roots grown through its ribs. There is another beyond it, and another. They are Grung. A disc of dull gold lies loose among the bones of the nearest one.
+> A short walk up it, someone has set a small pile of fallen guavas on a broad leaf. Beside the pile a small body lies sunk to the shoulders in flowers, with roots threaded through its ribs. Past it lies another, and another, each one a Grung no bigger than Jean-Claude. A cracked gold disc sits in the nearest one's ribcage, its face crowded with curling script, and a broken clay pot lies by its hand, blackened at the lip.
 
 ## Run the Beat
 
-1. **Present the situation.** An open road straight through forest that has blinded them for an hour, with the survivors' trail running up it and Grung dead along it.
+1. **Present the situation.** After an hour of forest where they could barely see, the column comes out on an open road. The survivors' trail runs up it, and Grung dead lie along it.
 2. **Let them engage.** The anchor is the dead: eleven Grung, cracked clay fire pots, and a spent [[grung-authority-seal]] in each ribcage. [[jean-claude-tabarnack]] reads them.
 3. **Make the turn.** When Jean-Claude handles a seal or reads it aloud, [[hinewai]]'s voice comes out of the treeline.
 4. **Hand back the choice.** The road runs on toward the Calveno. The voice has named Jean-Claude a kidnapper and gone quiet. Ask what they do.
@@ -109,8 +109,8 @@ When Jean-Claude lifts or reads a seal, or after he has stood on the road for 10
 
 ### Preparation states
 
-| If the party prepares… | The next Cliffhanger opens with… |
-| ---------------------- | -------------------------------- |
+| If the party prepares… | The Climax opens with… |
+| ---------------------- | -------------------- |
 | Reads every seal and hears the voice out | Reaches the Pantry at dusk with the whole order chain. |
 | Reads one seal and moves on | Reaches the Pantry before full dusk with the core order. |
 | Walks straight past | Reaches the Pantry in the last light; the voice still speaks if Jean-Claude is on the road. |

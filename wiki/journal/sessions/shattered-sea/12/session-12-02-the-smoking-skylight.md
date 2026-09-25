@@ -5,7 +5,7 @@ tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-25
 type: session-prep
 kind: development
 reveal: unrevealed
@@ -27,16 +27,14 @@ summary: "Four Calveno hiding in a lava tube are lifted out and point further in
 **Target.** ~30 minutes.
 
 > [!narration] Opening
-> The smoke is not coming from a camp. It rises out of a hole in the forest floor, a ragged round opening fifteen feet across with roots hanging over the edge like fringe. Warm air breathes up out of it, carrying woodsmoke and the smell of fruit gone soft.
+> The prints lead you inland all morning, past the ring of four empty sleeping mats, until a line of smoke stands straight up out of the forest floor ahead. It climbs from a ragged hole in the ground, wide enough to drop a wagon through, with pale roots hanging over its lip like a torn curtain. Warm air pushes up past your faces, carrying woodsmoke and the sweetness of fruit gone soft.
 >
-> Forty feet down, on a ledge of black rock lit by a small fire, four men are looking up at you. The nearest is sitting with one leg stretched out straight in front of him, splinted with two sticks. A wiry man by the fire is already on his feet and calling up.
->
-> "You have a hull? Tell me you have a hull."
+> Far below, a small fire burns on a shelf of black rock. Three men stare up at you from beside it. One sits with his left leg stuck out stiff and bound to a pair of sticks. A lanky boy with his shirt knotted at the waist still has his lips moving on some count. A broad man sits apart with his back to the rock and his eyes on the fire, the only one who has not looked up. The fourth, a wiry man with rope-scarred hands, is already on his feet and cupping them to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
 
 ## Run the Beat
 
 1. **Present the situation.** Four Calveno men on a basalt ledge forty feet down, calling up. [[piero-sorrentino]] talks first.
-2. **Let them engage.** Getting down, getting them up, and hearing their story. The anchor is the ledge itself: four sleeping piles of fibre, a pile of fallen [[ghost-plum]] and [[stonepear]] pits, and [[luca-ferrante]]'s knife-scratch tally on the wall.
+2. **Let them engage.** The party gets down, gets the four up, and hears their story. The anchor is the ledge itself: four sleeping piles of fibre, a pile of fallen [[ghost-plum]] and [[stonepear]] pits, and [[luca-ferrante]]'s knife-scratch tally on the wall.
 3. **Make the turn.** Asked why they are down here, or why only four when the ring had four mats and the camp had more, [[luca-ferrante]] tells it: the voice, the night his uncle walked, the direction.
 4. **Hand back the choice.** The four are out and alive. Carlo and the others went north-east toward her. Take the four back south, or go further in with them.
 
@@ -86,8 +84,8 @@ flexGrow=2
 ## Checks & Costs
 
 - **Automatic.** With rope and two people hauling, everyone comes up in 10 minutes; Ettore comes up in a rope sling. [[crissdalynn-khinriss]] can fly anyone up one at a time.
-- **Action.** Climbing the 40-foot break without rope: **Strength (Athletics) — `DC 15`** per climber. **Failure:** the climber slides back to the ledge and takes 1d6 bludgeoning.
-- **Action.** Setting Ettore's leg properly: **Wisdom (Medicine) — `DC 13`**. **Success:** he can be carried without screaming, so the column moves at normal pace. **Failure:** every hour carried costs the carrier a **Constitution save — `DC 10`** or a level of Exhaustion by dusk, as the column slows to a crawl.
+- **Action.** Climbing the 40-foot break without rope: **Strength (Athletics) — `DC 15`** per climber. **Failure:** the climber slides back to the ledge and takes `1d6` bludgeoning damage.
+- **Action.** Setting Ettore's leg properly: **Wisdom (Medicine) — `DC 13`**. **Success:** he can be carried without screaming, so the column moves at normal pace. **Failure:** Ettore screams whenever he is moved, and the column slows to a crawl. For every hour he is carried, his carrier makes a **Constitution save — `DC 10`** and gains one level of Exhaustion on a failure.
 - **Cost of the good part.** Going further in means carrying Ettore: one PC or two civilians at a time, and that carrier's hands are full in the next contest.
 
 ## Player Levers
