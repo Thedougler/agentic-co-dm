@@ -427,7 +427,7 @@
     },
     {
       "id": "parent-resume-requires-child-progress",
-      "prompt": "Build Session-12's chart when a typed Development child is required. Resume the parent only after the child returns its bounded artifact/slot, changed dependency or artifact state, and completion evidence; preserve the original objective and block an unchanged incomplete return.",
+      "prompt": "Session 12's plan needs its beat 04 Development, Two-Grave Orders, before the chart can resume. The Development child has returned twice with the same incomplete slot: Required conclusion still does not say where Nello is hidden, and the page is unchanged since the first return. Decide whether the parent chart resumes.",
       "expected_output": "A recomputed parent chart from complete child evidence, or a specific blocker with the parent objective preserved.",
       "assertions": [
         {
@@ -446,7 +446,12 @@
           "text": "Stops an unchanged incomplete child return with a specific blocker.",
           "type": "quality"
         }
-      ]
+      ],
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: the resume or block decision with its evidence. Change no plan or beat page."
     },
     {
       "id": "budget-math",
