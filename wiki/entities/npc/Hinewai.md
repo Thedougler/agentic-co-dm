@@ -7,6 +7,7 @@ sources:
   - "house (Monster-Brewer; legacy Fantasy Statblock import; Hinewai/Death Bloom ingest 2026-09-05)"
   - "legacy/campaign-os-v02/vault/stories/arc-blight-of-aruhe.md"
   - "arc-blight-of-aruhe.md"
+  - "DM statement 2026-09-24 (Session 12 planning)"
   - "wiki/_archive/arc-blight-of-aruhe.md"
 summary: Elf druid lich fused to Aruhe after escaping Karath. Her grief became the island's law, and her woman-in-the-woods form guards its living systems.
 provenance:
@@ -15,7 +16,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-18
+updated: 2026-09-24
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -95,6 +96,12 @@ Picking fruit from living branches, striking the tree, digging at a grave, uproo
 **Next move:** She withdraws into the forest. Local plants and animals answer according to their own instincts and claims; they are not her puppets or a hive mind.
 ```
 ````
+
+### Grung and her garden
+
+**Grung.** Every Grung Hinewai has seen on Aruhe wore a gold [[grung-authority-seal]] fused to their skin and truly believed they wanted her graves destroyed. She assumes every Grung on her island is sealed and sent for the graves. She speaks to a Grung from the treeline as a shadow with orange eyes and no body, and she names them for what their kind did to her: invader, manipulator, kidnapper, murderer. A Grung with no seal on the skin and no pull toward the graves is outside everything she knows, and it silences her.
+
+**Her garden.** The Calveno wrecked on Aruhe who ate only fallen fruit became hers the moment they ate it: part of her garden and her twisted cycle of nature. The island is not overtly hostile to them, though ordinary animals still prey on them. She drew them inward toward the Grove. To her, anyone who leads them out is taking what is hers.
 
 ---
 

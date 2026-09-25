@@ -78,7 +78,6 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 | [[matteo-scola]] | Picking living fruit kills people; fallen fruit is safe. | knows | He watched survivors die for picking. |
 | [[oren-vask]] | Fallen food is safe and living claims bring the island down on the taker. He wrongly believes any cut to a living thing, even in self-defense, is a claim. | knows / misunderstands | Months of walking the safe edges. |
 | [[celia-parel]] | The rule keeps people alive, and she follows it as respect rather than worship. | knows | Survivor practice. |
-| [[nello-castri]] | The woman's words, "Leave the living plants," are the rule. He treats it as a vow. | knows | His brother died picking living fruit. |
 | [[hinewai]] | The law is her grief made into the island's reflex. | knows | She is its source. |
 
 ### Party Knowledge
@@ -95,7 +94,6 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 
 | Account | Held by | Relation to truth | Why they believe it |
 | ------- | ------- | ----------------- | ------------------- |
-| The woman in the woods keeps listeners alive. | [[nello-castri]] and the other listeners | partial | Listeners who kept her rule have lived; the rule, not her favor, keeps them alive. |
 | The listeners are mad and she is leading them to die. | [[matteo-scola]] | partial | He refused her and lived, but only by keeping her rule anyway. |
 
 ### Common telling
@@ -125,7 +123,6 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 | [[aruhe]] | The island the law covers | Every band has responders. |
 | [[hinewai]] | Source of the law | Her grief is why the island answers takers. |
 | [[memorial-grove]] | Where the law is anchored | Destroying the Death Bloom ends the law. |
-| [[turned-hollow]] | Where claims killed generations of Grung diggers | Its responders are the strangler fig and two vine lashes. |
 | [[wolfrabbit]] | Default grassland responder | Two arrive for a claim in grass or terraces. |
 
 **Open canon.**

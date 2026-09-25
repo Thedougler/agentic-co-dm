@@ -39,7 +39,6 @@ The Quiet is rainforest above the last terrace of [[old-gardens]], where small l
 - **Follow the packed prints north of the lip:** [[print-braid]].
 - **Follow the inland prints off Print Braid into the Quiet hub:** [[spoke-ring|Spoke Ring]].
 - **Follow the north spoke off Spoke Ring onto the night aisle:** [[star-cut|Star Cut]].
-- **Walk a game trail pinched through stone:** A single [[strangler-fig]] may fill the bottleneck with hanging roots and a hollow trunk.
 - **Move through a Quiet-to-Marshes game trail or sunbreak beside a four-foot waxy stalk:** [[stillbloom]] raises pale bracts around dark needles. A charged mature stalk fires when a grounded Small or larger creature within `20 feet` moves more than `10 feet`, Dashes, jumps, falls, is forced `10 feet` or more, or makes a violent motion; each creature within `15 feet` makes a **Dexterity save — `DC 14`**. Failure → `2d6` piercing and an embedded spine, followed by a **Constitution save — `DC 12`** for **Exposure**. Walk `10 feet` or less per turn, throw an object to trigger the volley, fly over the root mat, or use total cover during the reload.
 - **Walk a deeper Quiet game trail beneath smooth dark coils and hanging carcasses:** [[snakewood]] reacts to any Small or larger creature moving below an active colony; the target makes a **Dexterity save — `DC 14`**. Failure → `1d6` bludgeoning, **Grappled**, and pulled `15 feet` toward the canopy; a **Grappled** creature takes `2d6` acid damage at the start of its turn, increasing by `1d6` each consecutive round to `4d6`. Bait the strike with a moving object, stay beneath solid cover, sever the section (**AC 13**, `15 HP`), or escape with **Strength (Athletics) or Dexterity (Acrobatics) — `DC 14`**.
 - **Take fruit under the roof:** [[stonepear]] is common here, often before [[terror-bird]] ground; [[giants-guava]] is common, often near [[bear-elk]] crossing signs; [[ghost-plum]] is uncommon. Fallen fruit is receiving. Pluck a living plant → surrounding life converges, hostile. [[taking-on-aruhe]]
@@ -58,7 +57,6 @@ The Quiet is rainforest above the last terrace of [[old-gardens]], where small l
 ---
 ## What
 
-- [[strangler-fig|Strangler Figs]] sit singly where packed game trails pinch between stone. Aerial roots hang in curtains; old bones show in the hollow trunk.
 - [[silence-moths]]: Sail-sized clouds at dusk and dawn on Marshes and Grove approaches through the trees. The jungle goes quiet ahead of them, then the cloud fills a mouth. Fire drives them off; they will not follow anyone out of the trees.
 - [[stonepear]] is common beneath the roof, and fallen fruit can be foraged from the moss.
 - [[giants-guava]] is common here, with low branches that can be picked.

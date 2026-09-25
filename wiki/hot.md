@@ -1,5 +1,5 @@
 ---
-updated: 2026-09-24T06:35:21Z
+updated: 2026-09-24T12:00:00Z
 ---
 ## Recent Activity
 - Rebuilt [[bisou]], [[ket]], [[thunk]], and [[zort]] to the current npc page shape and kebab basenames, with ports, posture changes, voice lines, and connection tables; fight content sits in `[!mechanic]` callouts.
@@ -9,10 +9,11 @@ updated: 2026-09-24T06:35:21Z
 - Corrected the identity spine across [[osset]] and [[master-kyzil]]: Osset was Kyzil's teacher and a senior High Eyrie master, an aged snowy-owl aarakocra, and Kyzil believes him decades dead.
 - Added the [[long-sight]] blind spot: probable futures only, so irrational and self-sacrificing action weakens Vantyrus's read.
 ## Active Threads
-- Session 12 prep rebuilt ([[session-12-00-the-weight-of-obedience]]): dawn Skarn fight, Celia and Oren ask for help finding [[nello-castri]], the [[turned-hollow]] shows the Grung dug under the wrong tree, and Skarn's second attempt meets Auralis's "CONSUME" at the Grove's door. Claim-response rule now on [[taking-on-aruhe]].
+- Session 12 is filed as [[session-12-00-the-garden-keeps-its-own]]: Skarn's dawn attempt fails and he takes Matteo's ghost plums; four Calveno are lifted from a lava tube; the column crosses [[the-long-meadow]]'s terror-birds; Jean-Claude reads the Gold caste's orders on [[the-burnt-road]] while [[hinewai]] calls him kidnapper; at [[the-pantry]] Auralis tells Perrin to CONSUME and invisible Skarn makes his last try; nine Calveno leave by raft and three stay.
 - Session 11 remains open mid-fight at [[Aruhe - River Slack Basin]]: [[talon-skarn]] has spent one Legendary Resistance and the [[fate-spinner]] is still Held.
 - Vantyrus himself stays off-screen until the Osset identity can matter. Do not reveal him physically before then.
 ## Key Takeaways
+- Sealed Grung believe their order is their own conviction. Hinewai assumes every Grung on Aruhe is sealed; the Calveno who ate fallen fruit are hers. Skarn serves Vantyrus for now, and his eventual betrayal is an open secret.
 - The campaign's active crew is four PCs: Delmar, Crissdalynn, Jean-Claude, and Perrin.
 - Vantyrus breaks decisions instead of absorbing attacks. Roll the three Fatespinner dice openly and leave them visible at the table.
 - Long Sight shows probable futures, not an authored one. Treating people as solvable systems is his blind spot.

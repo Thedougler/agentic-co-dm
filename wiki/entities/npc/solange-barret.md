@@ -117,7 +117,7 @@ After two full rounds of chanting or when the garrison drops to 2, she triggers 
 - [[calven-and-calveno]]: the site of Beffa Grung Raid, the operation Solange's ritual anchors
 - [[jean-claude-tabarnack]]: if Solange escapes, she identifies him to [[simone-tabarnack|Simone]]
 - [[grung-elite-warrior|Elite Warriors]]: her expendable shield during the ritual
-- [[solanges-authority-seal]]: a red-caste command signet found on her, salvaged from the Primary Chamber rubble
+- [[solanges-authority-seal]]: an unused authority seal she carried; [[jean-claude-tabarnack]] took it from her after she became [[otar-the-foul]]
 
 ## Session Log
 

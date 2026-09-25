@@ -12,7 +12,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T19:55:00Z
-updated: 2026-09-13T19:55:00Z
+updated: 2026-09-24
 type: faction
 reveal: unrevealed
 campaign: shattered-sea
@@ -75,7 +75,7 @@ flexGrow=1
 ## Current State
 
 - **Status quo.** [[talon-vantyrus]] leads Countless through covert routes, hired blades, paid contacts, and the absence of reliable records.
-- **Recent change.** [[talon-skarn]] openly schemes to overthrow Vantyrus, and Vantyrus treats the attempt as a standing threat rather than a secret.
+- **Recent change.** [[talon-skarn]] hunts the [[fate-spinner]] for Vantyrus and is loyal for now. Both of them know, as an open secret, that Skarn will try to kill Vantyrus once he has trained well enough.
 - **Pressure.** The [[long-sight-hunt]] is searching for [[crissdalynn-khinriss]]. It will also track any Sentinel who recently visited [[yssenmoor]] after [[uncertainty]] enters Midchain waters.
 - **Strength.** Countless can reach pilgrim routes and grey markets. It can also reach Sentinel waystations without exposing a central ledger or ordering hand.
 - **Vulnerability.** One-job contacts know little beyond their assignments. Countless's leadership rests on the Rule of Two. The winner of the contest takes control.
@@ -111,7 +111,7 @@ flexGrow=1
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | [[talon-vantyrus]] | Leader | The Soul Incarnate transformation technique and survival against his apprentice | Leads through the Rule of Two |
-| [[talon-skarn]] | Apprentice | To overthrow Vantyrus | Open internal contest |
+| [[talon-skarn]] | Apprentice | The Fate Spinner for Vantyrus now; Vantyrus's death once he is trained enough | Loyal for now; open secret |
 | Hired blades and paid contacts | Agents | One assignment at a time | They do not know who ordered the work |
 ### Chain of Action
 

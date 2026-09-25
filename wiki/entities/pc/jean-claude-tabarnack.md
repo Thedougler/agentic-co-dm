@@ -17,7 +17,7 @@ sources:
   - "wiki/_archive/jean-claude-tabarnack.png"
   - "wiki/_raw/Grung clans.md"
   - "Foundry VTT Shattered-Sea actor Jean Claude Tabarnack 2026-09-13"
-summary: Level 5 Gloom Stalker Grung, catatonic after the bloodhawk stoop, carried in Delmar's coat.
+summary: Level 5 Gloom Stalker Grung, awake at the Aruhe river camp as Session 12 opens; his Session 11 catatonia was only his player's absence.
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -60,12 +60,12 @@ foundry_id: kS3wQ76uMq1QgDCw
 
 - [[simone]] — Sister who still hunts him from the Sorn garrison.
 - [[Botukuri]] · [[grung-clans]] · [[grung-color-and-the-sealing-rite|Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
-- [[grung-authority-seal]] — One spent seal is on his sheet.
+- [[solanges-authority-seal]] — Unused and ready, taken from Solange Barret after she became Otar the Foul. It stays in his pack.
 - [[uncertainty]] — Aboard at [[aruhe]].
 - [[crissdalynn-khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.
 - [[perrin-black-jaw]] · [[delmar-fisk]] — Crew allies.
 
-- [[two-grave-orders]] — His carried [[grung-authority-seal]] and Grung upbringing give him the strongest route to recognizing how the old orders changed from reporting to replacing the dead and finally targeting two graves.
+- [[two-grave-orders]] — His Grung upbringing give him the strongest route to recognizing how the old orders changed from reporting to replacing the dead and finally targeting two graves.
 
 ## Sheet
 
@@ -202,7 +202,7 @@ Wisdom. Save DC 14. Attack +6. Slots L1 4/4, L2 2/2. DDB dumped the full Ranger 
 | Eyes of the Eagle | 1 | Equipped; Advantage on sight-based Perception; no attunement listed |
 | Backpack, quiver | 1 | Equipped |
 | Arrows | 40 | 20 equipped plus 20 carried |
-| [[grung-authority-seal]] | 1 | Carried, not worn, attunement required |
+| [[solanges-authority-seal]] | 1 | Carried in pack; unused, single use |
 | Cartographer's Tools, bedrolls, tent, sprig of mistletoe, traveler's clothes, oil, rations, rope, tinderbox, torches, waterskin | — | Bedrolls 2, oil 2, rations 10, torches 10 |
 
 ## Session Log

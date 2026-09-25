@@ -17,7 +17,6 @@ summary: Folder index of Creatures.
 - [[entities/creature/river-otter|Aruhe - River Otter]]
 - [[entities/creature/snakewood|Aruhe - Snakewood]]
 - [[entities/creature/spiguar|Aruhe - Spiguar]]
-- [[entities/creature/strangler-fig|Aruhe - Strangler Fig]]
 - [[entities/creature/terror-bird|Aruhe - Terror-Bird]]
 - [[entities/creature/thornback|Aruhe - Thornback]]
 - [[entities/creature/unsaid-macaw|Aruhe - Unsaid Macaw]]

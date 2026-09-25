@@ -15,7 +15,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-12T06:23:47Z
-updated: 2026-09-14
+updated: 2026-09-24
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -46,14 +46,14 @@ flexGrow=2
 | ------------- | ---------------------------------------------------------------------- |
 | **Nature**    | Living expression of the [[rule-of-two]]                               |
 | **Home**      | Midchain                                                               |
-| **Wants**     | To kill [[talon-vantyrus]] under Countless doctrine                    |
+| **Wants**     | The [[fate-spinner]] for [[talon-vantyrus]] now; to kill him once trained enough (an open secret between them) |
 | **Arrival**   | Enters only when the party physically reaches Midchain                |
 | **Fight**     | Pursues the current job; he does not stay for a duel to `0` hit points |
 | **Kit**       | Katana, two sai, and two kusarigama                                    |
 | **Signature** | A `30-foot` stoop, `20-foot` chain reach, and forced movement           |
 | **Weakness**  | No damage resistances; ground him, deny the stoop lane, and spread out |
 
-> **DM thesis:** Skarn is Vantyrus's standing threat made flesh. He is trying to kill his master because the [[rule-of-two]] demands it, not because he has abandoned Countless.
+> **DM thesis:** Skarn is Vantyrus's standing threat made flesh. For now he is loyal and hunts the [[fate-spinner]] for his master; both know that under the [[rule-of-two]] Skarn will try to kill Vantyrus once he has trained well enough.
 ```
 
 ```col-md

@@ -63,6 +63,7 @@
 - [[branimir-karsovine]] — Named Voyvode face.
 - [[bresk-hollow]] — An interior sinkhole ecosystem sealed off from the surface world for centuries; growing something nobody up top has seen.
 - [[bring-the-pearl-of-souls-to-umberlee]] — Umberlee's outstanding price: return the Pearl of Souls or keep paying through Delmar and the Dead Lady.
+- [[the-burnt-road]] — A two-mile scar the last sealed Grung expedition burned toward the Memorial Grove; black flowers, eleven dead, no fruit.
 - [[cades-fortune]] — A dozen expeditions have surveyed this "treasure island;" each certain the map was almost right.
 - [[cage-calm-draught]] — A wax-sealed crock of sweet fermented feed additive from Zort's Pits that takes the fight out of a beast for ten minutes.
 - [[calders-tooth-and-port-tidefall]] — Three tiers on the cliff: docks at the water, a trade shelf on the face, and [[fort-crestwall]] on the crown with the guns. Every ship entering the western Strait should stop at the Inspection Pier, a
@@ -75,6 +76,7 @@
 - [[cape-solitude]] — Wind-battered northern tip of Calder's Tooth with a ruined lighthouse whose light is dead.
 - [[capn-gorgeous]] — Rupert Knighton's son, a Dravosi Enforcer killed during the Saltwright boarding inspection.
 - [[captain-dorian-bishop]] — Crown captain commanding the HCS Tangent, sent when enforcement fails; CR 6, AC 17, HP 165, working the Crown Islands and Central Strait. Far more dangerous than Rook in single combat.
+- [[carlo-ferrante]] — Ettore's older brother, who followed the voice to the Pantry and believes his family died in the dark.
 - [[catarina-davirelli]] — Calveno artificer and salvage engineer who remains in Calveno.
 - [[cave-bats]] — Dusk-exit cave bats whose mass flight warns of Blackrail country.
 - [[cecco-trivani]] — The apprentice at Il Preludio who can feel every musical number coming and has never once finished the first line of one.
@@ -154,6 +156,7 @@
 - [[enzo]] — Bodyguard at Nona Black-Jaw's kitchen safehouse who holds the door with Ruk.
 - [[essa-two-tooth]] — Rattkin elder who runs the Low Lamp, the Warren's Kin-only gathering house.
 - [[estratto]] — Named Tessarine face, craft, or house from the Concordat dump.
+- [[ettore-ferrante]] — Heavy Calveno toll clerk with a broken leg, hiding in a lava tube with his son and two others.
 - [[ettore-lupo]] — Keeper of Casa Lupo's ledger: forty years of prices and customers filed in his memory alone
 - [[farrowmere|Farrowmere]] — Locals farm a colony of dire crocodiles instead of fighting them.
 - [[fathomrush]] — A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
@@ -191,6 +194,7 @@
 - [[ghost-plum]] — Rare Aruhe fruit that grants the eater the Invisible condition for one hour.
 - [[giacinto]] — Gnome craftsman in Calveno's Velo Quarter who sells beret-and-moustache performer kits and recognizes his own handiwork on sight; a key beat for Jean-Claude's Calveno cover.
 - [[giacomo-moretti]] — A middle-aged halfling ship chandler in Calveno, proprietor of Moretti and Sons; never pranked despite a disputed cargo.
+- [[gianni-moro]] — Quiet Calveno cooper who nearly followed the voice in the woods and is ashamed he wanted to.
 - [[giant-owl]] — A CR 1/4 celestial owl haunting the Crown and Ashwall Islands' highlands, with keen darkvision and quiet detection magic.
 - [[gust]] — A wind spell used to redirect a toxin cloud or disperse fog.
 - [[giants-guava]] — Rare Aruhe fruit that sets the eater's Primary Ability score to 25 for one hour.
@@ -292,11 +296,13 @@
 - [[lizardfolk]] — homebrew species text for Lizardfolk, Medium reptilian humanoids native to the Shattered Sea's tidal margins.
 - [[lizardfolk-culture]] — Lizardfolk tidal-margin settlement, hull-crew work, Midchain tradition, and naming customs across the Shattered Sea.
 - [[locations]] — Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
+- [[the-long-meadow]] — An open grass cut in the Quiet where two terror-birds split the crossing between them.
 - [[long-passage-biscuit]] — A soldered case of three hard ship's cakes baked for the long crossings, one of them eaten over a short rest taking a level of exhaustion off whoever eats it.
 - [[long-reach]] — Named Sentinel-linked pressure or technique from the Sentinels dump.
 - [[long-sight]] — Rare Sentinel technique withheld from most of the order, currently tied to [[crissdalynn-khinriss|Crissdalynn]] and the hunt for what she carries; it reads probable futures, so irrational or self-sacrificing action weakens it.
 - [[long-sight-hunt]] — Live pressure through which Countless and the Sentinel schism pursue Fate Spinner carriers.
 - [[low-lamp]] — Kin-only gathering house in the Warren, run by Essa Two-Tooth, where debts live in her memory and guests eat before business.
+- [[luca-ferrante]] — Ettore's sixteen-year-old son, who took the four underground and counts everything.
 - [[magic-as-commodity]] — Magic in the Shattered Sea is mass-market technology: cheap and everywhere when it's simple to make, still rare and guarded when it isn't.
 - [[magic-in-the-shattered-sea]] — Arcane, Divine, and Primal tradition rulings for Detect Magic, Counterspell, and Dispel Magic across every supernatural system in the Shattered Sea.
 - [[magistrates-warding-chip]] — A chip of The Velvet Noose's Wardstone Figurehead, warm to the touch, that once per day turns aside any divination targeted at the bearer.
@@ -377,6 +383,7 @@
 - [[Ozzeth]] — Named Grung face whose color and current role are not established by this source.
 - [[ozzeth-the-twiceborn]] — A Grung mage branded Twiceborn by Gold caste, guards Magazine Delta in the sewers with control spells and dominates foes.
 - [[palutai|Palutai]] — Fishing families in perpetual feud. Newcomers get conscripted to a side within the hour.
+- [[the-pantry]] — The inland Calveno survivors' clearing under a great living vine, with a deadfall raft on its channel.
 - [[paolo]] — A gondolier-in-training in Calveno who capsized his boat into the canal in front of the crew and offered them free rides afterward.
 - [[party-combat-profile]] — Party of 5 level-5 PCs. Closed-form 61.41 combined sustained DPR vs AC 15, 89.08 round-1 nova, 397 effective HP vs a +6 attacker. Effective CR Band unmeasured — the sim is unusable.
 - [[passage]] — Rescue network that moves people off official routes, with Nona as the face and a law against treating people as cargo.
@@ -394,6 +401,7 @@
 - [[petera-ngata]] — Keeps Sunkline's complete death list.
 - [[petra-venn]] — Dravosi Crown intelligence handler operating in Calveno under Tessarine merchant cover; runs Ferrin Locke as an asset.
 - [[petro-amaru]] — A broad timber-foreman in worn leather, ledger always open, pencil always moving, a climber's gait on flat ground.
+- [[piero-sorrentino]] — Sailor-blunt Calveno net-mender who wants a hull and refused the voice because it asked them to walk at night.
 - [[pirate-bosun]] — CR 2 pirate grappler who pins targets for the cutpurses and clears deck space with a chain sweep.
 - [[pit-broke-blink-dog]] — A blink dog from the back corner of Zort's Pits, broke to a handler's call so it blinks toward its handler instead of away from a fight.
 - [[players]] — Table player roster for the Shattered Sea.
@@ -426,6 +434,7 @@
 - [[reginald-fenn]] — Elven chart clerk at the Harbourmaster's Office in Tidefall, sold official Dravosi surveys from Crown charts he once helped draft.
 - [[reinforced-specimen-cage]] — Iron-framed and oak-slat specimen cage designed for safe transport of dangerous creatures on expedition. Includes air-holes and a reinforced latch.
 - [[remnis|Remnis]] — Deity. [[aarakocra|Aarakocra]] sky god, primary deity of [[crissdalynn-khinriss|Crissdalynn]]. She wears her faith lightly, praying from habit more than theology.
+- [[renzo-canale]] — Eldest of the Pantry survivors, a bonesetter who taught the others the rule and stays under the vine.
 - [[resin-sealed-kin-tokens]] — A set of small hand-carved wooden tokens sealed in resin, the way Botukuri families mark a household during naming ceremonies.
 - [[reweti-kahurangi]] — Tortle bartender running Kalowe's most-trusted port dive, keeper of quiet intelligence for those who respect the space.
 - [[ricochet-red]] — A red-papered consumable that transforms a single ranged hit into a ricochet chain targeting up to two more targets.
@@ -474,15 +483,13 @@
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter.
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop.
 - [[serin-haut]] — Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor.
-- [[session-12-00-the-weight-of-obedience]] — Skarn's theft resumes at dawn, two survivors ask the party to fetch a believer who walked toward the woman's garden, and the road north runs through the bowl where generations of Grung died obeying an order, to a voice telling Perrin to CONSUME.
-- [[session-12-01-river-slack-reprise]] — Play resumes pre-dawn at the otter camp with Talon Skarn five feet from Crissdalynn; he gets three rounds to take the Fate Spinner, and if he can't, he steals Matteo's ghost plums on the way out.
-- [[Session-12-02-A-Name-for-Matteo]] — At sunrise Celia and Oren come down the bloody bank to record Matteo as dead, find him alive, and ask the flyers to help bring back Nello, who walked north in the night toward the place where the Grung died.
-- [[session-12-03-grass-without-wind]] — On Print Braid, Skarn probes the column and makes a living claim to break it, and two wolfrabbits burst through the party hunting something they cannot see.
-- [[Session-12-04-Two-Grave-Orders]] — At the Turned Hollow the party reads generations of Gold orders in rings of Grung dead, learns the diggers died under the wrong tree, and finds Nello alive and motionless in the fig's roots.
-- [[session-12-05-the-wrong-tree]] — The party pulls Nello out of a strangler fig that lashes at whatever moves and swallows whatever waits, while every cut and every flame is weighed against the island's law.
-- [[Session-12-06-What-Is-Chosen]] — At the Hollow's north rim, with the true memorial tree in view, Nello confesses that he told the woman about the Grung, the survivors split on what they obey, and seawater starts dripping from Perrin's cloak.
-- [[Session-12-07-The-Guava-and-the-Spinner]] — Skarn makes his committed second attempt on the Spinner at the Hollow's north rim, a voice orders Perrin to CONSUME the living guava, and the island's law decides who the roots go after.
-- [[session-12-08-toward-the-memorial]] — After Skarn's second attempt, the party takes stock at the Hollow's rim, and the woman in the woods steps to the edge of her black flowers and looks straight at Jean-Claude.
+- [[session-12-00-the-garden-keeps-its-own]] — Four-hour inland rescue: Skarn fails at dawn, the party follows the Calveno into Hinewai's garden, and Perrin gorges on faith before Skarn's last strike.
+- [[session-12-01-dawn-strike]] — Play resumes mid-theft at dawn; Skarn breaks off bloodied and cuts Matteo's ghost-plum sling on the way out.
+- [[session-12-02-the-smoking-skylight]] — Four Calveno hiding in a lava tube are lifted out and point further in, where Ettore's brother walked toward the voice.
+- [[session-12-03-terror-birds]] — The column crosses the Long Meadow's open Gap between two terror-birds with a carried man and three frightened civilians.
+- [[session-12-04-orders-in-the-ash]] — On the Burnt Road Jean-Claude reads the Gold caste's orders on eleven dead, and Hinewai's voice names him kidnapper.
+- [[session-12-05-consume]] — At the Pantry, Auralis tells Perrin to CONSUME the living fruit, and invisible Skarn makes his last try for the Spinner.
+- [[session-12-06-the-raft]] — Nine Calveno get a raft, a river road, and the rules for Aruhe; three stay under the vine.
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea.
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page.
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques.
@@ -505,7 +512,7 @@
 - [[slow-burn]] — A thread-wound alchemical cigarette that burns for an hour and keeps the smoker's hold on a spell steady through the hits that would otherwise break it.
 - [[snakewood]] — Canopy vine colony creature that attacks movement from above, grapples travelers, and increases acid damage until they escape.
 - [[solange-barret]] — Red Grung operative named among the clans' current faces.
-- [[solanges-authority-seal]] — A red-caste Grung signet ring that forces a Grung within 60 feet to obey a one-word command once per long rest. Identified after the Calveno raid. Held by the crew.
+- [[solanges-authority-seal]] — An unused Grung authority seal that binds one Grung's will forever. Jean-Claude took it from Solange Barret.
 - [[sorin-vask]] — Runs a dockside salvage-goods trade in Kalowe, a straight dealer within a crooked port who has drawn pointed questions from one of the dock bosses.
 - [[sorn]] — Verdant Teeth farm heart where Botukuri uses seasonal flood-pulse lanes and Simone holds a guarded beach.
 - [[sorn-guarded-beach]] — Sorn's held landing and Simone's post. The last hundred yards are recut as policy; the interior is not open.
@@ -537,7 +544,6 @@
 - [[Stillmere]] — Proving ground on Otel Karn where death has stopped and wounds still hurt.
 - [[stonepear]] — Rare Aruhe fruit that grants Resistance to all damage for one minute.
 - [[stormwork-quiver]] — Gnomish wondrous quiver (holds 20 arrows); each arrow fired deals an extra 1d6 lightning damage. Requires attunement. Sold by Cotter Foss at Nimmik Vollask.
-- [[strangler-fig]] — CR 8 strangling fig controller from living-stock ecology.
 - [[suke|Suke]] — Newest Moucheron member of the Five Blades, still adjusting from Murrat to Kalowe contract work.
 - [[sula-marn]] — Elderly elven Reeve of Penance Bar trying to hold the peace.
 - [[sump-cradle]] — Genuinely curative hot mud; always with one small; strange; permanent side effect.
@@ -551,7 +557,7 @@
 - [[taken-whole]] — Dockside talk at Kalowe claims a red ship out past the Maw takes ships whole and kills everyone aboard, leaving the cargo dumped over the side instead of stolen.
 - [[taking-on-aruhe]] — Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility.
 - [[talon-skarn]] — Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus.
-- [[talon-vantyrus]] — CR 17 Countless master, originally named [[osset]] and once a senior master of the High Eyrie; he breaks decisions rather than takes hits, and [[talon-skarn]] is trying to kill him under the Rule of Two.
+- [[talon-vantyrus]] — CR 17 Countless master, originally named [[osset]] and once a senior master of the High Eyrie; he breaks decisions rather than takes hits, and [[talon-skarn]] serves him until he is trained enough to try to kill him under the Rule of Two.
 - [[tam-slim-nail]] — A deadpan Rattkin stockkeeper at Il Preludio who narrates the room like stage direction and never once sings.
 - [[tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site.
 - [[tattletale-goggles]] — Goggles that grant darkvision, but make everyone nearby, friend or foe, feel an inexplicable certainty that someone is at the wearer's location.
@@ -612,6 +618,7 @@
 - [[the-taken-314]] — Captive pipeline clock tracking more than 314 fighting-age people moved from festival ports toward Karath.
 - [[the-tallow-bell]] — A Tier 1 Waveservant Shrine sloop that moves clergy, tribute records, and sealed offerings between Shattered Sea ports.
 - [[the-tarahs]] — Calveno-area ship faction that takes Rattkin; Nona assumed they had Perrin when he missed check-in.
+- [[tommaso-brasca]] — Boatwright's son who built the Pantry's deadfall raft from what fell, and knows the river.
 - [[the-understudy]] — A folded canvas figure that unfolds into a convincing double of its owner, takes one attack meant for them, and collapses at the owner's feet.
 - [[the-unnamed-companion]] — The drowned man Hinewai buried on Aruhe; his grave became the reason for the island's law.
 - [[the-unplotted]] — Never in the same place on two charts; yet ships always find it exactly where they need it.
@@ -853,5 +860,3 @@
 - [[tokage-island]] — Large Mid-chain island where six lizard-folk clans compete, trade, and unite against outside threats.
 - [[yuki-no-kibo]] — Mountain order of Shaolin-style lizardfolk monks who test survival and mastery beneath Semuanya's eye.
 - [[zennitana]] — Bustling southwest capital attached to a huge harbor and surrounded by fishing villages, rivers, rice fields, and sake makers.
-- [[turned-hollow]] — A sky-open bowl of Grung dig pits where expeditions died digging under a strangler fig they mistook for the memorial tree.
-- [[nello-castri]] — Calveno survivor who walked toward the woman's garden and told her a Grung had come on wings.

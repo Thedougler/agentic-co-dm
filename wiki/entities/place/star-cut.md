@@ -34,7 +34,7 @@ Night-watch aisle north of [[spoke-ring]] on the seam of [[the-quiet]], [[grassl
 ## If the party
 
 - **South aisle:** Back toward [[spoke-ring]] (grass still shows beyond that hub, not here).
-- **North star-cut:** Packed dirt darkens into deeper [[the-quiet]] and runs about an hour north to the south rim of [[turned-hollow]]; garden talk from Spoke Ring still points that way, and [[memorial-grove]] lies just past the Hollow's north rim.
+- **North star-cut:** Packed dirt darkens into deeper [[the-quiet]] and runs about an hour north toward [[memorial-grove]]; garden talk from Spoke Ring still points that way.
 - **Skip this cut:** Lose aisle, east fire, west guavas, sky slit.
 - **Walk packed aisle:** Ordinary ground; wood beyond either wall Difficult Terrain, heavily obscures beyond 10 feet.
 - **Watch at east fire facing the star-cut:** Post on packed dirt at fire's north edge — heat and woodsmoke.

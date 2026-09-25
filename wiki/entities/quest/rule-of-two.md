@@ -16,7 +16,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T19:35:00Z
-updated: 2026-09-20
+updated: 2026-09-24
 type: quest
 reveal: unrevealed
 campaign: shattered-sea
@@ -32,7 +32,7 @@ last_advanced: "Unknown"
 # Rule of Two
 
 **Objective.** Keep [[crissdalynn-khinriss|Crissdalynn]] from becoming leverage in the contest between [[talon-skarn|Skarn]] and [[talon-vantyrus|Vantyrus]], or exploit the contest before one Talon takes control of [[Countless]].
-**Why now.** Skarn openly schemes to overthrow Vantyrus, and Vantyrus treats the attempt as a standing threat rather than a secret. Countless's routes and one-job contacts can bring that contest to the party.
+**Why now.** Skarn hunts the Fate Spinner for Vantyrus and is loyal for now. It is an open secret between them that Skarn will try to kill Vantyrus once he has trained well enough. Countless's routes and one-job contacts can bring that contest to the party.
 **Deadline.** No fixed date is established. The pressure advances when a Talon cuts the other off, when Countless's route network shifts, or when the hunt for Crissdalynn reaches a new contact.
 
 ## At a Glance
@@ -44,11 +44,11 @@ last_advanced: "Unknown"
 | **Faction**     | [[Countless]], a breakaway Sentinel order.                      |
 | **Scope**       | Midchain routes, grey markets, and Sentinel waystations.        |
 | **Reward**      | No reward is promised; leverage over Countless's route network is possible. |
-| **Last change** | Skarn's open overthrow attempt is now a standing threat to Vantyrus. |
+| **Last change** | Skarn serves Vantyrus's hunt for the Fate Spinner; his eventual attempt on Vantyrus is an open secret between them. |
 
 ## Situation
 
-[[Countless]] is led by Vantyrus, who wants the Fate Spinner's gift tied to the Soul Incarnate transformation technique. Skarn, Vantyrus's apprentice, openly schemes to overthrow him. Crissdalynn is in the crossfire because Countless's hunt targets Fate Spinner carriers and uses one-job agents who know only their immediate assignment.
+[[Countless]] is led by Vantyrus, who wants the Fate Spinner's gift tied to the Soul Incarnate transformation technique. Skarn, Vantyrus's apprentice, hunts the Fate Spinner for him and is loyal for now; both know Skarn will try to kill him once he has trained well enough. Crissdalynn is in the crossfire because Countless's hunt targets Fate Spinner carriers and uses one-job agents who know only their immediate assignment.
 
 ### What the party knows
 
@@ -57,7 +57,7 @@ last_advanced: "Unknown"
 
 ### What is really happening
 
-Vantyrus leads Countless through covert routes, hired blades, paid contacts, and missing records. Skarn is trying to take control through the Rule of Two contest. The order's larger active agenda is to find Crissdalynn or another Fate Spinner carrier; whoever wins the internal contest inherits the route network and its hunt.
+Vantyrus leads Countless through covert routes, hired blades, paid contacts, and missing records. Skarn will try to take control through the Rule of Two contest once he has trained well enough; until then he serves. The order's larger active agenda is to find Crissdalynn or another Fate Spinner carrier; whoever wins the internal contest inherits the route network and its hunt.
 
 ## Stakes
 
