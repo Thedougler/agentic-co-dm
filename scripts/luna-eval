@@ -137,7 +137,8 @@ def build_prompt(task: str, skill: Path | None, spec: dict, outputs: Path) -> st
                      "reference and skill it points you to)")
     lines.append(f"- Task: {task}")
     lines.append("- Scope: do exactly what the task asks, read only what it needs, and stop as soon as its "
-                 "deliverable is complete; leave everything outside the task as it is.")
+                 "deliverable is complete; leave everything outside the task as it is, except friction you hit: fix "
+                 "that at its source as the AGENTS.md friction rule says, staged under outputs/ like any other change.")
     if spec.get("files"):
         lines.append("- Input files: " + ", ".join(spec["files"]))
     lines.append("- Outputs: " + (spec.get("outputs") or DEFAULT_OUTPUTS).replace("{outputs}", str(outputs)))

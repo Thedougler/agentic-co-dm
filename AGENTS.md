@@ -71,7 +71,7 @@ Before writing substantial engineering, agent-system, campaign-architecture, or 
 
 **Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
 
-<a id="friction-rule"></a>**Friction rule:** When an action hits friction (a failing command, a stale path, wrong or missing guidance), identify its cause, fix the authoritative source with the smallest change, verify the fix, then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
+<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, add a regression where a check or test can catch the cause (`scripts/check-current-commands` flags any skill or AGENTS line naming a script that does not exist), verify, then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
 
 ## Carve-outs
 
