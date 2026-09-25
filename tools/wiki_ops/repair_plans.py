@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from typing import Any, Callable, Iterable
 from .mutations import MutationOp, apply_mutation, section_hash
-from .transactions import Transaction
+from .transactions import Transaction, qmd_hook_runner
 
 
 def _action_name(value: Any) -> str | None:
@@ -183,6 +183,9 @@ def apply_safe_fix_plan(vault: str | Path, operations: list[MutationOp]) -> tupl
                             "status": "applied", "changed_files": list(result.get("changed_files") or [])})
         elif not result.get("accepted"):
             skipped.append({"target": operation.target, "reason": str(result.get("error") or "mutation_failed")})
+    refresh = qmd_hook_runner(Path(vault).resolve()) if applied else None
+    if refresh is not None:  # changed pages are searchable again before the repair phase reads them
+        refresh()
     return applied, skipped
 
 
