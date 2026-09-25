@@ -14,6 +14,9 @@ type: npc
 reveal: unrevealed
 campaign: shattered-sea
 status: alive
+role: contact
+location: "Il Preludio"
+faction: none
 visibility: dm
 summary: "Deadpan Rattkin stockkeeper who counts what walks back on its own and narrates the room like stage direction."
 provenance:
@@ -66,6 +69,9 @@ flexGrow=1
 A Blade of Unerring Return that came back overnight with nobody throwing it. He still will not raise his voice. He counts on the beat between sentences.
 ```
 ````
+### Voice
+
+Tam speaks in flat stage directions and short, exact observations. He counts between sentences and avoids singing even when the room expects a lyric. Sample lines: “The count is wrong again.” “No, that is not what the ledger says.” “Please stop making the inventory more interesting.”
 
 ## Connections
 
