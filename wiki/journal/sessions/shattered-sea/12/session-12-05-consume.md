@@ -81,7 +81,9 @@ flexGrow=2
 
 ## Opposition
 
-### [[talon-skarn]]
+### Primary opposition
+
+**[[talon-skarn]]**
 
 - **Numbers.** **AC 19**, **130/195 HP**, Speed 50 ft, fly 90 ft. **Invisible** for 1 hour from a [[ghost-plum]]: attacks against him have Disadvantage unless the attacker can see him (pollen drift, Blindsight), and his attacks have Advantage against anyone who cannot see him. Multiattack: three of Katana (+11, 17 slashing, reach 5 ft), Kusarigama (+11, 15 slashing, reach 20 ft, pull 10 ft), Sai (+11, 13 piercing, the target has Disadvantage on its next attack). **Stunning Strike** once per turn: **Constitution save — `DC 18`** or Stunned. **Kusarigama Tempest** (Recharge 5–6): **Dexterity save — `DC 19`**, 27 (6d8) slashing plus a 15-foot pull or Prone, half on a success. **Deflect Attack** reduces one hit by 2d10 + 7. **Evasion.** Saves Dex +11, Con +9, Wis +10; Acrobatics +16; passive Perception 20. Legendary actions (3): Chain Snap, Crossing Sai, Wingbeat Step. **Peregrine Dive** is unavailable: the vine roof gives him no 30-foot straight-down lane except over the channel.
 - **Wants.** The Spinner, for Vantyrus.

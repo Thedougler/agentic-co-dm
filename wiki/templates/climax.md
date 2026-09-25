@@ -77,7 +77,9 @@ flexGrow=2
 
 ## Opposition
 
-### [[Primary Opposition]]
+### Primary opposition
+
+**[[Primary Opposition]]**
 
 - **Numbers.** AC, HP, Speed; the attacks, save DCs, legendary or lair actions the DM rolls; the trait that changes tactics.
 - **Wants.** The outcome they are actively pursuing.
@@ -107,7 +109,7 @@ flexGrow=2
 
 **Collateral stakes.** The people, structures, evidence, resources, or relationships endangered.
 
-<!-- Keep Final Battle when physical conflict is a major part of the climax. -->
+<!-- Keep Final Battle, with its Forces, Tactics, Phases, and Ending the fight subsections, when physical conflict is a major part of the climax; omit all five otherwise. -->
 
 ## Final Battle
 
@@ -145,7 +147,7 @@ flexGrow=2
 - **Objective lost.** The consequence, with play continuing.
 - **Escape / pursuit.** Where surviving opposition can go.
 
-<!-- Keep Final Revelation when the climax is about establishing, exposing, or confronting the truth. -->
+<!-- Keep Final Revelation, with its Truth, Proof on the table, Resistance, and Revealing the truth subsections, when the climax is about establishing, exposing, or confronting the truth; omit all five otherwise. -->
 
 ## Final Revelation
 
