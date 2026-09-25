@@ -205,12 +205,7 @@ Once all runs are done:
 
 1. **Grade each run** — spawn a grader subagent (or grade inline) that reads `agents/grader.md` and evaluates each assertion against the outputs. Save results to `grading.json` in each run directory. The grading.json expectations array must use the fields `text`, `passed`, and `evidence` (not `name`/`met`/`details` or other variants) — the viewer depends on these exact field names. For assertions that can be checked programmatically, write and run a script rather than eyeballing it — scripts are faster, more reliable, and can be reused across iterations.
 
-2. **Aggregate into benchmark** — run the aggregation script from the skill-creator directory:
-   ```bash
-   python -m scripts.aggregate_benchmark <workspace>/iteration-N --skill-name <name>
-   ```
-   This produces `benchmark.json` and `benchmark.md` with pass_rate, time, and tokens for each configuration, with mean ± stddev and the delta. If generating benchmark.json manually, see `references/schemas.md` for the exact schema the viewer expects.
-Put each with_skill version before its baseline counterpart.
+2. **Report and decide promotion** — `python3 <skill-creator-path>/scripts/aggregate-benchmark.py <workspace>/iteration-N --skill-name <name>` (defaults `--incumbent old_skill --candidate with_skill`) writes `benchmark.json` and `benchmark.md`: per eval, task-outcome regressions and assertions the incumbent passed that the candidate fails, plus medians of tool calls, retries, tokens, and latency. It states facts and refuses runs whose `model` or `effort` differ. The candidate replaces the incumbent only when each config ran once on the same eval ids with the recorded baseline's model and effort, the report lists no regression and no incumbent-pass → candidate-fail assertion, and the median of tool calls, retries, or tokens is lower with none of the three higher. Otherwise restore the incumbent. Medians and regressions decide; mean ± stddev does not.
 
 3. **Do an analyst pass** — read the benchmark data and surface patterns the aggregate stats might hide. See `agents/analyzer.md` (the "Analyzing Benchmark Results" section) for what to look for — things like assertions that always pass regardless of skill (non-discriminating), high-variance evals (possibly flaky), and time/token tradeoffs.
 
