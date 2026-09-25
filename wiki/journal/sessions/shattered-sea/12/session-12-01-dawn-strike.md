@@ -28,6 +28,9 @@ summary: "Play resumes mid-theft at dawn: Skarn works Crissdalynn's straps for t
 **Hook lands when.** Skarn breaks off and takes the sky, and the party turns to the survivors' prints north.
 **Memorable element.** Skarn's hook-blade flicks past Crissdalynn on his way out and cuts [[matteo-scola]]'s sling, and two [[ghost-plum]]s go up the chain.
 
+> [!narration] Prologue
+> Last time, Aruhe showed you what it does to anyone who takes from it. Crissdalynn ate a fallen berry and felt her wounds close, so she picked a second one off a living stem. The grass around you burst with wolfrabbits, and young hawks came diving in after them. Farther downriver you hauled a thin man out of the water while three huge otters batted him between them for sport. He was Matteo Scola, and he swore by the same rule, fallen fruit is yours and living fruit is not. He warned you about a woman in the woods with orange eyes, then bit into a ghost plum and was simply not there anymore. You slept at his camp, and on the last watch a falcon dropped out of the dark at Crissdalynn. She hit him with a blow that should have ended it. He came through it anyway, his blade already reaching past her for the pack where the dreidel might be.
+
 > [!narration] Open on
 > Dawn is greying the sky over the river, and the coals have gone dull red. Crissdalynn, the falcon stands close enough for his wing feathers to brush your chest, and his amber eyes track your hands and belt without once rising to your face. His sword holds the space between you shut. From his other fist a sickle blade hangs on a length of chain, and the links tick once against his wrapped forearm as the blade dips toward your pouches.
 >
