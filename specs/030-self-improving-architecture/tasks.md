@@ -300,7 +300,7 @@ description: "Task list for feature 030: Self-Improving Architecture"
 **Independent Test**: Quickstart V-19
 
 - [X] T096 [US9] Record `wc -l .agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md` to `/tmp/030/skill-lines-before.txt`, and snapshot those dirs to `/tmp/030/incumbent-us9/` for old_skill runs
-- [ ] T097 [US9] Make `scripts/manifest.py` report the manifest facts named in recorded trajectories (facts only, no interpretation), with a regression in `tests/test_wiki_ops.py` (FR-029, FR-011)
+- [X] T097 [US9] Make `scripts/manifest.py` report the manifest facts named in recorded trajectories (facts only, no interpretation), with a regression in `tests/test_wiki_ops.py` (FR-029, FR-011)
 - [X] T098 [US9] Move deterministic repair bookkeeping (fixes with exactly one correct output) into `wiki lint fix` in `scripts/wiki` and `tools/wiki_ops/cli.py`, with a regression in `tests/test_wiki_cli.py` (FR-029, FR-011). Repair choices stay in the skills.
 - [X] T099 [P] [US9] Shorten `.agents/skills/place-design/SKILL.md`. Remove only deterministic text now covered by T082, T088, T097, and T098 (path discovery, health facts, manifest facts, repair bookkeeping). Keep every judgment, and make sure the five FR-040 answers are present.
 - [X] T100 [P] [US9] Shorten `.agents/skills/faction-design/SKILL.md` in the same way as T099

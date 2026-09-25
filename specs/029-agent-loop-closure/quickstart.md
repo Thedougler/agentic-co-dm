@@ -273,7 +273,7 @@ Recorded with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseli
 | child handoff | `faction-design:local-subtype-handoff` | | | | | | | | | |
 | parent resumption | `session-beats:parent-resume-requires-child-progress` | gpt-6-luna / high | pass | 6 | 0 | 0 | 347,002 | 105 | ok | 1 |
 | write finalization | `wiki-capture:capture-mode-progress-and-finalize-once` | gpt-6-luna / high | blocked | 10 | 0 | 0 | 652,509 | 152 | ok | 1 |
-| recovery | `wiki-update:delta-noop-and-recovery-convergence` | | | | | | | | | |
+| recovery | `wiki-update:delta-noop-and-recovery-convergence` | gpt-6-luna / high | pass | 6 | 0 | 0 | 252,496 | 122 | ok | 1 |
 | child handoff + parent resumption | `place-design:bounded-child-return-and-parent-resume` | | | | | | | | | |
 
 `wiki health` from scratch (feature 030 V-08c: `wiki/_meta/identity-index.json` and `wiki/_meta/lint-cache.json` deleted, 837 pages), maintainer workstation 2026-09-24: finished in 72 648 ms with no harness timeout. Warm with two pages edited (V-08): 4201 ms.
