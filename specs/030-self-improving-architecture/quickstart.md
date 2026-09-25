@@ -61,3 +61,21 @@ Lint rewrites the tracked bookkeeping files `wiki/_meta/lint-cache.json`, `wiki/
 | ID | Scenario | Command | Expected |
 |---|---|---|---|
 | V-20 | SC-014 (a)/(c) mechanical checks | `python3 scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main` | Pass: every added file is in plan.md's "New files" table, and no deleted/folded path in the "Deleted or folded" table is referenced in maintained surfaces. (b), (d), and (e) are Review judgments against the same tables. |
+
+## Final-tree rerun (T112, 2026-09-24, maintainer workstation)
+
+| ID | Result |
+|---|---|
+| V-01 | `omp-speckit-baseline: pass`. |
+| V-03 | No `E100`; `Deprecated.DMThesis` fires on a scratch file outside `wiki/`; no bare `DM` line in `accept.txt`. |
+| V-04 | `pytest -q`: 180 passed, no Vale E100; the tracked `accept.txt` stays unchanged after the run (T113). |
+| V-04b | The scratch "DM Thesis" finding is `human_repair` (covered by the `tests/test_creative_lint.py` regression). |
+| V-04c | The four folded scripts are absent. |
+| V-04d | `scripts/vale-vocab` and `tools/check_wiki_pages.py` absent; `lint:vale` is `./scripts/wiki lint`; `rg` finds nothing. |
+| V-04e | Pages: no lifecycle/confidence field. Code and contracts: only exempt rule-status and test-assertion hits. Open: the PR #170 design skills merged from main keep "canon proposal" wording (11 skills, their references and evals, `wiki/templates/vehicle.md`) and lore-design keeps two `lifecycle` lines; they were left as written at Nick's direction during the merge, so SC-015 (a) is not met for that text. |
+| V-04f | The canon rule has one hit, in `.agents/skills/llm-wiki/SKILL.md`; both AGENTS.md files link to it; `Sunkline.md` (`status: active`) reports `Required section 'Active Agenda' is missing`. |
+| V-09 | `tests/test_luna_eval.py` passes: all 60 eval files pass the schema check; no Work-gate wording. |
+| V-11 | `tests/test_policy_conflicts.py` passes. |
+| V-15 | `error list`: 5 entries, `recurrence {"total": 0, "by_sitting": {}}`, `missing_sources: []`. |
+| V-16 | See the V-16 row (manual checks and SC-010 pass). |
+| V-20 | `hybrid-sdd-check.py diff --base origin/main`: `status: pass` (17 added, 20 deleted, 0 unlisted, 0 deleted-still-present or referenced). |
