@@ -58,8 +58,12 @@ Ault opens with the HCS Warrant's sealed authority. He can inspect a ship, seize
 ### When posture changes
 
 Ault shifts from negotiation to enforcement when a crew refuses inspection, hides cargo, or obstructs a Crown order. The HCS Warrant then closes distance and makes detention, seizure, or arrest the immediate consequence.
+### Voice
+
+Ault speaks in formal, measured orders and frames coercion as procedure. He names the sealed authority before he names the consequence, offers conversation only once, and avoids admitting that the order may be politically motivated. **Ask:** “Will you explain the cargo before I inspect it?” **Refusal:** “The seal does not require your agreement.” **Under pressure:** “Then I write detention, and the Warrant makes the rest clear.”
 
 ## Connections
+
 
 | Connection | Meaning |
 | ---------- | ------- |
