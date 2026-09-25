@@ -143,7 +143,7 @@ Choose the QMD transport from `$QMD_TRANSPORT`:
 For detailed CLI command selection, maintenance, and VM caveats, use the local
 `$qmd-cli` skill when it is installed.
 
-If the selected transport is unavailable (no MCP tool, `qmd` not on PATH, or the command errors), skip QMD and continue with Step 3.
+If `qmd query` or `vsearch` errors, qmd's local model could not load; run the same key terms as keyword search, which loads no model: `${QMD_CLI:-qmd} search "<key terms>" -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --files`. Skip to Step 3 only when qmd itself is unavailable (no MCP tool, `qmd` not on PATH).
 
 For MCP transport:
 
