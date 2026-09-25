@@ -67,6 +67,9 @@ flexGrow=1
 She becomes guarded when a visitor presses for the penance's debt, Ashe's actions, or Mirela Cass's name. She will protect the village and her information before satisfying a stranger's curiosity.
 ```
 ````
+### Voice
+
+Dessa speaks quietly, with practical warmth and no wasted reassurance. She answers the safe question directly, lets a pause guard the dangerous one, and keeps her hands busy while deciding whether a visitor is a threat. **Ask:** “What brought you to Penance Bar?” **Refusal:** “Eat first. That is all I can give you.” **Under pressure:** “You may leave my village with your questions. You will not leave it with its people.”
 
 ## Connections
 
