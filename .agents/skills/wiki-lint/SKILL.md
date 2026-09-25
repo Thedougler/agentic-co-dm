@@ -52,7 +52,7 @@ The synchronized target is DM utility, complete-sentence readability, playable c
 
 ## Method
 
-Two phases: **sweep**, then **repair**.
+Three phases: **sweep**, **reindex**, **repair**.
 
 ### 1. Sweep — one deterministic auto-fix
 
@@ -61,10 +61,16 @@ Resolve config, form the effective schema, and read `hot.md`.
 Run `wiki lint fix` with no path argument once. This applies every registered
 deterministic repair across the entire vault. Do not run the fixer per file.
 
-Commit the sweep: `wiki lint fix: bulk auto-repair`. `lint fix` refreshes QMD
-itself after it changes pages.
+Commit the sweep: `wiki lint fix: bulk auto-repair`.
 
-### 2. Repair — sequential file-by-file
+### 2. Reindex — QMD refresh
+
+Run `scripts/qmd-maintain.sh` immediately after the sweep. The manual repair
+phase reads pages through QMD; stale embeddings after bulk file changes produce
+wrong retrievals. Retry once on SQLite error. QMD failure does not block
+repair — note it and continue.
+
+### 3. Repair — sequential file-by-file
 
 Run `wiki lint` to get the post-sweep full worklist. Every remaining finding is
 manual work.
