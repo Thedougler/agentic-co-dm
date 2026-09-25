@@ -7,12 +7,17 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:margaret-porcelain-pots.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: artisan
+location: unknown
+faction: none
 visibility: dm
 summary: "Dragonborn potter whose family fired ceramics for three generations. Delmar Fisk's first love, and the one who gave him a week-long shiner."
+invention: true
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -21,14 +26,57 @@ tier: supporting
 ---
 # Margaret Maggie Porcelain Pots
 
-A dragonborn potter with peach-and-cream scales and bright pink eyes. Like Dolly Parton, she fires her own kilns and once decked an admiral. Her family has fired ceramics on their home island for three generations, and she is the latest in the line. She is masterful at it. She uses her own fire breath to feed the kilns directly. Her work is exclusive, beautiful, and extraordinarily durable. Not cheap, not meant to be casual, it lasts for decades. She always has clay somewhere on her: hands, wrist, occasionally somewhere stranger. She wipes her hands before shaking yours, clean or not. She is an absolute sweetheart to everyone she meets and takes no nonsense from anyone. That generosity and firmness are not in conflict. She is currently expanding the operation and scouting locations on other islands. Her work travels further than she does, but that is beginning to change.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-She is [[delmar-fisk]]'s first love. They were together for a couple of years before his wanderlust ended it badly, an argument she punctuated by leaving him with a shiner that lasted a week. He has avoided his home island ever since. The shiner is locally famous. She has never felt the need to explain it.
+| **Role**   | Artisan |
+| ---------- | ------- |
+| **Nature** | Dragonborn potter and third-generation ceramicist |
+| **Home**   | An unnamed home island; she is scouting other islands for expansion |
+| **Wants**  | Make beautiful durable pottery, grow the operation, and return home without taking nonsense |
 
-When she appears, the reunion will feel like both gift and threat for Delmar. She'd dislike his musket-wife on instinct. But once she hears the shiner story, she'd befriend her quickly.
+> **DM thesis:** Maggie is an absolute sweetheart whose generosity and firmness are inseparable; her reunion with [[delmar-fisk]] is both gift and threat.
+```
 
-She does not know Delmar married. She heard his fleet went down and did not reach out afterward. No bad blood there, she just doesn't chase. Her pottery business can organically cross the party's path across islands. She always returns home.
+```col-md
+flexGrow=1
+===
+> [!narration] Margaret Maggie Porcelain Pots
+> Peach-and-cream scales frame bright pink eyes. Clay marks Maggie's hands, wrist, and occasionally somewhere stranger; she wipes them before shaking yours, clean or not. Her fire breath feeds the kiln, and the finished ceramics are beautiful, exclusive, and built to last for decades.
+```
+````
+
+## Running Margaret Maggie Porcelain Pots
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Maggie meets the party through her pottery operation, an expansion site, or a reunion with [[delmar-fisk]]. She offers warmth first, then names the practical work that needs doing. **Sample line:** “Mind the glaze, love; it will outlast all of us.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Maggie's warmth does not make her permissive. She turns firm when someone damages her work, treats a customer or craftsperson carelessly, or mistakes generosity for weakness. The party can restore the exchange by respecting the work and taking responsibility.
+```
+````
+
+### Voice
+
+Maggie speaks like a generous craftsperson: affectionate names, practical instructions, and a firm finish when someone crosses a line. She can offer a beautiful cup and a warning in the same breath. **Ask:** “What brings you to my kiln?” **Refusal:** “Sweetheart, you can say no without making a mess of my work.” **Under pressure:** “I am kind to everyone. I am not careless with anyone.”
 
 ## Connections
 
-- [[delmar-fisk]]: first love. Together a couple of years. It ended badly. She left him with a week-long shiner she's never explained away.
+| Connection | Meaning |
+| --- | --- |
+| [[delmar-fisk]] | Her first love; their relationship ended with his wanderlust and a week-long shiner. |
+
+Maggie does not know Delmar married. She heard his fleet went down but did not reach out; there is no bad blood, and she does not chase. She would dislike his musket-wife on instinct, then befriend her quickly once she hears the shiner story.
