@@ -67,6 +67,9 @@ flexGrow=1
 He becomes direct when a customer asks for Midchain coverage beyond the basic surveys sold at his counter. He admits the gap and does not pretend a Crown chart knows what it does not.
 ```
 ````
+### Voice
+
+Reginald speaks in an even, careful tone and begins both good and bad news with “I'm afraid.” He distinguishes surveyed water from unknown water, names a chart's limits without apology, and handles the paper more carefully than the customer. **Ask:** “Which route do you need surveyed?” **Refusal:** “I'm afraid the Crown chart does not cover that water.” **Under pressure:** “Accuracy is the service; certainty is not.”
 
 ## Connections
 
