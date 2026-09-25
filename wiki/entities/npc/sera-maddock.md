@@ -7,12 +7,17 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:sera-maddock.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Grimaldi's Dispensary]]"
+faction: none
 visibility: dm
 summary: "Dying privateer with a treasure map tattooed on her arm, seeking passage out of Kalowe."
+invention: true
 provenance:
   extracted: 0.85
   inferred: 0.10
@@ -21,24 +26,59 @@ tier: supporting
 ---
 # Sera Maddock
 
-Old privateer. Compact and wheezing, still. Seventy-one years old. Three days from dead by [[ilaria-grimaldi]]'s estimate from lung sickness, treatable in [[calders-tooth-and-port-tidefall]], not in [[kalowe]]. She makes eye contact the way someone does who has spent a career reading strangers fast.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-She ran [[dravosi-crown|Dravosi]]-licensed privateer work forty years ago. Her crew buried a cache on [[orak]] from one of those runs and she is the last one alive who knows where. She bears half the chart tattooed on her left forearm. She burned the other half when the man she was going to share it with tried to sell her to the Crown.
+| **Role**   | Contact |
+| ---------- | ------- |
+| **Nature** | Seventy-one-year-old dying privateer with half a treasure chart tattooed on her forearm |
+| **Home**   | The back room of [[Grimaldi's Dispensary]] in [[kalowe]] |
+| **Wants**  | Passage out of [[kalowe]] to a healer city, in exchange for 200 gp and the bearing on her [[orak]] cache |
 
-She is not sentimental about the money. She insists someone get it instead of letting it rot under a rock. She demands passage out of [[kalowe]]. Her deal: 200 gp and passage (not to Tidefall, she wants a healer city with the right herbalist). The forearm tattoo is worth the price.
+> **DM thesis:** Sera turns a dying body into a hard bargain: the party can buy a map, a route, and a dangerous truth, but only if they move before her three-day estimate runs out.
+```
 
-To someone offering passage, she'd pitch the deal directly: *"The map's on my arm. I'll show you the bearing if you show me a ship."* If pressed about why she destroyed the second half of the chart, the old privateer offers no apology: *"I burned the other half. The man I was going to share it with deserved less."* When you eventually question what awaits in the buried cache on [[orak]], she gives you the truth as she knows it: *"There's something in that cave. I'm not telling you it's nothing. I'm telling you I don't know what's in there now."*
+```col-md
+flexGrow=1
+===
+> [!narration] Sera Maddock
+> Sera Maddock is compact, seventy-one, and wheezing with lung sickness. She makes eye contact like someone who spent a career reading strangers fast. Half a treasure chart is tattooed on her left forearm; the other half is gone, burned by her own decision.
+```
+````
 
-She is in the back room of [[Grimaldi's Dispensary]] (see [[Kalowe, The Captain's Map]]).
+## Running Sera Maddock
 
-## Stats & Combat
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-No stats given in source.
+Sera waits in the back room of [[Grimaldi's Dispensary]], three days from death by [[ilaria-grimaldi]]'s estimate. She demands passage out of [[kalowe]], not to [[calders-tooth-and-port-tidefall]], but to a healer city with the right herbalist. **Sample line:** “The map's on my arm. I'll show you the bearing if you show me a ship.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Sera becomes harder when the party treats the cache as their prize, presses her to apologize for burning the second chart half, or offers passage that cannot reach a suitable healer. She is not sentimental about the money; she insists someone recover it rather than let it rot under a rock. No combat statistics are established in the source.
+```
+````
+
+### Voice
+
+Sera speaks directly, with the breath and economy of an old privateer who has already priced every stranger. She offers no apology for burning the other half of the chart and gives uncertainty about the cave plainly. **Ask:** “What ship are you offering?” **Refusal:** “I burned the other half. The man I was going to share it with deserved less.” **Under pressure:** “There's something in that cave. I don't know what's in there now.”
 
 ## Connections
 
-- [[Grimaldi's Dispensary]]: back room, where she is dying
-- [[ilaria-grimaldi]]: treating physician, estimates three days left
-- [[The Captain's Map]]: the quest built around her cache and her deal
-- [[dravosi-crown]]: issued her privateer license forty years ago; the man she trusted tried to sell her to it
-- [[orak]]: where her crew buried the cache she is the last to remember
+| Connection | Meaning |
+| --- | --- |
+| [[Grimaldi's Dispensary]] | Back room where Sera is dying. |
+| [[ilaria-grimaldi]] | Treating physician who estimates three days left. |
+| [[The Captain's Map]] | Quest built around Sera's cache and her deal. |
+| [[dravosi-crown]] | Issued her privateer license forty years ago; the man she trusted tried to sell her to the Crown. |
+| [[orak]] | Island where her crew buried the cache she is last alive to remember. |
