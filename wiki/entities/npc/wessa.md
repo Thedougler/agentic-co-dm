@@ -67,6 +67,9 @@ flexGrow=1
 Wessa's patience ends when someone wastes provisions, disrupts the galley, or treats shipboard food as an afterthought. She remains controlled but makes the cost of the mistake clear; competent help restores the quiet routine.
 ```
 ````
+### Voice
+
+Wessa speaks in precise, practical instructions and treats every task as part of keeping the ship provisioned. Her tone stays composed until someone wastes food or disrupts the galley; then each word becomes an inventory of the cost. Her repeated line is, “If you are going to touch it, put it back in the condition you found it.”
 
 ## Connections
 
