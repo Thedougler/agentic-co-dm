@@ -35,7 +35,8 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 Take a named session owner or session-plan request, the parent session
 objective, and the bounded brief, thread map, and linked owner pages. When the
 owner is a session plan, enter this skill directly; do not route through a
-generic beat or orchestration skill.
+generic beat or orchestration skill. When the request does not yet state the DM's intent for
+the session, load `plan-session` to shape it with the DM before charting.
 
 ### Owner-specific Work
 
@@ -124,16 +125,19 @@ makes the next Development's information urgent.
    beats need. Cast each from the wiki first; mint with its owner skill only
    what nothing fits (`docs/agents/table-ready.md` § Cast before minting), one
    focused subtask per page type (AGENTS.md Focused minting).
-10. **Fill the typed beats.** In chart order, hand each live slot to its type
-    skill; each beat opens from the previous beat's carry-forward, so the Hook
-    fills first. Every typed beat meets `docs/agents/table-ready.md`.
-11. **Audit.** Run the beat-order audit below and a cold read of the plan: a
-    DM who has never seen the prep can say, from the plan, what starts the
-    night, what the opposition does next, and which beat is on deck. Write
-    each audit check into the plan's Prep Audit with the beats that satisfy
-    it. Done when every check names its beats and every failure is fixed.
-12. **File.** Write the plan's DM copy with `writing-for-humans`, file the
-    session plan (below), and link every typed beat.
+10. **File the plan.** Write the plan's DM copy with `writing-for-humans` and
+    file the session plan (below) before any beat page exists: it is the short
+    form of the DM's intent, and every beat is written from its row.
+11. **Fill the typed beats.** In chart order, hand each live slot and its plan
+    row to its type skill; each beat opens from the previous beat's
+    carry-forward, so the Hook fills first. Every typed beat meets
+    `docs/agents/table-ready.md`.
+12. **Audit and link.** Link every typed beat from the plan. Run the
+    beat-order audit below and a cold read of the plan: a DM who has never
+    seen the prep can say, from the plan, what starts the night, what the
+    opposition does next, and which beat is on deck. Write each audit check
+    into the plan's Prep Audit with the beats that satisfy it. Done when every
+    check names its beats and every failure is fixed.
 
 ## Filed session plan
 

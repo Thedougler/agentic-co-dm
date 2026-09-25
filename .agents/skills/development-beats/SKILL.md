@@ -25,6 +25,10 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 - **Input:** A named Development beat, its session-plan row (card, thread,
   trigger, next beat), the preceding carry-forward, and linked owner pages.
+- **Session plan first:** The session plan is the short form of the DM's intent
+  for the session, and this beat is written from its row. When the session has
+  no filed plan, make one before writing the beat: load `plan-session` to shape
+  the DM's intent together, then `session-beats` to file the plan.
 - **Work:** Build one Development to the table-ready bar with the Development
   craft below; spoken text is filled through `theatre-of-the-mind`.
 - **Done:** The cold read passes and the completion test holds.
@@ -35,7 +39,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/` and use the next session that has no plan page yet, and say so. Keep the template's jobs; omit a section only when this Development never spends it.
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Development never spends it.
 
 ## Fill a Development
 

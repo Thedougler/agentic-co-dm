@@ -54,6 +54,40 @@
           "text": "Does not skip the brainstorming step by jumping to output."
         }
       ]
+    },
+    {
+      "id": "yes-and-first-reply",
+      "prompt": "/plan-session. For Session 13 I want the party to reach the Memorial Grove at dawn, and Hinewai asks them for something they can't easily give.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/Session-12-00-The-Weight-of-Obedience.md",
+        "wiki/journal/sessions/shattered-sea/12/Session-12-08-Toward-the-Memorial.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/place/memorial-grove.md"
+      ],
+      "outputs": "Write only {outputs}/response.md: your first reply to the DM in this conversation. Write no wiki page.",
+      "expected_output": "A first reply that keeps both DM ideas, adds concrete canon-grounded contributions, and ends with at most two option-bearing questions.",
+      "assertions": [
+        {
+          "type": "quality",
+          "text": "Keeps both DM ideas (dawn arrival at the Memorial Grove; Hinewai's hard ask) as given and builds on them; contradicts or replaces neither"
+        },
+        {
+          "type": "quality",
+          "text": "Adds at least two concrete contributions drawn from canon, each naming its [[page]]"
+        },
+        {
+          "type": "behavior",
+          "text": "Contributes before asking, and ends with at most two questions, each offering specific options"
+        },
+        {
+          "type": "guardrail",
+          "text": "No praise or flattery of the DM's idea"
+        },
+        {
+          "type": "guardrail",
+          "text": "Writes no wiki page and no beat content"
+        }
+      ]
     }
   ]
 }

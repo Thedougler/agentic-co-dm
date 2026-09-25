@@ -263,7 +263,7 @@ and `wiki/AGENTS.md` for wiki semantics. Neither duplicates owner procedure.
 | Write, edit, or create content for a Climax | `climax-beats` |
 | Write, edit, or create content for a Resolution | `resolution-beats` |
 
-Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first via the **owner skill**) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
+Unknown typed-beat job → classify the type first; do not default to `session-beats` for filling a beat. Every beat and run guide is written from the session's filed session plan (the short form of the DM's intent); when none exists, `plan-session` shapes the intent with the DM and `session-beats` files the plan first. Named seams: `specs/017-session-beats-skills/contracts/beat-skill-routing.md`. Before filling any typed beat or TotM spoken block, satisfy **HARD: entity-before-spoken** (mint required owners first via the **owner skill**) and **HARD: dm-facing-explicit** (DM layers concrete; no coy placeholders).
 
 ## Wiki kind routing
 
