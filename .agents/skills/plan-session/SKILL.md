@@ -88,8 +88,9 @@ Let the conversation roam; before wrapping up, the shared ideas should cover:
 - **Resolution** — the small afterscene that shows what changed, and what it
   seeds for next time.
 
-The conversation is done when each part has a situation the DM has settled
-on, or when the DM says they are ready.
+The conversation is done only when the DM says so. When every part has a
+situation the DM has settled on, offer to wrap up, and keep building until the
+DM says the plan is done.
 
 ### Keeping it playable
 
@@ -134,7 +135,7 @@ the DM can hand to `session-beats` or use as their own planning notes:
 ```
 
 The concept is conversation output — chat text, not a wiki page. When the DM
-settles on it, `session-beats` files it as the session plan. If a beat or
+says the plan is done, `session-beats` files it as the session plan. If a beat or
 run guide request brought you here, that request resumes from the filed plan.
 
 ## Boundaries
