@@ -19,39 +19,48 @@ kind: site
 region: "Midchain"
 ---
 # Yssenmoor
+
+## Overview
+
 > [!narration] Narration
-> Yssenmoor is three miles of bog under fog that does not lift, with no dry landing. Sound arrives before its source across the wet ground. A thumb-sized quartz top turns differently here than on ordinary Midchain water.
+> Yssenmoor is three miles of bog beneath fog that does not lift. There is no dry landing. Sound arrives before its source across the wet ground, and a thumb-sized quartz top turns differently here than on ordinary Midchain water.
 
-
+---
 ## At a Glance
-A place over a hidden ley line. It reacts to [[fate-spinner]] and links old power to a watchful relic.
 
-## Five-sentence kernel
-- **Function.** The hidden ley line runs beneath it, but its exact present function is unknown.
-- **Fantastic.** [[sir-quackers-the-fowl]] has died and reformed again and again on the ley line and is unknowingly edging toward demigodhood.
-- **Conflict.** The Fate Spinner reacts to the ley line while [[talon-vantyrus]] recognizes the Soul Incarnate signature.
-- **Promise.** Study the reaction. The players choose which information can safely leave Yssenmoor.
-- **Trajectory.** If ignored, the reaction remains a readable imprint for Vantyrus's transformation-technique hunt.
+Yssenmoor is an unclaimed, fog-lidded bog in the [[Midchain]], with no dry landing and no confirmed route through it. A hidden ley line runs below the bog, and the [[fate-spinner]] reacts to it. The present pressure is the readable Soul Incarnate signature that [[talon-vantyrus]] can use in his transformation-technique hunt; if the party ignores it, the imprint remains available to him. Skipping Yssenmoor costs the party the chance to study the reaction and decide what information can safely leave the bog.
 
-## Aspects
-`hidden ley line, repeated reforming, Fate Spinner reaction`
+---
+## If the party
 
-## Who is here
-- [[sir-quackers-the-fowl]]
-- [[talon-vantyrus]] may sense the signature without the party knowing it
+- **Approach across the water.** The party finds no dry landing and must commit to wet ground or turn back. Sound arriving before its source makes the approach difficult to read; the cost of retreat is losing the reaction's current trace.
+- **Study the [[fate-spinner]].** The relic's quartz top turns differently over the ley line. The party can compare the reaction with ordinary Midchain water and learn that the change is a place-signature, not proof of a safe route.
+- **Question [[sir-quackers-the-fowl]].** Sir Quackers knows the ley line only through repeated death and reforming. He can confirm the pattern but cannot explain its cause.
+- **Follow the imprint.** The party can preserve, conceal, or expose the readable signature. Preserving it gives [[talon-vantyrus]] a future lead; concealing it costs the party a direct route to whatever old power lies below.
 
-## Connections
-- → [[Midchain]]
-- → [[fate-spinner]]
-- → [[soul-incarnate]]
+---
+## Who
 
-## Hooks
-- Observe the Fate Spinner’s reaction.
-- Question Sir Quackers about the ley line. He understands little about it.
-- Prevent or follow the imprint’s use by Vantyrus.
+[[sir-quackers-the-fowl]] is present in the bog and has died and reformed there repeatedly, unknowingly edging toward demigodhood. [[talon-vantyrus]] is not confirmed to be present, but he can sense the Soul Incarnate signature without the party knowing it.
 
-## Secrets
-The place’s settlement, terrain, routes, and exact ley-line behavior are unknown beyond the hidden line and the reaction described above.
+---
+## What
 
-## Geography ingest (physical approach)
-Yssenmoor is three miles of unclaimed bog under fog that does not lift. Sound arrives before its source, [[sir-quackers-the-fowl]] holds it, and there is no dry landing. These physical facts coexist with the hidden ley line and [[fate-spinner]] reaction already recorded here.
+- **“Three miles of bog beneath fog that does not lift.”** The truth is Yssenmoor's physical approach: wet ground, low visibility, and no dry landing. The party can use the fog as cover, but cannot use it to navigate safely.
+- **“Sound arrives before its source.”** The truth is a disorienting property of the wet ground. It warns the party that an approaching creature or event may not be where its sound suggests.
+- **“A thumb-sized quartz top turns differently.”** The truth is the [[fate-spinner]] reacting to the hidden ley line. Careful observation identifies the ley-line signature and gives the party a choice about who learns it.
+- **Hidden ley line.** The truth is old power beneath the bog. Its exact present function is unknown; its readable imprint is the find.
+- **Repeated reforming.** The truth is [[sir-quackers-the-fowl]]'s recurring death and return on the ley line. It is evidence of a transformation, not an explanation of one.
+
+---
+## Where
+
+**North:** Fog-lidded Midchain bog; no dry route is confirmed.  
+**East:** Unmapped wet ground within Yssenmoor.  
+**South:** The bog continues toward the wider [[Midchain]] interior.  
+**West:** More flooded ground and the same hidden ley-line signature.
+
+---
+## Why
+
+The party comes to study the [[fate-spinner]], investigate the hidden ley line, or question [[sir-quackers-the-fowl]] about his repeated reforming. They stay to decide whether the Soul Incarnate imprint can be safely shared. They leave when the fog and wet ground make further study cost more than the information gained, or when concealing the signature becomes more urgent than understanding it.
