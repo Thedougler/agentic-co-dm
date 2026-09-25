@@ -19,6 +19,11 @@ established fiction.
 
 ## Gates
 
+**Session plan first.** Before reading further or loading any other skill,
+find this session's filed plan (`Session-<NN>-00-*.md` in its session
+folder). With none, stop here: load `plan-session` and plan with the DM;
+this skill resumes from the plan's row once `session-beats` files it.
+
 Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit**.
 Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
@@ -26,10 +31,8 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 - **Input:** A named Resolution beat, the Climax's outcome rows and
   carry-forward, the session's threads and costs, and linked owner pages.
-- **Session plan first:** The session plan is the short form of the DM's intent
-  for the session, and this beat is written from its row. When the session has
-  no filed plan, make one before writing the beat: load `plan-session` to shape
-  the DM's intent together, then `session-beats` to file the plan.
+- **Session plan:** the short form of the DM's intent for the session; this
+  beat is written from its row (see Gates).
 - **Work:** Build one Resolution to the table-ready bar with the Resolution
   craft below; spoken text is filled through `theatre-of-the-mind`.
 - **Done:** The cold read passes and the completion test holds for every

@@ -37,11 +37,9 @@ what actually happened, not generic fantasy.
    directory. Read the session plan (`Session-<N>-00-*.md`) and the recap
    (`Session-<N>-Recap.md`) if one exists. These tell you where play left off,
    what threads are live, and what the players said they want next.
-4. **Query active threads.** Use `wiki-query` to pull:
-   - Active PC goals and unresolved backstory threads
-   - Faction clocks and NPC agendas in motion
-   - Dangling clues, promises, or consequences from recent sessions
-   - Any prep the DM already started (notes)
+4. **Pages the DM's idea touches.** Open the owner pages for what the DM
+   named (NPCs, places, factions), and nothing else yet. Pull further threads,
+   clocks, and clues with `qmd` as the conversation reaches them.
 
 Open with a short summary of where the campaign stands (5–10 lines) and one or
 two directions the canon points to, so the DM has something to react to.
