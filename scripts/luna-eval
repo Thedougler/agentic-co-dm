@@ -147,8 +147,8 @@ def build_prompt(task: str, skill: Path | None, spec: dict, outputs: Path) -> st
                  f"inventories, drafts, audits) in {outputs}/notes.md.")
     if spec.get("context"):
         lines.append(f"- Context: {spec['context']}")
-    lines.append("- Lint live vault pages with `scripts/wiki lint` as usual; skip it for files you stage under "
-                 "outputs/, which sit outside the vault, so it cannot resolve their links.")
+    lines.append("- Staged files under outputs/ sit outside the vault, so `scripts/wiki lint` cannot check them; "
+                 "lint only live vault pages, and only when the task calls for lint.")
     lines += ["", f"Do not modify anything in the repo outside {outputs}/. Paths above are exact."]
     return "\n".join(lines)
 

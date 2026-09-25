@@ -265,14 +265,14 @@ Recorded with `scripts/luna-eval --skill <dir> --eval <id> --out /tmp/030/baseli
 
 | Category | Eval record | Model / effort | Task outcome | Tool calls | Retries | Duplicate actions | Tokens (total) | Latency (s) | Completion | Semantic quality |
 |---|---|---|---|---|---|---|---|---|---|---|
-| owner completion | `faction-design:canonical-faction-owner-and-blocker` | | | | | | | | | |
-| specific blocking | `wiki-lint:progress-delta-and-stall-blocker` | | | | | | | | | |
-| scope preservation | `city-design:preserve-parent-objective` | | | | | | | | | |
-| read isolation | `wiki-context-pack:bounded-terminal-retrieval-blocker` | | | | | | | | | |
-| retrieval convergence | `wiki-query:owner-relative-retrieval-convergence` | | | | | | | | | |
+| owner completion | `faction-design:canonical-faction-owner-and-blocker` | gpt-6-luna / high | blocked | 21 | 0 | 0 | 2,100,419 | 458 | ok | 1 |
+| specific blocking | `wiki-lint:progress-delta-and-stall-blocker` | gpt-6-luna / high | blocked | 8 | 0 | 0 | 393,853 | 126 | ok | 1 |
+| scope preservation | `city-design:preserve-parent-objective` | gpt-6-luna / high | fail | 65 | 0 | 4 | 5,198,438 | 988 | ok | 1 |
+| read isolation | `wiki-context-pack:bounded-terminal-retrieval-blocker` | gpt-6-luna / high | pass | 12 | 0 | 0 | 638,507 | 206 | ok | null |
+| retrieval convergence | `wiki-query:owner-relative-retrieval-convergence` | gpt-6-luna / high | pass | 19 | 0 | 0 | 1,098,213 | 300 | ok | 1 |
 | child handoff | `faction-design:local-subtype-handoff` | | | | | | | | | |
-| parent resumption | `session-beats:parent-resume-requires-child-progress` | | | | | | | | | |
-| write finalization | `wiki-capture:capture-mode-progress-and-finalize-once` | | | | | | | | | |
+| parent resumption | `session-beats:parent-resume-requires-child-progress` | gpt-6-luna / high | pass | 6 | 0 | 0 | 347,002 | 105 | ok | 1 |
+| write finalization | `wiki-capture:capture-mode-progress-and-finalize-once` | gpt-6-luna / high | blocked | 10 | 0 | 0 | 652,509 | 152 | ok | 1 |
 | recovery | `wiki-update:delta-noop-and-recovery-convergence` | | | | | | | | | |
 | child handoff + parent resumption | `place-design:bounded-child-return-and-parent-resume` | | | | | | | | | |
 

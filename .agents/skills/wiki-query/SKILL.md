@@ -140,9 +140,6 @@ Choose the QMD transport from `$QMD_TRANSPORT`:
 - `mcp` (default): use the QMD MCP tool configured in the agent.
 - `cli`: run the local qmd CLI. Use `$QMD_CLI` if set; otherwise use `qmd`.
 
-For detailed CLI command selection, maintenance, and VM caveats, use the local
-`$qmd-cli` skill when it is installed.
-
 If `qmd query` or `vsearch` errors, qmd's local model could not load; run the same key terms as keyword search, which loads no model: `${QMD_CLI:-qmd} search "<key terms>" -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --files`. Skip to Step 3 only when qmd itself is unavailable (no MCP tool, `qmd` not on PATH).
 
 For MCP transport:

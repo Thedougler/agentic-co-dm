@@ -306,9 +306,9 @@ description: "Task list for feature 030: Self-Improving Architecture"
 - [X] T100 [P] [US9] Shorten `.agents/skills/faction-design/SKILL.md` in the same way as T099
 - [X] T101 [P] [US9] Shorten `.agents/skills/session-beats/SKILL.md` in the same way as T099
 - [X] T102 [P] [US9] Shorten `.agents/skills/run-guide/SKILL.md` in the same way as T099
-- [ ] T103 [P] [US9] Shorten `.agents/skills/wiki-query/SKILL.md` in the same way as T099
+- [X] T103 [P] [US9] Shorten `.agents/skills/wiki-query/SKILL.md` in the same way as T099
 - [X] T104 [P] [US9] Shorten `.agents/skills/wiki-lint/SKILL.md` in the same way as T099 (it builds on T079, and keeps the `Deprecated.*`, broken-image, and identity judgments)
-- [ ] T105 [US9] Verify V-19. Line counts must not exceed `/tmp/030/skill-lines-before.txt`. Rerun each skill's evals with `scripts/luna-eval` `--config with_skill` against `--config old_skill --subject-skill /tmp/030/incumbent-us9/...`, report with `aggregate-benchmark.py`, and apply the `skill-creator` rule (T092). Revert any skill it refuses.
+- [X] T105 [US9] Verify V-19. Line counts must not exceed `/tmp/030/skill-lines-before.txt`. Rerun each skill's evals with `scripts/luna-eval` `--config with_skill` against `--config old_skill --subject-skill /tmp/030/incumbent-us9/...`, report with `aggregate-benchmark.py`, and apply the `skill-creator` rule (T092). Revert any skill it refuses.
 
 **Checkpoint**: Phase 3 is complete
 
