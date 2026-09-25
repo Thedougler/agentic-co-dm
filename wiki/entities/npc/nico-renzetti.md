@@ -70,6 +70,12 @@ flexGrow=1
 A PC who reads a fighter's readiness can catch the tic before the bell. Refusal in front of family is closed once it has tolled. A halfhearted loss costs [[house-renzetti]] everything.
 ```
 ````
+### Voice
+
+Nico's public voice is clipped and formal, built to sound braver than he feels. Unwatched, he goes quiet and returns to the blade tic. **Ask:** “What does honor require?” **Refusal:** “The bell has already rung.” **Under pressure:** “After it rings, there is only one way out.”
+
+
+Nico is in a death-duel. The source points to a commoner sheet that is not a live wiki page; do not invent Armor Class or hit points.
 
 ## Connections
 
@@ -79,6 +85,3 @@ A PC who reads a fighter's readiness can catch the tic before the bell. Refusal 
 | [[house-renzetti]] | If he loses halfheartedly, the house loses, and Ottavia's claim to [[sparhold]] collapses with it. |
 | [[sparhold]] | Settlement rule hangs on this duel. |
 
-## Combat
-
-He is in a death-duel. The source points at a commoner sheet that is not a live wiki page. Do not invent Armor Class or hit points.
