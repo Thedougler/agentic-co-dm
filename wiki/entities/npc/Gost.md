@@ -13,6 +13,7 @@ campaign: shattered-sea
 status: alive
 role: contact
 location: "[[Warren]]"
+faction: none
 visibility: dm
 summary: "Half-orc muscle for hire in the Warren. Loyal to going rate, first met as a festival drunk."
 provenance:
@@ -66,6 +67,12 @@ Blood, or the watch arriving. If the crew handles it without either, he finds th
 ```
 ````
 
+If violence starts, Gost uses Reckless Attack only; too drunk to sense danger. For the first two rounds, he has Disadvantage on saving throws. After that the alcohol is burning off. Use berserker numbers from the source: Challenge 2, AC 13, 67 hit points, greataxe +5, `2d12 + 3`. **Charisma (Persuasion) — `DC 13`**, or **Charisma (Intimidation) — `DC 10`**, talks him down; failure lets the party wait for the watch, escalate, or try again, and escalation makes him throw the bottle. **Charisma (Persuasion) — `DC 10`** if someone offers a quieter drink; success moves him, failure leaves him in place.
+
+### Voice
+
+Gost speaks through drink-softened confidence, with short challenges and sudden offers of work. He avoids discussing loyalty beyond the going rate. Sample lines: “Buy me a quieter drink.” “No, I work for whoever pays.” “Blood changes the price.”
+
 ## Connections
 
 | Relationship | Meaning |
@@ -73,13 +80,3 @@ Blood, or the watch arriving. If the crew handles it without either, he finds th
 | [[Warren]] | He offers the sword to whoever pays. |
 | [[calven-and-calveno]] | Stub source is a street encounter here. |
 | [[jean-claude-tabarnack]] | If Jean-Claude tells him the watch is four minutes out, he stands down. No roll. |
-
-## Combat
-
-Encounter rule: not violent on first sight. Reckless Attack only; too drunk to sense danger. First two rounds, Disadvantage on saving throws. After that the alcohol is burning off.
-
-Use berserker numbers from the source: Challenge 2, AC 13, 67 hit points, greataxe +5, `2d12 + 3`. No live berserker page.
-
-**Charisma (Persuasion) — `DC 13`**, or **Charisma (Intimidation) — `DC 10`**, to talk him down. Success: he stands down and puts the bottle down without drawing the watch. Failure: try again, wait for the watch (holding cell), or escalate. Escalate and he throws the bottle.
-
-**Charisma (Persuasion) — `DC 10`** if someone offers a drink somewhere quieter. Success: he goes along. Failure: he stays put.
