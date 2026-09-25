@@ -67,6 +67,9 @@ flexGrow=1
 If cornered, Fen has the lifted purse, a folding knife she will not use, and a sob story that is about 40% true. She becomes cooperative when the party offers a way to address the debt without exposing her broker.
 ```
 ````
+### Voice
+
+Fen speaks quickly and defensively, turning every question into a test of whether the other person saw enough to catch her. She jokes when cornered, then drops the joke when the debt broker is named. **Ask:** “You looking for something?” **Refusal:** “You saw the wrong hand.” **Under pressure:** “I can give the key back. I cannot make the debt disappear.”
 
 ## Connections
 
