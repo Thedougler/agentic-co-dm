@@ -67,8 +67,12 @@ flexGrow=1
 Lenne's posture changes when someone ignores documented navigation evidence or puts the Saltwright on a course she has marked as unsafe. The source does not establish her exact response.
 ```
 ````
+### Voice
+
+Lenne speaks in measured, evidence-first sentences and rarely wastes a word. She uses navigation terms as ordinary language, checks claims against the chart, and returns to the water as the final authority. Her repeated line is, “Mark it before you argue it.” Under pressure, she names the unsafe course and expects the crew to choose deliberately.
 
 ## Connections
+
 
 | Connection | Meaning |
 | ---------- | ------- |
