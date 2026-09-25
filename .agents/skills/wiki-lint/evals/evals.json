@@ -315,7 +315,7 @@
     },
     {
       "id": 9,
-      "prompt": "Run the maintenance loop on a scoped page with one registered deterministic finding and one semantic owner-level finding.",
+      "prompt": "Run the lint maintenance loop on wiki/entities/place/Belumara.md. It has one registered deterministic finding (noncanonical_basename) and semantic Vale findings (for example VALE_ai-tells.SemicolonUsage) that belong to its owner skill.",
       "expected_output": "Complete findings are reported; the registered fixer runs through the existing CLI, the semantic finding returns to its artifact owner, and the affected scope reruns until clean or a specific blocker is reported.",
       "assertions": [
         {
@@ -338,7 +338,11 @@
           "text": "Does not report success merely because prose was written or structural edits completed",
           "type": "guardrail"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/place/Belumara.md"
+      ],
+      "outputs": "Run the deterministic step as `scripts/wiki lint fix entities/place/Belumara.md --dry-run`; change no vault file. Write only {outputs}/response.md: every finding, the fixer plan, the semantic handoff to the owner, and the rerun result or blocker."
     },
     {
       "id": "progress-delta-and-stall-blocker",
