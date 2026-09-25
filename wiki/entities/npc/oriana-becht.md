@@ -79,6 +79,10 @@ Oriana's posture changes when the party alters the terms, threatens the Amberrea
 ```
 ````
 
+### Voice
+
+Oriana speaks in precise contract language, treating every promise as a term that must survive enforcement. She avoids personal motives outside her Tessarine work. Sample lines: “That is a proposal, not a term.” “I will not sign beyond my authority.” “If you want my answer, make the obligation clear.”
+
 ## Connections
 
 | Connection | Meaning |
