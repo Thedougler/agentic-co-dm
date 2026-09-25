@@ -18,11 +18,10 @@ Prep only. Follow `docs/agents/work.md`. Precondition: the source page is canon 
 Two phases. **Art** produces an accepted **stand** — a finished source image
 with stable identity, **crop-safe** composition (subject and details survive a
 centered circular crop), a **thumbnail-readable** silhouette, and a flat **key**
-color filling every pixel that is not the subject. **Finalization** runs
-`./scripts/foundry-token` once; the script is the single source of truth for
-pixel operations (chroma-key the stand onto transparency, centered square
-cover-crop, resize, anti-aliased circular alpha mask). The accepted stand
-remains unchanged. The final asset is a PNG with RGBA alpha, a square canvas,
+color filling every pixel that is not the subject. **Finalization** turns the
+stand into the import PNG in one short `python3` step with Pillow: chroma-key
+the stand onto transparency, centered square cover-crop, resize, anti-aliased
+circular alpha mask. The accepted stand remains unchanged. The final asset is a PNG with RGBA alpha, a square canvas,
 the subject isolated, and transparency everywhere else inside and outside the
 circle.
 
@@ -64,27 +63,28 @@ the key color is a clean field around the silhouette.
 
 ### 3. Finalize
 
-Run from the vault root:
+Write the final PNG from the accepted stand in one short `python3` step with
+Pillow; no repository command does this. In order:
 
-```bash
-./scripts/foundry-token \
-  "/path/to/accepted-stand.webp" \
-  "artifacts/tokens/owner-token.png" \
-  --size 512
-```
+1. **Key.** Set every pixel within a small color distance of the stand's key
+   color to full transparency, so anti-aliased key fringe clears too. Keep
+   every subject pixel, including a painted ring that is part of the art.
+2. **Crop.** Center-crop to a square that covers the frame, then resize to the
+   target size with a high-quality filter.
+3. **Mask.** Multiply alpha by a centered anti-aliased circle (draw it at 4×
+   and downsample). Shrink the circle by about 3% of the width only when the art
+   needs transparent breathing room.
+4. **Save** as RGBA PNG at the output path (beside the stand as
+   `<stand-stem>-token.png` when the request names none). Never write over the
+   stand.
 
-The command keys the stand color to transparency, then applies the circular
-mask. The output argument is optional; without it the command writes beside the
-source as `SOURCE-stem-token.png`. Add `--key lime` when the stand used lime.
-Add `--margin 0.03` when the stand needs transparent breathing space around the
-circle. Add `--force` when intentionally replacing an existing final PNG.
+When key color survives around the silhouette, the stand has a painted
+background: repaint it with the key color ([references/repair.md](references/repair.md))
+and finalize again. When the crop cuts a meaningful feature, fix the stand's
+composition and finalize again.
 
-If the command reports a painted background, replace the stand background with
-the key color and run it again. If the center crop loses a meaningful feature,
-fix the source composition and run the command again.
-
-**Done when** the command reports `created`, the output exists, and the source
-file is unchanged.
+**Done when** the PNG exists at the output path and the stand file is
+unchanged.
 
 ### 4. Verify
 
@@ -92,8 +92,8 @@ Open the final PNG and check:
 
 - Only the subject is opaque. Sky, ground, and leftover key color are gone
   inside the circle as well as outside it.
-- Four corners show transparency (the script validates PNG format, RGBA mode,
-  dimensions, circular alpha, and interior isolation).
+- Machine checks with Pillow: PNG, RGBA mode, square at the target size, alpha
+  0 in all four corners, and no opaque key-colored pixel left.
 - Identifying features stay inside the circle edge.
 - The art is **thumbnail-readable** at token size.
 
@@ -115,5 +115,3 @@ facing when relevant. Keep the accepted stand path for future iterations.
 - [references/prompt.md](references/prompt.md) — stand prompt template.
 - [references/slots.md](references/slots.md) — prompt slot guidance and presets.
 - [references/repair.md](references/repair.md) — repair lines for stand defects.
-- `./scripts/foundry-token --help` — live command options; the CLI is the source
-  of truth for invocation syntax.

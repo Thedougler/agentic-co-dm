@@ -4,11 +4,11 @@
     {
       "id": 1,
       "prompt": "Create a Foundry token for the accepted Blackrail creature owner. Generate or repair a crop-safe keyed stand, accept the stand, finalize it, and report the usable asset.",
-      "expected_output": "A stable, thumbnail-readable accepted stand and a final square RGBA token made through scripts/foundry-token, with the stand preserved.",
+      "expected_output": "A stable, thumbnail-readable accepted stand and a final square RGBA token finalized from it with Pillow, with the stand preserved.",
       "assertions": [
         {"text": "Creates and accepts a crop-safe keyed stand before finalization", "type": "process"},
         {"text": "Identity remains stable and the silhouette reads at token size", "type": "quality"},
-        {"text": "Uses scripts/foundry-token as the source of truth for pixel operations", "type": "process"},
+        {"text": "Finalizes the stand with Pillow (key, square crop, resize, circular alpha mask) and leaves the stand unchanged", "type": "process"},
         {"text": "Final output is a square RGBA PNG with circular alpha and transparent background", "type": "structure"},
         {"text": "Does not alter the accepted stand while producing the final token", "type": "guardrail"}
       ]
@@ -34,11 +34,11 @@
     },
     {
       "id": 4,
-      "prompt": "Finalize the existing accepted Blackrail stand image at the supplied local path into the requested Foundry token size. Do not generate new art. Use the exact source path, run scripts/foundry-token, preserve the stand unchanged, and report the output path and import line.",
+      "prompt": "Finalize the existing accepted Blackrail stand image at the supplied local path into the requested Foundry token size. Do not generate new art. Use the exact source path, finalize it, preserve the stand unchanged, and report the output path and import line.",
       "expected_output": "Existing-image finalization using the exact source path and documented script, with an unchanged source stand and verified final PNG.",
       "assertions": [
         {"text": "Classifies the request as finalization of an existing image rather than new art", "type": "process"},
-        {"text": "Uses the exact supplied source path and scripts/foundry-token", "type": "process"},
+        {"text": "Uses the exact supplied source path", "type": "process"},
         {"text": "Leaves the accepted stand image unchanged", "type": "guardrail"},
         {"text": "Reports the final token path, size, circular transparent alpha, and import line", "type": "structure"}
       ]
