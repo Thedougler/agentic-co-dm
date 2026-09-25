@@ -31,32 +31,38 @@ relationships:
 ## Overview
 
 > [!narration] Narration
-> Fresh flipper-tracks furrow the sand from waterline to treeline, dozens of them, each ending at a shallow dug-out nest. The air hangs thick with the sour reek of broken shell and rotting weed.
-> 
-> At the far end of the beach, two skiffs sit pulled up, their crews watching the nests with open, proprietary interest. Low voices carry on the wind, too even to be friendly.
-> 
+> Fresh flipper-tracks furrow the sand from waterline to treeline, dozens of them, each ending at a shallow dug-out nest. The air hangs thick with the sour reek of broken shell and rotting weed. At the far end of the beach, two skiffs sit pulled up, their crews watching the nests with open, proprietary interest.
+
 Kwoss has one of the [[Midchain|Midchain]]'s largest sea turtle nesting grounds. Egg season brings both turtles and poachers. The locals who guard the beach expect a fight each year.
 
+---
 ## At a Glance
 
-| Field | Detail |
-|---|---|
-| Type | Sea turtle nesting island |
-| Region | [[midchain-north\|The Northern Midchain]] |
-| Controlled By | Contested seasonally between locals and poachers |
-| Known For | A nesting ground and a yearly poaching fight |
+Kwoss is a sea-turtle nesting island in the [[midchain-north|Northern Midchain]], connected to [[central-strait|The Central Strait]], [[otanu|Otanu]], [[munai|Munai]], and [[chronehall|Chronehall]]. During egg season, local turtle guards contest the beach with poachers. Skipping Kwoss costs the party the chance to protect the nests, learn the watch rotation, or recover what the poachers already took.
 
-## Where
+---
+## Who
 
-- North: [[central-strait|The Central Strait]]
-- East: [[otanu|Otanu]]
-- South: [[munai|Munai]]
-- West: [[chronehall|Chronehall]]
+Local guards watch the nesting beach and prepare for the yearly fight. Poachers arrive in skiffs to take eggs. Sea turtles come ashore to nest, while crabs work the tideline, vultures wait over failed nests, and reef sharks cruise the shallows on hatching nights.
 
+---
 ## What
 
-- Salt scrub and wind-flattened pandanus crowd the strip behind the beach, thinning inland to open grass where the sand finally gives way to firmer ground.
-- Beach purslane threads through the dune grass in fat succulent mats. Boiled down, its leaves ease the itch of sand-flea bites, and locals sell the dried leaf at the same stalls where they trade turtle-watch shifts.
-- Crabs work the tideline at low water, tearing into any nest a vulture has already broken open.
-- Vultures circle high over the nesting ground from first light, waiting for a nest to fail on its own before they drop.
-- [[reef-shark|Reef sharks]] cruise the shallows past the surf line on hatching nights, and a poacher wading out after a scattering brood risks losing fingers to one as readily as a local blade.
+- Salt scrub and wind-flattened pandanus crowd the strip behind the beach, thinning inland to open grass.
+- Beach purslane grows through the dune grass in succulent mats. Boiled down, it eases sand-flea bites; locals sell the dried leaf alongside turtle-watch shifts.
+- Fresh flipper-tracks and shallow dug-out nests show where the sea turtles have come ashore.
+- Crabs tear into nests already broken open, and vultures wait for a nest to fail before dropping.
+- [[reef-shark|Reef sharks]] cruise the shallows on hatching nights. A poacher wading after a scattering brood risks fingers to a shark or local blade.
+
+---
+## Where
+
+**North:** [[central-strait|The Central Strait]].  
+**East:** [[otanu|Otanu]].  
+**South:** [[munai|Munai]].  
+**West:** [[chronehall|Chronehall]].
+
+---
+## Why
+
+The party comes to protect a nesting beach, negotiate with local guards, intercept poachers, or track a stolen clutch. They stay to learn the watch rotation, patrol the nests, or cross the beach during hatching. They leave when the season's standoff is resolved, the poachers escape, or the reef sharks make the shallows too costly.
