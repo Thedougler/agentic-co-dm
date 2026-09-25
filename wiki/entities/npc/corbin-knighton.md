@@ -22,6 +22,7 @@ status: alive
 role: rival
 location: unknown
 faction: "[[dravosi-crown]]"
+invention: true
 ---
 # Corbin Knighton
 
@@ -68,11 +69,8 @@ Corbin's posture changes when a vessel stops looking like compliant merchant tra
 ```
 ````
 
-## Connections
+### Voice
 
-| Connection | Meaning |
-| --- | --- |
-| [[dravosi-crown]] | Corbin commands under Crown authority. |
-| [[hcs-ordinance]] | The ninety-six-gun warship he commanded during the interception. |
-| [[aleksander-malone]] | Malone was aboard Ordinance under Corbin while hunting [[shepherd-grigori]]. |
-| [[shepherd-grigori]] | Grigori later asked the crew to hurt Corbin without killing or breaking him. |
+No personal voice is established in the record. Until the encounter gives the party more evidence, run Corbin with clipped formal commands that keep the Crown's authority in the foreground. **Ask:** “State your cargo and destination.” **Refusal:** “You will answer the inspection.” **Under pressure:** “The Ordinance has already made its position clear.”
+
+## Connections
