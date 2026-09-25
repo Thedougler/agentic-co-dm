@@ -32,35 +32,48 @@ relationships:
 
 > [!narration] Narration
 > An overgrown garden runs wild across the hollow, beds and paths still faintly visible under the growth.
-> 
+>
 > Pale shapes move unhurried through the branches overhead, watching without alarm. Leaves rustle and hush again as they settle.
-> 
-For generations, Whitmoth Hollow's pale apes have kept an old druid garden alive. They tend it with a care that looks like ritual, though nobody knows why.
 
+---
 ## At a Glance
 
-| Field | Detail |
-|---|---|
-| Type | Ape-tended garden hollow |
-| Region | [[midchain-north\|The Northern Midchain]] |
-| Controlled By | The ape colony |
-| Known For | A vanished druidic order's garden, still tended by its apes |
+Whitmoth Hollow is an ape-tended garden island in the [[midchain-north|Northern Midchain]]. A vanished druidic order planted the garden, and the albino ape colony has kept it alive for generations with care that looks like ritual. The hollow's current rule is simple: leave the offering stone alone and the apes leave the party alone.
 
-## Where
+---
+## If the party
 
-- North: [[vetau|Vetau]]
-- East: [[thessit|Thessit]]
-- South: [[verdant-teeth|The Verdant Teeth]]
-- West: [[nemwe|Nemwe]]
+- **Follow the old garden paths.** The party can cross the hollow without cutting through the fig and vine that has swallowed the trellises.
+- **Cut through the overgrowth.** The party reaches the beds faster but must duck and cut through a green tangle, disturbing the garden's tended shape.
+- **Take the offering fruit.** The fruit feeds a party for a day, but touching the flat stone breaks the boundary the apes observe.
+- **Leave the stone alone.** The albino apes continue tending the beds and leave a respectful party alone.
+- **Work the beds.** The party hears blood hawks' wings before they see the birds, while garden vipers remain under the deadfall.
 
+---
+## Who
+
+The albino ape colony tends the garden in loose pairs, clearing deadfall and setting fruit on the flat stone. Blood hawks hunt the canopy gaps for rats drawn by fallen fruit, and garden vipers coil under the cleared deadfall. No druid of the vanished order is present.
+
+---
 ## What
 
-- Fig and vine: broad-leaved fig trees have split the old garden's trellises apart, and flowering vines have swallowed the rest, leaving a green tangle a party has to duck and cut through instead of a path.
-- Offering fruit: a cluster of trees still bears the soft, sweet fruit the apes leave on the flat stone. It bruises at a touch and stains the fingers, but it keeps a party fed for a day without further foraging.
-- Albino apes: the colony that tends the garden works the beds in loose pairs, clearing deadfall and setting fruit at the stone. A party that keeps its distance and leaves the stone alone, the apes leave alone.
-- Blood hawks: pairs hunt the canopy gaps for the rats the fallen fruit draws, stooping low enough that a party working the beds hears wings cut the air before it sees the bird.
-- Garden vipers: they coil under the deadfall the apes clear from the beds, and a hand that reaches into a pile of cut vine without checking first earns a bite.
+- *“An overgrown garden runs wild.”* Fig trees have split the old trellises, and flowering vines have swallowed the paths.
+- *“Pale shapes move unhurried through the branches.”* The albino apes watch without alarm while they tend the garden.
+- *“Fruit on a flat stone.”* A cluster of trees bears soft, sweet fruit that bruises at a touch, stains fingers, and feeds a party for a day.
+- *“Beds and paths still faintly visible.”* The old druidic garden remains navigable beneath the growth.
+- *“Wings cut the air before the bird.”* Blood hawks hunt the canopy gaps in pairs.
+- *“A hand reaches into a pile of cut vine.”* Garden vipers shelter under the deadfall and bite careless searchers.
+- The apes' reason for tending the garden with ritual-like care is not established in current canon; the garden's repeated fruit offerings are the evidence available for play.
 
-## Secrets
+---
+## Where
 
-- Why the apes tend the garden with ritual-like care: left open for table discovery.
+**North:** [[vetau|Vetau]].  
+**East:** [[thessit|Thessit]].  
+**South:** [[verdant-teeth|The Verdant Teeth]].  
+**West:** [[nemwe|Nemwe]].
+
+---
+## Why
+
+The party comes to cross the old garden, obtain food from the offering trees, or learn what remains of the vanished druidic order. They stay to observe the ape colony's ritual-like care, investigate the old beds, or follow the canopy hunters. They care because Whitmoth Hollow preserves a living garden whose keepers have outlasted the people who planted it.
