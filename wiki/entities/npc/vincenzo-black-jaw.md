@@ -67,8 +67,12 @@ flexGrow=1
 Nona's posture changes when someone treats Vincenzo's memory as disposable or challenges the family's claim to the [[Vestra]]. Her affection remains fierce even when she recounts their fights.
 ```
 ````
+### Voice
+
+Vincenzo's remembered voice is blunt, practical, and affectionate beneath the argument. He speaks about ships as things that must be built, repaired, and brought home. His repeated line is, “A vessel tells you what it needs.” Under pressure, he stops defending his pride and asks who is being left behind.
 
 ## Connections
+
 
 | Connection | Meaning |
 | --- | --- |
