@@ -64,6 +64,9 @@ flexGrow=1
 There is no living posture to change. The relevant change is whether the party treats his grave and the law it represents as a person’s memorial or as an obstacle to be bypassed.
 ```
 ````
+### Voice
+
+The Unnamed Companion has no living voice and no recorded words. When his story is spoken, keep it in Hinewai's plain account of drowning within sight of Aruhe; the grave and the law carry the emotional weight. **Ask:** “Where is the grave?” **Refusal:** “Do not turn his death into a shortcut.” **Under pressure:** “He was carried home; the law remembers why.”
 
 ## Connections
 
