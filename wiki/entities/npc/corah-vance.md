@@ -73,6 +73,9 @@ flexGrow=1
 No live-canon posture is established. Any future use requires a separate DM ruling that promotes or replaces the draft account.
 ```
 ````
+### Voice
+
+No live-canon voice exists for Corah Vance. Do not give her dialogue in play; if the draft is discussed, describe its provenance instead of performing an invented manner. **Ask:** “Which source names her?” **Refusal:** “That line belongs to the non-canon draft.” **Under pressure:** “No live-canon answer is established.”
 
 ## Connections
 
