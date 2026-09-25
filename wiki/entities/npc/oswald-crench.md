@@ -67,6 +67,9 @@ flexGrow=1
 He closes the conversation when customers browse without purpose, demand certainty the equipment cannot provide, or threaten the shop's independence. Crown officers have tried to move him before; Oswald stayed.
 ```
 ````
+### Voice
+
+Oswald speaks in brief, careful assessments, treating every instrument as more trustworthy than the person asking about it. His pauses make uncertainty feel like a cost, not an embarrassment. **Ask:** “What do you need the water to tell you?” **Refusal:** “The tool does not promise what you want.” **Under pressure:** “I will not sell certainty I cannot calibrate.”
 
 ## Connections
 
