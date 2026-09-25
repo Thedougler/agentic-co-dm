@@ -24,7 +24,7 @@ type: place
 
 ## At a Glance
 
-[[Wibowo's Provisions]] is [[suryo-wibowo|Suryo Wibowo]]'s victualling shop on [[Kalowe]]'s first island.
+[[Wibowo's Provisions]] is [[suryo-wibowo|Suryo Wibowo]]'s victualling shop on [[kalowe]]'s first island.
 
 ## If the party
 
@@ -40,7 +40,7 @@ The shop sells ordinary provisions and [[long-passage-biscuit|Long-Passage Biscu
 
 ## Where
 
-Wibowo's Provisions is on [[Kalowe]]'s first island. The current record does not establish its neighboring businesses or exact route.
+Wibowo's Provisions is on [[kalowe]]'s first island. The current record does not establish its neighboring businesses or exact route.
 
 ## Why
 

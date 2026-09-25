@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Farrowmere
@@ -32,7 +32,7 @@ relationships:
 
 ## At a Glance
 
-Farrowmere is a western Midchain site distinguished by its locally managed colony of dire crocodiles. The page links it to [[Midchain]] and [[Kalowe]], but does not establish a route, travel time, or current berth between them.
+Farrowmere is a western Midchain site distinguished by its locally managed colony of dire crocodiles. The page links it to [[Midchain]] and [[kalowe]], but does not establish a route, travel time, or current berth between them.
 
 ## If the party
 
@@ -53,7 +53,7 @@ The only established table feature is a colony of dire crocodiles that locals fa
 - **East:** Canon gap; no named neighbor or travel time is established.
 - **South:** Canon gap; no named neighbor or travel time is established.
 - **West:** Canon gap; no named neighbor or travel time is established.
-- **Regional connection:** Farrowmere is in the western [[Midchain]], and the page retains a recorded relationship to [[Kalowe]] without an established route.
+- **Regional connection:** Farrowmere is in the western [[Midchain]], and the page retains a recorded relationship to [[kalowe]] without an established route.
 
 ## Why
 

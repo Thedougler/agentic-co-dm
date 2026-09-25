@@ -45,7 +45,7 @@ tier: supporting
 
 ## Crew stations
 
-* **Captain.** [[Maren]]
+* **Captain.** [[maren]]
 * **Notable crew.** None named in source.
 
 ## Combat

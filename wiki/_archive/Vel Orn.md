@@ -20,7 +20,7 @@ Kelp wraps the pillars. Candles burn where wind should have killed them, and foo
 The deepest chamber held the [[Pearl of Souls]] above a tidal pool built for it. The Pearl's absence is the mark of [[Delmar Fisk]]'s theft and the fleet's destruction. People at the table sometimes call this place **Vafnar**, a mishearing that stuck.
 
 ## Connections
-- [[Pearl of Souls]] · [[Waveservants]] · [[Umberlee]]
+- [[Pearl of Souls]] · [[waveservants]] · [[Umberlee]]
 - [[Sunken Crown]] · [[Blue Hole]] · [[Drowned Maw]] · [[Shelfworks]]
 - [[Chain Council]] · [[Tessarine Concordat]] · [[Aldric Drave]]
 

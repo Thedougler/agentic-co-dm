@@ -42,9 +42,9 @@ relationships:
 
 The index groups the named locations by broad area. The listed owner pages remain the source for each location's specific truth. [[vault-of-the-first-factor]] is recorded here as an unconfirmed Midchain limestone-spire rumour.
 
-The Crown-water group is [[crown-islands]], [[Harwick]], [[calven-and-calveno]], [[Aldenmere]], [[Stenmark]], [[high-eyrie]], [[calders-tooth-and-port-tidefall]], [[Greyteeth]], [[Blackrule]], and [[sarns-landing]].
+The Crown-water group is [[crown-islands]], [[harwick]], [[calven-and-calveno]], [[aldenmere]], [[Stenmark]], [[high-eyrie]], [[calders-tooth-and-port-tidefall]], [[greyteeth]], [[blackrule]], and [[sarns-landing]].
 
-The full working index is [[shattered-sea]], [[verdant-scatter]], [[crown-islands]], [[central-strait]], [[Midchain]], [[verdant-teeth]], [[Blackrule]], [[sarns-landing]], [[Galewall]], [[Doldrums]], [[drowned-maw]], [[Greyteeth]], [[calders-tooth-and-port-tidefall]], [[calven-and-calveno]], [[Harwick]], [[Aldenmere]], [[Stenmark]], [[high-eyrie]], [[Warren]], [[Shelfworks]], [[Fathomrush]], [[sparhold-isle]], [[Sparhold]], [[aruhe]], [[Karath]], [[Murrat]], [[Sorn]], [[Dreth]], [[Orak]], [[veth-west-beach]], [[sorn-guarded-beach]], [[dreth-orak-channel]], [[Sanvashti]], [[western-landing]], [[old-gardens]], [[the-quiet]], [[cutoff-lip]], [[spoke-ring]], [[star-cut]], [[grasslands]], [[torn-crossing]], [[print-braid]], [[line-bank]], [[river-slack-basin]], [[the-river]], [[landing-bank]], [[the-marshes]], [[the-mangroves]], [[clear-lake]], [[memorial-grove]], [[lava-tubes]], [[Uncertainty]], [[Kalowe]], [[Yssenmoor]], [[Vestra]], and [[Mercatura]].
+The full working index is [[shattered-sea]], [[verdant-scatter]], [[crown-islands]], [[central-strait]], [[Midchain]], [[verdant-teeth]], [[blackrule]], [[sarns-landing]], [[galewall]], [[Doldrums]], [[drowned-maw]], [[greyteeth]], [[calders-tooth-and-port-tidefall]], [[calven-and-calveno]], [[harwick]], [[aldenmere]], [[Stenmark]], [[high-eyrie]], [[Warren]], [[Shelfworks]], [[fathomrush]], [[sparhold-isle]], [[sparhold]], [[aruhe]], [[karath]], [[murrat]], [[sorn]], [[dreth]], [[orak]], [[veth-west-beach]], [[sorn-guarded-beach]], [[dreth-orak-channel]], [[sanvashti]], [[western-landing]], [[old-gardens]], [[the-quiet]], [[cutoff-lip]], [[spoke-ring]], [[star-cut]], [[grasslands]], [[torn-crossing]], [[print-braid]], [[line-bank]], [[river-slack-basin]], [[the-river]], [[landing-bank]], [[the-marshes]], [[the-mangroves]], [[clear-lake]], [[memorial-grove]], [[lava-tubes]], [[uncertainty]], [[kalowe]], [[yssenmoor]], [[Vestra]], and [[Mercatura]].
 
 
 ## Limits
@@ -112,7 +112,7 @@ No in-world common telling is recorded. The names on this page are a working cam
 | [[aruhe]] | Regional group | Names the Aruhe locations gathered in this index. |
 | [[vault-of-the-first-factor]] | Unconfirmed location rumour | Preserves the only explicit uncertainty recorded on this page. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** The index does not establish details for any linked location beyond what its owner page records.
 * [ ] **Contradiction.** No contradiction is recorded on this index.

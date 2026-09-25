@@ -25,18 +25,18 @@ tier: supporting
 
 ## Premise
 
-[[Halewick]] is still a normal fishing island under the pageantry, but [[Toby]]'s word has made him its beloved emperor in fact and memory. [[Frankie]] carries the same untrained cursed speech, and their ordinary childhood grievance now becomes a reality-warping decree.
+[[halewick]] is still a normal fishing island under the pageantry, but [[Toby]]'s word has made him its beloved emperor in fact and memory. [[frankie]] carries the same untrained cursed speech, and their ordinary childhood grievance now becomes a reality-warping decree.
 
 ## Pressure
 
-[[Billy]] issued a fixed summons that compelled villagers to travel outward for help. Villagers repeat the same line word for word as the visible signal, though they cannot explain it: "We will destroy everything unless someone stops this before it leaves our island." Delay costs Halewick another scar. The next one can break the dock or foul the well. A stray decree can also mark a visitor's body if someone delivers the wrong sentence to them.
+[[billy]] issued a fixed summons that compelled villagers to travel outward for help. Villagers repeat the same line word for word as the visible signal, though they cannot explain it: "We will destroy everything unless someone stops this before it leaves our island." Delay costs Halewick another scar. The next one can break the dock or foul the well. A stray decree can also mark a visitor's body if someone delivers the wrong sentence to them.
 
 ## Actors
 
 - [[Toby]] wants to remain the rightful emperor of Halewick. His leverage is authorship by speech. His current move is answering any challenge with a larger decree.
-- [[Frankie]] wants to win the argument and regain her place as Toby's Royal Best Friend. Her leverage is matching cursed speech. Her current move is escalating every claim he makes.
-- [[Billy]] wants outside help before the collision consumes the island. His leverage is one deliberate compelled message. His current move is sending that message farther out through villagers.
-- [[Halewick]] supplies the fragile ground. Its altered memory, deaf witnesses, and collision scars make the danger legible.
+- [[frankie]] wants to win the argument and regain her place as Toby's Royal Best Friend. Her leverage is matching cursed speech. Her current move is escalating every claim he makes.
+- [[billy]] wants outside help before the collision consumes the island. His leverage is one deliberate compelled message. His current move is sending that message farther out through villagers.
+- [[halewick]] supplies the fragile ground. Its altered memory, deaf witnesses, and collision scars make the danger legible.
 
 ## Discoverable / Affectable
 
@@ -53,8 +53,8 @@ Toby and Frankie collide again over a fresh slight. A public place on Halewick c
 
 ## Connections
 
-- [[Halewick]] holds the island's hazards, safe channels, and geography.
-- [[Toby]], [[Frankie]], and [[Billy]] define the active child-actors and their fronts.
+- [[halewick]] holds the island's hazards, safe channels, and geography.
+- [[Toby]], [[frankie]], and [[billy]] define the active child-actors and their fronts.
 - [[word-from-halewick]] carries the rumour version that can draw outside attention.
-- [[Halewick|The Isle of Cursed Speech]] holds the wider island premise and unresolved cause.
+- [[halewick|The Isle of Cursed Speech]] holds the wider island premise and unresolved cause.
 - [[delmar-fisk]], [[pearl-of-souls]], and [[drowned-maw]] connect the island to Delmar's unresolved Pearl pressure.

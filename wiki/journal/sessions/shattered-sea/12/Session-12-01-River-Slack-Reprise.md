@@ -125,6 +125,6 @@ flexGrow=2
 - **Party:** HP and spent slots, Focus, and Bardic Inspiration. Sunrise gives them a chance for a short rest before [[celia-parel|Celia]] and [[oren-vask|Oren]] arrive about two hours later.
 - **Jean-Claude:** still catatonic.
 - **If Stolen:** Skarn cannot fly off the island in daylight because the bloodhawks own the sky. He goes to ground in the Quiet north of Cutoff Lip and waits for dusk to fly out. The party has until dusk to take it back.
-- **If Skarn was captured:** he is bound on the sand, and the session's Climax becomes the Turned Hollow rescue and Hinewai's notice (recompute from [[Session-12-00-The-Weight-of-Obedience]]).
+- **If Skarn was captured:** he is bound on the sand, and the session's Climax becomes the Turned Hollow rescue and Hinewai's notice (recompute from [[session-12-00-the-weight-of-obedience]]).
 
 **Continuity change.** Skarn has shown his whole kit and one priority. The party knows he will come back for the Spinner, and if he took the plums, he will come back unseen.

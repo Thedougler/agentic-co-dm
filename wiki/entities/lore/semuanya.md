@@ -139,7 +139,7 @@ The characters can learn that the Yuki no Kibo's harsh trials are religious prac
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Whether Semuanya directly causes the albino scales.
 * [ ] **Unknown.** Whether other Semuanya worshippers interpret the deity differently.

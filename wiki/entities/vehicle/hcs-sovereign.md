@@ -63,7 +63,7 @@ The supplied source gives no initiative, movement, ramming, boarding, component-
 
 ## At a Glance
 
-Built at [[Harwick]] after six years on the stocks, the HCS Sovereign is the peak of the [[dravosi-crown]]'s visible claim. Its arrival makes the Crown's authority legible across the Scatter at once.
+Built at [[harwick]] after six years on the stocks, the HCS Sovereign is the peak of the [[dravosi-crown]]'s visible claim. Its arrival makes the Crown's authority legible across the Scatter at once.
 
 ## Secrets
 
@@ -71,7 +71,7 @@ The Sovereign is a political instrument as much as a warship: its arrival makes 
 
 ## Connections
 
-- [[Harwick]]
+- [[harwick]]
 - [[crown-islands]]
 - [[dravosi-crown]]
 - [[hcs-ordinance]]

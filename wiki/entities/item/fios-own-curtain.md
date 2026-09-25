@@ -7,64 +7,51 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:fios-own-curtain.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A brass rod with wine-dark velvet that conceals any doorway, blocking sight and darkvision from outside, and opens only to a deliberate sweep."
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[fioravante-selmerin]]"
+summary: "A brass rod and wine-dark velvet that conceals a doorway from outside sight and darkvision, opening only to a deliberate sweep."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Fio's Own Curtain
 
 > [!narration] Narration
-> A brass rod two feet long, and hanging from it a fall of wine-dark velvet, far more cloth than a rod that size has any business holding.
->
-> The nap takes a thumbprint and keeps it. It smells of rosewater and the inside of a wardrobe.
->
-> Held up to the window, the velvet shows nothing through it. Not the square outside, not the lamp behind it.
->
-> Fio sweeps it back along the rod in one long pull, and the swish carries to the rear of the shop and turns two heads there.
+> A brass rod two feet long holds a fall of wine-dark velvet, far more cloth than a rod that size should carry. The nap keeps a thumbprint. It smells of rosewater and the inside of a wardrobe. Held to a window, it shows nothing through: not the square outside, not the lamp behind it. Fio sweeps it back in one long pull, and the swish carries to the rear of the shop.
 
+*Wondrous item, uncommon.*
 
-_Wondrous Item, Uncommon._
+**One-way concealment.** Hanging the rod takes 1 minute. The brass takes hold of any doorway, archway, or gap up to 10 feet wide and 10 feet tall, whether stone, wood, or bare masonry. The velvet spreads to fill the opening. Taking the rod down takes an action and ends the effect.
 
-Sold as the finishing touch for a doorway that deserves better. Fio demonstrates the sweep for every customer who slows down at the window, and for the ones who keep walking.
+Nobody outside sees through the velvet. Light and Darkvision stop at the cloth, so the far side is Heavily Obscured from outside. A creature behind the curtain sees out through it as though through gauze. The concealment runs one way.
 
-| Field | Detail |
-|---|---|
-| One thing | Hung in a doorway, it hides everything behind it from outside eyes. |
-| Rarity justification | Uncommon: functional stock, priced at the Uncommon band. |
-| Attunement reason | None. No roll bonus, one power. |
-| PC connection | Gives [[jean-claude-tabarnack\|Jean-Claude]] a doorway nobody reads. |
-| Current holder | [[fioravante-selmerin\|Fio]], hung in the front window. |
-| Narrative hook | Bought for 200 gp, or borrowed off the window rod. |
+The velvet opens only to a deliberate flourish: whoever opens it sweeps the cloth along the rod in one full pull with the arm fully extended. A cautious or hurried tug leaves it shut. Each completed sweep is audible to creatures within 60 feet. If a creature shoves through, the velvet closes around it; the creature reaches the far side wrapped, spends an action getting clear, and makes noise audible twice as far.
 
-Uncommon tier holds. Magic Item Rarity prices Common goods at 100 gp and Uncommon goods at 400 gp, with an approximate Uncommon range of 100-500 gp; the curtain's 200 gp asking price sits inside that band, not Common's. [[the-interrogator]] (250 gp) and [[ricochet-red]] (300 gp) are this shop's own Uncommon stock at the same price point. Heavy mundane drapery already stops a line of sight under the vision rules, but the curtain does something plain cloth cannot: it holds itself over any doorway up to 10 feet wide and tall, blocks darkvision along with normal sight, and answers only to a deliberate sweep. That's a standing magical effect held in the cloth.
+Sound, smell, tremorsense, Blindsight, Truesight, and spells that need no sight of their target cross the curtain as though the doorway were empty. The velvet stops nothing physical, offers no cover, and grants no bonus to a roll. It conceals what lies behind it, never itself.
 
-Mortis leaves [[jean-claude-tabarnack]] unable to mask what he means, and a sister of his reads [[Grung]] stances for a living. A doorway that gives a watcher nothing does the masking his own face refuses to. The swish costs him the exit, which is the trade.
+## At the Table
 
-## Mechanics
+[[fioravante-selmerin|Fio]] demonstrates the curtain as the finishing touch for a doorway, including the front window of his shop. He asks 200 gp and will not haggle over either window piece; [[serena-cottle]] will haggle when he goes upstairs. The curtain gives [[jean-claude-tabarnack|Jean-Claude]] a doorway nobody reads, but its audible swish costs him the quiet exit he wants.
 
-> [!mechanic]
-> **Fio's Own Curtain [HB].** Hanging the rod takes 1 minute. The brass takes hold of any doorway, archway, or gap up to 10 feet wide and 10 feet tall. Stone, wood, or bare masonry makes no difference to it. The velvet then spreads to fill whatever the rod hangs in. Taking the rod down takes an action and ends every effect below.
->
-> Nobody outside sees through the hanging velvet. Light stops at the cloth, and darkvision stops with it, so the far side counts as heavily obscured from outside. The concealment runs one way. A creature standing behind the curtain sees out through it as though through gauze.
->
-> The velvet answers a hand and a flourish. Whoever opens it sweeps the cloth along the rod in one full pull, arm fully extended. A cautious tug leaves it shut, and a hurried one fares no better. Every completed sweep swishes loud enough for any creature within 60 feet to hear.
->
-> **Edge cases:** the velvet closes around a creature that shoves through instead of drawing. That creature reaches the far side wrapped and spends an action getting clear, and the noise of it carries twice as far as a swish. Sound, smell, tremorsense, blindsight, truesight, and any spell needing no sight of its target cross the curtain as though the doorway stood empty.
->
-> **Limitations:** the velvet stops nothing physical and turns no attack. It offers no cover and no bonus to any roll. It conceals what lies behind it and never itself, so a wine-dark curtain hung across a sewer arch announces itself to everyone who walks that tunnel.
+## Connections
+
+- [[fioravante-selmerin|Fio]] owns the curtain and demonstrates its sweep to customers.
+- [[jean-claude-tabarnack|Jean-Claude]] can use it to hide a doorway from watchers.
+- [[serena-cottle]] will haggle when Fio is away.
+- [[tam-slim-nail]] hung the stockroom doorway with a plain sheet instead.
+- [[the-interrogator]] and [[ricochet-red]] are comparable Uncommon stock in the same shop.
 
 ## Provenance
 
-[[fioravante-selmerin]] cut the velvet off the house curtain of a theatre he will not name and carried it over [[Galewall|the Galewall]] with the rest of his luggage. Ask him about the theatre and he answers about the shop's roof.
-
-He asks 200 gp and will not haggle over either window piece. [[serena-cottle]] will, whenever he goes upstairs.
-
-[[tam-slim-nail]] has hung the stockroom's own doorway with a plain sheet since the week the shop opened, and says nothing about it.
+[[fioravante-selmerin]] cut the velvet from the house curtain of a theatre he will not name and carried it over [[galewall|the Galewall]] with his luggage. He asks 200 gp and will not haggle. [[tam-slim-nail]] has hung the stockroom's own doorway with a plain sheet since the shop opened.

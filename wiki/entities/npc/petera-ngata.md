@@ -17,7 +17,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Fathomrush]]"
+location: "[[fathomrush]]"
 visibility: dm
 summary: "Independent keeper of the Last Berth at Fathomrush, and of the only complete list of divers who never came back."
 provenance:
@@ -37,7 +37,7 @@ flexGrow=2
 | **Role**   | Boardinghouse keeper |
 | ---------- | -------------------- |
 | **Nature** | Independent of both dive companies |
-| **Home**   | Last Berth, [[Fathomrush]] |
+| **Home**   | Last Berth, [[fathomrush]] |
 | **Wants**  | Keep the death list complete, and keep company law off her floor. |
 
 > **DM thesis:** She is the only honest count of who the shelf has taken.
@@ -75,10 +75,10 @@ Either company pressing her floor for the false log, or a name on the memorial w
 
 | Relationship | Meaning |
 | ------------ | ------- |
-| [[Fathomrush]] | No mayor. She is the independent count between the two compounds. |
-| [[Sunkline]] | Tessarine money. The false log sits under a loose floorboard at the Last Berth. She holds the complete death list, not that log. |
+| [[fathomrush]] | No mayor. She is the independent count between the two compounds. |
+| [[sunkline]] | Tessarine money. The false log sits under a loose floorboard at the Last Berth. She holds the complete death list, not that log. |
 | [[Voyvode]] | Crown money. Fresh memorial names are mostly their crews. Her ledger is clue two on which rig killed a diver. |
-| [[adriana-tarquine]] | [[Sunkline]] chief engineer. Certificate and false log are her problem, not Peter's. |
+| [[adriana-tarquine]] | [[sunkline]] chief engineer. Certificate and false log are her problem, not Peter's. |
 
 > [!secret] Last Berth floor
 > The false mid-shelf log is under a loose floorboard at the Last Berth. Petera keeps the complete death list. Those are not the same book.

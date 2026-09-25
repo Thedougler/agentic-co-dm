@@ -45,7 +45,7 @@ Aruhe. The island is still taking.
 
 ## Wiki facts
 
-[[Jean-Claude Tabarnack]] is catatonic and travelling in [[Delmar Fisk]]'s coat, not the bag of holding. The party never returned to *[[Uncertainty]]* and never reached the inland survivor column.
+[[Jean-Claude Tabarnack]] is catatonic and travelling in [[Delmar Fisk]]'s coat, not the bag of holding. The party never returned to *[[uncertainty]]* and never reached the inland survivor column.
 
 Rules the table earned this session: fallen fruit is safe, living fruit is not, and a [[ghost-plum]] makes the eater invisible. A [[Aruhe - Stonepear|stonepear]] grants resistance to every kind of damage for a minute. [[matteo-scola]] is at the camp and wants the ship.
 

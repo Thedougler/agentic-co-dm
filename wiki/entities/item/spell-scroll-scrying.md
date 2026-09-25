@@ -15,6 +15,8 @@ visibility: dm
 kind: consumable
 rarity: rare
 attunement: false
+region: "[[kalowe]]"
+owner: "[[Vask's Reclaimed Goods]]"
 summary: "A rare spell scroll holding a single casting of Scrying, letting its reader spy on a chosen creature across the plane."
 provenance:
   extracted: 0.85

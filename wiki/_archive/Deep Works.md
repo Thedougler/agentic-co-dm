@@ -20,7 +20,7 @@ The deepest Antheri tier, past 500 feet, containing the soul-pledge chamber and 
 - [[Auralis]] is the Antheri machine holding the fissure and cannot leave the trench floor. He is losing ground.
 
 ## Connections
-- → [[Mid-Works]] (200–500 feet)
+- → [[mid-works]] (200–500 feet)
 - → [[Drowned Maw]] · [[Antheri]] · [[Pearl of Souls]]
 
 ## Secrets (DM)

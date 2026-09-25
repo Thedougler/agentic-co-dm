@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Ossira
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Ossira]] is a seabird rookery on a coral spit in the southern [[Midchain]]. Its defining pressure is the density of nesting birds and feathers on the beach, not a settlement or harbor. [[Halewick]] is a recorded related site, but no route or distance is established. Skipping Ossira avoids disturbing the rookery and gives up the chance to observe the nesting ground or gather information from it.
+[[ossira]] is a seabird rookery on a coral spit in the southern [[Midchain]]. Its defining pressure is the density of nesting birds and feathers on the beach, not a settlement or harbor. [[halewick]] is a recorded related site, but no route or distance is established. Skipping Ossira avoids disturbing the rookery and gives up the chance to observe the nesting ground or gather information from it.
 
 ---
 
@@ -63,7 +63,7 @@ Nesting seabirds occupy Ossira in large numbers. Their species, nesting cycle, a
 - **East:** The coral spit is surrounded by water; no named eastern neighbor or route is recorded.
 - **South:** The surrounding water has no named southern neighbor or route recorded.
 - **West:** No named western neighbor or route is recorded.
-- **Related site:** [[Halewick]] is recorded as a related place, but the connection, distance, and direction are unknown.
+- **Related site:** [[halewick]] is recorded as a related place, but the connection, distance, and direction are unknown.
 
 ## Why
 

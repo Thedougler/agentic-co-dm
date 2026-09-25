@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Toa Kiri
@@ -56,7 +56,7 @@ The island's known resource is its pearl-diving work. Its defining practice is t
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** Toa Kiri is listed within [[Western Midchain]], where shallow channels, moving sandbars, and local pilots shape travel. [[Kalowe]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** Toa Kiri is listed within [[Western Midchain]], where shallow channels, moving sandbars, and local pilots shape travel. [[kalowe]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

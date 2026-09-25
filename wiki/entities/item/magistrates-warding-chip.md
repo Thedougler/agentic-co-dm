@@ -7,45 +7,47 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:magistrates-warding-chip.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A chip of The Velvet Noose's Wardstone Figurehead, warm to the touch, that once per day turns aside any divination targeted at the bearer."
+region: "[[central-strait]]"
+kind: magic
+rarity: uncommon
+attunement: true
+owner: "[[mave-sorn]]"
+summary: "A chip of the Velvet Noose's Wardstone Figurehead that once per day turns aside a targeted divination aimed at its attuned bearer."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Magistrate's Warding Chip
 
 > [!narration] Narration
-> The chip fits in a closed fist. Gilded wood, no bigger than a playing card and no thicker than a thumbnail, lacquer still whole on one face, a crown seal broken off clean at one edge. The gilt hasn't yellowed. Hold it a moment and the warmth stays after you let go.
->
-> One edge shows a worked cut. Someone removed this deliberately.
+> The chip fits in a closed fist: gilded wood no bigger than a playing card and no thicker than a thumbnail. Lacquer remains whole on one face, while a crown seal has broken cleanly from one edge. The gilt has not yellowed. Hold it for a moment and its warmth stays after you let go. One edge shows a worked cut; someone removed it deliberately.
 
+*Wondrous item, uncommon (requires attunement).* This is a chip of the Wardstone Figurehead worked into the prow of the [[velvet-noose|*Velvet Noose*]], a laughing magistrate's broken crown seal. The Wardstone ritual split rather than broke when the piece was removed: the ship holds the larger share, and the chip holds the rest.
 
-*Wondrous item, Uncommon (Requires Attunement).* A chip of the Wardstone Figurehead worked into the prow of the [[velvet-noose|*Velvet Noose*]], the laughing magistrate's broken crown seal, removed from the gilded wood deliberately. The Wardstone ritual does not break at the removal. It splits. The ship holds the larger share. The chip holds the rest.
+**Warding reaction.** Once per day at dawn, when you are the specific target of a Divination spell or magical effect such as Scrying, *Locate Person*, or *Locate Creature*, you can use your Reaction to cause that effect to fail automatically. The spell fires and its slot is expended. The caster or source knows the deflection happened.
 
-| | |
-|---|---|
-| One thing | Once per day as a reaction, cause one divination spell or magical effect targeting you to fail automatically. |
-| Rarity justification | Uncommon. Comparable to Cloak of Protection (uncommon, attunement, +1 to AC and all saving throws continuously) and Bag of Tricks (uncommon, attunement, 8 charges/day varying effect). The chip lands harder in a narrower lane: 1/day hard block vs. divination only, more story weight, less combat breadth. |
-| Attunement reason | Grants a save-adjacent defensive benefit (automatic block of a targeted divination that would otherwise force or bypass a save), triggering the "any attack/damage/save/AC bonus" branch of the attunement decision tree. |
-| PC connection | [[perrin-black-jaw]]. The Crown dispatch in the sealed case tracks "supernatural irregularity manifesting as arcane attunement outside standard registry." Perrin is the designated subject. The chip blocks the next scrying attempt before it resolves. |
-| Current holder | Mave Sorn, on her person during the [[Velvet Noose Intercept]] encounter. |
-| Narrative hook | Optional loot from [[Black Pennants]]: found on the Captain's person if the encounter ends in combat and she falls or submits to a search, or conceivably traded if the crew negotiates for it. The chip's absence from the figurehead creates a measurable gap in the Wardstone's coverage, detectable by any Crown diviner working at close range. She keeps her own register and will eventually come looking, with the same legally precise patience she brings to everything else. |
+The chip does not block area Divination effects or magic that alters only the caster's senses, such as Detect Magic sweeping a room or True Seeing sharpening the caster's sight. It has no effect on non-Divination magic.
 
-## Mechanics
+## At the Table
 
-*Warding Reaction.* Once per day, when you are the specific target of a divination spell or magical effect (such as Scrying, *Locate Person*, Locate Creature, or a similar detection effect), you may use your Reaction to cause that effect to fail automatically. The spell fires and its slot expends. The effect stops at the chip. The caster or source knows the deflection happened. This property recharges at dawn.
+[[mave-sorn]] currently carries the chip during the [[Velvet Noose Intercept]] encounter. It can become loot from [[Black Pennants]] if she falls or submits to a search, or a negotiated trade. [[perrin-black-jaw|Perrin]] is the Crown's designated subject for the next scrying attempt; the chip can block that attempt if he attunes to it. Removing it from the figurehead leaves a measurable gap in the Wardstone's coverage that a Crown diviner can detect at close range. Mave keeps a private register and will eventually come looking for it.
 
-**Limitations.** This does not block divination effects cast as area effects, or effects that alter only the caster's own senses. A Detect Magic cantrip sweeping a room, or True Seeing sharpening the caster's sight, passes unimpeded. The chip has no effect on non-divination magic of any school.
+## Connections
+
+- [[mave-sorn]] recovered and carries the chip.
+- [[velvet-noose|The Velvet Noose]] retains the larger share of the Wardstone ritual.
+- [[Black Pennants]] may lose the chip in the Intercept.
+- [[perrin-black-jaw|Perrin]] is the Crown subject it can protect.
+- [[central-strait]] is where the chip has circulated and where the Crown can investigate it.
 
 ## Provenance
 
-One of the magical enhancements aboard the [[velvet-noose|*Velvet Noose*]] is a Wardstone ritual worked into the prow figurehead: a gilded laughing magistrate holding a silk rope in one hand and a broken crown seal in the other. The ritual defeats hostile divination aimed at the ship and her crew. The chip is a piece of that crown seal, removed deliberately by someone [[mave-sorn]] does not discuss.
-
-The chip has circulated in the [[central-strait]] before. She recovered it, source undisclosed, and has kept it on her person since. Her ledger carries no trade entry for it.
+The [[velvet-noose|*Velvet Noose*]] bears a Wardstone ritual in its prow figurehead: a gilded laughing magistrate holding a silk rope and broken crown seal. The ritual defeats hostile Divination aimed at the ship and crew. The chip is part of that seal, removed by someone [[mave-sorn]] does not discuss. It circulated through the [[central-strait]] before Mave recovered it; her ledger contains no trade entry.

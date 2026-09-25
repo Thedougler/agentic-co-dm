@@ -15,6 +15,6 @@ A chapterhouse carved from volcanic terrace-rock. One narrow stair rises from a 
 [[Aleksander Malone]] chose Blackrule for himself. He trains alone, leaves when formal heresy is confirmed, and returns when the work is done. The Crown does not use it as an ordinary station.
 
 ## Linked
-[[Aleksander Malone]] · [[Tyr]] · [[Midchain]] · [[Dravosi Crown]]
+[[Aleksander Malone]] · [[tyr]] · [[Midchain]] · [[Dravosi Crown]]
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/kill-the-shepherd/location-blackrule.md`.

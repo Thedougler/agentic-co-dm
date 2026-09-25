@@ -29,14 +29,14 @@ tier: supporting
 
 ## Pressure
 
-The pressure is not a waiting monster attack. It moves as a social and spiritual clock. Ashe's lie gives frightened people a target, the mob's movement gives fiends more reach, and [[Sorrowbell]] no longer holds the divine protection its priest claims. The visible signal is a village that performs penance in public while its anger gathers around torches, bell-tolls, and the road to the grove.
+The pressure is not a waiting monster attack. It moves as a social and spiritual clock. Ashe's lie gives frightened people a target, the mob's movement gives fiends more reach, and [[sorrowbell]] no longer holds the divine protection its priest claims. The visible signal is a village that performs penance in public while its anger gathers around torches, bell-tolls, and the road to the grove.
 
 ## Actors
 
 - [[corvin-ashe]] wants the blame to stay on the coven. His leverage is priestly authority and fear. His current move is naming outsiders as the cause.
 - [[sula-marn]] wants the village held together. Her leverage is civil trust at the causeway. Her current move is slowing violence without yet having proof strong enough to break Ashe.
 - [[penance-bar]] wants a culprit it can touch. Its leverage is the mob. Its current move is turning fear into a march.
-- [[Sorrowbell]] exposes the truth when tested. If a fiend walks through its door, Tyr is no longer holding the shrine.
+- [[sorrowbell]] exposes the truth when tested. If a fiend walks through its door, Tyr is no longer holding the shrine.
 - [[sin-and-sanctuary]] explains why Ashe's sin draws fiends, why hallowed ground can fail, and why the kiss marks a soul already lost.
 
 ## Discoverable / Affectable
@@ -55,7 +55,7 @@ The mob arrives at the grove and burns it. The village loses the one ground stil
 ## Connections
 
 - [[penance-bar]] supplies the settlement, public penance imagery, and entry hooks.
-- [[Sorrowbell]] covers the shrine, tally, and failed-sanctuary location.
+- [[sorrowbell]] covers the shrine, tally, and failed-sanctuary location.
 - [[corvin-ashe]] and [[sula-marn]] define the priestly and civil actors.
 - [[sin-and-sanctuary]] defines the cosmological law behind fear, hallowed ground, and the fiend's kiss.
 - [[penance-bar-siege|Penance Bar Siege]] holds the wider siege shape and the "Shrine's Ledger" draft fiction.

@@ -98,7 +98,7 @@ Habitat fits [[grung-clans]] and the [[verdant-teeth]] closed rainforest system.
 
 - [[grung-clans]]
 - [[verdant-teeth]]
-- [[Simone]]
+- [[simone]]
 
 ## Tactics
 

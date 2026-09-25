@@ -108,7 +108,7 @@ No canonical prayer, proverb, title beyond “sky god,” or common telling is r
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** What does Remnis govern beyond the sky?
 * [ ] **Unknown.** What prayers, symbols, rites, or clergy belong to Remnis?

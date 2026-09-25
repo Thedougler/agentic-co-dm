@@ -27,9 +27,9 @@ tier: supporting
 > [!narration] Narration
 > A two-masted merchant brig rides broad and low in the water, her hull worked pale grey-brown by years of salt and weather. Nothing about her is ornamental. She bears no figurehead or bright rail, and salt has stripped away the paint. Below deck, the smell is brine and old cedar beneath cold deep water pressing through the timber joints. Every timber sounds used.
 
-*Merchant brig · Tier 1 · [[Kalowe]].*
+*Merchant brig · Tier 1 · [[kalowe]].*
 
-Old, plain, and thoroughly practical. Her deep hold and small captain's cabin leave no wasted space for comfort or prestige. [[beaumont-sel]] has captained her on [[Midchain|the Midchain]] cargo run for eleven years, out of [[Kalowe]]. Documented cargo runs (salt, dried fish, shrimp, and cloth out of Kalowe) are old and salt-worked enough to disappear into normal Midchain trade traffic. Beaumont keeps a lockbox under the bed in the captain's quarters. The lockbox contains eleven years of Midchain manifests and a modest coin reserve for tolls and bribes. One letter remains unopened.
+Old, plain, and thoroughly practical. Her deep hold and small captain's cabin leave no wasted space for comfort or prestige. [[beaumont-sel]] has captained her on [[Midchain|the Midchain]] cargo run for eleven years, out of [[kalowe]]. Documented cargo runs (salt, dried fish, shrimp, and cloth out of Kalowe) are old and salt-worked enough to disappear into normal Midchain trade traffic. Beaumont keeps a lockbox under the bed in the captain's quarters. The lockbox contains eleven years of Midchain manifests and a modest coin reserve for tolls and bribes. One letter remains unopened.
 
 ## Stats & Combat
 
@@ -59,9 +59,9 @@ Lowest and deepest is the cargo hold. Barrels, crates, and sacks stack tight und
 ## Connections
 
 - [[beaumont-sel]]: captain
-- [[Kalowe]]: home port
-- [[Uncertainty|HCS Surety]]: moored alongside during the Session 01 boarding
+- [[kalowe]]: home port
+- [[uncertainty|HCS Surety]]: moored alongside during the Session 01 boarding
 
 ## Session Log
 
-- **Session 01.** The crew boarded the Saltwright, fought through her hold, and crossed the gangplank to [[Uncertainty|HCS Surety]] alongside. [[beaumont-sel|Beaumont]] deflected a flintlock shot from [[barnaby-rook]] on his salvaged plate. After Session 02, they departed with Beaumont at dawn, and he is no longer their captain. They now command the [[Uncertainty]] (ex-HCS Surety). Beaumont's whereabouts since are unknown to the crew.
+- **Session 01.** The crew boarded the Saltwright, fought through her hold, and crossed the gangplank to [[uncertainty|HCS Surety]] alongside. [[beaumont-sel|Beaumont]] deflected a flintlock shot from [[barnaby-rook]] on his salvaged plate. After Session 02, they departed with Beaumont at dawn, and he is no longer their captain. They now command the [[uncertainty]] (ex-HCS Surety). Beaumont's whereabouts since are unknown to the crew.

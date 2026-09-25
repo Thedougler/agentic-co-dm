@@ -32,7 +32,7 @@ tier: supporting
 
 **Core truth.** A Grung's body color, produced through diet and a daily soak, signals social role and censure without proving ancestry, virtue, or permanent rank.
 
-**Why it matters.** The color and sealing rite let the DM read status, public avoidance, and incomplete transformation around [[grung-clans]], [[Ozzeth]], and [[Simone]].
+**Why it matters.** The color and sealing rite let the DM read status, public avoidance, and incomplete transformation around [[grung-clans]], [[Ozzeth]], and [[simone]].
 
 **Scope.** This doctrine covers Grung color signals and the Gold caste's censure rite in the Shattered Sea.
 
@@ -42,7 +42,7 @@ A Grung eats and then seals the diet into the body through a daily one-hour soak
 
 **Twiceborn** is the Gold caste's official term for a Grung under censure. Sanctioned marks, hats, colors, and public avoidance communicate the status. [[jean-claude-tabarnack]]'s red beret is read in this register. The full process remains unknown.
 
-Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozzeth]] and [[Simone]] independently cast the rite on themselves. Turned inward, it never finishes.
+Gold-tier color requires a rare toxin grown on hidden farms in [[karath]]. [[Ozzeth]] and [[simone]] independently cast the rite on themselves. Turned inward, it never finishes.
 
 ### Limits
 
@@ -53,10 +53,10 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozz
 ## At the Table
 
 * **Players notice.** A Grung's color, hat, sanctioned mark, or public avoidance signals a social role or censure.
-* **This explains.** Why [[jean-claude-tabarnack]]'s red beret is read as a censure sign and why [[Ozzeth]] and [[Simone]] remain incompletely sealed.
+* **This explains.** Why [[jean-claude-tabarnack]]'s red beret is read as a censure sign and why [[Ozzeth]] and [[simone]] remain incompletely sealed.
 * **This enables.** Characters can read status, recognize Gold-caste authority, and investigate the source of a rare toxin.
 * **This warns of.** Color is evidence of role or censure, not proof of ancestry, virtue, or permanent rank.
-* **Relevant now.** [[Karath]], [[Auralis]], and the Grung conflict make the status signals actionable rather than decorative.
+* **Relevant now.** [[karath]], [[Auralis]], and the Grung conflict make the status signals actionable rather than decorative.
 
 ## Who Knows
 
@@ -64,7 +64,7 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozz
 | --- | --- | --- | --- |
 | Gold caste | The official term Twiceborn and the sanctioned censure signals. | knows | Gold-caste rite and public practice |
 | [[Ozzeth]] | The rite's incomplete inward result and his own Twiceborn status. | knows | Personal transformation |
-| [[Simone]] | The rite's incomplete inward result and her own attempt. | knows | Personal transformation |
+| [[simone]] | The rite's incomplete inward result and her own attempt. | knows | Personal transformation |
 | [[jean-claude-tabarnack]] | His red beret is read as a censure signal. | knows | Public sign recorded by the source |
 
 ### Party Knowledge
@@ -86,7 +86,7 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozz
 ## If This Is Changing
 
 * **Current pressure.** Gold-caste censure and the hidden toxin farms keep color a controlled social signal.
-* **Actors.** The Gold caste, [[Ozzeth]], [[Simone]], and investigators connected to [[Karath]] affect what the rite reveals.
+* **Actors.** The Gold caste, [[Ozzeth]], [[simone]], and investigators connected to [[karath]] affect what the rite reveals.
 * **Their aims.** The Gold caste maintains censure authority while Ozzeth and Simone pursue or bear incomplete transformation.
 * **Without interference.** The color signal remains legible while the exact chemistry and sealing process stay controlled.
 * **Visible sign.** A new sanctioned mark, hat, color, or public avoidance identifies a censure status.
@@ -94,7 +94,7 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozz
 ## Consequences
 
 * **Because this is true,** a Grung's color and sanctioned marks can change how others treat them before anyone speaks.
-* **If exposed,** the hidden toxin farms in [[Karath]] become a route to the rite's controlled source.
+* **If exposed,** the hidden toxin farms in [[karath]] become a route to the rite's controlled source.
 * **If disproved,** the source's account of Grung social signals and Gold-caste censure needs correction.
 * **If changed,** [[grung-clans]] and the linked Grung character pages would need their status signals updated.
 * **If exploited,** a character can use or challenge a censure sign to gain access, avoid notice, or provoke a response.
@@ -104,12 +104,12 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[Karath]]. [[Ozz
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
 | [[grung-clans]] | Social source for Grung color and censure practice. | Anchors the doctrine in Grung society. |
-| [[Karath]] | Hidden source of the rare Gold-tier toxin. | Gives investigation a concrete direction. |
+| [[karath]] | Hidden source of the rare Gold-tier toxin. | Gives investigation a concrete direction. |
 | [[Ozzeth]] | Twiceborn figure whose inward rite never finishes. | Shows the rite's personal cost and boundary. |
-| [[Simone]] | Independent bearer of the same incomplete inward rite. | Confirms the result is not unique to Ozzeth. |
+| [[simone]] | Independent bearer of the same incomplete inward rite. | Confirms the result is not unique to Ozzeth. |
 | [[Auralis]] | Named connection in the source record. | Keeps the doctrine tied to the current Aruhe conflict. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** What exact diet chemistry and sealing words complete the rite?
 * [ ] **Unknown.** Which Gold-caste authority controls each hidden toxin farm?

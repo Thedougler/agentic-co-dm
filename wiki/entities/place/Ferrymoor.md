@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Ferrymoor]] is an eastern Midchain departure point for a schedule-less, fog-bound ferry. Its captain does not age. The eastern waters are shallow, widely spaced, and poorly charted; [[drowned-maw]] is a recorded related place, but no route or distance from Ferrymoor is established. Skipping Ferrymoor avoids an unpredictable crossing and whatever destination the ferry serves, but also removes this route from the party's options.
+[[ferrymoor]] is an eastern Midchain departure point for a schedule-less, fog-bound ferry. Its captain does not age. The eastern waters are shallow, widely spaced, and poorly charted; [[drowned-maw]] is a recorded related place, but no route or distance from Ferrymoor is established. Skipping Ferrymoor avoids an unpredictable crossing and whatever destination the ferry serves, but also removes this route from the party's options.
 
 ---
 

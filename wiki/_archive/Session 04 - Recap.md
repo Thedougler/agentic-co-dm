@@ -13,7 +13,7 @@ tags: [session, recap]
 # Session 04 - Recap
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you took the [[Uncertainty|Surety]], freed [[Ket]], and killed the whip-shark that had been striking the hull. You made landfall at [[Calven and Calveno|Calveno]] and renamed the prize *[[Uncertainty]]*. [[Nona Black-Jaw]] called off her attacks for an unspecified favor. [[Master Kyzil]] found [[Crissdalynn Khinriss]]. The shrine was still waiting.
+> Last time on the Shattered Sea, you took the [[uncertainty|Surety]], freed [[Ket]], and killed the whip-shark that had been striking the hull. You made landfall at [[Calven and Calveno|Calveno]] and renamed the prize *[[uncertainty]]*. [[Nona Black-Jaw]] called off her attacks for an unspecified favor. [[Master Kyzil]] found [[Crissdalynn Khinriss]]. The shrine was still waiting.
 >
 > [[Jean-Claude Tabarnack]] sold the whip-shark eggs. He bought a silent shortbow and a pair of [[Flying Boots]] for [[Delmar Fisk]]. Kyzil sparred you on a Ponte Bassa rooftop. He said [[Drowned Maw|the Maw]] had been unruly since the wreck, and that he was staying through the festival.
 >
@@ -23,7 +23,7 @@ tags: [session, recap]
 >
 > Crissdalynn swept Delmar's legs for going to a goddess alone.
 >
-> Then the stone in [[Perrin Black-Jaw|Perrin]]'s hand spoke. *Bring your friends, especially the blue one.* Nona laid out six [[Grung]] in [[Warren|the Warren]] sewers, the first crossing of the Strait in living memory. She fed you a Hero's Feast and sent you down. You burned a powder boat. A purple called Jean-Claude a traitor before Jean-Claude ended it. You took [[Felix Aho]] alive. He told you they would hit under the festival crowds in two days, with six ships behind them. [[Simone]]'s people kill leavers on sight. He asked for a month of protection. Nona set [[Ruk]] to guard him.
+> Then the stone in [[Perrin Black-Jaw|Perrin]]'s hand spoke. *Bring your friends, especially the blue one.* Nona laid out six [[Grung]] in [[Warren|the Warren]] sewers, the first crossing of the Strait in living memory. She fed you a Hero's Feast and sent you down. You burned a powder boat. A purple called Jean-Claude a traitor before Jean-Claude ended it. You took [[Felix Aho]] alive. He told you they would hit under the festival crowds in two days, with six ships behind them. [[simone]]'s people kill leavers on sight. He asked for a month of protection. Nona set [[Ruk]] to guard him.
 >
 > Two days until the festival bombs. Felix is under Nona. The Pearl is still outstanding.
 

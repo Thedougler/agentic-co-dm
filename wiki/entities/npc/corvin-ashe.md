@@ -17,7 +17,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: rival
-location: "[[Sorrowbell]]"
+location: "[[sorrowbell]]"
 visibility: dm
 summary: "Bishop of Tyr at Sorrowbell. He scapegoats a woods coven to protect his standing, and he can no longer hear Tyr's warnings."
 provenance:
@@ -34,10 +34,10 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Bishop of [[Tyr]] |
+| **Role**   | Bishop of [[tyr]] |
 | ---------- | ----------------- |
 | **Nature** | Priest who cannot hear his patron anymore |
-| **Home**   | [[Sorrowbell]], [[penance-bar]] |
+| **Home**   | [[sorrowbell]], [[penance-bar]] |
 | **Wants**  | Protect his standing by sending the crew at the grove. |
 
 > **DM thesis:** He is already an empty box. The demon only has to say it aloud.
@@ -59,7 +59,7 @@ flexGrow=1
 ===
 ### First meeting
 
-At the door of [[Sorrowbell]], before the crew has finished the causeway. Sample: "Ah! You must be the noble heroes who answered my call? Tyr's blessings upon me."
+At the door of [[sorrowbell]], before the crew has finished the causeway. Sample: "Ah! You must be the noble heroes who answered my call? Tyr's blessings upon me."
 ```
 
 ```col-md
@@ -75,12 +75,12 @@ A question that treats the coven as framed, or a look at the locked quarters and
 
 | Relationship | Meaning |
 | ------------ | ------- |
-| [[Sorrowbell]] | His shrine. Ash smears and tally marks here are siege evidence of his fabrication. |
+| [[sorrowbell]] | His shrine. Ash smears and tally marks here are siege evidence of his fabrication. |
 | [[penance-bar]] | The town he is whipping. |
 | [[sula-marn]] | Reeve and genuine ally of the peace, not of his lie. |
-| [[Tyr]] | Patron. A later note overrides the old personal-debt line. Ashe stopped being able to hear the warnings. |
+| [[tyr]] | Patron. A later note overrides the old personal-debt line. Ashe stopped being able to hear the warnings. |
 | [[penance-bar-siege]] | If the truth is late, the grove burns and a devil-touched priest remains. |
-| [[Uncertainty]] | Draft fiction has him meet this crew at the door. |
+| [[uncertainty]] | Draft fiction has him meet this crew at the door. |
 
 > [!secret] Empty box
-> [[Tyr]] warns a straying follower before withdrawing protection. Ashe stopped being reachable. Outsiders read that at a glance. The kiss is reserved for a soul every side already agrees is gone.
+> [[tyr]] warns a straying follower before withdrawing protection. Ashe stopped being reachable. Outsiders read that at a glance. The kiss is reserved for a soul every side already agrees is gone.

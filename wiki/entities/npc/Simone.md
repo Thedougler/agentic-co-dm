@@ -11,7 +11,7 @@ reveal: revealed
 campaign: shattered-sea
 status: alive
 role: rival
-location: "[[Sorn]]"
+location: "[[sorn]]"
 faction: "[[grung-clans]]"
 visibility: dm
 summary: "Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude."
@@ -32,7 +32,7 @@ flexGrow=2
 | **Role**   | Rival |
 | ---------- | ----- |
 | **Nature** | Purple Grung officer; garrison holder, toxin seller, and hunter |
-| **Home**   | [[Sorn]] |
+| **Home**   | [[sorn]] |
 | **Wants**  | Control the Sorn garrison, continue selling toxin through the [[dravosi-crown]], and find her brother [[jean-claude-tabarnack]]. |
 
 > **DM thesis:** Simone is an officer whose garrison authority and family pursuit make the Grung conflict personal.
@@ -54,7 +54,7 @@ flexGrow=1
 ===
 ### First meeting
 
-Simone meets outsiders as the officer holding [[Sorn]]. She establishes her authority before discussing the garrison, toxin trade, or her hunt for [[jean-claude-tabarnack]]. **Sample line:** “State your business at Sorn.”
+Simone meets outsiders as the officer holding [[sorn]]. She establishes her authority before discussing the garrison, toxin trade, or her hunt for [[jean-claude-tabarnack]]. **Sample line:** “State your business at Sorn.”
 ```
 
 ```col-md

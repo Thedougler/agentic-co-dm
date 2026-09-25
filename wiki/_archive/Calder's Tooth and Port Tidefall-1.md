@@ -21,14 +21,14 @@ Charts are sold over a counter. Vessel ratings are written down. Black nooses ha
 ## Tidefall Tessarine house
 The Tessarine trade house is three storeys of pale stone on the Shelf, with a pennant at the door and ink and cedar oil in the air. It licenses trade, brokers salvage, and sends couriers. [[Maret]] sat in its back office under a debt-recovery hold after a salvage dive failed; the open note, not personal hatred, kept him there.
 
-The house's visible dispatch work runs through [[Silkvane]], a pale grey sloop carrying locked mail and two guns. A Tessarine bonded hold can be covered by a treaty the Crown Admiralty and the Concordat both dislike and honour: Crown inspectors do not open it. [[Amberreach]] is the related Calveno cargo route.
+The house's visible dispatch work runs through [[silkvane]], a pale grey sloop carrying locked mail and two guns. A Tessarine bonded hold can be covered by a treaty the Crown Admiralty and the Concordat both dislike and honour: Crown inspectors do not open it. [[amberreach]] is the related Calveno cargo route.
 
 ## Maw staging
 Extra companies have arrived at Crestwall under Admiralty-sealed orders. Their manifests include reef-diving gear and underwater charges marked for the [[Drowned Maw]]. The Governor has not been told why. This is staging pressure, not a resolved operation.
 
 ## Connections
-- → [[Central Strait]] · [[Crown Islands]] · [[Harwick]] · [[Drowned Maw]] · [[Calven and Calveno]]
-- → [[Dravosi Crown]] · [[Governor Voss]] · [[Rupert Knighton]] · [[Tessarine Concordat]] · [[Silkvane]] · [[Amberreach]]
+- → [[Central Strait]] · [[Crown Islands]] · [[harwick]] · [[Drowned Maw]] · [[Calven and Calveno]]
+- → [[Dravosi Crown]] · [[Governor Voss]] · [[Rupert Knighton]] · [[Tessarine Concordat]] · [[silkvane]] · [[amberreach]]
 
 ## Secrets (DM)
 The sealed Crestwall orders and the vaults beneath the fort are separate layers of Crown secrecy. The Governor never saw the orders; he also does not know the reason for the extra companies. The Tessarine house is a separate pressure: legal paper, credit, and sealed mail rather than Admiralty force.

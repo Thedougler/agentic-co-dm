@@ -11,6 +11,10 @@ updated: 2026-09-13
 type: npc
 reveal: revealed
 campaign: shattered-sea
+status: missing
+role: "Ship's Surgeon"
+location: "[[calven-and-calveno]] (last known)"
+faction: none
 visibility: dm
 summary: "HCS Surety's ship's surgeon, competent and precise, disappeared on shore leave in Calveno."
 provenance:
@@ -21,27 +25,69 @@ tier: supporting
 ---
 # Alys Kuiper
 
-# Alys Kuiper
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Alys Kuiper Banner]]
-![[Alys Kuiper Portrait]]
+| **Role**   | Ship's Surgeon |
+| ---------- | -------------- |
+| **Nature** | Calm, precise, and most comfortable when inventory and treatment give her a concrete problem. |
+| **Home**   | The Surgeon's Berth aboard HCS Surety; last seen on shore leave in [[calven-and-calveno]]. |
+| **Wants**  | Recognition as a qualified surgeon, a real title, and a staffed, stocked Surgeon's Berth. |
+| **Leverage** | She kept the [[murrat]] wounded alive and is the crew's only surgeon. |
+| **Limit**  | Supplies do not translate into care without her; her fate after shore leave remains unknown. |
 
-**Wants.** Recognition as a qualified surgeon. She wants a real title and a staffed, stocked Surgeon's Berth. She never received acknowledgment before she vanished from shore leave. The post is empty, and her fate is unknown.
+> **DM thesis:** Alys is the competent surgeon the crew needs, but recruiting her requires the party to offer a real job and prove the Berth will stay staffed and stocked.
+```
 
-> [!narration] Narration
-> She's slight and calm, sleeves rolled past the elbow, moving down a shelf of glass vials with the unhurried certainty of someone who has counted them a hundred times before. A thin white scar crosses her left forearm. It is too straight for a blade and too old to ask about casually. She doesn't look up right away, and when she does, her eyes go to your hands first, checking for blood out of habit. One hand keeps moving along the shelf, tallying under her breath. The other selects the next roll of bandage.
+```col-md
+flexGrow=1
+===
+> [!narration] Alys Kuiper
+> She's slight and calm, sleeves rolled past the elbow, moving down a shelf of glass vials with the unhurried certainty of someone who has counted them a hundred times before. A thin white scar crosses her left forearm. It is too straight for a blade and too old to ask about casually. She doesn't look up right away; when she does, her eyes go to your hands first, checking for blood out of habit. One hand keeps moving along the shelf, tallying under her breath. The other selects the next roll of bandage.
+```
+````
 
+## Running Alys Kuiper
 
-[[Human]] and Ship's Surgeon, Alys Kuiper served aboard the HCS Surety under Captain [[barnaby-rook]] at the surgeon's standard rate of 8 gp a week. Calm and slight, she works best with a shelf of vials in front of her. Inventory steadies her. She fixed a loose shelf in the medic's cabinet before any of this started, and never mentioned it. She talks about wounds and recovery the way surgeons do, assuming everyone else is as unbothered by it as she is. They're not. She hasn't noticed. She served on a Crown frigate before the Surety. When asked about it, she mentions it, then changes the subject. No one has pressed her to elaborate.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-She kept the [[Murrat]] wounded alive, and she's clear about her limits: *"They lived because of him."* She means [[shepherd-grigori]]. She doesn't know what that credit truly means, but she's right to say it.
+Before her disappearance, Alys is found at the Surgeon's Berth with a shelf of vials in front of her, inventorying supplies and speaking about wounds as if everyone else is equally unbothered. She announces that the healer's kit is good for two more fights and that every instrument is sound except one probe.
 
-She'll announce flatly that the healer's kit is good for two more fights and that the surgical instruments are fine except for one probe. She isn't asking to stay or to leave. She does inventory because someone has to, and she's the one best suited to it. Recruiting her requires a real job and a ready Surgeon's Berth. She needs acknowledgment that she's qualified. Give her a title such as Surgeon or ship's medical officer, and she stays. If the crew signals they mean to keep the Berth staffed and stocked, she looks at the cabinet the way Holst looked at the hull and assesses what it could be. She's the crew's only surgeon. Without her, supplies don't translate into action. She fills the Berth the moment someone hires her. The requirement is a real job.
+> *Alys*: “The requirement is a real job. A title is not a job.”
+```
 
-She never came back from shore leave in Calveno after Session 03. Her departure from [[calven-and-calveno]] leaves the post unfilled. Her berth was empty. A [[le-paludi]] boarding house saw her leave after a man came by. That's all anyone knows. The Surgeon's Berth still needs a surgeon.
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Alys is not asking to stay or leave. Offer her a title such as Surgeon or ship's medical officer, and show that the Berth will remain staffed and stocked; she assesses the cabinet and accepts the work. She says of the Murrat wounded, “They lived because of him,” meaning [[shepherd-grigori]], and does not know what that credit truly means.
+
+When pressed about the Crown frigate where she served before the Surety, she mentions it and changes the subject. Her disappearance after shore leave in Calveno leaves the post unfilled: a [[le-paludi]] boarding house saw her leave after a man came by, and that is all anyone knows.
+```
+````
+
+## Voice
+
+Alys speaks calmly and flatly, using practical inventory and treatment language. She assumes the listener can handle wounds without ceremony and does not notice when others cannot.
+
+**The ask:** *“Give me a real title and a berth worth staffing.”*
+
+**The refusal:** *“They lived because of him.”*
+
+**Under pressure:** *“The kit is good for two more fights. The probe is not.”*
 
 ## Connections
 
-- [[Uncertainty|HCS Surety]]: her post; ship's surgeon, formerly serving under [[barnaby-rook]]'s command aboard this vessel.
-- [[barnaby-rook]]: former captain of the HCS Surety, under whom she formerly served.
-- [[shepherd-grigori]]: she credits him with keeping the Murrat casualties alive. She does not know what that credit truly means.
+- [[uncertainty|HCS Surety]]: her post; she served under [[barnaby-rook]] at the surgeon's standard rate of 8 gp a week.
+- [[barnaby-rook]]: former captain of the HCS Surety.
+- [[shepherd-grigori]]: she credits him with keeping the Murrat casualties alive.
+- [[calven-and-calveno]]: last known shore-leave location.
+- [[le-paludi]]: boarding house that saw her leave after a man came by.

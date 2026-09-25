@@ -55,7 +55,7 @@ Clear Lake is the inland freshwater basin at the uphill end of Aruhe's rivers. A
 ---
 ## Who
 
--  [[Hinewai|The Woman in the Woods]] is sometimes said to be appear here playing a harp in the woods surrounding. 
+-  [[hinewai|The Woman in the Woods]] is sometimes said to be appear here playing a harp in the woods surrounding. 
 ---
 ## What
 

@@ -23,7 +23,7 @@ region: "Southern Midchain"
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Sump Cradle
@@ -35,7 +35,7 @@ relationships:
 
 ## At a Glance
 
-Sump Cradle is a named site in the southern [[Midchain]], known for genuinely curative hot mud. Every use leaves one small, strange, permanent side effect, but the side effect is not specified in current canon. The exact approach and neighboring site are unknown; [[Halewick]] is a recorded related place in the same southern region.
+Sump Cradle is a named site in the southern [[Midchain]], known for genuinely curative hot mud. Every use leaves one small, strange, permanent side effect, but the side effect is not specified in current canon. The exact approach and neighboring site are unknown; [[halewick]] is a recorded related place in the same southern region.
 
 ## If the party
 
@@ -60,7 +60,7 @@ No named resident, keeper, healer, faction, or creature is established at Sump C
 - **East:** Immediate neighbor is a canon gap; the broader southern Midchain meets [[midchain-east|the Eastern Midchain]] to the east.
 - **South:** [[doldrums|The Doldrums]] lie beyond the southern Midchain, but the route from Sump Cradle is not established.
 - **West:** Immediate neighbor is a canon gap; the broader southern Midchain meets [[midchain-west|the Western Midchain]] to the west.
-- **Regional connection:** [[Halewick]] is a recorded related site in the same southern region; no travel distance or direction is established.
+- **Regional connection:** [[halewick]] is a recorded related site in the same southern region; no travel distance or direction is established.
 
 ## Why
 

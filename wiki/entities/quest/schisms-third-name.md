@@ -36,7 +36,7 @@ summary: "Front in which Kyzil mistakes Osset, Vantyrus's original name, for a t
 
 **Status.** Offered  
 **Objective.** Determine whether Osset and Talon Vantyrus are the same person before the mistaken identity changes the Sentinels' response.  
-**Why now.** [[master-kyzil]] treats [[Osset]] as a third actor while [[Talon Vantyrus]] leads [[Countless|the Countless]] under that alias.  
+**Why now.** [[master-kyzil]] treats [[osset]] as a third actor while [[Talon Vantyrus]] leads [[Countless|the Countless]] under that alias.  
 **Deadline.** None established.
 
 ## At a Glance
@@ -52,7 +52,7 @@ summary: "Front in which Kyzil mistakes Osset, Vantyrus's original name, for a t
 
 ## Situation
 
-The Sentinels' pressure is distorted by a naming mistake: [[master-kyzil]] reads [[Osset]], Vantyrus's original name, as a third actor rather than as an identity connected to [[Talon Vantyrus]]. Talon currently leads [[Countless|the Countless]] under that alias. The party can investigate the identity and choose what to expose, protect, or exploit; the page does not prescribe that choice.
+The Sentinels' pressure is distorted by a naming mistake: [[master-kyzil]] reads [[osset]], Vantyrus's original name, as a third actor rather than as an identity connected to [[Talon Vantyrus]]. Talon currently leads [[Countless|the Countless]] under that alias. The party can investigate the identity and choose what to expose, protect, or exploit; the page does not prescribe that choice.
 
 ## What the party knows
 
@@ -96,7 +96,7 @@ Osset is Vantyrus's original name, not a confirmed third actor. [[master-kyzil]]
 | ---- | -------------- | ------ | ----- |
 | The Sentinels' records of names, positions, and events. | [[sentinels-of-the-eyrie]] | No | Available |
 | The identity of the person leading the Countless under the Talon name. | [[Talon Vantyrus]] | No | Available |
-| The original name Osset and how it connects to Vantyrus. | [[Osset]] | No | Available |
+| The original name Osset and how it connects to Vantyrus. | [[osset]] | No | Available |
 
 ## People & factions
 

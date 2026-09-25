@@ -18,9 +18,9 @@ campaign: shattered-sea
 visibility: dm
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
-  - target: "[[Session-01-Recap]]"
+  - target: "[[session-01-recap]]"
     type: related_to
 ---
 # Session 02 - Recap
@@ -40,4 +40,4 @@ Played 2026-05-18. Prize taken; the sea answers.
 
 ## Wiki facts
 
-The prize is the cutter later renamed [[Uncertainty]]. [[beaumont-sel|Beaumont]] introduced himself to the crew as a Friend of the Passage, which is the crew's first door into [[Passage]]. [[Ket]] flew for [[Murrat]]. [[barnaby-rook]] went into the water off the Surety and did not surface, presumed dead. The twenty vials of Grung tincture in his crate are the crew's first sight of [[simone-tabarnack|Simone]]'s supply chain, and the narration keeps that connection out of what the players hear, as it keeps [[shepherd-grigori]]'s nature out. Something struck the hull three times from below and is unresolved, and Nona Black-Jaw's hunt for her grandson is live. Next: [[Session-03-Recap]].
+The prize is the cutter later renamed [[uncertainty]]. [[beaumont-sel|Beaumont]] introduced himself to the crew as a Friend of the Passage, which is the crew's first door into [[passage]]. [[Ket]] flew for [[murrat]]. [[barnaby-rook]] went into the water off the Surety and did not surface, presumed dead. The twenty vials of Grung tincture in his crate are the crew's first sight of [[simone-tabarnack|Simone]]'s supply chain, and the narration keeps that connection out of what the players hear, as it keeps [[shepherd-grigori]]'s nature out. Something struck the hull three times from below and is unresolved, and Nona Black-Jaw's hunt for her grandson is live. Next: [[session-03-recap]].

@@ -28,7 +28,7 @@ relationships:
     type: related_to
   - target: "[[calven-and-calveno]]"
     type: related_to
-  - target: "[[Cobb]]"
+  - target: "[[cobb]]"
     type: related_to
   - target: "[[the-black-jaw-run]]"
     type: related_to
@@ -48,13 +48,13 @@ relationships:
 
 ## At a Glance
 
-[[La Vasca]] is the Black-Jaw family's private dry dock in [[le-paludi|Le Paludi]], the oldest district of [[calven-and-calveno|Calveno]]. Members of [[the-passage|The Passage]] call it La Vasca or the Basin. A covered basin occupies the space behind a shabby wall presented as a defunct tanning yard. The family has run this working cradle for three generations. [[Cobb]] maintains it day to day under Black-Jaw colors. Canal approach is the only way in. A low stone arch sits flush with the waterline, unmarked and below the bank's sight line. Capacity is one vessel up to 90 ft, with a dry-dock cradle rated to 80 tons. Official Canal Commission records show the site inactive.
+[[La Vasca]] is the Black-Jaw family's private dry dock in [[le-paludi|Le Paludi]], the oldest district of [[calven-and-calveno|Calveno]]. Members of [[the-passage|The Passage]] call it La Vasca or the Basin. A covered basin occupies the space behind a shabby wall presented as a defunct tanning yard. The family has run this working cradle for three generations. [[cobb]] maintains it day to day under Black-Jaw colors. Canal approach is the only way in. A low stone arch sits flush with the waterline, unmarked and below the bank's sight line. Capacity is one vessel up to 90 ft, with a dry-dock cradle rated to 80 tons. Official Canal Commission records show the site inactive.
 
 ---
 
 ## If the party
 
-- **Approach by canal through the unmarked arch.** The channel widens into the covered basin. [[Cobb]] tends the cradle and tool stock and escorts vouched vessels in.
+- **Approach by canal through the unmarked arch.** The channel widens into the covered basin. [[cobb]] tends the cradle and tool stock and escorts vouched vessels in.
 - **Put a ship into the cradle.** The established services are hull caulking and registry-plate removal. Timber and fittings come from rotating stock, and no prior markings are kept.
 - **Ask Cobb not to tell [[nona-black-jaw|Nona]].** He declines. Using the Basin is a known event reported up the chain. Proper channels send the report to the [[Warren]] within an hour.
 
@@ -64,7 +64,7 @@ relationships:
 
 ## Who
 
-- [[Cobb]], a young [[Rattkin]] dockhand, runs the Basin day to day. He greets arrivals at the water's edge and reports up the chain to [[nona-black-jaw|Nona Black-Jaw]].
+- [[cobb]], a young [[Rattkin]] dockhand, runs the Basin day to day. He greets arrivals at the water's edge and reports up the chain to [[nona-black-jaw|Nona Black-Jaw]].
 - Black-Jaw Run members and vouched Passage contacts know the place. Newcomers learn the address first, then its real purpose.
 
 ---
@@ -92,6 +92,6 @@ relationships:
 
 ## Why
 
-- The crew's first stop on landing in Calveno was this covered dry dock in Black-Jaw colors, with a cradle waiting and [[Cobb]] at the water's edge. *[[Uncertainty]]* (formerly HCS Surety on the approach) went into the cradle for repair.
+- The crew's first stop on landing in Calveno was this covered dry dock in Black-Jaw colors, with a cradle waiting and [[cobb]] at the water's edge. *[[uncertainty]]* (formerly HCS Surety on the approach) went into the cradle for repair.
 - Session 03 also closed [[shepherd-grigori|Shepherd Grigori]]'s goodbye here before he walked into the city alone.
 - The Basin's proper channels send every use to Nona. The help is warm, and the reporting is reliable.

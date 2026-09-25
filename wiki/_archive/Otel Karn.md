@@ -8,7 +8,7 @@ tags: [location, island, khlysty]
 # Otel Karn
 
 ## Note
-A remote island and the root of the tradition the [[Dravosi Crown]] calls [[Khlysty / the Flock]]. Its old teaching treats flesh as the vehicle of spirit. [[Otho]]'s careless bargain stopped death from working on the island; [[Shepherd Grigori]] learned the blood-anchor technique there without knowing its true age.
+A remote island and the root of the tradition the [[Dravosi Crown]] calls [[Khlysty / the Flock]]. Its old teaching treats flesh as the vehicle of spirit. [[otho]]'s careless bargain stopped death from working on the island; [[Shepherd Grigori]] learned the blood-anchor technique there without knowing its true age.
 
 ## Linked
-[[Khlysty / the Flock]] · [[Otho]] · [[Shepherd Grigori]]
+[[Khlysty / the Flock]] · [[otho]] · [[Shepherd Grigori]]

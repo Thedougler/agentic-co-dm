@@ -76,14 +76,14 @@ flexGrow=1
 
 - **Status quo.** [[talon-vantyrus]] leads Countless through covert routes, hired blades, paid contacts, and the absence of reliable records.
 - **Recent change.** [[talon-skarn]] openly schemes to overthrow Vantyrus, and Vantyrus treats the attempt as a standing threat rather than a secret.
-- **Pressure.** The [[long-sight-hunt]] is searching for [[crissdalynn-khinriss]]. It will also track any Sentinel who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters.
+- **Pressure.** The [[long-sight-hunt]] is searching for [[crissdalynn-khinriss]]. It will also track any Sentinel who recently visited [[yssenmoor]] after [[uncertainty]] enters Midchain waters.
 - **Strength.** Countless can reach pilgrim routes and grey markets. It can also reach Sentinel waystations without exposing a central ledger or ordering hand.
 - **Vulnerability.** One-job contacts know little beyond their assignments. Countless's leadership rests on the Rule of Two. The winner of the contest takes control.
 - **Opportunity.** Events can cut either Talon off or defeat them, which would redirect Countless's network.
 
 ## Active Agenda
 
-**Goal.** Find [[crissdalynn-khinriss]]. Track any Sentinel who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters.
+**Goal.** Find [[crissdalynn-khinriss]]. Track any Sentinel who recently visited [[yssenmoor]] after [[uncertainty]] enters Midchain waters.
 
 **Why.** Countless targets Fate Spinner carriers. Vantyrus's plan uses the gift tied to the Soul Incarnate transformation technique.
 

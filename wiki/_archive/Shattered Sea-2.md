@@ -19,7 +19,7 @@ In 1495 DR, the crew works a roughly 60,000-square-mile archipelago south of Chu
 - Safety / lines: unknown
 - House tone: [[lexicon/House tone]]
 ## Current arc
-**Season 2: at/around [[Aruhe - Hungry Isle]].** The crew is aboard mobile [[Uncertainty]] after the first chosen stop of [[Sparhold]]; the wreck field, Aruhe survivors, taking-places, and crown squid now set the immediate pressure.
+**Season 2: at/around [[Aruhe - Hungry Isle]].** The crew is aboard mobile [[uncertainty]] after the first chosen stop of [[sparhold]]; the wreck field, Aruhe survivors, taking-places, and crown squid now set the immediate pressure.
 
 ## Map
 - [[campaigns/shattered-sea/locations/Shattered Sea#Map|Shattered Sea overview map]]

@@ -24,6 +24,9 @@ campaign: shattered-sea
 visibility: dm
 status: active
 kind: political
+scope: regional
+region: "[[Midchain]]"
+base: "Midchain harbours and Crown-connected ports"
 relationships:
   - target: "[[tessarine-concordat]]"
     type: related_to
@@ -39,6 +42,10 @@ relationships:
 > [!narration] Narration
 > Harbour masters and island councillors speak for Midchain water and island law. Seals, seized forts, and sealed orders travel farther than any one face at the table.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -50,8 +57,10 @@ relationships:
 | **Public purpose** | Protect Midchain water and coordinate island law |
 | **Signature method** | Commissions, seized forts, sealed orders, and delegated authority |
 | **Current posture** | Acting |
-
-
+```
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - **They want:** Control of the Pearl while keeping Midchain law workable as Pearl and Maw pressure escalate.
@@ -59,10 +68,8 @@ relationships:
 - **They pressure with:** Seized forts, sealed orders, and commissions that turn private action into public policy.
 - **They will not:** Expose the person who ordered the Pearl theft while the Council can keep responsibility behind a signatory.
 - **Their tell:** Council seals, sealed orders, and representatives who speak in the language of Midchain water and island law.
-
-## Public face
-
-The Chain Council protects Midchain water and coordinates island law. Its seals, legal cover, Crown-connected ports, and ability to turn private action into public policy are visible sources of authority.
+```
+````
 
 ## Current State
 
@@ -111,6 +118,15 @@ The Chain Council protects Midchain water and coordinates island law. Its seals,
 | Council signatory | Authorized intermediary | Passed the [[tessarine-concordat]] route | Current sources do not name the signatory |
 
 The current sources do not name a single presiding leader. The Council acts through signatories, commissions, and delegated authority rather than one exposed face.
+### Chain of Action
+
+**Who decides:** The unnamed Council signatories authorize commissions and sealed orders.
+
+**Who interprets those orders:** The [[tessarine-concordat]] and its concealed principal turn Council authority into a route and operational brief.
+
+**Who actually carries them out:** [[delmar-fisk]], [[fisks-fleet]], and other delegated actors execute the Council's commissions.
+
+**If leadership disappears.** The signatory chain fractures, leaving commissioned actors with resources but no clear authority to continue acting in the Council's name.
 
 ## Territory & Touchpoints
 
@@ -125,9 +141,15 @@ The current sources do not name a single presiding leader. The Council acts thro
 | --- | --- | --- | --- |
 | [[tessarine-concordat]] | Instrument | A route for sealed orders and concealed principals | The route hides who ordered the theft |
 | [[dravosi-crown]] | Connected power | Crown-connected ports and official cover | The relationship gives Council action public weight |
-| [[Waveservants]] | Complicated tie | Control of the Pearl and its consequences | The Council's commission stole the Pearl from [[vel-orn]] |
+| [[waveservants]] | Complicated tie | Control of the Pearl and its consequences | The Council's commission stole the Pearl from [[vel-orn]] |
 | [[khlysty-the-flock]] | Related power | The current sources establish a relationship, not a settled agenda | Their position remains unresolved |
 | [[delmar-fisk]] | Commissioned actor | Execution of the five-ship Pearl commission | His actions expose the Council's delegation chain |
+## Signals & Rumors
+
+* **Visible sign.** Council seals, sealed orders, and official port access accompany actions that would otherwise look like private violence.
+* **Rumor.** Harbour masters say the Council is protecting Midchain law while quietly choosing who may control the Pearl.
+* **Direct signal.** A new commission, seized fort, or sealed order appears near the Pearl or the Maw.
+* **Quiet clue.** Following a commission through [[delmar-fisk]] and [[fisks-fleet]] can expose the delegation chain.
 
 ## Running the Faction
 
@@ -138,4 +160,7 @@ The current sources do not name a single presiding leader. The Council acts thro
 | **When opposed** | The Council protects its seals, forts, and order chain first, then redirects pressure through commissioned actors. |
 | **When ignored** | Commissions and sealed orders continue while Pearl and Maw pressure escalate, making the Council's policy harder to separate from the crisis. |
 | **When broken** | The Council loses its coordinating reach through seals, forts, and delegated authority, even if commissioned actors and concealed principals remain. |
+## History
+
+The Council commissioned [[delmar-fisk]] and [[fisks-fleet]] to steal the Pearl from [[vel-orn]]. Its concealed delegation route now connects the Council to the [[tessarine-concordat]] and to [[cosimo-verantio]]'s attempt to target [[aldric-drave]].
 

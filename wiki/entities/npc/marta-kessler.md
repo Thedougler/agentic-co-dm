@@ -29,7 +29,7 @@ visibility: dm
 > The Voyvode General Store apron sits starched stiff over Marta Kessler's shoulders, company eagle stitched over the heart. She's mid-forties, wiry, sleeves rolled to the elbow, forearms nicked from years of crate-work. A stub of pencil rides behind one ear. Her ledger lies open on the counter, columns ruled dead straight. She stamps a receipt without looking up, twice, hard, the second stamp louder than it needs to be.
 
 
-Marta Kessler keeps [[voyvode-works]]'s company store at [[Fathomrush]], stocked and priced to the exact same list the [[sunkline-company]] store keeps across the harbor: rope, tool kits, ration tins, diving sundries. Dockside gossip claims you can't tell her apart from her Sunkline counterpart at fifty feet, same eagle-and-sunburst uniforms, same clipped greeting drilled into both of them at hire. Up close it doesn't hold. Marta talks fast and counts under her breath, and she reads a customer's boots before their face.
+Marta Kessler keeps [[voyvode-works]]'s company store at [[fathomrush]], stocked and priced to the exact same list the [[sunkline-company]] store keeps across the harbor: rope, tool kits, ration tins, diving sundries. Dockside gossip claims you can't tell her apart from her Sunkline counterpart at fifty feet, same eagle-and-sunburst uniforms, same clipped greeting drilled into both of them at hire. Up close it doesn't hold. Marta talks fast and counts under her breath, and she reads a customer's boots before their face.
 
 She has run the register since the Goldrush's second year, back when the store was a lean-to and a plank counter. **A dossier of usable facts:**
 
@@ -61,4 +61,4 @@ She has run the register since the Goldrush's second year, back when the store w
 
 - [[voyvode-works]]: her employer. The crate-count landing this month threatens the trades she's been running around its books.
 - [[yevgenia-sorrel]]: Sunkline's shopkeeper, near-identical at a glance across the harbor. Marta despises her, a personal rivalry, not corporate loyalty.
-- [[Fathomrush]]: the company town she's worked the counter of since the Goldrush's second year.
+- [[fathomrush]]: the company town she's worked the counter of since the Goldrush's second year.

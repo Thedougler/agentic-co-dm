@@ -16,6 +16,7 @@ kind: magic
 rarity: uncommon
 attunement: true
 owner: "[[lavinia-sordi]]"
+region: "[[le-paludi]]"
 summary: "A Ring of Mind Shielding that still blocks mind-reading, but only because the wearer's own head is too flooded with everyone else's thoughts to focus on anything."
 provenance:
   extracted: 0.85
@@ -36,7 +37,6 @@ The immunity holds because the ring floods your mind with the surface thoughts o
 
 The ring grants no offensive or defensive combat bonus. The Concentration and Perception disadvantage is a pure cost.
 
-## At a Glance
 
 Unclaimed shop stock on [[lavinia-sordi]]'s rack at [[la-cenere]], listed at 50 gp (down from 200 gp). [[delmar-fisk]] tried it on and immediately handed it back without buying.
 

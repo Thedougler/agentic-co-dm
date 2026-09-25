@@ -38,7 +38,7 @@ invention: true
 **Intelligence (Investigation) — `DC 13`** → The seals compelled red-caste or lower grung to go inland through Aruhe and report back their findings.
 
 
-The oldest fragments repeat the existing inland reporting order. Later scraps record replacement parties after earlier groups stopped reporting. The newest readable layer directs a fresh party to identify and destroy two graves beneath a memorial tree. Session 12 prep accepts this as evidence, not table-witnessed history. It does not explain the [[memorial-grove|Death Bloom]], identify [[Hinewai]], or reveal the full reason the graves matter.
+The oldest fragments repeat the existing inland reporting order. Later scraps record replacement parties after earlier groups stopped reporting. The newest readable layer directs a fresh party to identify and destroy two graves beneath a memorial tree. Session 12 prep accepts this as evidence, not table-witnessed history. It does not explain the [[memorial-grove|Death Bloom]], identify [[hinewai]], or reveal the full reason the graves matter.
 
 The seals no longer compel anyone. Their evidence still makes the Gold-caste objective visible: keep sending lower-caste Grung inland until someone reaches the graves. See [[two-grave-orders]] for the complete clue progression.
 

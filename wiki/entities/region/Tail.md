@@ -53,7 +53,7 @@ as_of: "2026-09-13"
 
 * The two arcs narrow into fewer, taller islands before the Maw.
 * Late fog and lying compasses are ordinary features of the approach.
-* The unnamed staging island performs the same last-supplies and last-hands function as [[Fathomrush]] under another name.
+* The unnamed staging island performs the same last-supplies and last-hands function as [[fathomrush]] under another name.
 
 ## Geography
 
@@ -74,7 +74,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 ### Landmarks
 
 * **[[drowned-maw]].** The trench and planar boundary that determines the eastern route.
-* **[[Fathomrush]].** A western staging town whose dives reach [[Shelfworks]]; it is the named comparison for the unnamed island's last-hands function.
+* **[[fathomrush]].** A western staging town whose dives reach [[Shelfworks]]; it is the named comparison for the unnamed island's last-hands function.
 * **Unnamed staging island.** The last-supplies and last-hands stop before the Maw.
 
 ## Travel
@@ -84,7 +84,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 * **Travel structure.** Known routes through a narrowing island chain.
 * **Navigation.** Compasses lie in the approach; pilots and visible landmarks matter more than instruments.
 * **Weather / season.** Late fog routinely removes cliffs and last landmarks from view.
-* **Rest / supply.** The unnamed staging island is the last-supplies stop before the Maw; [[Fathomrush]] stages dives on [[Shelfworks]].
+* **Rest / supply.** The unnamed staging island is the last-supplies stop before the Maw; [[fathomrush]] stages dives on [[Shelfworks]].
 * **Regional rule.** Do not treat a compass reading as proof of position in the Tail.
 
 ### Routes and connections
@@ -96,7 +96,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 
 ### Hidden and broken connections
 
-* **The unnamed staging island's identity.** Unnamed staging island ↔ [[Fathomrush]]. The two sites perform the same last-supplies and last-hands role, but they must not be forced into one place without a future anchor.
+* **The unnamed staging island's identity.** Unnamed staging island ↔ [[fathomrush]]. The two sites perform the same last-supplies and last-hands role, but they must not be forced into one place without a future anchor.
 
 ## Key places
 
@@ -104,7 +104,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 | ----- | ---- | ------------- | --------------------------- | ---- |
 | Unnamed staging island | Staging island | The last stop before the Maw. | Supplies, hands, and honest gossip. | Follow the pilot traffic before the fog closes. |
 | [[drowned-maw]] | Trench and planar boundary | The eastern route edge. | Reversed currents and a route whose instruments cannot be trusted. | Ask what the last landmark means before sailing beyond it. |
-| [[Fathomrush]] | Dive-staging town | A named comparison point west of the Maw. | A known staging function connected to [[Shelfworks]]. | Compare its role with the unnamed island without merging them. |
+| [[fathomrush]] | Dive-staging town | A named comparison point west of the Maw. | A known staging function connected to [[Shelfworks]]. | Compare its role with the unnamed island without merging them. |
 
 ## Active powers
 
@@ -132,7 +132,7 @@ No established regional front is recorded for the Tail. Its active pressure is n
 | -: | ------------ | --------------- | ------------- |
 | 1 | The last island still has supplies. | The unnamed staging island is the last-supplies stop before the Maw. | [[drowned-maw]] |
 | 2 | Pilots know where the compass lies. | Pilot families and staging crews work the pinch. | [[Midchain]] |
-| 3 | Fathomrush has a twin under another name. | The unnamed staging island performs the same last-hands function. | [[Fathomrush]] |
+| 3 | Fathomrush has a twin under another name. | The unnamed staging island performs the same last-hands function. | [[fathomrush]] |
 | 4 | The cliffs are taller here than behind the arcs. | The Tail is where the two arcs narrow into fewer, taller islands. | [[drowned-maw]] |
 | 5 | The water changes before the trench. | Cold trench-coloured water marks the approach. | [[drowned-maw]] |
 | 6 | Beyond the Maw, a pilot cannot promise a landmark. | The Outer Reach has no resupply or pilot-trusted landmark. | [[outer-reach]] |
@@ -160,7 +160,7 @@ No separate encounter table is established for the Tail. Treat pilot traffic, st
 
 | Past fact | Present consequence | Evidence in the world |
 | --------- | ------------------- | --------------------- |
-| The unnamed staging island's name and identity remain unfixed. | Do not merge it with [[Fathomrush]] without a future anchor. | The Tail's staging traffic and [[Fathomrush]]'s known dive-staging role. |
+| The unnamed staging island's name and identity remain unfixed. | Do not merge it with [[fathomrush]] without a future anchor. | The Tail's staging traffic and [[fathomrush]]'s known dive-staging role. |
 
 ## Stakes
 

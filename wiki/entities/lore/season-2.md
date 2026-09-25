@@ -156,7 +156,7 @@ The characters can learn that the season's freedom is a real choice with consequ
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** The exact order of optional island stops remains open.
 * [ ] **Contradiction.** Older Penance Bar ride notes disagree; the later siege note is the filed direction.

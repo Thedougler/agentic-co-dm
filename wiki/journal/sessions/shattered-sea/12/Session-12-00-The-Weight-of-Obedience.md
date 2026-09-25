@@ -33,13 +33,13 @@ summary: "Skarn's theft resumes at dawn, two survivors ask the party to fetch a 
 
 **Session question.** Can the party keep the Fate Spinner from Skarn, and whose voice will they obey to do it?
 
-**If the party does nothing.** Skarn takes the Spinner and flies for [[talon-vantyrus]] at dusk. [[nello-castri|Nello]] is swallowed by the strangler fig in the [[turned-hollow]]. [[Hinewai]] waits at her Grove, already knowing a Grung is on her island.
+**If the party does nothing.** Skarn takes the Spinner and flies for [[talon-vantyrus]] at dusk. [[nello-castri|Nello]] is swallowed by the strangler fig in the [[turned-hollow]]. [[hinewai]] waits at her Grove, already knowing a Grung is on her island.
 
 **Dramatic spine.** Obedience imposed (the Gold orders), inherited (Jean-Claude's caste), chosen (the survivors' rule), refused (Matteo), and unasked-for (Perrin's patron), each beat showing one of them under pressure.
 
-**Now:** [[Session-12-01-River-Slack-Reprise]]
+**Now:** [[session-12-01-river-slack-reprise]]
 
-**On deck:** [[Session-12-02-A-Name-for-Matteo]] · [[Session-12-03-Grass-Without-Wind]]
+**On deck:** [[Session-12-02-A-Name-for-Matteo]] · [[session-12-03-grass-without-wind]]
 
 ## Beat Map
 
@@ -47,14 +47,14 @@ The chart paces play; the players' choices pick which beat fires. About four hou
 
 |  # | Beat | Form | Trigger | What changes | Hand-off / options | Budget |
 | -: | --- | --- | --- | --- | --- | -: |
-| 01 | [[Session-12-01-River-Slack-Reprise]] | **Hook** | Play resumes mid-fight, pre-dawn. | The Spinner is Held, in the slack, or Stolen; Skarn leaves with 0–2 of Matteo's plums. | [[Session-12-02-A-Name-for-Matteo]] | 35 min |
-| 02 | [[Session-12-02-A-Name-for-Matteo]] | Development | Celia and Oren come down the bloody bank after sunrise. | Nello is missing up the north trail; Oren asks for help. Jean-Claude can wake. | [[Session-12-03-Grass-Without-Wind]] | 30 min |
-| 03 | [[Session-12-03-Grass-Without-Wind]] | Cliffhanger | Skarn makes a living claim beside the column on [[print-braid]]. | Wolfrabbits hunt the taker; Skarn is marked or learns where the Spinner rides. | [[Session-12-04-Two-Grave-Orders]] | 25 min |
-| 04 | [[Session-12-04-Two-Grave-Orders]] | Development | The aisle north of [[star-cut]] opens onto the Turned Hollow. | The whole Gold order trail; the diggers died under the wrong tree; Nello is alive in the fig. | [[Session-12-05-The-Wrong-Tree]] | 30 min |
-| 05 | [[Session-12-05-The-Wrong-Tree]] | Cliffhanger | A rescuer enters the fig's blindsight. | Nello is saved or swallowed; the party spends itself; the Hollow may burn. | [[Session-12-06-What-Is-Chosen]] | 30 min |
+| 01 | [[session-12-01-river-slack-reprise]] | **Hook** | Play resumes mid-fight, pre-dawn. | The Spinner is Held, in the slack, or Stolen; Skarn leaves with 0–2 of Matteo's plums. | [[Session-12-02-A-Name-for-Matteo]] | 35 min |
+| 02 | [[Session-12-02-A-Name-for-Matteo]] | Development | Celia and Oren come down the bloody bank after sunrise. | Nello is missing up the north trail; Oren asks for help. Jean-Claude can wake. | [[session-12-03-grass-without-wind]] | 30 min |
+| 03 | [[session-12-03-grass-without-wind]] | Cliffhanger | Skarn makes a living claim beside the column on [[print-braid]]. | Wolfrabbits hunt the taker; Skarn is marked or learns where the Spinner rides. | [[Session-12-04-Two-Grave-Orders]] | 25 min |
+| 04 | [[Session-12-04-Two-Grave-Orders]] | Development | The aisle north of [[star-cut]] opens onto the Turned Hollow. | The whole Gold order trail; the diggers died under the wrong tree; Nello is alive in the fig. | [[session-12-05-the-wrong-tree]] | 30 min |
+| 05 | [[session-12-05-the-wrong-tree]] | Cliffhanger | A rescuer enters the fig's blindsight. | Nello is saved or swallowed; the party spends itself; the Hollow may burn. | [[Session-12-06-What-Is-Chosen]] | 30 min |
 | 06 | [[Session-12-06-What-Is-Chosen]] | Development | The party reaches the north rim in view of the Grove. | Nello confesses he told the woman about the Grung; Perrin's cloak starts dripping seawater. | [[Session-12-07-The-Guava-and-the-Spinner]] | 20 min |
-| 07 | [[Session-12-07-The-Guava-and-the-Spinner]] | **Climax** | The party commits to a direction, tries to rest, or 10 minutes pass. | The Spinner is kept, stolen, or traded; Perrin answers "CONSUME." | [[Session-12-08-Toward-the-Memorial]] | 50 min |
-| 08 | [[Session-12-08-Toward-the-Memorial]] | **Resolution** | Skarn is gone or bound. | Hinewai steps to the edge of her flowers and looks at Jean-Claude. | Session 13 opens on her question | 15 min |
+| 07 | [[Session-12-07-The-Guava-and-the-Spinner]] | **Climax** | The party commits to a direction, tries to rest, or 10 minutes pass. | The Spinner is kept, stolen, or traded; Perrin answers "CONSUME." | [[session-12-08-toward-the-memorial]] | 50 min |
+| 08 | [[session-12-08-toward-the-memorial]] | **Resolution** | Skarn is gone or bound. | Hinewai steps to the edge of her flowers and looks at Jean-Claude. | Session 13 opens on her question | 15 min |
 
 ### Cards, threads, and tiers
 
@@ -73,7 +73,7 @@ The chart paces play; the players' choices pick which beat fires. About four hou
 
 | Beat | Bring it in when… | Job | Drop it when… |
 | --- | --- | --- | --- |
-| [[Session-12-03-Grass-Without-Wind]] | The party travels anywhere with the Spinner and Skarn is free, including south toward the beach. | Skarn probes, makes a claim, and the island punishes the taker. | Skarn is captured or the Spinner is already his. |
+| [[session-12-03-grass-without-wind]] | The party travels anywhere with the Spinner and Skarn is free, including south toward the beach. | Skarn probes, makes a claim, and the island punishes the taker. | Skarn is captured or the Spinner is already his. |
 | Jean-Claude wakes ([[Session-12-02-A-Name-for-Matteo]] table) | Chad is at the table and any waking route happens, in any beat. | Put Jean-Claude's player in the game. | He is awake. |
 
 ### Climax candidates
@@ -88,8 +88,8 @@ The chart paces play; the players' choices pick which beat fires. About four hou
 
 | From | If the party… | Then surface… | Consequence |
 | --- | --- | --- | --- |
-| [[Session-12-01-River-Slack-Reprise]] | Loses the Spinner to Skarn | 02 as written; 03 becomes tracking him; 07 Stolen branch. | He cannot fly off Aruhe until dusk because the bloodhawks own the day sky. |
-| [[Session-12-01-River-Slack-Reprise]] | Drops or captures Skarn | Skip 03's thief; keep the wolfrabbits if anyone makes a claim. 07 becomes the rescue's aftermath and the Hinewai meeting pulls forward. | A bound Countless apprentice who can be questioned about Vantyrus. |
+| [[session-12-01-river-slack-reprise]] | Loses the Spinner to Skarn | 02 as written; 03 becomes tracking him; 07 Stolen branch. | He cannot fly off Aruhe until dusk because the bloodhawks own the day sky. |
+| [[session-12-01-river-slack-reprise]] | Drops or captures Skarn | Skip 03's thief; keep the wolfrabbits if anyone makes a claim. 07 becomes the rescue's aftermath and the Hinewai meeting pulls forward. | A bound Countless apprentice who can be questioned about Vantyrus. |
 | [[Session-12-02-A-Name-for-Matteo]] | Heads south to the ship with Matteo | Floating 03 on the beach road; the beach-road Climax candidate. | Nello dies in the fig at dusk; Celia and Oren go north alone. |
 | [[Session-12-04-Two-Grave-Orders]] | Leaves Nello or goes around the Hollow | Skip 05; go to 06. | Nello's secret is lost; Oren leaves; Hinewai still knows. |
 | [[Session-12-06-What-Is-Chosen]] | Walks into the Grove as guests | 07 at the flower ring. | Any damage to the tree, graves, or flowers ends Hinewai's welcome. |
@@ -98,18 +98,18 @@ The chart paces play; the players' choices pick which beat fires. About four hou
 
 | Thread | Source | Planted | Tested | Harvested |
 | --- | --- | --- | --- | --- |
-| Skarn and the [[fate-spinner]] | Faction clock ([[Countless]]) | [[Session-12-01-River-Slack-Reprise]] | [[Session-12-03-Grass-Without-Wind]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
-| The island's law ([[taking-on-aruhe]]) | Mystery / world rule | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-03-Grass-Without-Wind]], [[Session-12-05-The-Wrong-Tree]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
-| The inland survivors and Nello | Crew goal (the Calveno rescue) | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-05-The-Wrong-Tree]] | [[Session-12-08-Toward-the-Memorial]] |
-| [[two-grave-orders]] | Mystery / Jean-Claude's heritage | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-04-Two-Grave-Orders]] | [[Session-12-06-What-Is-Chosen]], [[Session-12-08-Toward-the-Memorial]] |
-| Perrin and [[Auralis]] | PC secret (unwitting pact) | [[Session-12-06-What-Is-Chosen]] | [[Session-12-07-The-Guava-and-the-Spinner]] | [[Session-12-08-Toward-the-Memorial]] |
-| Jean-Claude and [[Hinewai]] | Relationship under pressure | [[Session-12-02-A-Name-for-Matteo]] (Oren's warning) | [[Session-12-06-What-Is-Chosen]] | [[Session-12-08-Toward-the-Memorial]] |
+| Skarn and the [[fate-spinner]] | Faction clock ([[Countless]]) | [[session-12-01-river-slack-reprise]] | [[session-12-03-grass-without-wind]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
+| The island's law ([[taking-on-aruhe]]) | Mystery / world rule | [[Session-12-02-A-Name-for-Matteo]] | [[session-12-03-grass-without-wind]], [[session-12-05-the-wrong-tree]] | [[Session-12-07-The-Guava-and-the-Spinner]] |
+| The inland survivors and Nello | Crew goal (the Calveno rescue) | [[Session-12-02-A-Name-for-Matteo]] | [[session-12-05-the-wrong-tree]] | [[session-12-08-toward-the-memorial]] |
+| [[two-grave-orders]] | Mystery / Jean-Claude's heritage | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-04-Two-Grave-Orders]] | [[Session-12-06-What-Is-Chosen]], [[session-12-08-toward-the-memorial]] |
+| Perrin and [[Auralis]] | PC secret (unwitting pact) | [[Session-12-06-What-Is-Chosen]] | [[Session-12-07-The-Guava-and-the-Spinner]] | [[session-12-08-toward-the-memorial]] |
+| Jean-Claude and [[hinewai]] | Relationship under pressure | [[Session-12-02-A-Name-for-Matteo]] (Oren's warning) | [[Session-12-06-What-Is-Chosen]] | [[session-12-08-toward-the-memorial]] |
 
 ## Critical Routes
 
 | They need to reach / learn… | Route or clue 1 | Route or clue 2 | Route or clue 3 |
 | --- | --- | --- | --- |
-| Nello went north toward the Grung dead | [[Session-12-02-A-Name-for-Matteo]]: Oren asks for help. | [[Session-12-02-A-Name-for-Matteo]]: Celia's ledger ("walked north"). | [[Session-12-03-Grass-Without-Wind]]: Nello's boots and bare prints at Spoke Ring. |
+| Nello went north toward the Grung dead | [[Session-12-02-A-Name-for-Matteo]]: Oren asks for help. | [[Session-12-02-A-Name-for-Matteo]]: Celia's ledger ("walked north"). | [[session-12-03-grass-without-wind]]: Nello's boots and bare prints at Spoke Ring. |
 | How to get Nello out of the fig | [[Session-12-04-Two-Grave-Orders]]: Nello's whisper. | The hanging skeleton and the antlers in the trunk. | A thrown stone, or Intelligence (Nature) on the fig. |
 | The Grung dug under the wrong tree | Sorting the seals by ring. | An empty pit with sawn roots and no grave. | The black-flower ring and second tree past the north rim, and Nello's "This isn't it." |
 | Skarn is invisible and nearby | Slit straps and empty grass the wolfrabbits chase. | Perrin's whiskers at 5 feet. | Feathers bursting from bare air under the bloodhawk; the cloak's stream in 06–07. |
@@ -124,10 +124,10 @@ flexGrow=2
 
 | Step | Situation without intervention | Surface through |
 | -: | --- | --- |
-| 0 | Skarn is five feet from Crissdalynn with three rounds before sunrise. | [[Session-12-01-River-Slack-Reprise]] |
-| 1 | He takes Matteo's plums and shadows the party north, invisible. | [[Session-12-03-Grass-Without-Wind]] |
-| 2 | He probes the column; if it is tight, he makes a living claim to break it and marks himself. | [[Session-12-03-Grass-Without-Wind]] |
-| 3 | He watches the party spend itself on the fig from the Hollow's east rim. | [[Session-12-05-The-Wrong-Tree]] |
+| 0 | Skarn is five feet from Crissdalynn with three rounds before sunrise. | [[session-12-01-river-slack-reprise]] |
+| 1 | He takes Matteo's plums and shadows the party north, invisible. | [[session-12-03-grass-without-wind]] |
+| 2 | He probes the column; if it is tight, he makes a living claim to break it and marks himself. | [[session-12-03-grass-without-wind]] |
+| 3 | He watches the party spend itself on the fig from the Hollow's east rim. | [[session-12-05-the-wrong-tree]] |
 | 4 | He eats his last plum and makes the committed second attempt. | [[Session-12-07-The-Guava-and-the-Spinner]] |
 ```
 
@@ -162,10 +162,10 @@ flexGrow=2
 | Need | Ready reference |
 | --- | --- |
 | **Places** | [[river-slack-basin]] · [[cutoff-lip]] · [[print-braid]] · [[spoke-ring]] · [[star-cut]] · [[turned-hollow]] · [[memorial-grove]] |
-| **People** | [[celia-parel]] · [[oren-vask]] · [[matteo-scola]] · [[nello-castri]] · [[Hinewai]] |
+| **People** | [[celia-parel]] · [[oren-vask]] · [[matteo-scola]] · [[nello-castri]] · [[hinewai]] |
 | **Opposition** | [[talon-skarn]] · [[wolfrabbit]] · [[young-bloodhawk]] · [[strangler-fig]] · [[vine-lash]] |
 | **Rewards / objects** | [[fate-spinner]] · [[ghost-plum]] · [[giants-guava]] · [[grung-authority-seal]] |
-| **Rules / special procedures** | [[taking-on-aruhe]] (claim response) · [[two-grave-orders]] · [[Auralis]] · Skarn's Snatch ruling in [[Session-12-01-River-Slack-Reprise]] |
+| **Rules / special procedures** | [[taking-on-aruhe]] (claim response) · [[two-grave-orders]] · [[Auralis]] · Skarn's Snatch ruling in [[session-12-01-river-slack-reprise]] |
 
 ### If play stalls
 
@@ -191,14 +191,14 @@ flexGrow=2
 
 ### Beats
 
-- [ ] [[Session-12-01-River-Slack-Reprise]]
+- [ ] [[session-12-01-river-slack-reprise]]
 - [ ] [[Session-12-02-A-Name-for-Matteo]]
-- [ ] [[Session-12-03-Grass-Without-Wind]]
+- [ ] [[session-12-03-grass-without-wind]]
 - [ ] [[Session-12-04-Two-Grave-Orders]]
-- [ ] [[Session-12-05-The-Wrong-Tree]]
+- [ ] [[session-12-05-the-wrong-tree]]
 - [ ] [[Session-12-06-What-Is-Chosen]]
 - [ ] [[Session-12-07-The-Guava-and-the-Spinner]]
-- [ ] [[Session-12-08-Toward-the-Memorial]]
+- [ ] [[session-12-08-toward-the-memorial]]
 
 ### Prep Audit
 

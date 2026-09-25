@@ -67,7 +67,7 @@ The island’s poison race is also the clans’ supply contradiction: hidden Gol
 - Exposing the farms may fracture lower-caste trust; rescuing captives may make the fleet strike sooner.
 
 ## Connections
-- [[verdant-teeth]] · [[grung-clans]] · [[aruhe]] · [[Sorn]] · [[Dreth]]
+- [[verdant-teeth]] · [[grung-clans]] · [[aruhe]] · [[sorn]] · [[dreth]]
 - [[the-taken-314]] · [[pursue-the-grung-raiding-fleet]] · [[grung-color-and-the-sealing-rite]]
 
 ## Secrets

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: rare
+attunement: false
+owner: "[[nicco-kettley]]"
 summary: "A brass lighter bolted to La Gatta's board on a short chain, whose flame once a day carries a lit blend's whole effect to a second person as well."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ The one thing on [[La Gatta]]'s board that is not stock, and the only fixture [[
 
 **PC connection:** every blend on this board covers exactly one smoker for one hour. The crew's weaknesses are shared, not individual, and the cheapest way to fix that is not two cigarettes but one flame. It is also the only reason to save toward something bolted to a board on the most-watched twenty feet in the city.
 
-## Mechanics
 
 **[HB]** Lighting an alchemical blend from the Chained Lighter's flame costs no more than lighting it any other way. Once per day, at the moment of that first breath, the smoker may name one willing creature within 5 feet who can see the flame. That creature gains the blend's full effect, for its full duration, without smoking anything.
 

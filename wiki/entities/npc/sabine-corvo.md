@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Sabine Corvo
 
-Proprietor of [[The Live Hold]], an exotic-animal dealership in [[Sparhold]] near the [[verdant-teeth]].
+Proprietor of [[The Live Hold]], an exotic-animal dealership in [[sparhold]] near the [[verdant-teeth]].
 
 **Wants:** Sabine wants to keep her reputation as the region's premier exotic dealer as the Verdant Teeth expeditions supplying her rarest stock grow unreliable.
 

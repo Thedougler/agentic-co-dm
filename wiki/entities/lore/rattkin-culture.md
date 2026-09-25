@@ -133,7 +133,7 @@ The vocabulary is shared across the network: **Kin** means other Rattkin; **Dry*
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Record how Rattkin communities outside the Passage network organize themselves.
 * [ ] **Unknown.** Record whether every major port's claimed continuous presence can be independently verified.

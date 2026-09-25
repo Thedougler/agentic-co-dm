@@ -114,6 +114,7 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | [[beaumont-sel]] | Operative | Family-linked courier work. | Identified himself to the crew as a Friend of the Passage. |
 | Family-linked couriers | Agents | Move people and proof along existing kitchens. | Trust is coded; a bad proof closes the door. |
 
+### Chain of Action
 **Who decides:** [[nona-black-jaw]]
 
 **Who interprets those orders:** Family-linked couriers, including [[beaumont-sel]]
@@ -151,34 +152,28 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 **They can currently offer the party:** Kitchens, couriers, ships, and a name that opens other Passage doors.
 
 **What would change their standing:** Exposing a kitchen, selling a route, or treating people as cargo.
+## Signals & Rumors
+
+- **Visible sign.** A kitchen closes to questions, a courier uses commercial paper, or a boat leaves with more passengers than its cargo list admits.
+- **Rumor.** The Passage can open a door anywhere if the party knows whom to ask.
+- **Direct signal.** A courier asks for help recovering people already on the captive route.
+- **Quiet clue.** The network reroutes people before it explains the danger, revealing which route is compromised.
 
 ## Running the Faction
 
-### When encountered
-
-Members are moving a person, closing a kitchen to questions, or routing people away from Crown control.
-
-### When helped
-
-A body reaches the next kitchen, and the helper inherits a favor they can still refuse.
-
-### When opposed
-
-They reroute the person first, then decide what information can travel. They protect the network before they protect one request.
-
-### When ignored
-
-The two ships stay on the captive route and Nona redirects attention to the missing-persons desk.
-
-### When broken
-
-Kitchens and family ties can survive a lost ship. The source does not say the network survives a burned Warren.
-
-## Secrets
-
-> [!secret] Hidden truth
-> The Passage grew from [[Warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | Members are moving a person, closing a kitchen to questions, or routing people away from Crown control. |
+| **When helped** | A body reaches the next kitchen, and the helper inherits a favor they can still refuse. |
+| **When opposed** | They reroute the person first, then decide what information can travel. They protect the network before they protect one request. |
+| **When ignored** | The two ships stay on the captive route and Nona redirects attention to the missing-persons desk. |
+| **When broken** | Kitchens and family ties can survive a lost ship. The source does not say the network survives a burned Warren. |
 
 ## History
 
 - **Around 1240 DR.** The network grew from [[Warren]] under pressure and kept relationships that papers and debt would otherwise erase.
+## Hidden Agenda
+
+> [!secret] Hidden truth
+> The Passage grew from [[Warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
+

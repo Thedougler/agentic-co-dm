@@ -23,7 +23,7 @@ summary: "After Skarn's second attempt, the party takes stock at the Hollow's ri
 # Session 12 — Toward the Memorial
 
 **Follows:** [[Session-12-07-The-Guava-and-the-Spinner]]
-**Purpose.** Show what the day cost and kept, let each character answer for their choices, and end with [[Hinewai]] at the edge of her Grove.
+**Purpose.** Show what the day cost and kept, let each character answer for their choices, and end with [[hinewai]] at the edge of her Grove.
 
 **Card.** Ending Cliffhanger in every branch, because the Climax's noise, and any claim or fire, happened at Hinewai's door. Villain Escapes also applies when Skarn got away.
 **Outcome.** The party stands at the door of the island's heart with or without the Spinner, and the island's keeper has come to see who they are.
@@ -70,7 +70,7 @@ flexGrow=1
 | **Stakes** | Crissdalynn's artifact; Nello's life; Perrin's answer to a voice he did not know he answered to. |
 | **Price paid** | Slots, HP, any marks, and anything taken from the island. |
 | **Reward** | Nello, Celia's complete record of the orders, and the truth about the wrong tree. |
-| **New status quo** | [[Hinewai]] has come to her door to meet the party, and she has already singled out Jean-Claude. |
+| **New status quo** | [[hinewai]] has come to her door to meet the party, and she has already singled out Jean-Claude. |
 ```
 
 ```col-md
@@ -121,7 +121,7 @@ flexGrow=1
 | [[two-grave-orders]] | Transform | The order trail is fully read. The graves it wanted are real, 100 feet away, and nobody here is obliged to finish it. |
 | [[nello-castri]] | Close or Carry | Saved and walking with the party, or dead and recorded. |
 | [[Auralis]] | Carry | He has spoken aloud through Perrin's bond, and Perrin has answered. |
-| [[Hinewai]] | Carry | She stands at her door. Next session opens on her question. |
+| [[hinewai]] | Carry | She stands at her door. Next session opens on her question. |
 
 ## Rewards & Accounting
 

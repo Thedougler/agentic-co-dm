@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Ravasol
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Ravasol]] is a southern Midchain stilt village whose real business happens on the rooftops, run by a network of gossiping children. [[Halewick]] is a recorded related site, but no route or distance is established. Skipping the village avoids its rooftop information network, but also means giving up the local knowledge carried by its children.
+[[ravasol]] is a southern Midchain stilt village whose real business happens on the rooftops, run by a network of gossiping children. [[halewick]] is a recorded related site, but no route or distance is established. Skipping the village avoids its rooftop information network, but also means giving up the local knowledge carried by its children.
 
 ---
 
@@ -46,7 +46,7 @@ relationships:
 - **Moves through the rooftops:** The party follows the village's real business above the stilt structures. The roof construction, access points, and restrictions are Unknown.
 - **Seeks information:** The gossiping children form a network with access to local information. Their names, price, loyalties, and current rumor are not recorded.
 - **Asks adults for business:** The page establishes rooftop business run by children, not a named adult authority. Keep the village's response open.
-- **Leaves for Halewick:** [[Halewick]] is a recorded related site, but this page does not establish a route or travel time.
+- **Leaves for Halewick:** [[halewick]] is a recorded related site, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -65,7 +65,7 @@ A network of gossiping children runs Ravasol's real business on the rooftops. No
 - **East:** No named eastern neighbor or route is recorded.
 - **South:** No named southern neighbor or route is recorded.
 - **West:** No named western neighbor or route is recorded.
-- **Related site:** [[Halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
+- **Related site:** [[halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
 
 ## Why
 

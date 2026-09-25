@@ -43,7 +43,7 @@ flexGrow=2
 | **Secret** | Last night the voice asked him who came to the island on wings. He told her about ship people flying low with a limp blue Grung carried in a coat. That Grung is [[jean-claude-tabarnack]]. He has told no one. |
 | **Limit**  | He will not harm or take anything living, even to free himself, and he will not go back toward the ship. |
 
-> **DM thesis:** Nello is obedience at its most devout; he told the truth to the voice that keeps him alive, and it pointed [[Hinewai]] at the party's friend.
+> **DM thesis:** Nello is obedience at its most devout; he told the truth to the voice that keeps him alive, and it pointed [[hinewai]] at the party's friend.
 ```
 
 ```col-md
@@ -109,7 +109,7 @@ Nello speaks softly and carefully, in short sentences with long pauses. His habi
 | [[celia-parel]] | Celia wants Nello's name kept among the living rather than written down with the dead. Bringing word of him back to her earns her trust. |
 | [[oren-vask]] | Oren came south to ask the party to help bring Nello back. Oren will not enter the [[turned-hollow]], so the rescue falls to the party. |
 | [[matteo-scola]] | Matteo called Nello mad for listening to the woman. Nello is Matteo's opposite: where Matteo refused her, Nello walked toward her alone. |
-| [[Hinewai]] | She is the voice Nello obeys. He told her that a Grung is on her island and heading inland with the flyers, and she hates the Grung. |
+| [[hinewai]] | She is the voice Nello obeys. He told her that a Grung is on her island and heading inland with the flyers, and she hates the Grung. |
 | [[jean-claude-tabarnack]] | Nello reported the limp blue Grung without knowing he was a person with friends. Jean-Claude's forgiveness, or refusal of it, decides whether Nello's shame turns to help. |
 | [[delmar-fisk]] | The coat Nello described to the woman is the coat Delmar carries Jean-Claude in. Nello recognizes it on sight. |
 | [[turned-hollow]] | The bowl of Grung dig pits and Grung dead where the [[strangler-fig]] holds him when the party arrives. |

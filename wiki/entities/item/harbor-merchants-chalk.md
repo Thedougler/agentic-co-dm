@@ -12,7 +12,7 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-region: "[[Sparhold]]"
+region: "[[sparhold]]"
 kind: durable
 rarity: common
 attunement: false
@@ -27,6 +27,6 @@ tier: supporting
 # Harbor Merchant's Chalk
 
 > [!narration] Narration
-> A small wood box holds sticks of thick white chalk, worn and blunt from use. Each stick carries a merchant's mark burned into it. Costin's initials mark most of them. This is [[Sparhold]]'s market chalk, used on the slate boards outside every stall, carried in the pocket of every merchant dealing in wagers or tallies. The dust stains your fingers white and tastes bitter.
+> A small wood box holds sticks of thick white chalk, worn and blunt from use. Each stick carries a merchant's mark burned into it. Costin's initials mark most of them. This is [[sparhold]]'s market chalk, used on the slate boards outside every stall, carried in the pocket of every merchant dealing in wagers or tallies. The dust stains your fingers white and tastes bitter.
 
 *Material (Chalk), Mundane.* Essential for any merchant in Sparhold. Costin stocks this at 3 copper pieces per box.

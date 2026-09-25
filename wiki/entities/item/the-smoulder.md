@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[nicco-kettley]]"
 summary: "A failed alchemical cigarette that will not draw, dropped instead of smoked, filling fifteen feet with heavy smoke that ten minutes of wind cannot shift."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ The batch [[Studio Orsini]] packed at double density by a jammed press, which no
 
 **PC connection:** this crew's fights turn on control, not hit points, and the two people who could break line of sight with a spell are both already holding one up. A cloud that costs nothing but the throw is a retreat, a rescue, or a rooftop the enemy archers lose.
 
-## Mechanics
 
 **[HB]** As an Action, a creature lights the Smoulder and drops it, or throws it up to 20 feet. Smoke rises from where it lands and fills a 15-foot-radius sphere within one round.
 

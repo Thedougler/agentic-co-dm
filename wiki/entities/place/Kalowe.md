@@ -43,7 +43,7 @@ Three reef-linked islets joined by stone bridges, ringed by reef with one naviga
 ## Connections
 - → [[Midchain]]
 - → [[central-strait]] via pilot routes
-- → [[penance-bar]] · [[Ashkevet]] · [[Sabrique]]
+- → [[penance-bar]] · [[Ashkevet]] · [[sabrique]]
 
 ## Hooks
 - Take a paying hull through the one navigable gap without answering Crown papers.

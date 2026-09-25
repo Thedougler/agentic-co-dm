@@ -136,7 +136,7 @@ Stop a peeling survivor before tick 3. If the party ignores that person, they ar
 | Whole party answers | Walk toward the voice together as a ready group | Walk | Two or more ready hostiles come within 30 feet of the [[Aruhe - Deerstalker]], or the creature breaks contact before they close. It Dashes or Hides and moves away. The voices draw the party a little north, then die. The mark stays live, and the party can return to the fire. Hand to [[Session-11-08-Night-Watch]] after this scene ends. | There is no partial result. | The group bunches slowly, leaving someone apart in the north trail. That person remains isolated. |
 | One-person face or fight | Attack the [[Aruhe - Deerstalker]], or stand alone in the north trail when it shows itself | Attack against AC 15, or Face | If one person is in the north trail, speak the face lines and let the creature attack. Switch to combat mode. Its Claw is `+8` to hit for `12` slashing, with a reach of 10 feet and an optional **Grappled** condition at escape `DC 16`. Multiattack makes two Claw attacks. This Meal adds `7` (`2d6`) while fewer than two other conscious creatures are within 10 feet of the quarry. | The party member remains alone in the north trail, and the [[Aruhe - Deerstalker]] keeps them as its quarry. | The attack misses, and the party member remains alone in the north trail. |
 | Escape a Grapple | Use an action to escape **Grappled** (escape `DC 16` from the owner Claw or Snatch from the Dim) | Escape `DC 16` | The party member is no longer **Grappled**. If they remain alone in the wood, they are still isolated. | The party member remains **Grappled**. If Snatch from the Dim already hit, the [[Aruhe - Deerstalker]] can carry them up to 20 feet. | The party member remains **Grappled**. |
-| Break off this hub | Walk south toward the last grass, west toward the river, toward the terrace line or beach, toward [[Uncertainty]], or fly into open valley air | Walk | The party leaves [[Aruhe - Quiet Forest Spoke Ring]] from this fire. Rebuild from the new route, and end this scene. The mark can remain on the locked quarry. | There is no partial result. | A flyer enters Hawk sky. Rebuild from that position, then end this scene. |
+| Break off this hub | Walk south toward the last grass, west toward the river, toward the terrace line or beach, toward [[uncertainty]], or fly into open valley air | Walk | The party leaves [[Aruhe - Quiet Forest Spoke Ring]] from this fire. Rebuild from the new route, and end this scene. The mark can remain on the locked quarry. | There is no partial result. | A flyer enters Hawk sky. Rebuild from that position, then end this scene. |
 
 For any approach not listed here, keep the same question in view: does the party stay on the hub, go out alone, answer as a group, or leave? The [[Aruhe - Deerstalker]] wants whoever walks a north trail alone or believes the voice and separates.
 
@@ -169,7 +169,7 @@ The party is back on this hub or on the north trail short of [[Aruhe - Memorial 
 
 **Grappled:** Anyone still **Grappled** by the [[Aruhe - Deerstalker]] remains **Grappled** (escape `DC 16`) until they escape or the creature releases them.
 
-If the party broke from the hub, rebuild from the new route toward the last grass, river, terrace line, beach, or [[Uncertainty]]. A flyer is in Hawk sky. The mark can remain on the locked quarry.
+If the party broke from the hub, rebuild from the new route toward the last grass, river, terrace line, beach, or [[uncertainty]]. A flyer is in Hawk sky. The mark can remain on the locked quarry.
 
 > [!narration] How the Scene Resolves
 > The garden words have stopped. Night still has this valley. Smoke hangs under the leaves.
@@ -188,7 +188,7 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[Uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

@@ -40,7 +40,7 @@ Vel Orn is an older house of Umberlee on a small island in the [[sunken-crown]].
 
 ## Who
 
-- The shrine is associated with [[Waveservants]] and [[Umberlee]], but no resident count or current priest is established here.
+- The shrine is associated with [[waveservants]] and [[Umberlee]], but no resident count or current priest is established here.
 - The drowned are represented through names, tokens, coins, fish bones, carved shells, and pieces of ship and sailor.
 - [[delmar-fisk]] is connected to the Pearl's absence, not established as a current occupant.
 - [[chain-council]], [[tessarine-concordat]], and [[aldric-drave]] are connected through the wider history of the Pearl, not as established shrine residents.

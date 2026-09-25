@@ -54,7 +54,7 @@ The established feature is a patch of sky no storm has ever crossed, plus the as
 - **East:** The page gives no named eastern neighbor or route.
 - **South:** The page gives no named southern neighbor or route.
 - **West:** Rasalgethi connects to the broader [[Midchain]], but no local western route is recorded.
-- **Local connection:** The eastern Midchain also names [[Vresh]], [[Belumara]], [[Halythion]], and [[Duskveil]], but their routes from Rasalgethi are not established here.
+- **Local connection:** The eastern Midchain also names [[vresh]], [[belumara]], [[halythion]], and [[duskveil]], but their routes from Rasalgethi are not established here.
 
 ## Why
 

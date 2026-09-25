@@ -36,7 +36,7 @@ flexGrow=2
 | **Home**   | The survivor camp at [[Session-11-06-Farthest-Camp]] and the safe edges of inland [[aruhe]] |
 | **Wants**  | To lead the party toward [[memorial-grove]] without losing another survivor and to return to the camp with a route others can follow |
 
-> **DM thesis:** Oren has chosen to obey Aruhe's rules because choice is the only protection he has found; he still refuses to mistake that choice for trust in [[Hinewai]].
+> **DM thesis:** Oren has chosen to obey Aruhe's rules because choice is the only protection he has found; he still refuses to mistake that choice for trust in [[hinewai]].
 ```
 
 ```col-md
@@ -77,4 +77,4 @@ Oren guides patiently while the party watches for fallen food, avoids living cla
 | [[perrin-black-jaw]] | Oren keeps Perrin close to Crissdalynn during the approach because Perrin can notice a nearby invisible intruder that the others cannot. |
 | [[celia-parel]] | Celia wants the dead accounted for. Oren wants the living moving. Their argument makes the choice visible without making either one foolish. |
 | [[taking-on-aruhe]] | Oren has survived by treating fallen food as available and living things as claims that demand a cost. |
-| [[memorial-grove]] | He knows a rule-bound approach that reaches the Grove without making the party's first contact with [[Hinewai]] an act of trespass. |
+| [[memorial-grove]] | He knows a rule-bound approach that reaches the Grove without making the party's first contact with [[hinewai]] an act of trespass. |

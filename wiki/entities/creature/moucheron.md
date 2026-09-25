@@ -87,21 +87,21 @@ actions:
 
 **Description.**
 
-Native to [[Murrat]] and the surrounding reef islands of the [[Midchain]], Moucherons are a fey species built around a blood economy. Villages sit built into cliff faces and canopy, each a separate kin-group running its own economic system where bloodletting is formal and consensual. It settles debts and pays for skilled work. The same exchanges seal agreements between kin-groups. The [[dravosi-crown]] classifies Moucherons alongside [[Rattkin]] under species bounty in Crown territories, but files them separately as hazardous wildlife removal at a higher rate.
+Native to [[murrat]] and the surrounding reef islands of the [[Midchain]], Moucherons are a fey species built around a blood economy. Villages sit built into cliff faces and canopy, each a separate kin-group running its own economic system where bloodletting is formal and consensual. It settles debts and pays for skilled work. The same exchanges seal agreements between kin-groups. The [[dravosi-crown]] classifies Moucherons alongside [[Rattkin]] under species bounty in Crown territories, but files them separately as hazardous wildlife removal at a higher rate.
 
 ## Behavior
 
 **Ecology.**
 
-Murrat itself is hostile to outsiders. Island Moucherons attack anything that lands. The ones who leave to work as mercenaries in the wider Midchain are the same creature, having simply discovered that fighting other people's wars pays better than hunting. Squads hire out of [[Kalowe]] in groups of three to six, collectively known as the [[five-blades]]. They are reliable. They don't break contracts or abandon clients under fire, and they state the feeding terms upfront. The caveat is the bloodless job: if a fight doesn't materialize, the feeding clause still stands, and a Moucheron's body runs on a strict clock, growing more irritable by the day unfed until, past three days, biology overrides any standing contract.
+Murrat itself is hostile to outsiders. Island Moucherons attack anything that lands. The ones who leave to work as mercenaries in the wider Midchain are the same creature, having simply discovered that fighting other people's wars pays better than hunting. Squads hire out of [[kalowe]] in groups of three to six, collectively known as the [[five-blades]]. They are reliable. They don't break contracts or abandon clients under fire, and they state the feeding terms upfront. The caveat is the bloodless job: if a fight doesn't materialize, the feeding clause still stands, and a Moucheron's body runs on a strict clock, growing more irritable by the day unfed until, past three days, biology overrides any standing contract.
 
 A Moucheron at Difficult or worse (two or more days unfed) will not lie about its state if asked directly. It treats the admission as a contractual disclosure, stated plainly for the record.
 
 **Notable Individuals.**
 
-[[Ket]] is a Moucheron, pigeon-sized, sentient, a starving humanoid mosquito, taken from Murrat as a specimen by [[barnaby-rook]] and freed aboard the [[Uncertainty|HCS Surety]] when its crew retook the ship. [[barnaby-rook|Rook]] was investigating a connection between the Moucheron and the [[five-blades]] when he took Ket as a specimen. The source establishes the Five Blades are Moucheron, not why [[barnaby-rook|Rook]] escalated from research to specimen capture.
+[[Ket]] is a Moucheron, pigeon-sized, sentient, a starving humanoid mosquito, taken from Murrat as a specimen by [[barnaby-rook]] and freed aboard the [[uncertainty|HCS Surety]] when its crew retook the ship. [[barnaby-rook|Rook]] was investigating a connection between the Moucheron and the [[five-blades]] when he took Ket as a specimen. The source establishes the Five Blades are Moucheron, not why [[barnaby-rook|Rook]] escalated from research to specimen capture.
 
-The [[five-blades]] page documents its four Moucheron crew individually: [[Varet]], [[Toa]], [[Suke]], and [[Wirra]].
+The [[five-blades]] page documents its four Moucheron crew individually: [[varet]], [[Toa]], [[suke]], and [[Wirra]].
 
 ## Tactics
 
@@ -110,7 +110,7 @@ The [[five-blades]] page documents its four Moucheron crew individually: [[Varet
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Offer it a willing blood draw | Any state past Satiated (Hungry or worse) | It resets to Satiated and treats the gift as a contractual disclosure it owes back (a favor or a discount on the next job) | [[five-blades]] |
-| Threaten to report the blood economy to Crown bounty hunters | Any state | It breaks off talks and calls the threat a declared hostility, and its kin-group marks the crew of the [[Uncertainty]] | [[dravosi-crown]] |
+| Threaten to report the blood economy to Crown bounty hunters | Any state | It breaks off talks and calls the threat a declared hostility, and its kin-group marks the crew of the [[uncertainty]] | [[dravosi-crown]] |
 | Corner it once it's gone three-plus days unfed | Desperate or Starving | Biology overrides any standing contract. It feeds on whoever's nearest, taking 1d8 necrotic itself for each further day denied | [[five-blades]] |
 
 **Prepped Reveals.**

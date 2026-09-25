@@ -25,7 +25,7 @@ scope: "Blackrule, Sorrowbell, and Tyr's known servants in the Dravosi Crown"
 region: "Midchain"
 era: "Current campaign"
 relationships:
-  - target: "[[Blackrule]]"
+  - target: "[[blackrule]]"
     type: related_to
   - target: "[[aleksander-malone]]"
     type: related_to
@@ -36,15 +36,15 @@ relationships:
 
 ## At a Glance
 
-**Core truth.** Tyr is a deity named on the altar at [[Blackrule]] and treated as patron by [[aleksander-malone|Aleksander Malone]] and [[corvin-ashe|Corvin Ashe]]. Tyr's doctrine, church structure, and present will are only partially established.
+**Core truth.** Tyr is a deity named on the altar at [[blackrule]] and treated as patron by [[aleksander-malone|Aleksander Malone]] and [[corvin-ashe|Corvin Ashe]]. Tyr's doctrine, church structure, and present will are only partially established.
 
-**Why it matters.** Tyr's authority gives Crown heresy hunters and bishops a religious basis for action, while the loss of Tyr's warnings leaves Corvin Ashe exposed at [[Sorrowbell]].
+**Why it matters.** Tyr's authority gives Crown heresy hunters and bishops a religious basis for action, while the loss of Tyr's warnings leaves Corvin Ashe exposed at [[sorrowbell]].
 
 **Scope.** The compiled evidence concerns Blackrule, Sorrowbell, and current Dravosi Crown servants.
 
 ## Current Truth
 
-[[Tyr]] is named by scales cut into the altar stone at [[Blackrule]], a Dravosi Crown chapterhouse. [[aleksander-malone|Aleksander Malone]] is the Crown's Hound of Tyr and leaves Blackrule when heresy is confirmed. [[corvin-ashe|Corvin Ashe]] is Bishop of Tyr at [[Sorrowbell]]; he can no longer hear Tyr's warnings, and the shrine's empty Tyr box exposes that absence.
+[[tyr]] is named by scales cut into the altar stone at [[blackrule]], a Dravosi Crown chapterhouse. [[aleksander-malone|Aleksander Malone]] is the Crown's Hound of Tyr and leaves Blackrule when heresy is confirmed. [[corvin-ashe|Corvin Ashe]] is Bishop of Tyr at [[sorrowbell]]; he can no longer hear Tyr's warnings, and the shrine's empty Tyr box exposes that absence.
 
 The evidence supports Tyr as an active patron or deity in the campaign's religious language. It does not establish a full doctrine, church hierarchy, creation story, formal liturgy, or universal rule for how Tyr communicates.
 
@@ -78,7 +78,7 @@ The evidence supports Tyr as an active patron or deity in the campaign's religio
 
 **Misunderstood.** No settled party misunderstanding is recorded.
 
-**Last changed.** [[Sorrowbell]]
+**Last changed.** [[sorrowbell]]
 
 ## Accounts
 
@@ -96,7 +96,7 @@ No broader common telling, liturgy, or teaching is established.
 ## If This Is Changing
 
 * **Current pressure.** The gap between Crown religious authority and Tyr's actual warnings is becoming visible.
-* **Actors.** [[aleksander-malone|Aleksander Malone]], [[corvin-ashe|Corvin Ashe]], [[dravosi-crown|the Dravosi Crown]], and the forces at [[Sorrowbell]].
+* **Actors.** [[aleksander-malone|Aleksander Malone]], [[corvin-ashe|Corvin Ashe]], [[dravosi-crown|the Dravosi Crown]], and the forces at [[sorrowbell]].
 * **Their aims.** Malone seeks confirmed heresy; Ashe seeks to preserve his standing by blaming the woods coven; the Crown seeks enforceable religious authority.
 * **Without interference.** Crown servants continue to act on partial or institutional claims while Ashe's failed sanctuary remains evidence against him.
 * **Visible sign.** Tyr's scales remain present at Blackrule, while the Tyr box at Sorrowbell remains empty.
@@ -113,13 +113,13 @@ No broader common telling, liturgy, or teaching is established.
 
 | Page | Relationship | Table relevance |
 | ---- | ------------ | --------------- |
-| [[Blackrule]] | Altar and chapterhouse | Shows Tyr's scales and Malone's training ground |
+| [[blackrule]] | Altar and chapterhouse | Shows Tyr's scales and Malone's training ground |
 | [[aleksander-malone]] | Hound of Tyr | Carries Crown heresy pressure into the world |
 | [[corvin-ashe]] | Bishop of Tyr | Demonstrates a servant who can no longer hear the warnings |
-| [[Sorrowbell]] | Failed Tyr sanctuary | Makes the empty-box absence visible |
+| [[sorrowbell]] | Failed Tyr sanctuary | Makes the empty-box absence visible |
 | [[dravosi-crown]] | Institutional patronage | Gives Tyr's name political force |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** What does Tyr actually require from a servant who receives a warning?
 * [ ] **Unknown.** What caused Corvin Ashe to lose access to Tyr's warnings?

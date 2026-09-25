@@ -19,7 +19,7 @@ type: quest
 status: active
 scope: regional
 region: ""
-quest_giver: "[[Passage]]"
+quest_giver: "[[passage]]"
 factions:
   - "[[grung-clans]]"
   - "[[dravosi-crown]]"
@@ -38,15 +38,15 @@ summary: "Captive pipeline clock tracking more than 314 fighting-age people move
 > More than three hundred and fourteen people of fighting age have been taken from festival ports. Their route runs through the Grung fleet toward Karath, while the people who could move them and the people who want to own the rescue pull at the same crisis.
 
 **Status.** Active  
-**Objective.** Recover or reach the more than `314` fighting-age captives moving from festival ports toward [[Karath]].  
-**Why now.** [[Passage]] can still move people, while the [[dravosi-crown]] tries to own the rescue; delay lets the captive pipeline continue.
+**Objective.** Recover or reach the more than `314` fighting-age captives moving from festival ports toward [[karath]].  
+**Why now.** [[passage]] can still move people, while the [[dravosi-crown]] tries to own the rescue; delay lets the captive pipeline continue.
 **Deadline.** Before the captives are moved beyond the party's ability to recover; exact timing is unknown.
 
 ## At a Glance
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
-| **Quest giver** | [[Passage]] |
+| **Quest giver** | [[passage]] |
 | **Region**      | Unknown |
 | **Scope**       | Regional |
 | **Opposition**  | [[grung-clans]] and any force controlling the captive route |
@@ -55,7 +55,7 @@ summary: "Captive pipeline clock tracking more than 314 fighting-age people move
 
 ## Situation
 
-The taken 314 is a live captive-pipeline clock, not a single rescue site. More than `314` fighting-age people are routed from festival ports through the Grung fleet toward [[Karath]]. [[Passage]] can still move people, while the [[dravosi-crown]] tries to own the rescue.
+The taken 314 is a live captive-pipeline clock, not a single rescue site. More than `314` fighting-age people are routed from festival ports through the Grung fleet toward [[karath]]. [[passage]] can still move people, while the [[dravosi-crown]] tries to own the rescue.
 
 ## What the party knows
 
@@ -92,7 +92,7 @@ The captive route is active and tied to the Grung fleet's movement toward Karath
 | Lead | Points toward | Found? | State |
 | ---- | -------------- | ------ | ----- |
 | Festival-port disappearances. | The captive pipeline | No | Available |
-| Passage movement. | [[Passage]] | No | Available |
+| Passage movement. | [[passage]] | No | Available |
 | Grung fleet route toward Karath. | [[grung-clans]] | No | Available |
 | Rescue ownership claim. | [[dravosi-crown]] | No | Available |
 
@@ -101,7 +101,7 @@ The captive route is active and tied to the Grung fleet's movement toward Karath
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
 | [[grung-clans]] | Fleet and route power moving the captives. | Continue the captive movement toward Karath. |
-| [[Passage]] | Can still move people and may provide a rescue route. | Preserve its ability to move people; further aim is Unknown. |
+| [[passage]] | Can still move people and may provide a rescue route. | Preserve its ability to move people; further aim is Unknown. |
 | [[dravosi-crown]] | Competing rescue authority. | Own the rescue. |
 
 ## Relevant places
@@ -109,7 +109,7 @@ The captive route is active and tied to the Grung fleet's movement toward Karath
 | Place | Why it matters now |
 | ----- | ------------------ |
 | Festival ports | Starting points from which the captives were taken. |
-| [[Karath]] | Destination toward which the captive route runs. |
+| [[karath]] | Destination toward which the captive route runs. |
 | [[Warren]] | Rattkin settlement and Passage anchor connected to the live case. |
 
 ## Useful things

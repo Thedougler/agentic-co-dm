@@ -46,7 +46,7 @@ Fire the Hook first, then use the alternating Development and Cliffhanger middle
 | 03 | [[Session-11-03-Wolfrabbits]] | Cliffhanger | The northbound prints enter [[torn-crossing]]. | The party crosses an active predator boundary and keeps, loses, or complicates the upriver route. | [[Session-11-04-What-They-Ate]] | 30 min |
 | 04 | [[Session-11-04-What-They-Ate]] | Development | The party reaches [[line-bank]] and finds three fruit piles, fish remains, and blood under living stems. | The party learns the difference between receiving and taking on Aruhe; any claim worsens a later hazards-table roll. | [[Session-11-05-Otter-Hole]] or a player-chosen southbound rebuild | 30 min |
 | 05 | [[Session-11-05-Otter-Hole]] | Cliffhanger | The trail reaches [[river-slack-basin]], where otters play with a separated survivor. | The survivor is rescued or left, and the party takes the bloody-bank detour toward the inland camp. | [[Session-11-06-Farthest-Camp]] | 30 min |
-| 06 | [[Session-11-06-Farthest-Camp]] | Development | The party reaches [[spoke-ring]] at dusk. | The survivor camp splits between returning to [[Uncertainty]] and following the garden invitation; the invitation must be heard for beat 7's lure. | [[Session-11-07-False-Help]], a forced march, or a rebuild if the party leaves early | 30 min |
+| 06 | [[Session-11-06-Farthest-Camp]] | Development | The party reaches [[spoke-ring]] at dusk. | The survivor camp splits between returning to [[uncertainty]] and following the garden invitation; the invitation must be heard for beat 7's lure. | [[Session-11-07-False-Help]], a forced march, or a rebuild if the party leaves early | 30 min |
 | 07 | [[Session-11-07-False-Help]] | Cliffhanger | Night falls and the garden words return from a north trail without matching footsteps. | The party keeps everyone grouped, loses or marks an isolated body, or leaves the fire messy. | [[Session-11-08-Night-Watch]] | 30 min |
 | 08 | [[Session-11-08-Night-Watch]] | Development | The party must decide how to guard the camp and [[fate-spinner]]. | Record **fortified**, **paired**, or **thin**, plus quiet or messy fire and whether [[crissdalynn-khinriss]] is on watch. | [[Session-11-09-Theft-on-the-Watch]] at Star Cut, the fire, or the column | 30 min |
 | 09 | [[Session-11-09-Theft-on-the-Watch]] | **Climax** | The watch is posted and the sun is gone. | [[talon-skarn]] makes one committed attempt to take the [[fate-spinner]]; the result is Held, Stolen, captured, or killed. | [[Session-11-10-Aftermath]] | 30 min |
@@ -56,7 +56,7 @@ Fire the Hook first, then use the alternating Development and Cliffhanger middle
 
 | Beat | Bring it in when… | Job | Drop it when… |
 | --- | --- | --- | --- |
-| [[Session-11-00-Random-Tables]] | The party navigates a new grassland or river stretch before reaching the farthest camp. | Add a short current hazard without replacing the survivor route. | Two hazard-table rolls have occurred before beat 6, or the party reaches the camp. |
+| [[session-11-00-random-tables]] | The party navigates a new grassland or river stretch before reaching the farthest camp. | Add a short current hazard without replacing the survivor route. | Two hazard-table rolls have occurred before beat 6, or the party reaches the camp. |
 | Help-call at [[print-braid]] | The party leaves the survivor route or a travel choice naturally produces a distant call for help. | Offer a rescue or route decision; if it expands into a major scene, replace the next planned Cliffhanger rather than adding a beat. | The party keeps the route, the call is ignored with consequences, or its purpose is spent. |
 | Up-sun [[talon-skarn]] glimpse | The party asks who the flyer is during beats 1, 4, or 6. | Confirm that a man-sized flyer is tracking them without naming a ground encounter or prompting the check. | The party reaches the night camp; no fourth glimpse. |
 
@@ -100,7 +100,7 @@ flexGrow=2
 | The protector | Decide how to guard [[crissdalynn-khinriss]] and conceal the [[fate-spinner]] without turning the watch into a knot. | [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] |
 | The rescuer | Choose whether to enter the otter game, pull the separated survivor free, or leave the claimed water untouched. | [[Session-11-05-Otter-Hole]] |
 | The investigator | Read the tracks, food, blood, smoke, and borrowed voice into a working model of Aruhe. | [[Session-11-02-Landing-Sign]] · [[Session-11-04-What-They-Ate]] · [[Session-11-07-False-Help]] |
-| The negotiator | Decide whether the inland survivors return to [[Uncertainty]], follow the garden invitation, or split. | [[Session-11-06-Farthest-Camp]] · [[Session-11-10-Aftermath]] |
+| The negotiator | Decide whether the inland survivors return to [[uncertainty]], follow the garden invitation, or split. | [[Session-11-06-Farthest-Camp]] · [[Session-11-10-Aftermath]] |
 | The risk-taker | Choose when to enter open sky, the river, the predator's lane, or the final chase, knowing isolation makes a body prey. | [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-10-Aftermath]] |
 ```
 
@@ -110,9 +110,9 @@ flexGrow=2
 | Need | Ready reference |
 | --- | --- |
 | **Session flow** | [[Session-11-01-Angry-Birds]] · [[Session-11-02-Landing-Sign]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-04-What-They-Ate]] · [[Session-11-05-Otter-Hole]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-07-False-Help]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-10-Aftermath]] |
-| **Travel pressure** | [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] |
+| **Travel pressure** | [[session-11-00-random-tables]] · [[taking-on-aruhe]] |
 | **Places** | [[old-gardens]] · [[torn-crossing]] · [[river-slack-basin]] · [[spoke-ring]] · [[star-cut]] |
-| **People and objects** | [[crissdalynn-khinriss]] · [[matteo-scola]] · [[talon-skarn]] · [[fate-spinner]] · [[Uncertainty]] |
+| **People and objects** | [[crissdalynn-khinriss]] · [[matteo-scola]] · [[talon-skarn]] · [[fate-spinner]] · [[uncertainty]] |
 | **Opposition** | [[bloodhawk]] · [[Wolfrabbit]] · [[spiguar]] · [[river-otter]] · [[Deer-Stalker]] |
 ```
 ````

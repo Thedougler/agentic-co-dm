@@ -30,7 +30,7 @@ visibility: dm
 
 |              |                                                              |
 | ------------ | ------------------------------------------------------------ |
-| **Species**  | [[Human]] (Dravosi)                                             |
+| **Species**  | [[human]] (Dravosi)                                             |
 | **Post**     | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**     | Seaman                                                      |
 | **Crew Role**| Carpenter's Apprentice (post-refit, retained under [[sem-holst]], now the ship's promoted Carpenter) |
@@ -44,7 +44,7 @@ Crew assembled aboard the captured HCS Surety as ship's carpenter, alongside [[s
 
 In transit toward [[calven-and-calveno]], [[delmar-fisk|Delmar]] resumed training him, calling him "Mr. James" throughout, and later warned him off going anywhere alone after an encounter with a woman claiming to speak for [[Umberlee]]. `vault/episodes/003/transcript.md:92,126`
 
-His father pushed him toward the water. Still, he's become good at a job he never wanted. His father's connections got him a carpenter's post on the [[Uncertainty|HCS Surety]] with marine boarding duties, for extra pay at seven and a half gold a week. It sounded like progress until he did the math. A rated marine receives fourteen gold a week on top of the carpenter rate, and [[barnaby-rook]] knew it. Crew costs are operational line items. This was systematic underpayment.
+His father pushed him toward the water. Still, he's become good at a job he never wanted. His father's connections got him a carpenter's post on the [[uncertainty|HCS Surety]] with marine boarding duties, for extra pay at seven and a half gold a week. It sounded like progress until he did the math. A rated marine receives fourteen gold a week on top of the carpenter rate, and [[barnaby-rook]] knew it. Crew costs are operational line items. This was systematic underpayment.
 
 At night below deck, he danced with movements that were nimble and precise, nothing that belonged on a naval vessel, and he thought no one had watched him until one shore leave when someone caught him in the act. A young woman, [[verity-hollowell]], caught him dancing, and instead of laughing, she danced with him under open sky. They came close to a first kiss before the ship's bell called him back.
 
@@ -99,7 +99,7 @@ He's a carpenter first, second, and third. His cutlass skill is a byproduct of C
 ## Connections
 
 - [[delmar-fisk|Delmar]]. Delmar protected him during the boarding and recruited him immediately. Delmar trained him in transit toward Calveno.
-- [[Uncertainty|HCS Surety]]: his former posting under [[barnaby-rook]], now the crew's ship. Rook knowingly underpaid him relative to a rated marine's wage.
+- [[uncertainty|HCS Surety]]: his former posting under [[barnaby-rook]], now the crew's ship. Rook knowingly underpaid him relative to a rated marine's wage.
 - [[alys-kuiper]]: fellow HCS Surety crew and the ship's surgeon.
 - [[sem-holst]], his apprentice post-refit. Sem took the Carpenter role after supervising the *Uncertainty*'s refit.
 - [[verity-hollowell]], the woman he danced with once on shore leave, years ago. She is the reason for his vow.

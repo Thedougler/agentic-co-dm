@@ -23,7 +23,7 @@ tier: supporting
 
 A single-masted cutter sits low at the Kalowe dock, hull tarred black with copper-sheathed waterline. She bears only her name, stenciled on the transom. She looks like a working boat with good rope.
 
-A single-masted cutter, 48 feet on the waterline, built at the [[Kalowe]] dry dock and kept by the [[chain-council]] as a dispatch vessel. Bare of flag and figurehead, she bears only *Quorum* stenciled in small letters on the transom. Hull tarred black with a copper-sheathed waterline.
+A single-masted cutter, 48 feet on the waterline, built at the [[kalowe]] dry dock and kept by the [[chain-council]] as a dispatch vessel. Bare of flag and figurehead, she bears only *Quorum* stenciled in small letters on the transom. Hull tarred black with a copper-sheathed waterline.
 
 She moves what the Council cannot trust to ordinary couriers: sealed documents and representatives who need arrival without fanfare. A Kalowe pilot on standing retainer guides the back channels and reef passages, avoiding Dravosi patrol routes.
 
@@ -58,7 +58,7 @@ The source lists no captain or crew. A Kalowe pilot on standing retainer serves 
 ## Connections
 
 - [[chain-council]] (owner)
-- [[Kalowe]] (built and based here)
+- [[kalowe]] (built and based here)
 
 ## Session Log
 

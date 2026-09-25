@@ -20,58 +20,68 @@ visibility: dm
 
 # Ruk
 
-*A Lizardfolk bodyguard utterly devoted to protecting Nona Black-Jaw, whose literal nature and impassive presence make him her most reliable shield.*
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-```meta-bind-button
-label: ⏺ Record Voice Profile
-style: primary
-action:
-  type: command
-  command: obsidian-shellcommands:shell-command-voiceprstart
+| **Role**   | Contact; bodyguard |
+| ---------- | ------------------ |
+| **Nature** | Literal-minded [[lizardfolk]] and unshakeable guardian; impassive, observant, and not unkind. |
+| **Home**   | [[Warren|The Warren]] and [[le-paludi]], especially Nona's kitchen and safe house |
+| **Wants**  | To protect [[nona-black-jaw|Nona Black-Jaw]] with his body and presence. |
+| **Leverage** | His literal nature means he cannot ignore lies or threats he observes; he states them plainly. |
+| **Limit**  | He is bound to Nona through territory, loyalty, feeding rituals, and the protection of the young. |
+
+> **DM thesis:** Ruk is Nona's physical shield: a patient sentinel who reads threats literally and answers them with his body.
 ```
 
-```meta-bind-button
-label: ⏹ Stop
-style: destructive
-action:
-  type: command
-  command: obsidian-shellcommands:shell-command-voiceprstop0
+```col-md
+flexGrow=1
+===
+> [!narration] Ruk
+> Dark olive-green scales with darker banding make Ruk large for a [[lizardfolk]], with a broad chest. Scars cover both forearms and the left side of his neck where the scales have grown back lighter and rough. He braces against the wall, both hands flat on the table in front of him, watching the doors.
+```
+````
+
+## Running Ruk
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Ruk stands watch with his back to the wall, both hands flat on the table, watching all doors. He speaks first.
+
+> *Ruk*: “Who sent you?”
 ```
 
-```meta-bind-button
-label: ✔ Save Voice Profile
-style: default
-action:
-  type: command
-  command: obsidian-shellcommands:shell-command-voiceprsave0
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Ruk opens to direct statements, food offered before demands, and anyone who respects the safety of the young or the territory he guards. He closes when someone lies, threatens Nona or a protected person, or crosses him twice. He never ignores a lie or threat he observes.
+
+He is currently guarding [[felix-aho]], a captured [[Grung]] prisoner, at the safe house. Ruk manages physical reads while [[enzo]] manages social ones. He is Nona Black-Jaw's bodyguard of twenty years and understands her through territory, loyalty, feeding rituals, and hatchling-defense.
 ```
+````
 
-Read while recording: [[voice-profile script]]
+### Voice
 
-**Quote:** "He is lying. I can smell the fear-sweat."
+Ruk speaks in measured, flat, literal sentences with clear words. He cannot hide lies or threats and states what he observes plainly. At the table he reads the room while others see the people; Nona has used this skill for years. He gives food first, but after someone crosses him twice he stops being kind.
 
-> [!narration] Narration
-> Dark olive-green scales with darker banding, large for a [[Lizardfolk]] with a broad chest. Scars cover both forearms and the left side of his neck where the scales have grown back lighter and rough. He braces against the wall, both hands flat on the table in front of him, watching the doors.
+**The ask:** *“Who sent you?”*
 
-**Roleplay Concept:** literal-minded [[Lizardfolk]] + unshakeable guardian.
+**The refusal:** *“He is lying. I can smell the fear-sweat.”*
 
-**Opening move:** standing watch · Ruk speaks first · "Who sent you?"
+**Under pressure:** *“You threatened her. I heard you.”*
 
-**Lore Sheet:** Ruk is Nona Black-Jaw's bodyguard for twenty years, bound to her through territory, loyalty, feeding rituals, and the protection of the young. His literal nature is his greatest asset: he cannot ignore lies or threats and speaks what he observes plainly. He is currently guarding [[felix-aho]], a captured [[Grung]] prisoner, at the safe house.
+The voice-profile script remains the recording reference: [[voice-profile script]].
 
-**Toy Chest**
-
-| Field | Value |
-|---|---|
-| Primary goal | Protect Nona Black-Jaw with his body and presence. |
-| Consistent method | Positions himself with his back to the wall, hands on the table, watching all doors. Never ignores a lie or a threat he observes. |
-| Active problem | Guarding a captured [[Grung]] prisoner held at the safe house. |
-| Performance hooks | Literal sentinel vibe. Rests at the wall with hands flat on the table, watching all doors. |
-| Link of relevance | Sworn guardian of [[nona-black-jaw]], bound to her through territory, loyalty, feeding rituals, and the defense of the young. |
-
-**Voice & Delivery:** measured, flat, literal speech with clear words. He cannot hide lies or threats and states them plain. Not unkind, yet he'll give food first. Cross him twice and he stops being kind. At the table he reads the room while others see the people. Nona has used this skill for years.
-
-## Stats & Combat
+**Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -122,17 +132,16 @@ bonus_actions:
 CR 6 grappler. Ruk closes and locks a target down instead of trading blows at range: **wrestler** lets him restrain or shove without losing his other attacks, while **Bite** seizes on a hit. Every attack against that target then lands with advantage.
 
 **Pin Down** restrains a creature he's already grappled. **Hungry Jaws** lets him bite for self-healing once per rest (useful when he's absorbing a hit meant for [[nona-black-jaw|Nona]]). **Territorial Senses** means he's never caught flat-footed, and **Relentless Endurance** gives him one free save to stay on his feet if knocked down outright.
-
 ## Connections
 
 - [[nona-black-jaw]]: protects her with his body, understands her through territory, loyalty, feeding rituals, and hatchling-defense
-- [[Enzo]]: fellow bodyguard who manages social reads while Ruk manages physical ones
+- [[enzo]]: fellow bodyguard who manages social reads while Ruk manages physical ones
 - [[perrin-black-jaw|Perrin]]: pushed him into a seat at Nona's safe house (Session 04)
 - [[felix-aho]]: currently guarding him at the safe house, a captured Grung prisoner
 - [[Warren|The Warren]]: home base
 - [[le-paludi]]: district containing Nona's kitchen
 
-## Session Log
+**Session log.**
 
 - **Session 06** (`vault/episodes/006/`): present at the Lothaludi fish market during [[il-gioco-delle-beffe]]. Pinned and tripped an attacker mid-prank.
 

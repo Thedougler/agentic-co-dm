@@ -107,7 +107,7 @@ After everyone has acted, tick the threat clock once if anyone remains on this b
 ```col-md
 ## Secondary objective
 
-If anyone plucks living plants, fishes, traps, or kills to carry flesh on this bank, mark [[Taking on Aruhe]]. Later, the hazards-table roll on [[Session-11-00-Random-Tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken. The trail and smoke remain either way.
+If anyone plucks living plants, fishes, traps, or kills to carry flesh on this bank, mark [[Taking on Aruhe]]. Later, the hazards-table roll on [[session-11-00-random-tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken. The trail and smoke remain either way.
 ```
 ````
 
@@ -166,7 +166,7 @@ The party follows the north prints toward the smoke onto [[Aruhe - Grasslands To
 
 ## Backup
 
-[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Aruhe - Redheart Berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[session-11-00-random-tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Aruhe - Redheart Berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
 
 ## Battlemap
 

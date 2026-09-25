@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Corvenna]] is an eastern Midchain neutral dueling ground where disputes are settled by champion combat instead of war. The eastern waters are shallow, widely spaced, and poorly charted; [[Eastern Midchain]] is the recorded regional connection, but no route distance or local neighbor is established. Skipping Corvenna avoids its settlement process and leaves disputes to their original parties and methods.
+[[corvenna]] is an eastern Midchain neutral dueling ground where disputes are settled by champion combat instead of war. The eastern waters are shallow, widely spaced, and poorly charted; [[Eastern Midchain]] is the recorded regional connection, but no route distance or local neighbor is established. Skipping Corvenna avoids its settlement process and leaves disputes to their original parties and methods.
 
 ---
 

@@ -36,7 +36,7 @@ Charts are sold over a counter. Vessel ratings are written down. Black nooses ha
 ## Tidefall Tessarine house
 The Tessarine trade house is three storeys of pale stone on the Shelf, with a pennant at the door and ink and cedar oil in the air. It handles trade and salvage, and sends couriers. [[Maret]] sat in its back office under a debt-recovery hold after a salvage dive failed; the open note, not personal hatred, kept him there.
 
-The house's visible dispatch work runs through [[Silkvane]], a pale grey sloop carrying locked mail and two guns. A Tessarine bonded hold can be covered by a treaty that the Crown Admiralty and the Concordat both dislike and honour, so Crown inspectors do not open it. [[Amberreach]] is the related Calveno cargo route.
+The house's visible dispatch work runs through [[silkvane]], a pale grey sloop carrying locked mail and two guns. A Tessarine bonded hold can be covered by a treaty that the Crown Admiralty and the Concordat both dislike and honour, so Crown inspectors do not open it. [[amberreach]] is the related Calveno cargo route.
 
 ## Maw staging
 Extra companies have arrived at Crestwall under Admiralty-sealed orders. Their manifests include reef-diving gear and underwater charges marked for the [[drowned-maw]]. The Governor has not been told why. This is staging pressure, not a resolved operation.
@@ -47,13 +47,13 @@ Calder's Tooth is a jagged limestone-and-basalt island at the [[central-strait]]
 
 [[calders-tooth-and-port-tidefall]] is the west-cliff fortress-port. [[south-harbour]] is the lightly policed east harbour for repairs and fishing. [[oshas-slip]] is a stilt village over the mudflats. [[cape-solitude]] is the wind-battered northern tip with a ruined lighthouse whose light is dead. [[high-line]] is a cliff hamlet on the northeast that works nets by winch. The [[overland-track]] is the muddy southern road over the Marrow. [[the-passage]] moves cargo through caves below that road. The Crown has not found it.
 
-Inside Tidefall, the listed rooms are [[fort-crestwall]], the Inspection Pier, the Harbourmaster's Office, Tidefall Chandlery, the [[tessarine-trade-house]], a Shelf instrument dealer, the Governor's Seat, the Hook and Ledger tavern, the Fare I'a jerky counter, and a [[Waveservants]] shrine. [[south-harbour-impound]] sits on the east pier.
+Inside Tidefall, the listed rooms are [[fort-crestwall]], the Inspection Pier, the Harbourmaster's Office, Tidefall Chandlery, the [[tessarine-trade-house]], a Shelf instrument dealer, the Governor's Seat, the Hook and Ledger tavern, the Fare I'a jerky counter, and a [[waveservants]] shrine. [[south-harbour-impound]] sits on the east pier.
 
 Giant bats roost in caves and sinkholes. Giant boar tear the wet ridges. Giant wolf spiders nest in old cisterns. Giant axe beaks pace wagons on the track.
 
 ## Connections
-- → [[central-strait]] · [[crown-islands]] · [[Harwick]] · [[drowned-maw]] · [[calven-and-calveno]] · [[Midchain]] · [[Galewall]]
-- → [[dravosi-crown]] · [[governor-voss]] · [[rupert-knighton]] · [[tessarine-concordat]] · [[Silkvane]] · [[Amberreach]]
+- → [[central-strait]] · [[crown-islands]] · [[harwick]] · [[drowned-maw]] · [[calven-and-calveno]] · [[Midchain]] · [[galewall]]
+- → [[dravosi-crown]] · [[governor-voss]] · [[rupert-knighton]] · [[tessarine-concordat]] · [[silkvane]] · [[amberreach]]
 - → [[south-harbour]] · [[oshas-slip]] · [[cape-solitude]] · [[high-line]] · [[the-marrow|The Marrow]] · [[overland-track]] · [[the-passage]]
 
 ## Secrets

@@ -26,7 +26,7 @@ visibility: dm
 
 |               |                                                                 |
 | ------------- | --------------------------------------------------------------- |
-| **Species**   | [[Human]] (claimed)                                                 |
+| **Species**   | [[human]] (claimed)                                                 |
 | **Role**      | The Principal of the [[tessarine-concordat]]      |
 | **Location**  | [[calven-and-calveno]] / correspondence-only                        |
 

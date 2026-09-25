@@ -21,7 +21,7 @@ tier: supporting
 
 # Ussa
 
-**Wants:** to buy freedom for her enslaved kin under the [[grung-clans|Grung Clans]], but the bribes she takes to misreport the timber cut-line are pushing [[Sparhold]]'s crews into raiding season.
+**Wants:** to buy freedom for her enslaved kin under the [[grung-clans|Grung Clans]], but the bribes she takes to misreport the timber cut-line are pushing [[sparhold]]'s crews into raiding season.
 
 ![[ussa-narration-appearance]]
 
@@ -45,4 +45,4 @@ When Ussa marks the timber line, she's tallied the season's drift. She knows wha
 
 [[grung-clans|The Grung Clans]] hold her family enslaved in the hatchery camps. Their freedom is the only thing Ussa is working toward.
 
-[[jean-claude-tabarnack]] is a fellow defector now sailing with [[Uncertainty|the Uncertainty]]. He would recognize the bind she's in: defection bought her freedom, but at the cost of her family still caged.
+[[jean-claude-tabarnack]] is a fellow defector now sailing with [[uncertainty|the Uncertainty]]. He would recognize the bind she's in: defection bought her freedom, but at the cost of her family still caged.

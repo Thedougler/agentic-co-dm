@@ -34,7 +34,7 @@ relationships:
 
 ## At a Glance
 
-Casa Lupo is a general-goods shop in Le Paludi, run by [[ettore-lupo|Ettore Lupo]]. Ettore keeps a forty-year record of prices and customers in memory and holds specialized items in the drawer beneath his counter. Named stock includes [[the-fishwife|The Fishwife]], [[the-chimney|The Chimney]], and [[Lamplighter]].
+Casa Lupo is a general-goods shop in Le Paludi, run by [[ettore-lupo|Ettore Lupo]]. Ettore keeps a forty-year record of prices and customers in memory and holds specialized items in the drawer beneath his counter. Named stock includes [[the-fishwife|The Fishwife]], [[the-chimney|The Chimney]], and [[lamplighter]].
 
 ## If the party
 
@@ -50,7 +50,7 @@ Casa Lupo is a general-goods shop in Le Paludi, run by [[ettore-lupo|Ettore Lupo
 
 - General goods for Calveno's Le Paludi district.
 - A felt-lined drawer beneath the till.
-- [[the-fishwife|The Fishwife]], [[the-chimney|The Chimney]], and [[Lamplighter]] as named items held or sold through the shop.
+- [[the-fishwife|The Fishwife]], [[the-chimney|The Chimney]], and [[lamplighter]] as named items held or sold through the shop.
 - Ettore's private record of prices and customers, kept in memory.
 
 ## Where

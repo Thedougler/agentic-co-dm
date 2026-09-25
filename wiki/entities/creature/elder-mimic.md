@@ -65,7 +65,7 @@ bonus_actions:
     desc: "The mimic shape-shifts to resemble a Medium or Small object while retaining its game statistics, or it returns to its true blob form. Any equipment it is wearing or carrying isn't transformed."
 ```
 
-**Wants:** to stay undiscovered indefinitely and get relocated to better, safer ground through someone else's labor. [[delmar-fisk]] claimed it as a consolation prize during the *[[Uncertainty]]*'s break-room refit at [[La Vasca]] and catalogued it as the [[fleet-commanders-chair|Fleet Commanders Chair]]. It is now trapped aboard a ship at sea with no city's worth of replacement objects left to vanish into.
+**Wants:** to stay undiscovered indefinitely and get relocated to better, safer ground through someone else's labor. [[delmar-fisk]] claimed it as a consolation prize during the *[[uncertainty]]*'s break-room refit at [[La Vasca]] and catalogued it as the [[fleet-commanders-chair|Fleet Commanders Chair]]. It is now trapped aboard a ship at sea with no city's worth of replacement objects left to vanish into.
 **Morale:** it never presses a fight it doesn't need to win. It bites once, then Shape-Shifts away to reform elsewhere and breaks line of sight through the nearest hatch or doorway. If cornered with nowhere left to reshape into, it fights for real instead.
 
 > [!narration] Narration
@@ -101,4 +101,4 @@ It did not work the lesson out on its own. It learned the doctrine from an [[isl
 
 **Prepped Reveals.**
 
-The chair waits for someone to touch it, then bites once and disappears before anyone can pin it down. Left unhunted, it keeps feeding on whatever's aboard. Ration sacks turn up torn, rope ends turn up bitten, and sooner or later a crew member wakes with a bite mark and no memory of what did it. It isn't trying to kill anyone aboard, but it doesn't need to try hard to hurt one. That gives the crew of the *[[Uncertainty]]* a reason to run it down that has nothing to do with Delmar's pride.
+The chair waits for someone to touch it, then bites once and disappears before anyone can pin it down. Left unhunted, it keeps feeding on whatever's aboard. Ration sacks turn up torn, rope ends turn up bitten, and sooner or later a crew member wakes with a bite mark and no memory of what did it. It isn't trying to kill anyone aboard, but it doesn't need to try hard to hurt one. That gives the crew of the *[[uncertainty]]* a reason to run it down that has nothing to do with Delmar's pride.

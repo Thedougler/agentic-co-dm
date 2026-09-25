@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Corallith
@@ -53,7 +53,7 @@ The established feature is one living coral colossus that relocates once a gener
 - **East:** Canon gap; no named neighbor or travel time is established.
 - **South:** Canon gap; no named neighbor or travel time is established.
 - **West:** Canon gap; no named neighbor or travel time is established.
-- **Regional connection:** Corallith is in the western [[Midchain]], and the page retains a recorded relationship to [[Kalowe]] without an established route.
+- **Regional connection:** Corallith is in the western [[Midchain]], and the page retains a recorded relationship to [[kalowe]] without an established route.
 
 ## Why
 

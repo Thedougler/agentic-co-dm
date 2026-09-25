@@ -73,14 +73,14 @@ A deep trench at the edge of charts where currents reverse and sailors refuse to
 - **Return state:** retain coordinates, spent line/boat resources, faction knowledge, and fissure clock.
 
 ## Geography ingest — Tail and Outer Reach
-The northern and southern arcs pinch together into the [[Tail]] before the Maw: fewer islands, taller sharper cliffs, cold trench-coloured water, late fog, and lying compasses. The Maw is a trench-floor puncture into the Elemental Plane of Water, a hole in one place rather than a wall around the ocean. [[Fathomrush]] stages dives on [[Shelfworks]] to the west; Antheri works climb the western wall in three tiers. Past the Maw is [[Outer Reach]], with no resupply or pilot-trusted landmark, reversing currents, and stone that turns up without a known quarry. Fisk's five ships were lost when the trench opened beneath them at once.
+The northern and southern arcs pinch together into the [[tail]] before the Maw: fewer islands, taller sharper cliffs, cold trench-coloured water, late fog, and lying compasses. The Maw is a trench-floor puncture into the Elemental Plane of Water, a hole in one place rather than a wall around the ocean. [[fathomrush]] stages dives on [[Shelfworks]] to the west; Antheri works climb the western wall in three tiers. Past the Maw is [[Outer Reach]], with no resupply or pilot-trusted landmark, reversing currents, and stone that turns up without a known quarry. Fisk's five ships were lost when the trench opened beneath them at once.
 
 ## Drowned Maw ingest — full physical and planar frame
 - The Maw is a trench-floor puncture through the Border Ethereal into the [[Elemental Plane of Water]], not a wall around the ocean. The living blue-green ends along a walkable line; beyond it water is flat, instruments disagree, pressure does not match depth, and Umberlee's claim stops.
-- Antheri tiers descend through [[Shelfworks]] (60–200 ft), [[Mid-Works]] (200–500 ft), and [[Deep Works]] (past 500 ft). The Pearl wreck lies on the eastern Shelfworks below the line where Umberlee's water becomes elemental.
+- Antheri tiers descend through [[Shelfworks]] (60–200 ft), [[mid-works]] (200–500 ft), and [[Deep Works]] (past 500 ft). The Pearl wreck lies on the eastern Shelfworks below the line where Umberlee's water becomes elemental.
 - Heat pulses shrink the working depth. The Shelfworks gold rush can die without the party; deeper containment failure covers upper ruins and drives crews out.
 - The Deep Works are elemental exposure, not ordinary depth sickness: water-breathing is insufficient; constitution gives out, exhaustion stacks, spells falter, and instruments lie.
 - [[Auralis]] is the Antheri machine holding the fissure and is losing ground. [[Welak]] patrols the bore; reef sharks work upper halls, hunter sharks the edge, and giant squid deeper channels. The named displaced [[Leviathan]] occupies the retrieval zone.
-- [[Fathomrush]] stages dives; [[High Eyrie]] watches since 1295 DR; [[Calder's Tooth / Port Tidefall]] has sealed staging orders; [[Outer Reach]] begins past the door with no map or resupply.
+- [[fathomrush]] stages dives; [[High Eyrie]] watches since 1295 DR; [[Calder's Tooth / Port Tidefall]] has sealed staging orders; [[Outer Reach]] begins past the door with no map or resupply.
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-drowned-maw.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/season-01.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pearl-and-the-maw/index.md`.

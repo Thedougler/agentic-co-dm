@@ -53,7 +53,7 @@ Star Cut is the night-watch aisle north of [[Aruhe - Quiet Forest Spoke Ring|Spo
 ## Who
 
 - Unnamed people from the Calveno wreck sleep along this aisle on the second night, fewer than the mouths that argued at [[Aruhe - Quiet Forest Spoke Ring|Spoke Ring]]. They came here because the hub's leaf roof hides the sky. Do not invent named survivors.
-- [[Hinewai]] is not standing on this aisle as a named body. Garden talk still points north of the star-cut. Do not name her, the graves, or [[Aruhe - Memorial Grove]] at the table.
+- [[hinewai]] is not standing on this aisle as a named body. Garden talk still points north of the star-cut. Do not name her, the graves, or [[Aruhe - Memorial Grove]] at the table.
 - [[Aruhe - Deerstalker|Deer-Stalkers]] work the Quiet edge south of here. They will not walk [[Aruhe - Razer-Grass]]. Do not spawn one on this aisle.
 
 ---

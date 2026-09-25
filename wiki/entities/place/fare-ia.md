@@ -20,7 +20,7 @@ summary: "A fish stall in Calder's Tooth and Port Tidefall used by Felix Aho to 
 ## Overview
 
 > [!narration] Narration
-> Fare I'a is a fish stall in Calder's Tooth and Port Tidefall where [[felix-aho|Felix Aho]] built the [[Vaka]] one conversation at a time.
+> Fare I'a is a fish stall in Calder's Tooth and Port Tidefall where [[felix-aho|Felix Aho]] built the [[vaka]] one conversation at a time.
 
 ## At a Glance
 

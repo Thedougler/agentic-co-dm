@@ -28,13 +28,13 @@ tier: supporting
 
 **Core truth.** Syranita is a deity of the [[aarakocra|Aarakocra]] sky-pantheon with secondary or marginal observance.
 
-**Why it matters.** The faith places a named deity in the margins of [[crissdalynn-khinriss|Crissdalynn Khinriss]]'s religious life, alongside [[Remnis]] as her primary deity and Aerdrie Faenya in a marginal tertiary place.
+**Why it matters.** The faith places a named deity in the margins of [[crissdalynn-khinriss|Crissdalynn Khinriss]]'s religious life, alongside [[remnis]] as her primary deity and Aerdrie Faenya in a marginal tertiary place.
 
 **Scope.** This page records the Shattered Sea's Aarakocra observance and Crissdalynn's stated marginal faith. It is not a general theology of Syranita.
 
 ## Current Truth
 
-Syranita holds secondary or marginal observance in the Aarakocra sky-pantheon. [[Remnis]] is Crissdalynn's primary deity, while Aerdrie Faenya holds a marginal tertiary place beside Syranita. Crissdalynn holds marginal observance of Syranita.
+Syranita holds secondary or marginal observance in the Aarakocra sky-pantheon. [[remnis]] is Crissdalynn's primary deity, while Aerdrie Faenya holds a marginal tertiary place beside Syranita. Crissdalynn holds marginal observance of Syranita.
 
 The lore is not yet revealed at the table. The wiki records the religious arrangement as proposed campaign truth, not as a witnessed player fact.
 
@@ -100,7 +100,7 @@ No common telling, proverb, ritual phrase, or public explanation is recorded.
 | [[crissdalynn-khinriss\|Crissdalynn Khinriss]] | Marginal observance | Holds the only named character connection currently recorded. |
 | [[remnis\|Remnis]] | Primary neighboring observance | Clarifies Syranita's secondary status in Crissdalynn's faith. |
 
-## Open Canon
+**Open canon.**
 
 - [ ] **Unknown.** What aspect of the sky-pantheon does Syranita represent?
 - [ ] **Unknown.** What practice, sign, or phrase would make Syranita's marginal observance visible at the table?

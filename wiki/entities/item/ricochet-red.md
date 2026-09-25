@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "A red-papered consumable that transforms a single ranged hit into a ricochet chain targeting up to two more targets."
 provenance:
   extracted: 0.85
@@ -49,7 +54,6 @@ Fio's own stock stays cosmetic. Rufio Segalla's smoking room sells the real thin
 
 [[rufio-segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in Calveno. He never keeps it on the shelf. Getting one means an hour in the room first, with the price coming only after. It never appears on [[La Gatta]]'s board.
 
-## Mechanics
 
 > [!mechanic]
 > **Ricochet Red [HB].** Single use, consumable, with no recharge. Lighting it and drawing from it takes a Bonus Action. Once before the end of your next turn, when you hit a creature with a ranged weapon attack, the shot ricochets.

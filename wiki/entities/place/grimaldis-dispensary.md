@@ -29,7 +29,7 @@ tier: supporting
 
 ## At a Glance
 
-Grimaldi's Dispensary is [[Kalowe]]'s only healer's supply, run by [[Ilaria Grimaldi]]. Its curtained back room holds [[Sera Maddock]], who is dying and needs treatment unavailable in Kalowe.
+Grimaldi's Dispensary is [[kalowe]]'s only healer's supply, run by [[Ilaria Grimaldi]]. Its curtained back room holds [[Sera Maddock]], who is dying and needs treatment unavailable in Kalowe.
 
 ## If the party
 
@@ -47,11 +47,11 @@ Grimaldi's Dispensary is [[Kalowe]]'s only healer's supply, run by [[Ilaria Grim
 
 - The counter, mortar, and ordinary healer's supplies remain in active use.
 - The curtained back room shelters Sera Maddock and any stock Ilaria will not put on the shelves.
-- Sera's left forearm bears half of a chart to a cache on [[Orak]].
+- Sera's left forearm bears half of a chart to a cache on [[orak]].
 
 ## Where
 
-- **North:** [[Kalowe]]; the dispensary is on Kalowe's third island, but the exact street route is not established.
+- **North:** [[kalowe]]; the dispensary is on Kalowe's third island, but the exact street route is not established.
 - **East:** No separate canonized neighbor is recorded.
 - **South:** No separate canonized neighbor is recorded.
 - **West:** No separate canonized neighbor is recorded.

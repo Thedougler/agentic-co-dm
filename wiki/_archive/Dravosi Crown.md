@@ -24,16 +24,16 @@ Make the sea legible and keep the western approach under Crown law: letters of m
 - **Reach:** strongest west of the Galewall and in the Crown Islands; by the Midchain it can run cutters down the main lanes but cannot keep the whole sea.
 
 ## Belief and law
-The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts martial, and warrants. Sailors still pay [[Umberlee]] at dockside shrines because the sea is a fact while a document is a claim. In ordinary cases an inspector leads, enforcers follow, and a court receives the matter. Heresy is different: [[Aleksander Malone]] is reserved for confirmed heresy, not ordinary crime.
+The Crown swears by [[tyr]] as the court god of oaths, commissions, courts martial, and warrants. Sailors still pay [[Umberlee]] at dockside shrines because the sea is a fact while a document is a claim. In ordinary cases an inspector leads, enforcers follow, and a court receives the matter. Heresy is different: [[Aleksander Malone]] is reserved for confirmed heresy, not ordinary crime.
 
 ## Fleet
-Crown hulls carry the HCS prefix. [[Harwick]] builds them with grey hulls, white Admiralty stripes, brass, and crown-bearing figureheads. [[HCS Sovereign]] is the first-rate show of force that arrives when the whole Scatter must see the flag; [[HCS Ordinance]] is the three-deck court that actually appears in shipping lanes. Cutters, inspection boats, deckhands, enforcers, and an alchemist complement do the daily work.
+Crown hulls carry the HCS prefix. [[harwick]] builds them with grey hulls, white Admiralty stripes, brass, and crown-bearing figureheads. [[HCS Sovereign]] is the first-rate show of force that arrives when the whole Scatter must see the flag; [[HCS Ordinance]] is the three-deck court that actually appears in shipping lanes. Cutters, inspection boats, deckhands, enforcers, and an alchemist complement do the daily work.
 
 ## Rivalries and arrangements
 - [[Tessarine Concordat]] inspects less and invoices more; both powers share harbours, collect from fishermen, pay Umberlee as infrastructure, and compete over who defines movement.
-- [[Passage]] and [[Rattkin]] movement remain outside the official record; the Crown relationship with the Passage is hostile.
-- A toxin pipeline runs through [[Simone]]: substitute stock, not Karath farm product, has appeared in privateer kit and Calveno's sewers.
-- [[Greyteeth]] pilots and an unwritten blue-dragon arrangement make the reefs usable for some captains and dangerous for everyone else.
+- [[passage]] and [[Rattkin]] movement remain outside the official record; the Crown relationship with the Passage is hostile.
+- A toxin pipeline runs through [[simone]]: substitute stock, not Karath farm product, has appeared in privateer kit and Calveno's sewers.
+- [[greyteeth]] pilots and an unwritten blue-dragon arrangement make the reefs usable for some captains and dangerous for everyone else.
 
 ## Faces
 - Public command: [[Corbin Knighton]], [[Rupert Knighton]], [[Governor Voss]], and [[Barnaby Rook]].
@@ -47,7 +47,7 @@ Crown hulls carry the HCS prefix. [[Harwick]] builds them with grey hulls, white
 
 ## Relations
 - Rival: [[Tessarine Concordat]]
-- Complicated: [[Waveservants]], [[Passage]], island communities
+- Complicated: [[waveservants]], [[passage]], island communities
 - Party: complicated; legal passage can become scrutiny, detention, or an obligation
 
 ## Provenance

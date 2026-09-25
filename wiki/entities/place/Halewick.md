@@ -34,13 +34,13 @@ Halewick is a fishing island in the Southern [[Midchain]] where a planar alignme
 
 - **Listen to the children.** Identify which words are ordinary argument and which ones have begun rewriting the island.
 - **Speak an instruction.** New commands require the utterance to be perceived; deaf people retain memory that others lose.
-- **Ask [[Billy]] for help.** Follow the third child's attempt to send villagers for heroes.
+- **Ask [[billy]] for help.** Follow the third child's attempt to send villagers for heroes.
 - **Leave the island.** Escape further exposure, but a command that already landed is not undone by departure.
 
 ## Who
 
-- [[Toby]] and [[Frankie]] are the two children whose arguments are rewriting the island.
-- [[Billy]] is the third child who sent villagers to find heroes.
+- [[Toby]] and [[frankie]] are the two children whose arguments are rewriting the island.
+- [[billy]] is the third child who sent villagers to find heroes.
 - Deaf islanders retain un-overwritten memory and provide a living contrast to those affected by perceived commands.
 - The rest of the island's population is locally unrecognized as part of a planar event; no larger settlement authority is established here.
 
@@ -61,4 +61,4 @@ Halewick is a fishing island in the Southern [[Midchain]] where a planar alignme
 
 ## Why
 
-The party comes to find the source of the speech distortion, respond to [[Billy]]'s attempt to summon heroes, or test why some islanders retain memories others do not. They stay because every perceived command can change the situation, while leaving does not reverse a command that has already landed. The island matters to [[delmar-fisk]] and the Pearl signal even though he does not yet know it exists.
+The party comes to find the source of the speech distortion, respond to [[billy]]'s attempt to summon heroes, or test why some islanders retain memories others do not. They stay because every perceived command can change the situation, while leaving does not reverse a command that has already landed. The island matters to [[delmar-fisk]] and the Pearl signal even though he does not yet know it exists.

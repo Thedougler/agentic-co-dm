@@ -25,7 +25,7 @@ region: "Shattered Sea"
 relationships:
   - target: "[[khlysty-the-flock]]"
     type: related_to
-  - target: "[[Otho]]"
+  - target: "[[otho]]"
     type: related_to
 ---
 # Otel Karn
@@ -39,7 +39,7 @@ Otel Karn is a remote island and the root of the tradition the [[dravosi-crown]]
 
 ## Who
 
-* [[Otho]] lives among the islanders as a beloved local drunk.
+* [[otho]] lives among the islanders as a beloved local drunk.
 * [[shepherd-grigori]] learned the blood-anchor technique on Otel Karn without knowing its true age.
 * The [[dravosi-crown]] calls the island's tradition [[khlysty-the-flock]].
 
@@ -49,11 +49,11 @@ Otho's careless bargain stopped death from working on the island. Butchered live
 
 ## Where
 
-Otel Karn is a remote island in the [[Shattered Sea]]. Relevant connected places and entities are [[Stillmere]], [[khlysty-the-flock]], [[Otho]], [[shepherd-grigori]], and [[dravosi-crown]].
+Otel Karn is a remote island in the [[Shattered Sea]]. Relevant connected places and entities are [[Stillmere]], [[khlysty-the-flock]], [[otho]], [[shepherd-grigori]], and [[dravosi-crown]].
 
 ## Why
 
 Otel Karn is the root of the Flock tradition and the place where the blood-anchor technique was learned. Its stopped death and living butchered livestock make the island's condition a direct danger rather than a historical detail.
 
-* **Easiest resolution.** Bore [[Otho]].
+* **Easiest resolution.** Bore [[otho]].
 * **Direct confrontation.** A straight fight against Otho at near level 10 is named as unwinnable.

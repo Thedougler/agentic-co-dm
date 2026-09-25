@@ -21,7 +21,7 @@ region: "[[verdant-teeth]]"
 quest_giver: Unknown
 factions:
   - "[[grung-clans]]"
-deadline: "Before the fleet completes its route toward [[Karath]]; exact timing is unknown."
+deadline: "Before the fleet completes its route toward [[karath]]; exact timing is unknown."
 last_advanced: 2026-09-12
 reveal: unrevealed
 campaign: shattered-sea
@@ -38,9 +38,9 @@ tier: supporting
 # Pursue the Grung raiding fleet
 
 **Status.** Active  
-**Objective.** Pursue the Grung raiding fleet through the reefs before it completes the captive route toward [[Karath]].  
+**Objective.** Pursue the Grung raiding fleet through the reefs before it completes the captive route toward [[karath]].  
 **Why now.** The fleet's route and shrinking water power create a moving pursuit problem; delay gives it more room to use reef geography and reach its destination.  
-**Deadline.** Before the fleet completes its route toward [[Karath]]; exact timing is unknown.
+**Deadline.** Before the fleet completes its route toward [[karath]]; exact timing is unknown.
 
 ## At a Glance
 
@@ -55,7 +55,7 @@ tier: supporting
 
 ## Situation
 
-The Grung raiding fleet moves through reef geography toward [[Karath]], carrying captives while its clans' water power shrinks. The party must choose how to pursue a force that can use channels and supply pressure as much as direct combat. The route matters because following the fleet can save captives and reveal where Grung power is failing.
+The Grung raiding fleet moves through reef geography toward [[karath]], carrying captives while its clans' water power shrinks. The party must choose how to pursue a force that can use channels and supply pressure as much as direct combat. The route matters because following the fleet can save captives and reveal where Grung power is failing.
 
 ## What the party knows
 
@@ -98,7 +98,7 @@ The fleet is using reef geography and a captive route toward Karath while the cl
 | Lead | Points toward | Found? | State |
 | ---- | -------------- | ------ | ----- |
 | Reef wakes and channel signs. | [[verdant-teeth]] | No | Available |
-| The captive route toward Karath. | [[Karath]] | No | Available |
+| The captive route toward Karath. | [[karath]] | No | Available |
 | Grung water-power and supply pressure. | [[grung-clans]] | No | Available |
 
 ## People & factions
@@ -113,14 +113,14 @@ The fleet is using reef geography and a captive route toward Karath while the cl
 | Place | Why it matters now |
 | ----- | ------------------ |
 | [[verdant-teeth]] | Reef region that gives the fleet concealment and route choices. |
-| [[Karath]] | Destination toward which the captive route runs. |
-| [[Passage]] | Route context connected to the fleet's movement. |
+| [[karath]] | Destination toward which the captive route runs. |
+| [[passage]] | Route context connected to the fleet's movement. |
 
 ## Useful things
 
 | Entity | Use in play |
 | ------ | ----------- |
-| [[Vethka]] | Named Grung war-proa type that can establish the fleet's craft identity. |
+| [[vethka]] | Named Grung war-proa type that can establish the fleet's craft identity. |
 | Water supply | Resource pressure that can constrain the fleet and pursuers. |
 
 ## Complications

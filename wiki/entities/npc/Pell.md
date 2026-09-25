@@ -29,7 +29,7 @@ tier: supporting
 
 Pell spoke to Jean-Claude as a true peer, with the openness and candor she would show an equal. In fragments of conversation stolen between her work and his Guard duty, she told him things he had never heard said aloud: that she had come from somewhere else, that the world outside the Verdant Teeth was full of peoples who had built differently. She never told him what to think. She just described what she had seen, and waited to see what he did with it. The night before everything went wrong, she told him that every race has something the others lack, and that growth comes through reaching across that gap. He has been trying to prove her right ever since.
 
-Jean-Claude proposed faking her death and smuggling her west. She said yes. He walked to his parents' hut on what felt like the best day of his life, and found his parents, his sister [[simone-tabarnack]], and Pell already in chains. Simone had told them everything. **Thirty-one days.** Pell died in a cell beneath [[Sorn]] while Jean-Claude was already in open water, already free. She died not knowing whether he had made it.
+Jean-Claude proposed faking her death and smuggling her west. She said yes. He walked to his parents' hut on what felt like the best day of his life, and found his parents, his sister [[simone-tabarnack]], and Pell already in chains. Simone had told them everything. **Thirty-one days.** Pell died in a cell beneath [[sorn]] while Jean-Claude was already in open water, already free. She died not knowing whether he had made it.
 
 Dead before the campaign began. No appearance possible unless flashback, memory, or supernatural contact. Jean-Claude carries her weight entirely. The count of thirty-one days is the number he carries.
 
@@ -37,5 +37,5 @@ Dead before the campaign began. No appearance possible unless flashback, memory,
 
 - [[jean-claude-tabarnack]]: her closest friend; JC carries her death
 - [[simone-tabarnack]]: her betrayal put her in chains
-- [[Sorn]]: where she died
+- [[sorn]]: where she died
 - [[verdant-teeth]]: the world outside it, which she described to Jean-Claude

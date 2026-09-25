@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Candlemere
@@ -53,7 +53,7 @@ The shrine and its flame are established. The flame has never once gone out. The
 - **East:** The southern Midchain connects toward [[midchain-east|The Eastern Midchain]], but Candlemere's travel distance is not established.
 - **South:** The region opens toward [[doldrums|The Doldrums]], but Candlemere's travel distance is not established.
 - **West:** The southern Midchain connects toward [[midchain-west|The Western Midchain]], but Candlemere's travel distance is not established.
-- **Local connection:** The page retains a recorded relationship to [[Halewick]], but no route between the two sites is established here.
+- **Local connection:** The page retains a recorded relationship to [[halewick]], but no route between the two sites is established here.
 
 ## Why
 

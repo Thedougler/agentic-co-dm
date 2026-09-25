@@ -25,6 +25,8 @@ visibility: dm
 kind: magic
 attunement: true
 owner: "[[crissdalynn-khinriss]]"
+region: "[[drowned-maw]]"
+rarity: artifact
 ---
 # Fate Spinner
 
@@ -35,11 +37,9 @@ owner: "[[crissdalynn-khinriss]]"
 
 *Wondrous item, artifact (requires attunement).*
 
-## Attunement
 
 **Prerequisite.** It bonds only to a creature that has knowingly risked its own life to save another. 
 
-## The Changed Record
 
 **Activation.** Once per day, the attuned holder can take a **Magic action** to spin the dreidel and choose one creature they know personally on the same plane, at any distance. The vision lasts 30 minutes or until dismissed. After the use, the dreidel cannot open another vision until the next dawn. It requires no Concentration.
 
@@ -49,7 +49,6 @@ The vision grants sight and hearing only. The holder cannot communicate through 
 
 **Invalid target.** A creature the holder does not know personally or that is not on the holder's plane cannot be chosen.
 
-## At a Glance
 
 Also called the dreidel. [[crissdalynn-khinriss]] carries it as her meditation focus. [[master-kyzil]] gave it to her before her pilgrimage. It entered play before Session 01. [[talon-vantyrus]] sent a vessel to take the dreidel. In Session 11, [[talon-skarn]] stooped on Crissdalynn's last watch at [[river-slack-basin]] and went for the pack. Play stopped with the dreidel still on her.
 
@@ -69,6 +68,17 @@ Also called the dreidel. [[crissdalynn-khinriss]] carries it as her meditation f
 
 **Engagement.** The visible tell is the colored light and small glass tick. The bearer chooses whether today's use is worth spending a Magic action and exposing a hunted object. The payoff is remote sight, hearing, and Advantage for one personally known target's ability checks and saving throws. Same-plane targeting, one vision at a time, no communication, and no aid in the bearer's own fight keep the choice narrow.
 
+## Hidden Properties
+
+Its nature predates Kyzil. The [[sentinels-of-the-eyrie]] record without conclusion and never intervene. This item breaks that rule: it watches and acts. It is older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[soul-incarnate]]'s founding documents reference this same old tradition, though they never explain it.
+
+Session 06 never established the dreidel's magic at the table. The player named her tattoo as her one confirmed item, yet she used the dreidel in fiction to calm a [[Grung]] child. The Changed Record above describes the magic within it.
+
+**Artifact properties.** The Spinner's minor properties are its cool touch, abnormally long spin, colored sunlight, and glass-on-glass tick already described in the narration. Its major property is The Changed Record. Its detrimental pressure is that the bearer carries a visible, hunted connection to the [[soul-incarnate|Soul Incarnate]] transformation technique.
+
+**Destruction condition.** The current canon does not establish how the artifact can be destroyed. Do not invent a destruction quest at the table; file that condition before treating the Spinner as destructible.
+
+**Several spinners exist.** The dreidel is not unique. [[talon-vantyrus|Talon Vantyrus]] carries one and reads nearby possibilities through it, [[master-kyzil]] gave another to [[crissdalynn-khinriss|Crissdalynn]], and [[Countless]] hunts whatever spinners it can reach. Nothing in the record names the maker, dates the individual devices, or says how many are in the world, and that stays open until the table establishes it.
 ## Connections
 
 - [[crissdalynn-khinriss]] is the current holder. [[master-kyzil]] gave it to her before her pilgrimage.
@@ -83,17 +93,6 @@ Also called the dreidel. [[crissdalynn-khinriss]] carries it as her meditation f
 - [[Grung]] saw her use the dreidel in fiction to calm a Grung child during Session 06.
 - [[talon-skarn]] began an attempt to steal it during Session 11. He spent one Legendary Resistance, and the object remained Held.
 
-## Secrets
-
-Its nature predates Kyzil. The [[sentinels-of-the-eyrie]] record without conclusion and never intervene. This item breaks that rule: it watches and acts. It is older than their doctrine, a piece of what the order practiced before swearing off intervention. The [[soul-incarnate]]'s founding documents reference this same old tradition, though they never explain it.
-
-Session 06 never established the dreidel's magic at the table. The player named her tattoo as her one confirmed item, yet she used the dreidel in fiction to calm a [[Grung]] child. The Changed Record above describes the magic within it.
-
-**Artifact properties.** The Spinner's minor properties are its cool touch, abnormally long spin, colored sunlight, and glass-on-glass tick already described in the narration. Its major property is The Changed Record. Its detrimental pressure is that the bearer carries a visible, hunted connection to the [[soul-incarnate|Soul Incarnate]] transformation technique.
-
-**Destruction condition.** The current canon does not establish how the artifact can be destroyed. Do not invent a destruction quest at the table; file that condition before treating the Spinner as destructible.
-
-**Several spinners exist.** The dreidel is not unique. [[talon-vantyrus|Talon Vantyrus]] carries one and reads nearby possibilities through it, [[master-kyzil]] gave another to [[crissdalynn-khinriss|Crissdalynn]], and [[Countless]] hunts whatever spinners it can reach. Nothing in the record names the maker, dates the individual devices, or says how many are in the world, and that stays open until the table establishes it.
 
 ## Provenance
 

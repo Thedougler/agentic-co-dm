@@ -37,7 +37,7 @@ flexGrow=2
 ## At a Glance
 
 - **Stakes:** The theft decides whether the [[fate-spinner]] stays with the survivors or moves inland with [[talon-skarn]].
-- **Goal / exit:** Show the cost, identify the [[fate-spinner]]'s holder, and let the party choose sleep, south toward [[Uncertainty]], north toward the garden, or pursuit. Stop before [[memorial-grove]].
+- **Goal / exit:** Show the cost, identify the [[fate-spinner]]'s holder, and let the party choose sleep, south toward [[uncertainty]], north toward the garden, or pursuit. Stop before [[memorial-grove]].
 - **Danger:** On Stolen, the adult [[bloodhawk]] hunts [[talon-skarn]] in Open sky; anyone who enters that air can become prey. On Held, no hawk follows, but the survivors remain split over ship versus garden.
 - **Silence:** State the changed position and wait. If the party stays on Held, end with sleep; if anyone remains in Open sky on Stolen, tick once at the end of the round.
 - **Situation magnets:** Open sky, lone northbound bodies, the [[fate-spinner]] when visible, and survivors who must choose a direction.
@@ -46,7 +46,7 @@ flexGrow=2
 
 ## Now
 
-Begin where beat 9 ended. The party is at [[star-cut]] unless beat 8 put them on the column or in a knot. At Star Cut, [[crissdalynn-khinriss]] and the watch partner stand at the east fire's north edge; sleeping rolls line both jungle walls, and the north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[spoke-ring|Spoke Ring]], the beach, or [[Uncertainty]]. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled [[matteo-scola]] free, he is on this dirt. [[crissdalynn-khinriss]] uses her aarakocra fly speed from her sheet.
+Begin where beat 9 ended. The party is at [[star-cut]] unless beat 8 put them on the column or in a knot. At Star Cut, [[crissdalynn-khinriss]] and the watch partner stand at the east fire's north edge; sleeping rolls line both jungle walls, and the north mouth is 40 feet of packed dirt from the coals. A 30-foot move from the fire stays on the aisle. A 60-foot Dash does not reach [[spoke-ring|Spoke Ring]], the beach, or [[uncertainty]]. The wood beyond either jungle wall is Difficult Terrain and heavily obscured beyond 10 feet. If the party pulled [[matteo-scola]] free, he is on this dirt. [[crissdalynn-khinriss]] uses her aarakocra fly speed from her sheet.
 
 **Held.** The steal was disrupted. The [[fate-spinner]] is on [[crissdalynn-khinriss]], on the packed dirt, or recovered. [[talon-skarn]] is north in the Quiet if he broke contact, or remains on this aisle if the party held or dropped him. Nothing left the island, so no hawk stoop follows. Start with Initial Narration.
 
@@ -92,7 +92,7 @@ Begin where beat 9 ended. The party is at [[star-cut]] unless beat 8 put them on
 
 **Garden mouths.** Keep them unnamed. They heard the invitation and want the garden. Sample: "She asked us to come admire her garden. This way. Leave the living plants."
 
-**Ship mouths.** Keep them unnamed. They want the survivors back at [[Uncertainty]] and call the listeners mad. Sample: "She is leading you into danger. Anyone who listens is mad."
+**Ship mouths.** Keep them unnamed. They want the survivors back at [[uncertainty]] and call the listeners mad. Sample: "She is leading you into danger. Anyone who listens is mad."
 
 **[[taking-on-aruhe]].** Fallen fruit counts as receiving. Plucking a living plant is a claim, and surrounding life converges in response.
 ```
@@ -149,9 +149,9 @@ Keep the [[fate-spinner]] on [[crissdalynn-khinriss]], or recover it from a talo
 | Recover the [[fate-spinner]] | Attack vs AC 15 against the adult [[bloodhawk]], or **Strength (Athletics)** to tear the [[fate-spinner]] from a talon or a hooked blade | Attack vs AC 15, or `DC 15` | The [[fate-spinner]] comes free. It is a cool, thumb-sized quartz top with four worn faces. The adult [[bloodhawk]] keeps [[talon-skarn]] if it already grabbed him. | The [[fate-spinner]] stays in the talon or blade. That party member remains in Open sky, and the clock ticks at the end of the round if anyone remains exposed. | The adult [[bloodhawk]] treats that party member as flushed prey. Beak +13 to hit, 28 piercing, or a young hawk drives that body 30 feet down. |
 | Shoot the hawks | An attack roll against the adult [[bloodhawk]] | Attack vs AC 15 | The attack makes the shooter obvious. The adult [[bloodhawk]] is retrieving [[talon-skarn]], then treats that noisy party member as prey. | The shooter remains in Open sky. A young hawk drives that body 30 feet down. | The adult [[bloodhawk]] uses Talon Grab (+13 to hit, 23 slashing, **Grappled** escape `DC 19`, **Restrained**) on the loudest party member still in the air. |
 | Hide under canopy or in grass | **Dexterity (Stealth)** | `DC 15` | The adult [[bloodhawk]] will not follow, and the clock stops against that party member. | The landing is rough. That party member takes `1d6` bludgeoning and is **Prone** on the aisle or in the wood. | That party member remains visible in Open sky. |
-| Talk ship versus garden | Influence: **Charisma (Persuasion)** | `DC 15` | Some mouths talk about [[Uncertainty]], but the garden mouths refuse to leave. The camp remains split, the invitation stays open, and [[memorial-grove]] is not tonight. | They listen, then look at the trees. The round is spent and the split remains. | They refuse. Continued pressure can send some mouths onto a north trail. |
+| Talk ship versus garden | Influence: **Charisma (Persuasion)** | `DC 15` | Some mouths talk about [[uncertainty]], but the garden mouths refuse to leave. The camp remains split, the invitation stays open, and [[memorial-grove]] is not tonight. | They listen, then look at the trees. The round is spent and the split remains. | They refuse. Continued pressure can send some mouths onto a north trail. |
 | Walk toward the garden tonight | Agreeing to go admire the garden, or walking Quiet north | Commit | The party commits past this valley. The garden invitation stays open, but this is not [[memorial-grove]] tonight. The scene ends. | The choice has no partial outcome. | The choice has no partial outcome. Walking north ends this scene short of the garden. |
-| Extract to [[Uncertainty]] | Influence: **Charisma (Persuasion)** to ask them to the ship, or walking south | `DC 15`, or Walk | Some people at this fire refuse. If the party walks anyway, it keeps whoever comes. Rebuild toward the last grass, the river, the terrace line, the beach, or [[Uncertainty]]. The scene ends. | They listen, then look at the trees. The round is spent. | They refuse. The garden mouths remain, and living fruit hangs overhead. |
+| Extract to [[uncertainty]] | Influence: **Charisma (Persuasion)** to ask them to the ship, or walking south | `DC 15`, or Walk | Some people at this fire refuse. If the party walks anyway, it keeps whoever comes. Rebuild toward the last grass, the river, the terrace line, the beach, or [[uncertainty]]. The scene ends. | They listen, then look at the trees. The round is spent. | They refuse. The garden mouths remain, and living fruit hangs overhead. |
 | Sleep | Committing to rest on this aisle or back at [[spoke-ring]] | Commit | The night ends in this valley. The garden invitation stays open, but the party does not reach [[memorial-grove]] tonight. | The choice has no partial outcome. | The choice has no partial outcome. Sleep ends this scene. |
 | Take fallen fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member takes fruit already down. | `DC 10` | That party member takes fruit already down, which is not a claim. If they eat it, use [[giants-guava]] or [[stonepear]] as this fire's fruit. | That party member takes some living stems. That is an [[taking-on-aruhe]] claim, and the camp notices. | That party member strips living fruit. That is an [[taking-on-aruhe]] claim, and surrounding life converges in response. |
  
@@ -188,7 +188,7 @@ Keep the [[Deer-Stalker]], [[talon-vantyrus]], and [[memorial-grove]] off this c
 
 Carry forward RAW damage and conditions. The party names the [[fate-spinner]]'s location and chooses what to pursue next. Stop before a second night begins and before [[memorial-grove]].
 
-On Held, [[talon-skarn]] is north and empty-handed if he broke contact, or remains on this aisle if the party held or dropped him. The camp remains split between [[Uncertainty]] and the garden.
+On Held, [[talon-skarn]] is north and empty-handed if he broke contact, or remains on this aisle if the party held or dropped him. The camp remains split between [[uncertainty]] and the garden.
 
 On Stolen, if the party stayed on this dirt, the hawks haul [[talon-skarn]] inland. If the party chased, use the hunt result already resolved. The [[fate-spinner]] ends on a hawk, with [[talon-skarn]], or recovered.
 
@@ -212,7 +212,7 @@ Keep the people at this fire unnamed.
 
 ## Backup
 
-[[star-cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-00-Birds-of-a-Feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[bloodhawk]] · [[young-bloodhawk]] · [[giants-guava]] · [[stonepear]] · [[taking-on-aruhe]] · [[spoke-ring]] · [[Deer-Stalker]] · [[matteo-scola]] · [[Uncertainty]] · [[memorial-grove]]
+[[star-cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[bloodhawk]] · [[young-bloodhawk]] · [[giants-guava]] · [[stonepear]] · [[taking-on-aruhe]] · [[spoke-ring]] · [[Deer-Stalker]] · [[matteo-scola]] · [[uncertainty]] · [[memorial-grove]]
 
 ## Battlemap
 

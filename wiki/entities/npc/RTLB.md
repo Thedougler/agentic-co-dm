@@ -65,4 +65,4 @@ No voice is established for RTLB. If the wizard ever becomes active, keep the in
 | Connection | Meaning |
 | ---------- | ------- |
 | [[sir-quackers-the-fowl]] | RTLB used Sir Quackers as a familiar, then set him free. |
-| [[Yssenmoor]] | Sir Quackers was freed on Yssenmoor; RTLB's current location is unknown. |
+| [[yssenmoor]] | Sir Quackers was freed on Yssenmoor; RTLB's current location is unknown. |

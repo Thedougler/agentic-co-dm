@@ -39,7 +39,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Nona Black-Jaw
-> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[Enzo]] and [[Ruk]] between visitors and danger, and keeps the warm, thumb-polished [[Sending Stone (Nona's)|sending stone]] close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
+> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[enzo]] and [[Ruk]] between visitors and danger, and keeps the warm, thumb-polished [[Sending Stone (Nona's)|sending stone]] close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
 ```
 ````
 
@@ -73,7 +73,7 @@ Threats against the network close the door. Family language becomes business ter
 
 ## Current pressure
 
-Nona turned the [[Mercatura]] crater into a missing-persons desk for more than `314` fighting-age men. She vowed public chase, dispatched two [[Passage]] ships already days behind the raiders, and gave [[Perrin Black-Jaw]] a favor instead of cash.
+Nona turned the [[Mercatura]] crater into a missing-persons desk for more than `314` fighting-age men. She vowed public chase, dispatched two [[passage]] ships already days behind the raiders, and gave [[Perrin Black-Jaw]] a favor instead of cash.
 
 The party found its own way to [[Aruhe]] while following the Calveno raid's survivors. Nona's attention remains on the missing-persons desk and recovery effort.
 
@@ -101,10 +101,10 @@ Nona protects people through a network whose survival requires transactional pre
 
 | Relationship | Meaning / invitation |
 | --- | --- |
-| [[Passage]] | Nona is the route face; the party can accept, reshape, or refuse its obligations. |
+| [[passage]] | Nona is the route face; the party can accept, reshape, or refuse its obligations. |
 | [[Rattkin Runs and Black-Jaw Run]] | Family network Nona keeps alive through coded trust, couriers, and ships. |
 | [[Perrin Black-Jaw]] | Grandson and favor-debtor; he is part of the crew that reached Aruhe after the raid. |
-| [[Enzo]] · [[Ruk]] | Visible boundary of the safehouse; Ruk has guarded Passage witnesses for Nona. |
+| [[enzo]] · [[Ruk]] | Visible boundary of the safehouse; Ruk has guarded Passage witnesses for Nona. |
 | [[Delmar Fisk]] | Captain-facing talent; ask him to choose which passage is safe. |
 | [[Crissdalynn Khinriss]] | Map-reading asset; invite her to compare Aruhe and Maw routes. |
 | [[Jean-Claude Tabarnack]] | Grung perspective on the taken; ask what the Warren leads omit. |

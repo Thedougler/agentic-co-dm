@@ -97,7 +97,7 @@ No active change to Rattkin traits, Runs, or the Black-Jaw Run is established.
 | --- | --- | --- |
 | [[vincenzo-black-jaw]] | Named in the Black-Jaw Run source material. | Connects Rattkin Run lore to a named NPC. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which Rattkin Runs and family codes matter to the party's current route?
 * [ ] **Decide when needed.** The full mechanics of Pack Tactics can remain open until the source or play establishes them.

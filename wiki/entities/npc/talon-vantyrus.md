@@ -9,7 +9,7 @@ sources:
   - "campaign-os:talon-vantyrus.md"
   - "campaign-os:osset.md"
   - "Talon Vantyrus update (2026-09-23)"
-summary: "Countless master and former Sentinel who now uses Talon Vantyrus as an alias; his original name is [[Osset]], and his apprentice [[talon-skarn]] is trying to kill him under the Rule of Two."
+summary: "Countless master and former Sentinel who now uses Talon Vantyrus as an alias; his original name is [[osset]], and his apprentice [[talon-skarn]] is trying to kill him under the Rule of Two."
 provenance:
   extracted: 0.93
   inferred: 0.07
@@ -42,7 +42,7 @@ flexGrow=2
 | **Home** | Unknown; he moves along the Countless's Midchain routes |
 | **Wants** | The [[soul-incarnate|Soul Incarnate]]'s transformation technique, and the crack he means to use is [[crissdalynn-khinriss]]'s own unexplained gift |
 
-**Identity.** [[Osset]] is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]], and **Talon** is a title his agents share.
+**Identity.** [[osset]] is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]], and **Talon** is a title his agents share.
 
 > **DM thesis:** Vantyrus treats every death he could have foreseen as a death he permitted, so he has stopped recording and started intervening, and the party only ever meets the intervention.
 ```
@@ -208,7 +208,7 @@ legendary_actions:
 
 | Connection | Meaning |
 | --- | --- |
-| [[Osset]] | Original name. This page is the live alias and current identity. |
+| [[osset]] | Original name. This page is the live alias and current identity. |
 | [[master-kyzil]] | His most gifted student at [[high-eyrie]], who refused to leave the order with him and now believes his old master is decades dead. Vantyrus does not primarily want Kyzil dead; he wants Kyzil to finally admit that watching was not enough. |
 | [[talon-skarn]] | His apprentice and eventual executioner, prepared by design under the [[rule-of-two]]. Their contest for Vantyrus's life remains open, and neither has called it off. |
 | [[crissdalynn-khinriss]] | Unaware target. Her unexplained [[long-sight\|Long Sight]] is the one crack in whatever protects the [[soul-incarnate\|Soul Incarnate]] technique. He wants to know what Kyzil taught her, and more importantly what Kyzil refused to teach her. |

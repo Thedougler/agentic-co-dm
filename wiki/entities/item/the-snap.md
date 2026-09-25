@@ -12,6 +12,11 @@ type: item
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: armor
+rarity: uncommon
+attunement: true
+owner: "[[perrin-black-jaw]]"
 summary: "A wrist bracer that unfurls into a shield granting +2 AC without occupying a hand, letting Perrin Black-Jaw keep his bodhran drum free in combat."
 provenance:
   extracted: 0.85
@@ -40,7 +45,6 @@ tier: supporting
 
 [[prospero-morsani]] sold The Snap from his stock at [[the Cabinet of Morsani]]. He claimed to have bought it from an inventor "who took an arrow" and retired; [[catarina-davirelli|Catarina]]'s Insight read him as having found it, not bought it, through means "not exactly legal," probably grave robbing. Perrin haggled him from an opening price down to 150 gold, [[crissdalynn-khinriss|Crissdalynn]]'s natural-20 Persuasion roll (threatening to flood the market with copies) closing the deal. Perrin, [[catarina-davirelli|Catarina]], and Crissdalynn dubbed it "The Snap" for the sound it makes unfurling.
 
-## Mechanics
 
 > [!mechanic]
 > **Wrist-bound shield [HB].** As a Bonus Action, unfurl the bracer into a shield. It grants the wearer a +2 bonus to AC for as long as it stays unfurled, the same bonus a mundane shield gives. It never takes up the wearer's hand. That hand can hold or use anything that isn't a weapon requiring an attack roll: an instrument, a spellcasting focus, material components, a tool. As a Bonus Action, fold it back into its dormant bracer form.

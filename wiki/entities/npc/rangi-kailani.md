@@ -48,4 +48,4 @@ tier: supporting
 
 **[[toa-kailani]]** (Family Head). Rangi is sworn to House Kailani; Toa commands his service and has chosen him as the family's champion in the challenge duel. Rangi respects Toa's authority absolutely and sees defending the house as an extension of duty itself.
 
-**[[Sparhold]]** (The Stakes). The settlement whose rule hangs on the outcome of the duel. Rangi does not fully grasp that losing this fight costs House Kailani not just his life, but their entire hold on the settlement's governance and defense.
+**[[sparhold]]** (The Stakes). The settlement whose rule hangs on the outcome of the duel. Rangi does not fully grasp that losing this fight costs House Kailani not just his life, but their entire hold on the settlement's governance and defense.

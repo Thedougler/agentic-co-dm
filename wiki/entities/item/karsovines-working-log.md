@@ -41,4 +41,4 @@ tier: supporting
 
 ## Provenance
 
-Branimir's own working notebook, kept since Voyvode Works began trialing pressure rigs at [[Fathomrush]]. He adds an entry after every personal dive, win or lose, and has never let it out of his own keeping.
+Branimir's own working notebook, kept since Voyvode Works began trialing pressure rigs at [[fathomrush]]. He adds an entry after every personal dive, win or lose, and has never let it out of his own keeping.

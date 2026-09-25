@@ -40,7 +40,7 @@ flexGrow=2
 | **Nature** | A Rattkin route network of travelling families, crews, safe holds, and trusted fronts. |
 | **Scope** | Regional, with its anchor Run beneath Calveno and routes extending beyond colonial charts. |
 | **Base** | [[Warren|The Warren]] beneath Calveno. |
-| **Leader** | The seven elders of [[Tangle|The Tangle]] oversee the Calveno Run; [[nona-black-jaw|Nona Black-Jaw]] leads the Warren's anchor Run. |
+| **Leader** | The seven elders of [[tangle|The Tangle]] oversee the Calveno Run; [[nona-black-jaw|Nona Black-Jaw]] leads the Warren's anchor Run. |
 | **Public purpose** | Move people to freedom, carry messages, and keep useful cargo outside colonial record-keeping. |
 | **Signature method** | Coded trust, safe kitchens, hidden routes, and commercial cover. |
 | **Current posture** | Acting under pressure from the Grung bombing threat and the choice between secrecy and an open warning. |
@@ -105,16 +105,16 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 | --- | --- | --- | --- |
 | [[Tangle\|The Tangle]] | Seven senior elders | Keep the Calveno Run and its routes alive | Must balance secrecy against the bombing warning |
 | [[nona-black-jaw\|Nona Black-Jaw]] | Leader of the Warren's anchor Run | Keep the Run and its people alive | Acts for the Passage but carries local responsibility |
-| [[Enzo]] | Nona's order-carrier | Carry out Nona's decisions | Loyal to Nona |
+| [[enzo]] | Nona's order-carrier | Carry out Nona's decisions | Loyal to Nona |
 | [[Ruk]] | Kitchen guard | Protect the Warren's people and food | Holds the anchor community together |
-| [[Cobb]] | Dry-dock operator | Keep La Vasca useful under Black-Jaw colors | Supports the anchor Run |
+| [[cobb]] | Dry-dock operator | Keep La Vasca useful under Black-Jaw colors | Supports the anchor Run |
 | Travelling families and crews | The Runs | Preserve route knowledge and move people and messages | Distributed; no single public commander |
 
 ### Chain of Action
 
-**Who decides:** [[Tangle|The Tangle]] sets the Calveno Run's highest route policy; [[nona-black-jaw|Nona Black-Jaw]] decides for the Warren's anchor Run.
+**Who decides:** [[tangle|The Tangle]] sets the Calveno Run's highest route policy; [[nona-black-jaw|Nona Black-Jaw]] decides for the Warren's anchor Run.
 
-**Who interprets those orders:** [[Enzo]] carries Nona's orders to the Run.
+**Who interprets those orders:** [[enzo]] carries Nona's orders to the Run.
 
 **Who actually carries them out:** Travelling families, crews, kitchen keepers, dry-dock workers, couriers, and trusted fronts.
 

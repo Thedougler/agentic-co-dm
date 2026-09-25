@@ -29,7 +29,7 @@ relationships:
 
 ![[vethka-narration-appearance]]
 
-*War proa · Tier 1 · [[Karath]].*
+*War proa · Tier 1 · [[karath]].*
 
 *Vethka* is the [[Grung]] term for this class of vessel, not a proper name but a caste-designation. Roughly, it means *the waterline that moves toward you*. Every raiding proa built to the standard pattern receives this designation from its crews.
 
@@ -61,7 +61,7 @@ In reef country, nothing with a keel can catch a *Vethka*. [[Grung]] Standing Le
 
 - [[grung-clans|Grung Clans]]: builders and operators of the *Vethka* class.
 - [[verdant-teeth]]: source of the iron-pillar hardwood used in the hull.
-- [[Karath]]: home island. Its harbourless shoreline suits this hull's low, unmoored profile. Karath alone crews six of the class.
+- [[karath]]: home island. Its harbourless shoreline suits this hull's low, unmoored profile. Karath alone crews six of the class.
 - [[jean-claude-tabarnack]]: tracks Karath's *Vethka* fleet, which runs crew and captives for the operation holding his family.
 
 ## Session Log

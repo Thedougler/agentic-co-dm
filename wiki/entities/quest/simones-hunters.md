@@ -18,7 +18,7 @@ type: quest
 status: active
 scope: personal
 region: Unknown
-quest_giver: "[[Simone]]"
+quest_giver: "[[simone]]"
 factions:
   - "[[grung-clans]]"
 deadline: "None established."
@@ -46,10 +46,10 @@ tier: supporting
 
 |                 |                                                                 |
 | --------------- | --------------------------------------------------------------- |
-| **Quest giver** | [[Simone]] |
+| **Quest giver** | [[simone]] |
 | **Region**      | Unknown |
 | **Scope**       | Personal |
-| **Opposition**  | [[Simone]] and the hunters implied by the report; no separate roster is established. |
+| **Opposition**  | [[simone]] and the hunters implied by the report; no separate roster is established. |
 | **Reward**      | Safety, information, or leverage; no formal reward is established. |
 | **Last change** | The source recorded the report, leak hunt, and toxin stock as one thread. |
 
@@ -78,7 +78,7 @@ The source establishes Simone's report, a leak hunt, and toxin stock against Jea
 
 |                  |                                                   |
 | ---------------- | ------------------------------------------------- |
-| **Driver**       | [[Simone]] |
+| **Driver**       | [[simone]] |
 | **Wants**        | To pursue the report's target and find the leak; deeper motive Unknown. |
 | **Current move** | Maintaining the leak hunt and toxin stock against Jean-Claude and his allies. |
 | **Next move**    | No named next move is established. |
@@ -97,7 +97,7 @@ The source establishes Simone's report, a leak hunt, and toxin stock against Jea
 
 | Lead | Points toward | Found? | State |
 | ---- | -------------- | ------ | ----- |
-| Simone's report and its target. | [[Simone]] | No | Available |
+| Simone's report and its target. | [[simone]] | No | Available |
 | Jean-Claude's account of who shelters him. | [[jean-claude-tabarnack]] | No | Available |
 | The toxin stock and whoever maintains it. | [[grung-clans]] | No | Available |
 
@@ -105,7 +105,7 @@ The source establishes Simone's report, a leak hunt, and toxin stock against Jea
 
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
-| [[Simone]] | Source of the report and active pressure. | Hunt the leak and pursue the target; exact motive Unknown. |
+| [[simone]] | Source of the report and active pressure. | Hunt the leak and pursue the target; exact motive Unknown. |
 | [[jean-claude-tabarnack]] | Target of the report and pressure. | Current plan Unknown. |
 | [[grung-clans]] | Source context for the recorded thread. | No separate clan roster or current move is established. |
 

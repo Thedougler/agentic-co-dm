@@ -26,14 +26,14 @@ tier: supporting
 
 |              |                                                              |
 | ------------ | ------------------------------------------------------------ |
-| **Species**  | [[Human]] (Dravosi)                                              |
+| **Species**  | [[human]] (Dravosi)                                              |
 | **Post**     | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
 | **Rank**     | Ensign, Navigator                                             |
 | **Status**   | Deceased (shot by Delmar Fisk's musket during the Session 02 boarding) |
 
 **Appearance & Manner:** barely twenty with an almost-clean uniform, he clutches a quill before he's even fully inside. He sorted the boarding manifests by date before anyone asked, not even noticing he'd done it. A Crown-trained navigator for the [[dravosi-crown]], he's competent at chart work, reef avoidance, and Maw crossings, though plain in manner. Quietly adrift. He had nowhere to go when the ship made port.
 
-**Role & Habits:** aboard the [[Uncertainty|HCS Surety]], he lived at the chart table, keeping logs and updating manifests while watching for navigation problems before they turned into crises. He always sounded sorry about it, as if the reef were his fault. When pressure came, he did paperwork. Not to calm down, but because that's how he thought. The paperwork was always right. He organized things before anyone asked, then got embarrassed when someone noticed.
+**Role & Habits:** aboard the [[uncertainty|HCS Surety]], he lived at the chart table, keeping logs and updating manifests while watching for navigation problems before they turned into crises. He always sounded sorry about it, as if the reef were his fault. When pressure came, he did paperwork. Not to calm down, but because that's how he thought. The paperwork was always right. He organized things before anyone asked, then got embarrassed when someone noticed.
 
 **Fate:** during the Session 02 boarding, Delmar fired through the ship's second gun port and hit him in the dark below. He did not survive. Confirmed in Recap: "Delmar fired through the second port and hit Ensign Wouters in the dark below." His body remained on deck long enough for [[Ket]] to feed on it before the crew opened Ket's cage. Never recruited.
 
@@ -43,7 +43,7 @@ No statblock recorded in the source. Non-combatant navigator, killed by stray fi
 
 ## Connections
 
-- [[Uncertainty|HCS Surety]] (his post, under Barnaby Rook).
+- [[uncertainty|HCS Surety]] (his post, under Barnaby Rook).
 - [[barnaby-rook]] (his captain).
 - [[delmar-fisk]] (killed him with a musket shot through a gun port during the Session 02 boarding).
 - [[Ket]] (fed on his body on deck before the crew opened the cage).
@@ -51,4 +51,4 @@ No statblock recorded in the source. Non-combatant navigator, killed by stray fi
 
 ## Session Log
 
-- **[[Session 02, Conflict is a Surety]]**: shot by [[delmar-fisk]] through a gun port during the boarding of the [[Uncertainty|HCS Surety]]. Dies of the wound. `vault/episodes/002/s02-recap.md:25`.
+- **[[Session 02, Conflict is a Surety]]**: shot by [[delmar-fisk]] through a gun port during the boarding of the [[uncertainty|HCS Surety]]. Dies of the wound. `vault/episodes/002/s02-recap.md:25`.

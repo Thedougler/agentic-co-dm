@@ -95,5 +95,5 @@ Matteo talks in short, wet bursts and repeats the one rule that kept him alive. 
 | [[Aruhe - River Otter]] | Three of them had him in a game, not a kill. They swam downriver. |
 | [[taking-on-aruhe]] | He saw people die picking living fruit. Ground fruit is the rule he will teach. |
 | [[ghost-plum]] | He ate one in front of the party and vanished. |
-| [[Uncertainty]] | He wants the ship. Other survivors went farther inland without him. |
+| [[uncertainty]] | He wants the ship. Other survivors went farther inland without him. |
 | Woman in the woods | He calls her a shadow with orange eyes. He thinks the listeners are mad, then admits they lived. |

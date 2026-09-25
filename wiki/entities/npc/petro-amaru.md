@@ -30,7 +30,7 @@ tier: supporting
 
 **Embodying Petro:** worn foreman archetype (practical, counting-house precision masked as casual efficiency). Works best as a nervous profiteer caught between opportunity and consequence, always running numbers even in conversation.
 
-Petro's operation is the only thing keeping [[Sparhold]] competitive with [[Kalowe]]. The spar-timber trade depends on proximity to the [[verdant-teeth]] fringe. Closer ground means better timber, higher margins. He's normalized minor boundary creep for years, but recently he's escalated the operation. Bigger cuts. Deeper crew posts. Falsified ledgers covering the shift. **Ussa**, his bribed scout, keeps misreporting the cut-line, but her position grows precarious.
+Petro's operation is the only thing keeping [[sparhold]] competitive with [[kalowe]]. The spar-timber trade depends on proximity to the [[verdant-teeth]] fringe. Closer ground means better timber, higher margins. He's normalized minor boundary creep for years, but recently he's escalated the operation. Bigger cuts. Deeper crew posts. Falsified ledgers covering the shift. **Ussa**, his bribed scout, keeps misreporting the cut-line, but her position grows precarious.
 
 | Field | Content |
 |---|---|
@@ -38,7 +38,7 @@ Petro's operation is the only thing keeping [[Sparhold]] competitive with [[Kalo
 | Consistent method | Keep two ledgers (one for official records with falsified cut-lines, one for actual crew positions). Pay Ussa to misreport where crews actually work. |
 | Active problem | [[Grung]] raids are escalating. The harbor authority notices the link between his deeper cuts and the raids. They're watching his books more closely now. |
 | Performance hooks | Harbormaster meets timber roughneck. He adjusts the ledger constantly and licks his pencil tip before each notation. His scarred forearm rolls as if he's testing it for pain. |
-| Link of relevance | Contact for any party investigating the timber trade, the raid escalation, or [[Sparhold]]'s economic survival. |
+| Link of relevance | Contact for any party investigating the timber trade, the raid escalation, or [[sparhold]]'s economic survival. |
 
 **Voice & Delivery:** brisk, clipped speech with a working-harbor accent. Prone to incomplete sentences when he's calculating aloud. Numbers animate him more than people do.
 
@@ -49,5 +49,5 @@ Physical mannerisms: he adjusts the ledger and tucks the pencil behind his ear. 
 
 ## Connections
 
-- **[[Ussa]]** (bribed boundary scout, low-caste [[Grung]] defector). She misreports the cut-line on his payroll. Her position is becoming precarious as the raids escalate and suspicion grows.
+- **[[ussa]]** (bribed boundary scout, low-caste [[Grung]] defector). She misreports the cut-line on his payroll. Her position is becoming precarious as the raids escalate and suspicion grows.
 - **Timber crews** (his operation's backbone). They cut closer to [[Grung]] territory each season on his orders, aware only that the margin improves when they push the boundary.

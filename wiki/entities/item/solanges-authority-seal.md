@@ -15,6 +15,8 @@ visibility: dm
 kind: magic
 rarity: rare
 attunement: true
+region: "[[calven-and-calveno]]"
+owner: "[[jean-claude-tabarnack]]"
 summary: "A red-caste Grung signet ring that forces a Grung within 60 feet to obey a one-word command once per long rest. Identified after the Calveno raid. Held by the crew."
 provenance:
   extracted: 0.85
@@ -37,7 +39,6 @@ No effect on non-Grung. No bonus to attack, damage, saving throws, or AC. The ta
 
 Grung earn red-caste authority through action, never by vote or birth. The ring's compulsion is that authority made portable: it pulls on the belief every Grung grows up trusting, that a red-caste order gets obeyed. A non-Grung has never heard that voice, and gives the ring nothing to catch hold of.
 
-## At a Glance
 
 Recovered from Primary Chamber rubble after the Detonation and identified in the raid's aftermath. Carried by the crew. [[jean-claude-tabarnack]] is the only party member who reads red-caste authority markings on sight.
 

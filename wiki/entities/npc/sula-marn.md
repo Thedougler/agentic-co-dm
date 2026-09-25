@@ -84,4 +84,4 @@ Sula speaks with steady civic authority and avoids repeating Ashe's accusations 
 | [[corvin-ashe]] | He sends people to the grove. She warns them the witches are not what he says. |
 | [[dessa-wule]] | Sula uses the back corner table. Dessa does not know what Sula knows. |
 | [[penance-bar-siege]] | She tries to hold the peace while the mob forms. |
-| [[Sorrowbell]] | Ashe's shrine. Sula is not its priest. |
+| [[sorrowbell]] | Ashe's shrine. Sula is not its priest. |

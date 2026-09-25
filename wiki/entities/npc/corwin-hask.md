@@ -44,7 +44,7 @@ Non-combatant.
 ## Connections
 
 - [[crissdalynn-khinriss]]. See Toy Chest below.
-- [[Kalowe]]. Works the docks here.
+- [[kalowe]]. Works the docks here.
 - [[Aarakocra]]. Brushed shoulders with one, the
   encounter he can't locate.
 - [[The Countless]]. The unwitting cost of a Countless

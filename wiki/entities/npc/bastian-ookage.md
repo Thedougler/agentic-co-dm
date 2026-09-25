@@ -11,6 +11,10 @@ created: 2026-09-13
 updated: 2026-09-13
 type: npc
 reveal: unrevealed
+status: deceased
+role: "Captain of the Loud Argument"
+location: "[[delmar-fisk]] (soul host)"
+faction: "[[fisks-fleet]]"
 campaign: shattered-sea
 visibility: dm
 summary: "Lizardfolk captain of the Loud Argument who drowned at The Drowned Maw. His soul inhabits Delmar Fisk."
@@ -22,28 +26,59 @@ tier: supporting
 ---
 # Bastian Ookage
 
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[bastian-ookage-portrait.webp]]
+| **Role**   | Captain of the *[[the-loud-argument|Loud Argument]]* |
+| ---------- | ----------------------------------------------------- |
+| **Nature** | A theatrical [[lizardfolk]] captain who makes every room his stage and refuses to let injustice pass unanswered. |
+| **Home**   | The Loud Argument; after drowning, his soul inhabits [[delmar-fisk]]. |
+| **Wants**  | Justice seen and answered, especially when someone lies to another person's face. |
+| **Leverage** | A captain's command voice, a reputation for impossible entrances, and control of Delmar when Mortis's conditions let him surface. |
+| **Limit**  | He drowned at [[drowned-maw]] when [[Umberlee]] closed the water over the fleet; his soul persists in a living host rather than a body of his own. |
 
-[[Lizardfolk]] captain of the *[[the-loud-argument|Loud Argument]]*, [[fisks-fleet]]'s combat vessel. Deceased. His soul is inside [[delmar-fisk]].
+> **DM thesis:** Bastian is an impossible-to-ignore captain whose theatricality is armor for a direct demand that injustice be answered.
+```
 
-Tall and commanding, he takes up space on purpose. Dark loose hair surrounds a face that shows every emotion without apology, bearing scars on his jaw and forearm that are old, settled, and never explained. He prizes the mystery and relishes making an entrance, working to dominate every scene.
+```col-md
+flexGrow=1
+===
+> [!narration] Bastian Ookage
+> A tall lizardfolk captain takes up space on purpose, dark loose hair framing a face that shows every emotion without apology. Old scars cross his jaw and forearm. He enters as if the room has been waiting for him, then looks for the nearest audience.
+```
+````
 
-Bastian captained the *Loud Argument*, the fleet's dedicated fighter built for close engagement. Bow chasers were always pointed ahead. He commanded the distraction team at the main entrance during the shrine operation. He endured bombardment while suppressing spells and triggering traps. His job was to be impossible to ignore, and he was good at it. He drowned at [[drowned-maw]] when [[Umberlee]] closed the water over all five ships. Umberlee pressed his soul into Delmar at the moment he sank.
+## Running Bastian Ookage
 
-Born to the Lizardfolk community of the [[Midchain]]. Warm-blooded traders see themselves in this place, but he does not. See Lizardfolk § Midchain culture.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-He grew up in port towns. His stories about home change each time he tells them. Sometimes the place sounds ordinary. Sometimes he hints at secrets. He left as soon as he could. He was loud by nature long before the sea made him louder.
+Bastian appears through [[delmar-fisk]] when Mortis loosens control: a successful Deception or Persuasion check against Delmar, sensed coercion, or a black jackdaw nearby can give Bastian control. He announces himself as captain of the Loud Argument and immediately demands the room's attention.
 
-At eleven, he found a black jackdaw in a harbor market whose owner had given up on it. He named it Crev and spent months training it to deliver insults and grand speeches. The bird became his first true listener. It survived three ships and one mutiny before its death aboard the *Loud Argument* the season before the Maw. After Crev's death, Bastian claimed he did not want another bird, but the crew knew the truth. They called him "Bastian Ookage" after the bird. Warm-blooded folk used that name far more than his real Midchain name.
+> *Bastian*: “My name is Bastian Ookage. Captain of the Loud Argument.”
+```
 
-Bastian demands justice. He refuses to stop speaking about it.
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-**When Mortis controls Delmar.** A successful Deception or Persuasion check against Delmar, sensed coercion, or a black jackdaw nearby can give Bastian control. He becomes theatrical and full-on, louder and bigger than any room he enters. He bluffs when he should not and uses Performance and Deception as his primary tools (expertise +7). Once active, he moves fast and warm, open and direct, often reaching for the bird.
+Bastian becomes theatrical and full-on, louder and bigger than any room he enters. He bluffs when he should not and uses Performance and Deception as his primary tools (expertise +7). He moves fast and warm, often reaching for a bird.
 
-**Roleplay as** Alan Rickman (Severus Snape) as a pirate captain who insists on attention. Use precision and control instead of loudness.
+He changes from delighted performance to furious command when someone lies to another person's face or leaves injustice unanswered. A black jackdaw nearby can pull him toward the memory of Crev, the bird he trained to deliver insults and grand speeches.
+```
+````
 
-## Canon Note
+## Voice
+
+Bastian speaks with precision and control rather than mere loudness. Use Alan Rickman as a pirate captain who insists on attention. His voice can be calm, commanding, terrified, delighted, sarcastic, furious, whispered, persuasive, rapid, wry, earnest, dry, or arch, but it is always performing for an audience.
+**Canon note.**
 
 Bastian's original profile listed him as Human, but [[fisks-fleet]]'s crew table and the Lizardfolk lore page (both created 2026-05-31, canonical) describe him as Lizardfolk who rose through salvage work before Fisk gave him command. Per legacy-conflict policy, these sources supersede the earlier Human designation.
 
@@ -53,20 +88,11 @@ Bastian's original profile listed him as Human, but [[fisks-fleet]]'s crew table
 **Detect Magic.** [[magic-in-the-shattered-sea|The spell]] reads as Divine Necromancy. A brine-cold pressure rests behind the sternum, faint and persistent, like deep water that never fully drains.
 **Counterspell.** [[magic-in-the-shattered-sea|The spell]] cannot affect it. A deity imposes it at death rather than casting it.
 
-## Stats & Combat
+**Stats & Combat.**
 
 Not stated in source.
 
-## Connections
 
-- [[delmar-fisk]]: one of the five captains. Now a soul in Fisk.
-- *[[the-loud-argument|Loud Argument]]*: his captained vessel
-- [[fisks-fleet]]: one of the five captains
-- [[Umberlee]]: the force that ended him
-- [[pearl-of-souls]]: target of the shrine operation his distraction team supported
-- [[dm-voice-notes|Voice notes]]: read for his Mortis-active persona
-
-## Voice
 
 My name is [[bastian-ookage]]. Captain of the [[the-loud-argument|Loud Argument]].
 
@@ -141,3 +167,11 @@ They call me impossible to ignore. I trained that reputation into a bird before 
 *(arch)*
 
 That's me. Bastian Ookage, Captain of the Loud Argument, greatest audience a jackdaw ever had, and still, after all of this, utterly incapable of leaving a room unnoticed.
+## Connections
+
+- [[delmar-fisk]]: one of the five captains. Now a soul in Fisk.
+- *[[the-loud-argument|Loud Argument]]*: his captained vessel
+- [[fisks-fleet]]: one of the five captains
+- [[Umberlee]]: the force that ended him
+- [[pearl-of-souls]]: target of the shrine operation his distraction team supported
+- [[dm-voice-notes|Voice notes]]: read for his Mortis-active persona

@@ -36,7 +36,7 @@ summary: "Umberlee's older cliff shrine on Vel Orn keeps drowned names and water
 
 ## Who
 
-No resident priest or attendant is established. The shrine belongs to [[Umberlee]]'s worship, which the [[Waveservants]] administer across the region.
+No resident priest or attendant is established. The shrine belongs to [[Umberlee]]'s worship, which the [[waveservants]] administer across the region.
 
 ## What
 

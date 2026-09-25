@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[midchain-west|Western Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Perrinelle
@@ -65,7 +65,7 @@ The island belongs to a lighthouse family with four generations of continuity. T
 - **South:** Canon gap; no neighboring site or travel distance is recorded.
 - **West:** Canon gap; no neighboring site or travel distance is recorded.
 - **Region:** [[midchain-west|Western Midchain]], whose approaches are busy, broadly charted, and threatened by seasonal sandbars.
-- **Named connection:** [[Kalowe]].
+- **Named connection:** [[kalowe]].
 
 ---
 ## Why

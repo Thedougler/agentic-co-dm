@@ -115,7 +115,7 @@ This telling preserves the established origin and territorial streak without cla
 
 ---
 
-## Open Canon
+**Open canon.**
 
 - [ ] **Unknown.** What does the Cat Lord mean in Keth-Naar's own account?
 - [ ] **Unknown.** What other Tabaxi communities exist across the Shattered Sea?

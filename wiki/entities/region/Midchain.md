@@ -41,7 +41,7 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 - **Contradiction:** Crowded enough to hide in; connected enough to spread news instantly.
 - **Signatures:** reef marks; council tokens; boats choosing different channels around the same shoal.
 ## Place truth and current situation
-- **Canon:** Midchain links [[verdant-teeth]], [[Sparhold]], and [[aruhe]]; the Grung fleet’s trail points toward Sparhold.
+- **Canon:** Midchain links [[verdant-teeth]], [[sparhold]], and [[aruhe]]; the Grung fleet’s trail points toward Sparhold.
 - **DM seed (unconfirmed):** each free port recognizes a different token or debt, allowing social access without a single regional government.
 - **At stake:** whether Midchain shelters the taken or becomes the Crown’s next controlled corridor.
 ## Aspects
@@ -52,7 +52,7 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 - **Smell:** brine, fruit, pitch, wet sailcloth, and cooking smoke.
 ## Topology
 - `[[central-strait]] -- marked lane (fast, exposed, papers) --> Midchain`.
-- `Midchain -- reef route (slow, hidden, pilot-dependent) --> [[Sparhold]]`.
+- `Midchain -- reef route (slow, hidden, pilot-dependent) --> [[sparhold]]`.
 - `Midchain -- open water (direct, weather-exposed, reveals approach) --> [[aruhe]]`.
 - `Midchain -- jungle-water route (costly, information-rich, Grung attention) --> [[verdant-teeth]]`.
 - **Loop:** Sparhold → council dock → Aruhe → a different reef channel back.
@@ -62,7 +62,7 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 ## Player verbs
 `pilot, bargain, read signals, hide, trace, rescue, reroute, wait for weather`.
 ## Who is here
-- Local councils and free-port workers; [[Passage]] and [[grung-clans]] have reach; Crown enforcement is thin (canon).
+- Local councils and free-port workers; [[passage]] and [[grung-clans]] have reach; Crown enforcement is thin (canon).
 - **DM seed (unconfirmed):** council pilot, Grung scout, and Passage courier are recurring faces, not canon NPCs.
 ## Information economy
 - **Secret:** the trail from 314+ taken people is moving through Midchain toward Sparhold.
@@ -89,7 +89,7 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 ### M3 Rumour crossing — social loop
 **First impression:** news changes hands at any port, ferry, or safe kitchen. **Affordances:** Influence, trade, plant a story, verify. **Payoff:** advance the trail or alter who watches.
 ## Connections
-- [[central-strait]] · [[verdant-teeth]] · [[Sparhold]] · [[aruhe]]
+- [[central-strait]] · [[verdant-teeth]] · [[sparhold]] · [[aruhe]]
 ## Hooks
 - Follow the fleet trail; secure pilots; keep occupation from becoming the default answer.
 ## Secrets
@@ -99,28 +99,28 @@ Densely packed small tropical islands, free ports, reefs, and local councils; fe
 - **Return state:** update which councils know the crew, which channel is open, and the current pressure state.
 
 ## Aruhe / Karath link
-- [[Karath]] is an eastern Midchain neighbor near one edge of [[aruhe]]. At one closest point the channel is about 0.5 miles wide; Karath is close to an edge, while Aruhe's heart is hundreds of miles inland.
-- `Midchain -- near-edge channel (about 0.5 mi at one closest point) --> [[Karath]]`.
-- The established `[[Sparhold]] → [[aruhe]]` route remains the active approach; Karath is not a shortcut to the island's heart.
+- [[karath]] is an eastern Midchain neighbor near one edge of [[aruhe]]. At one closest point the channel is about 0.5 miles wide; Karath is close to an edge, while Aruhe's heart is hundreds of miles inland.
+- `Midchain -- near-edge channel (about 0.5 mi at one closest point) --> [[karath]]`.
+- The established `[[sparhold]] → [[aruhe]]` route remains the active approach; Karath is not a shortcut to the island's heart.
 
 ## Geography ingest — pilot bands
-The Midchain is about 1,800 miles of inhabited, tropical shelf from [[Kalowe]]'s approaches to the [[Tail]]. Most islands are a half-day sail apart; water shifts from turquoise to clear blue over reef. Weather coasts are forest and cliff; lee coasts are mangrove and reef flat. Deep-draft hulls dislike almost every landing except Kalowe. The five bands below are pilot conveniences, not fixed borders; no two charts draw them alike.
+The Midchain is about 1,800 miles of inhabited, tropical shelf from [[kalowe]]'s approaches to the [[tail]]. Most islands are a half-day sail apart; water shifts from turquoise to clear blue over reef. Weather coasts are forest and cliff; lee coasts are mangrove and reef flat. Deep-draft hulls dislike almost every landing except Kalowe. The five bands below are pilot conveniences, not fixed borders; no two charts draw them alike.
 
 ### Western Midchain
-The largest land and islands stacked into haze; west of the last island the shelf drops to open sea. [[Kalowe]] is the free port: three reef-linked islets, stone bridges, one navigable gap, a seized fort for the Chain Council, and a Waveservant shrine collecting from every hull. Nearby: [[penance-bar]], [[Ashkevet]], and [[Sabrique]]. Channels can take a frigate but punish any captain who skips a pilot.
+The largest land and islands stacked into haze; west of the last island the shelf drops to open sea. [[kalowe]] is the free port: three reef-linked islets, stone bridges, one navigable gap, a seized fort for the Chain Council, and a Waveservant shrine collecting from every hull. Nearby: [[penance-bar]], [[Ashkevet]], and [[sabrique]]. Channels can take a frigate but punish any captain who skips a pilot.
 
 ### Northern Midchain
-A dense defended strip two or three islands deep between Strait and Teeth. Passage is by consent, not merely coin. [[Murrat]] is a limestone reef of Moucheron kin-villages in cliff hollows; outsiders who land are hunted. [[sparhold-isle]] is the half-mile cut-over islet at the southern lip; [[Sparhold]] is its timber fortress-market and the closest, looser harbour to the Teeth. [[Yssenmoor]] is three miles of fog-lidded bog with no dry landing. [[the-unplotted]] moves like a green hill over a glass bay and appears where shelter is needed.
+A dense defended strip two or three islands deep between Strait and Teeth. Passage is by consent, not merely coin. [[murrat]] is a limestone reef of Moucheron kin-villages in cliff hollows; outsiders who land are hunted. [[sparhold-isle]] is the half-mile cut-over islet at the southern lip; [[sparhold]] is its timber fortress-market and the closest, looser harbour to the Teeth. [[yssenmoor]] is three miles of fog-lidded bog with no dry landing. [[the-unplotted]] moves like a green hill over a glass bay and appears where shelter is needed.
 
-Other northern-strip names, kept as compact index rather than orphan notes: [[Huahei]] (fey marsh and the Glutehorn); [[adwe|Adwe]] (rearranging mangrove); [[corrigans-rest]] (retired pirates); [[barrow-ait|Barrow Ait]] (burial mounds); [[drovannis|Drovannis]] (bird sanctuary); [[calders-verge|Calder's Verge]] (silica-vent glassblowers); [[chronehall|Chronehall]] (clockmakers); [[old-correspondence|Old Correspondence]] (unfinished letter); [[ilo-maren|Ilo Maren]] (kelp matriarchy); [[nemwe|Nemwe]] (watchtower whose signal-fire works); [[munai|Munai]] (feral orchard); [[kwoss|Kwoss]] (turtle nesting); [[whitmoth-hollow|Whitmoth Hollow]] (albino apes and a vanished garden); [[vetau|Vetau]] (geothermal atoll); [[otanu|Otanu]] (mild volcano); [[thessit|Thessit]] (wrecks displaced in time); [[the-foundling-shoals|The Foundling Shoals]] (infants on the reef); [[quillane|Quillane]] (sinking tidal observatory); [[tor-vessane|Tor Vessane]] (real curse); [[ghal-idrissa|Ghal Idrissa]] (Crown quarantine); [[the-long-wager|The Long Wager]] (ageless judge); [[vaelspire|Vaelspire]] (one true question).
+Other northern-strip names, kept as compact index rather than orphan notes: [[huahei]] (fey marsh and the Glutehorn); [[adwe|Adwe]] (rearranging mangrove); [[corrigans-rest]] (retired pirates); [[barrow-ait|Barrow Ait]] (burial mounds); [[drovannis|Drovannis]] (bird sanctuary); [[calders-verge|Calder's Verge]] (silica-vent glassblowers); [[chronehall|Chronehall]] (clockmakers); [[old-correspondence|Old Correspondence]] (unfinished letter); [[ilo-maren|Ilo Maren]] (kelp matriarchy); [[nemwe|Nemwe]] (watchtower whose signal-fire works); [[munai|Munai]] (feral orchard); [[kwoss|Kwoss]] (turtle nesting); [[whitmoth-hollow|Whitmoth Hollow]] (albino apes and a vanished garden); [[vetau|Vetau]] (geothermal atoll); [[otanu|Otanu]] (mild volcano); [[thessit|Thessit]] (wrecks displaced in time); [[the-foundling-shoals|The Foundling Shoals]] (infants on the reef); [[quillane|Quillane]] (sinking tidal observatory); [[tor-vessane|Tor Vessane]] (real curse); [[ghal-idrissa|Ghal Idrissa]] (Crown quarantine); [[the-long-wager|The Long Wager]] (ageless judge); [[vaelspire|Vaelspire]] (one true question).
 
 ### [[verdant-teeth]]
-Five country-scale rainforest islands sit close enough for facing shores to be hours apart while their interiors take weeks: [[Veth]], [[Sorn]], [[Karath]], [[Dreth]], and [[Orak]]. Trade is beach-only and sanctioned selectively; interiors are closed. [[Karath]] is the eastern Tooth and an Aruhe channel neighbor, not an approach to Aruhe's heart.
+Five country-scale rainforest islands sit close enough for facing shores to be hours apart while their interiors take weeks: [[veth]], [[sorn]], [[karath]], [[dreth]], and [[orak]]. Trade is beach-only and sanctioned selectively; interiors are closed. [[karath]] is the eastern Tooth and an Aruhe channel neighbor, not an approach to Aruhe's heart.
 
 ### Southern Midchain
-Steep volcanic knots with terraced slopes and very short beaches. Landing is negotiated on the sand, and these islands have not asked the Chain Council for help against Grung pressure. [[Halewick]] is the ordinary fishing island temporarily ruled by Toby and Frankie; [[Blackrule]] is a Tyr chapterhouse; [[Slackwater]] is the shared harbour. Compact index: [[ket-solane]] (smugglers' caves); [[Feyroa]] (secret-taking distillery); [[Ossira]] (seabird rookery); [[Palutai]] (reef feud); [[Ravasol]] (stilt village); [[sable-roost]] (sky-pirate wrecks); [[Sanvashti]] (Grung truce); [[sump-cradle]] (healing mud); [[hollow-choir|The Hollow Choir]] (harmonic tide caves); [[Twineye]] (fighting families); [[velk-ithera]] (sound-sensitive fungal hill).
+Steep volcanic knots with terraced slopes and very short beaches. Landing is negotiated on the sand, and these islands have not asked the Chain Council for help against Grung pressure. [[halewick]] is the ordinary fishing island temporarily ruled by Toby and Frankie; [[blackrule]] is a Tyr chapterhouse; [[slackwater]] is the shared harbour. Compact index: [[ket-solane]] (smugglers' caves); [[feyroa]] (secret-taking distillery); [[ossira]] (seabird rookery); [[palutai]] (reef feud); [[ravasol]] (stilt village); [[sable-roost]] (sky-pirate wrecks); [[sanvashti]] (Grung truce); [[sump-cradle]] (healing mud); [[hollow-choir|The Hollow Choir]] (harmonic tide caves); [[twineye]] (fighting families); [[velk-ithera]] (sound-sensitive fungal hill).
 
 ### Eastern Midchain and thin water
-East of the Teeth the land thins except for [[aruhe]], a mute country-scale island. Farther east, reef and soundings become less reliable; [[Halythion]] lies under Teikhinos Reef outside colonial surveys. Compact index: [[Amberfall]] (amber with things frozen inside); [[cambreys-fold]] (returning path); [[coeur-bris]] (split arch and locked chest); [[Corvenna]] (champion court); [[Duskveil]] (permanent dusk); [[Ferrymoor]] (unaffiliated fog crossing); [[gullmoth-reach]] (fey-moth roost); [[Lethys]] (griffon cliffs); [[old-harrows-bones]] (derelict island); [[otel-karn]] (wounds that do not heal); [[ashglass|Ash Caldera]] (black-glass cone with missing salvage).
+East of the Teeth the land thins except for [[aruhe]], a mute country-scale island. Farther east, reef and soundings become less reliable; [[halythion]] lies under Teikhinos Reef outside colonial surveys. Compact index: [[Amberfall]] (amber with things frozen inside); [[cambreys-fold]] (returning path); [[coeur-bris]] (split arch and locked chest); [[corvenna]] (champion court); [[duskveil]] (permanent dusk); [[ferrymoor]] (unaffiliated fog crossing); [[gullmoth-reach]] (fey-moth roost); [[lethys]] (griffon cliffs); [[old-harrows-bones]] (derelict island); [[otel-karn]] (wounds that do not heal); [[ashglass|Ash Caldera]] (black-glass cone with missing salvage).
 
-Near the Maw edge, [[Fathomrush]] stages dives on [[Shelfworks]]. The Tail's unnamed staging island serves the same last-supplies/last-hands function under another name.
+Near the Maw edge, [[fathomrush]] stages dives on [[Shelfworks]]. The Tail's unnamed staging island serves the same last-supplies/last-hands function under another name.

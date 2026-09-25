@@ -23,7 +23,7 @@ region: "Western Midchain"
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Chorewick
@@ -35,7 +35,7 @@ relationships:
 
 ## At a Glance
 
-Chorewick is a named island or site in the western [[Midchain]], organized as a cooperative of escaped indentured workers. The cooperative is strict and fair, and it is deeply suspicious of the well-dressed. [[Kalowe]] is a recorded related place, but the route, direction, and travel distance are not established. The site can be bypassed, but doing so gives up access to a community built around its own rules of work and trust.
+Chorewick is a named island or site in the western [[Midchain]], organized as a cooperative of escaped indentured workers. The cooperative is strict and fair, and it is deeply suspicious of the well-dressed. [[kalowe]] is a recorded related place, but the route, direction, and travel distance are not established. The site can be bypassed, but doing so gives up access to a community built around its own rules of work and trust.
 
 ## If the party
 
@@ -60,7 +60,7 @@ The cooperative of escaped indentured workers is the established population and 
 - **East:** Canon gap; no named neighboring site or travel distance is established.
 - **South:** Canon gap; no named neighboring site or travel distance is established.
 - **West:** Canon gap; no named neighboring site or travel distance is established.
-- **Regional connection:** Chorewick lies in the western [[Midchain]] and has a recorded relationship with [[Kalowe]], but the route, direction, and travel distance are unknown.
+- **Regional connection:** Chorewick lies in the western [[Midchain]] and has a recorded relationship with [[kalowe]], but the route, direction, and travel distance are unknown.
 
 ## Why
 

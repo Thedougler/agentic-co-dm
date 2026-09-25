@@ -16,7 +16,7 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
   - target: "[[Toby]]"
     type: related_to
@@ -34,7 +34,7 @@ relationships:
 
 Playground queen bee, absolute monarch who's never once questioned her own decree.
 
-Frankie is Toby's oldest rival on [[Halewick]]. The grievance underneath is ordinary and real. He took her spot as his Royal Best Friend. She holds her own stretch of shore instead of a throne room, with no ministers of her own. Her cursed-tongue power is the same untrained leak as Toby's, and the mechanism and its origin live on Halewick's own page. She isn't a villain. She's a kid mid-argument who doesn't understand the weapon she's holding.
+Frankie is Toby's oldest rival on [[halewick]]. The grievance underneath is ordinary and real. He took her spot as his Royal Best Friend. She holds her own stretch of shore instead of a throne room, with no ministers of her own. Her cursed-tongue power is the same untrained leak as Toby's, and the mechanism and its origin live on Halewick's own page. She isn't a villain. She's a kid mid-argument who doesn't understand the weapon she's holding.
 
 *Frankie*: You said I COULDN'T be Best Friend anymore, so, so NOW nobody can ever be your friend, ever, forever! *(shouting, already regretting it a little)*
 *Frankie*: That doesn't count. That doesn't COUNT. I said mine first. *(stamping)*
@@ -61,7 +61,7 @@ Voice is fast, loud, and self-interrupting. She corrects her own sentence mid-wo
 ## Connections
 
 - [[Toby]]. Her rival, he took her spot as his Royal Best Friend, the real slight underneath their escalating duels.
-- [[Halewick]]. The island whose ground bears every scar their collisions leave behind.
+- [[halewick]]. The island whose ground bears every scar their collisions leave behind.
 - [[delmar-fisk]]. Her cursed speech, the link_of_relevance, exists only because of his own unresolved theft of the [[pearl-of-souls]].
 
 ## Goals & Fronts

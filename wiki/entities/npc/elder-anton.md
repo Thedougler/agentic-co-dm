@@ -69,6 +69,6 @@ Not stated in source.
 
 - [[vel-orn]], site of [[Umberlee's shrine]] and the disruption origin
 
-- [[Vrtek]], associated [[Rattkin]] contact
+- [[vrtek]], associated [[Rattkin]] contact
 
-- [[Ral-Arn]] (tribe member per this source). **Name collision:** [[keth-naar|Keth-Naar]] already names "Ral Arn" as a record island, not as a person
+- [[ral-arn]] (tribe member per this source). **Name collision:** [[keth-naar|Keth-Naar]] already names "Ral Arn" as a record island, not as a person

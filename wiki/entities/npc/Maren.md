@@ -38,7 +38,7 @@ She has strong opinions about the Navy. The sea belongs to everyone. Two decades
 
 **Maren's Mortis Trigger.** Mortis takes control when Delmar faces denied passage, a sealed entrance, or naval authority. Forced trigger. Delmar cannot pass a locked door or a sealed gate, or a sentry refuses him entry. Environmental trigger. A navy vessel or insignia enters view, or a navy officer comes within earshot. She responds with contempt and short sentences. When active, she gains Perception (expertise +7) and Stealth (expertise +7). Her personality trades Delmar's smoothness and charm for directness and sass. Performance falters noticeably; opinions pour out unfiltered, she demands the correct pronunciation of her name, and she automatically scans each space for escape routes.
 
-After months of partial conversations, a [[sea-elf]] friend told Maren about [[Halythion]], a place south of the [[Midchain]] near [[Tail|the Tail]], a natural bay guarded by reefs where ships do not return. She left the matter unexplored and has no answer about her friend's fate. This is a personal lead, not tavern rumor, and appears through the Mortis mechanic.
+After months of partial conversations, a [[sea-elf]] friend told Maren about [[halythion]], a place south of the [[Midchain]] near [[tail|the Tail]], a natural bay guarded by reefs where ships do not return. She left the matter unexplored and has no answer about her friend's fate. This is a personal lead, not tavern rumor, and appears through the Mortis mechanic.
 
 ## Stats & Combat
 
@@ -48,6 +48,6 @@ Not stated in source.
 
 - [[delmar-fisk]], admiral; now carries her soul
 - [[fisks-fleet]], she captained the *Narrow*
-- [[Halythion]], holds a personal lead on its location
+- [[halythion]], holds a personal lead on its location
 - [[norrington-kingsly]]
 - [[Umberlee]], the force that ended her

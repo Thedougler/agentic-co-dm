@@ -23,16 +23,16 @@ summary: "A Tidefall dockside establishment where Vrtek sorts his pockets and he
 > The Anchor and Line is a dockside room in Port Tidefall, with benches, cups, and the traffic of ships close at hand. It is a place to sit, sort gear, and hear what passes between vessels.
 
 ## At a Glance
-The Anchor and Line is a dockside establishment in [[entities/place/calders-tooth-and-port-tidefall|Port Tidefall]]. [[entities/npc/Vrtek|Vrtek]] sorts his pockets here between ships, and regulars notice when something official has changed hands.
+The Anchor and Line is a dockside establishment in [[entities/place/calders-tooth-and-port-tidefall|Port Tidefall]]. [[entities/npc/vrtek|Vrtek]] sorts his pockets here between ships, and regulars notice when something official has changed hands.
 
 ## If the party
 
-- **Find Vrtek.** The party can find [[entities/npc/Vrtek|Vrtek]] sorting his pockets here while he passes through Port Tidefall between ships.
+- **Find Vrtek.** The party can find [[entities/npc/vrtek|Vrtek]] sorting his pockets here while he passes through Port Tidefall between ships.
 - **Hear port talk.** The party can sit among the dockside traffic and ask what regulars have noticed.
 
 ## Who
 
-[[entities/npc/Vrtek|Vrtek]] is a small Rattkin dockhand passing through between ships. No other occupants are established.
+[[entities/npc/vrtek|Vrtek]] is a small Rattkin dockhand passing through between ships. No other occupants are established.
 
 ## What
 

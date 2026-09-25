@@ -14,6 +14,11 @@ type: faction
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
+kind: criminal
+status: active
+scope: regional
+region: "[[Calven and Calveno]]"
+base: "[[Warren]]"
 summary: "Kin call them the Black-Jaw Run. Outsiders call them the Black-Jaw Family. A travelling family and Passage route-network anchored at the Warren beneath Calveno."
 provenance:
   extracted: 0.85
@@ -26,6 +31,10 @@ tier: supporting
 > [!narration] Public face
 > The Black-Jaw Run is a travelling family and route-network anchored in the Warren beneath Calveno. It moves goods and messages. It forges documents and shelters fugitives. It bribes officials and works against Crown operations. It does not traffic people.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -39,7 +48,10 @@ tier: supporting
 | **Current posture** | Acting. The Run keeps its operations moving while Crown pressure and Perrin's favor shape its next work. |
 
 **DM thesis.** The Black-Jaw Run turns family trust into practical resistance, and Nona's rules keep that resistance from becoming another form of exploitation.
-
+```
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - They want safe routes and working contacts. They also want enough discretion that the Warren and its people remain protected.
@@ -47,6 +59,8 @@ tier: supporting
 - They pressure with safehouse access, favors, information, and the ability to hide someone who needs hiding.
 - They refuse to traffic people. They also refuse poison and sanctuary betrayal. They do not steal from the Warren.
 - Their tell is family members passing work through trusted couriers and coded routes rather than public orders.
+```
+````
 
 ## Current State
 
@@ -90,8 +104,17 @@ tier: supporting
 | --- | --- | --- | --- |
 | [[nona-black-jaw\|Nona Black-Jaw]] | Matriarch and Warren anchor leader | Keep the Run, its people, and its sanctuary alive | Personally enforces the four rules |
 | [[perrin-black-jaw\|Perrin]] | Grandson, current PC, and favor-holder | Survive and answer Nona's request when it comes | Believed missing until Session 03 |
-| [[Anzolo]] | Tortle enforcer and Passage-adjacent ally | Find Perrin and carry out Nona's orders | Deployed before the call-off reached him |
-| [[Cobb]] | La Vasca contact under Black-Jaw colors | Keep the Run's local contact working | Supports the anchor Run |
+| [[anzolo]] | Tortle enforcer and Passage-adjacent ally | Find Perrin and carry out Nona's orders | Deployed before the call-off reached him |
+| [[cobb]] | La Vasca contact under Black-Jaw colors | Keep the Run's local contact working | Supports the anchor Run |
+### Chain of Action
+
+**Who decides:** [[nona-black-jaw|Nona Black-Jaw]] sets the Run's rules and decides which sanctuary and route work can open.
+
+**Who interprets those orders:** [[perrin-black-jaw|Perrin]] and trusted couriers turn Nona's decisions into coded movement.
+
+**Who actually carries them out:** Family couriers, safehouse keepers, [[anzolo]], and [[cobb]] move people, goods, and messages.
+
+**If leadership disappears.** The Warren remains, but the Run loses its anchor and the authority that keeps family routes aligned.
 
 ## Territory & Touchpoints
 
@@ -120,6 +143,12 @@ tier: supporting
 **They can currently offer the party.** Shelter, messages, route access, forged documents, and practical help.
 
 **What would change their standing.** Betraying the Warren. Violating Nona's rules. Helping Crown operations against the Run.
+## Signals & Rumors
+
+- **Visible sign.** A trusted courier passes coded work between safehouses while public papers show only ordinary trade.
+- **Rumor.** The Warren can hide anyone who knows how to ask, but Nona never permits the Run to traffic people.
+- **Direct signal.** Nona calls in Perrin's favor through the sending stone.
+- **Quiet clue.** A route that refuses poison, sanctuary betrayal, or theft from the Warren is following Nona's rules.
 
 ## Running the Faction
 

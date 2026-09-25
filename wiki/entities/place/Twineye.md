@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Twineye
@@ -54,7 +54,7 @@ The established physical features are two islets and the arch joining them. The 
 - **East:** No named eastern neighbor or route is established.
 - **South:** No named southern neighbor or route is established.
 - **West:** No named western neighbor or route is established.
-- **Local connection:** The page retains a recorded relationship to [[Halewick]], but does not state the route or distance between them.
+- **Local connection:** The page retains a recorded relationship to [[halewick]], but does not state the route or distance between them.
 
 ## Why
 

@@ -21,7 +21,7 @@ The only sanctioned Veth landing: a brief blue-caste exchange zone with no pier,
 - Retreat by boat or remain offshore; waiting preserves safety but gives the watch time to count the hull.
 
 ## Who is here
-Blue go-betweens descend when a hull waits. Higher caste is color in the treeline, not public conversation. [[Kalowe]] pilots teach the wait-offshore rule.
+Blue go-betweens descend when a hull waits. Higher caste is color in the treeline, not public conversation. [[kalowe]] pilots teach the wait-offshore rule.
 
 ## Clues
 The beach's width is the protocol. No outsider print reaches the polished root-stair. A brown hole in the canopy, Widow-strangle, is a visible Crown-Taker landmark, not a climb invitation.
@@ -30,4 +30,4 @@ The beach's width is the protocol. No outsider print reaches the polished root-s
 Reef chop makes landing hazardous. Leaving the sand or touching the stair breaks protocol and can draw hidden Grung daggers and poison. Do not add a public pier or town here.
 
 ## Linked
-- [[Veth]] · [[Verdant Teeth]] · [[Grung clans]] · [[Kalowe]]
+- [[veth]] · [[Verdant Teeth]] · [[Grung clans]] · [[kalowe]]

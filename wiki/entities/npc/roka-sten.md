@@ -22,7 +22,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Sparhold]]"
+location: "[[sparhold]]"
 faction: "[[spar-and-snare-outfitters|Spar & Snare Outfitters]]"
 visibility: dm
 ---
@@ -37,7 +37,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Midchain reptile broker and safari supplier |
-| **Home**   | [[Sparhold]] |
+| **Home**   | [[sparhold]] |
 | **Wants**  | To keep his live-creature supply network profitable and his private records out of public hands. |
 
 > **DM thesis:** Roka is a useful lead with a criminal paper trail: he can direct Zort toward a prosthetic contact, but every favor risks exposing his trafficking and bribery.
@@ -66,6 +66,6 @@ Roka stops cooperating when the party reaches for his hidden ledger, names the b
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Zort]] | Roka is the Midchain contact named for Zort's prosthetic lead. |
-| [[Sparhold]] | Roka operates from Sparhold. |
+| [[sparhold]] | Roka operates from Sparhold. |
 | [[spar-and-snare-outfitters\|Spar & Snare Outfitters]] | His safari supplier network feeds live exotic creatures to Sabine Corvo's dealership. |
 | [[rokas-hidden-ledger\|Roka's Hidden Ledger]] | The private ledger records live captures and payments to a boundary scout to misreport timber-cutting lines at the [[verdant-teeth]] fringe. |

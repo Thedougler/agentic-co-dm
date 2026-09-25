@@ -46,7 +46,7 @@ tier: supporting
 
 **Lore Sheet:**
 
-- Came over [[Galewall|the Galewall]] and does not say from where. Ask once and he answers about the shop's roof. Ask twice and he answers about the roof again. The crossing drops all kinds onto Crown docks and most do not stay; he stayed, and that is the one fact about himself he will confirm.
+- Came over [[galewall|the Galewall]] and does not say from where. Ask once and he answers about the shop's roof. Ask twice and he answers about the roof again. The crossing drops all kinds onto Crown docks and most do not stay; he stayed, and that is the one fact about himself he will confirm.
 - Every enchantment on the shelves is real and does exactly what its impressive name promises, which is nothing anybody needs. He believes in every one. Stock list: [[Il Preludio]].
 - **[[serena-cottle]]** owns the other half of the shop, **[[tam-slim-nail]]** keeps the stock, and **[[cecco-trivani]]** is learning the trade slower than he would like.
 - He has never sung. Nobody who works for him has ever raised it with him.

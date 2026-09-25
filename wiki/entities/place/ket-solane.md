@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Ket Solane
@@ -56,7 +56,7 @@ Ket Solane contains false-bottomed smugglers' caves beneath an apparently abando
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** Ket Solane is listed within [[Southern Midchain]], whose steep volcanic islands offer few anchorages and deep water close to shore. [[Halewick]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** Ket Solane is listed within [[Southern Midchain]], whose steep volcanic islands offer few anchorages and deep water close to shore. [[halewick]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

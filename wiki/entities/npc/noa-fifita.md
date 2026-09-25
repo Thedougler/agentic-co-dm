@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Boatyard operator and contact |
 | ---------- | ----------------------------- |
 | **Nature** | Young lizardfolk; slow, sure, and transactional |
-| **Home**   | [[Fifita's Slip]] on [[Kalowe]] |
+| **Home**   | [[Fifita's Slip]] on [[kalowe]] |
 | **Wants**  | To be paid his price for hull work without haggling |
 
 > **DM thesis:** Noa provides discreet boatyard work only when the price and introduction are right; he leaves rather than argue.
@@ -77,5 +77,5 @@ Noa speaks slowly and evenly, treating every price as final and avoiding any arg
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Fifita's Slip]] | The unofficial boatyard Noa operates on Kalowe's lagoon side. |
-| [[Kalowe]] | The island where the slip is hidden. |
+| [[kalowe]] | The island where the slip is hidden. |
 | [[taufa-fifita]] | His family's trading house and the source of his cover with harbour bosses. |

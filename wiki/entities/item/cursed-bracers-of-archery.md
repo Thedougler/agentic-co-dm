@@ -16,6 +16,7 @@ kind: magic
 rarity: uncommon
 attunement: true
 owner: "[[jean-claude-tabarnack]]"
+region: "[[calven-and-calveno]]"
 summary: "A +2 damage archery bracer carrying two paired curses: a nat 1 turns the wearer neon and leaves a permanent mark, a nat 20 compels a loud boast."
 provenance:
   extracted: 0.85
@@ -38,13 +39,11 @@ While wearing these bracers, you have proficiency with the Longbow and Shortbow,
 
 Both curses leave attacks, checks, and saves untouched. Neither curse affects removing or un-attuning the bracers. Only a permanent Neon Flare patch needs Remove Curse specifically.
 
-## At a Glance
-
-[[jean-claude-tabarnack]] bought these to boost ranged damage alongside his +1 Silent Shortbow. Both curses cost him control over his image: neon marks that accumulate, and involuntary boasts that can blow cover.
 
 ## At the Table
 
 Every natural 1 or natural 20 Jean-Claude rolls with these bracers is a moment his companions get to watch play out — a permanent neon patch on a miss extreme, or a loud claim of credit on a crit.
+[[jean-claude-tabarnack]] bought these to boost ranged damage alongside his +1 Silent Shortbow. Both curses cost him control over his image: neon marks that accumulate, and involuntary boasts that can blow cover.
 
 ## Connections
 

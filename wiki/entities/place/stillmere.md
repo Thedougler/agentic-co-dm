@@ -20,7 +20,7 @@ region: "Otel Karn"
 relationships:
   - target: "[[otel-karn]]"
     type: related_to
-  - target: "[[Otho]]"
+  - target: "[[otho]]"
     type: related_to
 ---
 # Stillmere
@@ -41,7 +41,7 @@ relationships:
 
 ## Who
 
-Duelists and visiting crews use Stillmere as a proving ground. The site has no established resident roster. [[Otho]] walks among the islanders as a beloved local drunk on [[Otel Karn]], but the source does not place him specifically at Stillmere.
+Duelists and visiting crews use Stillmere as a proving ground. The site has no established resident roster. [[otho]] walks among the islanders as a beloved local drunk on [[Otel Karn]], but the source does not place him specifically at Stillmere.
 
 ## What
 
@@ -58,5 +58,5 @@ Stillmere is on the remote island of [[Otel Karn]]. Its exact approach and neigh
 
 ## Why
 
-The party comes to Stillmere to test themselves in a duel before the cost of unhealable wounds becomes clear, or to investigate why death has stopped working on [[Otel Karn]]. The source names boring [[Otho]] as the easiest resolution to the island's larger problem; a straight fight near level 10 is unwinnable.
+The party comes to Stillmere to test themselves in a duel before the cost of unhealable wounds becomes clear, or to investigate why death has stopped working on [[Otel Karn]]. The source names boring [[otho]] as the easiest resolution to the island's larger problem; a straight fight near level 10 is unwinnable.
 

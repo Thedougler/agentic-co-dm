@@ -108,7 +108,7 @@ Vantyrus leads Countless through covert routes, hired blades, paid contacts, and
 | Place | Why it matters now |
 | ----- | ------------------ |
 | [[Midchain]] | The region containing the pilgrim routes and grey markets where Countless operates. |
-| [[Yssenmoor]] | Sentinel movement there can trigger Countless's waystation search after the Uncertainty enters Midchain waters. |
+| [[yssenmoor]] | Sentinel movement there can trigger Countless's waystation search after the Uncertainty enters Midchain waters. |
 | Sentinel waystations | Countless searches them for carriers and recent visitors while keeping its order chain hidden. |
 
 ## Useful things
@@ -117,7 +117,7 @@ Vantyrus leads Countless through covert routes, hired blades, paid contacts, and
 | ------ | ----------- |
 | [[fate-spinner\|Fate Spinner]] | Identifies the gift Countless wants and explains why Crissdalynn is targeted. |
 | Missing names and blank ledgers | Show where Countless's one-job network has acted without exposing its patron. |
-| [[Uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
+| [[uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
 
 ## Complications
 

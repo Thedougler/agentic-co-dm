@@ -27,4 +27,4 @@ Blue-caste go-betweens handle beach trade. Higher castes watch from the treeline
 Four and five canopy layers, living root stairs, high pools, and a drowned silence under green shade. Standing Leap and climbing make the forest navigable for Grung; outsiders leave traces. If the party lingers or climbs, the beach invitation becomes a patrol problem.
 
 ## Linked
-- [[Veth West Beach]] · [[Verdant Teeth]] · [[Grung clans]] · [[Sorn]] · [[Orak]]
+- [[Veth West Beach]] · [[Verdant Teeth]] · [[Grung clans]] · [[sorn]] · [[orak]]

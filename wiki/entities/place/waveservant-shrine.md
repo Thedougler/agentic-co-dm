@@ -56,7 +56,7 @@ The Kalowe Waveservant Shrine sits at the only navigable gap through Kalowe's re
 
 ## Where
 
-- **North:** [[Kalowe]]; the shrine is built into the causeway wall at the reef gap.
+- **North:** [[kalowe]]; the shrine is built into the causeway wall at the reef gap.
 - **East:** The reef-gap water; no separate destination is canonized.
 - **South:** Reef water beyond the navigable gap; no separate destination is canonized.
 - **West:** The remaining causeway and Kalowe's islets; the exact street route is not established.

@@ -16,7 +16,7 @@ campaign: shattered-sea
 visibility: dm
 status: offered
 scope: local
-region: "[[Kalowe]]"
+region: "[[kalowe]]"
 quest_giver: "[[Reweti Kahurangi]]"
 factions: []
 deadline: "Before another crew reaches the cache."
@@ -26,7 +26,7 @@ summary: "Reweti Kahurangi can direct capable parties toward nine crates of priz
 # Kalowe Bad Receipt Cache
 
 **Status.** Offered  
-**Objective.** Locate the nine crates of prize cargo near [[Kalowe]] and decide what claim, recovery, or exposure follows.  
+**Objective.** Locate the nine crates of prize cargo near [[kalowe]] and decide what claim, recovery, or exposure follows.  
 **Why now.** [[Reweti Kahurangi]] has noticed Damu's business and may direct capable parties toward it; the cache is already part of a recovery race.  
 **Deadline.** Before another crew reaches the cache.
 
@@ -35,7 +35,7 @@ summary: "Reweti Kahurangi can direct capable parties toward nine crates of priz
 | | |
 |---|---|
 | **Quest giver** | [[Reweti Kahurangi]] |
-| **Region** | [[Kalowe]] |
+| **Region** | [[kalowe]] |
 | **Scope** | Local |
 | **Opposition** | The captain and crew of [[The Bad Receipt]] |
 | **Reward** | Nine crates of prize cargo, if the party reaches and can claim them. |
@@ -87,7 +87,7 @@ The Bad Receipt's prize cargo is separated from the schooner near Kalowe. The sh
 |---|---|---|---|
 | Reweti Kahurangi notices Damu's business and directs capable parties toward it. | [[The Flat Water]] | No | Available |
 | The Bad Receipt is known to work the southern approaches of the [[Central Strait Crossing]]. | [[The Bad Receipt]] | No | Available |
-| Nine crates of prize cargo sit on a nameless limestone rock near Kalowe. | [[Kalowe]] | No | Available |
+| Nine crates of prize cargo sit on a nameless limestone rock near Kalowe. | [[kalowe]] | No | Available |
 
 ## People & factions
 
@@ -102,7 +102,7 @@ The Bad Receipt's prize cargo is separated from the schooner near Kalowe. The sh
 | Place | Why it matters now |
 |---|---|
 | [[The Flat Water]] | Reweti runs this Kalowe establishment, where contracts and quiet information pass through the room. |
-| [[Kalowe]] | The local settlement and waters around the limestone cache. |
+| [[kalowe]] | The local settlement and waters around the limestone cache. |
 | [[Central Strait Crossing]] | The Bad Receipt works the southern approaches, providing a route to trace its activity. |
 
 ## Useful things

@@ -19,28 +19,73 @@ updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: rival
+location: "[[calders-tooth-and-port-tidefall]]"
+faction: "[[dravosi-crown|Dravosi Crown]]"
 visibility: dm
 ---
 # Aldric Drave
 
-# Aldric Drave
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Wants:** an Heir to renew his three-century phylactery network before its bloodline thins past use, and the Crown's own genealogical records are how he finds one.
+| **Role**   | Rival; hidden founder and controller of the Dravosi Crown |
+| ---------- | --------------------------------------------------------- |
+| **Nature** | A centuries-old lich who speaks like a formal document and measures time in decades. |
+| **Home**   | Sealed [[Drave Vaults]] beneath [[calders-tooth-and-port-tidefall]] |
+| **Wants**  | An Heir to renew his three-century phylactery network before its bloodline thins past use. |
+| **Secret** | Every Dravosi noble carrying his blood is a phylactery; destroying Aldric means killing every living descendant or he returns within weeks. |
+| **Leverage** | The Crown's genealogical apparatus is the bloodline map he designed, and two [[fort-crestwall]] detachments obey his sealed orders. |
 
-> [!narration] Narration
+> **DM thesis:** Aldric is a patient hidden sovereign who turns Crown genealogy into a hunt for the descendant whose body can extend his existence.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Aldric Drave
 > The man at the far end of the room wears a Dravosi dress uniform cut and insignia correct down to the stitch, a standard retired two hundred years ago. Tall, gaunt, and utterly still, he shows no haste when he turns to look at you, the stillness of someone who has waited in this room for decades. His skin is pale as old paper, and his grey eyes catch no light. When he speaks, his voice comes clipped and formal, like a document read aloud, then he folds his hands and goes still again.
+```
+````
 
-**A lich since before the first Dravosi ship reached the Scatter.** Aldric Drave built the [[Hierarch]] form that founded the Dravosi Crown's colonial project in [[verdant-scatter|the Scatter]], then spread his bloodline into every noble family the Crown built. He designed the Crown's own genealogical apparatus (ledgers, lineage records, deep files) to track every living descendant, and over two centuries the [[dravosi-crown]] itself became, unknowingly, a map of his bloodline.
+## Running Aldric Drave
 
-**Bloodline mixing across three centuries has thinned the network past safe cohesion.** He lives beneath [[calders-tooth-and-port-tidefall]] in the sealed [[Drave Vaults]], cliffs closing them into the rock below [[fort-crestwall]]. The fort's garrison hides two detachments holding it under his own sealed orders, and the Crown doesn't know the vaults exist. Every Dravosi noble carrying his blood is a phylactery, so destroying him means killing every living descendant, or he returns within weeks.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-**The Tessarine Concordat's real target has always been him.** [[cosimo-verantio]], the Concordat's Principal, treats the [[pearl-of-souls]] as Aldric's way past his own bloodline limits, whether new anchors or a soul reservoir outright, and the Concordat's commission that sent agents hunting the Pearl targeted Aldric from the start, not merely curiosity about him.
+Aldric receives the party from the far end of a room or vault, already still and waiting. He speaks like an old document read aloud and offers no haste or visible alarm.
 
-**The Heir is the strongest living sorcerer in the Dravosi line, someone the crew already knows.** Aldric reads the candidate pool from the Crown's own records and favors the Draves branch, since it mirrors his own name (see [[geoffrey-draves]] DM Only). [[aldous-draves]], the Crown factor clerk who flagged the anomalously deep Draves archive entry, is how that thread first surfaces. Reveal him only once the crew knows enough Dravosi that the choice hurts.
+> *Aldric*: “The blood thins, as it always does. That is why I am here.”
+```
 
-**Formal, clipped, and patient, he measures time in decades.** He speaks like an old document read aloud, using childhood nicknames for Crown officials that only he remembers as children: *"the blood thins, as it always does. That is why I am here."* That calm holds until someone threatens the Heir. Then something old and cold surfaces, something that hasn't needed to move in ages but still remembers how.
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-## Stats & Combat
+Aldric remains formal, clipped, and patient while discussing the Crown, genealogy, or the Tessarine Concordat. He closes when anyone threatens the Heir. His calm then gives way to something old and cold that remembers how to move.
+
+He built the [[Hierarch]] form that founded the Crown's colonial project in [[verdant-scatter|the Scatter]], spread his bloodline through the noble families, and designed the ledgers and deep files that unknowingly map his descendants. He favors the Draves branch and reads [[aldous-draves]]'s anomalously deep archive entry as the first surface of that thread.
+```
+````
+
+## Voice
+
+Aldric uses clipped, formal sentences and childhood nicknames for Crown officials that only he remembers as children. He speaks with the patience of someone who has waited decades.
+
+**The ask:** *“The blood thins, as it always does. That is why I am here.”*
+
+**The refusal:** *“That is not a matter for the Crown's public files.”*
+
+**Under pressure:** *“Threaten the Heir, and you will learn what has survived beneath your history.”*
+**Combat.**
 
 ![[Commoner]]
 
@@ -57,11 +102,11 @@ visibility: dm
 - [[geoffrey-draves]]: the Draves-branch descendant his heir-selection process has a dormant interest in. He doesn't know it.
 - [[aldous-draves]]: the Crown factor clerk who flagged the deep Draves archive record that process reads from.
 
-## Goals & Fronts
+**Fronts.**
 
 Active Fronts (clocks): what Aldric is working toward on his own timeline, and what happens if nobody stops him.
 
-### Front: Heir Renewal
+**Front: Heir Renewal.**
 
 **Lifecycle:** dormant
 **Aim:** inhabit the strongest sorcerous descendant of his own bloodline and begin his three-century cycle again.

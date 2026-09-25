@@ -64,7 +64,7 @@ A roughly mile-wide tidal mere sits among hedged farms. The water shallows in su
 | Edge | Neighbor | Crossing / boundary | What changes across it |
 | ---- | -------- | --------------------- | ---------------------- |
 |      | [[crown-islands]] | Parent island group | Crown waters and other Crown islands |
-|      | [[Harwick]] | Canon gap: crossing not given | Canon gap |
+|      | [[harwick]] | Canon gap: crossing not given | Canon gap |
 |      | [[Stenmark]] | Canon gap: crossing not given | Canon gap |
 |      | [[calven-and-calveno]] | Canon gap: crossing not given | Canon gap |
 
@@ -91,4 +91,4 @@ Fishing and farming families live here. Reeds, frogs, toads, crocodiles, and fis
 
 | Date | Change | Cause | Fallout / pages affected |
 | ---- | ------ | ----- | ------------------------ |
-|      | None from play | Dump source 2026-09-05 | [[Aldenmere]] |
+|      | None from play | Dump source 2026-09-05 | [[aldenmere]] |

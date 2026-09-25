@@ -33,4 +33,4 @@ tier: supporting
 
 ## Provenance
 
-Left as an offering at the shrine corner past [[Sparhold]]'s fish stalls, tended by a widow old enough to remember the fishing village that stood on this shore before the walls went up. The portrait predates her own memory of the place. She keeps the offering box but has never opened it to look.
+Left as an offering at the shrine corner past [[sparhold]]'s fish stalls, tended by a widow old enough to remember the fishing village that stood on this shore before the walls went up. The portrait predates her own memory of the place. She keeps the offering box but has never opened it to look.

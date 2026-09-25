@@ -12,5 +12,5 @@ summary: Folder index of Synthesis.
 
 - [[synthesis/dm-voice-notes|DM Voice Notes]]
 - [[synthesis/party-combat-profile|Party Combat Profile]]
-- [[synthesis/Players|Players]]
+- [[synthesis/players|Players]]
 - [[synthesis/story-so-far|Story So Far]]

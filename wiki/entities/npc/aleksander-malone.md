@@ -23,44 +23,96 @@ campaign: shattered-sea
 visibility: dm
 status: alive
 role: "Hound of Tyr"
+location: "[[blackrule]]"
 faction: "[[dravosi-crown]]"
 relationships:
   - target: "[[khlysty-the-flock]]"
     type: related_to
   - target: "[[dravosi-crown]]"
     type: related_to
-  - target: "[[Tyr]]"
+  - target: "[[tyr]]"
     type: related_to
   - target: "[[shepherd-grigori]]"
     type: related_to
-  - target: "[[Blackrule]]"
+  - target: "[[blackrule]]"
     type: related_to
 ---
 # Aleksander Malone
 
-## Who and want
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-[[aleksander-malone]] is the [[dravosi-crown]]'s Hound of [[Tyr]]. The Crown reserves him for confirmed [[khlysty-the-flock]] infiltration. He trains at [[Blackrule]] and leaves only when heresy is confirmed. Word of confirmed heresy reaches him and he goes on his own judgment; the Crown once assigned a handler, and that handler did not survive contact. Crown talk names him a dog that needs a long leash. He was aboard [[hcs-ordinance]] under [[corbin-knighton]] while hunting [[shepherd-grigori]]. His signature line is: "May God have mercy on my enemies, for they shall have none from me."
+| **Role**   | Rival; Hound of [[tyr]] |
+| ---------- | ------------------------ |
+| **Nature** | Reserved Crown hunter who treats confirmed heresy as righteous judgment. |
+| **Home**   | [[blackrule]], a chapterhouse cut into volcanic terrace-rock in the southern [[Midchain]] |
+| **Wants**  | To hunt confirmed [[khlysty-the-flock|Flock]] infiltration and deliver judgment. |
+| **Leverage** | The Crown reserves him for confirmed heresy, and his release at [[sarns-landing]] changed Crown policy. |
+| **Limit**  | He is a hunter, not a negotiator; the Crown's formal confirmation rule is the leash on his violence. |
 
-## Look
+> **DM thesis:** Aleksander is a patient, righteous Crown weapon whose grim joy becomes visible only when someone gives him a confirmed heretic to judge.
+```
 
-Source is silent beyond half plate and blessed weapons on the fight sheet. Medium elf humanoid; half plate AC 18; blessed longsword and bayonets.
+```col-md
+flexGrow=1
+===
+> [!narration] Aleksander Malone
+> Tall and spare, a High Elf in a Crown-service coat that has been through worse than tailoring can hide. The wool carries salt and something older. Seams gone pale at the shoulders, patched at the elbows with leather that matches nothing else on him. His hands are steady and unused to stillness, resting open at his sides the way a man's do when he expects to need them.
+>
+> Before he speaks again, fingers touch his lips. Quick as a blessing. His eyes have already finished with whoever he is looking at.
+```
+````
 
-## First minutes and posture
+## Running Aleksander Malone
 
-When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. He treats the violence as righteous judgment and takes grim joy in it rather than reluctance. At [[sarns-landing]] he was once loosed in public; the result was ugly enough that Crown policy now requires formal heresy confirmation before he is released. On [[hcs-ordinance]], he hunted Grigori while the cutter stood under merchant cover.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-## Named ties
+When heresy is confirmed, Malone arrives as a Crown hunter, not a negotiator. He trains at [[blackrule]] and leaves only when confirmation reaches him. On [[hcs-ordinance]], he hunted [[shepherd-grigori]] while the cutter stood under merchant cover.
 
-- [[dravosi-crown]] — employer and leash.
-- [[Tyr]] — scales cut into the altar stone at [[Blackrule]].
-- [[khlysty-the-flock]] / [[shepherd-grigori]] — the hunt target pattern.
-- [[corbin-knighton]] / [[hcs-ordinance]] — recent boarding companion.
-- [[Blackrule]] — chapterhouse he chose himself, cut into volcanic terrace-rock in the southern [[Midchain]], from disdain for civilized excess rather than exile.
-- [[sarns-landing]] — public release that changed Crown policy.
-- [[Ashglass]], [[hollow-choir]], and [[corrigans-rest]] — named places the source says do not overlap [[Blackrule]].
+> *Malone*: “The Crown has confirmed the heresy.”
+```
 
-## Combat
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Malone treats violence as righteous judgment and takes grim joy in it rather than reluctance. He was once loosed in public at [[sarns-landing]]; the result was ugly enough that Crown policy now requires formal confirmation before he is released. The Crown once assigned him a handler, and that handler did not survive contact.
+
+He remains calm while assessing a confirmed target. Threaten [[shepherd-grigori]] or another protected Heir-like asset and something old and cold surfaces; he has waited long enough to remember how to move without haste.
+```
+````
+
+## Voice
+
+Malone speaks in clipped, formal sentences with the finality of a judgment. He avoids negotiation and names heresy as a settled category once the Crown confirms it.
+
+**The ask:** *“State your name and your allegiance.”*
+
+**The refusal:** *“There is nothing to negotiate.”*
+
+**Under pressure:** *“The Crown confirmed the heresy. Judgment follows.”*
+
+## Connections
+
+| Connection | Meaning |
+| ---------- | ------- |
+| [[dravosi-crown]] | Employer and leash; the Crown reserves him for confirmed Flock infiltration. |
+| [[tyr]] | Patron named on the scales at [[blackrule]]. |
+| [[khlysty-the-flock]] | Hunt target pattern. |
+| [[shepherd-grigori]] | Target he hunted aboard [[hcs-ordinance]]. |
+| [[corbin-knighton]] | Recent boarding companion aboard the cutter. |
+| [[blackrule]] | Chapterhouse he chose in the southern [[Midchain]]. |
+| [[sarns-landing]] | Public release that changed Crown policy. |
+| Ashglass, Hollow Choir, and Corrigan's Rest | Named places the source says do not overlap [[blackrule]]; no owner page is currently filed for Hollow Choir. |
+**Combat.**
 
 CR 14. Regeneration 20, Heretic's Bane against fiends and undead, Sneak Attack, 7th-level Wisdom spellcasting (DC 17), Multiattack with blessed longsword and bayonet, Bayonet Barrage cone, Action Surge, Spiritual Weapon, Rebuke the Unclean, Guided Judgment, and Withdraw by Judgment when reduced below 49 hit points. A later idea note asks for no invented supernatural resilience; the live sheet is kept. ^[ambiguous]
 
@@ -119,19 +171,3 @@ reactions:
     desc: "When Malone is reduced below 49 hit points, he can teleport up to 30 feet to an unoccupied space he can see without provoking opportunity attacks, and does not return to the fight this encounter."
 ```
 
-## Connections
-
-- [[dravosi-crown]]
-- [[khlysty-the-flock]]
-- [[shepherd-grigori]]
-- [[Tyr]]
-- [[Blackrule]]
-- [[hcs-ordinance]]
-- [[corbin-knighton]]
-
-## Narration
-
-> [!narration]
-> *Tall and spare, a High Elf in a Crown-service coat that has been through worse than tailoring can hide. The wool carries salt and something older. Seams gone pale at the shoulders, patched at the elbows with leather that matches nothing else on him. His hands are steady and unused to stillness, resting open at his sides the way a man's do when he expects to need them.*
->
-> *Before he speaks again, fingers touch his lips. Quick as a blessing. His eyes have already finished with whoever he is looking at.*

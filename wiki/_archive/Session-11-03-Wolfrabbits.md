@@ -238,7 +238,7 @@ The [[Aruhe - Spiguar]] keeps its wolfrabbit, and the pack breaks off Torn Cross
 
 ## Backup
 
-[[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - Grasslands]] · [[Aruhe - Spiguar]] · [[Aruhe - Wolfrabbit]] · [[Aruhe - Razer-Grass]] · [[Aruhe - Redheart Berry]] · [[Taking on Aruhe]] · [[Session-11-00-Random-Tables]] · [[Aruhe - River - Line Bank]] · [[Session-11-04-What-They-Ate]] · [[Session-11-00-Birds-of-a-Feather]] · [[Aruhe - Young Bloodhawk]] · [[Flying Boots]]
+[[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - Grasslands]] · [[Aruhe - Spiguar]] · [[Aruhe - Wolfrabbit]] · [[Aruhe - Razer-Grass]] · [[Aruhe - Redheart Berry]] · [[Taking on Aruhe]] · [[session-11-00-random-tables]] · [[Aruhe - River - Line Bank]] · [[Session-11-04-What-They-Ate]] · [[session-11-00-birds-of-a-feather]] · [[Aruhe - Young Bloodhawk]] · [[Flying Boots]]
 
 ## Battlemap
 

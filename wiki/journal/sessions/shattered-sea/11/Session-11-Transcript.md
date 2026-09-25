@@ -37,7 +37,7 @@ Table labels in the source: **DM**, **Delmar**, **Perrin**, **Crissdalynn**, and
 
 Play resumes above the northern terrace edge of [[hungry-isle|Aruhe]]. The party is still aloft with the crown squid braced in the trees. [[Jean-Claude Tabarnack]] whispers "Man," goes limp on [[Delmar Fisk]]'s back, and stares at the sun. Delmar catches him and refuses a bag of holding because of suffocation risk; Jean-Claude ends the night wrapped in Delmar's coat.
 
-An X-shaped shadow drops from the sun. The adult four-winged [[bloodhawk]] has roughly a two-hundred-foot wingspan. It kills the crown squid hard enough to shatter nearby trees. Delmar calls to hug the tree line and fly low. Perrin throws a Minor Illusion decoy. The party flees inland rather than fight. Inland smoke marks about a day's walk upriver; the beach and [[Uncertainty]] sit the other way, with the kill between them and the ship.
+An X-shaped shadow drops from the sun. The adult four-winged [[bloodhawk]] has roughly a two-hundred-foot wingspan. It kills the crown squid hard enough to shatter nearby trees. Delmar calls to hug the tree line and fly low. Perrin throws a Minor Illusion decoy. The party flees inland rather than fight. Inland smoke marks about a day's walk upriver; the beach and [[uncertainty]] sit the other way, with the kill between them and the ship.
 
 ## Timeline (beats 01–10)
 
@@ -100,7 +100,7 @@ Before full rest settles, Crissdalynn finds a volatile wild-magic flower. Perrin
 - [[talon-skarn]] remains in Crissdalynn's face with one Legendary Resistance spent; the [[fate-spinner]] is still on her.
 - [[Jean-Claude Tabarnack]] is still catatonic.
 - The woman in the woods and the inland survivor column are uncontacted.
-- Route back to [[Uncertainty]] is still blocked by large predators and distance.
+- Route back to [[uncertainty]] is still blocked by large predators and distance.
 - An unseen night watcher left when the lantern came up; it may return.
 - Matteo wants the ship; his full reliability is untested beyond this night.
 

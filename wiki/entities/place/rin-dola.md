@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[midchain-west|Western Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Rin Dola
@@ -65,7 +65,7 @@ A reclusive cartographer operates at Rin Dola. No name, assistants, customers, f
 - **South:** Canon gap; no neighboring site or travel distance is recorded.
 - **West:** Canon gap; no neighboring site or travel distance is recorded.
 - **Region:** [[midchain-west|Western Midchain]], where charts are broadly right and local pilots remain available, making Rin Dola's accuracy unusual rather than merely useful.
-- **Named connection:** [[Kalowe]].
+- **Named connection:** [[kalowe]].
 
 ---
 ## Why

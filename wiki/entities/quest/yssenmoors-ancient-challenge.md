@@ -31,7 +31,7 @@ tier: supporting
 ## Connections
 
 - [[fate-spinner]]. The artifact reacts to the ley line running beneath Yssenmoor. Old magic predates the Sentinels' doctrine of non-intervention.
-- [[Yssenmoor]]. The island itself is fog-bound and hallowed ground under Quackers' unconscious protection.
+- [[yssenmoor]]. The island itself is fog-bound and hallowed ground under Quackers' unconscious protection.
 - [[The Countless]]. The Long Sight Hunt Front is active and sweeping for the Spinner.
 - [[crissdalynn-khinriss]]. She carries the Spinner. [[master-kyzil|Kyzil]] just warned her to hide it.
 - [[sentinels-of-the-eyrie|The Schism's Third Name]]. This Sentinel thread connects to old power that predates the order's non-intervention doctrine.
@@ -51,7 +51,7 @@ Will the crew answer the challenge of a guardian nobody has answered in years, a
 
 ### Current State
 
-- The *[[Uncertainty]]* sails the Northern Midchain heading south. [[Yssenmoor]] is one of many tightly packed islands they pass.
+- The *[[uncertainty]]* sails the Northern Midchain heading south. [[yssenmoor]] is one of many tightly packed islands they pass.
 - Permanent fog sits unmoving over the island in a wind that fills the sails. Sound arrives ahead of its source.
 - A voice carries across the water from inside the fog: formal, patient, addressed to no one.
 - The [[fate-spinner]] warms in [[crissdalynn-khinriss|Crissdalynn's]] pouch as they draw near.

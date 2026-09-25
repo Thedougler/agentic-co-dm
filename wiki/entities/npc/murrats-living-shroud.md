@@ -29,14 +29,14 @@ tier: supporting
 ## Actors
 
 - [[Moucheron|The Moucheron]] — defend their island against any outsider and kill anyone who lands. Millions circle the island in a permanent living cloud. The first wave targets everyone on deck, crew and party alike, and more follow from every direction.
-- [[Ket]] — flies out with the greeting party. Recognizes the [[Uncertainty]] and warns the crew to leave. Can hold himself back one turn. The others will not wait, and neither will he after that.
+- [[Ket]] — flies out with the greeting party. Recognizes the [[uncertainty]] and warns the crew to leave. Can hold himself back one turn. The others will not wait, and neither will he after that.
 
 ## Connections
 
-- [[Murrat]] owns the island's geography, defenses, culture, and population.
+- [[murrat]] owns the island's geography, defenses, culture, and population.
 - [[Moucheron]] owns the species statblock, feeding clock, and mercenary culture.
 - [[Ket]] owns the debt history: freed by the crew in Session 02, flew home to Murrat.
-- [[five-blades]] owns the mercenary connection out of [[Kalowe]].
+- [[five-blades]] owns the mercenary connection out of [[kalowe]].
 
 ## Beat Chart
 
@@ -57,7 +57,7 @@ Will curiosity cost the crew of the Uncertainty blood, or do they read the warni
 
 ## Murrat approach
 
-The approach belongs to [[Murrat]]. From open water, the cloud reads as weather until its buzzing resolves into millions of wings. Closing distance detaches a greeting party; [[Ket]] recognizes the [[Uncertainty]] and gives the crew one turn to flee before the Moucheron attack.
+The approach belongs to [[murrat]]. From open water, the cloud reads as weather until its buzzing resolves into millions of wings. Closing distance detaches a greeting party; [[Ket]] recognizes the [[uncertainty]] and gives the crew one turn to flee before the Moucheron attack.
 
 ## Live Branches
 

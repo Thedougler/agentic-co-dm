@@ -29,7 +29,7 @@ campaign: shattered-sea
 visibility: dm
 scope: regional
 region: "Crown Islands"
-base: "[[Harwick]]"
+base: "[[harwick]]"
 status: active
 kind: military
 relationships:
@@ -59,7 +59,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | Colonial court and naval service from Tethyr. |
 | **Scope** | Regional; the Crown Islands and western approach of the Verdant Scatter. |
-| **Base** | [[Harwick]], home of the Naval Yard and Admiralty. |
+| **Base** | [[harwick]], home of the Naval Yard and Admiralty. |
 | **Leader** | Dravosi Admiralty; [[governor-voss|Governor Voss]] holds local authority. |
 | **Public purpose** | Keep harbours, shipping lanes, and western approaches under Crown law. |
 | **Signature method** | Inspection papers, vessel ratings, compulsory harbour stops, garrisons, and naval force. |
@@ -89,10 +89,10 @@ flexGrow=1
 - **Recent change.** [[khlysty-the-flock|Khlysty / the Flock]] infiltration and Midchain pressure are escalating alongside ordinary Crown inspection work.
 - **Pressure.** The Crown must keep western approaches under inspection while it can run cutters through the Midchain but cannot keep the whole sea.
 - **Strength.** Its garrisons, stamps, inspectors, ratings, and Crown hulls turn a legal claim into immediate force.
-- **Vulnerability.** Crown reach weakens beyond the Crown Islands and the western edge of the [[Galewall]]; the service cannot hold every lane.
+- **Vulnerability.** Crown reach weakens beyond the Crown Islands and the western edge of the [[galewall]]; the service cannot hold every lane.
 - **Opportunity.** The rivalry between Crown inspection and Tessarine credit gives captains competing authorities to invoke. ^[inferred]
 
-The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts martial, and warrants. Sailors still pay [[Umberlee]] at dockside shrines because the sea is a fact while a document is a claim. In ordinary cases an inspector leads, enforcers follow, and a court receives the matter. Heresy is different: [[aleksander-malone]] is reserved for confirmed heresy, not ordinary crime.
+The Crown swears by [[tyr]] as the court god of oaths, commissions, courts martial, and warrants. Sailors still pay [[Umberlee]] at dockside shrines because the sea is a fact while a document is a claim. In ordinary cases an inspector leads, enforcers follow, and a court receives the matter. Heresy is different: [[aleksander-malone]] is reserved for confirmed heresy, not ordinary crime.
 
 ---
 
@@ -104,7 +104,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 
 **Next move:** Continue compulsory harbour stops and recorded ratings while tracing substitute toxin through privateer kit and Calveno's sewers.
 
-**Needs:** Crown hulls, inspection posts, garrison support, and officers who can connect the [[Simone|Simone]] pipeline to a responsible party.
+**Needs:** Crown hulls, inspection posts, garrison support, and officers who can connect the [[simone|Simone]] pipeline to a responsible party.
 
 **Opposition:** [[khlysty-the-flock|Khlysty / the Flock]], Midchain pressure, and the [[tessarine-concordat|Tessarine Concordat]], which competes to define movement through credit rather than inspection.
 
@@ -154,7 +154,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
 | [[crown-islands]] | Headquarters / Strong | The western island chain and its harbour approaches. | Holding the chain while pressure moves east. |
-| [[Harwick]] | Strong | Naval Yard, Admiralty, and the Bight anchorage. | Building and directing ships of the line. |
+| [[harwick]] | Strong | Naval Yard, Admiralty, and the Bight anchorage. | Building and directing ships of the line. |
 | [[calven-and-calveno]] | Contested | Harbour authority and the Inspection Pier. | Four Council houses align with Tessarine credit; three can still stall. |
 | [[calders-tooth-and-port-tidefall]] | Strong | Gatepost and recorded entry into the central lanes. | Every incoming ship should answer questions and show papers. |
 | [[fort-crestwall]] | Hidden | Sealed orders and the living chart. | Two garrison detachments hold the fort without the governor's knowledge. |
@@ -168,7 +168,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 | [[tessarine-concordat]] | Rival | Recognition that Crown inspection defines western access. | Tessarine credit competes with Crown papers and force. |
 | [[khlysty-the-flock]] | Hostile | No infiltration of Crown noble houses or service. | Confirmed infiltration brings [[aleksander-malone]] into the response. |
 | [[the-passage\|The Passage]] | Hostile | Compliance with official roads, harbours, and patrols. | Passage movement seeks freedom from Crown records. |
-| [[Waveservants]] | Complicated | Usable routes and stable harbour infrastructure. | Both powers pay [[Umberlee]] while competing over movement. |
+| [[waveservants]] | Complicated | Usable routes and stable harbour infrastructure. | Both powers pay [[Umberlee]] while competing over movement. |
 | [[aldric-drave]] | Hidden | No public relationship is acknowledged. | The Crown is the bloodline map he founded. |
 
 ### Party
@@ -213,7 +213,7 @@ The Crown swears by [[Tyr]] as the court god of oaths, commissions, courts marti
 - **Want:** Keep western approaches under inspection law before the next meaningful campaign interval.
 - **Move:** Run cutters through the main lanes, continue harbour stops, and trace the substitute-toxin pipeline.
 - **Mark:** A ship, harbour, or privateer kit gains a clearer Crown rating or an investigation mark.
-- **Signal:** Inspection papers, tighter stops, a seized shipment, or an officer asking after [[Simone]] reaches the party.
+- **Signal:** Inspection papers, tighter stops, a seized shipment, or an officer asking after [[simone]] reaches the party.
 - **Collision:** [[khlysty-the-flock|Khlysty / the Flock]], [[tessarine-concordat|Tessarine Concordat]], Midchain pressure, and the limits of Crown reach.
 - **Player opening:** The party can choose whether to comply, contest, expose, or redirect Crown attention.
 

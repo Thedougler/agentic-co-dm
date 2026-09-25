@@ -35,7 +35,7 @@ Spar & Snare Outfitters is [[Roka Sten]]'s supplier network for live exotic crea
 
 ## If the party
 
-- **Follow the supplier trail.** Start with [[Roka Sten]] and his expedition records in [[Sparhold]].
+- **Follow the supplier trail.** Start with [[Roka Sten]] and his expedition records in [[sparhold]].
 - **Inspect the market end.** [[Sabine Corvo]] can identify what stock arrived, what the market values, and which expeditions have missed their returns.
 - **Search the records.** [[Roka's Hidden Ledger]] records actual specimen collections, payments, and boundary-bribery evidence.
 - **Interrupt the supply chain.** Missing expeditions and contracting supply create pressure, but the source does not establish a single required response.
@@ -54,7 +54,7 @@ Spar & Snare Outfitters is [[Roka Sten]]'s supplier network for live exotic crea
 
 ## Where
 
-- **North:** [[Sparhold]]; Roka Sten is the Midchain contact named for the network's expedition side.
+- **North:** [[sparhold]]; Roka Sten is the Midchain contact named for the network's expedition side.
 - **East:** The [[Verdant Teeth]] fringe; expeditions collect the network's rare stock there.
 - **South:** No separate canonized neighbor is recorded.
 - **West:** [[The Live Hold]]; Sabine Corvo receives and sells the creatures.

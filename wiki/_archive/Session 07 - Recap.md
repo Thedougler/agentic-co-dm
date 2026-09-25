@@ -13,7 +13,7 @@ tags: [session, recap]
 # Session 07 - Recap
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you brought the prize *[[Uncertainty]]* into [[Calven and Calveno|Calveno]]. [[Delmar Fisk]] told you his fleet stole the [[Pearl of Souls]]. [[Umberlee]] took [[Umberlee - Branca|Branca]] and named the Pearl as her price. You raided the sewers with [[Catarina Da'Virelli]]. [[Solange Barret]] spoke Agni, and she stood remade at twelve feet.
+> Last time on the Shattered Sea, you brought the prize *[[uncertainty]]* into [[Calven and Calveno|Calveno]]. [[Delmar Fisk]] told you his fleet stole the [[Pearl of Souls]]. [[Umberlee]] took [[Umberlee - Branca|Branca]] and named the Pearl as her price. You raided the sewers with [[Catarina Da'Virelli]]. [[Solange Barret]] spoke Agni, and she stood remade at twelve feet.
 >
 > Three nights earlier [[Thunk]] counted cards and walked out with other people's silver.
 >

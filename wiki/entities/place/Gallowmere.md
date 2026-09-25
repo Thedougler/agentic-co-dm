@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Gallowmere
@@ -38,7 +38,7 @@ Gallowmere once served as an execution island. Rumors say ghost trials continue 
 
 - **Arrives before midnight:** The island's former execution function is visible in whatever remains of the site, but the surviving structures are not recorded.
 - **Stays past midnight:** The party can investigate the reported ghost trials. The source establishes the report, not whether ghosts appear or what a trial demands.
-- **Asks for directions:** The page retains a relationship to [[Kalowe]], but provides no route, distance, or reliable guide.
+- **Asks for directions:** The page retains a relationship to [[kalowe]], but provides no route, distance, or reliable guide.
 
 ## Who
 
@@ -51,7 +51,7 @@ Gallowmere is an island formerly used for executions. The execution apparatus, r
 ## Where
 
 - **North:** Gallowmere lies in the western [[Midchain]], but its northern neighbor is not recorded.
-- **East:** The page retains a relationship to [[Kalowe]], but no eastern route or distance is established.
+- **East:** The page retains a relationship to [[kalowe]], but no eastern route or distance is established.
 - **South:** No named southern neighbor or route is established.
 - **West:** No named western neighbor or route is established.
 - **Local connection:** The western Midchain also names [[ferrands-wager|Ferrand's Wager]], [[corallith|Corallith]], and [[cradle-reef|Cradle Reef]], but no route from Gallowmere to those sites is fixed.

@@ -23,7 +23,7 @@ kind: ship
 relationships:
   - target: "[[hcs-sovereign]]"
     type: related_to
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
 ---
 # HCS Ordinance
@@ -33,7 +33,7 @@ relationships:
 > [!narration] Narration
 > Gun decks rise above a grey hull in three rows. Fourteen gun ports line each side on each deck, all shut and spaced in straight rows from front to back. A white stripe runs down the middle at the main deck. The Crown flag flies from all three tall masts. The statue at the bow shows Tyr, blind and in robes, holding up gold scales. Metal shines at every corner. She is not fast. She does not need to be.
 
-Built at [[Harwick]] in the [[crown-islands]], this warship has three gun decks. She is 210 feet long. When made, she was the biggest ship the [[dravosi-crown]] had and the only one this big in [[shattered-sea]]. She shows the Crown's power.
+Built at [[harwick]] in the [[crown-islands]], this warship has three gun decks. She is 210 feet long. When made, she was the biggest ship the [[dravosi-crown]] had and the only one this big in [[shattered-sea]]. She shows the Crown's power.
 
 The hull is grey with a white stripe down the middle at deck level. She carries 96 guns: 42 heavy cannon on each side across three decks, plus 6 bow guns and 6 stern guns. The figurehead shows Tyr, blindfolded in robes, holding up scales. Gilding covers the scales and sandals, but carvers left the face bare.
 
@@ -84,9 +84,9 @@ The source provides no captain or crew member. The ship carries an Admiral's sta
 ## Connections
 
 - [[dravosi-crown]]: commissioning authority.
-- [[crown-islands]]: built at the [[Harwick]] Naval Yard.
+- [[crown-islands]]: built at the [[harwick]] Naval Yard.
 - [[calders-tooth-and-port-tidefall]]: named in source's own Connections list.
 - [[hcs-constancy]]: named in source's own Connections list.
 - [[hcs-sovereign]]: supersedes this entry as fleet flagship per source's own DM callout.
 
-Note: *[[Vethka]]* is an unrelated [[Grung]] raiding-proa class (different faction, different fleet). The actual sister ships are the Dravosi Crown HCS-prefixed vessels.
+Note: *[[vethka]]* is an unrelated [[Grung]] raiding-proa class (different faction, different fleet). The actual sister ships are the Dravosi Crown HCS-prefixed vessels.

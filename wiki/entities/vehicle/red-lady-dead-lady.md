@@ -84,14 +84,14 @@ The Red Lady, also called the Dead Lady, is a moving sign of [[Umberlee]]'s Red 
 
 The original Red Lady was [[delmar-fisk]]'s flagship, and [[crissdalynn-khinriss]] pulled him from its crow's nest when the fleet sank. Exact wreck history, active mechanism, crew roster, and encounter timing remain unresolved.
 
-After Delmar's deadline passed with no movement toward the Maw, [[Umberlee]] begins taking payment herself. Dumping cargo is tribute without priest or consent. The party first hears the red-ship rumor at [[Kalowe]]. Nobody has connected it to Delmar yet.
+After Delmar's deadline passed with no movement toward the Maw, [[Umberlee]] begins taking payment herself. Dumping cargo is tribute without priest or consent. The party first hears the red-ship rumor at [[kalowe]]. Nobody has connected it to Delmar yet.
 
 ## Connections
 
 - [[Umberlee]]. Drives the Red Wake pressure that puts this hull on the route.
 - [[pearl-of-souls]]. The price the wreck exists to compel.
 - [[drowned-maw]]. Destination and pressure behind the collection route.
-- [[Uncertainty]]. Likely convoy the wake can cross.
+- [[uncertainty]]. Likely convoy the wake can cross.
 - [[delmar-fisk]]. Former flagship. The hull knows his heading.
 - [[crissdalynn-khinriss]]. Pulled Delmar from the crow's nest when the fleet sank.
 - [[rael-corven]]. Named tie on the Red Wake thread.

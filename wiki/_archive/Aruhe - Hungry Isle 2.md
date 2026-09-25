@@ -17,7 +17,7 @@ updated: 2026-09-12T04:56:01Z
 type: place
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
   - target: "[[Story So Far]]"
     type: related_to
@@ -33,7 +33,7 @@ Between one hundred and one hundred fifty people came off the raid ships. Most a
 
 ## At the table
 
-Keep *[[Uncertainty]]* moving. Do not anchor close. Terraces hold wolfrabbits, fruit marked with blood and skulls, and at least six dead. A crown squid rose when Jean-Claude killed a spore plant, struck Delmar, and stopped at the tree line. Escape by illusion and flight has already worked once. Others remain inland.
+Keep *[[uncertainty]]* moving. Do not anchor close. Terraces hold wolfrabbits, fruit marked with blood and skulls, and at least six dead. A crown squid rose when Jean-Claude killed a spore plant, struck Delmar, and stopped at the tree line. Escape by illusion and flight has already worked once. Others remain inland.
 
 ## Wiki facts
 

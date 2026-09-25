@@ -33,4 +33,4 @@ tier: supporting
 
 ## Provenance
 
-Surfaced at [[Slackwater]]'s Trust Market with no seller willing to say where it came from — one more unremarked piece in the settlement's quiet trickle of salvage that nobody asks too hard about.
+Surfaced at [[slackwater]]'s Trust Market with no seller willing to say where it came from — one more unremarked piece in the settlement's quiet trickle of salvage that nobody asks too hard about.

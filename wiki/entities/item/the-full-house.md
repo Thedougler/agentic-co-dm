@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: rare
+attunement: true
+owner: "[[fioravante-selmerin]]"
 summary: "A hand crank on a stand that fills sixty feet with the roar of a packed audience, breaking the nerve of every hostile creature that fails to hold against it."
 provenance:
   extracted: 0.85
@@ -46,7 +51,6 @@ Sold to nobody yet. It stands in the locked case at the back of the shop, above 
 
 Rare tier holds. Magic Item Rarity puts Rare goods in an approximate 500-5,000 gp band, and 1,500 gp sits low inside it beside [[la-cenere]]'s Necklace of Fireballs at the same price. The effect is _fear_ cast at 3rd level, traded out of a 30-foot cone into a 60-foot sphere and out of the caster's control into a fixed round of duration, once a day, on a device anyone attuned can work.
 
-## Mechanics
 
 > [!mechanic]
 > **The Full House [HB].** Setting the stand down and turning the crank once takes an action, and the device does this once per day, recovering at dawn. It must rest on a solid surface to work.

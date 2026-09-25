@@ -38,13 +38,13 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 
 **Status quo — as of 1495 DR (Season 2)**
 
-The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Sparhold]]. Immediate pressure is the wreck field, [[aruhe]] survivors, taking-places, and the crown squid around Aruhe.
+The crew works from mobile [[uncertainty]] after the first chosen stop at [[sparhold]]. Immediate pressure is the wreck field, [[aruhe]] survivors, taking-places, and the crown squid around Aruhe.
 
 * **Recent change.** Season 2 opened at and around Aruhe after Sparhold.
 * **Pressure.** Active named pressures include the Maw fissure and tribute system, [[the-taken-314]], Long Sight Hunt, Rule of Two, Schism's Third Name, and Countless through the Maw seal. Soul Incarnate's Watch remains dormant until [[crissdalynn-khinriss]] completes a Maw pilgrimage.
 * **Opportunity.** Open table threads include [[pursue-the-grung-raiding-fleet]], [[simones-hunters]], [[bring-the-pearl-of-souls-to-umberlee]], [[complete-the-maw-map-pilgrimage]], [[grigori-and-the-crown-hunt]], [[red-wake]], [[sentinels-and-countless]], and [[pearl-signal-across-the-boundary]].
 * **Table.** Players at this table: Kaden → [[perrin-black-jaw]]; Frederick → [[delmar-fisk]]; Courtney → [[crissdalynn-khinriss]]; Chad → [[jean-claude-tabarnack]].
-* **Systems in play.** [[dravosi-crown]] naval law, [[tessarine-concordat]] debt, independent councils, and [[Waveservants]] port infrastructure all claim a piece of the sea.
+* **Systems in play.** [[dravosi-crown]] naval law, [[tessarine-concordat]] debt, independent councils, and [[waveservants]] port infrastructure all claim a piece of the sea.
 
 ## Five-sentence kernel
 - **Function:** A far-flung archipelago connecting Crown harbours, Midchain free ports, and routes toward the Scatter.
@@ -71,9 +71,9 @@ The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Spar
 - **Sound:** surf, rigging, dock calls, weather, and papers being demanded.
 - **Smell:** salt, wet rope, smoke, cargo, and whatever a port is trying to hide.
 ## Topology
-- `[[Galewall]] -- storm crossing (slow, exposed, information-poor) --> Shattered Sea`.
+- `[[galewall]] -- storm crossing (slow, exposed, information-poor) --> Shattered Sea`.
 - `Crown Islands -- Central Strait (fast shipping route, inspected, leaves records) --> [[Midchain]]`.
-- `Midchain -- reef and council routes (slower, local knowledge, hidden from Crown notice) --> [[verdant-teeth]] / [[Sparhold]] / [[aruhe]]`.
+- `Midchain -- reef and council routes (slower, local knowledge, hidden from Crown notice) --> [[verdant-teeth]] / [[sparhold]] / [[aruhe]]`.
 - `Crown Islands -- harbour and canal routes (safe if documented, indebted if financed) --> [[calven-and-calveno]]`.
 - `Central Strait -- chart edge and current shift (dangerous, reveals Maw signs) --> [[drowned-maw]]`.
 - **Loop:** Crown → Central Strait → Midchain → Calveno → Crown.
@@ -85,12 +85,12 @@ The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Spar
 - **Supporting:** evade, map, salvage, rescue, exploit infrastructure, return with consequences.
 - **Rewards:** information, access, leverage, relationships, changed routes, rescued people.
 ## Who is here
-- [[dravosi-crown]], [[tessarine-concordat]], [[Passage]], [[grung-clans]], [[Waveservants]], [[sentinels-of-the-eyrie]], [[Countless]], Umberlee, and the crew.
+- [[dravosi-crown]], [[tessarine-concordat]], [[passage]], [[grung-clans]], [[waveservants]], [[sentinels-of-the-eyrie]], [[Countless]], Umberlee, and the crew.
 ## Connections
 - Campaign State hub: [[shattered-sea-overview]]
-- [[crown-islands]] · [[Midchain]] · [[central-strait]] · [[Galewall]] · [[drowned-maw]]
+- [[crown-islands]] · [[Midchain]] · [[central-strait]] · [[galewall]] · [[drowned-maw]]
 ## Hooks
-- Follow the Grung trail from [[Uncertainty]] to [[Sparhold]] and [[aruhe]].
+- Follow the Grung trail from [[uncertainty]] to [[sparhold]] and [[aruhe]].
 - Decide what to do with the Pearl of Souls and the Drowned Maw.
 - Learn whether tribute is protection, exploitation, or both.
 ## Secrets
@@ -108,13 +108,13 @@ The crew works from mobile [[Uncertainty]] after the first chosen stop at [[Spar
 
 
 ## Geography ingest — corridor overview
-The Shattered Sea is a long, bent west–east corridor in open ocean south of Chult, roughly 60,000 square miles across. The route reads west to east as [[Galewall]] → [[Ashwalls]] → the [[verdant-scatter]] (the Crown Islands north of [[central-strait]], the [[Midchain]] south) → [[Tail]] → [[drowned-maw]] and the [[outer-reach]].
+The Shattered Sea is a long, bent west–east corridor in open ocean south of Chult, roughly 60,000 square miles across. The route reads west to east as [[galewall]] → [[Ashwalls]] → the [[verdant-scatter]] (the Crown Islands north of [[central-strait]], the [[Midchain]] south) → [[tail]] → [[drowned-maw]] and the [[outer-reach]].
 
-- [[Galewall]] is a permanent stacked storm belt: a good-pilot crossing takes about three weeks and roughly one ship in three fails to finish.
+- [[galewall]] is a permanent stacked storm belt: a good-pilot crossing takes about three weeks and roughly one ship in three fails to finish.
 - [[Ashwalls]] are cold-water volcanic spires: last solid ground westbound and the first safe lee eastbound. Wreck survivors and apparent rescuers make the lee dangerous.
 - South of the Midchain, the seasonal [[Doldrums]] slide 50–100 miles; a black dragon works the still channels and westbound captains use them to bypass Strait inspection.
-- Eastward, both arcs pinch into the [[Tail]], then the cold, sharp approach to the Maw. Past the trench is [[outer-reach]]: no trusted landmark, reversing currents, and no resupply.
+- Eastward, both arcs pinch into the [[tail]], then the cold, sharp approach to the Maw. Past the trench is [[outer-reach]]: no trusted landmark, reversing currents, and no resupply.
 
 The sea is not empty between the named hubs: reefs, deep cuts, and small particular islands make unofficial routes valuable to whoever learned them first.
 
-The Scatter Current is named as running clockwise around the central channel. West wants papers. East wants a debt that can be called later. Every harbour pays [[Umberlee]] through the [[Waveservants]].
+The Scatter Current is named as running clockwise around the central channel. West wants papers. East wants a debt that can be called later. Every harbour pays [[Umberlee]] through the [[waveservants]].

@@ -45,7 +45,7 @@ tier: supporting
 | Consistent method | Checks seams and timber in quiet work and documents findings no one solicited. Fixes damage others miss. |
 | Active problem | A dry-dock inspection found a fatigued timber fault in the forward keel joint. Repair requires hardwood stock and time in dry dock, but he hasn't mentioned it to the crew yet. |
 | Performance hooks | Weathered shipwright vibe. Checks seams and joints with one hand, fingers running across timber while he listens. |
-| Link of relevance | Works as carpenter aboard [[Uncertainty]]. Judges the crew by their real interest in the ship's hull and proper building. |
+| Link of relevance | Works as carpenter aboard [[uncertainty]]. Judges the crew by their real interest in the ship's hull and proper building. |
 
 **Voice & Delivery:** direct and terse, all business. Asks questions to assess and teach. No small talk, only assessments. Speaks plainly about the ship's condition and what repairs take.
 
@@ -61,7 +61,7 @@ No stats given in source.
 
 Wikilinks withheld for entities without a landed page yet (see this queue's `## Flags` at `archive/2026-07/r19-sem-holst.md`).
 
-- [[Uncertainty|HCS Surety]]: his post. Carpenter's mate formerly serving under [[barnaby-rook]]'s command aboard this vessel.
+- [[uncertainty|HCS Surety]]: his post. Carpenter's mate formerly serving under [[barnaby-rook]]'s command aboard this vessel.
 - [[barnaby-rook]]: former captain of the HCS Surety, under whom he formerly served.
 - [[geoffrey-draves]]: now his apprentice, post-refit. They worked side by side at the time of capture with no rivalry over the reporting line.
 - [[jean-claude-tabarnack]]: worked the hull with him during the five-day crossing to Calveno, Session 03.
@@ -71,4 +71,4 @@ Wikilinks withheld for entities without a landed page yet (see this queue's `## 
 
 - **[[Session-02-Recap|Session 02, Conflict is a Surety]]**: named among the crew aboard the recaptured HCS Surety as "Sem Holst the shipwright". Introduced alongside [[geoffrey-draves]], [[alys-kuiper]], [[old-faas]], [[Thunk]], and young [[Noor]]. See `vault/episodes/002/transcript.raw.md:63`.
 
-- **[[Session-03-Recap|Session 03, Getting in on the Joke]]**: worked the hull alongside Jean-Claude Tabarnack during the five-day crossing to Calveno. Jean-Claude cast Mending while Sem quietly fixed what he missed. At Calveno, he remained worried about the figurehead and hull integrity, knowing of the keel-timber fault found at the dry dock. See `vault/episodes/003/transcript.md:86,195`.
+- **[[session-03-recap|Session 03, Getting in on the Joke]]**: worked the hull alongside Jean-Claude Tabarnack during the five-day crossing to Calveno. Jean-Claude cast Mending while Sem quietly fixed what he missed. At Calveno, he remained worried about the figurehead and hull integrity, knowing of the keel-timber fault found at the dry dock. See `vault/episodes/003/transcript.md:86,195`.

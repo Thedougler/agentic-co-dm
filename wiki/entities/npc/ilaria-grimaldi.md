@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Ilaria Grimaldi
 
-**Wants:** to keep the dispensary's fifteen-year truce with the harbour bosses intact, while she decides what to do about a [[Passage]]-marked ring she spotted on a wounded Takowan crewman two days ago.
+**Wants:** to keep the dispensary's fifteen-year truce with the harbour bosses intact, while she decides what to do about a [[passage]]-marked ring she spotted on a wounded Takowan crewman two days ago.
 
 > [!narration] Narration
 > In her early sixties, a tiefling from [[calven-and-calveno]]'s northern Scatter, small horns and grey-violet skin, a faded accent she's never lost. The scent of camphor and vinegar hangs off her sleeves, and the mortar keeps grinding under her pestle while she works, until she looks up to ask what you need.
@@ -53,7 +53,7 @@ Works at the counter throughout any exchange, the scale and the mortar never idl
 ## Connections
 
 - [[Grimaldi's Dispensary]]: runs the shop, fifteen years
-- [[Kalowe]]: operates from the free port's third island
+- [[kalowe]]: operates from the free port's third island
 - [[sera-maddock]]: dying patient in her back room, the hook behind [[The Captain's Map]]
 - [[The Sawek Bounty]]: treated the attack survivor and recognized the pattern
 - [[Takowan]]: crew member she treated for a hand wound, wearing a Passage-style ring

@@ -117,4 +117,4 @@ Turned Hollow is a canopy break in [[the-quiet]] of [[aruhe]], a bowl about 200 
 
 - A party comes here because the star-cut aisle leads here, and because anyone following the Grung order trail ends up in this bowl.
 - A party stays because the Hollow holds the whole order trail in one place: the rings of seals show how an order written by someone who never saw Aruhe kept sending people to die under the wrong tree.
-- A party cares because the Hollow is the last choice before the real memorial. It shows what obeying [[two-grave-orders]] costs, and from its north rim the true memorial tree is in plain view. The Hollow works as the Grove's decoy and graveyard; whether [[Hinewai]] knows it draws diggers away from her graves is a canon gap for the DM.
+- A party cares because the Hollow is the last choice before the real memorial. It shows what obeying [[two-grave-orders]] costs, and from its north rim the true memorial tree is in plain view. The Hollow works as the Grove's decoy and graveyard; whether [[hinewai]] knows it draws diggers away from her graves is a canon gap for the DM.

@@ -7,44 +7,50 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:a-sliver-of-the-unstable-form.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
-summary: "A fist-sized fragment of warm red hide from Otar the Foul granting 2d8 HP regeneration per turn (1 minute, once per long rest, suppressed by fire/acid). Held by Catarina Da'Virelli in Calveno."
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: very rare
+attunement: true
+owner: "[[catarina-davirelli]]"
+summary: "A fist-sized fragment of warm red hide from [[otar-the-foul]] that grants powerful, conditional regeneration. [[catarina-davirelli]] keeps it in her Calveno workshop."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # A Sliver of the Unstable Form
 
-> [!narration] Narration A fragment of red hide the size of a fist, still faintly warm long after everything around it has gone cold. It shouldn't have kept its shape this long. Flesh like this doesn't survive separation from what it belonged to, yet it does anyway. Every so often, so slowly you're uncertain whether the edge of the wound is closing a little further, or if it simply pauses here.
+> [!narration] Narration
+> A fragment of red hide the size of a fist remains faintly warm long after everything around it has gone cold. It should not have kept its shape this long. Flesh like this does not survive separation from what it belonged to, yet it does anyway. The edge of the wound seems to close a little further, so slowly that you cannot tell whether it is moving or merely pausing.
 
-*Wondrous Item, Very Rare (Requires Attunement).*
+*Wondrous item, very rare (requires attunement).* 
 
-| Field | Value |
-|---|---|
-| One thing | Once per long rest, invoke the sliver to regenerate a burst of hit points at the start of each of your turns for 1 minute, unless you've taken fire or acid damage since your last turn. |
-| Rarity justification | Comparable to *Ring of Regeneration*, from the opposite direction. |
-| Attunement reason | A repeatable, high-value healing effect with no other resource cost. The decision tree's "useful in most encounters without consuming a resource" branch requires attunement. |
-| Current holder | [[catarina-davirelli]], kept in her Calveno workshop. |
-| Narrative hook | Part of tonight's raid-site loot, offered as a Reward in `vault/episodes/006/s06-run-guide.md` § Rewards. |
+**Borrowed regeneration.** As a Bonus Action, you invoke the sliver. For the next minute, at the start of each of your turns, you regain 2d8 Hit Points. If you took Fire or Acid damage since the end of your last turn, you regain no Hit Points from the sliver at the start of that turn. The regeneration resumes on your next turn unless Fire or Acid damage blocks it again. Once you invoke the sliver, you cannot invoke it again until you finish a Long Rest.
 
-Nobody cut this free on purpose. It tore loose at the last moment, as the creature fell. Whether it means anything remains unclear.
+The sliver still restores Hit Points while you have 0 Hit Points and are stable, and it can end your Unconscious condition as other healing can. It checks damage taken for suppression, not damage types available to you. Invoking it again before the first use ends has no additional effect. Only you gain the benefit. You can dismiss the effect without an action.
 
-*Ring of Regeneration* is permanent and passive, and reattaches severed limbs. This sliver trades permanence for a much stronger in-combat burst, gated to once per long rest and suppressed by the exact damage types that stopped the creature it came from. Both land at roughly the same power tier.
+## At the Table
 
-## Mechanics
+The sliver is held by [[catarina-davirelli]] in her Calveno workshop. It is warm, damp-looking, and faintly elastic despite being detached. Its power makes a bearer harder to put down, but Fire and Acid damage create a clear tactical counter. As tonight's raid-site loot, it offers a choice between immediate survival and exposing the party to interest in a remnant of [[otar-the-foul]].
 
-**[HB] Borrowed regeneration.** As a bonus action, invoke the sliver. For the next minute, at the start of each turn you regain 2d8 hit points. If you took fire or acid damage since your last turn, that turn's regeneration fails. It returns on your next turn unless fresh damage blocks it. Once per long rest.
+## Hidden Properties
 
-**Edge cases:** the sliver still triggers at 0 HP if stable and works like any healing to end unconsciousness. It checks damage taken for suppression, not damage type available, so your own fire/acid spells won't suppress it. Invoking it again before the first use ends has no added effect.
+The sliver tore loose from [[otar-the-foul]] as the creature fell after the fight in the Primary Chamber, where it rose from [[solange-barret]]'s summoning circle. Nobody cut it free on purpose. Its persistence after separation is unexplained. The Fire and Acid suppression mirrors the damage types that stopped the creature, but whether that connection has further meaning is unknown.
 
-**Limitations:** only you gain the benefit. It grants no bonus to attack, damage, save DC, or AC. The effect stops early if you dismiss it (no action) or if you drop to 0 HP and fail a death save while suppressed.
+## Connections
+
+- [[catarina-davirelli]] holds the sliver in her Calveno workshop and may offer it as raid-site loot.
+- [[otar-the-foul]] is the creature from which the sliver tore.
+- [[solange-barret]]'s summoning circle is where the creature rose.
+- *Ring of Regeneration* is the closest established comparator: permanent and passive, but less explosive in combat.
 
 ## Provenance
 
-Torn from the creature that rose out of [[solange-barret]]'s summoning circle in the Primary Chamber and fell there after the fight. See [[otar-the-foul]]. Nobody has identified who or what originally intended this fragment to survive on its own. It simply persists.
+The sliver came from the creature that rose out of [[solange-barret]]'s summoning circle in the Primary Chamber and fell there after the fight. It is listed as part of tonight's raid-site loot in `vault/episodes/006/s06-run-guide.md` § Rewards. Its current holder is [[catarina-davirelli]].

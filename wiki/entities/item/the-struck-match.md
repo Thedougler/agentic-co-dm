@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "An alchemical cigarette tipped with a grey striking head that leaves the smoker an hour of reading a room a half-second before it turns."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ One of the blends [[rufio-segalla]] keeps on the shelf at [[La Brace]], named fo
 
 **PC connection:** the crew's whole plan is a first round. Delmar and [[crissdalynn-khinriss|Crissdalynn]] hold the melee lanes, and an 89-point opening burst is the best trick five level-5 adventurers have between them, which makes a lost Initiative roll more expensive to them than a lost hit point.
 
-## Mechanics
 
 **[HB]** Lighting the Struck Match and taking the first breath costs an Action. It needs no flame, since the head strikes on any rough surface. For 1 hour afterward, the smoker rolls Initiative with advantage.
 

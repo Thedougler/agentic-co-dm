@@ -64,5 +64,5 @@ Ault shifts from negotiation to enforcement when a crew refuses inspection, hide
 | Connection | Meaning |
 | ---------- | ------- |
 | [[hcs-warrant]] | Ault commands the Crown vessel and exercises his sealed authority from it. |
-| [[Uncertainty]] | The missing HCS Surety may trigger a Dravosi Crown response led by Ault; this remains a possible response, not settled fact. |
+| [[uncertainty]] | The missing HCS Surety may trigger a Dravosi Crown response led by Ault; this remains a possible response, not settled fact. |
 | [[dravosi-crown]] | Ault acts as Crown enforcement and may issue privateer letters to allies. |

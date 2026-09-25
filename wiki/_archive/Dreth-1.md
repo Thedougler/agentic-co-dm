@@ -18,7 +18,7 @@ Dreth is the lower, wetter eastern Tooth: permanently drowned forest, timber wor
 - `eastern water -- drowned trunks --> Dreth channel` (no landing, hidden approach).
 - `Dreth channel -- root hollows / cut-line --> [[Dreth-Orak Channel]]` (specimen water or patrol lane).
 - `hummock camp -- timber cut --> patrol route` (followable but increasingly watched).
-- `shallow crossing -- rain-dependent --> [[Orak]]` (loop that can vanish).
+- `shallow crossing -- rain-dependent --> [[orak]]` (loop that can vanish).
 
 ## Who is here
 Grung patrol the channel and timber works. Rare dry hummocks are garrison and work camps, not hospitality. Giant frogs, crocodiles, and constrictors share the water with channel axolotls.
@@ -27,4 +27,4 @@ Grung patrol the channel and timber works. Rare dry hummocks are garrison and wo
 As the timber cut moves south, patrol density rises and the live-specimen window closes. The island has no beach protocol because there is no beach.
 
 ## Linked
-- [[Dreth-Orak Channel]] · [[Orak]] · [[Verdant Teeth]] · [[Grung clans]]
+- [[Dreth-Orak Channel]] · [[orak]] · [[Verdant Teeth]] · [[Grung clans]]

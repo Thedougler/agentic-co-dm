@@ -32,7 +32,7 @@ relationships:
 
 ## At a Glance
 
-[[Ashkevet]] is a Dravosi Crown prison island abandoned a generation ago and officially empty. It sits near [[Kalowe]], [[Penance Bar]], and [[Sabrique]] in the western [[Midchain]]. The current canon does not establish what a party loses by bypassing it.
+[[Ashkevet]] is a Dravosi Crown prison island abandoned a generation ago and officially empty. It sits near [[kalowe]], [[Penance Bar]], and [[sabrique]] in the western [[Midchain]]. The current canon does not establish what a party loses by bypassing it.
 
 ## If the party
 
@@ -49,7 +49,7 @@ Ashkevet is an abandoned Dravosi Crown prison island. The yard bell rings at daw
 
 ## Where
 
-Ashkevet is in the western [[Midchain]], near [[Kalowe]], [[Penance Bar]], and [[Sabrique]]. Its exact approach and cardinal placement among those sites are not established.
+Ashkevet is in the western [[Midchain]], near [[kalowe]], [[Penance Bar]], and [[sabrique]]. Its exact approach and cardinal placement among those sites are not established.
 
 - **North:** Canon gap; no named neighbor or travel distance is established.
 - **East:** Canon gap; no named neighbor or travel distance is established.

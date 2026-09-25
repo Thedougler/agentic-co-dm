@@ -142,6 +142,6 @@ After the contest the column walks the rest of the way without a roll: [[print-b
 - [[print-braid]]. The strand, the grass, the wood forks, and the fruit.
 - [[wolfrabbit]]. Full statblock and pack behavior.
 - [[young-bloodhawk]]. The stoop that hits Skarn.
-- [[talon-skarn]]. Statblock and Snatch ruling from [[Session-12-01-River-Slack-Reprise]].
+- [[talon-skarn]]. Statblock and Snatch ruling from [[session-12-01-river-slack-reprise]].
 - [[taking-on-aruhe]]. Claim response, mark, and targeting.
 - [[ghost-plum]]. Invisible for 1 hour.

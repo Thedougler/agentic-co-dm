@@ -53,4 +53,4 @@ tier: supporting
 ## Connections
 
 - The shop he runs on Kalowe's docks
-- [[Kalowe]], the free port where he trades, watched by the Island Council's dock bosses
+- [[kalowe]], the free port where he trades, watched by the Island Council's dock bosses

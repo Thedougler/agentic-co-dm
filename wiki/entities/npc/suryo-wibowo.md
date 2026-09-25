@@ -14,7 +14,7 @@ campaign: shattered-sea
 visibility: dm
 status: alive
 role: contact
-location: "[[Wibowo's Provisions]], [[Kalowe]]"
+location: "[[Wibowo's Provisions]], [[kalowe]]"
 faction: none
 summary: "Proprietor of Wibowo's Provisions on Kalowe's first island, known for reading orders quickly and speaking with precise directness."
 provenance:
@@ -34,7 +34,7 @@ flexGrow=2
 | **Role** | Contact |
 | --- | --- |
 | **Nature** | Orc victualler and precise supply calculator |
-| **Home** | [[Wibowo's Provisions]] on [[Kalowe]] |
+| **Home** | [[Wibowo's Provisions]] on [[kalowe]] |
 | **Wants** | To give captains accurate provisions and extend credit only to customers who have earned it |
 
 > **DM thesis:** Suryo turns provisioning into a clear conversation about crew, days, destination, and the consequences of coming up short.
@@ -77,4 +77,4 @@ Suryo speaks with precise, direct questions and avoids pretending that a short o
 | Connection | Meaning |
 | --- | --- |
 | [[Wibowo's Provisions]] | The shop he runs. |
-| [[Kalowe]] | His home port and the shop's location. |
+| [[kalowe]] | His home port and the shop's location. |

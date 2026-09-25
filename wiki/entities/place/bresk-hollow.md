@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Bresk Hollow
@@ -56,7 +56,7 @@ The site is an interior sinkhole ecosystem sealed from the surface for centuries
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** Bresk Hollow is listed within [[Southern Midchain]], whose steep volcanic islands have few beaches and deep water near shore. [[Halewick]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** Bresk Hollow is listed within [[Southern Midchain]], whose steep volcanic islands have few beaches and deep water near shore. [[halewick]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

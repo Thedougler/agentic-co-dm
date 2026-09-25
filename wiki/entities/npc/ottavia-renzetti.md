@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Ottavia Renzetti
 
-**Wants:** win [[Sparhold]]'s rule through the challenge bell before her reluctant champion's doubt costs him the duel.
+**Wants:** win [[sparhold]]'s rule through the challenge bell before her reluctant champion's doubt costs him the duel.
 
 > [!narration] Narration
 > Dark-haired with steel-grey threading through, Ottavia moves between people with absolute certainty, her leather and bronze catching the light as she commands the room. Her fingers drum a rhythm on table edges or rails, a sound like the watch bell's toll, restless and precise. The air sharpens around her. Everyone within arm's reach falls silent to listen. Her eyes miss nothing, tracking every face, calculating.
@@ -48,14 +48,14 @@ tier: supporting
 
 ## Connections
 
-**[[toa-kailani]]** (Rival). Ottavia has rung the challenge bell against his claim to [[Sparhold]]'s rule, forcing a duel to the death between their families' champions. His current hold on the settlement's defense is absolute. If his fighter falls to hers, power shifts entirely.
+**[[toa-kailani]]** (Rival). Ottavia has rung the challenge bell against his claim to [[sparhold]]'s rule, forcing a duel to the death between their families' champions. His current hold on the settlement's defense is absolute. If his fighter falls to hers, power shifts entirely.
 
 ## Goals & Fronts
 
 ### Front: Sparhold's Challenge
 
 **Lifecycle:** active
-**Aim:** house Renzetti claims [[Sparhold]]'s rule via the challenge duel.
+**Aim:** house Renzetti claims [[sparhold]]'s rule via the challenge duel.
 **Approach:** Ottavia named a champion to fight Toa Kailani's fighter to the death in the betting ring outside the watch hall.
 **Off-screen move if unopposed:** [[nico-renzetti]], Ottavia's reluctant, coerced champion, fights halfheartedly and loses. [[house-kailani]] keeps rule. House Renzetti loses all standing in the settlement's governance entirely.
 **Trigger conditions:**

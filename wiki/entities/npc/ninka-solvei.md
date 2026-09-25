@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Ninka Solvei
 
-**Wants:** establish herself as the indispensable salvage intermediary in [[Sparhold]] while a key [[verdant-teeth]] contact has gone silent, leaving her inventory depleted and other buyers waiting.
+**Wants:** establish herself as the indispensable salvage intermediary in [[sparhold]] while a key [[verdant-teeth]] contact has gone silent, leaving her inventory depleted and other buyers waiting.
 
 *Ninka*: I don't ask where it came from. I don't ask where it's going. What it costs is what it costs.
 
@@ -34,7 +34,7 @@ Sparhold bureaucrat turned black-market trafficker, trades with the efficiency o
 
 ## Lore Sheet
 
-Ninka runs [[Ninka's Findings]] from a reinforced shop in [[Sparhold|Sparhold's]] fortress-market district, wedged between supply traders and blacksmiths. She buys salvage from [[verdant-teeth]] expeditions and wreck-divers, prices items by rarity and condition alone, and never volunteers buyer names to sellers or seller names to buyers. Three weeks without word from Vrex, her primary Teeth contact. She fills inventory gaps with lower stock while other buyers grow impatient.
+Ninka runs [[Ninka's Findings]] from a reinforced shop in [[sparhold|Sparhold's]] fortress-market district, wedged between supply traders and blacksmiths. She buys salvage from [[verdant-teeth]] expeditions and wreck-divers, prices items by rarity and condition alone, and never volunteers buyer names to sellers or seller names to buyers. Three weeks without word from Vrex, her primary Teeth contact. She fills inventory gaps with lower stock while other buyers grow impatient.
 
 ## Toy Chest
 

@@ -87,9 +87,9 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 
 * **[[keth-naar]].** Rim island and named regional anchor.
 * **[[vel-orn]].** Rim island named in the regional record.
-* **[[Ral-Arn]].** Record island holding old family histories and seasonal marks.
-* **[[Dath-Mar]].** Refuge island on the rim.
-* **[[Meth-Var]].** Watch island facing open Maw waters.
+* **[[ral-arn]].** Record island holding old family histories and seasonal marks.
+* **[[dath-mar]].** Refuge island on the rim.
+* **[[meth-var]].** Watch island facing open Maw waters.
 
 ## Travel
 
@@ -122,9 +122,9 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 | ----- | ---- | ------------- | --------------------------- | ---- |
 | [[keth-naar]] | Island | On the Blue Hole rim | Named rim settlement or anchor | Regional record |
 | [[vel-orn]] | Island | On the Blue Hole rim | Named rim settlement or anchor | Regional record |
-| [[Ral-Arn]] | Island | Holds old family histories and seasonal marks | Records and route memory | Stone marks |
-| [[Dath-Mar]] | Island | Refuge site | Emergency shelter; dragon turtle wyrmlings on outer beaches | Refuge traffic |
-| [[Meth-Var]] | Island | Watch site facing Maw waters | Observation and warning | Watch signs |
+| [[ral-arn]] | Island | Holds old family histories and seasonal marks | Records and route memory | Stone marks |
+| [[dath-mar]] | Island | Refuge site | Emergency shelter; dragon turtle wyrmlings on outer beaches | Refuge traffic |
+| [[meth-var]] | Island | Watch site facing Maw waters | Observation and warning | Watch signs |
 
 ## Active powers
 
@@ -150,10 +150,10 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 | d6 | Rumor / lead | Truth behind it | Points toward |
 | -: | ------------ | --------------- | ------------- |
 | 1 | The Blue Hole has no bottom. | Sounding lines run out; its actual depth is Unknown. | Blue Hole |
-| 2 | Old waterlines show where the islands used to be. | The rim carries old waterlines. | [[Ral-Arn]] |
+| 2 | Old waterlines show where the islands used to be. | The rim carries old waterlines. | [[ral-arn]] |
 | 3 | The shrine is missing what makes its deepest work possible. | Its deepest function is failing without the [[pearl-of-souls]]. | [[drowned-maw]] |
 | 4 | Something large hunts beneath the ring. | [[Sawek]] hunts below. | Blue Hole |
-| 5 | The watch island sees the Maw first. | [[Meth-Var]] faces open Maw waters. | [[Meth-Var]] |
+| 5 | The watch island sees the Maw first. | [[meth-var]] faces open Maw waters. | [[meth-var]] |
 | 6 | The region is sinking. | Sunken Crown is structurally unstable and subsiding. | [[outer-reach]] |
 
 ## Encounter ecology
@@ -165,9 +165,9 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 | 1 | Unstable rim landing | Fresh break in black stone | Rim islands |
 | 2 | Deep-water disturbance | Water moving against the surface current | [[Sawek]] |
 | 3 | Shrine-related sign | Change in light, sound, or function | [[drowned-maw]] |
-| 4 | Record-seeking traveler | Seasonal marks or copied family history | [[Ral-Arn]] |
-| 5 | Refuge traffic | Emergency supplies or dragon turtle tracks | [[Dath-Mar]] |
-| 6 | Watch signal | Smoke, mirror, or alarm from the Maw-facing island | [[Meth-Var]] |
+| 4 | Record-seeking traveler | Seasonal marks or copied family history | [[ral-arn]] |
+| 5 | Refuge traffic | Emergency supplies or dragon turtle tracks | [[dath-mar]] |
+| 6 | Watch signal | Smoke, mirror, or alarm from the Maw-facing island | [[meth-var]] |
 
 ### Regional signs
 
@@ -178,9 +178,9 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 ## What can be found
 
 * **Resource.** Shelter and route information on the named rim islands.
-* **Shelter.** [[Dath-Mar]] is the established refuge island; the cost and capacity are Unknown.
+* **Shelter.** [[dath-mar]] is the established refuge island; the cost and capacity are Unknown.
 * **Wonder.** The Blue Hole's unsounded depth and the old waterlines.
-* **Hidden lore.** [[Ral-Arn]] holds old family histories and seasonal marks.
+* **Hidden lore.** [[ral-arn]] holds old family histories and seasonal marks.
 * **Shortcut.** A restored or rediscovered rim connection could change eastward travel; no such route is currently mapped.
 
 ## History still in play
@@ -189,7 +189,7 @@ The region is a ring of low islands around a deep Blue Hole. Its western referen
 | --------- | ------------------- | --------------------- |
 | The rim carries old waterlines. | Earlier shore positions may explain present routes and subsidence. | Rim stone |
 | The shrine once had a deeper function. | That function is failing without the [[pearl-of-souls]]. | Shrine |
-| Family histories and seasonal marks were recorded. | Regional memory may preserve route or warning information. | [[Ral-Arn]] |
+| Family histories and seasonal marks were recorded. | Regional memory may preserve route or warning information. | [[ral-arn]] |
 
 ## Stakes
 

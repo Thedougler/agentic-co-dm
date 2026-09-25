@@ -29,7 +29,7 @@ The inhabited chain between the Galewall/Ashwalls and the Tail/Maw, with Crown w
 - Grung clans, Passage, and crews moving between them.
 
 ## Connections
-- → [[Shattered Sea]] · [[Crown Islands]] · [[Central Strait]] · [[Midchain]] · [[Tail]]
+- → [[Shattered Sea]] · [[Crown Islands]] · [[Central Strait]] · [[Midchain]] · [[tail]]
 
 ## Hooks
 - Choose between the official road and a route someone learned first.

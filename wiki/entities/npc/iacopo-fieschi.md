@@ -62,4 +62,4 @@ No stats given in source.
 - [[calven-and-calveno]]. His seat of operations.
 - [[Warren - Marrow's Crate]]. Indirectly named via advance agents.
 - [[il-gioco-delle-beffe]]. Present but not taken in the raid.
-- [[Samuel]]. His toucan clerk, sent to run messages for [[catarina-davirelli|Catarina]]'s shop.
+- [[samuel]]. His toucan clerk, sent to run messages for [[catarina-davirelli|Catarina]]'s shop.

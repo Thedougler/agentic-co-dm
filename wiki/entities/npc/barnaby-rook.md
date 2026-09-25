@@ -19,37 +19,81 @@ updated: 2026-09-13
 type: npc
 reveal: revealed
 campaign: shattered-sea
+status: presumed-dead
+role: "Crown privateer captain"
+location: "Unknown; last seen in the water near the HCS Surety"
+faction: "[[dravosi-crown]]"
 visibility: dm
 ---
 # Barnaby Rook
 
-# Barnaby Rook
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Barnaby Rook Banner]]
-![[Barnaby Rook Portrait]]
+| **Role**   | Crown privateer captain |
+| ---------- | ----------------------- |
+| **Nature** | A hard boarding officer who speaks in commands and uses fear when surrender does not come. |
+| **Home**   | The inspection corridor between the [[crown-islands]] and the [[central-strait]], aboard the HCS Surety |
+| **Wants**  | To choke every irregular captain out of the [[calders-tooth-and-port-tidefall]] corridor for the [[dravosi-crown]], now narrowed to hunting defectors and surrenders. |
+| **Leverage** | Crown authority, [[letters-of-marque]], a crew of [[dravosi-deckhand|Dravosi Deckhands]], and a reputation for shooting turncoats. |
+| **Limit**  | His crew defected or died, and he was last seen in dark water after being knocked from the Surety's rigging twice. |
 
-**Wants:** to choke every irregular captain out of the [[calders-tooth-and-port-tidefall]] corridor for the [[dravosi-crown]], narrowed since his fall off the Surety's rigging to running down the crew who defected or surrendered under him.
+> **DM thesis:** Rook is the Crown's tightening grip made personal: a controlled boarding captain who treats surrender and defection as different kinds of betrayal.
+```
 
-![[Barnaby Rook Narration Appearance]]
+```col-md
+flexGrow=1
+===
+> [!narration] Barnaby Rook
+> A hard privateer captain stands on the deck in a Crown coat gone salt-stiff at the shoulders. He speaks in flat statements rather than conversation, each one a command. His weapon stays ready without flourish. The threat is quiet, almost administrative, until someone refuses him; then the quiet turns lethal.
+```
+````
 
+## Running Barnaby Rook
 
-The face of the Crown's tightening grip on [[calders-tooth-and-port-tidefall]], Rook is a hard [[dravosi-crown]] privateer captain who boards under colour of law and expects weaker captains to surrender before violence begins. When talk fails, he pivots to fear.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-He speaks in flat statements, not conversation. Each one is a command. He absorbs hits and comes back stronger. Threat is silent, never loud. It turns lethal in moments. He shows no hesitation about shooting crew members for defection.
+Rook boards under colour of law and expects weaker captains to surrender before violence begins. In Session 01 he stayed on the [[Saltwright]]'s deck while [[beaumont-sel|Beaumont]] distracted the crew below. When the last [[dravosi-deckhand]] dropped his sword, Rook called out, *“I'll shoot you myself for that, you turncoat.”*
+```
 
-He runs the inspection and shakedown campaign around Tidefall, replacing [[norrington-kingsly]] as the harder choice. Where his predecessor negotiated routine fees, Rook pursues names, contraband, and compliant captains, and he recognizes betrayal instantly: when Geoffrey surrendered at the [[Saltwright]], Rook knew at once. The Crown chain runs through [[Dorian Bishop]] to [[rupert-knighton]], and Rook serves as their tool, answering to both. He works the inspection corridor between the [[crown-islands]] and the [[central-strait]], the same stretch [[commander-gideon-ault]]'s [[hcs-warrant]] patrols out of [[Harwick]], with Crown authority stacked two ships deep along that water, and he crews the Surety with [[dravosi-deckhand|Dravosi Deckhands]].
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-He was first met in Session 01, boarding the Saltwright. Rook stayed on deck while [[beaumont-sel|Beaumont]] distracted the crew below. When the last [[dravosi-deckhand]] dropped his sword, Rook called out: *"I'll shoot you myself for that, you turncoat."* Jean-Claude hit him with the [[Flask of Endless Water]] at the gangplank and threw him back, but he got up and fired at [[beaumont-sel|Beaumont]]. Her plate deflected the shot. The session ended with him alone and furious.
+Rook pivots from inspection to fear when talk fails. He shows no hesitation about shooting crew members for defection. He replaced [[norrington-kingsly]] as the harder choice around Tidefall, pursuing names, contraband, and compliant captains where his predecessor negotiated routine fees.
 
-In Session 02, Rook retook the Surety alone, though his crew had either died or defected, including [[geoffrey-draves]]. Crissdalynn bent his flintlock shot with her wind and caught the follow-up on her bracers, while [[beaumont-sel|Beaumont]] threw [[Bisou]] through a gun port to handle the cannon. Delmar knocked Rook from the rigging into the water twice, wind-thrown chairs both times. Something long and eel-like swam near him in the dark water, and he didn't resurface. Presumed dead. Crissdalynn fished his hat out with a boat hook.
+In Session 02, after his crew had died or defected, Rook retook the Surety alone. [[delmar-fisk|Delmar]] knocked him from the rigging into the water twice; something long and eel-like swam near him, and he did not resurface. He is presumed dead, though his death may not have reached [[rupert-knighton]].
+```
+````
 
-The crew searched his cabin and cargo, finding 45 gp, [[letters-of-marque]], and a blunderbuss in the cabin, plus 110 gp and two garnets under the floor, and a pendant marked *For Mira, from the sea*. A crate held flintlocks, Mira's Blade, and twenty vials of [[Grung]] poison that Jean-Claude knew from the Alchemist in Session 01. Mira's Blade went to [[perrin-black-jaw|Perrin]].
+## Voice
 
-Rook held captive a [[Moucheron]] named Ket as "a specimen," driven by curiosity about the [[five-blades]] mercenaries who operate out of [[Kalowe]]. The crew freed Ket, who ate and flew home to [[Murrat]].
+Rook speaks in flat statements, not conversation. Each sentence is a command. Threat is silent, never loud, and turns lethal in moments.
 
-The tincture ties him to [[simone-tabarnack]]'s supply chain. The same Grung poison reached him as a privateer. The crew doesn't yet know the full connection. His death may not have reached Rupert Knighton up the Crown chain.
+**The ask:** *“Surrender before this becomes unpleasant.”*
 
-## Stats & Combat
+**The refusal:** *“Your papers do not change the order.”*
+
+**Under pressure:** *“I'll shoot you myself for that, you turncoat.”*
+
+**Campaign history.**
+
+He runs the inspection and shakedown campaign around Tidefall. The Crown chain runs through [[Dorian Bishop]] to [[rupert-knighton]], and Rook serves as their tool, answering to both. He works the same corridor [[commander-gideon-ault]]'s [[hcs-warrant]] patrols from [[harwick]], with Crown authority stacked two ships deep along that water.
+
+At the [[Saltwright]], Jean-Claude hit Rook with the [[Flask of Endless Water]] at the gangplank and threw him back; Rook got up and fired at [[beaumont-sel|Beaumont]], whose plate deflected the shot. In Session 02, Crissdalynn bent his flintlock shot with her wind and caught the follow-up on her bracers, while [[beaumont-sel|Beaumont]] threw [[Bisou]] through a gun port to handle the cannon. Crissdalynn later fished his hat out with a boat hook.
+
+The crew searched his cabin and cargo, finding 45 gp, [[letters-of-marque]], and a blunderbuss in the cabin; 110 gp and two garnets under the floor; and a pendant marked *For Mira, from the sea*. A crate held flintlocks, Mira's Blade, and twenty vials of [[Grung]] poison. Mira's Blade went to [[perrin-black-jaw|Perrin]].
+
+Rook held captive a [[Moucheron]] named Ket as “a specimen,” driven by curiosity about the [[five-blades]] mercenaries operating out of [[kalowe]]. The crew freed Ket, who ate and flew home to [[murrat]]. The tincture ties Rook to [[simone-tabarnack]]'s supply chain; the crew does not yet know the full connection.
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -118,15 +162,15 @@ Naval Footwork lets him move away and disengage without cost. He repositions or 
 
 - [[norrington-kingsly]]: his predecessor, replaced by Rook as the harder choice.
 - [[dravosi-crown]]: the naval and inspection authority both serve.
-- [[Uncertainty|HCS Surety]]: his ship.
+- [[uncertainty|HCS Surety]]: his ship.
 - [[geoffrey-draves]]: crew member. Rook saw his surrender at the Saltwright as betrayal.
 - [[Dorian Bishop]], [[rupert-knighton]]: the officers up the Crown ladder Rook answers to.
 - [[beaumont-sel]]: commands the Saltwright. She deflected his shots twice in Session 01.
-- [[Ket]]: a Moucheron Rook held captive. Rook wanted to learn about the [[five-blades]] in [[Kalowe]].
+- [[Ket]]: a Moucheron Rook held captive. Rook wanted to learn about the [[five-blades]] in [[kalowe]].
 - Mira's Blade: found in his cargo. It went to Perrin.
 - [[simone-tabarnack]]: supplied his Grung tincture during his time with the Dravosi Crown.
 
-## Session Log
+**Session log.**
 
 - **Session 01: boarding of the Saltwright**. Kept above decks during the hold ambush, threatens [[geoffrey-draves]], caught by the Flask of Endless Water on the gangplank, fires his flintlock at [[beaumont-sel|Beaumont]] (deflected). Ends the session unharmed and alone. `vault/episodes/001/transcript.md:25,37-39,49,59,73`.
 - **[[Session 02: conflict aboard the Surety]]**. Retakes the Surety alone, fires on Crissdalynn (deflected), gets knocked into the water twice by Delmar and taken by something eel-like. The crew searches his cabin and cargo afterward. `vault/episodes/002/transcript.raw.md:25,29,31,33,35,69,91`.

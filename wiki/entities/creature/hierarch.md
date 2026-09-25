@@ -120,7 +120,7 @@ The campaign has two confirmed Hierarchs:
 
 **[[aldric-drave]]** founded the [[dravosi-crown]] before the colonial project began, seeding his bloodline into every noble family the Crown would produce. The Crown's genealogical archives are an inadvertent map of his phylactery network. He has been running this cycle for at least three centuries.
 
-**[[shepherd-grigori]]** is a CR 19 Hierarch. He traveled aboard the [[Uncertainty|HCS Surety]] before parting ways with its crew at [[La Vasca]] to pursue business of his own in [[calven-and-calveno]]. His current status and location live on his own page. His phylactery network is a collection of noble heirs whose incurable illnesses he cured. As long as any of them live, he cannot be permanently killed. His magic type remains unidentified (red viscous light, no components, Arcana 18 failed). His connection to the [[Khlysty]] is DM truth.
+**[[shepherd-grigori]]** is a CR 19 Hierarch. He traveled aboard the [[uncertainty|HCS Surety]] before parting ways with its crew at [[La Vasca]] to pursue business of his own in [[calven-and-calveno]]. His current status and location live on his own page. His phylactery network is a collection of noble heirs whose incurable illnesses he cured. As long as any of them live, he cannot be permanently killed. His magic type remains unidentified (red viscous light, no components, Arcana 18 failed). His connection to the [[Khlysty]] is DM truth.
 
 ## Tactics
 

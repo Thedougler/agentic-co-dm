@@ -22,6 +22,10 @@ reveal: revealed
 campaign: shattered-sea
 visibility: dm
 kind: plot
+region: "[[shelfworks]]"
+rarity: artifact
+attunement: false
+owner: "[[umberlee]]"
 relationships:
   - target: "[[delmar-fisk]]"
     type: related_to
@@ -37,11 +41,9 @@ relationships:
 
 Plot-relevant item, artifact. It collects souls without activation.
 
-## Effect
 
 The Pearl collects souls from anyone who drowns near it. It works nonstop. It does not need activation or attunement. A soul inside the Pearl cannot escape by normal means. The Pearl is one of seven instruments of [[Umberlee]], each controlling a different part of her domain. The other six remain unfound. Sources describe these narrative properties only and give no charges, save DCs, or balance numbers.
 
-## At a Glance
 
 Season 1's key recovery target. The Pearl rests with the wreck at the Red Lady site in the eastern [[Shelfworks]], deep inside [[drowned-maw]] below the planar boundary, where Umberlee's power stops.
 
@@ -52,7 +54,7 @@ The Pearl holds raw, untapped soul-power and sends a signal across the planar bo
 ## Connections
 
 - [[Umberlee]]. Owner of the instrument. She sank Delmar's fleet in anger after the theft.
-- [[Waveservants]]. Guarded the shrine where the Pearl rested for years.
+- [[waveservants]]. Guarded the shrine where the Pearl rested for years.
 - [[delmar-fisk]]. Stole the Pearl from a Waveservant shrine. He survived, bound to the five captains whose crews remain trapped in the Pearl.
 - [[fisks-fleet]]. Stole the Pearl under Chain Council direction before Aldric could claim it.
 - [[drowned-maw]]. Wreck site below the planar boundary. Umberlee cannot retrieve her Pearl here.
@@ -64,7 +66,6 @@ The Pearl holds raw, untapped soul-power and sends a signal across the planar bo
 - [[khlysty-the-flock]]. Sees the Pearl as a possible shortcut to transcendence.
 - [[Shelfworks]]. Eastern site of the wreck.
 
-## Secrets
 
 The [[tessarine-concordat]] claimed they wanted to protect the Pearl from Umberlee's wrath. Their real goal was control. Stop Aldric from claiming it, then take it themselves. What has come through the fissure so far, the Leviathan among them, is only the smallest of what wants in.
 

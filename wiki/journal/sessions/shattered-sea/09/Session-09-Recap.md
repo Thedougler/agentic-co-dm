@@ -18,7 +18,7 @@ campaign: shattered-sea
 visibility: dm
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
   - target: "[[aruhe]]"
     type: related_to
@@ -40,6 +40,6 @@ Ordinance boards. Course for Sparhold.
 
 ## Wiki facts
 
-The Grung raid fleet's captives were bound for [[Karath]], the seat of Grung power, which [[nona-black-jaw]]'s spellcaster pulled out of a captured purple. [[uncertainty|Uncertainty]] left [[la-vasca|La Vasca]]'s cradle for [[Sparhold]] after the refit. The Aruhe vision put the party inside a purple Grung of another garrison through the last minutes of a [[wolfrabbit]] hunt, and in the same crossing [[crissdalynn-khinriss]] found three sun-blasted Calveno captives on a shattered hull after a hurricane split the raid fleet in half.
+The Grung raid fleet's captives were bound for [[karath]], the seat of Grung power, which [[nona-black-jaw]]'s spellcaster pulled out of a captured purple. [[uncertainty|Uncertainty]] left [[la-vasca|La Vasca]]'s cradle for [[sparhold]] after the refit. The Aruhe vision put the party inside a purple Grung of another garrison through the last minutes of a [[wolfrabbit]] hunt, and in the same crossing [[crissdalynn-khinriss]] found three sun-blasted Calveno captives on a shattered hull after a hurricane split the raid fleet in half.
 
 [[hcs-ordinance|HCS Ordinance]], ninety-six guns under [[dravosi-crown|Crown]] colours, intercepted two days out of Calveno with [[corbin-knighton|Corbin Knighton]] crossing first and [[aleksander-malone]] aboard hunting [[shepherd-grigori]] under the [[the-hound-of-god|Hound of God]] thread. The party played merchant, hid [[perrin-black-jaw]], [[ruma-delacroix]] and [[jean-claude-tabarnack]] below, and [[delmar-fisk]] sent the warship on to [[calven-and-calveno|Calveno]] with the merchant story. Nona was warned by [[sending-stone-nonas|stone]]. Next: [[Session-10-Recap]].

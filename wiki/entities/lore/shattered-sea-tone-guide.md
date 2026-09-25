@@ -11,6 +11,11 @@ updated: 2026-09-13
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
+kind: doctrine
+truth: established
+scope: "DM and agent-facing narrative craft guidance for Shattered Sea characters and scenes."
+region: "Shattered Sea"
+era: current
 visibility: dm
 summary: "DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques."
 provenance:
@@ -21,9 +26,15 @@ tier: supporting
 ---
 # Shattered Sea - Tone Guide
 
-*DM/agent-facing craft guidance for narrating characters and scenes, not player-known content, and not a content boundary (see Lines and Veils for those).*
+## At a Glance
 
-## The Fact
+**Core truth.** The Shattered Sea's tone pairs swashbuckling polish with pettiness: competent people create real danger while vanity, resentment, and immature needs complicate their work.
+
+**Why it matters.** The doctrine keeps scenes stylish and dangerous without flattening every NPC into the same joke or voice.
+
+**Scope.** This is DM and agent-facing craft guidance, not player-known canon or a replacement for Lines and Veils.
+
+## Current Truth
 
 Core equation: high competence trapped inside low emotional maturity. Real danger, glamour, hierarchy, and momentum populate a world of stylish, capable people who let ego, vanity, lust, boredom, resentment, and old grudges complicate their best efforts. One-sentence tone: swashbuckling polish complicated by pettiness.
 
@@ -45,3 +56,62 @@ Core equation: high competence trapped inside low emotional maturity. Real dange
 **Agent application:** the default NPC dialogue register is status-testing and guarded about real needs. Default scene energy comes from competent professionals sabotaged by interpersonal baggage. Comedy comes from character flaws, never from making the world itself silly: the sea and its monsters remain dangerous, while the people are the disasters.
 
 This guidance governs narrative style and carries no overlap with Lines and Veils, which sets hard content boundaries (self-harm, hanging, sex), not tone.
+### Limits
+
+* **Exception.** Tone guidance does not override Lines and Veils, accessibility, safety, or the established truth of an owner page.
+* **Unknown to the world.** This is craft doctrine for the DM and agents, not a belief held by characters in the setting.
+* **Impossible or forbidden.** Do not make the world itself silly, replace consequences with jokes, or give every NPC the same sarcastic voice.
+
+## At the Table
+
+* **Players notice.** Stylish presentation, real stakes, sharp dialogue, competent actors, and petty conflicts that leave consequences.
+* **This explains.** Why a scene can be funny through character flaws while its danger and social cost remain sincere.
+* **This enables.** The DM can build a major scene from one external threat, one petty internal conflict, and an NPC's public image, competence, need, and fixation.
+* **This warns of.** Banter must not erase danger, flatten NPC voices, or cross the hard boundaries recorded in Lines and Veils.
+* **Relevant now.** The guide governs Shattered Sea prep, narration, NPC dialogue, and scene construction.
+
+## Who Knows
+
+| Knower | Knowledge | Certainty | Basis |
+| --- | --- | --- | --- |
+| The DM | The six tone pillars and their scene consequences. | knows | Campaign craft doctrine. |
+| Agents | The default construction and dialogue register. | knows | Standing instruction. |
+| Players | Only what the resulting scenes show. | partial | Player-facing play, not the hidden guide. |
+
+### Party Knowledge
+
+**Known.** No player-facing fact is established by this craft guide.
+
+**Suspected.** Players may recognize recurring style through play without knowing the doctrine's construction terms.
+
+**Misunderstood.** The tone guide is not permission to make danger harmless or to ignore Lines and Veils.
+
+**Last changed.** No session changes the craft doctrine.
+
+### Common telling
+
+> “Make the sea dangerous. Let the people make it worse.”
+
+## If This Is Changing
+
+* **Current pressure.** New scenes test whether stylish danger and character pettiness remain balanced.
+* **Actors.** The DM, agents, NPCs, factions, and players' choices shape the tone in execution.
+* **Their aims.** Craft should preserve competence, consequences, emotional specificity, and room for player agency.
+* **Without interference.** The six pillars remain the default for Shattered Sea scenes.
+* **Visible sign.** A scene loses its stakes, makes every NPC sound alike, or lets a joke erase a consequence.
+
+## Consequences
+
+* **Because this is true,** a polished scene should still contain danger, need, and consequences that survive the banter.
+* **If exposed,** a reader can diagnose whether a scene's comedy comes from character flaws or from making the world itself silly.
+* **If disproved,** the scene or NPC owner should be repaired rather than silently changing the tone doctrine.
+* **If changed,** DM and agent-facing craft guidance would need a new canonical version.
+* **If exploited,** petty personal conflict can create meaningful choices without reducing the setting to parody.
+
+## Connections
+
+| Page | Relationship | Table relevance |
+| --- | --- | --- |
+| [[shattered-sea]] | Campaign setting | Grounds the doctrine's dangerous, stylish sea. |
+| [[players]] | Safety and table boundaries | Keeps tone separate from Lines and Veils. |
+| NPC construction guidance | NPC construction reference | Supplies the image/competence/need/fixation formula. |

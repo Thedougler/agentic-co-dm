@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[central-strait]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[cotter-foss]]"
 summary: "An iron tar pot with a gnomish alchemical heating element in the base, keeping its contents workable without a brazier."
 provenance:
   extracted: 0.85
@@ -36,7 +41,6 @@ tier: supporting
 | Current holder | [[cotter-foss]] sells these from the rail of the [[nimmik-vollask]]. The gnomes make the heating elements below decks. |
 | Narrative hook | The heating element is a gnomish trade secret. Other chandleries sell the pots empty and buy the elements from the Depot at markup. |
 
-## Mechanics
 
 > [!mechanic]
 > **Self-Heating Tar Pot [HB].** Contains enough tar for 10 applications of hull or deck sealant. Pulling the wire activates the alchemical heating element in the base, which keeps the tar at working temperature for 8 hours. No open flame required.

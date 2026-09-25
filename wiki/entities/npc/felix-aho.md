@@ -49,7 +49,7 @@ He revealed something else: Grung defectors are a recognized kill-on-sight categ
 
 ## Prep Profile (Unconfirmed)
 
-This is a discarded DM prep concept. It describes a [[Vaka]] elder and Karath defector not used at the table. The name "Felix Aho" applies only to the session-canon captive here. This text comes from DM prep notes (source: `entities/characters/npcs/felix-aho.md`, shattered-sea legacy wiki). Treat nothing here as confirmed fact.
+This is a discarded DM prep concept. It describes a [[vaka]] elder and Karath defector not used at the table. The name "Felix Aho" applies only to the session-canon captive here. This text comes from DM prep notes (source: `entities/characters/npcs/felix-aho.md`, shattered-sea legacy wiki). Treat nothing here as confirmed fact.
 
 **Roleplay Concept:** he's like Kermit the Frog as a union organizer. Gentle, earnest, and perpetually overwhelmed, he builds things that are real and functional. He knows things that matter.
 
@@ -57,9 +57,9 @@ This is a discarded DM prep concept. It describes a [[Vaka]] elder and Karath de
 
 **Voice:** soft and reedy, he pauses like Kermit before hard truths ("Well… yeah. That's the thing") and speaks "we" more than "I." He clears his throat when nervous. Only when scared or caught off Guard does he speak for himself alone. His surface reads as warm, earnest, and overwhelmed. When danger threatens someone he protects, he stills and focuses. He knows how to make things explode, yet chooses not to.
 
-**Karath defection:** green caste. He defected from Karath eight years ago, using homemade explosives to destroy [[Grung]] raiding groups in careful, deliberate work he never discussed. The Karath Gold know who did it, yet they have not found him. From a fish stall at [[Fare I'a]] in [[calders-tooth-and-port-tidefall]], he built the [[Vaka]] (Grung defectors and freed slaves) one conversation at a time.
+**Karath defection:** green caste. He defected from Karath eight years ago, using homemade explosives to destroy [[Grung]] raiding groups in careful, deliberate work he never discussed. The Karath Gold know who did it, yet they have not found him. From a fish stall at [[Fare I'a]] in [[calders-tooth-and-port-tidefall]], he built the [[vaka]] (Grung defectors and freed slaves) one conversation at a time.
 
-**What he knows:** each Verdant Tooth island's Gold caste runs itself. They conflict with each other. They hide truth from lower castes so clans look unified. [[jean-claude-tabarnack|Jean-Claude]] doesn't know this. Threat to the [[Vaka]] shows the violence he will not use.
+**What he knows:** each Verdant Tooth island's Gold caste runs itself. They conflict with each other. They hide truth from lower castes so clans look unified. [[jean-claude-tabarnack|Jean-Claude]] doesn't know this. Threat to the [[vaka]] shows the violence he will not use.
 
 **Prep goal:** help Jean-Claude and others like him adapt to life outside [[verdant-teeth|the Verdant Teeth]]. The real problem: Grung raids were expanding, making his quiet life noisier.
 
@@ -76,9 +76,9 @@ No stats given in source.
 
 **Prep profile (unconfirmed, discarded continuity):**
 
-- [[jean-claude-tabarnack]] is a key [[Vaka]] contact in the prep framing. His exile makes him a natural connection. We know [[simone-tabarnack]] only through J.C.'s profile.
-- An elder and primary organizer lead the [[Vaka]]. [[Fare I'a]] operates the stall at [[calders-tooth-and-port-tidefall]] (prep location).
-- [[Karath]] is the origin island. The Gold there know what he did.
+- [[jean-claude-tabarnack]] is a key [[vaka]] contact in the prep framing. His exile makes him a natural connection. We know [[simone-tabarnack]] only through J.C.'s profile.
+- An elder and primary organizer lead the [[vaka]]. [[Fare I'a]] operates the stall at [[calders-tooth-and-port-tidefall]] (prep location).
+- [[karath]] is the origin island. The Gold there know what he did.
 
 ## Session Log
 

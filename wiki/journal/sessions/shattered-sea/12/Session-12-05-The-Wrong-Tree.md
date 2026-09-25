@@ -129,4 +129,4 @@ flexGrow=1
 - [[strangler-fig]]. Full statblock.
 - [[nello-castri]]. His secret and his posture once free.
 - [[taking-on-aruhe]]. Claims, marks, and fighting back.
-- [[Hinewai]]. She fears wildfire; smoke from the Hollow reaches her Grove.
+- [[hinewai]]. She fears wildfire; smoke from the Hollow reaches her Grove.

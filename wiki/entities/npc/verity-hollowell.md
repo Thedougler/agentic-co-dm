@@ -24,7 +24,7 @@ tier: supporting
 
 |             |                                                   |
 | ----------- | ------------------------------------------------- |
-| **Species** | [[Human]] (Dravosi)             |
+| **Species** | [[human]] (Dravosi)             |
 | **Role**    | Account manager, Hollowell Import Agency             |
 | **Location**| [[calders-tooth-and-port-tidefall]]                         |
 
@@ -46,7 +46,7 @@ At twenty-four with dark hair pinned up, she is still (some call it cold), thoug
 
 A gap in her father's primary accounts: bonded cargo moved through Hollowell licensing without proper paperwork. She doesn't know if her father approved it or if someone forged his credentials. She has reported nothing. The gap threatens her family's license.
 
-Six weeks ago, she found Geoffrey on the missing [[Uncertainty|HCS Surety]]'s crew manifest but hasn't told her father. She sent a quiet inquiry through her Hollowell accounts to a [[Midchain]] contact, seeking the ship's true form, not what the Crown has claimed. The Surety is a patrol cutter, eighty feet, and she knows it by sight. The inquiry moves slowly. Trade letters will reach Midchain within a week.
+Six weeks ago, she found Geoffrey on the missing [[uncertainty|HCS Surety]]'s crew manifest but hasn't told her father. She sent a quiet inquiry through her Hollowell accounts to a [[Midchain]] contact, seeking the ship's true form, not what the Crown has claimed. The Surety is a patrol cutter, eighty feet, and she knows it by sight. The inquiry moves slowly. Trade letters will reach Midchain within a week.
 
 **Hooks from Verity:** ledger leverage for Crown deals or unlicensed cargo, pier scheduling access, Geoffrey's return to Tidefall, and a potential suitor with Admiralty connections (through her father).
 

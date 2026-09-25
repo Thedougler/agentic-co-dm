@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Ashen Roost
@@ -56,7 +56,7 @@ The island's defining features are firebird nesting grounds, scorched patches, f
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** Ashen Roost is listed within [[Southern Midchain]], whose steep volcanic islands have deep water near shore and few anchorages. [[Halewick]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** Ashen Roost is listed within [[Southern Midchain]], whose steep volcanic islands have deep water near shore and few anchorages. [[halewick]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

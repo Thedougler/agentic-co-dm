@@ -8,6 +8,10 @@ created: 2026-09-13
 updated: 2026-09-13
 type: npc
 reveal: revealed
+status: alive
+role: contact
+location: "[[uncertainty|HCS Surety]]"
+faction: none
 campaign: shattered-sea
 visibility: dm
 summary: "Fifteen-year-old ship's cook (learning) aboard the HCS Surety, driven to bridge sailing manuals and real sailing experience."
@@ -19,41 +23,74 @@ tier: supporting
 ---
 # Noor
 
-![[noor-banner]]
-![[noor-portrait]]
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Ship's Cook (learning)** aboard the [[Uncertainty|HCS Surety]], formerly under [[barnaby-rook]]. The youngest crew member, learning from both books and real sailing.
+| **Role**   | Contact; ship's cook (learning) |
+| ---------- | ------------------------------- |
+| **Nature** | Fifteen-year-old youngest crew member who learns by comparing sailing manuals with real work. |
+| **Home**   | [[uncertainty|HCS Surety]], formerly under [[barnaby-rook]] |
+| **Wants**  | Practical sailing experience, a new destination, and a ship headed somewhere interesting. |
+| **Limit**  | Noor will not leave unless sent back to Port Tidefall forever, and trusts the manual even when it has no answer. |
 
-|             |                                                            |
-| ----------- | ---------------------------------------------------------- |
-| **Species** | [[Human]]                                                       |
-| **Post**    | Formerly [[Uncertainty\|HCS Surety]], under [[barnaby-rook]] |
-| **Rank**    | Ship's Cook (learning)                                      |
-| **Crew Role** | Cook                                                      |
-| **Wage**    | 4 gp/week (cook rate)                                       |
+> **DM thesis:** Noor is an eager apprentice who treats every voyage as a lesson and every gap in the manual as a reason to update the book.
+```
 
-Fifteen, maybe. They hid during the fight. They came out with a sailing manual ready.
+```col-md
+flexGrow=1
+===
+> [!narration] Noor
+> Noor is fifteen, perhaps, and keeps a sailing manual ready at hand. They move between galley work and the ship's other tasks with the quick attention of someone checking each problem against a book. When the manual has no answer, they look at the gap as evidence that the book needs updating.
+```
+````
 
-They know every sailing manual by heart. They have sailed on almost none of them. They want practical sailing to match the manuals. Any new ship is a better classroom than [[calders-tooth-and-port-tidefall]].
+## Running Noor
 
-[[shepherd-grigori]] calls them useful in the galley. They learned by watching. That's how they learn.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-**Aboard ship**, they're easy to direct and quick to ask questions. They handle the galley and ship's provisions well. They help with any other work and always check the manual for new problems. When the manual has no answer, they see the gap as proof the book needs updating.
+Noor emerges from the galley or crew assembly with a sailing manual ready. They ask where the ship is headed, then check whether the destination appears in the book.
 
-**Recruitment.** They haven't decided where to go yet, but they want a ship headed somewhere interesting. Give them a new destination and they'll check the manual. If it is not in the book, they nod yes and ask nothing else. Noor won't leave unless sent back to Port Tidefall forever, but they welcome any journey forward, since they're fifteen and want to see new places.
+> *Noor*: “Is this route in the manual?”
+```
 
-## Stats & Combat
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-No stats given in source.
+Noor is easy to direct aboard ship and quick to ask questions. They open when someone offers practical sailing experience or a destination they have not seen. They close when sent back to Port Tidefall forever, or when someone dismisses the manual without explaining what the real ship taught them.
+
+They handle the galley and ship's provisions well, help with other work, and check the manual for new problems. They will follow a new ship toward an interesting destination, nod yes when the destination is not in the book, and ask what needs to be added.
+```
+````
+
+### Voice
+
+Noor speaks plainly, asks short practical questions, and returns to the language of manuals, routes, and lessons. Their repeated habit is checking the book whenever a problem appears.
+
+**The ask:** *“Can I see what the ship does in practice?”*
+
+**The refusal:** *“I am not going back to Port Tidefall forever.”*
+
+**Under pressure:** *“It is not in the manual. That means the manual needs updating.”*
+
+**Session history.** Noor has not appeared in play beyond the crew assembly. This page got its canon status from the session record, not from the original source notes. `vault/episodes/002/transcript.raw.md:63` lists Noor among the crew assembled aboard ship with [[geoffrey-draves]], [[sem-holst]] the shipwright, [[alys-kuiper]] the surgeon, [[old-faas]] for the rigging, and [[Thunk]]. Noor is the youngest of the group; the canon rests on a thin mention.
+
+**Recruitment.** Noor has not decided where to go yet, but wants a ship headed somewhere interesting. Give them a new destination and they will check the manual. If it is not in the book, they nod yes and ask nothing else. They welcome any journey forward because they are fifteen and want to see new places.
 
 ## Connections
 
-- [[Uncertainty|HCS Surety]], where they serve as ship's cook (learning), formerly under [[barnaby-rook]]'s command.
-- [[barnaby-rook]], former captain of the HCS Surety, under whom they formerly served.
-- [[shepherd-grigori]], who credited them, obliquely, with being useful in the galley.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[uncertainty\|HCS Surety]] | Ship where Noor serves as cook (learning), formerly under [[barnaby-rook]]. |
+| [[barnaby-rook]] | Former captain under whom Noor served. |
+| [[shepherd-grigori]] | Credited Noor, obliquely, with being useful in the galley. |
 
-## Session Log
-
-Noor hasn't appeared in play yet beyond the crew assembly. This page got its canon status from the session record, not from the original source notes.
-
-`vault/episodes/002/transcript.raw.md:63` lists them among the crew assembled aboard ship with [[geoffrey-draves]], [[sem-holst]] the shipwright, [[alys-kuiper]] the surgeon, [[old-faas]] for the rigging, and [[Thunk]]. They are a new NPC, the youngest of the group. The canon rests on a thin mention.
+**Combat.** No stats are given in the source. Noor avoids violence and seeks a shipboard task, a manual, or an escape route rather than fighting.

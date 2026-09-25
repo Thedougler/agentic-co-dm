@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[le-paludi]]"
+kind: durable
+rarity: rare
+attunement: false
+owner: "[[zort]]"
 summary: "A six-legged hunting cat four feet at the shoulder, caged high at Zort's Pits with another buyer's name already chalked on the bar."
 provenance:
   extracted: 0.85
@@ -35,7 +40,6 @@ tier: supporting
 
 *Tool (Trained Animal), Rare.* A Mid-Chain hunting cat, Large, four feet at the shoulder, speed 50 ft., taken as a cub and pit-trained for three years. The extra pair of legs makes a climber nothing in the [[crown-islands]] can follow. [[Zort]] sells one about every two years and warns every buyer that the pit never fully took the wild out of one.
 
-## Mechanics
 
 > [!mechanic]
 > **[HB] Hunting Partner.** The cat obeys a handler who has worked it for a week. On your turn you can command it as a bonus action. Without a command it defends itself and does nothing more. It has the statistics of a panther, with 45 hit points and a climb speed of 40 ft., and its bite deals 2d6 piercing damage.

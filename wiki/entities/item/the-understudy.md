@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: rare
+attunement: true
+owner: "[[fioravante-selmerin]]"
 summary: "A folded canvas figure that unfolds into a convincing double of its owner, takes one attack meant for them, and collapses at the owner's feet."
 provenance:
   extracted: 0.85
@@ -45,7 +50,6 @@ Sold to nobody yet. It lies in the locked case at the back of the shop, on the s
 
 Rare tier holds. Magic Item Rarity puts Rare goods in an approximate 500-5,000 gp band, and 1,800 gp sits low inside it beside [[Moretti]]'s [[gale-cut-storm-sail]] at the same price. Against _mirror image_ it is narrower and blunter: one duplicate rather than three, one attack rather than a run of them, no concentration, no spell slot, and no chance at all that the wrong figure gets hit.
 
-## Mechanics
 
 > [!mechanic]
 > **The Understudy [HB].** The folio does this once per day and recovers at dawn. When an attacker the owner can see hits the owner with an attack roll, the owner may use their reaction to open the folio.

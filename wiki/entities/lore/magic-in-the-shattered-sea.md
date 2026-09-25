@@ -11,6 +11,11 @@ updated: 2026-09-13
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
+kind: cosmology
+truth: established
+scope: "Arcane, Divine, and Primal traditions and their interactions with supernatural effects across the Shattered Sea."
+region: "Shattered Sea"
+era: current
 visibility: dm
 summary: "Arcane, Divine, and Primal tradition rulings for Detect Magic, Counterspell, and Dispel Magic across every supernatural system in the Shattered Sea."
 provenance:
@@ -21,15 +26,20 @@ tier: supporting
 ---
 # Magic in the Shattered Sea
 
-*Arcane, Divine, and Primal sit above the spell schools, governing how player spells interact with every supernatural effect in this campaign.*
+## At a Glance
 
-## The Fact
+**Core truth.** Arcane, Divine, and Primal traditions govern how spells and other supernatural effects interact with detection, countering, and dispelling.
+
+**Why it matters.** The tradition tells the DM what a spell or effect reveals and which countermeasure can affect it.
+
+**Scope.** This page covers the campaign-wide rulings and named examples recorded below.
+## Current Truth
 
 This page is world-texture with no single PC thread owning it. Every Grung encounter, Maw conduit interaction, and Tithe item question pulls on it through its own thread.
 
 Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and Primal. These sit above the eight spell schools as a table-level classification governing how Detect Magic, Counterspell, and Dispel Magic interact with every supernatural effect in the world. The answer to "what does Detect Magic show?" and "can I Counterspell this?" always depends on tradition first, school second.
 
-### Tradition Profiles
+**Tradition Profiles.**
 
 **Arcane** magic operates through study and technique. A practitioner learns it, and trained casters can teach it or steal it. Every arcane effect carries a school. Detect Magic returns tradition and school. Counterspell intercepts any arcane cast, and Dispel Magic suppresses it.
 
@@ -43,7 +53,7 @@ Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and 
 > **Counterspell:** intercepts arcane and divine cast spells. Primal traits and conduit effects (an entity's influence flowing through a vessel with no discrete cast event) fall outside its reach.
 > **Dispel Magic:** suppresses arcane and divine effects. Primal magic resists it. Effects with an external divine release condition may return after suppression ends.
 
-### The Grung Three-Layer System
+**The Grung Three-Layer System.**
 
 [[Grung]] magic runs three simultaneous layers, each a distinct tradition with no mechanical interaction between them.
 
@@ -63,16 +73,16 @@ Magic in the Shattered Sea runs on three source traditions: Arcane, Divine, and 
 > **Counterspell:** targets individual divine spells the leader casts. The tap itself has no discrete cast event to intercept.
 > **Dispel Magic:** suppresses individual cast effects. The tap lies beyond its reach. Only severing belief or proximity drains it.
 
-### The Maw Entity
+**The Maw Entity.**
 
-An entity on the far side of the [[drowned-maw]] fissure is actively ripping reality. Its influence reaches the surface through conduits; [[Toby]] and [[Frankie]] are accidental conduits, not independent casters. The entity's effects fall outside the three-tradition taxonomy entirely, originating beyond the planar structure it maps.
+An entity on the far side of the [[drowned-maw]] fissure is actively ripping reality. Its influence reaches the surface through conduits; [[Toby]] and [[frankie]] are accidental conduits, not independent casters. The entity's effects fall outside the three-tradition taxonomy entirely, originating beyond the planar structure it maps.
 
 > [!mechanic]
 > **Detect Magic near a conduit (Toby or Frankie):** No school registers. The air feels like it's under strain (wrong pressure, something pushing through from somewhere else). Arcana check: planar contamination, not a cast spell.
 > **Counterspell:** not applicable. No discrete cast event exists to intercept. The entity's declarations constitute direct influence on reality, outside the spell framework.
 > Closing the fissure or addressing the entity is the only remedy. The children are keys, but the power source lies elsewhere. Harming the children has no effect on the source.
 
-### Umberlee's Tithe
+**Umberlee's Tithe.**
 
 The curse that falls on every piece of the [[the-tithe-of-the-bitch-queen|Tithe]] is divine. [[Umberlee]] maintains active divine attention on each piece; the curse is her attention, not a cast spell.
 
@@ -84,7 +94,7 @@ The curse that falls on every piece of the [[the-tithe-of-the-bitch-queen|Tithe]
 > **Counterspell:** not applicable (not a cast spell, an ongoing divine imposition).
 > The curse falls on the object, not the bearer. Transfer, sale, or gifting moves the curse with the item.
 
-### Sin and Sanctuary
+**Sin and Sanctuary.**
 
 The cosmological law governing fiend incursion, hallowed ground, and the demon's/devil's kiss maps to existing SRD spells without homebrew additions. See [[sin-and-sanctuary]] for the full lore.
 
@@ -94,3 +104,65 @@ The cosmological law governing fiend incursion, hallowed ground, and the demon's
 > **The demon's/devil's kiss (Bestow Curse, Necromancy, Divine).** Permanent, patron-sanctioned. The receiving fiend is the instrument, not the caster. Detect Magic: Divine necromancy, a mark that remembers the moment of recognition. Counterspell: not applicable. The patron sanctions the kiss directly, and no mortal cast event occurs to intercept.
 >
 > **Fiend/celestial soul-reading (Detect Evil and Good, Divination, Divine).** Always-on and passive, requiring neither a cast event nor concentration. All fiends and celestials read mortal souls this way innately. Counterspell: not applicable.
+### Limits
+
+* **Exception.** Primal base traits and conduit effects do not follow the ordinary cast-spell interactions described for Arcane and Divine magic.
+* **Unknown to the world.** The page does not define every supernatural effect or every patron's release condition.
+* **Impossible or forbidden.** No additional homebrew tradition is established beyond the named campaign cases.
+
+## At the Table
+
+* **Players notice.** Detect Magic may reveal tradition and school, fail to register primal traits, or sense planar strain around a Maw conduit.
+* **This explains.** Why Counterspell and Dispel Magic work on some effects but not on primal traits, conduit influence, or an ongoing divine tap.
+* **This enables.** The party can classify an effect before choosing whether to counter, dispel, sever belief, close a fissure, or address a source.
+* **This warns of.** Suppressing an effect is not always the same as removing its source; Umberlee's attention and the Grung certainty-tap can reassert.
+* **Relevant now.** Grung rites, the [[drowned-maw]], [[the-tithe-of-the-bitch-queen|Tithe]], and [[sin-and-sanctuary]] all use these rulings.
+
+## Who Knows
+
+| Knower | Knowledge | Certainty | Basis |
+| --- | --- | --- | --- |
+| Trained spellcasters | Arcane and Divine spell interactions. | knows | Practice and instruction. |
+| Grung Gold leaders | The certainty-tap's Divine source and limits. | knows | Direct access to the tap. |
+| Maw conduits | The pressure of an external influence without a discrete cast. | partial | Direct bodily experience. |
+| Umberlee's faithful | The Tithe's curse and saltwater release condition. | partial | Religious practice and doctrine. |
+
+### Party Knowledge
+
+**Known.** The party can classify many effects by tradition and choose the matching response.
+
+**Suspected.** The party may suspect that the Maw entity, the Grung certainty-tap, and Umberlee's Tithe cannot be solved by ordinary countering alone.
+
+**Misunderstood.** A successful Dispel Magic suppresses some effects but does not necessarily end the source or its attention.
+
+**Last changed.** No session is recorded.
+
+### Common telling
+
+> “Name the source before you name the spell.”
+
+## If This Is Changing
+
+* **Current pressure.** The party's encounters with Grung rites, Maw conduits, divine curses, and fiend protections test the campaign's tradition rulings.
+* **Actors.** Grung Gold leaders, the Maw entity, Umberlee, patrons, fiends, celestials, and the party's casters.
+* **Their aims.** Each source preserves or exploits its own channel while opponents seek to classify, interrupt, or sever it.
+* **Without interference.** These interactions remain stable, with source-specific exceptions continuing to matter more than school labels alone.
+* **Visible sign.** A new effect resists a familiar response, registers under an unexpected tradition, or reveals an external release condition.
+
+## Consequences
+
+* **Because this is true,** choosing a magical response begins with identifying the tradition and whether a discrete cast event exists.
+* **If exposed,** a party can recognize when a countermeasure targets only the effect and not the source behind it.
+* **If disproved,** the named Grung, Maw, Tithe, and sanctuary rulings would need targeted reconciliation.
+* **If changed,** spellcasting tactics and the meaning of Detect Magic across the campaign would shift.
+* **If exploited,** the party can use source-specific weaknesses such as interrupted maintenance, severed belief, saltwater, or a closed fissure.
+
+## Connections
+
+| Page | Relationship | Table relevance |
+| --- | --- | --- |
+| [[grung-color-and-the-sealing-rite]] | Arcane Grung rite | Supplies a concrete transmutation case. |
+| [[drowned-maw]] | External entity and conduit | Demonstrates effects outside ordinary cast-spell responses. |
+| [[the-tithe-of-the-bitch-queen]] | Divine curse | Demonstrates suppression followed by reassertion. |
+| [[sin-and-sanctuary]] | Divine and fiend interaction | Grounds hallowed ground and fiend soul-reading. |
+

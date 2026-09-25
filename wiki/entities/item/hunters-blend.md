@@ -7,52 +7,49 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:hunters-blend.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A single-use alchemical cigarette that reveals a creature's compass direction for one hour when lit with a fresh trace of blood, hair, or tracks."
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
+summary: "A single-use alchemical cigarette that reveals a marked creature's compass direction for one hour when lit with a fresh trace."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Hunter's Blend
 
 > [!narration] Narration
-> The wrapper is the deep red of old blood, twisted tight at both ends, a small compass rose stamped near the filter.
->
-> It weighs more in the hand than a paper cigarette should. The smell reaches you first, char and a thread of something like wet iron.
->
-> Dark fibers run through the leaf in a pattern that never repeats. The leaf packs so dense it takes a hard pull to loosen.
->
-> A brass pin through the tip holds the whole thing shut. A single arrow marks its head, and the metal is already warm against your thumb.
+> The wrapper is the deep red of old blood, twisted tight at both ends, with a small compass rose stamped near the filter. It weighs more than paper should. The smell reaches you first: char and something like wet iron. Dark fibers cross the leaf in a pattern that never repeats. A brass pin through the tip holds it shut; a single arrow marks its head, and the metal is warm against your thumb.
 
-_Consumable, Uncommon._
+*Consumable, uncommon.*
 
-One of six blends of alchemical cigarettes sold in [[calven-and-calveno]]. Hunter's Blend is a bounty hunter's tool, built to turn a dropped trace into a heading.
+One of six alchemical cigarette blends sold in [[calven-and-calveno]]. Hunter's Blend turns a dropped trace into a heading.
 
-| Field | Detail |
-|---|---|
-| One thing | Studied against a fresh physical trace and lit, it shows the compass direction of the marked creature for the next hour. |
-| Rarity justification | Uncommon, comparable to Wand of Secrets (no attunement, divination utility, points toward a hidden target within its own range) and Bag of Tricks (no attunement, charge-limited, one bounded effect per use). Hunter's Blend trades their repeatable charges for a single burn, and its direction-only readout with no distance and no line of sight keeps it well under the 4th-level Locate Creature spell. |
-| Attunement reason | Single use, grants no bonus to attack, damage, saving throws, or AC, and carries one power. The attunement decision tree's branches don't trigger. |
-| PC connection | [[jean-claude-tabarnack]] already reads the [[Grung]] handler cell's stances in Calveno's crowds but can never follow one home. Hunter's Blend turns a single dropped trace into an hour of knowing which way a handler went. |
-| Current holder | Sold from the shelf at [[La Brace]], the [[Velo Quarter]] smoking room [[rufio-segalla]] runs, the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60% price as an unreliable second off [[La Gatta]], a vending board on [[the Bridge]]'s bottom tier run by [[nicco-kettley]]. |
-| Narrative hook | Bought openly at either counter, or found already rolled in the coat of a courier or enforcer who tracks people for a living. |
+**Find the heading.** Before lighting the cigarette, spend 1 minute with a fresh trace of the target: blood, hair, nail clippings, or tracks taken within the last 24 hours. Lighting it takes an action. For the next hour, the wielder knows the marked creature's compass direction while it remains within 1 mile and on the same plane. The smoke gives direction only, never distance, sightline, condition, or what stands along the way.
 
-## Mechanics
+The effect ends if the creature dies, leaves the plane, or moves more than 1 mile away. The cigarette burns away after use. An older trace does nothing. The smoke fails silently against a creature warded by Nondetection or a similar effect.
 
-**[HB]** Single use, consumable. Before lighting Hunter's Blend, the wielder spends 1 minute with a fresh trace of the target. Blood, hair, nail clippings, or tracks all work, taken within the last 24 hours.
+## At the Table
 
-Lighting the cigarette takes an Action. For the next hour, the wielder knows the compass direction of the marked creature, as long as it stays within 1 mile and on the same plane. The smoke gives direction only, never distance, and never what stands along the way.
+[[rufio-segalla]] sells Hunter's Blend from [[La Brace]], the [[Velo Quarter]] smoking room he runs and the only room in Calveno licensed to burn alchemical smoke openly. [[nicco-kettley]] sells unreliable rejected batches at 60% price from [[La Gatta]] on [[the Bridge]]'s bottom tier. The item can turn a fresh dropped trace into a direction, but never supplies distance, line of sight, or a route through obstacles.
 
-The effect ends early if the marked creature dies or leaves the plane. It also ends if the creature moves more than 1 mile away. Once lit, Hunter's Blend burns away for good, with no recharge and no recovery.
+## Connections
 
-**Limitations:** gives a heading only, with nothing about distance or sightline and nothing about the creature's condition. It cannot track a creature the wielder never gathered a trace from, and a trace older than 24 hours does nothing. The smoke fails silently against a creature warded by Nondetection or a similar effect.
+- [[rufio-segalla]] finishes the blends in [[La Brace]].
+- [[nicco-kettley]] resells rejected batches from [[La Gatta]].
+- [[marta-orsini]] supplies the base compound from [[Studio Orsini]] in [[le-paludi]].
+- [[jean-claude-tabarnack]] can use a trace to follow a [[Grung]] handler cell.
+- [[calven-and-calveno]] is the market where the six blends are sold.
 
 ## Provenance
 
-[[rufio-segalla]] finishes every blend himself in [[La Brace]]'s back room, from a base compound he buys by standing order from [[marta-orsini]] at [[Studio Orsini]] in [[le-paludi]]. [[nicco-kettley]] resells Orsini's rejected batches of the same blend under the Bridge.
+[[rufio-segalla]] finishes every blend in [[La Brace]]'s back room from a base compound bought by standing order from [[marta-orsini]] at [[Studio Orsini]] in [[le-paludi]]. [[nicco-kettley]] resells rejected batches of the same blend under the Bridge.

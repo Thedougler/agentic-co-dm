@@ -13,10 +13,14 @@ created: 2026-09-13T21:10:00Z
 updated: 2026-09-13
 type: npc
 reveal: unrevealed
+status: active
+role: "Halewick child with cursed-tongue"
+location: "[[halewick]]"
+faction: none
 campaign: shattered-sea
 visibility: dm
 relationships:
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
   - target: "[[Toby]]"
     type: related_to
@@ -24,65 +28,89 @@ relationships:
 
 # Billy
 
-# Billy
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Wants:** to stop [[Toby]] and [[Frankie]]'s collision before it consumes the whole island, but he doesn't know how to undo any of it, and neither does anyone else on Halewick.
+| **Role**   | Halewick child with cursed-tongue |
+| ---------- | --------------------------------- |
+| **Nature** | A wiry nine-year-old who already knows the situation is too large for him and still tries to be responsible. |
+| **Home**   | [[halewick]] |
+| **Wants**  | To stop [[Toby]] and [[frankie]]'s collision before it consumes the island. |
+| **Leverage** | He compelled villagers to carry his exact plea to the wider world. |
+| **Limit**  | He does not know how to undo the compulsion or the collision, and refuses to leave Halewick to speak for himself. |
 
-> [!narration] Narration
-> A wiry kid, maybe nine, salt-cracked knuckles and a fisher's squint that looks too old for the rest of his face. He keeps both hands jammed in his pockets, like he's decided touching anything is a risk he can't afford right now.
+> **DM thesis:** Billy is the responsible child trapped between two escalating powers, using one irreversible sentence to make the outside world notice.
+```
 
+```col-md
+flexGrow=1
+===
+> [!narration] Billy
+> A wiry kid, maybe nine, with salt-cracked knuckles and a fisher's squint too old for the rest of his face. Both hands stay jammed in his pockets, as if touching anything is a risk he cannot afford.
+```
+````
 
-*Billy*: Find heroes to save us from ourselves.
+## Running Billy
 
-**Roleplay Concept:** the one kid at the sleepover who already knows it's over, still trying to be the responsible one.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-The third child on [[Halewick]] to develop cursed-tongue, after Toby
-declared himself emperor and Frankie escalated into his rival. Billy
-has used his own power exactly once, deliberately. He compelled a handful of
-villagers with one flat, absolute instruction, *"Find heroes to save us from
-ourselves,"* and gave them a second line to deliver once they succeeded:
-*"We will destroy everything if this is not stopped and it leaves our
-island."* The compulsion persists once landed. Those villagers don't relay
-either line in their own words, whether at a port or intercepted at sea. They
-repeat both identically, word for word as Billy gave them. He never leaves
-Halewick to say either line himself. This is Halewick's hook into the wider
-world, not rumor or hearsay.
+Billy does not leave [[halewick]]. The party meets him through the villagers he compelled with one flat instruction: *“Find heroes to save us from ourselves.”* When the heroes reach him, he says what happened without trying to sound in charge.
 
-> [!mechanic]
-> **Tradition:** Primal.
-> **Spell analogue:** Geas (SRD) — the compulsion binds a specific spoken instruction rather than a broad directive.
-> **Homebrew element:** Targets repeat the given words verbatim and indefinitely; no paraphrase is possible.
-> **Detect Magic:** nothing — Primal biology; no aura registers.
-> **Counterspell:** no — Primal tradition; the compulsion persists after the moment of activation.
+> *Billy*: “I'm not trying to be in charge. Somebody has to be.”
+```
 
-**Toy Chest**
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Billy speaks only as a last resort and only once. He becomes more frightened, not more forceful, when [[Toby]] and [[frankie]]'s collision escalates. If nobody comes, he edges toward using his own cursed-tongue directly on one of them, a fix that could be as catastrophic as the collision.
+```
+````
+
+## Voice
+
+Billy is careful, clipped, and older than his years. He keeps his hands in his pockets so he cannot gesture while speaking.
+
+**The ask:** *“Find heroes to save us from ourselves.”*
+
+**The refusal:** *“I don't know how to undo it.”*
+
+**Under pressure:** *“I already know what happens if nobody comes.”*
+
+**Mechanic.** His tradition is Primal. His spell analogue is *Geas* (SRD), but the compulsion binds a specific spoken instruction rather than a broad directive. Targets repeat Billy's words verbatim and indefinitely; no paraphrase is possible. Detect Magic finds nothing because the effect is Primal biology. Counterspell cannot affect it after activation.
+
+**Toy Chest.**
 
 | Field | Value |
 |---|---|
 | Primary goal | Stop Toby and Frankie's collision before it consumes the whole island. |
-| Consistent method | Uses only one flat, absolute sentence, and only when nothing else will fix it. Then he stops talking entirely. |
-| Active problem | He doesn't know how to undo any of it, and neither does anyone else on the island. |
-| Performance hooks | The kid at the sleepover who already knows it's over. Keeps his hands jammed in his pockets so he can't gesture while he talks. |
-| Link of relevance | Pressures [[delmar-fisk]]'s own unresolved theft of the [[pearl-of-souls]]. Billy's plea exists only because of the [[drowned-maw]] breach that theft is straining, entirely unknown to Delmar. |
-
-**Voice & Delivery:** careful, clipped, older than his years. *Billy*: I'm not
-trying to be in charge. Somebody has to be. *Billy*: *(quiet)* I already know
-what happens if nobody comes.
+| Consistent method | Uses one flat, absolute sentence only when nothing else will fix it, then stops talking. |
+| Active problem | He does not know how to undo any of it. |
+| Performance hook | The responsible kid at the sleepover who already knows it is over. |
+| Link of relevance | His plea pressures [[delmar-fisk]]'s unresolved theft of the [[pearl-of-souls]], unknown to Delmar. |
 
 ## Connections
 
 - [[Toby]], the self-declared emperor whose escalating collision with
   Frankie Billy is trying to stop.
-- [[Frankie]], the rival whose duels with Toby Billy is trying to
+- [[frankie]], the rival whose duels with Toby Billy is trying to
   stop.
-- [[Halewick]], his home island.
+- [[halewick]], his home island.
 - [[delmar-fisk]] (link_of_relevance). Billy's plea pressures Delmar's own
   unresolved theft of the [[pearl-of-souls]], entirely unknown
   to Delmar himself.
 
-## Goals & Fronts
+**Goals & Fronts.**
 
-### Front: Stop Toby and Frankie Before Halewick Burns
+**Front: Stop Toby and Frankie Before Halewick Burns.**
 
 **Lifecycle:** active
 **Aim:** stop Toby and Frankie's collision before it consumes the whole island.

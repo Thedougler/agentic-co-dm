@@ -26,10 +26,10 @@ Debt is the politics. Every favour is a ledger line. Change for a Tessarine silv
 ## Public goal and methods
 Notes paid, collateral held, and trade moving. They rarely say no; they say yes with terms: letters of credit, route underwriting, salvage contracts, debt-recovery holds, and Council obligations tied to private notes. Factors slide ledgers across counters without speaking. Appointments take weeks.
 
-The same pattern repeats through Calveno's counting houses, the Midchain hub at [[Kalowe]], [[Sparhold]], and bonded holds on Tessarine hulls. Reliability is the weapon: insured cargo, paid losses, sealed mail, and a courtesy that is always a contract.
+The same pattern repeats through Calveno's counting houses, the Midchain hub at [[kalowe]], [[sparhold]], and bonded holds on Tessarine hulls. Reliability is the weapon: insured cargo, paid losses, sealed mail, and a courtesy that is always a contract.
 
 ## Trade houses and craft
-The three-storey [[Tessarine Trade House]] on the Shelf at [[Calder's Tooth and Port Tidefall]] licenses trade, brokers salvage, and sends couriers. Its known craft include [[Amberreach]], a reliable Calveno cargo galleon, and [[Silkvane]], a fast Tidefall dispatch sloop. White sails with blue triangles speak the phrase “by Concordat writ.”
+The three-storey [[Tessarine Trade House]] on the Shelf at [[Calder's Tooth and Port Tidefall]] licenses trade, brokers salvage, and sends couriers. Its known craft include [[amberreach]], a reliable Calveno cargo galleon, and [[silkvane]], a fast Tidefall dispatch sloop. White sails with blue triangles speak the phrase “by Concordat writ.”
 
 ## The Vault of the First Factor
 Oral tradition puts the [[Vault of the First Factor]] on an uncharted limestone spire in the Midchain jungle. Captains, governors, and merchants who could not meet their notes supposedly left masterwork weapons, family pieces, and locked trade-bar chests there. The defences are magical in every version; nobody without Tessarine credentials has returned. No sitting official confirms the place exists. Treat it as unconfirmed, not as a mapped fact.
@@ -46,25 +46,25 @@ The [[Chain Council]] thought it was buying [[Umberlee]]'s mercy and hired [[Del
 [[Detto Kalash]] carried the sealed proposal on an ordinary Tessarine mail run and thought he was doing a courtesy. Six Concordat skiffs slipped past six Concordat scows on that route. The letter sank five ships, Detto's included. The Concordat now spends quiet money to bury the mail trail: factors buy people out or rewrite terms, and anyone asking about that correspondence becomes a problem. See [[Fisk's Captains]] for the captain continuity.
 
 ## Containment and salvage
-After [[Fieschi]] confessed his Tessarine debt in public, the house contained the noise rather than argue it: factor silence, edited logs, moved witnesses, lawyers, patrols, and—if needed—a lockdown at [[Kalowe]]. A second public confession would be worse than a stolen chest.
+After [[Fieschi]] confessed his Tessarine debt in public, the house contained the noise rather than argue it: factor silence, edited logs, moved witnesses, lawyers, patrols, and—if needed—a lockdown at [[kalowe]]. A second public confession would be worse than a stolen chest.
 
-The house wants the name and upper layout of [[Shelfworks]], not the deep city. [[Sunkline]] at [[Fathomrush]] is its pressure-rig shop, racing [[Voyvode]]; the rig has not passed a real deep trial, but its certificate has. Recovered Antheri lots become more paper, more holds, and more people who owe.
+The house wants the name and upper layout of [[Shelfworks]], not the deep city. [[sunkline]] at [[fathomrush]] is its pressure-rig shop, racing [[Voyvode]]; the rig has not passed a real deep trial, but its certificate has. Recovered Antheri lots become more paper, more holds, and more people who owe.
 
 ## People under the pennant
-The [[Passage]] uses Tessarine paper and commercial channels as cover, with no formal deal. Its law is never to move people as property. [[Grigori]] is not Tessarine: he threads both crowns and mishears Concordat fear of Drave as a warning about his own limit. [[Corbin Knighton]] was Tessarine-trained before becoming a Crown boarder. The house grows clerks and officers the way other houses grow cousins.
+The [[passage]] uses Tessarine paper and commercial channels as cover, with no formal deal. Its law is never to move people as property. [[Grigori]] is not Tessarine: he threads both crowns and mishears Concordat fear of Drave as a warning about his own limit. [[Corbin Knighton]] was Tessarine-trained before becoming a Crown boarder. The house grows clerks and officers the way other houses grow cousins.
 
 ## Faces
 - [[Fieschi]] — Calveno agent and public confession.
 - [[Oriana Becht]] — senior factor signing in the field.
-- [[Estratto]] — warforged auditor who repossesses hulls.
+- [[estratto]] — warforged auditor who repossesses hulls.
 - [[Maret]] — Tidefall dockworker held under an open salvage note.
-- [[Samuel]] — intern at Cat's Curios, attached to Fieschi's contract trouble.
+- [[samuel]] — intern at Cat's Curios, attached to Fieschi's contract trouble.
 
 ## Relations
 - Rival: [[Dravosi Crown]]
 - Cut-out: [[Chain Council]]
-- Funder: [[Sunkline]]
-- Complicated cover relationship: [[Passage]]
+- Funder: [[sunkline]]
+- Complicated cover relationship: [[passage]]
 - Pressure point: [[Aldric Drave]] and the [[Pearl of Souls]]
 
 **Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/_archive/the-vault-of-the-first-factor.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`.

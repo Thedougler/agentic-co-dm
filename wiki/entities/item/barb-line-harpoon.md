@@ -7,52 +7,49 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:barb-line-harpoon.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A forged harpoon on sixty feet of light chain: it sets a barb in something swimming and holds it inside the chain's reach of whatever the far end shackles to."
+region: "[[Midchain]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[kettil-ormsson]]"
+summary: "A forged harpoon on 60 feet of light chain that holds a Large or smaller swimmer within the chain's reach of its anchor."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Barb-Line Harpoon
 
 > [!narration] Narration
-> A head the length of a forearm, four barbs swept back off the point, filed bright where the rest of the iron has gone grey.
->
-> Sixty feet of light chain runs off the socket and coils on the peg beneath it, oiled black.
->
-> The last link opens into a hook, and two hammer blows shut it around a rail.
->
-> Lifted, it carries all its weight at the point, and it wants to go tip first.
+> A harpoon head the length of a forearm carries four barbs swept back from its point, filed bright where the rest of the iron has gone grey. Sixty feet of light chain runs from the socket and coils on a peg, oiled black. Its last link opens into a hook, and two hammer blows shut it around a rail. Lifted, it carries all its weight at the point and wants to go tip first.
 
+*Weapon (Harpoon), common.*
 
-_Weapon (Harpoon), Common._
+**Barb and chain.** This martial thrown weapon has a range of 20/60 and deals 1d6 Piercing damage. On a hit against a Large or smaller creature, the barbs set and the chain pays out behind it.
 
-| Field | Detail |
-|---|---|
-| One thing | A set barb plus a shackled chain end keeps the target inside sixty feet of the anchor. |
-| Rarity justification | Non-magical rigger's gear, priced beside the [[reinforced-specimen-cage]] (60 gp) and the [[grung-resistant-climbing-harness]] (35 gp). It grants no bonus to any roll and does far less at range than Rope of Entanglement. |
-| Attunement reason | Non-magical, one power, no bonus to attack, damage, AC, or a save. No branch of the decision tree applies. |
-| PC connection | [[jean-claude-tabarnack\|Jean-Claude]] throws better than anyone aboard, and the [[Sawek]] holding the [[Kalowe]] channel wins any fight it can break off and take back down its hole. |
-| Current holder | [[kettil-ormsson]], on the chain wall at [[Ormsson's Fittings]]. |
-| Narrative hook | The harbour bounty pays for a ridge-plate, and you cut a ridge-plate off something still where you left it. |
+Shackle the far end to a rail or driven bolt, and the hit creature cannot move more than 60 feet from that anchor. The creature can work the head free with an action and a DC 13 Strength check, or cut the chain by dealing 10 damage to it; the chain has AC 15 and is immune to Poison and Psychic damage. A boat anchors the chain no better than its own weight, so the heavier of the boat and creature wins that pull. A second harpoon brings its own chain and check. A Huge or larger creature ignores the barb and takes only the damage.
 
-## Mechanics
+The harpoon adds nothing to attack or damage rolls and imposes no condition. A harpooned target fights at full strength and can haul the anchor point instead of being hauled itself.
 
-> [!mechanic]
-> **Barb-Line Harpoon [HB].** A martial thrown weapon, range 20/60, dealing 1d6 piercing damage. On a hit against a Large or smaller creature the barbs set and the chain pays out behind it.
->
-> Shackle the chain's far end to a rail or a driven bolt and the hit creature moves no more than 60 feet from that anchor. It works the head free with an action and a DC 13 Strength check, or cuts the chain by dealing 10 damage to it (AC 15, immune to poison and psychic damage).
->
-> **Edge cases:** a boat anchors the chain no better than its own weight, so the heavier of boat and creature wins that pull. A second harpoon in the same target brings its own chain and its own check.
->
-> **Limitations:** the harpoon adds nothing to attack or damage rolls and imposes no condition. A harpooned target fights on at full strength, and it can haul the anchor point in place of itself. A Huge or larger creature ignores the barb and takes only the damage.
+## At the Table
+
+The harpoon is on the chain wall at [[Ormsson's Fittings]], held by [[kettil-ormsson]]. It is rigger's gear for fishers and crews that need to keep a swimmer, ray, or other Large creature near a boat or rail. Its real choice is commitment: the thrower gains control of distance but must keep the anchor secure and accept that a strong target can pull back.
+
+## Connections
+
+- [[kettil-ormsson]] forges the heads three at a time and sells them to inter-island fishers.
+- [[Ormsson's Fittings]] is the current source and storage point.
+- [[jean-claude-tabarnack|Jean-Claude]] throws better than anyone aboard, making the tool especially useful in his hands.
+- [[Sawek]] and the [[kalowe]] channel are the kind of underwater threat the harpoon is meant to hold.
+- [[reinforced-specimen-cage]] and [[grung-resistant-climbing-harness]] are comparable mundane rigging purchases.
 
 ## Provenance
 
-[[kettil-ormsson]] forges the heads three at a time and sells them to the inter-island fishers, who use them on rays. The chain is his own stock, rove and oiled before it ever goes on the peg.
+[[kettil-ormsson]] forges the heads and uses chain from his own stock, roved and oiled before it reaches the peg. Inter-island fishers use the harpoons on rays. The current holder is [[kettil-ormsson]] at [[Ormsson's Fittings]].

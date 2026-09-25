@@ -44,7 +44,7 @@ flexGrow=2
 
 The party is on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 ended in a march or a knot. [[Crissdalynn Khinriss]] and one other watcher stand at the east fire's north edge, facing the star-cut. If she is not on watch, keep [[Talon Skarn]] on the carrier and place the nearest watcher with that carrier. If she is alone, the nearest watcher is already with her. The rest of the camp sleeps on rolls along both jungle walls. The people at this fire stay unnamed.
 
-[[Talon Skarn]] starts at the north mouth, 40 feet from the fire. He walks 50 feet and flies 90 feet. The packed aisle under the leaf roof does not give him 30 feet straight down, so **Peregrine Dive** is available only from the north-mouth opening or star-cut sky. A 30-foot move from the fire stays on the aisle and does not reach him. A 50-foot move from the north mouth reaches the coals. Katana and Sai have 5-foot reach. Kusarigama has 20-foot reach. A 50-foot Dash from the fire reaches the star-cut or the west river-talk, but not [[Aruhe - Quiet Forest Spoke Ring]], the beach, or [[Uncertainty]]. The packed aisle is ordinary ground. The jungle walls are Difficult Terrain and heavily obscure beyond 10 feet.
+[[Talon Skarn]] starts at the north mouth, 40 feet from the fire. He walks 50 feet and flies 90 feet. The packed aisle under the leaf roof does not give him 30 feet straight down, so **Peregrine Dive** is available only from the north-mouth opening or star-cut sky. A 30-foot move from the fire stays on the aisle and does not reach him. A 50-foot move from the north mouth reaches the coals. Katana and Sai have 5-foot reach. Kusarigama has 20-foot reach. A 50-foot Dash from the fire reaches the star-cut or the west river-talk, but not [[Aruhe - Quiet Forest Spoke Ring]], the beach, or [[uncertainty]]. The packed aisle is ordinary ground. The jungle walls are Difficult Terrain and heavily obscure beyond 10 feet.
 
 **Thin.** [[Talon Skarn]] starts 15 feet from [[Crissdalynn Khinriss]], with the first chain already lifted. The party has **Disadvantage** on attack rolls and ability checks against him until the end of round 1.
 
@@ -186,7 +186,7 @@ If [[Talon Skarn]] leaves with the [[Fate Spinner]], the small quartz top is in 
 
 ## Backup
 
-[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[Session-11-00-Birds-of-a-Feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Giant's Guava]] · [[Uncertainty]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Memorial Grove]] · [[Talon Vantyrus]]
+[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[session-11-00-birds-of-a-feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Giant's Guava]] · [[uncertainty]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Memorial Grove]] · [[Talon Vantyrus]]
 
 ## Battlemap
 

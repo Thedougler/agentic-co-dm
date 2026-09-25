@@ -22,6 +22,9 @@ campaign: shattered-sea
 visibility: dm
 status: active
 kind: monastic order
+scope: regional
+region: "[[High Eyrie]]"
+base: "[[high-eyrie]]"
 relationships:
   - target: "[[high-eyrie]]"
     type: related_to
@@ -37,6 +40,10 @@ relationships:
 > [!narration] Narration
 > Aarakocra monks have held High Eyrie for two centuries. They remain non-aligned and predate Dravosi rule. Their work is to record the Drowned Maw: time, weather, position, water, and occurrence. They never record why. Exact movement in peak wind is the training standard, and fairness is not part of it.
 
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
 | | |
@@ -50,7 +57,10 @@ relationships:
 | **Current posture** | Watching. |
 
 > **DM thesis.** The Sentinels preserve the only continuous account of the Maw, but their refusal to interpret or intervene turns doctrine into vulnerability.
-
+```
+```col-md
+flexGrow=1
+===
 ## At the Table
 
 - **They want.** They want the watch to continue and the ledgers to remain unbroken.
@@ -58,6 +68,8 @@ relationships:
 - **They pressure with.** They control access to High Eyrie and refuse to interpret or intervene.
 - **They will not.** They will not dive or act on an interpretation, and they do not record why an event occurred.
 - **Their tell.** They describe time, weather, position, water, and occurrence with exacting precision.
+```
+````
 
 ## Current State
 
@@ -102,6 +114,15 @@ relationships:
 - **Former master and founder of the breakaway order:** [[talon-vantyrus]] was a snowy-owl senior master who argued that non-intervention was cowardice.
 - **Pilgrim:** [[crissdalynn-khinriss]] belongs among the younger members who were not told that the schism occurred.
 - **Apprentices and record-keepers.** Apprentices train on cantilevered terraces open on three sides. Record-keepers maintain the Maw ledgers under the order's doctrine.
+### Chain of Action
+
+**Who decides:** [[master-kyzil]] leads the order and enforces its non-intervention doctrine.
+
+**Who interprets those orders:** Record-keepers apply the watch's rules to time, weather, position, water, and occurrence.
+
+**Who actually carries them out:** Apprentices and record-keepers maintain the observation ledgers at [[high-eyrie]].
+
+**If leadership disappears.** The watch may continue by habit, but the order lacks an established successor beyond its senior master.
 
 ## Territory & Touchpoints
 
@@ -119,6 +140,12 @@ relationships:
 - [[crissdalynn-khinriss]]
 - [[Countless]]
 - [[sentinels-and-countless]]
+## Signals & Rumors
+
+- **Visible sign.** A new ledger entry records another heat pulse, weather change, vessel position, water shift, or occurrence at the Maw.
+- **Rumor.** The Sentinels know what the Maw does but refuse to say why.
+- **Direct signal.** The order restricts access to High Eyrie, its seal, or the founding documents beneath the summit.
+- **Quiet clue.** A watched climb, harness, invitation, or exact movement in peak wind reveals the cost of reaching the records.
 
 ## Running the Faction
 
@@ -129,3 +156,6 @@ relationships:
 | **When opposed** | The Sentinels close access, preserve the records, and refuse to act on interpretation. |
 | **When ignored** | They continue recording while heat pulses, weather, water, and vessel positions change around the Maw. |
 | **When broken** | Losing High Eyrie threatens the watch and ledger continuity, but the current sources do not establish what happens to the seal or founding documents afterward. |
+## History
+
+The aarakocra monks have held [[high-eyrie]] for two centuries and began the continuous Maw ledger in 1295 DR. The order's schism began when [[talon-vantyrus]] argued that non-intervention was cowardice and [[master-kyzil]] refused to break with him.

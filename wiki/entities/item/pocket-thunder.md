@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "An alchemical cigarette that snaps and throws to detonate in a blinding, deafening report with no damage."
 provenance:
   extracted: 0.85
@@ -49,7 +54,6 @@ Comparable to Dust of Sneezing and Choking (Uncommon, thrown, area effect, Const
 
 [[La Brace]] sells it from the shelf. [[rufio-segalla]] runs this [[Velo Quarter]] smoking room, the only one in Calveno where smoke can burn out in the open. [[La Gatta]] also sells it, at 60% price as an unreliable second. [[nicco-kettley]] runs this stall on [[the Bridge]]'s bottom tier.
 
-## Mechanics
 
 > [!mechanic]
 > **Pocket Thunder [HB].** Single use, consumable. As an Action, the wielder snaps the cigarette and throws it up to 30 feet. It goes off on landing with a loud bang.

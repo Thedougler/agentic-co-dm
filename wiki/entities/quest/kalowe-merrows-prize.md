@@ -16,7 +16,7 @@ campaign: shattered-sea
 visibility: dm
 status: offered
 scope: local
-region: "[[Kalowe]]"
+region: "[[kalowe]]"
 quest_giver: "[[Davu Kamu]]"
 factions: []
 deadline: "No fixed deadline is established; Davu's savings are already spent."
@@ -41,7 +41,7 @@ kind: situation
 | | |
 |---|---|
 | **Quest giver** | [[Davu Kamu]] |
-| **Region** | [[Kalowe]] |
+| **Region** | [[kalowe]] |
 | **Scope** | Local |
 | **Opposition** | The wreck, the unlocated strongbox, and the captain's widow's legal claim |
 | **Reward** | 30% of the wreck salvage, as offered by Davu. |
@@ -108,7 +108,7 @@ Davu is guarded because he is underselling the rubies inside the strongbox and h
 | Place | Why it matters now |
 |---|---|
 | [[The Flat Water]] | Davu has been based here for two months and offers the job from its room. |
-| [[Kalowe]] | The local port where Davu waits and where a recovery crew can provision. |
+| [[kalowe]] | The local port where Davu waits and where a recovery crew can provision. |
 | [[calders-tooth-and-port-tidefall]] | The captain's widow is there and holds the legal claim. |
 
 ## Useful things

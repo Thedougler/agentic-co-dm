@@ -27,7 +27,7 @@ Water past the [[Drowned Maw]], with no resupply or pilot-trusted landmark; feel
 - Whatever crosses the Maw boundary.
 
 ## Connections
-- → [[Drowned Maw]] · [[Tail]]
+- → [[Drowned Maw]] · [[tail]]
 
 ## Hooks
 - Cross only after deciding what no resupply means.

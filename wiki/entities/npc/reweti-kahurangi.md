@@ -13,7 +13,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: bartender
-location: "[[The Flat Water]], [[Kalowe]]"
+location: "[[The Flat Water]], [[kalowe]]"
 faction: none
 visibility: dm
 summary: "Tortle bartender running Kalowe's most-trusted port dive, keeper of quiet intelligence for those who respect the space."
@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Bartender and quiet-information keeper |
 | ---------- | --------------------------------------- |
 | **Nature** | Patient Tortle who hears and remembers everything |
-| **Home**   | [[The Flat Water]] in [[Kalowe]] |
+| **Home**   | [[The Flat Water]] in [[kalowe]] |
 | **Wants**  | Keep the peace and protect the bar's trusted space |
 
 > **DM thesis:** Reweti rewards people who respect the room and turns trouble away with practiced patience.

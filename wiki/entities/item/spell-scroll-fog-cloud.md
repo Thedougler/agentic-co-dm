@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[kalowe]]"
+kind: consumable
+rarity: common
+attunement: false
+owner: "[[Vask's Reclaimed Goods]]"
 summary: "A scroll bearing Fog Cloud, ready to fill a stretch of harbor air with concealing mist."
 provenance:
   extracted: 0.85

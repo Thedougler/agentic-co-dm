@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[fioravante-selmerin]]"
 summary: "A glass bell that captures and replays sounds within 30 feet, holding one at a time until replaced, in the original voice."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ Uncommon tier holds. Magic Item Rarity prices Common goods at 100 gp and Uncommo
 
 Mortis holds [[jean-claude-tabarnack]] to the truth and strips every mask off his intent. The bell carries no such binding. It puts a voice belonging to somebody else into a room he has already left.
 
-## Mechanics
 
 > [!mechanic]
 > **The Encore Bell [HB].** The bell holds one sound at a time, and four conditions decide what qualifies. A qualifying sound happens within 30 feet of the bell. No closed door or solid barrier stands between. Its volume rises above the room's standing noise. Six seconds is the longest stretch the bell will take. Qualifying sounds include a spoken phrase, a call or whistle, a lock's tumblers, a beast's cry. Every new qualifying sound overwrites the one the bell holds, and a held sound goes stale 1 minute after the bell takes it.

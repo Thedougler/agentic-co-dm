@@ -20,7 +20,7 @@ reveal: revealed
 relationships:
   - target: "[[aruhe]]"
     type: related_to
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
 ---
 # Session 10 - Recap
@@ -42,4 +42,4 @@ Aruhe. The island is still hungry.
 
 [[shepherd-grigori]] came aboard on the night crossing to name [[talon-vantyrus]] as the sender of the ship hunting the [[fate-spinner]], tied the hunt to the [[sentinels-of-the-eyrie|Sentinels]]' fate schism, and asked the party to hurt [[corbin-knighton]] without killing or breaking him; he left with no answer, and he raised [[delmar-fisk]]'s [[umberlee]] curse in the same visit. [[delmar-fisk]] also had [[geoffrey-draves]] drilling on deck that night. The follower ship was slowed, broadsided and set alight, then left listing and never boarded.
 
-On [[aruhe]] the party took two survivors off a landing where between one hundred and one hundred fifty people had come ashore from the raid ships and most had died. Living claims on the island killed people, and the [[grung-clans|Grung]] were hunted hardest. On the terraces the evidence sat in the open, fruit marked with blood and skulls and at least six bodies, and killing a spore plant brought the [[crown-squid|great crown squid]] up out of the canopy until the party broke contact on illusion and flight. *[[Uncertainty]]* stayed off the shore. Two survivors are aboard and others remain inland. Next: [[Session-11-Recap]].
+On [[aruhe]] the party took two survivors off a landing where between one hundred and one hundred fifty people had come ashore from the raid ships and most had died. Living claims on the island killed people, and the [[grung-clans|Grung]] were hunted hardest. On the terraces the evidence sat in the open, fruit marked with blood and skulls and at least six bodies, and killing a spore plant brought the [[crown-squid|great crown squid]] up out of the canopy until the party broke contact on illusion and flight. *[[uncertainty]]* stayed off the shore. Two survivors are aboard and others remain inland. Next: [[Session-11-Recap]].

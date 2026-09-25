@@ -26,7 +26,7 @@ summary: "At the Turned Hollow the party reads generations of Gold orders in rin
 
 **Card.** Revelation. The whole order trail in one place: who was sent, why they died, and where the graves they wanted really are.
 **Thread advanced.** The Gold-caste orders ([[two-grave-orders]]), and Nello's rescue.
-**Entry state.** Early afternoon. The party arrives at the south rim of the [[turned-hollow]] with [[celia-parel|Celia]] and [[oren-vask|Oren]], carrying what [[Session-12-03-Grass-Without-Wind]] left them: Skarn marked or not, the Spinner Held or Stolen, and any fallen guava they picked up at [[star-cut]].
+**Entry state.** Early afternoon. The party arrives at the south rim of the [[turned-hollow]] with [[celia-parel|Celia]] and [[oren-vask|Oren]], carrying what [[session-12-03-grass-without-wind]] left them: Skarn marked or not, the Spinner Held or Stolen, and any fallen guava they picked up at [[star-cut]].
 **Trigger.** The packed aisle north of Star Cut ends at a lip of bare earth, and the forest roof stops.
 **Turn.** Every generation of Grung sent here dug under the Hollow's strangler fig because the order said "beneath the memorial tree," and the fig killed them for it; the real memorial tree stands just past the north rim, and Nello is alive in the fig's roots.
 **New direction.** Get Nello out of a tree that kills what moves and eats what waits, then decide what to do about two graves that are now within reach.
@@ -65,7 +65,7 @@ flexGrow=2
 - [ ] **Core.** Gold-caste authority sent Grung here for generations. The rim seals say "go inland and report." The middle rings are replacement parties sent after earlier ones stopped reporting. The innermost, newest dead carry the order to find and destroy two graves beneath the memorial tree. → **Surfaces through:** sorting the seals by ring (see Checks); Celia, who matches her grass scraps to the rim seals; Jean-Claude, who reads Gold marks.
 - [ ] **Core.** They dug under the wrong tree. The fig is not the memorial tree, and nothing is buried beneath it. Digging living ground and sawing its roots were living claims under [[taking-on-aruhe]], so the fig and the island killed the diggers where they dug, and each new party dug in the same place. → **Surfaces through:** searching a pit (sawn roots, no grave cut); the root-saws beside the newest dead; the black-flower ring and second tree past the north rim; Nello, who says "She said the garden is past the Grung place. This isn't it."
 - [ ] **Support.** The fig's rule: it lashes at whatever moves inside its root curtain, holds still prey without squeezing, and draws one held creature into its trunk when nothing in the curtain has moved since its last turn. It can hold only one creature in the trunk at a time. → **Surfaces through:** the hanging skeleton, which died waiting while something else was in the trunk; Nello's whisper ("It squeezes when you move"); a thrown stone or swung pack, which the roots seize.
-- [ ] **Optional.** The graves the order wanted destroyed are real and are about 100 feet past the north rim, under the fruit tree inside the black-flower ring at [[memorial-grove]]. DM truth: they are [[Hinewai]]'s grave and her drowned companion's, and together with the tree and flowers they are the Death Bloom that anchors her. Gold wanted them destroyed because the reports that came back said the island's hostility centered on them. Why Gold wants Aruhe tamed is a canon gap; the likeliest reason on the page is that Hinewai escaped [[Karath]]'s hatcheries and Karath lies near Aruhe. The DM decides. → **Surfaces through:** nothing in this beat beyond the view; the scraps do not explain the graves.
+- [ ] **Optional.** The graves the order wanted destroyed are real and are about 100 feet past the north rim, under the fruit tree inside the black-flower ring at [[memorial-grove]]. DM truth: they are [[hinewai]]'s grave and her drowned companion's, and together with the tree and flowers they are the Death Bloom that anchors her. Gold wanted them destroyed because the reports that came back said the island's hostility centered on them. Why Gold wants Aruhe tamed is a canon gap; the likeliest reason on the page is that Hinewai escaped [[karath]]'s hatcheries and Karath lies near Aruhe. The DM decides. → **Surfaces through:** nothing in this beat beyond the view; the scraps do not explain the graves.
 ```
 ````
 
@@ -120,10 +120,10 @@ flexGrow=2
 
 | If the party… | The situation changes… | Next |
 | --- | --- | --- |
-| **Goes down for Nello** | The fig wakes when the first rescuer crosses into its 60-foot blindsight. | [[Session-12-05-The-Wrong-Tree]] |
+| **Goes down for Nello** | The fig wakes when the first rescuer crosses into its 60-foot blindsight. | [[session-12-05-the-wrong-tree]] |
 | **Leaves Nello** | At 10 minutes the fig draws him into the trunk, and he dies. Celia writes his name. Oren walks back south alone, and Nello's secret dies with him. | [[Session-12-06-What-Is-Chosen]] |
 | **Goes on toward the graves** | The rim walk reaches the north rim in a few minutes. Nello dies behind them unless someone stayed. | [[Session-12-06-What-Is-Chosen]] |
-| **Changes the situation another way** | The fig kills what moves in its curtain and eats what waits once its trunk is empty. Skarn is watching from the east rim. | [[Session-12-05-The-Wrong-Tree]] |
+| **Changes the situation another way** | The fig kills what moves in its curtain and eats what waits once its trunk is empty. Skarn is watching from the east rim. | [[session-12-05-the-wrong-tree]] |
 
 **Carry forward.**
 - **Knowledge:** which order layers the party sorted; whether they know the diggers dug under the wrong tree; whether they have seen the black-flower ring.
@@ -138,4 +138,4 @@ flexGrow=2
 - **Revelations learned.**
 - **Decision made.**
 - **NPC posture changes.**
-- **Next active node.** [[Session-12-05-The-Wrong-Tree]]
+- **Next active node.** [[session-12-05-the-wrong-tree]]

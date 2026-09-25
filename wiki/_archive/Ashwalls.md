@@ -27,7 +27,7 @@ Cold-water volcanic spires: last solid ground heading west and first safe lee re
 - Giant bats, scorpions, and vultures.
 
 ## Connections
-- → [[Galewall]] · [[Shattered Sea]] · [[Doldrums]]
+- → [[galewall]] · [[Shattered Sea]] · [[Doldrums]]
 
 ## Hooks
 - Reach the lee after the Galewall; decide whether apparent rescuers are rescuers.

@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Enkoa
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Enkoa]] is a warded southern Midchain island kept by a hermit sorcerer. The sorcerer trades rare components only for equally rare favors, never coin. [[Halewick]] is a recorded related site, but no route or distance is established. Skipping Enkoa avoids the warded island and its bargain, but also removes access to components unavailable through ordinary purchase.
+[[enkoa]] is a warded southern Midchain island kept by a hermit sorcerer. The sorcerer trades rare components only for equally rare favors, never coin. [[halewick]] is a recorded related site, but no route or distance is established. Skipping Enkoa avoids the warded island and its bargain, but also removes access to components unavailable through ordinary purchase.
 
 ---
 
@@ -46,7 +46,7 @@ relationships:
 - **Seeks a rare component:** The sorcerer can trade rare components, but only for an equally rare favor. The inventory, definitions of rarity, and current requests are Unknown.
 - **Offers coin:** Coin is not accepted as the price for the components. The party must find another form of exchange or leave without the component.
 - **Asks for the sorcerer:** A hermit sorcerer keeps Enkoa. Their name, appearance, magic, allies, and terms beyond the no-coin exchange are not recorded.
-- **Leaves for Halewick:** [[Halewick]] is a recorded related site, but this page does not establish a route or travel time.
+- **Leaves for Halewick:** [[halewick]] is a recorded related site, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -65,7 +65,7 @@ One hermit sorcerer keeps Enkoa. No name, attendants, visitors, rival, or reside
 - **East:** No named eastern neighbor or route is recorded.
 - **South:** No named southern neighbor or route is recorded.
 - **West:** No named western neighbor or route is recorded.
-- **Related site:** [[Halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
+- **Related site:** [[halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
 
 ## Why
 

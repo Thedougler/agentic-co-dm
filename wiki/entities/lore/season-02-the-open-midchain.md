@@ -20,10 +20,24 @@ type: lore
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+truth: partial
+scope: "Archived Season 2 draft fiction used as pressure reference, not established campaign canon."
+era: "Season 2 draft"
 kind: draft-fiction
 region: "Midchain"
 ---
 # Season 02: The Open Midchain
+## At a Glance
+
+**Core truth.** This page is archived draft fiction about Midchain pressure, not established canon; it is retained as a reference for possible Season 2 directions.
+
+**Why it matters.** The draft gathers candidate pressures involving survivors, Osset, Vantyrus, High Eyrie, Grung transformation, and Umberlee's collection route without promoting them to truth.
+
+**Scope.** Treat every scene below as provisional until play or a canon page establishes it.
+
+## Current Truth
+
+The only current truth on this page is its status as draft fiction restored from archive. Canon lives on the linked owner pages and session records, not in the narrative below.
 
 **Draft fiction**
 
@@ -112,3 +126,63 @@ Out past it, off the charted line, the water in the Maw goes flat in weather tha
 [[umberlee|Umberlee]] has stopped waiting. She named a price at a shrine in Calveno and the price was not paid and the silence went on long enough to become an answer, so she collects now: a hull found at anchor, hold emptied and crew gone. Nothing about it says a name out loud. More will follow. No arrangement remains to reach, and the man who owes her has not yet understood that the thing hunting the shipping lanes means him.
 
 The *[[uncertainty|Uncertainty]]* comes out of repair with her hull sound and nobody's writ aboard her, and turns for open water, and no one has asked her to do anything at all.
+### Limits
+
+* **Exception.** Nothing in the narrative is established campaign truth by appearing on this page.
+* **Unknown to the world.** The draft does not establish which scenes, characters, or pressures will survive into play.
+* **Impossible or forbidden.** Do not use draft events as continuity evidence without a canon owner page or session record.
+
+## At the Table
+
+* **Players notice.** Nothing from this page should be presented as fact unless another canon page or played session establishes it.
+* **This explains.** Why the archive contains vivid candidate pressures without corresponding current-canon owners.
+* **This enables.** The DM can mine the draft for questions, images, or pressure proposals before filing any resulting canon.
+* **This warns of.** Names and events in the fiction may contradict current canon and require reconciliation before use.
+* **Relevant now.** It is a private reference for possible Midchain pressure, not a player-facing handout.
+
+## Who Knows
+
+| Knower | Knowledge | Certainty | Basis |
+| --- | --- | --- | --- |
+| The archive | This page was retained as draft fiction. | knows | Archive source. |
+| The DM | Which candidate pressures are worth comparing with canon. | knows | Editorial use. |
+| Players | No established knowledge from this page. | none | Not player-facing canon. |
+
+### Party Knowledge
+
+**Known.** No player-facing fact is established by this draft page.
+
+**Suspected.** The draft may contain pressures that resemble future campaign events.
+
+**Misunderstood.** Narrative confidence does not turn draft fiction into canon.
+
+**Last changed.** This page was restored from archive for reference.
+
+### Common telling
+
+> “A draft is a question wearing a scene.”
+
+## If This Is Changing
+
+* **Current pressure.** The archive can be mined for candidate Season 2 pressures while current canon continues elsewhere.
+* **Actors.** The DM, linked owner pages, and future session records determine what survives.
+* **Their aims.** The DM may test a pressure in play; canon pages record only what becomes true.
+* **Without interference.** The page remains an unpromoted archive reference.
+* **Visible sign.** A named draft element gains a canon owner page or appears in a reconciled session record.
+
+## Consequences
+
+* **Because this is true,** the page can inspire prep without contaminating campaign continuity.
+* **If exposed,** a draft scene must be checked against its linked owner pages before it is spoken at the table.
+* **If disproved,** no canon repair is needed because the page is not canon.
+* **If changed,** a promoted element belongs on its appropriate owner page, not only here.
+* **If exploited,** the DM can use the draft's unanswered pressure as a design prompt while preserving player agency.
+
+## Connections
+
+| Page | Relationship | Table relevance |
+| --- | --- | --- |
+| [[master-kyzil]] | Draft Sentinel pressure | Candidate High Eyrie thread; not established here. |
+| [[simone-tabarnack]] | Draft Grung pressure | Candidate transformation thread; not established here. |
+| [[drowned-maw]] | Draft maritime pressure | Candidate Maw escalation; compare with canon before use. |
+| [[red-lady-dead-lady]] | Draft collection-route pressure | Candidate Umberlee thread; use the owner page for current truth. |

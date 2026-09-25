@@ -30,12 +30,12 @@ tier: supporting
 
 Vittoria Sanzio doesn't gamble. She banks. The stacks at the [[Tallow Row]] felt are hers before the night starts and hers again by morning. It's all bookkeeping with an audience. The lacquer box at her elbow holds the markers of most of the room, so the room takes care to be fond of her.
 
-She is unmistakably delighted by company, and the delight is the tell: she is warmest to the player carrying the most of her paper. She refills a losing man's glass before he asks and never once mentions the number he's into her for, and everyone at the felt has watched that kindness destroy somebody else. [[Thassos]] checks her face before he commits to a big push. She does not signal. That is also an answer.
+She is unmistakably delighted by company, and the delight is the tell: she is warmest to the player carrying the most of her paper. She refills a losing man's glass before he asks and never once mentions the number he's into her for, and everyone at the felt has watched that kindness destroy somebody else. [[thassos]] checks her face before he commits to a big push. She does not signal. That is also an answer.
 
 ## Connections
 
 - [[Tallow Row]]: the den whose felt she banks.
-- [[Thassos]]: plays on her money like the rest of the room, and reads her before he reads the cards.
+- [[thassos]]: plays on her money like the rest of the room, and reads her before he reads the cards.
 - [[iolo-bracca]]: the one man at the table she never extends credit to, because his favours are worth more than his coin.
 - [[old-faas]]: a regular whose paper has never once been in her box.
 

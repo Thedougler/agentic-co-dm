@@ -25,9 +25,9 @@ tier: supporting
 # HCS Relentless
 
 > [!narration] Narration
-> The HCS Relentless is a Dravosi Crown patrol cutter, built for the Crown's patrol waters and carrying heavier armament than the [[Uncertainty|HCS Surety]]. No further visible detail is established.
+> The HCS Relentless is a Dravosi Crown patrol cutter, built for the Crown's patrol waters and carrying heavier armament than the [[uncertainty|HCS Surety]]. No further visible detail is established.
 
-Dravosi Crown Tier 1 patrol cutter, more heavily armed than the [[Uncertainty|HCS Surety]]. The source provides no further detail.
+Dravosi Crown Tier 1 patrol cutter, more heavily armed than the [[uncertainty|HCS Surety]]. The source provides no further detail.
 
 ## Connections
 

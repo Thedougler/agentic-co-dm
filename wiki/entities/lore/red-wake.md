@@ -114,7 +114,7 @@ The Red Wake is the pressure pattern associated with the Dead Lady, a raised wre
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** What exactly created the Red Wake, beyond its expression through the Dead Lady?
 * [ ] **Unknown.** How far can the collection route reach, and what determines its next lane?

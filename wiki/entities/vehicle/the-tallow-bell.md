@@ -30,7 +30,7 @@ A Tier 1 Waveservant Shrine sloop. She moves clergy between harbours and carries
 
 The ship is deliberately plain. Salt-grey hull, smoke-stained sail, one bronze bell under the bowsprit as its only ornament. The bell rings once when departing a shrine harbour and once when entering another. A narrow grey streamer flies at the mast, but no carved figurehead marks the bow and no faction pennant adorns the stern. Sailors know the sound. Most make room.
 
-The *Tallow Bell* is neutral like the [[Waveservants]] themselves. It is austere and professional, not kind and not detached. Most captains leave a Waveservant vessel alone, but rob one and you answer to every port because the sea's collectors keep long memories. Her swivel guns warn and discourage rather than win a fight outright. The *Tallow Bell* remains afloat because robbing her creates more trouble than it pays.
+The *Tallow Bell* is neutral like the [[waveservants]] themselves. It is austere and professional, not kind and not detached. Most captains leave a Waveservant vessel alone, but rob one and you answer to every port because the sea's collectors keep long memories. Her swivel guns warn and discourage rather than win a fight outright. The *Tallow Bell* remains afloat because robbing her creates more trouble than it pays.
 
 When a captain pays for an open-water blessing, she comes alongside with her basin uncovered for ritual speech, coin, and token. The bell rings once, and the Waveservants do not linger. Taking her as a prize is a bad idea because she carries little money, many witnesses, and religious consequences. Her written records list unpaid voyages and missing ships. They identify the payer and claimed name, then state the payment's purpose.
 
@@ -51,12 +51,12 @@ When a captain pays for an open-water blessing, she comes alongside with her bas
 
 ## Crew
 
-- Captain: [[Waveservants]] (source names the operating faction, not an individual)
+- Captain: [[waveservants]] (source names the operating faction, not an individual)
 - Notable crew: none named in source.
 
 ## Connections
 
-- [[Waveservants]]: operator
+- [[waveservants]]: operator
 - [[Umberlee]]: divine authority
 - [[calders-tooth-and-port-tidefall]]: regular port of call
 - [[perrin-black-jaw]]: hidden routes and hidden sailors still owe the sea

@@ -11,7 +11,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[the-flat-water|The Flat Water]], [[Kalowe]]"
+location: "[[the-flat-water|The Flat Water]], [[kalowe]]"
 faction: "[[five-blades]]"
 visibility: dm
 summary: "Moucheron contract speaker for the Five Blades in Kalowe; quotes rate and feeding clause before ink touches paper."
@@ -32,7 +32,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Moucheron contract speaker and mercenary broker |
-| **Home**   | [[the-flat-water|The Flat Water]], [[Kalowe]] |
+| **Home**   | [[the-flat-water|The Flat Water]], [[kalowe]] |
 | **Wants**  | Secure workable contracts for [[five-blades]], with the rate and feeding clause clear before anyone signs. |
 
 > **DM thesis:** Varet makes the Five Blades legible as a business before they become a fight.
@@ -54,7 +54,7 @@ flexGrow=1
 ===
 ### First meeting
 
-Varet brokers a contract through [[the-flat-water|The Flat Water]] in [[Kalowe]]. She quotes the rate and feeding clause before the party sees the ink. **Sample line:** “The rate is first; the feeding clause is not a footnote.”
+Varet brokers a contract through [[the-flat-water|The Flat Water]] in [[kalowe]]. She quotes the rate and feeding clause before the party sees the ink. **Sample line:** “The rate is first; the feeding clause is not a footnote.”
 ```
 
 ```col-md
@@ -76,4 +76,4 @@ Varet speaks in exact contract terms and avoids letting courtesy blur an obligat
 | ---------- | ------- |
 | [[five-blades]] | Mercenary company Varet speaks contracts for. |
 | [[the-flat-water\|The Flat Water]] | Kalowe venue where she brokers contracts. |
-| [[Ket]] | Varet recognizes him as a fellow [[Murrat]] native if the party reaches Murrat. |
+| [[Ket]] | Varet recognizes him as a fellow [[murrat]] native if the party reaches Murrat. |

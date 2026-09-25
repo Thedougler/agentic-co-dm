@@ -25,7 +25,7 @@ tier: supporting
 
 |             |                             |
 | ----------- | --------------------------- |
-| **Species** | [[Human]] (Dravosi)             |
+| **Species** | [[human]] (Dravosi)             |
 | **Role**    | Crown-licensed import factor |
 | **Location**| [[calders-tooth-and-port-tidefall]] |
 

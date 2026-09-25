@@ -28,7 +28,7 @@ flexGrow=2
 | **Role**   | Harbour crew member |
 | ---------- | ------------------- |
 | **Nature** | A working crewman who buys waking salts by the crate and has recently carried a hand wound. |
-| **Home**   | [[Kalowe]] harbour |
+| **Home**   | [[kalowe]] harbour |
 | **Wants**  | No direct want is recorded; the immediate pressure is keeping his crew functioning while his Passage-marked ring draws Ilaria's attention. |
 
 > **DM thesis:** Takowan is an ordinary harbour crewman whose injured hand and marked ring turn a routine healer's visit into evidence.
@@ -38,7 +38,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Takowan
-> A harbour crewman keeps one hand wrapped after an injury and comes to [[ilaria-grimaldi|Ilaria Grimaldi]] for the salts that harbour crews buy by the crate. The ring on that hand carries the mark of [[Passage]].
+> A harbour crewman keeps one hand wrapped after an injury and comes to [[ilaria-grimaldi|Ilaria Grimaldi]] for the salts that harbour crews buy by the crate. The ring on that hand carries the mark of [[passage]].
 ```
 ````
 
@@ -72,4 +72,4 @@ Takowan speaks like a working crewman trying to keep a routine visit uneventful 
 | ---------- | ------- |
 | [[ilaria-grimaldi]] | Treated his hand wound and noticed the Passage-marked ring. |
 | [[grimaldis-waking-salts]] | Takowan and the other harbour crews buy the salts by the crate. |
-| [[Kalowe]] | Harbour setting where Ilaria runs the dispensary and Takowan's crew works. |
+| [[kalowe]] | Harbour setting where Ilaria runs the dispensary and Takowan's crew works. |

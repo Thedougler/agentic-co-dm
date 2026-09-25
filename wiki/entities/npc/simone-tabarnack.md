@@ -30,7 +30,7 @@ tier: supporting
 ![[simone-tabarnack-narration-appearance]]
 
 
-She is [[jean-claude-tabarnack]]'s younger sister, trained in the clan's ways and an unwavering believer in the caste order, a garrison officer through and through. When Jean-Claude fled Sorn, she stayed and told their parents about [[Pell]]. He returned to the hut expecting good news but found her there with Pell in chains, having revealed everything. A month of torture followed before Jean-Claude escaped, knowing why she had done it. She believed in the clan and still does. "The caste order is not a choice," she still says. "It shapes what we are."
+She is [[jean-claude-tabarnack]]'s younger sister, trained in the clan's ways and an unwavering believer in the caste order, a garrison officer through and through. When Jean-Claude fled Sorn, she stayed and told their parents about [[pell]]. He returned to the hut expecting good news but found her there with Pell in chains, having revealed everything. A month of torture followed before Jean-Claude escaped, knowing why she had done it. She believed in the clan and still does. "The caste order is not a choice," she still says. "It shapes what we are."
 
 Jean-Claude questioned the system, but she never did. She moved through it without doubt, seeing her report not as betrayal but as the right choice. What haunts him is her certainty itself.
 
@@ -42,9 +42,9 @@ Gold could not brand her the way it branded Ozzeth. A record this dutiful and ho
 
 She has no firsthand knowledge of a caste seal's operation and believes diet and the stolen rite are the whole mechanism behind Gold's power, the account Gold tells everyone below it (see Grung Clans for what actually powers Gold caste). What the [[dravosi-crown]] trades her for the toxin she supplies is a substitute for the toxin Gold grows only at its hidden Karath farms, close enough to fake the diet-shift herself without ever reaching the real thing. The substitute is why her transformation stalled at partial. Purple-and-black skin breaks into dots and bands of gold, plainly visible, never hidden.
 
-The ranks follow her for one specific, checkable reason: she does not spend her people. She will not order a garrison onto a march she does not expect it to survive. When a loss comes, she bears it herself instead of sending purples to die to prove a point. Every soldier at [[Sorn]] knows it about her. It also leaves a gap: an ambitious soldier who wants her notice can run an errand she has visibly declined to order, unasked. She learns of it only when the report comes back, a man gone over the side in the dark.
+The ranks follow her for one specific, checkable reason: she does not spend her people. She will not order a garrison onto a march she does not expect it to survive. When a loss comes, she bears it herself instead of sending purples to die to prove a point. Every soldier at [[sorn]] knows it about her. It also leaves a gap: an ambitious soldier who wants her notice can run an errand she has visibly declined to order, unasked. She learns of it only when the report comes back, a man gone over the side in the dark.
 
-She supplies the Dravosi Crown with Grung poison, a craft Jean-Claude learned from her. In Session 01, a crew boarded [[the-saltwright|the Saltwright]], where a [[dravosi-alchemist]] threw gas Jean-Claude knew was hers. He said nothing mid-fight, sensing they could not yet see the link. A month later, he found twenty vials in the [[Uncertainty|HCS Surety]]'s cargo and confirmed a privateer received the poison. Still he said nothing. In Session 04, Grung vials surfaced from the [[calven-and-calveno]] sewer raid. The supply trail (canister → cargo → sewer stock) nearly emerged, but his secret held.
+She supplies the Dravosi Crown with Grung poison, a craft Jean-Claude learned from her. In Session 01, a crew boarded [[the-saltwright|the Saltwright]], where a [[dravosi-alchemist]] threw gas Jean-Claude knew was hers. He said nothing mid-fight, sensing they could not yet see the link. A month later, he found twenty vials in the [[uncertainty|HCS Surety]]'s cargo and confirmed a privateer received the poison. Still he said nothing. In Session 04, Grung vials surfaced from the [[calven-and-calveno]] sewer raid. The supply trail (canister → cargo → sewer stock) nearly emerged, but his secret held.
 
 Jean-Claude fled before any of this began. The rite, the Crown trade, the partial gold under her armor: all three happened in his absence, and he remains unaware that any of it exists. The sister he pictures is the one who turned him and Pell in, exactly as she was the day he ran. His silence about the toxin has only ever been self-protection. He does not know there is anything larger underneath it to protect.
 
@@ -54,7 +54,7 @@ Gold caste dismissed the raid. Common Grung did not. The story that spread calle
 
 Without him, nothing maintains what the rite left running under her skin. She has to finish becoming Gold now, meaning she needs the one thing her folk-hero standing has never bought her: the toxin Gold caste grows only at its hidden Karath farms. Grief she has no time for turns into urgency instead, and she starts taking risks against Karath's monopoly she wouldn't have a season ago.
 
-She searches for him not for family but as a loose end, knowing he lives beyond the Verdant Teeth, and blue-caste scouts now push into [[Midchain]] waters searching for him. [[Karath]] leads six [[Vethka]] hulls on raids that feed the slave trade, though soldiers rebel and captives disappear faster than replacements. Her channel with [[barnaby-rook]] burned in Session 02. Meanwhile, her agents in [[calders-tooth-and-port-tidefall]] asked wrong questions that [[verity-hollowell]] will learn about soon. Time works against her. Her scouts will pursue Jean-Claude if they find him. If her trade fails, Tidefall networks will connect the Grung toxin to Rook's death and Crown business.
+She searches for him not for family but as a loose end, knowing he lives beyond the Verdant Teeth, and blue-caste scouts now push into [[Midchain]] waters searching for him. [[karath]] leads six [[vethka]] hulls on raids that feed the slave trade, though soldiers rebel and captives disappear faster than replacements. Her channel with [[barnaby-rook]] burned in Session 02. Meanwhile, her agents in [[calders-tooth-and-port-tidefall]] asked wrong questions that [[verity-hollowell]] will learn about soon. Time works against her. Her scouts will pursue Jean-Claude if they find him. If her trade fails, Tidefall networks will connect the Grung toxin to Rook's death and Crown business.
 
 His crew is who killed Ozzeth, inside her own raid, and some part of her will never separate that fact from his name again. The loose-end framing stays the story she tells the garrison. Underneath it now, it's rage. She may want him alive for more than revenge. She could bring him home and use his help against Gold's hoard. She wants to rule the Grung together rather than leave them divided and vulnerable. Whatever he answers, she will never hand him the actual secret behind the color-shift. She wants Gold's throne, not to prove nobody deserves one.
 
@@ -68,11 +68,11 @@ Once she understands the real mechanism (see Grung Clans), her plan changes shap
 
 ## Connections
 
-- [[jean-claude-tabarnack]]: older brother. She betrayed him and [[Pell]] to their parents. Ozzeth's death turned that betrayal into a personal pursuit. She wants him back at her side to help her take Gold's throne. She will capture him rather than kill him if he refuses.
+- [[jean-claude-tabarnack]]: older brother. She betrayed him and [[pell]] to their parents. Ozzeth's death turned that betrayal into a personal pursuit. She wants him back at her side to help her take Gold's throne. She will capture him rather than kill him if he refuses.
 - Pell: her betrayal put him in chains
 - [[ozzeth-the-twiceborn]]: mentor who found the suppressed color-sealing rite first and stabilized hers for years. He died guarding the primary chamber of the raid she built
 - [[dravosi-crown]]: she supplies them with Grung toxin
-- [[Sorn]]: garrison base
+- [[sorn]]: garrison base
 
 ## Goals & Fronts
 
@@ -81,7 +81,7 @@ Once she understands the real mechanism (see Grung Clans), her plan changes shap
 **Lifecycle:** active
 **Aim:** finish her transformation to true Gold before the unsealed rite she can no longer stabilize gives her away.
 **Approach:** channels information through scouts and garrison networks and acts only through official authority. Her folk-hero standing works as leverage against Gold's toxin monopoly.
-**Off-screen move if unopposed:** blue-caste scouts push further into [[Midchain]] waters searching for [[jean-claude-tabarnack|Jean-Claude]], and she takes greater risks against [[Karath]]'s toxin monopoly than she would have a season ago.
+**Off-screen move if unopposed:** blue-caste scouts push further into [[Midchain]] waters searching for [[jean-claude-tabarnack|Jean-Claude]], and she takes greater risks against [[karath]]'s toxin monopoly than she would have a season ago.
 **Trigger conditions:**
 
 - [[ozzeth-the-twiceborn|Ozzeth]]'s death, already fired, started this clock running by leaving the rite unmaintained.
@@ -96,6 +96,6 @@ Once she understands the real mechanism (see Grung Clans), her plan changes shap
 
 - **Session 01 (Boarding of the Saltwright)**, off-screen. Jean-Claude recognizes her toxin-preparation method on the Alchemist's gas canister mid-fight and says nothing to the crew. `vault/episodes/001/transcript.md:57,82,93`.
 
-- **[[Session 02 - Recap|Session 02 (Conflict is a Surety)]]**, off-screen. Jean-Claude finds twenty vials of her tincture in the [[Uncertainty|HCS Surety]]'s cargo, confirming a privateer received the toxin. He says nothing. `vault/episodes/002/transcript.raw.md:108`.
+- **[[Session 02 - Recap|Session 02 (Conflict is a Surety)]]**, off-screen. Jean-Claude finds twenty vials of her tincture in the [[uncertainty|HCS Surety]]'s cargo, confirming a privateer received the toxin. He says nothing. `vault/episodes/002/transcript.raw.md:108`.
 
 - **[[Session 04 - Recap|Session 04 (The Frog, Owl, Bomb)]]**, off-screen. Grung poison vials surface from the [[calven-and-calveno]] sewer raid. [[nona-black-jaw|Nona]]'s people catalogue them and [[Ruk|Ruck]] classifies them as standard stock, missing the connection to the twenty Surety vials already in party hands. The supply-line pattern (Alchemist's canister → Surety cargo → Calveno sewer Grung) nearly surfaces, but Jean-Claude's secret holds (Ruck guarding Felix also there). `vault/transcript.md:56,68,78,96`. Absorption source: situations/active/the-canister.md, legacy.

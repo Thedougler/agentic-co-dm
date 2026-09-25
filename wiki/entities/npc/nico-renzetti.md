@@ -16,7 +16,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Sparhold]]"
+location: "[[sparhold]]"
 faction: "[[house-renzetti]]"
 visibility: dm
 summary: "House Renzetti's coerced champion. He doubts the death-duel his family already rang the bell for."
@@ -37,7 +37,7 @@ flexGrow=2
 | **Role**   | Compelled champion |
 | ---------- | ------------------ |
 | **Nature** | Forced confidence over real fear |
-| **Home**   | [[Sparhold]] |
+| **Home**   | [[sparhold]] |
 | **Wants**  | Survive the duel with honor intact, or die on terms he chose. [[ottavia-renzetti]] left him no refusal. |
 
 > **DM thesis:** He is already in the bell. The fear is the tell, not the speech.
@@ -76,8 +76,8 @@ A PC who reads a fighter's readiness can catch the tic before the bell. Refusal 
 | Relationship | Meaning |
 | ------------ | ------- |
 | [[ottavia-renzetti]] | House head. She bound him through honor. He cannot refuse her face to face. |
-| [[house-renzetti]] | If he loses halfheartedly, the house loses, and Ottavia's claim to [[Sparhold]] collapses with it. |
-| [[Sparhold]] | Settlement rule hangs on this duel. |
+| [[house-renzetti]] | If he loses halfheartedly, the house loses, and Ottavia's claim to [[sparhold]] collapses with it. |
+| [[sparhold]] | Settlement rule hangs on this duel. |
 
 ## Combat
 

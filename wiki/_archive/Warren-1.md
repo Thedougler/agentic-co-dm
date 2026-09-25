@@ -11,7 +11,7 @@ tags: [location]
 > Warren is a Rattkin settlement beneath Calveno's Le Paludi: low passages join homes, stores, and hidden runs, with hand marks guiding turns. Murmurs, taps, and water overhead fill the dark. Damp earth, food, and canal water mark a refuge reached by a learned descent.
 
 ## At a glance
-Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communal, hidden, and taught by elders.
+Rattkin settlement and deepest [[passage]] anchor beneath Calveno; feels communal, hidden, and taught by elders.
 ## Five-sentence kernel
 - **Function:** A refuge and route anchor under Calveno, where elders teach movement through hidden places.
 - **Fantastic:** A settlement survives beneath a colonial canal city by treating memory and trust as infrastructure.
@@ -35,7 +35,7 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communa
 - **Smell:** damp earth, food, oil, and canal water.
 ## Topology
 - `[[Calven and Calveno]] -- Le Paludi descent (hidden, difficult, reveals route) --> Warren`.
-- `Warren -- [[Passage]] run (coded, safe if trusted, social cost) --> Midchain routes`.
+- `Warren -- [[passage]] run (coded, safe if trusted, social cost) --> Midchain routes`.
 - `Warren -- [[Rattkin Runs and Black-Jaw Run]] (fast, learned, risks exposure) --> linked routes`.
 - `Warren -- old/sealed run (unknown destination, costly, evidence-rich) --> **DM seed (unconfirmed)**`.
 - **Loop:** public canal → Warren → Passage run → another Calveno entry.
@@ -45,7 +45,7 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno; feels communa
 ## Player verbs
 `ask, prove, teach, conceal, map, shelter, escort, compare traces, choose a door`.
 ## Who is here
-- Rattkin elders/community; [[Passage]]; [[Nona Black-Jaw]]; Felix Aho, Ruma Delacroix, and Bazzoth; Grung leads may surface.
+- Rattkin elders/community; [[passage]]; [[Nona Black-Jaw]]; Felix Aho, Ruma Delacroix, and Bazzoth; Grung leads may surface.
 - **DM seed (unconfirmed):** no named elder is established.
 ## Information economy
 - **Secret:** where the taken moved and who in Grung operations can be approached.
@@ -62,7 +62,7 @@ Quiet → Alert → Contested → Transformed: normal refuge → watchers/change
 
 **Move:** Grung contact leaves after Crown scrutiny or failed bargain; directional lead disappears; follow trace or another face; taken clock advances if ignored.
 ## Connections
-- [[Calven and Calveno]] · [[Passage]] · [[Rattkin Runs and Black-Jaw Run]] · [[Sparhold]]
+- [[Calven and Calveno]] · [[passage]] · [[Rattkin Runs and Black-Jaw Run]] · [[sparhold]]
 ## Hooks
 - Operative leads on the taken 314, Passage obligations, and a safe route toward Midchain.
 ## Secrets (DM)

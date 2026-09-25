@@ -3,7 +3,7 @@ title: "Warren"
 category: entities
 tags: ["shattered-sea", "place"]
 sources: ["Warren.md", "inbox/archive/FILED-2026-09-05-tessarine-concordat.md"]
-summary: "Rattkin settlement and deepest [[Passage]] anchor beneath Calveno. It feels communal, hidden, and taught by elders."
+summary: "Rattkin settlement and deepest [[passage]] anchor beneath Calveno. It feels communal, hidden, and taught by elders."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -24,7 +24,7 @@ region: "under Calveno’s Le Paludi"
 
 ## At a Glance
 
-Rattkin settlement and deepest [[Passage]] anchor beneath Calveno. It feels communal, hidden, and taught by elders.
+Rattkin settlement and deepest [[passage]] anchor beneath Calveno. It feels communal, hidden, and taught by elders.
 
 ## Five-sentence kernel
 
@@ -60,7 +60,7 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno. It feels comm
 ## Topology
 
 - `[[calven-and-calveno]] -- Le Paludi descent (hidden, difficult, reveals route) --> Warren`.
-- `Warren -- [[Passage]] run (coded, safe if trusted, social cost) --> Midchain routes`.
+- `Warren -- [[passage]] run (coded, safe if trusted, social cost) --> Midchain routes`.
 - `Warren -- [[rattkin-runs-and-black-jaw-run]] (fast, learned, risks exposure) --> linked routes`.
 - `Warren -- old/sealed run (unknown destination, costly, evidence-rich) --> **DM seed (unconfirmed)**`.
 - **Loop.** Public canal → Warren → Passage run → another Calveno entry.
@@ -74,7 +74,7 @@ Rattkin settlement and deepest [[Passage]] anchor beneath Calveno. It feels comm
 
 ## Who is here
 
-- Rattkin elders and community. [[Passage]]. [[nona-black-jaw]]. Felix Aho, Ruma Delacroix, and Bazzoth. Grung leads may surface.
+- Rattkin elders and community. [[passage]]. [[nona-black-jaw]]. Felix Aho, Ruma Delacroix, and Bazzoth. Grung leads may surface.
 - **DM seed (unconfirmed).** This page has no named elder.
 
 ## Information economy
@@ -99,7 +99,7 @@ Quiet → Alert → Contested → Transformed: normal refuge → watchers or cha
 
 ## Connections
 
-- [[calven-and-calveno]] · [[Passage]] · [[rattkin-runs-and-black-jaw-run]] · [[Sparhold]] · [[low-lamp]]
+- [[calven-and-calveno]] · [[passage]] · [[rattkin-runs-and-black-jaw-run]] · [[sparhold]] · [[low-lamp]]
 
 ## Hooks
 

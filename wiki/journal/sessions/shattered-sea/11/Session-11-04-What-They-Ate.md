@@ -97,7 +97,7 @@ If a party member enters open valley air, that character leaves the bank. Point 
 ```col-md
 ## Secondary objective
 
-If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taking-on-aruhe]]. The later roll on [[Session-11-00-Random-Tables]] uses `2d8`, keeping the lower result. Fallen fruit does not mark a claim. The north trail and smoke remain either way.
+If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taking-on-aruhe]]. The later roll on [[session-11-00-random-tables]] uses `2d8`, keeping the lower result. Fallen fruit does not mark a claim. The north trail and smoke remain either way.
 ```
 ````
 
@@ -122,7 +122,7 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taki
 | Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if the character plucks without sorting. | `DC 10` | The character takes only fallen fruit. That is not a claim. A firm fallen fruit restores `8d4 + 8` hit points as a Bonus Action, as [[redheart-berry]]. | The character takes some living stems and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. | The character strips living fruit and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. |
 | Look up-sun | **Wisdom (Perception)**, only if the party asks who the flyer is | `DC 27` | The looker sees [[talon-skarn]] up-sun as a man-sized peregrine body in the glare, then loses sight of him. | Sun glare gives no identity. The looker remains on the bank. | Sun glare gives no identity. The looker remains on the bank. |
 | Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That character leaves the bank and enters hawk sky. Point to a [[young-bloodhawk]]. End this beat for that character. | Binary. | Binary. Open valley air is hawk sky. |
-| Return toward [[torn-crossing]] | Walk south through the valley. | Walk | The party leaves the bank south. Rebuild from [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]], as the route demands. | Binary. | Binary. |
+| Return toward [[torn-crossing]] | Walk south through the valley. | Walk | The party leaves the bank south. Rebuild from [[torn-crossing]], the terrace line, the beach, or [[uncertainty]], as the route demands. | Binary. | Binary. |
 
 For an unforeseen intent, keep the northbound prints and smoke as the route, and use the zones to decide whether the approach lingers, enters the grass, touches living stems, or leaves south.
 
@@ -145,11 +145,11 @@ The default north handoff is [[Session-11-05-Otter-Hole]]. Once the party commit
 | --- | --- | --- |
 | Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[Session-11-05-Otter-Hole]]. | _The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._ |
 | Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | _The print edges have softened and the smoke is thinner as you take the corridor north._ |
-| Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from the route chosen. | _You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._ |
+| Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[uncertainty]]. Rebuild from the route chosen. | _You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._ |
 
 ## Backup
 
-[[line-bank]] · [[torn-crossing]] · [[landing-bank]] · [[river-slack-basin]] · [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[redheart-berry]] · [[Uncertainty]] · [[talon-skarn]] · [[young-bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
+[[line-bank]] · [[torn-crossing]] · [[landing-bank]] · [[river-slack-basin]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[redheart-berry]] · [[uncertainty]] · [[talon-skarn]] · [[young-bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-05-Otter-Hole]]
 
 ## Battlemap
 

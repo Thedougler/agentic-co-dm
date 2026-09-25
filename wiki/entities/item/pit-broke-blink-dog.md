@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[le-paludi]]"
+kind: durable
+rarity: rare
+attunement: false
+owner: "[[zort]]"
 summary: "A blink dog from the back corner of Zort's Pits, broke to a handler's call so it blinks toward its handler instead of away from a fight."
 provenance:
   extracted: 0.85
@@ -33,7 +38,6 @@ tier: supporting
 
 *Tool (Trained Animal), Rare.* A blink dog taken young off a Mid-Chain shipment and worked for two years by [[Zort]]'s hands until it answers a call instead of its own judgment. Medium fey, speed 40 ft. Its own kind will not have it back.
 
-## Mechanics
 
 > [!mechanic]
 > **[HB] Answers the Call.** The dog obeys a handler whose call it has learned over a week of work. It has the statistics of a blink dog, including its teleport, and it spends that teleport arriving beside its handler instead of escaping a fight. Once per short rest, when its handler is grappled, restrained, or below half hit points, the dog teleports to a space within 5 feet of them as a reaction.

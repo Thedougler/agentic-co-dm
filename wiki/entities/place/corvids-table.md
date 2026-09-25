@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Corvid's Table
@@ -56,7 +56,7 @@ The site itself is recorded only as an island or site in the Southern Midchain. 
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** Corvid's Table is listed within [[Southern Midchain]], whose islands have deep water close to shore and few anchorages. [[Halewick]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** Corvid's Table is listed within [[Southern Midchain]], whose islands have deep water close to shore and few anchorages. [[halewick]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[fioravante-selmerin]]"
 summary: "A brass ear-shell that whispers one true property of a creature or object in sight, three times between dawns, and lies about nothing but its own importance."
 provenance:
   extracted: 0.85
@@ -46,7 +51,6 @@ Sold for the prompter's box at the front of a stage, where somebody is always fe
 
 Uncommon tier holds. Magic Item Rarity prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the shell's 300 gp sits inside it beside [[La Brace]]'s [[ricochet-red]] at the same price. It reaches nowhere near _identify_: one property, not the item's full properties, no attunement requirement disclosed, no spells stored, and nothing at all learned from touch or from a page of text.
 
-## Mechanics
 
 > [!mechanic]
 > **The Prompter's Shell [HB].** The shell holds 3 charges and regains all of them at dawn. Holding it to the ear and fixing on one creature or object within 60 feet that the holder can see costs 1 charge and an action.

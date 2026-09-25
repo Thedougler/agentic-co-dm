@@ -12,7 +12,7 @@ campaign: shattered-sea
 visibility: dm
 status: alive
 role: contact
-location: "[[Vethka]], [[Aruhe]]"
+location: "[[vethka]], [[Aruhe]]"
 faction: none
 summary: "Calveno captive sheltering in the wreck of Vethka on Aruhe with Nino, distrustful of anything he has not seen prove safe."
 provenance:
@@ -32,8 +32,8 @@ flexGrow=2
 | **Role** | Contact |
 | --- | --- |
 | **Nature** | Calveno captive, survivor, and cautious haggler |
-| **Home** | The wreck of [[Vethka]] on [[Aruhe]] |
-| **Wants** | To keep himself and [[Nino]] alive and determine whether approaching ships mean rescue or another threat |
+| **Home** | The wreck of [[vethka]] on [[Aruhe]] |
+| **Wants** | To keep himself and [[nino]] alive and determine whether approaching ships mean rescue or another threat |
 
 > **DM thesis:** Sandro is useful because caution has kept him alive, but his silence about Tomo's death leaves Nino without the truth.
 ```
@@ -66,11 +66,21 @@ He becomes guarded when anyone pressures him to trust an untested object, route,
 ```
 ````
 
+### Voice
+
+Sandro speaks cautiously and bargains in practical terms. He pauses before trusting a claim and returns to what he has personally seen.
+
+**The ask:** *“Tell me what you saw past the reef.”*
+
+**The refusal:** *“I don't touch anything until I've watched it kill someone else first.”*
+
+**Under pressure:** *“That route is not safe because you say it is.”*
+
 ## Connections
 
 | Connection | Meaning |
 | --- | --- |
-| [[Nino]] | Swam ashore with Sandro onto [[Aruhe]]; Sandro has not told her what happened to Tomo. |
+| [[nino]] | Swam ashore with Sandro onto [[Aruhe]]; Sandro has not told her what happened to Tomo. |
 | [[nona-black-jaw]] | Chasing the raid that took Sandro captive with roughly five hundred other [[calven-and-calveno]] during [[il-gioco-delle-beffe\|La Finestra]]. |
 | [[Grung]] | His captors on the raid; two were already dead on the beach after the wreck, and Sandro has not told Nino what killed them. |
-| [[Vethka]] | Wrecked fleet ship where Sandro and Nino shelter after it sailed for [[Karath]] and was wrecked on Aruhe. |
+| [[vethka]] | Wrecked fleet ship where Sandro and Nino shelter after it sailed for [[karath]] and was wrecked on Aruhe. |

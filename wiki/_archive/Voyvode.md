@@ -22,13 +22,13 @@ Open trials, incomplete but honest notes, Crown money, and company gate access. 
 ## Faces
 - Trial leader: [[Branimir Karsovine]]
 - Store: [[Marta Kessler]]
-- Rival: [[Sunkline]]
+- Rival: [[sunkline]]
 
 ## Reach / resources
 Crown funding, one Fathomrush compound, pressure-rig towers, and trial records. The memorial wall's fresh names are mostly Voyvode's crews.
 
 ## Relations
-- Rival: [[Sunkline]]
+- Rival: [[sunkline]]
 - Backer: [[Dravosi Crown]]
 - Party: unknown; observation is allowed, interference is not
 

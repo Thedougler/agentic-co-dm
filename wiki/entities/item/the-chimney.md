@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[ettore-lupo]]"
 summary: "An arrow that fills a fifteen-foot sphere with thick black smoke on impact, blocking vision for up to a minute without concealing creatures that leave the cloud."
 provenance:
   extracted: 0.85
@@ -47,7 +52,6 @@ _Weapon (Arrow), Uncommon._
 
 [[jean-claude-tabarnack]] fights and moves at range, and every plan of his fails the moment somebody watching a bridge can still see him. This is the only thing in his quiver that takes the watcher's eyes away without giving them a body to chase.
 
-## Mechanics
 
 > [!mechanic]
 > **The Chimney [HB].** One shot, then gone. Put it at a point, surface, or creature within the weapon's normal range with an ordinary ranged attack. On landing, the clay bulb shatters and the compound boils out into a 15-foot-radius sphere of thick black smoke centred on that point. The area is heavily obscured. The smoke lasts 1 minute.

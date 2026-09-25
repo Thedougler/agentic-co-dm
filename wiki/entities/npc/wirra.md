@@ -32,7 +32,7 @@ flexGrow=2
 | **Role** | Contact |
 | --- | --- |
 | **Nature** | Moucheron mercenary medic |
-| **Home** | [[Kalowe]] with [[five-blades|the Five Blades]] |
+| **Home** | [[kalowe]] with [[five-blades|the Five Blades]] |
 | **Wants** | An upfront fee and a living client crew |
 
 > **DM thesis:** Wirra turns post-fight survival into a clear contract: pay first, then let the precise medic work.
@@ -75,5 +75,5 @@ Wirra uses precise, unsentimental terms and avoids treating medicine as charity.
 | Connection | Meaning |
 | --- | --- |
 | [[five-blades\|The Five Blades]] | Wirra is the company's medic and is called when jobs go badly. |
-| [[Kalowe]] | The Five Blades work out of Kalowe, where clients can hire them. |
+| [[kalowe]] | The Five Blades work out of Kalowe, where clients can hire them. |
 | [[moucheron\|Moucheron]] | Wirra's species and the blood-economy context behind the company's contracts. |

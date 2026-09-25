@@ -73,4 +73,4 @@ He remembers faces and reacts when someone lingers under his stare, makes noise 
 | [[Tallow Row]] | The hidden card den where Grukan works the door. |
 | [[old-faas]] | Regular whose answer earns immediate passage. |
 | [[Thunk]] | Vetted and admitted on Faas's word during a debt-paying visit. |
-| [[Thassos]] | Grukan filled the doorway during Thassos's accusation and let the pair leave after the hand. |
+| [[thassos]] | Grukan filled the doorway during Thassos's accusation and let the pair leave after the hand. |

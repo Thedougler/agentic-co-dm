@@ -35,4 +35,4 @@ The eastern pinch where both arcs become fewer, taller islands and cold trench-c
 - Decide whether a compass lie is weather, Maw pressure, or a bad chart.
 
 ## Secrets (DM)
-The Tail's unnamed staging island performs the same job as [[Fathomrush]] under another name; do not force them into one site without a future anchor.
+The Tail's unnamed staging island performs the same job as [[fathomrush]] under another name; do not force them into one site without a future anchor.

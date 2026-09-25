@@ -12,6 +12,7 @@ updated: 2026-09-13
 type: item
 reveal: unrevealed
 campaign: shattered-sea
+region: "[[calven-and-calveno]]"
 visibility: dm
 kind: magic
 rarity: uncommon
@@ -33,7 +34,6 @@ tier: supporting
 
 The pearl holds 3 charges and regains `1d3` expended charges daily at dawn. As an Action, spend 1 charge to regain one expended spell slot of 3rd level or lower. Every charge spent this way also triggers a full Wild Magic Surge: immediately after the slot returns, roll on the Sorcerer Wild Magic Surge table (d100) and apply the result as written. There is no roll to see whether the surge happens. A surge that spends a slot, asks for Concentration, or calls for a spellcasting ability uses the wielder's. The pearl cannot restore a slot above 3rd level. One surge per charge, never a second. You cannot take the slot and decline the surge.
 
-## At a Glance
 
 [[catarina-davirelli]] keeps it in her Calveno workshop. Two charges remain. The next spend is a guaranteed surge.
 

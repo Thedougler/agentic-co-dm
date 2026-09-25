@@ -23,7 +23,7 @@ The Bight is the largest anchorage in the Scatter that will take a ship of the l
 Naval ratings, officers, shipwrights, Admiralty staff, civilians who service the fleet, fishing hamlets, and the Crown's fleet command. [[HCS Sovereign]] and [[HCS Ordinance]] were built here.
 
 ## Connections
-- → [[Crown Islands]] · [[Calven and Calveno]] · [[Aldenmere]] · [[Central Strait]] · [[Outer Reach]]
+- → [[Crown Islands]] · [[Calven and Calveno]] · [[aldenmere]] · [[Central Strait]] · [[Outer Reach]]
 
 ## Secrets (DM)
 Sealed orders can move a captain, company, or vessel without a civic petition. The Admiralty and [[Governor Voss]]'s civic authority are deliberately separate systems.

@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[midchain-west|Western Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Ferrand's Wager
@@ -35,7 +35,7 @@ relationships:
 ---
 ## At a Glance
 
-Ferrand's Wager is a named floating casino in the western [[midchain-west|Western Midchain]], connected in the canon to [[Kalowe]]. No fixed route, travel distance, proprietor, or method for the house's knowledge is recorded; bypassing it costs the party the chance to test that knowledge against a wager.
+Ferrand's Wager is a named floating casino in the western [[midchain-west|Western Midchain]], connected in the canon to [[kalowe]]. No fixed route, travel distance, proprietor, or method for the house's knowledge is recorded; bypassing it costs the party the chance to test that knowledge against a wager.
 
 ---
 ## If the party
@@ -65,7 +65,7 @@ The house and its gamblers are the only established social presence. No propriet
 - **South:** Canon gap; no neighboring site or travel distance is recorded.
 - **West:** Canon gap; no neighboring site or travel distance is recorded.
 - **Region:** [[midchain-west|Western Midchain]], whose approaches are busy and broadly charted, with seasonal sandbars and negotiable local pilots.
-- **Named connection:** [[Kalowe]].
+- **Named connection:** [[kalowe]].
 
 ---
 ## Why

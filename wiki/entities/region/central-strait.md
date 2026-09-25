@@ -90,9 +90,9 @@ The Strait is the shipping road between the two green arcs. [[calders-tooth-and-
 
 ## Scale and lanes
 
-The Strait runs some five hundred to six hundred miles between the [[crown-islands]] and the [[Midchain]], a five-day crossing in a fast ship, and stretches sixteen hundred to twenty-four hundred miles west to east. The Scatter Current flows east. The Blue Lane is the unmarked fastest line; see [[central-strait-crossing]]. [[sandtable-shoal]] sits south of [[Aldenmere]] and shifts that lane slightly south.
+The Strait runs some five hundred to six hundred miles between the [[crown-islands]] and the [[Midchain]], a five-day crossing in a fast ship, and stretches sixteen hundred to twenty-four hundred miles west to east. The Scatter Current flows east. The Blue Lane is the unmarked fastest line; see [[central-strait-crossing]]. [[sandtable-shoal]] sits south of [[aldenmere]] and shifts that lane slightly south.
 
-The Calven Roads are sheltered water south of [[calven-and-calveno]]. The Harwick Reach is deeper water south of [[Harwick]] where Crown patrol frigates stage. The Kalowe Run is the angled southern peel to [[Kalowe]]. At the eastern end the current turns north in a bend pilots call the Cold Turn, or the Fool's Assist; a ship that misses it rides north toward [[Stenmark]]'s cliffs.
+The Calven Roads are sheltered water south of [[calven-and-calveno]]. The Harwick Reach is deeper water south of [[harwick]] where Crown patrol frigates stage. The Kalowe Run is the angled southern peel to [[kalowe]]. At the eastern end the current turns north in a bend pilots call the Cold Turn, or the Fool's Assist; a ship that misses it rides north toward [[Stenmark]]'s cliffs.
 
 Pilots call the [[high-eyrie]] sea stack the Eyrie Light because spotting it confirms position, not because it carries an actual light. [[Stenmark]]'s signal station warns when the [[drowned-maw]] acts odd.
 

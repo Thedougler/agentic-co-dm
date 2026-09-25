@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: common
+attunement: false
+owner: "[[fioravante-selmerin]]"
 summary: "A blank brass name plate that, hung at a door with a name written on it, makes readers take the named bearer for someone who belongs there."
 provenance:
   extracted: 0.85
@@ -46,7 +51,6 @@ Sold to companies too small to print a programme, so the second name on the bill
 
 Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and the placard's 90 gp sits under that. Its effect stops well short of _disguise self_: it changes nothing about the bearer's face, voice, or clothing, and it does no work at all once the bearer walks out of sight of the door.
 
-## Mechanics
 
 > [!mechanic]
 > **Second Billing Placard [HB].** Writing a name and a role on the brass and hanging the plate takes 1 minute. The writing holds for 8 hours or until rubbed off, and the plate works only while it hangs on a door, gate, hatch, or archway a creature can walk through.

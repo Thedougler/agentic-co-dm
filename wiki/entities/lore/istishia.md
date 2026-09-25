@@ -92,7 +92,7 @@ No active change is established. The page changes if Istishia gains a defined ag
 | [[elemental-plane-of-water]] | Cosmological pointer. | Explains water beyond the ordinary sea. |
 | [[drowned-maw]] | Context where the name appears. | Grounds the cosmological reference in the Maw. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Whether Istishia has any identity or agenda beyond this cosmological pointer.
 * [ ] **Decide when needed.** Keep the name as context only unless play establishes a more specific role.

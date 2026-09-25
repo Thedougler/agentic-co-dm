@@ -30,7 +30,7 @@ What she carries, and where. Spaces and their tactical use live on [[uncertainty
 
 ## Stats & Combat
 
-Hull numbers are on [[Uncertainty|the ship's page]]. This is the ordnance and everything that feeds it.
+Hull numbers are on [[uncertainty|the ship's page]]. This is the ordnance and everything that feeds it.
 
 ### Weather Deck
 
@@ -66,9 +66,9 @@ Hull numbers are on [[Uncertainty|the ship's page]]. This is the ordnance and ev
 ## Crew
 
 - Captain: [[delmar-fisk]].
-- Notable crew: [[Cobb]], [[sem-holst]], and [[jean-claude-tabarnack]]. Each keeps something aboard outside the common stores, listed below.
+- Notable crew: [[cobb]], [[sem-holst]], and [[jean-claude-tabarnack]]. Each keeps something aboard outside the common stores, listed below.
 
-Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is his own and travels with him. [[Cobb]] holds the seal on the emergency ration chest, which opens at [[nona-black-jaw]]'s word and nobody else's. [[jean-claude-tabarnack|Jean-Claude]] keeps the [[Grung]] poison tincture under his own hand. The rest is common stores, and the roster that spends them is on [[Uncertainty|the ship's page]].
+Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is his own and travels with him. [[cobb]] holds the seal on the emergency ration chest, which opens at [[nona-black-jaw]]'s word and nobody else's. [[jean-claude-tabarnack|Jean-Claude]] keeps the [[Grung]] poison tincture under his own hand. The rest is common stores, and the roster that spends them is on [[uncertainty|the ship's page]].
 
 ### Provisions Store
 
@@ -127,24 +127,24 @@ Not everything aboard belongs to the ship. [[sem-holst]]'s carpenter's kit is hi
 |---|---|---|
 | Seized goods crate | 1 | About 97 gp of silver candelabras, brandy, [[calven-and-calveno]] silk, a locked jewellery box, and a pendant cut *For Mira, from the sea* |
 | Confiscation crate | 1 | Spare flintlocks, and twenty vials of concentrated [[Grung]] poison tincture |
-| Opened cargo crate | 1 | Emptied. Held a chart marked *[[Galewall]] anchorage* |
+| Opened cargo crate | 1 | Emptied. Held a chart marked *[[galewall]] anchorage* |
 | Boarding axe | 8 | Replaced the Crown cutlasses. No rack remains. The crew dug these out of a crate |
 | Crossbow | 4 | Twenty bolts each |
 | Grapnel line | 6 | |
 | Smoke grenade | 3 | |
 | Incendiary flask | 2 | |
 | Arms chest, lockable | 1 | The old weapons-locker chest, moved down with everything else |
-| Caulking hammer set | 1 | [[Cobb]]'s, and useful as a weapon, he notes |
+| Caulking hammer set | 1 | [[cobb]]'s, and useful as a weapon, he notes |
 | Spare cutlass | 1 | Off the old cabin rack, now on the mess bulkhead |
 
 Nobody aboard has worked out what waits at the Galewall anchorage, and the chart stays in the crew's hands.
 
 ## Connections
 
-- [[Uncertainty]]. Hull, armament, crew, history.
+- [[uncertainty]]. Hull, armament, crew, history.
 - [[uncertainty-deck-layouts|Deck Layouts]]. The spaces that contain this stock.
 - Ship Operations. Weekly facility orders that spend and replenish it.
-- [[Cobb]]. Stocked the refit and controls the ration seal.
+- [[cobb]]. Stocked the refit and controls the ration seal.
 - [[nona-black-jaw]]. Paid for it, and decides when the chest opens.
 
 ## Session Log

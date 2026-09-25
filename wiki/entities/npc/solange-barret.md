@@ -41,7 +41,7 @@ She left seminary to become a demolitions engineer. Her arcane training is real 
 
 Only Solange can summon [[otar-the-foul]]. She is the only one on [[simone-tabarnack|Simone]]'s team who knows how to run the summoning circle. The circle is beneath the Mercatura. It uses techniques the Grung didn't create.
 
-Solange learned binding shapes from her patron. She calls this entity *le courant* (the current). She holds red caste rank, the top position below [[simone-tabarnack|Simone]]. [[simone-tabarnack|Simone]] plans. Solange runs the hard parts warriors can't. She joined [[simone-tabarnack|Simone]] at [[Sorn]]. She alone knows the circle's activation code.
+Solange learned binding shapes from her patron. She calls this entity *le courant* (the current). She holds red caste rank, the top position below [[simone-tabarnack|Simone]]. [[simone-tabarnack|Simone]] plans. Solange runs the hard parts warriors can't. She joined [[simone-tabarnack|Simone]] at [[sorn]]. She alone knows the circle's activation code.
 
 > [!mechanic]
 > [[otar-the-foul|Otar]]'s summoning is Solange's work product, not a direct threat from her (she doesn't fight). Everything under **Stats & Combat** below describes what occurs when the crew reaches her mid-ritual. She becomes a channeling caster protected by Elite Warriors and a detonation trigger, functioning as an atypical encounter.

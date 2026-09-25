@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "An alchemical cigarette whose exhaled ring grants the wielder one reroll on a missed ranged weapon attack."
 provenance:
   extracted: 0.85
@@ -43,7 +48,6 @@ One of six alchemical cigarette blends sold in [[calven-and-calveno]]. Among the
 | Current holder | Sold from the shelf at [[La Brace]], a [[Velo Quarter]] smoking room run by [[rufio-segalla]], the only room in Calveno licensed to burn alchemical smoke in the open. Also sold at 60 percent price (60 gp) as an unreliable second off a vending board called [[La Gatta]] on [[the Bridge]]'s bottom tier, run by [[nicco-kettley]]. |
 | Narrative hook | Bought openly at either counter, or found already in the pocket of a dock crew regular who smokes it before a job. |
 
-## Mechanics
 
 **[HB]** Single use, consumable. As a Bonus Action, the wielder lights the cigarette and draws from it, exhaling a ring of smoke.
 

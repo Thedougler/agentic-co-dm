@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Pit boss |
 | ---------- | --------- |
 | **Nature** | Exacting matchmaker and final arbiter |
-| **Home**   | [[The Mud Pits]], [[Kalowe]]'s third island |
+| **Home**   | [[The Mud Pits]], [[kalowe]]'s third island |
 | **Wants**  | Keep the pit's fights compelling, controlled, and profitable without letting anyone mistake her for a fighter. |
 
 > **DM thesis:** Bala treats violence as a managed institution; her authority is the obstacle and the opportunity.
@@ -68,10 +68,20 @@ She becomes immovable when someone disputes a ruling, tries to bypass entry, or 
 ```
 ````
 
+## Voice
+
+Bala speaks in short, level declarations that make the pit's rules sound older than she is. She announces fighters without cheering and ends a bout with a single word when the outcome is clear.
+
+**The ask:** *“Tell me what you are offering.”*
+
+**The refusal:** *“I do not make fair fights. I make interesting ones.”*
+
+**Under pressure:** *“Done.”*
+
 ## Connections
 
 | Connection | Meaning |
 | ---------- | ------- |
 | [[The Mud Pits]] | The fighting pit she has run for fifteen years; she controls entry, matchups, betting runners, and bout endings. |
-| [[Kalowe]] | Her home island and the setting for the pit. |
+| [[kalowe]] | Her home island and the setting for the pit. |
 | [[the-kessen\|The Kessen]] | The pit is connected through Vort Kessen's retirement there, but is not part of that league. |

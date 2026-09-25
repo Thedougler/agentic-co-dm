@@ -42,9 +42,9 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 - **Sound:** surf, rigging, dock calls, weather, and papers being demanded.
 - **Smell:** salt, wet rope, smoke, cargo, and whatever a port is trying to hide.
 ## Topology
-- `[[Galewall]] -- storm crossing (slow, exposed, information-poor) --> Shattered Sea`.
+- `[[galewall]] -- storm crossing (slow, exposed, information-poor) --> Shattered Sea`.
 - `Crown Islands -- Central Strait (fast shipping route, inspected, leaves records) --> [[Midchain]]`.
-- `Midchain -- reef and council routes (slower, local knowledge, hidden from Crown notice) --> [[Verdant Teeth]] / [[Sparhold]] / [[Aruhe - Hungry Isle]]`.
+- `Midchain -- reef and council routes (slower, local knowledge, hidden from Crown notice) --> [[Verdant Teeth]] / [[sparhold]] / [[Aruhe - Hungry Isle]]`.
 - `Crown Islands -- harbour and canal routes (safe if documented, indebted if financed) --> [[Calven and Calveno]]`.
 - `Central Strait -- chart edge and current shift (dangerous, reveals Maw signs) --> [[Drowned Maw]]`.
 - **Loop:** Crown → Central Strait → Midchain → Calveno → Crown.
@@ -56,11 +56,11 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 - **Supporting:** evade, map, salvage, rescue, exploit infrastructure, return with consequences.
 - **Rewards:** information, access, leverage, relationships, changed routes, rescued people.
 ## Who is here
-- [[Dravosi Crown]], [[Tessarine Concordat]], [[Passage]], [[Grung clans]], [[Waveservants]], [[Sentinels of the Eyrie]], [[Countless]], Umberlee, and the crew.
+- [[Dravosi Crown]], [[Tessarine Concordat]], [[passage]], [[Grung clans]], [[waveservants]], [[Sentinels of the Eyrie]], [[Countless]], Umberlee, and the crew.
 ## Connections
-- [[Crown Islands]] · [[Midchain]] · [[Central Strait]] · [[Galewall]] · [[Drowned Maw]]
+- [[Crown Islands]] · [[Midchain]] · [[Central Strait]] · [[galewall]] · [[Drowned Maw]]
 ## Hooks
-- Follow the Grung trail from [[Uncertainty]] to [[Sparhold]] and [[Aruhe - Hungry Isle]].
+- Follow the Grung trail from [[uncertainty]] to [[sparhold]] and [[Aruhe - Hungry Isle]].
 - Decide what to do with the Pearl of Souls and the Drowned Maw.
 - Learn whether tribute is protection, exploitation, or both.
 ## Secrets (DM)
@@ -78,11 +78,11 @@ A roughly 60,000-square-mile archipelago weeks beyond the last charted Faerûn c
 
 
 ## Geography ingest — corridor overview
-The Shattered Sea is a long, bent west–east corridor in open ocean south of Chult, roughly 60,000 square miles across. The route reads west to east as [[Galewall]] → [[Ashwalls]] → the [[Verdant Scatter]] (the Crown Islands north of [[Central Strait]], the [[Midchain]] south) → [[Tail]] → [[Drowned Maw]] and the [[Outer Reach]].
+The Shattered Sea is a long, bent west–east corridor in open ocean south of Chult, roughly 60,000 square miles across. The route reads west to east as [[galewall]] → [[Ashwalls]] → the [[Verdant Scatter]] (the Crown Islands north of [[Central Strait]], the [[Midchain]] south) → [[tail]] → [[Drowned Maw]] and the [[Outer Reach]].
 
-- [[Galewall]] is a permanent stacked storm belt: a good-pilot crossing takes about three weeks and roughly one ship in three fails to finish.
+- [[galewall]] is a permanent stacked storm belt: a good-pilot crossing takes about three weeks and roughly one ship in three fails to finish.
 - [[Ashwalls]] are cold-water volcanic spires: last solid ground westbound and the first safe lee eastbound. Wreck survivors and apparent rescuers make the lee dangerous.
 - South of the Midchain, the seasonal [[Doldrums]] slide 50–100 miles; a black dragon works the still channels and westbound captains use them to bypass Strait inspection.
-- Eastward, both arcs pinch into the [[Tail]], then the cold, sharp approach to the Maw. Past the trench is [[Outer Reach]]: no trusted landmark, reversing currents, and no resupply.
+- Eastward, both arcs pinch into the [[tail]], then the cold, sharp approach to the Maw. Past the trench is [[Outer Reach]]: no trusted landmark, reversing currents, and no resupply.
 
 The sea is not empty between the named hubs: reefs, deep cuts, and small particular islands make unofficial routes valuable to whoever learned them first.

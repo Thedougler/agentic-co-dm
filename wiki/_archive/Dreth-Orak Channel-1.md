@@ -15,11 +15,11 @@ tags: [location, grung, dreth, orak, channel]
 The Dreth-Orak Channel is flooded jungle, not a normal strait. It is the forbidden crossing between the paired eastern islands and the confirmed ground of live channel axolotls.
 
 ## Playable facts
-- A [[Vethka]] belongs here; a keel, mast, and sail are liabilities.
+- A [[vethka]] belongs here; a keel, mast, and sail are liabilities.
 - Root hollows and silt margins hold specimens; darker seams hold larger predators.
 - Shallow crossings toward Orak exist only until rain erases them.
 - A fresh-cut hummock and resin smell signal Grung timber work; patrols thicken as the cut moves south.
 - Outsiders can withdraw, evade, bargain, or continue, but the channel does not offer a safe shortcut.
 
 ## Linked
-- [[Dreth]] · [[Orak]] · [[Verdant Teeth]] · [[Grung clans]] · [[Pursue the Grung raiding fleet]]
+- [[dreth]] · [[orak]] · [[Verdant Teeth]] · [[Grung clans]] · [[Pursue the Grung raiding fleet]]

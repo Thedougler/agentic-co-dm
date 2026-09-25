@@ -24,7 +24,7 @@ tier: supporting
 > [!narration] Narration
 > A two-masted frigate on a grey hull, twelve cannon ports per side on the main gun deck and eight more above on the upper deck. The white stripe runs bow to stern at the upper deck rail. Crown pennant at the mainmast. A rating officer is already visible at the rail before the ship finishes its turn into your wind. She is not threatening you. She is waiting for you to make the next move.
 
-A two-masted heavy frigate, 140 feet on the waterline, built at the [[Harwick]] Naval Yard. The Admiralty uses this class for enforcement rather than mere inspection. It carries enough guns to discourage resistance. It holds enough cargo for seized goods and prisoners. It has the range to patrol [[verdant-scatter|the Scatter]] for months.
+A two-masted heavy frigate, 140 feet on the waterline, built at the [[harwick]] Naval Yard. The Admiralty uses this class for enforcement rather than mere inspection. It carries enough guns to discourage resistance. It holds enough cargo for seized goods and prisoners. It has the range to patrol [[verdant-scatter|the Scatter]] for months.
 
 *Heavy Frigate · Tier 3 · [[calders-tooth-and-port-tidefall]].*
 

@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Toa Kailani
 
-**Wants:** to hold [[Sparhold]]'s rule through House Kailani's control of the settlement's watch, but the Renzetti challenge has forced a champion duel he may not win.
+**Wants:** to hold [[sparhold]]'s rule through House Kailani's control of the settlement's watch, but the Renzetti challenge has forced a champion duel he may not win.
 
 > [!narration] Narration
 > A man in his fifties enters the watch hall with the step of someone who owns the floor. His dark hair has grayed. Weathered creases line his face, a lifetime spent watching the horizon. That left hand catches the eye, scarred in a cross-hatched pattern of old burns from palm to wrist. He turns it over absently as he speaks, as though the marks might yet whisper something new. His other hand never stops working the tally-cord wound around his wrist, fingers tracing each knotted segment, each one recording a watch failure, a shift gone wrong, another entry in the ledger he keeps.

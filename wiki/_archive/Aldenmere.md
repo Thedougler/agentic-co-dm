@@ -23,7 +23,7 @@ The [[Dravosi Crown]] claims Aldenmere, sends a revenue officer twice a year for
 Fishing and farming families, a twice-yearly Crown revenue officer, and the local life of reeds, frogs, toads, crocodiles, and fish.
 
 ## Connections
-- → [[Crown Islands]] · [[Harwick]] · [[Stenmark]] · [[Calven and Calveno]]
+- → [[Crown Islands]] · [[harwick]] · [[Stenmark]] · [[Calven and Calveno]]
 
 > [!secret]- Three refused deals
 > [[High Eyrie]] is the named Sentinel refusal. The dump asserts that the Crown has offered the Sentinels three deals and all three were refused; it does not turn Aldenmere into a party to those negotiations.

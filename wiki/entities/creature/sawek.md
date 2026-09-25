@@ -90,13 +90,13 @@ This entry's statblock is the general bestiary build. The [[Kalowe — The Sawek
 
 **Description.**
 
-[[Kalowe]]'s reef divers call it the sawek; colonial sailors call it the blue devil, after its preference for the caves lining blue holes as its lair. The front half is shark: broad, muscle-dense, jaws wide enough to take a man at the shoulder, skin a deep blue-grey that reads as black in dim water. The rear half is octopus: eight tentacles, each up to twenty feet long at full extension. It fits inside a cave entrance that looks too small to hold anything of note.
+[[kalowe]]'s reef divers call it the sawek; colonial sailors call it the blue devil, after its preference for the caves lining blue holes as its lair. The front half is shark: broad, muscle-dense, jaws wide enough to take a man at the shoulder, skin a deep blue-grey that reads as black in dim water. The rear half is octopus: eight tentacles, each up to twenty feet long at full extension. It fits inside a cave entrance that looks too small to hold anything of note.
 
 ## Behavior
 
 **Ecology.**
 
-The sawek is an ambush predator — the tentacles emerge from the entrance and grab whatever is within range, and the shark half takes over once prey is in reach. It can maintain a grapple on two targets at once and drags a grappled creature back toward its lair. While stationary in its lair, the sawek is silent and requires no Stealth check. It has advantage on Perception checks that rely on smell and breathes only underwater. [[Kalowe]] divers mark claimed holes with a length of cord tied to a reef stake, the only signal that a given blue hole is already taken.
+The sawek is an ambush predator — the tentacles emerge from the entrance and grab whatever is within range, and the shark half takes over once prey is in reach. It can maintain a grapple on two targets at once and drags a grappled creature back toward its lair. While stationary in its lair, the sawek is silent and requires no Stealth check. It has advantage on Perception checks that rely on smell and breathes only underwater. [[kalowe]] divers mark claimed holes with a length of cord tied to a reef stake, the only signal that a given blue hole is already taken.
 
 ## Tactics
 
@@ -105,5 +105,5 @@ The sawek is an ambush predator — the tentacles emerge from the entrance and g
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Chum the water near a marked blue hole | The cord marker hasn't been checked to confirm the hole is empty | The sawek surfaces to investigate, trading its ambush advantage for a fight in open water | [[Kalowe — The Sawek Bounty]] |
-| Cut or move a diver's claimed-hole cord | Nobody's confirmed the lair behind it is unoccupied | The next diver or PC to check the hole walks into a live ambush instead of an empty cave | [[Kalowe]] |
+| Cut or move a diver's claimed-hole cord | Nobody's confirmed the lair behind it is unoccupied | The next diver or PC to check the hole walks into a live ambush instead of an empty cave | [[kalowe]] |
 | Loot the lair floor mid-fight | The sawek is still alive and hasn't fled | Splits the party's attention between salvage and the fight, risking a grapple on whoever's distracted | [[Kalowe — The Sawek Bounty]] |

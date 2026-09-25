@@ -64,6 +64,6 @@ If true, the hole offers a lethal salvage site: the ancient Sawek threatens abov
 - [[sawek|Sawek]] · [[kalowe|Kalowe]] · [[midchain|Midchain]]
 - Blue Hole · eastern reef-diving routes
 
-## Open Canon
+**Open canon.**
 
 The sinkhole's exact location, the identity and size of the alleged Sawek, the condition of the wreck-reef, and whether the drowned sailors are truly animated remain open. No table reveal or successful salvage has established them.

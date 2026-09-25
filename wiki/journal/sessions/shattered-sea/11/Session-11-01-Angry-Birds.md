@@ -3,7 +3,7 @@ title: Session 11 — Angry Birds
 category: journal
 tags: [shattered-sea, session-prep]
 sources:
-  - "[[Session-11-00-Birds-of-a-Feather]]"
+  - "[[session-11-00-birds-of-a-feather]]"
   - "[[journal/sessions/shattered-sea/10/Session-10-Recap]]"
   - "[[bloodhawk]]"
   - "[[young-bloodhawk]]"
@@ -49,7 +49,7 @@ visibility: dm
 
 ## Situation
 
-- **Where.** The party starts 60 feet above the north lip of [[old-gardens]]. The [[crown-squid]] is 30 feet north at the same height, fleeing through the last tree crowns. [[the-river]] and eight-foot grass lie east and 60 feet below. [[western-landing|Western Landing]] and [[Uncertainty]] lie south across 60 feet of open sky.
+- **Where.** The party starts 60 feet above the north lip of [[old-gardens]]. The [[crown-squid]] is 30 feet north at the same height, fleeing through the last tree crowns. [[the-river]] and eight-foot grass lie east and 60 feet below. [[western-landing|Western Landing]] and [[uncertainty]] lie south across 60 feet of open sky.
 - **Who.** An adult [[bloodhawk]] is diving on the squid. Two [[young-bloodhawk|young Bloodhawks]] follow its line and strike whatever it flushes. [[talon-skarn]] is the man-sized flyer up-sun, and he is not responsible for this hunt.
 - **What changed.** The party remains in the squid's air when the adult hawk enters the same patch of sky.
 - **Pressure.** The adult continues after the squid unless the party makes itself the easier target. Each round in open air gives the birds another chance to isolate someone.
@@ -62,7 +62,7 @@ visibility: dm
 | **Engages** | If they move quietly away from both animals and reach cover, let them land; the adult hawk stays on the squid. If they attack the adult, stay close to the squid, use loud magic, grab the squid, or fly toward the young, the adult treats that character as prey. The young use Flush Dive on whatever the adult flushes. |
 | **Hesitates** | Keep the party in open air. The adult continues its dive on the squid, and one young hawk drives an obvious airborne body downward toward the terraces. Ask what they do again. |
 | **Rejects / leaves** | If they force a line back to the beach, the adult still hunts the squid across that sky and pressures anyone who remains exposed. If they reach the shingle, rebuild from [[western-landing]]. |
-| **Surprises you** | Improvise from the adult's want, the young birds' flushing behavior, the grass-and-river exit, and the exposed beach route. Do not turn this into a fight to the death. When the party reaches grass, river, terrace woods, or beach, end the hook. Do not run Survival checks or [[Session-11-00-Random-Tables]] here. |
+| **Surprises you** | Improvise from the adult's want, the young birds' flushing behavior, the grass-and-river exit, and the exposed beach route. Do not turn this into a fight to the death. When the party reaches grass, river, terrace woods, or beach, end the hook. Do not run Survival checks or [[session-11-00-random-tables]] here. |
 ## Decision handles
 
 - **Drop.** A 60-foot Dash from open air reaches the eight-foot grass and moving water; a normal 30-foot move does not. A quiet drop leaves the hunt, and the adult stays on the squid.

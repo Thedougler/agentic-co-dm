@@ -83,7 +83,7 @@ The Mangroves are the southern end of [[Aruhe - The Marshes|the Marshes]], where
 - Southern and southeastern coast of Aruhe
 - Tidal channels reaching the open ocean without providing a usable landing
 - No practical shoreline route to [[Aruhe - Beach|Western Landing]]
-- Offshore observation toward [[Uncertainty]]
+- Offshore observation toward [[uncertainty]]
 
 ---
 ## Why

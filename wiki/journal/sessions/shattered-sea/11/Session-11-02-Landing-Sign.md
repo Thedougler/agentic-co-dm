@@ -110,7 +110,7 @@ At the end of each round, advance the threat clock once while anyone remains on 
 ```col-md
 ## Secondary objective
 
-If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this bank, mark [[taking-on-aruhe]]. The later hazards-table roll on [[Session-11-00-Random-Tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken, and the trail and smoke remain either way.
+If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this bank, mark [[taking-on-aruhe]]. The later hazards-table roll on [[session-11-00-random-tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is received, not taken, and the trail and smoke remain either way.
 ```
 ````
 
@@ -169,7 +169,7 @@ The party follows the north prints toward the smoke and enters [[torn-crossing]]
 
 ## Backup
 
-[[landing-bank]] · [[torn-crossing]] · [[Session-11-00-Random-Tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[old-gardens]] · [[redheart-berry]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[landing-bank]] · [[torn-crossing]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[old-gardens]] · [[redheart-berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
 
 ## Battlemap
 

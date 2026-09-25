@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[otel-karn]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[marta-anvez]]"
 summary: "Cheap salted mutton at Anvez's Provisions, stocked in a barrel that always seems full again by the next visit."
 provenance:
   extracted: 0.85

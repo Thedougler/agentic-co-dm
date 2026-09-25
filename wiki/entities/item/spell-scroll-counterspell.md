@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[kalowe]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[sorin-vask]]"
 summary: "A single-use scroll holding Counterspell, letting its holder cut off a nearby spell before it takes hold."
 provenance:
   extracted: 0.85
@@ -31,7 +36,6 @@ If the spell is on your spell list but of a higher level than you can normally c
 
 For this 3rd-level spell scroll, the spell uses a saving throw DC of **15** and has an attack bonus of **+7**. This scroll holds Counterspell. Along the Shattered Sea's contested waters, a faction confrontation is rarely settled with steel alone. A scroll like this one buys a spellcaster the option of silence over a duel.
 
-## Mechanics
 
 Counterspell is a Reaction spell, taken when you see a creature within 60 feet of yourself casting a spell with Verbal, Somatic, or Material components; casting it from this scroll doesn't change that trigger or timing, only where the casting itself comes from.
 

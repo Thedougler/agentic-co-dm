@@ -41,4 +41,4 @@ tier: supporting
 
 ## Provenance
 
-[[catarina-davirelli]] crafted and infused this item. She gave it to [[crissdalynn-khinriss]] during a fight in the [[Calveno sewer magazines]]. Catarina had noticed Crissdalynn struggling to keep concentration under fire. Crissdalynn holds it now. [[journal/sessions/shattered-sea/06/Session-06-Recap]]'s transcript documents this exchange.
+[[catarina-davirelli]] crafted and infused this item. She gave it to [[crissdalynn-khinriss]] during a fight in the [[Calveno sewer magazines]]. Catarina had noticed Crissdalynn struggling to keep concentration under fire. Crissdalynn holds it now. [[journal/sessions/shattered-sea/06/session-06-recap]]'s transcript documents this exchange.

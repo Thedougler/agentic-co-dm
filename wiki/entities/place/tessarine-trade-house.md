@@ -40,7 +40,7 @@ The [[tessarine-concordat]] operates the trade house. Factors, merchants, salvag
 
 ## What
 
-The three-storey house licenses trade, brokers salvage, and sends couriers. Its visible dispatch work includes [[Silkvane]], and its Concordat craft include [[amberreach|Amberreach]]. The source does not establish a complete staff list or floor plan.
+The three-storey house licenses trade, brokers salvage, and sends couriers. Its visible dispatch work includes [[silkvane]], and its Concordat craft include [[amberreach|Amberreach]]. The source does not establish a complete staff list or floor plan.
 
 ## Where
 

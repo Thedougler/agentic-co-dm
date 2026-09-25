@@ -37,7 +37,7 @@ era: "Current campaign"
 
 ## Current Truth
 
-[[Valkur]] is the muttered line at the rail: sailor courage, hoped-for wind, and private hope without a basin or booklet. Sailors still pay [[Umberlee]]. [[Valkur]] and [[Tyr]] act as counterweights to her; [[Valkur]] is invoked quietly below decks. He has no formal temples in the Scatter.
+[[Valkur]] is the muttered line at the rail: sailor courage, hoped-for wind, and private hope without a basin or booklet. Sailors still pay [[Umberlee]]. [[Valkur]] and [[tyr]] act as counterweights to her; [[Valkur]] is invoked quietly below decks. He has no formal temples in the Scatter.
 
 ## Limits
 
@@ -45,7 +45,7 @@ The sources establish a sailor belief and invocation, not a formal priesthood, t
 
 ## Who Knows
 
-Sailors and the [[Waveservants]] know the name as a counterweight to [[Umberlee]]. The extent of wider knowledge is not established.
+Sailors and the [[waveservants]] know the name as a counterweight to [[Umberlee]]. The extent of wider knowledge is not established.
 
 ## Party Knowledge
 
@@ -67,10 +67,10 @@ Add a change only when play establishes a new practice, visible sign, clerical p
 ## Connections
 
 - [[Umberlee]]
-- [[Tyr]]
-- [[Waveservants]]
+- [[tyr]]
+- [[waveservants]]
 
-## Open Canon
+**Open canon.**
 
 * Is Valkur an active divine power, or only a durable sailor belief?
 * Does any formal shrine, priest, or artifact exist outside the cited sources?

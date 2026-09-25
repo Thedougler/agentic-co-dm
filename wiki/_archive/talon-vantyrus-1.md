@@ -21,7 +21,7 @@ aliases:
 > [!quote]
 > "Nothing had to happen. Something happened, and afterward you invented inevitability so you could survive having done nothing."
 
-**Talon Vantyrus** is the master of the [[countless]], an aged snowy-owl aarakocra whose white plumage has faded toward pale grey with age and altitude. He was born **[[Osset]]**, once a senior master of [[high-eyrie|the High Eyrie]] and teacher of [[master-kyzil]].
+**Talon Vantyrus** is the master of the [[countless]], an aged snowy-owl aarakocra whose white plumage has faded toward pale grey with age and altitude. He was born **[[osset]]**, once a senior master of [[high-eyrie|the High Eyrie]] and teacher of [[master-kyzil]].
 
 Kyzil believes Osset died decades ago. He does not know that his old master survived, took the working identity Talon Vantyrus, and built the order now moving against the Sentinels.
 

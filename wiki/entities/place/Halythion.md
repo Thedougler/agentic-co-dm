@@ -32,7 +32,7 @@ relationships:
 
 ## At a Glance
 
-[[Halythion]] is an ancient settlement built into the Teikhinos Reef in the eastern [[Midchain]]. It is invisible from the surface and older than any colonial record. The exact entrance, depth, inhabitants, and route are not established in canon.
+[[halythion]] is an ancient settlement built into the Teikhinos Reef in the eastern [[Midchain]]. It is invisible from the surface and older than any colonial record. The exact entrance, depth, inhabitants, and route are not established in canon.
 
 ## If the party
 

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[central-strait]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[cotter-foss]]"
 summary: "A sealed tin of dense gnomish meatballs from the Nimmik Vollask, spiced and packed to last months at sea."
 provenance:
   extracted: 0.85
@@ -40,7 +45,6 @@ tier: supporting
 | Current holder | [[cotter-foss]] sells these from the rail of the [[nimmik-vollask]]; the gnomes below decks make and tin them. |
 | Narrative hook | A tin lasts months sealed. Crews on long crossings treat them as currency when coin gets abstract. |
 
-## Mechanics
 
 > [!mechanic]
 > **Vollask Meatball Tin [HB].** One tin counts as two days of rations for one creature. The meatballs are heavily spiced, packed in rendered fat, and stay good for six months sealed. Once opened, eat within two days or they turn.

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[central-strait]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[glass-debt]]"
 summary: "A flat disc of Antheri-worked stone that, when submerged, lets the holder sense the seafloor's contour and depth within sixty feet."
 provenance:
   extracted: 0.85
@@ -39,7 +44,6 @@ tier: supporting
 | Current holder | Unclaimed, on the captain's table aboard *[[glass-debt\|the Glass Debt]]*. |
 | Narrative hook | Used within the outer [[Midchain]] reef approaches, the disc shows dressed stone in the silt at a bearing no chart marks. Whether it is a ruin, a shrine, or a wreck is a question the disc cannot answer. |
 
-## Mechanics
 
 > [!mechanic]
 > **The Plumb Eye [HB].** Once per day, as an action, submerge the disc in open water. For 1 hour, the holder senses the depth and contour of the seafloor within 60 feet in all directions as a tactile impression against the hand holding the cord — as though the bottom were a relief pressed against the palm. The disc must remain submerged and in hand; lifting it out ends the effect immediately.
@@ -52,4 +56,4 @@ tier: supporting
 
 [[Antheri]] manufacture. The incised grid on both faces matches calibration marks recovered from Antheri coastal survey sites — parallel and transverse lines used to normalize depth impressions between operators. Not a unique piece: a working tool, made to a standard, worn by the work.
 
-How it reached a [[Kalowe]] merchant brig is not recorded. The captain acquired it, used it, and left no note of what it was.
+How it reached a [[kalowe]] merchant brig is not recorded. The captain acquired it, used it, and left no note of what it was.

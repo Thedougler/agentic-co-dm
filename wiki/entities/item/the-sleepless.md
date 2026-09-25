@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[nicco-kettley]]"
 summary: "An over-cured alchemical cigarette, sold cheap off a vending board, that holds a smoker's attention against an hour of anything working on the mind from outside."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ A batch [[Studio Orsini]] left on the drying racks four days too long, sold unde
 
 **PC connection:** the crew's mind saves are its thinnest wall. A stun or a fear effect thrown across the back line lands on two flat rolls at once, and that settles the fight before the melee lanes get a turn. [[nicco-kettley]] sells the answer to that for less than an hour behind a curtain costs.
 
-## Mechanics
 
 **[HB]** Lighting the Sleepless and taking the first breath costs an Action, and it needs a flame. For 1 hour afterward, the smoker rolls Wisdom saving throws with advantage.
 

@@ -23,7 +23,7 @@ tier: supporting
 
 ![[ettore-lupo-banner]]
 
-[[Human]], he/him. Proprietor of [[Casa Lupo]], a general goods shop in [[calven-and-calveno]]'s [[le-paludi]] district. The only merchant in Calveno who wants nothing.
+[[human]], he/him. Proprietor of [[Casa Lupo]], a general goods shop in [[calven-and-calveno]]'s [[le-paludi]] district. The only merchant in Calveno who wants nothing.
 
 **Wants:** keep the shop's ledger to himself and price everything from memory, the way he has for forty years.
 

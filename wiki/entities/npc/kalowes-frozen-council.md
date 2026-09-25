@@ -26,7 +26,7 @@ tier: supporting
 ## Source notes
 
 > [!narration]
-> *[[Kalowe]] holds its [[chain-council]] in a closed room above the harbour. Nine seats. No public gallery. The air in that chamber smells of lamp oil and wet wool. A mail record sits in a locked case against the wall, still unburned, the seal on the case unbroken since it was set.*
+> *[[kalowe]] holds its [[chain-council]] in a closed room above the harbour. Nine seats. No public gallery. The air in that chamber smells of lamp oil and wet wool. A mail record sits in a locked case against the wall, still unburned, the seal on the case unbroken since it was set.*
 >
 > *At the reef gap, the [[Waveservant shrine]] takes every arriving hull within reach. The basin there holds ordinary tribute for now: coin, a knotted cord, a splinter of ship's timber offered for safe passage. The water around it is clear enough to show the coins on the bottom, and the current keeps them moving in a slow, patient circle.*
 
@@ -68,7 +68,7 @@ The leg is [[central-strait-crossing]].
 |---|---|---|---|
 | Insight | 14 | four fronts | which Council voice is buying time |
 | Persuasion | 16 | the room holds | a vote, a re-term, or [[delmar-fisk]] named in public |
-| Religion | 13 | a shrine fee | [[Waveservants]] want the sea's due before the meeting |
+| Religion | 13 | a shrine fee | [[waveservants]] want the sea's due before the meeting |
 
 ## 3 — If they dig
 
@@ -76,5 +76,5 @@ The leg is [[central-strait-crossing]].
 
 ## Exit
 
-- they refuse [[Kalowe]] or turn off → [[central-strait-crossing]]
+- they refuse [[kalowe]] or turn off → [[central-strait-crossing]]
 - they leave for another named port → that destination's run-guide

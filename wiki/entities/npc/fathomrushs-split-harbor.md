@@ -26,7 +26,7 @@ tier: supporting
 ## Source notes
 
 > [!narration]
-> *[[Fathomrush]] splits on the water. [[Sunkline]] holds one shore, [[Voyvode]] the other. Both piers watch where each new hull ties up, and neither crew crosses the middle to greet it first.*
+> *[[fathomrush]] splits on the water. [[sunkline]] holds one shore, [[Voyvode]] the other. Both piers watch where each new hull ties up, and neither crew crosses the middle to greet it first.*
 >
 > *Between them the dockside sits unclaimed: wet stone, coiled hose, a memorial wall with a fresh name cut into it, the letters still bright against the older, weathered rows. Pump-endurance gear stands under canvas on both sides, tarps snapping loose at one corner where nobody has bothered to retie them. The air smells of brine and hot metal and the oil they use on deep-shelf valves. Gulls work the unclaimed stone for scraps neither pier has claimed either.*
 
@@ -36,7 +36,7 @@ tier: supporting
 
 ## Prep
 
-Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Uncertainty]]*.
+Far-east bearing. Two pressure-rig companies watch which dock receives the *[[uncertainty]]*.
 
 ## 1 — Arrive
 
@@ -47,7 +47,7 @@ Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Un
 
 | Check | DC | Failure | Pass |
 |---|---|---|---|
-| Perception | 13 | two docks | which compound watches the *[[Uncertainty]]* |
+| Perception | 13 | two docks | which compound watches the *[[uncertainty]]* |
 | Investigation | 15 | a clean trial | [[Fathomrush Last Berth False Log]] — Sunkline's forged valve |
 | Insight | 14 | a memorial | a fresh name on Voyvode's wall — [[petera-ngata]] |
 
@@ -74,5 +74,5 @@ Far-east bearing. Two pressure-rig companies watch which dock receives the *[[Un
 
 ## Exit
 
-- they refuse [[Fathomrush]] or turn off → [[central-strait-crossing]]
+- they refuse [[fathomrush]] or turn off → [[central-strait-crossing]]
 - they leave for another named port → that destination's run-guide

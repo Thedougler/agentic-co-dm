@@ -26,9 +26,9 @@ tier: supporting
 ## Source notes
 
 > [!narration]
-> *The *[[Uncertainty]]* floats off [[La Vasca]]'s cradle with her paint still tacky. One unbroken blue-black from cap rail to copper. Gun muzzles come out along the side, a long pair and a squat pair. At the bow a hardwood woman walks forward with nothing written on her face. Nobody has named her.*
+> *The *[[uncertainty]]* floats off [[La Vasca]]'s cradle with her paint still tacky. One unbroken blue-black from cap rail to copper. Gun muzzles come out along the side, a long pair and a squat pair. At the bow a hardwood woman walks forward with nothing written on her face. Nobody has named her.*
 >
-> *Below, the four berths stand filled and unused, including an empty cargo hold. The chart archive has no hand. The provisions store holds [[Cobb]]'s sealed ration chest. Aft, a long table and a bulkhead bench occupy the space that used to be a captain's cabin. The crew bolted the [[fleet-commanders-chair|fleet commander's chair]] at the head of it.*
+> *Below, the four berths stand filled and unused, including an empty cargo hold. The chart archive has no hand. The provisions store holds [[cobb]]'s sealed ration chest. Aft, a long table and a bulkhead bench occupy the space that used to be a captain's cabin. The crew bolted the [[fleet-commanders-chair|fleet commander's chair]] at the head of it.*
 >
 > *The galley has not been lit. The cook, navigator, and surgeon posts have no names on them.*
 

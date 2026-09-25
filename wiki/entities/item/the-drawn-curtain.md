@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: rare
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "A lead-tubed alchemical cigarette whose smoke seals a room for an hour, so nothing said inside it can be overheard, watched, or scried from outside."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ The blend [[rufio-segalla]] built his trade on. [[La Brace]] sells privacy, and 
 
 **PC connection:** every fight Delmar wins starts in a room, and in this city those rooms leak. An hour where no wall carries a word out is worth more to him than a weapon, and 1,100 gp keeps it out of reach until the crew picks it as the thing to save for.
 
-## Mechanics
 
 **[HB]** Lighting the Drawn Curtain takes an Action. The smoke fills a 20-foot cube centred on the lighting point and lasts 1 hour, or until the enclosed space opens to the outside air, whichever comes first.
 

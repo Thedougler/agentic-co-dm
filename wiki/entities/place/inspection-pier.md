@@ -57,7 +57,7 @@ Inspection Pier is in [[calders-tooth-and-port-tidefall]], at the approach to Po
 - **North:** [[fort-crestwall]] — direction and travel time from the pier are not established.
 - **East:** [[central-strait]] — the pier serves ships entering the western Strait; travel time is not established.
 - **South:** [[south-harbour]] — the related harbour lies on Calder's Tooth; direction and travel time are not established.
-- **West:** [[Galewall]] — the western sea approach is connected through the broader Shattered Sea route; travel time is not established.
+- **West:** [[galewall]] — the western sea approach is connected through the broader Shattered Sea route; travel time is not established.
 
 ## Why
 

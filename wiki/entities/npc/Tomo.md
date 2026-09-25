@@ -42,7 +42,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Tomo
-> Tomo comes ashore with [[Sandro]] and [[Nino]]. Four fruits have changed him: his voice is no longer what it was, and his hands are different. The change is visible before he explains it.
+> Tomo comes ashore with [[Sandro]] and [[nino]]. Four fruits have changed him: his voice is no longer what it was, and his hands are different. The change is visible before he explains it.
 ```
 ````
 
@@ -65,4 +65,4 @@ The draft establishes that Tomo's voice changed after he ate four fruits, but it
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Sandro]] | Tomo comes ashore with Sandro in the draft fiction. |
-| [[Nino]] | Tomo comes ashore with Nino in the draft fiction. |
+| [[nino]] | Tomo comes ashore with Nino in the draft fiction. |

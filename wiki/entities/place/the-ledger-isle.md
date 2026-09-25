@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # The Ledger Isle
@@ -34,12 +34,12 @@ relationships:
 
 ## At a Glance
 
-[[the-ledger-isle]] is a named island or site in the western [[Midchain]]. A reclusive accountant-sorcerer holds the true books behind half the region's smuggling. [[Kalowe]] is the other recorded connection. The exact approach, landing, and cost of bypassing the island are not established in canon.
+[[the-ledger-isle]] is a named island or site in the western [[Midchain]]. A reclusive accountant-sorcerer holds the true books behind half the region's smuggling. [[kalowe]] is the other recorded connection. The exact approach, landing, and cost of bypassing the island are not established in canon.
 
 ## If the party
 
 - **Seek the true books.** The party can pursue the records, negotiate for access, or decide that the leverage is too dangerous to use. The canon does not specify the route, defenses, terms, or outcome; resolve those through play rather than treating any one approach as required.
-- **Trace the smuggling record.** The party can use the island's connection to the western Midchain and [[Kalowe]] to follow who moves goods and who benefits. No confirmed route or named intermediary is recorded.
+- **Trace the smuggling record.** The party can use the island's connection to the western Midchain and [[kalowe]] to follow who moves goods and who benefits. No confirmed route or named intermediary is recorded.
 
 ## Who
 
@@ -56,7 +56,7 @@ relationships:
 - **East:** [[Midchain]]; the island is in the region's western band, but no direct route is recorded.
 - **South:** Canon gap; no neighboring place or travel time is recorded.
 - **West:** Canon gap; the island's position relative to the western open-sea edge is not recorded.
-- [[Kalowe]] is a recorded related place, but the route and distance between it and the island are not established.
+- [[kalowe]] is a recorded related place, but the route and distance between it and the island are not established.
 
 ## Why
 

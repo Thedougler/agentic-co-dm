@@ -27,7 +27,7 @@ source: "[[Aruhe - Hungry Isle]]"
 ## At a glance
 Memorial Grove is the 150-foot clearing where Aruhe's appetite stops. One fruit tree stands over two unmarked graves, black flowers ring the too-green grass, and independent predators gather at the tree line as silent mourners. The tree, graves, flower ring, bound soil, and ritual relationship between them are the Death Bloom: Hinewai's body and place-bound phylactery.
 
-The Grove is a place to look, remember, study, pay respect, map, listen, distinguish living from dead, and retreat. Arriving without taking allows [[Hinewai]] to meet visitors calm, proud, old, and courteous. Taking from the garden or carelessly harming it turns that warmth off cleanly; she states consequences as weather states them and does not threaten.
+The Grove is a place to look, remember, study, pay respect, map, listen, distinguish living from dead, and retreat. Arriving without taking allows [[hinewai]] to meet visitors calm, proud, old, and courteous. Taking from the garden or carelessly harming it turns that warmth off cleanly; she states consequences as weather states them and does not threaten.
 
 ---
 ## If the party
@@ -46,14 +46,14 @@ The Grove is a place to look, remember, study, pay respect, map, listen, disting
     - `DC 20` → Prize fruit already on the ground.
     - Failure → Mourner-line fauna notice the take and contest it.
 - **Pick fruit from the living tree:** The fruit begins aging once removed. Hinewai treats this as a claim on the memorial unless the table has earned different permission.
-- **Strike the tree, dig at a grave, uproot black flowers, or try to carry the Bloom away:** The memorial is harmed. Use [[Hinewai]] and the Death Bloom consequences below rather than turning the Bloom into a portable item.
+- **Strike the tree, dig at a grave, uproot black flowers, or try to carry the Bloom away:** The memorial is harmed. Use [[hinewai]] and the Death Bloom consequences below rather than turning the Bloom into a portable item.
 - **Circle the Grove:** The party can bypass the clearing, but loses its restraint and origin clues.
 - **Retreat without taking or disturbing the memorial:** Return by water, marsh, grassland, or forest edge.
 
 ---
 ## Who
 
-- [[Hinewai]] is joined to the Grove as body, presence, and returning guardian.
+- [[hinewai]] is joined to the Grove as body, presence, and returning guardian.
 - [[The Unnamed Companion]] is present only as the first grave and remembered absence.
 - Independent fauna may gather at the black-flower ring as mourners. They do not hunt, graze, posture, cross the ring, become puppets, or form a hive mind.
 

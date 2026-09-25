@@ -50,7 +50,7 @@ flexGrow=2
 
 The default position is [[star-cut]]. If beat 8 ended in a march, keep the party on that column. If they sat awake in a knot, start at [[spoke-ring]]. Place the carrier and the nearest watcher together. If [[crissdalynn-khinriss]] is the carrier, that watcher is her partner. If she is not on watch, keep the nearest watcher with the carrier. Keep the sleeping survivors unnamed on rolls along the jungle walls.
 
-At Star Cut, the east fire is 40 feet south of the north mouth. [[talon-skarn]] starts at that mouth. He walks 50 feet and flies 90 feet. The leaf roof blocks a 30-foot straight-down lane, so **Peregrine Dive** is available only from the north mouth or the star-cut sky. A 30-foot move from the fire does not reach him; a 50-foot move from the north mouth reaches the coals. Katana and Sai have 5-foot reach. Kusarigama has 20-foot reach. A 50-foot Dash from the fire reaches the north mouth or the west river-talk, but not [[spoke-ring]], the beach, or [[Uncertainty]]. The aisle is ordinary ground. The jungle walls are Difficult Terrain and heavily obscure beyond 10 feet.
+At Star Cut, the east fire is 40 feet south of the north mouth. [[talon-skarn]] starts at that mouth. He walks 50 feet and flies 90 feet. The leaf roof blocks a 30-foot straight-down lane, so **Peregrine Dive** is available only from the north mouth or the star-cut sky. A 30-foot move from the fire does not reach him; a 50-foot move from the north mouth reaches the coals. Katana and Sai have 5-foot reach. Kusarigama has 20-foot reach. A 50-foot Dash from the fire reaches the north mouth or the west river-talk, but not [[spoke-ring]], the beach, or [[uncertainty]]. The aisle is ordinary ground. The jungle walls are Difficult Terrain and heavily obscure beyond 10 feet.
 
 **Thin.** [[talon-skarn]] starts 15 feet from [[crissdalynn-khinriss]] with his first chain already raised. Until the end of round 1, the party has **Disadvantage** on attack rolls and ability checks against him.
 
@@ -183,7 +183,7 @@ If [[talon-skarn]] leaves with the [[fate-spinner]], the small quartz top is in 
 
 ## Backup
 
-[[star-cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[Session-11-00-Birds-of-a-Feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[giants-guava]] · [[Uncertainty]] · [[spoke-ring]] · [[memorial-grove]] · [[talon-vantyrus]]
+[[star-cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[session-11-00-birds-of-a-feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[giants-guava]] · [[uncertainty]] · [[spoke-ring]] · [[memorial-grove]] · [[talon-vantyrus]]
 
 ## Battlemap
 

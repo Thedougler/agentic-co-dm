@@ -87,8 +87,8 @@ She has no speech, and everything she wants arrives as noise and position. She a
 | Connection | Meaning |
 | ---------- | ------- |
 | [[beaumont-sel]] | She rides his left shoulder, robs his pipe, and carries whatever he throws. |
-| [[the-saltwright]] | The brig out of [[Kalowe]] she has lived aboard through eleven years of Midchain runs. |
-| [[Uncertainty]] | She was thrown through its gun port in Session 02 and the powder came back too wet to fire. |
-| [[Passage]] | Beaumont works the network, so her hands are the network's hands by proxy. |
+| [[the-saltwright]] | The brig out of [[kalowe]] she has lived aboard through eleven years of Midchain runs. |
+| [[uncertainty]] | She was thrown through its gun port in Session 02 and the powder came back too wet to fire. |
+| [[passage]] | Beaumont works the network, so her hands are the network's hands by proxy. |
 | [[kalowe]], [[Midchain]] | Her route and her home port, both of them Beaumont's. |
 | The party | No thread of her own. She answers to Beaumont and will not leave his shoulder for anyone else. |

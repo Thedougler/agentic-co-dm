@@ -32,7 +32,7 @@ tier: supporting
 - [[aleksander-malone]] covers the NPC page, statblock, Front clock, and relationships.
 - [[shepherd-grigori]] covers the quarry's own page, CR 19 [[Hierarch]] statblock, and the [[khlysty-the-flock|Khlysty]] thread he advances.
 - [[dravosi-crown]] holds the institutional authority that keeps Malone on a long leash. The leash is long by design: [[sarns-landing]] showed the Crown what happens when the leash is short.
-- [[Blackrule]] is the chapterhouse where Malone returns between pursuits.
+- [[blackrule]] is the chapterhouse where Malone returns between pursuits.
 - [[perrin-black-jaw]] carries the dormant heresy thread. "Answer the Next Confirmed Heresy" waits on the Crown confirming his unwitting pact with [[Auralis]].
 
 ## Beat Chart
@@ -43,7 +43,7 @@ What lengths will the Crown go to in pursuit of their goals?
 
 ### Player Gravity
 
-- [[delmar-fisk|Delmar]] is on record as the fleet's admiral, a name the Crown could weigh. The [[Uncertainty]] IS the captured Dravosi cutter, and exposure is existential.
+- [[delmar-fisk|Delmar]] is on record as the fleet's admiral, a name the Crown could weigh. The [[uncertainty]] IS the captured Dravosi cutter, and exposure is existential.
 - [[perrin-black-jaw|Perrin]] has a dormant thread that waits on the Crown confirming his pact as heresy. Standing on a deck under an inquisitor's read is standing next to that trigger.
 - [[crissdalynn-khinriss|Crissdalynn]] and [[jean-claude-tabarnack|Jean-Claude]] sailed with Grigori and dropped him in [[calven-and-calveno]]. A direct question about the Shepherd is a direct question about what they did.
 

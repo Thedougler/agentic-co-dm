@@ -22,7 +22,7 @@ region: "Central Strait"
 relationships:
   - target: "[[central-strait]]"
     type: related_to
-  - target: "[[Aldenmere]]"
+  - target: "[[aldenmere]]"
     type: related_to
 ---
 # Sandtable Shoal
@@ -34,11 +34,11 @@ relationships:
 
 ## At a Glance
 
-[[sandtable-shoal]] sits in the middle of [[central-strait]] south of [[Aldenmere]]. The bottom rises from two hundred feet to under forty feet over about two miles and shifts the Blue Lane slightly south. Giant octopuses lurk in wreckage around it. A [[Kalowe]] operator holds the Crown salvage contract; the [[Harwick]] Admiralty remains dissatisfied with that arrangement.
+[[sandtable-shoal]] sits in the middle of [[central-strait]] south of [[aldenmere]]. The bottom rises from two hundred feet to under forty feet over about two miles and shifts the Blue Lane slightly south. Giant octopuses lurk in wreckage around it. A [[kalowe]] operator holds the Crown salvage contract; the [[harwick]] Admiralty remains dissatisfied with that arrangement.
 
 ## Who
 
-Giant octopuses lurk in wreckage around the shoal. A [[Kalowe]] operator holds the Crown salvage contract. The [[Harwick]] Admiralty is dissatisfied with that arrangement.
+Giant octopuses lurk in wreckage around the shoal. A [[kalowe]] operator holds the Crown salvage contract. The [[harwick]] Admiralty is dissatisfied with that arrangement.
 
 ## What
 
@@ -47,10 +47,10 @@ Sandtable Shoal is a shifting navigation and salvage hazard. Over about two mile
 ## Where
 
 - **Region:** [[central-strait|Central Strait]].
-- **South:** [[Aldenmere]] lies to the north; the shoal is south of it.
+- **South:** [[aldenmere]] lies to the north; the shoal is south of it.
 - **Route:** The Blue Lane shifts slightly south around the raised bottom.
 - **Extent:** The shallow rise covers about two miles; exact chart boundaries are not established.
 
 ## Why
 
-The party comes to Sandtable Shoal to navigate the shifted Blue Lane, investigate wreckage, or contest salvage. The Crown contract gives [[Kalowe]] an interest in the site while the [[Harwick]] Admiralty's dissatisfaction creates pressure around who controls its recovery.
+The party comes to Sandtable Shoal to navigate the shifted Blue Lane, investigate wreckage, or contest salvage. The Crown contract gives [[kalowe]] an interest in the site while the [[harwick]] Admiralty's dissatisfaction creates pressure around who controls its recovery.

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[otel-karn]]"
+kind: durable
+rarity: common
+attunement: false
+owner: "[[marta-anvez]]"
 summary: "A bulk, constantly replenished stock of bandages and splints at Anvez's Provisions, kept for wounds that linger on Otel Karn."
 provenance:
   extracted: 0.85

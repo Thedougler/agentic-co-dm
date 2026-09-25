@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: rare
+attunement: false
+owner: "[[nicco-kettley]]"
 summary: "An intact first-run alchemical cigarette under Studio Orsini's own seal, which turns the smoker's next failed saving throw into a success."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ An intact first run out of [[Studio Orsini]], not a second, not board stock, and
 
 **PC connection:** every hard fight this crew has lost ground in was lost to a save, not to damage. A blend that promises one of those back is worth saving for, which is the only reason a board selling seconds keeps a Rare item in a glass tube where everyone on the tier can see it.
 
-## Mechanics
 
 **[HB]** Lighting the Ninth Life and taking the first breath costs an Action. For 1 hour afterward, the first time the smoker fails a saving throw, that saving throw succeeds instead. The cigarette's effect ends the instant it fires.
 

@@ -28,7 +28,7 @@ tier: supporting
 
 ## At a Glance
 
-**Core truth.** Missing colonial-era [[dravosi-crown]] payroll records support a story that a privateer hid stolen lockboxes on one of the volcanic [[ashwall-islands|Ashwall Islands]] after the [[Galewall]] destroyed the escape ship. The privateer's name, the island, and the cache's survival are unknown.
+**Core truth.** Missing colonial-era [[dravosi-crown]] payroll records support a story that a privateer hid stolen lockboxes on one of the volcanic [[ashwall-islands|Ashwall Islands]] after the [[galewall]] destroyed the escape ship. The privateer's name, the island, and the cache's survival are unknown.
 
 **Why it matters.** The legend offers a possible treasure lead and a way to connect Dravosi records, volcanic navigation, and a heist whose evidence may still be recoverable.
 
@@ -109,13 +109,13 @@ Before the wreck disappeared, the crew reportedly rowed heavy lockboxes onto bla
 
 | Page | Relationship | Table relevance |
 | --- | --- | --- |
-| [[Galewall]] | Storm belt that wrecked the escape. | Sets the hazard and route history. |
+| [[galewall]] | Storm belt that wrecked the escape. | Sets the hazard and route history. |
 | [[ashwall-islands\|Ashwall Islands]] | Volcanic chain containing the possible drop site. | Defines the search area without fixing one island. |
 | [[dravosi-crown]] | Owner of the missing payroll. | Provides records, authority, and pressure. |
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which island received the lockboxes.
 * [ ] **Unknown.** Whether the rat carving survives.

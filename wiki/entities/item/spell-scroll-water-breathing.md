@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[central-strait]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[Tidefall Chandlery]]"
 summary: "A scroll holding a single casting of Water Breathing, letting its user breathe underwater for a day."
 provenance:
   extracted: 0.85
@@ -31,7 +36,6 @@ If the spell is on your spell list but of a higher level than you can normally c
 
 For this 3rd-level spell scroll, the spell uses a saving throw DC of **15** and has an attack bonus of **+7**. This scroll holds a single casting of _Water Breathing_. Standard gear for anyone bound for open water, where a held breath won't reach the bottom.
 
-## Mechanics
 
 _Water Breathing_ is a Ritual spell. Casting it from a scroll never grants the ritual-casting shortcut. Reading this scroll still takes the spell's normal casting time.
 

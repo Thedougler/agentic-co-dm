@@ -14,7 +14,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Sparhold]]"
+location: "[[sparhold]]"
 visibility: dm
 summary: "Sparhold tavern-and-watch keeper. Forty years of harbor tallies, and one ship she has not told the families about."
 provenance:
@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Tavern keeper and watch-post sentinel |
 | ---------- | ------------------------------------- |
 | **Nature** | Patient tally, not a trophy |
-| **Home**   | The loft above [[Sparhold]] harbor |
+| **Home**   | The loft above [[sparhold]] harbor |
 | **Wants**  | Keep running both tavern and watch without becoming an asset in the families' succession duel. |
 
 > **DM thesis:** She reads the harbor the way other people read a book they already know, watching for the torn page.
@@ -72,7 +72,7 @@ One side in the succession duel trying to claim her as an asset. Or [[delmar-fis
 
 | Relationship | Meaning |
 | ------------ | ------- |
-| [[Sparhold]] | Forty years of this harbor. |
+| [[sparhold]] | Forty years of this harbor. |
 | [[delmar-fisk]] | She has not told either family. He should know. |
 | [[bell-tone-draught]] | She keeps four vials in the table drawer for nights when a count cannot be lost. |
 

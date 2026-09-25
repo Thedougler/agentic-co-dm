@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "A thread-wound alchemical cigarette that burns for an hour and keeps the smoker's hold on a spell steady through the hits that would otherwise break it."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ Shelf stock at [[La Brace]], and the blend [[rufio-segalla]] sells most of to pe
 
 **PC connection:** Perrin carries the crew's active Concentration burden and saves at +3, so one focused hit can end Hex. An hour bought before a door opens is the cheapest answer he has.
 
-## Mechanics
 
 **[HB]** Lighting Slow Burn and taking the first breath costs an Action. For 1 hour afterward, the smoker has advantage on Constitution saving throws made to maintain Concentration.
 

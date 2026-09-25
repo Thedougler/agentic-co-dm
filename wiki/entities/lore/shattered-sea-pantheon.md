@@ -28,7 +28,7 @@ tier: supporting
 
 ## At a Glance
 
-**Core truth.** The Shattered Sea follows the wider Faerûnian pantheon, but maritime life makes [[Umberlee]] the public sea power. [[Valkur]] represents sailor courage and hope, [[Tyr]] represents Dravosi law, and a separate sky-pantheon shapes [[Aarakocra]] observance.
+**Core truth.** The Shattered Sea follows the wider Faerûnian pantheon, but maritime life makes [[Umberlee]] the public sea power. [[Valkur]] represents sailor courage and hope, [[tyr]] represents Dravosi law, and a separate sky-pantheon shapes [[Aarakocra]] observance.
 
 **Why it matters.** Tribute, oath, law, and sanctuary determine how people negotiate danger and authority; the same event can be read as a sea demand, a legal violation, or a question of patronage.
 
@@ -38,14 +38,14 @@ tier: supporting
 
 Every deity worshipped in the Shattered Sea belongs to the wider Faerûnian pantheon. Colonial charters carried these faiths south, while the Scatter retained practices suited to life on the water.
 
-[[Umberlee]] dominates public maritime practice because sailors pay the sea that can kill them. [[Valkur]] is invoked for courage and favorable winds, usually without formal temples in [[verdant-scatter|the Scatter]]. [[Tyr]] anchors Dravosi law, oaths, commissions, courts martial, and civic order; his clergy serve military installations and larger Crown garrisons.
+[[Umberlee]] dominates public maritime practice because sailors pay the sea that can kill them. [[Valkur]] is invoked for courage and favorable winds, usually without formal temples in [[verdant-scatter|the Scatter]]. [[tyr]] anchors Dravosi law, oaths, commissions, courts martial, and civic order; his clergy serve military installations and larger Crown garrisons.
 
-[[Remnis]] is [[crissdalynn-khinriss]]'s primary deity. [[Syranita]] has secondary observance in Aarakocra margins, and Aerdrie Faenya has a marginal tertiary place. Sailors usually meet divinity through tribute, oath, and habit rather than theology, with the [[Waveservants]] administering Umberlee's public faith.
+[[remnis]] is [[crissdalynn-khinriss]]'s primary deity. [[Syranita]] has secondary observance in Aarakocra margins, and Aerdrie Faenya has a marginal tertiary place. Sailors usually meet divinity through tribute, oath, and habit rather than theology, with the [[waveservants]] administering Umberlee's public faith.
 
 ### Limits
 
 * **Exception.** A deity's presence in this regional index does not establish that the deity has appeared in play or that every follower shares the index's interpretation.
-* **Unknown.** The table has not established direct appearances for [[Valkur]] or [[Tyr]].
+* **Unknown.** The table has not established direct appearances for [[Valkur]] or [[tyr]].
 * **Impossible or forbidden.** Do not infer an individual worshipper's doctrine from regional practice alone.
 
 ---
@@ -53,7 +53,7 @@ Every deity worshipped in the Shattered Sea belongs to the wider Faerûnian pant
 ## At the Table
 
 * **Players notice.** Offerings, oaths, garrison rites, and sanctuary claims appear as ordinary port infrastructure rather than abstract theology.
-* **This explains.** Why sailors pay [[Umberlee]], why Crown institutions invoke [[Tyr]], and why a quiet below-deck appeal may name [[Valkur]] instead.
+* **This explains.** Why sailors pay [[Umberlee]], why Crown institutions invoke [[tyr]], and why a quiet below-deck appeal may name [[Valkur]] instead.
 * **This enables.** Characters can bargain through tribute, invoke an oath, seek sanctuary, or challenge which institution has authority.
 * **This warns of.** A patron's protection is a live claim that must be actively backed; silence or failure can expose hallowed ground.
 * **Relevant now.** [[sin-and-sanctuary]] defines the shared rule for patron claims and what happens when a fiend tests them.
@@ -64,7 +64,7 @@ Every deity worshipped in the Shattered Sea belongs to the wider Faerûnian pant
 
 | Knower | Knowledge | Certainty | Basis |
 | --- | --- | --- | --- |
-| [[Waveservants]] | Public Umberlee practice and the tribute expected at sea. | knows | Administers maritime faith. |
+| [[waveservants]] | Public Umberlee practice and the tribute expected at sea. | knows | Administers maritime faith. |
 | Dravosi clergy | Tyr's relationship to law, commissions, and military order. | knows | Serves Crown installations. |
 | Aarakocra observances | Their sky-pantheon practices and patron distinctions. | knows / partial | Community observance. |
 | Ordinary sailors | Which offerings and oaths keep daily life moving. | knows / habit | Repeated practice rather than theology. |
@@ -90,7 +90,7 @@ Every deity worshipped in the Shattered Sea belongs to the wider Faerûnian pant
 ## If This Is Changing
 
 * **Current pressure.** A patron's live claim can go silent or be tested at hallowed ground.
-* **Actors.** [[Umberlee]], [[Valkur]], [[Tyr]], local clergy, the [[Waveservants]], and any fiend testing sanctuary.
+* **Actors.** [[Umberlee]], [[Valkur]], [[tyr]], local clergy, the [[waveservants]], and any fiend testing sanctuary.
 * **Their aims.** Institutions preserve authority while worshippers seek protection, proof, or an answer to a failed rite.
 * **Without interference.** Local practice remains customary and distinct, with no single theology replacing port-by-port observance.
 * **Visible sign.** A failed sanctuary claim, unusual tribute demand, or public dispute over an oath signals that divine practice has become an immediate problem.
@@ -113,15 +113,15 @@ Every deity worshipped in the Shattered Sea belongs to the wider Faerûnian pant
 | --- | --- | --- |
 | [[Umberlee]] | Public maritime deity. | Drives tribute and sea-facing practice. |
 | [[Valkur]] | Sailor courage and favorable winds. | Offers a quieter counterweight to fear of the sea. |
-| [[Tyr]] | Dravosi law and civic order. | Connects religion to military and Crown authority. |
-| [[Remnis]] | Primary deity of [[crissdalynn-khinriss]]. | Grounds Aarakocra sky observance. |
+| [[tyr]] | Dravosi law and civic order. | Connects religion to military and Crown authority. |
+| [[remnis]] | Primary deity of [[crissdalynn-khinriss]]. | Grounds Aarakocra sky observance. |
 | [[Syranita]] | Secondary Aarakocra observance. | Keeps the sky-pantheon distinct from sea practice. |
 | [[sin-and-sanctuary]] | Shared rule for live patron claims. | Defines sanctuary, silence, and fiend tests. |
 
 ---
 
-## Open Canon
+**Open canon.**
 
-* [ ] **Unknown.** Whether [[Valkur]] or [[Tyr]] will appear directly at the table.
+* [ ] **Unknown.** Whether [[Valkur]] or [[tyr]] will appear directly at the table.
 * [ ] **Unknown.** Which local communities interpret the regional roles differently.
 * [ ] **Decide when needed.** What concrete sign marks a patron's claim going silent in a given sanctuary.

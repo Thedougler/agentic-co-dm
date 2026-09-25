@@ -24,6 +24,7 @@ kind: magic
 rarity: uncommon
 attunement: true
 owner: "[[delmar-fisk]]"
+region: "[[calven-and-calveno]]"
 relationships:
   - target: "[[delmar-fisk]]"
     type: related_to
@@ -41,17 +42,15 @@ relationships:
 
 *Wondrous item, uncommon (requires attunement).* Foundry and Delmar's live sheet treat these as Winged Boots.
 
-## Effect
 
 While wearing the boots, take a Magic action to expend 1 charge and gain a Fly Speed of 30 feet for 1 hour. The boots have 4 charges and regain 1d4 expended charges daily at dawn. If you are flying when the duration expires, you descend 30 feet per round until you land.
 
-## At a Glance
 
-Attuned on [[delmar-fisk]]'s feet. Run rules match his Foundry sheet. Who handed the boots over remains contested.
 
 ## At the Table
 
 Spend a charge when Delmar needs altitude — boarding, escape, or a theatrical entrance — then track the hour and remaining charges.
+Attuned on [[delmar-fisk]]'s feet. Run rules match his Foundry sheet. Who handed the boots over remains contested.
 
 ## Connections
 

@@ -112,7 +112,7 @@ No canonical common telling is recorded. The name may be used at the table witho
 | --- | --- | --- |
 | [[sentinels-of-the-eyrie\|Sentinels of the Eyrie]] | Teaches Long Reach to every apprentice. | Establishes the technique's scope and institutional owner. |
 | [[high-eyrie\|High Eyrie]] | Named source location for Sentinel lore. | Gives the DM a place to connect questions about the technique to Sentinel training. |
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** What does Long Reach do mechanically or physically?
 * [ ] **Unknown.** Does any group outside Sentinel apprentices learn it?

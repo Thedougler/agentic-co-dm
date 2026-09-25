@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Yevka's Folly
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[yevkas-folly]] is a western Midchain half-built pleasure palace abandoned after its merchant prince went bankrupt and now quietly squatted. [[Kalowe]] is a recorded related harbor, but no route or distance is established. Skipping the Folly avoids its squatters and unfinished structure, but also gives up access to a concealed or contested place among the western islands.
+[[yevkas-folly]] is a western Midchain half-built pleasure palace abandoned after its merchant prince went bankrupt and now quietly squatted. [[kalowe]] is a recorded related harbor, but no route or distance is established. Skipping the Folly avoids its squatters and unfinished structure, but also gives up access to a concealed or contested place among the western islands.
 
 ---
 
@@ -46,7 +46,7 @@ relationships:
 - **Enters the unfinished structure:** The party moves through a building whose planned rooms, incomplete sections, and safe paths are Unknown.
 - **Seeks the squatters:** Occupants use the abandoned palace quietly. Their names, number, needs, defenses, and willingness to speak are not recorded.
 - **Claims or searches a room:** The source establishes no current ownership, contents, or claim. Treat any discovery or conflict as open to play.
-- **Leaves for Kalowe:** [[Kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
+- **Leaves for Kalowe:** [[kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -62,9 +62,9 @@ Unknown squatters occupy the half-built palace quietly. No occupant, former owne
 ## Where
 
 - **North:** Yevka's Folly lies in the western [[Midchain]]. A named northern neighbor and travel distance are not recorded.
-- **East:** [[Kalowe]] is a recorded related harbor, but the direction, route, and distance are not established here.
+- **East:** [[kalowe]] is a recorded related harbor, but the direction, route, and distance are not established here.
 - **South:** No named southern neighbor or route is recorded.
-- **West:** The western Midchain approaches [[Galewall]], but no direct route or travel distance from Yevka's Folly is established.
+- **West:** The western Midchain approaches [[galewall]], but no direct route or travel distance from Yevka's Folly is established.
 - **Local access:** The western channels are shallow and sandbars shift with the season; the palace's own landing is Unknown.
 
 ## Why

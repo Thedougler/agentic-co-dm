@@ -16,7 +16,7 @@ sources:
   - "[[clear-lake]]"
   - "[[grasslands]]"
   - "campaign-os:aruhe-hungry-isle-narration-condition.md"
-summary: "Aruhe is a vast untamed island in the eastern [[Midchain]], with no visible settlement. [[Karath]] lies near one western edge. [[Uncertainty]] remains offshore."
+summary: "Aruhe is a vast untamed island in the eastern [[Midchain]], with no visible settlement. [[karath]] lies near one western edge. [[uncertainty]] remains offshore."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -41,7 +41,7 @@ _The Hungry Isle_
 
 ---
 ## At a Glance
-Aruhe is a vast untamed island in the eastern [[Midchain]], about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[Karath]] lies near one western edge, not the inland heart. [[Uncertainty]] circles the island. Land at [[western-landing|Western Landing]]. Inland bands include [[old-gardens|the Old Gardens]], [[the-quiet|the Quiet]], [[grasslands|the Grasslands]], [[the-river|the River]], and [[the-marshes|the Marshes]].
+Aruhe is a vast untamed island in the eastern [[Midchain]], about 500 miles end to end and about 150 miles across at its waist. No settlement is visible from offshore. [[karath]] lies near one western edge, not the inland heart. [[uncertainty]] circles the island. Land at [[western-landing|Western Landing]]. Inland bands include [[old-gardens|the Old Gardens]], [[the-quiet|the Quiet]], [[grasslands|the Grasslands]], [[the-river|the River]], and [[the-marshes|the Marshes]].
 
 ---
 ## If the party
@@ -63,9 +63,9 @@ Aruhe is a vast untamed island in the eastern [[Midchain]], about 500 miles end 
 ---
 ## Who
 
-The crew has [[Sandro|Sandro]] and [[Nino|Nino]] aboard [[Uncertainty]], and more survivors remain in the interior. Aruhe has no known state, town, road network, or visible settled population. The current people are survivors from the Calveno raid, storm-thrown Grung raiders, and travelers moving inland after the wrecks. The survivors report that roughly 100 to 150 people came ashore after the raid ships broke. Most are already dead. The landing is failing, and fruit and island plants can kill.
+The crew has [[Sandro|Sandro]] and [[nino|Nino]] aboard [[uncertainty]], and more survivors remain in the interior. Aruhe has no known state, town, road network, or visible settled population. The current people are survivors from the Calveno raid, storm-thrown Grung raiders, and travelers moving inland after the wrecks. The survivors report that roughly 100 to 150 people came ashore after the raid ships broke. Most are already dead. The landing is failing, and fruit and island plants can kill.
 
-[[Hinewai|Hinewai]] joins Aruhe as pressure, grief, and preservation, not as a ruler or hive mind. Her walking form and memorial are in [[memorial-grove|Memorial Grove]]. The island's plants and animals still act from their own niches and claims. They may respond to taking, trespass, hunger, fear, or opportunity, but they are not controlled bodies or minions.
+[[hinewai|Hinewai]] joins Aruhe as pressure, grief, and preservation, not as a ruler or hive mind. Her walking form and memorial are in [[memorial-grove|Memorial Grove]]. The island's plants and animals still act from their own niches and claims. They may respond to taking, trespass, hunger, fear, or opportunity, but they are not controlled bodies or minions.
 
 ---
 ## What
@@ -81,7 +81,7 @@ Aruhe distinguishes between receiving and taking, and fallen fruit or clear offe
 ---
 ## Where
 
-Open water connects Aruhe to [[Sparhold]], and [[Karath]] lies close enough that one western channel narrows to about half a mile. That nearness only touches the rim. The island is still about five hundred miles end to end and about one hundred and fifty miles across at the waist, with no roads, towns, fields, or maintained passes. On settled roads, a straight crossing might take under a week. On Aruhe, the same crossing takes many days across reef, slope, heat, water, vegetation, animal claims, and lost lines of sight. A lengthwise crossing takes weeks.
+Open water connects Aruhe to [[sparhold]], and [[karath]] lies close enough that one western channel narrows to about half a mile. That nearness only touches the rim. The island is still about five hundred miles end to end and about one hundred and fifty miles across at the waist, with no roads, towns, fields, or maintained passes. On settled roads, a straight crossing might take under a week. On Aruhe, the same crossing takes many days across reef, slope, heat, water, vegetation, animal claims, and lost lines of sight. A lengthwise crossing takes weeks.
 
 The reliable sea approach is [[western-landing|Western Landing]]. A reef gap opens onto a short shingle beach. From there the land rises into [[old-gardens|the Old Gardens]], where ancient stone terraces climb inland. Fruit, vines, water channels, and collapsed steps cover the terraces. Past them, Aruhe divides into wetter and higher systems instead of one inland road. [[grasslands|the Grasslands]] opens where rivers cut hot valleys through the jungle. [[the-quiet|the Quiet]] rises above the garden walls in deep rainforest where small life has disappeared. Both routes lead deeper inland, but neither offers quick going. Terrain, weather, and local life can turn a band crossing into a full day.
 
@@ -94,9 +94,9 @@ Downhill from the lake, Aruhe turns saturated. [[the-marshes|The Marshes]] form 
 ---
 ## Why
 
-The island's excess comes from [[Hinewai|Hinewai]] preserving a grave at [[memorial-grove|Memorial Grove]]. The Death Bloom is not a portable object hidden somewhere on the island. It consists of the tree, both graves, the black-flower ring, and the bound soil. Hinewai's grief has made Aruhe's life systems overactive. Growth, repair, adaptation, and the violent response to taking all exceed normal limits.
+The island's excess comes from [[hinewai|Hinewai]] preserving a grave at [[memorial-grove|Memorial Grove]]. The Death Bloom is not a portable object hidden somewhere on the island. It consists of the tree, both graves, the black-flower ring, and the bound soil. Hinewai's grief has made Aruhe's life systems overactive. Growth, repair, adaptation, and the violent response to taking all exceed normal limits.
 
-Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[Uncertainty]], and more remain inland. The crew can still recover people before the island or its local pressures kill them. The crew found this island while following the raid's wreck field. The ship can still leave, but the crew faces a choice between pursuing the survivors and investigating the island's deeper truth.
+Right now, Aruhe matters because the Calveno raid broke here. Some survivors are aboard [[uncertainty]], and more remain inland. The crew can still recover people before the island or its local pressures kill them. The crew found this island while following the raid's wreck field. The ship can still leave, but the crew faces a choice between pursuing the survivors and investigating the island's deeper truth.
 
 ## Narration
 
@@ -141,7 +141,7 @@ After the cold open, if they turn east or follow wreckage. The Sequence already 
 
 | Check | DC | Failure | Pass |
 |---|---|---|---|
-| Insight | 12 | two castaways | [[Sandro]] will risk the shore; [[Nino]] will not cross the garden line |
+| Insight | 12 | two castaways | [[Sandro]] will risk the shore; [[nino]] will not cross the garden line |
 | Persuasion | 13 | they remain on the ship | testimony from Tomo, the fruit, and the wreck |
 | Nature | 14 | the garden | [[Blight]] is what the protection became |
 

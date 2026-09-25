@@ -99,7 +99,7 @@ No active change to Tabaxi traits or the species' Shattered Sea presence is esta
 | --- | --- | --- |
 | [[keth-naar]] | Center of the Tabaxi presence recorded in the Shattered Sea. | Gives the species a named regional anchor. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which Tabaxi individuals and communities matter to the party's current route?
 * [ ] **Decide when needed.** Additional Tabaxi culture can remain fluid until play requires it.

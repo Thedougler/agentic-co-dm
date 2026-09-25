@@ -24,7 +24,7 @@ status: active
 scope: regional
 region: "[[drowned-maw]]"
 quest_giver: ""
-factions: ["[[Antheri]]", "[[Waveservants]]"]
+factions: ["[[Antheri]]", "[[waveservants]]"]
 deadline: "The tribute system fails or the Maw fissure opens further."
 last_advanced: 2026-09-18
 summary: "Pressure clock: tribute and the Pearl may be holding the Drowned Maw fissure shut."
@@ -43,7 +43,7 @@ summary: "Pressure clock: tribute and the Pearl may be holding the Drowned Maw f
 | **Quest giver** | None established.                                               |
 | **Region**      | [[drowned-maw]]                                                  |
 | **Scope**       | Regional                                                         |
-| **Opposition**  | The fissure's pressure; possible interests of [[Antheri]] and [[Waveservants]]. |
+| **Opposition**  | The fissure's pressure; possible interests of [[Antheri]] and [[waveservants]]. |
 | **Reward**      | Knowledge of what sustains the seal and leverage over the tribute system. |
 | **Last change** | The question of the tribute system's role remains active.        |
 
@@ -91,7 +91,7 @@ The sources establish a local puncture and pressure beyond it, but not the mecha
 
 | Lead | Points toward | Found? | State |
 | ---- | ------------- | ------ | ----- |
-| Inspect tribute practice and its recipients. | [[Waveservants]] | No | Available |
+| Inspect tribute practice and its recipients. | [[waveservants]] | No | Available |
 | Study the [[pearl-of-souls]] near the fissure. | [[pearl-of-souls]] | No | Available |
 | Investigate the [[Antheri]] breach as a possible pressure source. | [[Antheri]] | No | Available |
 
@@ -100,7 +100,7 @@ The sources establish a local puncture and pressure beyond it, but not the mecha
 | Entity | Role in the quest | Wants / pressure |
 | ------ | ----------------- | ---------------- |
 | [[Antheri]] | Possible source of the breach pressure. | Specific goal in this situation is unknown. |
-| [[Waveservants]] | Faction connected to the tribute practice. | Their current objective is not established here. |
+| [[waveservants]] | Faction connected to the tribute practice. | Their current objective is not established here. |
 | [[Umberlee]] | Sea power connected to the tribute tradition. | The sources do not establish whether she directly sustains the fissure. |
 
 ## Relevant places
@@ -138,7 +138,7 @@ The sources establish a local puncture and pressure beyond it, but not the mecha
 ### Fallout
 
 * The [[drowned-maw]] may become more or less stable.
-* [[Antheri]], [[Waveservants]], and [[Umberlee]] may gain or lose authority depending on what the party proves.
+* [[Antheri]], [[waveservants]], and [[Umberlee]] may gain or lose authority depending on what the party proves.
 * The larger presence beyond the fissure may become a more immediate problem.
 
 ## Quest log

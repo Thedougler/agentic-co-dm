@@ -77,7 +77,7 @@ The Sentinels' refusal to interpret or intervene protects their record but leave
 | **Driver**       | [[Countless]]'s hunt and the contest between [[talon-vantyrus]] and [[talon-skarn]]. |
 | **Wants**        | The Fate Spinner gift, access to the seal, and control of the surviving route network. |
 | **Current move** | Countless sweeps routes and waystations through one-job contacts while the Sentinels restrict access to their ledgers. |
-| **Next move**    | Search waystations for Sentinels who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters. |
+| **Next move**    | Search waystations for Sentinels who recently visited [[yssenmoor]] after [[uncertainty]] enters Midchain waters. |
 | **End state**    | Countless reaches a carrier or the route network is disrupted before its order chain is exposed. |
 
 ### Progress
@@ -96,7 +96,7 @@ The Sentinels' refusal to interpret or intervene protects their record but leave
 | Seek access to the observation ledgers.                | [[high-eyrie]]                        | No     | Available |
 | Follow missing names and blank ledgers.                | [[Countless]]                         | No     | Available |
 | Protect or question the named Fate Spinner carrier.   | [[crissdalynn-khinriss]]              | Yes    | Active    |
-| Track Sentinel visitors after the Midchain arrival.    | [[Yssenmoor]] and Sentinel waystations | No     | Available |
+| Track Sentinel visitors after the Midchain arrival.    | [[yssenmoor]] and Sentinel waystations | No     | Available |
 
 ## People & factions
 
@@ -114,7 +114,7 @@ The Sentinels' refusal to interpret or intervene protects their record but leave
 | ------------------------------------------ | ------------------------------------------------------- |
 | [[high-eyrie]]                             | Holds the Sentinels, observation ledgers, and founding documents. |
 | [[drowned-maw]]                            | The watched phenomenon and the site of the seal.        |
-| [[Yssenmoor]]                               | Sentinel visitors there can trigger Countless's next search. |
+| [[yssenmoor]]                               | Sentinel visitors there can trigger Countless's next search. |
 | Midchain pilgrim routes and waystations    | Countless uses them to move work and find carriers.    |
 
 ## Useful things

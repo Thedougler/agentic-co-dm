@@ -23,7 +23,7 @@ tier: supporting
 
 |                 |                                          |
 | --------------- | ---------------------------------------- |
-| **Species**     | [[Human]]                                     |
+| **Species**     | [[human]]                                     |
 | **Location**    | [[calders-tooth-and-port-tidefall]]               |
 | **Role**        | Retired patrol officer                    |
 | **Faction**     | [[dravosi-crown]] (retired) |

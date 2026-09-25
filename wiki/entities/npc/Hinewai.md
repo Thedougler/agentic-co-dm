@@ -183,7 +183,7 @@ Luminous roots run from the shelf above [[clear-lake]] through [[the-marshes]], 
 
 ## Origin
 
-Hinewai was an elf from a small, private island village and an immensely powerful druid. She considered the land kin, not property. [[Karath]] captured her and forced her to work in its hatcheries, where dosed captive spellcasters enlarge ordinary vermin into giant toads, snakes, and spiders. Almost all autobiographical memory eventually rotted away. What survived:
+Hinewai was an elf from a small, private island village and an immensely powerful druid. She considered the land kin, not property. [[karath]] captured her and forced her to work in its hatcheries, where dosed captive spellcasters enlarge ordinary vermin into giant toads, snakes, and spiders. Almost all autobiographical memory eventually rotted away. What survived:
 
 * hatred of the Grung;
 * hatred of those who take;
@@ -208,7 +208,7 @@ Hinewai took the old druid bargain past its breaking point. She fused her soul a
 | [[the-unnamed-companion]]         | The drowned man whose grave is the reason for the island's law |
 | [[aruhe]]           | The living country warped by her preservation                  |
 | [[taking-on-aruhe]]               | The island's distinction between receiving and taking          |
-| [[Karath]]                        | Captor island and source of her enduring hatred                |
+| [[karath]]                        | Captor island and source of her enduring hatred                |
 | [[grung-and-the-making-of-aruhe]] | DM history of the crime and aftermath                          |
 | [[clear-lake]]            | Lakeward shelf and beginning of the root direction             |
 | [[the-marshes]]           | Wet country crossed by roots pointing toward the Grove         |

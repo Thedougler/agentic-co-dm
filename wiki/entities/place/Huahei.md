@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Huahei
@@ -61,7 +61,7 @@ The established physical features are small scale, overgrown ground and marsh te
 - **East:** Canon gap; no neighboring island or travel distance is established.
 - **South:** Canon gap; no neighboring island or travel distance is established.
 - **West:** Canon gap; no neighboring island or travel distance is established.
-- Huahei is indexed within the [[Western Midchain]] and the wider [[Midchain]]. [[Kalowe]] is a related Western Midchain settlement, but no direct Huahei–Kalowe route is established.
+- Huahei is indexed within the [[Western Midchain]] and the wider [[Midchain]]. [[kalowe]] is a related Western Midchain settlement, but no direct Huahei–Kalowe route is established.
 
 ---
 ## Why

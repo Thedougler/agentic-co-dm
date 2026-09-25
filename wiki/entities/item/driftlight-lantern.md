@@ -17,6 +17,7 @@ kind: magic
 rarity: common
 attunement: false
 owner: "[[lavinia-sordi]]"
+region: "[[calven-and-calveno]]"
 summary: "Salvaged lantern whose opened shutter may window another plane, and may look back."
 provenance:
   extracted: 0.90
@@ -33,13 +34,11 @@ tier: supporting
 
 The lantern sheds light as the Continual Flame spell: no fuel, and only covering it or closing the shutter puts the flame out. As an Action, the holder may open the shutter on purpose to window another plane. You secretly decide whether the glimpse is real or false and never tell the player which. A false glimpse is indistinguishable from a true one in the moment. If the glimpse is real, the window runs both ways: something on the other side looks back, and the holder knows that part at once, with no ambiguity. Closing the shutter is an Action and ends the glimpse. The holder does not choose the plane, cannot travel or act through the window, and gains no combat benefit. Being seen back has no immediate mechanical cost; later consequence is yours to introduce.
 
-## At a Glance
-
-Still on [[lavinia-sordi]]'s rack at [[la-cenere]] for 60 gp. Not shown at the table in Session 8.
 
 ## At the Table
 
 Opening the shutter is a choice. You know whether the window is real. They only know if something looked back.
+Still on [[lavinia-sordi]]'s rack at [[la-cenere]] for 60 gp. It was not shown at the table in Session 8.
 
 ## Connections
 

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[ettore-lupo]]"
 summary: "A consumable arrow that lands screaming in a woman's voice for a minute, drowning out all sound within 300 feet and giving nearby creatures disadvantage on hearing-based Perception checks."
 provenance:
   extracted: 0.85
@@ -45,7 +50,6 @@ Every Calveno household knows the sound this one makes, which is the point of it
 | Current holder | [[ettore-lupo]], in the drawer built into the counter at [[Casa Lupo]]. |
 | Narrative hook | Anyone who heard one go off during a festival night, and saw what the crowd did next, recognises the pierced tin head in another quiver. |
 
-## Mechanics
 
 > [!mechanic]
 > **The Fishwife [HB].** Consumable, one shot. Loose it at a point, surface, or creature within the weapon's normal range. On landing, the tin head opens and shrieks in a woman's voice, wordless and rising, for 1 minute.

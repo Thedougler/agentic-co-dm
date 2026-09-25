@@ -40,7 +40,7 @@ tags: [location]
 > Uncertainty is a working vessel with hull, deck, cargo, rigging, and helm. A route board sits where watch and weather meet the next destination. Salt, tar, and wet wood hang over lines and cargo access.
 
 ## At a glance
-The crew’s current vessel; feels like a moving room for unresolved debts and routes. Season 2 runs from here toward [[Sparhold]] and [[Aruhe - Hungry Isle]].
+The crew’s current vessel; feels like a moving room for unresolved debts and routes. Season 2 runs from here toward [[sparhold]] and [[Aruhe - Hungry Isle]].
 ## Five-sentence kernel
 - **Function:** The crew’s current vessel and mobile base for the Midchain sandbox.
 - **Fantastic:** A ship carries open routes, obligations, and evidence between places.
@@ -54,7 +54,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 - **Contradiction:** it offers escape while making direction legible.
 - **Signatures:** route board; cargo that matters; watch and weather changing the usable deck.
 ## Current situation
-- **Canon:** current crew vessel; Season 2 route points [[Sparhold]] then [[Aruhe - Hungry Isle]]. Simone’s hunters connect to 20 hidden vials in cargo; Shepherd Grigori is linked as ally.
+- **Canon:** current crew vessel; Season 2 route points [[sparhold]] then [[Aruhe - Hungry Isle]]. Simone’s hunters connect to 20 hidden vials in cargo; Shepherd Grigori is linked as ally.
 - **DM seed (unconfirmed):** deck/helm, cargo access, and lookout are functional surfaces; do not infer full deck plan or crew roster.
 ## Aspects
 `moving base, hidden cargo, route chosen under watch`
@@ -67,7 +67,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 - `deck -- working route (fast, visible) --> helm/lookout` (**positions seed**).
 - `deck -- cargo access (slower, evidence-rich, privacy cost) --> cargo`.
 - `cargo -- hidden vial clue (secret, hunter risk) --> Simone’s hunters thread`.
-- `deck -- launch/landing interface (committing) --> shore/boat/[[Sparhold]] or [[Aruhe - Hungry Isle]]`.
+- `deck -- launch/landing interface (committing) --> shore/boat/[[sparhold]] or [[Aruhe - Hungry Isle]]`.
 - **Loop:** lookout → helm → deck → cargo → lookout.
 - **Bypass:** observe/communicate from shore or another vessel; loses interior evidence.
 - **Retreat:** leave a destination before committing; wake, time, and supplies persist.
@@ -93,7 +93,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 
 **Move:** vessel strains. **Trigger:** dangerous route, pursuit, or neglected rest. **Result:** access/routine unreliable (**seed**). **Opportunity:** repair, improvise, or slow. **Consequence:** fix persists on return.
 ## Connections
-- [[Sparhold]] · [[Aruhe - Hungry Isle]] · [[Midchain]] · [[Warren]]
+- [[sparhold]] · [[Aruhe - Hungry Isle]] · [[Midchain]] · [[Warren]]
 ## Hooks
 - Season 2 departure; Grung fleet trail; Calveno raid survivors; Simone’s hunters; Grigori/Crown pressure.
 ## Secrets (DM)

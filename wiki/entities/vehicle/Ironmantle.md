@@ -74,4 +74,4 @@ Estimated Value: 3,500 gp (hull and fittings — no current shipyard can reprodu
 - [[verdant-scatter]]
 - [[Vestra]] ([[fisks-fleet]] comparison vessel)
 - [[Loud Argument]] ([[fisks-fleet]] comparison vessel)
-- [[Fernen]] ([[fisks-fleet]] comparison vessel)
+- [[fernen]] ([[fisks-fleet]] comparison vessel)

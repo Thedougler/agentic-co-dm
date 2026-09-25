@@ -13,7 +13,7 @@ tags: [faction]
 Keep Rattkin families connected and alive.
 
 ## Secret goal
-Preserve the [[Tangle]]'s elder teachings and resist being priced out of every system, even when that means refusing a route that would help in the short term.
+Preserve the [[tangle]]'s elder teachings and resist being priced out of every system, even when that means refusing a route that would help in the short term.
 
 ## Methods
 Family Runs, couriers, ships, and community obligations. Under pressure, the Run moves people first, asks for proof through coded trust, and protects the teaching that makes the route more than transport.
@@ -26,7 +26,7 @@ Family Runs, couriers, ships, and community obligations. Under pressure, the Run
 The [[Warren]], [[Vestra]]'s legacy, courier ties, and the family obligations that keep the Runs legible to one another.
 
 ## Relations
-- Ally: [[Passage]]
+- Ally: [[passage]]
 - Complicated: [[Dravosi Crown]]
 - Party: ally; the crew's rescue of raid survivors ties them to the family and route network
 

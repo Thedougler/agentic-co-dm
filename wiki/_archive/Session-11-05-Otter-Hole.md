@@ -163,7 +163,7 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party takes the bloody-bank detour toward the smoke on [[Aruhe - Quiet Forest Cutoff Lip]], with or without the man. Hand to [[Session-11-06-Farthest-Camp]]. The forest-edge walk toward [[Aruhe - Quiet Forest Spoke Ring]] may take one [[Session-11-00-Random-Tables]] roll if this is still one of the two allowed rolls before beat 6. Do not run that roll during this hole. Carry forward any RAW damage and conditions already applied.
+The party takes the bloody-bank detour toward the smoke on [[Aruhe - Quiet Forest Cutoff Lip]], with or without the man. Hand to [[Session-11-06-Farthest-Camp]]. The forest-edge walk toward [[Aruhe - Quiet Forest Spoke Ring]] may take one [[session-11-00-random-tables]] roll if this is still one of the two allowed rolls before beat 6. Do not run that roll during this hole. Carry forward any RAW damage and conditions already applied.
 
 **Grappled / Restrained.** Anyone still in this hole at a break remains in play or Hunt until they leave the water, unless tick 4 of play has already ended the chase.
 
@@ -183,7 +183,7 @@ The party takes the bloody-bank detour toward the smoke on [[Aruhe - Quiet Fores
 
 ## Backup
 
-[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · [[Matteo Scola]] · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Aruhe - Young Bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
+[[Aruhe - River Slack Basin]] · [[Aruhe - Quiet Forest Cutoff Lip]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - River Otter]] · [[Matteo Scola]] · [[Taking on Aruhe]] · [[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands]] · [[Aruhe - Young Bloodhawk]] · [[session-11-00-random-tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

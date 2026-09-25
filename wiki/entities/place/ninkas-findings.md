@@ -24,7 +24,7 @@ type: place
 
 ## At a Glance
 
-[[Ninka's Findings]] is [[ninka-solvei|Ninka Solvei]]'s salvage shop in [[Sparhold]], where salvaged magic oddities change hands without provenance questions.
+[[Ninka's Findings]] is [[ninka-solvei|Ninka Solvei]]'s salvage shop in [[sparhold]], where salvaged magic oddities change hands without provenance questions.
 
 ## If the party
 
@@ -40,7 +40,7 @@ The shop holds salvage from [[verdant-teeth]] expeditions and wreck-divers, pric
 
 ## Where
 
-Ninka's Findings is in [[Sparhold]]'s fortress-market district, wedged between supply traders and blacksmiths.
+Ninka's Findings is in [[sparhold]]'s fortress-market district, wedged between supply traders and blacksmiths.
 
 ## Why
 

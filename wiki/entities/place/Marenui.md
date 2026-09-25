@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Marenui
@@ -51,10 +51,10 @@ The established site is a group of hulls lashed together as a floating market. I
 ## Where
 
 - **North:** Marenui lies in the western [[Midchain]], but its nightly position and northern neighbor are not recorded.
-- **East:** The western Midchain connects toward [[Midchain]] and [[Kalowe]], but no route from Marenui's current position is fixed.
+- **East:** The western Midchain connects toward [[Midchain]] and [[kalowe]], but no route from Marenui's current position is fixed.
 - **South:** No named southern neighbor or route is established.
 - **West:** No named western neighbor or route is established.
-- **Local connection:** The page retains a recorded relationship to [[Kalowe]], but does not state how the two places connect.
+- **Local connection:** The page retains a recorded relationship to [[kalowe]], but does not state how the two places connect.
 
 ## Why
 

@@ -46,7 +46,7 @@ summary: "Ashe's fearmongering draws demons, and the party must get the truth to
 
 ## Situation
 
-[[corvin-ashe]] has whipped Penance Bar against a woods coven. Demons come because of his lies. [[sula-marn]] tries to hold the peace, while [[halda-wren]] can speak to what is happening at Sandy Grove. [[Sorrowbell]] is an empty Tyr box once the demon walks in.
+[[corvin-ashe]] has whipped Penance Bar against a woods coven. Demons come because of his lies. [[sula-marn]] tries to hold the peace, while [[halda-wren]] can speak to what is happening at Sandy Grove. [[sorrowbell]] is an empty Tyr box once the demon walks in.
 
 ### What the party knows
 
@@ -82,7 +82,7 @@ Ashe's fearmongering is drawing demons toward the town and grove. [[sula-marn]] 
 * [ ] **Portent 3.** Demonic influence becomes visible at the confrontation.
 * [ ] **End state.** The grove burns or the mob breaks before the fire takes hold.
 
-**Current pressure.** The mob is moving; the party must choose whether to change minds in town, reach Sandy Grove, or confront the locked situation at [[Sorrowbell]].
+**Current pressure.** The mob is moving; the party must choose whether to change minds in town, reach Sandy Grove, or confront the locked situation at [[sorrowbell]].
 
 ## Leads & routes
 
@@ -90,7 +90,7 @@ Ashe's fearmongering is drawing demons toward the town and grove. [[sula-marn]] 
 | ---- | ------------- | ------ | ----- |
 | Talk to [[sula-marn]] in town. | [[penance-bar]] | No | Available |
 | Walk to Sandy Grove and hear [[halda-wren]]. | [[halda-wren]] | No | Available |
-| Witness the locked confrontation before the mob departs. | [[Sorrowbell]] | No | Available |
+| Witness the locked confrontation before the mob departs. | [[sorrowbell]] | No | Available |
 
 ## People & factions
 
@@ -106,7 +106,7 @@ Ashe's fearmongering is drawing demons toward the town and grove. [[sula-marn]] 
 | ----- | ------------------ |
 | [[penance-bar]] | Town where Ashe's fearmongering and the mob's movement begin. |
 | Sandy Grove | Last hallowed grove and the mob's destination. |
-| [[Sorrowbell]] | Tyr box where the confrontation locks once the demon walks in. |
+| [[sorrowbell]] | Tyr box where the confrontation locks once the demon walks in. |
 
 ## Useful things
 

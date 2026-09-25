@@ -47,9 +47,9 @@ The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because
 - The far harbour's unmarked pale building is a useful observation point and an unresolved Tessarine lead.
 
 ## Crown rivalry
-The Crown inspects and the Concordat invoices. Both collect from the same fishermen and pay [[Umberlee]] as infrastructure. Crown toxin substitute stock has appeared in Calveno's sewers; [[Simone]] is the named pipeline face, and [[lavinia-sordi]] left a Crown prison records desk over it.
+The Crown inspects and the Concordat invoices. Both collect from the same fishermen and pay [[Umberlee]] as infrastructure. Crown toxin substitute stock has appeared in Calveno's sewers; [[simone]] is the named pipeline face, and [[lavinia-sordi]] left a Crown prison records desk over it.
 
 ## Connections
-- → [[crown-islands]] · [[calders-tooth-and-port-tidefall]] · [[Harwick]] · [[central-strait]] · [[Warren]] · [[Mercatura]] · [[tessarine-concordat]]
+- → [[crown-islands]] · [[calders-tooth-and-port-tidefall]] · [[harwick]] · [[central-strait]] · [[Warren]] · [[Mercatura]] · [[tessarine-concordat]]
 
 **Provenance:** Dump source filed into [[tessarine-concordat]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.

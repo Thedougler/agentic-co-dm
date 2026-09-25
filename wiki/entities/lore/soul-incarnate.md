@@ -21,11 +21,22 @@ campaign: shattered-sea
 visibility: dm
 kind: fact
 truth: partial
+region: "High Eyrie and the Drowned Maw"
+era: "Two centuries old; active in the current campaign"
 scope: "Linked to ley-line phenomena at Yssenmoor"
 ---
 # Soul Incarnate
+## At a Glance
 
-## Stats & Combat
+**Core truth.** The Soul Incarnate is a sealed, observing ki-form beneath [[high-eyrie|the High Eyrie]], bound to a mummified body and a two-century record of the [[drowned-maw]].
+
+**Why it matters.** Its observation, trigger conditions, and incomplete understanding of [[Auralis]] turn the High Eyrie archive into a live information pressure.
+
+**Scope.** This page combines the established lore, combat expression, ecology, and prepared reveals of the named entity.
+
+## Current Truth
+
+**Stats & Combat.**
 
 **Behavior states**
 
@@ -91,23 +102,23 @@ legendary_actions:
     desc: "The Soul Incarnate casts *Fear*, using the same focusing ability as Recorded Discipline. The Soul Incarnate can't take this action again until the start of its next turn."
 ```
 
-## Description
+**Description.**
 
 A monk attained lichdom through years of meditation and ritual desiccation, drinking a mummifying preparation while sealed underground in perfect stillness until the line between life and death gave out. The physical body mummifies and becomes the phylactery. The form that rises from it is a ki-form, a hovering figure traced in glowing meridian lines, incorporeal and unbound by ordinary physical limits. The Soul Incarnate has led [[sentinels-of-the-eyrie|the Sentinels of the Eyrie]] in secret for two centuries, guiding the order from beneath [[high-eyrie|the High Eyrie]] without ever once appearing before it.
 
-## Ecology
+**Ecology.**
 
 The Soul Incarnate's body has not moved since the seal closed over it two centuries ago. Everything it knows of [[drowned-maw]] and the waters past it toward [[outer-reach]] comes through the same discipline that built it: record what you see, add nothing to it. It shares no lair with anything living, and asks nothing of the Sentinels who pray, drill, and copy ledgers directly over its resting place, unaware a mind still occupies the stone beneath them. The seal never breaks. Each prior escalation at the Maw has spiked and settled at a slightly higher baseline within the record it keeps, and the current one exceeds every prior entry, meeting it with attention instead of the passivity the order's whole doctrine assumes of it.
 
-## Toy Chest
+**Toy Chest.**
 
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Bring it a complete, uninterpreted account of the current Maw crisis, delivered by someone trained in the order's own doctrine | The account comes from [[crissdalynn-khinriss]], the one living Sentinel whose pilgrimage has drawn her closest to its attention | It weighs the account against two centuries of its own record and may share a fragment of that record in answer, the first exchange it has permitted since the seal closed | [[crissdalynn-khinriss]] |
 | Damage or expose the sealed, mummified body beneath [[high-eyrie\|the High Eyrie]] | Someone breaches the seal itself, not merely the chamber around it | It abandons pure observation and intervenes directly for the first time in two centuries, an act the order's own founding claim cannot survive once anyone sees it happen | [[sentinels-of-the-eyrie]], via the Soul Incarnate's Watch Front |
-| Ask it directly what it has recorded of [[Auralis]] | The crew of the *[[Uncertainty]]* can already prove they know the Soul Incarnate exists as a conscious entity, not merely an old founding document | It confirms two centuries of surface observation have found no trace of Auralis at all, though both watch the Maw from opposite sides, each unaware of the other | [[Auralis]] |
+| Ask it directly what it has recorded of [[Auralis]] | The crew of the *[[uncertainty]]* can already prove they know the Soul Incarnate exists as a conscious entity, not merely an old founding document | It confirms two centuries of surface observation have found no trace of Auralis at all, though both watch the Maw from opposite sides, each unaware of the other | [[Auralis]] |
 
-## Prepped Reveals
+**Prepped Reveals.**
 
 The founding ledgers [[master-kyzil]] calls "old" have a conscious author who is still recording. The Soul Incarnate wrote the order's earliest entries itself and has kept the hand consistent across two centuries of copyists since.
 
@@ -115,3 +126,64 @@ The founding ledgers [[master-kyzil]] calls "old" have a conscious author who is
 **DC 20.** Anyone with access to the archive at [[high-eyrie|the High Eyrie]] may roll.
 **Success.** One hand never changes across two centuries of otherwise-shifting script, an anomaly no living scribe can explain.
 **Failure.** The archive reads as exactly what the order believes it to be, a long unbroken tradition with an author no living scribe can identify.
+### Limits
+
+* **Exception.** The Soul Incarnate observes by default and engages only when its seal or recorded trigger is breached.
+* **Unknown to the world.** The order does not know that its founding record has a conscious author beneath the High Eyrie.
+* **Impossible or forbidden.** Its body cannot be treated as an ordinary phylactery or its combat form as a normal living Sentinel.
+
+## At the Table
+
+* **Players notice.** A patient, incorporeal figure records rather than speaks, and the sealed body beneath the High Eyrie makes the archive physically dangerous.
+* **This explains.** Why the Soul Incarnate can remain absent for centuries yet possess a complete Maw record and a full combat suite.
+* **This enables.** The party can offer an uninterpreted account, investigate ledger handwriting, ask about Auralis, or threaten the seal.
+* **This warns of.** Breaching the seal ends pure observation and brings a powerful entity into the scene.
+* **Relevant now.** [[crissdalynn-khinriss]], [[high-eyrie]], [[drowned-maw]], and [[soul-incarnates-watch]] connect the entity to live campaign pressure.
+
+## Who Knows
+
+| Knower | Knowledge | Certainty | Basis |
+| --- | --- | --- | --- |
+| The Soul Incarnate | Its record, sealed body, observation doctrine, and trigger conditions. | knows | Direct experience. |
+| [[sentinels-of-the-eyrie]] | The founding records and order doctrine, but not the conscious author. | partial | Two centuries of copying and practice. |
+| [[master-kyzil]] | The founding ledgers as the order understands them. | partial | Sentinel archive. |
+| [[crissdalynn-khinriss]] | Her own pilgrimage and the possibility of attracting its attention. | partial | Current campaign pressure. |
+
+### Party Knowledge
+
+**Known.** No party-established knowledge is recorded beyond the prepared leads on this page.
+
+**Suspected.** The party may suspect that the High Eyrie records have a living or undead author.
+
+**Misunderstood.** Destroying the ki-form does not end the entity while its sealed body remains intact.
+
+**Last changed.** No session change is recorded.
+
+### Common telling
+
+> “The High Eyrie keeps a ledger that never learned how to stop watching.”
+
+## If This Is Changing
+
+* **Current pressure.** Maw escalation and Crissdalynn's pilgrimage are drawing the Soul Incarnate beyond its doctrine of pure observation.
+* **Actors.** The Soul Incarnate, [[sentinels-of-the-eyrie]], [[crissdalynn-khinriss]], and the crew investigating the [[drowned-maw]].
+* **Their aims.** The entity preserves an uninterpreted record, the Sentinels preserve their founding doctrine, and the party seeks usable truth without triggering a fight.
+* **Without interference.** It continues watching and recording while the order remains unaware of its presence.
+* **Visible sign.** A ledger hand remains unchanged, the entity speaks for the first time, or the sealed body is disturbed.
+
+## Consequences
+
+* **Because this is true,** High Eyrie records can contain direct two-century evidence without any living scribe understanding its source.
+* **If exposed,** the Sentinels' founding story becomes a live institutional crisis.
+* **If disproved,** the entity's origin, body, or record would require reconciliation with the listed combat and ecology.
+* **If changed,** [[soul-incarnates-watch]] and Sentinel doctrine would move from hidden lore to active response.
+* **If exploited,** an accurate, uninterpreted account can earn the entity's attention without forcing combat.
+
+## Connections
+
+| Page | Relationship | Table relevance |
+| --- | --- | --- |
+| [[high-eyrie]] | Sealed body and Sentinel archive | Provides the investigation site and trigger risk. |
+| [[drowned-maw]] | Two-century observation subject | Supplies the record's central pressure. |
+| [[sentinels-of-the-eyrie]] | Order unknowingly built over the entity | Creates the institutional reveal. |
+| [[soul-incarnates-watch]] | Watch front tied to its trigger | Connects the entity to current prep. |

@@ -50,6 +50,6 @@ It lies somewhere in the eastern [[Midchain]], past the [[Doldrums]]. It is neve
 
 ## Why
 
-The elder mimic moves toward expected ship traffic, presenting shelter and supplies as bait to draw crews inland. Unlike [[Corallith]], it follows traffic.
+The elder mimic moves toward expected ship traffic, presenting shelter and supplies as bait to draw crews inland. Unlike [[corallith]], it follows traffic.
 
-The island is one animal, an elder mimic at island scale. Ships find it where they need it because it goes where ships will need it. It sits past the [[Doldrums]]. Green fruit, fresh water, and a dead-flat bay are bait to walk inland. Wrecks stand bow-in with masts still stepped and no bones. Unlike [[Corallith]], it follows traffic.
+The island is one animal, an elder mimic at island scale. Ships find it where they need it because it goes where ships will need it. It sits past the [[Doldrums]]. Green fruit, fresh water, and a dead-flat bay are bait to walk inland. Wrecks stand bow-in with masts still stepped and no bones. Unlike [[corallith]], it follows traffic.

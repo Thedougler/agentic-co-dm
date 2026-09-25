@@ -36,7 +36,7 @@ The Low Lamp is the Warren's true social center for Kin. It is inside [[Warren]]
 
 - **Eat first.** Essa insists every guest is too thin and must eat before discussion. Feeding here means the house has their goodwill.
 - **Collect a debt.** Essa records every debt in her head, never on paper, and she collects.
-- **Refuse or be refused.** She does not ask [[Tangle|The Tangle]]'s permission to refuse service to someone unwelcome.
+- **Refuse or be refused.** She does not ask [[tangle|The Tangle]]'s permission to refuse service to someone unwelcome.
 
 ## Who
 

@@ -39,7 +39,7 @@ tier: supporting
 
 ## At the Table
 
-The chair stands aft aboard the *[[Uncertainty]]*, in the former captain's cabin. Anyone who sits in it sits straighter, and the effect is plain to everyone watching. It is heavy enough that moving it took a borrowed Bag of Holding. The one sign that it is more than furniture is the armrest leather, which gives a little too much under a hand, most noticeably in the moment before the mimic acts.
+The chair stands aft aboard the *[[uncertainty]]*, in the former captain's cabin. Anyone who sits in it sits straighter, and the effect is plain to everyone watching. It is heavy enough that moving it took a borrowed Bag of Holding. The one sign that it is more than furniture is the armrest leather, which gives a little too much under a hand, most noticeably in the moment before the mimic acts.
 
 ## Hidden Properties
 
@@ -48,7 +48,7 @@ The chair is the [[elder-mimic]] holding its object form, and it can keep this f
 ## Connections
 
 - [[delmar-fisk]]. Its owner, who claimed it and keeps it aboard his ship.
-- [[Uncertainty]]. Its current berth, aft in the former captain's cabin.
+- [[uncertainty]]. Its current berth, aft in the former captain's cabin.
 - [[elder-mimic]]. The creature the chair really is.
 - [[otar-the-foul]]. The opponent in the recovery fight in Session 07.
 - [[catarina-davirelli|Catarina]]. Lent the Bag of Holding used to carry it out.
@@ -58,4 +58,4 @@ The chair is the [[elder-mimic]] holding its object form, and it can keep this f
 
 ## Provenance
 
-The sources disagree about where Delmar found it. This page's source says he recovered it from the Calveno crater at [[Mercatura]] after the Session 07 fight with [[otar-the-foul]], carrying it out in [[catarina-davirelli|Catarina]]'s borrowed Bag of Holding. The [[elder-mimic]] page says he claimed it as a consolation prize during the *[[Uncertainty]]*'s break-room refit at [[la-vasca|La Vasca]]. The DM has not chosen between the two accounts.
+The sources disagree about where Delmar found it. This page's source says he recovered it from the Calveno crater at [[Mercatura]] after the Session 07 fight with [[otar-the-foul]], carrying it out in [[catarina-davirelli|Catarina]]'s borrowed Bag of Holding. The [[elder-mimic]] page says he claimed it as a consolation prize during the *[[uncertainty]]*'s break-room refit at [[la-vasca|La Vasca]]. The DM has not chosen between the two accounts.

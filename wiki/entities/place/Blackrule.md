@@ -43,7 +43,7 @@ Blackrule is a [[dravosi-crown]] chapterhouse in [[Midchain]], not an ordinary s
 
 ## What
 
-Volcanic terrace-rock, one boat landing, one stair, one hall, and an altar cut with Tyr's scales. [[Tyr]] is named on the stone.
+Volcanic terrace-rock, one boat landing, one stair, one hall, and an altar cut with Tyr's scales. [[tyr]] is named on the stone.
 
 ## Where
 

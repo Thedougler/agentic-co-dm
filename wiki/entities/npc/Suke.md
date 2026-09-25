@@ -18,7 +18,7 @@ campaign: shattered-sea
 visibility: dm
 status: alive
 role: contact
-location: "[[Kalowe]]"
+location: "[[kalowe]]"
 faction: "[[five-blades]]"
 ---
 # Suke
@@ -32,8 +32,8 @@ flexGrow=2
 | **Role** | Contact |
 | --- | --- |
 | **Nature** | Murrat-born Moucheron mercenary |
-| **Home** | [[Murrat]] |
-| **Wants** | To adjust to contract work in [[Kalowe]]; her immediate priority is not recorded. |
+| **Home** | [[murrat]] |
+| **Wants** | To adjust to contract work in [[kalowe]]; her immediate priority is not recorded. |
 
 > **DM thesis:** Suke is a quiet, watchful new Five Blades member whose Murrat habits have not yet settled into Kalowe work.
 ```
@@ -74,5 +74,5 @@ The source does not establish Suke's voice, so keep her speech terse and watchfu
 | Connection | Meaning |
 | --- | --- |
 | [[five-blades]] | Suke is the company's newest member. |
-| [[Murrat]] | Her place of origin. |
-| [[Kalowe]] | The contract-work setting she is still adjusting to. |
+| [[murrat]] | Her place of origin. |
+| [[kalowe]] | The contract-work setting she is still adjusting to. |

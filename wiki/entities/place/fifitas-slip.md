@@ -24,7 +24,7 @@ summary: "An unofficial boatyard on Kalowe's lagoon side operated by Noa Fifita.
 
 ## At a Glance
 
-[[Fifita's Slip]] is [[noa-fifita|Noa Fifita]]'s unofficial boatyard on [[Kalowe]]'s lagoon side, outside the harbour books.
+[[Fifita's Slip]] is [[noa-fifita|Noa Fifita]]'s unofficial boatyard on [[kalowe]]'s lagoon side, outside the harbour books.
 
 ## If the party
 
@@ -40,7 +40,7 @@ The slip is an unofficial boatyard. Noa works slowly and surely, does not haggle
 
 ## Where
 
-Fifita's Slip is on [[Kalowe]]'s lagoon side. It does not appear in harbour books, and its access is by introduction or prior arrangement only.
+Fifita's Slip is on [[kalowe]]'s lagoon side. It does not appear in harbour books, and its access is by introduction or prior arrangement only.
 
 ## Why
 

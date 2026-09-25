@@ -42,7 +42,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Watches-the-Deck
-> Beside the [[Minotaur]] sits a [[Lizardfolk]] woman built long and rangy as a dockside crane, her tongue flicking the air between hands, the felt smelling of whale oil and cured meat. She files her teeth past their natural points, making them sharper than they need to be for anything but show.
+> Beside the [[Minotaur]] sits a [[lizardfolk]] woman built long and rangy as a dockside crane, her tongue flicking the air between hands, the felt smelling of whale oil and cured meat. She files her teeth past their natural points, making them sharper than they need to be for anything but show.
 >
 > She keeps her name the way her kind do, a use-name that shows what she does. At [[Tallow Row]] she watches the deck like a tide pool: patient, still, waiting for something to shift. She stops watching the room once a hand feels off, and her sense for lies is sharp.
 ```
@@ -66,16 +66,26 @@ flexGrow=1
 ===
 ### When posture changes
 
-When a hand feels wrong, she stops watching the room and focuses on the cards. She noticed [[Thunk]]'s tells before [[Thassos]] said anything, but kept that judgment to herself until the table made silence costly.
+When a hand feels wrong, she stops watching the room and focuses on the cards. She noticed [[Thunk]]'s tells before [[thassos]] said anything, but kept that judgment to herself until the table made silence costly.
 ```
 ````
+
+## Voice
+
+She speaks quietly and precisely, treating the cards as evidence. Her verbal habit is to describe what the deck reveals rather than accuse a player directly.
+
+**The ask:** “What did you see in that hand?”
+
+**The refusal:** “I am watching the deck, not explaining it.”
+
+**Under pressure:** “The deck is telling you something. You are choosing not to hear it.”
 
 ## Connections
 
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Tallow Row]] | The den where she plays most nights and watches the deck. |
-| [[Thassos]] | Fellow regular who called out at the table what she had already noticed. |
+| [[thassos]] | Fellow regular who called out at the table what she had already noticed. |
 | [[Thunk]] | The player whose tells she spotted early over a fumbled stack. |
 
 **Session 07.** She stopped touching her own cards for three hands to watch Thunk's land instead, becoming the first at the table to clock his count.

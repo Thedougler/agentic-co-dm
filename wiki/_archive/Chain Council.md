@@ -27,7 +27,7 @@ Commissions, seized forts, sealed orders, and delegated authority. A five-ship c
 Council seals, legal cover, Crown-connected ports, and the ability to turn private action into public policy.
 
 ## Relations
-- Complicated: [[Tessarine Concordat]], [[Dravosi Crown]], [[Waveservants]]
+- Complicated: [[Tessarine Concordat]], [[Dravosi Crown]], [[waveservants]]
 - Party: unknown
 
 **Provenance:** Dump source staged at [[inbox/archive/FILED-2026-09-05-tessarine-concordat.md]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/faction-chain-council.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/faction-tessarine-concordat.md`.

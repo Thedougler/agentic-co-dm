@@ -30,7 +30,7 @@ Landing Bank is the first grassland mouth of [[Aruhe - River]] after [[Aruhe - O
 ## If the party
 
 - **Follow the prints north upriver:** 60 feet along this bank, then off it onto [[Aruhe - Grasslands Torn Crossing]].
-- **Walk south through the terrace line:** 40 feet to the terrace return, then [[Aruhe - Old Gardens]] toward [[Aruhe - Beach|Western Landing]] and [[Uncertainty]].
+- **Walk south through the terrace line:** 40 feet to the terrace return, then [[Aruhe - Old Gardens]] toward [[Aruhe - Beach|Western Landing]] and [[uncertainty]].
 - **Climb the terrace stone 20 feet west of the prints:** [[Aruhe - Old Gardens]].
 - **Stay on the terrace edge and skip the cut:** The water, prints, and used stop are lost.
 - **Walk the eight-foot grass:** The grass is Difficult Terrain and heavily obscures beyond 10 feet. Movement leaves a crushed corridor. A 30-foot move stays on this bank. A Dash of 60 feet leaves it north along the prints or south toward the terrace return.
@@ -64,7 +64,7 @@ Landing Bank is the first grassland mouth of [[Aruhe - River]] after [[Aruhe - O
 
 - **North:** To the north, [[Aruhe - Grasslands Torn Crossing]] is the next stretch upvalley. Following the prints 60 feet off this bank reaches that cut. Smoke stands farther north in this same valley, not on this bank.
 - **East:** To the east, [[Aruhe - River]] runs the length of this bank at once. Pale stone shows under the current. Shallows reach a far grass bank on the other side.
-- **South:** To the south, the terrace return is 40 feet. [[Aruhe - Old Gardens]] and [[Aruhe - Beach|Western Landing]] lie that way, with [[Uncertainty]] on the water beyond. No established day-count for that return yet.
+- **South:** To the south, the terrace return is 40 feet. [[Aruhe - Old Gardens]] and [[Aruhe - Beach|Western Landing]] lie that way, with [[uncertainty]] on the water beyond. No established day-count for that return yet.
 - **West:** To the west, mossy terrace woods stand 20 feet inland of the prints and climb into [[Aruhe - Old Gardens]].
 
 ---

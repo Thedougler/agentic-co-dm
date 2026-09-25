@@ -45,7 +45,7 @@ flexGrow=2
 | **Signature method** | Open trials, public records, Crown money, and company gate access |
 | **Current posture** | Acting |
 
-> **DM thesis:** Voyvode races [[Sunkline]] toward the [[mid-works|Mid-Works]], spending crews and credibility to make an honest pressure rig survive long enough to expose fraud.
+> **DM thesis:** Voyvode races [[sunkline]] toward the [[mid-works|Mid-Works]], spending crews and credibility to make an honest pressure rig survive long enough to expose fraud.
 ```
 
 ```col-md
@@ -66,7 +66,7 @@ flexGrow=1
 ## Current State
 
 * **Status quo.** Voyvode has Crown funding, one [[fathomrush|Fathomrush]] compound, pressure-rig towers, and trial records. The memorial wall's fresh names are mostly Voyvode crews.
-* **Recent change.** The rivalry with [[Sunkline]] has become a race toward the [[mid-works|Mid-Works]], while Voyvode continues open trials.
+* **Recent change.** The rivalry with [[sunkline]] has become a race toward the [[mid-works|Mid-Works]], while Voyvode continues open trials.
 * **Pressure.** Reaching the Mid-Works before Sunkline's fraud becomes public requires another trial even though honest trials continue to spend crews.
 * **Strength.** Crown money, a compound, rig towers, trial records, and an open process that can expose a false certificate.
 * **Vulnerability.** [[branimir-karsovine|Branimir]] will not send a crew under an untested rig; deaths and a losing compound can empty Voyvode's dock.
@@ -76,7 +76,7 @@ flexGrow=1
 
 ## Active Agenda
 
-**Goal.** Reach the [[mid-works|Mid-Works]] with a working Crown pressure rig before [[Sunkline]]'s fraud becomes public.
+**Goal.** Reach the [[mid-works|Mid-Works]] with a working Crown pressure rig before [[sunkline]]'s fraud becomes public.
 
 **Why.** Voyvode needs an honest result before Sunkline's certificate defines the salvage race and before further trial deaths empty the compound.
 
@@ -84,7 +84,7 @@ flexGrow=1
 
 **Needs.** A working rig, a willing crew, the Fathomrush compound and towers, Crown funding, and [[branimir-karsovine|Branimir]]'s decision to send the crew.
 
-**Opposition.** [[Sunkline]]'s fraud, the pressure of the deep shelf, and the accumulated deaths recorded on the memorial wall.
+**Opposition.** [[sunkline]]'s fraud, the pressure of the deep shelf, and the accumulated deaths recorded on the memorial wall.
 
 **Next signal.** Another trial death, a new record in the open notes, or a public challenge to Sunkline's certificate.
 
@@ -147,9 +147,9 @@ flexGrow=1
 
 | Faction / person | Stance | What Voyvode wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
-| [[Sunkline]] | Rival | A fair race and exposure of its false certificate | Voyvode's open records challenge Sunkline's fraud |
+| [[sunkline]] | Rival | A fair race and exposure of its false certificate | Voyvode's open records challenge Sunkline's fraud |
 | [[dravosi-crown\|Dravosi Crown]] | Allied | Funding for the pressure-rig trials | Crown backing creates expectations |
-| [[Fathomrush]] | Friendly | Compound access and a working dock | Voyvode's trials spend crews and occupy the pier |
+| [[fathomrush]] | Friendly | Compound access and a working dock | Voyvode's trials spend crews and occupy the pier |
 | [[branimir-karsovine\|Branimir Karsovine]] | Internal authority | A decision on when the rig is ready | He refuses an untested rig |
 
 ### Party
@@ -195,7 +195,7 @@ flexGrow=1
 * **Move.** Run another open trial and record its result.
 * **Mark.** The trial either adds evidence or adds another crew name to the memorial wall.
 * **Signal.** The open gate, public notes, and trial outcome reach the party without requiring a direct invitation.
-* **Collision.** [[Sunkline]]'s certificate and the [[mid-works|Mid-Works]] race.
+* **Collision.** [[sunkline]]'s certificate and the [[mid-works|Mid-Works]] race.
 * **Player opening.** The trial remains observable and interruptible; its records can be compared, exposed, protected, or sabotaged.
 
 ### Turn Log

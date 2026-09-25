@@ -75,4 +75,4 @@ Nona's posture changes when someone treats Vincenzo's memory as disposable or ch
 | [[nona-black-jaw]] | Widow who speaks of Vincenzo constantly and preserves his memory. |
 | [[perrin-black-jaw]] | Grandson who later inherited the [[Vestra]]. |
 | [[Vestra]] | Family brig Vincenzo built and captained across the [[Midchain]]. |
-| [[Enzo]] | A different character despite the name similarity. |
+| [[enzo]] | A different character despite the name similarity. |

@@ -40,7 +40,7 @@ tier: supporting
 | **Feared for** | Grung patrols, rising patrol density, giant frogs, crocodiles, and constrictors. |
 | **Parent region** | [[verdant-teeth]] |
 
-> **DM thesis.** Dreth creates navigation choices between hidden water, watched timber cuts, rare dry hummocks, and a rain-dependent crossing to [[Orak]]; the party cannot solve the region by looking for a beach.
+> **DM thesis.** Dreth creates navigation choices between hidden water, watched timber cuts, rare dry hummocks, and a rain-dependent crossing to [[orak]]; the party cannot solve the region by looking for a beach.
 
 ## Current state
 
@@ -55,7 +55,7 @@ tier: supporting
 
 * Dreth has no beach protocol because there is no charted beach.
 * A hull must enter under canopy through a channel or remain outside the region.
-* Flood and rain can open or erase the shallow crossing to [[Orak]].
+* Flood and rain can open or erase the shallow crossing to [[orak]].
 * Rare dry hummocks are work or garrison camps, not safe hospitality.
 
 ## Geography
@@ -67,7 +67,7 @@ Dreth is the lower, wetter eastern Tooth of the [[verdant-teeth]]. Permanently d
 | Edge | Neighbor | Crossing / boundary | What changes across it |
 | --- | --- | --- | --- |
 | East | Eastern water | Enter under canopy by hull | Open water becomes drowned forest and hidden channels. |
-| West | [[Orak]] | Rain-dependent shallow crossing | The route can vanish when conditions change. |
+| West | [[orak]] | Rain-dependent shallow crossing | The route can vanish when conditions change. |
 | North | [[verdant-teeth]] | No charted shoreline or route established | The forest remains wet and channel-bound. |
 | South | Timber cut | Follow cut-lines or patrol routes | Patrol density rises as the cut moves south. |
 
@@ -75,7 +75,7 @@ Dreth is the lower, wetter eastern Tooth of the [[verdant-teeth]]. Permanently d
 
 | Subregion | Character | Current pressure | Why go there |
 | --- | --- | --- | --- |
-| [[Orak]] | High karst twin across the crossing | No sanctioned landing | Use or investigate the rain-dependent loop. |
+| [[orak]] | High karst twin across the crossing | No sanctioned landing | Use or investigate the rain-dependent loop. |
 
 ### Landmarks
 
@@ -91,7 +91,7 @@ Dreth is the lower, wetter eastern Tooth of the [[verdant-teeth]]. Permanently d
 * **Scale.** One travel leg represents movement between the region's channel, camp, and crossing nodes; exact durations are not established.
 * **Procedure.** Use visible water movement, cut-lines, patrol signs, and weather to choose the next node.
 * **Navigation.** Canopy, trunks, and submerged roots make staying on course difficult; the cut-line and channel are the reliable visual guides.
-* **Weather / season.** Rain controls whether the shallow crossing to [[Orak]] exists.
+* **Weather / season.** Rain controls whether the shallow crossing to [[orak]] exists.
 * **Rest / supply.** Rare dry hummocks are the only established footing, but they are garrison and work camps rather than hospitality.
 * **Regional rule.** No landing is available; a hull must enter under canopy or stay out.
 
@@ -101,11 +101,11 @@ Dreth is the lower, wetter eastern Tooth of the [[verdant-teeth]]. Permanently d
 | --- | --- | ---: | --- | --- | --- | --- |
 | Eastern water approach | Eastern water ↔ Dreth channel | Not established | Hull capable of entering under canopy | Hidden trunks and channel patrols | Avoids a nonexistent beach | Yes |
 | Timber cut-line | Dreth channel ↔ hummock camp | Not established | Follow the cut | Patrol density rises southward | Trackable route through wet timber | Yes |
-| [[dreth-orak-channel]] | Dreth channel ↔ [[Orak]] | Rain-dependent | Shallow crossing must exist | Crossing can vanish | Creates a loop to the high karst twin | Yes |
+| [[dreth-orak-channel]] | Dreth channel ↔ [[orak]] | Rain-dependent | Shallow crossing must exist | Crossing can vanish | Creates a loop to the high karst twin | Yes |
 
 ### Hidden and broken connections
 
-* **Rain-dependent crossing.** Dreth channel ↔ [[Orak]]. Discover or restore it when rain leaves enough water for the shallow crossing; it can vanish again when conditions change.
+* **Rain-dependent crossing.** Dreth channel ↔ [[orak]]. Discover or restore it when rain leaves enough water for the shallow crossing; it can vanish again when conditions change.
 
 ## Key places
 
@@ -142,7 +142,7 @@ The southward timber cut is the active regional pressure. No separate macro-fron
 | 1 | “There is no beach at Dreth.” | The region must be entered under canopy or not entered. | Dreth channel |
 | 2 | “The cut-line is safer than open water.” | It is trackable, but patrol density rises as the cut moves south. | Hummock camp |
 | 3 | “The dark water carries specimens.” | The [[dreth-orak-channel]] is specimen water or a patrol lane. | [[dreth-orak-channel]] |
-| 4 | “The crossing to Orak appears after rain.” | The shallow crossing is real but can vanish. | [[Orak]] |
+| 4 | “The crossing to Orak appears after rain.” | The shallow crossing is real but can vanish. | [[orak]] |
 | 5 | “Dry ground means welcome.” | Hummocks are garrison and work camps, not hospitality. | Hummock camp |
 | 6 | “The southern route is changing.” | The timber cut is moving south and closing the live-specimen window. | [[grung-clans]] |
 
@@ -170,7 +170,7 @@ The southward timber cut is the active regional pressure. No separate macro-fron
 * **Shelter.** Rare dry hummocks offer footing, but their garrison and work camps are not hospitality.
 * **Wonder.** A permanently drowned forest navigable only under canopy.
 * **Hidden lore.** The absence of a beach explains why Dreth has no beach protocol.
-* **Shortcut.** The rain-dependent shallow crossing reconnects Dreth to [[Orak]].
+* **Shortcut.** The rain-dependent shallow crossing reconnects Dreth to [[orak]].
 
 ## History still in play
 

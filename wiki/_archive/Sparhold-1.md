@@ -26,7 +26,7 @@ The next stop on the raiding-fleet trail; details remain open. The settlement is
 - **Contradiction:** everyone wants the raiders gone, but a living trail is valuable leverage.
 - **Signatures:** departure marks (**seed**); boats judged by wake/cargo (**seed**); questions answered with reciprocal questions (**seed**).
 ## Place truth and current situation
-- **Canon:** Sparhold is the next stop on the Grung raiding-fleet trail, in Midchain, followed from [[Uncertainty]] and before [[Aruhe - Hungry Isle]].
+- **Canon:** Sparhold is the next stop on the Grung raiding-fleet trail, in Midchain, followed from [[uncertainty]] and before [[Aruhe - Hungry Isle]].
 - **DM seed (unconfirmed):** berth, holdfast, council/harbour compact, and named local factions remain open.
 - **At stake:** directional knowledge, witness safety, and whether the taken move onward.
 ## Aspects
@@ -36,7 +36,7 @@ The next stop on the raiding-fleet trail; details remain open. The settlement is
 - **Sound (seed):** tide against pilings, work calls, berth arguments, signal knocks.
 - **Smell (seed):** salt, wet timber, smoke, fish or cargo; keep only what play establishes.
 ## Topology (all local nodes are DM seed, unconfirmed)
-- `[[Uncertainty]] -- direct arrival (fast, exposed, describes the crew) --> outer berth`.
+- `[[uncertainty]] -- direct arrival (fast, exposed, describes the crew) --> outer berth`.
 - `Midchain reef route -- hidden approach (slow, pilot-dependent, observe before landing) --> rear landing`.
 - `outer berth -- public route (social, information-rich, watched) --> work yard / meeting place`.
 - `rear landing -- concealed route (risky, avoids first questions) --> holdfast edge`.
@@ -80,7 +80,7 @@ Advance on public accusation, rest after confirmed sighting, lost witness, or vi
 
 **Move:** Crown response arrives (**seed**). **Trigger:** town cannot control crisis. **Result:** papers/inspection appear. **Opportunity:** coalition. **Consequence:** occupation clock advances if welcomed.
 ## Connections
-- [[Uncertainty]] · [[Midchain]] · [[Aruhe - Hungry Isle]] · [[Warren]] · [[Verdant Teeth]]
+- [[uncertainty]] · [[Midchain]] · [[Aruhe - Hungry Isle]] · [[Warren]] · [[Verdant Teeth]]
 ## Hooks
 - Where the taken went; who profits from silence; rescue, expose, or preserve autonomy.
 ## Secrets (DM)
@@ -92,4 +92,4 @@ Advance on public accusation, rest after confirmed sighting, lost witness, or vi
 - Narration intentionally left to Visualizer; no player-facing portrait supplied here.
 
 ## Geography ingest — island versus market
-**Sparhold Isle** is the half-mile, cut-over islet at the southern lip of the Northern Midchain strip. **Sparhold** is the timber fortress-market on the harbour slope of that islet, closest harbour to the Teeth and cheaper/looser than [[Kalowe]]. The local spar stand was cut down when the walls went up; crews now cut the fringe of the Teeth. This note is the fortress-market, not the whole islet; use [[Sparhold Isle]] for the landform.
+**Sparhold Isle** is the half-mile, cut-over islet at the southern lip of the Northern Midchain strip. **Sparhold** is the timber fortress-market on the harbour slope of that islet, closest harbour to the Teeth and cheaper/looser than [[kalowe]]. The local spar stand was cut down when the walls went up; crews now cut the fringe of the Teeth. This note is the fortress-market, not the whole islet; use [[Sparhold Isle]] for the landform.

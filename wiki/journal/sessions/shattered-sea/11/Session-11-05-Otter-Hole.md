@@ -185,7 +185,7 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party takes the bloody-bank detour toward the smoke on [[cutoff-lip]], with or without the man. Hand to [[Session-11-06-Farthest-Camp]]. The forest-edge walk toward [[spoke-ring]] may take one [[Session-11-00-Random-Tables]] roll if this is still one of the two allowed rolls before beat 6. Do not run that roll during this hole. Carry forward any RAW damage and conditions already applied.
+The party takes the bloody-bank detour toward the smoke on [[cutoff-lip]], with or without the man. Hand to [[Session-11-06-Farthest-Camp]]. The forest-edge walk toward [[spoke-ring]] may take one [[session-11-00-random-tables]] roll if this is still one of the two allowed rolls before beat 6. Do not run that roll during this hole. Carry forward any RAW damage and conditions already applied.
 
 **Grappled / Restrained.** Anyone still in this hole at a break remains in play or Hunt until they leave the water, unless tick 4 of play has already ended the chase.
 
@@ -205,7 +205,7 @@ The party takes the bloody-bank detour toward the smoke on [[cutoff-lip]], with 
 
 ## Backup
 
-[[river-slack-basin]] · [[cutoff-lip]] · [[spoke-ring]] · [[river-otter]] · [[matteo-scola]] · [[taking-on-aruhe]] · [[line-bank]] · [[grasslands]] · [[young-bloodhawk]] · [[Session-11-00-Random-Tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-00-Birds-of-a-Feather]]
+[[river-slack-basin]] · [[cutoff-lip]] · [[spoke-ring]] · [[river-otter]] · [[matteo-scola]] · [[taking-on-aruhe]] · [[line-bank]] · [[grasslands]] · [[young-bloodhawk]] · [[session-11-00-random-tables]] · [[Session-11-04-What-They-Ate]] · [[Session-11-06-Farthest-Camp]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

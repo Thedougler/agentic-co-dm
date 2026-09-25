@@ -10,6 +10,10 @@ created: 2026-09-13
 updated: 2026-09-13
 type: npc
 reveal: revealed
+status: deceased
+role: "Grung alchemist and magazine guardian"
+location: "[[Calveno Sewer Magazines]]"
+faction: "[[grung-clans|Grung Clans]]"
 campaign: shattered-sea
 visibility: dm
 summary: "An old red-caste Grung alchemist and CR 6 magazine guardian in the Calveno Sewers, killed in Session 05."
@@ -21,17 +25,67 @@ tier: supporting
 ---
 # Bazzoth, the Steeped
 
-# Bazzoth, the Steeped
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-An old red-caste Grung. Thick, heavyset, with a mottled brick-red hide and sagging throat. He wore a bone-plate apron over vials of reagent and carried a drinking gourd at all times.
+| **Role**   | Red-caste Grung alchemist and guardian |
+| ---------- | -------------------------------------- |
+| **Nature** | An old, thickset alchemist in a bone-plate apron who carries a reagent-filled gourd. |
+| **Home**   | Room 5 of the [[Calveno Sewer Magazines]] |
+| **Wants**  | To guard the magazine and punish anyone who reaches the powder barrels. |
+| **Leverage** | Arcane concoctions, a prepared magazine, and two [[Grung]] laborers working with him. |
+| **Limit**  | He died in Session 05 after using a Sump-Reek Bomb; his death destroyed Room 5's powder barrels. |
 
-He guarded **Room 5** in the [[Calveno Sewer Magazines]] dungeon, where two [[Grung]] laborers worked with him. Dead in Session 05, he used a Sump-Reek Bomb but still fell. His death destroyed the room's powder barrels; this was the second magazine down, after [[le-paludi]]'s Magazine Alpha fell first.
+> **DM thesis:** Bazzoth turns a powder magazine into an alchemist's bench, spending his own remaining years to make every approach poisonous.
+```
 
-> [!mechanic]
-> **Shed the Years** is a bonus-action rite. While active: +15 ft. speed, no opportunity attacks, +2 AC, advantage on Dex saves, and a third Envenomed Lash at +8 to hit. Any hit or a failed DC 15 Con save ends it. Steeped gives advantage against charm/fear and on Con saves. Toxic Secretion and Master of the Bench punish melee foes. Reeking Step (3/day) teleports him when hit. Sump-Reek Bomb (Recharge 5, 6) deals area damage: a 20-ft. poison cloud forcing saves each round.
-> **Tradition and school:** Shed the Years — Arcane transmutation (concentration); Counterspell can target it, breaking concentration ends it; Detect Magic while active: "Arcane transmutation — the caster's body is burning through time it doesn't have left." Reeking Step — Arcane conjuration (teleportation); Counterspell can target each use. Sump-Reek Bomb — Arcane conjuration (area conjured poison cloud); no concentration.
+```col-md
+flexGrow=1
+===
+> [!narration] Bazzoth, the Steeped
+> An old red-caste Grung stands thick and heavyset behind the bench, mottled brick-red hide sagging at the throat. A bone-plate apron hangs over vials of reagent. He keeps one drinking gourd in hand, as if the next swallow might buy him another decade.
+```
+````
 
-## Stats & Combat
+## Running Bazzoth, the Steeped
+
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
+
+Bazzoth guards Room 5 while two Grung laborers work with him. He meets intruders as a magazine guardian, not a negotiator, and uses the room's powder barrels and prepared concoctions to control approach.
+
+> *Bazzoth*: “The bench is closed. The years are not.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Bazzoth uses Shed the Years when he must move or survive pressure: speed increases, movement no longer provokes opportunity attacks, AC rises, Dexterity saves improve, and his Envenomed Lash gains a third attack. Hits or a failed DC 15 Constitution save end it.
+
+Toxic Secretion and Master of the Bench punish melee attackers. Reeking Step teleports him when hit, and Sump-Reek Bomb fills an area with poison that demands repeated saves. In Session 05, he used the bomb and still fell; the room's powder barrels were destroyed.
+```
+````
+
+## Voice
+
+Bazzoth speaks like an alchemist protecting a workbench, with old age and reagent-spirits making his confidence heavier rather than softer.
+
+**The ask:** *“Put down the weapon before you spill the wrong thing.”*
+
+**The refusal:** *“The bench is closed.”*
+
+**Under pressure:** *“The years are not.”*
+
+**Tradition and school.** Shed the Years is Arcane transmutation (concentration); Counterspell can target it, and breaking concentration ends it. Detect Magic reads: “Arcane transmutation — the caster's body is burning through time it doesn't have left.” Reeking Step is Arcane conjuration (teleportation); Counterspell can target each use. Sump-Reek Bomb is Arcane conjuration with no concentration.
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -101,6 +155,6 @@ reactions:
 - [[Calveno Sewer Magazines]]: his post.
 - [[Grung]]: his people.
 
-## Session Log
+**Session log.**
 
 **Session 05.** He died in Room 5/Magazine Beta. His death disabled the powder barrels. See `vault/episodes/005/s05-recap.md`.

@@ -2,7 +2,7 @@
 - [[Aarakocra]] — Species text for Aarakocra, an avian homebrew humanoid people rare in the Shattered Sea and most associated with the Sentinels of the Eyrie.
 - [[adriana-tarquine]] — Sunkline chief engineer.
 - [[adwe]] — Mangrove channels that fork three ways with no marker on any of them and rearrange after every storm, where the only pilot worth having is a heron.
-- [[Aldenmere]] — Quiet Crown farm island with a mile-wide tidal mere; a revenue officer collects the fishing tithe twice a year and leaves.
+- [[aldenmere]] — Quiet Crown farm island with a mile-wide tidal mere; a revenue officer collects the fishing tithe twice a year and leaves.
 - [[aldo-riva]] — Verbose dwarf chef running Al Fondale's kitchen, keeper of Le Paludi's history spanning centuries, harboring secrets about the cellar's mysteries.
 - [[aldous-draves]] — Draves-branch relative who placed Geoffrey Draves.
 - [[aldric-drave]] — Real target of the Pearl theft that the Chain Council did not know it served.
@@ -10,11 +10,11 @@
 - [[algernon-reginald-clyde]] — Named author of Clyde's Bestiary, which documents Ridgeback.
 - [[alys-kuiper]] — HCS Surety's ship's surgeon, competent and precise, disappeared on shore leave in Calveno.
 - [[Amberfall]] — Amber-mining island whose petrified specimens preserve small creatures mid-motion. Some swear they're still moving.
-- [[Amberreach]] — Named Tessarine face, craft, or house from the Concordat dump.
+- [[amberreach]] — Named Tessarine face, craft, or house from the Concordat dump.
 - [[anchor-watch-chime]] — A brass anchor-watch chime with a wired-short clapper that rings once when something unseen closes on a moored ship, waking the whole watch with it.
 - [[andriana-trevisan]] — Knows roughly where the Warren is, but won't name a contact or lead anyone there.
 - [[Antheri]] — Vanished builders of a Maw western-wall city and Water-plane route; ruins and salvage remain at Shelfworks.
-- [[Anzolo]] — Tortle enforcer for the Black-Jaw Run, hunting Perrin for Nona while unaware of the Tessarine patrol tailing him and her call-off.
+- [[anzolo]] — Tortle enforcer for the Black-Jaw Run, hunting Perrin for Nona while unaware of the Tessarine patrol tailing him and her call-off.
 - [[arclight-phoenix]] — Storm-edge phoenix that hatches from lightning-opened eggs in Ashwall vents and flies west into the Galewall.
 - [[armor-of-fireballs]] — Rare attuned armor that lets the wearer detonate a self-centered Fireball they're immune to.
 - [[aruhe]] — Island protected by Hinewai's grief-bound law: receiving is safe, but taking fruit, fish, plants, or beasts brings Nature's fury.
@@ -26,7 +26,7 @@
 - [[Ashkevet]] — Named Dravosi prison the Lavinia note refuses to treat as her workplace.
 - [[ashwall-islands]] — Cold volcanic spires at the Galewall edge: last solid ground heading west and first safe lee returning east, with vent fauna and arclight phoenix hatch signs.
 
-- [[ASSETS]] — Drop map for Session 11 summary, transcript, and recording.
+- [[assets]] — Drop map for Session 11 summary, transcript, and recording.
 - [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown.
 - [[bala-tane]] — Pit boss of The Mud Pits on Kalowe's third island, orc woman, mid-forties, has run the fights for fifteen years.
 - [[barb-line-harpoon]] — A forged harpoon on sixty feet of light chain: it sets a barb in something swimming and holds it inside the chain's reach of whatever the far end shackles to.
@@ -45,13 +45,13 @@
 - [[bent-offering-farthing]] — A bent, pierced farthing worn dark with age, a sailor's incomplete tribute offering.
 - [[bice-riva]] — Halfling co-proprietor of Al Fondale in Le Paludi, old enough to know the arithmetic of risk, keeps the Warren entrance in her cellar unknown to all but those who should know it.
 - [[bilge-lamp]] — A brass-and-iron lamp sealed against water, which keeps burning underwater, in weather, and through a fall that would put any hooded lantern out.
-- [[Billy]] — Third Halewick child who compelled villagers to find heroes to stop the other two.
+- [[billy]] — Third Halewick child who compelled villagers to find heroes to stop the other two.
 - [[Bisou]] — Beaumont Sel's capuchin of eleven years on the Midchain run, and the hand he throws when a gun or a powder store needs fouling.
 - [[black-lotus]] — Table-sized magic-feeding bloom that clamps shut, drains slots (then life), and may yield a Black Lotus Heart.
 - [[black-lotus]] — Magic-feeding flora hazard that traps creatures, drains spell slots, and can yield a crystallized Black Lotus Heart.
 - [[black-lotus-heart]] — Crystallized magical sap recovered from a mature Black Lotus after the flower can no longer close.
 - [[Blackrail]] — CR 9 huge cave centipede that rushes main tubes and pins prey.
-- [[Blackrule]] — Volcanic terrace chapterhouse with one boat stair; Aleksander Malone trains here and leaves only when heresy is confirmed.
+- [[blackrule]] — Volcanic terrace chapterhouse with one boat stair; Aleksander Malone trains here and leaves only when heresy is confirmed.
 - [[blade-of-the-lost-grip]] — A sentient +1 rapier that hurls itself at the nearest foe the instant a fight begins, lodges in the target, and won't stop insulting everyone nearby.
 - [[Blight]] — A druid lich whose phylactery is a place, the Death Bloom in Aruhe's interior. Its combat numbers degrade in stages as the Bloom takes damage.
 - [[blind-hood-and-jesses]] — A graded set of leather hoods and ankle straps from The Live Hold, cut to blind and quiet a captured beast so it can be moved without a fight.
@@ -88,9 +88,9 @@
 - [[chorewick]] — A strict, fair cooperative of escaped indentured workers in the western Midchain that distrusts the well-dressed.
 - [[chronehall]] — A guild island with hundreds of clocks and sundials. They time something and won't say what.
 - [[clear-lake]] — Inland crater basin — black hexagonal shelf, glass-clear shallows, otter families, outlet to the River and wet south into the Marshes.
-- [[Cobb]] — Young Rattkin dockworker and runner for Nona Black-Jaw at La Vasca who greets the Uncertainty crew and carries messages to Perrin.
+- [[cobb]] — Young Rattkin dockworker and runner for Nona Black-Jaw at La Vasca who greets the Uncertainty crew and carries messages to Perrin.
 - [[coeur-bris]] — Site of a centuries-old broken marriage pact between two feuding families; still technically unresolved.
-- [[Colla]] — Apothecary who runs The Splint in the Warren; trained by his aunt Tetta, writes down his reasoning instead of explaining it aloud.
+- [[colla]] — Apothecary who runs The Splint in the Warren; trained by his aunt Tetta, writes down his reasoning instead of explaining it aloud.
 - [[commander-gideon-ault]] — Commands the HCS Warrant; may lead a Phase 3 Dravosi Crown response to the missing HCS Surety.
 - [[complete-the-maw-map-pilgrimage]] — Open quest to complete the Maw map pilgrimage tied to Sentinel duty and the Drowned Maw.
 - [[copperlight|Copperlight]] — Self-glowing minerals light the shore after dark. The miners work only at night.
@@ -118,7 +118,7 @@
 - [[cursed-bracers-of-archery]] — A +2 damage archery bracer carrying two paired curses: a nat 1 turns the wearer neon and leaves a permanent mark, a nat 20 compels a loud boast.
 - [[cutoff-lip]] — Dry packed shelf on the Quiet–grassland seam — knee-root wall, downslope seep, Deer-Stalker signs, and the first silent wood.
 - [[dario-vanni]] — Tortle owner of Acqua Nera, a prize conversion yard that makes stolen ships look legitimate. Mixes his own paint and asks no questions.
-- [[Dath-Mar]] — Refuge island of the Sunken Crown used for emergencies and solitary retreat.
+- [[dath-mar]] — Refuge island of the Sunken Crown used for emergencies and solitary retreat.
 - [[davu-kamu]] — Former first mate of the *Cormorant*, now based at The Flat Water and offering a cut of wreck salvage.
 - [[deadmans-cleat]] — A wreck-diver's bronze belt cleat, cut from a hull and still knotted to its line, that holds a wearer's footing against a shove.
 - [[deep-works]] — The deepest Antheri tier, past 500 feet, containing the soul-pledge chamber and the terminus of the Maw fissure; feels pristine, hostile, and only partly of this plane.
@@ -137,32 +137,32 @@
 - [[dravosi-crown]] — Tethyr colonial court and naval service in the Verdant Scatter; HCS hulls, inspection law, and Malone for confirmed heresy.
 - [[dravosi-deckhand]] — CR 1/8 Crown shiphand with Sea Legs, cutlass, hand crossbow, and an Alert Call reaction.
 - [[dravosi-enforcer]] — A Dravosi Crown veteran built for confined boarding fights, crowd suppression, hooks, gangplanks, and violence carried out like just another inspection.
-- [[Dreth]] — Drowned Verdant Teeth island with no charted shoreline, where timber work moves through trunks standing in tide.
+- [[dreth]] — Drowned Verdant Teeth island with no charted shoreline, where timber work moves through trunks standing in tide.
 - [[dreth-orak-channel]] — Forbidden flooded crossing between Dreth and Orak, not an ordinary strait for outsider travel.
 - [[driftlight-lantern]] — A salvaged nautical lantern whose shutter opens a window onto another plane, real or false with no way to tell; if real, something looks back.
 - [[drovannis]] — A sheltered lagoon of floating perches where a druidic order tends the seabirds, which come back each year carrying small lost objects nobody has traced to a source.
 - [[drowned-maw]] — Maritime place tied by the source to the Red Lady's sinking, routes, and moving wake.
 - [[drowned-maws-open-shelf]] — Warm, still Maw water over intact workshops at eighty feet, ruin-shadows forty feet down, a dead-fish and hot-iron smell.
 - [[duskveil|Duskveil]] — A permanent illusion of dusk blankets the island; source unknown.
-- [[Duvane]] — Ashwall repair-crew carpenter stung by a giant scorpion in a vent fissure.
+- [[duvane]] — Ashwall repair-crew carpenter stung by a giant scorpion in a vent fissure.
 - [[eight-seconds]] — An alchemical cigarette that burns for about eight seconds, granting one extra action per turn for two consecutive turns before dropping the smoker prone and unable to react.
 - [[elder-anton]] — Memory-keeper and elder of Keth-Naar tribe, holding the line during a blessing crisis.
 - [[elder-mimic]] — Doctrine source for The Unplotted: stop being a chest; be the shelter they choose.
 - [[elemental-plane-of-water]] — Elemental water cosmology named via Istishia; not a villain brief.
 - [[enkoa|Enkoa]] — A hermit sorcerer's warded island; trades rare components only for equally rare favors; never coin.
 - [[ensign-wouters]] — Crown-trained young navigator aboard HCS Surety, killed by Delmar Fisk's musket fire during the Session 02 boarding.
-- [[Enzo]] — Bodyguard at Nona Black-Jaw's kitchen safehouse who holds the door with Ruk.
+- [[enzo]] — Bodyguard at Nona Black-Jaw's kitchen safehouse who holds the door with Ruk.
 - [[essa-two-tooth]] — Rattkin elder who runs the Low Lamp, the Warren's Kin-only gathering house.
-- [[Estratto]] — Named Tessarine face, craft, or house from the Concordat dump.
+- [[estratto]] — Named Tessarine face, craft, or house from the Concordat dump.
 - [[ettore-lupo]] — Keeper of Casa Lupo's ledger: forty years of prices and customers filed in his memory alone
 - [[farrowmere|Farrowmere]] — Locals farm a colony of dire crocodiles instead of fighting them.
-- [[Fathomrush]] — A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
+- [[fathomrush]] — A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
 - [[fathomrushs-split-harbor]] — Two rival rig piers face each other across Fathomrush, with an unclaimed dockside and a memorial wall between them.
 - [[felix-aho]] — Green Grung operative named among the clans' current faces.
 - [[Fen]] — Young sailor aboard the Saltwright, earnest and reliable on his first real sea job.
 - [[fen-glass-newt]] — A palm-sized marsh newt kept in a jar at Zort's Pits that screams when something reaches for its keeper's mind, buying one more save against a charm.
 - [[fen-le-paludi-pickpocket]] — A teenage halfling pickpocket working the Calveno Beffa crowds, distinct from the Saltwright's Fen.
-- [[Fernen]] — A sturdy two-masted brigantine and fourth ship of Fisk's Fleet, lost with all hands when Umberlee opened The Drowned Maw.
+- [[fernen]] — A sturdy two-masted brigantine and fourth ship of Fisk's Fleet, lost with all hands when Umberlee opened The Drowned Maw.
 - [[ferran-balt]] — The Dry Net's chandler, who keeps a more careful ledger than any debt-free shopkeeper needs, because in Penance Bar, knowing who bought what is its own form of insurance.
 - [[ferrands-wager]] — A floating casino whose house always knows exactly how much you can afford to lose.
 - [[ferrin-locke]] — A Dravosi spy in Calveno's Warren, coerced through his family.
@@ -179,9 +179,9 @@
 - [[foreign-coin-packet]] — A sealed packet of foreign currency, awaiting exchange, unclaimed by its original buyer.
 - [[forged-rig-trial-certificate]] — A forged mid-shelf pressure-rig certificate, also called the Last Berth False Log, hidden under a loose floorboard at Fathomrush.
 - [[fort-crestwall]] — Fort whose sealed vaults hold Aldric Drave's living bloodline chart.
-- [[Frankie]] — Rival child on Halewick whose cursed-speech duels with Toby scar the island.
+- [[frankie]] — Rival child on Halewick whose cursed-speech duels with Toby scar the island.
 - [[gale-cut-storm-sail]] — A herringbone storm sail that holds a vessel's course and full speed through weather that should stop it, sitting unsold in a crate whose manifest is wrong.
-- [[Galewall]] — Permanent storm belt separating charted homeland from the Scatter; feels like weather made into a wall.
+- [[galewall]] — Permanent storm belt separating charted homeland from the Scatter; feels like weather made into a wall.
 - [[gallowmere|Gallowmere]] — A former execution island whose ghost trials reportedly still run after midnight.
 - [[gentle-hag]] — A CR 7 fey hag whose supernatural charm turns victims into loyal, permanent thralls.
 - [[geoffrey-draves]] — First hand recruited when the crew took the Crown cutter Surety.
@@ -189,7 +189,7 @@
 - [[ghal-idrissa]] — A silent Dravosi Crown quarantine stockade holding three empty plague ships, none of whose crews have ever left.
 - [[ghigo-volpin]] — Elderly goblin who breeds and sells canal-otters out of tanks in Le Paludi, moving above his own pens on a rope rig because he has no legs below the knee.
 - [[ghost-plum]] — Rare Aruhe fruit that grants the eater the Invisible condition for one hour.
-- [[Giacinto]] — Gnome craftsman in Calveno's Velo Quarter who sells beret-and-moustache performer kits and recognizes his own handiwork on sight; a key beat for Jean-Claude's Calveno cover.
+- [[giacinto]] — Gnome craftsman in Calveno's Velo Quarter who sells beret-and-moustache performer kits and recognizes his own handiwork on sight; a key beat for Jean-Claude's Calveno cover.
 - [[giacomo-moretti]] — A middle-aged halfling ship chandler in Calveno, proprietor of Moretti and Sons; never pranked despite a disputed cargo.
 - [[giant-owl]] — A CR 1/4 celestial owl haunting the Crown and Ashwall Islands' highlands, with keen darkvision and quiet detection magic.
 - [[gust]] — A wind spell used to redirect a toxin cloud or disperse fog.
@@ -198,17 +198,17 @@
 - [[glass-debt]] — Named hull whose sighting near the Strait pulls Crown captains off their usual patrol lines.
 - [[gnomish-rigging-block]] — An over-engineered pulley block with brass sheaves and a self-greasing axle, made aboard the Nimmik Vollask.
 - [[gnomish-splicing-fid]] — A gnome-made marlinspike with a fold-out blade and etched cordage gauge, built for rope work no standard fid can match.
-- [[Gost]] — Half-orc berserker, a loose hiring hook in the Warren with no fixed loyalty.
+- [[gost]] — Half-orc berserker, a loose hiring hook in the Warren with no fixed loyalty.
 - [[governor-voss]] — Crown governor whose orders never covered the Fort Crestwall detachments.
 - [[grandfathers-course]] — A water-warped navigation journal, spine stamped with fading gold leaf, pawned six months ago in desperation after a ship sank.
 - [[grasslands]] — Hot river-cut valleys of tall grass where water, cover, and predators force exposed choices.
-- [[Greyteeth]] — Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water.
+- [[greyteeth]] — Long pale reef ridges breaking the surface between the Crown Islands; three generations of charts have failed to make them ordinary water.
 - [[greyteeth-runner]] — A lean, patched sloop built for speed and shallow reefs, currently for sale in Port Tidefall.
 - [[grigori-and-the-crown-hunt]] — Open quest covering Shepherd Grigori and the Crown hunt pressure around Flock infiltration.
 - [[grimaldis-waking-salts]] — A quartered tin of ammonia salts that buys a stunned or charmed ally an immediate second saving throw, with advantage, against whatever put them under.
 - [[grinning-ape]] — CR 6 Aruhe bruiser ape from living-stock ecology.
 - [[grubnade]] — Volatile Aruhe caterpillar that detonates when disturbed, igniting nearby growth and scattering harmless juveniles.
-- [[Grukan]] — Ogre doorman at the hidden card den on Tallow Row. He vets every arrival through a two-eye window and a Draconic password.
+- [[grukan]] — Ogre doorman at the hidden card den on Tallow Row. He vets every arrival through a two-eye window and a Draconic password.
 - [[Grung]] — A CR 1/4 green-caste grung, the expendable laborer and scout caste of Grung raid operations.
 - [[grung-and-the-making-of-aruhe]] — DM history of the Grung crime against a captured druid and companion whose aftermath became Aruhe's law.
 - [[grung-authority-seal]] — Spent gold-script seals that once compelled lower-caste grung to survey inland Aruhe and report back.
@@ -218,13 +218,13 @@
 - [[grung-resistant-climbing-harness]] — Expedition climbing harness designed for Verdant Teeth terrain, with reinforced knots and treated leather resistant to Grung venom scoring.
 - [[gullmoth-reach]] — Thousands of flame-drawn fey moths roost here. Sailors extinguish lanterns a mile out.
 - [[halda-wren]] — Woman at Sandy Grove who trades willowbark for salt fish.
-- [[Halewick]] — Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized.
+- [[halewick]] — Southern Midchain fishing island where a planar alignment landed on the line between Common and Truespeak about three weeks ago; feels ordinary, wrong, and locally unrecognized.
 - [[halewicks-cursed-speech]] — Halewick's child-monarchy keeps scarring reality as Toby and Frankie's cursed speech collides, while Billy's summons carries outward.
 - [[halvard-oss]] — Old fisher named in a non-canon draft telling of Malone's Sarn's Landing release.
-- [[Halythion]] — Ancient settlement built into the Teikhinos Reef; invisible from the surface; older than any colonial record.
+- [[halythion]] — Ancient settlement built into the Teikhinos Reef; invisible from the surface; older than any colonial record.
 - [[harbor-merchants-chalk]] — A box of thick white chalk marked for tallying prices and debts on slate boards. The currency of Sparhold's market.
 - [[harrier-cry-whistle]] — A whistle cut from a crimson-crowned harrier's wing bone; one blast breaks like glass and shakes a caster's concentration loose.
-- [[Harwick]] — Place identified by the source as the build site and berth of HCS Sovereign.
+- [[harwick]] — Place identified by the source as the build site and berth of HCS Sovereign.
 - [[hcs-constancy]] — A Crown patrol ship that enforces inspections and takes ships into custody.
 - [[hcs-ordinance]] — Crown warship listed by the source as a related vessel to HCS Sovereign.
 - [[hcs-relentless]] — Dravosi Crown Tier 1 patrol cutter, minimally documented in play.
@@ -238,12 +238,12 @@
 - [[high-eyrie]] — A basalt stack beyond the eastern Crown chain, held by the [[sentinels-of-the-eyrie]] for two hundred years and overlooking the [[drowned-maw]].
 - [[high-eyries-storm-door]] — Maw weather rings the High Eyrie in white water; the southern stair starts over open sea, and robed wings hold the summit.
 - [[high-line]] — Northeast cliff hamlet on Calder's Tooth that works nets by winch.
-- [[Hinewai]] — Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law.
+- [[hinewai]] — Elf druid lich fused to Aruhe after escaping Karath; her grief became the island's law.
 - [[hollow-choir]] — Reclusive singing order in the southern Midchain that does not overlap Blackrule.
 - [[house-kailani]] — Masters of Sparhold's spar-timber trade facing a death-duel challenge for the settlement's rule.
 - [[house-renzetti]] — A maritime house contesting Sparhold's rule to seize the Dravosi Crown spar-timber supply contract from House Kailani.
-- [[Huahei]] — Small overgrown marshy island with a fey presence.
-- [[Human]] — 5e species text for Human, the Shattered Sea's most demographically dominant and culturally varied people.
+- [[huahei]] — Small overgrown marshy island with a fey presence.
+- [[human]] — 5e species text for Human, the Shattered Sea's most demographically dominant and culturally varied people.
 - [[hungry-isle]] — Named sea-facing identity of [[aruhe]] — Midchain island approached at [[western-landing]]; observation tolerated, taking wakes the land.
 - [[hunter-shark]] — A CR 2 large aquatic predator that trails ship traffic through the Central Strait and Crown Islands, drawn by bilge discharge and blood in the water.
 - [[hunters-blend]] — A single-use alchemical cigarette that reveals a creature's compass direction for one hour when lit with a fresh trace of blood, hair, or tracks.
@@ -255,15 +255,15 @@
 - [[ilo-maren]] — A free-diving matriarchal island culture, its reef-side kelp harvest and shore braiding closing on the annual bonfire that lights the whole bay.
 - [[iolo-bracca]] — A Crown harbour stamp-clerk who plays the Tallow Row felt, loses cheerfully on purpose, and cannot stop talking about which hulls move past the mole after dark.
 - [[iron-prayer-tablet]] — A palm-sized iron tablet inscribed with prayers, worn smooth by decades of handling, possibly salvaged from a shrine or abandoned temple.
-- [[Ironmantle]] — An old Valcoran sloop with an iron hull. Slow but won't sink. It hums in rough water.
+- [[ironmantle]] — An old Valcoran sloop with an iron hull. Slow but won't sink. It hums in rough water.
 - [[island-mimic]] — A mimic grown to island scale over centuries, wearing a small tropical paradise as bait for a full generous day before its bay closes.
 - [[island-mimic-narration-narrator]] — The first sight of the island as it emerges from the haze — a green hill with a white beach and a bay mouth like a bite.
 - [[Istishia]] — Cosmology pointer toward the Elemental Plane of Water in Maw talk.
 - [[jean-claude-tabarnack]] — Level 5 Gloom Stalker Grung at 51/51 HP whose red beret marks censure and whose sister Simone still hunts him.
-- [[Kalowe]] — Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered.
+- [[kalowe]] — Three reef-linked islets joined by stone bridges, ringed by reef with one navigable gap; feels crowded, practical, and deliberately unpapered.
 - [[kalowe-the-sawek-bounty]] — A local bounty concerning a territorial Sawek near Kalowe's blue holes.
 - [[kalowes-frozen-council]] — Kalowe's closed council chamber and reef-gap shrine wait on the same arrival: nine seats, sealed mail, and a tribute basin.
-- [[Karath]] — Raid and hatchery island where captives, tannin rivers, and hidden gold reagent farms support the Grung interior.
+- [[karath]] — Raid and hatchery island where captives, tannin rivers, and hidden gold reagent farms support the Grung interior.
 - [[karsovines-working-log]] — Branimir Karsovine's own trial-dive notebook, real hull-pressure and air-pump endurance data from every dive he's personally run, failures included.
 - [[Ket]] — Moucheron taken off Murrat as a specimen and freed from the Surety's brig; he owes the crew what a freed prisoner owes and nothing more.
 - [[ket-solane]] — Looks abandoned; honeycombed with false-bottomed smugglers' caves the Chain Council hasn't finished mapping.
@@ -276,7 +276,7 @@
 - [[kwoss]] — Kwoss's nesting beach turns each egg season into an armed standoff between the locals who guard it and the poachers who come for the eggs.
 - [[la-cenere]] — Named later chapter of Lavinia Sordi's life, after she left Crown prison work.
 - [[la-vasca]] — Three-generation Black-Jaw dry dock in Le Paludi, concealed as a defunct tanning yard, where Cobb runs the Basin cradle.
-- [[Lamplighter]] — A consumable arrow that coats its target in cold luminous rot, making it glow for an hour and unable to hide, with the glow visible from 300 feet in darkness.
+- [[lamplighter]] — A consumable arrow that coats its target in cold luminous rot, making it glow for an hour and unable to hide, with the glow visible from 300 feet in darkness.
 - [[landing-bank|Landing Bank]] — First river mouth in the grasslands after the terraces — eight-foot grass, a used stop, northbound prints, and wadeable pale-stone shallows.
 - [[lasting-insult]] — A weathered, impounded sloop with questionable history and hidden cargo space.
 - [[lava-tubes]] — Basalt underworld under Aruhe — marsh breach, Grove root descent, and cave seepage toward Clear Lake.
@@ -289,9 +289,9 @@
 - [[letters-of-marque]] — Official documents granting privateer operations under the Dravosi Crown.
 - [[Leviathan]] — Named from the Umberlee dump.
 - [[line-bank]] — Used fruiting margin where abandoned fishing gear, fresh prints, and three fruit piles mark the route upriver.
-- [[Lizardfolk]] — homebrew species text for Lizardfolk, Medium reptilian humanoids native to the Shattered Sea's tidal margins.
+- [[lizardfolk]] — homebrew species text for Lizardfolk, Medium reptilian humanoids native to the Shattered Sea's tidal margins.
 - [[lizardfolk-culture]] — Lizardfolk tidal-margin settlement, hull-crew work, Midchain tradition, and naming customs across the Shattered Sea.
-- [[Locations]] — Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
+- [[locations]] — Gazetteer hub for Shattered Sea regions, Crown water, Midchain, Aruhe, and the Verdant Teeth.
 - [[long-passage-biscuit]] — A soldered case of three hard ship's cakes baked for the long crossings, one of them eaten over a short rest taking a level of exhaustion off whoever eats it.
 - [[long-reach]] — Named Sentinel-linked pressure or technique from the Sentinels dump.
 - [[long-sight]] — Rare Sentinel technique withheld from most of the order, currently tied to [[crissdalynn-khinriss|Crissdalynn]] and the hunt for what she carries; it reads probable futures, so irrational or self-sacrificing action weakens it.
@@ -300,7 +300,7 @@
 - [[magic-as-commodity]] — Magic in the Shattered Sea is mass-market technology: cheap and everywhere when it's simple to make, still rare and guarded when it isn't.
 - [[magic-in-the-shattered-sea]] — Arcane, Divine, and Primal tradition rulings for Detect Magic, Counterspell, and Dispel Magic across every supernatural system in the Shattered Sea.
 - [[magistrates-warding-chip]] — A chip of The Velvet Noose's Wardstone Figurehead, warm to the touch, that once per day turns aside any divination targeted at the bearer.
-- [[Maren]] — Deceased Water Genasi captain of The Narrow, Fisk's Fleet scout vessel. Her soul is inside Delmar Fisk.
+- [[maren]] — Deceased Water Genasi captain of The Narrow, Fisk's Fleet scout vessel. Her soul is inside Delmar Fisk.
 - [[marenui|Marenui]] — A floating market of lashed hulls that relocates every night; findable only by rumor.
 - [[Maret]] — Named Tessarine face, craft, or house from the Concordat dump.
 - [[margaret-maggie-porcelain-pots]] — Dragonborn potter whose family fired ceramics for three generations. Delmar Fisk's first love, and the one who gave him a week-long shiner.
@@ -317,8 +317,8 @@
 - [[memorial-grove]] — 150-foot clearing where Aruhe's appetite stops — fruit tree, two unmarked graves, black-flower ring; place-bound Death Bloom.
 - [[Mercatura]] — Functioning city where Solange Barret's ritual ran beneath; Otar's defeat and the bombs are a closed Season 1 thread.
 - [[mercatura-and-otar]] — Closed Season 1 thread covering Otar's defeat and the Mercatura bombs.
-- [[Meth-Var]] — Watch island of the Sunken Crown facing open Maw waters.
-- [[Mid-Works]] — Antheri residential tier from 200\u2013500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air.
+- [[meth-var]] — Watch island of the Sunken Crown facing open Maw waters.
+- [[mid-works]] — Antheri residential tier from 200\u2013500 feet below the Maw shelf; feels sealed, pressurized, and built for bodies that did not need floors or air.
 - [[Midchain]] — Sea region whose route the Dead Lady knows when it follows Delmar Fisk's heading.
 - [[midchain-east]] — The Midchain's older, stranger end, where smaller islands scatter wide over pale reef, charts turn vague, and Halythion lies under the water.
 - [[midchain-north]] — A dense, defended strip above the Verdant Teeth, where villages hide in coves and watch two ways at once: Crown patrols to the north, Grung raids from the south.
@@ -330,7 +330,7 @@
 - [[minotaur-culture]] — Minotaur Soundings kinship, life stages, naming, and the pilot's authority at sea.
 - [[Moucheron]] — CR 8 fey species native to Murrat; blood-economy mercenaries who hire out of Kalowe as the Five Blades.
 - [[munai]] — A shipwrecked botanist's orchard gone wild over generations, now a grove whose poisons and whose cures both work unnervingly well.
-- [[Murrat]] — A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge.
+- [[murrat]] — A mile-and-a-half limestone reef that looks empty until canopy closes twenty feet inland; feels hunted before the first rope bridge.
 - [[murrats-living-shroud]] — A dark mass over Murrat that resolves into a living shroud of millions of Moucheron, audible before visible.
 - [[murrats-shroud-kets-warning-narration-open]] — Moucheron detach from the cloud and fly toward the Uncertainty. One of them is shouting.
 - [[murrats-shroud-the-cloud-resolves-narration-open]] — The dark mass over Murrat resolves into wings as the Uncertainty closes distance.
@@ -340,12 +340,12 @@
 - [[nicco-kettley]] — A canal-city halfling who sells alchemical cigarettes off a board under the Bridge, stocked from Studio Orsini's rejected batches.
 - [[nico-renzetti]] — A lean man in his twenties, jaw set, checking a blade's edge over and over when nobody is watching.
 - [[nigel-strutt]] — Crown chandlery clerk at the Tidefall Chandlery, young and conscientious, who becomes deeply distressed when customer paperwork is out of order.
-- [[Nightmantle]] — Item whose seller, Lavinia Sordi, named Osset a second time.
+- [[nightmantle]] — Item whose seller, Lavinia Sordi, named Osset a second time.
 - [[nimmik-vollask]] — Gnome-crewed orange cargo brig (the Depot) on the Central Strait.
 - [[nine-bells]] — Rival lighthouse-keeper families; each certain their own bell rings truest.
 - [[ninefold-block]] — An iron-strapped rigging block carrying nine sheaves where a block carries one, so a single hauler on the line moves what a gang of nine could shift.
 - [[ninka-solvei]] — Fence for salvaged magic oddities; runs Ninka's Findings in Sparhold, trading items with no questions about provenance.
-- [[Nino]] — Named companion in the Half the Fleet draft.
+- [[nino]] — Named companion in the Half the Fleet draft.
 - [[noa-fifita]] — Lizardfolk boatyard operator at Fifita's Slip; connected to the Taufa Fifita trading house.
 - [[nobodys-face]] — A scentless alchemical cigarette from a mis-bound batch that leaves the smoker impossible to describe for an hour after the first breath.
 - [[nona-black-jaw]] — Calveno host and Passage route face who turns safehouse access and favors into practical work for the Black-Jaw Run.
@@ -358,18 +358,18 @@
 - [[old-gardens]] — Ancient fruit terraces inland from Western Landing, forming Aruhe's first route toward the Grasslands and Quiet Forest.
 - [[old-harrows-bones]] — A single derelict ship so massive it's become an island; with a whole economy built into its ribs.
 - [[oleandro-fuschi]] — Orc tavern proprietor at Ponte Bassa who keeps detailed records of every ship passing through Calveno's main crossing.
-- [[Orak]] — High karst Verdant Teeth island paired with Dreth, marked by sinkholes, clefts, and wet dark nests.
+- [[orak]] — High karst Verdant Teeth island paired with Dreth, marked by sinkholes, clefts, and wet dark nests.
 - [[oren-vask]] — Calveno wreck deckhand who has learned a rule-bound route toward the memorial and wants every survivor to return by it.
 - [[oriana-becht]] — Named Tessarine face, craft, or house from the Concordat dump.
 - [[oshas-slip]] — Stilt village over Calder's Tooth mudflats and a hub for local smuggling.
-- [[Osset]] — Original name of [[talon-vantyrus|Talon Vantyrus]], the alias he now uses as leader of the Countless.
+- [[osset]] — Original name of [[talon-vantyrus|Talon Vantyrus]], the alias he now uses as leader of the Countless.
 - [[ossira|Ossira]] — Coral spit so thick with nesting seabirds the beach shifts underfoot with molted feathers.
 - [[ossuary-cay]] — A bone-collecting cay tended by a death-cult that reads the tides through what washes ashore.
 - [[oswald-crench]] — Dwarf proprietor of the Shelf Instrument Dealer in Port Tidefall. Has calibrated Crown navigation equipment for decades.
 - [[otanu]] — A mildly active volcanic island whose smoke plume locals read like weather, refusing to sail when it 'leans wrong.
 - [[otar-the-foul]] — Named opponent whose defeat at Mercatura is a closed Season 1 thread.
 - [[otel-karn]] — Island root and original context of the Khlysty, or Flock, tradition.
-- [[Otho]] — Archfey source of the old teaching on Otel Karn, whose bargain shaped the Flock's hidden origin.
+- [[otho]] — Archfey source of the old teaching on Otel Karn, whose bargain shaped the Flock's hidden origin.
 - [[ottavia-renzetti]] — Leader of House Renzetti who rang the challenge bell to seize Sparhold's rule, coercing her own champion into the duel.
 - [[outer-reach]] — Water past the [[drowned-maw]], with no resupply or pilot-trusted landmark; feels directionless, reversing, and unwilling to finish a story.
 - [[overland-track]] — Muddy southern road over the Marrow between Tidefall and South Harbour.
@@ -377,13 +377,13 @@
 - [[Ozzeth]] — Named Grung face whose color and current role are not established by this source.
 - [[ozzeth-the-twiceborn]] — A Grung mage branded Twiceborn by Gold caste, guards Magazine Delta in the sewers with control spells and dominates foes.
 - [[palutai|Palutai]] — Fishing families in perpetual feud. Newcomers get conscripted to a side within the hour.
-- [[Paolo]] — A gondolier-in-training in Calveno who capsized his boat into the canal in front of the crew and offered them free rides afterward.
+- [[paolo]] — A gondolier-in-training in Calveno who capsized his boat into the canal in front of the crew and offered them free rides afterward.
 - [[party-combat-profile]] — Party of 5 level-5 PCs. Closed-form 61.41 combined sustained DPR vs AC 15, 89.08 round-1 nova, 397 effective HP vs a +6 attacker. Effective CR Band unmeasured — the sim is unusable.
-- [[Passage]] — Rescue network that moves people off official routes, with Nona as the face and a law against treating people as cargo.
-- [[Paulo]] — A hopelessly lost, endlessly confident young gondolier who announces every wrong turn like it's the plan.
+- [[passage]] — Rescue network that moves people off official routes, with Nona as the face and a law against treating people as cargo.
+- [[paulo]] — A hopelessly lost, endlessly confident young gondolier who announces every wrong turn like it's the plan.
 - [[pearl-of-souls]] — Shrine relic stolen by Delmar's fleet and named by Umberlee as her price; the Flock sees it as a possible shortcut to transcendence.
 - [[pearl-signal-across-the-boundary]] — The stolen Pearl broadcasts across the Maw. Recover it to stop what answers.
-- [[Pell]] — A gnome labour slave on Sorn who challenged Jean-Claude Tabarnack's understanding of the world before her death in captivity.
+- [[pell]] — A gnome labour slave on Sorn who challenged Jean-Claude Tabarnack's understanding of the world before her death in captivity.
 - [[penance-bar]] — A sandspit shrine doing endless penance for devils it never summoned; its priest is quietly paying off a debt of his own.
 - [[penance-bar-siege]] — Ashe's fearmongering draws demons; the party must get the truth to the mob before the grove burns.
 - [[penance-bars-fear-siege]] — Penance Bar's fear-fed accusations drive a mob toward the coven's grove while Sorrowbell's failed sanctuary exposes Corvin Ashe.
@@ -396,7 +396,7 @@
 - [[petro-amaru]] — A broad timber-foreman in worn leather, ledger always open, pencil always moving, a climber's gait on flat ground.
 - [[pirate-bosun]] — CR 2 pirate grappler who pins targets for the cutpurses and clears deck space with a chain sweep.
 - [[pit-broke-blink-dog]] — A blink dog from the back corner of Zort's Pits, broke to a handler's call so it blinks toward its handler instead of away from a fight.
-- [[Players]] — Table player roster for the Shattered Sea.
+- [[players]] — Table player roster for the Shattered Sea.
 - [[pocket-thunder]] — An alchemical cigarette that snaps and throws to detonate in a blinding, deafening report with no damage.
 - [[preserved-eel]] — Salt-cured eel, a common staple at the Low Lamp.
 - [[print-braid]] — Forest-edge grassland braid where inland prints split toward Spoke Ring, fruiting wood, and a cold river cobble ring.
@@ -407,7 +407,7 @@
 - [[pursue-the-grung-raiding-fleet]] — Pursuit thread following the Grung fleet through reefs, supply pressure, and the captive route toward Karath.
 - [[quillane]] — An observatory sinking by degrees, where scholar-mages study the tides and pay in real knowledge for specimens they cannot go and collect themselves.
 - [[rael-corven]] — Person identified by the source as aboard the original Red Lady during the fleet's sinking.
-- [[Ral-Arn]] — Record island of the Sunken Crown holding oldest family histories in stone.
+- [[ral-arn]] — Record island of the Sunken Crown holding oldest family histories in stone.
 - [[rangi-kailani]] — A lean Sparhold watchman in his thirties, nothing wasted, thumb testing the blade before he speaks.
 - [[rasalgethi|Rasalgethi]] — Astronomers chart stars from a patch of sky no storm has ever crossed.
 - [[Rattkin]] — People whose family Runs stay connected through coded trust, couriers, and the Black-Jaw Run.
@@ -441,7 +441,7 @@
 - [[rostes-landing]] — A free clinic that treats anyone; no questions; payment negotiable to the point of absurdity.
 - [[rotheart]] — Very rare black-hearted Rot fruit that clears exhaustion, poison, and disease.
 - [[rowans-hush]] — A silent monastic order that communicates entirely by hand-sign.
-- [[RTLB]] — Unnamed-beyond-initials wizard who bound and later freed Sir Quackers.
+- [[rtlb]] — Unnamed-beyond-initials wizard who bound and later freed Sir Quackers.
 - [[rufio-segalla]] — The Calveno Human who runs La Brace, the Velo Quarter smoking room where an hour of privacy costs more than the smoke does.
 - [[Ruk]] — Bodyguard at Nona Black-Jaw's kitchen who has guarded Passage witnesses.
 - [[rule-of-two]] — Live schism pressure between Skarn and Vantyrus with Crissdalynn in the crossfire.
@@ -453,10 +453,10 @@
 - [[salt-drake-bile-draught]] — A cold-tasting draught pressed from salt-drake bile at The Live Hold; it drops the drinker into a reptile calm nothing talks its way past.
 - [[salted-otel-mutton]] — Cheap salted mutton at Anvez's Provisions, stocked in a barrel that always seems full again by the next visit.
 - [[salvage-plate-harness]] — A chest harness of riveted hull plate lined with adamantine scrap, which buckles once a fight to take the worst hit and blunt it to an ordinary one.
-- [[Samuel]] — Named Tessarine face, craft, or house from the Concordat dump.
+- [[samuel]] — Named Tessarine face, craft, or house from the Concordat dump.
 - [[Sandro]] — Calveno captive named in the Half the Fleet draft.
 - [[sandtable-shoal]] — Mid-Strait sandbank south of Aldenmere that lifts the bottom and shifts the Blue Lane south.
-- [[Sanvashti]] — Sanvashti is a mossed terrace in the Southern Midchain where rival Grung clans meet under an old truce. It feels less like neutral ground than a promise everyone is afraid to break.
+- [[sanvashti]] — Sanvashti is a mossed terrace in the Southern Midchain where rival Grung clans meet under an old truce. It feels less like neutral ground than a promise everyone is afraid to break.
 - [[sarns-landing]] — A small Crown Islands fishing village where [[aleksander-malone]] was once loosed in public. The results were ugly enough to change Crown policy: Malone now requires formal heresy confirmation before
 - [[savia-brentino]] — Dwarf shipwright proprietor of Carpenter's Slip, expert at fast repairs and hull disguise.
 - [[Sawek]] — Rumored apex predator of the Central Strait's dark southern Midchain approaches.
@@ -474,15 +474,15 @@
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter.
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop.
 - [[serin-haut]] — Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor.
-- [[Session-12-00-The-Weight-of-Obedience]] — Skarn's theft resumes at dawn, two survivors ask the party to fetch a believer who walked toward the woman's garden, and the road north runs through the bowl where generations of Grung died obeying an order, to a voice telling Perrin to CONSUME.
-- [[Session-12-01-River-Slack-Reprise]] — Play resumes pre-dawn at the otter camp with Talon Skarn five feet from Crissdalynn; he gets three rounds to take the Fate Spinner, and if he can't, he steals Matteo's ghost plums on the way out.
+- [[session-12-00-the-weight-of-obedience]] — Skarn's theft resumes at dawn, two survivors ask the party to fetch a believer who walked toward the woman's garden, and the road north runs through the bowl where generations of Grung died obeying an order, to a voice telling Perrin to CONSUME.
+- [[session-12-01-river-slack-reprise]] — Play resumes pre-dawn at the otter camp with Talon Skarn five feet from Crissdalynn; he gets three rounds to take the Fate Spinner, and if he can't, he steals Matteo's ghost plums on the way out.
 - [[Session-12-02-A-Name-for-Matteo]] — At sunrise Celia and Oren come down the bloody bank to record Matteo as dead, find him alive, and ask the flyers to help bring back Nello, who walked north in the night toward the place where the Grung died.
-- [[Session-12-03-Grass-Without-Wind]] — On Print Braid, Skarn probes the column and makes a living claim to break it, and two wolfrabbits burst through the party hunting something they cannot see.
+- [[session-12-03-grass-without-wind]] — On Print Braid, Skarn probes the column and makes a living claim to break it, and two wolfrabbits burst through the party hunting something they cannot see.
 - [[Session-12-04-Two-Grave-Orders]] — At the Turned Hollow the party reads generations of Gold orders in rings of Grung dead, learns the diggers died under the wrong tree, and finds Nello alive and motionless in the fig's roots.
-- [[Session-12-05-The-Wrong-Tree]] — The party pulls Nello out of a strangler fig that lashes at whatever moves and swallows whatever waits, while every cut and every flame is weighed against the island's law.
+- [[session-12-05-the-wrong-tree]] — The party pulls Nello out of a strangler fig that lashes at whatever moves and swallows whatever waits, while every cut and every flame is weighed against the island's law.
 - [[Session-12-06-What-Is-Chosen]] — At the Hollow's north rim, with the true memorial tree in view, Nello confesses that he told the woman about the Grung, the survivors split on what they obey, and seawater starts dripping from Perrin's cloak.
 - [[Session-12-07-The-Guava-and-the-Spinner]] — Skarn makes his committed second attempt on the Spinner at the Hollow's north rim, a voice orders Perrin to CONSUME the living guava, and the island's law decides who the roots go after.
-- [[Session-12-08-Toward-the-Memorial]] — After Skarn's second attempt, the party takes stock at the Hollow's rim, and the woman in the woods steps to the edge of her black flowers and looks straight at Jean-Claude.
+- [[session-12-08-toward-the-memorial]] — After Skarn's second attempt, the party takes stock at the Hollow's rim, and the woman in the woods steps to the edge of her black flowers and looks straight at Jean-Claude.
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea.
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page.
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques.
@@ -490,8 +490,8 @@
 - [[shepherd-grigori]] — Korabl of the Flock who believes he authored its blood-anchor survival trick.
 - [[sienne-orre]] — Deceased Minotaur druid captain of the Fernen. Her methodical soul manifests through Delmar Fisk.
 - [[silence-moths]] — CR 8 silent moth swarm that muffles sound and fills mouths; fire drives it off the trees.
-- [[Silkvane]] — Named Tessarine face, craft, or house from the Concordat dump.
-- [[Simone]] — Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude.
+- [[silkvane]] — Named Tessarine face, craft, or house from the Concordat dump.
+- [[simone]] — Purple Grung officer who holds the Sorn garrison, sells toxin, and hunts her brother Jean-Claude.
 - [[simone-tabarnack]] — A compact purple-caste Grung officer in undecorated armor, spear easy, eyes mapping the room first.
 - [[simones-hunters]] — Family-pressure thread around Simone's report, leak hunt, and toxin stock against Jean-Claude and his allies.
 - [[sin-and-sanctuary]] — Sin has gravity; hallowed ground is a revocable patron claim; a demon's kiss marks a soul its god will no longer contest.
@@ -507,14 +507,14 @@
 - [[solange-barret]] — Red Grung operative named among the clans' current faces.
 - [[solanges-authority-seal]] — A red-caste Grung signet ring that forces a Grung within 60 feet to obey a one-word command once per long rest. Identified after the Calveno raid. Held by the crew.
 - [[sorin-vask]] — Runs a dockside salvage-goods trade in Kalowe, a straight dealer within a crooked port who has drawn pointed questions from one of the dock bosses.
-- [[Sorn]] — Verdant Teeth farm heart where Botukuri uses seasonal flood-pulse lanes and Simone holds a guarded beach.
+- [[sorn]] — Verdant Teeth farm heart where Botukuri uses seasonal flood-pulse lanes and Simone holds a guarded beach.
 - [[sorn-guarded-beach]] — Sorn's held landing and Simone's post. The last hundred yards are recut as policy; the interior is not open.
-- [[Sorrowbell]] — Headland shrine at Penance Bar where the locked Tyr-box confrontation plays.
+- [[sorrowbell]] — Headland shrine at Penance Bar where the locked Tyr-box confrontation plays.
 - [[soul-incarnate]] — A signature the Fate Spinner can expose; Sir Quackers carries it without understanding what it means.
 - [[soul-incarnates-watch]] — Named Sentinel-linked pressure or technique from the Sentinels dump.
 - [[south-harbour]] — East harbour on Calder's Tooth for repairs and fishing, lightly policed.
 - [[south-harbour-impound]] — Crown seizure yard on the east pier of South Harbour.
-- [[Sparhold]] — The next stop on the raiding-fleet trail; details remain open. The settlement is a place to ask where the taken went while every answer can make someone richer, safer, or more exposed.
+- [[sparhold]] — The next stop on the raiding-fleet trail; details remain open. The settlement is a place to ask where the taken went while every answer can make someone richer, safer, or more exposed.
 - [[sparhold-isle]] — A half-mile cut-over islet at the southern lip of the Northern Midchain strip; feels timber-poor, fortified, and close to the Teeth.
 - [[spell-scroll-counterspell]] — A single-use scroll holding Counterspell, letting its holder cut off a nearby spell before it takes hold.
 - [[spell-scroll-disguise-self]] — A common spell scroll holding Disguise Self, cheap cover for a face that's become too well known.
@@ -541,19 +541,19 @@
 - [[suke|Suke]] — Newest Moucheron member of the Five Blades, still adjusting from Murrat to Kalowe contract work.
 - [[sula-marn]] — Elderly elven Reeve of Penance Bar trying to hold the peace.
 - [[sump-cradle]] — Genuinely curative hot mud; always with one small; strange; permanent side effect.
-- [[Sunkline]] — Tessarine-funded salvage company commercializing Mid-Works while hiding a forged mid-shelf trial certificate.
+- [[sunkline]] — Tessarine-funded salvage company commercializing Mid-Works while hiding a forged mid-shelf trial certificate.
 - [[sunkline-company]] — Tessarine-backed pressure-rig venture racing Voyvode Works to engineer deep-shelf diving tech at Fathomrush, on a design that keeps failing.
 - [[suryo-wibowo]] — Proprietor of Wibowo's Provisions on Kalowe's first island, known for reading orders quickly and speaking with precise directness.
 - [[Syranita]] — Syranita is a deity of the [[aarakocra|Aarakocra]] sky-pantheon, holding secondary/marginal-observance status.
 - [[Tabaxi]] — Species text for Tabaxi, a Medium feline homebrew humanoid people with a small, old presence in the Shattered Sea centered on Keth-Naar.
 - [[tabaxi-culture]] — Origin and presence of the Tabaxi people across the Shattered Sea.
-- [[Tail]] — The eastern pinch where both arcs become fewer, taller islands and cold trench-coloured water; feels like land narrowing into a warning.
+- [[tail]] — The eastern pinch where both arcs become fewer, taller islands and cold trench-coloured water; feels like land narrowing into a warning.
 - [[taken-whole]] — Dockside talk at Kalowe claims a red ship out past the Maw takes ships whole and kills everyone aboard, leaving the cargo dumped over the side instead of stolen.
 - [[taking-on-aruhe]] — Taking a living plant, animal, or claim on Aruhe draws surrounding life into hostility.
 - [[talon-skarn]] — Countless peregrine apprentice and CR 13 flying skirmisher; his stoop-and-chain combat kit supports the Rule of Two rivalry with Talon Vantyrus.
-- [[talon-vantyrus]] — CR 17 Countless master, originally named [[Osset]] and once a senior master of the High Eyrie; he breaks decisions rather than takes hits, and [[talon-skarn]] is trying to kill him under the Rule of Two.
+- [[talon-vantyrus]] — CR 17 Countless master, originally named [[osset]] and once a senior master of the High Eyrie; he breaks decisions rather than takes hits, and [[talon-skarn]] is trying to kill him under the Rule of Two.
 - [[tam-slim-nail]] — A deadpan Rattkin stockkeeper at Il Preludio who narrates the room like stage direction and never once sings.
-- [[Tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site.
+- [[tangle]] — Elder teaching and proposed anchor referenced by the Rattkin Runs; Aruhe is a survey site.
 - [[tattletale-goggles]] — Goggles that grant darkvision, but make everyone nearby, friend or foe, feel an inexplicable certainty that someone is at the wearer's location.
 - [[taufa-fifita]] — Lizardfolk patriarch of the Fifita chandlery family on Kalowe. Unhurried and forgettable by design, he knows every ship that's bought rope from him.
 - [[the-teeth]] — Exposed reef teeth and shingle debris at Aruhe's western approach.
@@ -562,7 +562,7 @@
 - [[tessarine-courier-silkvane]] — Fast Tessarine Concordat dispatch sloop for courier service, armed with two cannon.
 - [[tessarine-factor-amberreach]] — A Tier 3 Tessarine cargo galleon serving the commercial route from Calveno westward.
 - [[tessarine-trade-house]] — Named Tessarine face, craft, or house from the Concordat dump.
-- [[Thassos]] — A Minotaur regular at the Tallow Row card den who lost his passage-sense to drink and reads a card shoe instead.
+- [[thassos]] — A Minotaur regular at the Tallow Row card den who lost his passage-sense to drink and reads a card shoe instead.
 - [[the-foundling-shoals]] — A tide-flat reef north of Sparhold where unharmed infants keep turning up unexplained, and the fisherfolk who find them raise them as a sacred trust.
 - [[the-long-wager]] — An island west of Ghal Idrissa given over to a decades-running contest between two rival crews, refereed by a neutral judge who's outlived both original captains.
 - [[the-tithe-of-the-bitch-queen]] — A cursed hoard of Umberlee's storm-claimed treasures scattered across the Sunken Crown seafloor.
@@ -619,7 +619,7 @@
 - [[the-velvet-noose]] — A four-deck black-lacquer man-of-war with ninety closed gunports and a laughing magistrate at the prow.
 - [[the-weeping-stair]] — A submerged staircase rumored to lead to a drowned city. Nobody has confirmed reaching the bottom.
 - [[thessit]] — A wreck-collecting island where whole, undamaged ships wash ashore months after they reportedly sank somewhere else entirely.
-- [[Thistlewick]] — Brambles that produce a mild narcotic effect on contact.
+- [[thistlewick]] — Brambles that produce a mild narcotic effect on contact.
 - [[thoon-adar]] — A ring of standing stones that reorient themselves overnight; slow enough nobody's caught them moving.
 - [[thornback]] — CR 7 blight-corrupted thorned bruiser that roots the Quiet floor and drives off other beasts.
 - [[Thunk]] — Enormous orc master gunner of the Uncertainty, a dockyard metallurgist who counts as two crew at the guns and cannot explain how he reads powder.
@@ -634,23 +634,23 @@
 - [[torvalline|Torvalline]] — Shipbreaker's yard stripping wrecks for parts; half the Midchain's "used" rigging traces back here.
 - [[twineye|Twineye]] — Twin islets joined by an arch; feuded over for generations by one estranged family.
 - [[two-grave-orders]] — The spent Authority Seals preserve a partial order trail from inland reporting to replacement expeditions and finally a command to find and destroy two graves.
-- [[Tyr]] — Deity whose scales are cut into the altar stone at Blackrule.
+- [[tyr]] — Deity whose scales are cut into the altar stone at Blackrule.
 - [[Umberlee]] — The sea as it is: tribute theology, Pearl frustration at the Maw boundary, and the Dead Lady as collection hull.
 - [[umberlee-branca]] — Named from the Umberlee dump.
-- [[Uncertainty]] — Prize cutter taken from the Crown and renamed; her legacy chassis is Gargantuan with AC 11 and 130 hit points.
+- [[uncertainty]] — Prize cutter taken from the Crown and renamed; her legacy chassis is Gargantuan with AC 11 and 130 hit points.
 - [[uncertainty-deck-layouts]] — Zone-by-zone layout of the Uncertainty's three decks, with her four facility berths and what a fight can pick up in every space aboard.
 - [[uncertainty-manifest]] — Everything aboard the Uncertainty space by space: ordnance and powder, stores, medical, charts, the expanded cargo hold, and the cargo still worth selling.
 - [[uncertainty-refit-tour]] — The Uncertainty sits off La Vasca's cradle with tacky blue-black paint and an unnamed figurehead. The crew filled her four berths. Nobody has claimed the spaces yet.
 - [[unclaimed-delicacy-tin]] — A sealed tin of spiced delicacy from a distant port, prepaid and never claimed.
 - [[unsaid-macaw]] — Macaw that echoes a listener's surface thought in their own voice and can briefly compel one truthful sentence.
-- [[Ussa]] — A green-skinned scout in Sparhold colours, bare webbed feet, chalk-dusted palms, eyes always on the tree line.
+- [[ussa]] — A green-skinned scout in Sparhold colours, bare webbed feet, chalk-dusted palms, eyes always on the tree line.
 - [[ussamet|Ussamet]] — Half-sunken ruins that surface only at the lowest tides; on a schedule only the sea seems to keep.
 - [[vaelspire]] — A solitary basalt spire said to answer one true question, once, to whoever reaches the summit. Nobody who's asked will say what.
-- [[Vaka]] — Eight years old. Founded by [[felix-aho|Félix Aho]] after his defection from [[karath|Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, p
+- [[vaka]] — Eight years old. Founded by [[felix-aho|Félix Aho]] after his defection from [[karath|Karath]] — green caste, the lowest freeborn. Roughly a dozen members: mostly green- and blue-caste defectors, p
 - [[Valkur]] — Named from the Umberlee dump.
 - [[vantrys-choice]] — Identical harbors side by side; one universally and inexplicably avoided.
 - [[varn]] — Varn runs the inner lock.
-- [[Varet]] — Moucheron contract speaker for the Five Blades mercenary company in Kalowe. Quotes rate and feeding clause before ink touches paper.
+- [[varet]] — Moucheron contract speaker for the Five Blades mercenary company in Kalowe. Quotes rate and feeding clause before ink touches paper.
 - [[vashka-doru]] — Tavern keeper and watch-post sentinel in Sparhold, keeping decades of harbor records and a secret about one of Delmar's captains.
 - [[vashu-the-weeping-veil]] — Named Grung face called Vashu the Weeping Veil, with color and current role unestablished here.
 - [[vashu-the-weeping-veil-winded]] — Vashu's Session 06 Scene 4 winded combat state — sprint-depleted Still-Water reserves drop her to AC 18, 80 HP, CR 5, and cost her legendary actions.
@@ -667,9 +667,9 @@
 - [[verrows-cradle]] — A floating orphanage quietly funded by a retired pirate captain's old treasure.
 - [[Vestra]] — Family brig built and captained by Vincenzo Black-Jaw; something massive rose and took it.
 - [[vetau]] — An ungoverned geothermal atoll whose lagoon vent boils the only safe anchorage shut for an hour at noon, keeping any permanent settlement off it.
-- [[Veth]] — Largest Verdant Teeth island, with a western beach trade strip and blue intermediaries but no pier.
+- [[veth]] — Largest Verdant Teeth island, with a western beach trade strip and blue intermediaries but no pier.
 - [[veth-west-beach]] — Specific sanctioned Veth trade site where blue intermediaries meet outsiders without opening the interior.
-- [[Vethka]] — Name attached to the narrow Grung war proas that carry raiding power through reefs and channels.
+- [[vethka]] — Name attached to the narrow Grung war proas that carry raiding power through reefs and channels.
 - [[vial-of-predator-musk]] — A wax-sealed vial of rendered predator musk sold at The Live Hold, foul enough that lesser beasts refuse the ground it touches for an hour.
 - [[vial-of-uncertain-healing]] — A potion that always heals, and always does one other random thing too.
 - [[vincenzo-black-jaw]] — Builder and captain of the family brig Vestra.
@@ -679,14 +679,14 @@
 - [[Voyvode]] — Crown-backed Fathomrush salvage rival that runs open honest pressure-rig trials against Sunkline's fraud.
 - [[voyvode-works]] — Dravosi-backed pressure-rig venture at Fathomrush, testing every iteration on its own chief engineer before risking a crew.
 - [[vresh|Vresh]] — The remains of an ancient elemental forge; still faintly active; pulling loose metal toward it.
-- [[Vrtek]] — Small Rattkin dockhand with too many pockets, unwittingly carrying Detto Kalash's buried cache note through Port Tidefall.
+- [[vrtek]] — Small Rattkin dockhand with too many pockets, unwittingly carrying Detto Kalash's buried cache note through Port Tidefall.
 - [[wakerock-salts]] — A tin of grey wake-salts out of ship's stores, three doses to a lid, held under the nose to break a charm or a panic and put a sailor back on watch.
 - [[wardens-collar]] — A brass-studded collar cased on The Live Hold's back wall, already tagged with a buyer's name, that binds one beast to its attuned wearer's word.
 - [[Warren]] — Deepest Passage anchor, where the network grew around 1240 DR.
 - [[Watches-the-Deck]] — A Lizardfolk regular at the Tallow Row card den, built long and rangy, who watches the deck instead of the room.
 - [[watchmans-toll-bead]] — A brass bead worn smooth off a watch bell's pull-rope, which rings a half-beat early once a day and puts its bearer first into a fight.
 - [[waterlogged-captains-log]] — A warped, barely legible captain's log recovered from a driftbound strongbox in the Eastern Midchain reef shallows.
-- [[Waveservants]] — Umberlee's harbour clergy who collect tribute at the same rate from every flag and keep the ledger neutral.
+- [[waveservants]] — Umberlee's harbour clergy who collect tribute at the same rate from every flag and keep the ledger neutral.
 - [[Welak]] — CR 5 whip shark surface ambusher that follows salvage-pump vibration.
 - [[Wessa]] — Cook aboard the Saltwright who runs the galley with methodical skill.
 - [[western-landing|Western Landing]] — Aruhe's known sea approach: a reef gap, a short shingle beach, and a retreat that depends on tide and surf.
@@ -711,7 +711,7 @@
 - [[young-snakewood]] — CR 4 terrace clonal vine ambusher with one short-range bundle grab.
 - [[ysolde-cass]] — Mirela Cass's sister, mends nets on Penance Bar's tideline.
 - [[ysolde-sallow]] — The exasperated tavern-keeper of The Long Toast on Otel Karn, grand-niece to the island's oldest duelist, who has run out of patience for the horror everyone else refuses to name aloud.
-- [[Yssenmoor]] — A place over a hidden ley line that reacts to [[fate-spinner]]; feels like an unresolved point of contact between old power and a watchful relic.
+- [[yssenmoor]] — A place over a hidden ley line that reacts to [[fate-spinner]]; feels like an unresolved point of contact between old power and a watchful relic.
 - [[yssenmoors-ancient-challenge]] — A fog-bound demigod challenges every visitor to his marsh and none have answered in years. The ley line beneath his island pulls on an artifact the party carries.
 - [[Zort]] — Armless goblin animal dealer in Le Paludi who paid for his prosthetic with a Midchain reptile name and works his whole pit with his feet.
 - [[zorts-toe-claws]] — Iron-capped handling sandals cut to Zort's own pattern, giving a wearer footing enough to shrug off a grapple or a shove.
@@ -750,18 +750,18 @@
 
 ## Journal
 
-- [[journal/sessions/shattered-sea/00/Session-00-Prologue]] — Player primer: the sea, the powers, the cost of passage, and the four strangers who wash onto the Saltwright.
-- [[journal/sessions/shattered-sea/01/Session-01-Recap]] — The crew chose the Saltwright hold and took Geoffrey Draves.
+- [[journal/sessions/shattered-sea/00/session-00-prologue]] — Player primer: the sea, the powers, the cost of passage, and the four strangers who wash onto the Saltwright.
+- [[journal/sessions/shattered-sea/01/session-01-recap]] — The crew chose the Saltwright hold and took Geoffrey Draves.
 - [[journal/sessions/shattered-sea/02/Session-02-Recap]] — They took the HCS Surety and took three hull strikes from below.
-- [[journal/sessions/shattered-sea/03/Session-03-Recap]] — They killed the whip-shark, renamed Uncertainty, and made landfall at Calveno.
-- [[journal/sessions/shattered-sea/04/Session-04-Recap]] — Delmar confessed the Pearl theft; Umberlee named her price.
-- [[journal/sessions/shattered-sea/05/Session-05-Recap]] — Calveno's artificer helped with the magazine raid; Room 8 was a live ritual.
-- [[journal/sessions/shattered-sea/06/Session-06-Recap]] — Solange spoke Agni, dropped the ceiling, and stood remade at twelve feet.
-- [[journal/sessions/shattered-sea/07/Session-07-Recap]] — Otar the Foul died; Fieschi signed the crew as Calveno's Defenders.
-- [[journal/sessions/shattered-sea/08/Session-08-Recap]] — Nona's list passed 314 fighting-age men; Osset was named twice.
+- [[journal/sessions/shattered-sea/03/session-03-recap]] — They killed the whip-shark, renamed Uncertainty, and made landfall at Calveno.
+- [[journal/sessions/shattered-sea/04/session-04-recap]] — Delmar confessed the Pearl theft; Umberlee named her price.
+- [[journal/sessions/shattered-sea/05/session-05-recap]] — Calveno's artificer helped with the magazine raid; Room 8 was a live ritual.
+- [[journal/sessions/shattered-sea/06/session-06-recap]] — Solange spoke Agni, dropped the ceiling, and stood remade at twelve feet.
+- [[journal/sessions/shattered-sea/07/session-07-recap]] — Otar the Foul died; Fieschi signed the crew as Calveno's Defenders.
+- [[journal/sessions/shattered-sea/08/session-08-recap]] — Nona's list passed 314 fighting-age men; Osset was named twice.
 - [[journal/sessions/shattered-sea/09/Session-09-Recap]] — Uncertainty left for Sparhold; HCS Ordinance boarded under merchant cover.
 - [[journal/sessions/shattered-sea/10/Session-10-Recap]] — Grigori warned of a Fate Spinner hunt; Aruhe has two survivors aboard.
-- [[Session-11-00-Birds-of-a-Feather|Session 11 - Birds of a Feather]] — Accepted session plan linking the ten-beat inland hunt, survivor camp, borrowed voice, and Fate Spinner theft.
+- [[session-11-00-birds-of-a-feather|Session 11 - Birds of a Feather]] — Accepted session plan linking the ten-beat inland hunt, survivor camp, borrowed voice, and Fate Spinner theft.
 - [[Session-11-01-Angry-Birds|Session 11 - Angry Birds]] — Opening aerial escape from an adult Bloodhawk hunting the Crown Squid.
 - [[Session-11-02-Landing-Sign|Session 11 - Landing sign and smoke]] — Development beat following fresh survivor tracks and smoke upriver toward Torn Crossing.
 - [[Session-11-03-Wolfrabbits|Session 11 - Torn Crossing hunt]] — Ecological hunt where wolfrabbits and a Spiguar punish isolated movement.
@@ -772,9 +772,9 @@
 - [[Session-11-08-Night-Watch|Session 11 - Night watch]] — Preparation beat where actual precautions determine the watch's opening advantage.
 - [[Session-11-09-Theft-on-the-Watch|Session 11 - Theft on the watch]] — Climax in which Talon Skarn makes a committed attempt to steal the Fate Spinner.
 - [[Session-11-10-Aftermath|Session 11 - Aftermath]] — Resolution covering the theft outcome, hawk pursuit, survivors, and the garden invitation.
-- [[Session-11-00-Random-Tables|Session 11 - Random Tables]] — Current-hazard table for Aruhe river and grassland travel, with dedicated scene exclusions.
+- [[session-11-00-random-tables|Session 11 - Random Tables]] — Current-hazard table for Aruhe river and grassland travel, with dedicated scene exclusions.
 - [[journal/sessions/shattered-sea/11/Session-11-Recap]] — Inland flight, Matteo Scola at the otter camp, Skarn still in Crissdalynn's face.
-- [[journal/sessions/shattered-sea/11/Session-11-Transcript]] — Distilled evidence companion for Session 11 play.
+- [[journal/sessions/shattered-sea/11/session-11-transcript]] — Distilled evidence companion for Session 11 play.
 
 [Artifact storage: ~/.omp/agent/sessions/-agentic-co-dm/2026-09-16T21-35-49-408Z_01a0ac25-bca0-75b5-8c19-55d8b9643423/9.read.log (108.6KB). Use artifact://9:N-M to page, artifact://9:raw:N-M for verbatim chunks, and the artifact file path for search/copy workflows.]
 

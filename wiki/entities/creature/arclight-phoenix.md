@@ -22,7 +22,7 @@ role: storm hatch
 relationships:
   - target: "[[Ashwalls]]"
     type: related_to
-  - target: "[[Galewall]]"
+  - target: "[[galewall]]"
     type: related_to
 cr: ""
 ---
@@ -37,7 +37,7 @@ cr: ""
 
 **Life.**
 
-When an [[arclight-phoenix]] dies, its egg remains in the [[Ashwalls]] volcanoes. Lightning opens the egg. The bird emerges oriented toward the storm edge and flies west into the [[Galewall]]. It does not return until it dies again in the weather.
+When an [[arclight-phoenix]] dies, its egg remains in the [[Ashwalls]] volcanoes. Lightning opens the egg. The bird emerges oriented toward the storm edge and flies west into the [[galewall]]. It does not return until it dies again in the weather.
 
 ## Tactics
 

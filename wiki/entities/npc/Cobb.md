@@ -52,7 +52,7 @@ Read while recording: [[voice-profile script]]
 | **Affiliation** | [[nona-black-jaw]]'s [[Warren]]; runner who reports up the chain |
 | **Location**    | [[La Vasca]], [[le-paludi]], [[calven-and-calveno]] |
 
-*Young Rattkin dockworker at La Vasca who greets the crew of the [[Uncertainty]] and carries messages from Nona Black-Jaw to Perrin.*
+*Young Rattkin dockworker at La Vasca who greets the crew of the [[uncertainty]] and carries messages from Nona Black-Jaw to Perrin.*
 
 **Wants:** hand off the ship with the paint properly hardened in three days, and not before.
 
@@ -104,7 +104,7 @@ No combat stats in source.
 
 ## Session Log
 
-- **Session 08** (`vault/episodes/008/`): [[nona-black-jaw|Nona]] reported that Cobb had the *[[Uncertainty]]* drying at [[La Vasca]] and ready in 12 hours. He wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: Transcript.
+- **Session 08** (`vault/episodes/008/`): [[nona-black-jaw|Nona]] reported that Cobb had the *[[uncertainty]]* drying at [[La Vasca]] and ready in 12 hours. He wanted to add more guns first, but Nona told him to stop his own side projects and finish it. Confirmed: Transcript.
 - **Session 06** (`vault/episodes/006/`): gave the crew of the Uncertainty a tour aboard the ship. [[Thunk]]'s captain's-cabin-to-break-room conversion is underway. Cobb mentioned he'd picked up a proper armchair for it "next to nothing." Negotiated a future discount with the crew.
 
 - **Session 03**: first appearance. Greets the crew of the Uncertainty at the water's edge as their ship reaches [[La Vasca]]. `vault/episodes/003/transcript.md:112`.

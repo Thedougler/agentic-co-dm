@@ -16,13 +16,13 @@ Antheri residential tier from 200–500 feet below the Maw shelf; feels sealed, 
 ## Canon
 - The Mid-Works are the second Antheri tier, below [[Shelfworks]] and above [[Deep Works]].
 - Soul-pledge language is structural: chambers and channels imply minds could be bound into artificial frames.
-- Both [[Sunkline]] and [[Voyvode]] are killing crews to reach the Mid-Works; [[Fathomrush]] is their staging town.
+- Both [[sunkline]] and [[Voyvode]] are killing crews to reach the Mid-Works; [[fathomrush]] is their staging town.
 - Pumps are required. Sealed chambers and pressure-rig failures make every descent a company test and a public risk.
 
 ## Connections
 - → [[Shelfworks]] (salvage and descent line)
 - → [[Deep Works]] (past 500 feet; elemental exposure)
-- → [[Fathomrush]] (company staging)
+- → [[fathomrush]] (company staging)
 - → [[Antheri]] · [[Drowned Maw]]
 
 ## Secrets (DM)

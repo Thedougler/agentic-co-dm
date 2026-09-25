@@ -56,7 +56,7 @@ The established feature is a monastic community that communicates entirely by ha
 - **East:** No named eastern neighbor or route is established.
 - **South:** No named southern neighbor or route is established.
 - **West:** No named western neighbor or route is established.
-- **Local connection:** The eastern Midchain also names [[Ashglass]], [[Corvenna]], [[Gullmoth Reach]], and [[Vresh]], but no route from Rowan's Hush to those sites is fixed.
+- **Local connection:** The eastern Midchain also names [[Ashglass]], [[corvenna]], [[Gullmoth Reach]], and [[vresh]], but no route from Rowan's Hush to those sites is fixed.
 
 ## Why
 

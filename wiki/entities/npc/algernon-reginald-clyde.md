@@ -16,6 +16,10 @@ updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: "Naturalist and author"
+location: "[[verdant-scatter|the Scatter]]"
+faction: none
 visibility: dm
 relationships:
   - target: "[[Ridgeback]]"
@@ -25,44 +29,84 @@ relationships:
 ---
 # Algernon Reginald Clyde
 
-# Algernon Reginald Clyde
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Algernon Reginald Clyde Banner]]
+| **Role**   | Naturalist, author, and unwanted book-tour speaker |
+| ---------- | --------------------------------------------------- |
+| **Nature** | A rigorous gnome naturalist whose contempt for oceanic creatures makes his writing memorable. |
+| **Home**   | The road and docks of [[verdant-scatter|the Scatter]] |
+| **Wants**  | To finish field outreach for Volume II of *Clyde's Bestiary of Oceanic Creatures* and return to useful work. |
+| **Leverage** | His Bestiary is the standard maritime creature reference, and [[perrin-black-jaw]] carries a copy. |
+| **Limit**  | He hates the tour, refuses to call it a tour, and cannot stop correcting inaccurate creature claims. |
 
-Gnome naturalist and author of Clyde's Bestiary of Oceanic Creatures, currently on an unwanted book tour through [[verdant-scatter|the Scatter]] promoting Volume II.
+> **DM thesis:** Algernon is a precise, contemptuous field naturalist whose useful expertise is trapped inside a publicity tour he insists does not exist.
+```
 
-**Roleplay Concept**
+```col-md
+flexGrow=1
+===
+> [!narration] Algernon Reginald Clyde
+> At four feet nothing in good boots, the gnome keeps his jacket brushed and his collar straight despite the maritime weather. Silver hair lies short and precisely parted above a sun-burned face he resents. A leather satchel hangs at his side, heavy with notebooks, a portable inkwell, and a quill wrapped in oilcloth; ink stains mark his right-hand knuckles.
+```
+````
 
-Approach him as Werner Herzog interpreting David Attenborough. He is rigorous, precise, and accurate. His contempt is the fuel, not the product.
+## Running Algernon Reginald Clyde
 
-Algernon Reginald Clyde is a gnome naturalist in his late sixties. He wrote Clyde's Bestiary of Oceanic Creatures, a multi-volume work on oceanic creatures. It's now the standard reference text for maritime creature identification across the Scatter. His writing is precise and accurate. He fills it with contempt for his subject matter. Readers agree this makes the work better. [[perrin-black-jaw]] carries a copy, among others.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-He is touring to promote Volume II, stopping at [[calders-tooth-and-port-tidefall]], [[Kalowe]], and [[calven-and-calveno]]. He didn't want to tour, but his publisher argued that a gnome who hates every creature he documented is a commercial asset, and Clyde had no good counter-argument. He insists he is not on tour and will correct anyone who says otherwise. He calls what he does field outreach to an at-risk population.
+Find Algernon at a dock arguing about someone's pet. He is promoting Volume II while insisting he is not on tour. Approach him as Werner Herzog interpreting David Attenborough: rigorous, precise, and accurate, with contempt as fuel rather than product.
 
-**Appearance & Manner**
+> *Algernon*: “I am conducting field outreach to an at-risk population. A tour implies leisure.”
+```
 
-At four feet nothing in good boots, he stays well-groomed. He keeps his jacket brushed and his collar straight. These habits started decades ago when he decided not to look like he belongs in the field. His face shows the weathering of maritime work: sun-burned nose and cheeks, a weathering he resents. He has silver hair, short and precisely parted. He carries a leather satchel with notebooks, a portable inkwell, and a quill wrapped in oilcloth. Ink stains mark his right hand knuckles. A small crescent scar runs along his left thumb. When asked about it, he will not answer.
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-**The Bestiary**
+Algernon stays exact and argumentative while discussing creature identification, field notes, or the publisher's language. His contempt sharpens when someone sentimentalizes an animal, but he becomes genuinely unsettled when discussion reaches the [[Leviathan]] entry: his contempt failed there, and the doubt troubles him more than the creature.
 
-A publisher hired him in his early thirties, and he spent three months on the coast taking notes at standard rates. He finished the work, but the publisher wanted more volumes. By the second volume, he knew he was building a record, not just a reference, where his writing treats evolutionary features as flaws and the ocean's cold indifference to its creatures is the only good thing about them. Sailors read his work, and both Volume I and Volume II sell well. He hates frogs most.
+He hates frogs most. He will still provide practical advice when lives are at stake, then resent himself for having done so.
+```
+````
+
+## Voice
+
+Algernon uses precise naturalist terminology, corrects names and measurements, and treats contempt as an honest scientific response. He speaks like an expert forced to address a public that keeps misunderstanding his work.
+
+**The ask:** *“Give me the observed behavior, the location, and the reliable witnesses. Then I can be useful.”*
+
+**The refusal:** *“No. That is not what the evidence says.”*
+
+**Under pressure:** *“The animal is not sentimental. Your account is.”*
+
+**The Bestiary.**
+
+A publisher hired him in his early thirties, and he spent three months on the coast taking notes at standard rates. He finished the work, but the publisher wanted more volumes. By the second volume, he knew he was building a record, not just a reference, where his writing treats evolutionary features as flaws and the ocean's cold indifference to its creatures is the only good thing about them. Sailors read his work, and both Volume I and Volume II sell well.
 
 **What he's documented:**
 
-- [[Sawek]]: measured a dead specimen at [[Kalowe]] from a blue hole. Professional work, personal misery.
-- [[Whip Shark]]: from hull damage and survivor stories. He's never seen one alive and prefers it that way.
-- [[Leviathan]]: in chapter 13 of Volume II. This shook him. His contempt failed. Real doubt took over. The doubt troubles him more than the creature.
+- [[Sawek]]: measured a dead specimen at [[kalowe]] from a blue hole. Professional work, personal misery.
+- [[Whip Shark]]: from hull damage and survivor stories. He has never seen one alive and prefers it that way.
+- [[Leviathan]]: in chapter 13 of Volume II. This shook him. His contempt failed. Real doubt took over.
 - Ridgeback (Chapter 9, Volume II): from survivor accounts. His only entry with practical advice, which he regrets.
 - Krakling (Chapter 10, Volume II): from dock reports and interviews. Two days of work. The worst part of the project.
 
-**On tour**
+**On tour.**
 
-Seventeen copies sold in three days at Port Tidefall. At each port, he argues the same points: the Scatter loves its sea creatures and he hates them, people love the names they gave them and he hates those too. He finds this work baffling and tiring. Find him at the docks arguing about someone's pet.
+Seventeen copies sold in three days at Port Tidefall. At each port, he argues the same points: the Scatter loves its sea creatures and he hates them, and people love the names they gave them while he hates those too. He finds the work baffling and tiring. His stops include [[calders-tooth-and-port-tidefall]], [[kalowe]], and [[calven-and-calveno]].
 
 ## Connections
 
-- [[perrin-black-jaw]] carries his Bestiary
-- [[Sawek]] and [[Leviathan]] are creatures he documented
-- [[Whip Shark]], Ridgeback, Krakling are also in his Bestiary
-- His Bestiary is a multi-volume work
-- [[calders-tooth-and-port-tidefall]], [[Kalowe]], [[calven-and-calveno]] are tour stops
+- [[perrin-black-jaw]] carries his Bestiary.
+- [[Sawek]] and [[Leviathan]] are creatures he documented.
+- [[Whip Shark]], Ridgeback, and Krakling are also in his Bestiary.
+- [[calders-tooth-and-port-tidefall]], [[kalowe]], and [[calven-and-calveno]] are tour stops.

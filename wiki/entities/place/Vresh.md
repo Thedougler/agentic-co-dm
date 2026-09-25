@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Vresh]] is the remnant of an ancient elemental forge in the eastern Midchain. Its faint residual activity pulls loose metal toward it. The eastern waters are shallow, widely spaced, and poorly charted; [[Eastern Midchain]] is the recorded regional connection, but no route distance or local neighbor is established. Skipping Vresh avoids the metal-drawing field and leaves the forge's condition unexamined.
+[[vresh]] is the remnant of an ancient elemental forge in the eastern Midchain. Its faint residual activity pulls loose metal toward it. The eastern waters are shallow, widely spaced, and poorly charted; [[Eastern Midchain]] is the recorded regional connection, but no route distance or local neighbor is established. Skipping Vresh avoids the metal-drawing field and leaves the forge's condition unexamined.
 
 ---
 

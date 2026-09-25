@@ -116,7 +116,7 @@ flexGrow=1
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | [[shepherd-grigori]] | Korabl | To spread the survival trick and claim its authorship. | He does not know the technique predates him. |
-| [[Otho]] | Source of the old teaching | No known current cult role. | Unaware that centuries have passed. |
+| [[otho]] | Source of the old teaching | No known current cult role. | Unaware that centuries have passed. |
 
 ### Chain of Action
 **Who decides:** [[shepherd-grigori]] acts as Korabl.
@@ -167,10 +167,10 @@ No formal roster or hierarchy exists beyond Grigori. There is no second-in-comma
 
 ## History
 
-- **The old teaching on Otel Karn.** [[Otho]] is the archfey source of the teaching that became the Flock's spiritual foundation.
+- **The old teaching on Otel Karn.** [[otho]] is the archfey source of the teaching that became the Flock's spiritual foundation.
 
 ## Hidden Agenda
 
 **Concealed motive:** When Grigori heals someone, he binds his phylactery into that person's life. The patient joins the Flock unaware, and their survival sustains him. Confirmed threads include a Tessarine heir in [[calven-and-calveno]] and a Dravosi merchant-lord's daughter.
 
-**Concealed allegiance:** Grigori believes he authored the blood-anchor technique, but [[Otho]]'s old teaching on [[otel-karn]] predates him. The Turning and healings are genuinely warm; the horror is that Grigori has built an unkillable afterlife from the gratitude of desperate families.
+**Concealed allegiance:** Grigori believes he authored the blood-anchor technique, but [[otho]]'s old teaching on [[otel-karn]] predates him. The Turning and healings are genuinely warm; the horror is that Grigori has built an unkillable afterlife from the gratitude of desperate families.

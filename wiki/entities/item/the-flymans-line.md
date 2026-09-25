@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[fioravante-selmerin]]"
 summary: "A thin black cord whose spliced loop flies to any anchor within forty feet and hauls one person up to it in six seconds."
 provenance:
   extracted: 0.85
@@ -46,7 +51,6 @@ Sold for the flies over a stage, where a performer has to be somewhere high befo
 
 Uncommon tier holds. Magic Item Rarity prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the line's 140 gp sits at the low end of that band, alongside [[Kat's]] Wand of Secrets at 130 gp. A mundane grappling hook and 50 feet of rope costs 3 gp and takes minutes of climbing; the line does the ascent in one action and never asks for a check.
 
-## Mechanics
 
 > [!mechanic]
 > **The Flyman's Line [HB].** Throwing the loop takes an action. Name a solid anchor within 40 feet that a rope could be tied around, in any direction, and the loop takes hold of it. The cord then hauls whoever holds the other end to a point within 5 feet of the anchor over the remaining 6 seconds of that turn. The trip provokes no opportunity attacks and needs no check.

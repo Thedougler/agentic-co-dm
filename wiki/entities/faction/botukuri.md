@@ -20,11 +20,11 @@ kind: clan
 status: active
 scope: local
 region: Sorn
-base: "[[Sorn]]"
+base: "[[sorn]]"
 relationships:
   - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Sorn]]"
+  - target: "[[sorn]]"
     type: related_to
   - target: "[[jean-claude-tabarnack]]"
     type: related_to
@@ -44,7 +44,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | Sorn farming clan. |
 | **Scope** | Local and seasonal. |
-| **Base** | Seasonal flood-pulse lanes in [[Sorn]]. |
+| **Base** | Seasonal flood-pulse lanes in [[sorn]]. |
 | **Leader** | No complete leader list is established. |
 | **Public purpose** | Maintain seasonal flood-pulse agriculture. |
 | **Signature method** | Seasonal occupation of flood-pulse lanes rather than permanent settlement. |
@@ -102,7 +102,7 @@ flexGrow=1
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| Seasonal flood-pulse lanes | Access / Information | [[Sorn]] | Seasonal farming and movement through changing terrain | Working |
+| Seasonal flood-pulse lanes | Access / Information | [[sorn]] | Seasonal farming and movement through changing terrain | Working |
 
 ---
 
@@ -130,7 +130,7 @@ The source does not establish who decides, who interprets orders, or who carries
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Sorn]] | Temporary | Seasonal flood-pulse lanes and recut field edges | Flood pulses and forest encroachment |
+| [[sorn]] | Temporary | Seasonal flood-pulse lanes and recut field edges | Flood pulses and forest encroachment |
 
 ---
 
@@ -139,7 +139,7 @@ The source does not establish who decides, who interprets orders, or who carries
 | Faction / person | Stance | What Botukuri wants from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
 | [[grung-clans]] | Related | The source does not specify a separate demand. | Shared grung-clan context |
-| [[Sorn]] | Located in | Seasonal fields and usable routes. | Changing flood-pulse terrain |
+| [[sorn]] | Located in | Seasonal fields and usable routes. | Changing flood-pulse terrain |
 | [[jean-claude-tabarnack]] | Related | The source does not specify a separate demand. | No established leverage |
 
 ---

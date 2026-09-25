@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[sparhold]]"
+kind: magic
+rarity: uncommon
+attunement: false
+owner: "[[vashka-doru]]"
 summary: "A watch-shift name slate that calls its owner's own name back at them, hauling a charmed or addled mind out of whatever has hold of it once a day."
 provenance:
   extracted: 0.85
@@ -29,9 +34,8 @@ tier: supporting
 > Write your own name across it and the chalk goes down warm, and the slate sits heavier in your hand than a slate that size should.
 
 
-*Wondrous Item, Uncommon.* Carried by [[Sparhold]]'s watch-shift crews, who chalk their names on at the top of a shift and wipe them off at the bell. The slate answers to whichever name is currently written on it.
+*Wondrous Item, Uncommon.* Carried by [[sparhold]]'s watch-shift crews, who chalk their names on at the top of a shift and wipe them off at the bell. The slate answers to whichever name is currently written on it.
 
-## Mechanics
 
 **Name on the slate [HB].** Writing a creature's name on the slate takes one minute and wipes any name already there. The slate holds one name at a time, and functions only for the creature named on it, and only while that creature carries it.
 

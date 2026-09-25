@@ -13,6 +13,11 @@ type: lore
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+kind: custom
+truth: established
+scope: "The three-night Palio performance challenge, its roles, rivals, outcomes, and recruits."
+region: "[[calven-and-calveno]]"
+era: current
 summary: "Table mechanics for running Il Palio: roles, skill checks, outcomes, and recruitable allies."
 provenance:
   extracted: 0.85
@@ -22,11 +27,15 @@ tier: supporting
 ---
 # Il Palio delle Voci Contese
 
-## The Fact
+## At a Glance
 
-Running the Palio means handling performer roles and support roles. It requires running a three-night challenge. It tracks outcome tiers for the performers. It includes recruiting some allies. Child page of [[il-palio-delle-voci-contese]].
+**Core truth.** [[il-palio-delle-voci-contese|Il Palio delle Voci Contese]] is a three-night performance challenge with performer, stage crew, and crowd-work roles.
 
-## Party Roles
+**Why it matters.** The Palio turns performance into coordinated choices, rival pressure, and public consequences in Calveno.
+
+**Scope.** This page carries the running procedure, outcome tiers, recruitable allies, and table notes.
+## Current Truth
+**Party Roles.**
 
 **Performer** *(CHA-primary)* - Make a Performance check. DC varies by phase. Use Persuasion between sets to pull undecided crowd members. Spells like Bardic Inspiration, Vicious Mockery, and Enthrall all work as support.
 
@@ -36,8 +45,60 @@ Support roles work in parallel with the Performer: one specialist per role per p
 
 **Crowd Work** *(WIS/CHA/INT)*. Insight DC 12 to read what the crowd wants (success gives the Performer +2 to their next check). Persuasion or Deception to redirect wandering audience. Deception DC 14 to spread a rumour about a rival band (the rival loses 1 success from its running total). Investigation DC 16 detects the rumour's source.
 Each performer picks one role per phase. Each support specialist picks one role per phase. Recruits add +2 to one role's result.
+### Limits
 
-## Phase 1 - La Prova
+* **Exception.** A group does not need a bard to win; Stage Crew and Crowd Work can carry the challenge.
+* **Unknown to the world.** The prior incident that keeps the Rattkin recruit from the Mercatura stage is unspecified.
+* **Impossible or forbidden.** A failed check cannot count as a success unless a listed rule or recruit changes the result.
+
+## At the Table
+
+* **Players notice.** Three nights, three roles, rival bands, and a final banner make the contest public and cumulative.
+* **This explains.** How each performer and support specialist contributes in parallel.
+* **This enables.** The crew can recruit Tomasso, the Rattkin, or a prop from [[prospero-morsani]].
+* **This warns of.** Sabotage and All-In complications can turn a strong performance into a costly finale.
+* **Relevant now.** The Palio offers a public route to Tessarine attention and a 300 gp win.
+
+## Who Knows
+
+| Knower | Knowledge | Certainty | Basis |
+| --- | --- | --- | --- |
+| Palio committee | Roles, phases, scoring, and outcome tiers. | knows | Runs the contest. |
+| Rival bands | Their own performance plans and the contest's public rules. | knows | Competing in the Palio. |
+| [[prospero-morsani]] | The value of the banner, the stage, and his available prop. | knows | Cabinet owner and observer. |
+
+### Party Knowledge
+
+**Known.** The crew can divide performer, Stage Crew, and Crowd Work roles across three nights.
+
+**Suspected.** Rival bands will sabotage sightlines, props, or crowd movement when they can.
+
+**Misunderstood.** The final result depends on cumulative support, not on a single lead Performance check.
+
+**Last changed.** No session is recorded.
+
+### Common telling
+
+> “Bring a voice, a pair of hands, and someone who can read a crowd.”
+
+## If This Is Changing
+
+* **Current pressure.** The three-night challenge escalates from first impressions to a simultaneous finale.
+* **Actors.** The crew, rival bands, recruitable allies, the committee, and the crowd determine the result.
+* **Their aims.** The crew wants the banner and prize; rivals want the crowd; recruits want payment, a stage, or a fair chance.
+* **Without interference.** The Palio advances through its three phases and resolves by total successes.
+* **Visible sign.** Rival sabotage, blocked sightlines, a crowd surge, or an All-In complication changes the stage.
+
+## Consequences
+
+* **Because this is true,** support specialists can matter as much as the lead performer.
+* **If exposed,** a rival's sabotage or a recruit's contribution can change the public story of the performance.
+* **If disproved,** the committee's scoring and the listed outcome tiers no longer resolve the contest.
+* **If changed,** a recruit, rival, or phase result changes the final banner and reward.
+* **If exploited,** the crew can turn the banner into a Tessarine booking and a named social connection.
+
+
+**Phase 1 - La Prova.**
 
 First night, short sets, first impressions.
 
@@ -49,7 +110,7 @@ First night, short sets, first impressions.
 **Success:** the performers recognize the fishing attempt.
 **Failure:** if the performers share information, La Canzone Nera counters their Phase 2 approach directly.
 
-## Phase 2 - La Sfida
+**Phase 2 - La Sfida.**
 
 Second night, full sets, sabotage welcome.
 
@@ -71,7 +132,7 @@ Rival disruptions (the performers can counter one per phase; others land):
 **Success:** the performers contain the surge.
 **Failure:** the performers lose 1 success worth of audience automatically.
 
-## Phase 3 - Il Grande Finale
+**Phase 3 - Il Grande Finale.**
 
 Final night, three hours, simultaneous. Need 3 successes out of 4 possible role checks.
 
@@ -83,7 +144,7 @@ Any performer may declare All-In once per finale for advantage, but a failed All
 
 Rival band performance (rough tracking): la Canzone Nera has 2 automatic successes per phase (flawless but boring as crowds erode). Il Vento di Seta has 2 per phase (consistent). Le Ossa del Toro has 1 per phase plus a bonus 2 in Phase 3 from sheer volume.
 
-## Outcome Tiers
+**Outcome Tiers.**
 
 | Total Successes | Result | Reward |
 |---|---|---|
@@ -92,7 +153,7 @@ Rival band performance (rough tracking): la Canzone Nera has 2 automatic success
 | 7-8 | Third (close) | Crowd respect. Le Ossa del Toro want to buy them a drink. |
 | 9+ / Win | Palio banner + 300 gp | [[iacopo-fieschi]] mentions the performers to [[cosimo-verantio]] as "people worth knowing." Morsani appears at their stage just before midnight. The crowd knows their name. |
 
-## Recruitable NPCs
+**Recruitable NPCs.**
 
 - **Tomasso the Halfling** *(Ponte Bassa most evenings)* - A halfling fiddle player. Will join for 10 gp from any prize. Adds +2 to Performer checks. He improvises when the tempo drags a half-beat behind his bow.
 - **The [[Rattkin]] from [[Warren|the Warren]]** - Ask [[essa-two-tooth]] (she will know someone). A young Rattkin plays an instrument nobody in the crew can identify, six horizontally-played strings that together sound like two instruments arguing. Contributes +2 to Stage Crew checks. Will not perform on the Mercatura stage due to an unspecified prior incident (Velo Quarter or waterfront only).
@@ -100,8 +161,16 @@ Rival band performance (rough tracking): la Canzone Nera has 2 automatic success
 
 **Tomasso's improvising.** DC 12 Performance from the lead performer each phase keeps him on the arrangement. On a failure, he drifts off-key and that phase's Performer check takes disadvantage. If he goes off-script instead, DC 14 Performance nets a +1 bonus success. A failed off-script attempt costs the performers that phase's Performer result entirely.
 
-## Running Notes
+**Running Notes.**
 
 The Palio works best with at least one non-bard specialist. You do not need a bard to win. Stage Crew and Crowd Work both matter. Tomasso helps performers without charisma.
 
 If the performers win, give them the banner. They can put it on their ship later. People around the docks will recognize it. If they lose but fight hard, the Tessarine booking agent still talks to them. They get the Concordat connection at half value. Le Ossa del Toro invites them to play without a cover charge.
+## Connections
+
+| Page | Relationship | Table relevance |
+| --- | --- | --- |
+| [[il-palio-delle-voci-contese]] | The Palio itself | Names the contest and its public stakes. |
+| [[calven-and-calveno]] | Festival city | Grounds the stages, bridge, and crowd. |
+| [[iacopo-fieschi]] | Tessarine connection | Makes a win matter beyond the prize. |
+| [[prospero-morsani]] | Recruitable prop source | Adds a strange high-value finale option. |

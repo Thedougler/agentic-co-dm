@@ -72,7 +72,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 | **Driver**       | Countless's hunt for Fate Spinner carriers.                     |
 | **Wants**        | The Fate Spinner gift and the route information needed to reach its carrier. |
 | **Current move** | Countless sweeps pilgrim routes, grey markets, and Sentinel waystations through one-job contacts. |
-| **Next move**    | Search waystations for Sentinels who recently visited [[Yssenmoor]] after [[Uncertainty]] enters Midchain waters. |
+| **Next move**    | Search waystations for Sentinels who recently visited [[yssenmoor]] after [[uncertainty]] enters Midchain waters. |
 | **End state**    | Countless reaches a carrier, or the route network is disrupted before the order chain is exposed. |
 
 ### Progress
@@ -90,7 +90,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 | ---- | ------------- | ------ | ----- |
 | Follow missing names and blank ledgers. | [[Countless]] | No | Available |
 | Protect or question the named carrier. | [[crissdalynn-khinriss\|Crissdalynn]] | Yes | Active |
-| Track Sentinel visitors after the Uncertainty enters Midchain waters. | [[Yssenmoor]] and Sentinel waystations | No | Available |
+| Track Sentinel visitors after the Uncertainty enters Midchain waters. | [[yssenmoor]] and Sentinel waystations | No | Available |
 
 ## People & factions
 
@@ -105,7 +105,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 
 | Place | Why it matters now |
 | ----- | ------------------ |
-| [[Yssenmoor]] | Sentinel movement there can trigger Countless's next waystation search. |
+| [[yssenmoor]] | Sentinel movement there can trigger Countless's next waystation search. |
 | Midchain pilgrim routes | Countless uses them to move work and search for carriers. |
 | Grey markets | Countless uses them as contact points for hired blades and paid agents. |
 | Sentinel waystations | Countless searches them for carriers and recent visitors without exposing a central ledger. |
@@ -116,7 +116,7 @@ Countless is sweeping routes and waystations for Crissdalynn or another Fate Spi
 | ------ | ----------- |
 | [[fate-spinner\|Fate Spinner]] | Identifies the gift Countless wants and the reason carriers are hunted. |
 | Missing names and blank ledgers | Mark where the order has acted without exposing its patron. |
-| [[Uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
+| [[uncertainty]] | Its arrival in Midchain waters changes which Sentinel visitors Countless tracks. |
 
 ## Complications
 

@@ -28,7 +28,7 @@ A half-mile cut-over islet at the southern lip of the Northern Midchain strip; f
 - Pilots, traders, and the Grung trail's watchers.
 
 ## Connections
-- → [[Sparhold]] · [[Murrat]] · [[Verdant Teeth]] · [[Aruhe - Hungry Isle]]
+- → [[sparhold]] · [[murrat]] · [[Verdant Teeth]] · [[Aruhe - Hungry Isle]]
 
 ## Hooks
 - Use the islet to orient to the fortress-market without confusing landform and settlement.

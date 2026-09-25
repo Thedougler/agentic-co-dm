@@ -34,7 +34,7 @@ Names go missing, and agents use the shared title **Talon**. A hired blade or pa
 - Apprentice: [[Talon Skarn]]
 
 ## Immediate objective
-[[Long Sight Hunt]]: locate [[Crissdalynn Khinriss]], or any Sentinel who recently visited [[Yssenmoor]], once [[Uncertainty]] enters Midchain waters.
+[[Long Sight Hunt]]: locate [[Crissdalynn Khinriss]], or any Sentinel who recently visited [[yssenmoor]], once [[uncertainty]] enters Midchain waters.
 
 ## Rule of Two
 An apprentice openly schemes to overthrow the master; the master teaches treating the scheme as a standing threat. Survival is the verdict. Power is taken by force, not inherited.

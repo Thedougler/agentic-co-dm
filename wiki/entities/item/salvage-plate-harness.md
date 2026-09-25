@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[kalowe]]"
+kind: durable
+rarity: uncommon
+attunement: false
+owner: "[[kettil-ormsson]]"
 summary: "A chest harness of riveted hull plate lined with adamantine scrap, which buckles once a fight to take the worst hit and blunt it to an ordinary one."
 provenance:
   extracted: 0.85
@@ -42,7 +47,6 @@ _Armor (Harness), Uncommon._
 | Current holder | [[kettil-ormsson]], on a stand at the end of the counter at [[Ormsson's Fittings]]. |
 | Narrative hook | The crushed panel came back for repair on a body that walked in, and Ormsson names the yard hand who wore it to anyone who asks straight. |
 
-## Mechanics
 
 > [!mechanic]
 > **Salvage-Plate Harness [HB].** Straps over any armor or none at 5 pounds. Donning or doffing it costs an action.

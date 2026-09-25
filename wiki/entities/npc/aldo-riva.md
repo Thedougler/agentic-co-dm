@@ -11,6 +11,10 @@ updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[Al Fondale]]"
+faction: none
 visibility: dm
 summary: "Verbose dwarf chef running Al Fondale's kitchen, keeper of Le Paludi's history spanning centuries, harboring secrets about the cellar's mysteries."
 provenance:
@@ -21,27 +25,64 @@ tier: supporting
 ---
 # Aldo Riva
 
-# Aldo Riva
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Aldo Riva Banner]]
-![[Aldo Riva Banner]]
+| **Role**   | Contact; chef and co-proprietor |
+| ---------- | ------------------------------- |
+| **Nature** | Broad-shouldered, white-bearded dwarf whose memory and verbosity fill [[Al Fondale]]. |
+| **Home**   | [[Al Fondale]] in [[le-paludi]] |
+| **Wants**  | To keep the kitchen running and [[bice-riva|Bice]] untroubled while preserving the history he carries. |
+| **Secret** | He heard the cellar panel mechanism click two nights ago and has not told Bice because he does not want her to worry. |
+| **Leverage** | Two centuries of [[le-paludi]] history and accurate knowledge of its families, buildings, and recent visitors. |
 
-**Wants:** to keep [[Al Fondale]]'s kitchen running and [[Bice]] untroubled, but three sleepless nights over an unexplained click from the cellar panel are wearing on him, and he still hasn't told her.
+> **DM thesis:** Aldo is a warm, inexhaustible keeper of local memory whose harmless tangent eventually reveals the cellar problem he is trying not to share.
+```
 
-> [!narration] Narration
+```col-md
+flexGrow=1
+===
+> [!narration] Aldo Riva
 > A broad-shouldered dwarf, white-bearded, flour on his forearms this early in the day (it turns to oil by the time the kitchen closes). He moves without hurry, the way of a man two centuries past caring whether anyone's waiting on him, large hands testing a pot's weight before he sets it down. He wipes his hands on his apron and is already talking before he's finished turning around.
+```
+````
 
+## Running Aldo Riva
 
-Aldo Riva runs the kitchen at [[Al Fondale]] and has been doing so for twenty-two years, since he and [[bice-riva]] bought the place from the previous owner. He cooks everything on the menu and has strong opinions about each dish; he comes out of the kitchen to talk while [[Bice]] manages the room, switching to a cleaner apron before he does. Aldo fills the space with noise; together they have run [[Al Fondale]] long enough that the division of labour no longer requires discussion.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-He starts sentences with *allora* and calls people *amico*, and he cannot give a short answer. Every answer requires prior context, which itself has prior context, and arrives at a warm, unhurried pace regardless of urgency. *"Allora, you want to know about this fish? She came in this morning. I can tell by the gills. Sit down, I'll explain."* On his own verbosity: *"My wife says I talk too much. I say: someone has to remember these things."*
+Aldo comes out of the kitchen while [[bice-riva|Bice]] manages the room, switching to a cleaner apron before he does. He offers food and a long explanation of the dish, the building, or the district's history.
 
-Aldo grew up in [[le-paludi]] and has left it for roughly three years across his entire life. He knows the building histories, the old families, the families before those, and everyone's business further back than anyone else in the district can verify. He treats this not as intelligence but as simple knowledge he shares freely with anyone patient enough to listen. Memory is his gift. Any patient listener gets two centuries of [[le-paludi]] history and, somewhere in the middle, whatever Aldo has been quietly turning over. If asked about recent visitors, he describes them with complete accuracy and no alarm. He can name every family that has owned property in [[le-paludi]] for as long as records exist.
+> *Aldo*: “Allora, you want to know about this fish? She came in this morning. I can tell by the gills. Sit down, I'll explain.”
+```
 
-He is not a member of [[the-passage]] and does not know the cellar arrangement details. [[Bice]] told him she agreed to something in the cellar with "the [[Rattkin]] woman from [[Warren|the Warren]]" (confirmed elsewhere as [[nona-black-jaw]]) and he should not look. He has not looked. He remains a light sleeper.
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-At midnight two nights ago, he came down for a bottle of wine and heard the cellar panel mechanism click. He went back upstairs without mentioning it to [[Bice]]; he does not want her to worry, and the click has cost him sleep since, an unshared weight he carries alone. If a PC gets him talking about canal history, the building, or "anything unusual lately," the panel surfaces mid-tangent: *"The water flows the way it does now, you see. And that reminds me, two nights ago I heard something in the cellar. Probably nothing. Where was I?"* If both Bice and Aldo are present when it does, Bice goes still in a way he doesn't notice.
+Aldo talks warmly and without hurry, starting sentences with *allora* and calling people *amico*. He cannot give a short answer: every answer requires prior context, which itself has prior context. A patient listener gets two centuries of [[le-paludi]] history and, somewhere in the middle, whatever Aldo has been quietly turning over.
 
+He is not a member of [[the-passage]] and does not know the cellar arrangement details. Bice told him she agreed to something in the cellar with “the [[Rattkin]] woman from [[Warren|the Warren]],” confirmed elsewhere as [[nona-black-jaw]], and he should not look. If a PC gets him talking about canal history, the building, or anything unusual lately, the cellar panel surfaces mid-tangent. If both Bice and Aldo are present, Bice goes still in a way he does not notice.
+```
+````
+
+## Voice
+
+Aldo's voice is warm, unhurried, and verbose. He starts with *allora*, calls people *amico*, and supplies the context before answering the question.
+
+**The ask:** *“Sit down, I'll explain.”*
+
+**The refusal:** *“My wife says I talk too much. I say: someone has to remember these things.”*
+
+**Under pressure:** *“The water flows the way it does now, you see. And that reminds me, two nights ago I heard something in the cellar. Probably nothing. Where was I?”*
 ## Connections
 
 - [[Al Fondale]]: co-proprietor. Runs the kitchen.

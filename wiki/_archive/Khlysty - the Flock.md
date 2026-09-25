@@ -21,7 +21,7 @@ An ecstatic spiritual tradition rooted on [[Otel Karn]]. Its doctrine holds that
 
 ## Leadership and origin
 - [[Shepherd Grigori]] — Korabl; believes he authored the doctrine's survival trick.
-- [[Otho]] — archfey source of the old teaching on Otel Karn, not a known cult officer.
+- [[otho]] — archfey source of the old teaching on Otel Karn, not a known cult officer.
 
 > [!secret]- DM truth
 > Grigori did not invent the blood-anchor technique. Otho's careless bargain stopped death from working on Otel Karn generations ago; Otho remains unaware that centuries have passed. Grigori does not know Otho still lives or that the technique predates him.

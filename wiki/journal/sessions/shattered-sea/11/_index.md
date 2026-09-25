@@ -10,13 +10,13 @@ reveal: unrevealed
 summary: Folder index of Session 11.
 ---
 
-- [[journal/sessions/shattered-sea/11/Session-11-00-Random-Tables|Aruhe River / Grasslands Hazards]]
+- [[journal/sessions/shattered-sea/11/session-11-00-random-tables|Aruhe River / Grasslands Hazards]]
 - [[journal/sessions/shattered-sea/11/Session-11-Recap|Session 11 - Recap]]
-- [[journal/sessions/shattered-sea/11/Session-11-Transcript|Session 11 - Transcript]]
+- [[journal/sessions/shattered-sea/11/session-11-transcript|Session 11 - Transcript]]
 - [[journal/sessions/shattered-sea/11/assets|Session 11 assets]]
 - [[journal/sessions/shattered-sea/11/Session-11-10-Aftermath|Session 11 — Aftermath]]
 - [[journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds|Session 11 — Angry Birds]]
-- [[journal/sessions/shattered-sea/11/Session-11-00-Birds-of-a-Feather|Session 11 — Birds of a Feather]]
+- [[journal/sessions/shattered-sea/11/session-11-00-birds-of-a-feather|Session 11 — Birds of a Feather]]
 - [[journal/sessions/shattered-sea/11/Session-11-07-False-Help|Session 11 — False help]]
 - [[journal/sessions/shattered-sea/11/Session-11-02-Landing-Sign|Session 11 — Landing sign and smoke]]
 - [[journal/sessions/shattered-sea/11/Session-11-08-Night-Watch|Session 11 — Night watch]]

@@ -52,16 +52,16 @@ foundry_id: kS3wQ76uMq1QgDCw
 | **Class / Level** | Ranger 5 (Gloom Stalker) |
 | **Player**        | Chad |
 | **Also called**   | Jean Claude |
-| **Home ship**     | [[Uncertainty]] |
+| **Home ship**     | [[uncertainty]] |
 
 > **DM thesis:** Darkness ambush striker and ceiling scout. Concentration is the heel. Slavery or abuse snaps calm into violence.
 
 ## Connections
 
-- [[Simone]] — Sister who still hunts him from the Sorn garrison.
+- [[simone]] — Sister who still hunts him from the Sorn garrison.
 - [[Botukuri]] · [[grung-clans]] · [[grung-color-and-the-sealing-rite|Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
 - [[grung-authority-seal]] — One spent seal is on his sheet.
-- [[Uncertainty]] — Aboard at [[aruhe]].
+- [[uncertainty]] — Aboard at [[aruhe]].
 - [[crissdalynn-khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.
 - [[perrin-black-jaw]] · [[delmar-fisk]] — Crew allies.
 

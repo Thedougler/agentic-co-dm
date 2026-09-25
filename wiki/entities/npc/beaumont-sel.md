@@ -19,12 +19,13 @@ updated: 2026-09-23
 type: npc
 reveal: revealed
 campaign: shattered-sea
+location: "[[kalowe]]"
 status: alive
 role: operative
 faction: Passage
 visibility: dm
 relationships:
-  - target: "[[Passage]]"
+  - target: "[[passage]]"
     type: related_to
   - target: "[[nona-black-jaw]]"
     type: related_to
@@ -33,31 +34,67 @@ relationships:
 ---
 # Beaumont Sel
 
-# Beaumont Sel
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Beaumont Sel Banner]]
-![[Beaumont Sel Portrait]]
+| **Role**   | Captain of the *Saltwright* |
+| ---------- | --------------------------- |
+| **Nature** | A shell-worn, quiet tortle who handles trouble like bad weather: wait it out when possible, pay what is necessary when not. |
+| **Home**   | [[kalowe]]; the [[Midchain]] route |
+| **Wants**  | To keep the Saltwright and its passengers alive, paid for, and clear of Crown trouble. |
+| **Leverage** | Eleven years on the route, a trusted crew, the Salvaged [[Antheri]] Plate, and [[Bisou]]'s delivery tricks. |
+| **Limit**  | His passengers' reckless impulses are not his responsibility, and he does not hurry for anyone. |
 
-|              |                                                                |
-| ------------ | -------------------------------------------------------------- |
-| **Species**  | Tortle                                                          |
-| **Role**     | Captain, the Saltwright                                         |
-| **Home Port**| [[Kalowe]]                                                    |
-| **Route**    | [[Midchain]]                                            |
+> **DM thesis:** Beaumont is a patient merchant captain whose quiet route knowledge and monkey companion turn practical kindness into reliable Passage access.
+```
 
-Captain of the *Saltwright*, a merchant brig out of [[Kalowe]] working the [[Midchain]] route for eleven years, shell-worn and quiet, his capuchin monkey riding his shoulder and his unhurried patois volunteering nothing about himself. He handles the route's complications with the patience of someone who has seen most of it before. He pulled [[crissdalynn-khinriss]] and Delmar Fisk from the water after their fleet went down and gave them passage west without asking questions.
+```col-md
+flexGrow=1
+===
+> [!narration] Beaumont Sel
+> Wide and low, Beaumont is built to be hard to move. His river-mud-brown shell is ridged and worn blunt by salt air, with a mirror-bright Salvaged Antheri Plate fitted over a fist-sized dent. Sun-bleached leather covers one eye; a short-stemmed clay pipe rests at the corner of his undershot jaw. His capuchin monkey, [[Bisou]], rides his shoulder with her tail looped once around his neck.
+```
+````
 
-Wide and low, built to be hard to move. His shell is river-mud brown, ridged and worn blunt by salt air. A Salvaged [[Antheri]] Plate patches a fist-sized dent on the upper-right panel, mirror-bright and flush-fitted. He has never explained either the dent or the patch. Sun-bleached leather covers one eye, and his jaw is undershot and broad. He carries a short-stemmed clay pipe in the corner of his mouth, and a capuchin monkey [[Bisou]] rides his left shoulder with her Tail looped once around his neck.
+## Running Beaumont Sel
 
-Holds eye contact too long, says too little, then moves. Never looks surprised, inconvenienced at best. [[Bisou]] reads the room before he reacts. Watch the monkey. Does not hurry. He handles problems like bad weather, waiting them out when he can and paying what he must when he can't.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-Wants the Saltwright and its passengers alive, paid for, and clear of Crown trouble. Willing to help. Does not mistake his passengers' reckless impulses for his own responsibility. Knows the [[Midchain]] route well. Knows his crew, cargo, and local port habits. Knows the difference between ordinary inspection and the sharper posture Barnaby Rook brought aboard.
+Beaumont meets the crew at the wheel of the *Saltwright*, holding eye contact too long, saying too little, then moving. In Session 01 he held [[barnaby-rook]]'s attention while passengers fought below, then joined the deck fight.
 
-**Session 01** held Barnaby Rook's attention at the Saltwright's wheel during the hold ambush while his passengers fought below. Joined the fight on deck. The Salvaged Antheri Plate deflected Rook's flintlock shot at him.
+> *Beaumont*: “The route is clear enough. Get aboard.”
+```
 
-**Session 02** solved the cannon problem by throwing [[Bisou]] through a gun port (she pissed in the powder), after which the [[Uncertainty|Surety]] came under his control and he settled accounts, introducing himself as a Friend of the Passage and passing on Nona Black-Jaw's message (she was looking for her lost grandson and believed someone had already sent Anzolo). He slid a Truth Stone across the decking to Jean-Claude, who used it to tell the truth about himself, while Crissdalynn fished Rook's admiral hat out of the water with a boat hook and Beaumont said it belonged to the captain. The next morning he read the weather toward Calveno, said he would return to [[Kalowe]] when off route, and listened as Delmar told him he had a friend in [[Admiral Fisk]], while [[Bisou]] spent the morning removing 15 gp of shinies from the Surety, which Beaumont called fair business. The Saltwright pulled away.
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-## Stats & Combat
+Beaumont remains unhurried while dealing with ordinary inspection or route trouble. He becomes active when passengers are endangered: his Salvaged Antheri Plate deflected Rook's flintlock shot, and he uses [[Bisou]] as a delivery mechanism for potions, alchemical items, and black-powder sabotage.
+
+In Session 02 he threw Bisou through a gun port to foul the [[uncertainty|Surety]]'s cannon, introduced himself as a Friend of the Passage, and passed on [[nona-black-jaw|Nona]]'s message.
+```
+````
+
+## Voice
+
+Beaumont speaks in an unhurried patois and short practical statements. He volunteers nothing about himself, knows the difference between routine inspection and Crown pressure, and lets [[Bisou]] read the room before he reacts.
+
+**The ask:** *“Tell me where you're going and whether you can pay.”*
+
+**The refusal:** *“That is your trouble, not mine.”*
+
+**Under pressure:** *“Bisou.”*
+
+**Route and history.** Beaumont has run the *Saltwright* out of [[kalowe]] on the [[Midchain]] route for eleven years. He pulled [[crissdalynn-khinriss]] and [[delmar-fisk]] from the water after their fleet went down and gave them passage west without questions. In Session 02 he slid a Truth Stone to Jean-Claude, listened to Delmar's claim of a friend in [[Admiral Fisk]], read the weather toward Calveno, and let Bisou remove 15 gp of shinies from the Surety as fair business before the Saltwright pulled away.
+**Stats & Combat.**
 
 ```statblock
 layout: Basic 5e Layout
@@ -111,7 +148,7 @@ The Salvaged [[Antheri]] Plate patched into his shell throws off ranged attacks 
 
 His real weapon is [[Bisou]]: he throws her, hands her things, and trusts her to deliver.
 
-- **The [[Kalowe]] Maneuver** lobs a potion of healing alongside her to a downed ally, who gets it emptied straight into their mouth.
+- **The [[kalowe]] Maneuver** lobs a potion of healing alongside her to a downed ally, who gets it emptied straight into their mouth.
 - **The [[calven-and-calveno]] Maneuver** sends her with an alchemical item up to 60 ft. She plants it and triggers it remotely.
 - **The [[calders-tooth-and-port-tidefall]] Maneuver** sends her to soak an exposed black powder supply so it won't fire.
 
@@ -125,12 +162,12 @@ All three depend on Bisou being conscious and reachable, most often his shoulder
 - [[barnaby-rook]] (Crown captain). The Salvaged Antheri Plate deflected his flintlock shot in Session 01. The Plate patches a dent in his shell and throws off ranged attacks.
 - [[perrin-black-jaw]], [[the-passage]] (the crew's first contact with the network, made when Beaumont identified himself as a Friend of the Passage after he took the Surety).
 - [[jean-claude-tabarnack]] (given the Truth Stone).
-- [[nona-black-jaw]] (passed on her message about her lost grandson). She believed someone had already sent [[Anzolo]].
+- [[nona-black-jaw]] (passed on her message about her lost grandson). She believed someone had already sent [[anzolo]].
 
-- [[Saltwright]], [[Kalowe]], [[Midchain]] (his merchant brig running the eleven-year Midchain route out of Kalowe). He read the weather toward [[calven-and-calveno]] the morning it departed.
+- [[Saltwright]], [[kalowe]], [[Midchain]] (his merchant brig running the eleven-year Midchain route out of Kalowe). He read the weather toward [[calven-and-calveno]] the morning it departed.
 - Crew: [[lenne-vor]] (navigator), [[drav-holke]] (bosun), [[Wessa]] (cook), [[Fen]] (ordinary sailor).
 
-## Session Log
+**Session log.**
 
 - **Session 01: boarding of the Saltwright** held Rook's attention at the wheel during the hold ambush. Joined the fight on deck. Deflected Rook's flintlock shot with the Salvaged Antheri Plate. `vault/episodes/001/transcript.md:25,59`.
-- **[[Session 02: conflict is a surety]]** solved the cannon problem by throwing [[Bisou]] through a gun port. Settled accounts with Perrin, Jean-Claude, and Nona's message. Departed at dawn for [[Kalowe]] via Calveno as a friend earned. `vault/episodes/002/transcript.raw.md:31,35,39-43,71,93-94`.
+- **[[Session 02: conflict is a surety]]** solved the cannon problem by throwing [[Bisou]] through a gun port. Settled accounts with Perrin, Jean-Claude, and Nona's message. Departed at dawn for [[kalowe]] via Calveno as a friend earned. `vault/episodes/002/transcript.raw.md:31,35,39-43,71,93-94`.

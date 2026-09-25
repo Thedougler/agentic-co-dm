@@ -26,7 +26,7 @@ berth: unknown
 # HCS Surety
 
 > [!narration] Narration
-> This is a Crown cutter taken during the Saltwright boarding. The craft's established identity is in its change of name: it was HCS Surety, and the crew later called it [[Uncertainty]]. Its color, rig, deck plan, and fittings are not established on the owner page.
+> This is a Crown cutter taken during the Saltwright boarding. The craft's established identity is in its change of name: it was HCS Surety, and the crew later called it [[uncertainty]]. Its color, rig, deck plan, and fittings are not established on the owner page.
 
 ## Sheet
 
@@ -54,7 +54,7 @@ Run the craft as a captured Crown cutter whose exact speed, complement, and hand
 
 ## At a Glance
 
-The HCS Surety is a captured Crown cutter currently known by the crew's later name, [[Uncertainty]]. Its berth and operating complement are Unknown. Use the craft when Crown ownership, the Saltwright boarding, or the crew's decision to rename it matters.
+The HCS Surety is a captured Crown cutter currently known by the crew's later name, [[uncertainty]]. Its berth and operating complement are Unknown. Use the craft when Crown ownership, the Saltwright boarding, or the crew's decision to rename it matters.
 
 ## Hidden Cargo & History
 
@@ -62,7 +62,7 @@ The crew took the craft during the Saltwright boarding and later renamed it Unce
 
 ## Connections
 
-- [[Uncertainty]]. The crew's later name for this craft.
+- [[uncertainty]]. The crew's later name for this craft.
 - [[barnaby-rook]]. Connected to the craft in the recorded history.
 - [[geoffrey-draves]]. Connected to the craft in the recorded history.
 

@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Sable Roost
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[sable-roost]] is a southern Midchain airship graveyard where each hulk remains under the watch of one surviving crewmate. [[Halewick]] is a recorded related site, but no route or distance is established. Skipping Sable Roost avoids the wrecks and their sentinels, but also gives up access to whatever the hulks, survivors, and salvage can reveal.
+[[sable-roost]] is a southern Midchain airship graveyard where each hulk remains under the watch of one surviving crewmate. [[halewick]] is a recorded related site, but no route or distance is established. Skipping Sable Roost avoids the wrecks and their sentinels, but also gives up access to whatever the hulks, survivors, and salvage can reveal.
 
 ---
 
@@ -45,7 +45,7 @@ relationships:
 - **Approaches the graveyard:** The party reaches a site of wrecked airships and surviving one-person watches. The landing point and approach route are not recorded.
 - **Approaches a hulk:** One surviving crewmate watches each airship. That survivor's name, condition, allegiance, offer, and response are not recorded.
 - **Searches the wreckage:** The party can inspect an airship hulk for salvage or information. The cargo, damage, and accessible compartments are not established.
-- **Leaves for Halewick:** [[Halewick]] is a recorded related site, but this page does not establish a route or travel time.
+- **Leaves for Halewick:** [[halewick]] is a recorded related site, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -63,7 +63,7 @@ Each airship hulk is watched by one surviving crewmate. The number of hulks, the
 - **East:** No named eastern neighbor or route is recorded.
 - **South:** No named southern neighbor or route is recorded.
 - **West:** No named western neighbor or route is recorded.
-- **Related site:** [[Halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
+- **Related site:** [[halewick]] is recorded as a related place, but the connection, direction, distance, and travel time are unknown.
 
 ## Why
 

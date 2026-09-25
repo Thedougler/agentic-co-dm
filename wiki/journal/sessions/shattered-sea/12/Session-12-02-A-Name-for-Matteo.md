@@ -26,7 +26,7 @@ summary: "At sunrise Celia and Oren come down the bloody bank to record Matteo a
 
 **Card.** Rescuers. A survivor walked toward danger in the night, and the only people who know the way need the party to go after him.
 **Thread advanced.** The inland survivors (the crew's Calveno rescue job) and the Gold-caste orders. Celia's first seal scrap shows the dead up north were sent there.
-**Entry state.** About two hours after sunrise at the otter camp on [[river-slack-basin]]. The party has had time for one short rest. Skarn is gone into the trees above the bloody bank, with or without Matteo's plums, and the Spinner is Held, in the slack, or Stolen per [[Session-12-01-River-Slack-Reprise]].
+**Entry state.** About two hours after sunrise at the otter camp on [[river-slack-basin]]. The party has had time for one short rest. Skarn is gone into the trees above the bloody bank, with or without Matteo's plums, and the Spinner is Held, in the slack, or Stolen per [[session-12-01-river-slack-reprise]].
 **Trigger.** [[oren-vask|Oren]] and [[celia-parel|Celia]] come down the bloody bank from [[cutoff-lip]]. They saw the flyers pass over [[spoke-ring]] yesterday and saw their fire here last night.
 **Turn.** [[nello-castri|Nello]] walked north alone last night toward the woman's garden, down the trail where generations of Grung were sent and died, and the party is carrying a Grung the same way.
 **New direction.** Go north with Celia and Oren to bring Nello back, or take Matteo toward the ship and leave Nello to the island.
@@ -64,7 +64,7 @@ flexGrow=2
 
 - [ ] **Core.** [[nello-castri|Nello Castri]], the fourth survivor at Spoke Ring, walked north last night after the woman's voice spoke to him. His trail runs past [[star-cut]] toward the [[turned-hollow]], where the Grung dead lie thickest. → **Surfaces through:** Oren (says it outright), Celia's ledger ("Nello: walked north"), Matteo ("Nello would go. Nello listens to her.").
 - [ ] **Support.** The dead up north were sent. Celia's scraps come from old Grung bones in the grass, and the readable ones repeat one order: go inland and report to Gold. → **Surfaces through:** Celia's bundle; resolve the reading on [[grung-authority-seal]]; Jean-Claude recognizes the Gold authority mark if he is awake.
-- [ ] **Support.** Oren's warning: every body on that trail is Grung, and the island does something to Grung. He does not know why. The DM truth is on [[Hinewai]]: the woman hates the Grung, who once enslaved her at [[Karath]]. → **Surfaces through:** Oren, the first time he looks at Jean-Claude.
+- [ ] **Support.** Oren's warning: every body on that trail is Grung, and the island does something to Grung. He does not know why. The DM truth is on [[hinewai]]: the woman hates the Grung, who once enslaved her at [[karath]]. → **Surfaces through:** Oren, the first time he looks at Jean-Claude.
 - [ ] **Optional.** The woman's rule, in her own words: "Come admire my garden. This way. Leave the living plants." Listeners who keep it have lived. → **Surfaces through:** Oren or Celia; Matteo repeats it with contempt.
 ```
 ````
@@ -75,7 +75,7 @@ flexGrow=2
 
 - [ ] **Route 1.** Oren tells the party, and asks for help.
 - [ ] **Route 2.** Celia's ledger marks Nello as "walked north," and she reads it aloud when she crosses out Matteo.
-- [ ] **Route 3.** At [[spoke-ring]] on the way, Nello's boots sit side by side at the foot of his mat and his bare prints leave by the north spoke ([[Session-12-03-Grass-Without-Wind]] travel section).
+- [ ] **Route 3.** At [[spoke-ring]] on the way, Nello's boots sit side by side at the foot of his mat and his bare prints leave by the north spoke ([[session-12-03-grass-without-wind]] travel section).
 
 ## Actors
 
@@ -124,7 +124,7 @@ If Chad is absent, Jean-Claude stays catatonic and is carried. Carrying him halv
 
 ### Preparation states
 
-Before [[Session-12-03-Grass-Without-Wind]] opens, ask for the marching order.
+Before [[session-12-03-grass-without-wind]] opens, ask for the marching order.
 
 | If the party prepares… | The next Cliffhanger opens with… |
 | --- | --- |
@@ -136,10 +136,10 @@ Before [[Session-12-03-Grass-Without-Wind]] opens, ask for the marching order.
 
 | If the party… | The situation changes… | Next |
 | --- | --- | --- |
-| **Goes north with Celia and Oren** | Oren leads up the bloody bank to [[cutoff-lip]] and onto [[print-braid]], with Celia beside the party. | [[Session-12-03-Grass-Without-Wind]] |
-| **Takes Matteo to the ship** | Celia and Oren go north alone. Nello dies in the Hollow at dusk unless someone reaches him. Skarn's second attempt comes on the beach road instead. | [[Session-12-00-The-Weight-of-Obedience]] Branches |
-| **Splits the party** | The north group gets Oren and Celia. The south group gets Matteo and the long walk to the beach. Skarn follows the Spinner. | [[Session-12-03-Grass-Without-Wind]] for whoever carries the Spinner |
-| **Changes the situation another way** | Nello is in the Hollow, Oren will not enter it, and Skarn wants the Spinner wherever it goes. | [[Session-12-00-The-Weight-of-Obedience]] |
+| **Goes north with Celia and Oren** | Oren leads up the bloody bank to [[cutoff-lip]] and onto [[print-braid]], with Celia beside the party. | [[session-12-03-grass-without-wind]] |
+| **Takes Matteo to the ship** | Celia and Oren go north alone. Nello dies in the Hollow at dusk unless someone reaches him. Skarn's second attempt comes on the beach road instead. | [[session-12-00-the-weight-of-obedience]] Branches |
+| **Splits the party** | The north group gets Oren and Celia. The south group gets Matteo and the long walk to the beach. Skarn follows the Spinner. | [[session-12-03-grass-without-wind]] for whoever carries the Spinner |
+| **Changes the situation another way** | Nello is in the Hollow, Oren will not enter it, and Skarn wants the Spinner wherever it goes. | [[session-12-00-the-weight-of-obedience]] |
 
 **Carry forward.**
 - **Direction:** north with Celia and Oren, south with Matteo, or split.
@@ -156,4 +156,4 @@ Before [[Session-12-03-Grass-Without-Wind]] opens, ask for the marching order.
 - **Decision made.**
 - **NPC posture changes.**
 - **Resources gained or lost.**
-- **Next active node.** [[Session-12-03-Grass-Without-Wind]]
+- **Next active node.** [[session-12-03-grass-without-wind]]

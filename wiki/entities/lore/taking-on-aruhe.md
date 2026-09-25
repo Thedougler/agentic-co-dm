@@ -79,7 +79,7 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 | [[oren-vask]] | Fallen food is safe and living claims bring the island down on the taker. He wrongly believes any cut to a living thing, even in self-defense, is a claim. | knows / misunderstands | Months of walking the safe edges. |
 | [[celia-parel]] | The rule keeps people alive, and she follows it as respect rather than worship. | knows | Survivor practice. |
 | [[nello-castri]] | The woman's words, "Leave the living plants," are the rule. He treats it as a vow. | knows | His brother died picking living fruit. |
-| [[Hinewai]] | The law is her grief made into the island's reflex. | knows | She is its source. |
+| [[hinewai]] | The law is her grief made into the island's reflex. | knows | She is its source. |
 
 ### Party Knowledge
 
@@ -105,7 +105,7 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 ## If This Is Changing
 
 * **Current pressure.** The party, Skarn, and the survivors are all moving inland toward [[memorial-grove]], where the law is strongest.
-* **Actors.** [[Hinewai]], [[talon-skarn]], and the Calveno survivors.
+* **Actors.** [[hinewai]], [[talon-skarn]], and the Calveno survivors.
 * **Their aims.** Hinewai wants takers punished; Skarn wants the Spinner and may use the law as a weapon; the survivors want to live by it.
 * **Without interference.** The law stays as it is while the Death Bloom at [[memorial-grove]] holds.
 * **Visible sign.** Plants leaning toward a taker and birds falling silent for a breath.
@@ -123,12 +123,12 @@ Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fall
 | Page | Relationship | Table relevance |
 | ---- | ------------ | --------------- |
 | [[aruhe]] | The island the law covers | Every band has responders. |
-| [[Hinewai]] | Source of the law | Her grief is why the island answers takers. |
+| [[hinewai]] | Source of the law | Her grief is why the island answers takers. |
 | [[memorial-grove]] | Where the law is anchored | Destroying the Death Bloom ends the law. |
 | [[turned-hollow]] | Where claims killed generations of Grung diggers | Its responders are the strangler fig and two vine lashes. |
 | [[wolfrabbit]] | Default grassland responder | Two arrive for a claim in grass or terraces. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Whether shaking a living tree counts as a claim.
 * [ ] **Contradiction.** This page lets fish taken from water pass, while [[grasslands]] treats fishing to carry flesh as a claim.

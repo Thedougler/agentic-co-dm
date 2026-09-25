@@ -31,7 +31,7 @@ campaign: shattered-sea
 visibility: dm
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: uses
   - target: "[[pearl-of-souls]]"
     type: related_to
@@ -86,10 +86,10 @@ Sessions 01 to 11 of [[shattered-sea]]. Season One is closed. Season Two is live
 
 ## Wiki facts
 
-The live handle is Aruhe. The landing party is camped at [[river-slack-basin]] with [[matteo-scola]], mid-watch, with [[talon-skarn]] in [[crissdalynn-khinriss]]'s face, the [[fate-spinner]] still on her, and one legendary resistance spent. [[jean-claude-tabarnack]] is catatonic in [[delmar-fisk]]'s coat. *[[Uncertainty]]* is offshore, and the inland survivor column is still unreached.
+The live handle is Aruhe. The landing party is camped at [[river-slack-basin]] with [[matteo-scola]], mid-watch, with [[talon-skarn]] in [[crissdalynn-khinriss]]'s face, the [[fate-spinner]] still on her, and one legendary resistance spent. [[jean-claude-tabarnack]] is catatonic in [[delmar-fisk]]'s coat. *[[uncertainty]]* is offshore, and the inland survivor column is still unreached.
 
 The quests still running are [[bring-the-pearl-of-souls-to-umberlee]], [[pursue-the-grung-raiding-fleet]], [[simones-hunters]], and [[grigori-and-the-crown-hunt]]. Unresolved besides those are [[nona-black-jaw]]'s favor that was never named, the scrap of paper nobody has read out of [[otar-the-foul]]'s rot, the [[fleet-commanders-chair|chair]] that took a crater and did not take a scratch, [[rupert-knighton]]'s evacuation order that reached somebody before the ceiling opened and not [[iacopo-fieschi]], [[red-wake]], the captive pipeline through Karath, and the woman in the woods [[matteo-scola]] described.
 
 [[osset]] is [[talon-vantyrus|Talon Vantyrus]]'s original name, and he leads [[countless]] under that alias while [[master-kyzil]] believes him decades dead. The Sentinel split stays live through [[long-sight-hunt]], [[rule-of-two]], and [[countless-through-the-maw-seal]].
 
-Session pages run from [[journal/sessions/shattered-sea/01/Session-01-Recap|Session 01]] to [[journal/sessions/shattered-sea/11/Session-11-Recap|Session 11]].
+Session pages run from [[journal/sessions/shattered-sea/01/session-01-recap|Session 01]] to [[journal/sessions/shattered-sea/11/Session-11-Recap|Session 11]].

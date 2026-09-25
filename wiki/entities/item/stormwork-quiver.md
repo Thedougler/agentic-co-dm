@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[central-strait]]"
+kind: magic
+rarity: uncommon
+attunement: true
+owner: "[[cotter-foss]]"
 summary: "Gnomish wondrous quiver (holds 20 arrows); each arrow fired deals an extra 1d6 lightning damage. Requires attunement. Sold by Cotter Foss at Nimmik Vollask."
 provenance:
   extracted: 0.85
@@ -36,7 +41,6 @@ tier: supporting
 | Current holder | [[cotter-foss]] at [[nimmik-vollask]], kept behind normal shelf stock. |
 | Narrative hook | Sold openly at the Vollask rail; nobody aboard explains how the gnomes charge the lining. Other items available through Cotter. |
 
-## Mechanics
 
 **[HB] Lightning Infusion (at-will).** The quiver infuses each drawn arrow with lightning. On a hit, the arrow deals its normal damage plus 1d6 lightning damage. Works at will. Attunement gates the effect.
 

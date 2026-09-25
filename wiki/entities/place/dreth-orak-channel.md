@@ -31,14 +31,14 @@ tier: supporting
 
 ## At a Glance
 
-The channel is flooded jungle rather than a normal strait, forming a forbidden crossing between [[Dreth]] and [[Orak]]. It can be crossed, but it does not offer a safe shortcut: rain erases shallow crossings, and Grung timber work draws patrols south.
+The channel is flooded jungle rather than a normal strait, forming a forbidden crossing between [[dreth]] and [[orak]]. It can be crossed, but it does not offer a safe shortcut: rain erases shallow crossings, and Grung timber work draws patrols south.
 
 ## If the party
 
 - **Withdraws.** The party can leave the channel, surrendering the crossing and any specimens or information found inside.
 - **Evades.** The party can use root hollows, silt margins, and the channel's branching water to avoid attention, while darker seams remain dangerous.
 - **Bargains.** The party can respond to Grung timber patrols rather than forcing a crossing.
-- **Continues.** The party can attempt the channel crossing; a [[Vethka]] belongs here, while a keel, mast, and sail are liabilities.
+- **Continues.** The party can attempt the channel crossing; a [[vethka]] belongs here, while a keel, mast, and sail are liabilities.
 
 ## Who
 
@@ -49,15 +49,15 @@ The channel is confirmed ground for live channel axolotls. Grung timber workers 
 - Flooded jungle water under joined canopy, with trunks standing in the tide.
 - Root hollows and silt margins that hold specimens.
 - Darker seams that hold larger predators.
-- Shallow crossings toward [[Orak]] that rain can erase.
+- Shallow crossings toward [[orak]] that rain can erase.
 - Fresh-cut hummocks and resin smell that signal Grung timber work.
 
 ## Where
 
 - **North:** No canon direction is established.
-- **East:** [[Dreth]]; the channel is one side of the paired eastern-island crossing.
+- **East:** [[dreth]]; the channel is one side of the paired eastern-island crossing.
 - **South:** No named destination is established; Grung patrols thicken as timber cutting moves south.
-- **West:** [[Orak]]; shallow crossings toward Orak are temporary.
+- **West:** [[orak]]; shallow crossings toward Orak are temporary.
 - **Region:** [[verdant-teeth]].
 
 ## Why

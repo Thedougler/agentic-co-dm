@@ -21,11 +21,11 @@ reveal: unrevealed
 campaign: shattered-sea
 status: unknown
 role: extra
-location: "[[Yssenmoor]]"
+location: "[[yssenmoor]]"
 faction: none
 visibility: dm
 relationships:
-  - target: "[[Yssenmoor]]"
+  - target: "[[yssenmoor]]"
     type: related_to
   - target: "[[fate-spinner]]"
     type: related_to
@@ -42,10 +42,10 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Former wizard's familiar holding [[Yssenmoor]] |
+| **Role**   | Former wizard's familiar holding [[yssenmoor]] |
 | ---------- | --- |
 | **Nature** | Duck that dies and reforms on a hidden ley line |
-| **Home**   | [[Yssenmoor]] |
+| **Home**   | [[yssenmoor]] |
 | **Wants**  | Unknown; he does not yet understand what is happening to him |
 
 > **DM thesis:** A centuries-old familiar is drifting into demigodhood on a ley line he cannot explain.
@@ -55,7 +55,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Sir Quackers the Fowl
-> A duck holds the bog at [[Yssenmoor]]. He has died and come back countless times over centuries, and he still treats strange reactions as puzzles he has not solved yet.
+> A duck holds the bog at [[yssenmoor]]. He has died and come back countless times over centuries, and he still treats strange reactions as puzzles he has not solved yet.
 ```
 ````
 
@@ -83,7 +83,7 @@ He does not understand the [[fate-spinner]] dreidel reaction or the [[soul-incar
 
 | Relationship | Meaning |
 | ------------ | ------- |
-| [[Yssenmoor]] | He remains on this bog and its hidden ley line. |
+| [[yssenmoor]] | He remains on this bog and its hidden ley line. |
 | [[fate-spinner]] | Its dreidel reaction marks him without explaining itself. |
 | [[soul-incarnate]] | The Fate Spinner reaction exposes a Soul Incarnate signature he does not comprehend. |
 

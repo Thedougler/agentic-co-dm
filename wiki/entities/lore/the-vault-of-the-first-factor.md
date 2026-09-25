@@ -115,7 +115,7 @@ No current Tessarine official confirms the vault. Stories say its protections ar
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Whether the vault exists as one site.
 * [ ] **Unknown.** Whether any original collateral remains.

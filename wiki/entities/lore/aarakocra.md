@@ -100,7 +100,7 @@ No active change to Aarakocra traits, rarity, or Sentinels of the Eyrie associat
 | [[high-eyrie]] | Exposed summit with a small permanent Aarakocra population. | Gives the party a named place to find them. |
 | [[peoples of the Shattered Sea]] | Places Aarakocra among the region's rare peoples. | Establishes their demographic context. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which Aarakocra individuals and traditions matter to the party's current route?
 * [ ] **Decide when needed.** Aarakocra culture beyond the recorded Sentinels association can remain fluid until play requires it.

@@ -27,7 +27,7 @@ Stock and quantities live on the [[uncertainty-manifest|Ship Manifest]]. This pa
 
 ## Stats & Combat
 
-Hull numbers and armament are on [[Uncertainty|the ship's page]], and bands and gunnery resolve through Ship Combat.
+Hull numbers and armament are on [[uncertainty|the ship's page]], and bands and gunnery resolve through Ship Combat.
 
 ### Weather Deck
 
@@ -71,7 +71,7 @@ Hull numbers and armament are on [[Uncertainty|the ship's page]], and bands and 
 
 ![[uncertainty-layout-crew-quarters]] ![[uncertainty-layout-boarding-locker]] ![[uncertainty-layout-central-ladder]] ![[uncertainty-layout-chart-table]] ![[uncertainty-layout-medics-cabinet]] ![[uncertainty-layout-officers-berth]] ![[uncertainty-layout-captains-cabin]] ![[uncertainty-layout-aft-stair]]
 
-> **The armchair.** [[Cobb]] found it in the mess, and it is the [[elder-mimic]]. Telegraph it before it acts: a cushion that fails to move when the ship rolls, a boot heel that sticks. Leave it dormant until the crew give it a reason.
+> **The armchair.** [[cobb]] found it in the mess, and it is the [[elder-mimic]]. Telegraph it before it acts: a cushion that fails to move when the ship rolls, a boot heel that sticks. Leave it dormant until the crew give it a reason.
 >
 > **Below-deck brawling.** Headroom runs 6 ft 4 in. Any creature taller than that, and every Large creature, attacks at disadvantage down here and cannot bring a melee weapon extending 10 feet or more to bear.
 
@@ -108,11 +108,11 @@ Tier 1 allows four berths, and all four stand spoken for. Nothing further fits w
 | Rigger's workshop, gun deck | Rigger's workshop | 1 | Installed and stocked |
 | Provisions store, hold | Provisions store | 2 | Installed |
 
-The Expanded Cargo Hold [HB, from 2024's Storehouse] takes the old weapons-locker alcove into the tonnage figure on [[Uncertainty|the ship's page]], adding 10 extra tons that the crew racks and nets rather than stows loose.
+The Expanded Cargo Hold [HB, from 2024's Storehouse] takes the old weapons-locker alcove into the tonnage figure on [[uncertainty|the ship's page]], adding 10 extra tons that the crew racks and nets rather than stows loose.
 
 ## Crew
 
-Where hands stand when it matters. The roster appears on [[Uncertainty|the ship's page]].
+Where hands stand when it matters. The roster appears on [[uncertainty|the ship's page]].
 
 Underway, the helm and the bosun occupy the quarterdeck, the gunner works the weather deck between her two batteries, and the carpenter works between the bilge hatch and the pump. Everyone sleeps forward on the gun deck, the captain included.
 
@@ -120,7 +120,7 @@ Fighting her on four hands leaves the hold and the aft stair unwatched, and that
 
 ## Connections
 
-- [[Uncertainty]]. Hull numbers, armament, history, crew.
+- [[uncertainty]]. Hull numbers, armament, history, crew.
 - [[uncertainty-manifest|Ship Manifest]]. The stock in every space above.
 - Ship Combat. Bands, gunnery, casualties.
 - Ship Operations. Crew roles, navigation, facility orders.
@@ -128,6 +128,6 @@ Fighting her on four hands leaves the hold and the aft stair unwatched, and that
 
 ## Session Log
 
-- [[Session-01-Recap|Session 1]]. Taken across the weather deck and the gangplank.
+- [[session-01-recap|Session 1]]. Taken across the weather deck and the gangplank.
 - [[Session-02-Recap|Session 2]]. The galley, and [[Ket]] held in the hold.
 - Session 8. Cradle work aft cut the mess in, replaced her keel timber, and mounted the new batteries.

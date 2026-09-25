@@ -94,7 +94,7 @@ No active change to these traits is established.
 
 No linked lore page is established in this source.
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Lizardfolk culture and communities in the Shattered Sea remain unspecified here.
 * [ ] **Decide when needed.** Any setting details beyond the listed playable traits can remain fluid until play requires them.

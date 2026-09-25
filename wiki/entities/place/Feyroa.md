@@ -20,7 +20,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Feyroa
@@ -53,7 +53,7 @@ The established features are one coconut-wine still and a trade in secrets rathe
 - **East:** The southern Midchain connects toward [[midchain-east|The Eastern Midchain]], but Feyroa's travel distance is not established.
 - **South:** The region opens toward [[doldrums|The Doldrums]], but Feyroa's travel distance is not established.
 - **West:** The southern Midchain connects toward [[midchain-west|The Western Midchain]], but Feyroa's travel distance is not established.
-- **Local connection:** The page retains a recorded relationship to [[Halewick]], but no route between the two sites is established here.
+- **Local connection:** The page retains a recorded relationship to [[halewick]], but no route between the two sites is established here.
 
 ## Why
 

@@ -13,7 +13,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Murrat]]"
+location: "[[murrat]]"
 faction: none
 visibility: dm
 summary: "Moucheron detach from the cloud and fly toward the Uncertainty; one of them is shouting."
@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Moucheron warning beat with [[Ket]] identifiable among the swarm |
-| **Home**   | [[Murrat]] |
+| **Home**   | [[murrat]] |
 | **Wants**  | Not established; the source records only that one Moucheron shouts. |
 
 > **DM thesis:** Use this handle to interrupt the cloud's approach with a recognizable voice before the scene resolves.
@@ -44,7 +44,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Murrats Shroud Kets Warning Narration Open
-> *Shapes peel from the dark mass over the island and close on the [[Uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one word…*
+> *Shapes peel from the dark mass over the island and close on the [[uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one word…*
 ```
 ````
 
@@ -56,7 +56,7 @@ flexGrow=1
 ===
 ### First meeting
 
-Read this when the Moucheron cloud closes on the [[Uncertainty]] and [[Ket]] becomes identifiable.
+Read this when the Moucheron cloud closes on the [[uncertainty]] and [[Ket]] becomes identifiable.
 ```
 
 ```col-md

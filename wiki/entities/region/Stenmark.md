@@ -46,14 +46,14 @@ tier: supporting
 
 * **Recent change.** No dated change beyond the station's continuing watch is established.
 * **Pressure.** The discoloured water at [[drowned-maw]] keeps the approaches under observation.
-* **Opportunity.** The harbour, station logs, and routes toward [[Greyteeth]] and [[high-eyrie]] offer different ways to learn what the Crown watches.
+* **Opportunity.** The harbour, station logs, and routes toward [[greyteeth]] and [[high-eyrie]] offer different ways to learn what the Crown watches.
 * **Next visible change.** The station will continue recording the approaches; the source does not establish what pattern its watchers will name next.
 
 ## Regional truths
 
 * **Signal frontier.** Stenmark is the last Dravosi flag before the Maw.
 * **Cold shelf.** Stone cliffs meet cold deep water, with thin farmland inland.
-* **Unresolved watch.** The signal logs hide patterns that [[Harwick]] has not noticed.
+* **Unresolved watch.** The signal logs hide patterns that [[harwick]] has not noticed.
 
 ## Geography
 
@@ -63,7 +63,7 @@ tier: supporting
 | --- | --- | --- | --- |
 | West | [[crown-islands]] | Crown island waters; exact crossing not recorded | The route returns toward established Dravosi holdings. |
 | East | [[drowned-maw]] | Discoloured water marks the boundary; exact distance not recorded | Crown watch gives way to the Maw's unresolved danger. |
-| North | [[Greyteeth]] | Connection is named; travel time not recorded | Reef and salvage approaches replace the island's harbour face. |
+| North | [[greyteeth]] | Connection is named; travel time not recorded | Reef and salvage approaches replace the island's harbour face. |
 | South | [[high-eyrie]] | Connection is named; travel time not recorded | A watchful sea-stack route replaces the low island shore. |
 
 ### Subregions
@@ -84,7 +84,7 @@ tier: supporting
 ### Structure
 
 * **Map.** No map is established in the source.
-* **Travel structure.** Known routes between the harbour, signal cliff, neighbouring Crown waters, [[Greyteeth]], [[drowned-maw]], and [[high-eyrie]].
+* **Travel structure.** Known routes between the harbour, signal cliff, neighbouring Crown waters, [[greyteeth]], [[drowned-maw]], and [[high-eyrie]].
 * **Scale.** Travel time is not recorded.
 * **Procedure.** Use the table's normal sea and island travel procedure.
 * **Navigation.** The signal station makes the approaches observable; the cliff and cold water make careless landings costly.
@@ -97,12 +97,12 @@ tier: supporting
 | Route | Connects | Time | Cost / requirement | Risk | Advantage | Known |
 | --- | --- | ---: | --- | --- | --- | --- |
 | Crown approach | [[crown-islands]] ↔ Stenmark | Not recorded | Reach the harbour face | The station observes arrivals | Crown infrastructure and local reports | Yes |
-| Greyteeth approach | Stenmark ↔ [[Greyteeth]] | Not recorded | Follow the named northern connection | Reef and cold-water exposure | Reaches the Greyteeth route | Yes |
+| Greyteeth approach | Stenmark ↔ [[greyteeth]] | Not recorded | Follow the named northern connection | Reef and cold-water exposure | Reaches the Greyteeth route | Yes |
 | Maw approach | Stenmark ↔ [[drowned-maw]] | Not recorded | Cross the discoloured water boundary | The Maw remains unexplained | Direct access to the watched frontier | Yes |
 
 ### Hidden and broken connections
 
-* **Signal-log pattern.** Stenmark ↔ [[Harwick]]. The station logs contain a pattern Harwick has not noticed; discovering it requires access to the records and does not yet reveal what the pattern means.
+* **Signal-log pattern.** Stenmark ↔ [[harwick]]. The station logs contain a pattern Harwick has not noticed; discovering it requires access to the records and does not yet reveal what the pattern means.
 
 ## Key places
 
@@ -119,7 +119,7 @@ tier: supporting
 | --- | --- | --- | --- | --- |
 | [[dravosi-crown]] | Holds the island as its eastern flag | Keep the approaches watched | Continue station operations | Crown signals, patrols, and station records |
 | Signal watchers | Occupy the station | Track the discoloured approaches and the hidden log pattern | Keep recording what they see | New entries, changed watch routines, or guarded questions |
-| [[Harwick]] | Named as the place that has not noticed the pattern | Understand the reports when the pattern reaches it | Receive or fail to receive the station's significance | Harwick response to the logs |
+| [[harwick]] | Named as the place that has not noticed the pattern | Understand the reports when the pattern reaches it | Receive or fail to receive the station's significance | Harwick response to the logs |
 
 ## Fronts and pressures
 
@@ -140,8 +140,8 @@ The source establishes the watched discoloured water but no independent macro-fr
 | d6 | Rumor / lead | Truth behind it | Points toward |
 | -: | --- | --- | --- |
 | 1 | The station sees more than the harbour reports. | Its logs hide a pattern. | Signal station |
-| 2 | Harwick has missed something in the reports. | The source says Harwick has not noticed the pattern. | [[Harwick]] |
-| 3 | The cold shelf marks a route toward Greyteeth. | Greyteeth is a named connection. | [[Greyteeth]] |
+| 2 | Harwick has missed something in the reports. | The source says Harwick has not noticed the pattern. | [[harwick]] |
+| 3 | The cold shelf marks a route toward Greyteeth. | Greyteeth is a named connection. | [[greyteeth]] |
 | 4 | The stain begins where the Maw begins. | Discoloured water marks the boundary. | [[drowned-maw]] |
 | 5 | The Crown flag ends here. | Stenmark is the last Dravosi flag before the Maw. | [[dravosi-crown]] |
 | 6 | Someone at the station knows the withheld name. | The source leaves that name unresolved. | Signal station |
@@ -155,7 +155,7 @@ The source establishes the watched discoloured water but no independent macro-fr
 | 1 | Crown signal watch | Flags, lamps, or log movement | Signal station |
 | 2 | Fishing traffic | Boats and drying nets | Harbour face |
 | 3 | Cliff crossing | Stone underfoot and cold spray | Thin farmland |
-| 4 | Greyteeth approach | Reef water and changing route markers | [[Greyteeth]] |
+| 4 | Greyteeth approach | Reef water and changing route markers | [[greyteeth]] |
 | 5 | Maw watch | Discoloured water | [[drowned-maw]] |
 | 6 | High Eyrie route | Open water toward the named connection | [[high-eyrie]] |
 
@@ -169,7 +169,7 @@ The source establishes the watched discoloured water but no independent macro-fr
 * **Resource.** Harbour and thin farmland support ordinary island operations; exact supplies are unknown.
 * **Shelter.** The harbour face is the only established working shelter.
 * **Wonder.** The discoloured water at the Maw boundary.
-* **Hidden lore.** The station logs contain a pattern [[Harwick]] has not noticed.
+* **Hidden lore.** The station logs contain a pattern [[harwick]] has not noticed.
 * **Shortcut.** No shortcut is established; the named connections remain route choices.
 
 ## History still in play

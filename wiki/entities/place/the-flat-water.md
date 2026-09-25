@@ -51,7 +51,7 @@ The Flat Water is a Kalowe establishment run by [[Reweti Kahurangi]]. It is a pl
 
 ## Where
 
-- **North:** [[Kalowe]]; the exact street and berth are not established.
+- **North:** [[kalowe]]; the exact street and berth are not established.
 - **East:** No separate canonized neighbor is recorded.
 - **South:** No separate canonized neighbor is recorded.
 - **West:** No separate canonized neighbor is recorded.

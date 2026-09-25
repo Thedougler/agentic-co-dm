@@ -18,7 +18,7 @@ campaign: shattered-sea
 visibility: dm
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
   - target: "[[calven-and-calveno]]"
     type: related_to
@@ -44,8 +44,8 @@ Played 2026-05-25. Landfall at Calveno.
 
 ## Wiki facts
 
-Crissdalynn found [[barnaby-rook]]'s two lawless crossings of the [[drowned-maw]] in his own chart archive aboard the prize, and he left no account of what he saw there. The barb off the [[whip-shark]] sits with the scarlet coat in Delmar's Calveno chest, and the scales patch [[Uncertainty]]'s hull. [[jean-claude-tabarnack]] sold the three eggs in [[journal/sessions/shattered-sea/04/Session-04-Recap|Session 04]]. [[shepherd-grigori]] healed Jean-Claude on deck with the red light, and [[perrin-black-jaw]] failed to identify that magic, which is the second of the three clues on [[grigori-and-the-crown-hunt]]. Sem Holst repaired the hull behind [[jean-claude-tabarnack]]'s Mending during the crossing.
+Crissdalynn found [[barnaby-rook]]'s two lawless crossings of the [[drowned-maw]] in his own chart archive aboard the prize, and he left no account of what he saw there. The barb off the [[whip-shark]] sits with the scarlet coat in Delmar's Calveno chest, and the scales patch [[uncertainty]]'s hull. [[jean-claude-tabarnack]] sold the three eggs in [[journal/sessions/shattered-sea/04/session-04-recap|Session 04]]. [[shepherd-grigori]] healed Jean-Claude on deck with the red light, and [[perrin-black-jaw]] failed to identify that magic, which is the second of the three clues on [[grigori-and-the-crown-hunt]]. Sem Holst repaired the hull behind [[jean-claude-tabarnack]]'s Mending during the crossing.
 
-[[calven-and-calveno|Calveno]] took the prize in without Crown colours, [[la-vasca]] cradled her with [[Cobb]] on the gate, and [[shepherd-grigori]] left the crew there. [[umberlee-branca|Branca]] delivered nothing in Session 03 beyond the appointment, and [[umberlee]]'s command on the [[pearl-of-souls]] came from her in Session 04. The pale lit thing that held pace with the prize is unresolved, and so is the voice that spoke [[delmar-fisk]]'s name off the water.
+[[calven-and-calveno|Calveno]] took the prize in without Crown colours, [[la-vasca]] cradled her with [[cobb]] on the gate, and [[shepherd-grigori]] left the crew there. [[umberlee-branca|Branca]] delivered nothing in Session 03 beyond the appointment, and [[umberlee]]'s command on the [[pearl-of-souls]] came from her in Session 04. The pale lit thing that held pace with the prize is unresolved, and so is the voice that spoke [[delmar-fisk]]'s name off the water.
 
-[[nona-black-jaw]] called off the Black-Jaw Run's attacks because [[perrin-black-jaw]] was never captured, and she holds his unnamed favor under an [[sending-stone-nonas|sending stone]]. [[master-kyzil]] searched [[Kalowe]] and [[calders-tooth-and-port-tidefall|Port Tidefall]] before he found [[crissdalynn-khinriss]] in [[le-paludi|Le Paludi]], and his foul wind is the thread Session 04 picks up. [[perrin-black-jaw]]'s *Grow* vision is still unexplained, and [[umberlee]]'s shrine is still waiting for [[delmar-fisk]]. Next: [[Session-04-Recap]].
+[[nona-black-jaw]] called off the Black-Jaw Run's attacks because [[perrin-black-jaw]] was never captured, and she holds his unnamed favor under an [[sending-stone-nonas|sending stone]]. [[master-kyzil]] searched [[kalowe]] and [[calders-tooth-and-port-tidefall|Port Tidefall]] before he found [[crissdalynn-khinriss]] in [[le-paludi|Le Paludi]], and his foul wind is the thread Session 04 picks up. [[perrin-black-jaw]]'s *Grow* vision is still unexplained, and [[umberlee]]'s shrine is still waiting for [[delmar-fisk]]. Next: [[session-04-recap]].

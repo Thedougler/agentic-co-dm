@@ -40,16 +40,16 @@ foundry_id: J9CeWsMCOahlafjx
 | ----------------- | -- |
 | **Class / Level** | Warlock 2 / Bard 3 (College of Lore) |
 | **Player**        | Kaden |
-| **Home ship**     | [[Uncertainty]] |
+| **Home ship**     | [[uncertainty]] |
 
 > **DM thesis:** Party force multiplier through Bardic Inspiration and control magic. Reads exits first. Owes [[nona-black-jaw]] an Aruhe survey while the chase toward [[Vestra]] stays partly unshared.
 
 ## Connections
 
 - [[nona-black-jaw]] — Grandmother, sending-stone contact, owed a survey of Aruhe as a tangle anchor.
-- [[rattkin-runs-and-black-jaw-run]] · [[Passage]] — Family and rescue network.
+- [[rattkin-runs-and-black-jaw-run]] · [[passage]] — Family and rescue network.
 - [[Vestra]] — Unshared chase; family heirloom ship lost deep below.
-- [[Uncertainty]] — Aboard at [[aruhe]].
+- [[uncertainty]] — Aboard at [[aruhe]].
 - [[crissdalynn-khinriss]] — She blocked him before he killed Ket.
 - [[delmar-fisk]] — Passed flying boots to Delmar; backs him in spars with Healing Word.
 

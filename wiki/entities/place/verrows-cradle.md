@@ -23,7 +23,7 @@ region: "Western Midchain"
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Verrow's Cradle
@@ -35,7 +35,7 @@ relationships:
 
 ## At a Glance
 
-Verrow's Cradle is a floating orphanage in the western [[Midchain]], quietly funded by a retired pirate captain's old treasure. [[Kalowe]] is a recorded related place, but the route, direction, and travel distance are not established. The Cradle can be bypassed, but doing so gives up access to a floating refuge and the chance to learn how its hidden funding keeps it afloat.
+Verrow's Cradle is a floating orphanage in the western [[Midchain]], quietly funded by a retired pirate captain's old treasure. [[kalowe]] is a recorded related place, but the route, direction, and travel distance are not established. The Cradle can be bypassed, but doing so gives up access to a floating refuge and the chance to learn how its hidden funding keeps it afloat.
 
 ## If the party
 
@@ -61,7 +61,7 @@ The floating orphanage houses orphaned children and requires caretakers, but no 
 - **East:** Canon gap; no named neighboring site or travel distance is established.
 - **South:** Canon gap; no named neighboring site or travel distance is established.
 - **West:** Canon gap; no named neighboring site or travel distance is established.
-- **Regional connection:** Verrow's Cradle lies in the western [[Midchain]] and has a recorded relationship with [[Kalowe]], but the route, direction, and travel distance are unknown.
+- **Regional connection:** Verrow's Cradle lies in the western [[Midchain]] and has a recorded relationship with [[kalowe]], but the route, direction, and travel distance are unknown.
 
 ## Why
 

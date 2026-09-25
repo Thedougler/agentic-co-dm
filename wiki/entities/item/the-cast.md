@@ -15,6 +15,8 @@ visibility: dm
 kind: consumable
 rarity: uncommon
 attunement: false
+region: "[[calven-and-calveno]]"
+owner: "[[ettore-lupo]]"
 summary: "A consumable arrow that opens into a weighted net in flight, restraining a Large or smaller creature at bow range."
 provenance:
   extracted: 0.85

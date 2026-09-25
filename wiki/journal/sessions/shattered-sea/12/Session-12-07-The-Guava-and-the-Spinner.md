@@ -30,13 +30,13 @@ summary: "Skarn makes his committed second attempt on the Spinner at the Hollow'
 **Entry state.** Mid-afternoon at the north rim of the [[turned-hollow]], the Grove edge, or the rim walk, per [[Session-12-06-What-Is-Chosen]]. The party is spent from the fig. [[talon-skarn]] is marked or not, holds 0 to 2 [[ghost-plum]]s (and has eaten one if he has any), and has 0 to 2 Legendary Resistances.
 **Party goal.** Keep the [[fate-spinner]] and everyone alive.
 **Opposition goal.** Skarn wants the Spinner and a way off the island by dusk. [[Auralis]] wants the Spinner kept from Countless, whatever it costs Perrin.
-**Stakes.** Crissdalynn's bonded artifact goes to [[talon-vantyrus]]. Perrin either obeys a voice he never agreed to or refuses it. A claim at the Grove's doorstep tells [[Hinewai]] exactly who the party is.
+**Stakes.** Crissdalynn's bonded artifact goes to [[talon-vantyrus]]. Perrin either obeys a voice he never agreed to or refuses it. A claim at the Grove's doorstep tells [[hinewai]] exactly who the party is.
 **Pressure.** Skarn gives this attempt five rounds. After that he breaks for the east canopy and waits for dark.
 **End when.** Skarn leaves with or without the Spinner, is captured, or trades for it.
 **Memorable element.** The single word in Perrin's head, the guava within reach, and leafless vines uncoiling out of the trees toward something no one can see.
 **Budget.** About 50 minutes. **If behind:** skip Phase 3; Skarn breaks off at the end of round 3.
 
-**Next:** [[Session-12-08-Toward-the-Memorial]]
+**Next:** [[session-12-08-toward-the-memorial]]
 
 > [!narration] Opening image
 > The water running off Perrin's cloak turns from a drip to a stream. Under the leaning guava the rim path is hard and narrow, Crissdalynn in the middle of the party, the heavy fruit hanging at arm's height on its green stem, the black flowers a hundred feet north and the Hollow's pits falling away to the south. The leaves overhead part and fall back with nothing between them. Something steps down onto the roots behind Crissdalynn, and the ground gives under a weight with no body on it. Perrin, a voice arrives inside your head, vast and patient and cold as the bottom of the sea, and it says one word. "CONSUME."
@@ -47,11 +47,11 @@ summary: "Skarn makes his committed second attempt on the Spinner at the Hollow'
 
 | Thread | Planted in | Tested in | Lever it gives here | Without it |
 | --- | --- | --- | --- | --- |
-| Skarn's theft | [[Session-12-01-River-Slack-Reprise]] | [[Session-12-03-Grass-Without-Wind]] | If the party kept Matteo's plums, Skarn is visible and needs a stoop, and the guava canopy denies it. The party knows his Snatch and his break point. | He is Invisible for an hour: attacks against him have Disadvantage and his attacks have Advantage. |
-| The island's law and the mark | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-03-Grass-Without-Wind]], [[Session-12-05-The-Wrong-Tree]] | If Skarn is marked, the two north-rim [[vine-lash]]es find him the moment he comes within 30 feet of the trees and lash at him; each grapple pins his Invisible body in place for everyone to target. | The vine lashes wake only if someone makes a new claim. |
+| Skarn's theft | [[session-12-01-river-slack-reprise]] | [[session-12-03-grass-without-wind]] | If the party kept Matteo's plums, Skarn is visible and needs a stoop, and the guava canopy denies it. The party knows his Snatch and his break point. | He is Invisible for an hour: attacks against him have Disadvantage and his attacks have Advantage. |
+| The island's law and the mark | [[Session-12-02-A-Name-for-Matteo]] | [[session-12-03-grass-without-wind]], [[session-12-05-the-wrong-tree]] | If Skarn is marked, the two north-rim [[vine-lash]]es find him the moment he comes within 30 feet of the trees and lash at him; each grapple pins his Invisible body in place for everyone to target. | The vine lashes wake only if someone makes a new claim. |
 | Perrin's unasked-for patron | [[Session-12-06-What-Is-Chosen]] (the cloak) | here | The cloak's stream points at Skarn: Perrin knows his direction within 30 feet. A [[giants-guava]] sets Perrin's Charisma to 25 for 1 hour: spell save DC 18, spell attack `+10`. | Perrin fights at DC 16 and learns only that something warned him. |
-| The lawful fruit | [[Session-12-03-Grass-Without-Wind]] (Star Cut) | here | A working fallen guava gives Perrin Charisma 25 with no claim. He can obey the order's purpose and refuse its price. | The only guava in reach is the living one. |
-| The survivors | [[Session-12-02-A-Name-for-Matteo]] | [[Session-12-05-The-Wrong-Tree]] | [[oren-vask\|Oren]]'s 50 feet of rope can bind an Incapacitated Skarn (see Final Battle). A forgiven [[nello-castri\|Nello]] obeys "get down" instantly and is never Skarn's hostage. | Nello freezes in the open and is the nearest body for Skarn's desperation move. |
+| The lawful fruit | [[session-12-03-grass-without-wind]] (Star Cut) | here | A working fallen guava gives Perrin Charisma 25 with no claim. He can obey the order's purpose and refuse its price. | The only guava in reach is the living one. |
+| The survivors | [[Session-12-02-A-Name-for-Matteo]] | [[session-12-05-the-wrong-tree]] | [[oren-vask\|Oren]]'s 50 feet of rope can bind an Incapacitated Skarn (see Final Battle). A forgiven [[nello-castri\|Nello]] obeys "get down" instantly and is never Skarn's hostage. | Nello freezes in the open and is the nearest body for Skarn's desperation move. |
 | The Gold orders | [[Session-12-04-Two-Grave-Orders]] | [[Session-12-06-What-Is-Chosen]] | Knowing the diggers died by taking, the party can bait a claim: anyone who tricks Skarn into cutting living growth marks him (see Stage). | The party does not know a claim can be turned on him. |
 
 ````col
@@ -116,7 +116,7 @@ flexGrow=2
 | **The living guava** | Eat it, pick it, or throw it to someone. | Picking is a claim; the picker is marked. Throwing it into Skarn's hands does not mark him; only the picker is marked. |
 | **North-rim trees and the vine lashes** | Lure a marked Skarn under them. Burn them. | A marked creature within 30 feet wakes them. Burning them is fighting back only after they attack. |
 | **Rim edge over the Hollow** | Shove or pull someone over. | A creature forced 5 feet past the edge slides 15 feet down into the pits: **Dexterity save — `DC 10`** or `1d6` and Prone in a pit. The fig is 85 feet from the bottom of the slope. |
-| **Black-flower ring, 100 feet north** | Fight into the Grove. | Anyone who damages the tree, the graves, or the flowers ends [[Hinewai]]'s welcome for the whole party (see [[memorial-grove]]). Skarn does not know this. |
+| **Black-flower ring, 100 feet north** | Fight into the Grove. | Anyone who damages the tree, the graves, or the flowers ends [[hinewai]]'s welcome for the whole party (see [[memorial-grove]]). Skarn does not know this. |
 
 **Movement / zones.** Rim path: 10 feet wide, 60 feet long under the canopy. Open sky starts 15 feet south of the path, over the bowl. The east canopy, Skarn's exit, is 40 feet east along the rim.
 
@@ -184,7 +184,7 @@ flexGrow=2
 
 **Survivors / loose ends.** Skarn, wherever he went. The vine lashes, back in the trees. Nello, Celia, and Oren.
 
-**Hand off to Resolution.** When Skarn is gone or bound, stop and move to [[Session-12-08-Toward-the-Memorial]].
+**Hand off to Resolution.** When Skarn is gone or bound, stop and move to [[session-12-08-toward-the-memorial]].
 
 ## Live notes
 

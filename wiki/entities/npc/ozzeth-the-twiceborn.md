@@ -72,7 +72,7 @@ Ozzeth's posture changed when the party threatened the chamber or the people he 
 ```
 ````
 
-**Wants:** to keep [[Simone]]'s unsealed color-rite stable from a distance, the one secret his own Twiceborn brand couldn't take from him, while Gold caste's reputation-work keeps him too disgraced to ever ask for open help.
+**Wants:** to keep [[simone]]'s unsealed color-rite stable from a distance, the one secret his own Twiceborn brand couldn't take from him, while Gold caste's reputation-work keeps him too disgraced to ever ask for open help.
 
 
 
@@ -84,7 +84,7 @@ Ozzeth found the rite first and went further with it than Simone ever managed al
 
 | Field | Value |
 |---|---|
-| Primary goal | Keep [[Simone]]'s unsealed color-rite from collapsing, at any distance. |
+| Primary goal | Keep [[simone]]'s unsealed color-rite from collapsing, at any distance. |
 | Consistent method | Checks in by Sending, timed to his own schedule instead of hers, so no watcher learns the pattern. |
 | Active problem | His own miscarried rite marked him "mage-abomination," so any help he offers has to travel through Sending, never his own name. |
 | Performance hooks | The silent professional who never explains himself + a casting hand that visibly bleeds color, red climbing one palm as blue drains the other. |
@@ -158,7 +158,7 @@ legendary_actions:
     desc: "Ozzeth targets one creature charmed, frightened, or dominated by him that he can see within 60 feet. That creature immediately uses its reaction to move up to its speed and make one weapon attack against a target of Ozzeth's choice."
 ```
 
-A small grung mage whose chromatic ward and 130 hit points of spellcasting prowess once stood watch at [[verdant-teeth]] and [[Orak]] before he took up his post in Magazine Delta.
+A small grung mage whose chromatic ward and 130 hit points of spellcasting prowess once stood watch at [[verdant-teeth]] and [[orak]] before he took up his post in Magazine Delta.
 
 Guards **Room T2 (Magazine Delta)** with [[purple-caste-zealot]] in [[Calveno Sewer Magazines]] (Session 06 roster, reworked 2026-07-03). He left mobile work, and a drunk mage, blind monk, and mage-abomination took the remaining slots. He swims 30 ft. and casts control spells well; the Zealot is a walking bomb, so watch the barrels.
 

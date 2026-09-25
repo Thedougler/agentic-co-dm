@@ -34,7 +34,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Cheerful Moucheron mercenary and Five Blades member |
-| **Home**   | [[Kalowe]] |
+| **Home**   | [[kalowe]] |
 | **Wants**  | To understand why fights go wrong |
 
 > **DM thesis:** Toa turns every failed fight into a problem he wants to analyze, making his sound opinions useful while his unexplained seal collection keeps one part of him closed.
@@ -72,7 +72,7 @@ Toa stays cheerful while discussing a tactical failure, but becomes intent when 
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[five-blades]] | Toa's mercenary company and fellow members [[Varet]], [[Suke]], and [[Wirra]]. |
+| [[five-blades]] | Toa's mercenary company and fellow members [[varet]], [[suke]], and [[Wirra]]. |
 | [[Moucheron]] | Toa's people and origin context. |
-| [[Kalowe]] | Toa comes from Kalowe. |
+| [[kalowe]] | Toa comes from Kalowe. |
 | Contract seals | Toa keeps seals from other companies for reasons he does not explain. |

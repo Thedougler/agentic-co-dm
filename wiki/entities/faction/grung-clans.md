@@ -76,7 +76,7 @@ flexGrow=1
 ## Current State
 
 - **Status quo.** The clans control five rainforest islands as one closed system of canopy routes, standing pools, flooded cuts, and sanctioned beaches.
-- **Recent change.** Their water power is shrinking, so patrols are more aggressive, retreats are fewer, and captives move faster toward [[Karath]].
+- **Recent change.** Their water power is shrinking, so patrols are more aggressive, retreats are fewer, and captives move faster toward [[karath]].
 - **Pressure.** Toxin exports, raids, and the fighting-age levy must compensate for maritime ground the clans can no longer replace.
 - **Strength.** Their biology, terrain, toxins, and short beach interface make an approach dangerous before a visitor reaches a settlement.
 - **Vulnerability.** Their reach depends on boats, channels, captives, and hidden reagent farms; every lost hull or exposed pipeline narrows their options.
@@ -90,11 +90,11 @@ flexGrow=1
 
 **Clock:** ○ ○ ○ ○ ○ ○ (progress unknown)
 
-**Next move:** Push another raid and move fighting-age captives through the fleet toward [[Karath]].
+**Next move:** Push another raid and move fighting-age captives through the fleet toward [[karath]].
 
 **Needs:** Vethka war proas, safe reef passages, toxin stock, and a route that avoids Crown inspection.
 
-**Opposition:** [[dravosi-crown]], [[Passage]], and any party that exposes the captive pipeline or redirects the fleet.
+**Opposition:** [[dravosi-crown]], [[passage]], and any party that exposes the captive pipeline or redirects the fleet.
 
 **Next signal:** A beach intermediary shortens negotiations, patrols close a previously usable gap, or another captive shipment leaves a festival port.
 
@@ -109,17 +109,18 @@ flexGrow=1
 | [[verdant-teeth]] | Access | Five rainforest islands | Closed routes, sacred ground, and inland concealment. | Controlled |
 | Vethka war proas | Force | Reef and channel network | Raids, patrols, and captive movement. | Reach declining |
 | Toxin harvest and export | Wealth / Force | Teeth and Crown pipeline | Trade, poison, caste identity, and leverage. | Active |
-| Captive and hatchery pipeline | Force | [[Karath]] | Slave-soldiers and enlarged vermin for the interior. | Exposed |
+| Captive and hatchery pipeline | Force | [[karath]] | Slave-soldiers and enlarged vermin for the interior. | Exposed |
 
 ## People & Structure
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
 | [[Auralis]] | Public mandate and private apex presence | Continued obedience to the gold authority. | Exact nature unknown. |
-| [[Simone]] | Purple officer and Sorn garrison holder | Toxin sales, control, and the hunt for [[jean-claude-tabarnack]]. | Her position is exposed by substitute-gold trade. |
-| [[felix-aho]], [[ruma-delacroix]], [[solange-barret]], [[Bazzoth]], [[vashu-the-weeping-veil]], [[Ozzeth]] | Named operatives | Carry out clan work in different colors and roles. | The source does not establish a complete hierarchy. |
+| [[simone]] | Purple officer and Sorn garrison holder | Toxin sales, control, and the hunt for [[jean-claude-tabarnack]]. | Her position is exposed by substitute-gold trade. |
+| [[felix-aho]], [[ruma-delacroix]], [[solange-barret]], [[bazzoth]], [[vashu-the-weeping-veil]], [[Ozzeth]] | Named operatives | Carry out clan work in different colors and roles. | The source does not establish a complete hierarchy. |
 | [[Botukuri]] | Sorn farming clan | Maintain seasonal flood-pulse agriculture. | The source does not establish its full government. |
 
+### Chain of Action
 **Who decides:** Gold authority and the congregation on sacred ground issue the public mandate.
 
 **Who interprets those orders:** Officers, garrison holders, scouts, handlers, and beach intermediaries translate the mandate into local action.
@@ -132,10 +133,10 @@ flexGrow=1
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Veth]] | Strong / Temporary | Western beach trade and blue intermediaries. | No pier; reef access is narrow. |
-| [[Sorn]] | Headquarters / Strong | Farm heart, Botukuri lanes, and Simone's garrison. | Water and substitute-gold pressure. |
-| [[Karath]] | Headquarters / Hidden | Raids, hatcheries, tannin rivers, and gold reagent farms. | Captive pipeline and proximity to [[aruhe]]. |
-| [[Dreth]] and [[Orak]] | Hidden | Drowned forest, karst clefts, sinkholes, and wet nests. | No charted shoreline and a forbidden crossing. |
+| [[veth]] | Strong / Temporary | Western beach trade and blue intermediaries. | No pier; reef access is narrow. |
+| [[sorn]] | Headquarters / Strong | Farm heart, Botukuri lanes, and Simone's garrison. | Water and substitute-gold pressure. |
+| [[karath]] | Headquarters / Hidden | Raids, hatcheries, tannin rivers, and gold reagent farms. | Captive pipeline and proximity to [[aruhe]]. |
+| [[dreth]] and [[orak]] | Hidden | Drowned forest, karst clefts, sinkholes, and wet nests. | No charted shoreline and a forbidden crossing. |
 | [[veth-west-beach]] | Temporary | Sanctioned outsider interface. | A beach protocol becomes an interior breach after departure. |
 
 ## Connections
@@ -143,8 +144,8 @@ flexGrow=1
 | Faction / person | Stance | What Grung Clans want from them | Leverage, debt, or friction |
 | --- | --- | --- | --- |
 | [[dravosi-crown]] | Rival | Toxin sales and room to move captives without Crown control. | The Crown buys toxin while its coasts suffer raids. |
-| [[Passage]] | Complicated | Avoid interference with rescue routes and fleet movement. | Rescue and raiding routes can cross without shared goals. |
-| [[aruhe]] | Hostile history | No current concession; the clans' earlier crime shaped the island. | [[Hinewai]] remembers the capture and torture that preceded Aruhe's making. |
+| [[passage]] | Complicated | Avoid interference with rescue routes and fleet movement. | Rescue and raiding routes can cross without shared goals. |
+| [[aruhe]] | Hostile history | No current concession; the clans' earlier crime shaped the island. | [[hinewai]] remembers the capture and torture that preceded Aruhe's making. |
 | Party | Rival | Remove interference and preserve the pipeline. | Individual Grung can still make separate choices. |
 
 ## Signals & Rumors
@@ -156,41 +157,29 @@ flexGrow=1
 
 ## Running the Faction
 
-### When encountered
-
-Grung members are moving through canopy and water, handling toxin, guarding a beach, or routing captives toward an island whose function outsiders are not meant to learn.
-
-### When helped
-
-A useful outsider receives a controlled trade, a brief audience with a blue intermediary, or safer passage along a known beach; the clans expect silence and obedience in return.
-
-### When opposed
-
-They protect the captive route, toxin stock, and interior first. They poison wells, spend civilians, or withdraw through wet vertical terrain when the perimeter closes.
-
-### When ignored
-
-The fleet takes more captives, patrols close another channel, and toxin reaches another buyer while the clans preserve the appearance of community protection.
-
-### When broken
-
-The source does not establish whether the clans collapse or fragment. Their islands, colors, and local resources would outlast any single officer, but a unified water war would not.
+| Situation | Run it |
+| --- | --- |
+| **When encountered** | Grung members are moving through canopy and water, handling toxin, guarding a beach, or routing captives toward an island whose function outsiders are not meant to learn. |
+| **When helped** | A useful outsider receives controlled trade, a brief audience with a blue intermediary, or safer passage along a known beach; the clans expect silence and obedience in return. |
+| **When opposed** | They protect the captive route, toxin stock, and interior first. They poison wells, spend civilians, or withdraw through wet vertical terrain when the perimeter closes. |
+| **When ignored** | The fleet takes more captives, patrols close another channel, and toxin reaches another buyer while the clans preserve the appearance of community protection. |
+| **When broken** | The source does not establish whether the clans collapse or fragment. Their islands, colors, and local resources would outlast any single officer, but a unified water war would not. |
 
 ## Faction Turn
 
 ### Current Turn
 
-- **Want:** Move captives through [[Karath]] before Crown inspection closes the route.
+- **Want:** Move captives through [[karath]] before Crown inspection closes the route.
 - **Move:** Use raids, toxin, and shrinking reef access to keep the pipeline moving.
 - **Mark:** Another fighting-age group enters the captive route, or a safe retreat is lost.
 - **Signal:** [[the-taken-314]] grows harder to trace from the festival ports.
-- **Collision:** [[Passage]] rescue routes and the Crown's inspection pressure intersect the fleet.
+- **Collision:** [[passage]] rescue routes and the Crown's inspection pressure intersect the fleet.
 - **Player opening:** Intercept the fleet, expose the Crown's toxin arrangement, or negotiate at a sanctioned beach without accepting interior access.
 
 ## History
 
-- **The making of Aruhe.** The clans captured and tortured a druid from a far Midchain island, killed her companion after their escape toward Aruhe, and left the grief that became [[Hinewai]]'s law. The full confession belongs in [[grung-and-the-making-of-aruhe]].
-- **The Calveno raid.** The clans took fighting-age people from festival ports and routed them through the captive pipeline toward [[Karath]].
+- **The making of Aruhe.** The clans captured and tortured a druid from a far Midchain island, killed her companion after their escape toward Aruhe, and left the grief that became [[hinewai]]'s law. The full confession belongs in [[grung-and-the-making-of-aruhe]].
+- **The Calveno raid.** The clans took fighting-age people from festival ports and routed them through the captive pipeline toward [[karath]].
 
 ## Hidden Agenda
 
@@ -198,7 +187,7 @@ The source does not establish whether the clans collapse or fragment. Their isla
 
 **Gold presence.** The exact nature of the presence associated with [[Auralis]] is unknown. It may be a god, construct, conduit, creature, or story made effective by congregation; this source does not decide among them.
 
-## Unknowns
+**Unknowns.**
 
 - The exact diet list, sealing words, gold presence's physical nature, and complete caste offices remain unknown.
 - The full Twiceborn process, every clan leader, every red-marked role, and a complete fleet hierarchy remain unknown.

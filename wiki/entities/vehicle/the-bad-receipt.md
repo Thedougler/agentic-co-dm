@@ -20,16 +20,16 @@ visibility: dm
 relationships:
   - target: "[[central-strait-crossing]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # The Bad Receipt
 
 A two-masted schooner runs through channels under patched cream sails. The merchant flag looks real until it does not. The hull is black-green, old and stained. Brass registry plates bolt over old marks. Drop the side screens and cannons appear in neat rows under cargo nets. The figurehead is a clerk holding a ship's hook.
 
-*Armed schooner · Tier 2 · [[Kalowe]].*
+*Armed schooner · Tier 2 · [[kalowe]].*
 
-A Tier 2 armed pirate schooner built for [[Midchain]] work. She uses false papers and calculated strikes. She escapes through channels where Crown captains get lost. Crews at [[Kalowe]] rebuilt her from a seized hull.
+A Tier 2 armed pirate schooner built for [[Midchain]] work. She uses false papers and calculated strikes. She escapes through channels where Crown captains get lost. Crews at [[kalowe]] rebuilt her from a seized hull.
 
 She is not a slaughter ship. The captain targets cargo, [[letters-of-marque]], hostage officers, and undeclared goods. The crew disables the rudder and scares the deck. They get a signed transfer under threat.
 
@@ -84,7 +84,7 @@ Prize cargo sits in nine crates on a nameless limestone rock near Kalowe. See [[
 
 ## Connections
 
-- [[Kalowe]], home port
+- [[kalowe]], home port
 - [[Midchain]], operating area
 - [[central-strait]], hunting corridor
 - [[dravosi-crown]], primary institutional enemy

@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Penance Bar
@@ -42,7 +42,7 @@ relationships:
 
 ## What
 
-The [[Sorrowbell]] is the shrine. The grove is the last hallowed ground, and the mob marches to burn it. A demon can walk into the empty Tyr box, say that Tyr is not there, and kiss Ashe into a devil-touched form.
+The [[sorrowbell]] is the shrine. The grove is the last hallowed ground, and the mob marches to burn it. A demon can walk into the empty Tyr box, say that Tyr is not there, and kiss Ashe into a devil-touched form.
 
 ## Where
 

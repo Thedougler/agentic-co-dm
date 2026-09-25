@@ -95,7 +95,7 @@ No active change to Minotaur traits, navigation faculty, or Sounding kinship is 
 | --- | --- | --- |
 | Soundings | Teaching and peer bonds that carry Minotaur kinship. | Gives Minotaur communities a social structure without a homeland or nation. |
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which Minotaur Soundings and navigators matter to the party's current route?
 * [ ] **Decide when needed.** A homeland or nation can remain undefined until play requires one.

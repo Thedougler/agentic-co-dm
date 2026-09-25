@@ -72,7 +72,7 @@ flexGrow=1
 
 ## Current State
 
-- **Status quo.** The Antheri vanished while a task remained unfinished. Their workshops stand mid-task, and deep machinery still runs. Their three tiers descend from newer [[Shelfworks]] to [[Mid-Works]] and pristine [[deep-works]].
+- **Status quo.** The Antheri vanished while a task remained unfinished. Their workshops stand mid-task, and deep machinery still runs. Their three tiers descend from newer [[Shelfworks]] to [[mid-works]] and pristine [[deep-works]].
 - **Recent change.** Salvage at [[Shelfworks]] has turned Antheri remnants into components, claims, and clues above the [[drowned-maw]].
 - **Pressure.** Old breach evidence may explain current Maw pressure. It may also explain the tribute system and the [[pearl-signal-across-the-boundary]] signal.
 - **Strength.** Their dark alloy, living-light channels, and soul-pledge architecture exceed current foundries. Their architecture could lock a mind into an artificial frame that does not die.
@@ -89,7 +89,7 @@ flexGrow=1
 
 **Why.** The breach may explain current Maw pressure. It may also explain the tribute system and the [[pearl-signal-across-the-boundary]] signal.
 
-The next move follows the evidence from [[Shelfworks]] through [[Mid-Works]] toward [[deep-works]], then compares it with [[Auralis]] and the fissure it contains.
+The next move follows the evidence from [[Shelfworks]] through [[mid-works]] toward [[deep-works]], then compares it with [[Auralis]] and the fissure it contains.
 
 **Needs.** The agenda needs access to all three tiers and a safe descent. Records or components must remain intact for comparison.
 
@@ -108,7 +108,7 @@ The next move follows the evidence from [[Shelfworks]] through [[Mid-Works]] tow
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | [[Shelfworks]] | Access / Information | Above [[drowned-maw]] | Salvage, records, and descent | Contested |
-| [[Mid-Works]] | Access / Information | 200 to 500 feet below [[Shelfworks]] | A second-tier route and soul-pledge evidence | Sealed |
+| [[mid-works]] | Access / Information | 200 to 500 feet below [[Shelfworks]] | A second-tier route and soul-pledge evidence | Sealed |
 | [[deep-works]] | Information / Magic | Below 500 feet | The fissure terminus and soul-pledge chamber | Planar exposure |
 | [[Auralis]] | Machine | Trench floor | Contains the fissure | Losing ground |
 
@@ -116,7 +116,7 @@ The next move follows the evidence from [[Shelfworks]] through [[Mid-Works]] tow
 
 ## People & Structure
 
-The Antheri were builders rather than a presently organized people. No living leader is known. Their surviving structure is the three-tier descent from [[Shelfworks]] through [[Mid-Works]] to [[deep-works]]. Their architecture indicates that soul-pledge could bind minds into artificial frames. The surviving record leaves open whether any minds besides [[Auralis]] remain active.
+The Antheri were builders rather than a presently organized people. No living leader is known. Their surviving structure is the three-tier descent from [[Shelfworks]] through [[mid-works]] to [[deep-works]]. Their architecture indicates that soul-pledge could bind minds into artificial frames. The surviving record leaves open whether any minds besides [[Auralis]] remain active.
 ### Chain of Action
 
 **Who decides.** No living Antheri leader is known, so no current decision-maker issues orders.
@@ -136,7 +136,7 @@ The Antheri were builders rather than a presently organized people. No living le
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
 | [[Shelfworks]] | Contested salvage site | Ruins, records, components, and the upper descent | Claims and unstable ground |
-| [[Mid-Works]] | Sealed residential tier | The second tier and its pumps, chambers, and channels | Pressure-rig failures |
+| [[mid-works]] | Sealed residential tier | The second tier and its pumps, chambers, and channels | Pressure-rig failures |
 | [[deep-works]] | Hidden planar tier | The soul-pledge chamber and fissure terminus | Elemental exposure |
 | [[drowned-maw]] | Historical route and breach site | The wider fissure system | Reversed currents and Maw pressure |
 
@@ -146,7 +146,7 @@ The Antheri were builders rather than a presently organized people. No living le
 
 - The Antheri machine [[Auralis]] contains the fissure, and the Antheri record does not confirm that Auralis is a sea-god.
 - [[drowned-maw]] is the environment that preserves, threatens, and gives current stakes to the Antheri remains.
-- [[Waveservants]] and [[sentinels-of-the-eyrie]] each have a stake in what the Maw means.
+- [[waveservants]] and [[sentinels-of-the-eyrie]] each have a stake in what the Maw means.
 - [[pearl-of-souls]] and [[pearl-signal-across-the-boundary]] may show the breach's present consequences.
 
 ---
@@ -176,4 +176,4 @@ The Antheri were builders rather than a presently organized people. No living le
 
 - **At their height.** The Antheri built a city in the Maw's western wall and a route toward the Elemental Plane of Water. Their engineering used dark alloy, living-light channels, and soul-pledge architecture.
 - **Their disappearance.** The Antheri vanished while a task remained unfinished. The surviving records disagree on whether the date was around 495 DR or −495 DR. ^[ambiguous]
-- **After the disappearance.** Their three tiers remained in place. Salvage now reaches [[Shelfworks]], while [[Mid-Works]] and [[deep-works]] preserve deeper evidence.
+- **After the disappearance.** Their three tiers remained in place. Salvage now reaches [[Shelfworks]], while [[mid-works]] and [[deep-works]] preserve deeper evidence.

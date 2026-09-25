@@ -55,7 +55,7 @@ He asks questions instead of making statements, even while teaching, and agrees 
 | Performance hooks | Composed sentinel master vibe. Smooths his robes, refolds his wings right over left, then adjusts his hood when his composure threatens to crack. |
 | Link of relevance | Assigned [[crissdalynn-khinriss\|Crissdalynn]] The Drowned Maw pilgrimage. Staked his own reputation on her readiness. |
 
-The "foul wind from the south" he named when the ship went down was right. Talon Vantyrus and [[talon-skarn]] of [[the Countless]] operated in the Midchain at the time. Introduce that thread only once the crew of the [[Uncertainty]] travels into or reaches the Midchain. His outstanding business is to determine what the Eyrie needs to know about current Maw conditions. He has not disclosed what brought him to Calveno beyond Crissdalynn. Does he know about the [[soul-incarnate]]? No. Under the Sentinels of the Eyrie doctrine, he does not know that [[soul-incarnate]] exists as a conscious entity. He knows only that the order's founding documents are ancient.
+The "foul wind from the south" he named when the ship went down was right. Talon Vantyrus and [[talon-skarn]] of [[the Countless]] operated in the Midchain at the time. Introduce that thread only once the crew of the [[uncertainty]] travels into or reaches the Midchain. His outstanding business is to determine what the Eyrie needs to know about current Maw conditions. He has not disclosed what brought him to Calveno beyond Crissdalynn. Does he know about the [[soul-incarnate]]? No. Under the Sentinels of the Eyrie doctrine, he does not know that [[soul-incarnate]] exists as a conscious entity. He knows only that the order's founding documents are ancient.
 
 ## Stats & Combat
 
@@ -128,7 +128,7 @@ legendary_actions:
 ## Connections
 
 - [[crissdalynn-khinriss]]: student/mentee (calls her Priscilla); gifted her the [[fate-spinner]], her crystal dreidel, before her pilgrimage
-- [[talon-vantyrus]]: his old master at [[high-eyrie]], and [[Osset|the master]] Kyzil was the most gifted student of. He asked Kyzil to follow him out of the Sentinels and Kyzil refused. Kyzil believes Osset died decades ago and does not know that his old master survived, took the working identity Talon Vantyrus, and now leads the Countless.
+- [[talon-vantyrus]]: his old master at [[high-eyrie]], and [[osset|the master]] Kyzil was the most gifted student of. He asked Kyzil to follow him out of the Sentinels and Kyzil refused. Kyzil believes Osset died decades ago and does not know that his old master survived, took the working identity Talon Vantyrus, and now leads the Countless.
 - [[sentinels-of-the-eyrie]]: the order he leads as senior master, based at High Eyrie
 - Crissdalynn's Pilgrimage: the task he assigned her
 - [[calven-and-calveno]]: present location
@@ -143,7 +143,7 @@ legendary_actions:
 
 **Session 06** (`vault/episodes/006/`): led a rooftop chase across [[le-paludi]] during [[il-gioco-delle-beffe]]. He batted away a water balloon, picked through a flower/balloon/net barrage, and wasn't fooled by a boy's fake drowning.
 
-**Session 03** (`vault/episodes/003/`): reunited with [[crissdalynn-khinriss|Crissdalynn]] in the Le Paludi streets. He dove from the sun in silence, knocked her back twenty feet, and held her from the front. She recognized his smell before seeing him. Had searched [[Kalowe]] and [[calders-tooth-and-port-tidefall]] first. Said "a foul wind from the south." Party currently unaware of his broader context.
+**Session 03** (`vault/episodes/003/`): reunited with [[crissdalynn-khinriss|Crissdalynn]] in the Le Paludi streets. He dove from the sun in silence, knocked her back twenty feet, and held her from the front. She recognized his smell before seeing him. Had searched [[kalowe]] and [[calders-tooth-and-port-tidefall]] first. Said "a foul wind from the south." Party currently unaware of his broader context.
 
 **Session 04** (`vault/episodes/004/`): told Crissdalynn he gave her the hardest pilgrimage in Eyrie history because he knew she could do it. Maw has been unruly and dangerous since the wreck. Weather odd. Sentinels saw the wreck. Senses something foul from the south.
 

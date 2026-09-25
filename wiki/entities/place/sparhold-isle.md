@@ -28,7 +28,7 @@ region: "Northern Midchain"
 
 ## At a Glance
 
-Sparhold Isle is a half-mile cut-over islet at the southern lip of the Northern Midchain strip. It sits between the harbour, the fortress-market, and Teethward water; the islet can orient travelers toward [[Sparhold]] without being mistaken for the settlement itself.
+Sparhold Isle is a half-mile cut-over islet at the southern lip of the Northern Midchain strip. It sits between the harbour, the fortress-market, and Teethward water; the islet can orient travelers toward [[sparhold]] without being mistaken for the settlement itself.
 
 ## Who
 
@@ -40,13 +40,13 @@ The islet has bare cut-over slopes, a harbour, fortress walls, timber work, and 
 
 ## Where
 
-* **North:** [[Sparhold]], with the settlement distinct from the half-mile landform; distance is not recorded.
+* **North:** [[sparhold]], with the settlement distinct from the half-mile landform; distance is not recorded.
 * **East:** [[verdant-teeth]], toward the Teeth fringe; distance is not recorded.
 * **South:** [[aruhe]]; distance and direct route are not recorded.
-* **West:** [[Murrat]]; distance and direct route are not recorded.
+* **West:** [[murrat]]; distance and direct route are not recorded.
 
 The islet is a southern-lip approach to the Northern Midchain strip. Its market's exact founding and ownership are not fixed.
 
 ## Why
 
-The party comes here to orient to the fortress-market, use the harbour, follow timber crews toward the Teeth fringe, or distinguish the landform from [[Sparhold]]. The place matters because cut-over land, harbour traffic, and Teethward routes meet here without a settled account of who founded or owns the market.
+The party comes here to orient to the fortress-market, use the harbour, follow timber crews toward the Teeth fringe, or distinguish the landform from [[sparhold]]. The place matters because cut-over land, harbour traffic, and Teethward routes meet here without a settled account of who founded or owns the market.

@@ -30,13 +30,13 @@ tier: supporting
 
 Iolo Bracca stamps Crown inspection paper on the [[calven-and-calveno]] harbour front and plays the [[Tallow Row]] felt most weeks like paying a subscription. He loses on purpose and knows it. Coin spent this way costs less than owing favours, and he values friendship over gold.
 
-His chatter flows from real hunger, not careless talk. He wants your ship's details in exchange for information about which hulls pass the mole at odd hours, how late seals arrive when timing counts, and which cousins profit. The table never interrupts him. A clerk who holds a hull at anchor for a season kills more crews than [[Grukan]] ever has, and Iolo manages this with perfect cheer.
+His chatter flows from real hunger, not careless talk. He wants your ship's details in exchange for information about which hulls pass the mole at odd hours, how late seals arrive when timing counts, and which cousins profit. The table never interrupts him. A clerk who holds a hull at anchor for a season kills more crews than [[grukan]] ever has, and Iolo manages this with perfect cheer.
 
 ## Connections
 
 - [[Tallow Row]], the den where he plays most weeks and loses on purpose.
 - [[vittoria-sanzio]], who banks the table but never his paper, taking his goodwill instead.
-- [[Thassos]], who laughs at his stories on cue and uses his talking as cover for a push.
+- [[thassos]], who laughs at his stories on cue and uses his talking as cover for a push.
 - [[Watches-the-Deck]], who ignores every word but misses nothing at the table.
 
 ## Session Log

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "A single-use alchemical cigarette whose smoke drifts toward whoever is lying, allowing the smoker to detect deception without learning what's hidden."
 provenance:
   extracted: 0.85
@@ -49,7 +54,6 @@ At the table, this blend serves one specific story beat: catching a liar.
 
 **PC connection:** [[jean-claude-tabarnack]] is a hidden [[Grung]] traitor moving through a city of brokers. The thing that kills him is trusting the wrong handler's word. This blend tells him when a contact is lying to his face, and never tells him what they're hiding.
 
-## Mechanics
 
 **[HB]** Lighting the cigarette takes an Action. For the next 10 minutes, the smoker knows the moment a creature they can both see and hear knowingly lies to them, and learns nothing else.
 

@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: potion
+rarity: uncommon
+attunement: false
+owner: "[[lavinia-sordi]]"
 summary: "A potion that always heals, and always does one other random thing too."
 provenance:
   extracted: 0.85
@@ -35,7 +40,6 @@ tier: supporting
 | Current holder | [[lavinia-sordi]] keeps vials stocked at [[la-cenere]]; [[delmar-fisk]] carries one in his coat. |
 | Narrative hook | Still available to buy at [[la-cenere]] for 75 gp. Lavinia doesn't test her own stock, so nobody but the drinker ever finds out what a given vial actually does. |
 
-## Mechanics
 
 > [!mechanic]
 > **Uncertain Draught [HB].** Drinking this potion is a Bonus Action, consumed on use. It always restores 1d6 hit points, and the drinker immediately starts talking, unable to stop, for 1 hour: harmless, constant, and impossible to suppress.

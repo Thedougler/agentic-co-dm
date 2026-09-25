@@ -23,7 +23,7 @@ region: "Western Midchain"
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Kettleback
@@ -35,7 +35,7 @@ relationships:
 
 ## At a Glance
 
-Kettleback is an old mine site in the western [[Midchain]], heated by a deep geothermal vent and repurposed as an unlicensed alchemical lab. It sits within the Western Midchain's island network, with a recorded connection to [[Kalowe]]; the exact route and travel distance are not established. The site can be bypassed, but doing so gives up access to the vent-heated tunnels and whatever information or materials the lab contains.
+Kettleback is an old mine site in the western [[Midchain]], heated by a deep geothermal vent and repurposed as an unlicensed alchemical lab. It sits within the Western Midchain's island network, with a recorded connection to [[kalowe]]; the exact route and travel distance are not established. The site can be bypassed, but doing so gives up access to the vent-heated tunnels and whatever information or materials the lab contains.
 
 ## If the party
 
@@ -60,7 +60,7 @@ The source identifies an unlicensed alchemical lab in the old mine tunnels but n
 - **East:** Canon gap; no named neighboring site or travel distance is established.
 - **South:** Canon gap; no named neighboring site or travel distance is established.
 - **West:** Canon gap; no named neighboring site or travel distance is established.
-- **Regional connection:** Kettleback is in the western [[Midchain]] and has a recorded relationship with [[Kalowe]], but the route, direction, and travel distance between them are unknown.
+- **Regional connection:** Kettleback is in the western [[Midchain]] and has a recorded relationship with [[kalowe]], but the route, direction, and travel distance between them are unknown.
 
 ## Why
 

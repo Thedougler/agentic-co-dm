@@ -21,7 +21,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Fathomrush]]"
+location: "[[fathomrush]]"
 faction: "[[voyvode-works|Voyvode Works]]"
 visibility: dm
 ---
@@ -36,7 +36,7 @@ flexGrow=2
 | **Role** | Contact |
 | --- | --- |
 | **Nature** | Chief engineer and trial leader for the Dravosi-backed [[voyvode-works|Voyvode Works]]. |
-| **Home** | [[Fathomrush]], where Voyvode stages dives on the [[Shelfworks]]. |
+| **Home** | [[fathomrush]], where Voyvode stages dives on the [[Shelfworks]]. |
 | **Wants** | A deep-pressure rig that works at mid-shelf depth, proved through honest trials rather than forged data. |
 
 > **DM thesis:** Branimir makes himself the test case before he makes anyone else one, but every honest trial still risks another name on Fathomrush's memorial wall.
@@ -66,7 +66,7 @@ flexGrow=1
 ===
 ### When posture changes
 
-He closes the conversation when someone asks him to send a crew under a rig he has not tested, falsify a trial record, or treat a diver's death as acceptable company accounting. Evidence that [[Sunkline]] forged its mid-shelf certificate takes priority over ordinary bargaining.
+He closes the conversation when someone asks him to send a crew under a rig he has not tested, falsify a trial record, or treat a diver's death as acceptable company accounting. Evidence that [[sunkline]] forged its mid-shelf certificate takes priority over ordinary bargaining.
 ```
 ````
 
@@ -75,7 +75,7 @@ He closes the conversation when someone asks him to send a crew under a rig he h
 | Connection | Meaning |
 | --- | --- |
 | [[voyvode-works\|Voyvode Works]] | Branimir is chief engineer and personally runs its trial dives. |
-| [[Fathomrush]] | His work stages there before dives on the [[Shelfworks]]. |
+| [[fathomrush]] | His work stages there before dives on the [[Shelfworks]]. |
 | [[adriana-tarquine]] | Rival pressure-rig authority whose Sunkline certificate is forged. |
 | [[petera-ngata]] | Holds the complete death list that can identify which company lost a diver. |
 | [[dravosi-crown]] | Backs Voyvode Works and its charter. |

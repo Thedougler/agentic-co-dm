@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Cradle Reef
@@ -55,7 +55,7 @@ The established feature is a nursery reef used by sea dragons. The reef's channe
 - **East:** Canon gap; no named neighbor or travel time is established.
 - **South:** Canon gap; no named neighbor or travel time is established.
 - **West:** Canon gap; no named neighbor or travel time is established.
-- **Regional connection:** Cradle Reef is in the western [[Midchain]], and the page retains a recorded relationship to [[Kalowe]] without an established route.
+- **Regional connection:** Cradle Reef is in the western [[Midchain]], and the page retains a recorded relationship to [[kalowe]] without an established route.
 
 ## Why
 

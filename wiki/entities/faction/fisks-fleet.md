@@ -79,7 +79,7 @@ flexGrow=1
 * **Vulnerability.** The fleet has no ships, crews, or independent base. Delmar's survival determines its remaining influence.
 * **Opportunity.** The party can question whichever captain controls Delmar. A trigger can invoke a specialty. The fleet's operational trail leads to the Pearl.
 
-**Internal fracture.** The captains disagree in method despite their shared history. [[rael-corven|Rael]] commands and protects, [[Maren]] rejects authority, [[detto-kalash|Detto]] solves obstacles physically, [[sienne-orre|Sienne]] demands evidence, and [[bastian-ookage|Bastian]] turns pressure into spectacle.
+**Internal fracture.** The captains disagree in method despite their shared history. [[rael-corven|Rael]] commands and protects, [[maren]] rejects authority, [[detto-kalash|Detto]] solves obstacles physically, [[sienne-orre|Sienne]] demands evidence, and [[bastian-ookage|Bastian]] turns pressure into spectacle.
 
 ---
 
@@ -104,7 +104,7 @@ flexGrow=1
 
 ### Secondary Agenda
 
-No independent secondary agenda exists for a dissolved fleet. Keep current consequences on [[chain-council|Chain Council]], [[tessarine-concordat|Tessarine Concordat]], and [[Waveservants]] pages.
+No independent secondary agenda exists for a dissolved fleet. Keep current consequences on [[chain-council|Chain Council]], [[tessarine-concordat|Tessarine Concordat]], and [[waveservants]] pages.
 ---
 ## Assets
  
@@ -123,9 +123,9 @@ No independent secondary agenda exists for a dissolved fleet. Keep current conse
 | --- | --- | --- | --- |
 | [[delmar-fisk\|Delmar Fisk]] | Rear Admiral and current host | Survive and recover the Pearl | Carries all five captains |
 | [[rael-corven\|Rael Corven]] | Flag captain of the *[[red-lady\|Red Lady]]* | Protect Delmar and act decisively | Loudest and most trusted captain voice |
-| [[Maren]] | Captain of the *[[the-narrow\|Narrow]]* | Reject imposed authority and blocked passage | Quickest to challenge command |
+| [[maren]] | Captain of the *[[the-narrow\|Narrow]]* | Reject imposed authority and blocked passage | Quickest to challenge command |
 | [[detto-kalash\|Detto Kalash]] | Captain of the *[[Heft]]* | Solve physical obstacles directly | Blunt and difficult to redirect |
-| [[sienne-orre\|Sienne Orre]] | Captain of the *[[Fernen]]* | Gather enough information before acting | Slows action when evidence is thin |
+| [[sienne-orre\|Sienne Orre]] | Captain of the *[[fernen]]* | Gather enough information before acting | Slows action when evidence is thin |
 | [[bastian-ookage\|Bastian Ookage]] | Captain of the *[[the-loud-argument\|Loud Argument]]* | Turn pressure into movement and spectacle | Most emotionally expressive of the five |
 
 ### Chain of Action

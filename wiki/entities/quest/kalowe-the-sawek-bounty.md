@@ -30,7 +30,7 @@ summary: "A local bounty concerning a territorial Sawek near Kalowe's blue holes
 ### What the party knows
 
 > [!narration] Player-facing brief
-> A local bounty concerning a territorial [[Sawek]] near [[Kalowe]]'s blue holes.
+> A local bounty concerning a territorial [[Sawek]] near [[kalowe]]'s blue holes.
 
 ### What is really happening
 

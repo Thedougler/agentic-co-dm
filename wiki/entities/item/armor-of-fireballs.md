@@ -7,47 +7,51 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:armor-of-fireballs.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "Rare attuned armor that lets the wearer detonate a self-centered Fireball they're immune to."
+region: "[[kalowe]]"
+kind: magic
+rarity: rare
+attunement: true
+owner: "[[Vask's Reclaimed Goods]]"
+summary: "Rare attuned armor with fire resistance and a self-centered Fireball that does not harm its wearer."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Armor of Fireballs
 
 > [!narration] Narration
-> Glowing orange spirals mark the shoulders and the center of the chest, three coiled sigils warm to the touch while the plate around them stays cool. Press a palm to the breastplate and something answers with a slow, banked warmth, like a hearth-coal that never fully cools.
+> Glowing orange spirals mark the shoulders and center of the chest. Three coiled sigils are warm to the touch while the plate around them stays cool. A palm pressed to the breastplate finds a slow, banked warmth, like a hearth-coal that never fully cools.
 
-*Armor (Light, Medium, or Heavy), Rare (Requires Attunement).*
+*Armor (Light, Medium, or Heavy), rare (requires attunement).* 
 
-**Item Toy**
+**Fire Resistance.** While wearing the armor and attuned to it, you have Resistance to Fire damage.
 
-| Field | Value |
-|---|---|
-| One thing | Action-activated Fireball centered on the wearer, who is immune to it. The armor's own fire resistance makes triggering it survivable. |
-| Rarity justification | Rare, comparable to Periapt of Proof against Poison (passive damage-type immunity paired with a linked benefit) and Ring of Evasion (a strong, recharge-gated combat action, not at-will). Both are Rare and both require attunement. |
-| Attunement reason | Rare tier default: always requires attunement if combat-relevant (item-rarity-budget.md). This item is combat-relevant on both its passive and active powers. |
-| PC connection | None. World flavor, not tied to a specific PC's arc (DM ruling, 2026-08-06). |
-| Current holder | [[Vask's Reclaimed Goods]], on the rack near the counter. |
-| Narrative hook | On sale at [[sorin-vask]]'s shop in [[Kalowe]] for 4,000 gp, its origin left to whoever buys it. |
+**Armor Fireball.** As an action, you activate the armor. A Fireball erupts centered on you. Every creature in the 20-foot-radius Sphere, including allies, makes a DC 15 Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one. You take no damage from this blast. The ability recharges when you take 15 or more Fire damage in a single instance or at dawn.
 
-## Mechanics
+The Sphere always centers on you. You cannot redirect it to another point. The armor's power casts the Fireball directly, so you spend no spell slot or component and do not Concentrate on it. The DC remains 15 regardless of your own statistics. Resistance to Fire protects against ordinary Fire damage; immunity applies only to the armor's own triggered Fireball. The armor grants no bonus to AC or weapon attacks.
 
-**[HB] Fire Resistance.** The wearer has resistance to fire damage. The wearer keeps this benefit as long as they remain attuned to the armor and keep it on.
+## At the Table
 
-> [!mechanic]
-> **[HB] Armor Fireball.** Trigger: the wearer takes an action to activate the armor. Effect: a Fireball erupts centered on the wearer. Every creature in the 20-foot-radius sphere, including allies, makes a DC 15 Dexterity save, taking 8d6 fire damage on a failure or half as much on a success. The wearer takes no damage from this blast. Recharge: the ability recharges once the wearer takes 15 or more fire damage in a single instance, or at dawn.
+The armor is folded into the salvage rack near the counter at [[Vask's Reclaimed Goods]] in [[kalowe]], priced at 4,000 gp. It turns the wearer into the center of a dangerous area attack: allies must accept the same saving throw as enemies, and the wearer must choose the activation point by choosing to stand there. Its three warm shoulder and chest sigils reveal that its power is still banked even when the armor looks inert.
 
-**Edge cases.** The sphere always centers on the wearer, not a point they choose. Anyone standing close, ally or enemy, faces the same save and damage as a foe would. The armor's own power casts this Fireball directly, so the wearer spends no spell slot, component, or concentration on it. The DC stays fixed at 15 no matter the wearer's own stats.
+## Hidden Properties
 
-**Limitations.** The armor grants only the two powers above, adding no bonus to AC or to weapon attacks. The Fireball always centers on the wearer, who cannot redirect it to another point. Fire Resistance protects only against ordinary fire damage, and full immunity applies solely to the armor's own triggered Fireball. Once triggered, the wearer cannot activate the ability again until it recharges.
+No maker or original purpose is known. The armor's fire resistance and self-centered blast are its only established powers. The origin is left open to whoever buys it from [[sorin-vask]]'s shop.
+
+## Connections
+
+- [[Vask's Reclaimed Goods]] holds the armor on its rack and offers it through the salvage trade.
+- [[sorin-vask]] sells the armor in [[kalowe]] for 4,000 gp.
+- [[kalowe]] is the current market and place where the armor can enter play.
 
 ## Provenance
 
-No one has claimed to have made it. It sits on the rack at [[Vask's Reclaimed Goods]] in [[Kalowe]] now, folded into the salvage trade there like everything else on the shelves.
+No one has claimed to have made the armor. It currently sits at [[Vask's Reclaimed Goods]] in [[kalowe]], folded into the salvage trade. No specific PC connection is established.

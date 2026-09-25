@@ -58,7 +58,7 @@ The Mud Pits are Kalowe's fighting venue on the third island. [[bala-tane|Bala T
 - **North:** Canon gap; no named neighboring site or travel distance is recorded.
 - **East:** Canon gap; no named neighboring site or travel distance is recorded.
 - **South:** Canon gap; no named neighboring site or travel distance is recorded.
-- **West:** [[Kalowe]]; the Mud Pits stand on Kalowe's third island, but the internal route and travel time are not recorded.
+- **West:** [[kalowe]]; the Mud Pits stand on Kalowe's third island, but the internal route and travel time are not recorded.
 
 ---
 ## Why

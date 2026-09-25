@@ -53,7 +53,7 @@ Aruhe Beach is the shore-facing name for the island's known western landing. Tab
 ---
 ## Where
 
-- Western rim of [[aruhe]] / [[hungry-isle]]. Open water from [[sparhold]]. A near-edge channel by [[Karath]] does not shorten the inland journey.
+- Western rim of [[aruhe]] / [[hungry-isle]]. Open water from [[sparhold]]. A near-edge channel by [[karath]] does not shorten the inland journey.
 - Inland → [[old-gardens]]. Offshore retreat → [[uncertainty]].
 
 ---

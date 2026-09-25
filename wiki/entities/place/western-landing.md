@@ -32,7 +32,7 @@ relationships:
 
 ---
 ## At a Glance
-Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, one usable boat gap, and a short shingle beach at the island's western rim. [[Sparhold]] has the established open-water route; [[Karath]] is close to one edge but does not shorten the country-scale journey to Aruhe's heart. The beach connects inland to [[old-gardens]] and offshore to [[Uncertainty]]. Observe from the water for a safer but less informative approach; commit through the gap to reach the island.
+Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, one usable boat gap, and a short shingle beach at the island's western rim. [[sparhold]] has the established open-water route; [[karath]] is close to one edge but does not shorten the country-scale journey to Aruhe's heart. The beach connects inland to [[old-gardens]] and offshore to [[uncertainty]]. Observe from the water for a safer but less informative approach; commit through the gap to reach the island.
 
 ---
 ## If the party
@@ -71,10 +71,10 @@ Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, o
 ---
 ## Where
 
-- Established open-water route from [[Sparhold]]
-- Near-edge channel from [[Karath]]; close to the rim, not a shortcut to Aruhe's heart
+- Established open-water route from [[sparhold]]
+- Near-edge channel from [[karath]]; close to the rim, not a shortcut to Aruhe's heart
 - Boat gap and short shingle beach inland to [[old-gardens|Old Gardens]]
-- Offshore observation and water retreat toward [[Uncertainty]]
+- Offshore observation and water retreat toward [[uncertainty]]
 
 ---
 ## Why
@@ -82,7 +82,7 @@ Western Landing is Aruhe's known sea approach and retreat edge: a jagged reef, o
 - This is the known sea approach onto Aruhe.
 - Tide, reef, shingle, and the boat gap decide whether a landing can be kept or must be abandoned.
 - A survey can start inland from here while the gap still offers a way back to the sea.
-- A nearby edge such as [[Karath]] is not access to the island's heart.
+- A nearby edge such as [[karath]] is not access to the island's heart.
 
 ---
 ## Art

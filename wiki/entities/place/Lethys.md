@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Lethys]] is an eastern Midchain site occupied by a colony of feral griffons descended from a dead aristocrat's escaped menagerie. They have lived wild for generations. The eastern waters are widely spaced, shallow, and poorly charted; [[drowned-maw]] is a recorded related place, but no route or distance is established. Skipping Lethys avoids the colony's territory and leaves the island's old menagerie origin unexamined.
+[[lethys]] is an eastern Midchain site occupied by a colony of feral griffons descended from a dead aristocrat's escaped menagerie. They have lived wild for generations. The eastern waters are widely spaced, shallow, and poorly charted; [[drowned-maw]] is a recorded related place, but no route or distance is established. Skipping Lethys avoids the colony's territory and leaves the island's old menagerie origin unexamined.
 
 ---
 

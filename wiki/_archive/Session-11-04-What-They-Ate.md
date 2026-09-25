@@ -89,7 +89,7 @@ If a party member takes open valley air, that person leaves this bank. Point at 
 ```col-md
 ## Secondary objective
 
-If anyone plucks living plants, traps, or kills to carry flesh on this bank, mark [[Taking on Aruhe]]. Later, the hazards-table roll on [[Session-11-00-Random-Tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is not a claim. The trail and smoke remain either way.
+If anyone plucks living plants, traps, or kills to carry flesh on this bank, mark [[Taking on Aruhe]]. Later, the hazards-table roll on [[session-11-00-random-tables]] uses `2d8` and keeps the lower result. Fruit already on the ground is not a claim. The trail and smoke remain either way.
 ```
 ````
 
@@ -114,7 +114,7 @@ If anyone plucks living plants, traps, or kills to carry flesh on this bank, mar
 | Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if that party member plucks without sorting. Plucking living stems on purpose is a claim. | `DC 10` | That party member takes only fruit already down. That is not a claim. Eating a still-firm fallen fruit is a Bonus Action and regains `8d4 + 8` hit points, as [[Aruhe - Redheart Berry]]. The trail and smoke remain. | That party member takes some living stems. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | That party member strips living fruit. That is a [[Taking on Aruhe]] claim. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 | Look up-sun | **Wisdom (Perception)**, only if they ask who that flyer is | `DC 27` | The looker sees [[Talon Skarn]] up-sun: a man-sized peregrine body in the midday glare, then gone. | Sun-glare only. The looker remains on the bank. | Sun-glare only. The looker remains on the bank. |
 | Fly (hawk sky) | Fly up out of the grass into open valley air | Take open valley air | That party member leaves the bank into open valley air. Point at a [[Aruhe - Young Bloodhawk]]. This scene ends for that flyer. | Binary; no partial. | Binary; no partial. Taking open valley air is hawk sky. |
-| Return toward [[Aruhe - Grasslands Torn Crossing]] | Walk south through the valley. | Walk | The party leaves this bank south toward [[Aruhe - Grasslands Torn Crossing]], the terrace line, the beach, or [[Uncertainty]]. Rebuild from that. This scene ends. | Binary — no partial. | Binary — no partial. |
+| Return toward [[Aruhe - Grasslands Torn Crossing]] | Walk south through the valley. | Walk | The party leaves this bank south toward [[Aruhe - Grasslands Torn Crossing]], the terrace line, the beach, or [[uncertainty]]. Rebuild from that. This scene ends. | Binary — no partial. | Binary — no partial. |
 
 Unforeseen intents use the same rule: the group ahead has been living off fallen fruit and fish, and snapped living stems left the blood. Rule from zones and whether the approach lingers, picks live stems, or keeps the north prints.
 
@@ -140,7 +140,7 @@ The party follows the north prints toward the smoke. [[Aruhe - River Slack Basin
 
 ## Backup
 
-[[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Landing Bank]] · [[Aruhe - River Slack Basin]] · [[Session-11-00-Random-Tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Redheart Berry]] · [[Uncertainty]] · [[Talon Skarn]] · [[Aruhe - Young Bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-00-Birds-of-a-Feather]] · [[Session-11-05-Otter-Hole]]
+[[Aruhe - River - Line Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[Aruhe - River Landing Bank]] · [[Aruhe - River Slack Basin]] · [[session-11-00-random-tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Redheart Berry]] · [[uncertainty]] · [[Talon Skarn]] · [[Aruhe - Young Bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-05-Otter-Hole]]
 
 ## Battlemap
 

@@ -65,7 +65,7 @@ A Hunter Shark is a large, blunt-nosed predator built for open water, not reef w
 
 **Ecology.**
 
-Hunter Sharks follow the things ships leave behind: bilge discharge, fish-cleaning waste, blood from cargo loading. Where boats work water regularly, they learn the schedule. The [[central-strait]] has them year-round in the deeper lanes, trailing merchant convoys and patrol routes alike. The [[crown-islands]] harbour approaches see more incidents than any port authority records cleanly. Most involve swimmers. The cold upwelling below [[high-line]]'s cliffs draws them into the water column there too. Winch operators read the surface for shark sign before sending repair crews down the net face. At [[Kalowe]], the reef gap that opens the lagoon holds baitfish, which holds Hunter Sharks, which the dry-dock workers have learned to account for. The gap now has a rope with a bell on it.
+Hunter Sharks follow the things ships leave behind: bilge discharge, fish-cleaning waste, blood from cargo loading. Where boats work water regularly, they learn the schedule. The [[central-strait]] has them year-round in the deeper lanes, trailing merchant convoys and patrol routes alike. The [[crown-islands]] harbour approaches see more incidents than any port authority records cleanly. Most involve swimmers. The cold upwelling below [[high-line]]'s cliffs draws them into the water column there too. Winch operators read the surface for shark sign before sending repair crews down the net face. At [[kalowe]], the reef gap that opens the lagoon holds baitfish, which holds Hunter Sharks, which the dry-dock workers have learned to account for. The gap now has a rope with a bell on it.
 
 ## Tactics
 
@@ -74,5 +74,5 @@ Hunter Sharks follow the things ships leave behind: bilge discharge, fish-cleani
 | Verb | Unstable Condition | Consequence | Link of Relevance |
 |---|---|---|---|
 | Chum the water or dump catch offal near a work crew | A repair crew is already on the net face or in the water | Hunter Sharks move into the column, forcing an early haul-up or a fight mid-line | [[high-line]] |
-| Cut a wounded catch loose inside the reef gap | Nobody has rung the gap bell | The baitfish scatter and pull Hunter Sharks through the gap into the anchorage | [[Kalowe]] |
+| Cut a wounded catch loose inside the reef gap | Nobody has rung the gap bell | The baitfish scatter and pull Hunter Sharks through the gap into the anchorage | [[kalowe]] |
 | Swim or dive the harbour approaches without an escort | No lookout posted, dusk or dawn light | It becomes an incident port authority never records cleanly | [[crown-islands]] |

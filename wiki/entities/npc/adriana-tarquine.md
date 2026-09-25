@@ -22,7 +22,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Fathomrush]]"
+location: "[[fathomrush]]"
 faction: "[[Sunkline Company]]"
 visibility: dm
 ---
@@ -38,7 +38,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Chief engineer for the Sunkline pressure-rig venture |
-| **Home**   | [[Fathomrush]] |
+| **Home**   | [[fathomrush]] |
 | **Wants**  | Keep investor confidence alive while the pressure rig remains unproven. |
 
 > **DM thesis:** Adriana keeps rebuilding the failing rig and blames the alloy rather than admit the design has not passed trial.
@@ -60,7 +60,7 @@ flexGrow=1
 ===
 ### First meeting
 
-The party meets Adriana at [[Fathomrush]] while [[Sunkline Company]] races [[Voyvode Works]] to develop deep-shelf diving technology. She points to the alloy failure first and treats questions about the trial certificate as a threat to the work. Her line is, “The alloy fails before the design does.”
+The party meets Adriana at [[fathomrush]] while [[Sunkline Company]] races [[Voyvode Works]] to develop deep-shelf diving technology. She points to the alloy failure first and treats questions about the trial certificate as a threat to the work. Her line is, “The alloy fails before the design does.”
 ```
 
 ```col-md
@@ -72,6 +72,16 @@ Adriana's posture changes when the forged trial certificate surfaces or investor
 ```
 ````
 
+## Voice
+
+Adriana speaks like an engineer defending a test result: precise, repetitive, and quick to blame the alloy before the design. She avoids admitting that the pressure rig has not passed a real trial.
+
+**The ask:** “Give me one more run and I can prove the rig works.”
+
+**The refusal:** “The alloy fails before the design does.”
+
+**Under pressure:** “If you pull the certificate, you sink the whole venture.”
+
 ## Connections
 
 | Connection | Meaning |
@@ -79,5 +89,5 @@ Adriana's posture changes when the forged trial certificate surfaces or investor
 | [[Sunkline Company]] | Her employer and the pressure-rig venture she is trying to keep solvent. |
 | [[tessarine-concordat]] | Financial backer whose investor confidence depends on Sunkline's claims. |
 | [[Voyvode Works]] | Rival deep-shelf engineering company. |
-| [[Fathomrush]] | Worksite where the competing salvage pushes operate. |
+| [[fathomrush]] | Worksite where the competing salvage pushes operate. |
 | [[forged-rig-trial-certificate]] | The false proof that the rig passed its trial. |

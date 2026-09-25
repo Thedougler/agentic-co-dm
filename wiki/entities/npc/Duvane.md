@@ -22,7 +22,7 @@ faction: none
 relationships:
   - target: "[[Ashwalls]]"
     type: related_to
-  - target: "[[Galewall]]"
+  - target: "[[galewall]]"
     type: related_to
 ---
 
@@ -80,4 +80,4 @@ Duvane speaks in work reports and avoids treating the scorpion attack as a story
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Ashwalls]] | Repair crew and place where his injury changed procedure. |
-| [[Galewall]] | The larger western hazard context around Ashwall travel. |
+| [[galewall]] | The larger western hazard context around Ashwall travel. |

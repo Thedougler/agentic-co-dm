@@ -7,48 +7,54 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:blade-of-the-lost-grip.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-24
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-summary: "A sentient +1 rapier that hurls itself at the nearest foe the instant a fight begins, lodges in the target, and won't stop insulting everyone nearby."
+region: "[[calven-and-calveno]]"
+kind: magic
+rarity: rare
+attunement: true
+owner: "[[lavinia-sordi]]"
+summary: "A sentient +1 rapier that launches at the nearest hostile creature when its wielder first becomes aware of a fight, then insults everyone nearby."
 provenance:
   extracted: 0.85
   inferred: 0.10
   ambiguous: 0.05
 tier: supporting
+invention: false
 ---
 # Blade of the Lost Grip
 
 > [!narration] Narration
-> The rapier's blade sits humming faintly against its scabbard, a tension held just under the leather, like something inside wants out. Draw it even an inch and the grip turns warm and heavy in the hand, faster than plain metal should manage. It angles itself, unprompted, toward whoever in the room looks most like trouble.
+> The rapier hums faintly against its scabbard, holding tension just under the leather as though something inside wants out. Draw it even an inch and the grip turns warm and heavy in the hand, faster than plain metal should. It angles itself, unprompted, toward whoever in the room looks most like trouble.
 
+*Weapon (Rapier), rare (requires attunement).* 
 
-*Weapon (Rapier), Rare (Requires Attunement).*
+**Automatic Opening Strike.** Once per Short Rest, when you become aware of a Hostile creature, the blade launches itself from its scabbard and flies to the nearest Hostile creature within 30 feet. It strikes that creature automatically for 1d8 Piercing damage plus its +1 enhancement bonus, without an attack roll. It then lodges in the target or lands where it struck and remains there until physically retrieved. Pulling it free takes an action, and doing so within a Hostile creature's reach provokes an Opportunity Attack as normal. You have no rapier in hand until you retrieve the blade or draw a backup weapon.
 
-| Field | Value |
-|---|---|
-| One thing | Once per short rest, the instant its wielder becomes aware of a hostile creature, it launches itself from its scabbard and strikes the nearest hostile creature automatically for its weapon damage dice, bypassing the attack roll entirely. |
-| Rarity justification | Rare, comparable to a +2 weapon (Rare, always requires attunement, a reliable combat bonus) and Ring of Evasion (Rare, 1/day negate a failed Dexterity save, a strong periodic benefit). A plain +1 rapier alone would only be Uncommon, but an unconditional, no-roll-required free strike is exactly the pattern the rarity budget's balance-mistake table routes to Rare, not Uncommon. |
-| Attunement reason | Grants a +1 bonus to attack and damage rolls. The attunement decision tree's first branch requires attunement regardless of the item's other powers. |
-| PC connection | None named. DM ruling: this sits on [[lavinia-sordi]]'s rack as unclaimed shop stock, offered to the whole party to choose from once revealed, open to whichever PC wants it. |
-| Current holder | [[lavinia-sordi]], on the rack at [[la-cenere]] |
-| Narrative hook | On Lavinia Sordi's rack at La Cenere, priced at 180 gp, cheap for a +1 weapon, because a sword that won't stay in your hand and won't stop insulting you is a hard sell to anyone who hasn't already decided the trade is worth it. |
+If no Hostile creature is within 30 feet when you become aware of one, the power does not trigger and the Short Rest use remains available. If multiple Hostile creatures are equally near, the DM chooses, or you choose if there is no clear difference. If the target dies, flees, or the fight moves away, the blade remains recoverable where it or the body ended.
 
-## Mechanics
+**Cutting Wit.** The blade is sentient, with Intelligence 14, Wisdom 8, and Charisma 17. It is Chaotic Neutral and seeks glory through a worthy fight. It speaks aloud rather than telepathically; anyone within 30 feet can hear its constant, inventive insults, aimed at allies and enemies alike. Whenever you miss with the blade in melee, it insults you mid-swing, and the creature you missed has Advantage on its next attack roll against you before the start of your next turn. This does not apply to Automatic Opening Strike, which makes no attack roll.
 
-> [!mechanic]
-> **Automatic Opening Strike [HB].** Once per short rest. The instant its wielder becomes aware of a hostile creature, the blade launches itself from its scabbard unbidden and flies to the nearest hostile creature within 30 feet, striking it automatically for the rapier's weapon damage dice (1d8 piercing) plus its +1 enhancement bonus, bypassing the attack roll entirely. It then lodges in the target (or lands where it struck) and stays there until physically retrieved: pulling it free costs an action, and doing so within a hostile creature's reach provokes an opportunity attack as normal. The wielder has no rapier in hand until it's retrieved or the wielder draws a backup weapon.
->
-> **Edge cases:** no hostile creature within 30 feet when the wielder becomes aware of one, the power doesn't trigger and the short-rest use stays available. Two or more equally-near hostile creatures, the DM picks, or the wielder's player calls it if there's no clear difference. The struck creature dies, flees, or the fight moves on before retrieval, the blade stays recoverable from wherever it or the body ended up.
->
-> **Cutting Wit [HB, sentient item].** The blade is sentient, carrying Intelligence 14, Wisdom 8, and Charisma 17, a Chaotic Neutral alignment, and a Glory-Seeker's drive for a worthy fight. It speaks aloud (not telepathically: anyone within 30 feet can hear it) in constant, inventive insults dressed as nonsense, aimed at whoever's nearest, ally or enemy alike, in the vein of the Monty Python French Taunter, with layered wordplay that lands once you parse it, not random noise. Whenever its wielder misses an attack with it in melee, it loudly insults the wielder mid-swing, and the creature it missed gains advantage on its next attack roll against the wielder before the wielder's next turn.
->
-> **Edge case:** this miss-triggered insult never applies to Automatic Opening Strike above, since that power never makes an attack roll and cannot miss.
->
-> **Limitations.** The blade deals no damage beyond its weapon dice and its own +1; it cannot be magically recalled to the wielder's hand; if combat moves away from where it landed, retrieving it means going back for it. It offers no bonus of any kind against the creature it insulted, only removes the wielder's own safety margin.
+The blade deals no damage beyond its weapon dice and +1 enhancement bonus. It cannot be magically recalled to your hand. If combat moves away from where it landed, retrieving it requires returning to that location. Its insults grant no bonus against their targets; they only remove the wielder's safety margin.
+
+## At the Table
+
+The blade sits on [[lavinia-sordi]]'s rack at [[la-cenere]] in [[le-paludi]], [[calven-and-calveno]], priced at 180 gp. It is cheap for a +1 weapon because a sword that will not stay in its wielder's hand and will not stop insulting them is difficult to sell. It angles toward trouble before it is drawn, and its warm, heavy grip warns that it wants the next fight.
+
+## Hidden Properties
+
+The blade's glory-seeking personality and chaotic neutrality are real, not a sales pitch. Its opening strike bypasses the attack roll but leaves it lodged away from the wielder; its miss-triggered insult creates a tactical cost instead of helping the wielder. No magical recall exists.
+
+## Connections
+
+- [[lavinia-sordi]] keeps the blade on her rack and offers it as unclaimed shop stock.
+- [[la-cenere]] is the shop where the party can buy it.
+- [[le-paludi]] and [[calven-and-calveno]] are its current trade locations.
+- Ring of Evasion and a +2 weapon are the established rarity comparators recorded for the blade.
 
 ## Provenance
 
-Sold by [[lavinia-sordi]] from her rack at [[la-cenere]] in [[le-paludi]], [[calven-and-calveno]], for 180 gp. The price is low for a +1 weapon. Per her own comment: "a legitimate dealer would charge five hundred. I am not a legitimate dealer." It never came up at the table (Session 8): it sat on the rack unmentioned.
+[[lavinia-sordi]] sells the blade from her rack at [[la-cenere]] for 180 gp. She says a legitimate dealer would charge 500 gp and admits that she is not a legitimate dealer. The blade never came up at the table in Session 8; it sat on the rack unmentioned.

@@ -18,7 +18,7 @@ campaign: shattered-sea
 visibility: dm
 reveal: revealed
 relationships:
-  - target: "[[Uncertainty]]"
+  - target: "[[uncertainty]]"
     type: related_to
   - target: "[[calven-and-calveno]]"
     type: related_to
@@ -42,6 +42,6 @@ Played 2026-08-02. Lists. Osset. Pay.
 
 ## Wiki facts
 
-[[iacopo-fieschi]] paid the crew out of the open debt he had just named, in trade credit, the house Casa Falier, and a diamond ring, which is the money that bought the [[the-snap|Snap]] and [[Nightmantle]]. [[nona-black-jaw]] turned the [[mercatura]] crater into a missing-persons desk: the list passed three hundred fourteen fighting-age men, she sent two [[the-passage|Passage]] ships after raiders days ahead, and she paid [[perrin-black-jaw]] in favor rather than coin. [[cobb]] had [[Uncertainty]]'s refit twelve hours out.
+[[iacopo-fieschi]] paid the crew out of the open debt he had just named, in trade credit, the house Casa Falier, and a diamond ring, which is the money that bought the [[the-snap|Snap]] and [[nightmantle]]. [[nona-black-jaw]] turned the [[mercatura]] crater into a missing-persons desk: the list passed three hundred fourteen fighting-age men, she sent two [[the-passage|Passage]] ships after raiders days ahead, and she paid [[perrin-black-jaw]] in favor rather than coin. [[cobb]] had [[uncertainty]]'s refit twelve hours out.
 
 [[delmar-fisk]] lifted the torn page naming [[osset]] as a monk who left [[sentinels-of-the-eyrie|the Sentinels]] in a schism, and [[catarina-davirelli]] identified its source as a corpse, which is what got her put out of [[cabinet-of-morsani|the Cabinet of Morsani]]. [[lavinia-sordi]] named Osset a second time in one day and tied the cloak to a falcon-featured man. [[crissdalynn-khinriss]] had never heard the name at [[high-eyrie|the Eyrie]]. [[Zort]] had his prosthetic and handed over the Midchain reptile contact, closing that commission. Next: [[Session-09-Recap]].

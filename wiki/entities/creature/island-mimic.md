@@ -129,7 +129,7 @@ One example sits in the Northern [[Midchain]], where it appeared between known i
 |---|---|---|---|
 | Walk past the treeline, toward the stream's source, or up the slope for fruit | Adhesive Ground hasn't triggered yet (the crew is still down at the waterline) | The ground grips everyone standing on the interior at once (Grappled; see the Escaping Adhesive Ground check under Stats & Combat), and the heads of the bay start grinding shut behind them | |
 | Burn a grove near anyone the ground has already gripped | Adhesive Ground is live. Someone gets caught. | Fire frees every Grappled creature within 30 feet of the flames immediately, the one true thing sailors already know about mimics still working at this scale | [[delmar-fisk]]'s habit of calling a wreck "salvage" before he lets himself call it a grave. This island hands him a bay full of both, and asks him to misname it twice before he understands what he is looking at. |
-| Drive a ship into the closing gap, or use the bow-in wreck already wedged there | The heads of the bay are narrowing toward their floor | The dead ship's spine holds the throat open to a floor of 14 feet (the width it's held for nine years), the one door the island can't undo | The *[[Uncertainty]]*, the crew's own way out |
+| Drive a ship into the closing gap, or use the bow-in wreck already wedged there | The heads of the bay are narrowing toward their floor | The dead ship's spine holds the throat open to a floor of 14 feet (the width it's held for nine years), the one door the island can't undo | The *[[uncertainty]]*, the crew's own way out |
 
 **Prepped Reveals.**
 

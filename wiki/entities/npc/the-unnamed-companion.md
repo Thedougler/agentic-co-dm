@@ -41,7 +41,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] The Unnamed Companion
-> The Unnamed Companion is not present to be seen. The surviving trace is a grave beneath a fruit tree in [[memorial-grove]], where [[Hinewai]] buried him after he drowned during their escape from [[Karath]] toward [[Aruhe]].
+> The Unnamed Companion is not present to be seen. The surviving trace is a grave beneath a fruit tree in [[memorial-grove]], where [[hinewai]] buried him after he drowned during their escape from [[karath]] toward [[Aruhe]].
 ```
 ````
 
@@ -53,7 +53,7 @@ flexGrow=1
 ===
 ### First meeting
 
-The party first meets his story through [[Hinewai]], the grave in [[memorial-grove]], or the law that grew from it. Hinewai can say, “He drowned within sight of Aruhe, and I carried him the rest of the way.”
+The party first meets his story through [[hinewai]], the grave in [[memorial-grove]], or the law that grew from it. Hinewai can say, “He drowned within sight of Aruhe, and I carried him the rest of the way.”
 ```
 
 ```col-md
@@ -69,7 +69,7 @@ There is no living posture to change. The relevant change is whether the party t
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[Hinewai]] | His companion during the escape from [[Karath]] toward [[Aruhe]] and the person who buried him. |
+| [[hinewai]] | His companion during the escape from [[karath]] toward [[Aruhe]] and the person who buried him. |
 | [[memorial-grove]] | His grave beneath a fruit tree. |
 | [[aruhe]] | His death became the reason for the island's law. |
-| [[Karath]] | The place he escaped before drowning in the swim toward Aruhe. |
+| [[karath]] | The place he escaped before drowning in the swim toward Aruhe. |

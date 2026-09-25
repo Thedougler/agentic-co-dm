@@ -23,7 +23,7 @@ relationships:
     type: related_to
   - target: "[[calven-and-calveno]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Central Strait Crossing
@@ -37,7 +37,7 @@ relationships:
 
 ## At a Glance
 
-This is the open-water leg a ship actually sails between [[calven-and-calveno]] on the northern shore and [[Kalowe]] on the southern [[Midchain]]. It follows the Blue Lane, the deepest fastest line of the Scatter Current, unmarked but universal.
+This is the open-water leg a ship actually sails between [[calven-and-calveno]] on the northern shore and [[kalowe]] on the southern [[Midchain]]. It follows the Blue Lane, the deepest fastest line of the Scatter Current, unmarked but universal.
 
 ## If the party
 
@@ -50,7 +50,7 @@ The [[dravosi-crown]] enforces its writ at the [[calders-tooth-and-port-tidefall
 
 ## Who
 
-Reef sharks stay close to both coasts. Hunter sharks patrol the deeper lanes. Giant octopuses lurk in wreckage around [[sandtable-shoal]], south of [[Aldenmere]] in the northern half of this crossing. The [[Sawek]] is rumored as the Strait's apex predator on the dark southern Midchain approaches; its range is unknown.
+Reef sharks stay close to both coasts. Hunter sharks patrol the deeper lanes. Giant octopuses lurk in wreckage around [[sandtable-shoal]], south of [[aldenmere]] in the northern half of this crossing. The [[Sawek]] is rumored as the Strait's apex predator on the dark southern Midchain approaches; its range is unknown.
 
 Raiders here hide behind forged manifests and false colors more often than an open attack. Ships still band into convoys. Crown captains break from usual patrols when [[glass-debt]] or [[velvet-noose]] is sighted near the Strait. [[the-bad-receipt]] is known to work the southern approaches.
 

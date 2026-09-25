@@ -41,7 +41,7 @@ visibility: dm
 
 Estratto is a Warforged auditor sent by the Tessarine Concordat to [[calven-and-calveno]]. It carries legal papers only: debt writs, liens, identity checks, and seizure orders all valid under Concordat law. It does not fight, will not hurt anyone, and will not leave. It checks each writ against your name and your cargo, tireless and unhurried, until every line is satisfied.
 
-Estratto holds a writ for your ship, the *Uncertainty* (Concordat records: *[[Uncertainty|HCS Surety]]*). The original crew financed salvage. You took the ship. The Concordat says you hold their collateral. Estratto is here to check your name and your cargo.
+Estratto holds a writ for your ship, the *Uncertainty* (Concordat records: *[[uncertainty|HCS Surety]]*). The original crew financed salvage. You took the ship. The Concordat says you hold their collateral. Estratto is here to check your name and your cargo.
 
 > [!mechanic]
 > **The writ's scope.** It covers the ship from salvage financing [[barnaby-rook]] signed before you took it. The Concordat says it's their collateral. Estratto knows you renamed and repainted it (Arcane Eye and Locate Object proved it). One true name means the Concordat acts.
@@ -172,6 +172,6 @@ Estratto avoids fights. It only uses these tactics if talking fails. The first a
 Wikilinks withheld. None of the pages below exist in vault/ yet. Re-link once each target lands.
 
 - [[tessarine-concordat]], agent of
-- Uncertainty (renamed vessel; Concordat records it as the *[[Uncertainty|HCS Surety]]*), target of the debt-recovery writ
+- Uncertainty (renamed vessel; Concordat records it as the *[[uncertainty|HCS Surety]]*), target of the debt-recovery writ
 - Delmar Fisk, first identity target; "[[Admiral Fisk]]" persona is a compliance error
 - [[calven-and-calveno]] / [[La Vasca]], where it currently stands its post

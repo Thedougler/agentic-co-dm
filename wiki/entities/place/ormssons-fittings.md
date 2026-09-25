@@ -24,7 +24,7 @@ type: place
 
 ## At a Glance
 
-[[Ormsson's Fittings]] is [[kettil-ormsson|Kettil Ormsson]]'s hardware and arms shop on [[Kalowe]], closest to the main dry-dock.
+[[Ormsson's Fittings]] is [[kettil-ormsson|Kettil Ormsson]]'s hardware and arms shop on [[kalowe]], closest to the main dry-dock.
 
 ## If the party
 
@@ -40,7 +40,7 @@ The shop sells dry-dock hardware and keeps an unadvertised back-shelf arms trade
 
 ## Where
 
-Ormsson's Fittings is on [[Kalowe]], closest to the main dry-dock. The exact island and neighboring businesses are not established beyond Kettil's statement that it is on Kalowe's first island.
+Ormsson's Fittings is on [[kalowe]], closest to the main dry-dock. The exact island and neighboring businesses are not established beyond Kettil's statement that it is on Kalowe's first island.
 
 ## Why
 

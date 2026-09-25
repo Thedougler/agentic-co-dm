@@ -11,6 +11,10 @@ created: 2026-09-13
 updated: 2026-09-13
 type: npc
 reveal: unrevealed
+status: alive
+role: "Co-proprietor of Al Fondale"
+location: "[[Al Fondale]], [[le-paludi]]"
+faction: none
 campaign: shattered-sea
 visibility: dm
 summary: "Halfling co-proprietor of Al Fondale in Le Paludi, old enough to know the arithmetic of risk, keeps the Warren entrance in her cellar unknown to all but those who should know it."
@@ -22,48 +26,69 @@ tier: supporting
 ---
 # Bice Riva
 
-# Bice Riva
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-![[Bice Riva Banner]]
-![[Bice Riva Banner]]
+| **Role**   | Co-proprietor of [[Al Fondale]]; front of house |
+| ---------- | ----------------------------------------------- |
+| **Nature** | An old enough, practical halfling who knows the arithmetic of risk and says each thing once. |
+| **Home**   | [[Al Fondale]] in [[le-paludi]], [[calven-and-calveno]] |
+| **Wants**  | To keep Al Fondale running and the cellar entrance to the [[Warren]] unknown to anyone who should not know it. |
+| **Leverage** | Every regular face in Le Paludi, the tavern's ordinary cellar traffic, and a quiet Passage credential. |
+| **Limit**  | She is not an operative, carries no messages, and knows only the entrance panel rather than the Warren's layout. |
 
-|             |                                                |
-| ----------- | ---------------------------------------------- |
-| **Species** | Halfling                                        |
-| **Role**    | Co-proprietor, [[Al Fondale]] (front of house; husband [[aldo-riva\|Aldo]] runs the kitchen) |
-| **Location**| [[Al Fondale]], [[le-paludi]], [[calven-and-calveno]]         |
+> **DM thesis:** Bice is a tavern keeper who protects a dangerous secret by making the cellar look completely ordinary.
+```
 
-Halfling, white-haired, barely clears the tabletops. Moves between them with the economy of someone who stopped thinking about the route twenty years ago. Hands are flour-dusted in the morning, oil-stained in the evening. Wears an apron faded pale from decades of washing. Says *caro* to everyone regardless of gender, age, or threat level. Speaks in short declarative sentences. Does not repeat herself. Puts food on the table before asking what you want, then looks at you with the expression of someone who already knows the answer is yes.
+```col-md
+flexGrow=1
+===
+> [!narration] Bice Riva
+> White hair pulled back, barely clearing the tabletops as she moves between them with the economy of habit. Her hands are flour-dusted in the morning and oil-stained in the evening. An apron faded pale from decades of washing hangs over her frame. She calls you *caro* before learning your name; a plate is already warm in front of you.
+```
+````
 
-Bice Riva runs [[Al Fondale]] in [[calven-and-calveno]]'s [[le-paludi]] district alongside her husband [[aldo-riva|Aldo]], who runs the kitchen. She has lived in Le Paludi her entire life. She bought in with money she does not discuss the provenance of. She has seen the district change around her and the canal in front of her stay the same.
+## Running Bice Riva
 
-She is not a member of [[the-passage]]. She has known about the [[Warren]] entrance in her cellar for two years, when [[nona-black-jaw]] arranged it. The conversation was short. Bice asked no questions and no one has asked her to do anything beyond maintaining the appearance of a normal cellar, which she does by stocking it with wine and root vegetables and using it constantly. She is not brave about this. She is simply old enough that the arithmetic of risk looks different than it did at thirty.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-**Wants:** keep Al Fondale running and the cellar entrance unknown to anyone who shouldn't know it. These are her twin goals.
+Bice puts food on the table before asking what the party wants. She calls everyone *caro*, speaks in short declarative sentences, and does not repeat herself. Her husband [[aldo-riva|Aldo]] runs the kitchen while she controls the room.
 
-> [!narration] Narration
-> A halfling. White hair pulled back, barely clearing the tabletops as she moves between them with the economy of habit, her hands flour-dusted and oil-stained. The tavern sounds (clinking glasses, low voices) part around her path.
->
-> She calls you *caro* without waiting to learn your name, her voice carrying the flat certainty of someone who says each thing exactly once. An apron faded pale from decades of washing hangs over her frame.
->
-> A plate is already in front of you. It's warm. The air carries the smell of garlic, wine, and bread.
+> *Bice*: “You look hungry. Sit.”
+```
 
+```col-md
+flexGrow=1
+===
+### When posture changes
 
-Bice is not an operative and will not become one. She moves no information, carries no messages, and does not know the Warren's layout past the entrance panel. What she runs is a tavern that happens to have a door in the cellar.
+Bice remains a normal tavern keeper until someone asks about the cellar. She answers honestly about wine and root vegetables because she means it, but she does not move the heavy barrel skid or volunteer the entrance to the Warren. A Passage-credentialed guest who asks about recent changes gets one quiet warning: a man has taken the corner table three evenings running.
 
-**Voice & Quotes:** *"You look hungry. Sit."* / *"The rooms have noise (festival week). You want one or not?"* / *"The stairs at the back are for residents."* (the line she gives every Passage-credentialed guest, per [[Al Fondale]])
+She knows every regular face in Le Paludi. If the party is looking for someone who has passed through the district, she either knows or knows who would.
+```
+````
 
-- If pressed about the cellar:
-  - *"Wine. Root vegetables. You're welcome to check."* She means it. The barrel skid is heavy and looks like it hasn't moved in years.
+## Voice
 
-She has not yet told Nona about a man who has taken the corner table three evenings running. He eats without talking and watches the room. She knows every regular face in Le Paludi.
+Bice speaks in flat certainty, with *caro* for everyone regardless of gender, age, or threat level. She says each thing exactly once.
 
-- If you are Passage-credentialed and ask whether anything has been different lately:
-  - She tells you, once, quietly: *"A man at the corner table the last three nights."*
-- If you are looking for someone who has been through the district:
-  - She either knows or knows who would.
+**The ask:** *“You look hungry. Sit.”*
 
-## Stats & Combat
+**The refusal:** *“The stairs at the back are for residents.”*
+
+**Under pressure:** *“Wine. Root vegetables. You're welcome to check.”*
+
+**Cellar rule.** Bice is not a member of [[the-passage]]. [[nona-black-jaw]] arranged the Warren entrance in her cellar two years ago. Bice asked no questions and maintains the appearance of an ordinary cellar by stocking it with wine and root vegetables and using it constantly. She bought into Al Fondale with money whose provenance she does not discuss.
+
+**Recent warning.** If a Passage-credentialed guest asks whether anything has changed, she says once, quietly: *“A man at the corner table the last three nights.”* The tavern's rooms have noise during festival week; she asks whether the guest wants one or not.
+**Stats & Combat.**
 
 <!-- Not stated in source. -->
 

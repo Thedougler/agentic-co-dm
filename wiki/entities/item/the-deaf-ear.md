@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: uncommon
+attunement: false
+owner: "[[rufio-segalla]]"
 summary: "A dense, tallow-papered alchemical cigarette that leaves the smoker an hour of hearing every word without any of it landing."
 provenance:
   extracted: 0.85
@@ -48,7 +53,6 @@ Shelf stock at [[La Brace]], and the blend regulars buy on the way into a meetin
 
 **PC connection:** four of the five save at +0 or worse against Charisma, and only [[perrin-black-jaw|Perrin]] at +9 shrugs off a charm line he cannot cover for anyone else. A charm that lands on [[crissdalynn-khinriss|Crissdalynn]] at +0 or on Jean-Claude at -1 turns the crew's two best weapons around and points them back down the line.
 
-## Mechanics
 
 **[HB]** Lighting the Deaf Ear and taking the first breath costs an Action. For 1 hour afterward, the smoker has advantage on Charisma saving throws.
 

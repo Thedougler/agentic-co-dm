@@ -25,15 +25,15 @@ tier: supporting
 
 ## Actors
 
-- [[Umberlee]]: wants the Pearl retrieved. Cannot kill Delmar without losing the captains' souls into the Maw. Cannot retrieve it herself (the Maw's water is elemental, beyond her claim). Works through weather, the Dead Lady, and the [[Waveservants]]. Her frustration at a mortal defying her is immense. Her options are narrow.
+- [[Umberlee]]: wants the Pearl retrieved. Cannot kill Delmar without losing the captains' souls into the Maw. Cannot retrieve it herself (the Maw's water is elemental, beyond her claim). Works through weather, the Dead Lady, and the [[waveservants]]. Her frustration at a mortal defying her is immense. Her options are narrow.
 - The [[Dead Lady]] is Umberlee's instrument, the raised *[[red-lady]]*. It takes boats whole behind the party's route while remaining beyond the party's reach, heralded by supernatural fog echoing the fleet's destruction. Always knows where Delmar is. Exists to compel, not kill.
-- Waveservants, Umberlee's clergy, shift from transactional neutrality to pointed attention while Delmar's debt remains unpaid. A [[Kalowe#Waveservant shrine|Waveservant Shrine]] recognises Delmar before he speaks.
-- [[chain-council]]: commissioned the original Pearl theft through [[fisks-fleet]]. Their exposure to divine debt depends on whether a Waveservant Shrine learns their role. Currently raising [[Kalowe]] shrine tribute to buy silence.
+- Waveservants, Umberlee's clergy, shift from transactional neutrality to pointed attention while Delmar's debt remains unpaid. A [[kalowe#Waveservant shrine|Waveservant Shrine]] recognises Delmar before he speaks.
+- [[chain-council]]: commissioned the original Pearl theft through [[fisks-fleet]]. Their exposure to divine debt depends on whether a Waveservant Shrine learns their role. Currently raising [[kalowe]] shrine tribute to buy silence.
 - [[delmar-fisk]]: carries the debt. Captains' voices ride in his mind. His defiance (sailing the Midchain instead of heading east) triggers Umberlee's escalation.
 
 ## Connections
 
-[[Umberlee]] · [[Dead Lady]] · [[red-lady]] · [[pearl-of-souls]] · [[Waveservants]] · [[delmar-fisk]] · [[crissdalynn-khinriss]] · [[drowned-maw]] · [[Branca]] · [[taken-whole]] · [[Midchain]] · [[chain-council]] · [[Kalowe]]
+[[Umberlee]] · [[Dead Lady]] · [[red-lady]] · [[pearl-of-souls]] · [[waveservants]] · [[delmar-fisk]] · [[crissdalynn-khinriss]] · [[drowned-maw]] · [[Branca]] · [[taken-whole]] · [[Midchain]] · [[chain-council]] · [[kalowe]]
 
 ## Beat Chart
 

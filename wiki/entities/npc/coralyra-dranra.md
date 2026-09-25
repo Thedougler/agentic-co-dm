@@ -21,7 +21,7 @@ tier: supporting
 ---
 # Coralyra Dranra
 
-A beautiful, siren-like elf sorcerer/bard (level 5). Her voice stops people talking. She weaponized this gift. An Incomplete Aoidos *(ah-OY-dos)* from [[Halythion]], she left at 87 years old (young for elves). She joins the party after the first arc.
+A beautiful, siren-like elf sorcerer/bard (level 5). Her voice stops people talking. She weaponized this gift. An Incomplete Aoidos *(ah-OY-dos)* from [[halythion]], she left at 87 years old (young for elves). She joins the party after the first arc.
 
 **Personality:** she wants people to listen. Deep down, she wants home, forgiveness, apologies, and recognition for her music. For an elf, she is young. She respects beggars, servants, and children.
 
@@ -52,6 +52,6 @@ A beautiful, siren-like elf sorcerer/bard (level 5). Her voice stops people talk
 
 - [[flappers-the-seal]]. Her closest friend. Chases mackerel.
 - Sea turtles. She trusts them with her life.
-- [[Halythion]]. Her home.
+- [[halythion]]. Her home.
 - [[Sawek]]. Marked her with ink.
 - [[Umberlee]]. She admires her power.

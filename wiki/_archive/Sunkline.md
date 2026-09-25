@@ -25,7 +25,7 @@ Salvage orders, company law, pressure-rig trials, and paperwork. When pressed, p
 - Rival: [[Voyvode]]
 
 ## Reach / resources
-[[Tessarine Concordat]] credit and pressure on the Concordat's salvage pipeline; one [[Fathomrush]] compound, dive lines, rigs, and the forged certificate. The false log is under a loose floorboard at the Last Berth; [[Petera Ngata]] keeps the complete death list.
+[[Tessarine Concordat]] credit and pressure on the Concordat's salvage pipeline; one [[fathomrush]] compound, dive lines, rigs, and the forged certificate. The false log is under a loose floorboard at the Last Berth; [[Petera Ngata]] keeps the complete death list.
 
 ## Relations
 - Rival: [[Voyvode]]

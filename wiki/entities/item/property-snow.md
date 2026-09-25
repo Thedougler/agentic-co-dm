@@ -12,6 +12,11 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
+region: "[[calven-and-calveno]]"
+kind: consumable
+rarity: common
+attunement: false
+owner: "[[fioravante-selmerin]]"
 summary: "A paper twist of stage flake that bursts into a twenty-foot spread of drifting white, heavily obscuring the area for a minute."
 provenance:
   extracted: 0.85
@@ -45,7 +50,6 @@ Sold for the last scene of a play nobody in [[calven-and-calveno]] stages any mo
 
 Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and a single-use screen at 60 gp sits under that. The effect matches _fog cloud_ cast at 1st level, stripped of concentration and of the caster's ability to move it, which is the trade a scroll of the same spell does not make.
 
-## Mechanics
 
 > [!mechanic]
 > **Property Snow [HB].** Throwing a twist at a point on the ground within 30 feet takes an action. The paper bursts on impact and white flake rises to fill a 20-foot-radius sphere centred on that point, spreading around corners. The area counts as heavily obscured for 1 minute. The thrower holds no concentration, and the cloud stays where it fell.

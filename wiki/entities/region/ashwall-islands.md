@@ -48,7 +48,7 @@ tier: supporting
 
 ## Current state
 
-**Status quo.** Pilot families and repair crews work the lee, treating the spires as a reckoning point rather than a destination. Outbound crews use the islands as the last solid ground before the [[Galewall]]; inbound crews use them as the first proof of survival. No formal destination authority is established.
+**Status quo.** Pilot families and repair crews work the lee, treating the spires as a reckoning point rather than a destination. Outbound crews use the islands as the last solid ground before the [[galewall]]; inbound crews use them as the first proof of survival. No formal destination authority is established.
 
 * **Recent change.** No region-wide change is established beyond the current pilot and repair activity.
 * **Pressure.** Wreck hazards, sulfur vents, and giant creatures make repair work dangerous.
@@ -65,11 +65,11 @@ tier: supporting
 
 ### Shape and boundaries
 
-The Ashwall Islands are cold volcanic spires at the western edge of the charted Shattered Sea. The lee provides sheltered repair water, while the outer water leads toward the [[Galewall]].
+The Ashwall Islands are cold volcanic spires at the western edge of the charted Shattered Sea. The lee provides sheltered repair water, while the outer water leads toward the [[galewall]].
 
 | Edge | Neighbor | Crossing / boundary | What changes across it |
 | ---- | -------- | ------------------- | ---------------------- |
-| West | [[Galewall]] | Permanent storm belt before the spires | The last weather of the charted homelands gives way to volcanic lee and cold deep water. |
+| West | [[galewall]] | Permanent storm belt before the spires | The last weather of the charted homelands gives way to volcanic lee and cold deep water. |
 | North | [[crown-islands]] | Open sea | The route leaves the Ashwall volcanic slopes for the Crown Islands. |
 | East | [[central-strait]] | Open sea | The cold spires give way to the central route and its settled traffic. |
 | South | [[Midchain]] | Open sea | The route leaves the lee for the Midchain cargo corridor. |
@@ -104,7 +104,7 @@ The Ashwall Islands are cold volcanic spires at the western edge of the charted 
 
 | Route | Connects | Time | Cost / requirement | Risk | Advantage | Known |
 | ----- | -------- | ---: | ------------------ | ---- | --------- | ----- |
-| Westbound approach | [[Galewall]] ↔ Ashwall lee | About three weeks to cross the Galewall before reaching the spires. | A good pilot is required. | Roughly one ship in three fails to cross the Galewall. | Reaches the last solid ground before the open western sea. | Yes |
+| Westbound approach | [[galewall]] ↔ Ashwall lee | About three weeks to cross the Galewall before reaching the spires. | A good pilot is required. | Roughly one ship in three fails to cross the Galewall. | Reaches the last solid ground before the open western sea. | Yes |
 | Eastbound return | Ashwall lee ↔ [[central-strait]] | Not established. | A seaworthy vessel and a place in the lee. | Wreckage, occupied fissures, and apparent rescuers. | The first safe lee and a place to repair. | Yes |
 
 ### Hidden and broken connections
@@ -146,11 +146,11 @@ No hidden or broken connection is established. The region's known routes are the
 
 | d6 | Rumor / lead | Truth behind it | Points toward |
 | -: | ------------ | --------------- | ------------ |
-| 1 | A white bird of stormlight appears in the rigging before a storm changes. | An [[arclight-phoenix]] hatches when lateral lightning opens its egg and flies west into the [[Galewall]]. | [[arclight-phoenix]] |
+| 1 | A white bird of stormlight appears in the rigging before a storm changes. | An [[arclight-phoenix]] hatches when lateral lightning opens its egg and flies west into the [[galewall]]. | [[arclight-phoenix]] |
 | 2 | The lee is the safest place to repair after the Galewall. | The lee is established repair water, but wreckage and apparent rescuers make it uncertain. | Ashwall lee |
 | 3 | A warm fissure is safe because it is dry. | Giant scorpions and giant bats occupy the warm vent caves. | Warm vent caves |
-| 4 | Two hands are needed for Ashwall repair work. | [[Duvane]] was clawed and stung while checking a fouled spar; crews now send one watcher with one worker. | Ashwall lee |
-| 5 | The islands are the last solid ground westbound. | The spires are the final solid shelter before the [[Galewall]]. | [[Galewall]] |
+| 4 | Two hands are needed for Ashwall repair work. | [[duvane]] was clawed and stung while checking a fouled spar; crews now send one watcher with one worker. | Ashwall lee |
+| 5 | The islands are the last solid ground westbound. | The spires are the final solid shelter before the [[galewall]]. | [[galewall]] |
 | 6 | The islands are the first proof of survival eastbound. | Returning crews see the Ashwalls as their first safe lee. | Ashwall lee |
 
 ## Encounter ecology
@@ -176,7 +176,7 @@ No hidden or broken connection is established. The region's known routes are the
 
 * **Resource.** Wreckage in the lee provides salvage, and pilot families hold practical route knowledge.
 * **Shelter.** Warm vent caves protect travelers from cold sea air, but the fissures are occupied.
-* **Wonder.** An [[arclight-phoenix]] can hatch from an egg opened by lateral lightning and fly west into the [[Galewall]].
+* **Wonder.** An [[arclight-phoenix]] can hatch from an egg opened by lateral lightning and fly west into the [[galewall]].
 * **Hidden lore.** Pilot families distinguish ordinary vertical storm fire from the lateral hatch sign.
 * **Shortcut.** No shortcut is established.
 
@@ -184,15 +184,15 @@ No hidden or broken connection is established. The region's known routes are the
 
 | Past fact | Present consequence | Evidence in the world |
 | --------- | ------------------- | --------------------- |
-| The Ashwalls are the last solid ground before the [[Galewall]]. | Westbound crews use the islands as a reckoning point. | The volcanic spires and the westward storm belt. |
-| [[Duvane]] was clawed and stung while checking a fouled spar. | Repair work now sends two hands. | Ashwall repair crews and the occupied fissures. |
+| The Ashwalls are the last solid ground before the [[galewall]]. | Westbound crews use the islands as a reckoning point. | The volcanic spires and the westward storm belt. |
+| [[duvane]] was clawed and stung while checking a fouled spar. | Repair work now sends two hands. | Ashwall repair crews and the occupied fissures. |
 | Arclight phoenix eggs remain in the volcanoes after a bird dies. | Lateral lightning can open an egg and send a bird west. | The hatch sign recorded by pilot families. |
 
 ## Stakes
 
 * Will a crew use the warm caves despite evidence that giant creatures occupy them?
 * Who can provide reliable route knowledge when the lee's apparent rescuers cannot be trusted?
-* What will the next lateral-fire hatch change in the [[Galewall]]?
+* What will the next lateral-fire hatch change in the [[galewall]]?
 
 ## Change log
 

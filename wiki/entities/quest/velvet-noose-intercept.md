@@ -109,7 +109,7 @@ Mave Sorn is an information broker, not a prize-taker. She keeps the chip on her
 | Place | Why it matters now |
 |---|---|
 | [[Central Strait Crossing]] | The open-water route where the Velvet Noose is sighted and where a damaged hull has no nearby shore. |
-| [[Kalowe]] | The southern Midchain destination on the Calveno-Kalowe line; the Velvet Noose works this wider route. |
+| [[kalowe]] | The southern Midchain destination on the Calveno-Kalowe line; the Velvet Noose works this wider route. |
 
 ## Useful things
 

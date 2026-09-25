@@ -23,9 +23,9 @@ tier: supporting
 
 ![[sienne-orre-banner.webp]]
 
-A [[Minotaur]] druid and captain of the *[[Fernen]]*. She led [[fisks-fleet]]'s fourth vessel. She died, and her soul is inside [[delmar-fisk]].
+A [[Minotaur]] druid and captain of the *[[fernen]]*. She led [[fisks-fleet]]'s fourth vessel. She died, and her soul is inside [[delmar-fisk]].
 
-Sienne could wild shape into aquatic forms. She co-led an underwater scout team with [[Maren]]. They mapped the reef during the perimeter survey of [[Umberlee]]'s shrine island. She was outside the cave when the fleet sank. Her soul pressed into Delmar at that moment, along with four other captains.
+Sienne could wild shape into aquatic forms. She co-led an underwater scout team with [[maren]]. They mapped the reef during the perimeter survey of [[Umberlee]]'s shrine island. She was outside the cave when the fleet sank. Her soul pressed into Delmar at that moment, along with four other captains.
 
 **Appearance & Manner:** silver-streaked hair cut close. She is older than her role suggests, but carries it well. She moves slow and deliberate. She writes everything down. Her horns come forward when focused.
 
@@ -51,6 +51,6 @@ Not stated in source.
 ## Connections
 
 - [[delmar-fisk]], the admiral; now carries her soul, one of the five captains
-- *[[Fernen]]*, her ship
+- *[[fernen]]*, her ship
 - [[fisks-fleet]], her fleet
-- [[Maren]], who ran the second scout team with her
+- [[maren]], who ran the second scout team with her

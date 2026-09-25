@@ -12,7 +12,7 @@ tags: [session, recap]
 
 ## Recap
 > [!narration] Recap
-> Last time on the Shattered Sea, you took the prize *[[Uncertainty]]*. [[Delmar Fisk]]'s fleet had stolen the [[Pearl of Souls]], and [[Umberlee]] had named that Pearl as her price. [[Otar the Foul]] died in the [[Mercatura]] crater. [[Nona Black-Jaw]]'s list climbed past three hundred fourteen fighting-age men. You were bound for [[Sparhold]], while [[HCS Ordinance|Ordinance]] sailed for [[Calven and Calveno|Calveno]] with your story.
+> Last time on the Shattered Sea, you took the prize *[[uncertainty]]*. [[Delmar Fisk]]'s fleet had stolen the [[Pearl of Souls]], and [[Umberlee]] had named that Pearl as her price. [[Otar the Foul]] died in the [[Mercatura]] crater. [[Nona Black-Jaw]]'s list climbed past three hundred fourteen fighting-age men. You were bound for [[sparhold]], while [[HCS Ordinance|Ordinance]] sailed for [[Calven and Calveno|Calveno]] with your story.
 >
 > During the night voyage, Delmar trained [[Geoffrey Draves]]. Then [[Shepherd Grigori]] appeared below deck. He thanked you for warning Calveno and said [[Talon Vantyrus]] had sent a ship one or two hours behind you to take the [[Fate Spinner]], the dreidel. He tied the hunt to the [[Sentinels of the Eyrie]] schism over fate and asked you to injure [[Corbin Knighton]], not kill him or break him. You gave him no firm answer. Grigori also spoke of Delmar's Umberlee curse.
 >
@@ -26,4 +26,4 @@ tags: [session, recap]
 
 ## Highlights
 
-[[Shepherd Grigori]] warned that [[Talon Vantyrus]] had sent a ship for the [[Fate Spinner]]. You left that ship listing and fled without boarding. At [[Aruhe - Hungry Isle|Aruhe]], you rescued two survivors, met a [[Aruhe - Crown Squid]] on the terraces, and kept *[[Uncertainty]]* mobile while others remained inland.
+[[Shepherd Grigori]] warned that [[Talon Vantyrus]] had sent a ship for the [[Fate Spinner]]. You left that ship listing and fled without boarding. At [[Aruhe - Hungry Isle|Aruhe]], you rescued two survivors, met a [[Aruhe - Crown Squid]] on the terraces, and kept *[[uncertainty]]* mobile while others remained inland.

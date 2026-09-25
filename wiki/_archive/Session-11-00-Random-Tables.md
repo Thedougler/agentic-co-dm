@@ -13,7 +13,7 @@ tags:
 
 # Aruhe River / Grasslands Hazards
 
-The single current-hazards table for [[Session-11-00-Birds-of-a-Feather]]. No Grung. Do not restage beat 9 ([[Talon Skarn]]).
+The single current-hazards table for [[session-11-00-birds-of-a-feather]]. No Grung. Do not restage beat 9 ([[Talon Skarn]]).
 
 ## L0 · At a glance
 
@@ -57,7 +57,7 @@ If the rolled hazard does not belong in the current ground, reroll once. If a de
 
 ## Ran in
 
-[[Session-11-00-Birds-of-a-Feather]]
+[[session-11-00-birds-of-a-feather]]
 
 ## Constraints
 

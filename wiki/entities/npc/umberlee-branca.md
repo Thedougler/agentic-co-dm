@@ -25,7 +25,7 @@ campaign: shattered-sea
 status: alive
 role: "Senior Calveno Waveservant and appointment-keeper"
 location: unknown
-faction: "[[Waveservants]]"
+faction: "[[waveservants]]"
 visibility: dm
 ---
 # Umberlee - Branca
@@ -38,7 +38,7 @@ flexGrow=2
 
 | **Role**   | Senior Calveno Waveservant and appointment-keeper |
 | ---------- | ----------------------------------------------- |
-| **Nature** | [[Waveservants|Waveservant]] serving [[Umberlee]] |
+| **Nature** | [[waveservants|Waveservant]] serving [[Umberlee]] |
 | **Home**   | Calveno |
 | **Wants**  | Delivery of the [[pearl-of-souls]] before discussion of the commissioners |
 
@@ -49,7 +49,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Umberlee - Branca
-> *A senior Calveno [[Waveservants|Waveservant]] keeps the appointment and delivers the message without softening it: [[Umberlee]] wants the [[pearl-of-souls]] brought first. Only then will the commissioners be discussed.*
+> *A senior Calveno [[waveservants|Waveservant]] keeps the appointment and delivers the message without softening it: [[Umberlee]] wants the [[pearl-of-souls]] brought first. Only then will the commissioners be discussed.*
 ```
 ````
 
@@ -78,6 +78,6 @@ Her priority changes when the [[pearl-of-souls]] is delivered; the source then m
 | Connection | Meaning |
 | ---------- | ------- |
 | [[Umberlee]] | The power whose command Branca delivers. |
-| [[Waveservants]] | Branca's faction and religious order. |
+| [[waveservants]] | Branca's faction and religious order. |
 | [[pearl-of-souls]] | The object Umberlee commands Branca to bring. |
 | [[delmar-fisk]] | Connected to the commissioners under discussion. |

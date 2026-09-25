@@ -17,7 +17,7 @@ status: offered
 scope: local
 region: "under Calveno’s Le Paludi"
 quest_giver: ""
-factions: ["[[Passage]]"]
+factions: ["[[passage]]"]
 deadline: "Two to three days after the source date; the exact date is not established."
 last_advanced: ""
 summary: "A Warren rescue hook for Bela Silt-Paw, trapped in a flooded sub-chamber."
@@ -47,7 +47,7 @@ tier: supporting
 
 ## Situation
 
-The Warren is a Rattkin settlement and deep [[Passage]] anchor beneath Calveno's Le Paludi. [[bela-silt-paw|Bela Silt-Paw]], a 22-year-old Rattkin scout on her first solo assignment, is trapped in a flooded sub-chamber beneath the settlement. A Water Weird holds the chamber. The situation is active even though no accepted rescue plan or exact chamber route is established.
+The Warren is a Rattkin settlement and deep [[passage]] anchor beneath Calveno's Le Paludi. [[bela-silt-paw|Bela Silt-Paw]], a 22-year-old Rattkin scout on her first solo assignment, is trapped in a flooded sub-chamber beneath the settlement. A Water Weird holds the chamber. The situation is active even though no accepted rescue plan or exact chamber route is established.
 
 ### What the party knows
 
@@ -89,7 +89,7 @@ Bela is alive but exhausted in the flooded sub-chamber. The Water Weird holds he
 
 | Lead | Points toward | Found? | State |
 | ---- | ------------- | ------ | ----- |
-| Ask Warren elders or [[Passage]] guides about the flooded sub-chamber. | [[Warren]] | No | Available |
+| Ask Warren elders or [[passage]] guides about the flooded sub-chamber. | [[Warren]] | No | Available |
 | Follow wet footprints, route marks, or other traces through the Warren. | [[Warren]] | No | Available |
 | Prepare for the water with the chamber's potions of water breathing if they can be reached. | [[water-weird\|Water Weird]] | No | Available |
 
@@ -99,7 +99,7 @@ Bela is alive but exhausted in the flooded sub-chamber. The Water Weird holds he
 | ------ | ----------------- | ---------------- |
 | [[bela-silt-paw\|Bela Silt-Paw]] | Trapped scout and rescue subject. | Survive the flooded chamber and return to the Warren. |
 | [[water-weird\|Water Weird]] | Active obstacle holding the chamber. | Its motive is not established. |
-| [[Passage]] | Warren route network and possible source of guidance. | Protect its routes and communities under pressure. |
+| [[passage]] | Warren route network and possible source of guidance. | Protect its routes and communities under pressure. |
 
 ## Relevant places
 

@@ -47,7 +47,7 @@ foundry_id: Qkd4lEumNtyDVUxD
 | **Class / Level** | Monk 5 (Way of the Kensei) |
 | **Player**        | Courtney |
 | **Also called**   | Crissdalyn |
-| **Home ship**     | [[Uncertainty]] |
+| **Home ship**     | [[uncertainty]] |
 
 > **DM thesis:** Mobile aerial striker and the party's grappler. Delmar is her fixed point; Kyzil's approval is the pilgrimage she is still earning in the open air.
 
@@ -56,7 +56,7 @@ foundry_id: Qkd4lEumNtyDVUxD
 - [[delmar-fisk]] — She pulled him from the [[red-lady-dead-lady]] crow's nest and has already brought him back from Admiral Fisk. Protection runs on her own terms.
 - [[master-kyzil]] — Mentor; reunited in the open, then sparred acknowledgment on the rooftop. Pilgrim under [[sentinels-of-the-eyrie]].
 - [[fate-spinner]] — [[talon-vantyrus]] sent a ship to take it; Kyzil gave her the crystal dreidel thread in older notes.
-- [[Uncertainty]] — Aboard at [[aruhe]].
+- [[uncertainty]] — Aboard at [[aruhe]].
 - [[jean-claude-tabarnack]] — Crew; his darkness leaves her without darkvision cover, so light has to be coordinated.
 
 ## Sheet

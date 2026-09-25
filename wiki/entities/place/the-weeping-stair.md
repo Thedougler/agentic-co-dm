@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # The Weeping Stair
@@ -56,7 +56,7 @@ The site is a submerged staircase rumored to lead to a drowned city. Its bottom 
 - **East:** No canon route or distance is recorded.
 - **South:** No canon route or distance is recorded.
 - **West:** No canon route or distance is recorded.
-- **Regional context:** The Weeping Stair is listed within [[Western Midchain]], whose shallow channels require local judgment and whose sandbars shift. [[Kalowe]] is a recorded related site, but no route or distance between them is established.
+- **Regional context:** The Weeping Stair is listed within [[Western Midchain]], whose shallow channels require local judgment and whose sandbars shift. [[kalowe]] is a recorded related site, but no route or distance between them is established.
 
 ## Why
 

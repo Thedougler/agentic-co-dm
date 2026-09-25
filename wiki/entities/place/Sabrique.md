@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Sabrique
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[Sabrique]] is a western Midchain salt-pan island worked by indentured labor. Its cheap salt is sold without buyers asking why it is cheap. The western approaches are busy, shallow, and pilot-served; [[Kalowe]] is a recorded related harbor, but no route distance is established. Skipping Sabrique avoids the salt pans and the labor system, but also avoids the island's supplies and evidence of how the cheap salt is made available.
+[[sabrique]] is a western Midchain salt-pan island worked by indentured labor. Its cheap salt is sold without buyers asking why it is cheap. The western approaches are busy, shallow, and pilot-served; [[kalowe]] is a recorded related harbor, but no route distance is established. Skipping Sabrique avoids the salt pans and the labor system, but also avoids the island's supplies and evidence of how the cheap salt is made available.
 
 ---
 
@@ -46,7 +46,7 @@ relationships:
 - **Crosses the salt pans:** The party moves through active salt-working ground. The number of workers, supervisors, boundaries, and rules are not recorded.
 - **Buys salt:** The salt is cheap, and buyers know not to ask why. The seller, quantity, terms, and consequences of asking are Unknown.
 - **Asks about the labor:** The party presses against the island's unspoken arrangement. The indentures' terms, holder, and available forms of resistance are not recorded.
-- **Leaves for Kalowe:** [[Kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
+- **Leaves for Kalowe:** [[kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -62,9 +62,9 @@ Indentured workers labor in the salt pans. No individual worker, overseer, owner
 ## Where
 
 - **North:** Sabrique lies in the western [[Midchain]]. A named northern neighbor and travel distance are not recorded.
-- **East:** [[Kalowe]] is a recorded related harbor, but the direction, route, and distance are not established here.
+- **East:** [[kalowe]] is a recorded related harbor, but the direction, route, and distance are not established here.
 - **South:** No named southern neighbor or route is recorded.
-- **West:** The western Midchain approaches [[Galewall]], but no direct route or travel distance from Sabrique is established.
+- **West:** The western Midchain approaches [[galewall]], but no direct route or travel distance from Sabrique is established.
 - **Local access:** The western channels can take large ships but punish captains who skip pilots; Sabrique's own landing is not recorded.
 
 ## Why

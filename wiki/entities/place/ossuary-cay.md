@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[midchain-west|Western Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Ossuary Cay
@@ -65,7 +65,7 @@ A death-cult tends the cay and collects bones. No named member, faction identity
 - **South:** Canon gap; no neighboring site or travel distance is recorded.
 - **West:** Canon gap; no neighboring site or travel distance is recorded.
 - **Region:** [[midchain-west|Western Midchain]], where approaches are busy, charts are broadly right, and seasonal sandbars shift.
-- **Named connection:** [[Kalowe]].
+- **Named connection:** [[kalowe]].
 
 ---
 ## Why

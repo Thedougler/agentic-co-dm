@@ -31,7 +31,7 @@ type: place
 ## If the party
 
 - **Offer an object or its history.** Prospero examines what the party brings and may attach one of his collection's rings to an object worthy of the unfinished set.
-- **Shop for unusual gear.** The Cabinet has offered the Compass of the Drowned, trick arrows such as [[the Fishwife]], [[the Chimney]], and [[Lamplighter|the Lamp Lighter]], and [[the Snap]].
+- **Shop for unusual gear.** The Cabinet has offered the Compass of the Drowned, trick arrows such as [[the Fishwife]], [[the Chimney]], and [[lamplighter|the Lamp Lighter]], and [[the Snap]].
 
 ## Who
 

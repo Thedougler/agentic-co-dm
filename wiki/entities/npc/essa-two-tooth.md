@@ -34,7 +34,7 @@ tier: supporting
 
 **Opening move:** at the bar in the [[low-lamp]] · party speaks first (talking in the room stops when they arrive) · "You're the crew. Come on in. These two need to hear this." (gestures to her two teeth)
 
-**Lore Sheet:** elder of the Warren who has remembered every name and debt in her head for four decades, and never wrote a number down. Knew [[nona-black-jaw]]'s late husband by his first name. Insists every guest is too thin and must eat before discussion. Feeding at the [[low-lamp]] means the house has your goodwill, which is precisely her intent. Does not ask [[Tangle|The Tangle]]'s permission to refuse service to someone unwelcome.
+**Lore Sheet:** elder of the Warren who has remembered every name and debt in her head for four decades, and never wrote a number down. Knew [[nona-black-jaw]]'s late husband by his first name. Insists every guest is too thin and must eat before discussion. Feeding at the [[low-lamp]] means the house has your goodwill, which is precisely her intent. Does not ask [[tangle|The Tangle]]'s permission to refuse service to someone unwelcome.
 
 **Toy Chest**
 

@@ -22,7 +22,7 @@ region: Midchain
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Kalowe]]"
+  - target: "[[kalowe]]"
     type: related_to
 ---
 # Nine Bells
@@ -36,7 +36,7 @@ relationships:
 
 ## At a Glance
 
-[[nine-bells]] is a western Midchain site defined by rival lighthouse-keeper families and competing bells. The western approaches are the chain's easiest and busiest water, with shifting sandbars and local pilots; [[Kalowe]] is the recorded related harbor. The page does not establish which family controls which light, how many structures stand on the site, or a route distance. Skipping Nine Bells avoids the family dispute and the bells' information, but leaves the party without this local point of reference in the western approaches.
+[[nine-bells]] is a western Midchain site defined by rival lighthouse-keeper families and competing bells. The western approaches are the chain's easiest and busiest water, with shifting sandbars and local pilots; [[kalowe]] is the recorded related harbor. The page does not establish which family controls which light, how many structures stand on the site, or a route distance. Skipping Nine Bells avoids the family dispute and the bells' information, but leaves the party without this local point of reference in the western approaches.
 
 ---
 
@@ -45,7 +45,7 @@ relationships:
 - **Approaches by water:** The party enters the busy western Midchain approaches, where the islands sit close together and the channels are shallow. A pilot is customary for a ship drawing more than a fathom; resolve local pilotage and shifting sandbars from the regional page.
 - **Listens to the bells:** The party can compare the competing rings across the water. The source establishes the rivalry but not what the bells signal or whether any ring is objectively accurate.
 - **Seeks a keeper:** The party encounters one or more rival lighthouse-keeper families. Their names, numbers, offers, and demands are not recorded.
-- **Leaves for Kalowe:** [[Kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
+- **Leaves for Kalowe:** [[kalowe]] is a recorded related harbor, but this page does not establish a route or travel time.
 
 ## Who
 
@@ -60,9 +60,9 @@ Rival lighthouse-keeper families maintain the bells and lights. Their numbers, n
 ## Where
 
 - **North:** Nine Bells lies in the western [[Midchain]]. A named northern neighbor and travel distance are not recorded.
-- **East:** [[Kalowe]] is a recorded related harbor, but the direction, route, and distance are not established on this page.
+- **East:** [[kalowe]] is a recorded related harbor, but the direction, route, and distance are not established on this page.
 - **South:** No named southern neighbor or route is recorded.
-- **West:** The western Midchain opens toward [[Galewall]], but no direct route or travel distance from Nine Bells is established.
+- **West:** The western Midchain opens toward [[galewall]], but no direct route or travel distance from Nine Bells is established.
 - **Local water:** The western approaches are close-set, shallow, and busy; shifting sandbars and coral heads are established regional hazards.
 
 ## Why

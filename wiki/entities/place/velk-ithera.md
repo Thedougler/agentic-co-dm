@@ -23,7 +23,7 @@ region: "Southern Midchain"
 relationships:
   - target: "[[Midchain]]"
     type: related_to
-  - target: "[[Halewick]]"
+  - target: "[[halewick]]"
     type: related_to
 ---
 # Velk Ithera
@@ -35,7 +35,7 @@ relationships:
 
 ## At a Glance
 
-Velk Ithera is a named site in the southern [[Midchain]], where one connected fungal organism carpets a hillside and reacts faintly to sound. [[Halewick]] is a recorded related place in the same region, but no route, direction, or travel distance is established. The site can be bypassed, but doing so gives up the chance to learn how the organism responds or what lies beneath the carpet.
+Velk Ithera is a named site in the southern [[Midchain]], where one connected fungal organism carpets a hillside and reacts faintly to sound. [[halewick]] is a recorded related place in the same region, but no route, direction, or travel distance is established. The site can be bypassed, but doing so gives up the chance to learn how the organism responds or what lies beneath the carpet.
 
 ## If the party
 
@@ -60,7 +60,7 @@ No named resident, keeper, faction, or creature is established at Velk Ithera. T
 - **East:** Immediate neighbor is a canon gap; the broader Southern Midchain meets [[midchain-east|the Eastern Midchain]] to the east.
 - **South:** Immediate neighbor is a canon gap; the broader Southern Midchain opens toward [[doldrums|The Doldrums]].
 - **West:** Immediate neighbor is a canon gap; the broader Southern Midchain meets [[midchain-west|the Western Midchain]] to the west.
-- **Regional connection:** Velk Ithera is in the southern [[Midchain]] and has a recorded relationship with [[Halewick]], but the route, direction, and travel distance are unknown.
+- **Regional connection:** Velk Ithera is in the southern [[Midchain]] and has a recorded relationship with [[halewick]], but the route, direction, and travel distance are unknown.
 
 ## Why
 

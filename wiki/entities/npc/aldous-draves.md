@@ -18,29 +18,79 @@ updated: 2026-09-13
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
+status: alive
+role: contact
+location: "[[calders-tooth-and-port-tidefall]]"
+faction: "[[dravosi-crown|Dravosi Crown]]"
 visibility: dm
 ---
 # Aldous Draves
 
-# Aldous Draves
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-**Wants:** Real Crown status by proxy, proven if Geoffrey's name reaches the right people — but Geoffrey has gone silent on the eastern patrol routes, and the Harbourmaster's Office had nothing worth repeating either.
+| **Role**   | Contact; Crown-licensed import factor |
+| ---------- | ------------------------------------- |
+| **Nature** | Formal, verbose, and quietly anxious about the status he built through his son. |
+| **Home**   | [[calders-tooth-and-port-tidefall]] |
+| **Wants**  | Real Crown status by proxy, proven by [[geoffrey-draves|Geoffrey]]'s success. |
+| **Secret** | He arranged Geoffrey's [[uncertainty|HCS Surety]] berth through connections he has never put on paper. |
+| **Leverage** | He knows dock clerks, Crown paperwork, and the pay of rated marines, but not the officers who outrank him. |
 
-> [!narration] Narration
-> Grey at the temples, spine straight as a mast rope. His coat carries the correct insignia for his Crown rank, and from across a room he reads as exactly what he is. Up close the cut gives him away — collar a decade out of current fashion, buttons brass where the newer style runs silver. A factor's ledger case hangs from one shoulder, its corner worn pale where his thumb rides it out of habit. He straightens his cuffs before he addresses you, unhurried, and when his hands aren't doing that, they're sorting invisible paper.
+> **DM thesis:** Aldous hides paternal fear and ambition inside correct sentences, hoping Geoffrey's success will prove the importance he cannot claim directly.
+```
 
+```col-md
+flexGrow=1
+===
+> [!narration] Aldous Draves
+> Grey at the temples, spine straight as a mast rope. His coat carries the correct insignia for his Crown rank, but up close the cut gives him away: a collar a decade out of current fashion and brass buttons where the newer style runs silver. A factor's ledger case hangs from one shoulder, its corner worn pale where his thumb rides it out of habit. He straightens his cuffs before addressing you, and when his hands are not doing that, they sort invisible paper.
+```
+````
 
-Aldous Draves has held his Crown license as an import factor at [[calders-tooth-and-port-tidefall]] for thirty years, long enough to know every clerk on the docks worth knowing and none of the officers who outrank him. He works alongside the naval world without belonging to it — close enough to know a rated marine's pay to the shilling, which is more than the post he found for his son, though whether he ever told Geoffrey that is his own business.
+## Running Aldous Draves
 
-He got [[geoffrey-draves|Geoffrey]] a berth on the [[Uncertainty|HCS Surety]], a patrol cutter, through connections he's never put on paper — the arrangement lives nowhere but his own memory, and he means to keep it that way. He promised his son bigger things would follow it, and let the contract's own printed language do the work of not mentioning what the posting actually paid; if anyone ever asks, the paperwork will answer for him, not his conscience. That was the last thing he said to his son with real confidence. Geoffrey is out on the eastern patrol routes now and hasn't written; Aldous has already asked the [[Harbourmaster's Office]] once, formally, correctly, and been told nothing worth repeating. So he waits, already composing — word for word, though he'd never admit to it — the inquiry letter he'd have to send if the news ever came back wrong, and does the one thing he's always done best, which is not show it.
+````col
+```col-md
+flexGrow=1
+===
+### First meeting
 
-He learned formality young, the way some men learn a trade — informality ruins a family name, so he doesn't risk it. He calls [[geoffrey-draves|Geoffrey]] by his full name even alone in his own head, and delivers the same flat, correct sentences to a clerk or a son alike. *"Geoffrey is capable. His future depends on his choices."* Or: *"Getting this posting took work. That's what the Crown does for important roles."* Both are true. Neither says what he actually wants, which is real Crown status — proven by his son succeeding at something Aldous arranged and will never admit to arranging.
+Aldous receives visitors as a licensed import factor: formal, unhurried, and already arranging the relevant paperwork in his mind. He answers a question about the docks with the full context before admitting what he actually wants to know about Geoffrey.
 
+> *Aldous*: “Geoffrey is capable. His future depends on his choices.”
+```
+
+```col-md
+flexGrow=1
+===
+### When posture changes
+
+Aldous keeps his cuffs straight and his sentences correct until Geoffrey's silence or the Harbourmaster's Office's lack of news becomes unavoidable. He opens to useful information about the eastern patrol routes and closes when asked to admit that he arranged Geoffrey's berth or fears the news may return wrong.
+
+He waits while composing the inquiry letter he would send if Geoffrey's news came back wrong. If asked about recent events, he gives accurate details without alarm; he does not reveal the secret arrangement unless paperwork or Geoffrey's fate forces him to choose between family reputation and practical action.
+```
+````
+
+## Voice
+
+Aldous speaks in flat, correct sentences and treats informality as a threat to the family name. He gives every answer its prior context at a warm, unhurried pace and never calls Geoffrey anything but his full name.
+
+**The ask:** *“Getting this posting took work. That's what the Crown does for important roles.”*
+
+**The refusal:** *“The paperwork will answer for me.”*
+
+**Under pressure:** *“Geoffrey is capable. His future depends on his choices.”*
 ## Connections
 
-- [[geoffrey-draves]]: his son. Got him a job on the [[Uncertainty|HCS Surety]] through connections he keeps secret.
-- [[rupert-knighton]]: a Crown officer. Geoffrey's work may reach his desk. Aldous will respond based on what happens.
-- [[Uncertainty|HCS Surety]]: the patrol cutter posting he arranged for Geoffrey.
-- [[verity-hollowell]]: connection unstated beyond name in source.
-- [[cedric-hollowell]]: connection unstated beyond name in source.
-- [[calders-tooth-and-port-tidefall]]: where he operates as a Crown-licensed import factor.
+| Connection | Meaning |
+| ---------- | ------- |
+| [[geoffrey-draves]] | His son; Aldous secured Geoffrey's [[uncertainty\|HCS Surety]] berth through secret connections. |
+| [[rupert-knighton]] | Crown officer whose desk may receive Geoffrey's work; Aldous will respond to what happens. |
+| [[uncertainty\|HCS Surety]] | Patrol cutter posting he arranged for Geoffrey. |
+| [[verity-hollowell]] | Connection unstated beyond name in source. |
+| [[cedric-hollowell]] | Connection unstated beyond name in source. |
+| [[calders-tooth-and-port-tidefall]] | Where he operates as a Crown-licensed import factor. |

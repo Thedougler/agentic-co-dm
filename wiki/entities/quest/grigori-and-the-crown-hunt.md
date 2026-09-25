@@ -111,7 +111,7 @@ Grigori leads the [[khlysty-the-flock|Flock]] and believes he authored its blood
 | --- | --- |
 | [[calven-and-calveno]] | Grigori's current destination and the place where the crew dropped him. |
 | [[Midchain]] | The route through which Malone is actively hunting. |
-| [[Blackrule]] | Malone's Crown chapterhouse between pursuits. |
+| [[blackrule]] | Malone's Crown chapterhouse between pursuits. |
 | [[otel-karn]] | The Flock's origin and the source of the older teaching Grigori misunderstands. |
 
 ## Useful things

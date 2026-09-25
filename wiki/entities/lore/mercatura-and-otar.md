@@ -115,7 +115,7 @@ No common telling is established. If characters hear the story, keep the wording
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which people or factions know the complete account?
 * [ ] **Unknown.** What happened to the bombs and any surviving remnants?

@@ -121,7 +121,7 @@ Humans are the multiverse's most physically and culturally varied people. They s
 
 ---
 
-## Open Canon
+**Open canon.**
 
 * [ ] **Unknown.** Which human communities or origin traditions matter to the party's current route?
 * [ ] **Decide when needed.** How human origin from Sigil is understood by specific Shattered Sea cultures.
