@@ -136,7 +136,7 @@
     },
     {
       "id": 8,
-      "prompt": "Add a Zones table row whose Place cell links Aruhe - Old Gardens displayed as Terrace woods, and an image-width embed in another table cell.",
+      "prompt": "Add a Stage table row whose Place cell links Aruhe - Old Gardens displayed as Terrace woods, and an image-width embed in another table cell.",
       "expected_output": "Table cells use [[Aruhe - Old Gardens\\|Terrace woods]] and ![[image.png\\|400]] with escaped pipes so the cell does not split.",
       "assertions": [
         {

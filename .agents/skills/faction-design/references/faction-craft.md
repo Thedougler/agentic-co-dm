@@ -18,7 +18,7 @@ to the table. A front without impending doom has no stakes.
 ## Faction turns
 
 A faction turn is one cycle of off-screen motion. On the page, the next turn
-lives in the Agenda (next move, signs, party opening, milestones) and past
+lives in the Agenda (next move, signs, party handles, milestones) and past
 turns in the Log. For each active faction:
 
 | Field | What it answers |
@@ -28,7 +28,7 @@ turns in the Log. For each active faction:
 | **Mark** | The fact that changes if the move proceeds |
 | **Signal** | How the party can learn about the change |
 | **Collision** | What other faction, person, place, or deadline it intersects |
-| **Player opening** | What remains unresolved and actionable |
+| **Party handles** | What remains unresolved and actionable |
 
 Do not roll the turn at creation. `world-tick` resolves turns using faction
 resources, opposition, and probability. The Log records changed canon, newest
@@ -58,7 +58,7 @@ Before play, check:
 | Org chart without want | Add a concrete present-tense want |
 | Biography without pressure | Add why it must act now |
 | Invisible faction (no portents) | Add 2-3 observable signs |
-| Cutscene faction (no player opening) | Add what the party can influence |
+| Cutscene faction (no party handles) | Add what the party can influence |
 | Comfortable faction (no pressure) | Add scarcity, deadline, rival, or fracture |
 | Faction with no collision | Connect its want to another faction or the party |
 | Overstuffed assets/people | Prune to entries that change current play |

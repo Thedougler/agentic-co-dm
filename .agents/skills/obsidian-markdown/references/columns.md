@@ -36,7 +36,7 @@ Columns work like a published adventure's sidebar: they sit two short, same-mome
 | Pattern | Where | Left | Right |
 |---|---|---|---|
 | **Header row** | Every owner page, directly under the H1 and overview art | `## At a Glance`, `flexGrow=2` | `> [!narration] Name`, `flexGrow=1` |
-| **Beat pair** | Beats, encounters, session plans | One short block (`Situation`, `Stage`, `Pressure`) | Its same-moment partner (`Cast`, `Pressure`, `Spotlight`), equal width |
+| **Beat pair** | Beats, encounters, session plans | One short block (`Situation`, `Stage`, `Pressure`) | Its same-moment partner (`Actors`, `Pressure`, `Spotlight`), equal width |
 
 Everything else stays full width: statblocks, wide tables (Checks, Handles, Outcomes, Beat Map, Gazetteer), and beat openings (`> [!narration] Opening`) the DM reads aloud.
 

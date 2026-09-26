@@ -86,7 +86,7 @@
     {
       "id": 1,
       "prompt": "Improve sentinels-of-the-eyrie.md into a runnable faction page. Preserve Kyzil, Vantyrus, High Eyrie, and the non-intervention doctrine. Use only what the wiki already establishes about the Sentinels.",
-      "expected_output": "A complete faction page grounded in existing wiki material — concrete want, method, player opening, and DM thesis. No invented politics or schisms not in the wiki.",
+      "expected_output": "A complete faction page grounded in existing wiki material — concrete want, method, party handles, and an At a Glance lead sentence of pressure. No invented politics or schisms not in the wiki.",
       "assertions": [
         {
           "text": "Preserves the non-intervention doctrine as a core faction trait",
@@ -109,7 +109,7 @@
           "type": "structure"
         },
         {
-          "text": "Agenda has a concrete goal, next move, and player opening",
+          "text": "Agenda has a concrete objective, next move, and party handles",
           "type": "structure"
         },
         {
@@ -163,7 +163,7 @@
           "type": "quality"
         },
         {
-          "text": "Player opening states what the party can specifically do, not just 'help or oppose'",
+          "text": "Party handles state what the party can specifically do, not just 'help or oppose'",
           "type": "quality"
         },
         {
@@ -206,7 +206,7 @@
     {
       "id": "direct-named-owner",
       "prompt": "The session brief names the Ember Cartel as the faction owner and asks for its active agenda. Select the correct owner skill and produce only the faction-design work; do not start a generic place or session plan.",
-      "expected_output": "Enters faction-design directly for the named Ember Cartel, preserves the brief's objective, and returns a faction-template-shaped agenda with observable player opening and completion evidence.",
+      "expected_output": "Enters faction-design directly for the named Ember Cartel, preserves the brief's objective, and returns a faction-template-shaped agenda with observable party handles and completion evidence.",
       "assertions": [
         {
           "text": "Selects faction-design directly from the named faction owner instead of a generic orchestrator.",
@@ -217,7 +217,7 @@
           "type": "quality"
         },
         {
-          "text": "Reports faction template completion and an observable player opening.",
+          "text": "Reports faction template completion and observable party handles.",
           "type": "structure"
         }
       ]

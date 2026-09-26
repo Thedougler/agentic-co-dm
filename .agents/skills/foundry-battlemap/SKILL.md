@@ -43,7 +43,7 @@ Infer from the conversation. Ask only for slots that would force a guess.
 Need:
 
 - `PLACE` — what this rectangle is (tavern floor, ruined nave, creek ford, ship deck). Resolve the owner page with qmd-retrieval, and read it (plus linked site pages) before placing any architecture.
-- `BEAT` — when the map serves a session beat, load that whole beat note. Type (Hook, Development, Cliffhanger, Climax, Resolution), Scene ends when, and Goal are map jobs. Design the board for those jobs at the beat's scale.
+- `BEAT` — when the map serves a session beat, load that whole beat note. Type (Hook, Development, Cliffhanger, Climax, Resolution), Ends when, and the objective are map jobs. Design the board for those jobs at the beat's scale.
 - `BIOME` — climate and dominant materials
 - `TIME` — default daylight
 - `WEATHER` — default clear

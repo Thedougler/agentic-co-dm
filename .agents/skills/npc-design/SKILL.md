@@ -203,7 +203,7 @@ Build the **packet** as fragments, each with its source:
 - **At rest:** what their hands do when nothing is happening.
 - **Tells:** every tell from step 3, as plain appearance, never its meaning.
 - **Voice:** the voice notes from step 3 and what they want from the party.
-- **Leave out:** the secret, the DM thesis, mechanics, and names the players
+- **Leave out:** the secret, the At a Glance lead, mechanics, and names the players
   have not earned.
 
 Load `.agents/skills/theatre-of-the-mind` and give it the packet twice: in

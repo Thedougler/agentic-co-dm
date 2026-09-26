@@ -87,7 +87,7 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
   a request asks one Development to answer everything including how to win,
   reveal the story and a real facet of the solution, and leave the contest
   that tests it.
-- **Actors run the scene.** Each actor has a Cast bullet: wants now,
+- **Actors run the scene.** Each actor has an Actors bullet: wants now,
   knows (the true facts), offers, withholds or lies about (and the lie's
   tell), price for help, and what shifts their posture. The DM plays the
   scene from these rows without improvising motive.

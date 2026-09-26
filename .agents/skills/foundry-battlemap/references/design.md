@@ -4,7 +4,7 @@ Write this brief before touching the prompt template. Every field feeds a slot i
 
 ## Beat jobs
 
-When Intake loaded a session beat, the map serves that whole beat — type, Scene ends when, Goal, and the beat's zones and clocks — not the place's terrain alone. Design the board holistically for those jobs, at the SCALE that beat needs.
+When Intake loaded a session beat, the map serves that whole beat — type, Ends when, the objective, and the beat's Stage and Pressure — not the place's terrain alone. Design the board holistically for those jobs, at the SCALE that beat needs.
 
 | Beat type | Map jobs |
 |---|---|

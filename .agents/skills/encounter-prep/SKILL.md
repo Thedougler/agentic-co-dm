@@ -14,7 +14,7 @@ description: >-
 
 **Input.** Named encounter or session cockpit, party/location/opposition canon, `wiki/templates/encounter.md` when reusable. Classify reusable stock vs session-only cockpit before drafting.
 
-**Work.** Classify primary mode, build goal/opposition/suspense/choices/rulings/resolution. Route creature statblocks to `monster-design`, DCs to `dnd5e-mechanics`, places to `place-design`/`dungeon-design`, tonight's field order to `run-guide`.
+**Work.** Classify primary mode, build objective/opposition/suspense/choices/rulings/resolution. Route creature statblocks to `monster-design`, DCs to `dnd5e-mechanics`, places to `place-design`/`dungeon-design`, tonight's field order to `run-guide`.
 
 **Done.** `## Table-prep gate` below is the completion guard.
 
@@ -69,21 +69,21 @@ clock is only suspense when players can perceive and influence its direction.
 ## Output
 
 Use `wiki/templates/encounter.md` for reusable notes: the brief and if-ignored step go
-in At a Glance, the spoken opening in `Opening`, the opposition in Cast, the
+in At a Glance, the spoken opening in `Opening`, the opposition in Actors, the
 responses in Handles, and the next states in Outcomes. A session-only scene that will be
 run tonight is a **cockpit** (`run-guide`); emit only the stock that cockpit
 inlines. Field order, lean section choice, image placement, and *procedure* live
 in `run-guide`; this skill supplies table-useful stock:
 
 1. **Brief:** who, where, why now, visible pressure and fuse.
-2. **Now / positions:** who starts where, in feet from cover; compass directions
+2. **Situation / positions:** who starts where, in feet from cover; compass directions
    that matter; speeds that matter; what a move vs Dash reaches. The cockpit
-   writes this under Now only when Glance would otherwise get crowded.
-3. **Action cards:** opposition loop with named actions; compact default-mode
+   writes this under Situation only when Glance would otherwise get crowded.
+3. **Actors:** opposition loop with named actions; compact default-mode
    numbers the DM will roll. Missing owner → `monster-design`.
 4. **Roster embeds:** only for creatures or items the DM will roll or spend.
-5. **Zones:** named places with distances in feet and compass directions; same
-   numbers as Now; features either side can use.
+5. **Stage:** named places with distances in feet and compass directions; same
+   numbers as Situation; features either side can use.
 6. **Procedure + threat clock:** one loop. Failures impose listed *rulings* and
    do not also tick. Clock ticks state what becomes visible, usable,
    threatened, blocked, or changed.
@@ -91,13 +91,13 @@ in `run-guide`; this skill supplies table-useful stock:
    bottom anchor after the runnable card. Omit missing art.
 8. **Tells:** clues only for conclusions the table can act on now. Every tell
    needs a concrete player use; otherwise cut it. Currently visible cover and
-   routes belong in Initial Narration, not on tick 1.
-9. **Be ready for:** selective ruling table — only intents that change a ruling,
+   routes belong in Opening, not on tick 1.
+9. **Checks:** selective ruling table — only intents that change a ruling,
    risk, route, clock, resource, NPC response, or information. Omit ordinary or
    redundant actions. Include **Assess the situation** only when success and
    failure both say what changes. Every cell is a *ruling* (`run-guide` Ruling).
    No Partial definition on the card.
-10. **How the Scene Resolves:** the next scene's opening state in feet and RAW
+10. **Outcomes:** the next scene's opening state in feet and RAW
     conditions, plus only the most likely options the beat can actually produce.
     Each option hands off to a beat on the session skeleton — not off-scene.
 11. **If ignored:** one-step independent consequence when delay changes play.

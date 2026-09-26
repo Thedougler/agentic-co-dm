@@ -58,7 +58,7 @@ and parent session objective. Never advance a later pass from an assertion.
    previous beat card when one exists, and only the linked owners needed to
    interpret this slice. Read each working file end-to-end before editing it;
    summaries, snippets, truncated output, and range reads may help target the
-   file but are not grounding. The previous beat's How the Scene Resolves is
+   file but are not grounding. The previous beat's Outcomes are
    this beat's entry state — the situation, position, and changed world the
    party walks in with. Verify beat identity: filename number matches its Beat
    Map row (`Session-<session>-<NN>-Label.md` = beat NN), purpose and
@@ -107,21 +107,20 @@ partial, procedure, and position conventions.
    this beat spends at the table. Place **empty titled `[!narration]` stubs**
    at the required TotM slots (see [TotM stubs](#totm-stubs) below). Embed an
    existing owner identity image (`![[attachments/…]]`) when the owner page
-   already lists one. Action cards carry the opposition loop — opening move,
+   already lists one. Actors carry the opposition loop — opening move,
    adaptation when countered, break point, exit — beside the compact
    numbers. Completion: every mechanical field this slice uses is present;
    every consequence the card names is defined where it is named (who acts,
    trigger, numbers, duration, what the players perceive); unused sections
-   are absent; clock and Be ready for are one *procedure*; every
+   are absent; clock and Checks are one *procedure*; every
    `[!narration]` body is empty; every Narration table column cell is empty.
 
 ### Pass 2: DM copy
 
 **Load:** `writing-for-humans`.
 
-This pass edits the DM-facing text that pass 1 wrote — Scene ends when,
-Glance, Now, Procedure, Be ready for, clocks, action cards, How the Scene
-Resolves — for usability, readability, and signal density. The `[!narration]`
+This pass edits the DM-facing text that pass 1 wrote — Ends when,
+Glance, Situation, Procedure, Checks, clocks, actor entries, Outcomes — for usability, readability, and signal density. The `[!narration]`
 stubs stay empty. `writing-for-humans` owns the prose quality bar; this skill
 owns the cockpit structure. If a structural gap surfaces (missing section,
 wrong field order), fix it before polishing copy.
@@ -129,8 +128,8 @@ wrong field order), fix it before polishing copy.
 5. **Edit DM copy.** Read the mechanical cockpit end-to-end, then edit every
    DM-facing heading and body for table usefulness. Apply the earn-it test:
    remove a line; if no choice, ruling, risk, resource, route, clock, NPC
-   response, or spoken picture changes, cut it. Completion: Scene ends when,
-   Glance, Now, Procedure, Be ready for, clocks, and How the Scene Resolves
+   response, or spoken picture changes, cut it. Completion: Ends when,
+   Glance, Situation, Procedure, Checks, clocks, and Outcomes
    are complete sentences the DM can scan and use without inventing missing
    rulings. Every `[!narration]` body and Narration column cell is still empty.
 
@@ -143,17 +142,17 @@ object, and `references/vision.md` with the related images opened before
 drafting.
 
 Read [`references/cockpit-rules.md`](references/cockpit-rules.md) § Scene-setting
-for what the Initial Narration carries.
+for what the Opening carries.
 
-6. **Fill narration.** Fill `Initial Narration` first — the Layer 1 immediate
+6. **Fill narration.** Fill `Opening` first — the Layer 1 immediate
    frame: what is obvious without deliberate investigation, with features that
    matter now already in the fiction. Salient features and discoverable
    information are separate reveal blocks or zone/tick Narration cells. Then
    fill remaining stubs and Narration cells in reading order. Completion: every
    `[!narration]` body is filled; every Narration column cell is filled as
-   `_italic_`; the Initial Narration gives the table a stable shared
+   `_italic_`; the Opening gives the table a stable shared
    picture and something live to respond to without hidden truth, DCs,
-   mechanics talk, or padded mood; no stub restages Initial Narration.
+   mechanics talk, or padded mood; no stub restages Opening.
 
 ### Pass 4: Ready check
 
@@ -176,15 +175,15 @@ fills every placed slot. The DM may skip a block at the table; construction
 places slots only for outcomes the beat can produce.
 
 **Callout stubs** (empty titled `> [!narration]` blocks):
-- `Initial Narration` — before the first player choice.
-- `How the Scene Resolves` — one unconditional spoken state for what is always true when this beat ends.
+- `Opening` — before the first player choice.
+- `Outcomes` — one unconditional spoken state for what is always true when this beat ends.
 - `{Creature}` — after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
 - `Exit` — only when the next cockpit is already on this file.
 
 **Table Narration columns** (conditional spoken as `_italic_`, not a callout):
-- Zones table — one cell per zone row.
-- Threat clock table — one cell per tick row.
-- How the Scene Resolves options table — one cell per likely option.
+- Stage table — one cell per zone row.
+- Pressure table — one cell per tick row.
+- Outcomes options table — one cell per likely option.
 
 Callouts inside table cells are not rendered by Obsidian. Conditional spoken in
 a cell is `_italic_` (`obsidian-markdown`).
@@ -199,20 +198,18 @@ the session plan once at the top; the guide does not restate it.
 ## Untyped cockpit assembly
 
 When assembling from untyped or hard-to-scan prep (not a typed beat rewrite),
-jobs are: identity; optional first-beat recap; overview art if it exists; Scene
-ends when + At a Glance; Now; Action cards; Initial Narration; Procedure +
-Secondary objective if a second question exists; Zones; Be ready for; Threat
-clock + dials if a fuse exists; How the Scene Resolves; Roster if combat-mode
+jobs are: identity; optional first-beat recap; overview art if it exists; At a Glance (Ends when first); Opening; Situation; Actors; Procedure +
+Secondary objective if a second question exists; Stage; Pressure + dials if a fuse exists; Checks; Outcomes; Roster if combat-mode
 sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job
 only when it is absent.
 
-At a Glance scans as stakes, goal or exit, danger, silence, situation magnets.
-Scene ends when states the stop condition, a roughly thirty-minute budget, and
-behind/ahead cuts when pacing is not obvious. Now states positions in feet and
-compass directions where tactical distance matters. Action cards carry the
+At a Glance scans as Ends when, stakes, objective, danger, silence, situation magnets, next.
+Ends when states the stop condition, a roughly thirty-minute budget, and
+behind/ahead cuts when pacing is not obvious. Situation states positions in feet and
+compass directions where tactical distance matters. Actors carry the
 creature's or NPC's stat numbers (AC, HP, key attacks, saves) from their wiki
 owner page — enough for the DM to run the encounter without opening another
-note. How the Scene Resolves hands to a beat on this session's Beat Map with
+note. Each Outcomes option hands to a beat on this session's Beat Map with
 an options table covering each resolution path's distinct world-state change.
 Default-mode action-card numbers MAY sit on the beat; the beat stays a cockpit,
 never a second full owner page.
@@ -236,4 +233,4 @@ Intention/approach: Angry GM; Alexandrian *Art of Rulings*.
 Information sequence / boxed completeness: Alexandrian *Art of the Key*.
 Progress clocks and *cut lines*: Mike Shea / Sly Flourish (CC BY-NC) — Watch the Time; Harper clocks via Shea.
 Action-oriented monsters: Colville via Sly Flourish (CC BY-NC).
-Tells: Alexandrian Three Clue Rule. Zones: Runehammer. Strong start / silence: Lazy DM.
+Tells: Alexandrian Three Clue Rule. Stage: Runehammer. Strong start / silence: Lazy DM.

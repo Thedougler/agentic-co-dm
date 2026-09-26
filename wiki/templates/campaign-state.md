@@ -24,7 +24,7 @@ summary: ""
 
 ## Live State
 
-<!-- Required. Clocks, threads, and faction moves that are true now, each with its next development if nobody intervenes. -->
+<!-- Required. Fronts, threads, and faction moves that are true now, each with its next development if nobody intervenes. -->
 
 - **Thread.** Where it stands → what happens next if nobody acts.
 

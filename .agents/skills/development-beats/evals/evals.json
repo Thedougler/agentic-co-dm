@@ -40,7 +40,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes a Situation section with Where, Hands on, Friction, and Pressure, and a Cast entry for each actor present."
+          "text": "Output includes a Situation section with Where, Hands on, Friction, and Pressure, and an Actors entry for each actor present."
         },
         {
           "type": "behavior",
@@ -290,7 +290,7 @@
         },
         {
           "type": "behavior",
-          "text": "Situation and Cast sit in a col-md pair; Situation names Where, Hands on, Friction, and Pressure; Clues states each truth with where it surfaces."
+          "text": "Situation and Actors sit in a col-md pair; Situation names Where, Hands on, Friction, and Pressure; Clues states each truth with where it surfaces."
         },
         {
           "type": "behavior",

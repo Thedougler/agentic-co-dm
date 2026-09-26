@@ -243,7 +243,7 @@ Done when: token image is placed, or no token image exists (report gap).
 
 ## Recipe 2 — Stage a scene
 
-Source: a session-prep or encounter note with a Zones table and optionally
+Source: a session-prep or encounter note with a Stage table and optionally
 a battlemap image.
 
 ### Step 1: Check
@@ -282,7 +282,7 @@ Two paths:
 ```
 tool: generate-map
 params: {
-  prompt: "<describe the tactical environment from the Zones table>",
+  prompt: "<describe the tactical environment from the Stage table>",
   scene_name: "<creative scene name>",
   size: "medium",
   grid_size: 70
@@ -326,7 +326,7 @@ params: {
 ```
 
 Or for actors already in the world (not from compendium), report which
-actors need tokens and suggested positions from the Zones table.
+actors need tokens and suggested positions from the Stage table.
 
 Done when: tokens placed, or placement list reported.
 

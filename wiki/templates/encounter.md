@@ -21,15 +21,15 @@ summary: ""
 <!-- Required. Lead sentence: the problem already in motion and why it is live now. Then labelled facts, one bullet each. -->
 
 - **Where.** [[place]]
-- **Opening pressure.** The visible threat the table can act on first.
+- **First threat.** The visible threat the table can act on first.
 - **If ignored.** What the opposition or world does without the party.
 
 > [!narration] Opening
 > <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, ending on the moment they react. -->
 
-## Cast
+## Actors
 
-- **[[creature]] × 3.** Numbers, goal, how it fights or bargains, and when it breaks or leaves.
+- **[[creature]] × 3.** Numbers, what it wants, how it fights or bargains, and when it breaks or leaves.
 
 ## Handles
 

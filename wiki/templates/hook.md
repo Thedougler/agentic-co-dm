@@ -22,8 +22,8 @@ summary: ""
 <!-- Required. Lead sentence: what happens right now and the choice it puts in front of the party. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Where everyone is and what they carry in from last session.
-- **Stakes.** The threat, opportunity, or personal stake.
-- **Lands when.** The commitment that ends the beat: they give chase, take the job, flee.
+- **Stakes.** What changes if the party acts, and what changes if it does not.
+- **Ends when.** The commitment that ends the beat: they give chase, take the job, flee.
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
@@ -43,7 +43,7 @@ flexGrow=1
 ```col-md
 flexGrow=1
 ===
-## Cast
+## Actors
 
 - **[[npc]].** What they want and what they do next if nobody interferes.
 - **[[creature]] × 3.** AC, HP, Speed, the attack or save DC the DM rolls; opening move → adapts → break point → exit.
@@ -68,7 +68,7 @@ flexGrow=1
 
 - **[[pc]].** Why this matters to them now, or their obvious first job.
 
-## Clues
+## Leads
 
 <!-- Each lead with how it enters play and where it points. Give any conclusion the session needs three independent leads. -->
 

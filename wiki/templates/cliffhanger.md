@@ -22,15 +22,15 @@ summary: ""
 <!-- Required. Lead sentence: the contest, and what the party can lose. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Positions, conditions, and resources the party carries in.
-- **Party goal.** The result that ends this contest besides surviving.
-- **Opposition goal.** What [[npc]] or [[creature]] is trying to do.
+- **Party objective.** The result that ends this contest besides surviving.
+- **Opposition wants.** What [[npc]] or [[creature]] is trying to do.
 - **Ends when.** The condition that ends the beat, in about three to five rounds.
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
 > <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): open on action, ending on a moment they can act on. -->
 
-## Cast
+## Actors
 
 - **[[creature]] × 4.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
@@ -79,7 +79,7 @@ flexGrow=1
 
 | Outcome | What changes | Next |
 | ------- | ------------ | ---- |
-| **Goal gained** |  | [[Session-{{session}}-BB-label]] |
+| **Objective gained** |  | [[Session-{{session}}-BB-label]] |
 | **Costly success** |  | [[Session-{{session}}-BB-label]] |
 | **Lost** |  | [[Session-{{session}}-BB-label]] |
 | **Broken off** |  | [[Session-{{session}}-BB-label]] |

@@ -83,7 +83,7 @@
     {
       "id": 1,
       "prompt": "Improve wiki/entities/place/Mercatura.md into a runnable city page using wiki/templates/city.md. Mercatura is already kind:city — expand toward full city.md (Arrival, Orientation districts, Gazetteer, Active situations). Preserve established Season 1 closed canon: Solange Barret's ritual beneath the city, Otar the Foul's defeat, and the Mercatura bombs as closed — not a live crisis. Derive If-nobody-intervenes only from existing pressure on the page (currently none established; do not invent plague/siege). Propose missing districts/services as invention and mark them. Wiki Linter marked hard_fail=false on Mercatura.md; assert output template conformance, not live completeness.",
-      "expected_output": "A city page filling wiki/templates/city.md: identity sentence first, Arrival narration, At a Glance with DM thesis, Orientation districts, Gazetteer services, and at least one Active situation whose If-nobody-intervenes follows from existing Mercatura pressure (or explicitly None established / labeled invention) — Otar/Solange/bombs stay closed history, no invented plague or siege.",
+      "expected_output": "A city page filling wiki/templates/city.md: At a Glance led by the city's function in play beside the arrival narration, Districts, Gazetteer services, and at least one Situation whose if-nobody-intervenes step follows from existing Mercatura pressure or is a stated invention — Otar/Solange/bombs stay closed history, no invented plague or siege.",
       "assertions": [
         {
           "text": "Identity sentence appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
@@ -361,7 +361,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Orientation, Gazetteer, and/or Rules that matter retain non-combat player openings (services, routes, status, commerce, investigation)",
+          "text": "Orientation, Gazetteer, and/or Rules that matter retain non-combat party handless (services, routes, status, commerce, investigation)",
           "type": "quality"
         },
         {

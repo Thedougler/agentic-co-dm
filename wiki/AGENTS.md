@@ -6,7 +6,7 @@ Owner conventions for this vault. Load before every write to `wiki/`. Overrides 
 
 Write **complete-sentence human prose**. A DM reads this without decoding agent shorthand. Telegram stubs, slash-stacks, and AI note-speak are invalid (FR-018).
 
-**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template, live path). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken. **DM-facing layers** (action cards, Be ready for, secrets, Wiki facts, owner pages): no coy/vague placeholders — see root `AGENTS.md` dm-facing-explicit.
+**HARD (Nick 2026-09-14):** Production session-prep / TotM / spoken text that names or requires an entity MUST have that owner page filed first (kebab + template, live path). Vague stand-ins for missing entities do not ship — see root `AGENTS.md` entity-before-spoken. **DM-facing layers** (actor entries, Checks, secrets, Wiki facts, owner pages): no coy/vague placeholders — see root `AGENTS.md` dm-facing-explicit.
 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 
@@ -80,9 +80,9 @@ Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` f
 3. The type's core section: `Statblock` (creature, vehicle, fighting NPC), `Sheet` (PC), `Properties` (item), `Effect` (spell), `Hazard` (flora hazard), `Ruling` (Rules), `Situation` (quest), or the type's own sections in its template. Lore shapes its body to fit the lore, with headings named for what they hold.
 4. Shared sections, one meaning everywhere: `At the Table` (how to run it), `Secrets` (hidden truths and how each surfaces), `Connections` (`- [[page]] — what the tie does at the table`), `History` (past that changes a present choice), `Log` (newest first, one bullet per change play made), `Art`.
 
-**Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, goal, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Cast` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
+**Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, objective, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Actors` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` (truths) or `Leads` (routes onward) → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
 
-**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or DM thesis). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing.
+**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or the At a Glance read). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing.
 
 **Columns.** `col` / `col-md` codeblocks only, for two patterns: the owner-page header row, and a beat pair of two short same-moment blocks. Statblocks, wide tables, and long narration stay full width.
 

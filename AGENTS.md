@@ -136,7 +136,7 @@ If table aim is `missing`, ask the DM to name the players (at least one; tests u
 
 ### HARD: entity-before-spoken (Nick 2026-09-14)
 
-**Production session content** (session-prep beats, TotM/`[!narration]`, action cards, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
+**Production session content** (session-prep beats, TotM/`[!narration]`, actor entries, spoken text) is **complete or it does not ship**. Vague/non-specific descriptions of unnamed people/things because the entity page is missing = **critical error**.
 
 **Dependency order (recursive):** If a beat/scene names or requires an NPC, item, creature, place, faction, vehicle, spell, quest, or other entity — load that kind's **owner skill** (Wiki kind routing, Beat skill routing, or Skill Routing), **cast or mint that owner page first** (cast before minting: `docs/agents/table-ready.md`; kebab basename, matching `wiki/templates/`, live vault path), **then** write/update the session/TotM text that depends on it. A new named owner the user asked to introduce is filed first; spoken that depends on it follows. Existing wiki content MUST NOT wait. The DM cannot describe what does not exist.
 
@@ -148,7 +148,7 @@ Problem: minting several new page types in one task blurs ownership and wastes c
 
 ### HARD: dm-facing-explicit (Nick 2026-09-14)
 
-**DM-facing content** (`visibility: dm`, action cards, Be ready for, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or mystery without a DM answer.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
+**DM-facing content** (`visibility: dm`, actor entries, Checks, secrets, situation facts, Wiki facts, owner pages): **no vagueness, non-specific placeholders, coy narration, or mystery without a DM answer.** The DM must have **all** scene/world facts available immediately. Making the DM decode coy agent writing = **critical error**.
 
 **Clarify vs player-safe TotM:** Player-facing `[!narration]` may withhold from *players*; it must still be grounded in named entities that exist (**HARD: entity-before-spoken**). DM layers must state who/what/where/why concretely — names, wants, true stakes — with a DM answer on the page for every planted mystery.
 

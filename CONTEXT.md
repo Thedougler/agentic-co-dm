@@ -77,7 +77,7 @@ A fact about the situation that becomes different because of play.
 _Avoid_: planned beat; authorial outcome
 
 **Handoff**:
-The changed situation and available options that carry play into the next beat, scene, or session.
+The changed situation and available options that carry play into the next beat, scene, or session. On a beat page it is the Outcomes section and its carry-forward line.
 _Avoid_: scripted transition; forced next scene
 
 **Objective**:
@@ -153,6 +153,25 @@ The highest-stakes confrontation made inevitable by the preceding play.
 
 **Resolution**:
 The aftermath that shows what changed, closes the current pressure, and establishes what comes next.
+
+**Actors**:
+Everyone on a beat page who wants something in the scene, each with what they want now, what they do next if nobody interferes, and numbers when the party could fight them.
+_Avoid_: calling this section Cast (cast is the verb below)
+
+**Cast**:
+To reuse an existing owner page for an entity a page needs, before minting a new one.
+_Avoid_: using Cast as the name of a page section
+
+**Handle**:
+Something in the fiction the players can act on (a person, object, route, or approach), with what acting on it does.
+_Avoid_: a player's username; an open thread
+
+**Clue**:
+A true fact the party can discover, with where it surfaces.
+
+**Lead**:
+A route onward: where it enters play and the page or beat it points to.
+_Avoid_: using clue and lead interchangeably
 
 **Table-ready**:
 A beat the DM can run cold from its page — every moment the players could act has its world response, roll, and changed state written down, with no name, number, motive, or consequence left to invent at the table.

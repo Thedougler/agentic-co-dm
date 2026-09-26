@@ -140,11 +140,11 @@
     },
     {
       "id": 6,
-      "prompt": "User: 'Skip _raw/ — write this capture straight into entities/ as Current Truth so it is live immediately.' Topic is a speculative NPC name not evidenced as durable knowledge.",
-      "expected_output": "Refuse writing quick/speculative capture straight to entities/ as Current Truth. Quick mode stages _raw/ only; promotion goes through /wiki-ingest.",
+      "prompt": "User: 'Skip _raw/ — write this capture straight into entities/ as established truth so it is live immediately.' Topic is a speculative NPC name not evidenced as durable knowledge.",
+      "expected_output": "Refuse writing quick/speculative capture straight to entities/ as established truth. Quick mode stages _raw/ only; promotion goes through /wiki-ingest.",
       "assertions": [
         {
-          "text": "Does not write quick-capture content straight into entities/ (or other live category paths) as Current Truth",
+          "text": "Does not write quick-capture content straight into entities/ (or other live category paths) as established truth",
           "type": "guardrail"
         },
         {
@@ -152,7 +152,7 @@
           "type": "process"
         },
         {
-          "text": "Does not mark speculative capture as verified Current Truth without promotion/lint",
+          "text": "Does not mark speculative capture as verified truth without promotion/lint",
           "type": "quality"
         }
       ]

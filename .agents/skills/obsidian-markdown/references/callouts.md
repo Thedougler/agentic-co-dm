@@ -18,7 +18,7 @@ Rules:
 
 - Write a narration block only when it has its spoken text; a page without a look yet has no narration block.
 - Keep it open (never the collapsed `-` form) and outside table cells. Conditional spoken text in a table cell is `_italic_`.
-- Nothing the players must not hear goes inside it: no secrets, DCs, unearned names, or DM thesis.
+- Nothing the players must not hear goes inside it: no secrets, DCs, unearned names, or the DM's At a Glance read.
 - Columns use the `col` / `col-md` codeblock syntax ([columns.md](columns.md)).
 
 ## Body line breaks

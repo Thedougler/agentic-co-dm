@@ -44,7 +44,7 @@ summary: ""
 
 | Thread | Source | Planted | Tested | Harvested |
 | ------ | ------ | ------- | ------ | --------- |
-| [[page]] | PC goal, mystery, relationship, or resource | [[beat]] | [[beat]] | [[beat]] |
+| [[page]] | PC objective, mystery, relationship, or resource | [[beat]] | [[beat]] | [[beat]] |
 
 ````col
 ```col-md
@@ -52,7 +52,7 @@ flexGrow=1
 ===
 ## Pressure
 
-**[[npc]] or [[faction]]** — the goal this session and the means.
+**[[npc]] or [[faction]]** — what it wants this session and the means.
 
 | Step | Without the party | Seen in |
 | ---: | ----------------- | ------- |

@@ -32,11 +32,11 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Situation, Opening pressure, Opposition (goal and behavior), Choice surface (3+ responses), If ignored, and Handoff."
+          "text": "Output includes At a Glance (first threat and if ignored), the Opening narration, Actors (what they want and how they behave), Handles (3+ responses), and Outcomes."
         },
         {
           "type": "behavior",
-          "text": "Output includes an Initial Narration callout with 'you' address and at least one non-sight sense."
+          "text": "Output includes an Opening callout with 'you' address and at least one non-sight sense."
         }
       ]
     },

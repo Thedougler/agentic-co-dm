@@ -18,7 +18,7 @@ Follow AGENTS.md **HARD: entity-before-spoken** (Nick 2026-09-14). Mint/file req
 
 ## HARD: dm-facing-explicit
 
-Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (action cards, Be ready for, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
+Follow AGENTS.md **HARD: dm-facing-explicit** (Nick 2026-09-14) together with **entity-before-spoken**. DM layers (actor entries, Checks, secrets, situation facts) state who/what/where/why concretely — no coy placeholders. Player `[!narration]` may withhold from players but stays grounded in named owners.
 
 ## Reference
 

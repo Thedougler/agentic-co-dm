@@ -22,10 +22,10 @@ summary: ""
 <!-- Required. Lead sentence: the question this beat settles for good. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Positions, resources, allies, and what the party prepared.
-- **Party goal.** What the characters can accomplish here.
-- **Opposition goal.** What the opposition is trying to make true, and why it cannot wait.
+- **Party objective.** What the characters can accomplish here.
+- **Opposition wants.** What the opposition is trying to make true, and why it cannot wait.
 - **Stakes.** What changes if the party wins, loses, bargains, or walks away.
-- **If behind.** How to compress it (fewer phases, a faster clock) and still settle the question.
+- **If behind.** How to compress it (fewer phases, faster Pressure) and still settle the question.
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
@@ -37,7 +37,7 @@ summary: ""
 
 - **[[thread]]** (planted in [[beat]]) — the lever it gives here.
 
-## Cast
+## Actors
 
 - **[[npc]].** Numbers (AC, HP, Speed, attacks, save DCs, legendary or lair actions); what they want; their leverage; opening move → response → desperation; the line they will not cross; when they surrender or flee.
 - **[[creature]] × 4.** Role and numbers.
@@ -63,7 +63,7 @@ flexGrow=1
 - [ ] **1. Warning.** What the players see coming.
 - [ ] **2. Escalation.** The safety removed or opposition strengthened.
 - [ ] **3. Crisis.** The hard choice.
-- [ ] **4. Consequence.** The opposition's goal happens.
+- [ ] **4. Consequence.** The opposition gets what it wants.
 
 **Ticks when.** A round passes, an action fails, or a threat is ignored.
 ```
@@ -72,7 +72,7 @@ flexGrow=1
 ## Final Battle
 
 - **Win by.** The objective beyond dropping every enemy.
-- **Lose when.** The opposition achieves its goal.
+- **Lose when.** The opposition gets what it wants.
 
 | Phase | Trigger | What the players see | What changes |
 | ----- | ------- | -------------------- | ------------ |

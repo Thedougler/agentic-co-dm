@@ -911,7 +911,7 @@
   },
   {
    "id": "situated-initial-narration",
-   "prompt": "Write a situated scene-setting Initial Narration (Hook beat) for a party entering an underground market cavern. Supplied facts: ceiling three stories high with stalactites, packed dirt floor with wooden stalls in rows, lanterns hanging from ropes between stalactites, a crowd, nearest stall sells dried fish. Second person present tense. Do not assign PC emotion, thought, or body reaction.",
+   "prompt": "Write a situated scene-setting Opening (Hook beat) for a party entering an underground market cavern. Supplied facts: ceiling three stories high with stalactites, packed dirt floor with wooden stalls in rows, lanterns hanging from ropes between stalactites, a crowd, nearest stall sells dried fish. Second person present tense. Do not assign PC emotion, thought, or body reaction.",
    "expected_output": "A Layer 1 opening that seats the party in the space \u2014 where they stand, the cavern's body-scale size, ground/air/light before stall inventory. Ends on a Hook-appropriate live situation. Not a postcard from nowhere.",
    "assertions": [
     {
@@ -954,7 +954,7 @@
   },
   {
    "id": "judge-bad-narration",
-   "prompt": "Judge this situated scene-setting Initial Narration: 'You enter the forge. The heat makes you sweat. A large anvil sits in the center of the room. Hammers line the wall. The smith, a burly man with burns on his arms, looks up. Your heart pounds.' Explain what fails and why.",
+   "prompt": "Judge this situated scene-setting Opening: 'You enter the forge. The heat makes you sweat. A large anvil sits in the center of the room. Hammers line the wall. The smith, a burly man with burns on his arms, looks up. Your heart pounds.' Explain what fails and why.",
    "expected_output": "FAIL \u2014 assigns PC body reactions ('makes you sweat', 'heart pounds'), lists furniture without body-scale framing, and reads as a postcard inventory. The heat should be in the environment, not on the PC's skin.",
    "assertions": [
     {
@@ -1093,7 +1093,7 @@
   },
   {
    "id": "development-opening-talk",
-   "prompt": "Fill the `Initial Narration` for the Session 12 Development Two-Grave Orders (wiki/journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders.md), using Celia Parel and Oren Vask from their owner pages.",
+   "prompt": "Fill the `Opening` for the Session 12 Development Two-Grave Orders (wiki/journal/sessions/shattered-sea/12/Session-12-04-Two-Grave-Orders.md), using Celia Parel and Oren Vask from their owner pages.",
    "expected_output": "A Development opening: the valley mass grave framed at body scale with smell and ground, Celia and Oren each doing something, the seals and order scraps as handles, ending on a line or detail that invites the turn.",
    "assertions": [
     {
@@ -1136,7 +1136,7 @@
   },
   {
    "id": "stub-expansion",
-   "prompt": "This Initial Narration is too thin: 'You reach the camp. Survivors are there. They look at you.' The beat page establishes: a survivor camp under a rock overhang on Aruhe, a smoky fire of green wood, eleven survivors in salt-stained Grung gear, a boy mending a net, an older woman with a spear who steps forward, lean-tos of palm fronds, a stream beside the camp. Rewrite it.",
+   "prompt": "This Opening is too thin: 'You reach the camp. Survivors are there. They look at you.' The beat page establishes: a survivor camp under a rock overhang on Aruhe, a smoky fire of green wood, eleven survivors in salt-stained Grung gear, a boy mending a net, an older woman with a spear who steps forward, lean-tos of palm fronds, a stream beside the camp. Rewrite it.",
    "expected_output": "A full 5\u20139 sentence opening using the supplied facts, with frame, focus, motion, handles, a sense beyond sight, and a live edge on the woman stepping forward.",
    "assertions": [
     {
@@ -1253,7 +1253,7 @@
   },
   {
    "id": "npc-in-beat-uses-page",
-   "prompt": "Write the Initial Narration for a development beat where the party walks into The Live Hold in Sparhold and meets Sabine Corvo for the first time. She wants them to escort a caged saltwater drake to Roka Sten's camp.",
+   "prompt": "Write the Opening for a development beat where the party walks into The Live Hold in Sparhold and meets Sabine Corvo for the first time. She wants them to escort a caged saltwater drake to Roka Sten's camp.",
    "expected_output": "Situated second-person opening that seats Sabine using the face words from her NPC page portrait, adds only what this scene changes, gives her one line in the voice from her page that carries her want, and ends on a live edge.",
    "assertions": [
     {
@@ -1280,7 +1280,7 @@
   },
   {
    "id": "item-hidden-in-beat",
-   "prompt": "Write the Initial Narration for a development beat where the party searches Sabine Corvo's back room at The Live Hold. Roka's hidden ledger is concealed there; the party has not found it yet.",
+   "prompt": "Write the Opening for a development beat where the party searches Sabine Corvo's back room at The Live Hold. Roka's hidden ledger is concealed there; the party has not found it yet.",
    "expected_output": "Second-person opening that places the room and its handles, gives only a plain trace of the hidden ledger (from the place page or the item page's hidden tell) at the same weight as other details, and names neither the ledger nor its contents.",
    "assertions": [
     {
@@ -1330,7 +1330,7 @@
   },
   {
    "id": "otter-hole-initial-narration",
-   "prompt": "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md. The current one reads like a grid inventory of distances instead of a scene the DM can speak.",
+   "prompt": "Rewrite the `Opening` on wiki/journal/sessions/shattered-sea/11/Session-11-05-Otter-Hole.md. The current one reads like a grid inventory of distances instead of a scene the DM can speak.",
    "expected_output": "Scene opening led by the trapped man and the otters, built from the beat, owner pages, and related art.",
    "assertions": [
     {
@@ -1486,7 +1486,7 @@
   },
   {
    "id": "false-help-initial-narration",
-   "prompt": "Rewrite the `Initial Narration` on wiki/journal/sessions/shattered-sea/11/Session-11-07-False-Help.md so it plays at the table: something the players can picture and feel the moment the DM says it.",
+   "prompt": "Rewrite the `Opening` on wiki/journal/sessions/shattered-sea/11/Session-11-07-False-Help.md so it plays at the table: something the players can picture and feel the moment the DM says it.",
    "expected_output": "Scene opening led by the voice the characters actually hear, with survivors reacting.",
    "assertions": [
     {
@@ -1616,7 +1616,7 @@
   },
   {
    "id": "development-initial-narration",
-   "prompt": "Rewrite the `Initial Narration` for the Development beat wiki/journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md so it plays at the table.",
+   "prompt": "Rewrite the `Opening` for the Development beat wiki/journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate.md so it plays at the table.",
    "expected_output": "Development opening led by the evidence of who was here, ending on the detail that does not fit.",
    "assertions": [
     {

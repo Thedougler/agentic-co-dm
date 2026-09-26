@@ -167,11 +167,11 @@
     },
     {
       "id": "cockpit-pass-2",
-      "prompt": "Run-guide pass 1 produced this cockpit copy: 'Scene ends when: Skarn gone/Spinner safe. ~30m. Glance: theft, JC down, plums. Now: party river stones; S 5ft C; grass 40ft.' Do pass 2 on it.",
-      "expected_output": "Scene ends when leads with the end condition in a sentence; At a Glance is five-second bullets; Now is one paragraph of positions in feet with names; narration stubs stay empty.",
+      "prompt": "Run-guide pass 1 produced this cockpit copy: 'Ends when: Skarn gone/Spinner safe. ~30m. Glance: theft, JC down, plums. Now: party river stones; S 5ft C; grass 40ft.' Do pass 2 on it.",
+      "expected_output": "Ends when leads with the end condition in a sentence; At a Glance is five-second bullets; Now is one paragraph of positions in feet with names; narration stubs stay empty.",
       "assertions": [
         {
-          "text": "Scene ends when starts with the end condition as a complete sentence, then the time budget.",
+          "text": "Ends when starts with the end condition as a complete sentence, then the time budget.",
           "type": "structure"
         },
         {

@@ -17,35 +17,24 @@ summary: ""
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=1
-===
-## Scene ends when
-
-<!-- Required. The end condition, then the time budget. -->
-
-The beat ends when… Plan for about thirty minutes. **If behind:** what to cut. **If ahead:** what to add.
-```
-
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. The labelled facts the DM needs first. -->
 
+- **Ends when.** The end condition, then the time budget: about thirty minutes. **If behind:** what to cut. **If ahead:** what to add.
 - **Stakes.** What can be won or lost.
-- **Goal / exit.** What ends the slice for the party.
+- **Objective.** What ends the slice for the party.
 - **Danger.** The threat in numbers.
-```
-````
+- **Next.** [[Session-N-BB-label]]
+
+> [!narration] Opening
+> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
 
 ````col
 ```col-md
 flexGrow=1
 ===
-## Now
+## Situation
 
 Who starts where, in feet and compass directions, and what a move or Dash reaches.
 ```
@@ -53,42 +42,39 @@ Who starts where, in feet and compass directions, and what a move or Dash reache
 ```col-md
 flexGrow=2
 ===
-## Action cards
+## Actors
 
 **[[creature]] × 3.** The compact numbers the DM rolls this slice: AC, HP, one attack or save DC, the bloodied or break rule.
 ```
 ````
 
-> [!narration] Initial Narration
-> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
-
 ## Procedure
 
 **Named mode.** Its trigger in this slice, once.
 
-## Zones
+## Stage
 
 | Place | Distance | Cover | Narration |
 | ----- | -------- | ----- | --------- |
 |       |          |       | _…_       |
 
-## Be ready for
-
-| Intent | Approach | DC | Success | Partial | Failure |
-| ------ | -------- | -- | ------- | ------- | ------- |
-|        | **Ability (Skill)** | `DC 13` |  |  |  |
-
-## Threat clock
+## Pressure
 
 | Tick | What happens | Narration |
 | ---- | ------------ | --------- |
 | 1    |              | _…_       |
 
-## How the Scene Resolves
+## Checks
+
+| Intent | Approach | DC | Success | Partial | Failure |
+| ------ | -------- | -- | ------- | ------- | ------- |
+|        | **Ability (Skill)** | `DC 13` |  |  |  |
+
+## Outcomes
 
 <!-- Required. The changed situation and the beat each likely option hands to. -->
 
-> [!narration] How the Scene Resolves
+> [!narration] Outcomes
 > <!-- The changed situation in "you" address, present tense. -->
 
 | If | Next | Narration |

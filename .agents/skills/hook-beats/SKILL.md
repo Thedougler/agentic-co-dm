@@ -98,7 +98,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 - **Obvious and interesting moves.** Build one obvious first move and at least
   one non-obvious move the space or cast rewards (a feature to exploit, an NPC
   to bargain with, a thing to grab).
-- **Short and committed.** The Hook resolves fast. At a Glance's "Lands when" names the
+- **Short and committed.** The Hook resolves fast. At a Glance's "Ends when" names the
   observable commitment — the party gives chase, accepts the job, flees the
   city — and the beat cuts there. Longer stretches of travel or investigation
   are the next beat.

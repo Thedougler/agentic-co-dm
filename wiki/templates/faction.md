@@ -47,14 +47,14 @@ flexGrow=1
 
 <!-- Required when status is active. What they are doing next, what it changes, and where the party can step in. -->
 
-- **Goal.** The concrete change they are trying to make in the world, and why now.
+- **Objective.** The concrete change they are trying to make in the world, and why now.
 - **Next move.** What they attempt next, with what resources.
 - **Standing in the way.** [[page]] — who or what blocks them.
 - **Signs.** What the party can see, hear, or hear rumored as the move advances.
 - **If they succeed.** The new world state: who owns, controls, or loses what.
-- **Party opening.** What the party can support, expose, steal, or sabotage.
+- **Party handles.** What the party can support, expose, steal, or sabotage.
 
-<!-- Milestones toward the goal, soonest first: when each lands, the sign the party sees, and what it changes. -->
+<!-- Milestones toward the objective, soonest first: when each lands, the sign the party sees, and what it changes. -->
 
 - [ ] **Milestone.** When it lands — the sign the party sees — what changes.
 

@@ -22,7 +22,7 @@ it reaches. It is not a second roll at a higher *DC*, and it is not a
 success-count skill challenge (`encounter-prep` / `traps-trials`).
 
 Run-card **Partial** (miss by 1–4) lives in `run-guide`. On owner **If the
-party** lists, write ladders. On a Be ready for table, keep Partial as that
+party** lists, write ladders. On a Checks table, keep Partial as that
 skill defines it; graded harvest can still fill the success cell.
 
 ## Grade from the fiction

@@ -6,7 +6,7 @@ then run the final check in `SKILL.md`. The matching weak → strong pair is in
 
 ## Contents
 
-- Session-beat pages: header lines; Situation, Cast, Space; rulings and checks;
+- Session-beat pages: header lines; Situation, Actors, Stage; rulings and checks;
   pressure and outcome tables; carry forward
 - Session plan
 - Run-guide cockpit (pass 2)
@@ -27,11 +27,11 @@ when, Memorable element, and so on).
 - **Ends when** names an observable moment: "Ends when the party reaches the
   ladder or the second beam falls."
 
-### Situation, Cast, Stage, Pressure
+### Situation, Actors, Stage, Pressure
 
 - One bullet per fact, each a complete sentence that starts with its subject
   or a bold label.
-- Cast rows: who (wikilink), what they want now, what they do next if nobody
+- Actors rows: who (wikilink), what they want now, what they do next if nobody
   interferes, what they offer or hide, what changes their mind. Write the
   hidden part plainly.
 - Space: distances in feet, what blocks what, each feature with its ruling
@@ -81,12 +81,11 @@ when, Memorable element, and so on).
 
 Run-guide pass 1 built the cockpit; pass 2 makes its DM copy readable.
 
-- Edit Scene ends when, At a Glance, Now, Action cards, Procedure, Be ready
-  for, the threat clock, and How the Scene Resolves.
-- **Scene ends when** starts with the end condition; the time budget follows.
-- **At a Glance** bullets: stakes, the goal or exit, the danger, and what
+- Edit At a Glance (Ends when first), Situation, Actors, Procedure, Pressure, Checks, and Outcomes.
+- **Ends when** starts with the end condition; the time budget follows.
+- **At a Glance** bullets: stakes, the objective, the danger, and what
   pulls players in. Readable in five seconds.
-- **Now** gives positions in feet and compass directions in one paragraph.
+- **Situation** gives positions in feet and compass directions in one paragraph.
 - Keep every `[!narration]` body and narration cell empty; pass 3 fills them.
 - A structural gap (a missing section, wrong order) is fixed from
   `run-guide` before polishing.

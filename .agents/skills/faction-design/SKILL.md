@@ -119,8 +119,8 @@ a rival faction's name in: if the custom still fits, sharpen it).
 
 ### 4. Write the agenda and its clock
 
-Fill the Agenda: goal and why now, next move, what stands in the way, signs,
-party opening, and if they succeed. Turn it into three to five
+Fill the Agenda: objective and why now, next move, what stands in the way, signs,
+party handles, and if they succeed. Turn it into three to five
 **milestones**, each a concrete event with a time (a date, a number of days, or
 a trigger), a portent the party could notice, and what changes in the world
 when it lands. The first milestone lands soon enough that the party's next

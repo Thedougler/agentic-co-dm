@@ -32,7 +32,7 @@
         },
         {
           "type": "behavior",
-          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Lands when, and Next."
+          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Ends when, and Next."
         },
         {
           "type": "behavior",
@@ -282,7 +282,7 @@
         },
         {
           "type": "behavior",
-          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Lands when, and Next."
+          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Ends when, and Next."
         },
         {
           "type": "behavior",
@@ -290,7 +290,7 @@
         },
         {
           "type": "behavior",
-          "text": "Situation names Where, What changed, and Pressure; Cast names each actor's want and next move; At a Glance carries the Entry state."
+          "text": "Situation names Where, What changed, and Pressure; Actors names each actor's want and next move; At a Glance carries the Entry state."
         },
         {
           "type": "behavior",

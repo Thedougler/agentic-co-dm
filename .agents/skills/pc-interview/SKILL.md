@@ -15,7 +15,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 Search `wiki/entities/pc/` and, only for collision checking, `wiki/entities/npc/` for name/aliases.
 No match means create; one PC match means resume; an NPC match or ambiguity is a stop for identity
-confirmation. Read the existing note and `hot.md` before asking. Store player handles only, never
+confirmation. Read the existing note and `hot.md` before asking. Store player usernames only, never
 real-player PII.
 
 ## Interview loop
@@ -25,7 +25,7 @@ follow-ups, and accept “Skip” while recording it unanswered. Cover, in order
 origin; family; formative change; proud choice; regret/obligation; value; temptation; fear;
 desire; protector; distrust; authority; money/status/safety; worldview; misunderstanding; what
 would make them leave; what would make them stay; a useful play detail; and a question they want
-the world to ask. Then ask once for player handle and class/level if known. Leave unknown mechanics
+the world to ask. Then ask once for the player's username and class/level if known. Leave unknown mechanics
 blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist

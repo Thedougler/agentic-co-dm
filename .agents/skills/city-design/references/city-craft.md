@@ -98,7 +98,7 @@ it into the section it changed and drop the Log bullet.
 
 | Failure mode | Repair |
 | --- | --- |
-| Encyclopedia without pressure | Add current instability + player opening |
+| Encyclopedia without pressure | Add current instability + party handles |
 | Pressure bolted on from nowhere (a stock plague or siege) | Grow it from a canon debt, rival, or shortage; state it as a proposal |
 | Closed canon reopened as live crisis | Keep as history; find live pressure elsewhere |
 | Secrets/DCs in narration | Move to DM-facing sections |

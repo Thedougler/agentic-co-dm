@@ -5,14 +5,13 @@ draft is incomplete.
 
 ## Structure
 
-- `## Scene ends when` is the first cockpit heading in Reading view; the end
-  condition is the first line.
+- `## At a Glance` is the first cockpit heading in Reading view, and its
+  first bullet, **Ends when**, states the end condition.
 - Time budget present. Cut lines only when they change a pacing choice.
-- One named *procedure*; Be ready for failures never also tick the clock. Be
-  ready for is selective — no ordinary, boring, or redundant rows.
+- One named *procedure*; Checks failures never also tick Pressure. Checks is selective — no ordinary, boring, or redundant rows.
 - Beat identity: filename number matches its Beat Map row; purpose, dramatis
   personae, and hand-off match that row.
-- This beat's opening follows from the previous beat's How the Scene Resolves —
+- This beat's opening follows from the previous beat's Outcomes —
   no state reset, teleport, or unexplained jump.
 - The central element the table will ask about has an owner and appears on the
   card. Background detail may be marked unknown; the central element may not.
@@ -37,10 +36,10 @@ draft is incomplete.
   Narration table columns is `_italic_`.
 - Column layout uses `col` / `col-md` codeblock fences (not `[!col]`);
   `flexGrow` ratios match the layout table. Spoken `[!narration]` callouts,
-  Zones, Be ready for, How the Scene Resolves, Backup, and Battlemap stay full
+  Stage, Checks, Outcomes, Backup, and Battlemap stay full
   width.
 - Optional sections stay absent unless this beat spends them at the table.
-- Secondary objective, How the Scene Resolves, Roster, and Backup use `##`
+- Secondary objective, Outcomes, Roster, and Backup use `##`
   headings.
 - Existing overview or identity image embedded near the top when exact art
   exists.
@@ -68,18 +67,17 @@ draft is incomplete.
 
 - **Pass 1:** `dnd5e-mechanics` loaded; `writing-for-humans` and
   `theatre-of-the-mind` not loaded. Empty callout stubs and empty Narration
-  cells at the TotM slots this beat uses. How the Scene Resolves is one
+  cells at the TotM slots this beat uses. Outcomes carries one
   unconditional stub plus an options table, not a stack of variant callouts.
   Each option hands off to a Beat Map beat.
 - **Pass 2:** `writing-for-humans` loaded after pass 1 completes;
   `theatre-of-the-mind` not loaded. DM-facing copy is usable and signal-only.
   Every `[!narration]` body and Narration cell is still empty.
-- **Pass 3:** `theatre-of-the-mind` loaded after pass 2 completes. Initial
-  Narration is the Layer 1 immediate frame — a stable shared picture and
+- **Pass 3:** `theatre-of-the-mind` loaded after pass 2 completes. Opening is the Layer 1 immediate frame — a stable shared picture and
   something live to respond to. Every stub is filled. Every spoken Narration
   cell is `_italic_`.
 - **Pass 4:** Reading view checked top to bottom; no spoken slot is empty.
-  Action cards sit near the procedure or ruling they support.
+  Actors sit near the procedure or ruling they support.
 
 ## Fun
 

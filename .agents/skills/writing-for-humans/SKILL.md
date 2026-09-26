@@ -45,7 +45,7 @@ DM wants answered when their eyes land there. Every line you write answers it.
 | Surface | The DM's question |
 |---|---|
 | Beat page header lines (Card, Trigger, Stakes, Ends when…) | What is this beat and what do I need to know before it starts? |
-| Situation, Cast, Space, Opposition | Who and what is here, what do they want, where are they? |
+| Situation, Actors, Stage, Pressure | Who and what is here, what do they want, where are they? |
 | Rulings, checks, pressure, outcome tables | A player just did X. What happens? |
 | Carry forward / Handoff | What is true now, and where does play go next? |
 | Session plan | What happens tonight, in what order, and what is the opposition doing? |

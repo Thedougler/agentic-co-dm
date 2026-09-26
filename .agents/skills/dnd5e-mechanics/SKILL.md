@@ -184,7 +184,7 @@ the attempt they take.
 it belongs to (a creature-imposed *save* under Features, a hidden listen under
 Secrets). Obvious roster and fiction stay unmarked.
 
-A *Be ready for* table is for `run-guide` only; cells still use the same
+A *Checks* table is for `run-guide` only; cells still use the same
 treatments (approach **Ability (Skill)**; DC column `` `DC 14` ``).
 `[!narration]` stays player-safe.
 

@@ -44,18 +44,16 @@ flexGrow=1
 ```col-md
 flexGrow=1
 ===
-## Cast
+## Actors
 
 - **[[npc]].** Wants now; knows; offers; lies about, and the tell; price for help; what shifts their posture.
 ```
 ````
 
-## Clues
+## Handles
 
-<!-- Truths stated as facts, each with where it surfaces. A conclusion the session needs gets three independent routes. -->
-
-- [ ] **Core.** The truth that changes what the party knows or can do → surfaces through [[page]].
-- [ ] **Support.** A fact about motive, stakes, or history → surfaces through [[page]].
+- **[[npc]]** can be persuaded, pressured, or exposed because…
+- **[[item]]** can be examined, used, or traded because…
 
 ## Checks
 
@@ -65,10 +63,12 @@ flexGrow=1
 
 <!-- Sensible actions with no real doubt succeed automatically; say what they yield in Clues. -->
 
-## Handles
+## Clues
 
-- **[[npc]]** can be persuaded, pressured, or exposed because…
-- **[[item]]** can be examined, used, or traded because…
+<!-- Truths stated as facts, each with where it surfaces. A conclusion the session needs gets three independent routes. -->
+
+- [ ] **Core.** The truth that changes what the party knows or can do → surfaces through [[page]].
+- [ ] **Support.** A fact about motive, stakes, or history → surfaces through [[page]].
 
 ## Outcomes
 

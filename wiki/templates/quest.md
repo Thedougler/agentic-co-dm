@@ -40,7 +40,7 @@ flexGrow=2
 ```col-md
 flexGrow=1
 ===
-> [!narration] The Job
+> [!narration] {{title}}
 > <!-- Player-facing brief: the request, rumor, or visible problem, using only what the characters know. -->
 ```
 ````
@@ -63,7 +63,7 @@ flexGrow=1
 
 ## Pressure
 
-<!-- The force that moves when the party does not: what it wants, what it does next, and the visible steps toward its goal. -->
+<!-- The force that moves when the party does not: what it wants, what it does next, and the visible steps toward what it wants. -->
 
 - **Driver.** [[npc]] or [[faction]] — what it wants and its next move.
 - [ ] **First sign.** The first visible change.
