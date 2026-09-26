@@ -3,7 +3,7 @@ name: faction-design
 description: >-
   Write, edit, or create named faction pages for the campaign wiki. Use when a
   faction, organization, order, guild, cult, polity, crew, movement, or cell
-  needs a persistent page — public face, DM thesis, active agenda, faction turn,
+  needs a persistent page — public face, agenda and milestones, faction turn,
   assets, people, territory, or relationships. Also use when a missing named
   faction blocks a beat, scene, or session prep. Covers fronts, faction turns,
   and off-screen motion for sandbox play.
@@ -119,8 +119,8 @@ a rival faction's name in: if the custom still fits, sharpen it).
 
 ### 4. Write the agenda and its clock
 
-Fill the Active Agenda: goal, why, planned action, needs, opposition, next
-signal, player opening, and if completed. Turn it into three to five
+Fill the Agenda: goal and why now, next move, what stands in the way, signs,
+party opening, and if they succeed. Turn it into three to five
 **milestones**, each a concrete event with a time (a date, a number of days, or
 a trigger), a portent the party could notice, and what changes in the world
 when it lands. The first milestone lands soon enough that the party's next
@@ -133,8 +133,8 @@ completed" changes something the campaign will feel.
 
 - **Offer.** One job, deal, or favour the faction would put to this party now,
   with who offers it, the pay, and the catch.
-- **Running the Faction.** When encountered, helped, opposed, ignored, and
-  broken: what the world does in each case, by name.
+- **At the Table.** When met, helped, opposed, ignored, and broken: what the
+  world does in each case, by name, and the party's standing.
 - **Hidden truth.** One thing the faction hides that changes the deal once
   the party learns it: a hidden employer, a debt, a betrayal in motion, a
   weakness, a crime. Three clues the party can find in the world, each a
@@ -143,8 +143,8 @@ completed" changes something the campaign will feel.
 - **Numbers.** When the party could fight them, the rank-and-file as a count
   and a statblock, and the faces' statblock links or compact numbers.
 
-Done when the offer has a named offerer, pay, and catch, and every Running the
-Faction row says what happens.
+Done when the offer has a named offerer, pay, and catch, and every At the
+Table case says what happens.
 
 ### 6. Hand the public face to theatre-of-the-mind
 
@@ -160,10 +160,12 @@ Done when the returned narration passes theatre-of-the-mind's final check.
 ### 7. File the page
 
 Copy `wiki/templates/faction.md` to `wiki/entities/faction/<kebab-name>.md`
-with `type: faction`; `wiki/templates/contracts/faction.yml` owns which
-sections are required. Fill the DM thesis as one sentence of campaign pressure.
-Set Current Turn from step 4's next milestone; leave the Turn Log for
-`world-tick`. Omit sections that change no current play. Write complete
+with `type: faction`; the template marks which sections are required. At a
+Glance opens with one sentence of campaign pressure. Step 4 fills Agenda and
+its milestones; step 5 fills At the Table (the offer goes there), Secrets (the
+hidden truth and its clues), and People (faces, with numbers). Leave the Log
+for `world-tick`. Keep a section only when it has facts (fact-only,
+`wiki/AGENTS.md` Layout). Write complete
 sentences. Wikilink every owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
@@ -178,13 +180,13 @@ line that carries it; a line with nothing beside it goes back on the page.
 ## Done
 
 - The canon inventory is complete; every established detail is kept.
-- The want, method, pressure, and collision are concrete and named; the DM
-  thesis is one sentence of pressure.
+- The want, method, pressure, and collision are concrete and named; the At a
+  Glance lead is one sentence of pressure.
 - The leader and every face link NPC pages; the fracture and custom are
   usable in play.
 - The agenda has milestones with times, portents, and changed facts; the first
   lands by the party's next session.
-- The offer names who, pay, and catch; Running the Faction answers encountered,
+- The offer names who, pay, and catch; At the Table answers met,
   helped, opposed, ignored, and broken; the hidden truth changes the deal and
   has three in-world clues of different kinds.
 - Every fighter the party could face has compact numbers or a statblock link.

@@ -11,9 +11,14 @@ campaign: "{{campaign}}"
 visibility: dm
 status: offered
 scope: local
+region: ""
+quest_giver: ""
+factions: []
+deadline: ""
+last_advanced: YYYY-MM-DD
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections and these comments. Add `region:`, `quest_giver:`, `factions:`, or `deadline:` frontmatter only when they have values.
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections and these comments.
 status: rumored | offered | active | stalled | resolved | failed | expired -->
 
 # {{title}}
@@ -24,7 +29,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what the party can accomplish, stated as the result.
+<!-- Required. Lead sentence: what the party can accomplish, stated as the result. Then labelled facts, one bullet each. -->
 
 - **Why now.** What makes it urgent.
 - **Offered by.** [[npc]]
@@ -42,7 +47,7 @@ flexGrow=1
 
 ## Situation
 
-<!-- The truth behind the quest as it stands now: the forces involved and what each is already doing. -->
+<!-- Required. The truth behind the quest as it stands now: the forces involved and what each is already doing. -->
 
 ## Stakes
 

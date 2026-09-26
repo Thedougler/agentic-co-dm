@@ -33,7 +33,7 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/item.md` (+ `contracts/item.yml`) |
+| **Template** | `wiki/templates/item.md` |
 | **Improve** | `wiki/entities/item/fate-spinner.md` (preferred). Alt exemplar: `pearl-of-souls.md` (plot/artifact; citation only). Craft-rich ref: `blade-of-the-lost-grip.md`. |
 | **Resist invent** | same Fate Spinner — secret body-control curse + Sentinels-as-forgers provenance as silent canon |
 | **Create fixture** | Tideglass Compass (labeled invention) |
@@ -58,7 +58,7 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/spell.md` (+ `contracts/spell.yml`) |
+| **Template** | `wiki/templates/spell.md` |
 | **Improve** | **Labeled work fixture** in prompt: *Saltwake Veil* (no live `type: spell` pages; no `wiki/entities/spell/` folder) |
 | **Resist invent** | Ancient Aruhe druids created the taking rule as canon — ground resistance in `wiki/entities/lore/taking-on-aruhe.md` (fallen vs living claim). Do **not** invent `ancient-druids-taking-spell` as vault canon. |
 | **Create fixture** | Ledgerbind (labeled invention) |
@@ -74,7 +74,7 @@ Audit input: `/workspace/eval-audit/batch-b-entity-report.md`.
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/vehicle.md` (+ `contracts/vehicle.yml`) |
+| **Template** | `wiki/templates/vehicle.md` |
 | **Improve** | `wiki/entities/vehicle/Uncertainty.md` (existing eval subject; partial Sheet) |
 | **Also cited (shape refs)** | `red-lady-dead-lady.md`, `hcs-ordinance.md` (template-shaped / Crown warship practice — not primary improve) |
 | **Resist invent** | same Uncertainty — hidden cannons / ram / enchanted sails as silent canon |

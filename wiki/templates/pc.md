@@ -12,6 +12,12 @@ visibility: dm
 status: alive
 player: ""
 class_levels: ""
+level:
+ac:
+hp_max:
+init_mod:
+pp:
+speed: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. -->
@@ -24,7 +30,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: how this character plays at the table and what pulls them into a scene.
+<!-- Required. Lead sentence: how this character plays at the table and what pulls them into a scene. Then labelled facts, one bullet each. -->
 
 - **Player.** Name.
 - **Class.** Rogue 5 (Soulknife)
@@ -41,6 +47,8 @@ flexGrow=1
 ````
 
 ## Sheet
+
+<!-- Required. The numbers the DM needs mid-round. -->
 
 **AC** `15` · **HP** `38` · **Initiative** `+4` · **Passive Perception** `14` · **Speed** 30 ft.
 

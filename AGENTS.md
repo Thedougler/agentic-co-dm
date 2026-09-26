@@ -13,7 +13,7 @@ Top-level paths, one purpose each; the vault itself is explored under "Vault map
 | `.agents/skills/llm-wiki/` | The llm-wiki spec: three-layer architecture (raw sources → wiki → schema), page templates, provenance and trust model, wiki environment variables. The authority behind the vault map below and "Core Principles". |
 | `docs/agents/` | Procedure docs: Work, table-ready casting, hybrid SDD, maintenance loop, token and context measurement, harness and skill-design dispatch. |
 | `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
-| `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template contracts), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
+| `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template-derived checks), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
 | `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
 | `tests/` | Pytest suite over `scripts/` and `tools/`. Run `./scripts/run-pytest`. |
 | `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
@@ -44,7 +44,7 @@ wiki/                          # the live campaign vault
 │                              #   lore, npc, pc, place, quest, region, spell, vehicle (kebab basenames)
 ├── journal/sessions/<campaign-slug>/<NN>/   # plan, typed beats, recap (e.g. shattered-sea/12/)
 ├── synthesis/                 # players, story-so-far, dm-voice-notes, party-combat-profile
-├── templates/                 # one page template per kind; contracts/*.yml = per-type frontmatter contract
+├── templates/                 # one page template per kind; each is the source of truth the linter reads
 ├── attachments/               # flat {subject-slug}-{role}.{ext}; roles in attachments/README.md
 ├── _meta/                     # taxonomy.md (controlled tag vocabulary), lint-cache.json
 ├── _raw/                      # capture inbox — the next ingest promotes from here

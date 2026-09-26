@@ -23,7 +23,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: why the party comes here and what is happening now.
+<!-- Required. Lead sentence: why the party comes here and what is happening now. Then labelled facts, one bullet each. -->
 
 - **Who is here.** [[npc]] or [[creature]], how many, doing what.
 - **Danger.** The threat and its trigger.

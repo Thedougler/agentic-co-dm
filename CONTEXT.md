@@ -121,7 +121,7 @@ The current state label for a page's subject. Values depend on the page kind and
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
 **Fact-only**:
-Every line on a wiki page gives the DM a fact, ruling, or response they can use. A section, bullet, row, frontmatter key, or callout with nothing to say stays off the page; where play needs an answer the wiki lacks, the answer is decided as a proposal.
+Every line on a wiki page gives the DM a fact, ruling, or response they can use. A body section, bullet, row, or callout with nothing to say stays off the page; where play needs an answer the wiki lacks, the answer is decided as a proposal.
 
 **Page anatomy**:
 The shared order of a wiki page: title, At a Glance beside the player-safe narration, the kind's core section, then the shared sections a page has facts for. Owner pages and session beats each have one anatomy, shown by their templates.

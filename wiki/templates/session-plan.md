@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: the dramatic spine every beat approaches from a different angle.
+<!-- Required. Lead sentence: the dramatic spine every beat approaches from a different angle. Then labelled facts, one bullet each. -->
 
 - **Opening situation.** What is already happening when play begins.
 - **Session question.** What play will answer tonight.
@@ -27,6 +27,8 @@ One sentence: the dramatic spine every beat approaches from a different angle.
 - **Now.** [[Session-{{session}}-01-label]] · **On deck.** [[Session-{{session}}-02-label]]
 
 ## Beat Map
+
+<!-- Required. One row per charted beat, in play order. -->
 
 |  # | Beat | Form | Card | Thread | Trigger | What changes | Budget |
 | -: | ---- | ---- | ---- | ------ | ------- | ------------ | -----: |

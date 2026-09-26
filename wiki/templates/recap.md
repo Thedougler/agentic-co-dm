@@ -20,6 +20,6 @@ summary: ""
 
 ## Wiki Facts
 
-<!-- What is true now that was not before: state changes only, not a retelling. One bullet per change, linking the page it changed. -->
+<!-- Required. What is true now that was not before: state changes only, not a retelling. One bullet per change, linking the page it changed. -->
 
 - [[page]] — what changed.

@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: what is true now because of what the party did.
+<!-- Required. Lead sentence: what is true now because of what the party did. Then labelled facts, one bullet each. -->
 
 - **Follows.** [[Session-{{session}}-BB-label]]
 - **New status quo.** What is materially different.

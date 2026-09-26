@@ -7,7 +7,7 @@ from .manifest_ops import ManifestTransition, apply_transition, update_manifest
 from .mutations import MutationOp, RepairPlan, apply_mutation, parse_sections, section_hash
 from .repair_plans import build_plan, plan_json, snapshot
 from .scope import Scope, parse_scope
-from .template_contracts import TemplateContract, check_conformance, contract_for_type, load_contract
+from .template_contracts import TemplateContract, check_conformance, contract_for_page, contract_for_type, derive_contract, template_for
 
 from .transactions import Transaction
 
@@ -30,7 +30,9 @@ __all__ = [
     "section_hash",
     "Transaction",
     "TemplateContract",
-    "load_contract",
+    "derive_contract",
+    "template_for",
+    "contract_for_page",
     "contract_for_type",
     "check_conformance",
     "build_plan",

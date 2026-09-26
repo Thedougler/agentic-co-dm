@@ -72,7 +72,7 @@ Task runs resolve one named bundle and accept optional paths. File runs evaluate
 
 `queue` is stateless: only findings with a non-null repair target and `auto_repair: true` are listed, sorted by byte size. Judgment-only dirty pages remain in `total_dirty` and are counted in `excluded_judgment_only`; a non-empty queue exits successfully. Queue output is a worklist, not permission to rewrite canon.
 
-`template` resolves the template from page `type`/`kind`, derives its frontmatter, headings, callouts, tables, and formatting markers, and reports `TMPL001`–`TMPL005`. It is detection-only. Agents manually fix a nonconformant page after reviewing the finding; no command mutates templates or page prose.
+`template` resolves the page's template from the templates' own `type`/`kind` frontmatter and reports sections the template does not have (`TMPL002`, skipped when the template has a `Free-form.` section) and section order (`TMPL003`). Required sections, callouts, and image layout come from the same template through `tools/wiki_ops/template_contracts.py`. It is detection-only. Agents manually fix a nonconformant page after reviewing the finding; no command mutates templates or page prose.
 
 Structural lint of pages, directories, or scopes runs through the front door:
 

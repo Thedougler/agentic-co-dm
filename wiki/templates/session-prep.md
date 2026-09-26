@@ -23,13 +23,17 @@ flexGrow=1
 ===
 ## Scene ends when
 
-The end condition, then the time budget. **If behind:** what to cut. **If ahead:** what to add.
+<!-- Required. The end condition, then the time budget. -->
+
+The beat ends when… Plan for about thirty minutes. **If behind:** what to cut. **If ahead:** what to add.
 ```
 
 ```col-md
 flexGrow=2
 ===
 ## At a Glance
+
+<!-- Required. The labelled facts the DM needs first. -->
 
 - **Stakes.** What can be won or lost.
 - **Goal / exit.** What ends the slice for the party.
@@ -81,6 +85,8 @@ flexGrow=2
 | 1    |              | _…_       |
 
 ## How the Scene Resolves
+
+<!-- Required. The changed situation and the beat each likely option hands to. -->
 
 > [!narration] How the Scene Resolves
 > <!-- The changed situation in "you" address, present tense. -->

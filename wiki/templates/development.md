@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: the turn — the fact, warning, or complication that changes what the party knows.
+<!-- Required. Lead sentence: the turn — the fact, warning, or complication that changes what the party knows. Then labelled facts, one bullet each. -->
 
 - **Entry state.** What the party carries in: position, condition, what they believe.
 - **Trigger.** What brings this situation on screen.
@@ -71,6 +71,8 @@ flexGrow=1
 - **[[item]]** can be examined, used, or traded because…
 
 ## Outcomes
+
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
 | If the party… | What changes | Next |
 | ------------- | ------------ | ---- |

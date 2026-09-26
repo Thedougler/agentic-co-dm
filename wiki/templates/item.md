@@ -11,10 +11,13 @@ campaign: "{{campaign}}"
 visibility: dm
 kind: consumable
 rarity: ""
+region: ""
+attunement: false
+owner: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. A consumable is At a Glance, narration, and Properties; stop there. Magic, plot, and durable items add other sections only when they have facts. Each fact appears once: Properties owns the numbers. Delete unused sections and these comments.
-kind: consumable | magic | plot | durable. Add `owner:` or `attunement: true` only when they apply. -->
+kind: consumable | magic | plot | durable. -->
 
 # {{title}}
 
@@ -24,9 +27,9 @@ flexGrow=2
 ===
 ## At a Glance
 
-*Wondrous item, rare (requires attunement)*
+<!-- Required. The classification line in italics, then one lead sentence on what the item changes at the table. Then labelled facts, one bullet each. -->
 
-One sentence: what this item changes at the table.
+*Wondrous item, rare (requires attunement)*
 
 - **Held by.** [[npc]] or [[place]]
 - **Wanted by.** [[npc]] or [[faction]], and why.
@@ -42,7 +45,7 @@ flexGrow=1
 
 ## Properties
 
-<!-- The runnable rules text in 2024 language: trigger, action cost, uses and recovery, range, targets, saves, damage, duration, limits. Simple items take one to three sentences; complex items use one bold-labelled paragraph per property. -->
+<!-- Required. The runnable rules text in 2024 language: trigger, action cost, uses and recovery, range, targets, saves, damage, duration, limits. Simple items take one to three sentences; complex items use one bold-labelled paragraph per property. -->
 
 ## At the Table
 

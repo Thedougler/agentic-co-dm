@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: the contest, and what the party can lose.
+<!-- Required. Lead sentence: the contest, and what the party can lose. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Positions, conditions, and resources the party carries in.
 - **Party goal.** The result that ends this contest besides surviving.
@@ -74,6 +74,8 @@ flexGrow=1
 - **Clue.** A short usable fact the contest can surface, and how.
 
 ## Outcomes
+
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
 | Outcome | What changes | Next |
 | ------- | ------------ | ---- |

@@ -212,7 +212,7 @@
       "expected_output": "One lint repair loop: consults the faction contract, preserves and relocates existing content, and completes the DM thesis through faction-design with grounded canon.",
       "assertions": [
         {
-          "text": "Sections reordered to match wiki/templates/contracts/faction.yml",
+          "text": "Sections reordered to match wiki/templates/faction.md",
           "type": "structure"
         },
         {

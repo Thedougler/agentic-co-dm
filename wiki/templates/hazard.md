@@ -23,7 +23,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: where the party meets this hazard and what it costs them.
+<!-- Required. Lead sentence: where the party meets this hazard and what it costs them. Then labelled facts, one bullet each. -->
 
 - **Found in.** [[place]] or terrain.
 ```
@@ -37,6 +37,8 @@ flexGrow=1
 ````
 
 ## Hazard
+
+<!-- Required. The bullets that apply, each with its ruling. -->
 
 - **Trigger.** What starts it.
 - **Notice.** **Wisdom (Perception)** `DC 13` → what success shows.

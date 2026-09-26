@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: what happens right now and the choice it puts in front of the party.
+<!-- Required. Lead sentence: what happens right now and the choice it puts in front of the party. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Where everyone is and what they carry in from last session.
 - **Stakes.** The threat, opportunity, or personal stake.
@@ -75,6 +75,8 @@ flexGrow=1
 - **Lead.** How it enters play → [[page]]
 
 ## Outcomes
+
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
 | Outcome | What changes | Next |
 | ------- | ------------ | ---- |

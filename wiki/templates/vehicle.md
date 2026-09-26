@@ -10,9 +10,11 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
 kind: vessel
+region: ""
+berth: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, bullets, and these comments. Numbers live in Statblock only. Add `region:` or `berth:` frontmatter only when they name a page. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, bullets, and these comments. Numbers live in Statblock only. -->
 
 # {{title}}
 
@@ -22,7 +24,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what this craft is for at the table.
+<!-- Required. Lead sentence: what this craft is for at the table. Then labelled facts, one bullet each. -->
 
 - **Captain.** [[npc]]
 - **Berth.** [[place]]
@@ -39,6 +41,8 @@ flexGrow=1
 ````
 
 ## Statblock
+
+<!-- Required. Every number the craft needs: size, speed, crew, cargo, hull, helm, weapons. -->
 
 - **Size.** Gargantuan (80 ft. by 20 ft.)
 - **Speed.** 4 mph sailing

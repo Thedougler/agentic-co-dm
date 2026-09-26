@@ -9,6 +9,9 @@ type: creature
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
+region: ""
+role: ""
+cr: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, Connections, or Art only when you have facts for them. Delete unused sections and these comments. -->
@@ -21,7 +24,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what this creature is for at the table.
+<!-- Required. Lead sentence: what this creature is for at the table. Then labelled facts, one bullet each. -->
 
 - **Habitat.** [[place]] or terrain where it lives.
 - **Treasure.** What it carries or guards.
@@ -37,7 +40,7 @@ flexGrow=1
 
 ## Statblock
 
-<!-- At most one overview image directly above the fence: ![[{subject-slug}-overview.png|{{title}}]] -->
+<!-- Required. At most one overview image directly above the fence: ![[{subject-slug}-overview.png|{{title}}]] -->
 ```statblock
 layout: Basic 5e Layout
 name: "{{title}}"

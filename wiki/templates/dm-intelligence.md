@@ -20,7 +20,7 @@ State the finding in one or two sentences, addressed to the DM.
 
 ## Analysis
 
-<!-- Player interests, combat patterns, or other observed habits of this table, each tied to the session that shows it. -->
+<!-- Required. Player interests, combat patterns, or other observed habits of this table, each tied to the session that shows it. -->
 
 ## Grounding
 

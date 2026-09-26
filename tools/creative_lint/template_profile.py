@@ -1,4 +1,7 @@
-"""Runtime-derived template profiles and generic conformance checks."""
+"""Heading checks against the page's template: extra sections and section order.
+
+Required sections, callouts, and image layout: tools/wiki_ops/template_contracts.py.
+"""
 from __future__ import annotations
 
 import re
@@ -11,10 +14,6 @@ from .finding import Finding
 from .registry import RuleDefinition
 
 _HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*$", re.MULTILINE)
-_CALLOUT = re.compile(r"^>\s*\[!([^\]]+)\]", re.MULTILINE)
-_TABLE = re.compile(r"^\|\s*(.+?)\s*\|\s*$", re.MULTILINE)
-_MARKER = re.compile(r"(?:```+([^\n]*)|\b(col(?:-md)?|flexGrow)\b)")
-_LAYOUT_MARKERS = frozenset({"col", "col-md", "flexGrow"})
 
 
 def _frontmatter(text: str) -> dict[str, Any]:
@@ -30,85 +29,23 @@ def _frontmatter(text: str) -> dict[str, Any]:
     return value if isinstance(value, dict) else {}
 
 
-def _marker_values(text: str) -> set[str]:
-    return {value.strip() for match in _MARKER.findall(text) for value in match if value.strip()}
-
-
-def _optional_from_comments(text: str, heading: str) -> bool:
-    comments = " ".join(re.findall(r"<!--(.*?)-->", text, re.DOTALL)).casefold()
-    heading = heading.casefold()
-    return heading in comments and ("omit" in comments or "optional" in comments)
-
-
-def derive_profile(template_file: str | Path) -> dict[str, Any]:
-    """Extract the structural baseline directly from a template file."""
-    path = Path(template_file)
-    text = path.read_text(encoding="utf-8")
-    metadata = _frontmatter(text)
-    shape: dict[str, dict[str, Any]] = {}
-    for key, value in metadata.items():
-        value_type = ("boolean" if isinstance(value, bool) else "number" if isinstance(value, (int, float))
-                      else "array" if isinstance(value, list) else "string")
-        shape[str(key)] = {"type": value_type, "required": True}
-    matches = list(_HEADING.finditer(text))
-    headings = []
-    for index, match in enumerate(matches):
-        title = match.group(2).strip()
-        next_start = matches[index + 1].start() if index + 1 < len(matches) else len(text)
-        section = text[match.end():next_start].casefold()
-        optional = _optional_from_comments(text, title) or "omit" in section
-        headings.append({"level": len(match.group(1)), "text": title, "optional": optional})
-    tables: dict[str, list[str]] = {}
-    current = ""
-    for line in text.splitlines():
-        heading = re.match(r"^(#{1,6})\s+(.+?)\s*$", line)
-        if heading:
-            current = heading.group(2).strip()
-        row = _TABLE.match(line)
-        if not row or not current:
-            continue
-        cells = [cell.strip() for cell in row.group(1).split("|")]
-        if cells and not all(set(cell) <= {"-", ":", " "} for cell in cells):
-            tables.setdefault(current, cells)
-    return {
-        "template_file": path.as_posix(),
-        "frontmatter_shape": shape,
-        "heading_tree": headings,
-        "callout_forms": [{"type": match.group(1).strip().lower()} for match in _CALLOUT.finditer(text)],
-        "table_headers": tables,
-        "formatting_markers": sorted(_marker_values(text)),
-    }
-
-
 def resolve_template(page_file: str | Path, *, root: str | Path | None = None) -> Path | None:
-    """Resolve the mapped template from a page's type/kind frontmatter."""
+    """Resolve the page's template from the templates' own type/kind frontmatter."""
+    from tools.wiki_ops.template_contracts import template_for
+
     page = Path(page_file)
     base = Path(root) if root is not None else Path(__file__).resolve().parents[2]
     metadata = _frontmatter(page.read_text(encoding="utf-8"))
-    kind = str(metadata.get("kind", "")).strip().casefold()
-    type_name = str(metadata.get("type", "")).strip().casefold()
-    mapping = {
-        "session-prep": kind,
-        "place": "city" if kind == "city" else "place",
-        "item": "hazard" if kind == "flora hazard" else "item",
-        "lore": kind if kind in {"rules", "campaign-state"} else "lore",
-        "work": "dm-intelligence" if kind == "dm-intelligence" else "work",
-    }
-    filename = mapping.get(type_name, type_name)
-    candidate = base / "wiki" / "templates" / f"{filename}.md" if filename else None
-    return candidate if candidate and candidate.is_file() else None
+    return template_for(base, str(metadata.get("type", "")), str(metadata.get("kind", "")))
 
 
 def _rules() -> dict[str, RuleDefinition]:
     common = {"category": "wiki", "scope": "file", "severity": "REPAIR", "evaluator": "symbolic",
               "lifecycle": "ACTIVE", "vale_style": None, "tags": ["template", "structure"],
-              "auto_repair": True, "conflicts": [], "depends": []}
+              "auto_repair": False, "conflicts": [], "depends": []}
     definitions = {
-        "TMPL001": ("Missing required section", "Page is missing a section required by the selected template", "Insert the missing section stub without inventing content"),
-        "TMPL002": ("Extra section", "Page contains a section not present in the selected template", "Remove or reconcile the extra structural section after review"),
+        "TMPL002": ("Extra section", "Page contains a section not present in the selected template", "Rename the section to the template heading that holds its job, or fold it into that section"),
         "TMPL003": ("Section order mismatch", "Page sections do not follow the selected template order", "Move the section to the template-defined order without changing facts"),
-        "TMPL004": ("Frontmatter shape mismatch", "Page frontmatter does not match the selected template shape", "Add or correct structural frontmatter keys without inventing values"),
-        "TMPL005": ("Formatting mismatch", "Page is missing a formatting construct required by the selected template", "Restore the template formatting construct without changing prose"),
         "TMPL006": ("Statblock image layout", "Statblock allows at most one overview image immediately before the statblock fence; remaining images belong in Art subsections", "Keep at most one overview image before the statblock fence and move remaining images to Art subsections"),
         "TMPL007": ("Art subsection structure", "Art embeds are not nested under a subsection heading", "Nest each Art embed under a role subsection"),
     }
@@ -130,57 +67,31 @@ def _finding(rule_id: str, page: Path, root: Path, evidence: str, line: int,
                    evaluator="symbolic")
 
 
-def _contract_data(path: Path) -> dict[str, Any]:
-    if not path.is_file():
-        return {}
-    try:
-        value = yaml.safe_load(path.read_text(encoding="utf-8"))
-    except yaml.YAMLError:
-        return {}
-    return value if isinstance(value, dict) else {}
-
-
 def compare_page(page_file: str | Path, template_file: str | Path, *, root: str | Path | None = None) -> list[Finding]:
-    """Compare a page with a derived profile; all repairs are structural-only."""
+    """Compare page headings with the template's: extra sections and section order."""
+    from tools.wiki_ops.template_contracts import derive_contract
+
     page = Path(page_file)
-    template = Path(template_file)
     root_path = Path(root) if root is not None else Path(__file__).resolve().parents[2]
     page_text = page.read_text(encoding="utf-8")
-    profile = derive_profile(template)
+    contract = derive_contract(template_file)
     page_title = str(_frontmatter(page_text).get("title", "")).strip()
-    if page_title:
-        profile["heading_tree"] = [
-            {**item, "text": item["text"].replace("{{title}}", page_title)}
-            for item in profile["heading_tree"]
-        ]
+    template_headings = [str(item["heading"]).replace("{{title}}", page_title)
+                         for item in contract.sections if item["level"] >= 2]
     page_headings = [match.group(2).strip() for match in _HEADING.finditer(page_text)
                      if len(match.group(1)) >= 2]
-    contract_path = template.parent / "contracts" / f"{template.stem}.yml"
-    contract_data = _contract_data(contract_path)
     findings: list[Finding] = []
-    template_headings = [item["text"] for item in profile["heading_tree"] if item["level"] >= 2]
-    extras = [] if contract_data.get("open") else [title for title in page_headings if title not in template_headings]
-    for title in extras:
-        line = next((index for index, text in enumerate(page_text.splitlines(), 1)
-                     if re.match(r"^#{2,6}\s+" + re.escape(title) + r"\s*$", text)), 1)
-        findings.append(_finding("TMPL002", page, root_path, f"Extra section: '{title}'", line))
+    if not contract.open:
+        for title in page_headings:
+            if title in template_headings:
+                continue
+            line = next((index for index, text in enumerate(page_text.splitlines(), 1)
+                         if re.match(r"^#{2,6}\s+" + re.escape(title) + r"\s*$", text)), 1)
+            findings.append(_finding("TMPL002", page, root_path, f"Extra section: '{title}'", line))
     present = [title for title in page_headings if title in template_headings]
     expected_present = [title for title in template_headings if title in present]
     if present != expected_present and len(present) > 1:
         findings.append(_finding("TMPL003", page, root_path, "Section order differs from selected template", 1))
-    if contract_path.is_file():
-        from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
-
-        contract = load_contract(contract_path)
-        for item in check_layout_conformance(page, page_text, contract.layout):
-            findings.append(_finding(
-                item["rule_id"],
-                page,
-                root_path,
-                item["reason"],
-                int(item.get("line", 1)),
-                "Apply the declared template layout rule",
-            ))
     return findings
 
 
@@ -190,5 +101,4 @@ def template_conformance(page_file: str | Path, *, root: str | Path | None = Non
     return template, compare_page(page, template, root=root) if template else []
 
 
-profile_from_template = derive_profile
 compare = compare_page

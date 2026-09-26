@@ -12,6 +12,8 @@ visibility: dm
 scale: regional
 kind: wilderness
 region: ""
+structure: ""
+as_of: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. A site that needs its own key gets its own place page. `region` is the parent region.
@@ -25,7 +27,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: the kind of adventure and choices this region creates.
+<!-- Required. Lead sentence: the kind of adventure and choices this region creates. Then labelled facts, one bullet each. -->
 
 - **Now.** What is normal here, and what just changed.
 - **Pressure.** What is getting worse, and what people will notice next.

@@ -10,9 +10,12 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
 status: alive
+role: ""
+location: ""
+faction: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. Add `location:` and `faction:` frontmatter only when they name a page. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. -->
 
 # {{title}}
 
@@ -22,7 +25,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what this person is about at the table.
+<!-- Required. Lead sentence: what this person is about at the table. Then labelled facts, one bullet each. -->
 
 - **Role.** What they do and where the party meets them.
 - **Wants.** The concrete thing they are after now.

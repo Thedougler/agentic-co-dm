@@ -10,6 +10,10 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
 kind: fact
+truth: established
+scope: ""
+region: ""
+era: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
@@ -19,7 +23,7 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 
 ## At a Glance
 
-State the truth in one or two sentences.
+<!-- Required. Lead: the truth in one or two sentences. Then labelled facts, one bullet each. -->
 
 - **Why it matters.** The choice, danger, or opportunity it changes at the table.
 - **Where and when.** The scope, when it is not universal.
@@ -27,7 +31,7 @@ State the truth in one or two sentences.
 
 ## The Tale
 
-<!-- The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly; the DM page carries the answer to every mystery. -->
+<!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly; the DM page carries the answer to every mystery. -->
 
 > [!narration] Common telling
 > <!-- Optional: the version people in the world say aloud, as the DM would read it. -->

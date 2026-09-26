@@ -19,7 +19,7 @@ State what is proposed and why it matters at the table, addressed to the DM.
 
 ## Proposal
 
-<!-- The Work in complete sentences. Mark what is invented; link [[pages]] for existing facts. -->
+<!-- Required. The Work in complete sentences. Mark what is invented; link [[pages]] for existing facts. -->
 
 ## Grounding
 

@@ -87,7 +87,7 @@ For the current file:
    - resolve links against existing owner filenames;
    - add required frontmatter;
    - correct type and filename;
-   - apply the page template: keep the sections its contract requires and
+   - apply the page template: keep the sections it marks `Required.` and
      the ones the page has facts for, and delete empty or fact-less lines
      (fact-only, `wiki/AGENTS.md` Layout);
    - load the page's owner skill when a section needs domain content;
@@ -101,7 +101,7 @@ For the current file:
 5. Commit: the file path and a short description of what was repaired.
 6. Return to `next.path` and repeat for the next file.
 
-A section the contract requires holds facts; every other section appears only
+A section the template marks `Required.` holds facts; every other section appears only
 when it has facts. Plot work is inactive unless the user asks for it.
 
 For place pages, use Michael E. Shea's playable-location baseline: named areas,

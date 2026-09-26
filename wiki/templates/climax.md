@@ -19,7 +19,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: the question this beat settles for good.
+<!-- Required. Lead sentence: the question this beat settles for good. Then labelled facts, one bullet each. -->
 
 - **Entry state.** Positions, resources, allies, and what the party prepared.
 - **Party goal.** What the characters can accomplish here.
@@ -90,6 +90,8 @@ flexGrow=1
 - **[[pc]].** The thread, foe, or feature that calls on them here.
 
 ## Outcomes
+
+<!-- Required. One row per way the climax can end: what becomes true and the cost paid. -->
 
 | If the climax ends with… | What becomes true | Cost paid |
 | ------------------------ | ----------------- | --------- |

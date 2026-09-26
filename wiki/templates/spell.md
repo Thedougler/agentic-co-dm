@@ -11,9 +11,10 @@ campaign: "{{campaign}}"
 visibility: dm
 level: ""
 school: ""
+ritual: false
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. Add `ritual: true` only for rituals. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. -->
 
 # {{title}}
 
@@ -23,9 +24,9 @@ flexGrow=2
 ===
 ## At a Glance
 
-*Level 3 Evocation (Ritual)*
+<!-- Required. The level-and-school line in italics, then one lead sentence on what the spell does in this campaign. Then labelled facts, one bullet each. -->
 
-One sentence: what this spell does and why it matters in this campaign.
+*Level 3 Evocation (Ritual)*
 
 - **Taught by.** [[npc]], [[item]], or [[place]] where the party can learn it, and the price.
 ```
@@ -39,6 +40,8 @@ flexGrow=1
 ````
 
 ## Effect
+
+<!-- Required. The four casting fields, then the runnable effect. -->
 
 **Casting Time.** Action
 **Range.** 60 feet

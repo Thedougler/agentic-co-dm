@@ -6,6 +6,7 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: session-prep
+kind: encounter
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
@@ -17,7 +18,7 @@ summary: ""
 
 ## At a Glance
 
-One sentence: the problem already in motion and why it is live now.
+<!-- Required. Lead sentence: the problem already in motion and why it is live now. Then labelled facts, one bullet each. -->
 
 - **Where.** [[place]]
 - **Opening pressure.** The visible threat the table can act on first.
@@ -39,6 +40,8 @@ One sentence: the problem already in motion and why it is live now.
 |               |                    |
 
 ## Outcomes
+
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
 | Outcome | What changes | Next |
 | ------- | ------------ | ---- |

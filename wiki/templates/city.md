@@ -12,9 +12,13 @@ visibility: dm
 kind: city
 region: ""
 status: active
+population: ""
+government: ""
+ruler: ""
+controlling_faction: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. A district that holds several playable locations gets its own place page. Faction detail lives on faction pages; here, only what they do in this city now. Add `population:`, `government:`, `ruler:`, or `controlling_faction:` frontmatter only when they have values. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. A district that holds several playable locations gets its own place page. Faction detail lives on faction pages; here, only what they do in this city now. -->
 
 # {{title}}
 
@@ -24,7 +28,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what makes this city useful in play.
+<!-- Required. Lead sentence: what makes this city useful in play. Then labelled facts, one bullet each. -->
 
 - **Feel.** What living here is like.
 - **Power.** [[npc]] or [[faction]] who visibly rules.

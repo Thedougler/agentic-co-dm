@@ -10,6 +10,7 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
 kind: campaign-state
+truth: established
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. Table Aim lives on the campaign hub page only. Delete unused sections and these comments. -->
@@ -23,7 +24,7 @@ summary: ""
 
 ## Live State
 
-<!-- Clocks, threads, and faction moves that are true now, each with its next development if nobody intervenes. -->
+<!-- Required. Clocks, threads, and faction moves that are true now, each with its next development if nobody intervenes. -->
 
 - **Thread.** Where it stands → what happens next if nobody acts.
 

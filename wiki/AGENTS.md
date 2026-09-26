@@ -52,7 +52,7 @@ Campaign pages also require:
 |---|---|
 | `type` | `npc` \| `pc` \| `place` \| `faction` \| `item` \| `creature` \| `vehicle` \| `spell` \| `lore` \| `quest` \| `region` \| `session-prep` \| `session` \| `recap` \| `work` |
 | `reveal` | `unrevealed` \| `revealed` |
-| `kind` | On `type: session-prep`: `hook` \| `development` \| `cliffhanger` \| `climax` \| `resolution` \| `session-plan`. City pages stay `type: place` `kind: city`. |
+| `kind` | On `type: session-prep`: `hook` \| `development` \| `cliffhanger` \| `climax` \| `resolution` \| `session-plan` \| `encounter`. City pages stay `type: place` `kind: city`. |
 
 Do not invent `type` values. Category is the top-level llm-wiki folder (`entities/`, `journal/`, …). `type` is the campaign kind — not a second category value (`category` stays `entities`, never `npc`).
 
@@ -69,9 +69,9 @@ Done when: required fields are present, body is complete sentences, related page
 
 ## Layout
 
-Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` for session-prep beats and city pages). The template shows the page anatomy; its contract in `wiki/templates/contracts/` is the one owner of which sections, keys, and callouts are required. Delete the template's comments and every section you have no facts for.
+Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` for session-prep beats and city pages). The template is the one source of truth for the page: its headings, their order, and its callouts. The comment under a template heading starts with `Required.` when every page carries that section, `Required when <key> is <value>.` when the page's frontmatter decides, and `Free-form.` when the page shapes its own headings there; every other section is optional. The linter reads the same template, so changing a template changes what it checks. Keep the template's frontmatter keys; delete its comments and every body section you have no facts for.
 
-**Fact-only.** Every line gives the DM a fact, ruling, or response they can use. A section, glance bullet, table row, frontmatter key, or callout with no fact stays off the page. Absence, uncertainty, and the source's silence are never written; where the table needs an answer and canon has none, decide it as a proposal (`docs/agents/table-ready.md` "Fill the silence"). Each fact appears once on the page. A stub is the lead sentence plus the glance bullets the source supports.
+**Fact-only.** Every line gives the DM a fact, ruling, or response they can use. A body section, glance bullet, table row, or callout with no fact stays off the page. Absence, uncertainty, and the source's silence are never written; where the table needs an answer and canon has none, decide it as a proposal (`docs/agents/table-ready.md` "Fill the silence"). Each fact appears once on the page. A stub is the lead sentence plus the glance bullets the source supports.
 
 **Owner page anatomy** (every `entities/` type), in this order:
 
@@ -90,7 +90,7 @@ Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `encoun
 
 `wiki/_raw/` is evidence of facts, not a format to copy. Ingest maps foreign sources into the kind's template. Numbers live on one owner page; other pages link to it. Legacy pages move to the current template when next touched.
 
-Done when: the contract's required sections are present, every line is fact-only, and the narration is player-safe.
+Done when: the template's required sections are present, every body line is fact-only, and the narration is player-safe.
 
 Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox. Two campaigns do not share a session-number folder. `type: session` remains legacy in the enum; new post-play logs are recaps. Do not file `{{title}} - B01 - Strong Start` names.
 

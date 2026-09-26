@@ -12,9 +12,11 @@ visibility: dm
 kind: organization
 status: active
 scope: regional
+region: ""
+base: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. The page answers: what do they want, what will they do next, what changes if they succeed, and how can the party notice or interfere. Keep a section only when you have facts for it; delete unused sections, rows, and these comments. Add `base:` or `region:` frontmatter only when they name a page. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. The page answers: what do they want, what will they do next, what changes if they succeed, and how can the party notice or interfere. Keep a section only when you have facts for it; delete unused sections, rows, and these comments. -->
 
 # {{title}}
 
@@ -24,7 +26,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-One sentence: what this faction is about and the pressure it brings to the campaign.
+<!-- Required. Lead sentence: what this faction is about and the pressure it brings to the campaign. Then labelled facts, one bullet each. -->
 
 - **Leader.** [[npc]]
 - **Base.** [[place]]
@@ -43,12 +45,18 @@ flexGrow=1
 
 ## Agenda
 
+<!-- Required when status is active. What they are doing next, what it changes, and where the party can step in. -->
+
 - **Goal.** The concrete change they are trying to make in the world, and why now.
 - **Next move.** What they attempt next, with what resources.
 - **Standing in the way.** [[page]] — who or what blocks them.
 - **Signs.** What the party can see, hear, or hear rumored as the move advances.
 - **If they succeed.** The new world state: who owns, controls, or loses what.
 - **Party opening.** What the party can support, expose, steal, or sabotage.
+
+<!-- Milestones toward the goal, soonest first: when each lands, the sign the party sees, and what it changes. -->
+
+- [ ] **Milestone.** When it lands — the sign the party sees — what changes.
 
 ## At the Table
 
