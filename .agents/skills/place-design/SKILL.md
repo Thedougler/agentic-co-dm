@@ -186,8 +186,8 @@ and links an NPC page.
 
 ### 6. Hand the look to theatre-of-the-mind
 
-The Overview `[!narration]` is the players' first look and the surface that
-carries every tell. Build the **narration packet** as fragments, each with its
+The header `[!narration]` (titled with the place's name, beside At a Glance) is
+the players' first look and the surface that carries every tell. Build the **narration packet** as fragments, each with its
 source:
 
 - **Frame:** size and shape at body scale or travel time; ground, light, air.
@@ -199,11 +199,16 @@ source:
   fact only ("the bars of the end cage bend outward"), never its truth.
 - **Affordances:** at least one thing a visitor can use.
 - **Leave out:** every Truth, DC, and mechanic; names the players have not
-  earned; current inhabitants and events (they belong to Who and to scenes).
+  earned; current inhabitants and events (they belong to Features and to
+  scenes).
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and
 give it the packet. Its place recipe owns how tells are written and how long
-the portrait runs.
+the portrait runs. Two optional slots are situated moments ("you" address):
+one `{Area}` block per `###` area in Features, titled with the area's name,
+for what the party perceives on entering it (zone-cell recipe, ending on the
+feature they can use); and `Returning` under At the Table, only once the party
+has been here (Return to a known place recipe).
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 contains every tell. A missing tell goes back to theatre-of-the-mind named.
@@ -219,8 +224,8 @@ owner page; numbers and stat blocks stay on their owner page ("resolve on
 |---|---|
 | At a Glance | Why a party comes; what the place is now, the rule of the place, the present conflict by name and its trajectory with a time; Who is here, Danger, and Draw bullets |
 | Narration | The narration from step 6, nothing else |
-| Features | Who is here, how many, doing what, wanting what, and where they move on which trigger; then features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find |
-| At the Table | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs |
+| Features | Who is here, how many, doing what, wanting what, and where they move on which trigger; then features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find; `###` per area when there are several, each with its optional `{Area}` narration |
+| At the Table | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs; then `Returning` narration once the party has visited |
 | Secrets | Hidden truths, each with the clue that reveals it |
 | Connections | Each linked neighbour with direction and travel time |
 

@@ -72,7 +72,12 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    Copy the opposition's compact numbers from its owner statblock onto the
    page. Done when everyone who could fight carries numbers: from the owner
    statblock, or a proposed standard 5e statblock filed on the owner.
-6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening` to its Cliffhanger opening recipe.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`
+   to its Cliffhanger opening recipe; one `{Creature}` block per creature
+   kind the party faces, titled with its name; the `_italic_` Narration cells
+   in Pressure and Outcomes; and `If the session ends here`, the last words
+   of the night if play stops on this beat. Delete a slot that has no spoken
+   text.
 7. **Write the outcomes.** Won → the next Development opens new options.
    Lost → the next Development opens with new constraints, or the opposition
    plays Retreat or Hesitation. Each outcome row states the changed physical
@@ -88,7 +93,8 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 - **Threat up front.** The danger is visible in the opening narration and
   real by round one: the opposition's first move lands, or the hazard bites.
 - **Objectives beyond killing.** Each side wants something concrete — seize
-  the idol, cross the bridge, drag the prisoner to the boat. Reaching an
+  the idol, cross the bridge, drag the prisoner to the boat. The opposition's
+  goes in Actors as **Wants**. Reaching an
   objective, breaking off, surrendering, or escaping each end the contest.
 - **Opposition plays to win.** Every opposing side has its compact numbers
   and a tactics line: opening move, how it adapts when the party counters,
@@ -96,8 +102,9 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
   terms). With several factions present, each has its own objective and
   ignores the party unless the party gets in its way.
 - **Terrain acts.** Two or three features with rulings (cover, climb DC,
-  difficult terrain, a thing that falls or burns) and one change that lands
-  mid-contest on a named trigger or round.
+  difficult terrain, a thing that falls or burns), a **Hazard** line when
+  standing somewhere hurts, and one change that lands mid-contest on a named
+  trigger or round.
 - **Escalate each round.** A pressure tick per round or on a named trigger
   moves the objective, narrows an exit, or adds a threat, so the contest
   sharpens instead of grinding.

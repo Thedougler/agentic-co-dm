@@ -209,7 +209,9 @@ Build the **packet** as fragments, each with its source:
 Load `.agents/skills/theatre-of-the-mind` and give it the packet twice: in
 portrait mode, person recipe, for the `[!narration] {Name}` block; and in the
 dialogue recipe, for three sample lines (the ask, the refusal, the line under
-pressure).
+pressure). When the page carries At the Table, also ask for the optional
+`First meeting` block (NPC first look, then Dialogue recipe, "you" address):
+what they are doing when the party arrives, then their first words.
 
 Done when the portrait passes theatre-of-the-mind's final check and carries the
 face and every tell, and the three lines sound like one person.
@@ -222,9 +224,9 @@ every owner page.
 
 | Section | Carries |
 |---|---|
-| At a Glance | The lead sentence on what this person is about; Role, Wants, Home, Allegiance bullets |
+| At a Glance | The lead sentence on what this person is about; Role, Nature, Wants, Home, Allegiance bullets |
 | Narration | The portrait from step 6 |
-| At the Table | First meeting with one sample line; what opens them and what closes the door; what they will and will not share; voice notes and the three sample lines |
+| At the Table | First meeting, Opens up when, Shuts down when, Priority (what they protect first), Shares (what they tell freely and never tell), Voice (with the subject they avoid), Lines; then the optional `First meeting` narration |
 | Statblock | Numbers for every fighter in reach from step 5, and the encounter rule for custom forms |
 | Secrets | What they hide, with the truth behind each open question and how the party learns it |
 | Connections | Each tie by wikilink and what it does at the table, including each PC thread |

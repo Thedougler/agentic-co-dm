@@ -65,7 +65,9 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    `dnd5e-mechanics` for any check, and `item-design` for a new
    magic item.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill the
-   `Closing Image` for each outcome branch.
+   `Closing Image` for each outcome branch, and `Stinger` when one grows from
+   play: the arrival, sign, or message the characters perceive, ending before
+   anyone can act. Delete a slot that has no spoken text.
 7. **Record the aftermath.** Fill At a Glance (new status quo, price, reward),
    Consequences, Loose Ends, and Rewards so the next session's planner reads the changed world from
    this page.

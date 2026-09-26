@@ -65,8 +65,12 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
    point, name everything, conditionals in tables, secrets stated plainly.
 5. **Set rulings.** Load `dnd5e-mechanics` for Influence, Search, Study,
    Insight, and every other check, save, and DC.
-6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`,
-   plus quoted lines for the actors who speak.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`;
+   one `{NPC}` block per actor the party meets, titled with the name, ending
+   on their first words; `Revelation` for the moment the Core clue lands
+   (Revelation recipe); and the `_italic_` Narration cells in Outcomes. Put
+   quoted lines for the actors who speak in their Actors bullets. Delete a
+   slot that has no spoken text.
 7. **Write the handoff.** The next beat is a Cliffhanger that tests what was
    just learned under cost. The carry-forward names the new knowledge, the
    party's new direction, and the entry conditions of that contest (who is
@@ -93,12 +97,17 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
   scene from these rows without improvising motive.
 - **Something to do with your hands.** Give talk and investigation scenes a
   physical anchor: a site to search, a body to examine, a map to read, a meal
-  to share, a ritual to witness. Each anchor surfaces at least one revelation.
-- **Truths with routes.** The Revelations list states each truth as fact with
+  to share, a ritual to witness. It goes in Situation's **Hands on**, and a
+  place the party can search or watch gets its own Handles line. Each anchor
+  surfaces at least one clue.
+- **Truths with routes.** The Clues list states each truth as fact with
   where it surfaces. A conclusion the session depends on has three
   independent routes (person, place, object).
 - **Information costs.** Getting the good part costs something — a favor, a
-  promise, time on the clock, exposure, a check with a cost on failure.
+  promise, time on the clock, exposure, a check with a cost on failure. The
+  Handles **Cost** line names it.
+- **The truth waits for no one.** Situation's **If ignored** says what happens
+  to the truth or the lead if the party walks past it.
 - **Stall breaker.** Name what ends the beat if talk circles: an actor's
   deadline, an interruption, a pressure tick. When the party has a usable
   direction, cut.

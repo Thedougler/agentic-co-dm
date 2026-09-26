@@ -261,7 +261,7 @@ layer.
 
 | Surface | Size |
 |---|---|
-| Scene opening (Opening, Open on, Opening, Open on Action, Opening image) | A short paragraph: schema, anchor, entry handles, pressure |
+| Scene opening (`Opening`; older pages title it Open on, Open on Action, or Opening image) | A short paragraph: schema, anchor, entry handles, pressure |
 | Closing image (Resolution) | A short paragraph that lets the change land |
 | Creature entering a scene | A few sentences, ending before contact |
 | NPC first look | A few strokes, plus a line of speech if they talk |

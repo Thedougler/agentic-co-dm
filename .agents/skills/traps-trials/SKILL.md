@@ -198,8 +198,13 @@ physical logic, invoke `place-design` — or `dungeon-design` when
 the host is a multi-room dungeon. If the challenge exists but
 the fiction is still generic, invoke `flesh-out`.
 
-Default to sensory bullets. Add `[!narration]` only when the DM must
-speak a picture. Hidden mechanism goes under `## Secrets`. Write triggers,
+A standalone hazard (flora, terrain, or environmental danger with no
+mechanism to solve) copies `wiki/templates/hazard.md`: At a Glance, the header
+look, the **Hazard** bullets (Trigger, Notice, Contact, Careful passage,
+Counterplay), and the optional `On contact` narration for what the character
+feels and the others see when it hits. A trap or trial inside a place or beat
+uses that page's template. Narration goes only in the slots those templates
+give, from `theatre-of-the-mind`. Hidden mechanism goes under `## Secrets`. Write triggers,
 checks, and saves with the at-table grammar in `obsidian-markdown`:
 **Trigger:**, **Ability (Skill) — `DC n`**, Success/Failure → outcomes,
 damage as `` `2d6` ``.

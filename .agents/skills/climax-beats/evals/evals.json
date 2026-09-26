@@ -36,7 +36,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Opening image narration callout."
+          "text": "Output includes the Opening narration callout."
         },
         {
           "type": "behavior",
@@ -52,7 +52,7 @@
         },
         {
           "type": "behavior",
-          "text": "The Opening image forecasts no consequence (it does not tell players that eating the guava draws Aruhe's response)."
+          "text": "The Opening narration forecasts no consequence (it does not tell players that eating the guava draws Aruhe's response)."
         },
         {
           "type": "behavior",
@@ -267,7 +267,7 @@
         },
         {
           "type": "behavior",
-          "text": "An Opening image narration callout exists with you-address and sensory grounding."
+          "text": "An Opening narration callout exists with you-address and sensory grounding."
         },
         {
           "type": "behavior",

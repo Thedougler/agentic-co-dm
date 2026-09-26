@@ -73,9 +73,12 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    the Hook is a fight, pull the opposition's numbers from its owner
    statblock; `encounter-prep` sets the difficulty when no encounter exists. Done when everyone who could fight carries numbers: from the owner
    statblock, or a proposed standard 5e statblock filed on the owner.
-6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`.
-   The opening starts inside the changed moment and ends on something a
-   player can act on.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill every
+   slot the Hook spends: `Previously` on the session's first beat (Recap
+   mode); `Opening`, which starts inside the changed moment and ends on
+   something a player can act on; one `{NPC}` or `{Creature}` block for each
+   actor the party meets, titled with its name; and the `_italic_` Narration
+   cells in Handles and Outcomes. Delete a slot that has no spoken text.
 7. **Write the handoff.** Action Hook → next Development; cerebral Hook → next
    Cliffhanger. The carry-forward names each state variable the next beat
    inherits, one line per variable with its possible values.
@@ -86,11 +89,13 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 
 - **Start in motion.** The first spoken sentence is already inside the
   trouble: the grab, the scream, the stranger with the letter. Nothing happens
-  before it except an optional one-to-three-sentence "previously" — the only
-  recap the session gets.
+  before it except an optional one-to-three-sentence `Previously` block — the
+  only recap the session gets.
 - **Everyone moves in five minutes.** Each PC present has an obvious first
   thing to do or a personal pull (Spotlight). A PC with nothing to
   do in the opening becomes a spectator for the whole beat.
+- **One memorable thing.** At a Glance's **Memorable** names the image,
+  object, or line the players carry out of the beat; the Opening lands it.
 - **Show the night.** The Hook demonstrates the session's tone and pace and
   introduces at least one piece the session uses later: the opposition, an
   ally, the object, the question the Climax answers. A self-contained Hook
