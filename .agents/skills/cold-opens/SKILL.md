@@ -174,7 +174,7 @@ distinguishable on the page.
 
 ### 10. Write the page and pass the gate
 
-Instantiate `templates/Session prep.md` with `subtype: hook` and
+Instantiate `wiki/templates/hook.md` (`kind: hook`) with
 `framing: borrowed-pov`. Put spoken text in `[!narration]`. Follow
 from `scripts/`. Run `references/cold-open-gates.md`.
 

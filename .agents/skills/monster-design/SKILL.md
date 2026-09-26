@@ -246,21 +246,22 @@ contains every tell.
 
 ### 8. File the page
 
-Copy `wiki/templates/creature.md`: a wiki article, statblock first, then what
-the world knows about the creature. Statblock format:
+Copy `wiki/templates/creature.md`. The default page is At a Glance, narration,
+and Statblock; add the other sections only when you have facts for them
+(fact-only, `wiki/AGENTS.md` Layout). Statblock format:
 [references/statblock.md](references/statblock.md).
 
 | Section | Carries |
 |---|---|
+| At a Glance | What the creature is for at the table; Habitat and Treasure bullets |
 | Narration | The prose from step 7 |
 | Statblock | At most one overview image just before the fence, then the `statblock` fence in 2024 phrasing |
-| Visual reference | Facts from a supplied reference sheet, when one exists |
-| Biology | Anatomy and how each body part works in play; origin and truth |
-| Behavior | Habitat, Behavior, Diet, Social Structure, with "in the world" facts folded in |
-| Tactics | Signs, Instincts, Tactics (opening, signature move, escalation, morale), Weaknesses, Aftermath |
+| Tactics | Opening, signature move, escalation, weaknesses, morale and exit |
+| Behavior | Habits, diet, social structure, signs trackers find, aftermath |
+| Secrets | Origin and hidden truths, each with how the party learns it |
 | Art | Remaining images, each under its role subsection |
 
-Omit empty sections, write complete sentences, and wikilink every owner page.
+Write complete sentences and wikilink every owner page.
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
 Then **audit**: for each item in `## Done`, write in the working notes the page

@@ -210,22 +210,21 @@ contains every tell. A missing tell goes back to theatre-of-the-mind named.
 
 ### 7. File the page
 
-Copy `wiki/templates/place.md` and fill the place jobs from `wiki/AGENTS.md`
-Layout. Omit empty sections. Write complete sentences. Wikilink every owner
-page; numbers and stat blocks stay on their owner page ("resolve on
+Copy `wiki/templates/place.md`. Keep a section only when you have facts for it
+(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
+owner page; numbers and stat blocks stay on their owner page ("resolve on
 [[owner]]").
 
 | Section | Carries |
 |---|---|
-| Overview | The narration from step 6, nothing else |
-| At a Glance | What the place is now, what it sits between, the relative-identity sentence, the rule of the place, the present conflict by name and its trajectory with a time, and what skipping it costs |
-| If the party | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs |
-| Who | Who is here, how many, doing what, wanting what; location moves with trigger and visible result; or the sign of absence and who is not here |
-| What | Features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find |
-| Where | **North:** / **East:** / **South:** / **West:** lines with wikilinks and travel time, or what lies that way |
-| Why | Why a party comes, stays, returns, or cares |
+| At a Glance | Why a party comes; what the place is now, the rule of the place, the present conflict by name and its trajectory with a time; Who is here, Danger, and Draw bullets |
+| Narration | The narration from step 6, nothing else |
+| Features | Who is here, how many, doing what, wanting what, and where they move on which trigger; then features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find |
+| At the Table | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs |
+| Secrets | Hidden truths, each with the clue that reveals it |
+| Connections | Each linked neighbour with direction and travel time |
 
-The quoted phrase in What is the **narration key**: when a player pulls on a
+The quoted phrase in Features is the **narration key**: when a player pulls on a
 detail from the spoken look, the DM finds its truth in one glance.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,

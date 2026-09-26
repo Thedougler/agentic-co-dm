@@ -55,7 +55,7 @@ Do not write a PC decision, feeling, or success in advance.
 
 Combat or meaningful social stakes hand to `encounter-prep`; recurring named entities hand to the
 owner design skill; pure exploration hazards stay here with actionable feature, resolution, and
-fail-forward. Session-specific travel is inline in `templates/Session prep.md` or a run guide;
+fail-forward. Session-specific travel is inline in the session's beat page (`wiki/templates/` beat templates) or a run guide;
 standing route facts are updated only when canon work is authorized. Do not create a duplicate
 one-night event page.
 

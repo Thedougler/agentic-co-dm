@@ -215,15 +215,12 @@ improve the existing page) with `type: place` and `kind: dungeon`. Fill:
 
 | Section | Carries |
 |---|---|
-| Overview | The approach, from `theatre-of-the-mind`: what the party perceives where they first reach the site, with a tell for each entrance and for the pressure; room contents stay in their keys |
-| At a Glance | The promise, the present conflict by name, the pressure and what happens if nobody intervenes (with a time), and the site's scale and session count |
-| If the party | The approaches and big choices: each entrance, the bargain, the bypass, the retreat |
-| Who | Each occupant or faction by page, with want, fear, offer, response, and what they do between visits; fighters with compact numbers or statblock links |
-| What | Treasure, items, hazards, and clues, each by owner link or with its numbers. Treasure fits the party's level and the danger: coin by amount and at least one magic item, cast from existing item pages first (`item-design` mints one when none fits) |
-| Where | The neighbours and what lies outside each exit |
-| Why | Why a party comes, and what they leave with |
-| Map and keys | The decision graph as a node list with edges (route, cost, what it reveals), then one keyed subsection per area in the keying order: first impression, current activity, interactives, hidden information, mechanics |
-| Running the dungeon | The pressure procedure (site turn, alert states, advance triggers, the clock with its ticks), rest safety, and restocking after a visit |
+| At a Glance | The promise, why a party comes and what they leave with, the present conflict by name, the pressure and what happens if nobody intervenes (with a time), and the site's scale and session count |
+| Narration | The approach, from `theatre-of-the-mind`: what the party perceives where they first reach the site, with a tell for each entrance and for the pressure; room contents stay in their keys |
+| Features | Each occupant or faction by page, with want, fear, offer, response, and what they do between visits (fighters with compact numbers or statblock links); treasure, items, hazards, and clues, each by owner link or with its numbers. Treasure fits the party's level and the danger: coin by amount and at least one magic item, cast from existing item pages first (`item-design` mints one when none fits). Then the decision graph as a node list with edges (route, cost, what it reveals), and one `###` keyed area each in the keying order: first impression, current activity, interactives, hidden information, mechanics |
+| At the Table | The approaches and big choices (each entrance, the bargain, the bypass, the retreat); the pressure procedure (site turn, alert states, advance triggers, the clock with its ticks), rest safety, and restocking after a visit |
+| Secrets | Hidden information that spans areas, each with the clue that reveals it |
+| Connections | The neighbours and what lies outside each exit |
 
 Each keyed area names its size in feet where position matters, carries every
 check as Ability (Skill) and DC, and every creature by count, page link, and

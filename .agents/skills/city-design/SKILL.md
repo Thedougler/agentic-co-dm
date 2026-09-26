@@ -133,8 +133,8 @@ what each costs. At least one situation touches something the party already
 cares about (a PC's tie, a thread from play, the reason they came).
 
 Then **Power**: each faction's local posture (public position, local
-objective, leverage, current move here). And **Current state**: headlines,
-pressure clocks with ticks, upcoming events with dates. Each faction in Power
+objective, leverage, current move here). Pressure clocks and upcoming events
+with dates sit on the situation they drive. Each faction in Power
 has a **local face**: the named person (an NPC page) who carries its current
 move in this city and whom the party can meet, bribe, or cross.
 
@@ -178,12 +178,15 @@ carries the situations' visible signs.
 
 ### 7. File the page
 
-Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md`. Fill
-frontmatter (`type: place`, `kind: city`, region, status, population,
-government, ruler, controlling_faction, summary). At a Glance carries the
-current pressure, the opportunity, and a one-sentence DM thesis of the city's
-job in play. Omit sections with no job. Write complete sentences. Wikilink
-every owner page.
+Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md` with
+`type: place` and `kind: city`; add region, population, government, ruler, and
+controlling_faction only when they have values. At a Glance opens with one
+sentence on the city's job in play, then the feel, power, current pressure, and
+opportunity. Step 3 fills Districts (getting around under the table), Gazetteer,
+and Local Rules; step 4 fills Power and Situations (one `###` each); step 5
+fills Rumors and Street Life. Keep a section only when you have facts for it
+(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
+owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.

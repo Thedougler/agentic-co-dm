@@ -181,8 +181,8 @@ Compress when the consequence is obvious: **Strength (Athletics) â€” `DC 13`** â
 the attempt they take.
 
 **Elsewhere:** an optional, secret, or non-obvious test may sit on the section
-it belongs to (a creature-imposed *save* on What, a hidden listen in
-`[!secret]`). Obvious roster and fiction stay unmarked.
+it belongs to (a creature-imposed *save* under Features, a hidden listen under
+Secrets). Obvious roster and fiction stay unmarked.
 
 A *Be ready for* table is for `run-guide` only; cells still use the same
 treatments (approach **Ability (Skill)**; DC column `` `DC 14` ``).

@@ -12,7 +12,7 @@ description: >-
 # Encounter Prep
 ## Boundary contract
 
-**Input.** Named encounter or session cockpit, party/location/opposition canon, `templates/Encounter.md` when reusable. Classify reusable stock vs session-only cockpit before drafting.
+**Input.** Named encounter or session cockpit, party/location/opposition canon, `wiki/templates/encounter.md` when reusable. Classify reusable stock vs session-only cockpit before drafting.
 
 **Work.** Classify primary mode, build goal/opposition/suspense/choices/rulings/resolution. Route creature statblocks to `monster-design`, DCs to `dnd5e-mechanics`, places to `place-design`/`dungeon-design`, tonight's field order to `run-guide`.
 
@@ -68,7 +68,7 @@ clock is only suspense when players can perceive and influence its direction.
 
 ## Output
 
-Use `templates/Encounter.md` for reusable notes. A session-only scene that will be
+Use `wiki/templates/encounter.md` for reusable notes. A session-only scene that will be
 run tonight is a **cockpit** (`run-guide`); emit only the stock that cockpit
 inlines. Field order, lean section choice, image placement, and *procedure* live
 in `run-guide`; this skill supplies table-useful stock:

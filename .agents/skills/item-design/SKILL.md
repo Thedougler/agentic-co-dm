@@ -202,14 +202,14 @@ How the item shows up in the world, for place pages, beats, and the DM:
 - **Active:** what it looks, sounds, or smells like when used.
 - **Unseen:** the tell it gives off when hidden or wrapped (a glow through
   cloth, a cold spot, dogs that will not settle, a compass needle that
-  drifts); name "none" when it gives none.
+  drifts), when it gives one.
 - **Concealment:** how it can be hidden, and what finds it (a check with its
   DC, a spell, a person who knows).
 - **Wanted by:** who looks for it, by owner link (cast from the vault first),
   why, the sign they are looking, and what they do when they learn the party
   carries it. A magic, plot, or artifact item has at least one seeker.
 
-Done when every field is filled or marked none, Wanted by names a seeker for
+Done when every field that applies holds a fact, Wanted by names a seeker for
 any magic, plot, or artifact item, and a place or beat could place the item
 from these fields alone.
 
@@ -230,18 +230,19 @@ every tell.
 
 ### 8. File the page
 
-Copy `wiki/templates/item.md`. Consumables stop after the item text. Omit
-empty sections, write complete sentences, and wikilink every owner page.
+Copy `wiki/templates/item.md`. A consumable is At a Glance, narration, and
+Properties. Keep other sections only when you have facts for them (fact-only,
+`wiki/AGENTS.md` Layout); write complete sentences and wikilink every owner page.
 
 | Section | Carries |
 |---|---|
+| At a Glance | Classification line (kind, rarity, attunement); what it changes at the table; Held by and Wanted by bullets |
 | Narration | The portrait from step 7 |
-| Classification | Kind, rarity, and attunement, on one line |
-| Item text | The runnable rules from steps 4 and 5, plain paragraphs with bold labels |
-| At the Table | Presence from step 6; for a sentient item, its voice, sample lines, and what it wants from the bearer; the engagement loop when the item text leaves it unclear |
-| Hidden Properties | Curse, hidden power, true history, and the truth behind every tell |
+| Properties | The runnable rules from steps 4 and 5, plain paragraphs with bold labels |
+| At the Table | Presence from step 6; for a sentient item, its voice, sample lines, and what it wants from the bearer |
+| Secrets | Curse, hidden power, and the truth behind every tell |
 | Connections | Each tie by wikilink and what it does at the table |
-| Provenance | Maker, owners, and how it came to be where it is |
+| History | Maker, owners, and how it came to be where it is |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 

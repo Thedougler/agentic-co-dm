@@ -6,7 +6,7 @@ YAML between `---` at the top of the note.
 
 | Field | Notes |
 |---|---|
-| `type` | AGENTS enum: `hub` \| `campaign` \| `session-prep` \| `session` \| `npc` \| `pc` \| `location` \| `faction` \| `quest` \| `front` \| `encounter` \| `item` \| `monster` \| `lore` \| `template` \| `lexicon` |
+| `type` | The enum in `wiki/AGENTS.md` § Frontmatter |
 | `campaign` | e.g. `shattered-sea` |
 | `status` | as used by the note (live, stub, …) |
 | `tags` | YAML list |

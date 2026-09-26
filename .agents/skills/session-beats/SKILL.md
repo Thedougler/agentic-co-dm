@@ -136,12 +136,12 @@ makes the next Development's information urgent.
     beat-order audit below and a cold read of the plan: a DM who has never
     seen the prep can say, from the plan, what starts the night, what the
     opposition does next, and which beat is on deck. Write each audit check
-    into the plan's Prep Audit with the beats that satisfy it. Done when every
+    into your working notes with the beats that satisfy it. Done when every
     check names its beats and every failure is fixed.
 
 ## Filed session plan
 
-After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Its jobs: Compass, Beat Map, Floating Beats, Branches & Skips, Threads, Critical Routes, Pressure (opposition agenda), PC Touchpoints, Floating Clues, Session Toolkit, and links to every typed beat page. The plan leaves Scene ends when, Zones, and Be ready for to the beat pages and run-guide cockpits.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. At a Glance carries the compass (spine, opening situation, session question, if nobody acts, now and on deck); the Beat Map carries each beat's form, card, thread, tier, trigger, and budget, with Floating Beats, Climax Candidates, Branches, and Critical Routes as `###` tables under it when they exist; then Threads, Pressure (opposition agenda), Spotlight (PC touchpoints), Clues (floating clues), and Toolkit. It links every typed beat page. The plan leaves Scene ends when, Zones, and Be ready for to the beat pages and run-guide cockpits.
 
 Done when: the plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and a cold read of it passes.
 

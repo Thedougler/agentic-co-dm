@@ -71,8 +71,7 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    Copy the opposition's compact numbers from its owner statblock onto the
    page. Done when everyone who could fight carries numbers: from the owner
    statblock, or a proposed standard 5e statblock filed on the owner.
-6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Open on
-   Action` to its Cliffhanger opening recipe.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening` to its Cliffhanger opening recipe.
 7. **Write the outcomes.** Won → the next Development opens new options.
    Lost → the next Development opens with new constraints, or the opposition
    plays Retreat or Hesitation. Each outcome row states the changed physical

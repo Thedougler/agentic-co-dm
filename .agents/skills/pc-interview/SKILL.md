@@ -13,7 +13,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## Identity and branch
 
-Search `wiki/<campaign>/pcs/` and, only for collision checking, `wiki/<campaign>/npcs/` for name/aliases.
+Search `wiki/entities/pc/` and, only for collision checking, `wiki/entities/npc/` for name/aliases.
 No match means create; one PC match means resume; an NPC match or ambiguity is a stop for identity
 confirmation. Read the existing note and `hot.md` before asking. Store player handles only, never
 real-player PII.
@@ -30,13 +30,13 @@ blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist
 
-Map only stated answers into overview, appearance if supplied, gravity/tensions, relationships,
-history, open hooks, and a dated `## Interview` round containing the questions actually asked and
+Map only stated answers onto `wiki/templates/pc.md`: At a Glance (the lead sentence and stated
+facts), narration when appearance is supplied, Connections, History, and a dated `## Interview` round containing the questions actually asked and
 answers as given. Preserve prior rounds. Link existing entities; do not mint NPC/item/place notes
 inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite.
 Do not set player audience, combat statistics, inventory, or unstated feelings.
 
-Write one note in `wiki/<campaign>/pcs/`, run applicable Obsidian/frontmatter lint, and report
+Write one note in `wiki/entities/pc/<kebab-name>.md` (`type: pc`), run applicable Obsidian/frontmatter lint, and report
 changed paths plus unanswered questions and deferred owner work.
 
 ## Campaign-bone gate

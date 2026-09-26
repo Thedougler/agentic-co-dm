@@ -197,21 +197,21 @@ contains every tell. A missing tell goes back to theatre-of-the-mind named.
 ### 7. File the page
 
 Copy `wiki/templates/vehicle.md` to `wiki/entities/vehicle/<kebab-name>.md`
-with `type: vehicle` and a `kind` for the craft (ship, boat, or other). Fill
-the vehicle jobs from `wiki/AGENTS.md` Layout. Omit empty sections. Write
-complete sentences. Wikilink every owner page.
+with `type: vehicle` and a `kind` for the craft (ship, boat, or other). Keep a
+section only when you have facts for it (fact-only, `wiki/AGENTS.md` Layout).
+Write complete sentences. Wikilink every owner page.
 
 | Section | Carries |
 |---|---|
+| At a Glance | Why the party cares; the captain, berth, the errand and its next step, standing orders on meeting the party |
 | Narration | The narration from step 6, nothing else |
-| Sheet, Components | The numbers from step 4 |
-| Decks | The areas from step 5; omit for a craft too small to walk |
-| Crew stations | Stations, who mans them now, and the fighters' compact numbers |
-| Handling | Manoeuvres, the quirk, and the chase loop |
-| Combat | Initiative, boarding, ramming, component targeting, surrender, sinking |
-| At a Glance | The captain, the errand and its next step, standing orders on meeting the party, and why the party cares |
-| Hidden Cargo & History | The hold and every other tell's truth, by name, with how it is found |
+| Statblock | The numbers from step 4: size, speed, crew, cargo, hull, helm, weapons |
+| Decks | The areas from step 5, for a craft large enough to walk |
+| Crew | Stations, who mans them now, and the fighters' compact numbers |
+| At the Table | Manoeuvres, the quirk, the chase loop; initiative, boarding, ramming, component targeting, surrender, sinking |
+| Secrets | The hold and every other tell's truth, by name, with how it is found |
 | Connections | Each tie by owner link and what it does at the table |
+| History | Origin, former names, contested ownership |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.

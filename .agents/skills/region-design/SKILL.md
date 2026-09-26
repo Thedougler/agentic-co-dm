@@ -175,11 +175,15 @@ carries the regional rule's tell.
 ### 7. File the page
 
 Copy `wiki/templates/region.md` to `wiki/entities/region/<kebab-name>.md` with
-`type: region`, parent `region`, `scale`, `kind`, `structure`, `as_of`, and
-`summary`. At a Glance carries scale, kind, character, anchor, known-for,
-feared-for, parent, and a DM thesis of the region's job at the table. Keep the
-sections that create choices at this scale; omit the rest. Write complete
-sentences. Wikilink every owner page.
+`type: region`, `scale`, and `kind`; add parent `region` only when it names a
+page. At a Glance opens with one sentence on the region's job at the table,
+then Now, Pressure, Known for, and Anchor. Step 3 fills Geography (shape,
+landmarks) and Travel (routes table, travel procedure, regional rule) and Key
+Places; step 4 fills Powers (powers and fronts with portents); step 5 fills
+Encounters and Rumors, with finds and hidden routes under Secrets and past
+facts under History. Keep a section only when you have facts for it
+(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
+owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.

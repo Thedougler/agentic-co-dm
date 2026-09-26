@@ -29,11 +29,11 @@ File:
 - `type: recap` (not `type: session`)
 - Copy scaffold: `wiki/templates/recap.md`
 - Player-safe `> [!narration] Recap` past tense, “you” address
-- Optional cold open; then `## Wiki facts` as short canon-delta bullets with `[[wikilinks]]` — **pointers only**, not owner-page surgery
-- No `[!secret]` / `[!mechanic]` on this surface
+- Optional cold open; then `## Wiki Facts` as short state-change bullets with `[[wikilinks]]` — **pointers only**, not a retelling and not owner-page surgery
+- `[!narration] Recap` is the page's only callout
 - No spaces in basename; no `Aruhe` / `00` prefixes
 
-Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. The `[!narration] Recap` is player-facing: `theatre-of-the-mind` owns its craft (`references/recaps.md`). `writing-for-humans` owns the Wiki facts. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
+Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian-markdown` for formatting and Markdown standards. The `[!narration] Recap` is player-facing: `theatre-of-the-mind` owns its craft (`references/recaps.md`). `writing-for-humans` owns the Wiki Facts. After any write, run `wiki lint <recap-path>` on the recap; the single agent-facing command reports every checker finding.
 
 ## Procedure
 

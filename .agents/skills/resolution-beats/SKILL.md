@@ -65,9 +65,9 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    `dnd5e-mechanics` for any check, and `item-design` for a new
    magic item.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill the
-   `Closing image` for each outcome branch.
-7. **Record the aftermath.** Fill What Is True Now, Loose Ends, and Rewards &
-   Accounting so the next session's planner reads the changed world from
+   `Closing Image` for each outcome branch.
+7. **Record the aftermath.** Fill At a Glance (new status quo, price, reward),
+   Consequences, Loose Ends, and Rewards so the next session's planner reads the changed world from
    this page.
 8. **Cold read.** Run the cold read from `docs/agents/table-ready.md` and the
    completion test. Fix every gap before filing.
@@ -108,9 +108,9 @@ page:
 - each outcome's rewards are named with values: the loot the defeated side
   carried (owner links), coin amounts, favors and access with who grants
   them, and a milestone or XP proposal. These are canon under the rule in `llm-wiki` where canon
-  is silent; "none" stands only when the fiction offers nothing;
+  is silent; an outcome that earns nothing lists no reward row;
 - each actor's closing response is written, with what it changes;
-- What Is True Now states values, not instructions to record them later.
+- At a Glance states values, not instructions to record them later.
 
 ## Named seams
 

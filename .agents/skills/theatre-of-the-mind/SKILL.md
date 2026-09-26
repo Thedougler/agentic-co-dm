@@ -324,11 +324,10 @@ These hold in every block.
 
 ## Callouts and ingest
 
-The only callout on a session card is `[!narration]`, and callouts never go
-inside table cells; which slots a beat carries is in
-[scenes.md § Beat slots](references/scenes.md#beat-slots). On wiki owner
-pages, mechanics stay in `[!mechanic]` and secrets in collapsed `[!secret]-`,
-outside the narration.
+`[!narration]` is the only callout on any page, and callouts never go inside
+table cells; which slots a beat carries is in
+[scenes.md § Beat slots](references/scenes.md#beat-slots). Mechanics and
+secrets are plain prose under their own heading, outside the narration.
 
 When `wiki-ingest` loads this skill, named ingest is DM approval for those
 sources (`docs/agents/work.md`): polish existing stubs into narration that

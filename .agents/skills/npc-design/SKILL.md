@@ -216,19 +216,18 @@ face and every tell, and the three lines sound like one person.
 
 ### 7. File the page
 
-Copy `wiki/templates/npc.md` and fill the person jobs from `wiki/AGENTS.md`
-Layout. Omit empty sections, write complete sentences, and wikilink every
-owner page.
+Copy `wiki/templates/npc.md`. Keep a section only when you have facts for it
+(fact-only, `wiki/AGENTS.md` Layout); write complete sentences and wikilink
+every owner page.
 
 | Section | Carries |
 |---|---|
-| At a Glance | Role, Nature (job and what they are like), Home, Wants; rows for Secret, Leverage, or Limit when they change how the DM runs them; the one-sentence DM thesis |
+| At a Glance | The lead sentence on what this person is about; Role, Wants, Home, Allegiance bullets |
 | Narration | The portrait from step 6 |
-| First meeting | Opening move and one sample line |
-| When posture changes | What opens them, what closes the door, what takes priority, what they will and will not share, and the truth behind each open question |
-| Voice | Voice notes and the three sample lines |
-| Connections | Each tie by wikilink and what it does at the table, including each PC thread; a PC with no thread stays in the working notes |
-| Combat | Numbers for every fighter in reach from step 5, and the encounter rule for custom forms |
+| At the Table | First meeting with one sample line; what opens them and what closes the door; what they will and will not share; voice notes and the three sample lines |
+| Statblock | Numbers for every fighter in reach from step 5, and the encounter rule for custom forms |
+| Secrets | What they hide, with the truth behind each open question and how the party learns it |
+| Connections | Each tie by wikilink and what it does at the table, including each PC thread |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 

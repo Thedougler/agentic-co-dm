@@ -10,7 +10,7 @@ Write **complete-sentence human prose**. A DM reads this without decoding agent 
 
 Classify each write against the stack table in `AGENTS.md`. Vault is `true` on wiki vault notes. Mixed documents classify per passage, then apply vault format to the whole note.
 
-Spoken player text is `[!narration]` only.
+Spoken player text is `[!narration]`, the only callout.
 ## Capability boundary
 
 Wiki-facing skills receive a bounded intent, target, evidence, and constraints.
@@ -69,51 +69,30 @@ Done when: required fields are present, body is complete sentences, related page
 
 ## Layout
 
-Copy the matching `wiki/templates/` scaffold for the campaign `type` (and `kind` when the page is a session-prep beat). Session-prep beats copy `wiki/templates/hook.md`, `development.md`, `cliffhanger.md`, `climax.md`, `resolution.md`, or `session-plan.md`. Do not copy-start `wiki/templates/session-prep.md` for new beats or plans. Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `wiki/templates/encounter.md`, `rules.md`, `campaign-state.md`, and `dm-intelligence.md`. Those names are not campaign `type` values. Do not add `type: encounter` or `type: rules`. Omit empty sections. Pass is run jobs, not heading-order match.
+Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` for session-prep beats and city pages). The template shows the page anatomy; its contract in `wiki/templates/contracts/` is the one owner of which sections, keys, and callouts are required. Delete the template's comments and every section you have no facts for.
 
-`wiki/_raw/` illustrates quality. It is not a clone target. Incoming ingest files are evidence of facts, not exemplary format. Filed pages are judged against the kinds and jobs in this file.
+**Fact-only.** Every line gives the DM a fact, ruling, or response they can use. A section, glance bullet, table row, frontmatter key, or callout with no fact stays off the page. Absence, uncertainty, and the source's silence are never written; where the table needs an answer and canon has none, decide it as a proposal (`docs/agents/table-ready.md` "Fill the silence"). Each fact appears once on the page. A stub is the lead sentence plus the glance bullets the source supports.
 
-| Kind | Jobs |
-|---|---|
-| Place | Look; situation now; moves that change the scene; presence or sign of absence; table objects; connections; purpose |
-| Consumable | Portrait; classification; one runnable effect; then stop. Copy `wiki/templates/item.md` with `kind: consumable`. |
-| Flora hazard | Look; start; notice; contact cost; careful passage; honest counterplay. `type: item` `kind: flora hazard`. Copy `wiki/templates/hazard.md`. Pass is those jobs. |
-| Magic / Plot / Durable item | Portrait; classification; runnable effect; then omit-empty At a Glance / At the Table / Connections / Secrets / Provenance / Art. `type: item` with `kind: magic` \| `plot` \| `durable`. Copy `wiki/templates/item.md`. Pass is those jobs. |
-| Recap | Cold open optional; player-safe `[!narration] Recap`; Wiki facts. `type: recap`. Copy `wiki/templates/recap.md`. Pass is those jobs. |
-| Creature | Look; runnable sheet; life (habitat, habits, diet, social); hunt (signs, instincts, opening, shut-down, aftermath) |
-| Person | Who and want; look; first minutes and posture change; named ties; combat only if they can fight |
-| PC | Spoken look; At a Glance (class/level/player/home ship + play-pattern thesis); Connections; Sheet + Combat Profile; Abilities; Spells when caster; Inventory; Session Log; Voice; Art. Single H1 only — flatten satellites; forbid nested `# Title — Facet` dumps. `type: pc`. Copy `wiki/templates/pc.md`. Pass is those jobs. |
-| Session plan | Compass; Beat Map; Cards, threads, and tiers; Floating beats; Climax candidates; Branches & skips; Threads; Critical routes; Pressure (opposition agenda); PC touchpoints; Floating clues; Session toolkit. `type: session-prep` `kind: session-plan`. Copy `wiki/templates/session-plan.md`. File `Session-<n>-00-<Title>.md`. Pass is those jobs. |
-| Hook | Abstract; Open on; Situation; Run the hook; Character pull; Decision handles; Leads; Checks; Action setup; Handoff. `type: session-prep` `kind: hook`. Copy `wiki/templates/hook.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Development | Abstract; Opening; Run the beat; Situation; Revelations; Actors; Checks & costs; Player levers; Exits. `type: session-prep` `kind: development`. Copy `wiki/templates/development.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Cliffhanger | Abstract; Open on Action; Run the beat; Opposition; Pressure; Battlefield; Discoveries; Resolution; References. `type: session-prep` `kind: cliffhanger`. Copy `wiki/templates/cliffhanger.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Climax | Abstract; Opening image; Thread harvest; Situation; Visible levers; Pressure; Opposition; Stage; Final Battle or Final Revelation; PC moments; Outcome. `type: session-prep` `kind: climax`. Copy `wiki/templates/climax.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Resolution | Abstract; Outcome branches; Run the beat; Closing image; What is true now; Consequences; Payoffs; Character epilogues; Loose ends; Rewards & accounting. `type: session-prep` `kind: resolution`. Copy `wiki/templates/resolution.md`. File `Session-<n>-<BB>-<Label>.md`. Pass is those jobs. |
-| Vehicle | Look; sheet; components; crew stations; handling; combat; then omit-empty At a Glance / Secrets / Connections / At the Table / Provenance / Art. Copy `wiki/templates/vehicle.md`. Pass is those jobs. |
-| Spell | Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Pass is those jobs. |
-| Faction | Public face; DM thesis; current state; one active agenda; table-relevant assets, people, places, and relationships; faction-turn log. Pass is those jobs. |
-| Lore | One durable question; At a Glance (core truth + why it matters); Current Truth; At the Table (notice / explains / enables / warns). Pass is those jobs. |
-| Quest | Summary (objective, why now, deadline); Situation; Stakes including walk-away; World in motion (driver and next move if uninterrupted); at least two independent leads. Resolution omitted while unresolved. Pass is those jobs. |
-| City | Arrival; At a glance including current pressure; Orientation (districts and getting around); Gazetteer enough to intentionally seek a place; rules that matter at the table; at least one active situation with if-nobody-intervenes. Page is `type: place` with `kind: city`. Site places keep using `wiki/templates/place.md` and existing Place jobs. Pass is those jobs. |
-| Region | Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Pass is those jobs. |
-| Encounter | Situation; Opening pressure; Opposition; Choice surface; If ignored; Handoff. `type: session-prep`. Copy `wiki/templates/encounter.md`. Pass is those jobs. |
-| Rules | At a Glance; Current Truth; At the Table. `type: lore`. Copy `wiki/templates/rules.md`. Pass is those jobs. |
-| Campaign State | Table aim on the campaign hub; Live state; Index. `type: lore`. Copy `wiki/templates/campaign-state.md`. Pass is those jobs. |
-| DM Intelligence | Table analysis; Grounding; Decision. `type: work`. Copy `wiki/templates/dm-intelligence.md`. DM Intelligence is not the aim. Pass is those jobs. |
+**Owner page anatomy** (every `entities/` type), in this order:
 
-Spoken look is theatre of the mind: no secrets, DCs, unearned names, author thesis.
+1. `# Title`, then optional overview art.
+2. Header row (`col` codeblock): `## At a Glance` — one lead sentence on what the page is for at the table, then two to six `- **Label.** fact.` bullets — beside `> [!narration] Name`, the player-safe look.
+3. The type's core section: `Statblock` (creature, vehicle, fighting NPC), `Sheet` (PC), `Properties` (item), `Effect` (spell), `Hazard` (flora hazard), `Ruling` (Rules), `Situation` (quest), or the type's own sections in its template. Lore shapes its body to fit the lore, with headings named for what they hold.
+4. Shared sections, one meaning everywhere: `At the Table` (how to run it), `Secrets` (hidden truths and how each surfaces), `Connections` (`- [[page]] — what the tie does at the table`), `History` (past that changes a present choice), `Log` (newest first, one bullet per change play made), `Art`.
 
-Ingest of campaign-shaped `type: place` keeps required treatments (including `[!narration]`); it does not distill. Foreign sources map into the kind. Session-prep pages are `type: session-prep` with a matching `kind`.
+**Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, goal, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Cast` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
 
-Numbers live on one owner page. Other sample pages wikilink; they do not copy the effect, save, or sheet.
+**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or DM thesis). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing.
 
-Consumable, flora hazard, and magic/plot/durable items all use `type: item`; they differ by `kind` and jobs. Flora hazards copy `wiki/templates/hazard.md`; other item kinds copy `wiki/templates/item.md`.
+**Columns.** `col` / `col-md` codeblocks only, for two patterns: the owner-page header row, and a beat pair of two short same-moment blocks. Statblocks, wide tables, and long narration stay full width.
 
-Legacy pages are out of scope. Wrapup MUST NOT convert a legacy page into a sample.
+Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `encounter.md`, `rules.md` (`type: lore` `kind: rules`), `campaign-state.md` (`type: lore` `kind: campaign-state`), and `dm-intelligence.md` (`type: work` `kind: dm-intelligence`). Flora hazards copy `hazard.md` (`type: item` `kind: flora hazard`). Cities copy `city.md` (`type: place` `kind: city`). `session-prep.md` is the run-guide cockpit; new beats and plans copy their typed template.
 
-Done when: the kind's jobs are answered, empty sections are omitted, spoken look is player-safe.
+`wiki/_raw/` is evidence of facts, not a format to copy. Ingest maps foreign sources into the kind's template. Numbers live on one owner page; other pages link to it. Legacy pages move to the current template when next touched.
 
-Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox. Two campaigns do not share a session-number folder. `wiki/templates/session.md` is deprecated as copy-start; `type: session` remains legacy in the enum. Do not file `{{title}} - B01 - Strong Start` names.
+Done when: the contract's required sections are present, every line is fact-only, and the narration is player-safe.
+
+Session home after ingest or accept: `wiki/journal/sessions/<campaign-slug>/<session-number>/` (Session 11 → `wiki/journal/sessions/shattered-sea/11/`; Session 01 → `…/01/`). Session plan `Session-<n>-00-<Title>.md`, numbered live beats `Session-<n>-<BB>-<Label>.md`, **post-play recaps**, and that night’s companion notes all live in the **same** session-number folder. Recap path: `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (`type: recap`, copy `wiki/templates/recap.md`). Do **not** park recaps at flat `wiki/journal/…`, spaced `Session NN - Recap.md`, or a parallel `recaps/` folder. Owner pages stay outside. `_raw/` is the ingest inbox. Two campaigns do not share a session-number folder. `type: session` remains legacy in the enum; new post-play logs are recaps. Do not file `{{title}} - B01 - Strong Start` names.
 
 **Session evidence (post-play):** in the same session-number folder — `Session-<NN>-Recap.md` (summary), `Session-<NN>-Transcript.md` (text companion). Audio/video recording files use flat `wiki/attachments/session-<NN>-recording.{ext}` (role `recording`; kebab). Do not park transcripts/recordings under a parallel `recaps/` tree or repo-root folders. Raw dumps may land in `wiki/_raw/` then promote; archive evidence into `wiki/_archive/` after ingest.
 
@@ -169,13 +148,11 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Cross-kind DM-usability rules for templates and filed pages: use the frontmatter core, shared Title Case headings (`At a Glance`, `At the Table`, `Connections`, `Secrets`, `Provenance`, `Art`), correct callout surfaces, omit-empty sections, and no synonym headings for the same job. Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`.
-
-When a shared job appears, use the shared heading name. DM-visible labels use Title Case / spaced words — never snake_case in body or table Field columns (`One thing`, not `one_thing`); YAML keys may stay snake_case. Kind-specific job blocks keep their own names. `Relationships` is not a Connections synonym — use `## Connections`. Recap/session/run spoken surfaces use only `[!narration]`; owner pages may add `[!mechanic]` / `[!secret]`.
+Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`. DM-visible labels use Title Case words (`One thing`, not `one_thing`); YAML keys may stay snake_case.
 
 ## Approval (FR-019)
 
-Wiki facts the user said file immediately on the live path. Named ingest of those sources, and thin complete-sentence stubs for names those sources contain (including as links), file without a second chat step. Unsaid invented names are not canon. HARD entity-before-spoken files the owner page, then spoken.
+Wiki facts the user said file immediately on the live path. Named ingest of those sources, and stubs for names those sources contain (including as links), file without a second chat step; a stub carries only the facts the source gives. Unsaid invented names are not canon. HARD entity-before-spoken files the owner page, then spoken.
 
 Layout moves and structure-only template rewrites that keep facts and `type` unchanged proceed without waiting.
 

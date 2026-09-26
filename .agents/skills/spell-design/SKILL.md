@@ -166,17 +166,17 @@ not earned, and the truth of the tradition. Load
 give it the packet.
 
 Copy `wiki/templates/spell.md` to `wiki/entities/spell/<kebab-name>.md` with
-`type: spell`, `level`, `school`, and `ritual`. Omit empty sections. Write
-complete sentences. Wikilink every owner page.
+`type: spell`, `level`, and `school` (`ritual: true` only for rituals). Keep a
+section only when you have facts for it (fact-only, `wiki/AGENTS.md` Layout).
+Write complete sentences. Wikilink every owner page.
 
 | Section | Carries |
 |---|---|
+| At a Glance | Level, school, ritual on one italic line; what the spell does in this campaign; Taught by (source, access price, clue) |
 | Narration | The narration, nothing else |
-| Classification and casting fields | Level, school, ritual; the four casting fields |
-| Effect | The runnable effect block and scaling |
-| Rulings | Likely tricks with answers; counterplay; how enemies use it |
-| Discovery | Source, access price, clue, and who notices a casting |
-| Lore | The tradition, its casters, and history that changes a present choice |
+| Effect | The four casting fields, then the runnable effect block and scaling |
+| At the Table | Likely tricks with answers; counterplay; how enemies use it; who notices a casting |
+| History | The tradition, its casters, and history that changes a present choice |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
