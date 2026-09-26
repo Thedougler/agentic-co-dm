@@ -141,27 +141,23 @@ Session 07 opens Otar alongside 5 [[minor-slaad]] companions, tadpoles already f
 
 See [[Phase 1]] and [[Phase 2]] for terrain, DM pacing, and tuning info for this fight.
 
-> [!mechanic]
-> **Lair actions (the shattered plaza):** Not controlled by Otar. The ground ruptures. On turn count 20 (losing ties), one occurs (never repeat):
->
-> - **Aftershock.** Creatures on the ground within 15 ft of the crater edge: DC 15 Dex save or fall prone.
-> - **Choking Dust.** A 15-ft-radius sphere becomes obscured until turn count 20 next round.
-> - **Masonry Collapse.** One creature within 40 ft: DC 15 Dex save or take 11 (3d6) bludgeoning and become stuck (escape DC 15).
+**Lair actions (the shattered plaza):** Not controlled by Otar. The ground ruptures. On turn count 20 (losing ties), one occurs (never repeat):
+
+- **Aftershock.** Creatures on the ground within 15 ft of the crater edge: DC 15 Dex save or fall prone.
+- **Choking Dust.** A 15-ft-radius sphere becomes obscured until turn count 20 next round.
+- **Masonry Collapse.** One creature within 40 ft: DC 15 Dex save or take 11 (3d6) bludgeoning and become stuck (escape DC 15).
 
 The Warren's alarm fires when the fight tilts toward total loss.
 
-> [!mechanic]
-> **The Rattle (the [[Warren]] fights beside you):** The Warren's alarm system as action pool. When the fight tips toward TPK, the adventurers gain lair actions and an epic-action pool mirroring Otar. **Trigger:** two PCs down, OR adventurer HP below 25%, OR the DM reads forming TPK. Starts turn 20 next round. Stays until Otar falls. Does not kill Otar. Refuses to let adventurers lose. Each round the Warren gives **two** adventurer lair actions (turn 20, right after Otar's, DM or adventurers pick, no repeats): **[[human]] Chain** (frees one prone/buried/stuck/grappled PC, half speed toward crater, no opportunity attacks); **Fire Brigade** (add 1d6 fire to one hit, suppresses Otar's regen next turn); **Din of Pans** (Otar: DC 10 Wisdom save or loses one epic action). Adventurer epic pool contains 5 shared actions, spent one per turn, refreshing turn 20. **[[colla]]'s Toss** (1 action; 2d4+2 HP or save to downed/hurt PC within 30 ft); **Shoulder In** (1 action; PC moves or Dodges); **[[Ruk]] Wades In** (2 actions; attacks or breaks a hold). Details: [[Phase 1]] and [[Phase 2]].
+**The Rattle (the [[Warren]] fights beside you):** The Warren's alarm system as action pool. When the fight tips toward TPK, the adventurers gain lair actions and an epic-action pool mirroring Otar. **Trigger:** two PCs down, OR adventurer HP below 25%, OR the DM reads forming TPK. Starts turn 20 next round. Stays until Otar falls. Does not kill Otar. Refuses to let adventurers lose. Each round the Warren gives **two** adventurer lair actions (turn 20, right after Otar's, DM or adventurers pick, no repeats): **[[human]] Chain** (frees one prone/buried/stuck/grappled PC, half speed toward crater, no opportunity attacks); **Fire Brigade** (add 1d6 fire to one hit, suppresses Otar's regen next turn); **Din of Pans** (Otar: DC 10 Wisdom save or loses one epic action). Adventurer epic pool contains 5 shared actions, spent one per turn, refreshing turn 20. **[[colla]]'s Toss** (1 action; 2d4+2 HP or save to downed/hurt PC within 30 ft); **Shoulder In** (1 action; PC moves or Dodges); **[[Ruk]] Wades In** (2 actions; attacks or breaks a hold). Details: [[Phase 1]] and [[Phase 2]].
 
 The fight shifts when the Rattle joins.
 
-> [!mechanic]
-> **Rattle Surge (Phase 2 only):** The instant the Rattle triggers, Otar's epic pool jumps from 1 to 3 per round. This is the baseline restored, not invented. He doesn't react to the crowd smartly. The fight feels feral. At 3 actions per round he does Thrash and Bile Spray every round. Bile Spray escalates to 4d6-5d6 acid. Spawn Tadpoles (below) becomes reachable. This gives adventurers a new, urgent problem. Note: `combat-sim` v1 doesn't score the new tadpole combatant. Details: [[Phase 2]] § Challenge Calibration.
+**Rattle Surge (Phase 2 only):** The instant the Rattle triggers, Otar's epic pool jumps from 1 to 3 per round. This is the baseline restored, not invented. He doesn't react to the crowd smartly. The fight feels feral. At 3 actions per round he does Thrash and Bile Spray every round. Bile Spray escalates to 4d6-5d6 acid. Spawn Tadpoles (below) becomes reachable. This gives adventurers a new, urgent problem. Note: `combat-sim` v1 doesn't score the new tadpole combatant. Details: [[Phase 2]] § Challenge Calibration.
 
 His worst ability opens in Phase 2.
 
-> [!mechanic]
-> **Spawn Tadpoles (the brood underfoot).** New epic action (2 LA cost): Otar sheds a clutch of [[slaad tadpoles]] from his rotting hide. Cheap and cheap. But a tadpole that drops a creature to 0 HP doesn't just leave a body. That creature risks transforming into a [[minor-slaad]] under Otar's control. It's the same fate Solange suffered, scaled down. Use it reactively like other epic actions (never a targeting decision). When a PC goes down near Otar, this becomes the real clock. Allies have three rounds to pull the body clear or make a Medicine check. After that, it's not a body anymore. It's another combatant.
+**Spawn Tadpoles (the brood underfoot).** New epic action (2 LA cost): Otar sheds a clutch of [[slaad tadpoles]] from his rotting hide. Cheap and cheap. But a tadpole that drops a creature to 0 HP doesn't just leave a body. That creature risks transforming into a [[minor-slaad]] under Otar's control. It's the same fate Solange suffered, scaled down. Use it reactively like other epic actions (never a targeting decision). When a PC goes down near Otar, this becomes the real clock. Allies have three rounds to pull the body clear or make a Medicine check. After that, it's not a body anymore. It's another combatant.
 
 ## Connections
 
@@ -182,9 +178,8 @@ His worst ability opens in Phase 2.
 
 Five slug-like creatures the color of Otar's own hide claw loose from the rubble and scatter toward the crowd. One catches and starts eating a trapped villager. Its body looks more and more [[human]], an early Spawn Tadpoles sighting. Play confirms Foul Miasma deals automatic poison damage to anyone starting their turn in the 10-ft radius.
 
-> [!mechanic]
-> **Tongue Lash (legendary action).** Hits [[delmar-fisk|Delmar]] for 11 bludgeoning, halved by Uncanny Dodge, without landing the hold. Hits [[crissdalynn-khinriss|Crissdalynn]] next; she deflects the full 11 damage and tries to bounce it back, but Otar dodges its own tongue.
-> **Ground slam.** DC 16 Dexterity save, everyone within 20 ft: 25 force damage, half on a save.
+**Tongue Lash (legendary action).** Hits [[delmar-fisk|Delmar]] for 11 bludgeoning, halved by Uncanny Dodge, without landing the hold. Hits [[crissdalynn-khinriss|Crissdalynn]] next; she deflects the full 11 damage and tries to bounce it back, but Otar dodges its own tongue.
+**Ground slam.** DC 16 Dexterity save, everyone within 20 ft: 25 force damage, half on a save.
 
 Transcript
 

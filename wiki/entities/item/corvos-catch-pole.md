@@ -31,10 +31,9 @@ tier: supporting
 
 *Durable gear, Common.* A live-handler's pole, standard kit in every dealership working [[verdant-teeth]] stock. It weighs 6 pounds.
 
-> [!mechanic]
-> **[HB] Noose (action).** Reach 10 feet. Make a Dexterity check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) against a Medium or smaller Beast. On a success, the Beast is Restrained while you hold the pole in two hands, and it stays at the far end of the shaft, out of reach of anything with a 5-foot reach. Maintaining the hold costs your action each turn; the Beast repeats the contest at the end of each of its turns.
->
-> **Limitations:** Beasts only, Medium or smaller, and nothing that can simply chew through wire. The pole itself is AC 13, has 10 HP, and snaps at 0 HP.
+**[HB] Noose (action).** Reach 10 feet. Make a Dexterity check contested by the target's Strength (Athletics) or Dexterity (Acrobatics) against a Medium or smaller Beast. On a success, the Beast is Restrained while you hold the pole in two hands, and it stays at the far end of the shaft, out of reach of anything with a 5-foot reach. Maintaining the hold costs your action each turn; the Beast repeats the contest at the end of each of its turns.
+
+**Limitations:** Beasts only, Medium or smaller, and nothing that can simply chew through wire. The pole itself is AC 13, has 10 HP, and snaps at 0 HP.
 
 ## Provenance
 

@@ -39,12 +39,11 @@ tier: supporting
 *Potion (Feed Additive), Common.* Brewed in the back of [[Zort's Pits]] out of fermented marsh fruit and something [[Zort]] will not name, and used there to make a new arrival safe to handle on its first day. One crock holds three doses. Weighs 2 pounds.
 
 
-> [!mechanic]
-> **[HB] Dose (action).** Mix one dose into food or water a beast then eats or drinks, or throw the crock as an improvised weapon at a target within 20 feet. A beast that swallows the dose, and any beast the thrown crock splashes, makes a DC 13 Constitution saving throw. On a failed save the draught charms it toward you for 10 minutes and halves its speed, and it will not attack while charmed. On a success nothing takes hold, though it knows someone tried.
->
-> **[HB] Second Dose.** Give a beast another dose inside the hour and it saves with advantage. A thrown crock breaks on impact, hit or miss.
->
-> **Limitations:** beasts only, and only a beast Large or smaller that eats. Monstrosities, dragons, plants, constructs, and anything that talks shrug it off. Damaging a charmed beast ends the effect immediately.
+**[HB] Dose (action).** Mix one dose into food or water a beast then eats or drinks, or throw the crock as an improvised weapon at a target within 20 feet. A beast that swallows the dose, and any beast the thrown crock splashes, makes a DC 13 Constitution saving throw. On a failed save the draught charms it toward you for 10 minutes and halves its speed, and it will not attack while charmed. On a success nothing takes hold, though it knows someone tried.
+
+**[HB] Second Dose.** Give a beast another dose inside the hour and it saves with advantage. A thrown crock breaks on impact, hit or miss.
+
+**Limitations:** beasts only, and only a beast Large or smaller that eats. Monstrosities, dragons, plants, constructs, and anything that talks shrug it off. Damaging a charmed beast ends the effect immediately.
 
 ## Provenance
 

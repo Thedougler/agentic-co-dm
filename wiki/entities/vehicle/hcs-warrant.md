@@ -43,8 +43,7 @@ Deck notes from the *Warrant*:
 - **Crew Quarters.** Hammocks (twenty) on the lower forward deck. Galley with copper range amidships.
 - **Below the Waterline.** The magazine is aft, with two keys. Ault carries one key, and the [[harwick]] Admiralty carries the other. The cargo hold stores seized goods awaiting judgment. The prisoner hold has iron grating and six cages.
 
-> [!mechanic]
-> **Captain's Locker.** Lockable iron chest in the stern cabin. Make a Strength (Athletics) check (DC 18) to force it. If you fail, the lock holds and the chest remains undamaged. You may retry only with a new tool or approach.
+**Captain's Locker.** Lockable iron chest in the stern cabin. Make a Strength (Athletics) check (DC 18) to force it. If you fail, the lock holds and the chest remains undamaged. You may retry only with a new tool or approach.
 
 ## Stats & Combat
 

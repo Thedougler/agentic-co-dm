@@ -41,12 +41,11 @@ tier: supporting
 | Narrative hook | Still available to buy at [[la-cenere]] for 75 gp. Lavinia doesn't test her own stock, so nobody but the drinker ever finds out what a given vial actually does. |
 
 
-> [!mechanic]
-> **Uncertain Draught [HB].** Drinking this potion is a Bonus Action, consumed on use. It always restores 1d6 hit points, and the drinker immediately starts talking, unable to stop, for 1 hour: harmless, constant, and impossible to suppress.
->
-> **Edge cases:** the healing and the talking always happen, save or no save on the check below. A creature can roll the same d6 result twice in separate uses. The table doesn't track what a creature has already gotten.
->
-> **Limitations:** the drinker cannot choose or reroll the random effect, and cannot suppress the hour of compulsive talking once it starts. The potion doesn't scale with the drinker's level. Nothing about this potion reads as anything other than a plain healing draught before it's drunk.
+**Uncertain Draught [HB].** Drinking this potion is a Bonus Action, consumed on use. It always restores 1d6 hit points, and the drinker immediately starts talking, unable to stop, for 1 hour: harmless, constant, and impossible to suppress.
+
+**Edge cases:** the healing and the talking always happen, save or no save on the check below. A creature can roll the same d6 result twice in separate uses. The table doesn't track what a creature has already gotten.
+
+**Limitations:** the drinker cannot choose or reroll the random effect, and cannot suppress the hour of compulsive talking once it starts. The potion doesn't scale with the drinker's level. Nothing about this potion reads as anything other than a plain healing draught before it's drunk.
 
 **Constitution Save — The Second Effect**
 

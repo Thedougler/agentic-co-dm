@@ -51,12 +51,11 @@ Sold for the last scene of a play nobody in [[calven-and-calveno]] stages any mo
 Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and a single-use screen at 60 gp sits under that. The effect matches _fog cloud_ cast at 1st level, stripped of concentration and of the caster's ability to move it, which is the trade a scroll of the same spell does not make.
 
 
-> [!mechanic]
-> **Property Snow [HB].** Throwing a twist at a point on the ground within 30 feet takes an action. The paper bursts on impact and white flake rises to fill a 20-foot-radius sphere centred on that point, spreading around corners. The area counts as heavily obscured for 1 minute. The thrower holds no concentration, and the cloud stays where it fell.
->
-> **Edge cases:** wind of moderate strength or greater disperses the cloud in one round. Underwater the twist is inert. Throw a second twist into a standing cloud and the two add nothing to each other, one duration simply running past the other. The flake tastes of chalk and makes a creature that breathes it cough, which does nothing to muffle the coughing.
->
-> **Limitations:** the snow blocks sight, and that is the end of what it does. Darkvision fails in it. Blindsight, tremorsense, and truesight see straight through. It offers no cover against an attack, and it hides its own thrower exactly as well as it hides everyone else in the sphere.
+**Property Snow [HB].** Throwing a twist at a point on the ground within 30 feet takes an action. The paper bursts on impact and white flake rises to fill a 20-foot-radius sphere centred on that point, spreading around corners. The area counts as heavily obscured for 1 minute. The thrower holds no concentration, and the cloud stays where it fell.
+
+**Edge cases:** wind of moderate strength or greater disperses the cloud in one round. Underwater the twist is inert. Throw a second twist into a standing cloud and the two add nothing to each other, one duration simply running past the other. The flake tastes of chalk and makes a creature that breathes it cough, which does nothing to muffle the coughing.
+
+**Limitations:** the snow blocks sight, and that is the end of what it does. Darkvision fails in it. Blindsight, tremorsense, and truesight see straight through. It offers no cover against an attack, and it hides its own thrower exactly as well as it hides everyone else in the sphere.
 
 ## Provenance
 

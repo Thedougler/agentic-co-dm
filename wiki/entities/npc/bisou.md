@@ -71,8 +71,7 @@ After the crew took the Surety she spent the morning taking fifteen gold of loos
 ```
 ````
 
-> [!mechanic] At the table
-> Bisou's deliveries are written on [[beaumont-sel]]'s sheet as the Kalowe, Calveno, and Tidefall Maneuvers. She has no numbers of her own, and every maneuver she carries stops working while she is unconscious or out of Beaumont's reach.
+**At the table.** Bisou's deliveries are written on [[beaumont-sel]]'s sheet as the Kalowe, Calveno, and Tidefall Maneuvers. She has no numbers of her own, and every maneuver she carries stops working while she is unconscious or out of Beaumont's reach.
 
 ### Voice
 

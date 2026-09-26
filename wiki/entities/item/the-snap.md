@@ -46,12 +46,11 @@ tier: supporting
 [[prospero-morsani]] sold The Snap from his stock at [[the Cabinet of Morsani]]. He claimed to have bought it from an inventor "who took an arrow" and retired; [[catarina-davirelli|Catarina]]'s Insight read him as having found it, not bought it, through means "not exactly legal," probably grave robbing. Perrin haggled him from an opening price down to 150 gold, [[crissdalynn-khinriss|Crissdalynn]]'s natural-20 Persuasion roll (threatening to flood the market with copies) closing the deal. Perrin, [[catarina-davirelli|Catarina]], and Crissdalynn dubbed it "The Snap" for the sound it makes unfurling.
 
 
-> [!mechanic]
-> **Wrist-bound shield [HB].** As a Bonus Action, unfurl the bracer into a shield. It grants the wearer a +2 bonus to AC for as long as it stays unfurled, the same bonus a mundane shield gives. It never takes up the wearer's hand. That hand can hold or use anything that isn't a weapon requiring an attack roll: an instrument, a spellcasting focus, material components, a tool. As a Bonus Action, fold it back into its dormant bracer form.
->
-> **Edge cases:** it doesn't stack with a second held or worn shield. While it stays unfurled, any effect that keys off wielding a shield treats the wearer as if they held one. The freed hand can't wield a second weapon or a two-handed weapon while the bracer stays unfurled, since it only frees the hand for non-combat use. Folded, the taut fabric works as a hand drum. That's flavor only.
->
-> **Limitations.** Grants no AC bonus beyond a standard shield's +2. The wearer can only unfurl or fold it with the Bonus Action above, never as a reaction. The freed hand still can't attack with a second weapon or a two-handed weapon while the shield stays unfurled.
+**Wrist-bound shield [HB].** As a Bonus Action, unfurl the bracer into a shield. It grants the wearer a +2 bonus to AC for as long as it stays unfurled, the same bonus a mundane shield gives. It never takes up the wearer's hand. That hand can hold or use anything that isn't a weapon requiring an attack roll: an instrument, a spellcasting focus, material components, a tool. As a Bonus Action, fold it back into its dormant bracer form.
+
+**Edge cases:** it doesn't stack with a second held or worn shield. While it stays unfurled, any effect that keys off wielding a shield treats the wearer as if they held one. The freed hand can't wield a second weapon or a two-handed weapon while the bracer stays unfurled, since it only frees the hand for non-combat use. Folded, the taut fabric works as a hand drum. That's flavor only.
+
+**Limitations.** Grants no AC bonus beyond a standard shield's +2. The wearer can only unfurl or fold it with the Bonus Action above, never as a reaction. The freed hand still can't attack with a second weapon or a two-handed weapon while the shield stays unfurled.
 
 ## Provenance
 

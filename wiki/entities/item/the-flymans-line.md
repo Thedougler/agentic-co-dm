@@ -52,14 +52,13 @@ Sold for the flies over a stage, where a performer has to be somewhere high befo
 Uncommon tier holds. Magic Item Rarity prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the line's 140 gp sits at the low end of that band, alongside [[Kat's]] Wand of Secrets at 130 gp. A mundane grappling hook and 50 feet of rope costs 3 gp and takes minutes of climbing; the line does the ascent in one action and never asks for a check.
 
 
-> [!mechanic]
-> **The Flyman's Line [HB].** Throwing the loop takes an action. Name a solid anchor within 40 feet that a rope could be tied around, in any direction, and the loop takes hold of it. The cord then hauls whoever holds the other end to a point within 5 feet of the anchor over the remaining 6 seconds of that turn. The trip provokes no opportunity attacks and needs no check.
->
-> Releasing the loop takes a free hand and no action, and the cord recoils to the holder. The line carries up to 500 pounds, which is one armoured person or two unarmoured ones sharing a grip.
->
-> **Edge cases:** an anchor that cannot hold 500 pounds tears free, and the holder falls from wherever the cord had lifted them to. An anchor a creature is holding, wearing, or standing on does not take the loop. Underwater the cord hauls at half speed. A held or worn line does nothing on its own during a fall.
->
-> **Limitations:** the cord grants no climbing speed, no bonus to any check, no attack, and no damage. It hauls its holder and nothing else, so it cannot drag a creature to the holder, disarm anyone, or move an object. Loose at 40 feet, its length is its ceiling.
+**The Flyman's Line [HB].** Throwing the loop takes an action. Name a solid anchor within 40 feet that a rope could be tied around, in any direction, and the loop takes hold of it. The cord then hauls whoever holds the other end to a point within 5 feet of the anchor over the remaining 6 seconds of that turn. The trip provokes no opportunity attacks and needs no check.
+
+Releasing the loop takes a free hand and no action, and the cord recoils to the holder. The line carries up to 500 pounds, which is one armoured person or two unarmoured ones sharing a grip.
+
+**Edge cases:** an anchor that cannot hold 500 pounds tears free, and the holder falls from wherever the cord had lifted them to. An anchor a creature is holding, wearing, or standing on does not take the loop. Underwater the cord hauls at half speed. A held or worn line does nothing on its own during a fall.
+
+**Limitations:** the cord grants no climbing speed, no bonus to any check, no attack, and no damage. It hauls its holder and nothing else, so it cannot drag a creature to the holder, disarm anyone, or move an object. Loose at 40 feet, its length is its ceiling.
 
 ## Provenance
 

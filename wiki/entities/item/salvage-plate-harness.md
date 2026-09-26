@@ -48,14 +48,13 @@ _Armor (Harness), Uncommon._
 | Narrative hook | The crushed panel came back for repair on a body that walked in, and Ormsson names the yard hand who wore it to anyone who asks straight. |
 
 
-> [!mechanic]
-> **Salvage-Plate Harness [HB].** Straps over any armor or none at 5 pounds. Donning or doffing it costs an action.
->
-> The first time a critical hit lands on the wearer after a short or long rest, that hit becomes a normal hit. The struck panel crushes in, and re-riveting it takes ten minutes with smith's tools before the harness protects again.
->
-> **Edge cases:** the panel crushes even when the blunted hit drops the wearer, so a downed wearer wakes up owing the repair. A wearer with no smith's tools and no smith in reach carries dead weight until they find one.
->
-> **Limitations:** it grants no bonus to AC or to any save, and it stops nothing short of a critical hit. A critical hit from a spell calling for a saving throw goes straight through it.
+**Salvage-Plate Harness [HB].** Straps over any armor or none at 5 pounds. Donning or doffing it costs an action.
+
+The first time a critical hit lands on the wearer after a short or long rest, that hit becomes a normal hit. The struck panel crushes in, and re-riveting it takes ten minutes with smith's tools before the harness protects again.
+
+**Edge cases:** the panel crushes even when the blunted hit drops the wearer, so a downed wearer wakes up owing the repair. A wearer with no smith's tools and no smith in reach carries dead weight until they find one.
+
+**Limitations:** it grants no bonus to AC or to any save, and it stops nothing short of a critical hit. A critical hit from a spell calling for a saving throw goes straight through it.
 
 ## Provenance
 

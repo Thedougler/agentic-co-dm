@@ -53,14 +53,13 @@ _Weapon (Arrow), Uncommon._
 [[jean-claude-tabarnack]] fights and moves at range, and every plan of his fails the moment somebody watching a bridge can still see him. This is the only thing in his quiver that takes the watcher's eyes away without giving them a body to chase.
 
 
-> [!mechanic]
-> **The Chimney [HB].** One shot, then gone. Put it at a point, surface, or creature within the weapon's normal range with an ordinary ranged attack. On landing, the clay bulb shatters and the compound boils out into a 15-foot-radius sphere of thick black smoke centred on that point. The area is heavily obscured. The smoke lasts 1 minute.
->
-> Wind of at least 10 miles an hour scatters it in 1 round. A strong wind (20 miles an hour or more) scatters it as it forms, and it never fills the sphere at all.
->
-> **Edge cases:** on a hit against a creature it deals 1d6 piercing and the cloud forms centred on that creature, which then walks around inside its own blindness until it leaves the sphere (the cloud stays where it formed). Blindsight, tremorsense, and truesight ignore it. Indoors with a low ceiling the smoke spreads wide instead of high and covers roughly the same footprint. This is real smoke that stings eyes and climbs. Anyone who lingers is coughing by the end of the minute.
->
-> **Limitations:** it deals no damage and sets nothing alight. It puts nothing out and blocks no sound. It does not conceal a creature that steps outside the sphere, and it does not move once formed. Anyone willing to be blind for ten feet can walk through it.
+**The Chimney [HB].** One shot, then gone. Put it at a point, surface, or creature within the weapon's normal range with an ordinary ranged attack. On landing, the clay bulb shatters and the compound boils out into a 15-foot-radius sphere of thick black smoke centred on that point. The area is heavily obscured. The smoke lasts 1 minute.
+
+Wind of at least 10 miles an hour scatters it in 1 round. A strong wind (20 miles an hour or more) scatters it as it forms, and it never fills the sphere at all.
+
+**Edge cases:** on a hit against a creature it deals 1d6 piercing and the cloud forms centred on that creature, which then walks around inside its own blindness until it leaves the sphere (the cloud stays where it formed). Blindsight, tremorsense, and truesight ignore it. Indoors with a low ceiling the smoke spreads wide instead of high and covers roughly the same footprint. This is real smoke that stings eyes and climbs. Anyone who lingers is coughing by the end of the minute.
+
+**Limitations:** it deals no damage and sets nothing alight. It puts nothing out and blocks no sound. It does not conceal a creature that steps outside the sphere, and it does not move once formed. Anyone willing to be blind for ten feet can walk through it.
 
 ## Provenance
 

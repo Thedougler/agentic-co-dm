@@ -38,12 +38,11 @@ tier: supporting
 *Wondrous Item, Uncommon.* Cut from the pull-rope of a watch bell that has tolled a real alarm, and worth what it is because the bead keeps ringing early after the bell it came from goes quiet.
 
 
-> [!mechanic]
-> **Watchman's Toll-Bead [HB].** While you carry the bead, you may roll Initiative with advantage. Once used, it stays silent until you finish a Long Rest.
->
-> **Edge cases:** the bead has to be on your person and not stowed in a closed container. It works while you are surprised, and it does not end the surprised condition.
->
-> **Limitations:** it grants nothing to attack rolls, damage, AC, or any saving throw, it cannot be spent to reroll an Initiative already rolled, and its note carries only to the hand holding it, so it warns nobody else.
+**Watchman's Toll-Bead [HB].** While you carry the bead, you may roll Initiative with advantage. Once used, it stays silent until you finish a Long Rest.
+
+**Edge cases:** the bead has to be on your person and not stowed in a closed container. It works while you are surprised, and it does not end the surprised condition.
+
+**Limitations:** it grants nothing to attack rolls, damage, AC, or any saving throw, it cannot be spent to reroll an Initiative already rolled, and its note carries only to the hand holding it, so it warns nobody else.
 
 ## Provenance
 

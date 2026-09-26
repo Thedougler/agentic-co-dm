@@ -113,14 +113,13 @@ Mechanically, the symbol is proof of authorship: the team must leave it at the s
 
 No checks, pure roleplay. The crew picks its mark and designs its concept, then registers its symbol. Skills the table naturally reaches for include scouting a routine (Investigation or Perception), a market distraction (Performance or Deception), or lifting a prop unnoticed (Sleight of Hand or Stealth), and building a physical piece with a tool check or Athletics works too. A group willing to get inventive might plant false information (Deception or Persuasion) or recruit a local accomplice (Persuasion). Researching a mark's weaknesses (History or Insight) or turning to magic instead (Arcana or a direct spell) rounds out the options.
 
-> [!mechanic]
-> **Declared scale, DC by ambition.** The crew declares the scale in Phase 1.
->
-> | Scale | DC | Skill/Ability | Stake | Effect on Miss |
-> |---|---|---|---|---|
-> | Minor | 12 | Phase 1 committed skill | Standard | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
-> | Notable | 14 | Phase 1 committed skill | Standard | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
-> | Legendary | 17 | Phase 1 committed skill | 50 gp | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
+**Declared scale, DC by ambition.** The crew declares the scale in Phase 1.
+
+| Scale | DC | Skill/Ability | Stake | Effect on Miss |
+|---|---|---|---|---|
+| Minor | 12 | Phase 1 committed skill | Standard | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
+| Notable | 14 | Phase 1 committed skill | Standard | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
+| Legendary | 17 | Phase 1 committed skill | 50 gp | Phase 2 complication assigned; Phase 3 miss visibly goes wrong |
 
 **Phase 2 - La Preparazione: Setup (Days 2-4, any day chosen).**
 

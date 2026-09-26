@@ -47,19 +47,19 @@ relationships:
 | Performance hooks | Continental court-duelist vibe. Tic: sheathes and unsheathes two inches of his blade between sentences, never drawing it fully. |
 | Link of relevance | A not-yet-played incident where the crew gravely wounds Corvin or his uncle will establish the specific connection. PC and mechanism remain open pending table play. |
 
-> [!secret]
-> [[shepherd-grigori]], shepherd of the [[khlysty-the-flock|Khlysty]], has identified Corvin, through Grigori's existing Tessarine ties, as his route into House Knighton. Grigori's plan: patiently engineer a circumstance untraceable to him where the crew gravely wounds Rupert or Corvin, then position himself to "rescue" them, binding House Knighton the same way he's bound two other noble threads while deepening the goodwill he already has with the crew. Corvin has no idea any of this is in motion.
-
 **Voice & Delivery:** precise, formal diction that avoids naval jargon, each word costing something. He favors measured pauses and questions that invite challenge. Sample: *"You'd settle this through committee? How thoroughly… cautious."* (with a faint smile that suggests pity). His worldview is elitist. Mastery and proven skill are the sole legitimate sources of authority, and birth and hierarchy are mere scaffolding for incompetence. Every exchange plays as a test of capability, and what a person *does* matters more than rank or promises. Physically he's controlled and efficient, weight balanced as though ready to draw at any moment, eyes tracking hands and blades in conversation. The blade-sheathing tic runs nearly constant when he's seated or waiting.
 
-> [!mechanic]
-> **Charisma (Persuasion/Deception/Intimidation) against Corvin (Elitist worldview).** DC 10 if the approach proves worth through direct action or personal challenge (he yields to demonstrated skill). DC 12 for neutral requests. DC 18+ to persuade him through rank, tradition, or abstract loyalty. Failure hardens his stance.
+**Charisma (Persuasion/Deception/Intimidation) against Corvin (Elitist worldview).** DC 10 if the approach proves worth through direct action or personal challenge (he yields to demonstrated skill). DC 12 for neutral requests. DC 18+ to persuade him through rank, tradition, or abstract loyalty. Failure hardens his stance.
 
 **Three Villain Questions:**
 
 1. **What do they want?** Recognition as House Knighton's true successor through personal blade-skill and dueling reputation earned on his own terms, not through inherited rank.
 2. **What do they fear?** His uncle casting him as a ceremonial heir, seeing only naval doctrine and broadsides as legitimate power and rendering his Tessarine training worthless. Or his uncle's death before Corvin proves himself worthy.
 3. **What is their tell?** The constant two-inch draw-and-sheathe of his blade between sentences, a physical expression of his compulsive need to show control and mastery. It quickens under pressure.
+
+## Secrets
+
+[[shepherd-grigori]], shepherd of the [[khlysty-the-flock|Khlysty]], has identified Corvin, through Grigori's existing Tessarine ties, as his route into House Knighton. Grigori's plan: patiently engineer a circumstance untraceable to him where the crew gravely wounds Rupert or Corvin, then position himself to "rescue" them, binding House Knighton the same way he's bound two other noble threads while deepening the goodwill he already has with the crew. Corvin has no idea any of this is in motion.
 
 ## Connections
 

@@ -52,14 +52,13 @@ Sold to companies too small to print a programme, so the second name on the bill
 Common tier holds. Magic Item Rarity prices Common goods at 100 gp, and the placard's 90 gp sits under that. Its effect stops well short of _disguise self_: it changes nothing about the bearer's face, voice, or clothing, and it does no work at all once the bearer walks out of sight of the door.
 
 
-> [!mechanic]
-> **Second Billing Placard [HB].** Writing a name and a role on the brass and hanging the plate takes 1 minute. The writing holds for 8 hours or until rubbed off, and the plate works only while it hangs on a door, gate, hatch, or archway a creature can walk through.
->
-> While the plate hangs, one creature bearing the written name has advantage on Charisma (Deception) checks made within 30 feet of that doorway to pass as the role written on it. The plate does no work at all on a creature who already heard otherwise, who knows the real staff by sight, or who watched the plate go up.
->
-> **Edge cases:** two plates hung on one doorway both fall off within a round. A plate hung on a door with a real name plate already on it does nothing until the real one comes down. Illiterate creatures and creatures that cannot see the plate get no impression from it either way.
->
-> **Limitations:** the placard leaves the bearer's face, voice, and clothing exactly as they were. It forces no save, and the one Deception advantage above is the whole of its help with a check. Nothing it does persuades a creature to hand anything over or to follow the bearer past the doorway. Take it down and carry it away and the brass goes blank again.
+**Second Billing Placard [HB].** Writing a name and a role on the brass and hanging the plate takes 1 minute. The writing holds for 8 hours or until rubbed off, and the plate works only while it hangs on a door, gate, hatch, or archway a creature can walk through.
+
+While the plate hangs, one creature bearing the written name has advantage on Charisma (Deception) checks made within 30 feet of that doorway to pass as the role written on it. The plate does no work at all on a creature who already heard otherwise, who knows the real staff by sight, or who watched the plate go up.
+
+**Edge cases:** two plates hung on one doorway both fall off within a round. A plate hung on a door with a real name plate already on it does nothing until the real one comes down. Illiterate creatures and creatures that cannot see the plate get no impression from it either way.
+
+**Limitations:** the placard leaves the bearer's face, voice, and clothing exactly as they were. It forces no save, and the one Deception advantage above is the whole of its help with a check. Nothing it does persuades a creature to hand anything over or to follow the bearer past the doorway. Take it down and carry it away and the brass goes blank again.
 
 ## Provenance
 

@@ -42,8 +42,9 @@ The strongest Dravosi foothold and the administrative counterweight to the Midch
 ## Information economy
 The Crown's papers travel farther than its ships. A harbourmaster's boat comes alongside before an anchor settles; vessel ratings, cargo, and names become records. Smart captains use back channels and the Doldrums, while [[kalowe]] dry-docks anyone who pays.
 
-> [!secret]- Unwritten arrangements
-> An adult blue dragon works the northern [[greyteeth]]. Captains with the right flags and an open chest survive runs that ledgers file as wrecks. Exact flags, terms, routes, and the dragon's identity remain unnamed and unresolved.
+## Secrets
+
+**Unwritten arrangements.** An adult blue dragon works the northern [[greyteeth]]. Captains with the right flags and an open chest survive runs that ledgers file as wrecks. Exact flags, terms, routes, and the dragon's identity remain unnamed and unresolved.
 
 ## Connections
 - [[central-strait]] · [[Midchain]] · [[galewall]] · [[verdant-scatter]] · [[drowned-maw]]

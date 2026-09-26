@@ -52,12 +52,11 @@ The [[Leviathan]] and [[Umberlee]]'s rage disrupt trade routes that anchor Conco
 
 **Secret Nature:** Cosimo Verantio is the Magus Dragon who built the Tessarine Concordat. His Human form is a two-centuries-maintained polymorph. The beard, amber eyes, stillness, and knowing-what-you'll-say-next are the hardest tells to suppress. He doesn't need the Concordat's wealth. He needs its leverage, the accumulated obligation of every city, council, and family that owes him a vote or a debt. This is his hoard. The Concordat's factors are his Circle, and none of them know what they serve. He despises sorcerers, warlocks, and clerics (magic that's given, not earned) and won't extend credit to one. Contempt flashes across his face for a second before warmth returns. He reveals himself only when the crew has uncovered enough Concordat threads to reach the top or threatens the hoard directly. For minor problems, proxies suffice.
 
-> [!mechanic]
-> **Tradition:** Arcane. **School:** Transmutation.
-> **Spell analogue:** True Polymorph (SRD) — permanent, self-sustaining; no concentration required.
-> **Homebrew element:** Form maintained for two centuries without upkeep; cannot be unravelled by standard Dispel Magic.
-> **Detect Magic:** Transmutation — a deep, diffuse shimmer clings to his silhouette, the source lodged within rather than cast from outside.
-> **Counterspell:** not applicable — no casting event is in progress; the form has been fixed for two centuries.
+**Tradition:** Arcane. **School:** Transmutation.
+**Spell analogue:** True Polymorph (SRD) — permanent, self-sustaining; no concentration required.
+**Homebrew element:** Form maintained for two centuries without upkeep; cannot be unravelled by standard Dispel Magic.
+**Detect Magic:** Transmutation — a deep, diffuse shimmer clings to his silhouette, the source lodged within rather than cast from outside.
+**Counterspell:** not applicable — no casting event is in progress; the form has been fixed for two centuries.
 
 ## Stats & Combat
 

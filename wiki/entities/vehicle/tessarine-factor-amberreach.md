@@ -30,8 +30,7 @@ The *Amberreach* gets what she wants through reliability. Her gun ports sit open
 
 Senior Factor [[oriana-becht]] signs legal papers aboard: loans to 2,000 gp, route deals, salvage plans, and cargo oaths. Her cabin (Captain's Locker) sits in the stern officer suite, near the contract office and secure mail.
 
-> [!mechanic]
-> **Captain's Locker.** Senior Factor Becht's locked cabin cabinet. A DC 18 Strength check breaks it open. Failure brings factor suite staff to the spot.
+**Captain's Locker.** Senior Factor Becht's locked cabin cabinet. A DC 18 Strength check breaks it open. Failure brings factor suite staff to the spot.
 
 **The bonded compartment** holds cargo that the Crown will not inspect under a trade treaty. Both the Concordat and Dravosi Admiralty hate this rule but follow it anyway. One sealed hold stores Tessarine goods with wax seals, and the forward compartment is the bond store.
 

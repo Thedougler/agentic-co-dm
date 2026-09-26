@@ -68,6 +68,10 @@ One side in the succession duel trying to claim her as an asset. Or [[delmar-fis
 ```
 ````
 
+## Secrets
+
+**Siren's Debt.** Three weeks ago the *Siren's Debt* came to the western pier. She had not seen it in seventeen years. It once belonged to Captain Theln Arest, one of the five souls Delmar carries. It docks after midnight with a thin crew and no manifest. The same figure in a merchant's coat, never a sailor's walk. She keeps dates and times on a slate.
+
 ## Connections
 
 | Relationship | Meaning |
@@ -75,6 +79,3 @@ One side in the succession duel trying to claim her as an asset. Or [[delmar-fis
 | [[sparhold]] | Forty years of this harbor. |
 | [[delmar-fisk]] | She has not told either family. He should know. |
 | [[bell-tone-draught]] | She keeps four vials in the table drawer for nights when a count cannot be lost. |
-
-> [!secret] Siren's Debt
-> Three weeks ago the *Siren's Debt* came to the western pier. She had not seen it in seventeen years. It once belonged to Captain Theln Arest, one of the five souls Delmar carries. It docks after midnight with a thin crew and no manifest. The same figure in a merchant's coat, never a sailor's walk. She keeps dates and times on a slate.

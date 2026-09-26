@@ -39,14 +39,13 @@ tier: supporting
 *Tool (Trained Animal), Rare.* A blink dog taken young off a Mid-Chain shipment and worked for two years by [[Zort]]'s hands until it answers a call instead of its own judgment. Medium fey, speed 40 ft. Its own kind will not have it back.
 
 
-> [!mechanic]
-> **[HB] Answers the Call.** The dog obeys a handler whose call it has learned over a week of work. It has the statistics of a blink dog, including its teleport, and it spends that teleport arriving beside its handler instead of escaping a fight. Once per short rest, when its handler is grappled, restrained, or below half hit points, the dog teleports to a space within 5 feet of them as a reaction.
->
-> **[HB] Goes With You.** Once per long rest, when its handler teleports, the dog goes along if it stands within 5 feet, arriving in the nearest unoccupied space.
->
-> **[HB] Speaks, and Judges.** The dog understands Sylvan and Blink Dog and speaks both. It will not obey an order it finds cruel, and it remembers who gave it.
->
-> **Limitations:** one handler, and only one the dog chooses. [[Zort]] refunds a buyer the dog will not take. It carries no rider and will not go into a fight alone, and the reaction teleport does nothing when the dog cannot see or hear its handler.
+**[HB] Answers the Call.** The dog obeys a handler whose call it has learned over a week of work. It has the statistics of a blink dog, including its teleport, and it spends that teleport arriving beside its handler instead of escaping a fight. Once per short rest, when its handler is grappled, restrained, or below half hit points, the dog teleports to a space within 5 feet of them as a reaction.
+
+**[HB] Goes With You.** Once per long rest, when its handler teleports, the dog goes along if it stands within 5 feet, arriving in the nearest unoccupied space.
+
+**[HB] Speaks, and Judges.** The dog understands Sylvan and Blink Dog and speaks both. It will not obey an order it finds cruel, and it remembers who gave it.
+
+**Limitations:** one handler, and only one the dog chooses. [[Zort]] refunds a buyer the dog will not take. It carries no rider and will not go into a fight alone, and the reaction teleport does nothing when the dog cannot see or hear its handler.
 
 ## Provenance
 
