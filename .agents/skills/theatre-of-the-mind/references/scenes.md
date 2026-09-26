@@ -216,12 +216,46 @@ every handle, each in its layer (§ Layers):
   Branch-specific endings live in the outcome table's Narration column.
 - **End:** The image that hands off to the next beat.
 
+### If the session ends here
+
+- **Job:** The last words of the night when play stops on a Cliffhanger.
+- **Build:** A few sentences: the changed situation in one concrete image,
+  the threat or question at its sharpest, nothing resolved.
+- **End:** The unanswered moment, cut before anyone can act.
+
+### Stinger
+
+- **Job:** After the Closing Image, show the one new thing the adventure
+  caused.
+- **Build:** A few sentences: time and place, then the arrival, sign, or
+  message the characters perceive, grown from what they did. Name only what
+  they would recognize.
+- **End:** Before anyone can act.
+
 ### Exit
 
 - **Job:** Carry the party into the next beat on the same page.
 - **Build:** A few sentences: mark the time or movement ("By the time the
   lanterns are lit…"), orient only what changed, and show the new situation.
 - **End:** The first sight of the next beat's anchor.
+
+## Owner-page moments
+
+Owner pages carry optional situated slots below the header portrait, each
+"you" address and present tense, each from the recipe named here:
+
+- `In action` (creature) → Creature in scene, mid-fight.
+- `First meeting` (npc) → NPC first look, then Dialogue for the first words.
+- `When met` (faction) → Social scene, with members at work.
+- `In use` (item) → Item in scene, one block per visible property.
+- `On contact` (hazard) → Outcome cell: what the character feels and the
+  others see, ending on the condition it leaves.
+- `Underway` (vehicle) → Vehicle.
+- `{Area}` (place) → Zone cell, one block per `###` area, ending on the
+  feature they can use.
+- `Returning` (place) → Return to a known place.
+- `On the road` (region) → Travel.
+- `Common telling` and `Found text` (lore) → Handout; the words verbatim.
 
 ## People and things
 

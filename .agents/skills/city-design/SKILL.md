@@ -35,7 +35,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
   `monster-design`) mints one only when none fits, before any text depends on
   it (AGENTS.md **HARD: entity-before-spoken**, **Focused minting**). Full
   faction agendas stay on faction pages; off-screen turns → `world-tick`. The
-  Arrival → `theatre-of-the-mind` with the packet from step 6. Each child
+  header look → `theatre-of-the-mind` with the packet from step 6. Each child
   returns its page path or prose and its completion result; resume at the step
   that waited on it.
 
@@ -107,11 +107,13 @@ page.
 
 ### 3. Lay out the city
 
-- **Districts.** Three to six, each with its street-level look, the reason a
-  visitor goes there, who holds it, and one danger or opportunity there now.
-- **Landmarks and getting around** (under Districts). Two or three landmarks
-  a newcomer steers by; how long crossing takes, what changes after dark, and
-  where movement is restricted and by whom.
+- **Districts.** Three to six, each with the reason a visitor goes there, who
+  holds it, one danger or opportunity there now, and its street-level look as
+  a spoken `_italic_` line in the table's Narration column.
+- **Landmarks and getting around** (bullets under the Districts table). Two or
+  three **Landmark** bullets a newcomer steers by; one **Getting around**
+  bullet: how long crossing takes, what changes after dark, and where movement
+  is restricted and by whom.
 - **Gazetteer.** Arrive and leave (who meets a ship, what it costs, what
   papers), stay, buy supplies, sell cargo and loot (a named buyer and the rate
   they pay, and a fence for goods with a history), services: each entry a named
@@ -132,8 +134,13 @@ the party's arrival), and two or more handles the party could pick up, with
 what each costs. At least one situation touches something the party already
 cares about (a PC's tie, a thread from play, the reason they came).
 
+Each situation is a `###` with **Involved**, **Visible signs**, **Wants**, and
+**If nobody steps in** bullets, then its handles.
+
 Then **Power**: each faction's local posture (public position, local
-objective, leverage, current move here). Pressure clocks and upcoming events
+objective, leverage, current move here), then **Who holds what** (who rules,
+keeps order, controls money, information, and the streets) and the **Fault
+line** that keeps these powers from settling. Pressure clocks and upcoming events
 with dates sit on the situation they drive. Each faction in Power
 has a **local face**: the named person (an NPC page) who carries its current
 move in this city and whom the party can meet, bribe, or cross.
@@ -151,7 +158,8 @@ piece; and every faction in Power has a named local face.
 
 - **Rumors.** What people say, each with its truth on the DM layer.
 - **Street Life.** A d6 or d8 table of street moments, each tied to a
-  situation, a district, or a faction, with what happens if the party engages.
+  situation, a district, or a faction, with what happens if the party engages
+  and a spoken `_italic_` line in the Narration column.
 - **Names.** Under Street Life, six to ten names in the city's naming style, for
   improvised people.
 - **Faces.** Everyone who drives a situation, holds power, or keeps a gazetteer
@@ -163,14 +171,16 @@ piece; and every faction in Power has a named local face.
 Done when every rumor has its truth, every encounter has its hook, and every
 face named on the page links an NPC page.
 
-### 6. Hand the Arrival to theatre-of-the-mind
+### 6. Hand the look to theatre-of-the-mind
 
 Build the **narration packet** as fragments, each with its source: scale and
 silhouette from the approach, movement at the gate or harbour, one sound and
 one smell with sources, the landmark a newcomer steers by, and the tells of the
 situations a newcomer could see. Leave out truths, DCs, and names not earned.
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give
-it the packet.
+it the packet. The result is the header `[!narration]` beside At a Glance,
+titled with the city's name. The Districts and Street Life Narration cells are
+situated lines from the same skill (zone-cell recipe).
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 carries the situations' visible signs.
@@ -183,7 +193,9 @@ controlling_faction only when they have values. At a Glance opens with one
 sentence on the city's job in play, then the feel, power, current pressure, and
 opportunity. Step 3 fills Districts (getting around under the table), Gazetteer,
 and Local Rules; step 4 fills Power and Situations (one `###` each); step 5
-fills Rumors and Street Life. Keep a section only when you have facts for it
+fills Rumors and Street Life. Connections ends with **Depends on**: the food,
+water, fuel, and trade the city cannot make itself, and what happens when that
+route fails. Keep a section only when you have facts for it
 (fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
 owner page.
 
@@ -214,7 +226,7 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Rumors carry their truths; encounters tie to situations; the fighters the
   party could face have numbers.
 - Every face named on the page links an NPC page.
-- The Arrival came from theatre-of-the-mind and holds no truth, DC, or unearned
+- The header narration came from theatre-of-the-mind and holds no truth, DC, or unearned
   name.
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §

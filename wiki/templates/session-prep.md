@@ -28,6 +28,9 @@ summary: ""
 - **Magnets.** The two or three things in the scene that pull the players toward action.
 - **Next.** [[Session-N-BB-label]]
 
+> [!narration] Previously
+> <!-- On the session's first beat only: the recap read aloud as play starts, from theatre-of-the-mind (Recap mode). -->
+
 > [!narration] Opening
 > <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
 

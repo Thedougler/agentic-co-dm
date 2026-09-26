@@ -223,7 +223,10 @@ attunement, charges, the curse, the item's personality, and any name not
 written on the object.
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, item recipe, and give
-it the packet.
+it the packet. When a property has a visible effect, also ask for the optional
+`In use` block under At the Table (Item in scene recipe): what the wielder and
+onlookers perceive when it activates, one block per such property, titled with
+the property's name when there are several.
 
 Done when the portrait passes theatre-of-the-mind's final check and carries
 every tell.
@@ -239,7 +242,7 @@ Properties. Keep other sections only when you have facts for them (fact-only,
 | At a Glance | Classification line (kind, rarity, attunement); what it changes at the table; Held by and Wanted by bullets |
 | Narration | The portrait from step 7 |
 | Properties | The runnable rules from steps 4 and 5, plain paragraphs with bold labels |
-| At the Table | Presence from step 6; for a sentient item, its voice, sample lines, and what it wants from the bearer |
+| At the Table | Presence from step 6; for a sentient item, its voice, sample lines, and what it wants from the bearer; then the optional `In use` narration |
 | Secrets | Curse, hidden power, and the truth behind every tell |
 | Connections | Each tie by wikilink and what it does at the table |
 | History | Maker, owners, and how it came to be where it is |

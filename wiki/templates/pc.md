@@ -95,6 +95,14 @@ flexGrow=1
 
 - [[page]] — what this tie does at the table.
 
+## History
+
+<!-- The backstory the player has stated: origin, who wronged them, who they love, who hunts them, what they owe. Facts the campaign can use, each linked to its owner page. -->
+
+## Interview
+
+<!-- One dated `###` round per interview: the questions asked and the answers as given. Keep prior rounds. -->
+
 ## Log
 
 - **[[Session]]** — what changed for this character.

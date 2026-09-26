@@ -26,7 +26,7 @@ draft is incomplete.
   adaptation, break point, exit.
 - Each PC present has a reason to act on this card.
 - Rewards and costs the beat can produce are named (owner links, amounts).
-- Previous-session recap appears only on the first beat.
+- The `Previously` recap block appears only on the first beat.
 
 ## Cockpit surface
 

@@ -71,8 +71,12 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
    villain tier and the live party; `dnd5e-mechanics` sets every check, save,
    and DC. Copy compact numbers for every combatant onto the page. Done when everyone who could fight carries numbers: from the owner
    statblock, or a proposed standard 5e statblock filed on the owner.
-7. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening
-   image`, plus any phase-shift signal the players must perceive.
+7. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`;
+   one `{NPC}` or `{Creature}` block per actor the party meets here, titled
+   with its name (the villain's entrance first); the `_italic_` Narration
+   cells in Phases, one per phase-shift signal the players must perceive;
+   `Revelation` when a Final Revelation lands (Revelation recipe); and the
+   Narration cells in Outcomes. Delete a slot that has no spoken text.
 8. **Write the outcomes.** One row per outcome the Climax can produce —
    victory, costly victory, defeat, withdrawal, reframed or negotiated end —
    each with the changed world, the costs paid, and each thread's final
@@ -98,10 +102,14 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
   behavior, and the new opportunity it opens.
 - **A stage that transforms.** Three features with rulings, and at least one
   that transforms the fight when it breaks, floods, burns, or falls.
-- **The opposition's plan runs.** State what the opposition accomplishes each
-  round or tick nobody stops it, its tactics (opening, control, punish,
-  desperation), its break point, and every exit it holds — plus how the
-  party can close each exit.
+  **Collateral** names who or what nearby is lost if the fight spills over.
+- **The opposition's plan runs.** The primary opposition's Actors entry
+  carries its labelled sub-bullets: **Numbers**, **Wants** (and why now),
+  **Leverage**, **Plays** (opening → response → desperation), **Line** it will
+  not cross, and **Morale** (surrender, bargain, or flight, and where). State
+  what it accomplishes each round or tick nobody stops it, and every exit it
+  holds — plus how the party can close each exit. **If it goes static**
+  under Pressure names the move that breaks a stalemate.
 - **Win and lose conditions.** Name what wins besides the last hit point
   (seize the idol, break the ritual circle, hold until dawn) and what
   loses without a total party kill (the villain escapes with the prize, the

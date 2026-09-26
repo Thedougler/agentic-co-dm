@@ -239,7 +239,10 @@ Build the **narration packet** as fragments, each with its source:
   not earned.
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, creature recipe, and
-give it the packet.
+give it the packet. When the page carries Tactics, also ask for the optional
+`In action` block under it (Creature in scene recipe, "you" address): how it
+closes, strikes, and what each signature ability looks and sounds like when it
+lands.
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 contains every tell.
@@ -256,8 +259,8 @@ and Statblock; add the other sections only when you have facts for them
 | At a Glance | What the creature is for at the table; Habitat and Treasure bullets |
 | Narration | The prose from step 7 |
 | Statblock | At most one overview image just before the fence, then the `statblock` fence in 2024 phrasing |
-| Tactics | Opening, signature move, escalation, weaknesses, morale and exit |
-| Behavior | Habits, diet, social structure, signs trackers find, aftermath |
+| Tactics | Opening, Signature, Adapts, Weaknesses, Morale bullets; then the optional `In action` narration |
+| Behavior | Habits, Diet, Group, Body, Signs, Aftermath bullets |
 | Secrets | Origin and hidden truths, each with how the party learns it |
 | Art | Remaining images, each under its role subsection |
 

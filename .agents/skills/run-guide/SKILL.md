@@ -198,7 +198,7 @@ the session plan once at the top; the guide does not restate it.
 ## Untyped cockpit assembly
 
 When assembling from untyped or hard-to-scan prep (not a typed beat rewrite),
-jobs are: identity; optional first-beat recap; overview art if it exists; At a Glance (Ends when first); Opening; Situation; Actors; Procedure +
+jobs are: identity; optional first-beat `Previously` recap; overview art if it exists; At a Glance (Ends when first); Opening; Situation; Actors; Procedure +
 Secondary Objective if a second question exists; Stage; Pressure + dials if a fuse exists; Checks; Outcomes; Roster if combat-mode
 sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job
 only when it is absent.

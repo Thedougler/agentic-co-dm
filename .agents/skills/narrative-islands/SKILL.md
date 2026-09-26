@@ -132,7 +132,8 @@ visible hook without reading a plotted sequence.
 
 ### 5. Write the Stakes
 
-Fill success, failure, walk-away, and play-to-find-out questions. The walk-away
+Fill success, failure, and walk-away, and the **Open question** bullet: who
+might change sides, survive, fall, or gain power, left for play to decide. The walk-away
 entry names what continues without the party.
 
 Complete when: success, failure, and walk-away each change the world
@@ -154,7 +155,8 @@ advance quest portents.
 
 ### 7. Build Leads
 
-Write at least two independent leads. Each lead points to useful progress from
+Write at least two independent leads, each a checkbox the DM ticks when the
+party finds it. Each lead points to useful progress from
 a different source, vector, or location. Losing one lead does not erase the
 quest. If the prompt prescribes a single approach, open alternatives — the
 prompt describes a possible route, not the only route.
@@ -178,6 +180,8 @@ quest.
 
 Omit `## Resolution` while the quest is unresolved. Add it only when play or DM
 ruling creates a stable outcome: resolved, failed, expired, or transformed.
+State what actually happened, who gained or lost power, the lasting change to
+each linked page, and the loose threads.
 
 Complete when: unresolved quests have no Resolution section, and resolved
 quests record what actually happened plus lasting world changes and loose

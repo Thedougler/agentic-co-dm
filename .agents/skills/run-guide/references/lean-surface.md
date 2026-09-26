@@ -36,7 +36,7 @@ Each field earns its place only when this beat spends it at the table.
 | **Exit narration** | The next cockpit is already on this file. | Empty `> [!narration] Exit` on pass 1. Spoken transition on pass 3. |
 | **Roster** | The DM will roll a creature or item. | `## Roster`. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Creature}`, titled with the creature's name. Item embeds only if this slice spends charges or the item is the pressure. |
 | **Backup** | Extra owner links save table hunting. | `## Backup`. Extra wikilinks only. |
-| **Previous-session recap** | Only the first beat of the session. | Brief, player-facing. |
+| **Previous-session recap** | Only the first beat of the session. | `> [!narration] Previously` before `Opening`, from `theatre-of-the-mind` Recap mode. Brief, player-facing. |
 | **Battlemap** | Exact-scene battlemap art exists. | `## Battlemap` at the bottom. Embed from `attachments/`. Compass: top north, right east, bottom south, left west. |
 
 ## Column layout

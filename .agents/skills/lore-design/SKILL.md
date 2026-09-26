@@ -135,7 +135,11 @@ level.
   truth. Each is wrong or partial in a way that sends a believer somewhere
   interesting.
 - **Common telling.** For a legend or rumor, the version a tavern would
-  actually say, in voice.
+  actually say, in voice: a `[!narration] Common telling` block the DM reads
+  aloud.
+- **Found text.** For an inscription, letter, song, or book the party can read
+  or hear, its words verbatim in a `[!narration]` block under At the Table
+  titled with what it is (`theatre-of-the-mind`, Handout recipe).
 - **Revelation.** For each conclusion the party needs, three independent
   clues from different sources (a person, a place, a document, a physical
   sign), each naming its source page, what it reveals, and the check if one
@@ -157,9 +161,12 @@ scope, and who knows it. Then shape the body to fit the lore, with `##`
 sections named for what they hold: a history gets a Chronology, a custom gets
 its procedure (The Rite, How It Runs), a legend gets The Tale, a doctrine gets
 its Tenets. The truth from step 2, the actors from step 3, and their next move
-go in the body. At the Table carries what players notice and the clues from
-step 4, each with its source. Accounts carries the in-world versions and their
-holders. Log starts once play witnesses the lore.
+go in the body, with the truth's limits and exceptions. At the Table carries,
+as labelled bullets, what **Players notice**, what **It explains**, what **It
+lets them** do, what **It warns of**, what the **Party knows** (established,
+suspected, and wrong), and what changes **If exposed**, then the clues from
+step 4 as checkboxes, each with its source, and any Found text. Accounts
+carries the in-world versions, their holders, and why they believe them. Log starts once play witnesses the lore.
 
 A subject with a statblock or a persona is a creature or NPC page, not lore.
 

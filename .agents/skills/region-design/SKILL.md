@@ -117,8 +117,11 @@ has its limit and its tell.
   that keeps it (Ability (Skill) or tool, and DC), what failure costs (days,
   supplies, a hazard, an encounter), what the route passes, and what it offers
   that the others do not.
-- **Travel procedure.** How a day of travel runs here: navigation, supply and
-  water, weather (a d6 or d8 table with effects), and rest.
+- **Travel procedure.** How a day of travel runs here, as the bullets under
+  the routes table: **Navigation**, **Weather** (a d6 or d8 table with effects
+  when weather varies), **Rest and supply**, one **Hidden route** per secret,
+  seasonal, or broken connection with what opens it, and the **Regional
+  rule**.
 - **Key places.** The places the party can reach, each a linked page with one
   line on why they would go.
 
@@ -131,8 +134,9 @@ tradeoff against the others, and every key place links a page.
   region now, each a linked page: hold, want now, next move with a time, and
   what reveals that move.
 - **Pressure** (under Powers). One or two fronts grown from the inventory (a power's want, a
-  hazard's season, a debt, a hunt), each with its impending consequence, a time,
-  and three portents from subtle to unmistakable.
+  hazard's season, a debt, a hunt), each a **Threat** bullet with what drives
+  it and what becomes true if it succeeds, a time, and three portents from
+  subtle to unmistakable as the First sign, Escalation, and Crisis checkboxes.
 - **Stakes** (under Powers). One to three questions that play will answer.
 
 Done when each power's next move has a time and a sign, and each front has
@@ -142,7 +146,8 @@ three portents.
 
 - **Encounters.** A d6 or d8 table of who and what the party meets (creatures,
   crews, travellers, wonders that act; weather and terrain live in the weather
-  table), each with its sign before contact, its source page, what it wants,
+  table), each with its sign before contact spoken as an `_italic_` line in the
+  Narration column, its source page, what it wants,
   what it does if the party does nothing, and numbers or a statblock link when
   it can be fought. Every creature or group the canon places in the region
   appears in the table or elsewhere on the page.
@@ -167,7 +172,9 @@ terrain or water, weather, light, movement, one sound and one smell with
 sources, the one feature no traveller forgets, and the tell of the regional
 rule. Leave out truths, DCs, secret coordinates, and names not earned. Load
 `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give it
-the packet.
+the packet. For the optional `On the road` block under Travel, ask for a
+situated moment (Travel recipe): the ground underfoot, the weather, what the
+day's march shows, ending at camp or arrival.
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 carries the regional rule's tell.
@@ -177,11 +184,13 @@ carries the regional rule's tell.
 Copy `wiki/templates/region.md` to `wiki/entities/region/<kebab-name>.md` with
 `type: region`, `scale`, and `kind`; add parent `region` only when it names a
 page. At a Glance opens with one sentence on the region's job at the table,
-then Now, Pressure, Known for, and Anchor. Step 3 fills Geography (shape,
-landmarks) and Travel (routes table, travel procedure, regional rule) and Key
-Places; step 4 fills Powers (powers and fronts with portents); step 5 fills
-Encounters and Rumors, with finds and hidden routes under Secrets and past
-facts under History. Keep a section only when you have facts for it
+then Now, Pressure, Known for, and Anchor. Step 3 fills Geography (a
+`[[region]]` bullet per neighbor or subregion with what changes across the
+border, a `[[place]]` bullet per landmark), Travel (routes table, travel
+procedure bullets, hidden routes, regional rule), and Key Places (each with
+how the party learns it exists); step 4 fills Powers (powers and fronts with
+portents); step 5 fills Encounters and Rumors, with finds under Secrets and
+past facts under History. Keep a section only when you have facts for it
 (fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
 owner page.
 

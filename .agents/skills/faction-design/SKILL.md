@@ -133,8 +133,10 @@ completed" changes something the campaign will feel.
 
 - **Offer.** One job, deal, or favour the faction would put to this party now,
   with who offers it, the pay, and the catch.
-- **At the Table.** When met, helped, opposed, ignored, and broken: what the
-  world does in each case, by name, and the party's standing.
+- **At the Table.** Their tell (the symbol, phrase, or practice that marks
+  them), what they offer, what they will not do, and when met, opposed,
+  ignored, and broken: what the world does in each case, by name, and the
+  party's standing with what would change it.
 - **Hidden truth.** One thing the faction hides that changes the deal once
   the party learns it: a hidden employer, a debt, a betrayal in motion, a
   weakness, a crime. Three clues the party can find in the world, each a
@@ -153,7 +155,9 @@ look and move in public, the custom from step 3, one sign a bystander could
 spot that they have been somewhere, and the name people use for them. Leave
 out goals, leaders' plans, the hidden truth, and names not earned. Load
 `.agents/skills/theatre-of-the-mind`, portrait mode, faction recipe, and give
-it the packet.
+it the packet. For the optional `When met` block under At the Table, ask for a
+situated moment (Social scene recipe, "you" address): members at work as the
+party runs into them, how they carry themselves, and their first words.
 
 Done when the returned narration passes theatre-of-the-mind's final check.
 
@@ -161,9 +165,13 @@ Done when the returned narration passes theatre-of-the-mind's final check.
 
 Copy `wiki/templates/faction.md` to `wiki/entities/faction/<kebab-name>.md`
 with `type: faction`; the template marks which sections are required. At a
-Glance opens with one sentence of campaign pressure. Step 4 fills Agenda and
-its milestones; step 5 fills At the Table (the offer goes there), Secrets (the
-hidden truth and its clues), and People (faces, with numbers). Leave the Log
+Glance opens with one sentence of campaign pressure, then Leader, Base, Public
+face, Method, Strength, Vulnerability, and Posture. Step 4 fills Agenda
+(Objective, Next move, Needs, Standing in the way, Signs, If they succeed,
+Party handles) and its milestones; step 5 fills At the Table (the offer goes
+there), Secrets (the hidden truth and its clues), People (faces, with numbers,
+and **If the leader falls**), and Holdings with each asset's Presence. Log
+lines name the move, its result, what it collided with, and who felt it. Leave the Log
 for `world-tick`. Keep a section only when it has facts (fact-only,
 `wiki/AGENTS.md` Layout). Write complete
 sentences. Wikilink every owner page.

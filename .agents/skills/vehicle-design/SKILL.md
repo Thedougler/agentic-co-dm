@@ -189,7 +189,10 @@ Build the **narration packet** as fragments, each with its source:
   earned.
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, vehicle recipe, and
-give it the packet.
+give it the packet; this header look shows the craft at its berth. For the
+optional `Underway` block under At the Table, ask for a situated moment
+(Vehicle recipe): motion underfoot, its sound, the crew at work, what the rail
+shows.
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 contains every tell. A missing tell goes back to theatre-of-the-mind named.
@@ -205,10 +208,10 @@ Write complete sentences. Wikilink every owner page.
 |---|---|
 | At a Glance | Why the party cares; the captain, berth, the errand and its next step, standing orders on meeting the party |
 | Narration | The narration from step 6, nothing else |
-| Statblock | The numbers from step 4: size, speed, crew, cargo, hull, helm, weapons |
+| Statblock | The numbers from step 4: Size, Type, Speed, Movement (sails, oars, or engine with AC, HP, and what losing it costs), Crew, Hull, Helm, Weapons |
 | Decks | The areas from step 5, for a craft large enough to walk |
 | Crew | Stations, who mans them now, and the fighters' compact numbers |
-| At the Table | Manoeuvres, the quirk, the chase loop; initiative, boarding, ramming, component targeting, surrender, sinking |
+| At the Table | Manoeuvres, the quirk, the chase loop; initiative, boarding, ramming, component targeting, surrender, sinking; then the optional `Underway` narration |
 | Secrets | The hold and every other tell's truth, by name, with how it is found |
 | Connections | Each tie by owner link and what it does at the table |
 | History | Origin, former names, contested ownership |
