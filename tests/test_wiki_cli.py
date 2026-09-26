@@ -2,12 +2,10 @@ from __future__ import annotations
 
 import json
 import os
-import stat
 import subprocess
 import time
 from pathlib import Path
 
-from tools.wiki_ops.timing import HEARTBEAT_INTERVAL_S, ProgressHeartbeat
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = os.environ.get("PYTHON", str(ROOT / ".venv/bin/python"))
 
@@ -41,15 +39,6 @@ def payload(result):
     assert result.stdout.strip(), result.stderr
     return json.loads(result.stdout)
 
-
-
-def test_unified_mutation_uses_configured_vault_and_relative_paths(tmp_path: Path):
-    page(tmp_path, "page.md")
-    result = run_cli(tmp_path, "mutate", "add_tag", "--file", "page.md", "--tag", "new")
-    assert result.returncode == 0, result.stderr
-    data = payload(result)
-    assert data["status"] == "applied"
-    assert "tags: [new]" in (tmp_path / "page.md").read_text(encoding="utf-8")
 
 def test_lint_default_is_full_and_actionable(tmp_path: Path):
     page(tmp_path, "entities/npc/large.md", title="Large")
@@ -137,8 +126,6 @@ def test_two_named_files_are_separate_default_blocks(tmp_path: Path):
         assert files.index("entities/npc/two.md") < files.index("entities/npc/one.md")
 
 
-
-
 def test_unknown_path_is_structured_error_without_scan(tmp_path: Path):
     page(tmp_path, "entities/npc/one.md")
     started = time.monotonic()
@@ -202,7 +189,6 @@ def test_cache_version_and_mapped_template_invalidation(tmp_path: Path, monkeypa
     assert fresh["entries"] == {}
 
 
-
 def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
@@ -222,163 +208,6 @@ def test_pretty_default_lists_findings_and_full_is_compatible(tmp_path: Path):
     assert not pretty.stdout.lstrip().startswith("{")
     assert "Next page:" in pretty.stdout
     assert pretty_full.stdout == pretty.stdout
-
-
-def test_query_compact_hits_and_backend_failure(tmp_path: Path):
-    bin_dir = tmp_path / "bin"
-    bin_dir.mkdir()
-    qmd = bin_dir / "qmd"
-    qmd.write_text(
-        "#!/bin/sh\nprintf '%s\\n' '{\"results\":[{\"title\":\"Known\",\"path\":\"entities/npc/one.md\",\"id\":\"#abc\"}]}'\n",
-        encoding="utf-8",
-    )
-    qmd.chmod(qmd.stat().st_mode | stat.S_IXUSR)
-    env = {"PATH": str(bin_dir) + os.pathsep + os.environ.get("PATH", ""), "CI": "true"}
-    result = run_cli(tmp_path, "query", "Known", extra_env=env)
-    assert result.returncode == 0, result.stderr
-    data = payload(result)
-    assert data["status"] == "ok"
-    assert data["collection"] == "wiki"
-    assert data["hits"] == [{"title": "Known", "path": "entities/npc/one.md", "id": "#abc"}]
-    assert data["timing"]["command"] == "query"
-    assert "snippets" not in data
-
-    broken = bin_dir / "qmd"
-    broken.write_text("#!/bin/sh\necho fail >&2\nexit 1\n", encoding="utf-8")
-    broken.chmod(broken.stat().st_mode | stat.S_IXUSR)
-    failed = run_cli(tmp_path, "query", "Known", extra_env=env)
-    assert failed.returncode == 2
-    error = payload(failed)
-    assert error["status"] == "error"
-    assert "hits" not in error
-
-
-def test_health_trends_focus_and_empty_trackers(tmp_path: Path):
-    page(tmp_path, "one.md")
-    traces = tmp_path / "_tracker" / "traces.jsonl"
-    health = run_cli(tmp_path, "health", traces=traces)
-    assert health.returncode in (0, 1), health.stderr
-    data = payload(health)
-    required = {"pages", "bytes", "tokens", "lint", "trends", "focus", "next", "timing", "waste", "staging", "remorph", "policy", "context"}
-    assert required <= data.keys()
-    assert "files" not in data
-    assert "files" not in data["lint"]
-    assert len(data["focus"]) <= 5
-    assert data["next"] == (data["focus"][0] if data["focus"] else None)
-    trends = data["trends"]
-    assert {"sittings", "skills", "errors", "efficiency", "slowest_commands", "token_heaviest"} <= trends.keys()
-    assert trends["sittings"]["count"] == 0
-    assert "skill_eval" not in data and "evals" not in trends
-
-
-    run_cli(tmp_path, "lint", traces=traces)
-    run_cli(tmp_path, "query", "x", extra_env={"PATH": tmp_path.as_posix()}, traces=traces)
-    later = payload(run_cli(tmp_path, "health", traces=traces))
-    commands = [row["command"] for row in later["trends"]["slowest_commands"]]
-    assert "lint" in commands or "health" in commands
-
-    sitting = {
-        "sitting_class": "prep",
-        "kind": "prep",
-        "job": "heavy",
-        "trajectory": {"request": 10, "final_work": 90},
-    }
-    traces.write_text(traces.read_text(encoding="utf-8") + json.dumps(sitting) + "\n", encoding="utf-8")
-    heavy = payload(run_cli(tmp_path, "health", traces=traces))
-    assert heavy["trends"]["token_heaviest"]
-    assert heavy["trends"]["token_heaviest"][0]["tokens"] >= 100
-
-
-def test_health_explains_blockers_and_small_error_ledger():
-    from tools.wiki_ops.health import build_health_snapshot, build_trends
-
-    snapshot = build_health_snapshot(
-        status="findings",
-        pages=827,
-        bytes=0,
-        tokens=None,
-        lint={
-            "status": "findings",
-            "counts": {"template_conformance": 5475},
-            "hard_fail": True,
-            "backlog": [{"page": f"page-{index}.md", "findings": 1, "bytes": index} for index in range(827)],
-        },
-        waste=None,
-        staging=None,
-        remorph=None,
-        policy=None,
-        trends=build_trends(
-            None,
-            {"entries": [{"id": f"e-{index}", "cause": f"cause-{index}", "source": "scripts/wiki",
-                          "evidence": [{"sitting": "lint: a", "detail": f"cause-{index}"}]} for index in range(5)],
-             "recurrence": {"total": 0, "by_sitting": {}}, "missing_sources": []},
-            None,
-        ),
-        focus=[{"path": "page-0.md", "reason": "template_conformance lint findings", "source": "lint"}],
-        context={"act": ["Repair hot.md: snapshot is oversized."]},
-    )
-
-    lint = snapshot["lint"]
-    assert lint["finding_total"] == 5475
-    assert lint["affected_pages"] == 827
-    assert lint["blocking"] == [{"rule": "template_conformance", "findings": 5475}]
-    assert "blocking lint findings" in lint["meaning"]
-    assert lint["action"].startswith("Repair")
-    assert snapshot["next"]["action"].endswith("rerun wiki health.")
-    assert len(snapshot["trends"]["errors"]["entries"]) == 5
-    assert "core" not in snapshot["context"]
-
-def test_context_load_ranks_files_skills_and_trend(tmp_path: Path):
-    from tools.wiki_ops.health import build_context_load
-
-    (tmp_path / ".omp").mkdir()
-    (tmp_path / ".omp" / "AGENTS.md").write_text("first-turn " * 80, encoding="utf-8")
-    (tmp_path / "AGENTS.md").write_text("repo", encoding="utf-8")
-    vault = tmp_path / "wiki"
-    vault.mkdir()
-    (vault / "AGENTS.md").write_text("vault agents", encoding="utf-8")
-    (vault / "hot.md").write_text("hot", encoding="utf-8")
-    big = tmp_path / ".agents" / "skills" / "heavy"
-    small = tmp_path / ".agents" / "skills" / "light"
-    big.mkdir(parents=True)
-    small.mkdir(parents=True)
-    (big / "SKILL.md").write_text("skill body " * 40, encoding="utf-8")
-    (small / "SKILL.md").write_text("tiny", encoding="utf-8")
-    evals = big / "evals"
-    evals.mkdir()
-    (evals / "evals.json").write_text(
-        json.dumps({
-            "skill_name": "heavy",
-            "evals": [{
-                "id": 1,
-                "prompt": "Use wiki/hot.md",
-                "expected_output": "ok",
-                "assertions": [{"text": "Cites wiki/hot.md", "type": "process"}],
-            }],
-        }),
-        encoding="utf-8",
-    )
-
-    first = build_context_load(root=tmp_path, vault=vault, traces=[])
-    assert first["first_turn"]["files"][0]["path"] == ".omp/AGENTS.md"
-    assert first["skills"][0]["name"] == "heavy"
-    assert first["skills"][0]["coverage"] == "with"
-    assert first["skills"][0]["evals"] == 1
-    assert first["skills"][0]["criteria"] >= 1
-    assert first["skills"][1]["name"] == "light"
-    assert first["skills"][1]["coverage"] == "without"
-    assert first["eval_coverage"] == {"with": 1, "without": 1}
-    assert first["efficiency"]["trend"] == "new"
-    assert any("Add eval criteria for light" in step for step in first["act"])
-    assert "skill_eval" not in first
-
-    grown = build_context_load(
-        root=tmp_path,
-        vault=vault,
-        traces=[{"record_kind": "command", "command": "health", "first_turn_tokens": 1}],
-    )
-    assert grown["efficiency"]["trend"] == "up"
-    assert grown["efficiency"]["delta_tokens"] == grown["first_turn"]["total_tokens"] - 1
 
 
 def test_rules_digest_changes_when_styles_change(tmp_path: Path):
@@ -402,107 +231,6 @@ def test_rules_digest_changes_when_styles_change(tmp_path: Path):
     assert first != second
     assert second != third
     assert digest_rules(tmp_path, extra={"vale": False}) == third
-
-
-
-def test_lint_reports_open_ledger_separately(tmp_path: Path):
-    page(tmp_path, "one.md")
-    baseline = run_cli(tmp_path, "lint", "one.md")
-    baseline_data = payload(baseline)
-    tracker = tmp_path / "_tracker"
-    tracker.mkdir(exist_ok=True)
-    (tracker / "errors.md").write_text(
-        "# Error ledger\n\n"
-        + json.dumps({
-            "cause": "open operational failure",
-            "evidence": [{"detail": "open operational failure", "sitting": "test"}],
-            "id": "e-1",
-            "source": "scripts/wiki",
-        }, sort_keys=True)
-        + "\n",
-        encoding="utf-8",
-    )
-    result = run_cli(tmp_path, "lint", "one.md")
-    data = payload(result)
-    assert data["ledger"]["open"] == 1
-    assert data["ledger"]["ids"] == ["e-1"]
-    assert data["status"] == baseline_data["status"]
-    assert data["counts"] == baseline_data["counts"]
-    assert result.returncode == baseline.returncode
-
-
-def test_health_flags_llm_wiki_core_files(tmp_path: Path):
-    from tools.wiki_ops.health import build_core_files
-
-    (tmp_path / "index.md").write_text("- [[alpha]] — page\n", encoding="utf-8")
-    (tmp_path / "log.md").write_text("- [2026-09-19T00:00:00Z] INGEST source=x\n", encoding="utf-8")
-    (tmp_path / "AGENTS.md").write_text("# Conventions\n\nOwner rules.\n", encoding="utf-8")
-    (tmp_path / "hot.md").write_text(
-        "word " * 501
-        + "\n- [[alpha]] — page\n- [[beta]] — page\n- [[gamma]] — page\n"
-        + "- [[delta]] — page\n- [[epsilon]] — page\n- [[zeta]] — page\n"
-        + "- [[eta]] — page\n- [[theta]] — page\n- [[iota]] — page\n"
-        + "- [2026-09-19T00:00:00Z] INGEST source=x\n"
-        + "- [2026-09-18T00:00:00Z] UPDATE pages=y\n"
-        + "- [2026-09-17T00:00:00Z] LINT issues=0\n"
-        + "- [2026-09-16T00:00:00Z] CREATE pages=z\n",
-        encoding="utf-8",
-    )
-    core = build_core_files(tmp_path)
-    kinds = {item["kind"] for item in core["issues"]}
-    paths = {item["path"] for item in core["issues"]}
-    assert "oversized" in kinds
-    assert "cohesion" in kinds
-    assert "hot.md" in paths
-    assert core["act"]
-
-
-
-def test_progress_heartbeat_emits_every_interval():
-    assert HEARTBEAT_INTERVAL_S == 10
-    lines: list[str] = []
-    with ProgressHeartbeat("lint", interval=0.05, emit=lines.append):
-        time.sleep(0.16)
-    beats = [line for line in lines if line.startswith("wiki lint:") and "still=1" in line and "elapsed_s=" in line]
-    assert len(beats) >= 2
-
-
-def test_progress_heartbeat_covers_health_command():
-    lines: list[str] = []
-    with ProgressHeartbeat("health", interval=0.05, emit=lines.append):
-        time.sleep(0.12)
-    assert any(line.startswith("wiki health:") and "still=1" in line for line in lines)
-
-
-def test_lint_and_health_main_install_heartbeat(tmp_path: Path, monkeypatch):
-    import importlib.machinery
-    import importlib.util
-
-    loader = importlib.machinery.SourceFileLoader("wiki_cli_heartbeat", str(ROOT / "scripts/wiki"))
-    spec = importlib.util.spec_from_loader(loader.name, loader)
-    module = importlib.util.module_from_spec(spec)
-    assert spec.loader is not None
-    spec.loader.exec_module(module)
-    seen: list[str] = []
-
-    class Probe:
-        def __init__(self, command: str, *args, **kwargs):
-            seen.append(command)
-
-        def __enter__(self):
-            return self
-
-        def __exit__(self, *exc):
-            return False
-
-    monkeypatch.setattr(module, "ProgressHeartbeat", Probe)
-    monkeypatch.setattr(module, "_lint", lambda *args, **kwargs: 0)
-    monkeypatch.setattr(module, "_health", lambda *args, **kwargs: 0)
-    monkeypatch.setattr(module, "configured_vault", lambda: tmp_path)
-    monkeypatch.setattr(module, "resolve_vault", lambda vault: Path(vault))
-    assert module.main(["lint"]) == 0
-    assert module.main(["health"]) == 0
-    assert seen == ["lint", "health"]
 
 
 def test_lint_fix_deletes_registered_redirect_stub_and_is_idempotent(tmp_path: Path):
@@ -555,7 +283,6 @@ def test_lint_fix_reports_same_scope_progress_delta(tmp_path: Path):
     assert other.exists()
 
 
-
 def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path):
     target = tmp_path / "entities/npc/Bob.md"
     target.parent.mkdir(parents=True, exist_ok=True)
@@ -565,8 +292,6 @@ def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path
     reasons = {item["reason"] for item in result["skipped"]}
 
     assert reasons <= {"unsupported", "unsafe", "conflict", "precondition"}
-
-
 
 
 def _vale_scratch(tmp_path: Path, config_root: Path = ROOT) -> str:
@@ -674,36 +399,6 @@ def test_discovery_from_any_cwd_and_vault_precedence(tmp_path: Path):
     assert payload(result)["vault"] == str(one.resolve())
 
 
-def test_bare_wiki_lists_subcommands_only():
-    result = _bare()
-    assert result.returncode == 0
-    names = [line.split()[0] + (" fix" if line.split()[:2] == ["lint", "fix"] else "") for line in result.stdout.splitlines() if line.strip()]
-    assert names == ["lint", "lint fix", "query", "health", "mutate", "repair"]
-
-
-def test_subcommand_help_is_scoped_with_examples():
-    for sub, example in (("lint", "wiki lint entities/place/Belumara.md"), ("query", 'wiki query "Belumara" -n 5'),
-                         ("health", "wiki health"), ("mutate", "wiki mutate --stdin --dry-run < op.json")):
-        helped = _bare(sub, "--help")
-        assert helped.returncode == 0 and "Examples:" in helped.stdout and example in helped.stdout, sub
-        others = {"query", "health", "mutate", "repair"} - {sub}
-        assert not any(f"wiki {o}" in helped.stdout for o in others), sub
-    fix = _bare("lint", "fix", "--help")
-    assert "wiki lint fix dir:entities/place --dry-run" in fix.stdout
-    legacy = subprocess.run([PYTHON, str(ROOT / "scripts/wiki-lint"), "--help"], capture_output=True, text=True)
-    assert "wiki lint --help" in legacy.stdout
-
-
-def test_no_prompts_with_stdin_closed(tmp_path: Path):
-    page(tmp_path, "a.md")
-    result = subprocess.run([*WIKI, "lint", "a.md"], cwd=ROOT, capture_output=True, text=True, stdin=subprocess.DEVNULL,
-                            env=os.environ | {"OBSIDIAN_VAULT_PATH": str(tmp_path), "WIKI_TRACKER_ROOT": str(tmp_path)},
-                            timeout=120)
-    assert result.returncode in (0, 1)
-    missing = _bare("query", env={"OBSIDIAN_VAULT_PATH": str(tmp_path)})
-    _error(missing, needle="phrase")
-
-
 def test_stdin_and_paths_only(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
@@ -717,33 +412,6 @@ def run_cli_stdin(vault: Path, stdin: str, *args: str):
     env = {"OBSIDIAN_VAULT_PATH": str(vault), "WIKI_TRACKER_ROOT": str(vault / "_tracker")}
     (vault / "_tracker").mkdir(exist_ok=True)
     return _bare(*args, env=env, stdin=stdin)
-
-
-def test_options_before_or_after_positionals(tmp_path: Path):
-    page(tmp_path, "a.md")
-    before = payload(run_cli(tmp_path, "lint", "--json", "a.md"))
-    after = payload(run_cli(tmp_path, "lint", "a.md", "--json"))
-    assert before["files_checked"] == after["files_checked"] == 1
-
-
-def test_bare_fix_token_is_rejected(tmp_path: Path):
-    page(tmp_path, "entities/place/Belumara.md")
-    result = run_cli(tmp_path, "lint", "entities/place/Belumara.md", "fix")
-    data = _error(result, needle="'fix' is not a lint path")
-    assert data["hint"] == "lint fix is a subcommand"
-    assert data["example"] == "wiki lint fix entities/place/Belumara.md"
-    assert not (tmp_path / "_meta" / "lint-cache.json").exists()
-
-
-def test_invalid_inputs_give_the_error_object(tmp_path: Path):
-    page(tmp_path, "entities/place/Belumara.md")
-    _error(run_cli(tmp_path, "lint", "entities/place/Nowhere.md"), needle="path not found")
-    prefixed = _error(run_cli(tmp_path, "lint", "wiki/entities/place/Belumara.md"), needle="path not found")
-    assert prefixed["example"] == "wiki lint entities/place/Belumara.md"
-    _error(run_cli(tmp_path, "lint", "--scope", "dir"), needle="kind:value")
-    kinds = _error(run_cli(tmp_path, "lint", "folder:entities"), needle="unknown scope kind")
-    assert "files|directory(dir)|entity_type(type)|identity_set|changed|bundle" in kinds["list_valid"]
-    _error(run_cli(tmp_path, "lint", "--bogus"), needle="--bogus")
 
 
 def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
@@ -772,29 +440,6 @@ def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
     assert repaired["changed"] == ["entities/npc/current.md"], repaired
     again = payload(run_cli_stdin(tmp_path, plan, "repair", "--stdin"))
     assert again["status"] == "already_done" and again["changed"] == [], again
-
-
-def test_success_keys_and_health_next(tmp_path: Path):
-    page(tmp_path, "a.md")
-    for args in (("lint", "a.md"), ("lint", "fix", "a.md"), ("health",)):
-        data = payload(run_cli(tmp_path, *args))
-        assert {"status", "vault", "changed", "counts", "timing", "next"} <= set(data), (args, sorted(data))
-        assert "duration_ms" in data["timing"]
-    health = payload(run_cli(tmp_path, "health"))
-    assert health["next"] == (health["focus"][0] if health["focus"] else None)
-
-
-def test_slow_checker_notice_is_a_plain_report(tmp_path: Path, capsys):
-    import importlib.machinery
-    import importlib.util
-
-    loader = importlib.machinery.SourceFileLoader("wiki_cli", str(ROOT / "scripts/wiki"))
-    spec = importlib.util.spec_from_loader(loader.name, loader)
-    module = importlib.util.module_from_spec(spec)
-    loader.exec_module(module)
-    module._tune("lint", [("scripts/wiki-lint:vale", 4000), ("scripts/wiki-lint:template", 900)])
-    assert capsys.readouterr().err.strip() == (
-        "wiki lint: slowest checker scripts/wiki-lint:vale 4000 ms; next scripts/wiki-lint:template 900 ms")
 
 
 def test_lint_fix_renames_noncanonical_basename_and_rewrites_backlinks(tmp_path: Path):

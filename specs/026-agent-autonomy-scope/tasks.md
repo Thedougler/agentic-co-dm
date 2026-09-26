@@ -111,7 +111,7 @@ Canon owner after implement: constitution principle X. Executable rules: `luna-e
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [X] T017 [P] [US5] (Replaced by the Work-gate wording case in `tests/test_luna_eval.py`.) Add the agent-standards pytest copying `tests/test_policy_conflicts.py` shape: run the checker with `--json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert the placement rule (no current checker) fail on `.agents/skills/My Skill/notes.txt`; assert the spec-citation rule (no current checker) fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
+- [X] T017 [P] [US5] (Retired by constitution 8.0.0 IV: code tests cover only the wiki lint system; the policy and eval tests were removed.) Add the agent-standards pytest copying the policy-checker test shape: run the checker with `--json`; assert exit 0 / `status` clean on a conforming tree; assert exit ≠ 0 when a scanned file contains `## Work gate`; assert the placement rule (no current checker) fail on `.agents/skills/My Skill/notes.txt`; assert the spec-citation rule (no current checker) fail when a `specs/*/spec.md` FR contains `agent-facing` with no `rules/registry.yml` id
 
 ### Implementation for User Story 5
 
