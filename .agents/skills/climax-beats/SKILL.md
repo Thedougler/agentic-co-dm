@@ -43,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; keep **Final Battle** or **Final Revelation** sections only for the shape in play.
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Climax spends; keep **Final Battle** or **Final Revelation** for the shape in play and delete the other (fact-only, `wiki/AGENTS.md` Layout).
 
 ## Fill a Climax
 
@@ -112,7 +112,7 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
   chart reaches the slot. A central question resolved early is the Climax;
   compress and hand to the Resolution. An avoided Climax becomes new world
   state and returns to `session-beats` to recompute.
-- **Budget.** About forty-five to sixty minutes of table time. Name the compression if the
+- **Budget.** About forty-five to sixty minutes of table time. In At a Glance's "If behind", name the compression if the
   table runs behind: fewer phases, a faster clock — the central question
   still resolves on this page.
 

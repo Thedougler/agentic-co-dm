@@ -64,7 +64,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 - **Bar.** Existing vault pages are canon to keep, never a quality model; many
   predate this skill. The bar is the steps and `## Done` below.
 - **One callout.** `[!narration]` is the only callout. Truths, origins, and
-  secrets are plain complete sentences in Biology or Behavior.
+  secrets are plain complete sentences under Behavior or Secrets.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). What it is,
   where it came from, and what it wants are stated by name.
 - **Original expression.** Borrow patterns from published monsters, never

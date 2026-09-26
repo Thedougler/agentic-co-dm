@@ -46,8 +46,8 @@ def _rules() -> dict[str, RuleDefinition]:
     definitions = {
         "TMPL002": ("Extra section", "Page contains a section not present in the selected template", "Rename the section to the template heading that holds its job, or fold it into that section"),
         "TMPL003": ("Section order mismatch", "Page sections do not follow the selected template order", "Move the section to the template-defined order without changing facts"),
-        "TMPL006": ("Statblock image layout", "Statblock allows at most one overview image immediately before the statblock fence; remaining images belong in Art subsections", "Keep at most one overview image before the statblock fence and move remaining images to Art subsections"),
-        "TMPL007": ("Art subsection structure", "Art embeds are not nested under a subsection heading", "Nest each Art embed under a role subsection"),
+        "TMPL006": ("Statblock image layout", "A section holding a statblock fence allows one overview image, directly before the fence", "Keep one overview image directly before the statblock fence and move the others to the template's image section"),
+        "TMPL007": ("Image subsection structure", "Images sit directly under a section whose template holds them in subsections", "Nest each image under the subsection heading the template shows"),
     }
     return {key: RuleDefinition(id=key, title=title, message=message, repair=repair, **common)
             for key, (title, message, repair) in definitions.items()}

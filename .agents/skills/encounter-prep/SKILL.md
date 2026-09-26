@@ -68,7 +68,9 @@ clock is only suspense when players can perceive and influence its direction.
 
 ## Output
 
-Use `wiki/templates/encounter.md` for reusable notes. A session-only scene that will be
+Use `wiki/templates/encounter.md` for reusable notes: the brief and if-ignored step go
+in At a Glance, the spoken opening in `Opening`, the opposition in Cast, the
+responses in Handles, and the next states in Outcomes. A session-only scene that will be
 run tonight is a **cockpit** (`run-guide`); emit only the stock that cockpit
 inlines. Field order, lean section choice, image placement, and *procedure* live
 in `run-guide`; this skill supplies table-useful stock:

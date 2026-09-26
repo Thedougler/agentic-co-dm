@@ -3,8 +3,8 @@ name: lore-design
 description: >-
   Write, edit, or create named lore pages for the campaign wiki. Use when a
   lore note, world truth, history, belief, rumor, legend, doctrine, custom, law,
-  cosmology, prophecy, revelation, missing named lore note, Current Truth,
-  discovery path, or table-facing lore handle needs a persistent page. Fill
+  cosmology, prophecy, revelation, missing named lore note, the truth behind a
+  legend, discovery path, or table-facing lore handle needs a persistent page. Fill
   wiki/templates/lore.md.
 ---
 
@@ -50,7 +50,7 @@ These hold in every step.
   proposal with the `[[pages]]` it grows from; a proposal that settles a
   contradiction names the sources and the reading it chose, so the DM picks the
   winner. What the world does not know stays unknown to the world, in Accounts
-  and Who Knows; Current Truth carries the answer.
+  and the Who knows bullet; the page body carries the answer.
 - **Table history is the table's.** What the party did, learned, or believes
   comes from session notes; the page records it and leaves their next
   conclusion to play.

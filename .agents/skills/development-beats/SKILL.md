@@ -42,7 +42,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Development never spends it.
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Development spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
 
 ## Fill a Development
 
@@ -104,8 +104,8 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
   direction, cut.
 - **Preparation beats map their states.** When the Development is the party
   preparing (watches, defenses, plans), list two or three distinct
-  preparation states with the named consequence each gives the next
-  Cliffhanger, and ask what they actually do.
+  preparation states as Outcomes rows, each with the named consequence it
+  gives the next Cliffhanger, and ask what they actually do.
 - **Threads, not filler.** The Development advances a live thread. A request
   for an unrelated vignette or a revived abandoned thread becomes a facet of a
   live thread, or returns to `session-beats` as a chart question.

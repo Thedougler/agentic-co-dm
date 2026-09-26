@@ -15,7 +15,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
 
 ## HARD: entity-before-spoken + dm-facing-explicit
 
-Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit** (Nick 2026-09-14). Recap narration stays player-safe but grounded in named entities; **Wiki facts** (DM-facing) name concrete owners/stakes — no coy “something happened” bullets without who/what.
+Follow AGENTS.md **HARD: entity-before-spoken** and **HARD: dm-facing-explicit** (Nick 2026-09-14). Recap narration stays player-safe but grounded in named entities; **Wiki Facts** (DM-facing) name concrete owners/stakes — no coy “something happened” bullets without who/what.
 
 
 Done when: `Session-<NN>-Recap.md` is filed, its `[!narration] Recap` passes the `theatre-of-the-mind` final check, and a done-summary names what changed and where.
@@ -38,7 +38,7 @@ Align with `wiki/AGENTS.md` session-folder + page-filename rules. Load `obsidian
 ## Procedure
 
 1. **Orient.** Confirm campaign slug and session number (ask rather than guess). Prefer `hot.md` + that session folder over full index/log. Gather the play evidence: the raw transcript or play notes, and any evidence packet (the session's transcript companion, or a packet from `reconciling-session-evidence`). The packet gives the order of events; the raw play gives the moments.
-2. **Write the recap.** Load `theatre-of-the-mind` and write the narration as a **story** from its recaps reference (moment list first), then run its recap final check. Earlier recaps give continuity facts only; the story is built new from the play. Then the optional short Wiki facts list for the vault (names as wikilinks, clocks moved, next handles).
+2. **Write the recap.** Load `theatre-of-the-mind` and write the narration as a **story** from its recaps reference (moment list first), then run its recap final check. Earlier recaps give continuity facts only; the story is built new from the play. Then the short Wiki Facts list for the vault: state changes only, not a retelling (names as wikilinks, clocks moved, next handles).
 3. **File.** Write the live path `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md`. Then one done-summary.
 4. **Stop.** Return the recap path. Do not cascade other skills from this skill.
 

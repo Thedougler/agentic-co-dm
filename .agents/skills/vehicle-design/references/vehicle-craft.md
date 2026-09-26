@@ -6,7 +6,7 @@ Anchor numbers on the official 5e vehicle columns (speed, crew, passengers,
 cargo, AC, HP, damage threshold) and on the component model (hull, helm,
 movement, weapons) used for 5e ship combat. Put the ship on the table in the
 order the DM needs it: spoken look, numbers, decks and crew, how it moves and
-fights. Every Sheet and Components line carries a number; where canon is
+fights. Every Statblock line carries a number; where canon is
 silent, take the peer craft's figure, adjust it by the quirk, and state it as
 canon under the rule in `llm-wiki`.
 
@@ -46,19 +46,18 @@ Ramming: the rammer and the target each take bludgeoning damage by size
 Theatre-of-the-mind vehicle portrait in complete sentences: silhouette, scale,
 material and wear, working parts, how people get aboard, one sound or smell.
 Keep secrets, DCs, true flags, compartment contents, and unearned names out of
-`[!narration]`; they live in Hidden Cargo & History.
+`[!narration]`; they live in Secrets.
 
-### Sheet
+### Statblock
+
+One section holds every number: the craft's columns, then its components.
 
 - **Size.** 5e size category and length in feet.
 - **Type.** Craft class in ordinary language.
 - **Speed.** Travel pace in mph and combat speed in feet per round, with mode.
 - **Crew (min).** Minimum crew to sail it, and the complement carried now.
 - **Passengers.** Safe passenger capacity.
-- **Cargo.** Capacity in tons, or `none`.
-
-### Components
-
+- **Cargo.** Capacity in tons, for a craft that carries cargo.
 - **Hull.** AC, HP, damage threshold, and what happens at 0 (sinks in N
   minutes, breaks up, drifts).
 - **Helm.** AC, HP, and what is lost when disabled (cannot turn, turns only
@@ -74,22 +73,23 @@ Areas at body scale with size in feet, one usable feature each (ladder,
 hatch, rigging, boom, kegs, cargo net), and who stands watch. Enough for a
 boarding fight and a stowaway sneak.
 
-### Crew stations
+### Crew
 
 Each station names who mans it now against the minimum, the action or check it
 runs, and what fails when it is empty. The captain and any officer the party
 will deal with are NPC pages; rank-and-file crew are a count and a statblock
 (Bandit, Guard, Veteran, Scout, Commoner, or a campaign creature page).
 
-### Handling
+### At the Table
 
-Manoeuvres and conditions that change a choice: the quirk, tacking and wind,
-current, reefs and shallows, tight channels, repairs underway, noise, cover,
-merchant disguise. Each with Ability (Skill) or vehicle-handling check, DC, and
-result. One play loop; At the Table does not repeat it.
+One play loop for running the craft: handling, then chase and boarding.
 
-### Chase and boarding
+**Handling.** Manoeuvres and conditions that change a choice: the quirk,
+tacking and wind, current, reefs and shallows, tight channels, repairs
+underway, noise, cover, merchant disguise. Each with Ability (Skill) or
+vehicle-handling check, DC, and result.
 
+**Chase and boarding.**
 A chase runs in chase turns sized to the gap: rounds once the ships are
 within a few hundred feet, minutes or ten-minute turns across a mile, watches
 across open sea. Pick the unit so each turn closes or opens a real step and the
@@ -100,18 +100,22 @@ at which grapples (50 ft) or boarding planks (10 ft) come into play, and the
 crew's break point: when they strike colours, cut the grapples, or fight to the
 last.
 
-### Hidden Cargo & History
+### Secrets
 
 The hold, the true flag, sealed compartments, who hunts this craft and why,
 and each tell's truth with how it is found (a search DC, a manifest, a talking
-crewman). Ownership and rename history as world facts.
+crewman).
+
+### History
+
+Ownership and rename history as world facts.
 
 ## Audit questions
 
 - Does At a Glance name the captain, the errand, standing orders on meeting the
   party, and the next step with a time?
 - Is narration sensory-only, with every truth elsewhere?
-- Does every Sheet and Components line hold a number anchored on a peer?
+- Does every Statblock line hold a number anchored on a peer?
 - Does every fighter aboard carry compact numbers?
 - Can the DM run a chase, a boarding, and a stowaway from the page alone?
 - Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the
@@ -121,12 +125,11 @@ crewman). Ownership and rename history as world facts.
 
 | Failure mode | Repair |
 | --- | --- |
-| Empty or "Unknown" Sheet/Components lines | Peer figure adjusted by the quirk, as a proposal |
+| Empty or "Unknown" Statblock lines | Peer figure adjusted by the quirk, stated as world fact |
 | A craft with no captain or errand | Name the captain; give orders and a next step |
-| Secrets or DCs in narration | Move to Hidden Cargo & History |
+| Secrets or DCs in narration | Move to Secrets |
 | Crew as "sailors" with no numbers | Count plus statblock; captain on an NPC page |
 | Chase with no distances or break point | Speeds, gap rules, grapple range, surrender line |
 | One-line ferry forced into a vehicle page | Leave it on the beat or place until it is named or recurs |
 | Upgrade rewrites the chassis | Keep the class; propose the upgrade on it |
 | PC orders or feelings written as fact | Crew responses and consequences; choices left to play |
-| Handling duplicated under At the Table | One loop; omit At the Table when unused |

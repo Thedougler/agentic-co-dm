@@ -101,6 +101,11 @@ def template_for(root: str | Path, entity_type: str, kind: str = "") -> Path | N
     return default if default.is_file() else None
 
 
+def template_types(root: str | Path) -> set[str]:
+    """Every page ``type`` some template declares; a new template adds its type."""
+    return {row[1] for row in _template_index(str(_templates_dir(root))) if row[1]}
+
+
 def _section_rule(lines: list[str], index: int) -> dict[str, Any]:
     for line in lines[index + 1:]:
         if not line.strip():

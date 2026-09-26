@@ -127,13 +127,13 @@ tradeoff against the others, and every key place links a page.
 
 ### 4. Set the powers moving
 
-- **Active powers.** Two to four groups or creatures that can change the
+- **Powers.** Two to four groups or creatures that can change the
   region now, each a linked page: hold, want now, next move with a time, and
   what reveals that move.
-- **Pressure.** One or two fronts grown from the inventory (a power's want, a
+- **Pressure** (under Powers). One or two fronts grown from the inventory (a power's want, a
   hazard's season, a debt, a hunt), each with its impending consequence, a time,
   and three portents from subtle to unmistakable.
-- **Stakes.** One to three questions that play will answer.
+- **Stakes** (under Powers). One to three questions that play will answer.
 
 Done when each power's next move has a time and a sign, and each front has
 three portents.
@@ -146,15 +146,15 @@ three portents.
   what it does if the party does nothing, and numbers or a statblock link when
   it can be fought. Every creature or group the canon places in the region
   appears in the table or elsewhere on the page.
-- **Rumors and leads.** A d6 table, each with its truth and where it points.
+- **Rumors.** A d6 table, each with its truth and where it points.
   The truth is a fact about the world (the dragon is there, in this lair, or
   the dragon is a wreck's figurehead), never a note on what is confirmed or
   recorded.
-- **What can be found.** A resource, a shelter with its cost, a wonder, a
+- **Finds** (under Secrets). A resource, a shelter with its cost, a wonder, a
   hidden lore fact, and a shortcut: each a thing the party can take, use, or
   visit. The wonder is a sight a traveller would sail out of the way for, and
   it gives something back.
-- **History still in play.** Past facts that leave evidence a traveller can
+- **History.** Past facts that leave evidence a traveller can
   find.
 
 Done when every encounter has a sign and a source, every rumor has its truth,
@@ -207,7 +207,7 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Encounters are creatures, crews, or wonders that act, with signs, sources,
   and numbers where fightable; every canon creature or group of the region
   appears on the page.
-- Every rumor's truth is a world fact; What can be found lists things the
+- Every rumor's truth is a world fact; the finds under Secrets list things the
   party can take, use, or visit, and the wonder gives something back.
 - The narration came from theatre-of-the-mind and holds no truth, DC, or
   unearned name.

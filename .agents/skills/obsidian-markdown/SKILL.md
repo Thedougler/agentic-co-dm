@@ -86,11 +86,11 @@ More: [references/embeds.md](references/embeds.md) · hub [[attachments/00 Attac
 ### Callouts
 
 ```markdown
-> [!narration] Initial Narration
-> Session/run scene-setting (or leave empty on pass 1).
+> [!narration] Opening
+> Beat scene-setting: what the characters perceive, ending on a moment they can act on.
 
-> [!narration] Narration
-> Owner-page player-facing prose (or leave empty).
+> [!narration] Matteo Scola
+> Owner-page player-safe look, in the header row beside At a Glance.
 ```
 
 `[!narration]` is the only callout on every page — [references/callouts.md](references/callouts.md).

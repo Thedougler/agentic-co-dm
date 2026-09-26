@@ -173,11 +173,11 @@ Write the test with the **at-table check grammar** in `obsidian-markdown`:
 
 **Wisdom (Perception) — `DC 14`**
 - Success → Notices claw marks beneath the window.
-- Failure → Nothing appears disturbed.
+- Failure → The dust looks undisturbed; the tunnel stays hidden.
 
 Compress when the consequence is obvious: **Strength (Athletics) — `DC 13`** → Climb the wet wall. Saves: **Dexterity save — `DC 15`**. A *quality ladder* stacks `DC n` outcomes on one **Ability (Skill)** attempt. `DC n` and dice are inline code. Ability and skill are bold.
 
-**Home:** player activities — on a location, **If the party**. Hang the mark on
+**Home:** player activities — on a location, **At the Table**. Hang the mark on
 the attempt they take.
 
 **Elsewhere:** an optional, secret, or non-obvious test may sit on the section
@@ -189,7 +189,7 @@ treatments (approach **Ability (Skill)**; DC column `` `DC 14` ``).
 `[!narration]` stays player-safe.
 
 **Complete when:** every written test matches that grammar; player-activity
-tests live under **If the party**; only optional/secret/non-obvious tests sit
+tests live under **At the Table**; only optional/secret/non-obvious tests sit
 elsewhere; player prose has no *DC*, save type, or unearned name; no line
 exists only to say a roll is absent; no naked optional check remains without a
 success result, failure result, and current player use.

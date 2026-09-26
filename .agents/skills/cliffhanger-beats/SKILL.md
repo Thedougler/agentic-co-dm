@@ -44,7 +44,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Cliffhanger never spends it.
+Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Cliffhanger spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
 
 ## Fill a Cliffhanger
 
@@ -56,7 +56,8 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    [references/cliffhanger-cards.md](references/cliffhanger-cards.md). Pick the
    card the fiction calls for and the escalation tier this slot holds on the
    session's ladder. Name the thread under test — what the last Development
-   revealed that this contest proves or disproves.
+   revealed that this contest proves or disproves. Card, tier, and thread go
+   in the session plan's Beat Map; the page carries what they produce.
 3. **Cast owners.** Every creature, NPC, place, vehicle, or item the contest
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting); a creature the

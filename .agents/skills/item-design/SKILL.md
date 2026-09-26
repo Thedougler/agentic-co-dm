@@ -61,7 +61,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
   predate this skill. The bar is the steps and `## Done` below.
 - **One callout.** `[!narration]` is the only callout. The item text is plain
   paragraphs with bold labels; curses and truths are plain sentences under
-  Hidden Properties.
+  Secrets.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell
   has its truth on the page, and every hidden property states exactly what it
   does.
@@ -103,7 +103,7 @@ reason, and the bearer line is written (or "no set bearer").
 - **Branches:** cursed, sentient, evolving. Each adds step 5.
 - **Disguised creature:** a creature that passes for an item (a mimic in
   object form) gets an item page for what it appears to be: the portrait, and
-  the item text an *Identify* spell would report. Hidden Properties states the
+  the item text an *Identify* spell would report. Secrets states the
   truth and links the creature page, which owns the statblock and the will.
   The item is sentient only when the object itself thinks; a mimic's will
   belongs to the creature.

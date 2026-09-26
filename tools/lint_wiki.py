@@ -609,8 +609,7 @@ def _media_exists(vault: Path, target: str) -> bool:
 
 
 def _literal_newline_target(rel: str) -> bool:
-    path = Path(rel)
-    return rel.startswith("journal/sessions/") or (path.parts[:1] == ("templates",) and path.name.startswith("Session"))
+    return rel.startswith("journal/sessions/") or Path(rel).parts[:1] == ("templates",)
 
 
 def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: bool) -> dict[str, list[dict[str, object]]]:
@@ -630,7 +629,7 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
                 })
     targets = {rel: item["text"] for rel, item in pages.items()}
     if not scoped:
-        for path in sorted((vault / "templates").rglob("Session*.md")) if (vault / "templates").is_dir() else ():
+        for path in sorted((vault / "templates").rglob("*.md")) if (vault / "templates").is_dir() else ():
             targets.setdefault(path.relative_to(vault).as_posix(), path.read_text(encoding="utf-8"))
     for rel, text in targets.items():
         visible = blank_fences(text)
@@ -654,7 +653,7 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
                 if DC_IN_TEXT.search(m.group(0)):
                     found["dc_in_narration"].append({
                         "page": rel, "line": _line_at(text, m.start()), **human,
-                        "reason": "DC or difficulty inside a [!narration] callout; move it to the Checks or At the Table prose",
+                        "reason": "DC or difficulty inside a [!narration] callout; the spoken text carries only what players perceive, so move the number to the DM prose beside it",
                     })
             for m in IMAGE_WIKI.finditer(visible):
                 target = m.group(1).strip()
@@ -707,6 +706,10 @@ def main() -> int:
         lookup = {key: [item for item in values if item in selected] for key, values in lookup.items()}
     schema_path = args.schema_source.resolve() if args.schema_source else vault / "AGENTS.md"
     owner_types = parse_owner_schema(schema_path)
+    from tools.wiki_ops.template_contracts import template_types
+    declared = template_types(vault) | template_types(ROOT)
+    OWNER_TYPES.update(declared)
+    CAMPAIGN_TYPES.update(declared)
     types = CAMPAIGN_TYPES | owner_types
     relationships = DEFAULT_RELATIONSHIPS | set(args.allow_relationship_type)
     result: dict[str, object] = {

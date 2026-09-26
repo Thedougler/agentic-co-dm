@@ -186,7 +186,7 @@ def structural_main(argv: list[str]) -> int:
                         })
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
-            source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]
+            source_paths = sorted((ROOT / "wiki" / "templates").glob("*.md")) + sorted((ROOT / ".agents" / "skills").glob("*/SKILL.md"))
             for source_path in source_paths:
                 if source_path.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", source_path.read_text(encoding="utf-8"), re.I):
                     template_findings.append({

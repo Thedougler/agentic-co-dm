@@ -97,7 +97,7 @@ makes the next Development's information urgent.
    (the Pressure table, steps 0–4). Cliffhanger opposition comes from this
    agenda or from the environment. Done when each step names what the
    opposition does, when, and what the party can see of it.
-4. **Threads.** Name three to five live threads — PC goals, faction clocks,
+4. **Threads.** Name three to five live threads — PC goals, faction agendas,
    mysteries, relationships under pressure, depleting resources — and for
    each, the beats that plant, test, and harvest it.
 5. **Chart the beats.** Fill the Beat Map in play order. A charted slot is a
@@ -108,7 +108,7 @@ makes the next Development's information urgent.
    card (index below), thread, trigger, what changes, handoff, budget; each
    Cliffhanger and the Climax also get an escalation tier; each row names its
    memorable element. Add Floating Beats for situations that can fire
-   wherever they fit, and Climax candidates when more than one confrontation
+   wherever they fit, and Climax Candidates when more than one confrontation
    could be earned.
 6. **Escalation ladder.** Assign tiers so fights rise across the night:
    Grunts → Minions → Henchmen → Villain (monsters: Scare → Fright → Horror →
@@ -117,10 +117,10 @@ makes the next Development's information urgent.
    `encounter-prep` owns the 5e difficulty.
 7. **Routes and clues.** Each conclusion or access the session cannot
    progress without gets three independent routes (Critical Routes). Write
-   about ten Floating Clues as true, concrete facts, each revealable through
+   about ten floating Clues as true, concrete facts, each revealable through
    more than one interaction.
 8. **Spotlight.** Each PC gets at least one beat where their goal, bond, or
-   fear drives the scene (PC Touchpoints), and a thread the Climax harvests.
+   fear drives the scene (Spotlight), and a thread the Climax harvests.
 9. **Cast owners.** List every named actor, place, item, and creature the
    beats need. Cast each from the wiki first; mint with its owner skill only
    what nothing fits (`docs/agents/table-ready.md` § Cast before minting), one

@@ -17,7 +17,9 @@ to the table. A front without impending doom has no stakes.
 
 ## Faction turns
 
-A faction turn is one cycle of off-screen motion. For each active faction:
+A faction turn is one cycle of off-screen motion. On the page, the next turn
+lives in the Agenda (next move, signs, party opening, milestones) and past
+turns in the Log. For each active faction:
 
 | Field | What it answers |
 | --- | --- |
@@ -29,8 +31,8 @@ A faction turn is one cycle of off-screen motion. For each active faction:
 | **Player opening** | What remains unresolved and actionable |
 
 Do not roll the turn at creation. `world-tick` resolves turns using faction
-resources, opposition, and probability. The Turn Log records changed canon,
-newest first.
+resources, opposition, and probability. The Log records changed canon, newest
+first.
 
 ### Running multiple factions
 

@@ -189,7 +189,7 @@ payoff below comes from the inventory before it is invented.
   stolen, what faction learned, what route changed, and what the party's actions
   made possible. Preserve opened doors, dead leaders, alliances, damage, and
   learned routes unless the fiction changes them.
-- Keep a site ledger: discovered routes, unresolved leads, faction clocks,
+- Keep a site ledger: discovered routes, unresolved leads, faction agendas,
   depleted resources, changed landmarks, and the next prepared frontier.
 
 ## Outdoor and island megadungeons

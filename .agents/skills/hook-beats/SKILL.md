@@ -45,7 +45,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Hook never spends it.
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Hook spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
 
 ## Fill a Hook
 
@@ -59,7 +59,8 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    and pick the card the fiction calls for. A session that stopped mid-action
    resumes as **Play a Cliffhanger** at the recorded state — the tension is
    already there. Done when the card, its key (action or cerebral), and the
-   thread it opens are named.
+   thread it opens are named; they go in the session plan's Beat Map, not on
+   the Hook page.
 3. **Cast owners.** Every named actor, place, item, or creature the Hook
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint with its owner skill only what nothing fits
@@ -97,7 +98,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 - **Obvious and interesting moves.** Build one obvious first move and at least
   one non-obvious move the space or cast rewards (a feature to exploit, an NPC
   to bargain with, a thing to grab).
-- **Short and committed.** The Hook resolves fast. "Hook lands when" names the
+- **Short and committed.** The Hook resolves fast. At a Glance's "Lands when" names the
   observable commitment — the party gives chase, accepts the job, flees the
   city — and the beat cuts there. Longer stretches of travel or investigation
   are the next beat.

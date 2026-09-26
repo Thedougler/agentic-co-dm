@@ -109,14 +109,14 @@ page.
 
 - **Districts.** Three to six, each with its street-level look, the reason a
   visitor goes there, who holds it, and one danger or opportunity there now.
-- **Landmarks.** Two or three a newcomer steers by.
-- **Getting around.** How long crossing takes, what changes after dark, where
-  movement is restricted and by whom.
+- **Landmarks and getting around** (under Districts). Two or three landmarks
+  a newcomer steers by; how long crossing takes, what changes after dark, and
+  where movement is restricted and by whom.
 - **Gazetteer.** Arrive and leave (who meets a ship, what it costs, what
   papers), stay, buy supplies, sell cargo and loot (a named buyer and the rate
   they pay, and a fence for goods with a history), services: each entry a named
   place and its keeper, a price, and one detail that makes it this city's.
-- **Rules that matter.** Two to four local laws or customs that change a
+- **Local Rules.** Two to four local laws or customs that change a
   choice, each with who enforces it, how, and the penalty.
 
 Done when a party could arrive, find lodging, sell cargo, and cross the city
@@ -149,11 +149,10 @@ piece; and every faction in Power has a named local face.
 
 ### 5. Fill the street
 
-- **Rumors.** A d6 or d8 table of what people say, each marked with its truth
-  on the DM layer.
-- **Encounters.** A d6 or d8 table of street moments, each tied to a
+- **Rumors.** What people say, each with its truth on the DM layer.
+- **Street Life.** A d6 or d8 table of street moments, each tied to a
   situation, a district, or a faction, with what happens if the party engages.
-- **Names on demand.** Six to ten names in the city's naming style, for
+- **Names.** Under Street Life, six to ten names in the city's naming style, for
   improvised people.
 - **Faces.** Everyone who drives a situation, holds power, or keeps a gazetteer
   place the party will use this arc is a named NPC page, cast first; a person no

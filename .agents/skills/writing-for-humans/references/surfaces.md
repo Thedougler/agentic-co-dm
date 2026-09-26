@@ -27,7 +27,7 @@ when, Memorable element, and so on).
 - **Ends when** names an observable moment: "Ends when the party reaches the
   ladder or the second beam falls."
 
-### Situation, Cast, Space, Opposition
+### Situation, Cast, Stage, Pressure
 
 - One bullet per fact, each a complete sentence that starts with its subject
   or a bold label.
@@ -68,14 +68,14 @@ when, Memorable element, and so on).
 
 ## Session plan
 
-- **Compass** lines are one sentence each, stated as facts about tonight.
+- **At a Glance** lines are one sentence each, stated as facts about tonight.
 - **Beat Map** cells are short statements, not fragments: "Mara's first
   grab for the ledger ends; the party commits to a direction."
 - **Pressure** steps describe what the opposition does, in order, in the
   opposition's voice ("Mara follows the party to the docks and waits for
   the ledger's carrier to be alone").
-- **PC Touchpoints** name the PC, what matters to them tonight, and the beat.
-- **Floating Clues** are true facts, one sentence each.
+- **Spotlight** names the PC, what matters to them tonight, and the beat.
+- **Clues** are true facts, one sentence each.
 
 ## Run-guide cockpit (pass 2)
 
@@ -115,7 +115,7 @@ Attach the strange to a noun and a consequence.
 - Bold labels index the procedures so the DM finds one in under thirty
   seconds.
 
-### Facts, Drive, Secrets
+### Owner pages: At a Glance, At the Table, Secrets
 
 - Each fact is a present-tense sentence about the entity that changes a DM
   response.

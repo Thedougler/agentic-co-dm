@@ -242,7 +242,7 @@ line that carries it; a line with nothing beside it goes back on the page.
   with a reason.
 - The twist, rule of the place, and signatures fail the swap test.
 - Every secret, item, hazard, trace, and presence has a tell in the narration
-  and, in What or If the party, its truth and its find. Required secrets have
+  and, in Features or At the Table, its truth and its find. Required secrets have
   three clue vectors.
 - The narration came from theatre-of-the-mind, passes its final check, and
   holds no truth, DC, or unearned name; its tells read as ordinary description.

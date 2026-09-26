@@ -88,8 +88,8 @@ is immediate, lead with it.
 
 ## Beat openings
 
-The scene opening (Initial Narration, Open on, Opening, Open on Action,
-Opening image) uses the spine above and carries the entry layer; zone,
+The scene opening (`Opening` on typed beats and encounters, `Initial Narration`
+on run-guide cockpits) uses the spine above and carries the entry layer; zone,
 creature, and outcome cells carry the rest (§ Layers). The beat type decides
 what leads.
 
@@ -157,9 +157,9 @@ what leads.
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
 every handle, each in its layer (§ Layers):
 
-- **Initial Narration**, **Open on**, **Opening**, **Open on Action**,
-  **Opening image**: the beat's scene opening (entry layer; recipes above).
-- **Closing image**: the Resolution's final picture.
+- **Opening** (typed beats, encounters) or **Initial Narration** (run-guide
+  cockpits): the beat's scene opening (entry layer; recipes above).
+- **Closing Image**: the Resolution's final picture.
 - **How the Scene Resolves**: the one ending that is always true.
 - **{Creature}**: that creature as it appears in this scene.
 - **Exit**: the transition into the next beat on the same page.
@@ -252,7 +252,7 @@ every handle, each in its layer (§ Layers):
 - **From the NPC page:** Speak in the voice on the NPC's page (its word
   choice, rhythm, verbal habit, and the subject they avoid), matching its
   sample lines in manner, not words. The line serves what they want in this
-  beat, and their posture follows the page's "When posture changes".
+  beat, and their posture follows what the page's At the Table says opens and closes them.
 - **End:** After that line. A second point waits for the players' reply.
 
 ### Item in scene

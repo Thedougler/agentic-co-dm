@@ -19,7 +19,7 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
    is explicitly flagged as missing.
 
 2. **Collect visual anchors.** Read the sections that carry appearance on each owner page:
-   `## Visual reference`, `## Art`, the identity image near the title, `[!narration]` body
+   `## Art`, the identity image near the title, `[!narration]` body
    when player-safe, and frontmatter `summary` as a last fallback. Resolve each `![[...]]`
    embed to its actual file under `attachments/` as an absolute path. Record user-attached
    chat images using the active host's native image reference; these may have no vault path.

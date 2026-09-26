@@ -59,5 +59,5 @@ After reconciliation, support the short wiki spine: within 24 hours capture who
 acted, decisions that became true, and open threads in roughly 15 minutes. Promote
 improvised NPCs, places, loot, and other durable facts only to their typed atomic
 owners, preserving provenance and uncertainty. Compare a player recap only after
-the evidence-backed log exists; route faction clocks and off-screen movement to
-`world-tick`. After players interact with or witness lore: update Current Truth when it changed and append a Canon Log row. Until then the DM may change lore freely. Quest log stays with `narrative-islands`. Never use raw transcript wording as the vault's durable prose.
+the evidence-backed log exists; route faction agendas and off-screen movement to
+`world-tick`. After players interact with or witness lore: update the lore page's body when it changed and add a bullet to its `## Log`. Until then the DM may change lore freely. A quest's Log stays with `narrative-islands`. Never use raw transcript wording as the vault's durable prose.
