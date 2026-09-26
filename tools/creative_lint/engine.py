@@ -249,9 +249,6 @@ class LintEngine:
             for finding in findings:
                 if finding.result != "fail" or finding.waiver is not None or finding.repair_target is None:
                     continue
-                if finding.rule_id.startswith("TMPL"):
-                    safe.append(finding)
-                    continue
                 try:
                     auto_repair = self.registry.get(finding.rule_id).auto_repair
                 except KeyError:

@@ -31,11 +31,10 @@ A beautiful, siren-like elf sorcerer/bard (level 5). Her voice stops people talk
 
 **Mechanics:** she is a sorcerer/bard multiclass. Her voice holds magic trained into music and effects beyond words (details hidden). Her trident came from a shipwreck she does not remember.
 
-> [!mechanic]
-> **Tradition:** Arcane. **School:** Enchantment. **Spell analogue(s):** *Calm Emotions*, *Command*.
-> **Homebrew element:** Her voice suspends the impulse to speak in every listener simultaneously, rather than compelling one creature.
-> **Detect Magic:** Enchantment — a felt weight settles on the tongue, as though the next word costs more than it is worth.
-> **Counterspell:** yes.
+**Tradition:** Arcane. **School:** Enchantment. **Spell analogue(s):** *Calm Emotions*, *Command*.
+**Homebrew element:** Her voice suspends the impulse to speak in every listener simultaneously, rather than compelling one creature.
+**Detect Magic:** Enchantment — a felt weight settles on the tongue, as though the next word costs more than it is worth.
+**Counterspell:** yes.
 
 **Active situations:**
 

@@ -76,6 +76,10 @@ A question that treats the coven as framed, or a look at the locked quarters and
 Ashe uses grand, public blessings to cover a frightened, defensive private voice. He speaks as though Tyr's approval is still immediate, then drops his head when the lie is exposed. Sample line: “Tyr's blessings upon me.”
 
 
+## Secrets
+
+**Empty box.** [[tyr]] warns a straying follower before withdrawing protection. Ashe stopped being reachable. Outsiders read that at a glance. The kiss is reserved for a soul every side already agrees is gone.
+
 ## Connections
 
 | Relationship | Meaning |
@@ -86,6 +90,3 @@ Ashe uses grand, public blessings to cover a frightened, defensive private voice
 | [[tyr]] | Patron. A later note overrides the old personal-debt line. Ashe stopped being able to hear the warnings. |
 | [[penance-bar-siege]] | If the truth is late, the grove burns and a devil-touched priest remains. |
 | [[uncertainty]] | Draft fiction has him meet this crew at the door. |
-
-> [!secret] Empty box
-> [[tyr]] warns a straying follower before withdrawing protection. Ashe stopped being reachable. Outsiders read that at a glance. The kiss is reserved for a soul every side already agrees is gone.

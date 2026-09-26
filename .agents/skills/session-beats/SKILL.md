@@ -97,7 +97,7 @@ makes the next Development's information urgent.
    (the Pressure table, steps 0–4). Cliffhanger opposition comes from this
    agenda or from the environment. Done when each step names what the
    opposition does, when, and what the party can see of it.
-4. **Threads.** Name three to five live threads — PC goals, faction clocks,
+4. **Threads.** Name three to five live threads — PC goals, faction agendas,
    mysteries, relationships under pressure, depleting resources — and for
    each, the beats that plant, test, and harvest it.
 5. **Chart the beats.** Fill the Beat Map in play order. A charted slot is a
@@ -108,7 +108,7 @@ makes the next Development's information urgent.
    card (index below), thread, trigger, what changes, handoff, budget; each
    Cliffhanger and the Climax also get an escalation tier; each row names its
    memorable element. Add Floating Beats for situations that can fire
-   wherever they fit, and Climax candidates when more than one confrontation
+   wherever they fit, and Climax Candidates when more than one confrontation
    could be earned.
 6. **Escalation ladder.** Assign tiers so fights rise across the night:
    Grunts → Minions → Henchmen → Villain (monsters: Scare → Fright → Horror →
@@ -117,10 +117,10 @@ makes the next Development's information urgent.
    `encounter-prep` owns the 5e difficulty.
 7. **Routes and clues.** Each conclusion or access the session cannot
    progress without gets three independent routes (Critical Routes). Write
-   about ten Floating Clues as true, concrete facts, each revealable through
+   about ten floating Clues as true, concrete facts, each revealable through
    more than one interaction.
 8. **Spotlight.** Each PC gets at least one beat where their goal, bond, or
-   fear drives the scene (PC Touchpoints), and a thread the Climax harvests.
+   fear drives the scene (Spotlight), and a thread the Climax harvests.
 9. **Cast owners.** List every named actor, place, item, and creature the
    beats need. Cast each from the wiki first; mint with its owner skill only
    what nothing fits (`docs/agents/table-ready.md` § Cast before minting), one
@@ -136,12 +136,12 @@ makes the next Development's information urgent.
     beat-order audit below and a cold read of the plan: a DM who has never
     seen the prep can say, from the plan, what starts the night, what the
     opposition does next, and which beat is on deck. Write each audit check
-    into the plan's Prep Audit with the beats that satisfy it. Done when every
+    into your working notes with the beats that satisfy it. Done when every
     check names its beats and every failure is fixed.
 
 ## Filed session plan
 
-After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. Its jobs: Compass, Beat Map, Floating Beats, Branches & Skips, Threads, Critical Routes, Pressure (opposition agenda), PC Touchpoints, Floating Clues, Session Toolkit, and links to every typed beat page. The plan leaves Scene ends when, Zones, and Be ready for to the beat pages and run-guide cockpits.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. At a Glance carries the compass (spine, opening situation, session question, if nobody acts, now and on deck); the Beat Map carries each beat's form, card, thread, tier, trigger, and budget, with Floating Beats, Climax Candidates, Branches, and Critical Routes as `###` tables under it when they exist; then Threads, Pressure (opposition agenda), Spotlight (PC touchpoints), Clues (floating clues), and Toolkit. It links every typed beat page. The plan leaves Ends when, Stage, and Checks to the beat pages and run-guide cockpits.
 
 Done when: the plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and a cold read of it passes.
 

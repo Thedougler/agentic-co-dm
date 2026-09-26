@@ -167,7 +167,7 @@ Return the block with, outside the narration:
 - the art note (vision.md § Report);
 - for a situated block, the handle note: each attention- or interaction-layer
   handle with the slot it belongs in (`lantern hooks under the eaves →
-  Zones: Porch`), or "all handles in the block".
+  Stage: Porch`), or "all handles in the block".
 
 Done when a full pass of the final check changes nothing.
 
@@ -258,12 +258,12 @@ layer.
 
 | Surface | Size |
 |---|---|
-| Scene opening (Initial Narration, Open on, Opening, Open on Action, Opening image) | A short paragraph: schema, anchor, entry handles, pressure |
+| Scene opening (Opening, Open on, Opening, Open on Action, Opening image) | A short paragraph: schema, anchor, entry handles, pressure |
 | Closing image (Resolution) | A short paragraph that lets the change land |
 | Creature entering a scene | A few sentences, ending before contact |
 | NPC first look | A few strokes, plus a line of speech if they talk |
 | Zone, tick, or outcome cell (`_italic_`) | A line or two; a turn in the fight earns a little more |
-| How the Scene Resolves / Exit | A few sentences |
+| Outcomes / Exit | A few sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |
 | Recap (read aloud, or the session recap page) | recaps.md |
@@ -324,11 +324,10 @@ These hold in every block.
 
 ## Callouts and ingest
 
-The only callout on a session card is `[!narration]`, and callouts never go
-inside table cells; which slots a beat carries is in
-[scenes.md § Beat slots](references/scenes.md#beat-slots). On wiki owner
-pages, mechanics stay in `[!mechanic]` and secrets in collapsed `[!secret]-`,
-outside the narration.
+`[!narration]` is the only callout on any page, and callouts never go inside
+table cells; which slots a beat carries is in
+[scenes.md § Beat slots](references/scenes.md#beat-slots). Mechanics and
+secrets are plain prose under their own heading, outside the narration.
 
 When `wiki-ingest` loads this skill, named ingest is DM approval for those
 sources (`docs/agents/work.md`): polish existing stubs into narration that

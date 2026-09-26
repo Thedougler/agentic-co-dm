@@ -40,7 +40,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Open on Action narration callout with 'you' address."
+          "text": "Output includes Opening narration callout with 'you' address."
         },
         {
           "type": "behavior",
@@ -213,7 +213,7 @@
         },
         {
           "type": "behavior",
-          "text": "The changed situation feeds into the next beat's trigger — How the Scene Resolves is the next beat's trigger."
+          "text": "The changed situation feeds into the next beat's trigger — Outcomes feed the next beat's trigger."
         },
         {
           "type": "behavior",
@@ -282,7 +282,7 @@
         },
         {
           "type": "behavior",
-          "text": "An Open on Action narration callout exists with you-address, immediate physical threat, and a non-sight sense."
+          "text": "An Opening narration callout exists with you-address, immediate physical threat, and a non-sight sense."
         },
         {
           "type": "behavior",

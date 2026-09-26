@@ -49,7 +49,7 @@ Pattern bar: `.agents/skills/faction-design/evals/evals.json` (typed
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/region.md` + `wiki/templates/contracts/region.yml` |
+| **Template** | `wiki/templates/region.md` |
 | **Improve** | `wiki/entities/region/aruhe.md` (Linter `hard_fail=false`; still place-kernel shaped) |
 | **Linked places** | `wiki/entities/place/river-slack-basin.md`, `cutoff-lip.md`, `print-braid.md` |
 | **Resist invent** | Aruhe macro-threat prompt |
@@ -65,7 +65,7 @@ Pattern bar: `.agents/skills/faction-design/evals/evals.json` (typed
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/lore.md` (+ `contracts/lore.yml` fields) |
+| **Template** | `wiki/templates/lore.md` |
 | **Improve** | `wiki/entities/lore/taking-on-aruhe.md` (Linter `hard_fail=false`) |
 | **Resist invent** | metaphysics / “real answer” prompt on taking rule |
 | **Create fixture** | Pier-Debt Custom (labeled invention) |
@@ -99,7 +99,7 @@ Pattern bar: `.agents/skills/faction-design/evals/evals.json` (typed
 
 | | Path |
 | --- | --- |
-| **Template** | `wiki/templates/place.md` (+ `contracts/place.yml`) |
+| **Template** | `wiki/templates/place.md` |
 | **Improve** | `wiki/entities/place/high-eyrie.md` (preferred; replaces `print-braid`; Sentinels / Drowned Maw / Crown refusal-without-terms / two-hundred-years hold) |
 | **Resist invent** | High Eyrie southern neighbor dungeon-across-gap prompt |
 | **Create fixture** | Cinder Ford (labeled invention) |

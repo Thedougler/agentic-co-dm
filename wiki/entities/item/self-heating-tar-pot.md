@@ -42,12 +42,11 @@ tier: supporting
 | Narrative hook | The heating element is a gnomish trade secret. Other chandleries sell the pots empty and buy the elements from the Depot at markup. |
 
 
-> [!mechanic]
-> **Self-Heating Tar Pot [HB].** Contains enough tar for 10 applications of hull or deck sealant. Pulling the wire activates the alchemical heating element in the base, which keeps the tar at working temperature for 8 hours. No open flame required.
->
-> The pot is reusable. Tar refill: 2 gp. Replacement heating element: 4 gp (sold separately aboard the Nimmik Vollask).
->
-> **Limitations:** the heating element is single-use — one pull, one 8-hour burn. The element does not produce enough heat to ignite anything, boil water, or serve as a weapon. The tar itself is standard caulking tar with no special properties.
+**Self-Heating Tar Pot [HB].** Contains enough tar for 10 applications of hull or deck sealant. Pulling the wire activates the alchemical heating element in the base, which keeps the tar at working temperature for 8 hours. No open flame required.
+
+The pot is reusable. Tar refill: 2 gp. Replacement heating element: 4 gp (sold separately aboard the Nimmik Vollask).
+
+**Limitations:** the heating element is single-use — one pull, one 8-hour burn. The element does not produce enough heat to ignite anything, boil water, or serve as a weapon. The tar itself is standard caulking tar with no special properties.
 
 ## Provenance
 

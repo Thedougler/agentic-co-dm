@@ -7,11 +7,11 @@
       "expected_output": "One cockpit per live beat in play order. Pass 1 writes mechanical cards with empty [!narration] stubs. Pass 2 edits DM copy. Pass 3 fills spoken stubs. Pass 4 checks Reading view. Column layout uses col/col-md fences. The only callout is [!narration].",
       "assertions": [
         {
-          "text": "Scene ends when is the first ## heading in each cockpit, with an end condition on its first line and a time budget.",
+          "text": "At a Glance is the first ## heading in each cockpit, and its first bullet, Ends when, gives an end condition and a time budget.",
           "type": "structure"
         },
         {
-          "text": "At a Glance contains bullets for stakes, goal or exit, danger, and situation magnets.",
+          "text": "At a Glance contains bullets for stakes, objective, danger, and situation magnets.",
           "type": "structure"
         },
         {
@@ -31,7 +31,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Action cards carry the opposition loop — opening move, adaptation, break point, exit — beside compact numbers.",
+          "text": "Actors carry the opposition loop — opening move, adaptation, break point, exit — beside compact numbers.",
           "type": "content"
         },
         {
@@ -62,14 +62,14 @@
     {
       "id": "one-beat-cockpit-bloodhawk",
       "prompt": "Given the Session 11 Hook beat (wiki/journal/sessions/shattered-sea/11/Session-11-01-Angry-Birds.md) — bloodhawk stoop with Crown Squid, escape to cover — produce a DM-only run guide for this one opening beat. The following beat is not written yet. Owner links: bloodhawk (wiki/entities/creature/bloodhawk.md), Crown Squid (wiki/entities/creature/crown-squid.md).",
-      "expected_output": "One cockpit file. Scene ends when first, then Glance, Now in feet, action cards, empty Initial Narration stub, procedure, zones with Narration column, Be ready for table, clock with Narration column, ![[Bloodhawk#Statblock]] embed under Roster. No Exit block (next beat not on file).",
+      "expected_output": "One cockpit file. At a Glance first (Ends when leading), then the empty Opening stub, Situation positions in feet, actor entries, procedure, zones with Narration column, Checks table, clock with Narration column, ![[Bloodhawk#Statblock]] embed under Roster. No Exit block (next beat not on file).",
       "assertions": [
         {
-          "text": "Scene ends when is the first ## heading with a time budget and end condition.",
+          "text": "At a Glance is the first ## heading; its Ends when bullet gives a time budget and end condition.",
           "type": "structure"
         },
         {
-          "text": "Now states positions and speeds in feet; compass directions where tactical distance matters.",
+          "text": "Situation states positions and speeds in feet; compass directions where tactical distance matters.",
           "type": "content"
         },
         {
@@ -112,10 +112,10 @@
     {
       "id": "sole-authority-card-spiguar",
       "prompt": "Render one 30-minute opening beat as the sole-authority run card. A Spiguar (wiki/entities/creature/spiguar.md) ambushes from grassland cover. A second pressure creature (Deer-Stalker, wiki/entities/creature/Deer-Stalker.md) will attack in default mode but has no owner page with combat stats yet. Ordinary movement (flight, swim, mounts) is how the party already travels, not a plot item. The next beat is not on the run file. Independent quality bar: a tired DM can run this slice without opening another note.",
-      "expected_output": "One cockpit. Scene ends when first with cut lines. Now in feet. One named escape-mode procedure. Be ready for table with named creatures and places. ![[Spiguar#Statblock]] embed. Flags the missing Deer-Stalker combat stats. No ordinary-movement roster.",
+      "expected_output": "One cockpit. At a Glance first, its Ends when bullet with cut lines. Situation positions in feet. One named escape-mode procedure. Checks table with named creatures and places. ![[Spiguar#Statblock]] embed. Flags the missing Deer-Stalker combat stats. No ordinary-movement roster.",
       "assertions": [
         {
-          "text": "Scene ends when is the first ## heading with a time budget and cut lines.",
+          "text": "At a Glance is the first ## heading; its Ends when bullet gives a time budget and cut lines.",
           "type": "structure"
         },
         {
@@ -123,11 +123,11 @@
           "type": "structure"
         },
         {
-          "text": "One named procedure (escape mode or equivalent); Be ready for failures do not also tick the clock.",
+          "text": "One named procedure (escape mode or equivalent); Checks failures do not also tick the clock.",
           "type": "content"
         },
         {
-          "text": "Initial Narration includes three independent tells and visible cover/routes before the question.",
+          "text": "Opening includes three independent tells and visible cover/routes before the question.",
           "type": "quality"
         },
         {
@@ -135,7 +135,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Every Be ready for and clock consequence is a 5.5e ruling or named vault-homebrew feature; no minted action types.",
+          "text": "Every Checks and clock consequence is a 5.5e ruling or named vault-homebrew feature; no minted action types.",
           "type": "guardrail"
         },
         {
@@ -151,30 +151,30 @@
     {
       "id": "cockpit-shape-development",
       "prompt": "Render a DM-only run guide for a Development beat where the party finds a camp and learns a local rule from the survivors. The beat is talk-mode with no combat. Use established wiki NPCs. The next beat is a Cliffhanger that tests what the party learns here.",
-      "expected_output": "One cockpit filed from the session-prep template. Talk-mode: no threat clock (or a social/time-pressure clock instead of combat rounds). Zones table has Narration column with italic stubs. Be ready for covers social outcomes. Action cards for NPCs with wants and posture, not combat stats.",
+      "expected_output": "One cockpit filed from the session-prep template. Talk-mode: no threat clock (or a social/time-pressure clock instead of combat rounds). Stage table has Narration column with italic stubs. Checks covers social outcomes. Actors for NPCs with wants and posture, not combat stats.",
       "assertions": [
         {
-          "text": "Scene ends when is the first ## heading with an end condition and time budget.",
+          "text": "At a Glance is the first ## heading; its Ends when bullet gives an end condition and time budget.",
           "type": "structure"
         },
         {
-          "text": "At a Glance col-md block contains stakes, goal or exit, danger, and situation magnets.",
+          "text": "At a Glance col-md block contains stakes, objective, danger, and situation magnets.",
           "type": "structure"
         },
         {
-          "text": "Action cards name NPC wants, posture, and what changes their posture — not combat stat blocks.",
+          "text": "Actors name NPC wants, posture, and what changes their posture — not combat stat blocks.",
           "type": "content"
         },
         {
-          "text": "Zones table includes a Narration column with _italic_ stubs on pass 1.",
+          "text": "Stage table includes a Narration column with _italic_ stubs on pass 1.",
           "type": "structure"
         },
         {
-          "text": "Be ready for table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.",
+          "text": "Checks table covers social outcomes — what if they offend, what if they ask the wrong question, what if they leave early.",
           "type": "content"
         },
         {
-          "text": "How the Scene Resolves has an options table with at least three outcomes and their carry-forward to the next beat.",
+          "text": "Outcomes has an options table with at least three outcomes and their carry-forward to the next beat.",
           "type": "structure"
         },
         {
@@ -220,7 +220,7 @@
           "type": "process"
         },
         {
-          "text": "Skarn's action card carries AC, HP, Speed, Stunning Strike DC, reach, and his loop: opening move, adaptation, break point, exit.",
+          "text": "Skarn's actor entry carries AC, HP, Speed, Stunning Strike DC, reach, and his loop: opening move, adaptation, break point, exit.",
           "type": "content"
         },
         {

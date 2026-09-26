@@ -109,14 +109,14 @@ page.
 
 - **Districts.** Three to six, each with its street-level look, the reason a
   visitor goes there, who holds it, and one danger or opportunity there now.
-- **Landmarks.** Two or three a newcomer steers by.
-- **Getting around.** How long crossing takes, what changes after dark, where
-  movement is restricted and by whom.
+- **Landmarks and getting around** (under Districts). Two or three landmarks
+  a newcomer steers by; how long crossing takes, what changes after dark, and
+  where movement is restricted and by whom.
 - **Gazetteer.** Arrive and leave (who meets a ship, what it costs, what
   papers), stay, buy supplies, sell cargo and loot (a named buyer and the rate
   they pay, and a fence for goods with a history), services: each entry a named
   place and its keeper, a price, and one detail that makes it this city's.
-- **Rules that matter.** Two to four local laws or customs that change a
+- **Local Rules.** Two to four local laws or customs that change a
   choice, each with who enforces it, how, and the penalty.
 
 Done when a party could arrive, find lodging, sell cargo, and cross the city
@@ -133,8 +133,8 @@ what each costs. At least one situation touches something the party already
 cares about (a PC's tie, a thread from play, the reason they came).
 
 Then **Power**: each faction's local posture (public position, local
-objective, leverage, current move here). And **Current state**: headlines,
-pressure clocks with ticks, upcoming events with dates. Each faction in Power
+objective, leverage, current move here). Pressure clocks and upcoming events
+with dates sit on the situation they drive. Each faction in Power
 has a **local face**: the named person (an NPC page) who carries its current
 move in this city and whom the party can meet, bribe, or cross.
 
@@ -149,11 +149,10 @@ piece; and every faction in Power has a named local face.
 
 ### 5. Fill the street
 
-- **Rumors.** A d6 or d8 table of what people say, each marked with its truth
-  on the DM layer.
-- **Encounters.** A d6 or d8 table of street moments, each tied to a
+- **Rumors.** What people say, each with its truth on the DM layer.
+- **Street Life.** A d6 or d8 table of street moments, each tied to a
   situation, a district, or a faction, with what happens if the party engages.
-- **Names on demand.** Six to ten names in the city's naming style, for
+- **Names.** Under Street Life, six to ten names in the city's naming style, for
   improvised people.
 - **Faces.** Everyone who drives a situation, holds power, or keeps a gazetteer
   place the party will use this arc is a named NPC page, cast first; a person no
@@ -178,12 +177,15 @@ carries the situations' visible signs.
 
 ### 7. File the page
 
-Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md`. Fill
-frontmatter (`type: place`, `kind: city`, region, status, population,
-government, ruler, controlling_faction, summary). At a Glance carries the
-current pressure, the opportunity, and a one-sentence DM thesis of the city's
-job in play. Omit sections with no job. Write complete sentences. Wikilink
-every owner page.
+Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md` with
+`type: place` and `kind: city`; add region, population, government, ruler, and
+controlling_faction only when they have values. At a Glance opens with one
+sentence on the city's job in play, then the feel, power, current pressure, and
+opportunity. Step 3 fills Districts (getting around under the table), Gazetteer,
+and Local Rules; step 4 fills Power and Situations (one `###` each); step 5
+fills Rumors and Street Life. Keep a section only when you have facts for it
+(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
+owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.

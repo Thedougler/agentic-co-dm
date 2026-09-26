@@ -128,8 +128,8 @@ Read [references/vehicle-craft.md](references/vehicle-craft.md). Anchor the
 numbers on the closest official 5e craft of the same role and size, adjusted by
 the quirk:
 
-- **Sheet:** Size, Type, Speed (with mode), Crew (min), Passengers, Cargo.
-- **Components:** Hull AC, HP, and damage threshold; Helm AC and HP and what is
+- **Statblock:** Size, Type, Speed (with mode), Crew (min), Passengers,
+  Cargo; then Hull AC, HP, and damage threshold; Helm AC and HP and what is
   lost when it is disabled; Movement AC and HP and what is lost; each weapon's
   attack bonus or save DC, range, damage, crew to fire, and reload.
 - **Comparisons hold.** A canon comparison (faster than, better armed than,
@@ -147,7 +147,7 @@ the quirk:
   (AC, HP, Speed, the attacks or save DCs the DM will roll), the rank-and-file
   crew by count and statblock, and any beast or guard aboard.
 
-Done when every Sheet and Components line holds a number, every fighter
+Done when every Statblock line holds a number, every fighter
 aboard has numbers, and each canon comparison is written in the working notes
 as two numbers with this craft's ahead.
 
@@ -157,19 +157,19 @@ as two numbers with this craft's ahead.
   (weather deck, quarterdeck, hold, captain's cabin, rigging), each with its
   size in feet, one feature a fight or a sneak can use (a ladder, a hatch, a
   swinging boom, powder kegs), and who stands there on watch.
-- **Crew stations.** Each station: who mans it now against the minimum, the
+- **Crew.** Each station: who mans it now against the minimum, the
   action or check it runs, and what fails when it is empty.
-- **Handling.** Two to four manoeuvres or conditions that change a choice, each
+- **At the Table: handling.** Two to four manoeuvres or conditions that change a choice, each
   with its check (Ability (Skill) and DC) and its result: the quirk, wind and
   current, tight water, repairs underway.
-- **Chase and boarding.** How a pursuit with this craft runs, in **chase
+- **At the Table: chase and boarding.** How a pursuit with this craft runs, in **chase
   turns** sized so the gap changes by a real step each turn and the chase ends
   in three to eight turns (a round when ships are close, a minute or ten when
   they are far, a watch across open sea): its speed against a typical pursuer
   or quarry, what closes or opens the distance each turn,
   when grapples or boarding planks become possible, ramming damage, and when
-  the crew strikes colours, cuts loose, or fights to the last. Leave out the
-  Combat section only when the craft will never be chased, fought, or boarded.
+  the crew strikes colours, cuts loose, or fights to the last, for a craft
+  that can be chased, fought, or boarded.
 
 Done when a DM could run a chase, a boarding, and a stowaway sneak from the
 page alone.
@@ -197,21 +197,21 @@ contains every tell. A missing tell goes back to theatre-of-the-mind named.
 ### 7. File the page
 
 Copy `wiki/templates/vehicle.md` to `wiki/entities/vehicle/<kebab-name>.md`
-with `type: vehicle` and a `kind` for the craft (ship, boat, or other). Fill
-the vehicle jobs from `wiki/AGENTS.md` Layout. Omit empty sections. Write
-complete sentences. Wikilink every owner page.
+with `type: vehicle` and a `kind` for the craft (ship, boat, or other). Keep a
+section only when you have facts for it (fact-only, `wiki/AGENTS.md` Layout).
+Write complete sentences. Wikilink every owner page.
 
 | Section | Carries |
 |---|---|
+| At a Glance | Why the party cares; the captain, berth, the errand and its next step, standing orders on meeting the party |
 | Narration | The narration from step 6, nothing else |
-| Sheet, Components | The numbers from step 4 |
-| Decks | The areas from step 5; omit for a craft too small to walk |
-| Crew stations | Stations, who mans them now, and the fighters' compact numbers |
-| Handling | Manoeuvres, the quirk, and the chase loop |
-| Combat | Initiative, boarding, ramming, component targeting, surrender, sinking |
-| At a Glance | The captain, the errand and its next step, standing orders on meeting the party, and why the party cares |
-| Hidden Cargo & History | The hold and every other tell's truth, by name, with how it is found |
+| Statblock | The numbers from step 4: size, speed, crew, cargo, hull, helm, weapons |
+| Decks | The areas from step 5, for a craft large enough to walk |
+| Crew | Stations, who mans them now, and the fighters' compact numbers |
+| At the Table | Manoeuvres, the quirk, the chase loop; initiative, boarding, ramming, component targeting, surrender, sinking |
+| Secrets | The hold and every other tell's truth, by name, with how it is found |
 | Connections | Each tie by owner link and what it does at the table |
+| History | Origin, former names, contested ownership |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -230,12 +230,12 @@ line that carries it; a line with nothing beside it goes back on the page.
   with a time are in At a Glance.
 - The signature, quirk, and hold fail the swap test; each tell in the narration
   has its truth and its find on the page.
-- Every Sheet and Components line holds a number anchored on a 5e peer craft;
+- Every Statblock line holds a number anchored on a 5e peer craft;
   every weapon has attack or DC, range, and damage; every canon comparison to
   another craft holds against that craft's numbers.
 - Every fighter aboard has compact numbers, and the officers make a boarding a
   real fight for the party's level.
-- Decks, stations, handling, and the chase and boarding loop let a DM run
+- Decks, Crew, and the At the Table loop (handling, chase, boarding) let a DM run
   pursuit, boarding, and a stowaway from the page alone; each check has
   Ability (Skill) and DC; the chase resolves in three to eight chase turns.
 - Every other page the work edits stays whole: one narration callout, its

@@ -143,67 +143,6 @@ def test_fixture_families_have_fail_and_pass_cases():
 
 
 
-def test_linear_template_flags_column_wrappers(tmp_path):
-    from tools.creative_lint.template_profile import compare_page
-
-    template = tmp_path / "creature.md"
-    template.write_text(
-        "---\ntitle: t\ntype: creature\n---\n# T\n\n> [!narration] Narration\n> look\n\n"
-        "## Statblock\n```statblock\n```\n## Behavior\n## Tactics\n",
-        encoding="utf-8",
-    )
-    page = tmp_path / "bear.md"
-    page.write_text(
-        "---\ntitle: Bear\ntype: creature\n---\n# Bear\n## Statblock\n"
-        "````col\n```col-md\nflexGrow=1\n```\n## Behavior\n## Tactics\n",
-        encoding="utf-8",
-    )
-    evidence = " ".join(item.evidence for item in compare_page(page, template, root=tmp_path))
-    assert "col" in evidence
-
-
-
-
-def test_bloodhawk_allows_one_statblock_image():
-    from tools.creative_lint.template_profile import template_conformance
-
-    _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
-    assert not any(item.rule_id in {"TMPL006", "TMPL007"} for item in findings)
-
-
-def test_creature_layout_contract_flags_multiple_statblock_images(tmp_path):
-    from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
-
-    contract = load_contract(ROOT / "wiki/templates/contracts/creature.yml")
-    page = tmp_path / "creature.md"
-    page.write_text(
-        "## Statblock\n![[overview.jpg]]\n![[second.jpg]]\n```statblock\n```\n"
-        "## Art\n### Reference\n![[extra.jpg]]\n",
-        encoding="utf-8",
-    )
-    findings = check_layout_conformance(page, page.read_text(encoding="utf-8"), contract.layout)
-    assert {item["rule_id"] for item in findings} == {"TMPL006"}
-
-def test_creature_layout_contract_flags_misplaced_images(tmp_path):
-    from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
-
-    contract = load_contract(ROOT / "wiki/templates/contracts/creature.yml")
-    page = tmp_path / "creature.md"
-    page.write_text(
-        "## Statblock\n```statblock\n```\n![[overview.jpg]]\n"
-        "## Art\n![[extra.jpg]]\n",
-        encoding="utf-8",
-    )
-    findings = check_layout_conformance(page, page.read_text(encoding="utf-8"), contract.layout)
-    assert {item["rule_id"] for item in findings} == {"TMPL006", "TMPL007"}
-
-def test_bloodhawk_keeps_linear_creature_layout():
-    from tools.creative_lint.template_profile import template_conformance
-
-    _, findings = template_conformance(ROOT / "wiki/entities/creature/bloodhawk.md", root=ROOT)
-    assert not any("Extra formatting marker" in item.evidence for item in findings)
-
-
 def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
     import shutil
     import subprocess

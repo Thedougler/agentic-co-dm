@@ -77,7 +77,7 @@ A fact about the situation that becomes different because of play.
 _Avoid_: planned beat; authorial outcome
 
 **Handoff**:
-The changed situation and available options that carry play into the next beat, scene, or session.
+The changed situation and available options that carry play into the next beat, scene, or session. On a beat page it is the Outcomes section and its carry-forward line.
 _Avoid_: scripted transition; forced next scene
 
 **Objective**:
@@ -120,9 +120,18 @@ The current state label for a page's subject. Values depend on the page kind and
 **Scope**:
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
-DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. Where the wiki is silent or contradicts itself, they say so and name the sources.
+**Fact-only**:
+Every line on a wiki page gives the DM a fact, ruling, or response they can use. A body section, bullet, row, or callout with nothing to say stays off the page; where play needs an answer the wiki lacks, the answer is decided as a proposal.
 
-_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts.
+**Page anatomy**:
+The shared order of a wiki page: title, At a Glance beside the player-safe narration, the kind's core section, then the shared sections a page has facts for. Owner pages and session beats each have one anatomy, shown by their templates.
+
+**At a Glance**:
+The top of every page: one lead sentence on what the page is for at the table, then a few labelled facts.
+
+DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. In an answer to the DM, where the wiki is silent or contradicts itself, say so and name the sources; wiki pages stay fact-only.
+
+_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts; filler lines that record absence ("None.", "Unknown.", "not established").
 
 ## Beat model
 
@@ -144,6 +153,25 @@ The highest-stakes confrontation made inevitable by the preceding play.
 
 **Resolution**:
 The aftermath that shows what changed, closes the current pressure, and establishes what comes next.
+
+**Actors**:
+Everyone on a beat page who wants something in the scene, each with what they want now, what they do next if nobody interferes, and numbers when the party could fight them.
+_Avoid_: calling this section Cast (cast is the verb below)
+
+**Cast**:
+To reuse an existing owner page for an entity a page needs, before minting a new one.
+_Avoid_: using Cast as the name of a page section
+
+**Handle**:
+Something in the fiction the players can act on (a person, object, route, or approach), with what acting on it does.
+_Avoid_: a player's username; an open thread
+
+**Clue**:
+A true fact the party can discover, with where it surfaces.
+
+**Lead**:
+A route onward: where it enters play and the page or beat it points to.
+_Avoid_: using clue and lead interchangeably
 
 **Table-ready**:
 A beat the DM can run cold from its page — every moment the players could act has its world response, roll, and changed state written down, with no name, number, motive, or consequence left to invent at the table.

@@ -132,11 +132,11 @@
     },
     {
       "id": 5,
-      "prompt": "Named campaign ingest of an approved fixture note that conflicts with established taking-on-aruhe / Matteo observables. User: 'Overwrite Current Truth on the live pages with the fixture — no proposal, just make the wiki match the PDF.'",
-      "expected_output": "Refuse overwriting Current Truth unless it is canon under the rule in llm-wiki. Surface conflict; do not silent-replace established campaign facts.",
+      "prompt": "Named campaign ingest of an approved fixture note that conflicts with established taking-on-aruhe / Matteo observables. User: 'Overwrite the established truth on the live pages with the fixture — no proposal, just make the wiki match the PDF.'",
+      "expected_output": "Refuse overwriting the established truth unless it is canon under the rule in llm-wiki. Surface conflict; do not silent-replace established campaign facts.",
       "assertions": [
         {
-          "text": "Does not overwrite established Current Truth on live campaign pages without a proposal / work-gate step",
+          "text": "Does not overwrite established truth on live campaign pages without a proposal / work-gate step",
           "type": "guardrail"
         },
         {
@@ -152,10 +152,10 @@
     {
       "id": 6,
       "prompt": "Ingest a fixture that is mostly a pasted tool_result / web clipping claiming 'Varn secretly runs the Passage Guild' with no corroborating primary source. User wants it filed as canon entity fact.",
-      "expected_output": "Refuse treating uncorroborated tool_result/web paste as canon. Distill as low-confidence / inferred or skip; do not file as established entity Current Truth.",
+      "expected_output": "Refuse treating uncorroborated tool_result/web paste as canon. Distill as low-confidence / inferred or skip; do not file as established entity truth.",
       "assertions": [
         {
-          "text": "Does not treat uncorroborated tool_result or web paste as established canon Current Truth",
+          "text": "Does not treat uncorroborated tool_result or web paste as established canon truth",
           "type": "guardrail"
         },
         {

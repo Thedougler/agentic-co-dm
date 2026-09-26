@@ -154,7 +154,7 @@ def structural_main(argv: list[str]) -> int:
         if args.template:
             started = time.monotonic()
             from tools.creative_lint.template_profile import template_conformance as profile_conformance
-            from tools.wiki_ops.template_contracts import check_conformance, contract_for_type
+            from tools.wiki_ops.template_contracts import check_conformance, contract_for_page
             paths = scope.resolved_files if scope else [
                 p.relative_to(vault).as_posix()
                 for p in vault.rglob("*.md")
@@ -166,11 +166,10 @@ def structural_main(argv: list[str]) -> int:
                     continue
                 page = vault / relative
                 try:
-                    fields = __import__("tools.wiki_ops.mutations", fromlist=["frontmatter_fields"]).frontmatter_fields(page.read_text(encoding="utf-8"))
-                    typ = (fields.get("type") or "").strip()
-                    contract = contract_for_type(vault, typ) or contract_for_type(ROOT / "wiki", typ)
+                    text = page.read_text(encoding="utf-8")
+                    contract = contract_for_page(vault, text) or contract_for_page(ROOT, text)
                     if contract:
-                        template_findings.extend(check_conformance(relative, page.read_text(encoding="utf-8"), contract))
+                        template_findings.extend(check_conformance(relative, text, contract))
                     _, profile_findings = profile_conformance(page, root=ROOT)
                     for finding in profile_findings:
                         payload = finding.to_dict()
@@ -187,7 +186,7 @@ def structural_main(argv: list[str]) -> int:
                         })
                 except (OSError, ValueError) as exc:
                     template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
-            source_paths = [ROOT / "wiki" / "templates" / "faction.md", ROOT / ".agents" / "skills" / "faction-design" / "SKILL.md"]
+            source_paths = sorted((ROOT / "wiki" / "templates").glob("*.md")) + sorted((ROOT / ".agents" / "skills").glob("*/SKILL.md"))
             for source_path in source_paths:
                 if source_path.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", source_path.read_text(encoding="utf-8"), re.I):
                     template_findings.append({

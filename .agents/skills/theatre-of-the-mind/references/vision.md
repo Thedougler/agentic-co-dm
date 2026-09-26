@@ -12,7 +12,7 @@ named person, creature, place, item, and vehicle in it. For each one, collect
 images from all three places:
 
 1. **Linked.** Every image embedded or linked on the parent page and on each
-   owner page: the image under the title, `## Art`, `## Visual reference`,
+   owner page: the image under the title, `## Art`,
    statblock and section embeds, and any `![[…]]` or `[[…]]` that ends in an
    image extension. A transcluded section (`![[marsh-strider#Statblock]]`)
    brings its page's images with it.

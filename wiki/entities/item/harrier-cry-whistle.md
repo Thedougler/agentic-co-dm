@@ -37,10 +37,9 @@ tier: supporting
 
 *Wondrous Item, Uncommon.* Cut from the wing bone of a crimson-crowned harrier, whose hunting cry breaks like a dropped pane.
 
-> [!mechanic]
-> **[HB] Cry (action).** The whistle holds 3 charges and regains all of them at dawn. Spend a charge and choose one creature within 30 feet that can hear you. It must succeed on a DC 13 Constitution saving throw or lose concentration on a spell it is maintaining, and it takes 1d4 thunder damage whether it saves or not.
->
-> **Limitations:** No effect on a deafened creature, anything immune to thunder damage, or a creature that cannot hear over its own noise. Every blast carries roughly 300 feet, and everything hunting in that radius hears a wounded bird.
+**[HB] Cry (action).** The whistle holds 3 charges and regains all of them at dawn. Spend a charge and choose one creature within 30 feet that can hear you. It must succeed on a DC 13 Constitution saving throw or lose concentration on a spell it is maintaining, and it takes 1d4 thunder damage whether it saves or not.
+
+**Limitations:** No effect on a deafened creature, anything immune to thunder damage, or a creature that cannot hear over its own noise. Every blast carries roughly 300 feet, and everything hunting in that radius hears a wounded bird.
 
 ## Provenance
 

@@ -9,259 +9,94 @@ type: region
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-region: ""
 scale: regional
 kind: wilderness
+region: ""
 structure: ""
 as_of: ""
 summary: ""
 ---
-<!--
-Copy-start scaffold. Fractal region page for a massive evolving sandbox.
-
-region = parent region.
-scale examples: macro, regional, local.
-kind examples: realm, province, frontier, wilderness, forest, mountains, archipelago, sea, valley, district.
-structure examples: hexcrawl, pointcrawl, routes, abstract.
-
-MACRO — continent, nation, great sea:
-Keep Current state, Geography, Subregions, major Routes, Active powers, Fronts, Stakes, and Change log.
-Usually omit the encounter table and individual minor sites.
-
-REGIONAL — province, island chain, large wilderness:
-Default use. Most sections should earn their place.
-
-LOCAL — valley, island, district, hex-cluster:
-Focus on routes, key places, immediate powers, rumors, encounters, and discoveries.
-Omit Subregions when they add no useful choice.
-
-Keep persistent geography separate from ephemeral events. Give a detailed site its own [[place]] note once its key no longer fits comfortably here. Keep only the few factions and pressures currently capable of changing this region. Let actual play determine where additional detail is added.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. A site that needs its own key gets its own place page. `region` is the parent region.
+scale: macro | regional | local. kind examples: realm, frontier, wilderness, forest, mountains, archipelago, sea. -->
 
 # {{title}}
 
-<!-- Add region art when available. -->
-
-> [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: location. -->
-> Write a standalone cold portrait of the region as a traveler first experiences it — as long as the region requires to be felt. Cover horizon, terrain, weather, movement underfoot, sound, and one unmistakable feature that distinguishes this region from its neighbors. The portrait paints a drawable landscape a player can picture from a ridge. No secrets, DCs, or unearned names.
-
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
-|                   |                                                                |
-| ----------------- | -------------------------------------------------------------- |
-| **Scale**         |                                                                |
-| **Kind**          |                                                                |
-| **Character**     | What makes travel or life here unlike the neighboring regions. |
-| **Anchor**        | [[place]]                                                      |
-| **Known for**     |                                                                |
-| **Feared for**    |                                                                |
-| **Parent region** | [[region]]                                                     |
+<!-- Required. Lead sentence: the kind of adventure and choices this region creates. Then labelled facts, one bullet each. -->
 
-> **DM thesis.** State what this region is for at the table. Describe the choices, pressures, or kind of adventure it creates.
+- **Now.** What is normal here, and what just changed.
+- **Pressure.** What is getting worse, and what people will notice next.
+- **Known for.** What travelers expect.
+- **Anchor.** [[place]]
+```
 
-## Current state
-
-**Status quo.** Record what is normal here as of `{{in-world date}}` in two to four sentences. This is the state to assume until play or an active power changes it.
-
-* **Recent change.** What has broken, arrived, vanished, awakened, or shifted.
-* **Pressure.** What is presently getting worse.
-* **Opportunity.** What has become newly possible or valuable.
-* **Next visible change.** What people will notice next if nobody interferes.
-
-<!-- Keep this section aggressively current. Move obsolete states to Change log instead of accumulating paragraphs here. -->
-
-## Regional truths
-
-<!-- 2–4 durable facts that repeatedly matter during play. Prefer facts that change decisions over encyclopedia lore. -->
-
-* **Truth.**
-* **Truth.**
-* **Truth.**
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look as a traveler first meets it: horizon, terrain, weather, footing, sound, and one feature that sets it apart from its neighbors. -->
+```
+````
 
 ## Geography
 
-### Shape and boundaries
+<!-- The shape of the land: boundaries and neighbors, landmarks a traveler steers by, and subregions with their own character. -->
 
-Describe the physical logic of the region. Note its boundaries, internal divisions, and sources of movement.
-
-| Edge | Neighbor   | Crossing / boundary | What changes across it |
-| ---- | ---------- | ------------------- | ---------------------- |
-|      | [[region]] |                     |                        |
-
-### Subregions
-
-<!-- Use for nested regions with their own identity or play structure. Omit at local scale when unnecessary. -->
-
-| Subregion  | Character | Current pressure | Why go there |
-| ---------- | --------- | ---------------- | ------------ |
-| [[region]] |           |                  |              |
-
-### Landmarks
-
-<!-- Visible, navigational, culturally dominant, or otherwise reusable landmarks. Detailed locations belong on their own pages. -->
-
-* **[[place]].** Describe this landmark and its role in travel.
+- **[[place]].** What it is and its role in travel.
 
 ## Travel
 
-### Structure
+<!-- Only what changes a travel choice: routes with their tradeoffs, weather, navigation, rest and supply, one unusual rule. -->
 
-* **Map.** Add a region map when available.
-* **Travel structure.** Hexcrawl / pointcrawl / known routes / abstract
-* **Scale.** One hex, leg, or travel turn represents …
-* **Procedure.** [[travel procedure]]
-* **Navigation.** State what makes staying on course easy, difficult, or unnecessary.
-* **Weather / season.** State what routinely alters travel.
-* **Rest / supply.** State where travelers can reliably recover or resupply.
-* **Regional rule.** State one unusual rule important at the table. Omit when none exists.
+| Route    | Connects              | Time | Risk | Advantage |
+| -------- | --------------------- | ---- | ---- | --------- |
+| [[page]] | [[place]] ↔ [[place]] |      |      |           |
 
-### Routes and connections
+## Key Places
 
-<!-- Give alternate routes genuinely different tradeoffs. Record only enough information for the players to make a meaningful travel decision. -->
+- [[place]] — what it offers or threatens now.
 
-| Route                 | Connects              | Time | Cost / requirement | Risk | Advantage | Known |
-| --------------------- | --------------------- | ---: | ------------------ | ---- | --------- | ----- |
-| [[route or landmark]] | [[place]] ↔ [[place]] |      |                    |      |           | Yes   |
+## Powers
 
-### Hidden and broken connections
+<!-- The few factions and forces able to change this region now, including any threat that advances when ignored. -->
 
-<!-- Secret trails, seasonal passes, teleport circles, washed-out bridges, blockades, newly opened roads, and other connections whose discovery changes the map. -->
+- [[faction]] — what it wants here, its next move, and the sign of that move.
 
-* **Connection.** [[place]] ↔ [[place]]. State the condition for discovering or restoring it.
+## Rumors
 
-## Key places
+<!-- A d6 table only when you have six rumors; otherwise a list. Each rumor gives the party something to chase. -->
 
-<!-- Curated table-ready places only. Geography persists here; encounters and temporary events do not. -->
+| d6 | Rumor | Truth | Points to |
+| -: | ----- | ----- | --------- |
+| 1  |       |       | [[page]]  |
 
-| Place     | Kind | Current state | What it offers or threatens | Lead                               |
-| --------- | ---- | ------------- | --------------------------- | ---------------------------------- |
-| [[place]] |      |               |                             | How the party can learn it exists. |
+## Encounters
 
-## Active powers
+<!-- A d6 table of encounters drawn from creatures and factions on this page, each with its warning sign. -->
 
-<!-- Track roughly 3–4 groups with the greatest ability to change this region. Other organizations can exist without occupying active prep. -->
+| d6 | Encounter | Warning sign |
+| -: | --------- | ------------ |
+| 1  | [[creature]] |           |
 
-| Power       | Hold / presence | Wants now | Next move | What reveals that move |
-| ----------- | --------------- | --------- | --------- | ---------------------- |
-| [[faction]] |                 |           |           |                        |
+## Secrets
 
-## Fronts and pressures
+<!-- Hidden routes, buried truths, and discoveries, each with how the party can find it. -->
 
-<!-- Use for forces that keep moving when ignored: villains, wars, plagues, migrations, storms, curses, ecological collapse, etc. Usually 1–3 active fronts are enough. Do not pre-script how the party responds. -->
+## Connections
 
-## Front or threat
+- [[region]] — the neighbor and what changes across the border.
 
-* **Impulse / goal.** What drives it.
+## History
 
-* **Impending consequence.** What becomes true if it ultimately succeeds.
+<!-- Past events that still leave something usable in the present. -->
 
-* **Affected.** [[place]], [[faction]], people, route, or resource placed under pressure.
+## Log
 
-* **Signals.** What the characters can actually see, hear, discover, or hear rumored.
+- **[[Session]]** — what changed here and why.
 
-* [ ] **Portent 1.** First important change.
-
-* [ ] **Portent 2.** Escalation that alters choices.
-
-* [ ] **Portent 3.** Point of crisis.
-
-<!-- Add another front only when it is independently active. -->
-
-## Rumors and leads
-
-<!-- Every entry should give the party something they can investigate, seek, avoid, exploit, or ask about. -->
-
-| d6 | Rumor / lead | Truth behind it | Points toward |
-| -: | ------------ | --------------- | ------------- |
-|  1 |              |                 | [[place]]     |
-|  2 |              |                 | [[place]]     |
-|  3 |              |                 | [[faction]]   |
-|  4 |              |                 | [[place]]     |
-|  5 |              |                 | [[creature]]  |
-|  6 |              |                 | [[region]]    |
-
-## Encounter ecology
-
-<!-- Keep encounters separate from the geographic key. Favor reusable procedural ingredients tied to creatures, factions, lairs, routes, and current regional conditions. Change this table when the region changes. -->
-
-**Encounter procedure:** [[encounter procedure]]
-
-| d6 | Encounter | Sign / track / warning | Source or destination |
-| -: | --------- | ---------------------- | --------------------- |
-|  1 |           |                        | [[place]]             |
-|  2 |           |                        | [[place]]             |
-|  3 |           |                        | [[faction]]           |
-|  4 |           |                        | [[place]]             |
-|  5 |           |                        | [[creature]]          |
-|  6 |           |                        | [[place]]             |
-
-### Regional signs
-
-<!-- Clues that can foreshadow encounters or let explorers deliberately pursue something instead of meeting it blindly. -->
-
-* **[[creature or faction]].** Tracks, spoor, smoke, songs, refugees, patrol marks, damaged vegetation, abandoned camps, or other evidence.
-* **[[front or threat]].** Observable evidence of its current stage.
-
-## What can be found
-
-<!-- Rewards exploration without requiring a fully keyed encyclopedia. These can become places or hooks when discovered. -->
-
-* **Resource.** What is valuable here and who cares about it.
-* **Shelter.** Where safety can be found and what it costs.
-* **Wonder.** A fantastic feature characters may seek for its own sake.
-* **Hidden lore.** A discoverable fact that changes how the region is understood.
-* **Shortcut.** A discovery that changes future movement through the region.
-
-## History still in play
-
-<!-- Record the past only when it leaves something usable in the present. -->
-
-| Past fact | Present consequence | Evidence in the world |
-| --------- | ------------------- | --------------------- |
-|           |                     | [[place or object]]   |
-
-## Stakes
-
-<!-- 1–3 concrete questions whose answers should emerge through play. Do not decide the answers here. -->
-
-* Will …
-* Who will …
-* What becomes of …
-
-## Change log
-
-<!-- Preserve consequences without burying the current state. Use in-world dates when available. -->
-
-| Date | Change | Cause | Fallout / pages affected |
-| ---- | ------ | ----- | ------------------------ |
-|      |        |       | [[page]]                 |
-
-## Regional index
-
-<!-- Optional Dataview. Assumes child pages use `region: "{{title}}"` or the region note's filename. -->
-
-```dataview
-TABLE
-  type AS "Type",
-  kind AS "Kind",
-  summary AS "Summary"
-FROM ""
-WHERE region = this.file.name OR region = this.title
-SORT type ASC, file.name ASC
-```
-
-### Between-session maintenance
-
-* [ ] Rewrite **Current state** if play changed the status quo.
-* [ ] Record permanent consequences in **Change log**.
-* [ ] Advance only the active powers or fronts that had reason and opportunity to act.
-* [ ] Turn those off-screen actions into a visible **signal, rumor, encounter, or changed place**.
-* [ ] Update routes, encounter ecology, or faction presence when the fiction changed them.
-* [ ] Promote any newly important site, NPC, creature, faction, or subregion to its own linked note.
-* [ ] Add detail only along the directions the players are actually pursuing.
-
-<!--
-Research basis: region material is organized around persistent keyed geography plus separate encounters and a current campaign-status layer; rumors expose actionable regional information; pointcrawl structures can mix scales and nest fractally; meaningful routes differ by consequential tradeoffs; spiral development expands outward from actual player interest; fronts encode active dangers through goals, portents, and unresolved stakes; large sandboxes benefit from limiting active factions to the few currently relevant movers.
-Project metadata and presentation conventions aligned with the existing place entity scaffold.
--->
+## Art

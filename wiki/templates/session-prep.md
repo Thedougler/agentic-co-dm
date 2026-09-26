@@ -8,122 +8,85 @@ updated: YYYY-MM-DD
 type: session-prep
 reveal: unrevealed
 campaign: "{{campaign}}"
-session: 0
+session: ""
 visibility: dm
 status: ready
 summary: ""
 ---
-<!-- Copy-start scaffold. Omit unused sections. Pass is Session 11 cockpit jobs in run-guide, not heading-list match. File to wiki/journal/sessions/<campaign-slug>/<session-number>/ as Session-<N>-<BB>-<Label>.md. -->
-# Session {{session}}: {{title}}
+<!-- Run-guide cockpit for one live slice; field rules live in run-guide references/lean-surface.md. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections and these comments. -->
+
+# {{title}}
+
+## At a Glance
+
+<!-- Required. The labelled facts the DM needs first. -->
+
+- **Ends when.** The end condition, then the time budget: about thirty minutes. **If behind:** what to cut. **If ahead:** what to add.
+- **Stakes.** What can be won or lost.
+- **Objective.** What ends the slice for the party.
+- **Danger.** The threat in numbers.
+- **Next.** [[Session-N-BB-label]]
+
+> [!narration] Opening
+> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
 
 ````col
 ```col-md
-## Scene ends when
+flexGrow=1
+===
+## Situation
 
-This beat ends when…
-
-Plan for about thirty minutes.
-
-**If behind:**
-
-**If ahead:**
+Who starts where, in feet and compass directions, and what a move or Dash reaches.
 ```
 
 ```col-md
 flexGrow=2
 ===
-## At a Glance
+## Actors
 
-- **Stakes:**
-- **Goal / exit:**
-- **Danger:**
-- **Silence:** Present the situation, ask what they do, and wait.
-- **Situation magnets:**
+**[[creature]] × 3.** The compact numbers the DM rolls this slice: AC, HP, one attack or save DC, the bloodied or break rule.
 ```
 ````
 
-## Now
-
-Who starts where, in feet and compass directions. What a move vs Dash reaches.
-
-## Action cards
-
-````col
-```col-md
-**Opposition or terrain.** Default-mode numbers the DM will roll this slice. Wikilink the owner.
-```
-````
-
-> [!narration] Initial Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
-> Write a situated opening the DM can speak aloud. Address the players as "you", present tense. Seat the party in the space — visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. No secrets, DCs, or unearned names.
-
-````col
-```col-md
-flexGrow=3
-===
 ## Procedure
 
-**Named mode.** Trigger once. Failed checks impose their Be ready for ruling.
-```
+**Named mode.** Its trigger in this slice, once.
 
-```col-md
-## Secondary objective
+## Stage
 
-Omit this heading when there is no second question.
-```
-````
+| Place | Distance | Cover | Narration |
+| ----- | -------- | ----- | --------- |
+|       |          |       | _…_       |
 
-## Zones
-
-| Place | Distance from the party | Cover | Narration |
-| --- | --- | --- | --- |
-| | | | _…_ |
-
-## Be ready for
-
-| Intent | Approach | DC | Success | Partial | Failure |
-| --- | --- | --- | --- | --- | --- |
-| | **Ability (Skill)** | `DC n` | | | |
-
-````col
-```col-md
-flexGrow=3
-===
-## Threat clock
+## Pressure
 
 | Tick | What happens | Narration |
-| --- | --- | --- |
-| 1 | | _…_ |
-```
+| ---- | ------------ | --------- |
+| 1    |              | _…_       |
 
-```col-md
-**Cover.** Omit Threat clock when there is no fuse.
+## Checks
 
-**Scene dials.**
-```
-````
+| Intent | Approach | DC | Success | Partial | Failure |
+| ------ | -------- | -- | ------- | ------- | ------- |
+|        | **Ability (Skill)** | `DC 13` |  |  |  |
 
-## How the Scene Resolves
+## Outcomes
 
-Next state. Hand to the next beat on this session’s skeleton.
+<!-- Required. The changed situation and the beat each likely option hands to. -->
 
-> [!narration] How the Scene Resolves
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
-> Write the changed situation in "you" address, present tense, at least one non-sight sense. Show what is now true.
+> [!narration] Outcomes
+> <!-- The changed situation in "you" address, present tense. -->
 
 | If | Next | Narration |
-| --- | --- | --- |
-| | [[Session-N-BB-Label]] | _…_ |
+| -- | ---- | --------- |
+|    | [[Session-N-BB-label]] | _…_ |
 
 ## Roster
 
-<!-- Omit when no combat-mode sheet will be rolled. -->
+![[creature#Statblock]]
 
 ## Backup
 
 [[owner]] · [[next beat]]
 
 ## Battlemap
-
-<!-- Omit when no battlemap art exists. -->

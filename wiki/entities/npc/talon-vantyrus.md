@@ -173,15 +173,14 @@ legendary_actions:
     desc: "One creature Vantyrus can see within 60 feet must make a DC 20 Wisdom saving throw. On a failed save, it takes 18 (4d8) psychic damage, can't take Reactions, and has disadvantage on the next D20 Test it makes before the end of its next turn. On a successful save, it takes half as much damage only."
 ```
 
-> [!mechanic] Running the fight
-> Vantyrus should feel like he is **interrupting decisions rather than absorbing attacks**, and he should rarely stand and trade damage. Roll his three **Fatespinner** dice openly at the beginning of combat and leave them visible: a low stored roll becomes a threat hanging over the party, and a high roll becomes an outcome he can guarantee for himself or an ally.
->
-> 1. Hold position behind **Winter's Stillness** until the action begins.
-> 2. Spend **Fatespinner** to ruin a critical roll.
-> 3. Make three **Frostglass Blade** attacks.
-> 4. Reposition through **Between Wingbeats**, **Flowing Step**, or **Unchosen Step**.
-> 5. Answer weapon pressure with **Absent Feather** and a key spell with **Sever the Gesture**.
-> 6. Spend **Five Futures Cut** once the party spreads out or believes distance has made them safe.
+**Running the fight.** Vantyrus should feel like he is **interrupting decisions rather than absorbing attacks**, and he should rarely stand and trade damage. Roll his three **Fatespinner** dice openly at the beginning of combat and leave them visible: a low stored roll becomes a threat hanging over the party, and a high roll becomes an outcome he can guarantee for himself or an ally.
+
+1. Hold position behind **Winter's Stillness** until the action begins.
+2. Spend **Fatespinner** to ruin a critical roll.
+3. Make three **Frostglass Blade** attacks.
+4. Reposition through **Between Wingbeats**, **Flowing Step**, or **Unchosen Step**.
+5. Answer weapon pressure with **Absent Feather** and a key spell with **Sever the Gesture**.
+6. Spend **Five Futures Cut** once the party spreads out or believes distance has made them safe.
 
 **The Fatespinner.** The [[fate-spinner]] does not show him a single predetermined future. It exposes nearby possibilities, and he uses it to find the moments where several outcomes remain possible and then forces one branch to become real. At the table that is the **Fatespinner** trait above. Describe his effects as impossible prediction, wing-assisted footwork, temporal afterimages, strikes intercepted before they begin, movements selected from several possible futures, and the Fatespinner rotating as outcomes collapse; do not call them spellcasting unless another creature is explicitly identifying their magical mechanics.
 
@@ -197,12 +196,13 @@ legendary_actions:
 
 * **Front: The Rule of Two.** *Lifecycle:* active. *Aim:* stay ahead of [[talon-skarn]]'s open contest to kill him long enough to pry the transformation technique loose from the order that raised him, whatever it costs the people still inside it. *Approach:* he gives Skarn access to every technique and treats each lesson as a live weapon aimed back at him, never announces the test, and never deliberately teaches Skarn anything wrong. If Skarn cannot eventually threaten him, Vantyrus considers himself to have failed as a master. Every other task runs through hired blades and paid contacts who learn one job each and never who gave the order. *Off-screen move if unopposed:* keeps testing Skarn's reach while advancing the Countless's hunt for that gift, the shared operation on [[long-sight-hunt]]. *Closes when:* Skarn's move against him becomes more pressing than one fight, or Kyzil realizing what Crissdalynn is holding closes the one crack Vantyrus is counting on. *Clock:* 4 segments, fast-moving once Skarn commits. Filled: 0. *Consequence at fill:* the contest resolves, and Vantyrus falls to his own apprentice or breaks Skarn decisively and preserves the Rule of Two for a generation. *Possible outcomes:* Skarn strikes and loses, proving Vantyrus's doctrine again; Skarn strikes and wins and the Countless gains a new master; or the fight turns against Vantyrus directly and he escapes through **Unchosen Step**, leaving a hired hand or Skarn to cover the gap while the contest continues another day. *PC connection:* runs through [[crissdalynn-khinriss]] directly, because his whole plan is to read what she is carrying before Kyzil or the order realize what she holds. *Quest link:* none yet.
 
-> [!secret] Secrets and future form
-> **Osset is Talon Vantyrus.** The party does not know it, and [[master-kyzil]] believes his old master died decades ago.
->
-> Vantyrus still considers Kyzil his greatest student, and his only admitted fear is that [[talon-skarn]] may be right. His current physical location is unknown, and whether the Countless probe through the [[drowned-maw]] seal succeeded is unestablished. Do not reveal him physically until the identity connection can matter.
->
-> Do not add Soul Incarnate abilities to this stat block. If he acquires the transformation technique, write a second stat block, and let that form move from **seeing several possible futures** to **existing across several possible futures at once**.
+## Secrets
+
+**Secrets and future form.** **Osset is Talon Vantyrus.** The party does not know it, and [[master-kyzil]] believes his old master died decades ago.
+
+Vantyrus still considers Kyzil his greatest student, and his only admitted fear is that [[talon-skarn]] may be right. His current physical location is unknown, and whether the Countless probe through the [[drowned-maw]] seal succeeded is unestablished. Do not reveal him physically until the identity connection can matter.
+
+Do not add Soul Incarnate abilities to this stat block. If he acquires the transformation technique, write a second stat block, and let that form move from **seeing several possible futures** to **existing across several possible futures at once**.
 
 ## Connections
 

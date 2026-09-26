@@ -55,14 +55,13 @@ Fio's own stock stays cosmetic. Rufio Segalla's smoking room sells the real thin
 [[rufio-segalla]] rolls this one to order at [[La Brace]], a [[Velo Quarter]] smoking room in Calveno. He never keeps it on the shelf. Getting one means an hour in the room first, with the price coming only after. It never appears on [[La Gatta]]'s board.
 
 
-> [!mechanic]
-> **Ricochet Red [HB].** Single use, consumable, with no recharge. Lighting it and drawing from it takes a Bonus Action. Once before the end of your next turn, when you hit a creature with a ranged weapon attack, the shot ricochets.
->
-> Make a ranged weapon attack with the same weapon against a different creature within 20 feet of the first target, using your same attack bonus. On a hit, it ricochets again to a third creature within 20 feet of the second. Each ricochet deals the weapon's damage dice alone, with no ability modifier added. The chain reaches no farther than that third creature.
->
-> **Edge cases:** the ricochet attacks are part of the triggering attack and cost no action of their own. Each ricochet needs a target you can see within range of the last hit, and a ricochet can never return to a creature already hit in this chain. The chain stops the moment a ricochet attack misses. The effect ends when the chain stops, or at the end of your next turn, whichever comes first.
->
-> **Limitations:** the triggering attack itself gains no bonus, and ricochet damage never adds an ability modifier. The chain cannot reach a fourth target, and it never returns to a creature it already struck.
+**Ricochet Red [HB].** Single use, consumable, with no recharge. Lighting it and drawing from it takes a Bonus Action. Once before the end of your next turn, when you hit a creature with a ranged weapon attack, the shot ricochets.
+
+Make a ranged weapon attack with the same weapon against a different creature within 20 feet of the first target, using your same attack bonus. On a hit, it ricochets again to a third creature within 20 feet of the second. Each ricochet deals the weapon's damage dice alone, with no ability modifier added. The chain reaches no farther than that third creature.
+
+**Edge cases:** the ricochet attacks are part of the triggering attack and cost no action of their own. Each ricochet needs a target you can see within range of the last hit, and a ricochet can never return to a creature already hit in this chain. The chain stops the moment a ricochet attack misses. The effect ends when the chain stops, or at the end of your next turn, whichever comes first.
+
+**Limitations:** the triggering attack itself gains no bonus, and ricochet damage never adds an ability modifier. The chain cannot reach a fourth target, and it never returns to a creature it already struck.
 
 ## Provenance
 

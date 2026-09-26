@@ -6,36 +6,26 @@ sources: []
 created: YYYY-MM-DD
 updated: YYYY-MM-DD
 type: work
+kind: dm-intelligence
 reveal: unrevealed
 grounded_in: []
 invention: true
 summary: ""
 ---
-<!--
-Copy-start scaffold for layout kind DM Intelligence. Campaign type stays work.
-This page is table analysis. It is not the table aim.
-Omit empty sections. Pass is the jobs in wiki/AGENTS.md, not heading-order match.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. This page analyzes how the table plays; who the players are and the campaign intent live on the campaign hub. Delete these comments. -->
 
 # {{title}}
 
-Address this page to the DM. State the analysis. Do not record who the players are or the campaign intent here.
+State the finding in one or two sentences, addressed to the DM.
 
-## Table analysis
+## Analysis
 
-Player interests, combat patterns, review queues, or other observations about how this table actually plays.
+<!-- Required. Player interests, combat patterns, or other observed habits of this table, each tied to the session that shows it. -->
 
 ## Grounding
 
-List the sessions or wiki pages that ground this analysis.
+- [[Session]] — what it shows.
 
 ## Decision
 
-The DM accepts, edits, or rejects.
-
-<!--
-Design basis: keep table analysis off the hub and off campaign clocks. Review how
-these players actually play; recorded aim stays one place. Techniques used as
-examples: character review as prep, secrets as ammunition, status document for
-facts not vibes.
--->
+<!-- The DM accepts, edits, or rejects. -->

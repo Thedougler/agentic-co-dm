@@ -132,6 +132,10 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 | [[Midchain]] | Contested | Sea lanes the Passage can use without staying on charts. | Crown cutters can run the main lanes. |
 | [[aruhe]] | Temporary | The crew reached the island while following the Calveno raid's survivors. | Survivors remain inland and the ship stays mobile. |
 
+## Secrets
+
+**Hidden truth.** The Passage grew from [[Warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
+
 ## Connections
 
 | Faction / person | Stance | What Passage wants from them | Leverage, debt, or friction |
@@ -173,7 +177,4 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 - **Around 1240 DR.** The network grew from [[Warren]] under pressure and kept relationships that papers and debt would otherwise erase.
 ## Hidden Agenda
-
-> [!secret] Hidden truth
-> The Passage grew from [[Warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
 

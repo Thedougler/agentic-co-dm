@@ -42,7 +42,7 @@ this beat never spends at the table stays off the page.
    positions, conditions, HP or resources that matter, who holds what, what the
    party knows, which clocks sit where. The first beat of a session reads the
    last session's ending.
-2. **Cast.** Every actor on the page, named or rank-and-file, links its owner
+2. **Actors.** Every actor on the page, named or rank-and-file, links its owner
    page and states, for this beat:
    what it wants now; what it does next if nobody interferes; what it offers,
    withholds, or lies about; what shifts its posture. Every side the party could
@@ -53,7 +53,7 @@ this beat never spends at the table stays off the page.
    gets one as a proposal (a named standard 5e statblock, adjusted, is fine),
    filed on the owner before the beat depends on it. Opposition with no owner
    at all is minted through `monster-design`'s Reskin path first.
-3. **Space.** Where the beat happens, with distances in feet where position
+3. **Stage.** Where the beat happens, with distances in feet where position
    matters; two or three interactive features, each with its obvious use and
    the ruling it produces (half cover, difficult terrain, a DC to climb, damage
    when it falls); one way the space changes during the beat.
@@ -66,15 +66,16 @@ this beat never spends at the table stays off the page.
    sneak, trade, trick, flee, protect, sacrifice — each with its concrete
    upside and its cost. Handles are verbs the players can pick up from what
    they can see.
-6. **Rulings.** Each uncertain action worth rolling has Ability (Skill), DC,
+6. **Checks.** Each uncertain action worth rolling has Ability (Skill), DC,
    success, and failure, with partial when the fiction has a middle
    (`dnd5e-mechanics` sets these). Sensible actions with no real doubt succeed
    automatically and say what they yield. Failure moves play: it costs time,
    position, resources, or exposure, and the beat still ends.
-7. **Discoveries.** The actual truths, stated as facts, each with at least one
+7. **Clues and leads.** The actual truths (clues), stated as facts, each with at least one
    way it surfaces. A conclusion the session cannot progress without gets three
-   independent routes. Clues that nobody could use are cut.
-8. **Payoff.** What the beat can earn and what it can cost, named: the item
+   independent routes. Leads are the routes onward: where each enters play and
+   the page or beat it points to. Clues that nobody could use are cut.
+8. **Payoff** (in Outcomes). What the beat can earn and what it can cost, named: the item
    (owner link), coin amount, ally, leverage, route, favor, or information; the
    injury, spent resource, broken trust, or advanced clock.
 9. **Outcomes and carry-forward.** A row for each outcome the beat can
@@ -82,7 +83,7 @@ this beat never spends at the table stays off the page.
    to, plus one row for "anything else": which facts on this page stay true
    whatever the party does. The carry-forward lists the state variables the
    next beat inherits.
-10. **Spoken layer.** `[!narration]` blocks filled through
+10. **Spoken layer.** `[!narration]` blocks (the Opening first) filled through
     `theatre-of-the-mind`: what the characters perceive, ending on a moment
     they can act on.
 

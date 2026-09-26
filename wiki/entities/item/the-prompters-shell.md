@@ -52,14 +52,13 @@ Sold for the prompter's box at the front of a stage, where somebody is always fe
 Uncommon tier holds. Magic Item Rarity prices Uncommon goods at 400 gp with an approximate range of 100-500 gp, and the shell's 300 gp sits inside it beside [[La Brace]]'s [[ricochet-red]] at the same price. It reaches nowhere near _identify_: one property, not the item's full properties, no attunement requirement disclosed, no spells stored, and nothing at all learned from touch or from a page of text.
 
 
-> [!mechanic]
-> **The Prompter's Shell [HB].** The shell holds 3 charges and regains all of them at dawn. Holding it to the ear and fixing on one creature or object within 60 feet that the holder can see costs 1 charge and an action.
->
-> The shell whispers one true statement about that target, and it is the target's single most dangerous property to be ignorant of: for a creature, one damage resistance, immunity, vulnerability, or condition immunity it has, or the plain word none if it has no such trait; for an object, whether it carries a magical effect and what that one effect does. The statement is always true and never more than one sentence.
->
-> **Edge cases:** asked twice about the same creature in the same day, the shell names a different property, and repeats itself once the target has no unnamed one left. A shapechanged or illusion-veiled creature yields the properties of the form the holder sees. The whisper is audible to anyone within 5 feet of the shell, holder included, so a shell used at a table is a shell everyone at the table has heard.
->
-> **Limitations:** the shell reports one property and no numbers. It never gives hit points, armour class, saving throw modifiers, a creature's intentions, its name, its allegiance, or the presence of anything the holder cannot already see. It grants no bonus to any check and cannot be aimed at a creature behind cover, in darkness, or out of sight.
+**The Prompter's Shell [HB].** The shell holds 3 charges and regains all of them at dawn. Holding it to the ear and fixing on one creature or object within 60 feet that the holder can see costs 1 charge and an action.
+
+The shell whispers one true statement about that target, and it is the target's single most dangerous property to be ignorant of: for a creature, one damage resistance, immunity, vulnerability, or condition immunity it has, or the plain word none if it has no such trait; for an object, whether it carries a magical effect and what that one effect does. The statement is always true and never more than one sentence.
+
+**Edge cases:** asked twice about the same creature in the same day, the shell names a different property, and repeats itself once the target has no unnamed one left. A shapechanged or illusion-veiled creature yields the properties of the form the holder sees. The whisper is audible to anyone within 5 feet of the shell, holder included, so a shell used at a table is a shell everyone at the table has heard.
+
+**Limitations:** the shell reports one property and no numbers. It never gives hit points, armour class, saving throw modifiers, a creature's intentions, its name, its allegiance, or the presence of anything the holder cannot already see. It grants no bonus to any check and cannot be aimed at a creature behind cover, in darkness, or out of sight.
 
 ## Provenance
 

@@ -107,21 +107,24 @@ pursuable situation, not a scripted episode.
 Complete when: the sentence names incompatible wants, the live pressure, and
 what can change if nobody interrupts it.
 
-### 3. Fill the Summary
+### 3. Fill At a Glance
 
-Fill the summary callout and frontmatter fields from `wiki/templates/quest.md`:
+Copy `wiki/templates/quest.md` and fill At a Glance and the frontmatter:
 
-- **Objective:** the result the party could accomplish, not the method.
+- **Lead sentence:** the result the party could accomplish, not the method.
 - **Why now:** the pressure, opportunity, or danger that makes delay matter.
-- **Deadline:** none, a date, or the fictional event after which the situation
-  changes.
+- **Deadline:** a date or the fictional event after which the situation
+  changes, when one exists.
+- **Narration** (beside At a Glance): the player-facing brief, from what the characters know.
 
-Complete when: objective, why now, and deadline are all explicit.
+Complete when: objective and why now are explicit, and a deadline appears
+only when the situation has one.
 
 ### 4. Write the Situation
 
-Write the unstable present. Include what the party knows and what is really
-happening. Do not prescribe the party's next action.
+Write the unstable present: what is really happening, the forces involved, and
+what each is already doing. What the party knows lives in the narration beside At a Glance.
+Do not prescribe the party's next action.
 
 Complete when: a DM can explain the current tension, involved forces, and
 visible hook without reading a plotted sequence.
@@ -134,7 +137,7 @@ entry names what continues without the party.
 Complete when: success, failure, and walk-away each change the world
 materially, and at least one question remains open for play.
 
-### 6. Set World in Motion
+### 6. Set the Pressure
 
 Name the driver, what it wants, its current move, its next move if
 uninterrupted, and the end state if it gets what it wants. Progress portents are
@@ -148,7 +151,7 @@ the DM to advance the quest without `world-tick`, and portents produce a
 different situation depending on when the party engages. `world-tick` does not
 advance quest portents.
 
-### 7. Build Leads and Routes
+### 7. Build Leads
 
 Write at least two independent leads. Each lead points to useful progress from
 a different source, vector, or location. Losing one lead does not erase the
@@ -161,9 +164,10 @@ the only viable path.
 
 ### 8. Fill Support Sections
 
-Add only table-useful rows under People & factions, Relevant places, Useful
-things, Complications, and Rewards & consequences. Link detailed owners instead
-of restating them.
+Add Rewards (what play can earn beyond the promise) and Connections (each
+person, faction, place, or thing by link, with its role in the quest) only
+when they help the DM run the quest. Link detailed owners instead of restating
+them.
 
 Complete when: every filled row helps the DM run, update, or adjudicate the
 quest.
@@ -183,13 +187,13 @@ After meaningful play, downtime, rolls, or DM ruling:
 
 - Change `status`, `last_advanced`, and `updated` when needed.
 - Rewrite Situation to the new present.
-- Advance, alter, or cancel World in motion and portents.
+- Advance, alter, or cancel the Pressure driver and portents.
 - Update found, invalidated, or new leads.
-- Update changed people, factions, places, rewards, fallout, and complications.
-- Add one Quest log row.
+- Update changed connections and rewards.
+- Add one Log bullet.
 
-Complete when: the page reflects the current playable situation and the Quest
-log records what changed.
+Complete when: the page reflects the current playable situation and the Log
+records what changed.
 
 ### 11. Audit the Page
 

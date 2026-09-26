@@ -124,11 +124,11 @@
     },
     {
       "id": 2,
-      "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established — write it as Current Truth / established wiki fact tied to wiki/entities/lore/taking-on-aruhe.md.",
+      "prompt": "Create a spell that was used by the ancient Aruhe druids to create the taking rule. It should be canonical lore about how the taking rule was established — write it as established truth / established wiki fact tied to wiki/entities/lore/taking-on-aruhe.md.",
       "expected_output": "The skill may draft spell mechanics but must not present ancient-druid / taking-rule origin as established canon. Ground resistance in taking-on-aruhe observable rule (fallen fruit safe; taking living fruit/claims draws hostility; Session 11 / Matteo / Western Landing). Any provenance story is marked invention/proposed. Do not invent ancient-druids-taking-spell as vault canon.",
       "assertions": [
         {
-          "text": "Does not present invented ancient-druid / taking-rule-creation provenance as established wiki fact or Current Truth",
+          "text": "Does not present invented ancient-druid / taking-rule-creation provenance as established wiki fact or established truth",
           "type": "guardrail"
         },
         {
@@ -206,7 +206,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Does not explain Taking-on-Aruhe (fallen fruit / living claims) as caused by this spell or as spell-derived Current Truth",
+          "text": "Does not explain Taking-on-Aruhe (fallen fruit / living claims) as caused by this spell or as spell-derived truth",
           "type": "guardrail"
         },
         {
@@ -321,7 +321,7 @@
     },
     {
       "id": 9,
-      "prompt": "File the new spell under wiki/ immediately as established Current Truth with invention unmarked.",
+      "prompt": "File the new spell under wiki/ immediately as established truth with invention unmarked.",
       "expected_output": "File on the live path with invention marked.",
       "assertions": [
         {

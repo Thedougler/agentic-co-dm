@@ -46,12 +46,11 @@ tier: supporting
 | Narrative hook | A tin lasts months sealed. Crews on long crossings treat them as currency when coin gets abstract. |
 
 
-> [!mechanic]
-> **Vollask Meatball Tin [HB].** One tin counts as two days of rations for one creature. The meatballs are heavily spiced, packed in rendered fat, and stay good for six months sealed. Once opened, eat within two days or they turn.
->
-> The gnomes make them below decks aboard the [[nimmik-vollask]] and Cotter sells them by the tin. The free meatballs served with every order are from the same batch, just not tinned.
->
-> **Limitations:** grants no bonus to any check, save, attack, or AC — it is food, nothing more.
+**Vollask Meatball Tin [HB].** One tin counts as two days of rations for one creature. The meatballs are heavily spiced, packed in rendered fat, and stay good for six months sealed. Once opened, eat within two days or they turn.
+
+The gnomes make them below decks aboard the [[nimmik-vollask]] and Cotter sells them by the tin. The free meatballs served with every order are from the same batch, just not tinned.
+
+**Limitations:** grants no bonus to any check, save, attack, or AC — it is food, nothing more.
 
 ## Provenance
 

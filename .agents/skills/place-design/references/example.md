@@ -56,8 +56,16 @@ boards has pulled a real thread, and the page answers.
 
 ## 7. Filed entries (excerpt)
 
-**What**
+## Features
 
+- [[oda-fenn]] and three keepers work the catwalk at every tide turn. They want
+  the Mother kept alive and hidden until the spring flood can free her.
+- **Move, on its own clock.** At every third slack tide, two [[saltwardens]] row
+  a skiff down the weir to count the traps. On the first count after the
+  party arrives, they stop under the soot-black chimney pot and send a man up
+  the slates. The party can distract them, get to the lantern first, or watch
+  Oda take the blame; if the Saltwardens take the lantern, the Mother thrashes
+  at the next tide turn and breaks the inner fence.
 - **Chimney pot.** *"The lip black with fresh soot."* [[oda-fenn]] hides the
   [[tide-lantern]] in a tarred sack inside the pot and lights it at every tide
   turn to calm the [[mother-of-eels]]. The [[saltwardens]] would seize it as
@@ -68,18 +76,7 @@ boards has pulled a real thread, and the page answers.
   the channel. Oda's keepers feed her at night. If she dies before spring, the
   eel run fails and [[harrow-mouth]] goes hungry.
 
-**Who**
-
-- [[oda-fenn]] and three keepers work the catwalk at every tide turn. They want
-  the Mother kept alive and hidden until the spring flood can free her.
-- **Move, on its own clock.** At every third slack tide, two [[saltwardens]] row
-  a skiff down the weir to count the traps. On the first count after the
-  party arrives, they stop under the soot-black chimney pot and send a man up
-  the slates. The party can distract them, get to the lantern first, or watch
-  Oda take the blame; if the Saltwardens take the lantern, the Mother thrashes
-  at the next tide turn and breaks the inner fence.
-
-**If the party**
+## At the Table
 
 - **Walk the south arm.** The boards look sound and are rotten through; resolve
   on [[brine-rot]]. A pole knocked against them first sinks in without a sound,

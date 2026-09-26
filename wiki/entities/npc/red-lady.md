@@ -40,9 +40,8 @@ DC 12 to gather two of the three details below from [[le-paludi]] tavern talk, f
 **Success:** two of three details. A rental of three pieces of diving apparatus (unusual for Calveno), a quantity of compressed-air bladders moving out of two factoring houses toward an outer basin anchorage, and a sealed chart package a courier refused to let anyone else carry.
 **Failure:** only vague talk of unusual money moving toward an outer basin anchorage.
 
-> [!mechanic]
-> **Commission assembly clock.** 8 to 10 days to departure from Calveno when the party arrives. It ticks on each day that passes or each Maw-relevant decision the party delays. Visible tick: [[batta-zusto|Zusto]] mentions the supply chain closing, or [[Savia]] sees a lugger taking on unusual cargo at the outer anchorage. **Consequence at fill:** the commission launches fully equipped and heads for the Maw. The party may arrive ahead of it, behind it, or alongside it depending on their pace. If ignored outright, it reaches the wreck first and the *Red Lady* is not empty when the party gets there.
-> **Parallel enquiry clock.** A second, unrelated buyer is also asking Calveno brokers about Maw wreck access this month (not the funding source, not the party). [[The Tangle]] has noticed it too. No visible tick until it reaches the Maw or the party identifies it.
+**Commission assembly clock.** 8 to 10 days to departure from Calveno when the party arrives. It ticks on each day that passes or each Maw-relevant decision the party delays. Visible tick: [[batta-zusto|Zusto]] mentions the supply chain closing, or [[Savia]] sees a lugger taking on unusual cargo at the outer anchorage. **Consequence at fill:** the commission launches fully equipped and heads for the Maw. The party may arrive ahead of it, behind it, or alongside it depending on their pace. If ignored outright, it reaches the wreck first and the *Red Lady* is not empty when the party gets there.
+**Parallel enquiry clock.** A second, unrelated buyer is also asking Calveno brokers about Maw wreck access this month (not the funding source, not the party). [[The Tangle]] has noticed it too. No visible tick until it reaches the Maw or the party identifies it.
 
 The sealed chart package is this group's main edge. Any party that gets it knows what the salvage crew knows. [[batta-zusto|Zusto]] knows who made the chart but won't say without a second talk. If [[delmar-fisk|Delmar]] shows up in Calveno as a Maw guide, the backer offers him work. The [[calders-tooth-and-port-tidefall]] trader who paid for this group is the best lead to the backer's name. Follow that thread far enough and you get a name, but not quickly and not in Calveno.
 
@@ -81,8 +80,7 @@ The sealed chart package is this group's main edge. Any party that gets it knows
 
 - Cook's galley with fresh-water cistern: long-voyage capable.
 
-> [!mechanic]
-> **Captain's lockbox.** Iron lockbox in the captain's cabin: DC 18 Dexterity (Thieves' Tools) to pick. Success grants private access to the magazine key. Failure leaves it locked with no further effect. The key stays inaccessible until opened.
+**Captain's lockbox.** Iron lockbox in the captain's cabin: DC 18 Dexterity (Thieves' Tools) to pick. Success grants private access to the magazine key. Failure leaves it locked with no further effect. The key stays inaccessible until opened.
 
 ## Crew
 

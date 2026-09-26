@@ -90,8 +90,7 @@ Ozzeth found the rite first and went further with it than Simone ever managed al
 | Performance hooks | The silent professional who never explains himself + a casting hand that visibly bleeds color, red climbing one palm as blue drains the other. |
 | Link of relevance | [[jean-claude-tabarnack]]: Ozzeth's death at his hands in Session 06 is what finally leaves Simone's rite unmaintained. |
 
-> [!mechanic]
-> **Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). Detect Magic near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane (Intelligence, wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — Counterspell cannot target it.
+**Ozzeth's Ossketh — incomplete arcane transmutation, background process.** The self-cast color-sealing rite never finished; it has been running unstably on his body for years (visible as the red-and-blue color shift in his hands during spellcasting). Detect Magic near Ozzeth: "Arcane transmutation — like a spell caught mid-execution, still running." His spellcasting is standard Arcane (Intelligence, wizard tradition) and is separate from the Ossketh. The unstable Ossketh is a background process — Counterspell cannot target it.
 
 **Combat package.**
 

@@ -27,7 +27,7 @@ A strong tell is:
 | The keeper sold the old lighthouse lens | "the tower hides a past" | "the lamp room holds a lens cradle the size of a cartwheel, empty, its bolts cut clean" |
 
 Different truths get different tells. Put one tell per truth in the narration;
-the other clue vectors live in If the party and What.
+the other clue vectors live in At the Table and Features.
 
 ## What a place holds
 

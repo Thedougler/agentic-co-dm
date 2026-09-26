@@ -9,49 +9,49 @@ type: item
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-region: ""
 kind: flora hazard
+region: ""
 summary: ""
 ---
-<!-- Copy-start scaffold. type: item + kind: flora hazard.
-     Jobs (wiki/AGENTS.md): Look; start; notice; contact cost; careful passage; honest counterplay.
-     Extra mechanical rows only when they change the table. Omit unused sections.
-     Shared grammar: leading [!narration]; Connections / Provenance / Art omit-if-empty.
-     Do not invent synonym headings for the hazard job bullets below.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section or bullet only when you have facts for it; delete unused ones and these comments. -->
 
 # {{title}}
 
-<!-- Add hazard art when available. -->
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: hazard. -->
-> Write a standalone cold portrait of the hazard in flowing prose — as long as the hazard requires to be pictured and avoided. Cover form, material, scale, and at least one non-sight warning sense. The portrait gives a player enough visual information to recognize the hazard and decide whether to approach. No secrets, DCs, contact effects, or unearned names.
+<!-- Required. Lead sentence: where the party meets this hazard and what it costs them. Then labelled facts, one bullet each. -->
+
+- **Found in.** [[place]] or terrain.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look: form, material, scale, and at least one warning sense beyond sight. -->
+```
+````
 
 ## Hazard
 
-- **Trigger.** State what starts it.
-- **Notice.** State the check to recognize it and what success shows. Use the at-table scan. Write **Ability (Skill), `DC n`**.
-- **Contact.** State the damage, terrain, or condition on ordinary contact.
-- **Careful Passage.** Describe how to pass without the full cost.
-- **Counterplay.** List ways around it, including cover, reach, or other honest answers.
+<!-- Required. The bullets that apply, each with its ruling. -->
 
-<!-- Extra rows (Repeat Save, Recovery, Placement, …) only when they change a table choice. -->
+- **Trigger.** What starts it.
+- **Notice.** **Wisdom (Perception)** `DC 13` → what success shows.
+- **Contact.** Damage, condition, or terrain on ordinary contact.
+- **Careful passage.** How to pass without the full cost.
+- **Counterplay.** Other honest answers: cover, reach, fire, a tool.
 
-## Hidden Triggers
+## Secrets
 
-Delayed, conditional, or non-obvious effects the party has not yet discovered. Omit when unused.
+<!-- Delayed, conditional, or hidden effects, each with how the party can learn it. -->
 
 ## Connections
 
-- [[page]]. State what this tie does at the table.
-
-<!-- Omit Connections when unused. -->
-
-## Provenance
-
-Omit when unused.
+- [[page]] — what this tie does at the table.
 
 ## Art
-
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->

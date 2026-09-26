@@ -16,187 +16,44 @@ region: ""
 era: ""
 summary: ""
 ---
-<!--
-Copy-start scaffold.
-
-One note should answer one durable question about the world. Split unrelated truths into linked notes instead of building encyclopedia pages.
-
-kind examples: fact, history, belief, rumor, legend, doctrine, custom, law, cosmology, prophecy, revelation
-truth examples: established, partial, contested, false, unknown
-
-Current Truth is authoritative DM canon. Accounts records what people believe about that truth. Discovery tracks how hidden lore can actually enter play. History records events inside the fiction. Canon Log records how the campaign's established truth changed at the table.
-
-Omit sections that have no job.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
+kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy -->
 
 # {{title}}
 
 ## At a Glance
 
-**Core truth.** State the smallest useful version of this lore in one or two sentences.
+<!-- Required. Lead: the truth in one or two sentences. Then labelled facts, one bullet each. -->
 
-**Why it matters.** What decision, danger, opportunity, relationship, or interpretation can change because this is true.
+- **Why it matters.** The choice, danger, or opportunity it changes at the table.
+- **Where and when.** The scope, when it is not universal.
+- **Who knows.** [[npc]] or [[faction]] who know it, and what they believe.
 
-**Scope.** Name where, when, or for whom this is true when it is not universal.
+## The Tale
 
-## Current Truth
+<!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly; the DM page carries the answer to every mystery. -->
 
-Write what is actually true **now** in complete sentences.
-
-Keep this authoritative and concise. Separate fact from interpretation. Link every important person, faction, place, object, event, creature, spell, or other lore concept that already has its own note.
-
-Do not predict a required sequence of future events.
-
-### Limits
-
-Record exceptions, boundaries, costs, or circumstances under which the statement above stops being true.
-
-* **Exception.**
-* **Unknown to the world.** What no one in the world knows; Current Truth carries the answer.
-* **Impossible or forbidden.**
-
----
+> [!narration] Common telling
+> <!-- Optional: the version people in the world say aloud, as the DM would read it. -->
 
 ## At the Table
 
-<!-- Lore should help the DM run play, not merely explain the setting. Omit entries that do not matter. -->
+<!-- How it enters play: what players notice, what it explains, what it lets them do, what it warns of. Clues that lead to hidden lore, each with where it is found. -->
 
-* **Players notice.** State the observable sign, behavior, phrase, symbol, consequence, or environmental detail that can appear without an exposition dump.
-* **This explains.** [[page]], event, mystery, practice, or condition the players may otherwise misread.
-* **This enables.** State a choice or course of action that becomes possible once the characters understand the lore.
-* **This warns of.** State a danger or consequence the lore lets attentive characters anticipate.
-* **Relevant now.** Explain why this truth matters to the current campaign, if it does.
-
----
-
-## Who Knows
-
-| Knower             | Knowledge                          | Certainty                 | Basis                                                      |
-| ------------------ | ---------------------------------- | ------------------------- | ---------------------------------------------------------- |
-| [[NPC or Faction]] | What they actually know or believe | knows / suspects / doubts | Witnessed, inherited, researched, taught, fabricated, etc. |
-
-### Party Knowledge
-
-**Known.** What the characters have actually established.
-
-**Suspected.** What they currently think may be true.
-
-**Misunderstood.** Any important conclusion the characters presently have wrong.
-
-**Last changed.** [[Session]]
-
----
+- **Players notice.** The sign, phrase, or custom they can see.
+- **It lets them.** A course of action the lore opens.
+- **Clue.** [[place]] — what can be found there.
 
 ## Accounts
 
-<!-- Use when cultures, factions, scholars, witnesses, religions, or storytellers disagree. An account is not promoted to Current Truth merely because someone confidently believes it. -->
+<!-- When people believe different things: each account, who holds it, and how it differs from the truth. -->
 
-| Account            | Held by                              | Relation to truth                | Why they believe it                                        |
-| ------------------ | ------------------------------------ | -------------------------------- | ---------------------------------------------------------- |
-| The in-world claim | [[Culture, Faction, NPC, or Source]] | true / partial / false / unknown | Tradition, evidence, propaganda, mistake, revelation, etc. |
-
-### Common telling
-
-> A short version of the story, proverb, teaching, warning, rumor, or explanation people inside the world might actually say.
-
----
-
-## Discovery
-
-<!--
-Omit when the lore is already common knowledge or does not need deliberate discovery.
-
-Treat each Revelation as the conclusion the players might reach, not as a predetermined scene.
-For a structurally important revelation, provide at least three independent clues from different plausible sources.
-Background/color revelations can be lighter.
-A clue says what can be found; it does not prescribe how the party must find it.
--->
-
-### Revelation
-The characters can learn that…
-
-**Conclusion.** State the useful conclusion in one sentence.
-
-**Importance.** structural / usable / background
-
-**Status.** unrevealed / hinted / suspected / understood
-
-* [ ] **[[Source or Location]].** Concrete clue available there.
-* [ ] **[[Source or NPC]].** Independent clue pointing to the same conclusion.
-* [ ] **[[Source, Item, Event, or Place]].** Another independent route to the conclusion.
-
-**Flexible clue.** A short discoverable fact can appear wherever the characters plausibly investigate, question, research, examine, remember, or experiment.
-
----
-
-## History
-
-<!-- In-world chronology. Record states and causes rather than writing a predetermined future plot. -->
-
-| Date / Era | What was true or happened | Consequence |
-| ---------- | ------------------------- | ----------- |
-|            |                           |             |
-
----
-
-## If This Is Changing
-
-<!-- Use only for living lore whose truth or influence is actively evolving. Describe the situation, not a scripted outcome. -->
-
-* **Current pressure.** What force is destabilizing the present state.
-* **Actors.** [[NPCs]], [[Factions]], or other forces currently affecting it.
-* **Their aims.** Describe what those actors are trying to accomplish.
-* **Without interference.** The next natural development if nobody meaningfully changes the situation.
-* **Visible sign.** What would tell the characters that the situation has advanced.
-
----
-
-## Consequences
-
-<!-- Record causal relationships that help improvise when players interact with the lore. -->
-
-* **Because this is true,** …
-* **If exposed,** …
-* **If disproved,** …
-* **If changed,** [[page]] would …
-* **If exploited,** …
-
----
+- **[[faction]] believes** the claim — how it differs from the truth.
 
 ## Connections
 
-| Page     | Relationship                | Table relevance                                    |
-| -------- | --------------------------- | -------------------------------------------------- |
-| [[page]] | How it relates to this lore | What this connection can cause, reveal, or explain |
+- [[page]] — what this tie does at the table.
 
----
+## Log
 
-## Canon Log
-
-<!--
-Campaign continuity log. Append instead of silently overwriting established table history.
-Use "expanded" when new information adds detail without invalidating prior truth.
-Use "changed in world" when events altered the truth.
-Reserve "retcon" for an actual continuity correction.
--->
-
-| Session / Date | Change                                                      | Type                                               | Cause / Source              |
-| -------------- | ----------------------------------------------------------- | -------------------------------------------------- | --------------------------- |
-| [[Session]]    | What became established, expanded, contradicted, or changed | established / expanded / changed in world / retcon | What established the change |
-
----
-
-## Sources
-
-<!-- Cite the actual origin of established canon when useful: session, sourcebook and page, adventure, ruling, imported setting material, or another authoritative note. -->
-
-* [[Session]]. State what was established in play.
-* Source. Record the page or section and what it establishes.
-
-<!--
-Design basis: large evolving campaigns benefit from maintaining current canon as a living change/status layer instead of forcing the GM to reconstruct changes from scattered scenario notes.
-Situation-based prep records circumstances, actors, goals, and natural developments rather than prescribing future plot sequences.
-Short, portable secrets and clues keep lore usable during improvisational play instead of burying it in long exposition.
-Revelation lists separate conclusions from their clues; structurally important conclusions benefit from redundant clues, while nonessential background revelations can be tracked more lightly.
-Metadata and omit-when-unused conventions follow the existing vault template style.
--->
+- **[[Session]]** — what play established or changed.

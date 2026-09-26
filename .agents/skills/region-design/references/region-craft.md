@@ -18,21 +18,17 @@ portent, and consequence structure when a pressure already exists.
 Theatre-of-the-mind first-travel look. Horizon, terrain, weather, movement,
 sound, one unmistakable feature. Keep secrets, save DCs, hidden history, secret
 coordinates, hive-mind claims, and unearned names out of `[!narration]`; place
-them in DM-facing Current state, hazards, or run notes.
+them in DM-facing sections (At a Glance, Secrets, Travel).
 
-### At a glance
+### At a Glance
 
-Scale, kind, character, anchor, known-for, feared-for, parent region. DM thesis:
-what the region is for at the table — route choices, established pressures, or
-the kind of exploration it enables — not a closed-history encyclopedia summary.
+The lead sentence is what the region is for at the table — route choices,
+established pressures, or the kind of exploration it enables — not a
+closed-history encyclopedia summary. Then Now (status quo and the latest
+change), Pressure (the live pressure by name and the next visible change with
+a time), Known for, and Anchor. Keep it current; fold obsolete states into Log.
 
-### Current state
-
-Status quo now: recent change, opportunity, next visible change with a time,
-and the live pressure by name. Keep short and current; fold obsolete states
-into Change log.
-
-### Geography and travel
+### Geography and Travel
 
 Answer "which way do you go?":
 
@@ -50,19 +46,17 @@ Preserve established entry character (e.g. observe-from-offshore skip,
 mangrove-wall-not-a-second-approach) and keyed places rather than collapsing
 them into a checklist path.
 
-### Key places
+### Key Places
 
 Table-ready durable places only. Link durable places; keep temporary events in
-Current state, Fronts and pressures, or Change log. Promote a detailed site to
+At a Glance, Powers, or Log. Promote a detailed site to
 its own `[[place]]` when it no longer fits here.
 
-### Active powers
+### Powers
 
-The few groups that can change the region now. Per power: hold or presence,
+The few groups and forces that can change the region now. Per power: hold or presence,
 want now, next move, what reveals that move. Full faction agendas, clocks, and
 histories stay on faction pages.
-
-### Fronts and pressures
 
 Grow each pressure from the canon inventory: a power's want, a hazard's
 season, a debt, a hunt, a shortage already on a page. Link the owner note.
@@ -75,22 +69,22 @@ objective links or proposes a quest; `type: front` stays retired.
 
 ### Omit by scale
 
-- **MACRO:** Current state, Geography, Subregions, major Routes, Active powers,
-  linked pressures when they exist, Stakes, Change log. Usually omit encounter
-  ecology, individual minor sites, detailed finds.
+- **MACRO:** At a Glance, Geography (with subregions), major routes in Travel,
+  Powers, Log. Encounters, minor sites, and detailed finds usually live on the
+  subregion pages.
 - **REGIONAL:** Default. Keep sections that create choices, signals, routes,
   powers, or table prep.
-- **LOCAL:** Routes, key places, immediate powers, rumors, encounters,
-  discoveries. Omit Subregions when they add no useful choice.
+- **LOCAL:** Travel, Key Places, immediate Powers, Rumors, Encounters, and
+  Secrets (discoveries). Subregions appear only when they add a choice.
 
-Persistent geography → Geography, Travel, Key places, Regional truths.
-Ephemeral events → Current state, linked pressure notes, or Change log.
+Persistent geography → Geography, Travel, Key Places.
+Ephemeral events → At a Glance, Powers, or Log.
 
-### Change log
+### Log
 
-Record in-world date when available, change, cause, and affected pages. When a
-delta becomes the new normal, fold it into the baseline section and leave the
-old event in Change log.
+Record the in-world date when available, the change, its cause, and affected
+pages. When a delta becomes the new normal, fold it into the section it
+changed.
 
 ## Audit questions
 
@@ -113,7 +107,7 @@ old event in Change log.
 | "None established" or "unresolved" left for the DM | Decide it as canon under the rule in `llm-wiki` |
 | `type: front` revived | Link/propose quest; keep type: region |
 | Faction agendas on region page | Point to faction pages; keep local next-move only |
-| PC outcomes as Current state | Present options; leave choices to play |
+| PC outcomes written as the region's state | Present options; leave choices to play |
 | Unmarked invention | `invention: true`; list the proposal in the response |
 | Site-place stuffed into region | Stay on region template; defer sites to place-design |
 | Overwriting established hazards as safe | Keep the hazard; a contradiction is a proposal naming both sources |

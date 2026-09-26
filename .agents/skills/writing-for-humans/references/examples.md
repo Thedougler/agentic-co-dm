@@ -8,7 +8,7 @@ canon.
 
 - Header lines: shorthand → sentences
 - Pressure table: coaching → what the world does
-- Cast row: coy → plain truth
+- Actors row: coy → plain truth
 - Opposition: "see owner page" → numbers and tactics
 - Ruling: bare → full consequence
 - Carry forward
@@ -45,7 +45,7 @@ Strong:
 | Corners Vash | He throws his chain around the nearest trunk and swings 20 feet onto the rock shelf, then runs for the grass. |
 | Ignores him | He takes a healing fig from the nearest unattended pack and is gone into the grass by the end of the round. |
 
-## Cast row: coy → plain truth
+## Actors row: coy → plain truth
 
 Weak:
 
@@ -137,6 +137,6 @@ Weak:
 Strong:
 
 > Rewrote the DM copy on `Session-07-03-The-Graveyard-Talk.md`.
-> - Cast table: Mara and Tobin now state their wants and Tobin's lie plainly.
+> - Actors table: Mara and Tobin now state their wants and Tobin's lie plainly.
 > - Checks: three rulings now say what failure changes.
 > - Gap: the page never says who buried the first grave; the owner page for [[mara-venn]] needs it.

@@ -42,9 +42,9 @@ Named ingest files to the live wiki without a second chat accept. `dm_placed_ing
 
 When writing internal links in Step 5, apply the link format described in `llm-wiki/SKILL.md` (Link Format section) according to the `OBSIDIAN_LINK_FORMAT` value you read.
 
-**Quality bar.** Filed campaign pages match kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout.
+**Quality bar.** Filed campaign pages follow the kind's template and the fact-only rule in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout.
 
-**Remorph / owner-page distill (signal):** Known vs Unknown — do not pad with repeated absences. Distill each fact once (no triple-tell across sections). Keep agent-process and skill names out of owner-page voice. Section jobs must not overlap (Secrets / Provenance / Connections / At the Table each earn distinct table work). Provenance is in-world history, never ingest meta. Item/vehicle templates own numbers in one home. Incoming files are evidence, not exemplary format. Do not copy a foreign outline as the page shape. A source that already matches a kind is still judged against that kind’s jobs. Campaign-shaped session-prep maps into the matching kind template. Place keeps Preserve treatments. Foreign sources of those subjects map into the kind.
+**Remorph / owner-page distill (signal):** File only what the source states; a page carries its facts and no line about what the source leaves out. Distill each fact once (no triple-tell across sections). Keep agent-process and skill names out of owner-page voice. Section jobs stay distinct (At the Table / Secrets / Connections / History). History is in-world, never ingest meta. Item/vehicle templates own numbers in one home. Incoming files are evidence, not exemplary format. Do not copy a foreign outline as the page shape. A source that already matches a kind is still judged against that kind’s jobs. Campaign-shaped session-prep maps into the matching kind template. Place keeps Preserve treatments. Foreign sources of those subjects map into the kind.
 
 ## Linked art (campaign of record)
 
@@ -163,9 +163,9 @@ Campaign-shaped session-prep and place: file with required treatments. Do not di
 
 **Recap** (`type: recap`): file into the **same** session-number folder — `wiki/journal/sessions/<campaign-slug>/<NN>/Session-<NN>-Recap.md` (e.g. `Session-01-Recap.md`; alongside plan/beats when present). Do not use spaced `Session NN - Recap.md`, flat `wiki/journal/…`, or `…/recaps/`.
 
-**Session-prep** (or Session-N filename): file into `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Keep the source filename (`Session-<number>-00-<Title>` or `Session-<number>-<beat-number>-<Label>` with two-digit beat numbers). Map the source's facts onto the matching kind template in `wiki/templates/` (`session-plan`, `hook`, `development`, `cliffhanger`, `climax`, or `resolution`). Pass is that kind's jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout. Keep `[!narration]`, tables, wikilinks, and embeds. Do not copy an old spine or cockpit outline as the live page shape. Do not write these pages into `concepts/` or `entities/`. Companion notes for that night file into the same folder and must not use a live beat number. `wiki/_raw/Session-11-*.md` stay in `_raw/` as evidence; restyle only the filed session-folder page.
+**Session-prep** (or Session-N filename): file into `wiki/journal/sessions/<campaign-slug>/<session-number>/`. Keep the source filename (`Session-<number>-00-<Title>` or `Session-<number>-<beat-number>-<Label>` with two-digit beat numbers). Map the source's facts onto the matching kind template in `wiki/templates/` (`session-plan`, `hook`, `development`, `cliffhanger`, `climax`, or `resolution`). Pass is that kind's template and the fact-only rule in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout. Keep `[!narration]`, tables, wikilinks, and embeds. Do not copy an old spine or cockpit outline as the live page shape. Do not write these pages into `concepts/` or `entities/`. Companion notes for that night file into the same folder and must not use a live beat number. `wiki/_raw/Session-11-*.md` stay in `_raw/` as evidence; restyle only the filed session-folder page.
 
-**Place:** copy into `wiki/entities/place/` with the source filename (depth-1 type folder; `category: entities`). Keep the open `[!narration]` titled **Narration** (typically under Overview): do not delete it, empty a filled look, or convert it to ordinary prose. A stub place still keeps the titled block even if the body is empty. Spoken look stays theatre of the mind (no secrets, DCs, unearned names). Keep Overview, At a glance, If the party, Who, What, Where, Why, and Art when present; omit unused jobs (no empty headings, no invented occupants). Owner numbers stay linked, not copied. Do not write into `concepts/` or replace the outline with a knowledge-wiki template. Place run jobs stay in `wiki/AGENTS.md` Layout. `_raw/` place evidence stays in `_raw/`; file copies rather than restyling the evidence set.
+**Place:** copy into `wiki/entities/place/` with the source filename (depth-1 type folder; `category: entities`). Keep a filled `[!narration]` look: do not delete it, empty it, or convert it to ordinary prose; it sits in the header row beside At a Glance (`wiki/templates/place.md`). Spoken look stays theatre of the mind (no secrets, DCs, unearned names). Map the source onto the place template's sections; keep only sections with facts (no empty headings, no invented occupants). Owner numbers stay linked, not copied. Do not write into `concepts/` or replace the outline with a knowledge-wiki template. Place run jobs stay in `wiki/AGENTS.md` Layout. `_raw/` place evidence stays in `_raw/`; file copies rather than restyling the evidence set.
 
 Re-ingest with no body change: skip rewrite. Mutation approval and publication
 semantics are owned by `specs/025-agent-safe-wiki-ops/spec.md`; use the typed
@@ -475,7 +475,7 @@ Keep DM-only, player-facing, mechanical, and spoken content on their surfaces. K
 
 **If creating a new page:**
 - Only when Source ideas allows a justified new page
-- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (`npc`, `place`, `faction`, `item`, `creature`, `session`, `recap`, `work`) rather than generic categories alone. Named ingest: thin complete-sentence stubs only for names in the approved source. Sample pages pass on jobs in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
+- Use the page template from the llm-wiki skill (frontmatter + sections). **For academic papers landing in `references/`, use the Paper Deep-Dive Template** from `llm-wiki/SKILL.md` instead of the generic one (see *Academic papers* in Step 1). Campaign entities use `wiki/templates/` as scaffolds and `wiki/AGENTS.md` `type` (the enum in `wiki/AGENTS.md` § Frontmatter) rather than generic categories alone. Named ingest: stubs only for names in the approved source, carrying only the facts the source gives. Pages pass on their template and the fact-only rule in `wiki/AGENTS.md` Layout. Early-dev `wiki/_raw/` samples stay in `_raw/` as illustrations. Sample `monster` → `type: creature`. Wrapup of a legacy page MUST NOT convert that page into a sample.
 - Place in the correct category directory
 - Add `[[wikilinks]]` to at least 2-3 existing pages
 - Include the source in the `sources` frontmatter field. In raw mode: derive from `capture_source` + `sources` frontmatter of the `_raw/` file — never use the `_raw/` path itself (see Raw Mode section)
@@ -580,7 +580,7 @@ Record QMD refresh in the final report as one of:
 
 ## Handling Multiple Sources
 
-Step 0 is the loop. Later files may strengthen or contradict earlier ones — update pages only after the earlier file is closed. Quality of a page in a batch matches single-file ingest of that source: same campaign kind, same Layout jobs.
+Step 0 is the loop. Later files may strengthen or contradict earlier ones — update pages only after the earlier file is closed. Quality of a page in a batch matches single-file ingest of that source: same campaign kind, same template.
 
 ## Quality Checklist
 
@@ -597,7 +597,7 @@ After ingesting, verify:
 - [ ] Craft skills ran for the destination surface (`writing-for-humans`, `obsidian-markdown`, `theatre-of-the-mind`, `dnd5e-mechanics` as applicable)
 - [ ] Every new page has frontmatter with title, category, tags, sources
 - [ ] Campaign pages also have `type`, `reveal`; body is complete-sentence prose (FR-018)
-- [ ] Filed campaign pages match Layout kinds and jobs in `$OBSIDIAN_VAULT_PATH/AGENTS.md` (pointer; do not copy the job table here)
+- [ ] Filed campaign pages follow their template and the fact-only rule in `$OBSIDIAN_VAULT_PATH/AGENTS.md` Layout
 - [ ] Multi-file runs were sequential: one file `complete` or `failed` before the next `open`; per-file report is in `log.md` and the end-of-run list
 - [ ] Failed files were not hashed as success
 - [ ] Every new page has at least 2 wikilinks to existing pages

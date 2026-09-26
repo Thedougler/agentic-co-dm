@@ -8,7 +8,7 @@ made up for illustration and are never canon.
 
 - Beat openings: compact default, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
 - Closing image
-- Beat slots: zone and tick cells, creature in scene, How the Scene Resolves
+- Beat slots: zone and tick cells, creature in scene, Outcomes
 - NPC first look with dialogue
 - Outcome cells
 - Travel, handout (recap examples: [recaps.md](recaps.md))
@@ -82,7 +82,7 @@ image is quiet and clear.
 
 > The owlbear shoulders out of the hedge maze sideways, too wide for the gap, and the clipped yew splits around it with a sound like tearing sailcloth. Its feathers are matted with burrs and its beak hangs open, breath steaming. It swings its head toward the fountain and the splash of water, then toward you, and rocks back onto its haunches.
 
-**How the Scene Resolves:**
+**Outcomes:**
 
 > The column of light collapses into the reliquary with a sound like a door slamming a long way off. The rain keeps falling, ordinary and cold, and above the temple the clouds pull apart and drift east.
 

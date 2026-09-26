@@ -14,30 +14,46 @@ school: ""
 ritual: false
 summary: ""
 ---
-<!-- Copy-start scaffold. Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Omit unused sections. Pass is those jobs. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. -->
 
 # {{title}}
 
-> [!narration] Narration
-> Write a high-quality cold portrait of the casting in flowing prose for as long as the spell requires. Cover what a bystander sees, hears, and feels. No secrets, DCs, or unearned names.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Level, School (Ritual when it is a ritual)
+<!-- Required. The level-and-school line in italics, then one lead sentence on what the spell does in this campaign. Then labelled facts, one bullet each. -->
 
-**Casting Time.**
-**Range.**
-**Components.**
-**Duration.**
+*Level 3 Evocation (Ritual)*
 
-Write the runnable 2024 effect: saves, damage, conditions. Scaling when it scales. One short block.
+- **Taught by.** [[npc]], [[item]], or [[place]] where the party can learn it, and the price.
+```
 
-## Rulings
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look of the casting: what a bystander sees, hears, and feels. -->
+```
+````
 
-The tricks players will try, each with its answer; how a target counters it; how a named enemy uses it.
+## Effect
 
-## Discovery
+<!-- Required. The four casting fields, then the runnable effect. -->
 
-Where the party can learn it (a named teacher, book, scroll, patron, or site), the price of access, the clue that points there, and who notices when it is cast.
+**Casting Time.** Action
+**Range.** 60 feet
+**Components.** V, S, M (a pinch of salt)
+**Duration.** Instantaneous
 
-## Lore
+<!-- The runnable 2024 effect: saves, damage, conditions, and scaling. One short block. -->
 
-The tradition that casts it and the history that changes a present choice. Omit when unused.
+## At the Table
+
+<!-- The tricks players will try, each with its ruling; how a target counters it; how an enemy uses it; who notices when it is cast. -->
+
+## History
+
+<!-- The tradition that casts it, when that history changes a present choice. -->

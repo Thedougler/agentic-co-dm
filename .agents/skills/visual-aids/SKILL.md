@@ -43,7 +43,7 @@ candidates without leaving
 competing faces active. **Assemble** only approved player-safe images for entities actually in the
 guide; no gallery backfill. On a run-guide **pass 1** beat card, embed an
 identity image already listed on that exact owner's page (`![[attachments/…]]`)
-beside Initial Narration or the matching roster heading. Do not use a parent
+beside the scene's opening narration or the matching roster heading. Do not use a parent
 region image, nearby creature portrait, old battlemap, or similar-looking asset
 as identity for a new thing. Do not mint identity during beat construction.
 Spoken `[!narration]` still owns the look.

@@ -55,12 +55,11 @@ Comparable to Dust of Sneezing and Choking (Uncommon, thrown, area effect, Const
 [[La Brace]] sells it from the shelf. [[rufio-segalla]] runs this [[Velo Quarter]] smoking room, the only one in Calveno where smoke can burn out in the open. [[La Gatta]] also sells it, at 60% price as an unreliable second. [[nicco-kettley]] runs this stall on [[the Bridge]]'s bottom tier.
 
 
-> [!mechanic]
-> **Pocket Thunder [HB].** Single use, consumable. As an Action, the wielder snaps the cigarette and throws it up to 30 feet. It goes off on landing with a loud bang.
->
-> **Edge cases:** the wielder rolls the save too, if the throw lands within 10 feet of them. A creature that already can't see ignores the blindness. One that already can't hear ignores the deafness. Throwing it uses up the only cigarette in the pack. It has no recharge and no reload.
->
-> **Limitations:** deals no damage and breaks no concentration. A creature already immune to blinded or deafened feels nothing. Smoking it does nothing at all.
+**Pocket Thunder [HB].** Single use, consumable. As an Action, the wielder snaps the cigarette and throws it up to 30 feet. It goes off on landing with a loud bang.
+
+**Edge cases:** the wielder rolls the save too, if the throw lands within 10 feet of them. A creature that already can't see ignores the blindness. One that already can't hear ignores the deafness. Throwing it uses up the only cigarette in the pack. It has no recharge and no reload.
+
+**Limitations:** deals no damage and breaks no concentration. A creature already immune to blinded or deafened feels nothing. Smoking it does nothing at all.
 
 **Constitution Save — The Detonation**
 

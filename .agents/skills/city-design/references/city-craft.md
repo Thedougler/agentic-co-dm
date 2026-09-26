@@ -13,27 +13,25 @@ practice that tracks current deltas instead of rewriting the whole setting.
 
 ## Section fill detail
 
-### Arrival
+### Narration
 
-Theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
+The header row's `[!narration]`: a theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
 silhouette, motion, sound, smell, one unmistakable landmark. Keep secrets,
 hidden history, DCs, and unearned names out of player-facing prose.
 
-### At a glance
+### At a Glance
 
-Character, known-for, visible power, **current pressure**, opportunity,
-population. Pressure is what makes the city unstable **right now**. DM thesis:
-one sentence about the city's function in play — not a closed-history summary.
+The lead sentence is the city's function in play — not a closed-history
+summary. Then feel, visible power, **current pressure**, and opportunity.
+Pressure is what makes the city unstable **right now**.
 
-### Orientation
+### Districts
 
 Answer where the party goes next:
 
-- Districts residents recognize — street-level read, known draw, current
-  pressure each.
-- Landmarks that help orientation.
-- Getting around: cross-city travel, after-dark changes, restricted movement,
-  useful shortcuts.
+- Districts residents recognize — first impression, known draw, trouble now.
+- Landmarks that orient a newcomer, and getting around: cross-city travel,
+  after-dark changes, restricted movement, useful shortcuts.
 
 Keep ≥2 viable responses (and ignore/fail/redirect costs). Refuse single
 mandatory scene rails and combat-only district stacks.
@@ -45,11 +43,11 @@ arrive/leave, stay, buy/sell/commission, services when they matter. Link durable
 places, NPCs, districts, routes; leave incidental entries unlinked until play
 makes them durable.
 
-### Rules that matter at the table
+### Local Rules
 
 Only local realities that can change a choice: law, weapons, magic, violence,
-status, commerce, rest, death, or other city-specific constraints. Omit generic
-laws no one will act on.
+status, commerce, rest, death, or other city-specific constraints. Generic laws
+no one will act on stay off the page.
 
 ### Power
 
@@ -57,7 +55,7 @@ City-local posture only. Per faction: public position, local objective,
 leverage, current move **in this city now**. Histories, full agendas, and clocks
 live on faction pages.
 
-### Active situations
+### Situations
 
 A situation is active when a named actor wants a concrete change, visible signs
 can surface it, opposition exists, and the city changes if the party never
@@ -76,19 +74,15 @@ Prefer discoverable signs and ≥2 approaches or a costly bypass. Refuse
 clue-less single-lever traps. Link quest pages for pursuable objectives;
 propose missing quests rather than burying a full quest in the city note.
 
-Use exploration layers, hidden nodes, rumors, secrets, street encounters,
-routes, dependencies, pressure clocks, upcoming events, and local faction moves
-only when they help run current play. Omit unused sections.
+Pressure clocks and upcoming events sit on the situation they drive. Hidden
+places and people go under Secrets with the clue that exposes each; rumors,
+street encounters, and names on demand go under Rumors and Street Life; routes
+and dependencies go under Connections.
 
-### Current state and change log
+### Log
 
-`# Current state`: the handful of deltas the DM must remember now — campaign
-date, last party visit, visible changes, headlines, pressure clocks, upcoming
-events, local faction moves.
-
-Keep the change log on the city page. Record deltas; when a delta becomes the
-new normal, fold it into the baseline section and archive the old delta in
-`# Change log`.
+The deltas play made, newest first. When a delta becomes the new normal, fold
+it into the section it changed and drop the Log bullet.
 
 ## Audit questions
 
@@ -104,12 +98,12 @@ new normal, fold it into the baseline section and archive the old delta in
 
 | Failure mode | Repair |
 | --- | --- |
-| Encyclopedia without pressure | Add current instability + player opening |
+| Encyclopedia without pressure | Add current instability + party handles |
 | Pressure bolted on from nowhere (a stock plague or siege) | Grow it from a canon debt, rival, or shortage; state it as a proposal |
 | Closed canon reopened as live crisis | Keep as history; find live pressure elsewhere |
-| Secrets/DCs in Arrival | Move to DM-facing sections |
+| Secrets/DCs in narration | Move to DM-facing sections |
 | Faction agendas on city page | Point to faction pages; keep local posture only |
-| Single plot rail / combat-only stack | Restore Orientation/Gazetteer choice space |
+| Single plot rail / combat-only stack | Restore Districts/Gazetteer choice space |
 | PC civic outcomes as established fact | Present pressure; leave outcomes to play |
 | Clue-less single lever | Add visible signs + ≥2 approaches or costly bypass |
 | Unmarked invention | `invention: true`; list the proposal in the response |

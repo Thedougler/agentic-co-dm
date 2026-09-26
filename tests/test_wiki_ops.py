@@ -14,7 +14,6 @@ from tools.wiki_ops.identity import resolve_identity, scan_identities
 from tools.wiki_ops.manifest_ops import ManifestTransition, apply_transition
 from tools.wiki_ops.mutations import MutationOp, apply_mutation, parse_sections, section_hash
 from tools.wiki_ops.repair_plans import build_plan
-from tools.wiki_ops.template_contracts import check_conformance, load_contract
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.transactions import Transaction
 
@@ -492,37 +491,6 @@ def test_typed_mutation_rejects_invalid_selector_without_writing(tmp_path: Path)
     )
     assert result["status"] == "rejected"
     assert page.read_text(encoding="utf-8") == original
-
-
-def test_template_contract_reports_required_sections():
-    contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
-    page = "---\ntitle: Test\ntype: faction\nstatus: active\n---\n# Test\n"
-    findings = check_conformance("test.md", page, contract)
-    assert any(item["rule_id"] == "TMPL_missing_required" for item in findings)
-
-def test_template_contract_keys_when_on_status_and_redirect_stubs():
-    contract = load_contract(Path(__file__).parents[1] / "wiki/templates/contracts/faction.yml")
-    page = (
-        "---\ntitle: Dormant\ntype: faction\nstatus: dormant\nredirects_to: canonical\n"
-        "category: faction\ntags: []\nsources: []\ncreated: 2026-09-01\nupdated: 2026-09-01\n---\n"
-        "# Dormant\n"
-    )
-    findings = check_conformance("dormant.md", page, contract)
-    assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
-    assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
-
-    def agenda(front: str) -> bool:
-        text = f"---\ntitle: Test\ntype: faction\n{front}---\n# Test\n"
-        return any(
-            item.get("section") == "Active Agenda" and item["rule_id"] == "TMPL_missing_required"
-            for item in check_conformance("test.md", text, contract)
-        )
-
-    assert agenda("status: active\nlifecycle: proposed\n")
-    assert not agenda("status: dormant\nlifecycle: accepted\n")
-    assert not agenda("lifecycle: accepted\n")
-    fixture = (Path(__file__).parent / "fixtures/wiki_ops/templates/dormant-faction.md").read_text(encoding="utf-8")
-    assert "status: dormant" in fixture and "lifecycle" not in fixture
 
 
 def test_scope_and_cli_pipeline_resolve_typed_surface(tmp_path: Path):

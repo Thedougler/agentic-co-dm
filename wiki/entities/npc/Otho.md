@@ -53,11 +53,10 @@ Physical mannerisms: flicks a coin across his knuckles and claps a hand on a sho
 | Performance hooks | The barroom uncle who's bought every regular a drink they can't remember. Flicks a coin end over end across his knuckles without ever looking down. |
 | **Link of Relevance** | [[perrin-black-jaw]] failed the Arcana check identifying Grigori's necrotic magic in Session 03 and has suspected something's wrong ever since without knowing what. Meeting Otho, the source of Grigori's whole doctrine and the office of Korabl itself, is the piece that could finally give that suspicion real shape. |
 
-> [!mechanic]
-> **Tradition:** Divine (archfey patron bargain). **School:** Necromancy.
-> **Detect Magic near an unhealable wound:** Divine necromancy — old, permanent, the weight of something that decided and never looked back.
-> **Counterspell:** not applicable — the bargain was made generations ago; no discrete cast event exists to intercept.
-> **Dispel Magic:** suppresses a wound's unhealability for 1 minute; the bargain reasserts. Only Otho choosing to end it, or a negotiated release, dissolves it permanently.
+**Tradition:** Divine (archfey patron bargain). **School:** Necromancy.
+**Detect Magic near an unhealable wound:** Divine necromancy — old, permanent, the weight of something that decided and never looked back.
+**Counterspell:** not applicable — the bargain was made generations ago; no discrete cast event exists to intercept.
+**Dispel Magic:** suppresses a wound's unhealability for 1 minute; the bargain reasserts. Only Otho choosing to end it, or a negotiated release, dissolves it permanently.
 
 ## Stats & Combat
 

@@ -87,8 +87,7 @@ actions:
 - **Shared Spellcasting:** 3/day: Alarm, Bless, Calm Emotions, Charm Person; 2/day: Beacon of Hope, Counterspell, Hallucinatory Terrain, Haste; 1/day: Dominate Person, Heroes' Feast, Mass Cure Wounds, Modify Memory.
 - **Gentle Gaze:** Create a magic item (10,000 gp, 1 hour). User can see through it to read a target's deepest desire.
 
-> [!mechanic]
-> **Siphon Joy.** Sacrifice a Charmed thrall: DC 15 Constitution save (disadvantage if charmed 24+ hours). Deals half the thrall's max HP as force damage; each coven hag heals for one-third of this.
+**Siphon Joy.** Sacrifice a Charmed thrall: DC 15 Constitution save (disadvantage if charmed 24+ hours). Deals half the thrall's max HP as force damage; each coven hag heals for one-third of this.
 
 ## Biology
 

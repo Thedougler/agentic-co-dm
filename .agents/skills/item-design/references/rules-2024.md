@@ -72,7 +72,7 @@ spellcasting ability against DC 10 plus the spell's level.
 
 ## Cursed items
 
-A curse is part of the item text, kept under Hidden Properties until
+A curse is part of the item text, kept under Secrets until
 revealed. Most ways of identifying an item, the *Identify* spell included, do
 not reveal a curse. State what reveals it, what it does, whether the bearer
 can end attunement while cursed, and what breaks it (a *Remove Curse* spell, a

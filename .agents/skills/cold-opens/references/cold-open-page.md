@@ -9,8 +9,8 @@ A cold open is one Hook beat page, instantiated from the beat template in
 `templates/` at `canon: provisional`, and composed against its session's
 Beat Chart by `writing-session-beats`.
 
-- Each step is **narration, then one `[!mechanic]`** whose table holds the group
-  row (`the DM visual language in CONTEXT.md/references/check.md` § Group check). The DM
+- Each step is **narration, then one check table** (plain Markdown, no
+  callout) that holds the group row (`the DM visual language in CONTEXT.md/references/check.md` § Group check). The DM
   ruling at `the campaign's established group-check ruling, if one exists` binds the mechanic: a
   cold-open step resolves on one combined group check — five d20s, one per
   player seat, named-skill modifiers, summed — never five individual checks.

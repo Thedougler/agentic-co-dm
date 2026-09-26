@@ -56,7 +56,7 @@
       "assertions": [
         {"text": "Leaves 'otters notice and start tugging' as unmarked fiction with no roll.", "type": "content"},
         {"text": "Does not add a '(no check)' or similar annotation to the certain outcome.", "type": "guardrail"},
-        {"text": "Puts player-activity tests under If the party using **Ability (Skill) — `DC n`** format.", "type": "structure"},
+        {"text": "Puts player-activity tests under At the Table using **Ability (Skill) — `DC n`** format.", "type": "structure"},
         {"text": "Uses Wisdom (Animal Handling) or similar for calming/redirecting the otters.", "type": "content"},
         {"text": "DCs sit on the typical band (10/15/20).", "type": "process"}
       ]

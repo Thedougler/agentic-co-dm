@@ -43,8 +43,7 @@ Only Solange can summon [[otar-the-foul]]. She is the only one on [[simone-tabar
 
 Solange learned binding shapes from her patron. She calls this entity *le courant* (the current). She holds red caste rank, the top position below [[simone-tabarnack|Simone]]. [[simone-tabarnack|Simone]] plans. Solange runs the hard parts warriors can't. She joined [[simone-tabarnack|Simone]] at [[sorn]]. She alone knows the circle's activation code.
 
-> [!mechanic]
-> [[otar-the-foul|Otar]]'s summoning is Solange's work product, not a direct threat from her (she doesn't fight). Everything under **Stats & Combat** below describes what occurs when the crew reaches her mid-ritual. She becomes a channeling caster protected by Elite Warriors and a detonation trigger, functioning as an atypical encounter.
+[[otar-the-foul|Otar]]'s summoning is Solange's work product, not a direct threat from her (she doesn't fight). Everything under **Stats & Combat** below describes what occurs when the crew reaches her mid-ritual. She becomes a channeling caster protected by Elite Warriors and a detonation trigger, functioning as an atypical encounter.
 
 If the circle stands, Solange won't leave, knowing she is the key piece. If enemies break the circle, she runs, but if caught before the blast, she gives only her name and caste. **When she escapes:** she leaves only if the circle breaks before the blast (two rounds of chanting, or the garrison drops to 2). She blows the ceiling. She uses Dimension Door to reach the surface. She tells [[simone-tabarnack|Simone]] that enemies hit the main site, [[jean-claude-tabarnack|Jean-Claude]] helped them, and the summoning failed, so [[simone-tabarnack|Simone]] now knows someone works against her. If the ritual finishes, Solange stays and the entity takes her, and no one tells [[simone-tabarnack|Simone]] that [[jean-claude-tabarnack|Jean-Claude]] helped.
 
@@ -102,8 +101,7 @@ After two full rounds of chanting or when the garrison drops to 2, she triggers 
 
 **Channeling:** Mirror Image is up (3 copies, each blocks one hit). She stays 10 ft from the circle (AC 15, good saves). Bright light spreads 10 ft.
 
-> [!mechanic]
-> **Reaction:** cast Counterspell or blast. If a caster hits the circle or her mind, Solange casts Counterspell (blocks level 3 or less, check for higher). She has two level 3 slots. Each spell costs half her power and this turn's blast. **Blast:** after two rounds of chanting or when the garrison hits 2, Solange says the word. Magic fuses blow. Counterspell can't stop it. The circle keeps her safe. Others take 8d6 fire and 4d6 crush (DEX/STR save, DC 16 to halve).
+**Reaction:** cast Counterspell or blast. If a caster hits the circle or her mind, Solange casts Counterspell (blocks level 3 or less, check for higher). She has two level 3 slots. Each spell costs half her power and this turn's blast. **Blast:** after two rounds of chanting or when the garrison hits 2, Solange says the word. Magic fuses blow. Counterspell can't stop it. The circle keeps her safe. Others take 8d6 fire and 4d6 crush (DEX/STR save, DC 16 to halve).
 
 **[[Arrival]]:** after the blast, Solange finishes the chant as [[otar-the-foul]] comes through her with darkness and ice and change. The entity takes her and can't be undone.
 

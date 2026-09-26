@@ -45,12 +45,11 @@ tier: supporting
 | Narrative hook | Used within the outer [[Midchain]] reef approaches, the disc shows dressed stone in the silt at a bearing no chart marks. Whether it is a ruin, a shrine, or a wreck is a question the disc cannot answer. |
 
 
-> [!mechanic]
-> **The Plumb Eye [HB].** Once per day, as an action, submerge the disc in open water. For 1 hour, the holder senses the depth and contour of the seafloor within 60 feet in all directions as a tactile impression against the hand holding the cord — as though the bottom were a relief pressed against the palm. The disc must remain submerged and in hand; lifting it out ends the effect immediately.
->
-> **Edge cases:** the impression conveys terrain shape only — no creatures, no objects, no currents. It functions in fresh or salt water of at least 5 feet depth. In full darkness or blind conditions, the tactile impression continues without interruption.
->
-> **Limitations:** material, temperature, and anything living on or resting on the seafloor cannot be distinguished from the terrain itself. The disc reads the bottom as it is now. The effect does not extend upward from the disc's submerged position.
+**The Plumb Eye [HB].** Once per day, as an action, submerge the disc in open water. For 1 hour, the holder senses the depth and contour of the seafloor within 60 feet in all directions as a tactile impression against the hand holding the cord — as though the bottom were a relief pressed against the palm. The disc must remain submerged and in hand; lifting it out ends the effect immediately.
+
+**Edge cases:** the impression conveys terrain shape only — no creatures, no objects, no currents. It functions in fresh or salt water of at least 5 feet depth. In full darkness or blind conditions, the tactile impression continues without interruption.
+
+**Limitations:** material, temperature, and anything living on or resting on the seafloor cannot be distinguished from the terrain itself. The disc reads the bottom as it is now. The effect does not extend upward from the disc's submerged position.
 
 ## Provenance
 

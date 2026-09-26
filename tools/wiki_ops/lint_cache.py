@@ -78,7 +78,7 @@ RULE_FILES = (
     "rules/registry.yml",
     "rules/bundles.yml",
 )
-RULE_DIRS = ("styles", "wiki/templates/contracts", "tools/creative_lint")
+RULE_DIRS = ("styles", "wiki/templates", "tools/creative_lint")
 RULE_SUFFIXES = {".ini", ".yml", ".yaml", ".py", ".md"}
 SKIP_DIR_NAMES = {"__pycache__", ".git"}
 
@@ -91,7 +91,7 @@ def _repo_relative(root: Path, path: Path) -> str:
 
 
 def digest_rules(root: str | Path, extra: Mapping[str, Any] | None = None) -> str:
-    """Hash the rules state applied to a lint: Vale, structural sources, contracts, flags."""
+    """Hash the rules state applied to a lint: Vale, structural sources, templates, flags."""
     base = Path(root)
     files: dict[str, str] = {}
     for relative in RULE_FILES:

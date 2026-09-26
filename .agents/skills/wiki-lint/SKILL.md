@@ -87,7 +87,9 @@ For the current file:
    - resolve links against existing owner filenames;
    - add required frontmatter;
    - correct type and filename;
-   - apply the page template and complete every required section;
+   - apply the page template: keep the sections it marks `Required.` and
+     the ones the page has facts for, and delete empty or fact-less lines
+     (fact-only, `wiki/AGENTS.md` Layout);
    - load the page's owner skill when a section needs domain content;
    - create plot only when the user explicitly asks; otherwise defer and
      continue all non-plot repairs;
@@ -99,9 +101,8 @@ For the current file:
 5. Commit: the file path and a short description of what was repaired.
 6. Return to `next.path` and repeat for the next file.
 
-An empty required section is a finding. A sparse page is not repaired until it
-contains substantive, actionable content for every non-plot template job. Plot
-work is inactive unless the user asks for it.
+A section the template marks `Required.` holds facts; every other section appears only
+when it has facts. Plot work is inactive unless the user asks for it.
 
 For place pages, use Michael E. Shea's playable-location baseline: named areas,
 connections, inhabitants or pressures, and discoverable information

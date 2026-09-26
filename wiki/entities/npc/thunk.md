@@ -75,8 +75,7 @@ He put a thousand gold of cannon on [[uncertainty|Uncertainty]]'s credit on noth
 ```
 ````
 
-> [!mechanic] At the table
-> Manning a ship's weapon, Thunk counts as two crew, which is what keeps a gun firing on a short-handed watch. His personal numbers are not filed; run him from the crew rules until a sheet exists.
+**At the table.** Manning a ship's weapon, Thunk counts as two crew, which is what keeps a gun firing on a short-handed watch. His personal numbers are not filed; run him from the crew rules until a sheet exists.
 
 ### Voice
 

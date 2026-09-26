@@ -84,8 +84,9 @@ Fishing and farming families live here. Reeds, frogs, toads, crocodiles, and fis
 | ----- | --------------- | --------- | --------- | ---------------------- |
 | [[dravosi-crown]] | Claim and twice-yearly fishing tithe; no garrison | The tithe | The next revenue visit | An officer on the mere or among the farms |
 
-> [!secret]- Three refused deals
-> [[high-eyrie]] is the named Sentinel refusal. The Crown has offered the Sentinels three deals and all three were refused. Aldenmere is not a party to those negotiations.
+## Secrets
+
+**Three refused deals.** [[high-eyrie]] is the named Sentinel refusal. The Crown has offered the Sentinels three deals and all three were refused. Aldenmere is not a party to those negotiations.
 
 ## Change log
 

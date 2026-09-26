@@ -33,10 +33,9 @@ She keeps two ledgers. The public one balances. The private one (kept for hersel
 
 Her shelves hold salted meat and hides that never seem to run short no matter how much moves off them, and an unusually large, constantly replenished stock of bandages and splints. Wounds linger here for as long as anyone stays hurt, and she stocks for that fact plainly, without selling false comfort alongside the gauze.
 
-> [!mechanic]
-> **Tradition:** Primal. **homebrew element:** Otel Karn's non-death curse suspends biological mortality and replenishes natural stock island-wide; both effects here are environmental, not cast.
-> **Detect Magic:** nothing. Neither Marta nor her shelves register any aura. The island's refusal sits beneath the weave entirely.
-> **Counterspell:** no. Environmental imposition. No spell to interrupt.
+**Tradition:** Primal. **homebrew element:** Otel Karn's non-death curse suspends biological mortality and replenishes natural stock island-wide; both effects here are environmental, not cast.
+**Detect Magic:** nothing. Neither Marta nor her shelves register any aura. The island's refusal sits beneath the weave entirely.
+**Counterspell:** no. Environmental imposition. No spell to interrupt.
 
 **A dossier of usable facts:**
 

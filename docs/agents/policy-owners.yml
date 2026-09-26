@@ -6,17 +6,17 @@ policies:
       - .agents/skills/wiki-ingest/SKILL.md
     reference: "File what constitution X makes canon; do not restate a chat accept gate."
   callout_vocabulary:
-    owner: wiki/templates/faction.md
+    owner: .agents/skills/obsidian-markdown/references/callouts.md
     consumers:
       - tools/wiki_ops/template_contracts.py
-      - .agents/skills/faction-design/SKILL.md
-    reference: "Use the co-located template contract for allowed callouts."
+      - wiki/AGENTS.md
+    reference: "[!narration] is the only callout; the linter allows the callouts a template shows."
   template_optionality:
-    owner: wiki/templates/contracts/faction.yml
+    owner: wiki/AGENTS.md
     consumers:
       - tools/wiki_ops/template_contracts.py
       - .agents/skills/faction-design/SKILL.md
-    reference: "Contract sections own required, optional, and status-gated semantics."
+    reference: "Each template marks its sections Required., Required when <key> is <value>., or Free-form.; the linter reads the template."
   repair_safety:
     owner: specs/025-agent-safe-wiki-ops/contracts/mutation-contract.md
     consumers:

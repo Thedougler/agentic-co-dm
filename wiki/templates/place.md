@@ -13,44 +13,57 @@ kind: site
 region: ""
 summary: ""
 ---
-<!-- Copy-start scaffold. Omit unused sections. Pass is place jobs in wiki/AGENTS.md Layout. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. -->
+
 # {{title}}
-<!-- Add identity art when available. -->
-## Overview
-> [!narration] Narration
-> <!-- `.agents/skills/place-design` step 6 builds the narration packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: place. -->
-> Write a third-person, present-tense portrait of the place as it always is, as long as it needs to carry every tell. Cover body-scale geography (size, ground, air, light), routes or exits, at least one sense beyond sight with its source, at least one usable affordance, and a plain perceivable tell for every secret, item, hazard, and presence this page holds. No truths behind the tells, DCs, kernel fields, or unearned names.
 
----
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
-Write what this place is now, which linked places it sits between, and which edge can be skipped. Complete sentences.
 
----
-## If the party
+<!-- Required. Lead sentence: why the party comes here and what is happening now. Then labelled facts, one bullet each. -->
 
-- **Named player verb.** Describe the changed situation and linked page. Add a check only when the outcome is uncertain. Omit default-safe actions.
+- **Who is here.** [[npc]] or [[creature]], how many, doing what.
+- **Danger.** The threat and its trigger.
+- **Draw.** What the party can gain here.
+```
 
----
-## Who
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look at body scale: size, ground, air, light, exits, one sense beyond sight with its source, one thing to use, and a visible tell for every secret, hazard, and presence on this page. -->
+```
+````
 
-- State who is here, in what numbers, and what they do. If nobody is here, record the sign of absence. Wikilink each creature and person to its owner page.
+## Features
 
----
-## What
+<!-- The people, creatures, objects, and terrain a DM can put on the table, each with what it does or how it can be used. Link owner pages. Use `###` for rooms or areas when the place has several. -->
 
-- Features, flora, fauna, and objects a DM can put on the table. Wikilink owner pages.
+- **Feature.** What it is and what the party can do with it.
 
----
-## Where
+## At the Table
 
-- Linked neighbors and how this place connects. Where canon names no neighbour, say what lies that way (open water, unmapped jungle).
+<!-- What the party is likely to try and what happens. Add a check only when the outcome is uncertain. -->
 
----
-## Why
+- **If the party** does this — what changes, with the check and its result.
 
-- Why a party comes, stays, or cares, in complete sentences.
+## Secrets
 
----
+<!-- Hidden truths here, each with the clue that reveals it. -->
+
+## Connections
+
+- [[place]] — how it connects: route, distance, what lies between.
+
+## History
+
+<!-- Past events that still change what the party finds. -->
+
+## Log
+
+- **[[Session]]** — what changed here.
+
 ## Art
-<!-- Add battlemap or extra art when available. -->
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->

@@ -3,8 +3,8 @@ name: lore-design
 description: >-
   Write, edit, or create named lore pages for the campaign wiki. Use when a
   lore note, world truth, history, belief, rumor, legend, doctrine, custom, law,
-  cosmology, prophecy, revelation, missing named lore note, Current Truth,
-  discovery path, or table-facing lore handle needs a persistent page. Fill
+  cosmology, prophecy, revelation, missing named lore note, the truth behind a
+  legend, discovery path, or table-facing lore handle needs a persistent page. Fill
   wiki/templates/lore.md.
 ---
 
@@ -50,7 +50,7 @@ These hold in every step.
   proposal with the `[[pages]]` it grows from; a proposal that settles a
   contradiction names the sources and the reading it chose, so the DM picks the
   winner. What the world does not know stays unknown to the world, in Accounts
-  and Who Knows; Current Truth carries the answer.
+  and the Who knows bullet; the page body carries the answer.
 - **Table history is the table's.** What the party did, learned, or believes
   comes from session notes; the page records it and leaves their next
   conclusion to play.
@@ -129,11 +129,13 @@ level.
 
 ### 4. Build the accounts and the clue path
 
-- **Accounts.** Two to four in-world versions (a sailors' telling, a scholar's
-  note, a faction's official line, a survivor's story), each with who holds it
-  and how it relates to the truth. Each is wrong or partial in a way that
-  sends a believer somewhere interesting.
-- **Common telling.** The version a tavern would actually say, in voice.
+- **Accounts.** When people in the world believe different things: two to four
+  in-world versions (a sailors' telling, a scholar's note, a faction's official
+  line, a survivor's story), each with who holds it and how it relates to the
+  truth. Each is wrong or partial in a way that sends a believer somewhere
+  interesting.
+- **Common telling.** For a legend or rumor, the version a tavern would
+  actually say, in voice.
 - **Revelation.** For each conclusion the party needs, three independent
   clues from different sources (a person, a place, a document, a physical
   sign), each naming its source page, what it reveals, and the check if one
@@ -146,21 +148,20 @@ clues from different sources, and each source is a linked page.
 ### 5. File the page
 
 Copy `wiki/templates/lore.md` to `wiki/entities/lore/<kebab-name>.md` with
-`type: lore`, `kind`, `truth`, `scope`, `region`, and `era`. Omit sections with
-no job. Write complete sentences. Wikilink every owner page.
+`type: lore` and `kind`; add `truth`, `scope`, `region`, or `era` only when they
+have values. Keep a section only when you have facts for it (fact-only,
+`wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every owner page.
 
-| Section | Carries |
-|---|---|
-| At a Glance | Core truth, why it matters now, scope |
-| Current Truth | The truth from step 2; Limits carry exceptions and costs |
-| At the Table | Players notice, this explains, this enables, this warns of, relevant now |
-| Who Knows | Each knower, what they know, certainty, basis; Party Knowledge from session notes |
-| Accounts | The accounts and the common telling |
-| Discovery | Each revelation with its three clues |
-| If This Is Changing | The actors from step 3, what they do next, and when |
-| Consequences | Because true, if exposed, if exploited |
+At a Glance carries the truth in one or two sentences, why it matters now, its
+scope, and who knows it. Then shape the body to fit the lore, with `##`
+sections named for what they hold: a history gets a Chronology, a custom gets
+its procedure (The Rite, How It Runs), a legend gets The Tale, a doctrine gets
+its Tenets. The truth from step 2, the actors from step 3, and their next move
+go in the body. At the Table carries what players notice and the clues from
+step 4, each with its source. Accounts carries the in-world versions and their
+holders. Log starts once play witnesses the lore.
 
-Leave out Canon Log until play witnesses the lore.
+A subject with a statblock or a persona is a creature or NPC page, not lore.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -175,18 +176,18 @@ line that carries it; a line with nothing beside it goes back on the page.
 
 - The canon inventory is complete; every established claim is kept, as truth
   or as an account.
-- The page answers one question; Current Truth answers every claim and every
-  formerly open item with one concrete fact.
+- The page answers one question; its body answers every claim and every
+  formerly open item with one concrete fact, in sections shaped to the lore.
 - The truth is at least as good as the tale and keeps the wonder: each
   fantastic claim stays true in some form or gives way to a wonder of equal
   size, at the canon's scale.
-- A named NPC or faction moves on the truth on their own clock; the stakes name
-  what the party can win and lose, with numbers sized for their level.
+- When the truth is live in the campaign, a named NPC or faction moves on it on
+  their own clock, and the stakes name what the party can win and lose, with
+  numbers sized for their level.
 - Accounts name their holders; each needed conclusion has three clues from
   different linked sources; uncertain clues carry Ability (Skill) and DC.
-- At the Table fills notice, explains, enables, and warns.
-- Party knowledge comes from session notes; `reveal` stays
-  `unrevealed`.
+- At the Table says how the lore enters play; every line on the page is
+  fact-only; `reveal` stays `unrevealed` until play reveals the lore.
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §
   Cast before minting).

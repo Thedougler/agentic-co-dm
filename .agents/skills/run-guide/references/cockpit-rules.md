@@ -32,7 +32,7 @@ has no middle.
 
 Name the mode. Default for a hunt/chase/escape slice is *escape mode*:
 
-1. Failures impose the Be ready for *ruling* only. They never advance the clock.
+1. Failures impose the Checks *ruling* only. They never advance the clock.
 2. After everyone has acted, if anyone remains exposed (the card's magnets), advance the threat clock **once** and resolve that tick.
 3. Several failed checks in one round still produce **one** tick.
 
@@ -45,13 +45,13 @@ A skill-challenge or social slice uses the same rule: one clock, filled by the
 card's named trigger, never by both a table failure *and* a separate tick for
 the same action.
 
-## Now (positions)
+## Situation (positions)
 
 Who starts where, distances in **feet**, compass directions, speeds, what a
 move or Dash reaches. Reuse those distances and directions in the zone table.
 Place labels stand alongside concrete measurements, never instead of them.
 
-## Scene-setting (Initial Narration)
+## Scene-setting (Opening)
 
 `theatre-of-the-mind` owns the prose. This skill owns **what the spoken block
 carries** before the question.
@@ -64,7 +64,7 @@ separate reveal blocks or zone/tick Narration cells (Layers 2–3).
 
 If a battlemap is present, orient routes, zones, cover, and exits with the
 same compass (top north, right east, bottom south, left west). Use cardinal
-words where they help the table hold the scene; the Initial Narration is a
+words where they help the table hold the scene; the Opening is a
 spoken picture, not a compass checklist.
 
 Stop on a live situation, then "What do you do?"
@@ -79,7 +79,7 @@ still resolves on this card.
 A hook with a cover endpoint stays on this beat. The next stretch is the next
 cockpit.
 
-## Action cards and embeds
+## Actors and embeds
 
 Default-mode compact numbers live in the first section that needs them. Hidden
 intent, opposition wants, and canon constraints are ordinary DM-facing facts —
@@ -95,7 +95,7 @@ If the owner lacks `## Statblock`, add that heading above the fence on the
 owner page, then embed. Missing owner for a creature you will roll → stop and
 route to `monster-design`.
 
-## Be ready for and the clock
+## Checks and the clock
 
 A selective ruling table: only intents that change a ruling, risk, route,
 clock, resource, NPC response, or information. Unforeseen approaches are ruled

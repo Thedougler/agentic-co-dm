@@ -45,7 +45,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the template's jobs; omit a section only when this Hook never spends it.
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Hook spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
 
 ## Fill a Hook
 
@@ -59,7 +59,8 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    and pick the card the fiction calls for. A session that stopped mid-action
    resumes as **Play a Cliffhanger** at the recorded state — the tension is
    already there. Done when the card, its key (action or cerebral), and the
-   thread it opens are named.
+   thread it opens are named; they go in the session plan's Beat Map, not on
+   the Hook page.
 3. **Cast owners.** Every named actor, place, item, or creature the Hook
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint with its owner skill only what nothing fits
@@ -72,7 +73,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    the Hook is a fight, pull the opposition's numbers from its owner
    statblock; `encounter-prep` sets the difficulty when no encounter exists. Done when everyone who could fight carries numbers: from the owner
    statblock, or a proposed standard 5e statblock filed on the owner.
-6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Open on`.
+6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`.
    The opening starts inside the changed moment and ends on something a
    player can act on.
 7. **Write the handoff.** Action Hook → next Development; cerebral Hook → next
@@ -88,7 +89,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
   before it except an optional one-to-three-sentence "previously" — the only
   recap the session gets.
 - **Everyone moves in five minutes.** Each PC present has an obvious first
-  thing to do or a personal pull (Character pull table). A PC with nothing to
+  thing to do or a personal pull (Spotlight). A PC with nothing to
   do in the opening becomes a spectator for the whole beat.
 - **Show the night.** The Hook demonstrates the session's tone and pace and
   introduces at least one piece the session uses later: the opposition, an
@@ -97,7 +98,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 - **Obvious and interesting moves.** Build one obvious first move and at least
   one non-obvious move the space or cast rewards (a feature to exploit, an NPC
   to bargain with, a thing to grab).
-- **Short and committed.** The Hook resolves fast. "Hook lands when" names the
+- **Short and committed.** The Hook resolves fast. At a Glance's "Ends when" names the
   observable commitment — the party gives chase, accepts the job, flees the
   city — and the beat cuts there. Longer stretches of travel or investigation
   are the next beat.

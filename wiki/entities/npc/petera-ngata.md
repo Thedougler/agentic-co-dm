@@ -77,6 +77,10 @@ Either company pressing her floor for the false log, or a name on the memorial w
 
 Petera speaks in short, level sentences and names the dead before she discusses the companies that employed them. She uses “the list” to mean the complete ledger and avoids calling the false log a death record. **Ask:** “Whose name are you looking for?” **Refusal:** “That is a company's paper, not mine.” **Under pressure:** “You do not get to make the dead convenient.”
 
+## Secrets
+
+**Last Berth floor.** The false mid-shelf log is under a loose floorboard at the Last Berth. Petera keeps the complete death list. Those are not the same book.
+
 ## Connections
 
 | Connection | Meaning |
@@ -85,6 +89,3 @@ Petera speaks in short, level sentences and names the dead before she discusses 
 | [[sunkline]] | Tessarine money; its false log sits under a loose floorboard at the Last Berth. |
 | [[Voyvode]] | Crown money; fresh memorial names are mostly its crews. |
 | [[adriana-tarquine]] | [[sunkline]] chief engineer whose certificate and false log are her problem, not Petera's. |
-
-> [!secret] Last Berth floor
-> The false mid-shelf log is under a loose floorboard at the Last Berth. Petera keeps the complete death list. Those are not the same book.

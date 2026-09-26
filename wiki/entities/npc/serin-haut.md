@@ -68,10 +68,9 @@ She becomes evasive when anyone connects her to courier Dren's death, the watche
 ```
 ````
 
-> [!mechanic]
-> **Spy package.** Use the Spy stat block, with +1 Deception and a concealed shortsword. Serin carries 3 doses of basic poison (ingested, DC 11 Constitution save, 2d6 poison damage on a failed save); her HP is 27 and AC is 12.
->
-> **Encounter: Serin Haut at Bay.** The encounter triggers when the party approaches her room or she spots them first. Combat occurs in a 3-foot-wide hallway outside her room above a canal-side notary's office. A hired thug (HP 32, AC 11, club +4, 2d4+2) blocks the exit while Serin uses Cunning Action to escape and hide.
+**Spy package.** Use the Spy stat block, with +1 Deception and a concealed shortsword. Serin carries 3 doses of basic poison (ingested, DC 11 Constitution save, 2d6 poison damage on a failed save); her HP is 27 and AC is 12.
+
+**Encounter: Serin Haut at Bay.** The encounter triggers when the party approaches her room or she spots them first. Combat occurs in a 3-foot-wide hallway outside her room above a canal-side notary's office. A hired thug (HP 32, AC 11, club +4, 2d4+2) blocks the exit while Serin uses Cunning Action to escape and hide.
 
 ## Connections
 

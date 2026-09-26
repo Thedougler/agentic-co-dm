@@ -12,7 +12,7 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 
 - Handles, Layers, Spine (every situated block)
 - Beat openings: Hook, Development, Cliffhanger, Climax, Resolution
-- Beat slots: zone cell, tick cell, outcome cell, creature in scene, How the Scene Resolves, Exit
+- Beat slots: zone cell, tick cell, outcome cell, creature in scene, Outcomes, Exit
 - People and things: NPC first look, dialogue, item in scene
 - Action: combat opening state
 - Moments: social scene, suspense, revelation, return to a known place
@@ -25,7 +25,7 @@ A **handle** is anything the players can act on in this scene. The block's
 handle list draws on every source below; the beat page is where it starts,
 never where it ends, because beats routinely miss things:
 
-- the beat's Situation, Cast, Space, Zones, and Stage;
+- the beat's Situation, Actors, and Stage;
 - the place and region pages: landmarks, routes, water, flora, fauna,
   hazards, and every tell in their weave;
 - each person, creature, and item page: what they carry, wear, and do, and
@@ -88,8 +88,8 @@ is immediate, lead with it.
 
 ## Beat openings
 
-The scene opening (Initial Narration, Open on, Opening, Open on Action,
-Opening image) uses the spine above and carries the entry layer; zone,
+The scene opening (`Opening` on typed beats and encounters, `Opening`
+on run-guide cockpits) uses the spine above and carries the entry layer; zone,
 creature, and outcome cells carry the rest (§ Layers). The beat type decides
 what leads.
 
@@ -157,13 +157,13 @@ what leads.
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
 every handle, each in its layer (§ Layers):
 
-- **Initial Narration**, **Open on**, **Opening**, **Open on Action**,
-  **Opening image**: the beat's scene opening (entry layer; recipes above).
-- **Closing image**: the Resolution's final picture.
-- **How the Scene Resolves**: the one ending that is always true.
+- **Opening** (typed beats, encounters) or **Opening** (run-guide
+  cockpits): the beat's scene opening (entry layer; recipes above).
+- **Closing Image**: the Resolution's final picture.
+- **Outcomes**: the one ending that is always true.
 - **{Creature}**: that creature as it appears in this scene.
 - **Exit**: the transition into the next beat on the same page.
-- **Narration columns** in Zones, Threat clock, and outcome tables: short
+- **Narration columns** in Stage, Pressure, and outcome tables: short
   conditional lines written as `_italic_` inside the table cell
   (attention and interaction layers; state changes).
 
@@ -200,7 +200,7 @@ every handle, each in its layer (§ Layers):
   page and art for its look; the scene decides its pose.
 - **End:** The next thing it is about to do, before contact.
 
-### How the Scene Resolves
+### Outcomes
 
 - **Job:** The one ending that is true however the beat went.
 - **Build:** A few sentences showing the world settling into the changed state.
@@ -252,7 +252,7 @@ every handle, each in its layer (§ Layers):
 - **From the NPC page:** Speak in the voice on the NPC's page (its word
   choice, rhythm, verbal habit, and the subject they avoid), matching its
   sample lines in manner, not words. The line serves what they want in this
-  beat, and their posture follows the page's "When posture changes".
+  beat, and their posture follows what the page's At the Table says opens and closes them.
 - **End:** After that line. A second point waits for the players' reply.
 
 ### Item in scene

@@ -208,11 +208,11 @@
     },
     {
       "id": 4,
-      "prompt": "A faction page has sections in the wrong order, content outside the template, and a missing DM thesis. Run lint and repair the page completely.",
-      "expected_output": "One lint repair loop: consults the faction contract, preserves and relocates existing content, and completes the DM thesis through faction-design with grounded canon.",
+      "prompt": "A faction page has sections in the wrong order, content outside the template, and a missing At a Glance lead sentence. Run lint and repair the page completely.",
+      "expected_output": "One lint repair loop: consults the faction template, preserves and relocates existing content, and completes the At a Glance lead sentence through faction-design with grounded canon.",
       "assertions": [
         {
-          "text": "Sections reordered to match wiki/templates/contracts/faction.yml",
+          "text": "Sections reordered to match wiki/templates/faction.md",
           "type": "structure"
         },
         {
@@ -220,7 +220,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Missing DM thesis is completed with substantive, canon-grounded content through faction-design",
+          "text": "Missing At a Glance lead sentence is completed with substantive, canon-grounded content through faction-design",
           "type": "quality"
         },
         {

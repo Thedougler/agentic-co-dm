@@ -32,7 +32,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Card, Entry state, Party goal, Opposition goal, Stakes, Pressure, End when, Memorable element, and Budget with an If behind compression."
+          "text": "Output includes Card, Entry state, Party objective, Opposition wants, Stakes, Pressure, End when, Memorable element, and Budget with an If behind compression."
         },
         {
           "type": "behavior",
@@ -259,7 +259,7 @@
         },
         {
           "type": "behavior",
-          "text": "Card, Entry state, Party goal, Opposition goal, Stakes, Pressure, End when, Memorable element, and Budget are present as top-level statements."
+          "text": "Card, Entry state, Party objective, Opposition wants, Stakes, Pressure, End when, Memorable element, and Budget are present as top-level statements."
         },
         {
           "type": "behavior",
