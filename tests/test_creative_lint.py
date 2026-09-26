@@ -143,23 +143,30 @@ def test_fixture_families_have_fail_and_pass_cases():
 
 
 
-def test_linear_template_flags_column_wrappers(tmp_path):
+def test_optional_template_sections_are_not_required(tmp_path):
     from tools.creative_lint.template_profile import compare_page
 
     template = tmp_path / "creature.md"
     template.write_text(
-        "---\ntitle: t\ntype: creature\n---\n# T\n\n> [!narration] Narration\n> look\n\n"
-        "## Statblock\n```statblock\n```\n## Behavior\n## Tactics\n",
+        "---\ntitle: t\ntype: creature\n---\n# T\n\n## Statblock\n```statblock\n```\n"
+        "## Tactics\n<!-- How it fights. -->\n## Behavior\n",
         encoding="utf-8",
     )
     page = tmp_path / "bear.md"
-    page.write_text(
-        "---\ntitle: Bear\ntype: creature\n---\n# Bear\n## Statblock\n"
-        "````col\n```col-md\nflexGrow=1\n```\n## Behavior\n## Tactics\n",
-        encoding="utf-8",
-    )
-    evidence = " ".join(item.evidence for item in compare_page(page, template, root=tmp_path))
-    assert "col" in evidence
+    page.write_text("---\ntitle: Bear\ntype: creature\n---\n# Bear\n## Statblock\n", encoding="utf-8")
+    assert compare_page(page, template, root=tmp_path) == []
+
+
+def test_open_contract_accepts_headings_shaped_to_the_content(tmp_path):
+    from tools.creative_lint.template_profile import compare_page
+
+    (tmp_path / "contracts").mkdir()
+    (tmp_path / "contracts" / "lore.yml").write_text("type: lore\nopen: true\n", encoding="utf-8")
+    template = tmp_path / "lore.md"
+    template.write_text("---\ntitle: t\ntype: lore\n---\n# T\n## At a Glance\n", encoding="utf-8")
+    page = tmp_path / "rite.md"
+    page.write_text("---\ntitle: Rite\ntype: lore\n---\n# Rite\n## At a Glance\n## The Rite\n", encoding="utf-8")
+    assert compare_page(page, template, root=tmp_path) == []
 
 
 

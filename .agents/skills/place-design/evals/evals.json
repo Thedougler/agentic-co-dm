@@ -15,7 +15,7 @@
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/place.md: header row (At a Glance beside the narration), then Features, At the Table, and Connections with substance — no empty copied headings",
           "type": "structure"
         },
         {
@@ -23,7 +23,7 @@
           "type": "content"
         },
         {
-          "text": "Where section keeps north/east/south/west (or equivalent cardinal) neighbors with canon gaps where unknown",
+          "text": "Connections name each linked neighbour with direction and travel time where canon gives them; no line states a gap",
           "type": "structure"
         },
         {
@@ -31,7 +31,7 @@
           "type": "guardrail"
         },
         {
-          "text": "If the party entries use named player verbs that change the situation",
+          "text": "At the Table entries use named player verbs that change the situation",
           "type": "quality"
         }
       ]
@@ -65,7 +65,7 @@
       "expected_output": "A place.md-conformant Fort Crestwall built from a stub, preserving sealed-vault/Drave-chart/two-detachments/Voss-exclusion canon, with filled template sections and no invented garrison details as canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/place.md structure with filled Overview, At a Glance, If the party, Who, What, Where, and Why substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/place.md: header row (At a Glance beside the narration), then Features, At the Table, and Connections with substance — no empty copied headings",
           "type": "structure"
         },
         {
@@ -81,11 +81,11 @@
           "type": "process"
         },
         {
-          "text": "Where section includes cardinal directions with wikilinks to Port Tidefall / Calder's Tooth context and canon gaps where unknown",
+          "text": "Connections include directions with wikilinks to Port Tidefall / Calder's Tooth context; no line states a gap",
           "type": "structure"
         },
         {
-          "text": "If the party entries include at least two named verbs that change the situation — navigation verbs (approach, descend, climb) appear before interaction verbs (search, bargain, investigate)",
+          "text": "At the Table entries include at least two named verbs that change the situation — navigation verbs (approach, descend, climb) appear before interaction verbs (search, bargain, investigate)",
           "type": "quality"
         },
         {
@@ -104,7 +104,7 @@
           "type": "content"
         },
         {
-          "text": "Where section includes cardinal directions with wikilinks where known and explicit canon gaps where unknown",
+          "text": "Connections include directions with wikilinks where canon gives them; no line states a gap",
           "type": "structure"
         },
         {
@@ -112,7 +112,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/place.md structure with filled Overview/At a Glance/If the party/Who/What/Where/Why substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/place.md: header row (At a Glance beside the narration), then Features, At the Table, and Connections with substance — no empty copied headings",
           "type": "structure"
         },
         {
@@ -135,7 +135,7 @@
           "type": "content"
         },
         {
-          "text": "If the party has at least four named verbs that change the situation — comparable in specificity to Torn Crossing or Grasslands exemplar pages",
+          "text": "At the Table has at least four named verbs that change the situation — comparable in specificity to Torn Crossing or Grasslands exemplar pages",
           "type": "quality"
         },
         {
@@ -143,7 +143,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Who section names established NPCs and honestly states what is not established (district authority, other traders)",
+          "text": "Features names the established NPCs; the page states no line about what is not established (district authority, other traders)",
           "type": "quality"
         },
         {

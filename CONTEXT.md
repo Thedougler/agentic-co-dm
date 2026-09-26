@@ -120,9 +120,18 @@ The current state label for a page's subject. Values depend on the page kind and
 **Scope**:
 Describe scale where it changes play, but do not treat it as universal frontmatter.
 
-DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. Where the wiki is silent or contradicts itself, they say so and name the sources.
+**Fact-only**:
+Every line on a wiki page gives the DM a fact, ruling, or response they can use. A section, bullet, row, frontmatter key, or callout with nothing to say stays off the page; where play needs an answer the wiki lacks, the answer is decided as a proposal.
 
-_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts.
+**Page anatomy**:
+The shared order of a wiki page: title, At a Glance beside the player-safe narration, the kind's core section, then the shared sections a page has facts for. Owner pages and session beats each have one anatomy, shown by their templates.
+
+**At a Glance**:
+The top of every page: one lead sentence on what the page is for at the table, then a few labelled facts.
+
+DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. In an answer to the DM, where the wiki is silent or contradicts itself, say so and name the sources; wiki pages stay fact-only.
+
+_Avoid_: treating hidden content as inaccessible to the DM or Co-DM; passing a proposal off as DM intent; tying categories to layouts; filler lines that record absence ("None.", "Unknown.", "not established").
 
 ## Beat model
 

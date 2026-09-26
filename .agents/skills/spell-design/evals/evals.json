@@ -321,7 +321,7 @@
     },
     {
       "id": 9,
-      "prompt": "File the new spell under wiki/ immediately as established Current Truth with invention unmarked.",
+      "prompt": "File the new spell under wiki/ immediately as established truth with invention unmarked.",
       "expected_output": "File on the live path with invention marked.",
       "assertions": [
         {

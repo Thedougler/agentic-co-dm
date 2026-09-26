@@ -6,11 +6,11 @@ policies:
       - .agents/skills/wiki-ingest/SKILL.md
     reference: "File what constitution X makes canon; do not restate a chat accept gate."
   callout_vocabulary:
-    owner: wiki/templates/faction.md
+    owner: .agents/skills/obsidian-markdown/references/callouts.md
     consumers:
       - tools/wiki_ops/template_contracts.py
-      - .agents/skills/faction-design/SKILL.md
-    reference: "Use the co-located template contract for allowed callouts."
+      - wiki/AGENTS.md
+    reference: "[!narration] is the only callout; contracts allow only narration."
   template_optionality:
     owner: wiki/templates/contracts/faction.yml
     consumers:

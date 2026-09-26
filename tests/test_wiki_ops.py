@@ -509,12 +509,12 @@ def test_template_contract_keys_when_on_status_and_redirect_stubs():
     )
     findings = check_conformance("dormant.md", page, contract)
     assert any(item["rule_id"] == "TMPL_redirect_stub" for item in findings)
-    assert not any(item["section"] == "Active Agenda" for item in findings if "section" in item)
+    assert not any(item["section"] == "Agenda" for item in findings if "section" in item)
 
     def agenda(front: str) -> bool:
         text = f"---\ntitle: Test\ntype: faction\n{front}---\n# Test\n"
         return any(
-            item.get("section") == "Active Agenda" and item["rule_id"] == "TMPL_missing_required"
+            item.get("section") == "Agenda" and item["rule_id"] == "TMPL_missing_required"
             for item in check_conformance("test.md", text, contract)
         )
 

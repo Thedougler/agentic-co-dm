@@ -372,7 +372,7 @@
           "principle": "no-restatement"
         },
         {
-          "text": "Provenance is 0–2 sentences or omitted.",
+          "text": "History is 0–2 sentences or omitted.",
           "type": "structure",
           "principle": "provenance-earned"
         },
@@ -437,7 +437,7 @@
           "type": "quality"
         },
         {
-          "text": "At the Table carries the dagger's voice and sample lines; Hidden Properties states the curse plainly",
+          "text": "At the Table carries the dagger's voice and sample lines; Secrets states the curse plainly",
           "type": "structure"
         }
       ]
@@ -472,7 +472,7 @@
         },
         {
           "type": "behavior",
-          "text": "Every tell on the object has its truth stated plainly under Hidden Properties; no mystery is left without a DM answer"
+          "text": "Every tell on the object has its truth stated plainly under Secrets; no mystery is left without a DM answer"
         },
         {
           "type": "behavior",

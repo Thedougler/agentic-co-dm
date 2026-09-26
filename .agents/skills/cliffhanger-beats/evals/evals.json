@@ -40,7 +40,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Open on Action narration callout with 'you' address."
+          "text": "Output includes Opening narration callout with 'you' address."
         },
         {
           "type": "behavior",
@@ -282,7 +282,7 @@
         },
         {
           "type": "behavior",
-          "text": "An Open on Action narration callout exists with you-address, immediate physical threat, and a non-sight sense."
+          "text": "An Opening narration callout exists with you-address, immediate physical threat, and a non-sight sense."
         },
         {
           "type": "behavior",

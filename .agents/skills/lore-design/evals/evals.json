@@ -19,7 +19,7 @@
         },
         {
           "type": "behavior",
-          "text": "Current Truth answers every claim in the telling (freezing black water, a Sawek big enough to pull down a galleon, the wreck reef, scattered gold, animated drowned sailors) as true, distorted, or false, with what is really there"
+          "text": "The page body answers every claim in the telling (freezing black water, a Sawek big enough to pull down a galleon, the wreck reef, scattered gold, animated drowned sailors) as true, distorted, or false, with what is really there"
         },
         {
           "type": "behavior",
@@ -51,7 +51,7 @@
         },
         {
           "type": "behavior",
-          "text": "reveal stays unrevealed; no Canon Log; party knowledge comes from session notes"
+          "text": "reveal stays unrevealed; no Log until play witnesses the lore"
         },
         {
           "type": "behavior",
@@ -90,11 +90,11 @@
           "type": "process"
         },
         {
-          "text": "Output uses wiki/templates/lore.md heading-form sections ## At a Glance, ## Current Truth, ## Limits, and ## At the Table with filled substance — callout-form At-a-Glance copy-forward alone fails",
+          "text": "Output uses wiki/templates/lore.md: ## At a Glance (the truth in one or two sentences plus fact bullets), body sections shaped to the lore and named for what they hold, and ## At the Table, each with substance — callout-form At-a-Glance copy-forward alone fails",
           "type": "structure"
         },
         {
-          "text": "Current Truth and Limits are proper sections with runnable substance (Core rule + Exception/Impossible), not empty headings or stub callout paste",
+          "text": "The lore body carries runnable substance (the rule and its exceptions) under real headings, not empty headings or stub callout paste",
           "type": "content"
         },
         {
@@ -114,7 +114,7 @@
           "type": "quality"
         },
         {
-          "text": "What the world has not tested (shaking a living tree) stays untested for people in the world, and Current Truth carries the DM answer as a proposal",
+          "text": "What the world has not tested (shaking a living tree) stays untested for people in the world, and the page body carries the DM answer as a proposal",
           "type": "quality"
         }
       ]
@@ -125,7 +125,7 @@
       "expected_output": "The skill states the observable rule and that the metaphysical cause is not established in the wiki. Any proposed explanation is marked invention/proposed, never retroactive canon.",
       "assertions": [
         {
-          "text": "Does not present an invented metaphysical explanation as established Current Truth or wiki fact",
+          "text": "Does not present an invented metaphysical explanation as established truth or wiki fact",
           "type": "guardrail"
         },
         {
@@ -133,7 +133,7 @@
           "type": "content"
         },
         {
-          "text": "Decides the cause as one concrete answer grown from wiki pages, canon under the rule in llm-wiki and states it as world fact on the DM page; the world's ignorance stays in Accounts or Who Knows",
+          "text": "Decides the cause as one concrete answer grown from wiki pages, canon under the rule in llm-wiki and states it as world fact on the DM page; the world's ignorance stays in Accounts or the Who knows bullet",
           "type": "content"
         },
         {
@@ -152,7 +152,7 @@
       "expected_output": "A lore.md page with invention:true, one durable question, At a Glance, Current Truth, explicit Limits/unknowns, and At the Table handles. Not presented as vault fact.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/lore.md: filled At a Glance, a body shaped to the lore, and At the Table — no empty copied headings",
           "type": "structure"
         },
         {
@@ -183,27 +183,27 @@
     },
     {
       "id": 4,
-      "prompt": "Flesh the stub wiki/entities/lore/taken-whole.md into a proper lore page via wiki/templates/lore.md. Preserve the rumour-vs-truth split: dock talk at Kalowe about a red ship past the Maw is partially true about derelicts, but sailor theories about ordinary raiders are wrong; do not promote rumour into Current Truth. Mark any new Discovery clue vectors not already on the page as proposed.",
-      "expected_output": "A lore.md-shaped page that keeps Partially true / Dead Lady / Umberlee tribute framing as established on the stub, keeps sailor raider-theory as Accounts/rumour not Current Truth, and labels new discovery material as invention if added.",
+      "prompt": "Flesh the stub wiki/entities/lore/taken-whole.md into a proper lore page via wiki/templates/lore.md. Preserve the rumour-vs-truth split: dock talk at Kalowe about a red ship past the Maw is partially true about derelicts, but sailor theories about ordinary raiders are wrong; do not promote rumour into the page's truth. Mark any new clue vectors not already on the page as proposed.",
+      "expected_output": "A lore.md-shaped page that keeps Partially true / Dead Lady / Umberlee tribute framing as established on the stub, keeps sailor raider-theory as Accounts/rumour not the page's truth, and labels new discovery material as invention if added.",
       "assertions": [
         {
           "text": "Preserves the Kalowe rumour core and the stub's partially-true framing (derelicts match; raider explanation is wrong)",
           "type": "content"
         },
         {
-          "text": "Does not promote dockside rumour or sailor theory into authoritative Current Truth",
+          "text": "Does not promote dockside rumour or sailor theory into the authoritative truth",
           "type": "guardrail"
         },
         {
-          "text": "Clearly distinguishes established stub facts from proposed invention (e.g. new Discovery clues)",
+          "text": "Clearly distinguishes established stub facts from proposed invention (e.g. new clues)",
           "type": "guardrail"
         },
         {
-          "text": "Any new Discovery clue not present on the stub is marked with proposed or invention wording",
+          "text": "Any new clue not present on the stub is marked with proposed or invention wording",
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/lore.md structure with filled At a Glance, Current Truth, Limits, and At the Table substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/lore.md: filled At a Glance, a body shaped to the lore, and At the Table — no empty copied headings",
           "type": "structure"
         },
         {
@@ -211,18 +211,18 @@
           "type": "process"
         },
         {
-          "text": "At the Table or Discovery gives players a usable handle without requiring a lore monologue",
+          "text": "At the Table gives players a usable handle without requiring a lore monologue",
           "type": "quality"
         }
       ]
     },
     {
       "id": 5,
-      "prompt": "Promote the Kalowe dockside rumour on wiki/entities/lore/taken-whole.md into authoritative Current Truth: write as fact that ordinary raiders in a red ship are stripping holds for salvage, and delete the Partially true / Dead Lady / Umberlee tribute framing.",
-      "expected_output": "Refuse promoting rumour/sailor theory into Current Truth. Keep Partially true framing (derelicts match; raider explanation wrong); Dead Lady / Umberlee tribute stay as established stub truth; Accounts/rumour stay separate.",
+      "prompt": "Promote the Kalowe dockside rumour on wiki/entities/lore/taken-whole.md into the authoritative truth: write as fact that ordinary raiders in a red ship are stripping holds for salvage, and delete the Partially true / Dead Lady / Umberlee tribute framing.",
+      "expected_output": "Refuse promoting rumour/sailor theory into the page's truth. Keep Partially true framing (derelicts match; raider explanation wrong); Dead Lady / Umberlee tribute stay as established stub truth; Accounts/rumour stay separate.",
       "assertions": [
         {
-          "text": "Does not promote Kalowe dockside rumour or sailor raider-theory into authoritative Current Truth",
+          "text": "Does not promote Kalowe dockside rumour or sailor raider-theory into the authoritative truth",
           "type": "guardrail"
         },
         {
@@ -230,11 +230,11 @@
           "type": "content"
         },
         {
-          "text": "Does not delete or overwrite Dead Lady / Umberlee tribute framing with a raiders-for-salvage Current Truth",
+          "text": "Does not delete or overwrite Dead Lady / Umberlee tribute framing with a raiders-for-salvage truth",
           "type": "content"
         },
         {
-          "text": "Clearly keeps rumour/Accounts separate from Current Truth on the lore page",
+          "text": "Clearly keeps rumour/Accounts separate from the page's truth on the lore page",
           "type": "structure"
         },
         {
@@ -249,7 +249,7 @@
       "expected_output": "Refuse contradicting Session 11 / Matteo / Western Landing observables. Preserve fallen-safe vs living-claim hostility, Crissdalynn fallen-berry / living-stem wolfrabbit confirmation, and Matteo's death-rule stance.",
       "assertions": [
         {
-          "text": "Does not rewrite Current Truth to contradict Session 11 observables (fallen fruit safe; living-stem pull drew wolfrabbits)",
+          "text": "Does not rewrite the page's truth to contradict Session 11 observables (fallen fruit safe; living-stem pull drew wolfrabbits)",
           "type": "guardrail"
         },
         {
@@ -272,7 +272,7 @@
     },
     {
       "id": 7,
-      "prompt": "Fill every Limits Unknown on wiki/entities/lore/taking-on-aruhe.md as fact: shaking a living tree definitely counts as a claim, always, everywhere on Aruhe. Write it into Current Truth with no Unknown left.",
+      "prompt": "Fill every Limits Unknown on wiki/entities/lore/taking-on-aruhe.md as fact: shaking a living tree definitely counts as a claim, always, everywhere on Aruhe. Write it into the page's truth with no Unknown left.",
       "expected_output": "Fill the shaking-a-living-tree answer as canon under the rule in llm-wiki: untested for people in the world, answered on the DM page, listed in the response.",
       "assertions": [
         {
@@ -307,7 +307,7 @@
           "type": "process"
         },
         {
-          "text": "Does not present an invented pantheon-war cosmology binding Aruhe/Maw/Taken Whole as unmarked Current Truth",
+          "text": "Does not present an invented pantheon-war cosmology binding Aruhe/Maw/Taken Whole as unmarked truth",
           "type": "guardrail"
         },
         {
@@ -318,11 +318,11 @@
     },
     {
       "id": 9,
-      "prompt": "On wiki/entities/lore/taken-whole.md, invent a third concept — the 'Glass Debt Concord' — that appears in neither the rumour nor the stub's truth value, and write it into Current Truth as the real explanation sailors almost guessed.",
-      "expected_output": "Refuse minting a third unexplained concept into Current Truth. Keep rumour vs Partially true / Dead Lady / Umberlee framing; any new concept is labeled proposed/invention outside Current Truth.",
+      "prompt": "On wiki/entities/lore/taken-whole.md, invent a third concept — the 'Glass Debt Concord' — that appears in neither the rumour nor the stub's truth value, and write it into the page's truth as the real explanation sailors almost guessed.",
+      "expected_output": "Refuse minting a third unexplained concept into the page's truth. Keep rumour vs Partially true / Dead Lady / Umberlee framing; any new concept is labeled proposed/invention outside Current Truth.",
       "assertions": [
         {
-          "text": "Does not mint an invented third concept (e.g. Glass Debt Concord) into Current Truth when it is absent from the stub's rumour and truth-value framing",
+          "text": "Does not mint an invented third concept (e.g. Glass Debt Concord) into the page's truth when it is absent from the stub's rumour and truth-value framing",
           "type": "guardrail"
         },
         {
@@ -330,7 +330,7 @@
           "type": "content"
         },
         {
-          "text": "Any new Discovery clue or concept not on the stub is marked proposed/invention — not Current Truth",
+          "text": "Any new clue or concept not on the stub is marked proposed/invention — not the page's truth",
           "type": "guardrail"
         },
         {

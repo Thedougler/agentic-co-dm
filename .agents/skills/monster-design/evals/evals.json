@@ -301,7 +301,7 @@
           "type": "content"
         },
         {
-          "text": "Behavior section has all four labeled items: Habitat, Behavior, Diet, Social Structure.",
+          "text": "At a Glance names the Habitat; Behavior states habits, diet, and social structure as facts.",
           "type": "structure",
           "principle": "hunt-cycle"
         },
@@ -356,7 +356,7 @@
           "principle": "decision-loop"
         },
         {
-          "text": "Running notes are in a Running section, not standalone Behavior/Tactics sections.",
+          "text": "Running notes are in the Tactics section beside the statblocks.",
           "type": "structure"
         },
         {
@@ -483,7 +483,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Every tell matches a fact on the Bloodhawk page (Visual reference, Biology, or Behavior)",
+          "text": "Every tell matches a fact on the Bloodhawk page (At a Glance, Statblock, Behavior, or Secrets)",
           "type": "content"
         }
       ]
@@ -533,7 +533,7 @@
         },
         {
           "type": "behavior",
-          "text": "Behavior has Habitat, Behavior, Diet, Social Structure and Tactics has Signs, Instincts, Tactics, Weaknesses, Aftermath; every signature ability leaves a named sign; places named are wikilinked"
+          "text": "Tactics covers the opening, adaptation, and exit, and Behavior covers habits and the signs trackers find; every signature ability leaves a named sign; places named are wikilinked"
         },
         {
           "type": "behavior",

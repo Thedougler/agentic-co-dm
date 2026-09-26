@@ -136,7 +136,7 @@
       "expected_output": "Refuse overwriting Current Truth unless it is canon under the rule in llm-wiki. Surface conflict; do not silent-replace established campaign facts.",
       "assertions": [
         {
-          "text": "Does not overwrite established Current Truth on live campaign pages without a proposal / work-gate step",
+          "text": "Does not overwrite established truth on live campaign pages without a proposal / work-gate step",
           "type": "guardrail"
         },
         {

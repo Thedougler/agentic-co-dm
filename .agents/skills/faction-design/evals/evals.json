@@ -22,7 +22,7 @@
         },
         {
           "type": "behavior",
-          "text": "Want, method, pressure, and collision are concrete and named by page; the DM thesis is one sentence of pressure"
+          "text": "Want, method, pressure, and collision are concrete and named by page; the At a Glance lead sentence is one sentence of pressure"
         },
         {
           "type": "behavior",
@@ -42,7 +42,7 @@
         },
         {
           "type": "behavior",
-          "text": "Running the Faction says what happens when encountered, helped, opposed, ignored, and broken, by name"
+          "text": "At the Table says what members do when met, helped, opposed, or ignored, by name"
         },
         {
           "type": "behavior",
@@ -101,7 +101,7 @@
           "type": "guardrail"
         },
         {
-          "text": "DM thesis is one sentence of campaign pressure, not a summary",
+          "text": "The At a Glance lead sentence is one sentence of campaign pressure, not a summary",
           "type": "quality"
         },
         {
@@ -109,7 +109,7 @@
           "type": "structure"
         },
         {
-          "text": "Active Agenda has a concrete goal, next move, and player opening",
+          "text": "Agenda has a concrete goal, next move, and player opening",
           "type": "structure"
         },
         {
@@ -194,11 +194,11 @@
           "type": "quality"
         },
         {
-          "text": "Active Agenda gives the Tarahs something concrete to do, not just 'take Rattkin'",
+          "text": "Agenda gives the Tarahs something concrete to do, not just 'take Rattkin'",
           "type": "quality"
         },
         {
-          "text": "Running the Faction section has actionable entries for encountered/helped/opposed/ignored",
+          "text": "At the Table has actionable entries for met/helped/opposed/ignored",
           "type": "structure"
         }
       ]

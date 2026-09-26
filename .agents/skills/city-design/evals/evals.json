@@ -114,7 +114,7 @@
           "type": "guardrail"
         },
         {
-          "text": "DM thesis is one pressure-forward sentence about the city's function in play — must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
+          "text": "The At a Glance lead sentence is one pressure-forward sentence about the city's function in play — must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
           "type": "quality"
         }
       ]
@@ -168,7 +168,7 @@
           "type": "quality"
         },
         {
-          "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned DM thesis",
+          "text": "Arrival narration covers scale/silhouette/motion/sound without secrets or unearned names",
           "type": "quality"
         }
       ]

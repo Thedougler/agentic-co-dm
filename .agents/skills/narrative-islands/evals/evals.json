@@ -36,7 +36,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes What the party knows section."
+          "text": "Output includes The Job narration carrying what the party knows."
         },
         {
           "type": "behavior",
@@ -179,7 +179,7 @@
         },
         {
           "type": "behavior",
-          "text": "The quest page has Situation, Stakes, and World in motion sections, not a history article."
+          "text": "The quest page has Situation, Stakes, and Pressure sections, not a history article."
         }
       ]
     },
@@ -260,7 +260,7 @@
         },
         {
           "type": "behavior",
-          "text": "The quest page has a World in motion section with a driver, next move, and end state."
+          "text": "The quest page has a Pressure section with a driver, its next move, and an end state."
         }
       ]
     },
@@ -310,7 +310,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes: At a Glance table, Situation with What the party knows and What is really happening, Stakes with success/failure/walk-away/questions, World in motion with driver/wants/current move/next move/end state, Progress portents, Leads & routes with at least two independent leads, People & factions, Relevant places, Complications, Rewards & consequences."
+          "text": "Output includes: At a Glance (objective, why now, reward) beside The Job narration, Situation with what is really happening, Stakes with success/failure/walk-away, Pressure with driver, next move, and portents, Leads with at least two independent leads, and Connections."
         },
         {
           "type": "behavior",

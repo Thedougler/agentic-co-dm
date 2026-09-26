@@ -32,15 +32,15 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Card, Key, Thread, Climax question, Something happens, Why it matters, Decision, Hook lands when, and Memorable element."
+          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Lands when, and Next."
         },
         {
           "type": "behavior",
-          "text": "Output includes an Open on narration callout with 'you' address and non-sight sense."
+          "text": "Output includes an Opening narration callout with 'you' address and non-sight sense."
         },
         {
           "type": "behavior",
-          "text": "Run the hook table has Engages, Hesitates, Rejects/leaves, and Anything else rows, each a concrete world response."
+          "text": "Handles table has Engages, Hesitates, and Walks away rows, each a concrete world response."
         },
         {
           "type": "behavior",
@@ -282,23 +282,23 @@
         },
         {
           "type": "behavior",
-          "text": "Card, Key, Thread, Climax question, Something happens, Why it matters, Decision, Hook lands when, and Memorable element are present as top-level statements."
+          "text": "At a Glance opens with one sentence on what happens now and the choice it puts to the party, then Entry state, Stakes, Lands when, and Next."
         },
         {
           "type": "behavior",
-          "text": "An Open on narration callout exists with you-address, visible threat, relative position, and a non-sight sense."
+          "text": "An Opening narration callout exists with you-address, visible threat, relative position, and a non-sight sense."
         },
         {
           "type": "behavior",
-          "text": "Situation section in a col-md block names Entry state, Where, Who, What changed, Pressure, and Open question."
+          "text": "Situation names Where, What changed, and Pressure; Cast names each actor's want and next move; At a Glance carries the Entry state."
         },
         {
           "type": "behavior",
-          "text": "Run the hook table has rows for Engages, Hesitates, Rejects/leaves, and Anything else, each a concrete world response."
+          "text": "Handles table has rows for Engages, Hesitates, and Walks away, each a concrete world response."
         },
         {
           "type": "behavior",
-          "text": "Decision handles list at least two distinct player verbs."
+          "text": "Handles list at least two distinct player approaches."
         },
         {
           "type": "behavior",
