@@ -286,7 +286,7 @@
     {
       "id": "creature-page-quality",
       "prompt": "Design a CR 5 pack predator for Aruhe's volcanic vents and write the wiki creature page. Use the Spiguar page (wiki/entities/creature/spiguar.md) and Bloodhawk page (wiki/entities/creature/bloodhawk.md) as exemplars for page density and structure.",
-      "expected_output": "A complete linear creature page matching Bloodhawk/Spiguar: narration callout, at most one Statblock overview image immediately before the fence, remaining images in Art subsections, Visual reference when a sheet exists, biology when anatomy matters, behavior (habitat/behavior/diet/social), tactics (signs/instincts/tactics/weaknesses/aftermath).",
+      "expected_output": "A complete creature page matching Bloodhawk/Spiguar: At a Glance and narration header, at most one overview image immediately before the Statblock fence, remaining images in Art subsections, Behavior bullets (Habits, Diet, Group, Body, Signs, Aftermath) and Tactics bullets (Opening, Signature, Adapts, Weaknesses, Morale) where facts exist.",
       "assertions": [
         {
           "text": "Output includes a narration callout block with sensory prose and no mechanics.",
@@ -338,13 +338,21 @@
           "text": "Every statblock ability maps to a matching behavior or tactics item — no orphan mechanics.",
           "type": "quality",
           "principle": "signature-behavior-coherence"
+        },
+        {
+          "type": "behavior",
+          "text": "Tactics uses the labelled bullets Opening, Signature, Adapts, Weaknesses (things the party can do), and Morale; Behavior uses Habits, Diet, Group, Body, Signs, and Aftermath, keeping only bullets with facts."
+        },
+        {
+          "type": "behavior",
+          "text": "When the page carries Tactics, an optional `[!narration] In action` shows the creature mid-fight in \"you\" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands."
         }
       ]
     },
     {
       "id": "npc-combat-integration",
       "prompt": "An NPC pirate captain on the Shattered Sea has three combat forms: commanding from the quarterdeck, cornered below decks, and a desperate last stand with a cursed blade. Write the Combat section for the NPC page.",
-      "expected_output": "A Combat section with an encounter rule stating which form to use, three statblock fences keyed to fiction conditions, and running notes in a Running section.",
+      "expected_output": "A Statblock section with an encounter rule stating which form to use, three statblock fences keyed to fiction conditions, and running notes beside them.",
       "assertions": [
         {
           "text": "States an encounter rule before the statblocks explaining which form to use and when.",
@@ -356,7 +364,7 @@
           "principle": "decision-loop"
         },
         {
-          "text": "Running notes are in the Tactics section beside the statblocks.",
+          "text": "Running notes sit in the Statblock section beside the statblock fences.",
           "type": "structure"
         },
         {
@@ -400,6 +408,10 @@
           "text": "Weaknesses name terrain or party tactics that disrupt pack coordination.",
           "type": "quality",
           "principle": "environmental-counterplay"
+        },
+        {
+          "type": "behavior",
+          "text": "Behavior's Group bullet states pack size, young, and leaders; Signs names the trace each signature ability leaves before anyone sees it."
         }
       ]
     },

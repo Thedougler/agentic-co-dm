@@ -37,6 +37,18 @@
         {
           "text": "Every consequence term on each card is defined on the card or flagged in Diagnose as missing prep.",
           "type": "content"
+        },
+        {
+          "type": "behavior",
+          "text": "Only the session's first cockpit carries `[!narration] Previously`, before `Opening`."
+        },
+        {
+          "type": "behavior",
+          "text": "Each combat-mode Roster embed is followed by a `{Creature}` narration block titled with the creature's name."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance scans Ends when, Stakes, Objective, Danger, Magnets, and Next; Secondary Objective appears only when a second question runs in parallel; Dials sit under the Pressure table when thresholds change the scene."
         }
       ]
     },

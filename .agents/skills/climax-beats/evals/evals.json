@@ -32,7 +32,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Card, Entry state, Party objective, Opposition wants, Stakes, Pressure, End when, Memorable element, and Budget with an If behind compression."
+          "text": "At a Glance leads with the question the Climax settles, then Entry state, Party objective, Opposition wants, Stakes, If behind (the compression), and Next."
         },
         {
           "type": "behavior",
@@ -40,7 +40,7 @@
         },
         {
           "type": "behavior",
-          "text": "Thread harvest table gives each thread its planted beat, tested beat, a concrete lever in this Climax, and what happens without it."
+          "text": "Thread Harvest gives each live thread where it was planted, the concrete lever it gives here, and what happens without it."
         },
         {
           "type": "behavior",
@@ -259,11 +259,11 @@
         },
         {
           "type": "behavior",
-          "text": "Card, Entry state, Party objective, Opposition wants, Stakes, Pressure, End when, Memorable element, and Budget are present as top-level statements."
+          "text": "At a Glance leads with the question the Climax settles, then Entry state, Party objective, Opposition wants, Stakes, If behind (the compression), and Next."
         },
         {
           "type": "behavior",
-          "text": "Thread harvest table names the alliance, the intelligence, and the rival with planted beat, tested beat, lever, and without-it consequence."
+          "text": "Thread Harvest names the alliance, the intelligence, and the rival, each with where it was planted, its lever, and the without-it consequence."
         },
         {
           "type": "behavior",
@@ -279,7 +279,7 @@
         },
         {
           "type": "behavior",
-          "text": "Opposition section gives the rival's numbers, goal, method, resources, breaking point, and exits."
+          "text": "The rival's Actors entry carries labelled sub-bullets: Numbers, Wants, Leverage, Plays, Line, and Morale, and names its exits."
         },
         {
           "type": "behavior",
@@ -329,7 +329,7 @@
       "assertions": [
         {
           "type": "behavior",
-          "text": "Card is Final Revelation and the actors are gathered in one place for a stated reason."
+          "text": "The shape is Final Revelation (named in the session plan) and the actors are gathered in one place for a stated reason."
         },
         {
           "type": "behavior",
@@ -466,6 +466,30 @@
         {
           "text": "Fun at the table: a named memorable element that the page actually delivers, stakes these players care about, and a size that fits the beat's budget",
           "type": "quality"
+        },
+        {
+          "type": "behavior",
+          "text": "The primary opposition's Actors entry carries labelled sub-bullets: Numbers, Wants (and why now), Leverage, Plays, Line, and Morale."
+        },
+        {
+          "type": "behavior",
+          "text": "The villain's entrance is an `{NPC}` narration block titled with their name."
+        },
+        {
+          "type": "behavior",
+          "text": "A `[!narration] Revelation` block renders the moment the truth lands, from proof the party gathered in earlier beats."
+        },
+        {
+          "type": "behavior",
+          "text": "Phases and Outcomes rows carry spoken `_italic_` Narration cells; the Phases cell is the phase-shift signal the players perceive."
+        },
+        {
+          "type": "behavior",
+          "text": "Pressure names If it goes static: the move that breaks a stalemate."
+        },
+        {
+          "type": "quality",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
         }
       ]
     },
@@ -542,6 +566,14 @@
         {
           "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
           "type": "quality"
+        },
+        {
+          "type": "behavior",
+          "text": "Stage names Collateral: who or what nearby is lost if the fight spills over."
+        },
+        {
+          "type": "behavior",
+          "text": "Each creature kind and NPC the party meets has its own `{Creature}` or `{NPC}` narration block, titled with its name."
         }
       ],
       "files": [
