@@ -25,6 +25,14 @@
         {
           "type": "behavior",
           "text": "References existing wiki content accurately via wikilinks."
+        },
+        {
+          "type": "behavior",
+          "text": "Stated backstory goes under `## History`; the questions asked and answers given go in a dated `###` round under `## Interview`, keeping earlier rounds."
+        },
+        {
+          "type": "behavior",
+          "text": "Sheet, Combat Profile, Features, Spells, and Inventory are left untouched by the interview."
         }
       ]
     },

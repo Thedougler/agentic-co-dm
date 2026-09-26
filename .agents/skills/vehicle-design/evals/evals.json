@@ -28,7 +28,7 @@
         },
         {
           "type": "behavior",
-          "text": "Every Sheet and Components line holds a number (no Unknown or blank); hull has AC, HP, and damage threshold; helm and movement say what is lost when disabled; each weapon has attack or DC, range, damage, and crew or reload; figures sit plausibly between a keelboat and a sailing ship and out-gun the Surety"
+          "text": "Every Statblock line holds a number (no Unknown or blank); Hull has AC, HP, and damage threshold; Helm and Movement say what is lost when disabled; each weapon has attack or DC, range, damage, and crew or reload; figures sit plausibly between a keelboat and a sailing ship and out-gun the Surety"
         },
         {
           "type": "behavior",
@@ -44,7 +44,7 @@
         },
         {
           "type": "behavior",
-          "text": "Handling gives two to four manoeuvres with Ability (Skill) or tool check, DC, and result, including a quirk that makes the Relentless handle unlike its class"
+          "text": "At the Table gives two to four manoeuvres with Ability (Skill) or tool check, DC, and result, including a quirk that makes the Relentless handle unlike its class"
         },
         {
           "type": "behavior",
@@ -77,6 +77,14 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "type": "behavior",
+          "text": "Statblock names Type and Movement (sails, oars, or engine with AC, HP, and what losing it costs)."
+        },
+        {
+          "type": "behavior",
+          "text": "The header narration shows the craft at its berth; an optional `[!narration] Underway` under At the Table shows it in motion from its deck: motion underfoot, its sound, the crew at work, what the rail shows."
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -84,7 +92,7 @@
     {
       "id": 1,
       "prompt": "Improve wiki/entities/vehicle/Uncertainty.md into a runnable vehicle page using wiki/templates/vehicle.md. Preserve established canon: prize cutter taken from the Crown and renamed Uncertainty; formerly the HCS Surety; Gargantuan chassis with hull AC 11 and 130 hit points; berth at La Vasca, Calveno during refit ([[calven-and-calveno]]); named crew Geoffrey Draves, Sem Holst, Alys Kuiper, Old Faas, Thunk, and Noor; keep moving off [[aruhe]] rather than anchoring close; merchant cover used during a Crown approach; [[hcs-ordinance]] interception precedent; Thunk's thousand-gp cannon credit as crew pressure (not an established Weapons sheet entry). Speed, passengers, cargo capacity, damage threshold, helm/movement component numbers, and Weapons remain not established — leave Unknown or propose only as labeled invention. Do not invent hidden weapons as canon. Show a chat proposal / work gate before writing under wiki/.",
-      "expected_output": "A vehicle.md-shaped Uncertainty: identity sentence first; Sheet/Components/Crew stations/Handling(/Combat) present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
+      "expected_output": "A vehicle.md-shaped Uncertainty: identity sentence first; Statblock, Crew, and At the Table present; preserved Surety/crew/Calveno berth/Aruhe movement/Ordinance-precedent canon; no new weapons or invented numbers presented as fact.",
       "assertions": [
         {
           "text": "Identity sentence (ship/boat/other + role + silhouette/signature + player choice/pressure) appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
@@ -95,7 +103,7 @@
           "type": "process"
         },
         {
-          "text": "Output follows wiki/templates/vehicle.md structure with filled narration, Sheet (Size/Type/Speed/Crew/Passengers/Cargo each numeric), Components, Crew stations, and Handling route choices named — not empty copied headings alone; Combat present when attackable or omit-reason stated",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled narration, Statblock (Size, Type, Speed, Movement, Crew, Hull, Helm, each numeric), Crew, and At the Table route choices named — not empty copied headings alone; boarding, ramming, and destruction rulings present when the craft can be attacked, or an omit-reason stated",
           "type": "structure"
         },
         {
@@ -123,7 +131,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Handling states route/identity choices (keep moving, merchant cover, Crown approach) without duplicating the same loop under At the Table",
+          "text": "At the Table states route and identity choices (keep moving, merchant cover, Crown approach) once, with no duplicate run loop elsewhere on the page",
           "type": "quality"
         }
       ]
@@ -158,10 +166,10 @@
     {
       "id": 3,
       "prompt": "Create a new vehicle page from scratch for Cobalt Receipt — a small Tessarine courier boat that runs sealed ledgers between factor houses, recognized by a blue-painted stern board and a bell that only rings in fog. Mark all of this as invention; it is not in the campaign wiki. Use wiki/templates/vehicle.md including Sheet and Components minima. Show a chat proposal / work gate before writing under wiki/.",
-      "expected_output": "A new vehicle page labeled invention:true that follows vehicle.md, with identity sentence, narration (silhouette/scale/access), filled Sheet and Hull/Helm/Movement components, crew stations, and handling. No claim Cobalt Receipt exists in vault canon.",
+      "expected_output": "A new vehicle page labeled invention:true that follows vehicle.md, with identity sentence, narration (silhouette/scale/access), a filled Statblock with Hull, Helm, and Movement, Crew, and At the Table. No claim Cobalt Receipt exists in vault canon.",
       "assertions": [
         {
-          "text": "Output follows wiki/templates/vehicle.md structure with filled Sheet/Components minima, Crew stations, Handling, and narration body-scale access sentence — not empty copied headings alone; Combat present or explicit omit-reason",
+          "text": "Output follows wiki/templates/vehicle.md structure with a filled Statblock, Crew, At the Table, and a narration sentence on body-scale access — not empty copied headings alone; combat rulings present or an explicit omit-reason",
           "type": "structure"
         },
         {
@@ -181,7 +189,7 @@
           "type": "process"
         },
         {
-          "text": "Sheet fills Size, Type, Speed, Crew (min), Passengers, Cargo so the craft can enter play",
+          "text": "Statblock fills Size, Type, Speed, and Crew with passengers and cargo, so the craft can enter play",
           "type": "content"
         },
         {
@@ -197,7 +205,7 @@
     {
       "id": 4,
       "prompt": "Flesh the stub wiki/entities/vehicle/glass-debt.md toward a proper vehicle page via wiki/templates/vehicle.md. Preserve established canon only: named hull sighted near the [[central-strait]]; Crown captains break from usual patrol lines when it or [[velvet-noose]] is seen; no other sheet is established. Propose Sheet/Components/crew as invention and mark them. Do not invent secret armament or a full Crown conspiracy as silent canon. (Alt acceptable stub: velvet-noose.md with the same Strait/Crown-sighting canon.) Show a chat proposal / work gate before writing under wiki/.",
-      "expected_output": "A fleshed vehicle.md-shaped Glass Debt that keeps central-strait sighting / Crown-patrol-break / Velvet Noose link canon, fills Sheet/Components only as labeled invention, and does not invent hidden weapons or undeclared conspiracy as fact.",
+      "expected_output": "A fleshed vehicle.md-shaped Glass Debt that keeps central-strait sighting / Crown-patrol-break / Velvet Noose link canon, fills the Statblock only as labeled invention, and does not invent hidden weapons or undeclared conspiracy as fact.",
       "assertions": [
         {
           "text": "Preserves central-strait sighting, Crown captains breaking patrol lines, and velvet-noose linkage as sighting-only / unexplained patrol pressure — must NOT reframe the patrol break as an explained Admiralty conspiracy, enchanted munitions plot, or other closed doctrine",
@@ -212,7 +220,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Output follows wiki/templates/vehicle.md structure with filled Sheet/Components/Handling substance — not empty copied headings alone",
+          "text": "Output follows wiki/templates/vehicle.md structure with filled Statblock and At the Table substance — not empty copied headings alone",
           "type": "structure"
         },
         {
@@ -304,7 +312,7 @@
           "type": "guardrail"
         },
         {
-          "text": "Handling / at-the-table content presents pressures and options without resolving player choices",
+          "text": "At the Table presents pressures and options without resolving player choices",
           "type": "structure"
         },
         {

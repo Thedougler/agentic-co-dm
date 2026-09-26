@@ -44,7 +44,7 @@
         },
         {
           "type": "behavior",
-          "text": "Character Epilogues give each PC a prompt the player answers."
+          "text": "Epilogues give each PC a prompt the player answers."
         }
       ]
     },
@@ -243,11 +243,11 @@
         },
         {
           "type": "behavior",
-          "text": "Follows, Purpose, Card, Outcome, and Budget are present as top-level statements."
+          "text": "At a Glance leads with what is true now, then Follows, New status quo, Price paid, and Reward."
         },
         {
           "type": "behavior",
-          "text": "Run the Beat follows the five-step sequence: Confirm the outcome, Show the consequence, Pay off the stakes, Let them react, End on an image."
+          "text": "The page shows the consequence, pays off the stakes (Payoffs), lets the characters react (Epilogues), and ends on the Closing Image."
         },
         {
           "type": "behavior",
@@ -255,7 +255,7 @@
         },
         {
           "type": "behavior",
-          "text": "What Is True Now and Consequences sections exist in col-md blocks."
+          "text": "Consequences name each NPC, faction, and place that now acts or looks different."
         },
         {
           "type": "behavior",
@@ -302,11 +302,11 @@
         },
         {
           "type": "behavior",
-          "text": "Character Epilogues section addresses each PC's changed state after the split."
+          "text": "Epilogues address each PC's changed state after the split."
         },
         {
           "type": "behavior",
-          "text": "What Is True Now reflects the combined outcome, not just one half's result."
+          "text": "At a Glance's New status quo reflects the combined outcome, not just one half's result."
         }
       ]
     },
@@ -344,11 +344,11 @@
     {
       "id": 13,
       "prompt": "Write the Resolution for Session 12 so it covers both Climax outcomes: the Fate Spinner held and the Fate Spinner stolen.",
-      "expected_output": "An Outcome branches table with a card, first image, visible costs, and rewards per outcome, and a separate closing image for each branch.",
+      "expected_output": "One Closing Image per climax outcome, with the costs and rewards of each branch in Price paid, Consequences, and Rewards.",
       "assertions": [
         {
           "type": "behavior",
-          "text": "Outcome branches table has a row for Spinner Held and Spinner Stolen, each with card, first image, costs, and rewards."
+          "text": "There is a Closing Image for Spinner Held and one for Spinner Stolen, and Price paid and Reward cover both branches."
         },
         {
           "type": "behavior",
@@ -356,7 +356,7 @@
         },
         {
           "type": "behavior",
-          "text": "What Is True Now reflects both branches or is split per branch."
+          "text": "New status quo reflects both branches or is split per branch."
         },
         {
           "type": "behavior",
@@ -446,6 +446,14 @@
         {
           "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
           "type": "quality"
+        },
+        {
+          "type": "behavior",
+          "text": "There is one `Closing Image` per way the Climax could end."
+        },
+        {
+          "type": "behavior",
+          "text": "A `[!narration] Stinger` appears only when it grows from what the party did, shows the arrival, sign, or message the characters perceive, and ends before anyone can act; otherwise the page has no Stinger."
         }
       ],
       "files": [

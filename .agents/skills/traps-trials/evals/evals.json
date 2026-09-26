@@ -29,6 +29,14 @@
         {
           "type": "behavior",
           "text": "Links to relevant Aruhe ecology and location pages."
+        },
+        {
+          "type": "behavior",
+          "text": "The razer-grass page is filed on wiki/templates/hazard.md: At a Glance, the header look, and the Hazard bullets Trigger, Notice, Contact, Careful passage, and Counterplay."
+        },
+        {
+          "type": "behavior",
+          "text": "An optional `[!narration] On contact` shows what the character feels and the others see when the grass cuts, ending on the condition it leaves; the hidden mechanism stays under Secrets."
         }
       ]
     },

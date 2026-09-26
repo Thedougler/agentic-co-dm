@@ -32,11 +32,11 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target."
+          "text": "At a Glance leads with the turn, then Entry state, Trigger, New direction, and Next; the card and thread go in the session plan's Beat Map, not on the page."
         },
         {
           "type": "behavior",
-          "text": "Output includes Run the Beat steps: Present, Let them engage, Make the turn, Hand back the choice."
+          "text": "Situation gives Where, Hands on (the physical anchor), Friction, Pressure, and If ignored."
         },
         {
           "type": "behavior",
@@ -278,7 +278,7 @@
         },
         {
           "type": "behavior",
-          "text": "Card, Thread advanced, Entry state, Trigger, Turn, New direction, Memorable element, and Target are present as top-level statements."
+          "text": "At a Glance leads with the turn, then Entry state, Trigger, New direction, and Next; the card and thread go in the session plan's Beat Map, not on the page."
         },
         {
           "type": "behavior",
@@ -286,7 +286,7 @@
         },
         {
           "type": "behavior",
-          "text": "Run the Beat steps follow the four-step sequence: Present, Let them engage, Make the turn, Hand back the choice."
+          "text": "Each Actors bullet gives the NPC's want now, what they know, offer, lie about and the tell, their price, and what shifts their posture."
         },
         {
           "type": "behavior",
@@ -302,7 +302,7 @@
         },
         {
           "type": "behavior",
-          "text": "Exits table covers at least: pursues the lead, refuses or delays, and changes the situation."
+          "text": "Outcomes cover at least: follows the clearest lead, refuses or delays, and changes the situation, each with its Next beat."
         },
         {
           "type": "behavior",
@@ -493,6 +493,26 @@
         {
           "text": "Keeps table time and world time apart: budgets are table minutes; clocks, deadlines, durations, and costs in the fiction are stated in world time or visible triggers",
           "type": "quality"
+        },
+        {
+          "type": "behavior",
+          "text": "Hinewai's `{NPC}` narration block, titled with her name, shows what she is doing as the party meets her and ends on her first words."
+        },
+        {
+          "type": "behavior",
+          "text": "A `[!narration] Revelation` block renders the moment the Core clue lands, as what the characters see or hear that makes it undeniable."
+        },
+        {
+          "type": "behavior",
+          "text": "Outcomes rows carry a spoken `_italic_` Narration cell for each branch."
+        },
+        {
+          "type": "behavior",
+          "text": "Situation's If ignored says what happens to the truth or the lead if the party walks past it, and a Handles Cost line names what the best version of the information costs."
+        },
+        {
+          "type": "quality",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
         }
       ],
       "files": [

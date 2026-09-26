@@ -10,7 +10,7 @@
         "wiki/entities/place/Kalowe.md",
         "wiki/templates/faction.md"
       ],
-      "expected_output": "A full Five Blades faction page: engine, faces with NPC pages, a clocked agenda, a hiring offer with pay and catch, Running the Faction rows, a hidden truth with clues, squad numbers, a theatre-of-the-mind public face, proposals marked.",
+      "expected_output": "A full Five Blades faction page: engine, faces with NPC pages, a clocked agenda, a hiring offer with pay and catch, At the Table cases (met, opposed, ignored, broken), a hidden truth with clues, squad numbers, a theatre-of-the-mind public face, proposals marked.",
       "assertions": [
         {
           "type": "behavior",
@@ -79,6 +79,18 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "type": "behavior",
+          "text": "At the Table gives the Blades' tell, what they offer, what they will not do, and when met, opposed, ignored, and broken."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance names Strength and Vulnerability; Agenda names Needs; People ends with If the leader falls."
+        },
+        {
+          "type": "behavior",
+          "text": "An optional `[!narration] When met` shows members at work as the party runs into them, in \"you\" address, ending on their first words."
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."

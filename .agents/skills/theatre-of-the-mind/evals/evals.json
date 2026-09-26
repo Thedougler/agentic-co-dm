@@ -1829,6 +1829,48 @@
    ],
    "core": true,
    "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+  },
+  {
+   "id": "spiguar-in-action",
+   "prompt": "Write the optional `In action` narration under Tactics on wiki/entities/creature/spiguar.md: the Spiguar mid-fight against the party in its grassland.",
+   "expected_output": "A situated Creature in scene block in \"you\" address and present tense: how the Spiguar closes, strikes, and what each signature ability looks and sounds like when it lands, with no numbers.",
+   "assertions": [
+    {
+     "text": "Uses the Creature in scene recipe in \"you\" address and present tense, not a third-person portrait",
+     "type": "quality"
+    },
+    {
+     "text": "Each signature ability on the page shows as what the characters see and hear when it lands, never as its rule or number",
+     "type": "quality"
+    },
+    {
+     "text": "Keeps the face from the page's header portrait so the table recognises the creature",
+     "type": "quality"
+    },
+    {
+     "text": "No DC, damage, HP, secret, or unearned name",
+     "type": "quality"
+    }
+   ]
+  },
+  {
+   "id": "wolfrabbits-session-ends-here",
+   "prompt": "Write `If the session ends here` for the Cliffhanger wiki/journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits.md: the last words of the night if play stops on this beat.",
+   "expected_output": "A few sentences: the changed situation in one concrete image, the threat at its sharpest, nothing resolved, cut before anyone can act.",
+   "assertions": [
+    {
+     "text": "One concrete image of the changed situation drawn from the beat's Pressure and Outcomes",
+     "type": "quality"
+    },
+    {
+     "text": "Ends on the unanswered moment, before any character can act; nothing is resolved",
+     "type": "quality"
+    },
+    {
+     "text": "No DC, secret, or unearned name",
+     "type": "quality"
+    }
+   ]
   }
  ]
 }

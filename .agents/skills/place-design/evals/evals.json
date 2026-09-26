@@ -445,6 +445,14 @@
         {
           "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
+        },
+        {
+          "type": "behavior",
+          "text": "When the place has several areas, each is a `###` under Features with an optional `{Area}` narration block titled with its name, ending on the feature the party can use."
+        },
+        {
+          "type": "behavior",
+          "text": "`[!narration] Returning` appears only when the party has been here before, and shows only what changed since their last visit."
         }
       ]
     },

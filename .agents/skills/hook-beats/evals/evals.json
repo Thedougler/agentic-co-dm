@@ -302,7 +302,7 @@
         },
         {
           "type": "behavior",
-          "text": "Handoff names the next beat type (Development for action Hook) and states carry-forward and continuity change."
+          "text": "Outcomes name the next beat per row (a Development for an action Hook), and Carry forward states each state variable the next beat inherits."
         },
         {
           "type": "behavior",
@@ -453,6 +453,26 @@
         {
           "type": "guardrail",
           "text": "Writes no wiki page"
+        },
+        {
+          "type": "behavior",
+          "text": "`[!narration] Previously` appears before `Opening`, because this is the session's first beat, and retells last session's ending in Recap mode."
+        },
+        {
+          "type": "behavior",
+          "text": "Each NPC or creature the party meets in the Hook has its own `{NPC}` or `{Creature}` narration block, titled with its name, and the NPC's block ends on their first words."
+        },
+        {
+          "type": "behavior",
+          "text": "Handles and Outcomes rows carry a spoken `_italic_` Narration cell for the branch they describe."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance's Memorable names the one image, object, or line the players carry out of the beat, and the Opening lands it."
+        },
+        {
+          "type": "quality",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
         }
       ],
       "files": [

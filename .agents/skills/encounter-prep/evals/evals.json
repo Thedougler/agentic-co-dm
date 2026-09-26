@@ -37,6 +37,18 @@
         {
           "type": "behavior",
           "text": "Output includes an Opening callout with 'you' address and at least one non-sight sense."
+        },
+        {
+          "type": "behavior",
+          "text": "NPC and creature Actors entries stay distinct: an NPC carries want, offer, and posture shift; a creature carries numbers, tactics, and break point."
+        },
+        {
+          "type": "behavior",
+          "text": "Each actor the party meets has its own `{NPC}` or `{Creature}` narration block titled with its name."
+        },
+        {
+          "type": "behavior",
+          "text": "Handles and Outcomes rows carry spoken `_italic_` Narration cells."
         }
       ]
     },

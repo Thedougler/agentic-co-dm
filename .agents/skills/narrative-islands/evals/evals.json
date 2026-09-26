@@ -40,7 +40,7 @@
         },
         {
           "type": "behavior",
-          "text": "Output includes At a Glance table with Quest giver, Region, Scope, Opposition, Reward, Last change."
+          "text": "At a Glance leads with the result the party can accomplish, then Why now, Offered by, Opposition, Reward, and Deadline bullets."
         }
       ]
     },
@@ -287,7 +287,7 @@
         },
         {
           "type": "behavior",
-          "text": "A Quest log row records what changed."
+          "text": "A Log line records what changed."
         },
         {
           "type": "behavior",
@@ -331,6 +331,18 @@
         {
           "type": "behavior",
           "text": "The quest frame sentence names incompatible wants, live pressure, and what changes uninterrupted."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance names the Opposition and what it wants instead."
+        },
+        {
+          "type": "behavior",
+          "text": "Stakes carry an Open question play decides; Leads are checkboxes."
+        },
+        {
+          "type": "behavior",
+          "text": "Complications give a Tradeoff, a Reaction when the party interferes, and a Reversal with where it is found, only when each has facts."
         }
       ]
     }

@@ -77,6 +77,22 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "type": "behavior",
+          "text": "Travel carries Navigation, Weather, Rest and supply, Hidden route (with what opens it), and Regional rule bullets under the routes table."
+        },
+        {
+          "type": "behavior",
+          "text": "Each advancing threat is a Threat bullet under Powers with First sign, Escalation, and Crisis checkboxes."
+        },
+        {
+          "type": "behavior",
+          "text": "Encounters carry each warning sign as a spoken `_italic_` Narration cell."
+        },
+        {
+          "type": "behavior",
+          "text": "An optional `[!narration] On the road` renders a stretch of travel: the ground underfoot, the weather, what the day's march shows, ending at camp or arrival."
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -177,7 +193,7 @@
           "type": "quality"
         },
         {
-          "text": "Fronts grow from the brief's pressures (pilot tax, storm season) as canon under the rule in llm-wiki, listed in the response, each with portents and a time",
+          "text": "Threats under Powers grow from the brief's pressures (pilot tax, storm season) as canon under the rule in llm-wiki, listed in the response, each with a time and First sign, Escalation, and Crisis checkboxes",
           "type": "guardrail"
         },
         {

@@ -72,6 +72,18 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "type": "behavior",
+          "text": "At the Table uses the labelled bullets that have facts: Players notice, It explains, It lets them, It warns of, Party knows (established, suspected, wrong), and If exposed, then clue checkboxes with sources."
+        },
+        {
+          "type": "behavior",
+          "text": "A tavern version is a `[!narration] Common telling` block in voice; an inscription, letter, or song the party can read is a `[!narration] Found text` block with the words verbatim."
+        },
+        {
+          "type": "behavior",
+          "text": "Accounts give each holder and why they believe it."
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."

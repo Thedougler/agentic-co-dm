@@ -76,6 +76,22 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "type": "behavior",
+          "text": "The Districts table carries a spoken `_italic_` Narration cell per district (the first impression walking in); Landmark and Getting around are bullets under the table."
+        },
+        {
+          "type": "behavior",
+          "text": "Each situation is a `###` with Involved, Visible signs, Wants, and If nobody steps in bullets."
+        },
+        {
+          "type": "behavior",
+          "text": "Power ends with Who holds what (rule, order, money, information, streets) and a Fault line; Connections ends with Depends on."
+        },
+        {
+          "type": "behavior",
+          "text": "The Street Life table carries a spoken `_italic_` Narration cell per row."
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."

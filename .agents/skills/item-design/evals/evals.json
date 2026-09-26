@@ -497,6 +497,10 @@
         {
           "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
+        },
+        {
+          "type": "behavior",
+          "text": "Each property with a visible effect gets an `[!narration] In use` block under At the Table (titled with the property when there are several): what the wielder and onlookers perceive when it activates, with no numbers."
         }
       ]
     }
