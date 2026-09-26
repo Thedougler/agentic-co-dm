@@ -20,7 +20,7 @@ pp:
 speed: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 
@@ -35,7 +35,7 @@ flexGrow=2
 - **Player.** Name.
 - **Class.** Rogue 5 (Soulknife)
 - **Home.** [[vehicle]] or [[place]], and their station there.
-- **In a fight.** Their lane, their best move, and what shuts them down.
+- **Voice.** How the player plays them: manner, catchphrase, what they reach for first.
 ```
 
 ```col-md
@@ -58,6 +58,15 @@ flexGrow=1
 
 - **Saves.** Dex +7, Int +4
 - **Skills.** Stealth +10, Perception +4
+
+## Combat Profile
+
+<!-- The fight scan other skills read when building encounters against this party. -->
+
+- **Fast read.** Lane, key numbers, and best move in one line.
+- **Hard counters.** What shuts them down.
+- **Soft counters.** What pressures them.
+- **Depends on.** Party support that changes what they can do.
 
 ## Features
 

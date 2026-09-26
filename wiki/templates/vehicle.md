@@ -45,7 +45,9 @@ flexGrow=1
 <!-- Required. Every number the craft needs: size, speed, crew, cargo, hull, helm, weapons. -->
 
 - **Size.** Gargantuan (80 ft. by 20 ft.)
+- **Type.** Ship, airship, wagon, or other craft class.
 - **Speed.** 4 mph sailing
+- **Movement.** Sails, oars, or engine: AC, HP, and what losing it costs.
 - **Crew.** 20 minimum; 12 passengers; 100 tons cargo
 - **Hull.** AC 15, HP 300, damage threshold 15
 - **Helm.** AC 18, HP 50

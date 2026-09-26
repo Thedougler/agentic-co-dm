@@ -155,7 +155,7 @@ The highest-stakes confrontation made inevitable by the preceding play.
 The aftermath that shows what changed, closes the current pressure, and establishes what comes next.
 
 **Actors**:
-Everyone on a beat page who wants something in the scene, each with what they want now, what they do next if nobody interferes, and numbers when the party could fight them.
+Everyone on a beat page who wants something in the scene, each with what they want now, what they do next if nobody interferes, and numbers when the party could fight them. NPCs and creatures stay distinct entries: an NPC carries leverage, what they offer or lie about, and voice; a creature carries its numbers, tactics, and break point.
 _Avoid_: calling this section Cast (cast is the verb below)
 
 **Cast**:

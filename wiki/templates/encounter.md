@@ -12,7 +12,7 @@ campaign: "{{campaign}}"
 visibility: dm
 summary: ""
 ---
-<!-- Reusable encounter kept outside a session. A scene run tonight is a beat instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. -->
+<!-- Reusable encounter kept outside a session. A scene run tonight is a beat instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 
@@ -29,10 +29,14 @@ summary: ""
 
 ## Actors
 
+- **[[npc]].** What they want, what they offer or refuse, what shifts their posture, and numbers if they could fight.
 - **[[creature]] × 3.** Numbers, what it wants, how it fights or bargains, and when it breaks or leaves.
 
-> [!narration] {Actor}
-> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+> [!narration] {NPC}
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+
+> [!narration] {Creature}
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
 
 ## Handles
 

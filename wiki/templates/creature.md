@@ -14,7 +14,7 @@ role: ""
 cr: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, Connections, or Art only when you have facts for them. Delete unused sections and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, Connections, or Art only when you have facts for them. Delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 
@@ -65,14 +65,27 @@ actions:
 
 ## Tactics
 
-<!-- How it fights: opening move, how it adapts when countered, when it flees or surrenders. -->
+<!-- How it fights. Weaknesses are things the party can do. -->
+
+- **Opening.** Its first move and the conditions it picks a fight in.
+- **Signature.** The move that makes it this creature and no other, and its tell.
+- **Adapts.** What it does when that move is countered.
+- **Weaknesses.** Terrain, formations, or tools that shut it down.
+- **Morale.** When it flees or surrenders, and where it goes.
 
 > [!narration] In action
 > <!-- Optional: the creature mid-fight, from theatre-of-the-mind (Creature in scene recipe), "you" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands. -->
 
 ## Behavior
 
-<!-- What it does outside a fight: habits, diet, pack or lair, signs trackers find. -->
+<!-- What it does outside a fight, as facts a DM can play or a tracker can find. -->
+
+- **Habits.** What it does when nothing bothers it.
+- **Diet.** What it eats and what feeding leaves behind.
+- **Group.** Alone, pair, pack, colony, or court; young and leaders.
+- **Body.** Anatomy that matters at the table: what it breathes, where it is soft, what it can squeeze through.
+- **Signs.** Tracks, spoor, and the trace each signature ability leaves before anyone sees it.
+- **Aftermath.** What a place looks like after it has been there.
 
 ## Secrets
 

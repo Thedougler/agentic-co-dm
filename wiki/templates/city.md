@@ -18,7 +18,7 @@ ruler: ""
 controlling_faction: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused ones and these comments. A district that holds several playable locations gets its own place page. Faction detail lives on faction pages; here, only what they do in this city now. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. A district that holds several playable locations gets its own place page. Faction detail lives on faction pages; here, only what they do in this city now. -->
 
 # {{title}}
 
@@ -52,7 +52,8 @@ flexGrow=1
 | --------- | --------- | ----------- | --------- |
 | [[place]] |           |             | _…_       |
 
-<!-- Getting around: travel time across the city, what changes after dark, gates or checkpoints, shortcuts. -->
+- **Landmark.** [[place]] — what it orients and what can be seen from it.
+- **Getting around.** Travel time across the city, what changes after dark, gates or checkpoints, and shortcuts.
 
 ## Gazetteer
 
@@ -80,9 +81,19 @@ flexGrow=1
 | ----------- | ---------- | -------- | --------- |
 | [[faction]] |            |          |           |
 
+- **Who holds what.** Who rules, keeps order, controls money, controls information, and controls the streets.
+- **Fault line.** The grievance, scarcity, or rivalry that keeps these powers from settling.
+
 ## Situations
 
-<!-- Each unstable situation: who is involved, what the party sees, what each side wants, and what happens if nobody steps in. Use `###` per situation. -->
+<!-- One `###` per unstable situation. -->
+
+### Situation
+
+- **Involved.** [[faction]], [[npc]], [[place]]
+- **Visible signs.** What the party meets before investigating.
+- **Wants.** What each side is trying to accomplish.
+- **If nobody steps in.** The next concrete change, and when.
 
 ## Rumors
 
@@ -103,6 +114,8 @@ flexGrow=1
 ## Connections
 
 - [[place]] — route, travel time, and what the city needs from there or sends there.
+
+**Depends on.** Food, water, fuel, and trade it cannot make itself, and what happens when that route fails.
 
 ## History
 

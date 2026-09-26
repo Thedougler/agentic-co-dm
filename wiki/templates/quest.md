@@ -18,7 +18,7 @@ deadline: ""
 last_advanced: YYYY-MM-DD
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections and these comments.
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments.
 status: rumored | offered | active | stalled | resolved | failed | expired -->
 
 # {{title}}
@@ -33,6 +33,7 @@ flexGrow=2
 
 - **Why now.** What makes it urgent.
 - **Offered by.** [[npc]]
+- **Opposition.** [[npc]] or [[faction]], and what it wants instead.
 - **Reward.** What is promised.
 - **Deadline.** The event after which the situation changes.
 ```
@@ -54,12 +55,13 @@ flexGrow=1
 - **If the party succeeds.** What changes in the world.
 - **If the party fails.** What changes instead.
 - **If the party walks away.** What happens without them.
+- **Open question.** Who might change sides, survive, fall, or gain power; play decides.
 
 ## Leads
 
 <!-- Places the party can push next. Give any conclusion the party must reach at least two independent leads. -->
 
-- **Lead.** How it enters play → [[page]]
+- [ ] **Lead.** How it enters play → [[page]]
 
 ## Pressure
 
@@ -69,6 +71,14 @@ flexGrow=1
 - [ ] **First sign.** The first visible change.
 - [ ] **Escalation.** A change that closes options.
 - [ ] **End state.** The world changes even if the quest is never taken.
+
+## Complications
+
+<!-- Pressures that can enter play without dictating the party's answer. -->
+
+- **Tradeoff.** Something valuable that cannot be protected without cost.
+- **Reaction.** How a force changes tactics when the party interferes.
+- **Reversal.** A fact that reframes the situation if discovered, and where it is found.
 
 ## Rewards
 
@@ -80,7 +90,7 @@ flexGrow=1
 
 ## Resolution
 
-<!-- Only once the quest ends: outcome, what actually happened, lasting changes, and loose threads. -->
+<!-- Only once the quest ends: outcome, what actually happened, who gained or lost power, lasting changes to [[page]]s, and loose threads. -->
 
 ## Log
 

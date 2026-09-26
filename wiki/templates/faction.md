@@ -32,6 +32,8 @@ flexGrow=2
 - **Base.** [[place]]
 - **Public face.** What outsiders think they do.
 - **Method.** How they get what they want.
+- **Strength.** The capability that lets them shape events.
+- **Vulnerability.** The dependency or exposure that can stop them.
 - **Posture.** Watching, acting, mobilized, or fractured, and why.
 ```
 
@@ -49,6 +51,7 @@ flexGrow=1
 
 - **Objective.** The concrete change they are trying to make in the world, and why now.
 - **Next move.** What they attempt next, with what resources.
+- **Needs.** The person, place, object, or permission that move depends on.
 - **Standing in the way.** [[page]] — who or what blocks them.
 - **Signs.** What the party can see, hear, or hear rumored as the move advances.
 - **If they succeed.** The new world state: who owns, controls, or loses what.
@@ -60,11 +63,16 @@ flexGrow=1
 
 ## At the Table
 
-<!-- How members act when met, helped, opposed, or ignored. The party's standing, why, and what would change it. -->
+<!-- How members act when met, helped, opposed, ignored, or broken. The party's standing, why, and what would change it. -->
 
+- **Their tell.** The symbol, phrase, or practice that marks their presence.
+- **They offer.** Access, coin, safety, information, or force, and the obligation that follows.
+- **They will not.** The line or interest they rarely compromise.
 - **When met.** What members are doing and how they treat the party.
 - **When opposed.** What they protect first and how they strike back.
-- **Party standing.** Where the party stands and why.
+- **When ignored.** How they advance without the party, and how that change reaches play.
+- **When broken.** What survives if they lose their leader, base, or goal.
+- **Party standing.** Where the party stands, why, and what would change it.
 
 > [!narration] When met
 > <!-- Optional: members at work as the party runs into them, "you" address: what they are doing, how they carry themselves, and their first words. -->
@@ -75,13 +83,15 @@ flexGrow=1
 
 - [[npc]] — role, what they want, where their loyalty cracks.
 
+**If the leader falls.** Who takes control, which blocs split away, and what stops working.
+
 ## Holdings
 
-<!-- Only assets and places that can change events now. -->
+<!-- Only assets and places that can change events now, including where the party can run into them. -->
 
-| Asset or place | What it enables | Condition |
-| -------------- | --------------- | --------- |
-| [[page]]       |                 |           |
+| Asset or place | Presence | What it enables | Condition |
+| -------------- | -------- | --------------- | --------- |
+| [[page]]       | Headquarters, strong, contested, or hidden |  |  |
 
 ## Secrets
 
@@ -97,6 +107,6 @@ flexGrow=1
 
 ## Log
 
-- **[[Session]]** — move made, result, and who felt it.
+- **[[Session]]** — move made, result, what it collided with, and who felt it.
 
 ## Art

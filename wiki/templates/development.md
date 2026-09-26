@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Development spends it at the table; delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Development spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 
@@ -39,6 +39,7 @@ flexGrow=1
 - **Hands on.** The thing to search, examine, or witness, and what it reveals.
 - **Friction.** What makes a clean answer hard.
 - **Pressure.** What ends the talking if it circles, and when.
+- **If ignored.** What happens to the truth or the lead if the party walks past it.
 ```
 
 ```col-md
@@ -48,8 +49,8 @@ flexGrow=1
 
 - **[[npc]].** Wants now; knows; offers; lies about, and the tell; price for help; what shifts their posture.
 
-> [!narration] {Actor}
-> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+> [!narration] {NPC}
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
 ```
 ````
 
@@ -57,6 +58,8 @@ flexGrow=1
 
 - **[[npc]]** can be persuaded, pressured, or exposed because…
 - **[[item]]** can be examined, used, or traded because…
+- **[[place]]** can be searched, entered, or watched because…
+- **Cost.** What the party pays for the best version of this information.
 
 ## Checks
 

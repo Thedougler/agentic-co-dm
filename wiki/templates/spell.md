@@ -14,7 +14,7 @@ school: ""
 ritual: false
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 
@@ -28,7 +28,7 @@ flexGrow=2
 
 *Level 3 Evocation (Ritual)*
 
-- **Taught by.** [[npc]], [[item]], or [[place]] where the party can learn it, and the price.
+- **Taught by.** [[npc]], [[item]], or [[place]] where the party can learn it, the price, and the clue that points there.
 ```
 
 ```col-md

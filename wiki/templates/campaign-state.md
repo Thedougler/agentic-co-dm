@@ -13,7 +13,7 @@ kind: campaign-state
 truth: established
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Table Aim lives on the campaign hub page only. Delete unused sections and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Table Aim lives on the campaign hub page only. Delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 

@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 
@@ -23,6 +23,7 @@ summary: ""
 
 - **Entry state.** Where everyone is and what they carry in from last session.
 - **Stakes.** What changes if the party acts, and what changes if it does not.
+- **Memorable.** The one image, object, or line the players will carry out of this beat.
 - **Ends when.** The commitment that ends the beat: they give chase, take the job, flee.
 - **Next.** [[Session-{{session}}-BB-label]]
 
@@ -51,8 +52,11 @@ flexGrow=1
 - **[[npc]].** What they want and what they do next if nobody interferes.
 - **[[creature]] × 3.** AC, HP, Speed, the attack or save DC the DM rolls; opening move → adapts → break point → exit.
 
-> [!narration] {Actor}
-> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+> [!narration] {NPC}
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+
+> [!narration] {Creature}
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
 ```
 ````
 
