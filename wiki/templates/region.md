@@ -57,6 +57,9 @@ flexGrow=1
 | -------- | --------------------- | ---- | ---- | --------- |
 | [[page]] | [[place]] ↔ [[place]] |      |      |           |
 
+> [!narration] On the road
+> <!-- Optional: a stretch of travel here, from theatre-of-the-mind (Travel recipe): the ground underfoot, the weather, what the day's march shows, ending at camp or arrival. -->
+
 ## Key Places
 
 - [[place]] — what it offers or threatens now.
@@ -77,11 +80,11 @@ flexGrow=1
 
 ## Encounters
 
-<!-- A d6 table of encounters drawn from creatures and factions on this page, each with its warning sign. -->
+<!-- A d6 table of encounters drawn from creatures and factions on this page, each with its warning sign spoken in the Narration cell. -->
 
-| d6 | Encounter | Warning sign |
-| -: | --------- | ------------ |
-| 1  | [[creature]] |           |
+| d6 | Encounter | Narration |
+| -: | --------- | --------- |
+| 1  | [[creature]] | _…_    |
 
 ## Secrets
 

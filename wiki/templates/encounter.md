@@ -31,18 +31,21 @@ summary: ""
 
 - **[[creature]] × 3.** Numbers, what it wants, how it fights or bargains, and when it breaks or leaves.
 
+> [!narration] {Actor}
+> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+
 ## Handles
 
 <!-- At least three materially different responses, each with its upside and cost. -->
 
-| If the party… | The world responds |
-| ------------- | ------------------ |
-|               |                    |
+| If the party… | The world responds | Narration |
+| ------------- | ------------------ | --------- |
+|               |                    | _…_       |
 
 ## Outcomes
 
 <!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
-| Outcome | What changes | Next |
-| ------- | ------------ | ---- |
-|         |              | [[page]] |
+| Outcome | What changes | Next | Narration |
+| ------- | ------------ | ---- | --------- |
+|         |              | [[page]] | _…_ |

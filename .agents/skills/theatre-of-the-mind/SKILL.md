@@ -69,6 +69,9 @@ with its moment list and story, and its final check replaces the situated
 items below.
 
 No party, encounter, or table state supplied for an owner page → portrait.
+That covers the owner page's header look only; its moment slots (`In action`,
+`First meeting`, `Underway`, `On the road`, and the like) are situated
+moments with the party as "you".
 
 ### 2. Gather the facts
 

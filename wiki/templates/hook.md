@@ -26,6 +26,9 @@ summary: ""
 - **Ends when.** The commitment that ends the beat: they give chase, take the job, flee.
 - **Next.** [[Session-{{session}}-BB-label]]
 
+> [!narration] Previously
+> <!-- On the session's first beat only: the recap read aloud as play starts, from theatre-of-the-mind (Recap mode). -->
+
 > [!narration] Opening
 > <!-- Spoken opening from theatre-of-the-mind (Hook opening recipe): what the characters perceive, ending on a moment they can act on. -->
 
@@ -47,16 +50,19 @@ flexGrow=1
 
 - **[[npc]].** What they want and what they do next if nobody interferes.
 - **[[creature]] × 3.** AC, HP, Speed, the attack or save DC the DM rolls; opening move → adapts → break point → exit.
+
+> [!narration] {Actor}
+> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
 ```
 ````
 
 ## Handles
 
-| If the party… | The world responds |
-| ------------- | ------------------ |
-| **Engages**   |                    |
-| **Hesitates** | The pressure advances one visible step. |
-| **Walks away** | What happens without them, and the door that stays open. |
+| If the party… | The world responds | Narration |
+| ------------- | ------------------ | --------- |
+| **Engages**   |                    | _…_ |
+| **Hesitates** | The pressure advances one visible step. | _…_ |
+| **Walks away** | What happens without them, and the door that stays open. | _…_ |
 
 ## Checks
 
@@ -78,8 +84,8 @@ flexGrow=1
 
 <!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
-| Outcome | What changes | Next |
-| ------- | ------------ | ---- |
-|         |              | [[Session-{{session}}-BB-label]] |
+| Outcome | What changes | Next | Narration |
+| ------- | ------------ | ---- | --------- |
+|         |              | [[Session-{{session}}-BB-label]] | _…_ |
 
 **Carry forward.** Each state the next beat inherits: who holds what, who is hurt, where the opposition went, what the party committed to.

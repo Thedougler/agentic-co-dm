@@ -51,6 +51,9 @@ flexGrow=1
 - **Voice.** Word choice, rhythm, one habit.
 - **Lines.** "The ask." · "The refusal." · "Under pressure."
 
+> [!narration] First meeting
+> <!-- Optional: the moment the party meets them, from theatre-of-the-mind (NPC first look and Dialogue recipes), "you" address: what they are doing, then their first words. -->
+
 ## Statblock
 
 <!-- Only when they can fight: a named standard statblock with its numbers (AC, HP, Speed, attacks or save DCs), or a full custom statblock. Include guards or beasts they would set on the party. -->

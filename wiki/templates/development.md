@@ -47,6 +47,9 @@ flexGrow=1
 ## Actors
 
 - **[[npc]].** Wants now; knows; offers; lies about, and the tell; price for help; what shifts their posture.
+
+> [!narration] {Actor}
+> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
 ```
 ````
 
@@ -70,13 +73,16 @@ flexGrow=1
 - [ ] **Core.** The truth that changes what the party knows or can do → surfaces through [[page]].
 - [ ] **Support.** A fact about motive, stakes, or history → surfaces through [[page]].
 
+> [!narration] Revelation
+> <!-- The moment the Core clue lands, from theatre-of-the-mind (Revelation recipe): what the characters see or hear that makes the truth undeniable. -->
+
 ## Outcomes
 
 <!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
-| If the party… | What changes | Next |
-| ------------- | ------------ | ---- |
-| Follows the clearest lead |  | [[Session-{{session}}-BB-label]] |
-| Refuses or delays |  | [[Session-{{session}}-BB-label]] |
+| If the party… | What changes | Next | Narration |
+| ------------- | ------------ | ---- | --------- |
+| Follows the clearest lead |  | [[Session-{{session}}-BB-label]] | _…_ |
+| Refuses or delays |  | [[Session-{{session}}-BB-label]] | _…_ |
 
 **Carry forward.** Each state the next beat inherits: new knowledge, direction, who is where, what they prepared.

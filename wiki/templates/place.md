@@ -44,11 +44,17 @@ flexGrow=1
 
 - **Feature.** What it is and what the party can do with it.
 
+> [!narration] {Area}
+> <!-- Optional, one per `###` area: what the party perceives on entering it, "you" address, ending on the feature they can use. -->
+
 ## At the Table
 
 <!-- What the party is likely to try and what happens. Add a check only when the outcome is uncertain. -->
 
 - **If the party** does this — what changes, with the check and its result.
+
+> [!narration] Returning
+> <!-- Only once the party has been here: what changed since their last visit, from theatre-of-the-mind (Return to a known place recipe). -->
 
 ## Secrets
 

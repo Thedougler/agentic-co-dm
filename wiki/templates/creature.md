@@ -67,6 +67,9 @@ actions:
 
 <!-- How it fights: opening move, how it adapts when countered, when it flees or surrenders. -->
 
+> [!narration] In action
+> <!-- Optional: the creature mid-fight, from theatre-of-the-mind (Creature in scene recipe), "you" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands. -->
+
 ## Behavior
 
 <!-- What it does outside a fight: habits, diet, pack or lair, signs trackers find. -->

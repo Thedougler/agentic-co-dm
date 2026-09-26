@@ -66,6 +66,9 @@ flexGrow=1
 - **When opposed.** What they protect first and how they strike back.
 - **Party standing.** Where the party stands and why.
 
+> [!narration] When met
+> <!-- Optional: members at work as the party runs into them, "you" address: what they are doing, how they carry themselves, and their first words. -->
+
 ## People
 
 <!-- Leaders, lieutenants, and agents with what each wants and where their loyalty cracks. -->

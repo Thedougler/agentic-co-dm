@@ -157,14 +157,21 @@ what leads.
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
 every handle, each in its layer (§ Layers):
 
-- **Opening** (typed beats, encounters) or **Opening** (run-guide
-  cockpits): the beat's scene opening (entry layer; recipes above).
-- **Closing Image**: the Resolution's final picture.
+- **Previously**: the session's first beat only; the recap read aloud as play
+  starts ([recaps.md](recaps.md)).
+- **Opening**: the beat's scene opening (entry layer; recipes above).
+- **{Actor}**: titled with the actor's name; that creature (Creature in scene)
+  or person (NPC first look) as the party meets it here.
+- **Revelation**: the moment a Development's core clue or a Climax's truth
+  lands (Revelation recipe).
 - **Outcomes**: the one ending that is always true.
-- **{Creature}**: that creature as it appears in this scene.
 - **Exit**: the transition into the next beat on the same page.
-- **Narration columns** in Stage, Pressure, and outcome tables: short
-  conditional lines written as `_italic_` inside the table cell
+- **If the session ends here**: a Cliffhanger's last words of the night.
+- **Closing Image**: the Resolution's final picture.
+- **Stinger**: the new arrival or sign after the Closing Image, ending before
+  anyone can act.
+- **Narration columns** in Handles, Stage, Pressure, Phases, and outcome
+  tables: short conditional lines written as `_italic_` inside the table cell
   (attention and interaction layers; state changes).
 
 
@@ -190,7 +197,7 @@ every handle, each in its layer (§ Layers):
   crowd scatters, the dog stops barking, the fire takes the awning).
 - **End:** The new situation the next player acts on.
 
-### Creature in scene ({Creature} slot)
+### Creature in scene ({Actor} slot)
 
 - **Job:** This creature, here, now.
 - **Build:** A few sentences, in this order of attention: its silhouette, how it

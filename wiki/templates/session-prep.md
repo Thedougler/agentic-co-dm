@@ -85,6 +85,9 @@ flexGrow=2
 
 ![[creature#Statblock]]
 
+> [!narration] {Actor}
+> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe). One after each embed. -->
+
 ## Backup
 
 [[owner]] · [[next beat]]
