@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. A short afterscene, about 10–25 minutes: show what the climax changed, pay off the stakes, let the characters react, and end on one image. Keep a section only when this Resolution spends it; delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. A short afterscene, about 10–25 minutes: show what the climax changed, pay off the stakes, let the characters react, and end on one image. Keep a section only when this Resolution spends it; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 

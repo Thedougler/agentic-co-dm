@@ -82,7 +82,7 @@ Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` f
 
 **Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, objective, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Actors` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` (truths) or `Leads` (routes onward) → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
 
-**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or the At a Glance read). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing. A page carries one narration block per moment the players live through — the look, an actor's entrance, a revelation, the closing line — at the slot its template gives it; a line that belongs to one branch is an `_italic_` cell in the table's Narration column.
+**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or the At a Glance read). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing. A page carries one narration block per moment the players live through — the look, a creature's or NPC's entrance, a revelation, the closing line — at the slot its template gives it; a line that belongs to one branch is an `_italic_` cell in the table's Narration column.
 
 **Columns.** `col` / `col-md` codeblocks only, for two patterns: the owner-page header row, and a beat pair of two short same-moment blocks. Statblocks, wide tables, and long narration stay full width.
 

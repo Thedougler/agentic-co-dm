@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Cliffhanger spends it at the table; delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Cliffhanger spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 
@@ -33,10 +33,11 @@ summary: ""
 ## Actors
 
 - **[[creature]] × 4.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
+- **Wants.** What the opposition is here to do, beyond killing the party.
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
 
-> [!narration] {Actor}
-> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+> [!narration] {Creature}
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
 
 ````col
 ```col-md
@@ -46,6 +47,7 @@ flexGrow=1
 
 - **Space.** Distances in feet, zones, and routes.
 - **Feature.** What a character can do with it, and the ruling (cover, DC, damage).
+- **Hazard.** What hurts anyone who stands in it, and the ruling.
 - **Change.** How the space transforms, and on which round.
 ```
 

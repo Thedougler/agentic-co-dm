@@ -80,7 +80,7 @@ every step; read it before step 3.
 ### 1. Read the party and the canon
 
 **Party.** Read every PC page in `wiki/entities/pc/`, especially `## Sheet`,
-`## Combat Profile`, and recent `## Session Log` fights. Write the **party
+`## Combat Profile`, and recent `## Log` fights. Write the **party
 read** in working notes:
 
 | PC | Level | AC | HP | Weak saves | Round-1 damage | Signature trick | Escape and mobility |

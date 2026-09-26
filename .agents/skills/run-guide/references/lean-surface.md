@@ -22,7 +22,7 @@ Each field earns its place only when this beat spends it at the table.
 
 | Field | Keep when | Shape |
 |---|---|---|
-| **At a Glance** | Every live beat. | `## At a Glance`. First bullet **Ends when**: end condition, then time budget; **If behind:** and **If ahead:** only when the pacing choice is non-obvious. Then stakes, objective, danger, Silence, situation magnets, next. Recap only on the session's first beat. |
+| **At a Glance** | Every live beat. | `## At a Glance`. First bullet **Ends when**: end condition, then time budget; **If behind:** and **If ahead:** only when the pacing choice is non-obvious. Then stakes, objective, danger, magnets, next. Recap only on the session's first beat. |
 | **Overview image** | An exact overview or identity image exists. | Embed near the top, before runnable sections. |
 | **Situation** | Positions, distances, speeds, or starting state would clutter Glance. | One paragraph. Who starts where, in **feet** when tactical distance matters. North/south/east/west for orientation. Speeds that matter. What a move vs Dash reaches. |
 | **Actors** | The DM will roll compact default-mode numbers or follow an opposition loop. | `## Actors` when paired beside Situation. Operational loop, compact numbers: AC, HP when needed, one attack, thresholds, grab, scatter, or bloodied rule. Use owner action names. |
@@ -31,10 +31,10 @@ Each field earns its place only when this beat spends it at the table.
 | **Stage** | Routes, cover, distance, search areas, or scene stock matter. | Table: place \| distance in feet \| cover \| narration. Same distances and compass as Now. Each row names decision-useful scene stock. **Narration** column: conditional spoken as `_italic_`. When the column is absent, one empty `> [!narration] {Place}` stub per row after the table. |
 | **Checks** | Players are likely to attempt consequential actions. | Selective ruling table — only intents that change a ruling, risk, route, clock, resource, NPC response, or information. Table: intent \| approach \| DC \| success \| partial \| failure. Approach is **Ability (Skill)** when a check applies. DC column: `` `DC 14` ``. Dice and damage: inline code. Applied conditions: **bold**. Name creature, item, place in every cell. Every cell is a *ruling*. Include **Assess the situation** only when success and failure both say what changes. |
 | **Pressure** | A fuse or opposition turn changes the situation. | `## Pressure`. Table: tick \| what happens \| narration. Named ticks. 3–4 ticks. Each tick states what newly becomes visible, usable, threatened, blocked, or changed. **Narration** column: `_italic_`. When absent, `> [!narration] Tick {n}` stubs after the table. Bloodied, cover-reached, and scene dials sit in the right `col-md` beside the clock table. |
-| **Secondary objective** | A second question runs in parallel and changes outcome or later consequence. | `## Secondary objective`. One paragraph: beats required, ignore outcome, later consequence. |
+| **Secondary objective** | A second question runs in parallel and changes outcome or later consequence. | `## Secondary Objective`. One paragraph: beats required, ignore outcome, later consequence. |
 | **Outcomes** | Every live beat. | `## Outcomes`. Most likely options, usually one or two. Each option hands off to a beat on this session's Beat Map. Next state, damage applied, relevant conditions, what follows. One empty `> [!narration] Outcomes` for the unconditional spoken state, plus an options table (`If` \| `Next` \| `Narration`). Narration cells: `_spoken_`. |
 | **Exit narration** | The next cockpit is already on this file. | Empty `> [!narration] Exit` on pass 1. Spoken transition on pass 3. |
-| **Roster** | The DM will roll a creature or item. | `## Roster`. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Actor}`, titled with the creature's name. Item embeds only if this slice spends charges or the item is the pressure. |
+| **Roster** | The DM will roll a creature or item. | `## Roster`. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Creature}`, titled with the creature's name. Item embeds only if this slice spends charges or the item is the pressure. |
 | **Backup** | Extra owner links save table hunting. | `## Backup`. Extra wikilinks only. |
 | **Previous-session recap** | Only the first beat of the session. | Brief, player-facing. |
 | **Battlemap** | Exact-scene battlemap art exists. | `## Battlemap` at the bottom. Embed from `attachments/`. Compass: top north, right east, bottom south, left west. |
@@ -50,7 +50,7 @@ appears only when both sides exist.
 |---|---|---|---|
 | Overview art | First overview/identity image | Second image | equal |
 | Situation | `## Situation` | `## Actors` | Actors `flexGrow=2` |
-| Mode | `## Procedure` | `## Secondary objective` | Procedure `flexGrow=3` |
+| Mode | `## Procedure` | `## Secondary Objective` | Procedure `flexGrow=3` |
 | Pressure | `## Pressure` table | Bloodied / cover / dials | Pressure `flexGrow=3` |
 | Roster | Monster `![[Name#Statblock]]` (two columns max) | Second monster, or omit | equal |
 

@@ -13,7 +13,7 @@ visibility: dm
 status: ready
 summary: ""
 ---
-<!-- Run-guide cockpit for one live slice; field rules live in run-guide references/lean-surface.md. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections and these comments. -->
+<!-- Run-guide cockpit for one live slice; field rules live in run-guide references/lean-surface.md. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 
@@ -25,6 +25,7 @@ summary: ""
 - **Stakes.** What can be won or lost.
 - **Objective.** What ends the slice for the party.
 - **Danger.** The threat in numbers.
+- **Magnets.** The two or three things in the scene that pull the players toward action.
 - **Next.** [[Session-N-BB-label]]
 
 > [!narration] Opening
@@ -52,6 +53,10 @@ flexGrow=2
 
 **Named mode.** Its trigger in this slice, once.
 
+## Secondary Objective
+
+<!-- Only when a second question runs in parallel: what it takes, what happens if ignored, and the later consequence. -->
+
 ## Stage
 
 | Place | Distance | Cover | Narration |
@@ -63,6 +68,8 @@ flexGrow=2
 | Tick | What happens | Narration |
 | ---- | ------------ | --------- |
 | 1    |              | _…_       |
+
+**Dials.** Bloodied, cover reached, and other thresholds that change the scene.
 
 ## Checks
 
@@ -85,8 +92,8 @@ flexGrow=2
 
 ![[creature#Statblock]]
 
-> [!narration] {Actor}
-> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe). One after each embed. -->
+> [!narration] {Creature}
+> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe). One after each embed, titled with its name. -->
 
 ## Backup
 

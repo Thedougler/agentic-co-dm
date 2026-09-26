@@ -28,6 +28,7 @@ flexGrow=2
 <!-- Required. Lead sentence: what this person is about at the table. Then labelled facts, one bullet each. -->
 
 - **Role.** What they do and where the party meets them.
+- **Nature.** Ancestry, calling, and temperament in a phrase.
 - **Wants.** The concrete thing they are after now.
 - **Home.** [[place]]
 - **Allegiance.** [[faction]]
@@ -43,12 +44,14 @@ flexGrow=1
 
 ## At the Table
 
-<!-- How a meeting opens, what opens them up or shuts them down, what they will and will not share. Voice: word choice and one verbal habit. Sample lines the DM can speak. -->
+<!-- How a meeting opens, what opens them up or shuts them down, what they will and will not share, and how they sound. -->
 
 - **First meeting.** How it starts.
 - **Opens up when.** What earns trust or talk.
 - **Shuts down when.** What closes the door.
-- **Voice.** Word choice, rhythm, one habit.
+- **Priority.** What they protect first when pressed.
+- **Shares.** What they tell freely, and what they will not tell at any price.
+- **Voice.** Word choice, rhythm, one verbal habit, and the subject they avoid.
 - **Lines.** "The ask." · "The refusal." · "Under pressure."
 
 > [!narration] First meeting

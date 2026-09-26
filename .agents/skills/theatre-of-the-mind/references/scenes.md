@@ -160,8 +160,10 @@ every handle, each in its layer (§ Layers):
 - **Previously**: the session's first beat only; the recap read aloud as play
   starts ([recaps.md](recaps.md)).
 - **Opening**: the beat's scene opening (entry layer; recipes above).
-- **{Actor}**: titled with the actor's name; that creature (Creature in scene)
-  or person (NPC first look) as the party meets it here.
+- **{Creature}**: titled with the creature's name; the creature as the party
+  meets it here (Creature in scene).
+- **{NPC}**: titled with the person's name; the person as the party meets them
+  here, with their first words (NPC first look, then Dialogue).
 - **Revelation**: the moment a Development's core clue or a Climax's truth
   lands (Revelation recipe).
 - **Outcomes**: the one ending that is always true.
@@ -197,7 +199,7 @@ every handle, each in its layer (§ Layers):
   crowd scatters, the dog stops barking, the fire takes the awning).
 - **End:** The new situation the next player acts on.
 
-### Creature in scene ({Actor} slot)
+### Creature in scene ({Creature} slot)
 
 - **Job:** This creature, here, now.
 - **Build:** A few sentences, in this order of attention: its silhouette, how it
@@ -223,7 +225,7 @@ every handle, each in its layer (§ Layers):
 
 ## People and things
 
-### NPC first look
+### NPC first look ({NPC} slot)
 
 - **Job:** Make this person memorable and approachable.
 - **Build:** A few strokes. Their role or first read (the harbormaster, a

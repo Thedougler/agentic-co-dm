@@ -177,7 +177,7 @@ places slots only for outcomes the beat can produce.
 **Callout stubs** (empty titled `> [!narration]` blocks):
 - `Opening` — before the first player choice.
 - `Outcomes` — one unconditional spoken state for what is always true when this beat ends.
-- `{Actor}` — titled with the creature's name, after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
+- `{Creature}` — titled with the creature's name, after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
 - `Exit` — only when the next cockpit is already on this file.
 
 **Table Narration columns** (conditional spoken as `_italic_`, not a callout):
@@ -199,11 +199,11 @@ the session plan once at the top; the guide does not restate it.
 
 When assembling from untyped or hard-to-scan prep (not a typed beat rewrite),
 jobs are: identity; optional first-beat recap; overview art if it exists; At a Glance (Ends when first); Opening; Situation; Actors; Procedure +
-Secondary objective if a second question exists; Stage; Pressure + dials if a fuse exists; Checks; Outcomes; Roster if combat-mode
+Secondary Objective if a second question exists; Stage; Pressure + dials if a fuse exists; Checks; Outcomes; Roster if combat-mode
 sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job
 only when it is absent.
 
-At a Glance scans as Ends when, stakes, objective, danger, silence, situation magnets, next.
+At a Glance scans as Ends when, stakes, objective, danger, magnets, next.
 Ends when states the stop condition, a roughly thirty-minute budget, and
 behind/ahead cuts when pacing is not obvious. Situation states positions in feet and
 compass directions where tactical distance matters. Actors carry the

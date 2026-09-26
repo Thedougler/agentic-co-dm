@@ -16,7 +16,7 @@ region: ""
 era: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
 kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy -->
 
 # {{title}}
@@ -31,7 +31,7 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 
 ## The Tale
 
-<!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly; the DM page carries the answer to every mystery. -->
+<!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly, with its limits and exceptions; the DM page carries the answer to every mystery. -->
 
 > [!narration] Common telling
 > <!-- Optional: the version people in the world say aloud, as the DM would read it. -->
@@ -41,8 +41,12 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 <!-- How it enters play: what players notice, what it explains, what it lets them do, what it warns of. Clues that lead to hidden lore, each with where it is found. -->
 
 - **Players notice.** The sign, phrase, or custom they can see.
+- **It explains.** [[page]] — the event, mystery, or practice players would otherwise misread.
 - **It lets them.** A course of action the lore opens.
-- **Clue.** [[place]] — what can be found there.
+- **It warns of.** The danger attentive characters can see coming.
+- **Party knows.** What the characters have established, what they suspect, and what they have wrong.
+- **If exposed.** What changes when the truth comes out, and who acts on it.
+- [ ] **Clue.** [[place]] — what can be found there.
 
 > [!narration] Found text
 > <!-- Optional: the words of an inscription, letter, song, or book the party can read or hear, verbatim, from theatre-of-the-mind (Handout recipe). One block per text, titled with what it is. -->
@@ -51,7 +55,7 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 
 <!-- When people believe different things: each account, who holds it, and how it differs from the truth. -->
 
-- **[[faction]] believes** the claim — how it differs from the truth.
+- **[[faction]] believes** the claim — how it differs from the truth, and why they believe it.
 
 ## Connections
 
@@ -59,4 +63,4 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 
 ## Log
 
-- **[[Session]]** — what play established or changed.
+- **[[Session]]** — what play established, expanded, or changed in the world.

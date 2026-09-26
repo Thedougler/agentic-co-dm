@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Climax spends it at the table; keep Final Battle or Final Revelation for the shape in play. Delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Climax spends it at the table; keep Final Battle or Final Revelation for the shape in play. Delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 
@@ -39,11 +39,20 @@ summary: ""
 
 ## Actors
 
-- **[[npc]].** Numbers (AC, HP, Speed, attacks, save DCs, legendary or lair actions); what they want; their leverage; opening move → response → desperation; the line they will not cross; when they surrender or flee.
-- **[[creature]] × 4.** Role and numbers.
+- **[[npc]].** The primary opposition.
+  - **Numbers.** AC, HP, Speed, attacks, save DCs, legendary or lair actions.
+  - **Wants.** What they are trying to make true, and why now.
+  - **Leverage.** What they hold over the party or the stakes.
+  - **Plays.** Opening move → response when countered → desperation.
+  - **Line.** What they will not do, even to win.
+  - **Morale.** When they surrender, bargain, or flee, and where.
+- **[[creature]] × 4.** Role (henchman, minion, or hazard) and numbers.
 
-> [!narration] {Actor}
-> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+> [!narration] {NPC}
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+
+> [!narration] {Creature}
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
 
 ````col
 ```col-md
@@ -56,6 +65,8 @@ flexGrow=1
 | [[page]] |                       |        |
 
 **Space.** The distances in feet that make positioning matter.
+
+**Collateral.** Who or what nearby can be lost if the fight spills over.
 ```
 
 ```col-md
@@ -69,6 +80,8 @@ flexGrow=1
 - [ ] **4. Consequence.** The opposition gets what it wants.
 
 **Ticks when.** A round passes, an action fails, or a threat is ignored.
+
+**If it goes static.** The move that breaks a stalemate.
 ```
 ````
 

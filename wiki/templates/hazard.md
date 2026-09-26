@@ -13,7 +13,7 @@ kind: flora hazard
 region: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section or bullet only when you have facts for it; delete unused ones and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
 
 # {{title}}
 

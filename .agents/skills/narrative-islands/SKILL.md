@@ -115,6 +115,7 @@ Copy `wiki/templates/quest.md` and fill At a Glance and the frontmatter:
 - **Why now:** the pressure, opportunity, or danger that makes delay matter.
 - **Deadline:** a date or the fictional event after which the situation
   changes, when one exists.
+- **Opposition:** who wants a different outcome, and what they want instead.
 - **Narration** (beside At a Glance): the player-facing brief, from what the characters know.
 
 Complete when: objective and why now are explicit, and a deadline appears
@@ -164,7 +165,8 @@ the only viable path.
 
 ### 8. Fill Support Sections
 
-Add Rewards (what play can earn beyond the promise) and Connections (each
+Add Complications (a tradeoff, a reaction when the party interferes, a
+reversal and where it is found), Rewards (what play can earn beyond the promise), and Connections (each
 person, faction, place, or thing by link, with its role in the quest) only
 when they help the DM run the quest. Link detailed owners instead of restating
 them.
