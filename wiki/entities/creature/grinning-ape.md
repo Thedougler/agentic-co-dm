@@ -28,8 +28,25 @@ relationships:
 ---
 # Aruhe - Grinning Ape
 
-> [!narration] Narration
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+A silent CR 6 ambusher that turns the [[old-gardens]] terrace canopy into a killing floor for anyone walking beneath it.
+
+- **Habitat.** The terrace canopy of the [[old-gardens]] on [[Aruhe]], in groups of three to five.
+- **Diet.** Whatever moves on the ground below the canopy.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Grinning Ape
 > Gorilla-sized, dark-furred apes sit in the terrace canopy in groups of three and five. Their faces are locked in a rictus that never changes; they do not groom or call. Stones come first, then the group drops as one on whatever moved below.
+```
+````
 
 ## Statblock
 
@@ -66,19 +83,10 @@ actions:
     desc: "Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage."
 ```
 
-## Behavior
-
-
-- **Habitat.** [[old-gardens]] terraces. Groups of three to five.
-- **Behavior.** Silent canopy sitters; stones first, then a group drop.
-- **Diet.** Whatever moved below the terrace canopy.
-- **Social Structure.** Groups of three to five. No grooming or calls.
-
 ## Tactics
 
+The group opens with Rock from the canopy, then drops together on the same target. Pack Ambush rewards that timing: each ape aims its first hit at a creature that has not yet taken a turn.
 
-- **Signs.** Rictus grins never change. Stones fall from above without a warning call.
-- **Instincts.** Ambush from canopy as a group.
-- **Tactics.** Rock from canopy, then drop together. Use Pack Ambush on creatures that have not acted.
-- **Weaknesses.** Source is silent beyond ordinary combat answers.
-- **Aftermath.** Disturbed terrace canopy and scattered stones.
+## Behavior
+
+The apes never groom, call, or change expression, so the first warning a party gets is a stone falling from a silent canopy. Trackers find disturbed branches and scattered stones on the terrace floor where a group has already fed.

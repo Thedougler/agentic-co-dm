@@ -27,38 +27,25 @@ relationships:
 ---
 # Old Harrow's Bones
 
-## Overview
-
-> [!narration] Narration
-> Old Harrow's Bones is a derelict ship so massive that its ribs have become an island. What once carried a vessel now carries a whole economy inside its frame.
-
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
-Old Harrow's Bones is a single derelict ship that has become an island, with a whole economy built into its ribs. It lies in the Eastern Midchain, where pale reef, long shallow reaches, and unreliable charts make arrival a commitment. Skipping it avoids the rib-built economy and whatever the wreck still contains.
+A derelict ship so large that its ribs have become an island, with a whole economy built inside its frame — a place to trade and to salvage.
 
-## If the party
+- **Region.** [[Eastern Midchain]]: pale reef, long shallow reaches, and unreliable charts, with a day of sailing between landfalls, so arriving here is a commitment.
+```
 
-- **Approaches the wreck-island.** The party must reach a site in the Eastern Midchain's shallow, poorly charted waters. The landing point and route are not established.
-- **Enters the ribs.** The party enters the built-up economy inside the derelict ship, but the goods, authorities, and prices are not recorded.
-- **Sails past.** The party avoids the wreck's claims and trade while giving up access to the only recorded economy built inside a ship's ribs.
+```col-md
+flexGrow=1
+===
+> [!narration] Old Harrow's Bones
+> A derelict ship so massive that its ribs have become an island. What once carried a vessel now carries a whole economy inside its frame.
+```
+````
 
-## Who
+## Connections
 
-A whole economy operates inside Old Harrow's Bones, but no named residents, merchants, crew, or authority are recorded. Treat the economy as present without inventing its people until play or new canon names them.
-
-## What
-
-The site is a single derelict ship so massive that it functions as an island. Its ribs hold a whole economy, but no particular market, cargo, wreck history, or object is established on this page.
-
-## Where
-
-- **North:** No canon route or distance is recorded.
-- **East:** No canon route or distance is recorded.
-- **South:** No canon route or distance is recorded.
-- **West:** No canon route or distance is recorded.
-- **Regional context:** Old Harrow's Bones is listed within [[Eastern Midchain]], where charts are unreliable and ships can spend a day between landfalls. [[shattered-sea]] is a recorded related context, but no route or distance is established.
-
-## Why
-
-The party comes to Old Harrow's Bones to trade, learn what a ship-sized wreck can support, or investigate the relationship between the derelict hull and its economy. The place matters because it turns salvage into a living settlement without resolving who owns or controls the wreck.
-
+- [[Eastern Midchain]] — the region it lies in.
