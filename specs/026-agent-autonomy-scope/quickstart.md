@@ -1,6 +1,6 @@
 # Quickstart Validation: Agent Autonomy Scope
 
-> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case now lives in skill evals; constitution 8.0.0 IV removed code tests for agent instructions) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
 
 Prerequisites: constitution X is the four-line canon; `AGENTS.md` points at it; `scripts/luna-eval` is green (`luna-eval` evals). Wiki writes go to live vault paths.
 

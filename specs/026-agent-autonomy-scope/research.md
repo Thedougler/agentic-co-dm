@@ -1,6 +1,6 @@
 # Research: Agent Autonomy Scope
 
-> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case now lives in skill evals; constitution 8.0.0 IV removed code tests for agent instructions) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
 
 ```text
 work_class: agent-system
@@ -78,7 +78,7 @@ Do not retrofit existing prose-only standards (FR-011 last sentence).
 | the placement rule (no current checker) | FR-013 | No current checker | Filename/path is not a Vale token check |
 | the spec-citation rule (no current checker) | FR-004, FR-011 | No current checker | Later `specs/*/spec.md` agent-facing FRs must cite a `rules/registry.yml` id |
 
-Copy pattern: `scripts/check-policy-conflicts` (args in, JSON out, exit 0/1) + `tests/test_policy_conflicts.py`. Register ids in `rules/registry.yml` (`evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`). One pytest runs the script. No new CI job; existing pytest catches it.
+Copy pattern: `scripts/check-policy-conflicts` (args in, JSON out, exit 0/1) (its pytest was removed by constitution 8.0.0 IV). Register ids in `rules/registry.yml` (`evaluator: symbolic`, `scope: instruction`, `severity: BLOCK`). One pytest runs the script. No new CI job; existing pytest catches it.
 
 Green-before-done for wiki pages remains existing `wiki-lint` / Vale / template HARD keys (already checkable). This feature does not re-encode those.
 

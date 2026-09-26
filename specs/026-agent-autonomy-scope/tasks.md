@@ -4,13 +4,13 @@ description: "Task list for Agent Autonomy Scope"
 
 # Tasks: Agent Autonomy Scope
 
-> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case now lives in skill evals; constitution 8.0.0 IV removed code tests for agent instructions) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
 
 **Input**: Design documents from `/specs/026-agent-autonomy-scope/`
 
 **Prerequisites**: plan.md (required), spec.md (required), research.md, data-model.md, contracts/agent-autonomy.md, quickstart.md
 
-**Tests**: Plan requires one pytest (`tests/test_luna_eval.py`) plus `scripts/luna-eval`. Behavioral validation is `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 (cold-context, live vault). Skill/instruction diffs use existing `skill-creator` evals. Do not add a review checklist, GitHub PR template, or review skill (FR-007).
+**Tests**: Plan required one pytest, since removed by constitution 8.0.0 IV; `scripts/luna-eval` evals remain. Behavioral validation is `specs/026-agent-autonomy-scope/quickstart.md` V-001–V-008 (cold-context, live vault). Skill/instruction diffs use existing `skill-creator` evals. Do not add a review checklist, GitHub PR template, or review skill (FR-007).
 
 **Organization**: Tasks are grouped by user story. Constitution, `AGENTS.md`, and `rules/registry.yml` have one writer at a time — never parallelize two tasks that edit the same of those files. Skills MUST NOT copy the four-line canon. Do not say "autonomous GM".
 
@@ -34,7 +34,6 @@ docs/agents/policy-owners.yml
 .agents/skills/**/SKILL.md
 rules/registry.yml
 scripts/luna-eval
-tests/test_luna_eval.py
 ```
 
 Canon owner after implement: constitution principle X. Executable rules: `luna-eval` evals via `scripts/luna-eval`. `AGENTS.md` is why/examples only.
