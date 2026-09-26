@@ -42,6 +42,9 @@ summary: ""
 - **[[npc]].** Numbers (AC, HP, Speed, attacks, save DCs, legendary or lair actions); what they want; their leverage; opening move → response → desperation; the line they will not cross; when they surrender or flee.
 - **[[creature]] × 4.** Role and numbers.
 
+> [!narration] {Actor}
+> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+
 ````col
 ```col-md
 flexGrow=1
@@ -74,9 +77,9 @@ flexGrow=1
 - **Win by.** The objective beyond dropping every enemy.
 - **Lose when.** The opposition gets what it wants.
 
-| Phase | Trigger | What the players see | What changes |
-| ----- | ------- | -------------------- | ------------ |
-| 1     | Opening |                      |              |
+| Phase | Trigger | What changes | Narration |
+| ----- | ------- | ------------ | --------- |
+| 1     | Opening |              | _…_       |
 
 ## Final Revelation
 
@@ -84,6 +87,9 @@ flexGrow=1
 - **Proof on the table.** [[page]] — what it establishes, and the beat where the party got it.
 - **Resistance.** [[npc]] — their claim, what breaks it, and their last move when cornered.
 - **Wrong accusation.** What happens if the party names the wrong culprit.
+
+> [!narration] Revelation
+> <!-- The moment the truth lands, from theatre-of-the-mind (Revelation recipe): what the characters see or hear that makes it undeniable. -->
 
 ## Spotlight
 
@@ -93,10 +99,10 @@ flexGrow=1
 
 <!-- Required. One row per way the climax can end: what becomes true and the cost paid. -->
 
-| If the climax ends with… | What becomes true | Cost paid |
-| ------------------------ | ----------------- | --------- |
-| **Victory**              |                   |           |
-| **Costly victory**       |                   |           |
-| **Opposition wins**      |                   |           |
+| If the climax ends with… | What becomes true | Cost paid | Narration |
+| ------------------------ | ----------------- | --------- | --------- |
+| **Victory**              |                   |           | _…_       |
+| **Costly victory**       |                   |           | _…_       |
+| **Opposition wins**      |                   |           | _…_       |
 
 **Carry forward.** Who and what remains active, and each state the Resolution inherits.

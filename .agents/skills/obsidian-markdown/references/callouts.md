@@ -7,17 +7,16 @@
 > Player-safe spoken text: what the characters perceive, present tense.
 ```
 
-Titles in use:
+A page carries one narration block per moment the players live through, at the slot its template gives it. Titles in use:
 
-- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look.
-- Beats, encounters, and session-prep: `Opening`; Resolution uses `Closing Image`.
+- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look, in the header row. Moment slots below it: `In action` (creature), `First meeting` (npc), `When met` (faction), `In use` (item), `On contact` (hazard), `Underway` (vehicle), `{Area}` and `Returning` (place), `On the road` (region), `Common telling` and `Found text` (lore).
+- Beats, encounters, and session-prep: `Previously` (the session's first beat), `Opening`, `{Actor}` (the actor's name, as they enter), `Revelation`, `Outcomes`, `Exit`, `If the session ends here` (cliffhanger), `Closing Image` and `Stinger` (resolution).
 - Recaps: `Recap`.
-- Lore: `Common telling`, when the lore has an in-world telling.
 
 Rules:
 
-- Write a narration block only when it has its spoken text; a page without a look yet has no narration block.
-- Keep it open (never the collapsed `-` form) and outside table cells. Conditional spoken text in a table cell is `_italic_`.
+- Write a narration block only when it has its spoken text; delete an empty slot.
+- Keep it open (never the collapsed `-` form) and outside table cells. Spoken text for one branch goes in the table's Narration column as `_italic_`.
 - Nothing the players must not hear goes inside it: no secrets, DCs, unearned names, or the DM's At a Glance read.
 - Columns use the `col` / `col-md` codeblock syntax ([columns.md](columns.md)).
 

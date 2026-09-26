@@ -177,7 +177,7 @@ places slots only for outcomes the beat can produce.
 **Callout stubs** (empty titled `> [!narration]` blocks):
 - `Opening` — before the first player choice.
 - `Outcomes` — one unconditional spoken state for what is always true when this beat ends.
-- `{Creature}` — after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
+- `{Actor}` — titled with the creature's name, after each combat-mode roster embed. Situated look for this scene, not the owner-page cold portrait.
 - `Exit` — only when the next cockpit is already on this file.
 
 **Table Narration columns** (conditional spoken as `_italic_`, not a callout):

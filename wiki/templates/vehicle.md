@@ -36,7 +36,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] {{title}}
-> <!-- Player-safe look at its berth or underway: silhouette, scale, material, and features a character can use. -->
+> <!-- Player-safe look at its berth: silhouette, scale, material, and features a character can use. -->
 ```
 ````
 
@@ -62,6 +62,9 @@ flexGrow=1
 ## At the Table
 
 <!-- How to run the craft tonight: handling, maneuvers, chase, ramming, boarding, and what happens when it is destroyed. -->
+
+> [!narration] Underway
+> <!-- Optional: the craft in motion from its deck, from theatre-of-the-mind (Vehicle recipe): motion underfoot, the sound of it, the crew at work, what the rail shows. -->
 
 ## Secrets
 

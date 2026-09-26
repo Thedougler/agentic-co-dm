@@ -46,6 +46,9 @@ flexGrow=1
 - **Careful passage.** How to pass without the full cost.
 - **Counterplay.** Other honest answers: cover, reach, fire, a tool.
 
+> [!narration] On contact
+> <!-- What the character feels and the others see when the hazard hits, "you" address, ending on the condition it leaves. -->
+
 ## Secrets
 
 <!-- Delayed, conditional, or hidden effects, each with how the party can learn it. -->

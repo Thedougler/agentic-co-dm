@@ -55,4 +55,7 @@ summary: ""
 
 ## Stinger
 
-<!-- Only when it grows from play: one new fact, arrival, or threat; why the adventure caused it; what the characters perceive; the [[page]] it points toward. -->
+<!-- Only when it grows from play: one new fact, arrival, or threat; why the adventure caused it; the [[page]] it points toward. -->
+
+> [!narration] Stinger
+> <!-- What the characters perceive of it, spoken after the Closing Image: the arrival, sign, or message, ending before anyone can act. -->

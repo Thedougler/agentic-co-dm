@@ -44,6 +44,9 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 - **It lets them.** A course of action the lore opens.
 - **Clue.** [[place]] — what can be found there.
 
+> [!narration] Found text
+> <!-- Optional: the words of an inscription, letter, song, or book the party can read or hear, verbatim, from theatre-of-the-mind (Handout recipe). One block per text, titled with what it is. -->
+
 ## Accounts
 
 <!-- When people believe different things: each account, who holds it, and how it differs from the truth. -->

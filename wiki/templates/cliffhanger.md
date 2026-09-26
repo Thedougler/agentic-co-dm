@@ -35,6 +35,9 @@ summary: ""
 - **[[creature]] × 4.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
 
+> [!narration] {Actor}
+> <!-- Optional: the moment a key actor enters, from theatre-of-the-mind (Creature in scene or NPC first look recipe), "you" address. One block per actor the party meets here, titled with the actor's name. -->
+
 ````col
 ```col-md
 flexGrow=1
@@ -51,11 +54,11 @@ flexGrow=1
 ===
 ## Pressure
 
-| Round | What happens | What the party sees |
-| ----- | ------------ | ------------------- |
-| 1     |              |                     |
-| 2     |              |                     |
-| 3     |              |                     |
+| Round | What happens | Narration |
+| ----- | ------------ | --------- |
+| 1     |              | _…_       |
+| 2     |              | _…_       |
+| 3     |              | _…_       |
 ```
 ````
 
@@ -77,13 +80,14 @@ flexGrow=1
 
 <!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
 
-| Outcome | What changes | Next |
-| ------- | ------------ | ---- |
-| **Objective gained** |  | [[Session-{{session}}-BB-label]] |
-| **Costly success** |  | [[Session-{{session}}-BB-label]] |
-| **Lost** |  | [[Session-{{session}}-BB-label]] |
-| **Broken off** |  | [[Session-{{session}}-BB-label]] |
+| Outcome | What changes | Next | Narration |
+| ------- | ------------ | ---- | --------- |
+| **Objective gained** |  | [[Session-{{session}}-BB-label]] | _…_ |
+| **Costly success** |  | [[Session-{{session}}-BB-label]] | _…_ |
+| **Lost** |  | [[Session-{{session}}-BB-label]] | _…_ |
+| **Broken off** |  | [[Session-{{session}}-BB-label]] | _…_ |
 
 **Carry forward.** Each state the next beat inherits: positions, injuries, resources, who holds what.
 
-**If the session ends here.** One concrete image that makes the changed situation unmistakable.
+> [!narration] If the session ends here
+> <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment. -->

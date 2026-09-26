@@ -46,9 +46,11 @@ flexGrow=1
 
 ## Districts
 
-| District  | First impression | Known for | Trouble now |
-| --------- | ---------------- | --------- | ----------- |
-| [[place]] |                  |           |             |
+<!-- Narration: the first impression spoken as the party walks in. -->
+
+| District  | Known for | Trouble now | Narration |
+| --------- | --------- | ----------- | --------- |
+| [[place]] |           |             | _…_       |
 
 <!-- Getting around: travel time across the city, what changes after dark, gates or checkpoints, shortcuts. -->
 
@@ -90,9 +92,9 @@ flexGrow=1
 
 <!-- Random tables for improvising: encounters that reveal the city, names, and incidental places. -->
 
-| d6 | Encounter |
-| -: | --------- |
-| 1  |           |
+| d6 | Encounter | Narration |
+| -: | --------- | --------- |
+| 1  |           | _…_       |
 
 ## Secrets
 
