@@ -3,6 +3,24 @@
    Typography, callouts, embeds, tables, DM surface
    ================================================================ */
 
+/* ── COLUMNS ─────────────────────────────────────────────────────
+   Header rows and beat pairs sit side by side on a desktop pane and
+   stack (At a Glance first) when the note is narrower than 560px:
+   a phone, or a narrow split pane.
+   ──────────────────────────────────────────────────────────────── */
+
+.markdown-preview-view,
+.markdown-source-view.mod-cm6 {
+  container-type: inline-size;
+}
+
+@container (max-width: 560px) {
+  .columnParent > .columnChild {
+    flex-basis: 100% !important;
+    width: 100% !important;
+  }
+}
+
 /* ── TYPOGRAPHY ──────────────────────────────────────────────────
    Comfortable reading at the table, clear heading hierarchy
    ──────────────────────────────────────────────────────────────── */
