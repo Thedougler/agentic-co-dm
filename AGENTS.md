@@ -15,7 +15,7 @@ Top-level paths, one purpose each; the vault itself is explored under "Vault map
 | `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
 | `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template-derived checks), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
 | `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
-| `tests/` | Pytest suite over `scripts/` and `tools/`. Run `./scripts/run-pytest`. |
+| `tests/` | Pytest suite for the wiki lint system only (constitution IV); skills are validated by evals. Run `./scripts/run-pytest`. |
 | `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
 | `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |
 | `wiki/` | The live vault, at the path `.env` `OBSIDIAN_VAULT_PATH` and `pyproject.toml` `[tool.agentic-co-dm]` both name. Campaign pages, templates, session journals, indexes. Load `wiki/AGENTS.md` before any read or write here. Expanded below. |
@@ -71,7 +71,7 @@ Before writing substantial engineering, agent-system, campaign-architecture, or 
 
 **Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
 
-<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix with the check or test that catches the cause, adding one when none exists (for a script path in a skill or AGENTS.md, run `scripts/check-current-commands` and see that file pass), then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
+<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command, `wiki lint`, or `scripts/check-current-commands` for a script path in a skill or AGENTS.md — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
 
 ## Carve-outs
 
@@ -469,7 +469,7 @@ stderr `tune` names a checker. Fix it this sitting.
 | "grill with docs" / "challenge against the spec" | `grill-with-docs` |
 | "write for agents" / "agent-facing prose" | `writing-for-agents` |
 | "obsidian markdown" / link/frontmatter standards | `obsidian-markdown` |
-| TDD / "write a test first" | `tdd` |
+| TDD / "write a test first" for wiki lint code | `tdd` |
 
 Spec Kit adapters (`speckit-*`) are generated harness integrations, not primary intent routes. Invoke them via `/speckit-<phase>` directly.
 

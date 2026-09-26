@@ -10,7 +10,6 @@ from tools.creative_lint.engine import LintEngine
 from tools.creative_lint.finding import Finding
 from tools.creative_lint.registry import Registry, RuleDefinition
 from tools.creative_lint.severity import min_severity, status_from_findings
-from tools.creative_lint.shadow import ShadowRecorder
 from tools.creative_lint.vale_adapter import map_vale_output
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -47,7 +46,6 @@ def test_bundle_resolution_caps_diagnostics():
     assert set(resolved) == {"WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
 
 
-
 def test_vale_repo_local_style_is_human_repair(tmp_path):
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     findings = map_vale_output(
@@ -69,15 +67,6 @@ def test_vale_repo_local_style_is_human_repair(tmp_path):
     operations, skipped = build_safe_fix_plan(tmp_path, [finding], scope={"paths": ["example.md"]})
     assert operations == []
     assert skipped == []
-
-
-def test_shadow_recorder_writes_jsonl(tmp_path):
-    finding = Finding("TEST001", "fail", "BLOCK", {"file": "x.md", "line": 1}, "e", "r", "vale")
-    recorder = ShadowRecorder(tmp_path)
-    paths = recorder.record([finding], run_id="test")
-    assert paths[0].name == "TEST001.jsonl"
-    assert recorder.load("TEST001")[0]["run_id"] == "test"
-
 
 
 def test_finding_from_dict_validates_contract():
@@ -131,8 +120,6 @@ def test_shadow_rules_are_excluded_from_active_result(tmp_path):
     assert (tmp_path / "rules" / "shadow" / "WIKI001.jsonl").is_file()
 
 
-
-
 def test_fixture_families_have_fail_and_pass_cases():
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     for rule in registry.active():
@@ -140,7 +127,6 @@ def test_fixture_families_have_fail_and_pass_cases():
             directory = FIXTURES / rule.id
             assert list(directory.glob("fail_*.md")), rule.id
             assert list(directory.glob("pass_*.md")), rule.id
-
 
 
 def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
@@ -174,22 +160,6 @@ def test_generated_vale_vocab_keeps_rule_tokens_active(tmp_path: Path):
     output = proc.stdout + proc.stderr
     assert "Deprecated.DMThesis" in output, output
     assert "Deprecated.FactionClock" in output, output
-
-
-def test_canon_rules_and_category_are_gone():
-    import yaml
-
-    registry = Registry.load(ROOT / "rules" / "registry.yml")
-    ids = {rule.id for rule in registry.rules}
-    assert not [rule_id for rule_id in ids if rule_id.startswith("CANON")]
-    assert all(rule.category != "canon" for rule in registry.rules)
-    bundles = yaml.safe_load((ROOT / "rules" / "bundles.yml").read_text(encoding="utf-8"))
-    for bundle in bundles["bundles"].values():
-        for key in ("block", "review", "diagnostics"):
-            assert "canon" not in bundle[key], bundle
-    from tools.creative_lint.constants import CATEGORIES
-
-    assert "canon" not in CATEGORIES
 
 
 def test_linting_a_temp_vault_leaves_the_tracked_vocabulary_alone(tmp_path: Path):

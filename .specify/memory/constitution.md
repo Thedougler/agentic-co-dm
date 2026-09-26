@@ -1,15 +1,15 @@
 <!--
 Sync Impact Report
-- Version change: 7.0.0 -> 7.1.0 (MINOR: VI gains a named authority for command design)
+- Version change: 7.1.0 -> 8.0.0 (MAJOR: IV redefined)
 - Modified principles:
-  - VI. Software and Instructions Are Agent-Shaped: adds `cli-for-agents` as the authority on
-    command design, loaded before creating or changing any repository command, beside
-    `writing-for-agents` for agent-facing prose (Nick, 2026-09-24).
+  - IV. Behavioral Tests -> IV. Tests Cover the Linter; Evals Cover Skills. Code tests exist only
+    for the wiki lint system; skills and agent instructions are validated by skill evals; the
+    mandatory failing-test-first rule for every change is removed (Nick, 2026-09-26).
 - Added sections: none
-- Removed sections: none (the 7.0.0 Sync Impact Report is replaced; git holds amendment history)
-- Templates requiring updates: none (plan, spec, tasks, and checklist templates read the
-  constitution at runtime; no template names command-design rules)
-- Follow-up: AGENTS.md Skill Routing and Helpers point at `cli-for-agents`.
+- Removed sections: none (the 7.1.0 Sync Impact Report is replaced; git holds amendment history)
+- Templates requiring updates: none (the tasks template already marks tests optional)
+- Follow-up: AGENTS.md friction rule proves fixes by rerunning what failed; tests/ pruned to the
+  lint system; the tdd skill is scoped to wiki lint code.
 -->
 
 # Agentic Co-DM Constitution
@@ -44,15 +44,21 @@ and constraints, not creative method. Campaign Work follows its owner skill.
 Filing a new named campaign page is Campaign Work: load and complete the
 owner skill for that kind before the page is filed.
 
-### IV. Behavioral Tests
+### IV. Tests Cover the Linter; Evals Cover Skills
 
-Tests MUST assert observable behavior at public seams using domain language. New behavior MUST be
-expressed by a failing test before implementation, one slice at a time. Tests MUST NOT pin
-internals, recompute expected values, or bulk-speculate.
+Code tests exist for one system: `wiki lint`, `wiki lint fix`, and the checkers and repairs they
+run. A test drives a lint command or checker on a small fixture vault and asserts the findings or
+repair it produces. A test earns its place by catching a lint regression; one that does not is
+deleted.
 
-Agent-facing surface changes require behavioral validation: an independent test subject with cold
-context performing the task the change improves. The lead reconciles subagent output as evidence.
-When independent validation cannot run, record the blocker and compensating validation.
+Skills and agent instructions are validated by skill evals: an independent test subject with cold
+context performs the task the change improves (XXVI), and the lead grades the output as
+evidence. When an eval cannot run, record the blocker and the compensating validation.
+
+Everything else stays untested by code: agent instructions, templates, docs, eval files, helper
+scripts, help text, and the absence of retired words or features. The project is optimized for
+clarity, simplicity, and flexibility; a test that must be maintained without catching a lint
+regression is busy work.
 
 ### V. Single Source of Truth
 
@@ -279,4 +285,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 7.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-24
+**Version**: 8.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-26

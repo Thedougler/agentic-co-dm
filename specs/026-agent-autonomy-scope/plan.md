@@ -1,6 +1,6 @@
 # Implementation Plan: Agent Autonomy Scope
 
-> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case is in `tests/test_luna_eval.py`) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
+> Replaced by feature 030 (FR-018): this feature's agent-standards checker and its three rules are retired. Agent behavior is checked by `scripts/luna-eval` evals (the Work-gate wording case now lives in skill evals; constitution 8.0.0 IV removed code tests for agent instructions) and wiki structure by `wiki lint`; the placement and spec-citation rules have no current checker.
 
 **Branch**: `026-agent-autonomy-scope` | **Date**: 2026-09-18 | **Spec**: [spec.md](spec.md)
 
@@ -94,7 +94,7 @@ docs/agents/policy-owners.yml            # drop acceptance_semantics wait
 .agents/skills/**/SKILL.md               # delete ## Work gate sections
 .agents/skills/**/*.md                   # kebab remorph of companions (checks.md, consolidate.md, …)
 scripts/luna-eval                        # evals (replaced the original checker)
-tests/test_luna_eval.py                  # Work-gate wording case
+# Work-gate wording case: skill evals (constitution 8.0.0 IV)
 ```
 
 **Structure Decision**: Instruction + constitution edits. One stdlib checker. Bulk-rename non-conforming agent-facing paths in the same change. Canonical four-line rule in constitution; AGENTS.md points; registry/script enforces.

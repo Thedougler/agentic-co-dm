@@ -18,7 +18,6 @@ from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.transactions import Transaction
 
 
-
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = os.environ.get("PYTHON", "python3")
 
@@ -104,11 +103,6 @@ class VaultFixture(unittest.TestCase):
 
 FIXTURE = Path(__file__).parent / "fixtures" / "wiki_ops"
 
-def test_cli_contracts_and_environment_discovery():
-    for script in ("scripts/wiki-bulk-ops", "scripts/wiki-lint", "scripts/wiki-reveal"):
-        result = run_cli(script, "--help")
-        assert result.returncode == 0
-        assert "usage:" in result.stdout
 
 def test_wiki_lint_identity_block_reports_ambiguous_status(tmp_path: Path):
     import shutil
@@ -127,54 +121,6 @@ def test_wiki_lint_identity_block_reports_ambiguous_status(tmp_path: Path):
     assert identity["compared"] >= 2
     assert set(identity["index"]) == {"hits", "misses"}
     assert (vault / "_meta" / "identity-index.json").is_file()
-
-
-def test_reveal_cli_lists_gate_and_type_from_frontmatter(tmp_path: Path):
-    def page(relative: str, **fields: str) -> None:
-        front = "".join(f"{key}: {value}\n" for key, value in fields.items())
-        path = tmp_path / relative
-        path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(f"---\n{front}---\n\nBody.\n", encoding="utf-8")
-
-    page("entities/npc/hidden-fisher.md", title="Hidden Fisher", type="npc", reveal="unrevealed")
-    page("entities/npc/known-fisher.md", title="Known Fisher", type="npc", reveal="revealed")
-    page("entities/place/salt-quay.md", title="Salt Quay", type="place", reveal="unrevealed")
-    page("journal/sessions/x/Session-11-01-Hook.md", title="Hook", type="session-prep", kind="hook", reveal="unrevealed")
-    page("_raw/draft.md", title="Draft", type="npc", reveal="unrevealed")
-    page("index.md", title="Index")
-    (tmp_path / "entities/npc/no-frontmatter.md").write_text("Body without a frontmatter block.\n", encoding="utf-8")
-
-    listed = assert_json(run_cli("scripts/wiki-reveal", "--json", vault=tmp_path))
-    assert listed["state"] == "unrevealed" and listed["total"] == 3
-    assert listed["counts"] == {"npc": 1, "place": 1, "session-prep": 1}
-    assert [item["path"] for item in listed["pages"]] == [
-        "entities/npc/hidden-fisher.md",
-        "entities/place/salt-quay.md",
-        "journal/sessions/x/Session-11-01-Hook.md",
-    ]
-    assert listed["pages"][2]["kind"] == "hook"
-
-    npc = assert_json(run_cli("scripts/wiki-reveal", "unrevealed", "--type", "npc", "--json", vault=tmp_path))
-    assert npc["total"] == 1 and npc["pages"][0]["title"] == "Hidden Fisher"
-
-    both = assert_json(run_cli("scripts/wiki-reveal", "all", "--type", "npc , place", "--json", vault=tmp_path))
-    assert both["total"] == 3
-
-    counted = assert_json(run_cli("scripts/wiki-reveal", "all", "--count", "--json", vault=tmp_path))
-    assert "pages" not in counted and counted["total"] == 4
-    assert counted["counts"] == {"npc": 2, "place": 1, "session-prep": 1}
-
-    text = run_cli("scripts/wiki-reveal", "revealed", vault=tmp_path)
-    assert text.returncode == 0
-    assert text.stdout.splitlines() == ["entities/npc/known-fisher.md - Known Fisher (npc)"]
-
-    empty = run_cli("scripts/wiki-reveal", "revealed", "--type", "place", vault=tmp_path)
-    assert empty.returncode == 0 and empty.stdout.strip() == "_none_"
-
-    typo = run_cli("scripts/wiki-reveal", "unrevealed", "--type", "npcs", vault=tmp_path)
-    assert typo.returncode == 1 and "unknown content type" in typo.stderr
-
-    assert run_cli("scripts/wiki-reveal", "hidden", vault=tmp_path).returncode == 2
 
 
 def test_scope_and_semantic_sections():
@@ -298,7 +244,6 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     assert clean_report["status"] == "clean"
     assert clean_report["findings"] == {}
     assert clean_report["counts"] == {}
-
 
 
 def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
@@ -598,25 +543,6 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     assert report["findings"].get("misplaced_entity", []) == []
 
 
-def test_type_migrate_plans_wrong_folder(tmp_path: Path):
-    src = tmp_path / "entities" / "item" / "snakewood.md"
-    src.parent.mkdir(parents=True)
-    src.write_text("---\ntitle: Snakewood\ntype: creature\n---\n", encoding="utf-8")
-    result = subprocess.run(
-        [PYTHON, str(ROOT / "scripts" / "wiki-entities-type-migrate.py"), "--dry-run", "--wiki", str(tmp_path)],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-    )
-    assert result.returncode == 0, result.stderr
-    payload = json.loads(result.stdout)
-    assert any(
-        item["reason"] == "wrong_type_folder" and item["dest"] == "entities/creature/snakewood.md"
-        for item in payload["moves"]
-    )
-
-
-
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
     _fake_qmd(temp, body)
     env = os.environ | {
@@ -631,102 +557,6 @@ def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = N
         env=env,
     )
 
-
-def test_qmd_hook_is_silent_and_count_bounded(tmp_path: Path):
-    log = tmp_path / "calls.log"
-    result = _run_qmd_hook(
-        tmp_path,
-        body='printf "%s\\n" "$*" >> "$QMD_TEST_LOG"\n',
-        extra_env={
-            "QMD_TEST_LOG": str(log),
-            "QMD_HOOK_MAX_DOCS": "3",
-            "QMD_HOOK_MAX_MB": "2",
-        },
-    )
-    assert result.returncode == 0, result.stderr
-    assert result.stdout == ""
-    assert result.stderr == ""
-    assert log.read_text(encoding="utf-8").splitlines() == [
-        "update",
-        "embed -c wiki --max-docs-per-batch 3 --max-batch-mb 2",
-    ]
-
-def test_qmd_hook_is_silent_noop_without_qmd(tmp_path: Path):
-    for command in ("bash", "dirname", "pwd"):
-        (tmp_path / command).symlink_to(Path("/bin" if command in {"bash", "pwd"} else "/usr/bin") / command)
-    env = os.environ | {"PATH": str(tmp_path), "QMD_HOOK_LOCK_DIR": str(tmp_path / "lock")}
-    result = subprocess.run(
-        [str(ROOT / "scripts/qmd-hook.sh")],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        env=env,
-    )
-    assert (result.returncode, result.stdout, result.stderr) == (0, "", "")
-
-
-def test_qmd_hook_serializes_concurrent_invocations(tmp_path: Path):
-    active = tmp_path / "active"
-    overlap = tmp_path / "overlap"
-    log = tmp_path / "calls.log"
-    body = (
-        'printf "%s\\n" "$*" >> "$QMD_TEST_LOG"\n'
-        'if [ "$1" = embed ]; then\n'
-        '  if ! mkdir "$QMD_ACTIVE" 2>/dev/null; then touch "$QMD_OVERLAP"; exit 9; fi\n'
-        '  sleep 0.1\n'
-        '  rmdir "$QMD_ACTIVE"\n'
-        'fi\n'
-    )
-    _fake_qmd(tmp_path, body)
-    env = os.environ | {
-        "PATH": f"{tmp_path}:{os.environ['PATH']}",
-        "QMD_HOOK_LOCK_DIR": str(tmp_path / "lock"),
-        "QMD_TEST_LOG": str(log),
-        "QMD_ACTIVE": str(active),
-        "QMD_OVERLAP": str(overlap),
-    }
-    first = subprocess.Popen([str(ROOT / "scripts/qmd-hook.sh")], cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    second = subprocess.Popen([str(ROOT / "scripts/qmd-hook.sh")], cwd=ROOT, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
-    first_out, first_err = first.communicate(timeout=5)
-    second_out, second_err = second.communicate(timeout=5)
-    assert (first.returncode, first_out, first_err) == (0, "", "")
-    assert (second.returncode, second_out, second_err) == (0, "", "")
-    assert not overlap.exists()
-    assert log.read_text(encoding="utf-8").splitlines().count("embed -c wiki --max-docs-per-batch 128 --max-batch-mb 16") == 2
-
-
-def test_qmd_hook_reports_lock_timeout(tmp_path: Path):
-    _fake_qmd(tmp_path, "")
-    lock = tmp_path / "lock"
-    lock.mkdir()
-    env = os.environ | {
-        "PATH": f"{tmp_path}:{os.environ['PATH']}",
-        "QMD_HOOK_LOCK_DIR": str(lock),
-        "QMD_HOOK_LOCK_WAIT": "1",
-    }
-    result = subprocess.run(
-        [str(ROOT / "scripts/qmd-hook.sh")],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-        env=env,
-        timeout=5,
-    )
-    assert result.returncode != 0
-    assert result.stdout == ""
-    assert result.stderr.count("\n") == 1
-    assert "lock busy" in result.stderr
-
-def test_qmd_hook_reports_one_actionable_error(tmp_path: Path):
-    result = _run_qmd_hook(
-        tmp_path,
-        body='if [ "$1" = embed ]; then printf "backend failed\\n" >&2; exit 7; fi\n',
-    )
-    # embed failures are warn-only (successive hooks drain the backlog)
-    assert result.returncode == 0
-    assert result.stdout == ""
-    assert "qmd embed" in result.stderr
-    assert "skipped" in result.stderr
 
 def test_identity_uses_manifest_and_content_signals(tmp_path: Path):
     (tmp_path / "a.md").write_text(
@@ -894,12 +724,6 @@ def test_lint_reports_noncanonical_basenames_and_slug_collisions(tmp_path: Path)
     assert slug_collision["repair_class"] == "human_repair"
 
 
-def test_run_pytest_wrapper_reports_version():
-    result = subprocess.run([PYTHON, str(ROOT / "scripts" / "run-pytest"), "--version"], cwd=ROOT, capture_output=True, text=True)
-    assert result.returncode == 0, result.stderr
-    assert "pytest" in result.stdout.casefold()
-
-
 def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
     vault = tmp_path / "wiki"
     (tmp_path / "concepts").mkdir()
@@ -956,30 +780,6 @@ def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
     assert pipes[0]["repair_action"]["kind"] == "escape_table_wikilink_pipe"
     for rule in ("md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link", "forbidden_tree", "literal_newline"):
         assert all(item["repair_class"] == "human_repair" for item in only(rule)), rule
-
-
-def test_lint_wiki_has_no_lifecycle_or_trust_machinery(tmp_path: Path):
-    vault = tmp_path / "wiki"
-    page = vault / "entities/place/harbor.md"
-    page.parent.mkdir(parents=True)
-    page.write_text(
-        "---\ntitle: Harbor\ncategory: entities\ntags: []\nsources: []\ncreated: 2020-01-01\n"
-        "updated: 2020-01-01\ntype: place\nreveal: unrevealed\nsummary: A harbor.\n---\n\n# Harbor\n\nThe harbor is quiet.\n",
-        encoding="utf-8",
-    )
-    proc = subprocess.run(
-        [PYTHON, str(ROOT / "tools/lint_wiki.py"), "--json", str(vault)],
-        cwd=ROOT, capture_output=True, text=True,
-    )
-    report = json.loads(proc.stdout)
-    findings = report["findings"]
-    assert "bad_lifecycle" not in findings
-    assert "missing_trust" not in findings
-    assert not [item for item in findings.get("missing_frontmatter", []) if "lifecycle" in json.dumps(item)]
-    assert all("lifecycle" not in item for item in findings.get("stale_pages", []))
-    schema = report.get("schema", {})
-    assert "allowed_lifecycles" not in schema
-    assert "required_trust_fields" not in schema
 
 
 def _identity_vault(root: Path) -> Path:

@@ -38,23 +38,6 @@ def test_legacy_no_subcommand_is_structural_json():
     assert "counts" in data and "hard_fail" in data
 
 
-
-
-def test_candidate_creates_shadow_template_for_unmatched_correction():
-    correction = "A completely novel moonlit cartography concern"
-    slug = "a-completely-novel-moonlit-cartography-concern"
-    candidate = ROOT / "rules" / "candidates" / f"{slug}.yml"
-    try:
-        proc = run_cli("candidate", correction, "--json")
-        assert proc.returncode == 0
-        data = json.loads(proc.stdout)
-        assert data["lifecycle"] == "SHADOW"
-        assert candidate.is_file()
-        assert "lifecycle: SHADOW" in candidate.read_text(encoding="utf-8")
-    finally:
-        candidate.unlink(missing_ok=True)
-
-
 def test_file_missing_frontmatter_reports_wiki001(tmp_path):
     page = tmp_path / "missing.md"
     page.write_text("plain output\n", encoding="utf-8")
@@ -75,13 +58,3 @@ def test_unknown_bundle_and_invalid_severity_are_argument_errors():
     assert "severity" in invalid.stderr
 
 
-def test_consolidation_is_dry_run_until_approved():
-    dry = run_cli("--consolidate", "wiki", "--json")
-    assert dry.returncode == 0
-    dry_data = json.loads(dry.stdout)
-    assert dry_data["status"] == "dry_run"
-    assert dry_data["plan"]["requires_approval"] is True
-    assert dry_data["plan"]["approved"] is False
-    applied = run_cli("--consolidate", "wiki", "--json", "--approve")
-    assert applied.returncode == 0
-    assert json.loads(applied.stdout)["status"] == "applied"
