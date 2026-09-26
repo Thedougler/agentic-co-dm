@@ -8,122 +8,61 @@ updated: YYYY-MM-DD
 type: session-prep
 reveal: unrevealed
 campaign: "{{campaign}}"
-session: 0
+session: ""
 visibility: dm
 status: ready
 summary: ""
 ---
-<!-- Copy-start scaffold. Omit unused sections. Pass is Session 11 cockpit jobs in run-guide, not heading-list match. File to wiki/journal/sessions/<campaign-slug>/<session-number>/ as Session-<N>-<BB>-<Label>.md. -->
-# Session {{session}}: {{title}}
+<!-- Run-guide cockpit for one live slice. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections and these comments. -->
 
-````col
-```col-md
-## Scene ends when
+# {{title}}
 
-This beat ends when…
-
-Plan for about thirty minutes.
-
-**If behind:**
-
-**If ahead:**
-```
-
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
-- **Stakes:**
-- **Goal / exit:**
-- **Danger:**
-- **Silence:** Present the situation, ask what they do, and wait.
-- **Situation magnets:**
-```
-````
+One sentence: what this slice is about.
 
-## Now
+- **Stakes.** What can be won or lost.
+- **Ends when.** The condition that ends the slice, and its time budget.
+- **If behind.** What to cut. **If ahead.** What to add.
+- **Next.** [[Session-N-BB-label]]
 
-Who starts where, in feet and compass directions. What a move vs Dash reaches.
-
-## Action cards
+> [!narration] Opening
+> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, ending on the moment they react. -->
 
 ````col
 ```col-md
-**Opposition or terrain.** Default-mode numbers the DM will roll this slice. Wikilink the owner.
-```
-````
-
-> [!narration] Initial Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
-> Write a situated opening the DM can speak aloud. Address the players as "you", present tense. Seat the party in the space — visible threat, relative position, cover or routes, drawable appearance, and at least one non-sight sense. End on the reaction point. No secrets, DCs, or unearned names.
-
-````col
-```col-md
-flexGrow=3
+flexGrow=1
 ===
-## Procedure
+## Cast
 
-**Named mode.** Trigger once. Failed checks impose their Be ready for ruling.
+**[[creature]] × 3.** The numbers the DM will roll this slice, with the owner link.
 ```
 
 ```col-md
-## Secondary objective
+flexGrow=1
+===
+## Stage
 
-Omit this heading when there is no second question.
+| Place | Distance | Cover |
+| ----- | -------- | ----- |
+|       |          |       |
 ```
 ````
 
-## Zones
-
-| Place | Distance from the party | Cover | Narration |
-| --- | --- | --- | --- |
-| | | | _…_ |
-
-## Be ready for
+## Checks
 
 | Intent | Approach | DC | Success | Partial | Failure |
-| --- | --- | --- | --- | --- | --- |
-| | **Ability (Skill)** | `DC n` | | | |
+| ------ | -------- | -- | ------- | ------- | ------- |
+|        | **Ability (Skill)** | `DC 13` |  |  |  |
 
-````col
-```col-md
-flexGrow=3
-===
-## Threat clock
+## Pressure
 
 | Tick | What happens | Narration |
-| --- | --- | --- |
-| 1 | | _…_ |
-```
+| ---- | ------------ | --------- |
+| 1    |              | _…_       |
 
-```col-md
-**Cover.** Omit Threat clock when there is no fuse.
-
-**Scene dials.**
-```
-````
-
-## How the Scene Resolves
-
-Next state. Hand to the next beat on this session’s skeleton.
-
-> [!narration] How the Scene Resolves
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: situated moment. -->
-> Write the changed situation in "you" address, present tense, at least one non-sight sense. Show what is now true.
+## Outcomes
 
 | If | Next | Narration |
-| --- | --- | --- |
-| | [[Session-N-BB-Label]] | _…_ |
-
-## Roster
-
-<!-- Omit when no combat-mode sheet will be rolled. -->
-
-## Backup
-
-[[owner]] · [[next beat]]
-
-## Battlemap
-
-<!-- Omit when no battlemap art exists. -->
+| -- | ---- | --------- |
+|    | [[Session-N-BB-label]] | _…_ |

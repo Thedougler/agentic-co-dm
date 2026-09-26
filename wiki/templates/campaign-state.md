@@ -9,39 +9,24 @@ type: lore
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-kind: fact
-truth: established
+kind: campaign-state
 summary: ""
 ---
-<!--
-Copy-start scaffold for layout kind Campaign State. Campaign type stays lore.
-Table aim lives on the campaign hub only. Other Campaign State pages omit Table aim.
-Omit empty sections. Pass is the jobs in wiki/AGENTS.md, not heading-order match.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Table Aim lives on the campaign hub page only. Delete unused sections and these comments. -->
 
 # {{title}}
 
-## Table aim
+## Table Aim
 
-On the campaign hub, record who is at the table and the current campaign intent:
+- **Players.** Who is at the table.
+- **Intent.** What the campaign is for right now.
 
-players:
+## Live State
 
-intent:
+<!-- Clocks, threads, and faction moves that are true now, each with its next development if nobody intervenes. -->
 
-Omit this section on every Campaign State page that is not the hub.
-
-## Live state
-
-Clocks, threads, and faction moves that are true now. Record the next development if nobody intervenes.
+- **Thread.** Where it stands → what happens next if nobody acts.
 
 ## Index
 
-Wikilinks to the pages a sitting must open for this campaign's current state.
-
-<!--
-Design basis: one status page tracks what persists between sessions instead of
-reconstructing from scattered notes. Aim stays on the hub. Clocks and faction
-moves continue off-screen. Techniques used as examples: campaign status document,
-faction turns, spiral campaign truths. Not a second copy of table analysis.
--->
+- [[page]] — why a sitting opens it.

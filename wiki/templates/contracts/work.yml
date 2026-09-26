@@ -1,10 +1,10 @@
-version: 1
+version: 3
 template: work.md
 type: work
 sections: []
 repeatable: []
 callouts:
-  allowed: [narration, mechanic, secret]
+  allowed: [narration]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, reveal]
-  optional: [grounded_in, summary]
+  optional: [kind, grounded_in, invention, summary]

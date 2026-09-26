@@ -11,19 +11,20 @@ grounded_in: []
 invention: true
 summary: ""
 ---
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Delete these comments. -->
 
 # {{title}}
 
-Address this page to the DM. State what is proposed and why it matters at the table.
-
-## Grounding
-
-List the wiki pages and/or D&D 5e rules that ground this invention. Use complete sentences.
+State what is proposed and why it matters at the table, addressed to the DM.
 
 ## Proposal
 
-Write the Work in complete grammatical sentences. Mark what is invented. Cite `[[pages]]` for existing wiki facts.
+<!-- The Work in complete sentences. Mark what is invented; link [[pages]] for existing facts. -->
+
+## Grounding
+
+- [[page]] or rule — what it establishes.
 
 ## Decision
 
-The DM accepts, edits, or rejects.
+<!-- The DM accepts, edits, or rejects. -->

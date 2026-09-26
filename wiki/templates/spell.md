@@ -11,33 +11,46 @@ campaign: "{{campaign}}"
 visibility: dm
 level: ""
 school: ""
-ritual: false
 summary: ""
 ---
-<!-- Copy-start scaffold. Look of the casting; classification; runnable 2024 effect; Discovery when placement needed; Lore when history needed. Omit unused sections. Pass is those jobs. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections and these comments. Add `ritual: true` only for rituals. -->
 
 # {{title}}
 
-> [!narration] Narration
-> Write a high-quality cold portrait of the casting in flowing prose for as long as the spell requires. Cover what a bystander sees, hears, and feels. No secrets, DCs, or unearned names.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-Level, School (Ritual when it is a ritual)
+*Level 3 Evocation (Ritual)*
 
-**Casting Time.**
-**Range.**
-**Components.**
-**Duration.**
+One sentence: what this spell does and why it matters in this campaign.
 
-Write the runnable 2024 effect: saves, damage, conditions. Scaling when it scales. One short block.
+- **Taught by.** [[npc]], [[item]], or [[place]] where the party can learn it, and the price.
+```
 
-## Rulings
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look of the casting: what a bystander sees, hears, and feels. -->
+```
+````
 
-The tricks players will try, each with its answer; how a target counters it; how a named enemy uses it.
+## Effect
 
-## Discovery
+**Casting Time.** Action
+**Range.** 60 feet
+**Components.** V, S, M (a pinch of salt)
+**Duration.** Instantaneous
 
-Where the party can learn it (a named teacher, book, scroll, patron, or site), the price of access, the clue that points there, and who notices when it is cast.
+<!-- The runnable 2024 effect: saves, damage, conditions, and scaling. One short block. -->
 
-## Lore
+## At the Table
 
-The tradition that casts it and the history that changes a present choice. Omit when unused.
+<!-- The tricks players will try, each with its ruling; how a target counters it; how an enemy uses it; who notices when it is cast. -->
+
+## History
+
+<!-- The tradition that casts it, when that history changes a present choice. -->

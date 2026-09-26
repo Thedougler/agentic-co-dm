@@ -1,4 +1,4 @@
-version: 1
+version: 3
 template: session-prep.md
 type: session-prep
 sections: []
@@ -7,4 +7,4 @@ callouts:
   allowed: [narration]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, reveal]
-  optional: [campaign, visibility, kind, session, summary]
+  optional: [campaign, visibility, kind, session, status, summary]

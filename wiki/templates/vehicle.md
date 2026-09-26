@@ -10,81 +10,65 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
 kind: vessel
-region: ""
-berth: ""
 summary: ""
 ---
-<!-- Copy-start scaffold. Jobs: Look; sheet; components; crew stations; handling; combat.
-     After combat, shared omit-if-empty owner sections in this order (Red Lady / Dead Lady practice):
-     At a Glance → Connections → At the Table → Provenance → Art.
-     Pass is vehicle jobs in wiki/AGENTS.md Layout. Omit unused sections.
-
-     Every sheet and component line carries a number; where canon is silent, the peer craft's figure is canon under the rule in `llm-wiki`.
-     Numbers one-home: hull AC/HP (and other sheet numbers) live under Components/Sheet headings, not an unheaded blob.
-     Handling vs At the Table: one play loop — do not duplicate the same run advice in both.
-     Provenance is ownership/history facts only — forbid meta ingest Provenance on DM pages.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, bullets, and these comments. Numbers live in Statblock only. Add `region:` or `berth:` frontmatter only when they name a page. -->
 
 # {{title}}
 
-> [!narration] Narration
-> <!-- Load `.agents/skills/theatre-of-the-mind` → mode: standalone cold portrait → subject: object. -->
-> Write a standalone cold portrait in flowing prose — as long as the craft requires to be pictured at its berth or underway. Cover silhouette, scale, material, and usable features a character can interact with. The portrait paints a drawable picture a player can recognize and distinguish. No secrets, DCs, or unearned names.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-## Sheet
+One sentence: what this craft is for at the table.
 
-- **Size.**
-- **Type.**
-- **Speed.**
-- **Crew (min).**
-- **Passengers.**
-- **Cargo.**
+- **Captain.** [[npc]]
+- **Berth.** [[place]]
+- **Errand.** What it is doing this week, and its next stop with a time.
+- **Meeting the party.** The crew's standing orders.
+```
 
-## Components
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look at its berth or underway: silhouette, scale, material, and features a character can use. -->
+```
+````
 
-- **Hull.** AC, HP, damage threshold.
-- **Helm.**
-- **Movement.**
-- **Weapons.** Armed craft only. Omit when unarmed.
+## Statblock
+
+- **Size.** Gargantuan (80 ft. by 20 ft.)
+- **Speed.** 4 mph sailing
+- **Crew.** 20 minimum; 12 passengers; 100 tons cargo
+- **Hull.** AC 15, HP 300, damage threshold 15
+- **Helm.** AC 18, HP 50
+- **Weapons.** Each weapon with its attack, range, damage, and crew.
 
 ## Decks
 
-Areas at body scale (size in feet), one usable feature each, and who stands watch. Omit for a craft too small to walk.
+<!-- For a craft large enough to walk: each area at body scale in feet, one usable feature, and who stands watch there. -->
 
-## Crew stations
+## Crew
 
-Named stations, who mans them now against the minimum, and compact numbers for every fighter aboard.
-
-## Handling
-
-Conditions, maneuvers, and limits that change a choice. Do not restate this loop under At the Table.
-
-## Combat
-
-Initiative, ramming, boarding, and destruction when the craft fights. Omit when it does not enter play as a fighting craft.
-
-## At a Glance
-
-Name the captain, the errand this week, standing orders on meeting the party, and the next step with a time.
-
-## Hidden Cargo & History
-
-Concealed cargo, true flag, sealed compartments, or who is hunting this craft. Omit when unused.
-
-## Connections
-
-- [[page]]. State what this tie does at the table.
-
-<!-- Omit Connections when unused. -->
+<!-- Stations and who holds them now, with compact numbers for every fighter aboard or a link to their statblock. -->
 
 ## At the Table
 
-Explain how to run the craft tonight. Cover approach, berth, pursuit, or boarding choice. Omit when unused. Do not duplicate Handling.
+<!-- How to run the craft tonight: handling, maneuvers, chase, ramming, boarding, and what happens when it is destroyed. -->
 
-## Provenance
+## Secrets
 
-State the chassis source, rename history, and contested ownership. Facts only. Do not include ingest or process meta. Omit when unused.
+<!-- Hidden cargo, a false flag, sealed compartments, or who hunts this craft, each with how the party can learn it. -->
+
+## Connections
+
+- [[page]] — what this tie does at the table.
+
+## History
+
+<!-- Where the craft came from, its former names, and any contested ownership. -->
 
 ## Art
-
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|overview|reference|handout|teaser. Flat folder; omit Art when unused. -->

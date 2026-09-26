@@ -8,15 +8,11 @@ updated: YYYY-MM-DD
 type: npc
 reveal: unrevealed
 campaign: "{{campaign}}"
-status: alive
-role: ""
-location: unknown
-faction: none
 visibility: dm
+status: alive
 summary: ""
 ---
-<!-- Copy-start scaffold. This template, `wiki/templates/contracts/npc.yml`, `npc-design`, `theatre-of-the-mind`, and `wiki-lint` form one output contract. Keep headings, frontmatter, callouts, layout markers, and DM-facing jobs synchronized before repairing pages. Who/want, look, first minutes and posture change, Connections (named ties). Single H1 only (`# {{title}}`). Combat carries every fighter in reach. Omit unused identity keys (aliases unused; location unknown; faction none). Pass is person jobs in wiki/AGENTS.md Layout.
-     DM-visible labels: Title Case / spaced words only — never snake_case (`Primary goal`, not `primary_goal`). YAML keys may stay snake_case. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. Add `location:` and `faction:` frontmatter only when they name a page. -->
 
 # {{title}}
 
@@ -26,53 +22,50 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   |  |
-| ---------- |  |
-| **Nature** |  |
-| **Home**   |  |
-| **Wants**  |  |
+One sentence: what this person is about at the table.
 
-> **DM thesis:** One sentence: what this person is about, not what they do.
+- **Role.** What they do and where the party meets them.
+- **Wants.** The concrete thing they are after now.
+- **Home.** [[place]]
+- **Allegiance.** [[faction]]
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] {{title}}
-> <!-- `.agents/skills/npc-design` step 6 builds the packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: person. -->
-> Write a third-person, present-tense portrait of the person as they always are. Cover build and age, two or three face details a player could repeat next session, clothing and gear, one sound or smell with its source, what their hands do at rest, and a plain tell for every secret they keep. Every later scene reuses these face words. No secrets, DCs, unearned names, or DM thesis.
+> <!-- Player-safe portrait: build and age, two or three face details the players can repeat, clothing and gear, one sound or smell, what their hands do at rest, a visible tell for each secret. -->
 ```
 ````
 
-## Running {{title}}
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+<!-- How a meeting opens, what opens them up or shuts them down, what they will and will not share. Voice: word choice and one verbal habit. Sample lines the DM can speak. -->
 
-How the meeting starts. One sample line the DM can speak.
-```
+- **First meeting.** How it starts.
+- **Opens up when.** What earns trust or talk.
+- **Shuts down when.** What closes the door.
+- **Voice.** Word choice, rhythm, one habit.
+- **Lines.** "The ask." · "The refusal." · "Under pressure."
 
-```col-md
-flexGrow=1
-===
-### When posture changes
+## Statblock
 
-What opens them up, what closes the door, what takes priority, and what they will and will not share.
-```
-````
+<!-- Only when they can fight: a named standard statblock with its numbers (AC, HP, Speed, attacks or save DCs), or a full custom statblock. Include guards or beasts they would set on the party. -->
 
-### Voice
+## Secrets
 
-Word choice, rhythm, one verbal habit, and the subject they avoid. Three sample lines: the ask, the refusal, and the line under pressure.
+<!-- What they hide, and how the party can learn each secret. -->
 
 ## Connections
 
-| Connection | Meaning |
-| ---------- | ------- |
-| [[page]]   | What this tie does at the table. |
+- [[page]] — what this tie does at the table.
 
-<!-- Shared heading Connections (not Relationships). Omit when unused. -->
-<!-- Combat: numbers for every fighter in the party's reach (the NPC, guards, beasts they would loose): a named standard statblock with its compact numbers (AC, HP, Speed, attacks or save DCs), or custom forms from monster-design with their encounter rule. -->
+## History
+
+<!-- Past events that still change how they act now. -->
+
+## Log
+
+- **[[Session]]** — what changed for them.
+
+## Art

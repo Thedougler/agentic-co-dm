@@ -1,4 +1,4 @@
-version: 1
+version: 3
 template: session.md
 type: session
 sections: []
@@ -7,4 +7,4 @@ callouts:
   allowed: [narration]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, reveal]
-  optional: [campaign, visibility, session, summary]
+  optional: [campaign, visibility, summary]

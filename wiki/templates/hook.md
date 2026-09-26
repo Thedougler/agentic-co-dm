@@ -13,97 +13,71 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold for `hook-beats`. Jobs: Abstract; Open on; Situation; Run the hook; Character pull; Decision handles; Leads; Checks; Action setup; Handoff. Omit a section only when this Hook never spends it. Bar: docs/agents/table-ready.md. File Session-<n>-<BB>-<Label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
 
 # {{title}}
 
-**Card.** Hook card from `hook-beats` — and the Cliffhanger or Development card when it plays one as the Hook.
-**Key.** Action (next beat: Development) or cerebral (next beat: Cliffhanger).
-**Thread.** The live thread this Hook opens or carries in.
-**Climax question.** The question this Hook opens that the Climax will answer.
-**Something happens.** State what changes right now, with names.
-**Why it matters.** State the immediate threat, opportunity, or personal stake.
-**Decision.** State the important choice now in front of the party.
-**Hook lands when.** State the observable commitment that ends the beat — the party gives chase, takes the job, flees the city.
-**Memorable element.** The image, feature, or person the table will remember from this opening.
+## At a Glance
 
-> [!narration] Open on
-> <!-- Load `.agents/skills/theatre-of-the-mind` → references/scenes.md → Hook opening. -->
-> Spoken text the DM reads aloud, written to that recipe.
+One sentence: what happens right now and the choice it puts in front of the party.
+
+- **Entry state.** Where everyone is and what they carry in from last session.
+- **Stakes.** The threat, opportunity, or personal stake.
+- **Lands when.** The commitment that ends the beat: they give chase, take the job, flee.
+- **Next.** [[Session-{{session}}-BB-label]]
+
+> [!narration] Opening
+> <!-- Spoken opening from theatre-of-the-mind (Hook opening recipe): what the characters perceive, ending on a moment they can act on. -->
 
 ````col
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
 ## Situation
 
-- **Entry state.** Positions in feet, conditions, HP or resources that matter, who holds what — carried from last session's ending or the plan's opening situation.
-- **Where.** [[Place]] — only the features that matter right now.
-- **Who.** [[NPC]] / [[Creature]] — what each wants and what each does next if nobody interferes.
-- **What changed.** The event that makes this moment different from normal.
-- **Pressure.** What worsens, escapes, arrives, or is lost, and when.
-- **Open question.** What is genuinely undecided and belongs to the players.
+- **Where.** [[place]] — the features that matter right now.
+- **What changed.** The event that makes this moment different.
+- **Pressure.** What worsens, escapes, or arrives, and when.
 ```
 
 ```col-md
-## Run the hook
+flexGrow=1
+===
+## Cast
 
-| If the party…        | World response                                                                          |
-| -------------------- | --------------------------------------------------------------------------------------- |
-| **Engages**          | What the actors do in answer to each likely method — named, concrete.                   |
-| **Hesitates**        | The pressure advances once, concretely: what happens and what the party now sees.       |
-| **Rejects / leaves** | What the world does without them, and the other door that stays open.                 |
-| **Anything else**    | The facts on this page that stay true whatever they do, and what each actor wants.     |
+- **[[npc]].** What they want and what they do next if nobody interferes.
+- **[[creature]] × 3.** AC, HP, Speed, the attack or save DC the DM rolls; opening move → adapts → break point → exit.
 ```
 ````
 
-## Character pull
+## Handles
 
-<!-- One row per PC present. Each PC has a tie, an obvious first job, or a stake. -->
-
-| PC     | Why this matters to them now, or their obvious first job                  |
-| ------ | ------------------------------------------------------------------------- |
-| [[PC]] | Personal goal, relationship, obligation, fear, curiosity, or opportunity. |
-
-## Decision handles
-
-- **[Player verb].** What they can affect now, its upside, and its cost.
-- **[Player verb].** A different approach, allegiance, cost, or risk.
-- **Environment / leverage.** A person, object, route, hazard, or position they can exploit, with its ruling.
-
-## Leads
-
-<!-- Keep when play depends on reaching a conclusion or finding the next node. Three independent leads. The Hook itself lands without a roll. -->
-
-| Lead  | How it enters play                                       | Points to |
-| ----- | -------------------------------------------------------- | --------- |
-| **1** | Visible evidence, testimony, behavior, or consequence.   | [[Node]]  |
-| **2** | Independent route to the same conclusion or destination. | [[Node]]  |
-| **3** | Independent backup route.                                | [[Node]]  |
+| If the party… | The world responds |
+| ------------- | ------------------ |
+| **Engages**   |                    |
+| **Hesitates** | The pressure advances one visible step. |
+| **Walks away** | What happens without them, and the door that stays open. |
 
 ## Checks
 
-<!-- Uncertain outcomes with meaningful consequences only (`dnd5e-mechanics`). Failure changes position, cost, time, danger, or information, and the Hook still lands. -->
+| Intent | Approach | DC | Success | Failure |
+| ------ | -------- | -- | ------- | ------- |
+|        | **Wisdom (Perception)** | `DC 13` |  |  |
 
-| Trigger | Ability (Skill) | DC | Success | Failure / cost |
-| ------- | --------------- | -- | ------- | -------------- |
-| …       | …               | …  | …       | …              |
+## Spotlight
 
-## Action setup
+- **[[pc]].** Why this matters to them now, or their obvious first job.
 
-<!-- Keep when the Hook opens with physical conflict or peril. -->
+## Clues
 
-- **Objective.** Each side's goal besides defeating the other.
-- **Opposition.** [[Creature]] × # / [[NPC]] — AC, HP, Speed, the attack or save DC the DM rolls, the trait that changes tactics.
-- **Tactics.** Opening move → how they adapt when countered → break point → exit.
-- **Terrain.** One or two features with the ruling each produces.
-- **Escalation.** What enters, breaks, moves, catches fire, or escapes, and on which round or trigger.
-- **End condition.** What ends the action besides total elimination.
+<!-- Each lead with how it enters play and where it points. Give any conclusion the session needs three independent leads. -->
 
-## Handoff
+- **Lead.** How it enters play → [[page]]
 
-**Next.** [[Session-{{session}}-BB-Label]] — **Development / Cliffhanger**
+## Outcomes
 
-**Carry forward.** One line per state variable the next beat inherits, with its possible values — who holds the object, who is hurt, where the opposition went, what the party committed to.
+| Outcome | What changes | Next |
+| ------- | ------------ | ---- |
+|         |              | [[Session-{{session}}-BB-label]] |
 
-**Continuity change.** State what is now true because of the party's choice.
+**Carry forward.** Each state the next beat inherits: who holds what, who is hurt, where the opposition went, what the party committed to.

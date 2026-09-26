@@ -13,197 +13,74 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Copy-start scaffold for `session-beats`. Jobs: Compass; Beat Map; Cards, threads, and tiers; Floating Beats; Climax candidates; Branches & Skips; Threads; Critical Routes; Pressure (opposition agenda); PC Touchpoints; Floating Clues; Session Toolkit. Omit a section only when this session never spends it. Typed beats carry Scene ends when, Zones, and Be ready for. Bar: docs/agents/table-ready.md. File Session-<n>-00-<Title>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this session spends it; delete unused sections, rows, and these comments. Chart rules and audit checks: session-beats. File as Session-<n>-00-<title>.md. -->
 
 # {{title}}
 
-## Session Compass
+## At a Glance
 
-**Opening situation.** One sentence describing what is already happening when play begins.
+One sentence: the dramatic spine every beat approaches from a different angle.
 
-**Immediate pressure.** State what needs attention now.
-
-**Session question.** State what consequential question play might answer.
-
-**If the party does nothing.** State what the situation naturally becomes.
-
-**Dramatic spine.** One sentence every beat approaches from a different angle.
-
-**Now:** [[Session-{{session}}-01-Label]]
-
-**On deck:** [[Session-{{session}}-02-Label]] · [[Session-{{session}}-03-Label]]
+- **Opening situation.** What is already happening when play begins.
+- **Session question.** What play will answer tonight.
+- **If the party does nothing.** What the situation becomes.
+- **Now.** [[Session-{{session}}-01-label]] · **On deck.** [[Session-{{session}}-02-label]]
 
 ## Beat Map
 
-<!-- One row per charted beat, in play order. Chart rules, triggers, and recompute: `session-beats`. -->
+|  # | Beat | Form | Card | Thread | Trigger | What changes | Budget |
+| -: | ---- | ---- | ---- | ------ | ------- | ------------ | -----: |
+| 01 | [[Session-{{session}}-01-label]] | Hook |  |  | Play begins |  |  |
+| 02 | [[Session-{{session}}-02-label]] | Development |  |  |  |  |  |
+| 03 | [[Session-{{session}}-03-label]] | Cliffhanger (Henchmen) |  |  |  |  |  |
+| 04 | [[Session-{{session}}-04-label]] | Climax (Villain) |  |  |  |  |  |
+| 05 | [[Session-{{session}}-05-label]] | Resolution |  |  | The climax resolves |  |  |
 
-|  # | Beat                               | Form                      | Trigger                                                                             | What changes                                                      | Hand-off / options                                      | Budget |
-| -: | ---------------------------------- | ------------------------- | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- | ------------------------------------------------------- | -----: |
-| 01 | [[Session-{{session}}-01-Label]]   | **Hook**                  | Play begins                                                                         | What immediately becomes true, urgent, or usable?                  | [[Session-{{session}}-02-Label]]                        |        |
-| 02 | [[Session-{{session}}-02-Label]]   | Development / Cliffhanger | What choice, location, discovery, or pressure brings this into play?                | Information, position, stakes, relationship, or resources change. | [[Session-{{session}}-03-Label]]                        |        |
-| 03 | [[Session-{{session}}-03-Label]]   | Cliffhanger / Development |                                                                                     |                                                                   |                                                         |        |
-| 04 | [[Session-{{session}}-04-Label]]   | Development / Cliffhanger |                                                                                     |                                                                   |                                                         |        |
-| 05 | [[Session-{{session}}-05-Label]]   | Cliffhanger / Development |                                                                                     |                                                                   |                                                         |        |
-| 06 | [[Session-{{session}}-06-Label]]   | **Climax**                | What circumstances make the decisive confrontation, choice, or revelation possible? | What major question is decided?                                   | [[Session-{{session}}-07-Label]]                        |        |
-| 07 | [[Session-{{session}}-07-Label]]   | **Resolution**            | The climax resolves                                                                 | Consequences become visible and a new situation exists.           | [[Next Session]] / player-selected direction            |        |
-
-### Cards, threads, and tiers
-
-|  # | Card | Thread | Tier (Cliffhangers, Climax) | Memorable element |
-| -: | ---- | ------ | --------------------------- | ----------------- |
-| 01 |      |        |                             |                   |
-| 02 |      |        |                             |                   |
-| 03 |      |        |                             |                   |
-| 04 |      |        |                             |                   |
-| 05 |      |        |                             |                   |
-| 06 |      |        | Villain                     |                   |
-| 07 |      |        |                             |                   |
-
-### Floating Beats
-
-<!-- Beats that can move to wherever they become useful. Do not assign them a mandatory place in the sequence. -->
-
-| Beat                               | Bring it in when…                    | Job                                                    | Drop it when…                        |
-| ---------------------------------- | ------------------------------------ | ------------------------------------------------------ | ------------------------------------ |
-| [[Session-{{session}}-BX-Label]]   | The fiction produces this condition. | Reveal / pressure / complicate / reconnect / escalate. | Its purpose is already accomplished. |
-| [[Session-{{session}}-BX-Label]]   |                                      |                                                        |                                      |
-
-### Climax candidates
-
-<!-- Keep when more than one confrontation could be earned. Call the Climax when the party commits. -->
-
-| Candidate | Player choices that would make it inevitable | Shape | Threads harvested |
-| --------- | -------------------------------------------- | ----- | ----------------- |
-|           |                                              |       |                   |
-|           |                                              |       |                   |
-
-### Branches & Skips
-
-<!-- Record meaningful routes, not every conceivable contingency. -->
-
-| From     | If the party…                             | Then surface…       | Consequence                                        |
-| -------- | ----------------------------------------- | ------------------- | -------------------------------------------------- |
-| [[Beat]] | Makes a consequential choice              | [[Beat]] / [[Beat]] | What changes because they chose this route?        |
-| [[Beat]] | Bypasses or defeats the expected obstacle | [[Beat]]            | Preserve their success. State what becomes possible now. |
+<!-- Optional under Beat Map, each as a `###` table only when it exists: Floating Beats (bring in when… / drop when…), Climax Candidates, Branches (if the party… then surface…), Critical Routes (a conclusion and its three independent routes). -->
 
 ## Threads
 
-| Thread     | Source (PC goal / faction clock / mystery / relationship / resource) | Planted | Tested | Harvested |
-| ---------- | --------------------------------------------------------------------- | ------- | ------ | --------- |
-| [[Thread]] |                                                                       | [[Beat]] | [[Beat]] | [[Beat]] |
-| [[Thread]] |                                                                       |         |        |           |
-| [[Thread]] |                                                                       |         |        |           |
-
-## Critical Routes
-
-<!-- Use only for information, access, or conclusions the session genuinely cannot progress without. Give important chokepoints multiple independent paths. -->
-
-| They need to reach / learn…            | Route or clue 1          | Route or clue 2          | Route or clue 3          |
-| -------------------------------------- | ------------------------ | ------------------------ | ------------------------ |
-| [[Beat, place, person, or conclusion]] | [[Beat]]: clue or route | [[Beat]]: clue or route | [[Beat]]: clue or route |
+| Thread | Source | Planted | Tested | Harvested |
+| ------ | ------ | ------- | ------ | --------- |
+| [[page]] | PC goal, mystery, relationship, or resource | [[beat]] | [[beat]] | [[beat]] |
 
 ````col
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
 ## Pressure
 
-<!-- The opposition agenda: what happens without the PCs. Advance it when time passes, the party stalls, or their actions accelerate events. Cliffhanger opposition comes from this agenda or the environment. -->
+**[[npc]] or [[faction]]** — the goal this session and the means.
 
-**Opposition.** [[NPC / Faction]] — goal this session, means, and the resource it spends.
-
-| Step | Situation without intervention                     | Surface through |
-| ---: | -------------------------------------------------- | --------------- |
-|    0 | Current state.                                     | [[Beat]]        |
-|    1 | The opposition or danger advances toward its goal. | [[Beat]]        |
-|    2 | Stakes become visible or personal.                 | [[Beat]]        |
-|    3 | A costly change occurs.                            | [[Beat]]        |
-|    4 | The situation reaches the point of no return.      | [[Climax Beat]] |
+| Step | Without the party | Seen in |
+| ---: | ----------------- | ------- |
+| 1    |                   | [[beat]] |
+| 2    |                   | [[beat]] |
+| 3    |                   | [[beat]] |
 ```
 
 ```col-md
-## PC Touchpoints
+flexGrow=1
+===
+## Spotlight
 
-| Character | What matters to them **this session**                            | Spotlight beat(s)        |
-| --------- | ---------------------------------------------------------------- | ------------------------ |
-| [[PC]]    | Desire, relationship, fear, question, or unresolved consequence. | [[Beat]]                 |
-| [[PC]]    |                                                                  |                          |
-| [[PC]]    |                                                                  |                          |
-| [[PC]]    |                                                                  |                          |
+| PC | What matters to them this session | Beat |
+| -- | --------------------------------- | ---- |
+| [[pc]] |                               | [[beat]] |
 ```
 ````
 
-## Floating Clues
+## Clues
 
-<!-- About ten true, concrete facts, unattached until play tells you where they belong. Each can surface through more than one interaction. -->
+<!-- About ten true, concrete facts, unattached until play shows where they belong. -->
 
-- [ ] A short, usable fact the characters can discover.
-- [ ] A fact that changes how the party understands the situation.
-- [ ] A fact about an NPC, faction, threat, or location.
-- [ ] A clue pointing toward an important option.
-- [ ] A fact that foreshadows later trouble.
+- [ ] A short usable fact the characters can discover.
 
-## Session Toolkit
+## Toolkit
 
-| Need                           | Ready reference            |
-| ------------------------------ | -------------------------- |
-| **Places**                     | [[Place]] · [[Place]]      |
-| **People**                     | [[NPC]] · [[NPC]]          |
-| **Opposition**                 | [[Creature]] · [[Faction]] |
-| **Rewards / objects**          | [[Item]]                   |
-| **Rules / special procedures** | [[Reference]]              |
-| **Spare names**                | Four or five names for improvised extras, fitting the setting. |
+- **Places.** [[place]] · [[place]]
+- **People.** [[npc]] · [[npc]]
+- **Opposition.** [[creature]] · [[faction]]
+- **Spare names.** Four or five names that fit the setting.
 
-### If play stalls
-
-<!-- Each line is a concrete move from this session's own pieces, named: who acts, what the characters see. -->
-
-**Advance pressure.** The next opposition or clock move, and what the characters see of it.
-
-**Surface information.** The unused Floating Clue and the thing already in play that reveals it.
-
-**Offer a consequence.** The stated cost of waiting, and who announces it.
-
-**Use a floating Beat.** The Floating Beat that fits wherever the party is.
-
-**Parachute.** One self-contained situation that fits anywhere tonight, with its actor and what it offers.
-
-## Live Notes
-
-### State Changes
-
--
-
-### Questions Created
-
--
-
-### Beats
-
-- [ ] [[Session-{{session}}-01-Label]]
-- [ ] [[Session-{{session}}-02-Label]]
-- [ ] [[Session-{{session}}-03-Label]]
-- [ ] [[Session-{{session}}-04-Label]]
-- [ ] [[Session-{{session}}-05-Label]]
-- [ ] [[Session-{{session}}-06-Label]]
-- [ ] [[Session-{{session}}-07-Label]]
-
-### Prep Audit
-
-<!-- One checked line per `session-beats` beat-order audit check, each naming the beats that satisfy it. -->
-
-- [x] **Check.** The beats that satisfy it, by number.
-
-## After the Session
-
-### Carry Forward
-
-**Actual ending.** State what situation exists now?
-
-**Unresolved pressure.** State what continues moving?
-
-**Unused but still relevant.** [[Beat]] · clue · NPC · consequence
-
-**Players intend to.** State their next move in their words when possible.
-
-**Next opening.** [[Next Session]]. State one sentence suggesting where play can resume.
+**If play stalls.** The next pressure move and what the characters see; an unused clue and what reveals it; a floating beat that fits anywhere.

@@ -9,37 +9,23 @@ type: lore
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-kind: fact
-truth: established
+kind: rules
 summary: ""
 ---
-<!--
-Copy-start scaffold for layout kind Rules. Campaign type stays lore.
-One note is one table ruling. Omit empty sections. Pass is the jobs in
-wiki/AGENTS.md, not heading-order match.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page is one table ruling. Summarize the procedure in your own words and link owner pages. Delete these comments. -->
 
 # {{title}}
 
 ## At a Glance
 
-**Core truth.** State the ruling in one or two sentences.
+State the ruling in one or two sentences.
 
-**Why it matters.** What choice, risk, or procedure this changes at the table.
+- **When it applies.** The situation that calls for it.
 
-## Current Truth
+## Ruling
 
-Write the ruling that is true now in complete sentences. Link owner pages. Summarize the procedure. Do not paste proprietary rules text.
+<!-- The procedure step by step: who rolls what, the DC, and what each result does. -->
 
 ## At the Table
 
-* **Players notice.** Describe the observable sign that this ruling is in play.
-* **This enables.** Describe a choice or procedure that becomes available.
-* **This warns of.** Describe a cost or limit the ruling lets the table anticipate.
-
-<!--
-Design basis: a rule note is living canon for one table procedure, not an
-encyclopedia. Keep current truth short. Record what the table can notice, do,
-or avoid. Omit history unless it changes the ruling. Techniques used as
-examples: campaign status as a living layer, portable secrets, omit-when-unused.
--->
+<!-- What players see when the ruling is in play, the choice it opens, and the cost or limit it warns of. -->

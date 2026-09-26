@@ -1,10 +1,10 @@
-version: 1
+version: 3
 template: place.md
 type: place
 sections: []
 repeatable: []
 callouts:
-  allowed: [narration, mechanic, secret]
+  allowed: [narration]
 frontmatter:
   required: [title, category, tags, sources, created, updated, type, reveal]
-  optional: [campaign, visibility, kind, region, summary, aliases]
+  optional: [campaign, visibility, kind, region, status, population, government, ruler, controlling_faction, summary, aliases]

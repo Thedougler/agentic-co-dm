@@ -130,6 +130,16 @@ def _finding(rule_id: str, page: Path, root: Path, evidence: str, line: int,
                    evaluator="symbolic")
 
 
+def _contract_data(path: Path) -> dict[str, Any]:
+    if not path.is_file():
+        return {}
+    try:
+        value = yaml.safe_load(path.read_text(encoding="utf-8"))
+    except yaml.YAMLError:
+        return {}
+    return value if isinstance(value, dict) else {}
+
+
 def compare_page(page_file: str | Path, template_file: str | Path, *, root: str | Path | None = None) -> list[Finding]:
     """Compare a page with a derived profile; all repairs are structural-only."""
     page = Path(page_file)
@@ -145,14 +155,11 @@ def compare_page(page_file: str | Path, template_file: str | Path, *, root: str 
         ]
     page_headings = [match.group(2).strip() for match in _HEADING.finditer(page_text)
                      if len(match.group(1)) >= 2]
-    expected = [item["text"] for item in profile["heading_tree"] if item["level"] >= 2 and not item["optional"]]
+    contract_path = template.parent / "contracts" / f"{template.stem}.yml"
+    contract_data = _contract_data(contract_path)
     findings: list[Finding] = []
-    for title in expected:
-        if title not in page_headings:
-            findings.append(_finding("TMPL001", page, root_path, f"Missing required section: '## {title}'", 1,
-                                     f"Insert '## {title}' section stub after the title heading"))
     template_headings = [item["text"] for item in profile["heading_tree"] if item["level"] >= 2]
-    extras = [title for title in page_headings if title not in template_headings]
+    extras = [] if contract_data.get("open") else [title for title in page_headings if title not in template_headings]
     for title in extras:
         line = next((index for index, text in enumerate(page_text.splitlines(), 1)
                      if re.match(r"^#{2,6}\s+" + re.escape(title) + r"\s*$", text)), 1)
@@ -161,26 +168,6 @@ def compare_page(page_file: str | Path, template_file: str | Path, *, root: str 
     expected_present = [title for title in template_headings if title in present]
     if present != expected_present and len(present) > 1:
         findings.append(_finding("TMPL003", page, root_path, "Section order differs from selected template", 1))
-    metadata = _frontmatter(page_text)
-    missing = [key for key, shape in profile["frontmatter_shape"].items()
-               if shape["required"] and key not in metadata]
-    if missing:
-        findings.append(_finding("TMPL004", page, root_path,
-                                 "Missing template frontmatter keys: " + ", ".join(missing), 1))
-    template_markers = {marker for marker in profile["formatting_markers"] if marker in _LAYOUT_MARKERS}
-    page_markers = _marker_values(page_text) & _LAYOUT_MARKERS
-    if template_markers and not (template_markers & page_markers):
-        findings.append(_finding("TMPL005", page, root_path, "Missing template formatting marker", 1))
-    for marker in sorted(page_markers - template_markers):
-        line = next((index for index, text in enumerate(page_text.splitlines(), 1)
-                     if re.search(rf"\b{re.escape(marker)}\b", text)), 1)
-        findings.append(_finding("TMPL005", page, root_path, f"Extra formatting marker: {marker}", line,
-                                 "Remove the column layout wrapper; keep a linear Statblock"))
-    expected_callouts = {item["type"] for item in profile["callout_forms"]}
-    actual_callouts = {match.group(1).strip().lower() for match in _CALLOUT.finditer(page_text)}
-    for callout in sorted(expected_callouts - actual_callouts):
-        findings.append(_finding("TMPL005", page, root_path, f"Missing callout form: {callout}", 1))
-    contract_path = template.parent / "contracts" / f"{template.stem}.yml"
     if contract_path.is_file():
         from tools.wiki_ops.template_contracts import check_layout_conformance, load_contract
 

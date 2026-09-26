@@ -9,62 +9,75 @@ type: creature
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-region: ""
-role: ""
-cr: ""
 summary: ""
 ---
-<!-- Copy-start scaffold. Look, sheet, visual reference, biology, behavior, tactics, art. Linear: H1, [!narration], Statblock with at most one overview image immediately before the fence, then the rest. Move remaining images to Art subsections. Pass is creature jobs in wiki/AGENTS.md Layout. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, Connections, or Art only when you have facts for them. Delete unused sections and these comments. -->
 
 # {{title}}
 
-> [!narration] Narration
-> <!-- `.agents/skills/monster-design` step 7 builds the narration packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: creature. -->
-> Write a third-person, present-tense portrait of the creature as it always is. Lead with its most unusual feature fused with its size and shape, then cover body parts and material, one sound or smell with its source, what it does at rest, and a plain tell on the body for every signature ability. A player can picture and pick out this creature after one reading. No attacks, tactics, numbers, truths, or unearned names.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+One sentence: what this creature is for at the table.
+
+- **Habitat.** [[place]] or terrain where it lives.
+- **Treasure.** What it carries or guards.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look: size and shape, its strangest feature, one sound or smell, what it does at rest, a visible tell for each signature ability. -->
+```
+````
 
 ## Statblock
-<!-- Add at most one overview image immediately before the statblock fence when available. Move remaining images to Art subsections at the end. -->
-<!-- ![[attachments/{subject-slug}-overview.ext|{{title}} overview]] -->
+
+<!-- At most one overview image directly above the fence: ![[{subject-slug}-overview.png|{{title}}]] -->
 ```statblock
 layout: Basic 5e Layout
 name: "{{title}}"
 size: Medium
 type: monstrosity
 alignment: unaligned
-ac: "15"
-hp: 1
-hit_dice: "1d8"
+ac: 13
+hp: 11
+hit_dice: "2d8 + 2"
 speed: "30 ft."
 stats: [10, 10, 10, 10, 10, 10]
 senses: "passive Perception 10"
 languages: "—"
-cr: 0
+cr: "1/4"
+traits:
+  - name: "Trait Name"
+    desc: "What it does, in 2024 rules language."
+actions:
+  - name: "Bite"
+    desc: "*Melee Attack Roll:* +2, reach 5 ft. *Hit:* 4 (1d6 + 1) Piercing damage."
 ```
-
-## Visual reference
-Write the supplied reference-sheet facts in complete sentences when a sheet exists. Omit this heading when none exists.
-
-## Biology
-Anatomy and how the body works at the table. Omit this heading when none exists.
-
-## Behavior
-
-- **Habitat.** Where it lives and which places it avoids.
-- **Behavior.** Observable habits a DM can play.
-- **Diet.** What it eats and what feeding leaves behind.
-- **Social Structure.** Solitary, pack, or otherwise.
 
 ## Tactics
 
-- **Signs.** What trackers find.
-- **Instincts.** What starts and ends a hunt.
-- **Tactics.** Opening, follow-up, preferred conditions.
-- **Weaknesses.** Terrain, formations, or limits that shut it down.
-- **Aftermath.** What the scene looks like after.
+<!-- How it fights: opening move, how it adapts when countered, when it flees or surrenders. -->
+
+## Behavior
+
+<!-- What it does outside a fight: habits, diet, pack or lair, signs trackers find. -->
+
+## Secrets
+
+<!-- Hidden truths about it, each with how the party can learn it. -->
+
+## Connections
+
+- [[page]] — what this tie does at the table.
 
 ## Art
-<!-- Omit Art when unused. Art embeds must be nested under role subsections. -->
+
 ### Token
-<!-- Omit Token when unused. -->
-<!-- ![[attachments/{subject-slug}-token.ext|{{title}} token]] -->
-<!-- Art embeds: wiki/attachments/{subject-slug}-{role}.ext — roles: banner|portrait|token|battlemap|reference|handout|teaser. Flat folder. -->
+
+![[{subject-slug}-token.png|{{title}} token]]

@@ -9,78 +9,55 @@ type: item
 reveal: unrevealed
 campaign: "{{campaign}}"
 visibility: dm
-region: ""
 kind: consumable
 rarity: ""
-attunement: false
-owner: ""
 summary: ""
 ---
-<!-- Copy-start scaffold for type: item.
-     kind: consumable | magic | plot | durable
-     (Flora hazards use wiki/templates/hazard.md — type: item, kind: flora hazard.)
-
-     Priority: Item Name > Item Text > Everything else.
-     The item text block is why this page exists. Write it first, write it complete.
-
-     CONSUMABLE (default short path): Portrait; classification; item text; stop.
-     MAGIC | PLOT | DURABLE: Portrait; classification; item text; then omit-if-empty
-     sections below in order: At the Table, Hidden Properties, Connections, Provenance, Art.
-
-     Distill once — each fact appears once on the page. The item text block owns
-     mechanics; other sections own context. Never restate the item text elsewhere.
-     No agent-process asides (skill names, remorph notes, "item-prep") in wiki voice.
-     DM-visible table labels: Title Case / spaced words only — never snake_case.
--->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. A consumable is At a Glance, narration, and Properties; stop there. Magic, plot, and durable items add other sections only when they have facts. Each fact appears once: Properties owns the numbers. Delete unused sections and these comments.
+kind: consumable | magic | plot | durable. Add `owner:` or `attunement: true` only when they apply. -->
 
 # {{title}}
 
-<!-- Add the primary item image directly under the title when available; omit when unused. -->
-<!-- ![[attachments/{subject-slug}-overview.ext|{{title}} overview]] -->
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-> [!narration] Narration
-> <!-- `.agents/skills/item-design` step 7 builds the packet → `.agents/skills/theatre-of-the-mind` → mode: portrait → recipe: item. -->
-> Keep the finished portrait directly in this callout; do not add a separate linked narration-source note.
-> Write a third-person, present-tense portrait of the object as it always is. Cover the plain noun, size against a hand or body, material, wear and repairs, visible marks, one sense beyond sight (weight, temperature, sound, smell), and a plain tell for every hidden property. A player can recognise and pick out this object on sight. No effects, DCs, rarity, curse, or unearned names.
+*Wondrous item, rare (requires attunement)*
 
-<!-- Classification line: kind + rarity (+ attunement when required). Examples:
-     Consumable, Rare
-     *Wondrous item, rare (requires attunement).*
-     Plot item (no mechanical effect until activated).
-     Durable gear, common.
--->
-Consumable, Rare
+One sentence: what this item changes at the table.
 
-<!-- === ITEM TEXT ===
-     The runnable mechanic. This block is the reason the page exists.
-     Write in 2024 rules language. State trigger, action cost, frequency, range,
-     targets, duration, limits, and edge cases. Owner of numbers: this page.
+- **Held by.** [[npc]] or [[place]]
+- **Wanted by.** [[npc]] or [[faction]], and why.
+```
 
-     Simple items (consumables, mundane): 1–3 sentences.
-     Complex items (magic weapons, relics, attunement): bold-label properties,
-     each with its mechanical scope. Include limitations and edge cases inline.
-     See .agents/skills/item-design/references/rules-2024.md for 2024 wording.
--->
-Write the runnable item text here.
+```col-md
+flexGrow=1
+===
+> [!narration] {{title}}
+> <!-- Player-safe look: plain noun, size against a hand, material, wear, marks, one sense beyond sight, a visible tell for each hidden property. -->
+```
+````
 
-<!-- === STOP HERE for kind: consumable === -->
+## Properties
 
-<!-- === MAGIC | PLOT | DURABLE only — omit any empty section === -->
+<!-- The runnable rules text in 2024 language: trigger, action cost, uses and recovery, range, targets, saves, damage, duration, limits. Simple items take one to three sentences; complex items use one bold-labelled paragraph per property. -->
 
 ## At the Table
 
-How the item shows itself (seen, held, active, and its tell when hidden), who wants it, and how it changes a choice tonight that the item text alone does not make obvious. A sentient item's voice and sample lines go here. Only playable consequences — no design diary, RAW commentary, or restating the item text. Omit when the item text already covers table use.
+<!-- How the item shows up in play and which choice it changes tonight. A sentient item's voice and sample lines go here. -->
 
-## Hidden Properties
+## Secrets
 
-Describe any hidden property the party does not yet know. Examples include a curse, an attunement benefit, concealed history, or a conditional trigger. Omit when unused.
+<!-- Curses, hidden properties, or concealed history the party has not learned, each with how they can learn it. -->
 
 ## Connections
 
-- [[page]]. State what this tie does at the table.
+- [[page]] — what this tie does at the table.
 
-<!-- Omit Connections when unused. -->
+## History
 
-## Provenance
+<!-- Who made it, who held it, and any contested claim to it. -->
 
-Where it came from, contested ownership chains, and open questions. State facts only. No ingest meta or process notes. Omit when unused.
+## Art

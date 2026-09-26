@@ -654,7 +654,7 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
                 if DC_IN_TEXT.search(m.group(0)):
                     found["dc_in_narration"].append({
                         "page": rel, "line": _line_at(text, m.start()), **human,
-                        "reason": "DC or difficulty inside a [!narration] callout; move it to [!mechanic] or [!secret]-",
+                        "reason": "DC or difficulty inside a [!narration] callout; move it to the Checks or At the Table prose",
                     })
             for m in IMAGE_WIKI.finditer(visible):
                 target = m.group(1).strip()
