@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Tokage-Island.md"]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,52 +25,35 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Secretive leader of the Ryu no Kage |
-| **Home** | [[Zennitana]] |
-| **Wants** | Serve the Omusubi Family without exposing her identity. |
+Madam Hino leads the [[ryu-no-kage|Ryu no Kage]] from [[zennitana|Zennitana]], and nobody outside a very short list knows what she looks like.
 
-> **DM thesis:** Madam Hino turns uncertainty about her body and movements into the Ryu no Kage's protection.
-
+- **Role.** Secretive leader of the Ryu no Kage, the hidden arm of the [[omusubi-family|Omusubi Family]].
+- **Nature.** Never seen clearly: black cloth from head to toe, an Oni mask, or a disguised ninja standing in for her.
+- **Wants.** Serve the Omusubi Family without exposing her identity.
+- **Home.** [[Zennitana]].
+- **Allegiance.** The Omusubi Family, by way of its shadow organization.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Madam Hino
-> Madam Hino appears covered from head to toe in black cloth and wears an Oni mask. When she does not appear, a ninja disguised as her can take her place at a meeting.
+> Madam Hino appears covered from head to toe in black cloth and wears an Oni mask. When she does not appear, a ninja disguised as her takes her place at a meeting, and nothing about either figure tells a visitor which one is present.
 ```
 ````
 
-## Running Madam Hino
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-The party first encounters a disguised agent or a fully covered figure rather than a publicly recognizable woman.
-
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Hino's posture changes when an outsider threatens the Omusubi Family, the Ryu no Kage, or the secret of her appearance.
-```
-````
-### Voice
-
-Madam Hino speaks in brief, formal commands and avoids discussing her true appearance. Her ask is, “Serve the Omusubi Family, and do not ask who stands before you.” Her refusal is, “That name is not yours to speak.” Under pressure, she says, “Leave now, and the Ryu no Kage will remember that you were given the chance to leave.”
+- **First meeting.** The party meets a disguised agent, or a fully covered figure, and never a publicly recognisable woman. Treat both as Hino until proven otherwise.
+- **Opens up when.** The visitor serves the Omusubi Family and does not ask who stands in front of them.
+- **Shuts down when.** An outsider threatens the family, the Ryu no Kage, or the secret of her appearance.
+- **Priority.** The secret of her appearance, then the family, then the clan's business.
+- **Shares.** Orders and terms, in brief formal commands. Her refusal is, "That name is not yours to speak." [[biggu-baito|Biggu Baito]] and [[nona-black-jaw|Nona Black-Jaw]] are named as the only people said to know what she looks like.
+- **Voice.** Brief, formal commands, and no discussion of her true appearance. Her ask is, "Serve the Omusubi Family, and do not ask who stands before you." Under pressure: "Leave now, and the Ryu no Kage will remember that you were given the chance to leave."
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[ryu-no-kage\|Ryu no Kage]] | Madam Hino leads the shadow organization. |
-| [[biggu-baito\|Biggu Baito]] | Head general and one of the only people said to know her appearance. |
-| [[nona-black-jaw\|Nona Black-Jaw]] | One of the only people said to know Hino's appearance; sworn to secrecy. |
+- [[ryu-no-kage]] — the shadow organization Hino leads.
+- [[biggu-baito]] — her head general and one of the few said to know her appearance.
+- [[nona-black-jaw]] — the other named keeper of the secret.
+- [[zennitana]] — the capital she works from.
