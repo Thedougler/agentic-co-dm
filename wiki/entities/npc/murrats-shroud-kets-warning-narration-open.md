@@ -7,7 +7,7 @@ tags: ["shattered-sea", "npc"]
 sources:
   - "campaign-os:murrats-shroud-kets-warning-narration-open.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -31,43 +31,34 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Contact |
-| ---------- | ------- |
-| **Nature** | Moucheron warning beat with [[Ket]] identifiable among the swarm |
-| **Home**   | [[murrat]] |
-| **Wants**  | Not established; the source records only that one Moucheron shouts. |
+This page is a narration handle, not a person: the moment the [[murrat|Murrat]] shroud peels off the island and [[ket|Ket]] becomes identifiable in the swarm.
 
-> **DM thesis:** Use this handle to interrupt the cloud's approach with a recognizable voice before the scene resolves.
+- **Role.** Player-facing opening for the Moucheron cloud's approach to the [[uncertainty]].
+- **Nature.** A warning beat with a familiar voice in it, not a separately established speaker.
+- **Wants.** Not established; the source records only that one Moucheron shouts.
+- **Home.** [[murrat]].
+- **Allegiance.** None established.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Murrats Shroud Kets Warning Narration Open
-> *Shapes peel from the dark mass over the island and close on the [[uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one word…*
+> *Shapes peel from the dark mass over the island and close on the [[uncertainty]] fast, low over the water. Pigeon-sized, barbed, moving in a loose pack with their stingers forward. One pulls ahead of the rest and hangs fifty feet off the port rail, wings loud enough to hear over the drone behind it. The mouth opens. Common words, shouted thin against the wind. The voice belongs to [[ket|Ket]]. His wings keep the same rhythm as the others. He hovers there, stinger angled away from the ship, and shouts one w…
 ```
 ````
 
-## Running Murrats Shroud Kets Warning Narration Open
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+- **First meeting.** Read this when the Moucheron cloud closes on the [[uncertainty]] and [[ket|Ket]] becomes identifiable.
+- **Opens up when.** Not applicable; the beat is a warning, not a conversation.
+- **Shuts down when.** Stop at the warning's open word and let play determine what the party hears or does next. The source does not establish the rest of the speech.
+- **Priority.** Not applicable.
+- **Shares.** The approach and the shout. Everything Ket actually is lives on [[ket]].
+- **Voice.** This is a narration handle, not a separate speaker. The voice is identified only as a thin shout over the wind, so stop before supplying words the source leaves open.
 
-Read this when the Moucheron cloud closes on the [[uncertainty]] and [[Ket]] becomes identifiable.
-```
+## Connections
 
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Stop at the warning's open word and let play determine what the party hears or does next. The source does not establish the rest of the speech.
-```
-````
-### Voice
-
-This is a narration handle, not a separate speaker. Ket's voice is identified only as a thin shout over the wind; stop before supplying words that the source leaves open.
-
+- [[ket]] — the Moucheron whose voice is recognisable in the swarm.
+- [[murrat]] — the island the shroud comes off.
+- [[uncertainty]] — the ship the cloud closes on.
