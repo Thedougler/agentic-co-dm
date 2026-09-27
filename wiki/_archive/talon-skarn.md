@@ -99,21 +99,6 @@ reactions:
     desc: "When a creature Skarn can see hits him with an attack, Skarn adds 4 to his AC against that attack, potentially causing it to miss. If the attack misses, Skarn can fly up to 10 feet without provoking opportunity attacks."
 ```
 
-Skarn only enters a fight once the crew actually travels into or reaches [[midchain|the Midchain]], never before, wherever they currently stand.
-
-He's built at the effective-class-level tier, not a full CR-built monster, still the apprentice proving himself. He tests an opponent with a strike he can walk away from. He never commits to one he can't. The scene plays out as that testing strike, not a fight to the finish.
-
-Calibrated against the crew's real level-5 numbers: [[crissdalynn-khinriss|Crissdalynn]], [[delmar-fisk|Delmar]], [[jean-claude-tabarnack|Jean-Claude]], and [[perrin-black-jaw|Perrin]]. His +10 to hit lands often, not automatically.
-
-Neither his Skysplitter Daggers (10 average) nor his Stoop (21 average) drop any one of them in a single hit. AC 19 with 97 HP lets him absorb one or two real exchanges without folding.
-
-The Downdraft Ward reads as him shrugging off blows clean, until its third use runs out and the limit finally shows. The grab save on Stoop sits high enough to favor him without guaranteeing the theft.
-
-The Windshear Retreat carries him out of the fight every round, grab or no grab. He never lingers long enough to monologue. The one line on his way out is the entire performance.
-
-> **Personality.** Hotshot ace-pilot swagger, always keeping score, never explaining a move twice. If you didn't catch it the first time, that was the point. He cleans a blade with a whetstone between exchanges, never once during them. His tell: the swagger drops and he goes silent the instant a hit lands.
-> **Motivation.** Right now, this encounter: test what the crew and [[fate-spinner|the Fate Spinner]] can do, and take the item if the opening is there. Then he leaves before it costs him anything.
-> **Escape Condition.** After one or two exchanges, or the moment Stoop resolves, grab or no grab. Windshear Retreat carries him out either way.
 
 ## Relationships
 
