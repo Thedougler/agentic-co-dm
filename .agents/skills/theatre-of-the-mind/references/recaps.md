@@ -106,11 +106,17 @@ Felt, and Size items of the `SKILL.md` final check. Echo, Show, Clean lines,
 Hands off, Hard lines, and Speakable (apart from its paragraph count) still
 apply.
 
-- [ ] Does every moment on the list appear as its concrete action, with more
-      words than the routine events around it?
+- [ ] Did the step 7 checker run with `--source` on the old recap and every
+      play-evidence page, and is every copied phrase it reported rewritten?
+      (Its word-count and paragraph leads do not apply to a recap.)
+- [ ] Quote where each moment on the list lands: does every one appear as
+      its concrete action, with more words than the routine events around
+      it?
 - [ ] Could each player retell their character's best moment from it?
 - [ ] Does every comic moment have its setup before its turn?
 - [ ] Is each beat linked to the last by cause (but, therefore), with no
       run of short standalone sentences?
 - [ ] Is every rule, roll, and spell name turned into what it looked like?
-- [ ] Does it end inside the cliffhanger, or on where the party stands?
+- [ ] Quote the last sentence: is it inside the cliffhanger (the blade
+      mid-reach, the water rising), or on where the party stands, and never
+      a line about the session or the night ending?
