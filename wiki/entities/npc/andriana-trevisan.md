@@ -7,7 +7,7 @@ tags: [shattered-sea, npc]
 sources:
   - "campaign-os:andriana-trevisan.md"
 created: 2026-09-13
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -31,13 +31,13 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Contact |
-| ---------- | ------- |
-| **Nature** | Minor route-information contact |
-| **Home**   | Unknown |
-| **Wants**  | Not established; she withholds the Warren's contact and escort. |
+Andriana Trevisan can point a party at the [[warren|Warren]] and stops there: a direction, and no door.
 
-> **DM thesis:** Andriana can narrow the search for the Warren without opening the door to it. Her refusal is the limit, not a missing line to improvise past.
+- **Role.** Minor route-information contact; where the party meets her is not established.
+- **Nature.** Someone who knows the ground and keeps the people on it out of other people's errands.
+- **Wants.** Not established; what she withholds is the Warren's contact and an escort.
+- **Home.** Unknown.
+- **Allegiance.** None established.
 ```
 
 ```col-md
@@ -48,20 +48,15 @@ flexGrow=1
 ```
 ````
 
-## Running Andriana Trevisan
+## At the Table
 
-### First meeting
-
-Andriana is a minor contact who knows roughly where the [[warren]] is. She can provide that broad location, but she will not name a Warren contact or lead anyone there.
-
-### When posture changes
-
-No posture change is established. If pressed, preserve the same boundary: Andriana withholds the contact and escort rather than supplying a new route or an invented explanation.
-
-## Voice
-
-Andriana's voice is not established in the source. Her actionable boundary is clear: she gives the Warren's rough direction and refuses names or an escort. No verbal habit or sample line is recorded; do not invent one.
+- **First meeting.** A minor contact who knows roughly where the [[warren|Warren]] is. She provides the broad location in a sentence and nothing past it.
+- **Opens up when.** Not established beyond the broad location.
+- **Shuts down when.** Pressed for a name or an escort. She keeps the same boundary rather than supplying a new route or an invented explanation.
+- **Priority.** The people who live in the Warren, ahead of helping a stranger find them.
+- **Shares.** The rough direction. She does not name a Warren contact at any price, and she does not lead anyone there.
+- **Voice.** Not established in the source. Her actionable boundary is the whole of what is recorded — the direction, then the refusal — and there is no verbal habit or sample line; do not invent one.
 
 ## Connections
 
-- [[warren]]: Andriana knows its rough location but withholds a contact or escort.
+- [[warren]] — Andriana knows roughly where it is, and withholds the contact and the escort.
