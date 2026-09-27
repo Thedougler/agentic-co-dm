@@ -191,7 +191,9 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 **Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent or craft cuts. Filename kebab / Aruhe / `00` remorph runs unattended. Dedup merge without a user ask still confirms.
 
-Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
+Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
+
+**Dirty tree:** `git add -A` and commit. A revert is cheaper than agents negotiating staged vs unstaged files.
 
 If a job will repeat and no existing command does it, create an agent-shaped helper without being asked; load `cli-for-agents` first (constitution VI). Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
