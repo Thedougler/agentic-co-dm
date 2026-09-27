@@ -256,14 +256,7 @@ def render_health(result: Mapping[str, Any]) -> str:
         if action:
             lines.append(f"  {action}")
         return "\n".join(lines)
-    lint = _value(result, "lint", {})
-    if not isinstance(lint, Mapping):
-        lint = {}
-    total = _value(lint, "finding_total", _value(result, "finding_total", 0))
-    if not total:
-        return "clean"
-    pages = _value(lint, "affected_pages", _value(result, "affected_pages", 0))
-    return f"{total} findings on {pages} pages"
+    return "clean"
 
 
 

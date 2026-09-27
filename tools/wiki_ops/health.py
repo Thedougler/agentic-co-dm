@@ -547,36 +547,21 @@ def build_focus(
 def _compact_lint(lint: Any) -> dict[str, Any]:
     if not isinstance(lint, Mapping):
         return {}
-    raw_counts = lint.get("counts")
-    counts = raw_counts if isinstance(raw_counts, Mapping) else {}
-    finding_total = _int(lint.get("finding_total")) or sum(_int(value) for value in counts.values())
-    raw_affected = lint.get("affected_pages")
-    if isinstance(raw_affected, (int, float)) and not isinstance(raw_affected, bool):
-        affected_pages = max(0, int(raw_affected))
-    else:
-        backlog = lint.get("backlog")
-        affected_pages = (
-            len(backlog)
-            if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray))
-            else 0
-        )
     nxt = lint.get("next") if isinstance(lint.get("next"), Mapping) else None
-    if nxt and is_moc_page(str(nxt.get("path") or "")):
+    path = str(nxt.get("path") or "") if nxt else ""
+    if path and is_moc_page(path):
+        path = ""
         nxt = None
-    result = {
-        "status": lint.get("status") or ("findings" if finding_total else "clean"),
-        "counts": {str(rule): _int(count) for rule, count in counts.items() if _int(count) > 0},
-        "hard_fail": bool(lint.get("hard_fail")),
-        "finding_total": finding_total,
-        "affected_pages": affected_pages,
-        "next_page": nxt.get("path") if nxt else None,
-        "next": _clone(nxt) if nxt else None,
-        "files_checked": _int(lint.get("files_checked")),
-    }
-    cache = lint.get("cache")
-    if isinstance(cache, Mapping):
-        result["cache"] = _clone(cache)
-    return result
+    next_obj = None
+    if path:
+        next_obj = {"path": path}
+        action = nxt.get("action") if nxt else None
+        if isinstance(action, str) and action.strip():
+            next_obj["action"] = action.strip()
+    status = lint.get("status")
+    if status not in {"findings", "clean", "error"}:
+        status = "findings" if next_obj else "clean"
+    return {"status": status, "next_page": path or None, "next": next_obj}
 
 
 
@@ -874,18 +859,9 @@ def build_health_snapshot(
     ][:5]
     snapshot: dict[str, Any] = {
         "status": _status(status, compact_lint),
-        "pages": _int(pages),
-        "bytes": _int(bytes),
-        "tokens": None if tokens is None else _int(tokens),
         "lint": compact_lint,
-        "waste": _layer_object(waste, ("hits", "hard_hits")),
-        "staging": _layer_object(staging, ("leftover_count",)),
-        "remorph": _layer_object(remorph, ("plan_count", "skip_count", "error_count")),
-        "policy": _layer_object(policy, ("ok", "conflict_count")),
-        "trends": _clone(trends) if isinstance(trends, Mapping) else build_trends(None, None, None),
         "focus": focus_rows,
         "next": _clone(compact_lint.get("next")),
-
     }
     if isinstance(context, Mapping):
         snapshot["context"] = _clone(context)
