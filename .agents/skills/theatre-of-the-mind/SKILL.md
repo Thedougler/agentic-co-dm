@@ -559,8 +559,11 @@ run the list again.
       shows is a verdict), and is every person called what the most recent
       narration the players heard calls them (the beat's Previously, the
       last spoken block), with a name only where that narration uses it?
-- [ ] **Layers.** (Situated) Is every entry handle in the block, and every
-      other handle out of it and in the handle note?
+- [ ] **Layers.** (Situated) List the entry handles beside the first-minute
+      action each one serves (flee toward it, grab it, talk to it). A handle
+      with no such action is attention: move it to the handle note. Do the
+      entry handles fit inside the Compress count, and is every other handle
+      in the handle note rather than the block?
 - [ ] **Withheld.** Quote every bag, pouch, box, or other closed thing the
       block mentions: does the block say only its outside? Is every
       creature and person in the block shown as they
