@@ -23,5 +23,5 @@ summary: Folder index of Session 11.
 - [[journal/sessions/shattered-sea/11/session-11-05-otter-hole|Session 11 — Rescue at the otter hole]]
 - [[journal/sessions/shattered-sea/11/Session-11-06-Farthest-Camp|Session 11 — The farthest camp]]
 - [[journal/sessions/shattered-sea/11/Session-11-09-Theft-on-the-Watch|Session 11 — Theft on the watch]]
-- [[journal/sessions/shattered-sea/11/session-11-03-wolfrabbits|Session 11 — Torn Crossing hunt]]
+- [[journal/sessions/shattered-sea/11/Session-11-03-Wolfrabbits|Session 11 — Torn Crossing hunt]]
 - [[journal/sessions/shattered-sea/11/Session-11-04-What-They-Ate|Session 11 — What they ate]]
