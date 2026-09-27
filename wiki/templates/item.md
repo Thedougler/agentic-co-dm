@@ -52,7 +52,7 @@ flexGrow=1
 <!-- How the item shows up in play and which choice it changes tonight. A sentient item's voice and sample lines go here. -->
 
 > [!narration] In use
-> <!-- Optional: what the wielder and onlookers perceive when a property activates, from theatre-of-the-mind (Item in scene recipe). One block per property with a visible effect, titled with the property's name when there are several. -->
+> <!-- Optional: a property activating as a declared action, from theatre-of-the-mind (Declared action recipe): "you" names the wielder's hand, then what the wielder and onlookers perceive, ending on the effect in place before any roll. One block per property with a visible effect, titled with the property's name when there are several. -->
 
 ## Secrets
 

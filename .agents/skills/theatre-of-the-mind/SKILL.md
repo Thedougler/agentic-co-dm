@@ -3,29 +3,38 @@ name: theatre-of-the-mind
 description: >-
   Write all player-facing prose for TTRPG play: read-aloud and boxed text,
   `[!narration]` blocks, scene openings, NPC first looks and dialogue, creature
-  reveals, combat outcomes, recaps, handouts, visions, transitions, and wiki
-  `[!narration]` portraits of creatures, places, items, hazards, factions,
-  vehicles, and techniques. Use whenever text crosses the DM/player boundary,
-  including run-guide pass 3 and every narration slot on a session beat. Produces
-  vivid, speakable, second-person narration the table can picture and act on at
-  once. Reader `players` → theatre of the mind. Does not own DM procedure,
-  hidden truth, or agent instruction.
+  reveals, declared actions such as a spell being cast, combat outcomes, recaps,
+  handouts, visions, transitions, and wiki `[!narration]` portraits of
+  creatures, places, items, hazards, factions, vehicles, spells, and techniques.
+  Use whenever text crosses the DM/player boundary, including run-guide pass 3
+  and every narration slot on a session beat. Produces vivid, speakable
+  narration the table can picture and act on at once. Reader `players` →
+  theatre of the mind. Does not own DM procedure, hidden truth, or agent
+  instruction.
 ---
 
 # Theatre of the mind
 
-You write the words the DM says out loud. Narration is **compressed world
-simulation**: the fewest spoken words that give the whole table one shared
-picture of where they are, what stands out, what they can use, and what is
-pressing on them, and that make the place feel physical and lived in. It
-worked when the players start proposing actions without asking the DM to
-explain the scene again. It sounds like a confident DM talking, not a novel
-and not a list.
+You write the words the DM says out loud. Every block you file is a **box**:
+the filed first look, spoken once, that gives the whole table one shared
+picture and one place to act. Narration is **compressed world simulation**:
+the fewest spoken words that say where they are, what stands out, what they
+can use, and what is pressing on them, and that make the place feel physical
+and lived in. It worked when the players start proposing actions without
+asking the DM to explain the scene again. It sounds like a confident DM
+talking, not a novel and not a list.
 
 You are telling a **story**, not filing a **witness statement**. A witness
 lists height, clothes, and what the hands were doing, in the words they were
 given. A storyteller knows every fact, then chooses the few that make the
 listener see and feel the scene, and says them in words made for this moment.
+
+A box holds only what is fixed at prep time. Everything that depends on play
+not yet played (how the party enters, what a creature does when it sees them,
+the check that tells appearance from truth) is the **withheld layer**, filed
+beside the box in the DM's prose. When you narrate, nobody is roleplaying: a
+box earns its slot only where the table needs a shared first look, and every
+optional slot without that need is deleted.
 
 DM-facing text on the same page belongs to `writing-for-humans`; what a beat
 contains belongs to its type skill (`docs/agents/table-ready.md` § Who owns
@@ -34,33 +43,39 @@ what). File what constitution X makes canon. Follow `docs/agents/work.md`.
 ## Boundary contract
 
 - **Input:** A named narration target (a session-beat slot, a situated moment,
-  or a wiki `[!narration]` portrait), its owner page or beat page, the current
-  table state when there is one, and its related images, whether embedded or
-  found by search.
+  a declared action, or a wiki `[!narration]` portrait), its owner page or beat
+  page, the current table state when there is one, and its related images,
+  whether embedded or found by search.
 - **Work:** Write only the player-facing prose for that target, following the
   steps below. Named people, places, and things come from existing owner pages
   (AGENTS.md **HARD: entity-before-spoken**).
 - **Done:** Every assigned narration slot passes the final check, and the
-  return carries the art note and, for a situated block, the handle note.
-- **Capability Handoff:** Return the filled prose to the parent beat, owner
-  page, or run-guide pass. A missing owner page or missing fact the prose
-  depends on returns as a named gap (owner, path, what is missing).
+  return carries the notes step 7 lists.
+- **Capability Handoff:** Return the filled prose and its notes to the parent
+  beat, owner page, or run-guide pass. A missing owner page or missing fact the
+  prose depends on returns as a named gap (owner, path, what is missing).
 
 ## Steps
 
-### 1. Pick the mode
+### 1. Pick the mode and the form
 
 **Situated.** A moment in play, where the party is somewhere and something is
 happening: session-beat slots, scene openings, NPC meetings, combat,
-transitions. Second person ("you"), present tense. Read
+transitions. Second person ("you"), present tense. "You" places the party,
+lets the world act on them, or gives what their senses plainly take in. Read
 [references/scenes.md](references/scenes.md): its handle, layer, and spine
 sections, then the recipe for your surface.
 
-**Portrait.** A wiki owner page's `[!narration]` with no party and no current
-scene: a person, creature, place, item, hazard, faction, vehicle, or technique
-described as it always is. Third person, present tense. Read
-[references/portraits.md](references/portraits.md) and use the recipe for your
-subject.
+**Declared action.** The situated case where the prep already treats an action
+as chosen: a spell's `Casting` slot, an item's `In use` slot. "You" may name
+the body doing the declared thing (the hand that flicks the holy water); the
+world and the magic do the rest. Use the Declared action recipe in scenes.md.
+
+**Portrait.** A wiki owner page's header `[!narration]` with no party and no
+current scene: a person, creature, place, item, hazard, faction, vehicle,
+spell, or technique described as it always is. Third person, present tense.
+Read [references/portraits.md](references/portraits.md) and use the recipe for
+your subject.
 
 **Recap.** A retelling of play that already happened: a session recap page,
 or the recap read aloud as a session starts. Past tense, the party as "you".
@@ -70,8 +85,27 @@ items below.
 
 No party, encounter, or table state supplied for an owner page → portrait.
 That covers the owner page's header look only; its moment slots (`In action`,
-`First meeting`, `Underway`, `On the road`, and the like) are situated
-moments with the party as "you".
+`First meeting`, `In use`, `Casting`, `Underway`, `On the road`, and the like)
+are situated or declared-action moments with the party as "you".
+
+**Then pick the form** for a situated first look (an `Opening`, an `{Area}`
+slot, a zone the party enters):
+
+- **Box**, one paragraph, when the first look is fixed at prep time: the
+  entrance, the light, and who is present are already settled, or the world
+  acts first (an ambush that has sprung, a messenger at the door).
+- **Immediate-fact bullets** when the entrance, the light, or who is present
+  can still change with the approach the party picks. Each bullet is one
+  complete sentence of something the characters perceive the moment they
+  enter or get near, in `_italic_`, which the DM reads or paraphrases. Danger
+  first, then the rest of the entry layer in its order. What a closer look,
+  an obstacle, or a check uncovers is the withheld layer, in plain DM prose
+  outside the callout.
+
+Every rule below applies to both forms; a bullet is a box of one sentence.
+
+Done when the mode and the form are named, and the form matches whether the
+first look is fixed at prep time.
 
 ### 2. Gather the facts
 
@@ -110,31 +144,57 @@ hides.
 Done when every subject in the block has a search note: the images opened,
 with the facts each added, or "none found" with what you searched.
 
-### 4. Keep only what they perceive
+### 4. Split the box from the withheld layer
 
-Cross off anything the characters cannot perceive or know: secrets, hidden
-causes, mechanics, DCs, the future, and anything painted into the art that
-the characters cannot see from where they stand. For a handled object, a
-creature with special abilities, a hidden threat, or an uncertain fact, read
-[references/boundary.md](references/boundary.md) first.
+Move to the withheld layer anything the characters cannot perceive or know
+from where they stand, and anything that depends on how play arrives:
 
-Done when every fact left has a source and a way the characters perceive it.
+- secrets, hidden causes, true names, mechanics, DCs, the future, and anything
+  painted into the art that the characters cannot see from where they stand;
+- the contents of anything closed, and the check that would tell an
+  appearance from the truth behind it (the box states the fact as the
+  characters have it);
+- each creature's and person's **response** to the party: to being seen, to a
+  quiet entry, to being scouted, to a greeting. The box holds them as they are
+  at arrival; the response is a later beat, unless the prep fixes that the
+  world acts first;
+- other entrances and approaches, and what each changes.
 
-### 5. Choose the anchor
+A landmark's past the characters could not know stays in the box only as
+color no play turns on (a crater a falling star gouged out, now a lake). When
+that past is a clue the adventure expects play to find, the box carries only
+what it left that anyone can perceive (a bowl-shaped lake with a perfectly
+still surface).
+
+For a handled object, a creature with special abilities, a hidden threat, or
+an uncertain fact, read [references/boundary.md](references/boundary.md)
+first.
+
+Done when every fact left in the box has a source and a way the characters
+perceive it, and every withheld fact the DM needs is on the withheld list.
+
+### 5. Name the point and choose the anchor
+
+Name the **point**: one sentence, outside the box, stating the single fact the
+block exists to carry: a threat, a perceivable clue, a tone, or a choice of
+ways. The facts drive the prose, and a box without a point is an inventory.
+The parent's lead sentence usually already states it; when it does not, the
+point returns in the point note.
 
 Pick the **anchor**: the one feature the players will still remember next
 session (the jade mask at chest height, the tavern built around a wrecked
 ship's mast, the log that turns out to be a boat). Everything in the block is
 arranged around it, and the place or person keeps it on every return,
 described fresh. The thing your eye went to in the art is often the anchor;
-when nothing striking survives, take the most unusual true fact.
+when nothing striking survives, take the most unusual true fact. The anchor
+usually carries the point.
 
 For a situated block, sort the handles into **layers**
 ([scenes.md § Layers](references/scenes.md#layers)): the opening carries only
 the **entry** layer, and every other handle goes to the slot that holds it.
 
-Done when the anchor fits in one short phrase and (situated) every handle has
-a layer.
+Done when the point is one sentence, the anchor fits in one short phrase, and
+(situated) every handle has a layer.
 
 ### 6. Draft
 
@@ -144,29 +204,41 @@ arriving, and say what reaches them in the order it would. Start with the
 to whom, set in a kind of place the listener can fill in on their own (a
 caravan stalled at a washed-out ford while its drivers shout at each other,
 a dockside tavern packed wall to wall for a wedding). When danger is present,
-the danger is the schema. When nobody is there, the situation is what the
-place shows was just happening (a camp left mid-meal, a forge still warm, a
-door kicked in from the outside). Terrain alone is a **caption**; the ground,
-light, and air come in later, where the body meets them, and every sentence
-after the schema serves the situation. Build the rest from your keywords and
-the picture in your head, following the recipe and the craft rules. Drafting down the list
-produces an **inventory**: every fact true, nothing felt.
+the danger is the schema, and a monster plainly there is named before any
+choice. When nobody is there, the situation is what the place shows was just
+happening (a camp left mid-meal, a forge still warm, a door kicked in from the
+outside). Terrain alone is a **caption**; the ground, light, and air come in
+later, where the body meets them, and every sentence after the schema serves
+the situation. Build the rest from your keywords and the picture in your
+head, following the recipe and the craft rules, toward the point. Drafting
+down the list produces an **inventory**: every fact true, nothing felt.
+
+Draft inside the Length band, and end on the **reaction point**: the first
+moment a player would act (hard line 3).
 
 Read [references/examples.md](references/examples.md) for the matching example
 and match its **quality and shape**, never its words.
 
-Done when the whole block exists and (situated) every entry handle is in it.
+Done when the whole block exists, it ends on its reaction point, and
+(situated) every entry handle is in it.
 
 ### 7. Revise and return
 
-Run the final check at the bottom of this file as a revision: each item is a
-fresh read of the whole block, and each "no" gets rewritten before the next
-item. An **echo** never looks wrong from inside the draft, so the echo item is
-read against the sources, never from memory. Repeat until every answer is
-yes.
+Read the draft once aloud, as speech, and rewrite every sentence that snags:
+a tongue-twister, alliteration nobody meant, a name that will not say. Then
+apply the Line edits. Then run the final check at the bottom of this file as
+a revision: each item is a fresh read of the whole block, and each "no" gets
+rewritten before the next item. An **echo** never looks wrong from inside the
+draft, so the echo item is read against the sources, never from memory.
+Repeat until every answer is yes.
 
 Return the block with, outside the narration:
 
+- the point note: the point sentence, or which parent sentence states it;
+- the withheld note: every withheld fact from step 4 that the parent has no
+  line for yet, each with the slot it belongs in (`the owlbear charges
+  whoever reaches the fountain first → Actors`), or "all withheld facts are
+  on the page";
 - the art note (vision.md § Report);
 - for a situated block, the handle note: each attention- or interaction-layer
   handle with the slot it belongs in (`lantern hooks under the eaves →
@@ -178,54 +250,71 @@ Done when a full pass of the final check changes nothing.
 
 - **You are there.** Second person, present tense, from where the party
   stands: "You are halfway across the ford when the far bank starts to move."
-  When the beat names who is present, let one detail land where a
-  character's background would catch it (the sailor hears the hull working),
-  stated as what shows.
+  A step into a room, a look upward, or a hand on a door is narrated only once
+  a player has declared it; until then the scene is stated as itself ("the
+  bloated corpse of a headless dragon dominates the clearing", not "as you
+  enter the clearing, you notice a dragon's corpse"). When the beat names who
+  is present, let one detail land where a character's background would catch
+  it (the sailor hears the hull working), stated as what shows.
 - **Compress.** Choose words that imply many others: "a storm-battered
-  fishing village" gives the nets and the gulls without a list. A listener
-  holds only a few new things per breath; more must form one group (crates in
-  lanes, three doors), and the features of one body are separate things,
-  never a group. A person is a first read, one feature, and one behavior; the
-  feature is the one a player would use to describe them to a friend next
-  week ("the old man with fishhooks braided into his beard"), and the rest of
-  their clothes, gear, and coloring waits for a closer look. A creature is
-  its silhouette, how it moves, the one dangerous part about to be used, and
-  its scale, named only when the characters would know it. Someone the
-  table already knows (a returning villain, the enemy from last session's
-  fight) needs no reintroduction: their name, what they are doing now, and
-  the one part about to be used. Companions the
-  players already know are already in their picture: one enters the block
-  only by doing something that matters now, and a line of known faces is a
-  **roll call**. One specific noun beats a stack of
-  adjectives ("a burned-out watchtower"). Every sentence adds clarity,
-  atmosphere, a handle, continuity, or tension, or it goes.
-- **Felt.** Something is already moving. One nonvisual sense does a second
-  job (warm air deeper in the tunnel says something is ahead). Something lands
-  on the characters' bodies (spray on their faces, mud sucking at their
-  boots, heat off the forge on their skin): that is what turns a scene from
-  seen into felt. The world acts; the reaction is the player's.
+  fishing village" gives the nets and the gulls without a list. A box carries
+  three to five new details, almost never more than seven; more must form one
+  group (crates in lanes, three doors), and the features of one body are
+  separate things, never a group. A person is a first read, one feature, and
+  one behavior; the feature is the one a player would use to describe them to
+  a friend next week ("the old man with fishhooks braided into his beard"),
+  and the rest of their clothes, gear, and coloring waits for a closer look.
+  A creature is its silhouette, how it moves, the one dangerous part about to
+  be used, and its scale, named only when the characters would know it.
+  Someone the table already knows (a returning villain, the enemy from last
+  session's fight) needs no reintroduction: their name, what they are doing
+  now, and the one part about to be used. Companions the players already know
+  are already in their picture: one enters the block only by doing something
+  that matters now, and a line of known faces is a **roll call**. One
+  specific noun beats a stack of adjectives ("a burned-out watchtower").
+  Every sentence adds clarity, atmosphere, a handle, continuity, or tension,
+  or it goes.
+- **Felt.** One motion: something is already moving, and each person is
+  already doing the thing their role does (a musician tuning, a duelist
+  sharpening, a mage mid-conjuring), so "the half-orc brushes a lock of
+  charcoal hair behind their ear" beats "the half-orc has charcoal hair". Two
+  senses, one of them nonvisual doing a second job (warm air deeper in the
+  tunnel says something is ahead); touch, taste, balance, and breath count
+  when the scene uses them, and a magical sense is filed as a sensation a
+  listener can picture. Something lands on the characters' bodies (spray on
+  their faces, mud sucking at their boots, heat off the forge on their skin):
+  that is what turns a scene from seen into felt. The world acts; the
+  reaction is the player's.
 - **Show, don't tell.** The schema says plainly what kind of place or
   situation this is, as anyone standing there would (a charcoal burners'
-  camp, a toll gate, a shrine). Everything the players should work out for themselves
-  (who, why, how recently, how dangerous) comes as evidence. Give the
-  evidence and let the players reach the conclusion: "small muddy footprints cross the dust toward the stairs", not
-  the verdict that someone came through. Every judgment word (abandoned,
-  recent, dangerous, strange, unusually, angry, afraid, important) is a
-  conclusion you reached from something you saw, so say the thing you saw:
-  "a bowl of stew skinned over on the table" instead of abandoned, "still
-  turning after you have counted ten" instead of an unusually long spin, "he
-  sets the cup down hard enough to slop it" instead of angry. A person's
-  mood shows in what their body does, a thing's purpose in how it is used,
-  and a page label (the name a DM's notes give a voice, a zone, or a plan)
-  becomes what the characters actually meet. Something the characters
-  cannot see exists only as what they sense of it (a step with no body on
-  it, a chain ticking in empty air), however well you know what it is. Size shows by
-  what it does ("it rolls, and the wave off its back slaps the pilings"), or
-  by a familiar comparison (two wagon lengths). Weather, magic, and a place's
-  history and working life show by their effects (rainwater ankle-deep in the
-  gutter, frost racing across the floorboards, newer walls on older
-  footings). Name the real thing first, then compare it if the comparison
-  makes it easier to picture; one likeness per block is plenty.
+  camp, a toll gate, a shrine). Everything the players should work out for
+  themselves (who, why, how recently, how dangerous) comes as evidence. Give
+  the evidence and let the players reach the conclusion: "small muddy
+  footprints cross the dust toward the stairs", not the verdict that someone
+  came through. Every judgment word (abandoned, recent, dangerous, strange,
+  unusually, angry, afraid, important) is a conclusion you reached from
+  something you saw, so say the thing you saw: "a bowl of stew skinned over
+  on the table" instead of abandoned, "still turning after you have counted
+  ten" instead of an unusually long spin, "he sets the cup down hard enough
+  to slop it" instead of angry. A person's mood shows in what their body
+  does, a thing's purpose in how it is used, and a page label (the name a
+  DM's notes give a voice, a zone, or a plan) becomes what the characters
+  actually meet. Something the characters cannot see exists only as what
+  they sense of it (a step with no body on it, a chain ticking in empty air),
+  however well you know what it is. Size shows by what it does ("it rolls,
+  and the wave off its back slaps the pilings"), or by a familiar comparison
+  (two wagon lengths). Weather, magic, and a place's history and working life
+  show by their effects (rainwater ankle-deep in the gutter, frost racing
+  across the floorboards, newer walls on older footings). Name the real thing
+  first, then compare it if the comparison makes it easier to picture; one
+  likeness per block is plenty.
+- **One impression.** A box may carry one small reading riding a concrete
+  detail, stated as a quality of the scene and never as a character's
+  feeling: a comparison ("teeth far too long"), an obvious inference ("two
+  hip pouches, each no doubt filled with spell components"), or the limit of
+  what the characters can know ("powered by unknown means", "you can't quite
+  place their accent"). A small detail with an emotive action lets the
+  listener fill in the rest, and what they leave unfilled stays unfilled.
 - **Speakable.** Each sentence has one clear subject doing a strong verb and
   fits in one breath, joined with "and", "as", "while", "when", or a period.
   Colors are one plain word or a comparison ("grey", "black as wet bark");
@@ -241,32 +330,40 @@ Done when a full pass of the final check changes nothing.
   downstream, across the pool); compass bearings belong to the map, and
   spoken they make a **legend**. Each route leaves from something the party
   can see and leads toward something they want ("past the well, an alley
-  climbs toward the bell tower"). A scene opening is one paragraph (two when
-  loaded) that moves the eye, with sentences matched to the tempo: longer for
-  calm and wonder, held back for suspense, short and full for action.
+  climbs toward the bell tower"). A box is one paragraph that moves the eye,
+  with sentences matched to the tempo: longer for calm and wonder, held back
+  for suspense, short and full for action. A paragraph break means the box is
+  already too long.
 - **People sound like people.** An NPC who speaks gets a want, a physical
-  cue, and one line that asks, offers, presses, or threatens, then stops so
-  the players can answer.
+  cue, and one line, about six seconds aloud, that asks, offers, presses, or
+  threatens, then stops so the players can answer. What an NPC knows is filed
+  as separate points the DM gives as the players ask, never as one speech,
+  and a villain's plan reaches the party on the way in, never as a speech in
+  the arrival box.
 
 ## Length
 
-Length follows the job, never a count. A scene opening is as short as its
-entry layer allows: short enough that the players still hold its first
-sentence when the DM stops talking, well before it becomes a monologue; the rest of
-the scene lives in its other slots. Go shorter in danger, pursuit, and fast
-cuts; give a little more room to a first arrival at an important place, a
-major reveal, awe, horror, or a climax. A block that only fits by stretching
-sentences past a breath is carrying too much entry; move handles down a
-layer.
+Length follows the job, inside a band. The default box is **50 to 70 words**
+in two to four sentences, one paragraph: short enough that the players still
+hold its first sentence when the DM stops talking. Ordinary flavor (a
+passing street, a changed sky) is one to three sentences. A first arrival at
+an important place, a major reveal, awe, horror, or a climax may run toward
+100 words, still one paragraph. A set piece the whole campaign turns on is
+the one exception past 100: draft it under 250 words, then cut about a
+quarter. Go shorter in danger, pursuit, and fast cuts. A block that only fits
+by stretching sentences past a breath is carrying too much entry; move
+handles down a layer.
 
 | Surface | Size |
 |---|---|
-| Scene opening (`Opening`; older pages title it Open on, Open on Action, or Opening image) | A short paragraph: schema, anchor, entry handles, pressure |
-| Closing image (Resolution) | A short paragraph that lets the change land |
-| Creature entering a scene | A few sentences, ending before contact |
-| NPC first look | A few strokes, plus a line of speech if they talk |
+| Scene opening (`Opening`; older pages title it Open on, Open on Action, or Opening image) | The band: schema, anchor, entry handles, pressure, one paragraph |
+| Immediate-fact bullets | Three to five bullets, one sentence each |
+| Closing image (Resolution) | The band, letting the change land |
+| Creature entering a scene | Two to four sentences, ending before contact |
+| NPC first look | A few strokes, plus one line of speech if they talk |
+| Declared action | One to three sentences |
 | Zone, tick, or outcome cell (`_italic_`) | A line or two; a turn in the fight earns a little more |
-| Outcomes / Exit | A few sentences |
+| Outcomes / Exit / Stinger | Two to four sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |
 | Recap (read aloud, or the session recap page) | recaps.md |
@@ -282,11 +379,17 @@ These hold in every block.
    "the scream makes the lantern glass tremble", not "terror fills you".
 2. **Only what they can perceive.** No secrets, hidden causes, DCs, hit
    points, exact ranges, spell or ability names the characters have not
-   learned, or forecasts ("if you touch it, it will…"). Show the sign; the
-   table finds out the rest by playing.
-3. **Stop before contact.** A first look at a threat ends on the windup: the
-   bowstring drawn, the beam groaning, the wings folding for the dive. No hit
-   lands, no grab completes, no trap springs until a player acts. The block
+   learned, contents of closed things, or forecasts ("if you touch it, it
+   will…"). Show the sign; the table finds out the rest by playing. A
+   landmark's past enters only as color no play turns on (step 4).
+3. **Stop at the reaction point.** The box ends at the first moment a player
+   would act. For a threat that is the windup: the bowstring drawn, the beam
+   groaning, the wings folding for the dive. No hit lands, no grab completes,
+   no trap springs until a player acts. A box holds one event; a chain of
+   events told in one block (vines erupt, the ox panics, the cart careens,
+   the guards draw) is a **freeze-frame**, and each link after the first is
+   its own later block, ending where play can answer. A creature in the box is
+   a still fact at arrival; its response to the party is withheld. The block
    ends before "What do you do?", which the DM asks.
 4. **Canon only.** Every name has an owner page. Every fact comes from the
    parent, the owner pages, the images, or the user. Source silence is not
@@ -296,18 +399,19 @@ These hold in every block.
    your own art note; take none of their phrasing. The source's nouns said
    back in the source's order are still an echo; say the fact through a new
    specific detail instead (a broken cart becomes an axle snapped clean
-   through, one wheel still turning). Repeating narration
-   verbatim does nothing for the players: they have heard it or will read it
-   on the page, and hearing it again makes it no clearer. Describing the same
-   fact fresh does work, because each new description adds a specific detail
-   that sharpens their picture. Quoted speech an NPC already said stays word
-   for word. A passing moment (a gesture, a glance, a grin, a pose) is not who
-   someone is; the story decides what they do now. Examples in this skill
-   teach shape, never wording.
+   through, one wheel still turning). Repeating narration verbatim does
+   nothing for the players: they have heard it or will read it on the page,
+   and hearing it again makes it no clearer. Describing the same fact fresh
+   does work, because each new description adds a specific detail that
+   sharpens their picture. Quoted speech an NPC already said stays word for
+   word. A passing moment (a gesture, a glance, a grin, a pose) is not who
+   someone is; the story decides what they do now. Examples in this skill,
+   the published ones included, teach shape, never wording.
 6. **Clean page.** Player prose joins its clauses with commas, "and", or a
    period; em dashes (`—`), semicolons, and colons stay out of it, and speech
-   follows "says" or a comma. Craft labels from this skill (anchor, schema, layer, live
-   edge, windup) stay out of the narration.
+   follows "says" or a comma. Craft labels from this skill (box, point,
+   anchor, schema, layer, reaction point, windup, withheld) stay out of the
+   narration.
 
 ## Slop: cut and replace
 
@@ -323,14 +427,42 @@ These hold in every block.
 | stat-block words (large monstrosity, 30-foot aura, DC 15) | its body, its behavior, what happens around it |
 | a list of furniture viewed from nowhere | the frame, then what is happening here right now |
 | isolated verbless fragments ("Chin drips. Eyes red.") | a sentence where the body does something |
-| an "if they…" branch in the spoken text | stop at the live edge; branches live in the DM tables |
+| an "if they…" branch in the spoken text | stop at the reaction point; branches live in the DM tables |
+| "as you enter…, you notice…", "you look in fear upon…" | the scene stated as itself: "the dragon is a frightful sight" |
+| a creature that looks up, shrieks, and flees as the party steps in | the creature as it is at arrival; its response in the withheld note |
+| one block that runs a chain of events to its end | the first event, stopped at its reaction point |
+| "just one moment more and you'd beg for death" | the ordeal itself; the player decides how their character takes it |
+
+## Line edits
+
+Apply each after the read-aloud pass. Each holds when the draft already
+matches it or has been rewritten to.
+
+- **Specific nouns and finished verbs.** "Bodies lie here and there" becomes
+  "bodies are strewn across the hillside"; "some monster left tracks" becomes
+  "a monster left tracks".
+- **Active subjects where the actor matters.** "The city was protected by an
+  order of knights" becomes "an order of knights protects the city"; "the
+  clerics are speaking" becomes "the clerics speak". Passive voice stays
+  when the object should dominate or the actor is rightly hidden.
+- **One picture per fact.** Braided hair is not also tousled; a guard at
+  attention is not also rummaging in a pack; slush does not crunch;
+  mountains hiding the horizon need no blizzard hiding it too.
+- **One use of a word.** No word twice in a breath ("he looks down at the
+  gate down below him"), no homophones side by side, and no word in two jobs
+  ("the bells ring out in a town ringed by a wall").
+- **Ordinary words for ordinary meanings.** Reaction, action, incapacitated,
+  stunned, frightened, and magical appear only when the rules meaning is the
+  one intended.
+- **"That" dropped** wherever the sentence still stands without it.
 
 ## Callouts and ingest
 
 `[!narration]` is the only callout on any page, and callouts never go inside
 table cells; which slots a beat carries is in
-[scenes.md § Beat slots](references/scenes.md#beat-slots). Mechanics and
-secrets are plain prose under their own heading, outside the narration.
+[scenes.md § Beat slots](references/scenes.md#beat-slots). Mechanics, secrets,
+and the rest of the withheld layer are plain prose under their own heading,
+outside the narration.
 
 When `wiki-ingest` loads this skill, named ingest is DM approval for those
 sources (`docs/agents/work.md`): polish existing stubs into narration that
@@ -341,39 +473,52 @@ passes the final check, keeping their facts and meaning.
 Each item is a fresh read of the whole block. Rewrite on every "no", then run
 the list again.
 
+- [ ] **Form.** (Situated first look) Is it a box when the first look is fixed
+      at prep time, and bullets when the entrance, light, or who is present
+      can still change?
 - [ ] **Echo.** Held beside the parent page, the old block, and each owner
       page, does no phrase of the block appear in them (quoted speech aside),
       and is every color one plain word or a comparison?
+- [ ] **Point.** Does the block carry the point sentence's one fact, and is
+      that sentence on the page or in the point note?
 - [ ] **Picture.** (Situated) Hearing it once, could the players say where
       they are, what stands out, where they can go, what they can use, what
       matters right now, and what has changed? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
 - [ ] **Compress.** Does the first sentence give the situation or the
-      danger (a caption fails), is there one anchor, does each person and
-      creature come across as one feature and one behavior (not a list of
-      features, even one spread across sentences), does every known companion
-      in the block act, and could any sentence go without losing anything?
+      danger (a caption fails), is there one anchor, are there three to five
+      new details, does each person and creature come across as one feature
+      and one behavior (not a list of features, even one spread across
+      sentences), does every known companion in the block act, and could any
+      sentence go without losing anything?
 - [ ] **Show.** Is every judgment word, mood, and page label replaced by
-      the thing the characters see or hear, so the players draw every
-      conclusion themselves, and is every person the party has not yet
-      learned the name of called what the characters see?
+      the thing the characters see or hear, with at most one impression
+      riding a concrete detail, so the players draw every conclusion
+      themselves, and is every person the party has not yet learned the name
+      of called what the characters see?
 - [ ] **Layers.** (Situated) Is every entry handle in the block, and every
       other handle out of it and in the handle note?
+- [ ] **Withheld.** Is every creature and person in the block shown as they
+      are at arrival, with their response to the party, the closed contents,
+      the checks, and the other entrances on the page or in the withheld
+      note?
 - [ ] **Art.** Was every related image searched for and opened, and does the
       block carry the few pixel details that set each subject apart?
-- [ ] **Felt.** (Situated) Is something already moving, does one nonvisual
-      sense do a second job, and does something land on the characters'
-      bodies?
+- [ ] **Felt.** (Situated) Is one thing already moving, do two senses work
+      with one of them nonvisual doing a second job, and does something land
+      on the characters' bodies?
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
       knows (no north, south, east, or west), no grid distance, no
       semicolon, colon, or em dash (search the block for each), and one
-      paragraph (two when loaded) that moves
-      the eye?
+      paragraph that moves the eye?
+- [ ] **Line edits.** Does every line edit hold?
 - [ ] **Hands off.** Does every "you" place the characters, let the world act
-      on them, or give what their senses plainly take in, with nothing
-      decided for them?
-- [ ] **Hard lines.** Do all six hold, one by one?
-- [ ] **Size.** Is the block the size its job needs (Length), with nothing
-      from the slop table left in it?
+      on them, give what their senses plainly take in, or (declared action)
+      name the body doing what the player chose, with nothing else decided
+      for them?
+- [ ] **Hard lines.** Do all six hold, one by one, and does the block end on
+      one event's reaction point?
+- [ ] **Size.** Is the block inside its band (Length), counted in words, with
+      nothing from the slop table left in it?

@@ -55,7 +55,7 @@ flexGrow=1
 - **Lines.** "The ask." · "The refusal." · "Under pressure."
 
 > [!narration] First meeting
-> <!-- Optional: the moment the party meets them, from theatre-of-the-mind (NPC first look and Dialogue recipes), "you" address: what they are doing, then their first words. -->
+> <!-- Optional: the moment the party meets them, from theatre-of-the-mind (NPC first look and Dialogue recipes), "you" address: what they are doing, then their first words, one line about six seconds aloud. -->
 
 ## Statblock
 

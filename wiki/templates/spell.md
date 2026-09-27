@@ -35,7 +35,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] {{title}}
-> <!-- Player-safe look of the casting: what a bystander sees, hears, and feels. -->
+> <!-- Player-safe look of the casting, from theatre-of-the-mind (Spell portrait recipe): what a bystander sees, hears, and feels, with no caster, party, or target. -->
 ```
 ````
 
@@ -53,6 +53,9 @@ flexGrow=1
 ## At the Table
 
 <!-- The tricks players will try, each with its ruling; how a target counters it; how an enemy uses it; who notices when it is cast. -->
+
+> [!narration] Casting
+> <!-- Optional: the spell cast by a player character, from theatre-of-the-mind (Declared action recipe): one to three sentences, "you" as the caster's hand and voice, what the magic looks like as it takes hold, ending on the effect in place before any save resolves. -->
 
 ## History
 

@@ -2,8 +2,10 @@
 
 Recipes for situated narration: the party is somewhere and something is
 happening. Second person, present tense, unless the recipe says otherwise.
-Find your surface, follow its recipe, then run the final check in `SKILL.md`.
-The matching example is in [examples.md](examples.md).
+Every recipe files a box (`SKILL.md` § Length for its band) or, for a first
+look whose entrance can still change, immediate-fact bullets (`SKILL.md`
+step 1). Find your surface, follow its recipe, then run the final check in
+`SKILL.md`. The matching example is in [examples.md](examples.md).
 
 Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 **End** (where it stops).
@@ -14,7 +16,7 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 - Beat openings: Hook, Development, Cliffhanger, Climax, Resolution
 - Beat slots: zone cell, tick cell, outcome cell, creature in scene, Outcomes, Exit
 - People and things: NPC first look, dialogue, item in scene
-- Action: combat opening state
+- Action: combat opening state, declared action
 - Moments: social scene, suspense, revelation, return to a known place
 - Movement: travel, transition, vehicle
 - Other: business, handout, vision (recaps: [recaps.md](recaps.md))
@@ -53,7 +55,8 @@ important hides by omission.
    first, the anchor, one useful sense. The test: a player would act on it
    in the first minute. What they would find by asking "what else is here?"
    is attention, and texture, decoration, and lore wait for the question.
-   Entry is the scene opening, and only entry goes in it.
+   Entry is the scene opening, and only entry goes in it. As bullets, entry
+   is the bullet list.
 2. **Attention.** What a closer look shows: the zone cells, the creature
    slot, the detail that rewards a question.
 3. **Interaction.** What handling, opening, or testing reveals: the outcome
@@ -81,10 +84,12 @@ is immediate, lead with it.
    invites action, grouped where they go together.
 5. **Motion.** Something is already happening: laundry snapping overhead, a
    guard dragging a sack, smoke drifting. A threat in motion beats a threat
-   standing still.
-6. **Live edge.** End on the pressure that demands a response: the arrival,
-   the demand, the windup, the thing that just changed. The last image is the
-   one still ringing when the DM stops talking.
+   standing still. The motion belongs to the scene as it was before the
+   party arrived; how anyone responds to the party is withheld.
+6. **Reaction point.** End on the pressure that demands a response: the
+   arrival, the demand, the windup, the thing that just changed. It is one
+   event, stopped at the first moment a player would act. The last image is
+   the one still ringing when the DM stops talking.
 
 ## Beat openings
 
@@ -138,6 +143,8 @@ what leads.
   the gutter over the drop, the braziers), the defenders between the party and
   the goal, and the pressure getting worse. Everything a player needs to plan a
   first move is in this block.
+  The villain's speech stays out of this box: the plan reached the party on
+  the way in, and taunts are short lines the DM spends during the fight.
 - **End:** The villain's action escalating, the ritual thickening, the last
   moment before it cannot be stopped.
 
@@ -155,7 +162,9 @@ what leads.
 ## Beat slots
 
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
-every handle, each in its layer (§ Layers):
+every handle, each in its layer (§ Layers). Fill a slot only where the table
+needs a shared first look; while the DM narrates, nobody roleplays, so an
+optional slot with no such need is deleted, never padded:
 
 - **Previously**: the session's first beat only; the recap read aloud as play
   starts ([recaps.md](recaps.md)).
@@ -202,12 +211,18 @@ every handle, each in its layer (§ Layers):
 ### Creature in scene ({Creature} slot)
 
 - **Job:** This creature, here, now.
-- **Build:** A few sentences, in this order of attention: its silhouette, how it
-  moves, its dangerous parts, its scale against something familiar, and what
-  it is doing right now, placed on the stage. Name its kind only when the
-  characters would recognize it; let behavior show the threat. Use the owner
-  page and art for its look; the scene decides its pose.
-- **End:** The next thing it is about to do, before contact.
+- **Build:** Two to four sentences, in this order of attention: its
+  silhouette, how it moves, its dangerous parts, its scale against something
+  familiar, and what it is doing right now, placed on the stage. A creature
+  plainly there is named in the box before any choice, as a still fact: what
+  it was already doing before the party came, never its response to them.
+  How it reacts to being seen, to a quiet approach, or to scouting goes in
+  the parent's Actors or Handles, or in the withheld note. Name its kind only
+  when the characters would recognize it; let behavior show the threat. Use
+  the owner page and art for its look; the scene decides its pose.
+- **End:** The next thing it is about to do, before contact: a windup aimed
+  at its own business, or at the party only when the prep fixes that it has
+  already seen them (an ambush sprung, a fight under way).
 
 ### Outcomes
 
@@ -244,10 +259,13 @@ every handle, each in its layer (§ Layers):
 Owner pages carry optional situated slots below the header portrait, each
 "you" address and present tense, each from the recipe named here:
 
-- `In action` (creature) → Creature in scene, mid-fight.
+- `In action` (creature) → Outcome cell, one short block per signature move:
+  the move as it lands on the world and the state it leaves, with each
+  target's reaction left to its player.
 - `First meeting` (npc) → NPC first look, then Dialogue for the first words.
 - `When met` (faction) → Social scene, with members at work.
-- `In use` (item) → Item in scene, one block per visible property.
+- `In use` (item) → Declared action, one block per visible property.
+- `Casting` (spell) → Declared action.
 - `On contact` (hazard) → Outcome cell: what the character feels and the
   others see, ending on the condition it leaves.
 - `Underway` (vehicle) → Vehicle.
@@ -281,15 +299,19 @@ Owner pages carry optional situated slots below the header portrait, each
   they are doing now. A tell from the page appears when the beat's situation
   touches the secret behind it. An NPC with no page is minted by `npc-design`
   first (AGENTS.md **HARD: entity-before-spoken**).
-- **End:** Their attention lands on the party: they look up, stop what they
-  are doing, or speak.
+- **End:** When the prep fixes the meeting (they are expecting the party, or
+  they approach first), their attention lands on the party: they look up,
+  stop what they are doing, or speak. Otherwise, on the behavior, with their
+  response to the party withheld.
 
 ### Dialogue
 
 - **Job:** One turn of speech the players can answer.
 - **Build:** What the speaker wants right now, a physical cue ("He keeps his
-  hand flat on the map"), and one line in quotes that asks, offers, presses,
-  answers, or threatens. Keep the voice specific: word choice, rhythm, a
+  hand flat on the map"), and one line in quotes, about six seconds aloud,
+  that asks, offers, presses, answers, or threatens. What they know beyond
+  that line is filed as separate points in the DM prose, given as the players
+  ask. Keep the voice specific: word choice, rhythm, a
   habit. Third-person summary ("She says the toll doubled at dawn and she's
   sorry about it") is fine when the exact words do not matter.
 - **From the NPC page:** Speak in the voice on the NPC's page (its word
@@ -316,7 +338,7 @@ Owner pages carry optional situated slots below the header portrait, each
   name, magic, and hiding place stay out until play finds them.
 - **Sentient item:** it speaks only in the voice on its page, and only to the
   one who can hear it.
-- **End:** On the scene's live edge, never on the item unless it is the anchor.
+- **End:** On the scene's reaction point, never on the item unless it is the anchor.
 
 ## Action
 
@@ -329,7 +351,19 @@ Owner pages carry optional situated slots below the header portrait, each
   see. Several of the same creature each get one visible trait the table can
   call them by (Split-Ear, Red Sash, Broken Spear), shown as they move into
   place.
-- **End:** The first enemy move, before contact.
+- **End:** The first enemy windup, before contact.
+
+### Declared action
+
+- **Job:** Show a declared action taking hold: a spell being cast, an item's
+  property activating, a ritual performed.
+- **Build:** One to three sentences. "You" may name the body doing what the
+  player chose (the hand, the words, the component), because the prep treats
+  it as chosen. Then what the magic or the device visibly does as it takes
+  hold, in a sensation a listener can picture, and where it settles. Name
+  only the targets the action itself chose ("those you protect"). The
+  caster's feelings, and every result that waits on a roll, stay out.
+- **End:** The effect in place, before any save, hit, or response resolves.
 
 ## Moments
 

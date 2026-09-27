@@ -48,12 +48,23 @@ can actually perceive ("the scratches look fresh").
 Narration uses layers 1 and 2. A danger shows itself through buildup and
 signs; the players learn the rule by testing it or paying for it.
 
-## First looks stop before contact
+## First looks stop at the reaction point
 
 A first look at a threat ends on the windup: the tentacle snapping taut, the
 wings folding for the dive, the cart tipping on the slope. The grab, the bite,
 the steal, and the explosion happen after players act, in the DM's live
-narration.
+narration. One event per block: the next link in a chain is a later block.
+
+## Responses are withheld
+
+A box is filed before anyone knows how the party arrives. A creature or person
+in it is what they were already doing: the guard dragging a sack, the owlbear
+turning toward the fountain. Their response to being seen, to a quiet
+approach, to being scouted, or to a greeting assumes an entrance the prep does
+not have, so it goes in the DM prose beside the box (Actors, Handles) or the
+withheld note. The exception is a first look the prep fixes because the world
+acts first: an ambush already sprung, an NPC who sent for the party, a fight
+already under way.
 
 ## Hidden things
 

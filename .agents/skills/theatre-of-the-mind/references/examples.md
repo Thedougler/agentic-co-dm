@@ -1,40 +1,46 @@
 # Examples
 
 Finished narration at the quality bar. Match the **quality, shape, and
-length**; write your own words from your own facts. Names and places here are
-made up for illustration and are never canon.
+length**; write your own words from your own facts. Names and places in the
+house examples are made up for illustration and are never canon. The
+published reference examples at the end are quoted verbatim from published
+boxed text and craft writing, to show the craft they teach; they are never
+copied into a page (`SKILL.md` hard line 5).
 
 ## Contents
 
 - Beat openings: compact default, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
+- Immediate-fact bullets, with the withheld layer beside them
 - Closing image
 - Beat slots: zone and tick cells, creature in scene, Outcomes
 - NPC first look with dialogue
 - Outcome cells
+- Declared action
 - Travel, handout (recap examples: [recaps.md](recaps.md))
 - Portraits: creature, place, item, hazard, faction
-- Weak → strong pairs: stub, inventory, conclusions, generic filler, assigned feelings, slop, rules, resolved attack, useless facts
+- Weak → strong pairs: stub, inventory, conclusions, generic filler, assigned feelings, slop, rules, resolved attack, freeze-frame, useless facts
+- Published reference examples: bullets, a filed box, the freeze-frame, person, motion, cognitive notes, remote control, landmark history, line edits
 
 ## Compact opening (the default shape)
 
 > The shrine fills the lowest chamber of the sea caves, and every surface is slick with salt water, though the tide sits far below you. Three stone doors ring the chamber, and only the one on your left is dry. From behind it comes the slow scrape of something heavy being dragged.
 
-Why it works: three sentences. The schema (a sea-cave shrine), the anchor
-(wet walls far above the tide), the handles grouped (three doors, one dry),
-and a sound that is both atmosphere and threat ends it.
+Why it works: three sentences, 62 words. The schema (a sea-cave shrine), the
+anchor (wet walls far above the tide), the handles grouped (three doors, one
+dry), and a sound that is both atmosphere and threat ends it.
 
 ## Hook opening
 
-> You are halfway across the ford, the river pulling cold and waist-deep around you, when the far bank starts to move. What looked like a fallen log rolls onto its side and becomes a flat-bottomed boat, and three figures in reed cloaks rise out of the mud beside it with short bows already bent. Behind you, the near bank is a few strides of slick stones and a wagon stuck to its axles, the mule braying and throwing its head. Upstream, a rope bridge sags across the water with one plank missing near the middle. The tallest archer calls out over the rush of the river, voice flat and patient, "Packs in the water. Then hands." An arrow thumps into the wagon's side, a hand's width from the mule's neck.
+> You are halfway across the ford, the river cold and waist-deep around you, when a log on the far bank rolls over and becomes a flat-bottomed boat. Three figures in reed cloaks rise from the mud beside it with bows already bent. Behind you, the wagon sits stuck to its axles in the shallows, and upstream a rope bridge sags across the water with one plank gone. "Packs in the water," the tallest archer calls. "Then hands."
 
-Why it works: the disturbance lands in sentence one; the anchor (log into boat)
-is unforgettable; the archers are in motion; the wagon, the mule, the bridge
-with its missing plank, and the demand are all handles; it ends on a warning
-shot that forces a choice.
+Why it works: the ambush has sprung, so the world acts first and the box can
+carry the archers' demand. The disturbance lands in sentence one; the anchor
+(log into boat) is unforgettable; the wagon and the bridge with its missing
+plank are routes; the demand is the one event it stops on.
 
 ## Hook opening, resuming mid-scene
 
-> The fire has spread along the whole length of the bar, and the bottles behind it are bursting one by one, spraying burning gin across the floorboards. Captain Sella Morrow is on her knees by the hearth with a knife at her throat, and the man holding it, the bald smuggler with the tattooed scalp, has his back pressed to the chimney stones, eyes jumping from you to the door. Two of his crew lie under the overturned table, and the third is halfway up the stairs with the strongbox in his arms, one boot on the landing. Smoke gathers against the ceiling beams and sinks lower by the moment. The smuggler presses the blade in until Morrow lifts her chin. "Nobody follows him up those stairs," he says.
+> The fire runs the whole length of the bar now, and bottles burst behind it one by one, spraying burning gin across the floorboards. By the hearth, the bald smuggler with the tattooed scalp holds a knife under Captain Sella Morrow's jaw, his back to the chimney stones. His last man is halfway up the stairs with the strongbox in his arms. Smoke sinks lower from the beams. "Nobody follows him," the smuggler says.
 
 Why it works: every person from last session is exactly where play froze
 them, each doing something; the spreading fire and sinking smoke are a clock
@@ -42,31 +48,33 @@ the players can see.
 
 ## Development opening
 
-> The shack is one room on stilts, so low that the drying nets strung from the rafters brush the top of a tall head. Rain drums on the tin roof and drips through in two places, into a bucket and onto a map pinned flat to the table with four fish hooks. The ferryman, a lean old half-orc with one ear notched like a tally stick, sits over it with a lantern pulled close and does not look up. His thumb rests on the map where the river forks, and around that spot he has drawn a circle in fresh charcoal, three times over. "You're the ones asking about the barge," he says. "Sit, or stand in the wet. Either way, you'll want to see this."
+> The shack is one room on stilts, so low that the drying nets in the rafters brush a tall head. Rain drums on the tin roof and drips onto a map pinned to the table with four fish hooks. The ferryman, a lean old half-orc with one ear notched like a tally stick, keeps his thumb on the river fork. Fresh charcoal circles that spot three times over. "Sit, or stand in the wet," he says. "Either way, you'll want to see this."
 
-Why it works: a calm frame with sound and drip; the anchor is the circle
-drawn three times; the map and the ferryman are both handles; his line
-invites the scene to turn.
+Why it works: the ferryman sent for the party, so the meeting is fixed and his
+line can close the box. A calm frame with sound and drip; the anchor is the
+circle drawn three times; the map and the ferryman are both handles; one line
+of about six seconds invites the scene to turn.
 
 ## Cliffhanger opening
 
-> The first beam goes with a crack like a snapped oar, somewhere behind you in the dark, and the tunnel fills with the hiss of running grit. Dust rolls up the passage toward your lanterns in a gray wave. Ahead, the tunnel splits, and the left branch slopes down toward the sound of water, its timbers bowed and weeping mud, while the right climbs steeply to a ladder bolted into the rock, its top rungs lost in blackness. Between the two, a loaded ore cart sits on its rails, and the floor under it is tilting it forward, one wheel already lifting. The rumble behind you grows louder. A second beam groans.
+> A beam cracks like a snapped oar somewhere behind you, and dust rolls up the tunnel toward your lanterns in a gray wave. Ahead, the passage splits, the left branch sloping down toward running water under bowed timbers, the right climbing to a ladder bolted into the rock. Between them, a loaded ore cart tilts forward on its rails, one wheel lifting. A second beam groans.
 
-Why it works: danger in sentence one; one long sentence lays out both routes;
-the cart is a handle and a threat; short sentences at the end tighten the
-clock.
+Why it works: danger in sentence one; one longer sentence lays out both
+routes; the cart is a handle and a threat; the short last sentence is the
+windup.
 
 ## Climax opening
 
-> Rain lashes the temple roof, and the gutters run so full they spill over the carved gargoyles in sheets. In the middle of the flat roof, inside a ring of iron braziers that hiss and steam but will not go out, Magistrate Orel Vance holds the stolen reliquary open in both hands. A column of pale light climbs from it into the clouds, and the clouds are turning, slowly, around that point. Four temple guards in soaked blue tabards hold the top of the stairs between you and him, spears level, the nearest one's hands shaking on the shaft. To the left, a bell tower rises one story higher, its rope whipping in the wind, and to the right, the roof ends at a gutter and a three-story drop to the flooded square, where a crowd stands staring up. Vance lifts the reliquary higher, and the light thickens.
+> Rain sheets off the temple roof, and in the middle of it, inside a ring of hissing iron braziers, Magistrate Orel Vance holds the stolen reliquary open in both hands. A column of pale light climbs from it into clouds that turn slowly around it. Four guards in soaked blue tabards hold the stairhead between you and him, spears level. To your left a bell tower rises a story higher, its rope whipping, and to your right the roof ends at a drop to the flooded square. Vance lifts the reliquary higher, and the light thickens.
 
-Why it works: the villain is doing the thing the party came to stop; the
-stakes are visible in the sky; the guards, the bell tower, the drop, and the
-shaking spear are the stage and the handles; it ends on escalation.
+Why it works: a climax, so it runs toward 100 words and stays one paragraph.
+The villain is doing the thing the party came to stop; the stakes are visible
+in the sky; the guards, the bell tower, and the drop are the stage and the
+handles; his speech stays out; it ends on escalation.
 
 ## Closing image
 
-> By morning the flood has gone down to a brown line on the square's walls, knee-high on the shuttered shops. Townsfolk are out with brooms and buckets, and someone has propped the temple doors open so the water can run out of the nave. The reliquary sits on the altar again, closed, under a clean white cloth, with two novices kneeling on either side, not praying, just watching it. High above them, the bell tower stands silent. Its rope is gone, cut away at the beam, and the iron braziers lie cold and scattered across the roof where they fell.
+> By morning the flood has sunk to a brown line on the square's walls, knee-high on the shuttered shops, and townsfolk are out with brooms and buckets. The reliquary sits closed on the altar under a clean white cloth, two novices kneeling beside it, watching it and not praying. High above them the bell tower stands silent, its rope cut away at the beam.
 
 Why it works: the world has visibly changed; the cost (the cut rope, the
 scattered braziers) still shows; people react through what they do; the last
@@ -80,7 +88,11 @@ image is quiet and clear.
 
 **Creature in scene:**
 
-> The owlbear shoulders out of the hedge maze sideways, too wide for the gap, and the clipped yew splits around it with a sound like tearing sailcloth. Its feathers are matted with burrs and its beak hangs open, breath steaming. It swings its head toward the fountain and the splash of water, then toward you, and rocks back onto its haunches.
+> The owlbear shoulders out of the hedge maze sideways, too wide for the gap, and the clipped yew splits around it with a sound like tearing sailcloth. Its feathers are matted with burrs and its beak hangs open, breath steaming. It swings its head toward the splash of the fountain and rocks back onto its haunches.
+
+Withheld beside it, in Actors: it charges whoever reaches the fountain first,
+and it ignores anyone who stays still in the hedge. The box shows what it was
+already doing; how it answers the party is a later beat.
 
 **Outcomes:**
 
@@ -106,6 +118,16 @@ tells the players exactly what she wants.
 
 Why they work: each shows only what changed, then the new situation the next
 player acts on.
+
+## Declared action
+
+A spell's `Casting` slot:
+
+> You close your fist around the pinch of salt, and when you open it every grain is burning white. The sparks climb your arm and leap to the blades of those you chose, and frost runs along each edge and holds there, humming like a struck glass.
+
+Why it works: the player chose the spell, so "you" names the hand doing it.
+The magic is a sensation a listener can picture; it names only the targets
+the spell chose; it stops with the effect in place, before any roll.
 
 ## Travel
 
@@ -141,6 +163,25 @@ player acts on.
 
 > The Lantern Keepers walk the city after dark in pairs, in long gray coats, each with a brass lantern hung from a pole over one shoulder. They carry no weapons anyone can see, only a small bell at the belt that they ring once at every corner. Shopkeepers leave a coin in a tin cup on the doorstep for them, and the Keepers take it without a word and press a thumbprint of soot onto the doorframe. Children trail them for a street or two and then run home. Most people just call them the Grays.
 
+## Immediate-fact bullets
+
+The party may come down the stairs, through the sluice, or by the chute, so
+the first look cannot be fixed. The `Opening` slot:
+
+> - _Water stands ankle-deep across the mill cellar, cold enough to ache, and it smells of rust._
+> - _A millstone the width of a cart leans against the far wall, split through the middle._
+> - _A drain grate in the floor gurgles, and the water around it turns in a slow circle._
+> - _Stairs climb to a trapdoor, and a wooden chute slants down from the ceiling beside them._
+
+Withheld, in plain DM prose under the callout: the grate lifts free and opens
+on a crawlway to the millrace; the split in the millstone hides the miller's
+strongbox, found on a close look at the crack. Whoever comes down the stairs
+is heard by the smuggler hiding in the chute.
+
+Why it works: each bullet is one complete sentence of what anyone entering
+perceives at once, danger and routes first; what depends on the approach or on
+a closer look stays outside the callout.
+
 ## Weak → strong
 
 **Stub → complete scene.**
@@ -151,11 +192,13 @@ Weak:
 
 Strong:
 
-> The door opens on a long, low common room packed shoulder to shoulder, the ceiling beams close enough for a tall person to touch and black with pipe smoke. A fiddler stands on a table at the far end, and half the room is stamping along with him, sloshing beer onto the sawdust. The only empty space is around the hearth, where a woman in a soaked blue cloak sits alone with a sword across her knees and a plate of food going cold beside her. The barkeep, a one-armed dwarf with a braided beard, looks straight at you across the crowd and tips his head toward her, hard, twice. Then the fiddle stops mid-note, and every head in the room turns to the door behind you.
+> The common room is low and packed shoulder to shoulder, the ceiling beams black with pipe smoke and close enough to touch. A fiddler stands on a table at the far end, and half the room stamps along, sloshing beer onto the sawdust. The only open space is around the hearth, where a woman in a soaked blue cloak sits alone with a sword across her knees and her supper going cold. Behind the bar, a one-armed dwarf with a braided beard fills mugs without once looking down.
 
-The weak version gives nothing to picture or grab. The strong one has a
-frame, an anchor (the woman with the sword), motion, handles (the barkeep, the
-woman, the crowd), and a live edge.
+The weak version gives nothing to picture or grab, and its man looks at the
+party before anyone has declared a step. The strong one has a frame, an
+anchor (the woman with the sword), motion, and handles (the barkeep, the
+woman, the crowd), and it holds everyone as they were before the party came
+in; who notices them is a later beat.
 
 **Inventory → felt scene.**
 
@@ -165,13 +208,14 @@ Weak:
 
 Strong:
 
-> Cold comes off the lake in a breath you feel through your cloaks, and the gravel under your boots is slick with the same mist that swallows the far shore. At the end of the wooden jetty, a man so thin his patched coat hangs on him like a sail is feeding a heron from a bucket, and the heron is taller than he is, its white neck coiling down to take each fish from his fingers. Every time it swallows, the planks creak under its weight. The man looks up at the crunch of your steps, a fish still dangling from his hand, and the heron's head turns with him.
+> Cold comes off the lake and through your cloaks, and the gravel underfoot is slick with the mist that swallows the far shore. At the end of the jetty, a man so thin his patched coat hangs on him like a sail is feeding a heron from a bucket. The heron is taller than he is, its white neck coiling down to take each fish from his fingers. Every time it swallows, the planks creak under its weight.
 
 The weak version is true and dead: a spec sheet for each body, a semicolon,
 paint-chip colors, a measurement. The strong one hits the body first (cold,
-slick gravel), gives each figure two details that stick (the coat like a sail,
+slick gravel), gives each figure one detail that sticks (the coat like a sail,
 the coiling neck), shows the heron's size by what it does to the man and the
-planks, and ends on both heads turning.
+planks, and ends on the creaking planks, leaving how the man answers the party
+to the withheld layer.
 
 **Conclusions → evidence.**
 
@@ -209,7 +253,7 @@ Weak:
 
 Strong:
 
-> The forge door opens on a wall of heat that rolls out past you into the street. Inside, the furnace glows white at the back of a room black with soot, and a smith with burn-scarred forearms is drawing a bar of orange steel out of the coals with long tongs. He lays it on the anvil, raises his hammer, and looks at you over it without swinging.
+> The forge door stands open on a wall of heat that rolls out past you into the street. Inside, the furnace glows white at the back of a room black with soot. A smith with burn-scarred forearms draws a bar of orange steel out of the coals with long tongs. He lays it on the anvil and lifts his hammer high.
 
 **Slop → concrete.**
 
@@ -241,6 +285,21 @@ Strong:
 
 > The drake's head swings toward the ledge, and its throat swells, frills flaring wide and red as it draws its body back into a coil at the water's edge.
 
+**Freeze-frame → one event per block.**
+
+Weak:
+
+> The ice cracks under the sledge, the dogs bolt, the driver is thrown clear into the snow, and a pale shape surges up through the hole after him.
+
+Strong, the `Opening`:
+
+> The ice under the sledge gives a long groan like a green branch bending, and a crack runs out from the runners toward the dogs. They stop dead in their traces, ears flat, and the driver stands up on the footboard with the reins in both fists.
+
+The weak version plays four events before any player can act. The strong one
+stops on the first. The dogs bolting and the driver thrown go to the Pressure
+tick cells, and the shape under the ice is its own `{Creature}` block, each
+ending where play can answer.
+
 **Useless facts → facts that play.**
 
 Weak:
@@ -254,3 +313,136 @@ Strong:
 The weak version spends its words on history nobody can see and says the
 same thing twice. The strong one gives size in plain terms and one detail
 that invites investigation.
+
+## Published reference examples
+
+Quoted verbatim, each labelled with the rule it teaches. They show shape and
+failure; their words never go on a page.
+
+### Immediate-fact bullets
+
+A published convention for bullets. In this vault the parenthesized layer is
+plain DM prose outside the callout (`SKILL.md` step 1):
+
+> Whenever the players’ characters enter a new area, the place is first described in bullet points.
+>
+> - *Bullet points written in italic type are details the characters are aware of as soon as they enter or get near the area. These bullet points can be read aloud or paraphrased.*
+> - (Bullet points contained in parentheses are hidden from the characters until they investigate further or overcome an obstacle.)
+
+### A filed box
+
+Four sentences, under 100 words. A monster plainly there is named before any
+choice:
+
+> The carrion crows in the field shriek and take flight, blood decorating their beaks. Their feast is gruesome: at least 30 human bodies are strewn across the hillside, muddy from the downpour earlier in the day. Cresting the top of the hill, near the entrance to the secret base, spiders as big as horses scuttle toward you. They move like others of their kind, but at the end of each leg is a hand, all clenching and opening reflexively as the spiders approach.
+
+### The freeze-frame (failure)
+
+Filed right, the vines are one block, and the ox, the cart, and the guards are
+later blocks, each ending where play can answer:
+
+> Grasping weeds and vines erupt from the cobblestone street beneath the carriage at the head of the parade. The ox pulling the cart panics, causing the vehicle to careen into a post covered in decorations. The vegetation then wraps around the cart’s wheels and the closest bystanders. A pair of revelers produce weapons, revealing themselves to be guards protecting the Prince of Vice.
+
+On the detail count: “This isn’t hard or fast, but I recommend three to five, and almost never more than seven.”
+
+### Person: the scene stated as itself
+
+The first steps the characters in and has them notice; the second states the
+scene:
+
+> As you enter the clearing, you notice the bloated corpse of a headless dragon
+
+> The bloated corpse of a headless dragon dominates the center of a clearing
+
+The imposed feeling beside the scene's quality: “You look in fear upon the
+dragon” beside “The dragon is a frightful sight.”
+
+### Declared action
+
+Second person names the body doing the chosen thing:
+
+> You flick holy water from your fingers, and it scatters into sparkling light that drifts against the wind toward those you protect. The blessing you grant settles about their shoulders like golden cloaks before vanishing.
+
+### Motion and manner
+
+The still line and the moving line:
+
+> The half-orc has shoulder-length hair the shade of charcoal
+
+> The half-orc brushes a lock of their shoulder-length, charcoal hair behind their ear
+
+Motion, manner, and expression:
+
+> He moves with the easy grace of a dancer.
+
+> She stands with a straight-backed rigidity borne of years as a soldier.
+
+> She speaks rapidly yet eloquently, her words laden with a natural curiosity.
+
+### Leaving details unstated
+
+An emotive action with a little detail, and the listener fills in the rest:
+
+> A portly man with a pencil-thin mustache sweating with the effort of moving his luggage up the gangplank.
+
+### Cognitive notes: the one impression
+
+Memory, comparison, impression, language, and obvious inference:
+
+> . . . thinking about an old friend.
+
+> . . . teeth far too long.
+
+> . . . a distinct and unmistakable sight.
+
+> As it is, ‘unicorn’ must do.
+
+> . . . two hip pouches, each no doubt filled with spell components.
+
+A hanging question, as the limit of what the characters know:
+
+> You can’t quite place their accent . . .
+
+> Another day passes on horseback, but the mountains seem just as high on the horizon
+
+> Thundering trip hammers, each big enough for a giant to wield, pound in a regular beat, powered by unknown means.
+
+### Remote control (failure)
+
+Each decides a feeling, a step, or a thought for the characters; the last also
+plays the creature's response to an entrance the prep does not have:
+
+> You look upon the devastation of the valley and are overwhelmed by sadness.
+
+> You step forward and return the king’s greeting with a deep bow.
+
+> As you return to Waterdeep, you smile, thinking fondly of the ale at Trollskull Manor.
+
+> You see a strange creature crouching upon the boulder. As you step into the room, it looks up with wide, yellow eyes, gives a deafening call of alarm, and then scurries away.
+
+An imposed ordeal, and the player's answer to it: “Just one excruciating moment more, and you’d beg all the gods for death, but just then it stops . . .” — “What if I’m playing a masochistic sorcerer? I’d be praying for the ride to keep going!”
+
+### Landmark history: color or clue
+
+Two filings of the same lake. The first is a landmark whose past is color; the
+second is the filing when that past is a clue play should find:
+
+> In years past, a falling body smashed its way through the upper atmosphere and in its violence gouged out this enormous bowl shape into the earth before you. In the years since, a roving glacier or record rainfall has filled the crater with crystal-clear water, shimmering like mithral along its perfectly serene surface, protected as it is from the wind.
+
+> An enormous bowl-shaped depression stretches out across the land. It is half-filled with crystal-clear water that shimmers like mithral along a perfectly serene surface, protected as it is from the wind.
+
+Two shorter color filings:
+
+> Masses of coral rise from the sea, forming a chain of islands that peek above the waterline just enough to expose it to sunlight. Creatures roam these wisps of land—perhaps found nowhere else.
+
+> The half-sunken waterwheel peeks out of the mire, off its spokes beside this once prosperous mill […]
+
+### Line edits
+
+Before and after, as printed (`SKILL.md` § Line edits):
+
+- Specific nouns and finished verbs: “bodies lie here and there” and “people walk here and there” become “bodies were strewn about” and “people strode along . . .” “some monster left tracks here” becomes “a monster left tracks here.”
+- Active subjects: “The city was protected by an order of brave knights” becomes “An order of brave knights protected the city” or “An order of brave knights protects the city.” “The orcs were fighting” becomes “the orcs fought”; “the clerics are speaking” becomes “the clerics speak.”
+- One picture per fact: “if a character’s hair is braided, it is unlikely to also be tousled, nor can clothing be simultaneously skimpy and protect every inch of skin.” “a creature cannot be standing at attention with arms by their side while rummaging in a backpack.” “boots ‘crunching’ in slush.” “the mountains hide the horizon, but there’s also a blizzard obscuring the view.” “the sky is blue but there’s a blizzard blowing (assuming that it’s not a spell over the players).”
+- One use of a word: “he looked down at the gate down below him.” “Birds were singing in every tree. You walk a few paces listening to the birds singing.” A homophone in one breath: “the hauberk is too large, and sweat mottles the red cloth ringing the squire’s neck.” The same word in two jobs: “the bells ring out in a town ringed by a stone wall.”
+- “That” dropped: “Historical fantasy can be set in a world that is similar to our own, with cultures that are similar to real-world cultural groups” becomes “Historical fantasy exists in a world like our own, with cultures similar to real-world cultural groups.”

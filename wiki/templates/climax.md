@@ -29,7 +29,7 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Climax opening recipe). -->
+> <!-- Spoken opening from theatre-of-the-mind (Climax opening recipe): one paragraph running toward 100 words, the opposition mid-act, the stakes, and the stage, ending on the escalation before it lands. The villain's speech stays out; taunts are short lines in Actors. -->
 
 ## Thread Harvest
 
@@ -49,10 +49,10 @@ summary: ""
 - **[[creature]] × 4.** Role (henchman, minion, or hazard) and numbers.
 
 > [!narration] {NPC}
-> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and one line of first words in their voice, about six seconds aloud. What they know beyond that line goes in Actors as separate points. Titled with their name; one per NPC. -->
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): two to four sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
 
 ````col
 ```col-md

@@ -259,6 +259,18 @@ objective. It is not a runtime-limit outcome or persistent ledger.
 Spoken, sensory language the DM can read aloud. The mouth surface.
 _Avoid_: treating TotM as a VTT mode; putting mechanics or unspoken facts in spoken text
 
+**Box**:
+A filed first look the DM speaks once: one paragraph, one picture, one place to act, holding only what is fixed at prep time. When the first look can still change with how the party arrives, it is filed as immediate-fact bullets instead.
+_Avoid_: a box that plays a creature's response to the party, a chain of events, or a character's feeling
+
+**Reaction point**:
+Where a box ends: the first moment a player would act. For a threat, the windup before contact.
+_Avoid_: ending after the hit lands, or on "What do you do?"
+
+**Withheld layer**:
+Everything the DM needs beside a box that the box cannot hold: responses to the party, other approaches, checks, closed contents, secrets, and true names.
+_Avoid_: hiding a withheld fact inside the spoken text as a hint
+
 **Play surface**:
 Player-visible Foundry artifacts staged during prep from accepted Work (maps, tokens, handouts). The screen surface.
 _Avoid_: an agent pushing to Foundry during a session

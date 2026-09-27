@@ -26,6 +26,9 @@ The matching example is in [examples.md](examples.md).
 - **Stable behavior only.** Ordinary habits the parent states (grazes, basks,
   hums, spins) are welcome. Signature attacks, hunting sequences, and reactions
   to an intruder belong to encounters, not the portrait.
+- **Speakable, once.** A portrait is read aloud the first time the players
+  meet the subject: the `SKILL.md` line edits apply, and one impression may
+  ride a concrete detail (teeth far too long).
 - **Page words stay off.** Design fields (Function, Conflict, Promise, Aspects),
   schema phrases ("provides shelter", "general traffic"), and campaign rules
   (claims, Hunger) never appear in the narration.
@@ -129,6 +132,17 @@ The matching example is in [examples.md](examples.md).
   how people get on and off in plain words (gangway, rail, rope ladder, hatch);
   one sound or smell of it working.
 - **Leave out:** owners' secrets, hidden compartments, speed and stats.
+
+## Spell
+
+- **Build:** What a bystander sees, hears, and feels of the casting as it
+  always happens: the gesture, the words or their sound, the component in
+  use, what the magic looks like as it takes hold, and where it settles or
+  fades. A magical effect is written as a sensation a listener can picture.
+- **Leave out:** the caster, the party, targets by name, range, saves,
+  damage, duration, and what the spell does beyond what shows. The casting as
+  the party's own declared action belongs to the page's `Casting` slot
+  (scenes.md § Declared action).
 
 ## Technique
 
