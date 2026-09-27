@@ -88,6 +88,11 @@ def check(body: str, sources: list) -> list:
     words = len(flat.split())
     if words > 150:
         findings.append(f"{words} words; a box is 80-120, toward 150 for a first arrival, awe, horror, or a climax")
+    # ponytail: a sentence with no joining word is a standalone fact; most of them = a fact list
+    sents = [s for s in re.split(r"(?<=[.!?])\s+", flat.strip()) if s]
+    alone = [s for s in sents if not re.search(r"\b(?:and|as|while|until|till|so|when|before|after|then|but|because|where|which|whose|until|though|if)\b", s, re.I)]
+    if len(sents) >= 4 and len(alone) * 2 > len(sents):
+        findings.append(f"{len(alone)} of {len(sents)} sentences stand alone; this reads as a fact list, so join them into one telling")
     # ponytail: crude stem (drop -s/-es/-ing/-ed); catches "man"/"man's" and "worry"/"worrying"
     stems = {}
     for w in re.findall(r"[a-z]{3,}", flat.lower()):

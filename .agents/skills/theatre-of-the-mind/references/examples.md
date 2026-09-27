@@ -203,7 +203,7 @@ eight sentences that could be shuffled):
 Strong (each sentence hands off to the next, and the telling builds to the
 charge):
 
-> The ground jumps under your boots, and down the meadow, in the shade of the trees, the mossy stump unfolds two scaled grey legs and stands up taller than a horse, ferns sliding off its shoulders as it rises. It is a bird, and a hooked beak as long as a man's arm swings round until it points at you. Between you lies a long stone's throw of flattened grass with only a knee-high glitter of white blades halfway across, and at your backs the smoking hole still gapes. Dust starts to dance around your feet as the great head drops low.
+> The ground jumps under your boots, and down the meadow the mossy stump unfolds two scaled grey legs and stands up taller than a horse, ferns sliding off its shoulders. It is a bird, and a hooked beak as long as a man's arm swings round until it points at you. Between you lies a stone's throw of flattened grass, with only a knee-high glitter of white blades halfway across and the smoking hole gaping at your backs. Dust starts to dance around your feet as the great head drops low.
 
 **Stub → complete scene.**
 
