@@ -21,7 +21,7 @@ if str(ROOT) not in sys.path:
 from tools.wiki_ops.cli import SCOPE_KINDS, AgentParser, UsageError, configured_vault, emit_json, resolve_vault, usage_error
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot
-from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
+from tools.wiki_ops.lint_cache import VAULT_GRAPH_RULES, digest_rules, load_cache, lookup_entry, save_cache, update_entry
 from tools.wiki_ops.pretty import render_health, render_lint, render_lint_fix, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
@@ -161,7 +161,7 @@ def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:
     return flattened
 
 
-def _run_structural(vault: Path, relative: list[str]) -> dict[str, Any]:
+def _run_structural(vault: Path, relative: list[str], extra: list[str] | None = None) -> dict[str, Any]:
     command = [
         sys.executable,
         str(ROOT / "scripts/wiki-lint"),
@@ -169,6 +169,7 @@ def _run_structural(vault: Path, relative: list[str]) -> dict[str, Any]:
         str(vault),
         "--scope",
         "files:" + ",".join(relative),
+        *(extra or []),
     ]
     proc = subprocess.run(command, cwd=ROOT, capture_output=True, text=True)
     if proc.returncode not in (0, 1, 2):
@@ -275,7 +276,10 @@ def _compute_lint(
     for relative in paths:
         cached = lookup_entry(cache, vault, relative, digest)
         if cached is not None:
-            findings.extend(_cached_findings(cached.get("results")))
+            findings.extend(
+                item for item in _cached_findings(cached.get("results"))
+                if str(item.get("rule")) not in VAULT_GRAPH_RULES
+            )
             hits += 1
             vale_skipped += 1
         else:
@@ -298,7 +302,17 @@ def _compute_lint(
         for relative in pending:
             current = grouped[relative]
             findings.extend(current)
-            update_entry(cache, vault, relative, digest, {"file": relative}, _group_findings(current))
+            update_entry(
+                cache,
+                vault,
+                relative,
+                digest,
+                {"file": relative},
+                _group_findings([
+                    item for item in current
+                    if str(item.get("rule")) not in VAULT_GRAPH_RULES
+                ]),
+            )
             misses += 1
         save_cache(vault, cache)
         _progress("lint", done=f"{hits + misses}/{total}", hits=hits, misses=misses, n=len(pending), ms=elapsed)
@@ -313,6 +327,17 @@ def _compute_lint(
         _tune("lint", ranked)
     else:
         save_cache(vault, cache)
+
+    # A cache entry was written when the file last changed, so it can carry an
+    # orphan or index finding that another page's edit has since made wrong (or
+    # created). Recompute those from the current vault graph on every run.
+    graph_cached = [relative for relative in paths if relative not in pending]
+    if graph_cached:
+        graph_report = _run_structural(vault, graph_cached, extra=["--no-vale", "--no-template"])
+        findings.extend(
+            item for item in _flatten(graph_report, vault)
+            if str(item.get("rule")) in VAULT_GRAPH_RULES
+        )
 
     hard_rule_set = hard_keys or set(DEFAULT_HARD_KEYS)
     page_bytes = {relative: (vault / relative).stat().st_size for relative in paths if (vault / relative).is_file()}

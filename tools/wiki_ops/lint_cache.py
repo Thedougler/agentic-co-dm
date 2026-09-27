@@ -13,6 +13,12 @@ IDENTITY_INDEX_NAME = "identity-index.json"
 IDENTITY_INDEX_VERSION = 1
 _REPO_ROOT = Path(__file__).resolve().parents[2]
 
+# Findings that depend on the whole vault rather than on the file they name:
+# another page's edit can create or clear them, so a per-file cache entry
+# cannot see the change. They are never stored, and any carried by an older
+# cache are dropped on load.
+VAULT_GRAPH_RULES = frozenset({"orphan_pages", "index_issues", "missing_from_index"})
+
 
 class CacheEntry(TypedDict):
     """The reusable checker output for one vault-relative file."""
@@ -181,6 +187,10 @@ def _clean_cache(vault: Path, raw: Any) -> LintCache:
             continue
         entry = _valid_entry(raw_entry)
         if entry is not None:
+            entry["results"] = {
+                rule: records for rule, records in entry["results"].items()
+                if rule not in VAULT_GRAPH_RULES
+            }
             entries[key] = entry
     return {"version": CACHE_VERSION, "config_digest": raw["config_digest"], "entries": entries}
 

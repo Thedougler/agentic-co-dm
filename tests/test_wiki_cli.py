@@ -268,6 +268,19 @@ def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     assert again["cache"]["hits"] >= 1
 
 
+def test_orphan_finding_is_recomputed_when_another_page_links_it(tmp_path: Path):
+    page(tmp_path, "a.md", title="A")
+    page(tmp_path, "b.md", title="B")
+    first = payload(run_cli(tmp_path, "lint", "b.md", "--json"))
+    assert any(item["rule"] == "orphan_pages" for item in first["findings"])
+
+    (tmp_path / "a.md").write_text("---\ntitle: A\n---\n\n# A\n\nSee [[b]].\n", encoding="utf-8")
+    second = payload(run_cli(tmp_path, "lint", "b.md", "--json"))
+
+    assert second["cache"]["hits"] >= 1
+    assert not any(item["rule"] == "orphan_pages" for item in second["findings"])
+
+
 def test_default_lint_is_issues_and_json_is_worklist(tmp_path: Path):
     page(tmp_path, "one.md")
     default = run_cli(tmp_path, "lint")
