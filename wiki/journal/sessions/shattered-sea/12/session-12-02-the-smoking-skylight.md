@@ -31,7 +31,7 @@ Four Calveno are alive at the bottom of a hole, and they know where the rest wen
 - **Next.** [[Session-12-03-terror-birds]]
 
 > [!narration] Opening
-> All morning the fruit piles draw you deeper under leaves so thick the light comes down green. Windfall waits every few hundred paces, and no bird breaks the hush. Then the trail shoulders through grass taller than your heads, wet blades slapping your faces, and the forest simply stops. The meadow beyond lies bitten close, flattened into sour circles under the sun. Just outside the stems, woodsmoke climbs from a ragged hole in the ground, with pale roots dangling over its lip and broken mossy trunks hunched around it. Men's voices argue under your feet, and beneath them a boy counts out loud.
+> Smoke is rising out of the bare meadow ahead like a chimney with no house under it, and somewhere beneath it men are arguing. The fruit piles have brought you through grass that closes over your heads, wet stems whipping your faces, into sun hard and bright after a morning of green leaves. It beats down on turf grazed short and pressed into wide rings that reek sour in the heat. The smoke pours from a ragged hole only a few strides out, where pale roots dangle over the lip, and a mossy stump sits in the tree shade off to your right. Beneath the argument, a boy's voice is counting.
 
 ````col
 ```col-md
@@ -61,19 +61,19 @@ flexGrow=1
 ````
 
 > [!narration] Matteo Scola
-> Matteo stops dead when the voices float up out of the ground. A slow grin splits his thin face, and he is past you at a run, one hand clamped over the lumpy sling at his hip. He skids to the lip of the hole, wet hair in his eyes, and leans over the drop. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." His fingers go to the laces of his trousers.
+> Matteo halts at the first voice, and a slow grin spreads over his thin face. Then he shoves past you and sprints for the hole, one hand pressed to the knotted sling on his hip. He pulls up at the edge with his toes over the drop. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." He starts unlacing his trousers.
 
 > [!narration] Piero Sorrentino
-> On the ledge below, a wiry old man braces himself on the black rock, face creased like weathered sailcloth. His rope-burned palms shake a twist of half-made vine cord at the light as he shouts, "Scola, you piss-rotten eel! You beside him, have you got a line?"
+> Down on a ledge of black rock, a stringy old man stands with his face tipped up to the light. He shakes a half-twisted length of vine cord at it in a fist burned shiny by years of rope and bellows, "Scola, you piss-rotten eel! "And you up on the hatch beside him, throw us a line!"
 
 > [!narration] Luca Ferrante
-> By the little fire, a lanky boy sits cross-legged with a notched knife loose in one hand and his shirt knotted into a pouch of pits and peel. His lips keep moving through a tally, and he reaches the end before he looks past Matteo to you. "Four of us," he calls, "three can walk, and you tell me how many you can carry."
+> Next to the small fire a lanky boy with a sunburned neck sits cross-legged, lips working through some count he finishes before he so much as looks up. Then he tips his head back and calls, "Four of us. Three walk, one gets carried. How many hands have you got?"
 
 > [!narration] Ettore Ferrante
-> Against the far wall, a heavy man props himself on his elbows, his left shin fixed between two sticks and sailcloth strips. Ink darkens his fingertips as they pat the binding, then pockets with nothing in them, then the hurt place again. He tries to sit up, gets halfway, and sinks back with a hiss through his teeth. "Forgive me," he calls up. "I would stand, but the leg has other opinions."
+> Against the wall behind the fire a heavy man half sits, half lies, his left shin splinted straight with two sticks bound in torn sailcloth. His fingers pat the splint, then his empty pockets, then the binding again. "Forgive the smell," he calls up, polite as a clerk at a toll window. "And the leg. The leg is entirely my fault."
 
 > [!narration] Gianni Moro
-> A broad barrel-maker with heavy forearms sits away from the others, planted against the rock and watching the fire instead of the sky. His thumb turns a bracelet of bent hoop around his wrist, the iron rubbing the skin beneath it pink. He glances up once and looks back at the flames. "Gianni," he says, "the cooper."
+> Off by himself, a broad-shouldered man leans on the rock and keeps his eyes on the flames, never on the hole above. A ring of bent barrel hoop circles one wrist, and his thumb works it round and round until the skin beneath has rubbed pink. When he finally looks up, it is only for a moment. "Gianni Moro," he says.
 
 ## Statblocks
 
@@ -106,7 +106,7 @@ With a rope and two people hauling, everyone is up in 10 minutes, and Ettore com
 - [ ] **Support.** In the first days after the wreck, the whole camp told Matteo he would die if he did not keep the woman's rule, and Matteo left them rather than listen. → surfaces through Matteo at the hole, and the four's answers.
 
 > [!narration] Revelation
-> The boy walks you to the rock face and taps the scratches in the black basalt one at a time, the way a clerk counts coins onto a table. Nineteen marks, all the same length, score a vein of rust red in the stone. Beside the last one, deeper than the rest and still pale with fresh dust, an arrow points along the tunnel wall toward the open meadow.
+> Above the sleeping piles, short upright scratches march across the black wall in a row as tidy as a ledger's column. The boy's knife hangs at his belt with its point worn blunt from making them. There are nineteen, and the last is so new that its groove is still pale with dust.
 
 ## Outcomes
 

@@ -32,7 +32,7 @@ The bird that drove the four into the hole has been waiting at its rim, and now 
 - **Next.** [[Session-12-04-orders-in-the-ash]]
 
 > [!narration] Opening
-> The ground bucks under your boots. The mossy stump in the tree shade unfolds two scaled slate legs and rises taller than a horse, ferns swinging from its shoulders. Its hooked beak sweeps toward you like a pickaxe. The smoking hole gapes at your backs, while an open strip runs to the far wall of tall blades and a dark channel slides along its foot. Halfway there, a low stand of white razer-grass catches the sun. Dust skips on the flattened earth as the bird drops its head.
+> The earth jumps under your boots, and the mossy stump under the trees unfolds a pair of scaled legs. It heaves itself up, ferns swaying off its shoulders, head higher than a mounted rider's, and its hooked beak swings round toward the hole. The tall grass you came out of lies only a few strides behind you, and ahead, bare ground runs to the next wall of green. Black water runs along its foot, and halfway across, a low patch of white blades throws back the sun. The bird lowers its head, and pebbles skip on the packed dirt.
 
 ## Actors
 
@@ -47,7 +47,7 @@ The bird that drove the four into the hole has been waiting at its rim, and now 
 - **The civilians.** [[matteo-scola]], [[luca-ferrante]], [[piero-sorrentino]], and [[gianni-moro]] use the [[commoner]] statblock. Each round nobody steadies them, they run 30 feet toward the most open ground, straight into the charge lanes. [[ettore-ferrante]] (4 HP, Speed 0) goes where his carrier goes.
 
 > [!narration] Terror-Bird
-> It comes at you straight as a thrown spear, head low and neck stretched flat, black feathers streaming moss and torn fern. Every stride thumps up through your heels a heartbeat before you hear it. The hooked front of its skull is lined with small yellow teeth, while one round eye locks on the closest body in bare ground. Ragged wings snap wide for balance as it eats up the last strides, and the jaws begin to part.
+> It runs flat out with its neck level and its head low, moss and torn fern streaming off its back. Each footfall knocks up through the turf into the soles of your boots before its sound reaches you. The beak, a man's arm in length and hooked like a gaff, gapes on a row of small teeth. One round yellow eye holds on the nearest of you standing in the open, and its ragged wings flare wide for the final bound.
 
 ## Statblocks
 
@@ -78,7 +78,7 @@ flexGrow=1
 | Round | What happens | Narration |
 | ----- | ------------ | --------- |
 | 1 | Fern-Back charges the creature at the edge of the huddle nearest to it. | _The stump at the rim is gone, the ground is jumping, and the ferns on its shoulders stream out flat behind it._ |
-| 2 | Every civilian nobody has steadied runs 30 feet toward open ground, east and north, away from Fern-Back. | _Piero and Gianni break for the middle of the grass, arms pumping, exactly the way they ran nineteen days ago._ |
+| 2 | Every civilian nobody has steadied runs 30 feet toward open ground, east and north, away from Fern-Back. | _Piero and Gianni break for the bare middle of the meadow, arms pumping, straight across the open ground._ |
 | 3 | Split-Beak charges the nearest creature in the north half of the Gap. | _At the far end of the meadow a second stump stands up, the old crack down its beak catching the noon light, and the ground starts drumming from both ends at once._ |
 | 4 | A bird holding a grappled creature swallows it and turns for its rim. | _The beak snaps shut with a wet clack, the throat bulges, and the bird wheels away at a run._ |
 ```
@@ -126,4 +126,4 @@ flexGrow=1
 - **Trust.** If the crossing was won, the civilians follow the party's orders from here.
 
 > [!narration] If the session ends here
-> At the far rim the bird settles back into the shade, feathers sagging and ferns drooping until it is only a mossy stump again. One yellow eye stays open on the grass where you went in. Then the ground beneath your boots starts to shake a second time, from the other end of the meadow.
+> Out on the bare ground the fern-hung bird wheels for another run, dust hanging in the air where it turned. Then, down at the meadow's other end, the shade moves. A second mossy stump heaves upright on scaled legs, its beak split end to end by an old pale crack, and now the earth shakes under you from two directions.

@@ -35,7 +35,7 @@ Tonight decides whether the [[fate-spinner]] stays with the party: [[talon-skarn
 - **Next.** [[Session-12-06-the-way-out]]
 
 > [!narration] Opening
-> The final offering turns you off the black road, and a narrow trail brings you into firelight. The clearing lies under one enormous vine, its trunk thicker than a mainmast, looping through the canopy and bowed heavy over the camp. Huge ribbed bulbs blush pink and gold beside grey pears armored like little stone walls, and bare cords dangle between them without a twitch. Seven gaunt men scramble to their feet around a small fire. Beyond them a dark channel slides past, and pollen glows along the treeline in the late sun. One guava hangs a hand's width from Perrin's nose, sweet and musky, as blue whale-light gathers around his cloak. A voice with no mouth behind it speaks one word inside his skull, **CONSUME.**
+> Seven thin men sit around a small fire under one vine as broad as a ship's keel, one of them sorting windfall into heaps. Overhead the great stem bows across the whole clearing, creaking under its load, with bundles of bare cord swaying in among the fruit. Beyond the flames black water slides by a moored raft, and along the treeline the last sun turns a drift of pollen to glowing dust. Where the trail lets you in, the vine hangs low. A ribbed guava as big as a man's head, smelling of honey and musk, sways close enough to brush Perrin's whiskers beside a pear plated in grey stone. A pale blue whale of light swims up around his cloak, and a voice speaks inside his skull from no throat at all, one word. CONSUME.
 
 ## Thread Harvest
 
@@ -57,16 +57,16 @@ Tonight decides whether the [[fate-spinner]] stays with the party: [[talon-skarn
 - **Twelve civilians.** The seven of the Pantry and the column's five, all [[commoner]]s. [[renzo-canale]] and [[carlo-ferrante]] speak first. [[ettore-ferrante]] cannot move himself, and Carlo covers him in a fight.
 
 > [!narration] Renzo Canale
-> Beside the fruit piles under the vine, a lean grey-haired elder lowers a guava to the ground. His broad clean hands stay open on his knees as his gaze finds the litter. He looks at the splinted leg the way a smith judges a cracked blade and says, "Bring him here, to the fire. I set bones."
+> Beneath the great vine an old man, lean and grey, puts down the guava he was sorting. His eyes find Ettore's splinted leg before any face, and he is already pushing his sleeves up over big, scrubbed hands as he says, "Lay him by the fire. I have set worse legs than that."
 
 > [!narration] Carlo Ferrante
-> At firelight's edge, a big dock foreman with one pale streak in his beard rises so fast the hook at his belt swings. His gaze fixes on the litter, and he crosses the ground with both hands shaking open. His mouth works twice before sound comes out. "Brother," he says.
+> A tall man sitting apart from the fire, facing the trail, is on his feet before anyone else. Firelight catches the grey stripe in his dark beard as he turns to Ettore and crosses the dirt slowly, as if it might give, his hands held open and shaking. Twice his lips move and nothing comes. "Brother," he says.
 
 > [!narration] Talon Skarn
-> In the middle of it all, something heavy lands on the packed dirt behind Crissdalynn, and nobody is standing there to have made the sound. Dust puffs around two clawed prints pressed deep into the ground, and a chain gives one soft click in empty air where a wrist should be. Then a strap on her harness draws tight, pulled by nothing at all.
+> Behind Crissdalynn, a weight thumps down onto the packed dirt where nobody stands. Two deep prints of splayed talons press into the ground in a puff of dust, and a chain ticks once in the empty air above them. Then the strap across her back twitches, as if a hooked finger has slid beneath it.
 
 > [!narration] Vine Lash
-> Overhead, every pale cord in the great vine goes stiff at once, and the fruit sways though no wind moves. The strands uncoil with a sound like wet line paying out over a rail, their frayed root tips feeling through the air as they lower toward the fire. One swings toward Perrin. Another stops above an empty patch of dirt beside the carrier, twitching as if it has touched something standing there.
+> Every bare cord in the vine stiffens together, and the fruit over the fire rocks on its stems in air that has not stirred. The bundles unwind with a long wet creak, like a hawser taking strain, and their frayed root ends grope down through the air toward the flames. One strand bends toward Perrin, and another halts above bare ground beside Crissdalynn, its tip twitching against something there that none of you can see.
 
 ## Statblocks
 
@@ -99,7 +99,7 @@ flexGrow=1
 ===
 ## Pressure
 
-- [ ] **1. Warning.** Before round 1: if Perrin picked fruit, the plants lean toward him and every insect stops for one breath. Either way, something heavy lands on the packed dirt behind the carrier (the Talon Skarn narration).
+- [ ] **1. Warning.** Before round 1: if Perrin picked fruit, the plants lean toward him and every drip and rustle in the clearing stops for one breath. Either way, something heavy lands on the packed dirt behind the carrier (the Talon Skarn narration).
 - [ ] **2. Escalation.** Skarn cuts straps and pouches on the carrier, unseen.
 - [ ] **3. Crisis.** The Spinner shows, or the carrier is pulled 10 feet toward the channel.
 - [ ] **4. Consequence.** Kusarigama pulls the Spinner free, and he goes for the channel sky.

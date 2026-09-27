@@ -29,13 +29,13 @@ The rescue worked: nine Calveno are ready to walk out behind the party at first 
 - **Reward.** Nine lives, the rules for surviving Aruhe, one fallen fruit for each PC, and level 6.
 
 > [!narration] Closing Image: the Spinner kept
-> By first light the fire has sunk to ash, and the clearing smells of damp smoke and crushed guava. Dew beads on the fruit overhead as nine Calveno wait at the trailhead with fibre bundles and a sack of dried slices on the cook's pack. The tall man with the streaked beard grips the front poles of his brother's litter while the boy takes the back, counting under his breath. Out on the channel the raft of deadwood rocks empty at its mooring. Under the vine, the old bonesetter lifts one big clean hand and holds it there.
+> Dawn finds the fire burned out, the clearing smelling of wet smoke and bruised guava. Nine Calveno stand ready where the trail leaves the clearing, fibre bundles on their backs, and the round-faced cook is bent under a sack of dried fruit. The big man with the stripe in his beard has the forward poles of Ettore's litter, and his nephew the rear, lips moving on a count. The deadwood raft bobs on its cord with nobody aboard. Beneath the vine, with the two who are staying, the old bonesetter raises a hand and keeps it raised.
 
 > [!narration] Closing Image: the Spinner taken
-> By first light the fire is a ring of cold ash, and nine Calveno wait at the head of the trail with their bundles. Crissdalynn's cut straps draw their eyes before the path ahead does. The silver-streaked man holds one hand on his brother's litter and the other on the hook at his belt. A single loose feather turns slowly on the pale water below the empty sky where the falcon went. Under the vine, the old bonesetter raises one big clean palm in farewell while the fruit hangs heavy and untouched above him.
+> Dawn finds the fire a cold grey ring. Nine Calveno stand ready where the trail leaves the clearing, and their eyes go to the cut straps dangling from Crissdalynn's harness before they go to the path. The big man with the stripe in his beard keeps a hand on his docker's hook and glances up every few breaths. Above the channel the sky is pale and empty. The old bonesetter stays under the vine, one palm lifted in farewell, the fruit heavy over his head.
 
 > [!narration] Closing Image: the falcon taken
-> By first light the falcon sits bound against a post of fallen wood, his wings strapped flat to his back and his chains coiled on the dirt out of reach. His amber eyes follow every bundle the Calveno tie up, and they give him a wide berth, walking the long way around the fire. The tall man with the grey streak in his beard stands at the litter's head while the boy waits at its foot. Under the vine, the old bonesetter lifts one big clean hand in farewell as dew on the fruit catches the morning sun.
+> Dawn finds the falcon lashed to a post of deadwood with his wings bound flat, and his chains lie heaped across the clearing where nobody need go near him. His eyes follow the straps on every bundle the survivors knot, and they walk wide around the fire rather than pass close. At the litter the big man with the stripe in his beard takes the front and his nephew the back. The old bonesetter, staying behind beneath the vine, raises a hand in farewell as the sun finds the dew on the fruit.
 
 ## Consequences
 

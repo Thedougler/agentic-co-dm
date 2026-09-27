@@ -30,7 +30,7 @@ The Gold caste sent these Grung, each sure the order was their own wish, to dest
 - **Next.** [[Session-12-05-consume]]
 
 > [!narration] Opening
-> After an hour beneath trees so close you keep one hand on the pack ahead, the forest opens onto a straight charred scar. Charcoal shows through the healed bark along both edges like burns under skin. Black flowers smother the path, spongy underfoot, and every step wrings up the smell of damp coppers left to rot. No birds sing here, and no insects hum. Farther along, the next pile of fallen fruit sits on its leaf beside a small body half swallowed by roots and petals, with something gold winking between its ribs.
+> The fruit piles lead you out of the trees onto a road fire once cut straight through the forest, where small skeletons lie half swallowed by black flowers. After an hour of forest so dense you could barely see the back in front of you, the long afternoon light pours down the open scar. On either side the trunks have grown fresh bark over charcoal, and underfoot the blossoms squash like soaked sponge, wringing up a reek of rot and copper at every step. A stone's throw on, another heap of windfall lies on a wide leaf next to one of the dead. The body is no bigger than Jean-Claude, and something gold glints between its ribs.
 
 ````col
 ```col-md
@@ -57,7 +57,7 @@ flexGrow=1
 ````
 
 > [!narration] Hinewai
-> Between two charred trunks a stone's throw off the road, the shade darkens beyond the hour. Two eyes open at Jean-Claude's height, orange as coals when you blow on them, and settle on him. No shape stands around them, and not a leaf stirs where flesh should be. "Another one," says a low voice, very calm, "invader. Where are you taking mine, kidnapper?"
+> Ten paces from the road, the shade between two charred trunks has gone darker than the rest of the forest. Two eyes open in it, orange as a cigarette end, and tilt down from far above any Grung's height to settle on Jean-Claude. Not a leaf stirs around them as a low voice speaks, very calm. "Another one. Invader. Where are you taking mine, kidnapper?"
 
 ## Statblocks
 
@@ -101,7 +101,7 @@ Jean-Claude reads any seal with no roll, and anyone can see that the dead are Gr
 - [ ] **Support.** The Gold caste wants the graves destroyed because its reports taught it that the island's curse is anchored there, and breaking it reopens Aruhe to the Grung of [[karath]]. → surfaces through the History check, or the voice, if asked what the Grung want: "My graves. They always want my graves."
 
 > [!narration] Revelation
-> The disc is cracked through and crusted with black earth, but the gold under the dirt is still bright. The curling script pressed into it is the same Jean-Claude learned as a child, neat and patient and old. The lines stack one above another, each a little fresher than the one before, as if someone kept coming back to add to it. The newest line sits at the bottom, driven so deep the metal has buckled around the letters. It tells its bearer to burn the forest.
+> Under its crust of black earth the disc is still bright gold, cracked into curved plates. Its face is crowded rim to rim with looping characters and lines of tiny raised beads, the Gold caste's hand, which Jean-Claude learned to read as a child. The orders run down it one below another, oldest at the top. "Report what lies inland." "Replace the parties that stopped reporting." "Find the two graves beneath the memorial tree and destroy them." And last, in the same neat lettering, "If the forest stands between, burn it."
 
 ## Outcomes
 
@@ -109,7 +109,7 @@ Jean-Claude reads any seal with no roll, and anyone can see that the dead are Gr
 | ------------- | ------------ | ---- | --------- |
 | Follows the fruit piles up the road | At dusk a side trail of piles leads off the road toward firelight under a great hanging vine. | [[Session-12-05-consume]] | _A mile on, the piles turn off the road into the trees, and far ahead through the trunks a fire is burning._ |
 | Leaves the road and turns back | The Calveno stay Hinewai's. The column camps in the Quiet, and Skarn strikes there at dusk instead. | [[Session-12-05-consume]], at the camp, without the vine and its lashes | _The black road falls behind, and the forest closes in grey around you._ |
-| Burns something or attacks the treeline | A vine lash answers, the voice withdraws, and the civilians are terrified of the party. | [[Session-12-05-consume]] | _Luca drags his father's litter back from you, and the others shuffle after him without a word._ |
+| Burns something or attacks the treeline | A vine lash answers, the voice withdraws, and the civilians are terrified of the party. | [[Session-12-05-consume]] | _Luca hauls his father's arm over his shoulder and drags him back from you, and the others shuffle after them without a word._ |
 
 **Carry forward.**
 - **Knowledge.** The order chain, that compelled Grung believed the order was their own, and that the Gold caste wants the curse broken.

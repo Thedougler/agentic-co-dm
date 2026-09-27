@@ -31,10 +31,10 @@ summary: "Play resumes where Session 11 stopped: Talon Skarn is on Crissdalynn a
 - **Next.** [[Session-12-02-the-smoking-skylight]]
 
 > [!narration] Previously
-> Last time, Jean-Claude went silent over the terraces as a four-winged hawk smashed down through the trees, and you carried him inland in Delmar's coat. At a cold ring of stones, Crissdalynn ate a fallen berry, then plucked another from the stem. Long-eared cats burst from the grass, and Perrin's fat illusion drew the hunt away. Where the river stilled, three boat-sized otters tossed Matteo Scola between them until you bored the family into swimming off. The rescued sailor taught you Aruhe's law, bit into a shimmering plum, and vanished. After dark, a voice asked you to admire its garden. On the final watch, a falcon came for her pack.
+> Last time, a four-winged hawk fell out of the sun onto the squid in the terraces, and Jean-Claude went silent on Delmar's back. So Delmar bundled him inside his coat and carried him inland rather than trust him to the bag. At a ring of old stones a fallen berry closed Crissdalynn's wounds, so she picked a second off the stem, and the grass burst open with wolfrabbits and diving hawks. Perrin threw out a hugely fat Perrin for bait, and the whole hunt chased it. When an eight-legged cat landed on Delmar, his shot struck exactly where he meant it, and the thing fled. At the next still pool three otters were tossing a thin sailor like a ball. Crissdalynn went in after him, and your tumbling bored the family off downstream. Matteo paid you back with the island's rule and a warning about a woman with orange eyes, then bit into a plum you could half see through and was gone. That night a black flower set Perrin laughing in the shallows, and a voice out of the dark invited you to come and see its garden. On the dawn watch a falcon came down on Crissdalynn. Her strike should have ended it there, but he shook it off and kept cutting at her pack.
 
 > [!narration] Opening
-> Grey light creeps across the still pool, and mist lies knee-deep over the camp, wet against every face still on the ground. At the dead fire the falcon crowds Crissdalynn, his katana bearing down on her staff until the ironwood creaks. Across the coals the rest of you lie in blankets heavy with dew, while rapids hammer below the rock lip. His chain lifts from the ash toward her harness.
+> Over the dead coals the falcon has Crissdalynn locked beak to beak, and his sword grinds against her staff while the sickle in his other fist picks at her harness buckles. Dawn has come up grey, and spray drifting off the rapids beads cold on the faces of everyone still in their blankets. A few strides past the fight the bank drops sheer into the still pool, and beyond its stone lip the white water roars loud enough to swallow the scrape of steel. Matteo sleeps through all of it on his mat, curled around his sling. Its curved point slides under the first strap and starts to saw.
 
 ````col
 ```col-md
@@ -74,7 +74,7 @@ flexGrow=1
 ````
 
 > [!narration] Talon Skarn
-> Up close the falcon is a peregrine in a monk's dark robe, broad through the chest, his wings half raised like a cloak caught in wind. Red crown feathers lie flat against his skull, and his amber eyes never rise to Crissdalynn's face. They track her fingers, her hips, and every buckle on her harness. Cloth wraps and loose chain cover his arms, ticking softly whenever his grip changes. "Open your hands, spinner-keeper," he says, low and even. "I am only here for the toy."
+> In the grey light the falcon is plain at last, a peregrine in a black monk's robe, his crest the only red left in camp now the fire is dead. He speaks the way a craftsman talks over his work, and the sickle never pauses. "Let go of the pouch, spinner-keeper," he says, low and level. "I take the toy, and you keep your fingers."
 
 
 ## Statblocks
