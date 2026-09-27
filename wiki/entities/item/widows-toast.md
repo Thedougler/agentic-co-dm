@@ -26,8 +26,17 @@ tier: supporting
 ---
 # Widow's Toast
 
-> [!narration] Narration
-> A short glass of rum poured near-black, the surface catching lamplight like something about to spill. [[Ysolde]] sets it down flat, same line every time: "Widow's Toast, and no, before you ask, nobody here's ever worn the name." Nobody ever has. You can no longer tell if it's still a joke. It smells of burnt sugar and something darker underneath, sweet at first sip and bitter by the second.
+> [!narration] Widow's Toast
+> A short glass of rum poured near-black, the surface catching lamplight like something about to spill. [[Ysolde Sallow]] sets it down flat, same line every time: "Widow's Toast, and no, before you ask, nobody here's ever worn the name." Nobody ever has. You can no longer tell if it's still a joke. It smells of burnt sugar and something darker underneath, sweet at first sip and bitter by the second.
 
+## At a Glance
 
-*Consumable (Drink), Mundane.* The house pour at [[The Long Toast]], dark rum served with a joke about widowhood that stopped landing once nobody on [[otel-karn]] kept becoming one. One glass counts as one drink, with ordinary intoxication and no other effect.
+*Consumable (Drink), mundane.*
+
+Widow's Toast is the house dark rum at [[The Long Toast]], poured by [[Ysolde Sallow]] on [[otel-karn]].
+
+- **Table effect.** One glass counts as one alcoholic drink, with ordinary intoxication and no other effect.
+
+## Properties
+
+**Ordinary drink.** Drinking one glass causes ordinary intoxication and has no magical or additional mechanical effect.
