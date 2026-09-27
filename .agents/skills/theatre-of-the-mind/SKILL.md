@@ -523,9 +523,13 @@ run the list again.
       matters right now, and what has changed? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
-- [ ] **Compress.** Quote the first sentence: does it give the situation
-      or the danger (a caption fails)? Number every new detail in the block:
-      are there four to six, around one anchor? For each person and creature,
+- [ ] **Compress.** Quote the first sentence and name, in its own words,
+      who is or was here and what is or was just happening (for an empty
+      place, the trace they left). A first sentence of only ground, water,
+      light, or where "you" stand is a caption. Number every thing in the
+      block the players could picture or act on, grouping only what one
+      noun covers (the fishing gear): are there four to six, around one
+      anchor? For each person and creature,
       list every feature the block gives them (build, clothes, hair, skin,
       eyes, marks): is there exactly one, beside one behavior, in a situated
       block? Does every known companion in the block act, and could any
