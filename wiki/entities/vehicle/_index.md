@@ -10,7 +10,7 @@ reveal: unrevealed
 summary: Folder index of Vehicles.
 ---
 
-- [[entities/vehicle/Amberreach|Amberreach]]
+- [[entities/vehicle/amberreach|Amberreach]]
 - [[entities/vehicle/fernen|Fernen]]
 - [[entities/vehicle/glass-debt|Glass Debt]]
 - [[entities/vehicle/greyteeth-runner|Greyteeth Runner]]
