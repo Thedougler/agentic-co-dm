@@ -470,7 +470,8 @@ matches it or has been rewritten to.
 
 - **Specific nouns and finished verbs.** "Bodies lie here and there" becomes
   "bodies are strewn across the hillside"; "some monster left tracks" becomes
-  "a monster left tracks".
+  "a monster left tracks"; "a long straight sword" becomes the katana the
+  owner page names, and "her staff" its ironwood.
 - **Active subjects where the actor matters.** "The city was protected by an
   order of knights" becomes "an order of knights protects the city"; "the
   clerics are speaking" becomes "the clerics speak". Passive voice stays
