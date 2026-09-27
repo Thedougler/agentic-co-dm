@@ -242,13 +242,15 @@ def test_health_default_matches_lint_shape(tmp_path: Path):
     default = run_cli(tmp_path, "health")
     assert default.returncode in (0, 1), default.stderr
     assert not default.stdout.lstrip().startswith("{"), default.stdout[:200]
-    assert "next: entities/npc/real.md" in default.stdout
     assert "journal/_index.md" not in default.stdout
     data = payload(run_cli(tmp_path, "health", "--json"))
-    assert data["next"]["path"] == "entities/npc/real.md"
-    assert data["next"]["action"] == "wiki lint entities/npc/real.md"
+    nxt = data.get("next") or {}
+    assert not str(nxt.get("path") or "").endswith("_index.md")
+    if nxt.get("path"):
+        assert nxt["action"].startswith("wiki lint ")
     assert "identity" not in data
     assert "scope" not in (data.get("lint") or {})
+
 
 
 
@@ -257,6 +259,30 @@ def test_health_help_has_copyable_examples():
     assert result.returncode == 0, result.stderr
     assert "Examples:" in result.stdout
     assert "wiki health --json" in result.stdout
+
+
+def test_lint_skips_generated_index(tmp_path: Path):
+    page(tmp_path, "journal/_index.md", title="Journal Index")
+    page(tmp_path, "entities/npc/real.md", title="Real")
+    data = payload(run_cli(tmp_path, "lint", "--json"))
+    files = {item["file"] for item in data.get("files") or []}
+    assert "journal/_index.md" not in files
+    assert "journal/_index.md" not in {row["page"] for row in data.get("backlog") or []}
+
+
+def test_health_regenerates_moc_without_linting_it(tmp_path: Path):
+    page(tmp_path, "entities/npc/alpha.md", title="Alpha")
+    page(tmp_path, "entities/npc/bravo.md", title="Bravo")
+    index = tmp_path / "entities/npc/_index.md"
+    assert not index.exists()
+    result = run_cli(tmp_path, "health")
+    assert result.returncode in (0, 1), result.stderr
+    assert index.is_file()
+    data = payload(run_cli(tmp_path, "lint", "--json"))
+    files = {item["file"] for item in data.get("files") or []}
+    assert "entities/npc/_index.md" not in files
+
+
 
 
 

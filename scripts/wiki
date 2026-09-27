@@ -25,7 +25,8 @@ from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, sa
 from tools.wiki_ops.pretty import render_health, render_lint, render_lint_fix, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
-from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
+from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist, is_moc_page
+
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
 
@@ -53,7 +54,9 @@ def _machine_error(message: str, *, json_out: bool = False) -> int:
 def _live_files(vault: Path) -> list[Path]:
     return sorted(
         path for path in vault.rglob("*.md")
-        if path.is_file() and not SKIP_DIRS.intersection(path.relative_to(vault).parts)
+        if path.is_file()
+        and not SKIP_DIRS.intersection(path.relative_to(vault).parts)
+        and not is_moc_page(path.relative_to(vault).as_posix())
     )
 
 
@@ -85,6 +88,8 @@ def _resolve_paths(vault: Path, values: list[str]) -> list[str]:
             if candidate.suffix.casefold() != ".md":
                 raise ValueError(f"path must be a Markdown file: {raw!r}")
             relative = candidate.relative_to(root).as_posix()
+            if is_moc_page(relative):
+                continue
             if relative not in seen:
                 seen.add(relative)
                 ordered.append(relative)
@@ -94,12 +99,16 @@ def _resolve_paths(vault: Path, values: list[str]) -> list[str]:
                 if child.is_file() and not SKIP_DIRS.intersection(child.relative_to(root).parts)
             ):
                 relative = path.relative_to(root).as_posix()
+                if is_moc_page(relative):
+                    continue
                 if relative not in seen:
                     seen.add(relative)
                     ordered.append(relative)
         else:
             raise ValueError(f"path is not a file or directory: {raw!r}")
     return ordered
+
+
 
 
 def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
@@ -679,6 +688,17 @@ def _remorph_plan(vault: Path) -> dict[str, Any]:
         }
     }
 
+def _moc_generate(vault: Path) -> dict[str, Any]:
+    data = _run_json(
+        [sys.executable, str(ROOT / "scripts/wiki-bulk-ops"), "moc-generate", "--vault", str(vault), "--json"],
+        ROOT,
+    )
+    if not isinstance(data, dict):
+        return {"metric": {"files_modified": 0}}
+    return {"metric": {"files_modified": int(data.get("files_modified") or 0)}}
+
+
+
 
 
 
@@ -705,7 +725,9 @@ def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | No
 def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     lint_args = argparse.Namespace(paths=args.paths, full=False)
     times: list[tuple[str, int]] = []
+    _timed("health.moc", lambda: _moc_generate(vault), times)
     lint, lint_code = _timed("health.lint", lambda: _compute_lint(lint_args, vault), times)
+
     paths = _resolve_paths(vault, args.paths)
     pages = [vault / relative for relative in paths]
     bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
