@@ -52,8 +52,8 @@ flexGrow=1
 - **Pressure.** Skarn works the pack, one step at the end of each round:
   1. He cuts a strap, and a pouch hangs by a thread.
   2. **Kusarigama** pulls Crissdalynn 10 feet away from whoever is helping her.
-  3. The Spinner shows. **Chain Snap** goes for it: a Kusarigama attack `+11` against AC 10 if it is loose, or, if it is in a hand, the holder makes a **Strength** or **Dexterity** save `DC 19` or loses it into his fist.
-  4. At 97 HP or fewer he takes his **Last Stoop**: straight up, then a Stoop on the carrier next turn if open sky lets him, then gone. After three rounds without the Spinner showing, he leaves straight up with **Step of the Falcon**.
+  3. The Spinner shows. **Chain Snap** goes for it: a Kusarigama attack `+11` against AC 10 if it is loose, or, if it is in a hand, the holder makes a **Strength** or **Dexterity** save `DC 18` or loses it into his fist.
+  4. At 97 HP or fewer, or after three rounds without the Spinner showing, he leaves straight up with **Step of the Falcon**.
 ```
 
 ```col-md
@@ -65,8 +65,8 @@ flexGrow=1
   - **State.** 150 of 195 HP, 2 Legendary Resistances left, **Kusarigama Tempest** charged.
   - **Opening move.** Katana and Sai on Crissdalynn's straps and pouches. Kusarigama pulls her away from anyone who comes to help.
   - **Adapts.** A grappler gets **Stunning Strike**, then he spends his action escaping with **Dexterity (Acrobatics)** `+16`. Two or more creatures within 20 feet of him get **Kusarigama Tempest**.
-  - **Break point.** 97 HP or fewer. **Last Stoop** takes him straight up, and everyone gets one round before he dives on the carrier. The treeline 20 feet north is the nearest cover overhead.
-  - **Exit.** Straight up into the sky the turn after his Last Stoop. He never fights to the death.
+  - **Break point.** 97 HP or fewer. He grabs the Spinner if it is visible and in reach, then leaves.
+  - **Exit.** Straight up into the sky with **Step of the Falcon**. He never fights to the death.
   - **If spoken to.** He answers one question a round without stopping work: who sent him ("My master"), what he wants ("The toy"). He says nothing else.
 - **[[river-otter]]s, three.** They ignore the bank. Anyone in the pool at the end of the next round becomes their game: **Tug Toy** on gear and dunks that deal no damage, unless someone hurts one of them.
 
