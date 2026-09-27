@@ -518,11 +518,12 @@ run the list again.
       matters right now, and what has changed? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
-- [ ] **Compress.** Does the first sentence give the situation or the
-      danger (a caption fails), is there one anchor, are there four to six
-      new details, does each person and creature come across as one feature
-      and one behavior (not a list of features, even one spread across
-      sentences), does every known companion in the block act, and could any
+- [ ] **Compress.** Quote the first sentence: does it give the situation
+      or the danger (a caption fails)? Number every new detail in the block:
+      are there four to six, around one anchor? For each person and creature,
+      list every feature the block gives them (build, clothes, hair, skin,
+      eyes, marks): is there exactly one, beside one behavior, in a situated
+      block? Does every known companion in the block act, and could any
       sentence go without losing anything?
 - [ ] **Show.** Is every judgment word, mood, and page label replaced by
       the thing the characters see or hear, with at most one impression
@@ -536,7 +537,9 @@ run the list again.
       the checks, and the other entrances on the page or in the withheld
       note?
 - [ ] **Art.** Was every related image searched for and opened, and does the
-      block carry the few pixel details that set each subject apart?
+      block's one feature for each subject come from what sets it apart in
+      the pixels? The rest of the pixel detail stays in the art note.
+      (Portrait: the Build items the recipe lists.)
 - [ ] **Felt.** (Situated) Is one thing already moving, do two senses work
       with one of them nonvisual doing a second job, and does something land
       on the characters' bodies?
