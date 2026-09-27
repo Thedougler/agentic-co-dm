@@ -32,7 +32,7 @@ visibility: dm
 ```col-md
 ## Scene ends when
 
-This beat ends when the party commits to the northbound prints and smoke. Hand to [[Session-11-03-Wolfrabbits]].
+This beat ends when the party commits to the northbound prints and smoke. Hand to [[session-11-03-wolfrabbits]].
 
 Plan for about thirty minutes.
 
@@ -121,7 +121,7 @@ If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this 
 | [[landing-bank\|This bank]] / grass and river | Here, in eight-foot grass. The river is immediately east and wraps south around this bank. | This grass hides a standing body, is **Difficult Terrain**, and heavily obscures anything beyond 10 feet. | _The grass closes over your shoulders, and the river rasps beside the bank._ |
 | The used stop | 15 feet west of the water, on the river side of the prints. | Open grass around ash, crate, bowls, and fallen fruit. | _Cold ash fills the stone ring in scraped dirt. The shut crate, bowls, orange fruit, and torn skins are within reach; the skins smell sharp and sweet._ |
 | Terrace woods | 20 feet west of the prints. Crash-landed party members start here, **Prone**. | Thin cover among mossy garden stone, mangrove roots, and fruiting steps. | _Moss coats the low garden walls, and wet steps climb into the trees among split fruit and pink-gold globes._ |
-| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | Following that trail is [[Session-11-03-Wolfrabbits]]. | _Sharp sole marks hold the mud. A crushed path runs north beside the river and leaves this bank._ |
+| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | Following that trail is [[session-11-03-wolfrabbits]]. | _Sharp sole marks hold the mud. A crushed path runs north beside the river and leaves this bank._ |
 | Inland smoke | A thin column on the northern horizon in this same valley. | The smoke is not reachable on this card. | _Wind bends the smoke column above the far grass until its top breaks apart._ |
 
 ## Be ready for
@@ -129,7 +129,7 @@ If anyone plucks a living plant, fishes, traps, or kills to carry flesh on this 
 | Intent | Approach | DC | Success | Partial | Failure |
 | --- | --- | --- | --- | --- | --- |
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Investigation)** | `DC 10` | The ash, tracks, bowls, and rinds are recent. The route runs north toward the smoke. Fruit on the ground is off the plant, while red berries hang at the wet margin. The group's size and treatment of living fruit remain unknown. | The looker identifies the northbound trail but learns nothing else about the stop or fruit. | The looker gains no useful detail and remains on this bank. |
-| Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | Following the corridor commits the party to the north trail toward the smoke. Hand to [[Session-11-03-Wolfrabbits]] and end this scene. | This is a binary choice. The party leaves the bank only by following the corridor. | This is a binary choice. The party remains on this bank until it chooses a route. |
+| Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | Following the corridor commits the party to the north trail toward the smoke. Hand to [[session-11-03-wolfrabbits]] and end this scene. | This is a binary choice. The party leaves the bank only by following the corridor. | This is a binary choice. The party remains on this bank until it chooses a route. |
 | Search the crate and fire scrape | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | The searcher can carry the closed crate and confirms that the scrape is cold ash in cleared dirt. The search does not establish the group's size or treatment of living fruit. | The searcher confirms that the stop is recent but remains at the crate. | The searcher remains at the used stop, and the crate's contents stay unknown. |
 | Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to distinguish fallen fruit from living stems. Use **Utilize** if the party member plucks without sorting. Deliberately plucking a living stem counts as a take. | `DC 10` | The forager takes only fruit already on the ground, which does not count as a take. Eating a fallen [[redheart-berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | The forager plucks some living stems. Mark [[taking-on-aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | The forager strips living fruit. Mark [[taking-on-aruhe]]; the later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 
@@ -157,19 +157,19 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party follows the north prints toward the smoke and enters [[torn-crossing]]. Hand to [[Session-11-03-Wolfrabbits]] and apply any [[taking-on-aruhe]] take already made.
+The party follows the north prints toward the smoke and enters [[torn-crossing]]. Hand to [[session-11-03-wolfrabbits]] and apply any [[taking-on-aruhe]] take already made.
 
 > [!narration] How the Scene Resolves
 > The used stop falls behind as the northbound path leaves the bank. The river keeps pace beside the crushed grass, and the smoke waits farther upvalley.
 >
 | If | Next | Narration |
 | --- | --- | --- |
-| Fresh commit | The party is on the north trail toward the smoke with sharp prints. Hand to [[Session-11-03-Wolfrabbits]]. | _Sharp prints lead north along the river toward the thin smoke._ |
-| Lingered commit | The party is on the north trail toward the smoke after the clock has advanced. Hand to [[Session-11-03-Wolfrabbits]]. | _Softened prints lead north beside the river, and the smoke has thinned above the valley._ |
+| Fresh commit | The party is on the north trail toward the smoke with sharp prints. Hand to [[session-11-03-wolfrabbits]]. | _Sharp prints lead north along the river toward the thin smoke._ |
+| Lingered commit | The party is on the north trail toward the smoke after the clock has advanced. Hand to [[session-11-03-wolfrabbits]]. | _Softened prints lead north beside the river, and the smoke has thinned above the valley._ |
 
 ## Backup
 
-[[landing-bank]] · [[torn-crossing]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[old-gardens]] · [[redheart-berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[landing-bank]] · [[torn-crossing]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[old-gardens]] · [[redheart-berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[session-11-03-wolfrabbits]]
 
 ## Battlemap
 

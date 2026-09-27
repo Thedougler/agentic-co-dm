@@ -49,7 +49,7 @@ Matches [[Session-11-01-Angry-Birds]]. The adult bloodhawk finishes its dive on 
 
 ### 02 Landing sign
 
-Matches [[Session-11-02-Landing-Sign]] in outline. The inland party lands at a cold ring of stones with half-eaten fruit rather than returning to the beach. Smoke and an upriver line remain the working direction of travel.
+Matches [[session-11-02-landing-sign]] in outline. The inland party lands at a cold ring of stones with half-eaten fruit rather than returning to the beach. Smoke and an upriver line remain the working direction of travel.
 
 ### 03–04 Fruit test, wolfrabbits, Spiguar
 
@@ -59,7 +59,7 @@ An eight-legged leaf-mantled cat, a [[spiguar]], pounces from cover. Delmar's ri
 
 ### 05 Otter hole — Matteo
 
-Matches [[Session-11-05-Otter-Hole]]. At slack water, three roughly twelve-foot [[river-otter|otters]] have a thin man in a rough game. Crissdalynn pulls him out. The otters want play, not meat. Delmar, Perrin, and Crissdalynn burn time, flight, and acrobatics to tire them until the otters swim downriver.
+Matches [[session-11-05-otter-hole]]. At slack water, three roughly twelve-foot [[river-otter|otters]] have a thin man in a rough game. Crissdalynn pulls him out. The otters want play, not meat. Delmar, Perrin, and Crissdalynn burn time, flight, and acrobatics to tire them until the otters swim downriver.
 
 He names himself Matteo Skola in the raw audio labels ^[ambiguous]; the live owner page is [[matteo-scola]] (Scola). He wants off the island. He confirms the fruit rule from survivor deaths. Other survivors went farther inland after a woman in the woods: if you see her at night, hear her later, and listen, you survive; if you refuse, you die. Matteo distrusts her and left that group; the otters hit him after he refused. He eats a [[ghost-plum]] and vanishes in front of them. [[stonepear|Stonepears]] at the otter hole, taken as a bonus, grant resistance to all damage for one minute.
 
@@ -69,11 +69,11 @@ He names himself Matteo Skola in the raw audio labels ^[ambiguous]; the live own
 
 ### 07–08 Night watch at the otter camp
 
-Prep cards [[Session-11-07-False-Help]] and [[Session-11-08-Night-Watch]] assume Spoke Ring. Play instead posts watch at the slack-basin otter camp. Watch order: Delmar first, Perrin with Matteo in the middle, Crissdalynn last. A repeating voice says to admire my garden. Lantern light scares something off a dead porcupine. Delmar and Perrin keep fire and lantern ready and later cook porcupine meat while saving quills.
+Prep cards [[session-11-07-false-help]] and [[Session-11-08-Night-Watch]] assume Spoke Ring. Play instead posts watch at the slack-basin otter camp. Watch order: Delmar first, Perrin with Matteo in the middle, Crissdalynn last. A repeating voice says to admire my garden. Lantern light scares something off a dead porcupine. Delmar and Perrin keep fire and lantern ready and later cook porcupine meat while saving quills.
 
 ### 09 Theft on the watch — cliffhanger
 
-Matches [[Session-11-09-Theft-on-the-Watch]] in intent, at this camp rather than Star Cut. On Crissdalynn's watch a falcon stoops, misses her (cloak and AC matter), and goes for the pack that might hold the [[fate-spinner]]. Table talk names [[talon-skarn]] or [[talon-vantyrus]]; the live recap and Skarn page treat the attacker as Skarn. She lands a stunning strike; he burns through it with legendary resistance / action and stays in her face. Play stops mid-fight.
+Matches [[session-11-09-theft-on-the-watch]] in intent, at this camp rather than Star Cut. On Crissdalynn's watch a falcon stoops, misses her (cloak and AC matter), and goes for the pack that might hold the [[fate-spinner]]. Table talk names [[talon-skarn]] or [[talon-vantyrus]]; the live recap and Skarn page treat the attacker as Skarn. She lands a stunning strike; he burns through it with legendary resistance / action and stays in her face. Play stops mid-fight.
 
 ### 10 Aftermath — not resolved
 

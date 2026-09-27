@@ -33,7 +33,7 @@ tier: supporting
 >
 > There is no sounding rod anywhere in the cabin.
 
-*Wondrous Item, Uncommon.* The captain of *[[glass-debt|the Glass Debt]]* kept the disc in a leather pouch beside the logbook. The navigation entries are precise for the [[Shelfworks]] approaches. No crew entry names the instrument or explains the method.
+*Wondrous Item, Uncommon.* The captain of *[[glass-debt|the Glass Debt]]* kept the disc in a leather pouch beside the logbook. The navigation entries are precise for the [[shelfworks]] approaches. No crew entry names the instrument or explains the method.
 
 | Field | Detail |
 |---|---|

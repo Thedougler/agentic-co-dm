@@ -54,6 +54,6 @@ No stats given in source.
 
 ## Connections
 
-- [[Warren]]: embedded in its social structure; runs the [[low-lamp]] there
+- [[warren]]: embedded in its social structure; runs the [[low-lamp]] there
 - [[nona-black-jaw]]: long-standing Warren connection; knew her late husband by name
 - Pip: grand-nephew, runs errands for her

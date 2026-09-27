@@ -54,7 +54,7 @@ His father's philosophy survived him. Rael learned it young through training rot
 **Detect Magic.** [[magic-in-the-shattered-sea|The spell]] reads as Necromancy. A deep cold is present behind Delmar's eyes, as though a second presence looks out from the same face.
 **Counterspell.** A deity imposes the binding rather than an active caster, so [[magic-in-the-shattered-sea|the spell]] cannot affect it.
 
-The Cloak of Useful Things went down with the *Red Lady* at the [[Shelfworks]] eastern shelf descent, alongside the [[pearl-of-souls]]. Potentially recoverable as part of a deeper Shelfworks dive.
+The Cloak of Useful Things went down with the *Red Lady* at the [[shelfworks]] eastern shelf descent, alongside the [[pearl-of-souls]]. Potentially recoverable as part of a deeper Shelfworks dive.
 
 ## Stats & Combat
 

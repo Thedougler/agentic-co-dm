@@ -21,13 +21,13 @@ kind: criminal
 status: active
 scope: regional
 region: Midchain
-base: "[[Warren]]"
+base: "[[warren]]"
 relationships:
   - target: "[[nona-black-jaw]]"
     type: uses
   - target: "[[beaumont-sel]]"
     type: uses
-  - target: "[[Warren]]"
+  - target: "[[warren]]"
     type: uses
   - target: "[[tessarine-concordat]]"
     type: uses
@@ -53,7 +53,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | Rescue and smuggling network. |
 | **Scope** | Regional. |
-| **Base** | [[Warren]]. |
+| **Base** | [[warren]]. |
 | **Leader** | [[nona-black-jaw]], route face. |
 | **Public purpose** | Move people, cargo, and news where official routes cannot. |
 | **Signature method** | Safe kitchens, family couriers, and commercial cover. |
@@ -82,7 +82,7 @@ flexGrow=1
 - **Status quo.** The Passage moves people, cargo, and news off Crown charts through kitchens, family ties, and Tessarine-looking paper that is cover, not a command structure.
 - **Recent change.** [[nona-black-jaw]] turned the Mercatura crater into a missing-persons desk, sent two Passage ships after the raiders, and the party reached [[aruhe]] while following the raid's survivors.
 - **Pressure.** More than `314` fighting-age people are already on the captive pipeline, and the Crown will try to own any rescue it can see.
-- **Strength.** Deepest anchor at [[Warren]]; kitchens and family ties matter as much as ships; routes already touch [[calven-and-calveno]] and the [[Midchain]].
+- **Strength.** Deepest anchor at [[warren]]; kitchens and family ties matter as much as ships; routes already touch [[calven-and-calveno]] and the [[Midchain]].
 - **Vulnerability.** Tessarine paper keeps a route off charts only while no inspector asks the next question, and there is no formal Concordat deal to hide behind.
 - **Opportunity.** The party can accept, reshape, or refuse Passage obligations without the network treating refusal as the end of the relationship.
 
@@ -127,14 +127,14 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Warren]] | Headquarters / Hidden | Deepest anchor and the network's origin. | Elder teaching still judges new routes. |
+| [[warren]] | Headquarters / Hidden | Deepest anchor and the network's origin. | Elder teaching still judges new routes. |
 | [[calven-and-calveno]] | Strong | Nona's kitchen and the missing-persons desk. | Crown and Concordat paper both touch the harbour. |
 | [[Midchain]] | Contested | Sea lanes the Passage can use without staying on charts. | Crown cutters can run the main lanes. |
 | [[aruhe]] | Temporary | The crew reached the island while following the Calveno raid's survivors. | Survivors remain inland and the ship stays mobile. |
 
 ## Secrets
 
-**Hidden truth.** The Passage grew from [[Warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
+**Hidden truth.** The Passage grew from [[warren]] around 1240 DR to protect communities that official systems price out. Its explicit law, never move people as property, is a comment on what colonial credit will buy if nobody refuses it.
 
 ## Connections
 
@@ -175,6 +175,6 @@ If the agenda completes, the taken move on Passage terms and the Crown does not 
 
 ## History
 
-- **Around 1240 DR.** The network grew from [[Warren]] under pressure and kept relationships that papers and debt would otherwise erase.
+- **Around 1240 DR.** The network grew from [[warren]] under pressure and kept relationships that papers and debt would otherwise erase.
 ## Hidden Agenda
 

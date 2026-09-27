@@ -30,7 +30,7 @@ A two-masted, privateer-rigged brigantine built by the [[chain-council]], 96 fee
 
 [[delmar-fisk]] was Admiral, [[rael-corven]] was flag captain, and [[crissdalynn-khinriss]] was navigator and crow for nearly two years. She led five ships into The Drowned Maw: the *Red Lady*, *[[the-narrow]]*, *[[Heft]]*, *[[fernen]]*, and *[[the-loud-argument|Loud Argument]]*. None returned. Fog swallowed all five at once, and a rogue trench opened in their path, driving them 80 feet down. [[crissdalynn-khinriss|Crissdalynn]] dove from the crow's nest and flew Fisk clear before the walls closed. Only two ships survived the disaster, and the *Red Lady* was not among them.
 
-The wreck sits at [[Shelfworks|the Shelfworks]]' eastern edge, below [[Umberlee]]'s reach, with the [[pearl-of-souls]] still aboard. The Fleet Room holds records of who hired the Pearl theft, including coded logs, keys, and notes. [[rael-corven]]'s Cloak of Useful Things went down with the ship. A deeper dive might raise it.
+The wreck sits at [[shelfworks|the Shelfworks]]' eastern edge, below [[Umberlee]]'s reach, with the [[pearl-of-souls]] still aboard. The Fleet Room holds records of who hired the Pearl theft, including coded logs, keys, and notes. [[rael-corven]]'s Cloak of Useful Things went down with the ship. A deeper dive might raise it.
 
 A salvage group is gathering in [[calven-and-calveno]] to raise the wreck. Strange money has caught the eye of [[savia-brentino]] and [[The Tangle]]. [[batta-zusto]] serves as their broker, knowing the group but not who funds it. The team runs 8 to 10 crew members with two or more trained to dive deep. Their mid-size cargo ship carries sealed maps, diving gear, air bags, and rope for the 10 to 14 day trip.
 

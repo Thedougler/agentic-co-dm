@@ -16,7 +16,7 @@ kind: organization
 status: active
 scope: regional
 region: "Calven and Calveno"
-base: "[[Warren]]"
+base: "[[warren]]"
 summary: "A Rattkin network that moves people, cargo, and secrets past colonial eyes."
 provenance:
   extracted: 1.0
@@ -39,7 +39,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | A Rattkin route network of travelling families, crews, safe holds, and trusted fronts. |
 | **Scope** | Regional, with its anchor Run beneath Calveno and routes extending beyond colonial charts. |
-| **Base** | [[Warren|The Warren]] beneath Calveno. |
+| **Base** | [[warren|The Warren]] beneath Calveno. |
 | **Leader** | The seven elders of [[tangle|The Tangle]] oversee the Calveno Run; [[nona-black-jaw|Nona Black-Jaw]] leads the Warren's anchor Run. |
 | **Public purpose** | Move people to freedom, carry messages, and keep useful cargo outside colonial record-keeping. |
 | **Signature method** | Coded trust, safe kitchens, hidden routes, and commercial cover. |
@@ -80,7 +80,7 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 
 **Next move:** Nona and the Tangle will choose whether to send the warning through shadow channels or break protocol and warn Calveno openly.
 
-**Needs:** Reliable intelligence from [[felix-aho|Felix Aho]], a trusted messenger, and a route through [[Warren|the Warren]], the hidden Overland Track, or [[oshas-slip|Osha's Slip]].
+**Needs:** Reliable intelligence from [[felix-aho|Felix Aho]], a trusted messenger, and a route through [[warren|the Warren]], the hidden Overland Track, or [[oshas-slip|Osha's Slip]].
 
 **Opposition:** [[grung-clans|The Grung Clans]] create the immediate threat; Crown scrutiny and the Passage's own demand for secrecy make the warning harder to deliver.
 
@@ -106,7 +106,7 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 | [[Tangle\|The Tangle]] | Seven senior elders | Keep the Calveno Run and its routes alive | Must balance secrecy against the bombing warning |
 | [[nona-black-jaw\|Nona Black-Jaw]] | Leader of the Warren's anchor Run | Keep the Run and its people alive | Acts for the Passage but carries local responsibility |
 | [[enzo]] | Nona's order-carrier | Carry out Nona's decisions | Loyal to Nona |
-| [[Ruk]] | Kitchen guard | Protect the Warren's people and food | Holds the anchor community together |
+| [[ruk]] | Kitchen guard | Protect the Warren's people and food | Holds the anchor community together |
 | [[cobb]] | Dry-dock operator | Keep La Vasca useful under Black-Jaw colors | Supports the anchor Run |
 | Travelling families and crews | The Runs | Preserve route knowledge and move people and messages | Distributed; no single public commander |
 
@@ -186,6 +186,6 @@ The Passage's One Law is simple: it hides cargo and carries messages, but it smu
 
 ## History
 
-- **1240 DR:** The Passage formed out of [[Warren|the Warren]] to avoid colonial pressure from the [[tessarine-concordat|Tessarine Concordat]] and [[dravosi-crown|Dravosi Crown]].
+- **1240 DR:** The Passage formed out of [[warren|the Warren]] to avoid colonial pressure from the [[tessarine-concordat|Tessarine Concordat]] and [[dravosi-crown|Dravosi Crown]].
 - **Session 02:** Beaumont Sel introduced himself to the crew as a Friend of the Passage after the Saltwright boarding.
 - **Session 04:** [[oleandro-fuschi|Ponte Bassa]] became the crew's base, a tavern near La Vasca and a Passage front.

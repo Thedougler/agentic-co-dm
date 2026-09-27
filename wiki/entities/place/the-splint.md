@@ -24,7 +24,7 @@ summary: "The Warren's only source of healing, run by Colla."
 
 ## At a Glance
 
-[[The Splint]] is [[Warren]]'s only source of healing, run by [[colla|Colla]] for Kin and surface folk.
+[[The Splint]] is [[warren]]'s only source of healing, run by [[colla|Colla]] for Kin and surface folk.
 
 ## If the party
 
@@ -40,7 +40,7 @@ The room provides wound treatment and healing. Colla's policy is to give opposin
 
 ## Where
 
-The Splint is in [[Warren]]. The current record does not establish its adjoining route or neighboring room.
+The Splint is in [[warren]]. The current record does not establish its adjoining route or neighboring room.
 
 ## Why
 

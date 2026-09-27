@@ -36,7 +36,7 @@ flexGrow=2
 | ---------- | ----------------------------------------------- |
 | **Nature** | An old enough, practical halfling who knows the arithmetic of risk and says each thing once. |
 | **Home**   | [[Al Fondale]] in [[le-paludi]], [[calven-and-calveno]] |
-| **Wants**  | To keep Al Fondale running and the cellar entrance to the [[Warren]] unknown to anyone who should not know it. |
+| **Wants**  | To keep Al Fondale running and the cellar entrance to the [[warren]] unknown to anyone who should not know it. |
 | **Leverage** | Every regular face in Le Paludi, the tavern's ordinary cellar traffic, and a quiet Passage credential. |
 | **Limit**  | She is not an operative, carries no messages, and knows only the entrance panel rather than the Warren's layout. |
 
@@ -97,6 +97,6 @@ Bice speaks in flat certainty, with *caro* for everyone regardless of gender, ag
 - [[aldo-riva]]: husband, co-proprietor, runs the kitchen
 - [[nona-black-jaw]]: arranged the Warren cellar entrance two years ago
 - [[the-passage]]: not a member; knows of it, keeps its secret
-- [[Warren|The Warren]]: cellar entrance in Al Fondale connects to it
+- [[warren|The Warren]]: cellar entrance in Al Fondale connects to it
 - [[Al Fondale]]: the tavern she co-owns and runs
 - [[le-paludi]], [[calven-and-calveno]]: home district and city

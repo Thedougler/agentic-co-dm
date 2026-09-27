@@ -44,7 +44,7 @@ Plan for about thirty minutes.
 flexGrow=2
 ===
 ## At a Glance
-- **Stakes:** A survivor who follows the garden voice alone becomes prey. A disorderly fire gives [[talon-skarn]] cover on [[Session-11-09-Theft-on-the-Watch]].
+- **Stakes:** A survivor who follows the garden voice alone becomes prey. A disorderly fire gives [[talon-skarn]] cover on [[session-11-09-theft-on-the-watch]].
 - **Goal / exit:** Keep the camp together, stop a survivor from walking north, answer the voice as a group, or leave.
 - **Danger:** A lone walker meets the [[Deer-Stalker]]. Two ready hostiles within 30 feet make it retreat.
 - **Silence:** Show the fire and the empty north trail. Wait for the party to choose.
@@ -107,12 +107,12 @@ flexGrow=3
 
 If the party stays grouped at the fire, there is no fight and the mark stays. If they answer as a group, the [[Deer-Stalker]] draws them a little north, then breaks contact and falls silent. If one person walks a north trail, resolve the face immediately through **Be ready for**; do not add a later clock tick for that walk. The walk does not begin with Snatch from the Dim. End this beat when the party holds the hub, answers as a group, resolves the lone walk, or leaves.
 
-**Combat mode:** If one person is in the north trail and the [[Deer-Stalker]] attacks, stop the clock and run the embedded statblock. If the whole party comes up ready, the creature retreats. Keep it off [[Session-11-09-Theft-on-the-Watch]].
+**Combat mode:** If one person is in the north trail and the [[Deer-Stalker]] attacks, stop the clock and run the embedded statblock. If the whole party comes up ready, the creature retreats. Keep it off [[session-11-09-theft-on-the-watch]].
 ```
 
 ```col-md
 ## Secondary objective
-Stop a peeling survivor before tick 3. If the party ignores that person, they are lost into Quiet, and [[Session-11-08-Night-Watch]] begins with fewer mouths at the fire. Shouting, running survivors, or kicked-over coals leave the fire disorderly; that mess gives [[talon-skarn]] cover on [[Session-11-09-Theft-on-the-Watch]].
+Stop a peeling survivor before tick 3. If the party ignores that person, they are lost into Quiet, and [[Session-11-08-Night-Watch]] begins with fewer mouths at the fire. Shouting, running survivors, or kicked-over coals leave the fire disorderly; that mess gives [[talon-skarn]] cover on [[session-11-09-theft-on-the-watch]].
 ```
 ````
 
@@ -192,7 +192,7 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Backup
 
-[[spoke-ring]] · [[Deer-Stalker]] · [[taking-on-aruhe]] · [[star-cut]] · [[stonepear]] · [[matteo-scola]] · [[the-quiet]] · [[the-river]] · [[memorial-grove]] · [[uncertainty]] · [[talon-skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]]
+[[spoke-ring]] · [[Deer-Stalker]] · [[taking-on-aruhe]] · [[star-cut]] · [[stonepear]] · [[matteo-scola]] · [[the-quiet]] · [[the-river]] · [[memorial-grove]] · [[uncertainty]] · [[talon-skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[session-11-09-theft-on-the-watch]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

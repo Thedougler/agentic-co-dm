@@ -13,7 +13,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Sparhold]]"
+location: "[[sparhold]]"
 faction: none
 visibility: dm
 summary: "Pawn broker running Tally & Trade in Sparhold, a harbor market shop where every transaction lives on slate and every item gets reduced to silver."
@@ -35,7 +35,7 @@ flexGrow=2
 | **Role**   | Contact |
 | ---------- | ------- |
 | **Nature** | Pawn broker with a chalk-dusted counter and a tight margin |
-| **Home**   | Tally & Trade in [[Sparhold]] |
+| **Home**   | Tally & Trade in [[sparhold]] |
 | **Wants**  | Keep the shop solvent, the tally current, and fresh stock moving |
 
 > **DM thesis:** Costin turns every need into a transaction, but his crowded shelves make one irreplaceable pawn a pressure point.
@@ -79,6 +79,6 @@ The shop's shelves hold unredeemed pawns three months past deadline, deadwood st
 
 | Connection | Meaning |
 | --- | --- |
-| [[Sparhold]] | Harbor market where Tally & Trade operates. |
+| [[sparhold]] | Harbor market where Tally & Trade operates. |
 | [[perrin-black-jaw]] | His unredeemed pawn is a navigation journal Perrin considers irreplaceable. |
 | [[grandfathers-course]] | Water-warped pawn marked “Grandfather's Course,” held for 3 silver. |

@@ -31,7 +31,7 @@ I built the storms, the sewers, and the second chances in this sea, and I've run
 
 Every villain at my table knows exactly what they want. Every ally is one bad night from bleeding for a stranger. That's not a boast, that's just Tuesdays.
 
-[[calven-and-calveno]], [[le-paludi]], [[the Ponte Bassa]], [[Warren|the Warren]] — say those four fast enough and you'll sound like you've lived here your whole life.
+[[calven-and-calveno]], [[le-paludi]], [[the Ponte Bassa]], [[warren|the Warren]] — say those four fast enough and you'll sound like you've lived here your whole life.
 
 Here's the part I actually believe, before anything else: every die I roll at this table lands honest, and every clock I set, I mean to keep.
 

@@ -29,7 +29,7 @@ flexGrow=2
 | **Role**   | Contact; bodyguard |
 | ---------- | ------------------ |
 | **Nature** | Literal-minded [[lizardfolk]] and unshakeable guardian; impassive, observant, and not unkind. |
-| **Home**   | [[Warren|The Warren]] and [[le-paludi]], especially Nona's kitchen and safe house |
+| **Home**   | [[warren|The Warren]] and [[le-paludi]], especially Nona's kitchen and safe house |
 | **Wants**  | To protect [[nona-black-jaw|Nona Black-Jaw]] with his body and presence. |
 | **Leverage** | His literal nature means he cannot ignore lies or threats he observes; he states them plainly. |
 | **Limit**  | He is bound to Nona through territory, loyalty, feeding rituals, and the protection of the young. |
@@ -138,7 +138,7 @@ CR 6 grappler. Ruk closes and locks a target down instead of trading blows at ra
 - [[enzo]]: fellow bodyguard who manages social reads while Ruk manages physical ones
 - [[perrin-black-jaw|Perrin]]: pushed him into a seat at Nona's safe house (Session 04)
 - [[felix-aho]]: currently guarding him at the safe house, a captured Grung prisoner
-- [[Warren|The Warren]]: home base
+- [[warren|The Warren]]: home base
 - [[le-paludi]]: district containing Nona's kitchen
 
 **Session log.**

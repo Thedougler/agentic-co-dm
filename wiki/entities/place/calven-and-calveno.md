@@ -42,7 +42,7 @@ The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because
 ## Geography and play
 - Calven's northern and western flats flood and drain with the tide; foot travel needs local guidance.
 - Calveno stands on the southeast coast, with canals, bridges, harbour flags, and credit records.
-- [[Warren]] and Le Paludi sit below the public city; Passage routes trade privacy for trust and danger.
+- [[warren]] and Le Paludi sit below the public city; Passage routes trade privacy for trust and danger.
 - A harbour paper can conflict with a Tessarine credit record; either can close a gate.
 - The far harbour's unmarked pale building is a useful observation point and an unresolved Tessarine lead.
 
@@ -50,6 +50,6 @@ The city talks Italian in its canals—Alvise, Lavinia, Grimani, Sordi—because
 The Crown inspects and the Concordat invoices. Both collect from the same fishermen and pay [[Umberlee]] as infrastructure. Crown toxin substitute stock has appeared in Calveno's sewers; [[simone]] is the named pipeline face, and [[lavinia-sordi]] left a Crown prison records desk over it.
 
 ## Connections
-- → [[crown-islands]] · [[calders-tooth-and-port-tidefall]] · [[harwick]] · [[central-strait]] · [[Warren]] · [[Mercatura]] · [[tessarine-concordat]]
+- → [[crown-islands]] · [[calders-tooth-and-port-tidefall]] · [[harwick]] · [[central-strait]] · [[warren]] · [[Mercatura]] · [[tessarine-concordat]]
 
 **Provenance:** Dump source filed into [[tessarine-concordat]]. Legacy read-only context: `/Users/nick/shattered-sea/wiki/shattered-sea/region-calven.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/calveno-raid/settlement-calveno.md`.

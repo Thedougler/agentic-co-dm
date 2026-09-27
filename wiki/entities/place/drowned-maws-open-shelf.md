@@ -28,7 +28,7 @@ region: "Drowned Maw"
 relationships:
   - target: "[[drowned-maw]]"
     type: related_to
-  - target: "[[Shelfworks]]"
+  - target: "[[shelfworks]]"
     type: related_to
 ---
 # Drowned Maw's Open Shelf
@@ -38,7 +38,7 @@ relationships:
 > [!narration] Narration
 > The living blue-green of the [[verdant-scatter|Verdant Scatter]] ends along a line a person could walk. Beyond it the water is flat and current-less. A hull rests in the still water as if docked.
 >
-> Sixty feet of clear water over the western shelf of [[drowned-maw|Drowned Maw]]. Ruin-tops show as straight grey shadows forty feet down, walls that meet at angles the reef never makes. At eighty feet the [[Shelfworks]] workshops still stand with their floors intact. A bucket drawn from here comes up warm as bathwater and smells of dead fish and hot iron.
+> Sixty feet of clear water over the western shelf of [[drowned-maw|Drowned Maw]]. Ruin-tops show as straight grey shadows forty feet down, walls that meet at angles the reef never makes. At eighty feet the [[shelfworks]] workshops still stand with their floors intact. A bucket drawn from here comes up warm as bathwater and smells of dead fish and hot iron.
 
 ## At a Glance
 

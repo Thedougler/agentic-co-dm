@@ -12,7 +12,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: contact
-location: "[[Warren]]"
+location: "[[warren]]"
 faction: none
 visibility: dm
 summary: "Half-orc muscle for hire in the Warren. Loyal to going rate, first met as a festival drunk."
@@ -33,7 +33,7 @@ flexGrow=2
 | **Role**   | Hired muscle |
 | ---------- | ------------ |
 | **Nature** | Half-orc berserker with no fixed loyalty |
-| **Home**   | [[Warren]], [[calven-and-calveno]] |
+| **Home**   | [[warren]], [[calven-and-calveno]] |
 | **Wants**  | Work at going rate, 4 to 6 gp a week. |
 
 > **DM thesis:** He is a loose hook, not a required man. Pay him or lose him in the crowd.
@@ -77,6 +77,6 @@ Gost speaks through drink-softened confidence, with short challenges and sudden 
 
 | Relationship | Meaning |
 | ------------ | ------- |
-| [[Warren]] | He offers the sword to whoever pays. |
+| [[warren]] | He offers the sword to whoever pays. |
 | [[calven-and-calveno]] | Stub source is a street encounter here. |
 | [[jean-claude-tabarnack]] | If Jean-Claude tells him the watch is four minutes out, he stands down. No roll. |

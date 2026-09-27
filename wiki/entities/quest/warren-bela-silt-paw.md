@@ -33,10 +33,10 @@ flexGrow=2
 ===
 ## At a Glance
 
-Get [[bela-silt-paw|Bela Silt-Paw]] out of the flooded sub-chamber beneath the [[Warren]], past the [[water-weird|Water Weird]] that holds it.
+Get [[bela-silt-paw|Bela Silt-Paw]] out of the flooded sub-chamber beneath the [[warren]], past the [[water-weird|Water Weird]] that holds it.
 
 - **Why now.** Bela has been trapped for two to three days as of the source date, and her condition worsens with every day she stays down.
-- **Where.** A flooded sub-chamber beneath the [[Warren]], under Calveno's Le Paludi.
+- **Where.** A flooded sub-chamber beneath the [[warren]], under Calveno's Le Paludi.
 - **Reward.** Bela's gratitude, and the cache in the chamber: 340 gp, two *potions of water breathing*, and a Faste dispatch worth about 500 gp.
 ```
 
@@ -59,8 +59,8 @@ The Warren is a Rattkin settlement and deep [[passage]] anchor beneath Calveno's
 
 ## Leads
 
-- **Warren elders and [[passage]] guides** know the way to the flooded sub-chamber → [[Warren]]
-- **Wet footprints and route marks** run through the Warren toward the chamber → [[Warren]]
+- **Warren elders and [[passage]] guides** know the way to the flooded sub-chamber → [[warren]]
+- **Wet footprints and route marks** run through the Warren toward the chamber → [[warren]]
 - **The two potions of water breathing** in the cache make the flooded approach and the way out survivable once reached → [[water-weird|Water Weird]]
 
 ## Pressure
@@ -75,7 +75,7 @@ The Warren is a Rattkin settlement and deep [[passage]] anchor beneath Calveno's
 - [[bela-silt-paw|Bela Silt-Paw]] — the trapped scout.
 - [[water-weird|Water Weird]] — the creature holding the chamber.
 - [[passage]] — the route network whose guides know the Warren.
-- [[Warren]] — the settlement above the chamber.
+- [[warren]] — the settlement above the chamber.
 
 ## Log
 

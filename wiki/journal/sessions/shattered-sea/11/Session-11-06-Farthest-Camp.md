@@ -9,7 +9,7 @@ updated: 2026-09-13
 type: session-prep
 kind: development
 reveal: unrevealed
-summary: "Development at Spoke Ring. Calveno wreck people split over the garden and the route back to [[uncertainty]] under the last sun; the unfinished argument hands to [[Session-11-07-False-Help]]."
+summary: "Development at Spoke Ring. Calveno wreck people split over the garden and the route back to [[uncertainty]] under the last sun; the unfinished argument hands to [[session-11-07-false-help]]."
 campaign: shattered-sea
 session: 11
 status: ready
@@ -24,7 +24,7 @@ visibility: dm
 ```col-md
 ## Scene ends when
 
-This beat ends when the ship-versus-garden split at [[spoke-ring]] is clear and the party chooses how to handle this camp. Hand to [[Session-11-07-False-Help]] if they stay, play along, force a march, or leave someone isolated. Rebuild if they attack the camp or leave before hearing the invitation.
+This beat ends when the ship-versus-garden split at [[spoke-ring]] is clear and the party chooses how to handle this camp. Hand to [[session-11-07-false-help]] if they stay, play along, force a march, or leave someone isolated. Rebuild if they attack the camp or leave before hearing the invitation.
 
 Plan for about thirty minutes.
 
@@ -122,7 +122,7 @@ flexGrow=3
 
 **Talk mode.** Run this fire as a talk-and-commit slice. There is no fight and no threat clock on this card. After everyone acts, if the ship-versus-garden split is still unclear, keep [[matteo-scola]] and the two camp stories in view, then ask what they do. Freezing still leaves the argument unfinished. Failed checks impose only the Be ready for ruling.
 
-If the party goes quiet and stays at the fire after the split is clear, hand to [[Session-11-07-False-Help]] on this hub. If they agree to see the garden, they commit past this valley; the garden stays out of reach tonight, and they still go to beat 7 on the first north trail. If they force a march to the ship tonight, some survivors balk or slip into the north trails, and beat 7 may still fire on anyone who ends up isolated. If they leave without hearing the woman, beat 7 has no woman-lure; drop beat 7 or recompute a weaker peel. The invitation is genuine. If a party member takes open valley air, that character leaves the hub for hawk sky. This is the last sun over the roof, not the bloodhawk stoop. Do not start [[Session-11-07-False-Help]] until the handoff, and do not start night watch.
+If the party goes quiet and stays at the fire after the split is clear, hand to [[session-11-07-false-help]] on this hub. If they agree to see the garden, they commit past this valley; the garden stays out of reach tonight, and they still go to beat 7 on the first north trail. If they force a march to the ship tonight, some survivors balk or slip into the north trails, and beat 7 may still fire on anyone who ends up isolated. If they leave without hearing the woman, beat 7 has no woman-lure; drop beat 7 or recompute a weaker peel. The invitation is genuine. If a party member takes open valley air, that character leaves the hub for hawk sky. This is the last sun over the roof, not the bloodhawk stoop. Do not start [[session-11-07-false-help]] until the handoff, and do not start night watch.
 
 **Combat mode:** If someone attacks this camp, stop talking and rebuild. The prize is lost, but the party still has a night.
 ```
@@ -130,7 +130,7 @@ If the party goes quiet and stays at the fire after the split is clear, hand to 
 ```col-md
 ## Secondary objective
 
-Hear the garden invitation before anyone leaves this fire. If they hear it, [[Session-11-07-False-Help]] has the woman-lure. If they leave first, drop beat 7 or run a weaker peel. If they pulled [[matteo-scola]], keep him on this dirt; he wants living people and will not take a north trail alone. If anyone plucks living stems at this fire, mark [[taking-on-aruhe]], and this camp treats that as the wrong walk.
+Hear the garden invitation before anyone leaves this fire. If they hear it, [[session-11-07-false-help]] has the woman-lure. If they leave first, drop beat 7 or run a weaker peel. If they pulled [[matteo-scola]], keep him on this dirt; he wants living people and will not take a north trail alone. If anyone plucks living stems at this fire, mark [[taking-on-aruhe]], and this camp treats that as the wrong walk.
 ```
 ````
 
@@ -155,7 +155,7 @@ Hear the garden invitation before anyone leaves this fire. If they hear it, [[Se
 | Hear the two stories | Listening, or **Charisma (Persuasion)** to get them talking | Talk, or `DC 15` to draw out a hesitant survivor | The table hears both stories: a woman in the woods asked them to admire her garden and told them where to walk and what not to take; the other group says she is leading people into danger and anyone who listens is mad. This camp listened. They are alive. They want the garden. They can vouch, bargain, refuse evacuation, or help later, but they are not automatic allies. | They listen, then look at the trees. The round is spent, and the split remains live. | They look north and let the talk thin. The invitation remains half-heard. |
 | Test for a spell | **Wisdom (Insight)** | `DC 15` | They are not under a spell. They want the invitation. | The spell question stays unanswered. The two stories are still on the table. | That party member treats the garden-want as a spell or trick. The two stories are still on the table. |
 | Extract to [[uncertainty]] | Influence: **Charisma (Persuasion)** to ask the survivors back to the ship | `DC 15` | Some survivors talk about [[uncertainty]], but the garden group refuses. This camp does not all want to go. The split is on the table, night is coming, and waiting until morning still leaves beat 7 live. Pushing the walk tonight uses the forced-march row. | They listen, then look at the trees. The round is spent, and the split remains live. | They refuse. If the party keeps pushing a march tonight, use the forced-march row. |
-| Play along toward the garden | Agreeing to admire the garden, or to just see it | Commit | The party commits past this valley. The garden stays out of reach tonight. Dusk is gone. Hand to [[Session-11-07-False-Help]] on the first north trail. End this scene. | There is no partial result. | There is no partial result. |
+| Play along toward the garden | Agreeing to admire the garden, or to just see it | Commit | The party commits past this valley. The garden stays out of reach tonight. Dusk is gone. Hand to [[session-11-07-false-help]] on the first north trail. End this scene. | There is no partial result. | There is no partial result. |
 | Force a march tonight | Influence: **Charisma (Intimidation)**, or herding people off this fire toward [[uncertainty]] tonight | `DC 15`, or Walk to start walking them | Some survivors balk or slip into the north trails. The only friendly inland group breaks. Beat 7 may still fire on anyone who ends up isolated. End this scene. | There is no partial result. | They refuse and look into the trees. |
 | Look for the woman | **Wisdom (Perception)** among the trails around this fire, or walking a short way north | `DC 10` | The party finds no one on the trails around this fire. The garden group still looks into the trees when branches stir. Anyone who walks a north trail alone is isolated. | That party member spends the round at a trail mouth. The fire still has two stories. | That party member loses the fire's argument in the trails. If still alone, they are isolated. |
 | Search the mats and fruit | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | Four sleeping mats lie about 10 feet out, fewer than the crushed prints entering from the south. Fallen [[stonepear]] rests by the coals, while living stonepears still hang above. Searching does not reveal the woman's name or how far away the garden is. | That party member remains at the ring and confirms that people sleep here. | That party member spends the round at the ring and learns only that people sleep here. |
@@ -169,7 +169,7 @@ Unforeseen intents use the same wants: this camp wants the garden, while [[matte
 
 ## How the Scene Resolves
 
-Once the split is on the table, dusk is gone. A whisper from the garden-dark repeats the words the party just heard. Hand to [[Session-11-07-False-Help]] on this hub or on the first north trail. Do not run [[talon-skarn]] here.
+Once the split is on the table, dusk is gone. A whisper from the garden-dark repeats the words the party just heard. Hand to [[session-11-07-false-help]] on this hub or on the first north trail. Do not run [[talon-skarn]] here.
 
 If the party forced a march tonight, some survivors balked or slipped into the north trails, plus any RAW conditions already applied. Beat 7 may still fire on anyone who is isolated.
 
@@ -184,12 +184,12 @@ If [[matteo-scola]] is with the party, he is still on this dirt or on the north 
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Stay at this fire | The split remains live on this hub. Dusk is gone. Hand to [[Session-11-07-False-Help]]. | _Matteo is still sitting in the firelight._ |
-| Play along north | The party is on the first north trail, still in this valley. The garden stays out of reach tonight. Hand to [[Session-11-07-False-Help]]. | _You stand on the packed trail north of the fire. The fire is behind you._ |
+| Stay at this fire | The split remains live on this hub. Dusk is gone. Hand to [[session-11-07-false-help]]. | _Matteo is still sitting in the firelight._ |
+| Play along north | The party is on the first north trail, still in this valley. The garden stays out of reach tonight. Hand to [[session-11-07-false-help]]. | _You stand on the packed trail north of the fire. The fire is behind you._ |
 
 ## Backup
 
-[[spoke-ring]] · [[stonepear]] · [[matteo-scola]] · [[taking-on-aruhe]] · [[uncertainty]] · [[memorial-grove]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[Deer-Stalker]] · [[Session-11-05-Otter-Hole]] · [[Session-11-07-False-Help]] · [[session-11-00-birds-of-a-feather]]
+[[spoke-ring]] · [[stonepear]] · [[matteo-scola]] · [[taking-on-aruhe]] · [[uncertainty]] · [[memorial-grove]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[Deer-Stalker]] · [[session-11-05-otter-hole]] · [[session-11-07-false-help]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

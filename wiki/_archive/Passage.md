@@ -14,7 +14,7 @@ tags: [faction, passage, rattkin, tessarine]
 Move people, cargo, and news where official routes cannot.
 
 ## Secret goal
-Protect communities underneath colonial systems. The network grew from [[Warren]] around 1240 DR under pressure and preserves relationships that official systems price out.
+Protect communities underneath colonial systems. The network grew from [[warren]] around 1240 DR under pressure and preserves relationships that official systems price out.
 
 ## Methods
 Smuggling, safe kitchens, family ties, coded trust, and commercial cover. The Passage uses Tessarine paper and commercial channels when that keeps a route off Crown charts, but it has no formal deal with the Concordat. Under pressure, it reroutes people before answering a question, then decides what information can safely travel.
@@ -26,7 +26,7 @@ One law is explicit: never move people as property. That law is a comment on wha
 - Operatives: [[Beaumont Sel]] and family-linked couriers
 
 ## Reach / resources
-The deepest anchor is [[Warren]]; routes touch [[Calven and Calveno]] and the Midchain. Safe kitchens and family ties matter as much as ships. Tessarine paper is a cover, not a command structure.
+The deepest anchor is [[warren]]; routes touch [[Calven and Calveno]] and the Midchain. Safe kitchens and family ties matter as much as ships. Tessarine paper is a cover, not a command structure.
 
 ## Relations
 - Complicated: [[Dravosi Crown]]

@@ -345,6 +345,9 @@ def pc_identity_mismatches(pages: dict[str, dict]) -> list[dict[str, object]]:
                 "has_player": has_player,
                 "path": rel,
                 "line": page_line(item, "type") if typ else page_line(item, "role"),
+                "message": "PC identity fields do not match type pc under entities/pc/.",
+                "repair_class": "agent_repair",
+                "repair_target": "Set type: pc and move the page to entities/pc/.",
             })
     return out
 
@@ -746,6 +749,7 @@ def main() -> int:
             "page": rel,
             "missing": absent,
             "line": 1,
+            "message": f"Missing frontmatter: {', '.join(absent)}.",
             "repair_class": "agent_repair",
             "repair_target": (
                 f"Set frontmatter {', '.join(absent)} from wiki/templates/{template_name}."
@@ -774,6 +778,7 @@ def main() -> int:
         {
             "page": rel,
             "line": 1,
+            "message": "Missing frontmatter summary.",
             "repair_class": "agent_repair",
             "repair_target": (
                 f"Set frontmatter summary from wiki/templates/{contract.template}."
@@ -784,12 +789,26 @@ def main() -> int:
         for rel, item in pages.items() if not item["fields"].get("summary")
     ]
     findings["long_summary"] = [
-        {"page": rel, "line": field_line(item["text"], "summary"), "chars": len(item["fields"]["summary"])}
+        {
+            "page": rel,
+            "line": field_line(item["text"], "summary"),
+            "chars": (summary_length := len(item["fields"]["summary"])),
+            "message": f"Frontmatter summary is {summary_length} characters; limit is 200.",
+            "repair_class": "agent_repair",
+            "repair_target": "Shorten frontmatter summary to 200 characters or fewer.",
+        }
         for rel, item in pages.items()
         if len(item["fields"].get("summary", "")) > 200
     ]
     findings["bad_type"] = [
-        {"page": rel, "line": field_line(item["text"], "type"), "value": item["fields"].get("type")}
+        {
+            "page": rel,
+            "line": field_line(item["text"], "type"),
+            "value": item["fields"].get("type"),
+            "message": f"Frontmatter type {item['fields'].get('type')} is not a declared page type.",
+            "repair_class": "agent_repair",
+            "repair_target": "Set type to a value declared by wiki/templates.",
+        }
         for rel, item in pages.items()
         if item["fields"].get("type") and item["fields"]["type"].strip("\"'") not in types
     ]
@@ -801,6 +820,9 @@ def main() -> int:
             "line": field_line(item["text"], "tags"),
             "type": (item["fields"].get("type") or "").strip("\"'") or None,
             "path": rel,
+            "message": "NPC page has a pc tag.",
+            "repair_class": "agent_repair",
+            "repair_target": "Remove the pc tag or recast the page as type pc under entities/pc/.",
         }
         for rel, item in pages.items()
         if (item["fields"].get("type") or "").strip("\"'") == "npc"

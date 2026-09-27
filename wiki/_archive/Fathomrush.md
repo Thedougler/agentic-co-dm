@@ -13,7 +13,7 @@ tags: [location, settlement, maw, salvage]
 
 
 ## At a glance
-A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
+A boomtown staging dives on the [[shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
 
 ## Aspects
 `dive staging, salvage rush, last honest gossip`
@@ -25,10 +25,10 @@ A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above 
 
 ## Who is here
 - Salvage crews and Antheri claimants.
-- Dives heading to [[Shelfworks]].
+- Dives heading to [[shelfworks]].
 
 ## Connections
-- → [[Shelfworks]] · [[Drowned Maw]] · [[tail]] · [[Outer Reach]]
+- → [[shelfworks]] · [[Drowned Maw]] · [[tail]] · [[Outer Reach]]
 
 ## Hooks
 - Hire or sabotage a dive.

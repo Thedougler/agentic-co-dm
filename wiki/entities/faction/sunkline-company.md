@@ -16,7 +16,7 @@ kind: pressure-rig venture
 status: active
 scope: regional
 region: "[[fathomrush]]"
-base: "[[Shelfworks]]"
+base: "[[shelfworks]]"
 summary: "Tessarine-backed pressure-rig venture racing Voyvode Works to engineer deep-shelf diving technology at Fathomrush."
 provenance:
   extracted: 0.85
@@ -40,7 +40,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | Tessarine-backed pressure-rig venture |
 | **Scope** | Regional |
-| **Base** | [[Shelfworks]] at [[fathomrush]] |
+| **Base** | [[shelfworks]] at [[fathomrush]] |
 | **Leader** | [[adriana-tarquine]], chief engineer |
 | **Public purpose** | Develop deep-shelf diving technology |
 | **Signature method** | Investor confidence, rebuilt valves, and trial paperwork |
@@ -61,7 +61,7 @@ flexGrow=1
 
 ## Current State
 
-Sunkline is racing [[voyvode-works]] at [[fathomrush]] while its rig remains unproven. The [[tessarine-concordat]] backs the company financially, and the [[Shelfworks]] feeds the Concordat's appetite for [[Antheri]] salvage. The forged trial certificate is hidden at the Last Berth boardinghouse. Four of six pressure points on the concealment clock are already filled.
+Sunkline is racing [[voyvode-works]] at [[fathomrush]] while its rig remains unproven. The [[tessarine-concordat]] backs the company financially, and the [[shelfworks]] feeds the Concordat's appetite for [[Antheri]] salvage. The forged trial certificate is hidden at the Last Berth boardinghouse. Four of six pressure points on the concealment clock are already filled.
 
 ## Active Agenda
 
@@ -86,7 +86,7 @@ Sunkline is racing [[voyvode-works]] at [[fathomrush]] while its rig remains unp
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
 | Forged trial certificate | Influence | Last Berth boardinghouse | Maintains investor confidence | Hidden and fragile |
-| Pressure-rig design | Technology | [[Shelfworks]] | Deep-shelf salvage work | Failed trial |
+| Pressure-rig design | Technology | [[shelfworks]] | Deep-shelf salvage work | Failed trial |
 | Tessarine funding | Wealth | Fathomrush | Rebuilds and recruitment | At risk |
 
 ## People & Structure
@@ -108,7 +108,7 @@ Sunkline is racing [[voyvode-works]] at [[fathomrush]] while its rig remains unp
 ## Territory & Touchpoints
 
 - **[[fathomrush]]:** The engineering and trial site.
-- **[[Shelfworks]]:** The salvage and design base feeding the Concordat's dependency.
+- **[[shelfworks]]:** The salvage and design base feeding the Concordat's dependency.
 - **Last Berth boardinghouse:** The hidden location of the forged certificate.
 
 ## Connections

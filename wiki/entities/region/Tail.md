@@ -74,7 +74,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 ### Landmarks
 
 * **[[drowned-maw]].** The trench and planar boundary that determines the eastern route.
-* **[[fathomrush]].** A western staging town whose dives reach [[Shelfworks]]; it is the named comparison for the unnamed island's last-hands function.
+* **[[fathomrush]].** A western staging town whose dives reach [[shelfworks]]; it is the named comparison for the unnamed island's last-hands function.
 * **Unnamed staging island.** The last-supplies and last-hands stop before the Maw.
 
 ## Travel
@@ -84,7 +84,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 * **Travel structure.** Known routes through a narrowing island chain.
 * **Navigation.** Compasses lie in the approach; pilots and visible landmarks matter more than instruments.
 * **Weather / season.** Late fog routinely removes cliffs and last landmarks from view.
-* **Rest / supply.** The unnamed staging island is the last-supplies stop before the Maw; [[fathomrush]] stages dives on [[Shelfworks]].
+* **Rest / supply.** The unnamed staging island is the last-supplies stop before the Maw; [[fathomrush]] stages dives on [[shelfworks]].
 * **Regional rule.** Do not treat a compass reading as proof of position in the Tail.
 
 ### Routes and connections
@@ -104,7 +104,7 @@ No separate subregions are established for the Tail. The unnamed staging island 
 | ----- | ---- | ------------- | --------------------------- | ---- |
 | Unnamed staging island | Staging island | The last stop before the Maw. | Supplies, hands, and honest gossip. | Follow the pilot traffic before the fog closes. |
 | [[drowned-maw]] | Trench and planar boundary | The eastern route edge. | Reversed currents and a route whose instruments cannot be trusted. | Ask what the last landmark means before sailing beyond it. |
-| [[fathomrush]] | Dive-staging town | A named comparison point west of the Maw. | A known staging function connected to [[Shelfworks]]. | Compare its role with the unnamed island without merging them. |
+| [[fathomrush]] | Dive-staging town | A named comparison point west of the Maw. | A known staging function connected to [[shelfworks]]. | Compare its role with the unnamed island without merging them. |
 
 ## Active powers
 

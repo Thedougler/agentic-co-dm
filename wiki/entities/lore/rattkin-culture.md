@@ -36,7 +36,7 @@ tier: supporting
 
 ## Current Truth
 
-[[Rattkin]] are the oldest continuous Rattkin presence recorded in every major [[shattered-sea]] port. Their fixed origin point is [[Warren|the Warren]], and their living network is [[the-passage]]. A locked cargo hold is a delay to a Rattkin crew, while a drainage pipe can be a road; a ship's bilge can become a neighborhood.
+[[Rattkin]] are the oldest continuous Rattkin presence recorded in every major [[shattered-sea]] port. Their fixed origin point is [[warren|the Warren]], and their living network is [[the-passage]]. A locked cargo hold is a delay to a Rattkin crew, while a drainage pipe can be a road; a ship's bilge can become a neighborhood.
 
 Rattkin fall into three recorded varieties, each tied to a functional role within a Run:
 

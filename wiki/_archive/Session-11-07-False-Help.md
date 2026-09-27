@@ -6,7 +6,7 @@ status: ready
 date: 2026-09-06
 visibility: dm
 tags: [session-prep, run-guide]
-summary: Night ambush at Spoke Ring. The [[Aruhe - Deerstalker]] uses the garden invitation to isolate one body; a grouped answer makes it leave, while any disorder becomes cover on [[Session-11-09-Theft-on-the-Watch]].
+summary: Night ambush at Spoke Ring. The [[Aruhe - Deerstalker]] uses the garden invitation to isolate one body; a grouped answer makes it leave, while any disorder becomes cover on [[session-11-09-theft-on-the-watch]].
 ---
 # Session 11 — False help
 
@@ -38,7 +38,7 @@ flexGrow=2
 ===
 ## At a Glance
 
-- **Stakes:** A survivor who follows the garden voice alone becomes prey. Disorder at this fire gives [[Talon Skarn]] cover on [[Session-11-09-Theft-on-the-Watch]].
+- **Stakes:** A survivor who follows the garden voice alone becomes prey. Disorder at this fire gives [[Talon Skarn]] cover on [[session-11-09-theft-on-the-watch]].
 - **Goal / exit:** Keep everyone at the fire, stop a survivor who starts walking, answer the voice as a group, or leave.
 - **Danger:** One person on a north trail gets the face and then the attack. Two ready hostiles within 30 feet make the [[Aruhe - Deerstalker]] retreat.
 - **Silence:** Put the fire and the empty north trail in front of the players, then wait for their choice.
@@ -102,13 +102,13 @@ flexGrow=3
 
 If the party stays grouped at the fire, there is no fight and the mark stays. If they answer as a group, the [[Aruhe - Deerstalker]] breaks contact, draws them a little north, and falls silent. If one person walks a north trail, resolve the face immediately through Be ready for; that choice does not also become a later clock tick. The walk does not begin with Snatch from the Dim. When the party keeps everyone grouped, answers as a group, resolves a lone walk, or leaves the hub, this beat is over.
 
-**Combat mode:** If one person is in the north trail and the [[Aruhe - Deerstalker]] attacks, stop the clock and run the embedded statblock. If the whole party comes up ready, the creature retreats. Keep this creature off [[Session-11-09-Theft-on-the-Watch]].
+**Combat mode:** If one person is in the north trail and the [[Aruhe - Deerstalker]] attacks, stop the clock and run the embedded statblock. If the whole party comes up ready, the creature retreats. Keep this creature off [[session-11-09-theft-on-the-watch]].
 ```
 
 ```col-md
 ## Secondary objective
 
-Stop a peeling survivor before tick 3. If the party ignores that person, they are lost into Quiet, and [[Session-11-08-Night-Watch]] begins with fewer mouths at the fire. Shouting, running survivors, or kicked-over coals leave the fire in disorder; that mess gives [[Talon Skarn]] cover on [[Session-11-09-Theft-on-the-Watch]].
+Stop a peeling survivor before tick 3. If the party ignores that person, they are lost into Quiet, and [[Session-11-08-Night-Watch]] begins with fewer mouths at the fire. Shouting, running survivors, or kicked-over coals leave the fire in disorder; that mess gives [[Talon Skarn]] cover on [[session-11-09-theft-on-the-watch]].
 ```
 ````
 
@@ -188,7 +188,7 @@ If the party broke from the hub, rebuild from the new route toward the last gras
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Matteo Scola]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Aruhe - Memorial Grove]] · [[uncertainty]] · [[Talon Skarn]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-08-Night-Watch]] · [[session-11-09-theft-on-the-watch]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

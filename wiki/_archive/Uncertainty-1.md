@@ -93,7 +93,7 @@ The crew’s current vessel; feels like a moving room for unresolved debts and r
 
 **Move:** vessel strains. **Trigger:** dangerous route, pursuit, or neglected rest. **Result:** access/routine unreliable (**seed**). **Opportunity:** repair, improvise, or slow. **Consequence:** fix persists on return.
 ## Connections
-- [[sparhold]] · [[Aruhe - Hungry Isle]] · [[Midchain]] · [[Warren]]
+- [[sparhold]] · [[Aruhe - Hungry Isle]] · [[Midchain]] · [[warren]]
 ## Hooks
 - Season 2 departure; Grung fleet trail; Calveno raid survivors; Simone’s hunters; Grigori/Crown pressure.
 ## Secrets (DM)

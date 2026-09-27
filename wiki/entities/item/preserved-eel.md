@@ -13,7 +13,7 @@ type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-region: "[[Warren]] beneath [[calven-and-calveno|Calveno]]"
+region: "[[warren]] beneath [[calven-and-calveno|Calveno]]"
 kind: consumable
 rarity: common
 attunement: false

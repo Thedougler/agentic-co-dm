@@ -25,7 +25,7 @@ relationships:
 
 # Aruhe - Hungry Isle
 
-Current table location after [[journal/sessions/shattered-sea/10/Session-10-Recap]].
+Current table location after [[journal/sessions/shattered-sea/10/session-10-recap]].
 
 ## At a Glance
 

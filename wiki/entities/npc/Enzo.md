@@ -61,7 +61,7 @@ Read while recording: [[voice-profile script]]
 
 **Opening move:** flanking Nona as she passes bread and fish to the crew gathered at the crater's rim · Enzo speaks first · "You should take some. Long day ahead."
 
-**Lore Sheet:** bodyguard to **Nona Black-Jaw**, working out of [[le-paludi]] and [[Warren|The Warren]]. Reads every guest for threats and intentions through micro-gestures and silence. Uses a lit cigar as a timer for Nona's patience. If it burns too low while she waits for an answer, he unsheathes one claw. More comfortable with violence than with people.
+**Lore Sheet:** bodyguard to **Nona Black-Jaw**, working out of [[le-paludi]] and [[warren|The Warren]]. Reads every guest for threats and intentions through micro-gestures and silence. Uses a lit cigar as a timer for Nona's patience. If it burns too low while she waits for an answer, he unsheathes one claw. More comfortable with violence than with people.
 
 **Toy Chest**
 
@@ -129,7 +129,7 @@ reactions:
 ## Connections
 
 - [[nona-black-jaw]], bodyguard, household
-- [[Ruk]], fellow bodyguard
+- [[ruk]], fellow bodyguard
 - [[le-paludi]], operates out of
 - [[the-passage]] / [[the-black-jaw-run|Black-Jaw Run]], role tied to
 - [[perrin-black-jaw]], present at Perrin's reunion with Nona; sent to arrange consolation for the *[[Vestra]]*'s crew and to call off attacks against him

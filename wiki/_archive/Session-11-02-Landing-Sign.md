@@ -24,7 +24,7 @@ summary: "Landing Bank development beat: fresh prints, cold ash, loose fruit, an
 ```col-md
 ## Scene ends when
 
-This beat ends when the party follows the fresh northbound prints toward the inland smoke. Hand to [[Session-11-03-Wolfrabbits]].
+This beat ends when the party follows the fresh northbound prints toward the inland smoke. Hand to [[session-11-03-wolfrabbits]].
 
 Plan for about thirty minutes.
 
@@ -39,7 +39,7 @@ flexGrow=2
 ## At a Glance
 
 - **Stakes:** Fresh sign is cooling. Delay thins the smoke and softens the wet prints.
-- **Goal / exit:** Commit north along the upriver prints for [[Session-11-03-Wolfrabbits]].
+- **Goal / exit:** Commit north along the upriver prints for [[session-11-03-wolfrabbits]].
 - **Danger:** Taking living plants makes nearby life hostile.
 - **Silence:** Present the bank, ask what they do, and wait. If the party freezes here, the smoke thins once at the end of the round.
 - **Situation magnets:** Lingering on this bank. Taking living stems.
@@ -118,7 +118,7 @@ If anyone plucks living plants, fishes, traps, or kills to carry flesh on this b
 | [[Aruhe - River Landing Bank\|This bank]] / grass and river | Here, in eight-foot grass. The river is immediately east and wraps south around this bank. | This grass hides a standing body, is Difficult Terrain, and heavily obscures beyond 10 feet. | ==_The grass rises over your head, gold-green and wet. Clear water pulls along the east bank, bending submerged blades around your legs while stems rasp together at the waterline._== |
 | The used stop | 15 feet west of the water, on the river side of the prints. | Open grass around ash, crate, bowls, and fallen fruit. | ==_A ring of stones holds grey ash in scraped dirt. A shut wooden crate sits beside two mud-streaked bowls, whole orange fruit, and torn rinds. The burst skins smell sharp and sweet._== |
 | Terrace woods | 20 feet west of the prints. Crash-landed party members start here, **Prone**. | Thin cover among mossy garden stone, mangrove roots, and fruiting steps. | ==_Mossy garden walls rise above the grass. Wet stone steps hold split orange fruit and pink-gold globes, and the old terraces climb west through the trees._== |
-| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | Following that trail is [[Session-11-03-Wolfrabbits]]. | ==_The footprints leave the muddy lip and follow the river north, a crushed corridor through gold-green stems. The water keeps pace beside the path, and the thin smoke still marks the same valley ahead._== |
+| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | Following that trail is [[session-11-03-wolfrabbits]]. | ==_The footprints leave the muddy lip and follow the river north, a crushed corridor through gold-green stems. The water keeps pace beside the path, and the thin smoke still marks the same valley ahead._== |
 | Inland smoke | A thin column on the northern horizon in this same valley. | The smoke is not reachable on this card. | ==_North, the smoke is a thin mark on the horizon inside this valley. The wind leans the seed heads and pulls the top of the column sideways._== |
 
 ## Be ready for
@@ -126,7 +126,7 @@ If anyone plucks living plants, fishes, traps, or kills to carry flesh on this b
 | Intent | Approach | DC | Success | Partial | Failure |
 | --- | --- | --- | --- | --- | --- |
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Investigation)** | `DC 10` | The prints, ash, crate, bowls, and fruit skins are fresh. Footprints lead north upriver toward the smoke. Fruit on the ground is already off the plant. Living red berries still hang at the wet margin. How many people passed, and whether they took living fruit, stay unknown. | The looker gets the fresh prints and the north line, then remains on this bank. | The looker gets no useful extra read and remains on this bank. |
-| Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | The party commits to the north trail toward the smoke. Hand to [[Session-11-03-Wolfrabbits]]. This scene ends. | The commit either happens or it does not. | The party stays on this bank until they choose a route. |
+| Follow the north prints and smoke off this bank | Walk the crushed corridor north off this bank. | Commit | The party commits to the north trail toward the smoke. Hand to [[session-11-03-wolfrabbits]]. This scene ends. | The commit either happens or it does not. | The party stays on this bank until they choose a route. |
 | Search the crate and fire scrape | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | That party member can take the closed crate. The fire scrape is cold ash in cleared dirt. Crate contents, group size, and whether anyone took living fruit stay unknown. | That party member confirms the stop is fresh but remains at the crate. | That party member remains at the used stop. Crate contents stay unknown. |
 | Pick fruit on this river-valley bank | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. Use **Utilize** if that party member plucks without sorting. Plucking living stems on purpose is a take. | `DC 10` | That party member takes only fruit already down on this bank. That is not a take. Eating a fallen [[Aruhe - Redheart Berry]] is a Bonus Action and regains `8d4 + 8` hit points. The trail and smoke remain. | That party member takes some living stems on this bank. That counts as [[Taking on Aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. | That party member strips living fruit on this bank. That counts as [[Taking on Aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. The trail and smoke remain. |
 
@@ -154,19 +154,19 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party follows the north prints toward the smoke onto [[Aruhe - Grasslands Torn Crossing]]. Hand to [[Session-11-03-Wolfrabbits]]. Apply any [[Taking on Aruhe]] take already made.
+The party follows the north prints toward the smoke onto [[Aruhe - Grasslands Torn Crossing]]. Hand to [[session-11-03-wolfrabbits]]. Apply any [[Taking on Aruhe]] take already made.
 
 > [!narration] How the Scene Resolves
 > You leave the bank on the north prints, following the crushed gold-green corridor toward the smoke. Stems rasp at your legs, and the clear river keeps pace to the east.
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Fresh commit | The party is on the north trail toward the smoke. Prints are still sharp. Hand to [[Session-11-03-Wolfrabbits]]. | ==_The footprints are still sharp in the mud, and the thin smoke still stands north in this valley as you take that corridor._== |
-| Lingered commit | The party is on the north trail toward the smoke after the clock has advanced. Hand to [[Session-11-03-Wolfrabbits]]. | ==_You take the crushed corridor north with the print edges already softer and the inland smoke thinner than it was._== |
+| Fresh commit | The party is on the north trail toward the smoke. Prints are still sharp. Hand to [[session-11-03-wolfrabbits]]. | ==_The footprints are still sharp in the mud, and the thin smoke still stands north in this valley as you take that corridor._== |
+| Lingered commit | The party is on the north trail toward the smoke after the clock has advanced. Hand to [[session-11-03-wolfrabbits]]. | ==_You take the crushed corridor north with the print edges already softer and the inland smoke thinner than it was._== |
 
 ## Backup
 
-[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[session-11-00-random-tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Aruhe - Redheart Berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]]
+[[Aruhe - River Landing Bank]] · [[Aruhe - Grasslands Torn Crossing]] · [[session-11-00-random-tables]] · [[Taking on Aruhe]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - Old Gardens]] · [[Aruhe - Redheart Berry]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-01-Angry-Birds]] · [[session-11-03-wolfrabbits]]
 
 ## Battlemap
 

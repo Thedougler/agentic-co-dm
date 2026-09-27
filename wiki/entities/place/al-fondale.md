@@ -30,7 +30,7 @@ relationships:
 ## Overview
 
 > [!narration] Narration
-> Al Fondale is a tavern in Le Paludi where a halfling proprietor keeps the arithmetic of risk and a verbose dwarf chef keeps centuries of local history moving through the kitchen. Beneath the public room, the cellar holds a route toward the [[Warren]] that is not offered to everyone.
+> Al Fondale is a tavern in Le Paludi where a halfling proprietor keeps the arithmetic of risk and a verbose dwarf chef keeps centuries of local history moving through the kitchen. Beneath the public room, the cellar holds a route toward the [[warren]] that is not offered to everyone.
 
 ## At a Glance
 
@@ -59,7 +59,7 @@ Al Fondale is a tavern in Le Paludi run by [[bice-riva|Bice Riva]] and [[aldo-ri
 **East:** Canon gap; no named neighboring business or route is established.  
 **South:** Canon gap; no named neighboring business or route is established.  
 **West:** Canon gap; no named neighboring business or route is established.  
-**District:** Le Paludi in [[calven-and-calveno|Calveno]], with a cellar route toward the [[Warren]].
+**District:** Le Paludi in [[calven-and-calveno|Calveno]], with a cellar route toward the [[warren]].
 
 ## Why
 

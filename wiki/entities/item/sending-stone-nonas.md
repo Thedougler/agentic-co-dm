@@ -45,8 +45,8 @@ When Nona calls the debt, she reaches Perrin through this stone. Until then it s
 - [[perrin-black-jaw]] — Current holder of this stone.
 - [[nona-black-jaw]] — Holds the paired twin; creditor on the unrevealed favor.
 - [[le-paludi]] — Where Nona gave the stone to Perrin.
-- [[Warren]] — Perrin agreed to end Dravosi attacks there as part of the exchange.
+- [[warren]] — Perrin agreed to end Dravosi attacks there as part of the exchange.
 
 ## Provenance
 
-[[nona-black-jaw]] gave this stone to [[perrin-black-jaw|Perrin]] at [[le-paludi]]. Perrin agreed to end Dravosi attacks in the [[Warren]] in exchange for owing Nona a favor. The terms remain unspecified. Nona will eventually collect that debt.
+[[nona-black-jaw]] gave this stone to [[perrin-black-jaw|Perrin]] at [[le-paludi]]. Perrin agreed to end Dravosi attacks in the [[warren]] in exchange for owing Nona a favor. The terms remain unspecified. Nona will eventually collect that debt.

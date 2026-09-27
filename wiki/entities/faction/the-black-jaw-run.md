@@ -18,7 +18,7 @@ kind: criminal
 status: active
 scope: regional
 region: "[[Calven and Calveno]]"
-base: "[[Warren]]"
+base: "[[warren]]"
 summary: "Kin call them the Black-Jaw Run. Outsiders call them the Black-Jaw Family. A travelling family and Passage route-network anchored at the Warren beneath Calveno."
 provenance:
   extracted: 0.85

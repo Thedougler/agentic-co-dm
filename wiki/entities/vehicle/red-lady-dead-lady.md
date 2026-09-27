@@ -96,7 +96,7 @@ After Delmar's deadline passed with no movement toward the Maw, [[Umberlee]] beg
 - [[crissdalynn-khinriss]]. Pulled Delmar from the crow's nest when the fleet sank.
 - [[rael-corven]]. Named tie on the Red Wake thread.
 - [[red-wake]]. The pressure pattern this moving wreck embodies.
-- [[Shelfworks]]. Eastern waters tied to the wreck and Pearl site.
+- [[shelfworks]]. Eastern waters tied to the wreck and Pearl site.
 - [[Midchain]]. Lane context the wake can interrupt.
 
 ## At the Table

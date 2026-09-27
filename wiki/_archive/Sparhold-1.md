@@ -80,7 +80,7 @@ Advance on public accusation, rest after confirmed sighting, lost witness, or vi
 
 **Move:** Crown response arrives (**seed**). **Trigger:** town cannot control crisis. **Result:** papers/inspection appear. **Opportunity:** coalition. **Consequence:** occupation clock advances if welcomed.
 ## Connections
-- [[uncertainty]] · [[Midchain]] · [[Aruhe - Hungry Isle]] · [[Warren]] · [[Verdant Teeth]]
+- [[uncertainty]] · [[Midchain]] · [[Aruhe - Hungry Isle]] · [[warren]] · [[Verdant Teeth]]
 ## Hooks
 - Where the taken went; who profits from silence; rescue, expose, or preserve autonomy.
 ## Secrets (DM)

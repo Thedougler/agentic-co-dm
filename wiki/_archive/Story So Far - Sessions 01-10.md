@@ -54,9 +54,9 @@ Bring me the Pearl. We will talk then.
 
 Crissdalynn swept Delmar's legs out from under him for going to a goddess alone, which may have been the kindest thing that happened at that shrine.
 
-Then Perrin's stone spoke. Nona wanted him home, and she wanted his friends with him, especially the blue one. In [[Warren|the Warren]] sewers, she laid out the next horror: six [[Grung]] had crossed the Strait, the first crossing in living memory. She fed the party a Hero's Feast and sent them down into the wet dark under the city.
+Then Perrin's stone spoke. Nona wanted him home, and she wanted his friends with him, especially the blue one. In [[warren|the Warren]] sewers, she laid out the next horror: six [[Grung]] had crossed the Strait, the first crossing in living memory. She fed the party a Hero's Feast and sent them down into the wet dark under the city.
 
-They burned a powder boat. A purple Grung called Jean-Claude a traitor before Jean-Claude ended him. They took [[Felix Aho]] alive. Felix told them the attack would come under the festival crowds in two days, with six ships behind it. [[simone]]'s people killed anyone who tried to leave. He asked for a month of protection. Nona set [[Ruk]] to guard him.
+They burned a powder boat. A purple Grung called Jean-Claude a traitor before Jean-Claude ended him. They took [[Felix Aho]] alive. Felix told them the attack would come under the festival crowds in two days, with six ships behind it. [[simone]]'s people killed anyone who tried to leave. He asked for a month of protection. Nona set [[ruk]] to guard him.
 
 Two days. That was all the city had. Two days until festival bombs, and the Pearl still outstanding.
 

@@ -31,7 +31,7 @@ summary: "Five-hour inland hunt that follows survivor tracks to a night camp, th
 
 **Now:** [[Session-11-01-Angry-Birds]]
 
-**On deck:** [[Session-11-02-Landing-Sign]] · [[Session-11-03-Wolfrabbits]]
+**On deck:** [[session-11-02-landing-sign]] · [[session-11-03-wolfrabbits]]
 
 ## Beat Map
 
@@ -41,15 +41,15 @@ Fire the Hook first, then use the alternating Development and Cliffhanger middle
 
 | # | Beat | Form | Trigger | What changes | Hand-off / options | Budget |
 | -: | --- | --- | --- | --- | --- | ---: |
-| 01 | [[Session-11-01-Angry-Birds]] | **Hook** | The party remains in the Crown Squid's air when the Bloodhawk stoops. | The party leaves open sky for grass, river, terrace cover, or the exposed beach; damage and conditions carry forward. | [[Session-11-02-Landing-Sign]] | 30 min |
-| 02 | [[Session-11-02-Landing-Sign]] | Development | The party lands beside fresh prints, a used stop, and inland smoke. | The survivors' route becomes actionable; delay thins the smoke and cools the sign. | [[Session-11-03-Wolfrabbits]] or a player-chosen rebuild | 30 min |
-| 03 | [[Session-11-03-Wolfrabbits]] | Cliffhanger | The northbound prints enter [[torn-crossing]]. | The party crosses an active predator boundary and keeps, loses, or complicates the upriver route. | [[Session-11-04-What-They-Ate]] | 30 min |
-| 04 | [[Session-11-04-What-They-Ate]] | Development | The party reaches [[line-bank]] and finds three fruit piles, fish remains, and blood under living stems. | The party learns the difference between receiving and taking on Aruhe; any claim worsens a later hazards-table roll. | [[Session-11-05-Otter-Hole]] or a player-chosen southbound rebuild | 30 min |
-| 05 | [[Session-11-05-Otter-Hole]] | Cliffhanger | The trail reaches [[river-slack-basin]], where otters play with a separated survivor. | The survivor is rescued or left, and the party takes the bloody-bank detour toward the inland camp. | [[Session-11-06-Farthest-Camp]] | 30 min |
-| 06 | [[Session-11-06-Farthest-Camp]] | Development | The party reaches [[spoke-ring]] at dusk. | The survivor camp splits between returning to [[uncertainty]] and following the garden invitation; the invitation must be heard for beat 7's lure. | [[Session-11-07-False-Help]], a forced march, or a rebuild if the party leaves early | 30 min |
-| 07 | [[Session-11-07-False-Help]] | Cliffhanger | Night falls and the garden words return from a north trail without matching footsteps. | The party keeps everyone grouped, loses or marks an isolated body, or leaves the fire messy. | [[Session-11-08-Night-Watch]] | 30 min |
-| 08 | [[Session-11-08-Night-Watch]] | Development | The party must decide how to guard the camp and [[fate-spinner]]. | Record **fortified**, **paired**, or **thin**, plus quiet or messy fire and whether [[crissdalynn-khinriss]] is on watch. | [[Session-11-09-Theft-on-the-Watch]] at Star Cut, the fire, or the column | 30 min |
-| 09 | [[Session-11-09-Theft-on-the-Watch]] | **Climax** | The watch is posted and the sun is gone. | [[talon-skarn]] makes one committed attempt to take the [[fate-spinner]]; the result is Held, Stolen, captured, or killed. | [[Session-11-10-Aftermath]] | 30 min |
+| 01 | [[Session-11-01-Angry-Birds]] | **Hook** | The party remains in the Crown Squid's air when the Bloodhawk stoops. | The party leaves open sky for grass, river, terrace cover, or the exposed beach; damage and conditions carry forward. | [[session-11-02-landing-sign]] | 30 min |
+| 02 | [[session-11-02-landing-sign]] | Development | The party lands beside fresh prints, a used stop, and inland smoke. | The survivors' route becomes actionable; delay thins the smoke and cools the sign. | [[session-11-03-wolfrabbits]] or a player-chosen rebuild | 30 min |
+| 03 | [[session-11-03-wolfrabbits]] | Cliffhanger | The northbound prints enter [[torn-crossing]]. | The party crosses an active predator boundary and keeps, loses, or complicates the upriver route. | [[Session-11-04-What-They-Ate]] | 30 min |
+| 04 | [[Session-11-04-What-They-Ate]] | Development | The party reaches [[line-bank]] and finds three fruit piles, fish remains, and blood under living stems. | The party learns the difference between receiving and taking on Aruhe; any claim worsens a later hazards-table roll. | [[session-11-05-otter-hole]] or a player-chosen southbound rebuild | 30 min |
+| 05 | [[session-11-05-otter-hole]] | Cliffhanger | The trail reaches [[river-slack-basin]], where otters play with a separated survivor. | The survivor is rescued or left, and the party takes the bloody-bank detour toward the inland camp. | [[Session-11-06-Farthest-Camp]] | 30 min |
+| 06 | [[Session-11-06-Farthest-Camp]] | Development | The party reaches [[spoke-ring]] at dusk. | The survivor camp splits between returning to [[uncertainty]] and following the garden invitation; the invitation must be heard for beat 7's lure. | [[session-11-07-false-help]], a forced march, or a rebuild if the party leaves early | 30 min |
+| 07 | [[session-11-07-false-help]] | Cliffhanger | Night falls and the garden words return from a north trail without matching footsteps. | The party keeps everyone grouped, loses or marks an isolated body, or leaves the fire messy. | [[Session-11-08-Night-Watch]] | 30 min |
+| 08 | [[Session-11-08-Night-Watch]] | Development | The party must decide how to guard the camp and [[fate-spinner]]. | Record **fortified**, **paired**, or **thin**, plus quiet or messy fire and whether [[crissdalynn-khinriss]] is on watch. | [[session-11-09-theft-on-the-watch]] at Star Cut, the fire, or the column | 30 min |
+| 09 | [[session-11-09-theft-on-the-watch]] | **Climax** | The watch is posted and the sun is gone. | [[talon-skarn]] makes one committed attempt to take the [[fate-spinner]]; the result is Held, Stolen, captured, or killed. | [[Session-11-10-Aftermath]] | 30 min |
 | 10 | [[Session-11-10-Aftermath]] | **Resolution** | The theft has been answered. | The party sees the cost, names what changed, and chooses whether to sleep, walk, pursue, or keep the survivors; the [[memorial-grove]] remains for later. | Player-selected next direction | 30 min |
 
 ## Floating Beats
@@ -65,29 +65,29 @@ Fire the Hook first, then use the alternating Development and Cliffhanger middle
 | From | If the party… | Then surface… | Consequence |
 | --- | --- | --- | --- |
 | [[Session-11-01-Angry-Birds]] | Returns toward the beach instead of following the inland sign. | Rebuild from the beach or ship with the survivor route no longer guaranteed. | Do not force the smoke trail; let the changed route alter the session. |
-| [[Session-11-05-Otter-Hole]] | Leaves the survivor in the slack basin. | [[Session-11-06-Farthest-Camp]] with fewer survivors than the tracks suggest. | Carry the unresolved loss forward; do not replay the rescue. |
+| [[session-11-05-otter-hole]] | Leaves the survivor in the slack basin. | [[Session-11-06-Farthest-Camp]] with fewer survivors than the tracks suggest. | Carry the unresolved loss forward; do not replay the rescue. |
 | [[Session-11-06-Farthest-Camp]] | Leaves before hearing the garden invitation. | A weaker night peel or a new situation from the changed route. | Drop the prepared woman-lure rather than faking it. |
 | [[Session-11-08-Night-Watch]] | Forces a march or stays awake in a knot. | Beat 9 on the column or at the fire. | Keep the carrier as Skarn's target; do not teleport the party to Star Cut. |
-| [[Session-11-09-Theft-on-the-Watch]] | Skarn leaves with the [[fate-spinner]]. | The inverted Bloodhawk hunt in [[Session-11-10-Aftermath]]. | Anyone who enters open sky can become prey; the Grove is still not tonight. |
+| [[session-11-09-theft-on-the-watch]] | Skarn leaves with the [[fate-spinner]]. | The inverted Bloodhawk hunt in [[Session-11-10-Aftermath]]. | Anyone who enters open sky can become prey; the Grove is still not tonight. |
 
 ## Critical Routes
 
 | They need to reach or learn… | Route or clue 1 | Route or clue 2 | Route or clue 3 |
 | --- | --- | --- | --- |
-| The farthest inland survivors | [[Session-11-01-Angry-Birds]] → [[Session-11-02-Landing-Sign]] | [[Session-11-03-Wolfrabbits]] → [[Session-11-04-What-They-Ate]] | [[Session-11-05-Otter-Hole]] → [[Session-11-06-Farthest-Camp]] |
-| What the island permits | Blood under snapped living stems on [[Session-11-04-What-They-Ate]] | The claimed water at [[Session-11-05-Otter-Hole]] | The survivor accounts in [[Session-11-06-Farthest-Camp]] |
-| The garden invitation's danger | Hear the two camp stories in [[Session-11-06-Farthest-Camp]] | Answer the borrowed voice in [[Session-11-07-False-Help]] | Observe the isolation lesson before [[Session-11-08-Night-Watch]] |
-| The Fate Spinner's final state | Protect the carrier during [[Session-11-08-Night-Watch]] | Disrupt the committed theft in [[Session-11-09-Theft-on-the-Watch]] | Resolve Held or Stolen in [[Session-11-10-Aftermath]] |
+| The farthest inland survivors | [[Session-11-01-Angry-Birds]] → [[session-11-02-landing-sign]] | [[session-11-03-wolfrabbits]] → [[Session-11-04-What-They-Ate]] | [[session-11-05-otter-hole]] → [[Session-11-06-Farthest-Camp]] |
+| What the island permits | Blood under snapped living stems on [[Session-11-04-What-They-Ate]] | The claimed water at [[session-11-05-otter-hole]] | The survivor accounts in [[Session-11-06-Farthest-Camp]] |
+| The garden invitation's danger | Hear the two camp stories in [[Session-11-06-Farthest-Camp]] | Answer the borrowed voice in [[session-11-07-false-help]] | Observe the isolation lesson before [[Session-11-08-Night-Watch]] |
+| The Fate Spinner's final state | Protect the carrier during [[Session-11-08-Night-Watch]] | Disrupt the committed theft in [[session-11-09-theft-on-the-watch]] | Resolve Held or Stolen in [[Session-11-10-Aftermath]] |
 
 ## Pressure
 
 | Step | Situation without intervention | Surface through |
 | ---: | --- | --- |
-| 0 | The party is exposed in the Bloodhawk's hunting line, while survivor tracks and smoke wait below. | [[Session-11-01-Angry-Birds]] · [[Session-11-02-Landing-Sign]] |
-| 1 | The smoke thins, the tracks cool, and Aruhe's predators punish isolated movement along the river route. | [[Session-11-03-Wolfrabbits]] · [[Session-11-04-What-They-Ate]] |
-| 2 | The slack basin claims bodies, and the surviving group reaches the Spoke Ring split between ship and garden. | [[Session-11-05-Otter-Hole]] · [[Session-11-06-Farthest-Camp]] |
-| 3 | Night voice and survivor disagreement turn separation into immediate danger; the camp's disorder becomes cover. | [[Session-11-07-False-Help]] · [[Session-11-08-Night-Watch]] |
-| 4 | Skarn commits to one theft. If he succeeds, the Bloodhawk hunt carries the object inland; if he fails, the party holds the camp and the garden invitation remains open. | [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-10-Aftermath]] |
+| 0 | The party is exposed in the Bloodhawk's hunting line, while survivor tracks and smoke wait below. | [[Session-11-01-Angry-Birds]] · [[session-11-02-landing-sign]] |
+| 1 | The smoke thins, the tracks cool, and Aruhe's predators punish isolated movement along the river route. | [[session-11-03-wolfrabbits]] · [[Session-11-04-What-They-Ate]] |
+| 2 | The slack basin claims bodies, and the surviving group reaches the Spoke Ring split between ship and garden. | [[session-11-05-otter-hole]] · [[Session-11-06-Farthest-Camp]] |
+| 3 | Night voice and survivor disagreement turn separation into immediate danger; the camp's disorder becomes cover. | [[session-11-07-false-help]] · [[Session-11-08-Night-Watch]] |
+| 4 | Skarn commits to one theft. If he succeeds, the Bloodhawk hunt carries the object inland; if he fails, the party holds the camp and the garden invitation remains open. | [[session-11-09-theft-on-the-watch]] · [[Session-11-10-Aftermath]] |
 
 ````col
 ```col-md
@@ -97,11 +97,11 @@ flexGrow=2
 
 | Character focus | Touchpoint this session | Best beat(s) |
 | --- | --- | --- |
-| The protector | Decide how to guard [[crissdalynn-khinriss]] and conceal the [[fate-spinner]] without turning the watch into a knot. | [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] |
-| The rescuer | Choose whether to enter the otter game, pull the separated survivor free, or leave the claimed water untouched. | [[Session-11-05-Otter-Hole]] |
-| The investigator | Read the tracks, food, blood, smoke, and borrowed voice into a working model of Aruhe. | [[Session-11-02-Landing-Sign]] · [[Session-11-04-What-They-Ate]] · [[Session-11-07-False-Help]] |
+| The protector | Decide how to guard [[crissdalynn-khinriss]] and conceal the [[fate-spinner]] without turning the watch into a knot. | [[Session-11-08-Night-Watch]] · [[session-11-09-theft-on-the-watch]] |
+| The rescuer | Choose whether to enter the otter game, pull the separated survivor free, or leave the claimed water untouched. | [[session-11-05-otter-hole]] |
+| The investigator | Read the tracks, food, blood, smoke, and borrowed voice into a working model of Aruhe. | [[session-11-02-landing-sign]] · [[Session-11-04-What-They-Ate]] · [[session-11-07-false-help]] |
 | The negotiator | Decide whether the inland survivors return to [[uncertainty]], follow the garden invitation, or split. | [[Session-11-06-Farthest-Camp]] · [[Session-11-10-Aftermath]] |
-| The risk-taker | Choose when to enter open sky, the river, the predator's lane, or the final chase, knowing isolation makes a body prey. | [[Session-11-01-Angry-Birds]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-10-Aftermath]] |
+| The risk-taker | Choose when to enter open sky, the river, the predator's lane, or the final chase, knowing isolation makes a body prey. | [[Session-11-01-Angry-Birds]] · [[session-11-03-wolfrabbits]] · [[Session-11-10-Aftermath]] |
 ```
 
 ```col-md
@@ -109,7 +109,7 @@ flexGrow=2
 
 | Need | Ready reference |
 | --- | --- |
-| **Session flow** | [[Session-11-01-Angry-Birds]] · [[Session-11-02-Landing-Sign]] · [[Session-11-03-Wolfrabbits]] · [[Session-11-04-What-They-Ate]] · [[Session-11-05-Otter-Hole]] · [[Session-11-06-Farthest-Camp]] · [[Session-11-07-False-Help]] · [[Session-11-08-Night-Watch]] · [[Session-11-09-Theft-on-the-Watch]] · [[Session-11-10-Aftermath]] |
+| **Session flow** | [[Session-11-01-Angry-Birds]] · [[session-11-02-landing-sign]] · [[session-11-03-wolfrabbits]] · [[Session-11-04-What-They-Ate]] · [[session-11-05-otter-hole]] · [[Session-11-06-Farthest-Camp]] · [[session-11-07-false-help]] · [[Session-11-08-Night-Watch]] · [[session-11-09-theft-on-the-watch]] · [[Session-11-10-Aftermath]] |
 | **Travel pressure** | [[session-11-00-random-tables]] · [[taking-on-aruhe]] |
 | **Places** | [[old-gardens]] · [[torn-crossing]] · [[river-slack-basin]] · [[spoke-ring]] · [[star-cut]] |
 | **People and objects** | [[crissdalynn-khinriss]] · [[matteo-scola]] · [[talon-skarn]] · [[fate-spinner]] · [[uncertainty]] |

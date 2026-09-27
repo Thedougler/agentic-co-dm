@@ -37,7 +37,7 @@ Dwarf who runs [[Carpenter's Slip]] in [[calven-and-calveno]]. She talks about s
 
 **Opening move:** analyzing a keel chip in her mouth · Savia speaks first · "Free look at any hull. Double if you're in a hurry. Which are you?"
 
-**Lore Sheet:** runs Calveno's fast-turnaround yard (hull checks, keel checks, caulking, plank repair, mast work, rudder repair, emergency repairs at double rate). Walk in, pay a deposit (her choice), and work begins. The [[Arsenal]] ignores her, which is fine. She takes the jobs too slow or too secret for the official dry dock and reads timber like other people read faces. She also runs an off-book service for hull re-silhouetting, which differs from [[Acqua Nera]]'s paint work. Any ship that tries a walk-in joins her blacklist. Discreet work requires a [[Warren]] voucher (costs 220 gp plus a Tangle favour for five days). She tells that rule once, without heat: the hull is the truth.
+**Lore Sheet:** runs Calveno's fast-turnaround yard (hull checks, keel checks, caulking, plank repair, mast work, rudder repair, emergency repairs at double rate). Walk in, pay a deposit (her choice), and work begins. The [[Arsenal]] ignores her, which is fine. She takes the jobs too slow or too secret for the official dry dock and reads timber like other people read faces. She also runs an off-book service for hull re-silhouetting, which differs from [[Acqua Nera]]'s paint work. Any ship that tries a walk-in joins her blacklist. Discreet work requires a [[warren]] voucher (costs 220 gp plus a Tangle favour for five days). She tells that rule once, without heat: the hull is the truth.
 
 **Toy Chest**
 
@@ -57,7 +57,7 @@ Dwarf who runs [[Carpenter's Slip]] in [[calven-and-calveno]]. She talks about s
 - [[calven-and-calveno]]: based here.
 - [[Acqua Nera]]: contrast, cosmetic repaint work, not structural.
 - [[nona-black-jaw]]: unconfirmed prep material names her as the required Warren vouch for discreet jobs (see DM Only).
-- [[Warren]]: unconfirmed prep material, introduction required for off-book work (see DM Only).
+- [[warren]]: unconfirmed prep material, introduction required for off-book work (see DM Only).
 
 ## Session Log
 

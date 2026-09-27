@@ -40,7 +40,7 @@ status: active
 
 ### What is really happening
 
-The wreck of the original Red Lady holds the Pearl at the eastern [[Shelfworks]] site inside [[drowned-maw]], below the planar boundary. Umberlee's claim ends where the water stops tasting like hers. She has not killed Delmar because the captains remain bound to him. Tribute and the [[red-wake]] continue as collection while no one returns the instrument.
+The wreck of the original Red Lady holds the Pearl at the eastern [[shelfworks]] site inside [[drowned-maw]], below the planar boundary. Umberlee's claim ends where the water stops tasting like hers. She has not killed Delmar because the captains remain bound to him. Tribute and the [[red-wake]] continue as collection while no one returns the instrument.
 
 ## Stakes
 

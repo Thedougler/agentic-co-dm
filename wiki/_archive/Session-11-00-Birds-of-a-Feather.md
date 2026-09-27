@@ -40,14 +40,14 @@ Between story beats, navigate the valley with the single d8 [[session-11-00-rand
 Beat number matches the card filename.
 
 1. HOOK — Dogfight / Crisis (bloodhawk stoop) — [[Session-11-01-Angry-Birds]]
-2. DEVELOPMENT — Clue (landing sign and smoke) — [[Session-11-02-Landing-Sign]]
-3. CLIFFHANGER — Monster / Obstacle (Torn Crossing hunt) — [[Session-11-03-Wolfrabbits]]
+2. DEVELOPMENT — Clue (landing sign and smoke) — [[session-11-02-landing-sign]]
+3. CLIFFHANGER — Monster / Obstacle (Torn Crossing hunt) — [[session-11-03-wolfrabbits]]
 4. DEVELOPMENT — Clue (what they ate) — [[Session-11-04-What-They-Ate]]
-5. CLIFFHANGER — Obstacle (rescue at the otter hole) — [[Session-11-05-Otter-Hole]]
+5. CLIFFHANGER — Obstacle (rescue at the otter hole) — [[session-11-05-otter-hole]]
 6. DEVELOPMENT — Warning / Secret Meeting (the farthest camp) — [[Session-11-06-Farthest-Camp]]
-7. CLIFFHANGER — Ambush (borrowed voice) — [[Session-11-07-False-Help]]
+7. CLIFFHANGER — Ambush (borrowed voice) — [[session-11-07-false-help]]
 8. DEVELOPMENT — Preparation (set the watch) — [[Session-11-08-Night-Watch]]
-9. CLIMAX — Final Battle (theft on the watch) — [[Session-11-09-Theft-on-the-Watch]]
+9. CLIMAX — Final Battle (theft on the watch) — [[session-11-09-theft-on-the-watch]]
 10. RESOLUTION — Aftermath — [[Session-11-10-Aftermath]]
 
 ## Beats
@@ -62,11 +62,11 @@ Beat number matches the card filename.
 - **Pressure:** Three bodies in one patch of sky. Staying high next to the squid keeps them in the hunt. Making noise or dealing damage puts a stoop on them. Dropping into the grass and river is how they leave the hunt. Time in the air costs hits.
 - **If they break:** If they go quiet and drop away from both animals, let them land; the hawk stays on the squid. If they attack the hawk or stay glued to the squid, she takes a player if she can. If they force a line back to the beach, she still hunts the squid across that air and will hit anyone who stays in it. Do not turn this into a fight to the death with either animal. When they hit the river valley, the beat is over.
 
-**Landing:** They are in moving water and eight-foot grass, or crash-landed in terrace woods. On this same bank they can already see tracks and, inland in this valley, a thin column of smoke. Beat 2 is [[Session-11-02-Landing-Sign]]. Do not run Survival checks or the hazards table here.
+**Landing:** They are in moving water and eight-foot grass, or crash-landed in terrace woods. On this same bank they can already see tracks and, inland in this valley, a thin column of smoke. Beat 2 is [[session-11-02-landing-sign]]. Do not run Survival checks or the hazards table here.
 
 ### 2. DEVELOPMENT — Clue (landing sign and smoke)
 
-**Run:** [[Session-11-02-Landing-Sign]]
+**Run:** [[session-11-02-landing-sign]]
 
 - **Purpose:** Show that wreck people already used this bank, then point the party upstream at the smoke those people are walking toward. Those people are beat 6. Do not teach the whole island here. Do not preview the woman.
 - **Table sees:** They land in the river and tall grass. On this same bank: tracks, a scraped fire spot or dropped kit, fruit already picked and left, feet heading upriver. Inland, in this valley, a thin column of smoke.
@@ -80,7 +80,7 @@ They come down in moving water and grass high enough to hide a standing person. 
 
 ### 3. CLIFFHANGER — Monster / Obstacle (Torn Crossing hunt)
 
-**Run:** [[Session-11-03-Wolfrabbits]]
+**Run:** [[session-11-03-wolfrabbits]]
 
 - **Purpose:** Test beat 2 with an ecological monster and obstacle, not an organized ambush. The first walk toward the smoke is already dangerous, and isolation is how you become the meal. Show that the survivors ahead are already navigating around predator boundaries rather than simply surviving by luck. Someone can go down here.
 - **Table sees:** They follow the prints off [[Aruhe - River Landing Bank]] onto [[Aruhe - Grasslands Torn Crossing]]. A [[Aruhe - Spiguar]] is already on a wolfrabbit in the gold grass. Three more [[Aruhe - Wolfrabbit|wolfrabbits]] are in the jump through the print corridor, between the party and the upriver tracks. The river is at their backs. Glassy [[Aruhe - Razer-Grass]] stands sit in the scour if anyone gets shoved. The survivor prints bunch through one corridor, skirt the Razer-Grass, and avoid the Spiguar's preferred grass rather than spreading blindly across the crossing.
@@ -104,11 +104,11 @@ The prints lead onto [[Aruhe - Grasslands Torn Crossing]]. A reed-matted clump t
 
 [[Aruhe - River - Line Bank]], three piles. Fermenting fruit on the ground, no blood. Fresh bushes with the stems snapped and blood under them. Fish bones and a line in the wet mud, still pointing upstream with the prints and the smoke.
 
-**Landing:** If they follow the prints, [[Aruhe - River Slack Basin]] is in view. Beat 5 is [[Session-11-05-Otter-Hole]].
+**Landing:** If they follow the prints, [[Aruhe - River Slack Basin]] is in view. Beat 5 is [[session-11-05-otter-hole]].
 
 ### 5. CLIFFHANGER — Obstacle (rescue at the otter hole)
 
-**Run:** [[Session-11-05-Otter-Hole]]
+**Run:** [[session-11-05-otter-hole]]
 
 - **Purpose:** Test beat 4 with an obstacle and rescue objective. Show that [[Aruhe - River Slack Basin]] is already claimed, that it killed people, and that the living survivors left the water here toward the smoke. Reinforce the session spine by presenting a survivor who became vulnerable only after being separated from the moving group. That smoke is camp, not a night watch. The fight happens if the party starts a Hunt, not if they join the game.
 - **Table sees:** The crew follows the prints onto [[Aruhe - River Slack Basin]]. The current slows behind a rock lip. Shapes in the still water that are not fish: clothing, a pack, a body the current should have taken. Large otters with those remains. On the bank, a blood smear going up out of the river. Prints leave the water there and cut into the grass and the forest edge, around this hole, then the smoke is still ahead.
@@ -132,11 +132,11 @@ The river goes slack at [[Aruhe - River Slack Basin]] and the things in it are p
 
 The smoke is [[Aruhe - Quiet Forest Spoke Ring]], a camp of Calveno wreck-survivors, the farthest inland of that raid, arguing in half-voices over a woman in the woods who asked them to come admire her garden. This group listened. They are still alive. They look at the trees as if she is already there.
 
-**Landing:** Same ring, or the first north spoke. Dusk is gone. A whisper from the garden-dark uses the words they just heard. Beat 7 is [[Session-11-07-False-Help]], rewritten as that night voice. Do not run [[Talon Skarn]] here.
+**Landing:** Same ring, or the first north spoke. Dusk is gone. A whisper from the garden-dark uses the words they just heard. Beat 7 is [[session-11-07-false-help]], rewritten as that night voice. Do not run [[Talon Skarn]] here.
 
 ### 7. CLIFFHANGER — Ambush (borrowed voice)
 
-**Run:** [[Session-11-07-False-Help]]
+**Run:** [[session-11-07-false-help]]
 
 - **Purpose:** Test beat 6 with a borrowed-voice ambush. They now have a reason to walk toward a voice in the dark. The [[Aruhe - Deerstalker]] uses her: garden, where to walk, what not to take. This is the first predator in the session that deliberately creates isolation rather than merely exploiting it. Isolation gets a cost before [[Talon Skarn]] spends it. Mess starts here and becomes cover on beat 9.
 - **Table sees:** Night on the north spokes off [[Aruhe - Quiet Forest Spoke Ring]]. The fire is behind them. No matching feet on that spoke. The whisper is the woman they just heard: admire the garden, this way, do not take the living plants. Nothing answers a shouted question with new information. The voice stays off the packed hub. Some survivors at the fire hear it too, and some stand up.
@@ -157,11 +157,11 @@ The smoke is [[Aruhe - Quiet Forest Spoke Ring]], a camp of Calveno wreck-surviv
 - **Preparation states:** Fortified means the players establish positions, lines of sight, and contingencies before Skarn enters. Paired means opposed detection and a roughly even opening. Thin means Skarn starts close, the first chain can already be set up, and the party reacts from disadvantage.
 - **If they break:** Do not collapse this beat into a single "set watch" skill check. Ask what they actually do, where everyone is, how [[Crissdalynn Khinriss]] and the [[Fate Spinner]] are protected, what is visible, and what deception or contingency they prepare. If they force a march tonight, beat 9 is the column, still the carrier; do not teleport to the star-cut. If they all sit awake in a knot, he still comes, and a messy camp is his cover. If they send the marked person to the star-cut alone, the nearest watcher is already there, and isolation is worse.
 
-**Landing:** Watch terms are visible: fortified, paired, or thin; quiet or messy; [[Crissdalynn Khinriss]] on it or not. They post that watch at [[Aruhe - Quiet Forest Star Cut]], or they are already walking. Beat 9 is [[Session-11-09-Theft-on-the-Watch]]. The sun is gone.
+**Landing:** Watch terms are visible: fortified, paired, or thin; quiet or messy; [[Crissdalynn Khinriss]] on it or not. They post that watch at [[Aruhe - Quiet Forest Star Cut]], or they are already walking. Beat 9 is [[session-11-09-theft-on-the-watch]]. The sun is gone.
 
 ### 9. CLIMAX — Final Battle (theft on the watch)
 
-**Run:** [[Session-11-09-Theft-on-the-Watch]]
+**Run:** [[session-11-09-theft-on-the-watch]]
 
 - **Purpose:** [[Talon Skarn]] tries to take the [[Fate Spinner]] off [[Crissdalynn Khinriss]]. The watch stops a clean steal. What he does in the fight is the lore. Skarn has watched Aruhe repeatedly punish isolation and now applies the same principle deliberately with chains, positioning, and target selection. This is the same night as beats 6 through 8, not a second night. Harvest isolation and the Spinner, not the woman. Do not cut the night here.
 - **Table sees:** [[Aruhe - Quiet Forest Star Cut]], or the column if beat 8 broke to a march. Crissdalynn on watch with at least one other person at the east fire, facing the star-cut. Skarn comes down the north mouth with katana and kusarigama, not the camp at large. He knows the Spinner is on her. He does not know which pouch, wrap, or hand. He fights her until he sees it or creates an opening: a stun, a cut strap, a pinned wing, a bag shaken out, or a Kusarigama pull that takes her off the partner. The watch partner is in it from the first pass. Mess from beats 7 and 8 is cover for him if they made it. There is no `DC 27` here. He is no longer in the sun.

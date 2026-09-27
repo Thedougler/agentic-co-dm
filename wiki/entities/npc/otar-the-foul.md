@@ -149,7 +149,7 @@ See [[Phase 1]] and [[Phase 2]] for terrain, DM pacing, and tuning info for this
 
 The Warren's alarm fires when the fight tilts toward total loss.
 
-**The Rattle (the [[Warren]] fights beside you):** The Warren's alarm system as action pool. When the fight tips toward TPK, the adventurers gain lair actions and an epic-action pool mirroring Otar. **Trigger:** two PCs down, OR adventurer HP below 25%, OR the DM reads forming TPK. Starts turn 20 next round. Stays until Otar falls. Does not kill Otar. Refuses to let adventurers lose. Each round the Warren gives **two** adventurer lair actions (turn 20, right after Otar's, DM or adventurers pick, no repeats): **[[human]] Chain** (frees one prone/buried/stuck/grappled PC, half speed toward crater, no opportunity attacks); **Fire Brigade** (add 1d6 fire to one hit, suppresses Otar's regen next turn); **Din of Pans** (Otar: DC 10 Wisdom save or loses one epic action). Adventurer epic pool contains 5 shared actions, spent one per turn, refreshing turn 20. **[[colla]]'s Toss** (1 action; 2d4+2 HP or save to downed/hurt PC within 30 ft); **Shoulder In** (1 action; PC moves or Dodges); **[[Ruk]] Wades In** (2 actions; attacks or breaks a hold). Details: [[Phase 1]] and [[Phase 2]].
+**The Rattle (the [[warren]] fights beside you):** The Warren's alarm system as action pool. When the fight tips toward TPK, the adventurers gain lair actions and an epic-action pool mirroring Otar. **Trigger:** two PCs down, OR adventurer HP below 25%, OR the DM reads forming TPK. Starts turn 20 next round. Stays until Otar falls. Does not kill Otar. Refuses to let adventurers lose. Each round the Warren gives **two** adventurer lair actions (turn 20, right after Otar's, DM or adventurers pick, no repeats): **[[human]] Chain** (frees one prone/buried/stuck/grappled PC, half speed toward crater, no opportunity attacks); **Fire Brigade** (add 1d6 fire to one hit, suppresses Otar's regen next turn); **Din of Pans** (Otar: DC 10 Wisdom save or loses one epic action). Adventurer epic pool contains 5 shared actions, spent one per turn, refreshing turn 20. **[[colla]]'s Toss** (1 action; 2d4+2 HP or save to downed/hurt PC within 30 ft); **Shoulder In** (1 action; PC moves or Dodges); **[[ruk]] Wades In** (2 actions; attacks or breaks a hold). Details: [[Phase 1]] and [[Phase 2]].
 
 The fight shifts when the Rattle joins.
 
@@ -167,7 +167,7 @@ His worst ability opens in Phase 2.
 - [[Calveno Sewer Magazines]]. The primary detonation chamber and summoning circle.
 
 - [[jean-claude-tabarnack]]. Ragnetto never targets him.
-- [[Warren]]. Floods the plaza with the Rattle if the fight turns to TPK.
+- [[warren]]. Floods the plaza with the Rattle if the fight turns to TPK.
 - [[a-sliver-of-the-unstable-form]]. A fragment of his healing flesh from the crater.
 
 ## Session Log

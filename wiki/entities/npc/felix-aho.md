@@ -43,7 +43,7 @@ Interrogated in exchange for one month of protection, he revealed the bombing pl
 
 He revealed something else: Grung defectors are a recognized kill-on-sight category. [[jean-claude-tabarnack]] is one. He did not know this category existed until Felix told him.
 
-[[nona-black-jaw]] received him as a prisoner at her safe house in [[Warren|the Warren]]. [[Ruk]] guards him now.
+[[nona-black-jaw]] received him as a prisoner at her safe house in [[warren|the Warren]]. [[ruk]] guards him now.
 
 *Nona Black-Jaw*: I knew I chose the right people for the job.
 
@@ -72,7 +72,7 @@ No stats given in source.
 **Session-canon (captive):**
 
 - [[nona-black-jaw]] received him as a prisoner with full bombing intel. [[jean-claude-tabarnack]] wants him alive to learn about Grung defectors.
-- [[Ruk]] guards him at Nona's safe house. [[Grung]] is the caste operation he was laboring for.
+- [[ruk]] guards him at Nona's safe house. [[Grung]] is the caste operation he was laboring for.
 
 **Prep profile (unconfirmed, discarded continuity):**
 
@@ -82,6 +82,6 @@ No stats given in source.
 
 ## Session Log
 
-**Session 04** (`vault/episodes/004/`). Captured in the Calveno sewers during the Grung bombing investigation. When interrogated, he revealed the full bombing operation and the existence of the Grung defector kill-on-sight category. In exchange for one month of protection, Nona Black-Jaw received him as a prisoner, now guarded by [[Ruk]].
+**Session 04** (`vault/episodes/004/`). Captured in the Calveno sewers during the Grung bombing investigation. When interrogated, he revealed the full bombing operation and the existence of the Grung defector kill-on-sight category. In exchange for one month of protection, Nona Black-Jaw received him as a prisoner, now guarded by [[ruk]].
 
 The prep profile above never reached the table. The team discarded it as an unused identity.

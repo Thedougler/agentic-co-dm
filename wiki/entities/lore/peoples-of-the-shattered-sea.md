@@ -52,7 +52,7 @@ tier: supporting
 
 *Dravosi colonial core. The western homelands with a tropical accent.*
 
-The oldest colonial foothold in the Scatter. The majority population is [[human|human]] and came with the [[dravosi-crown]] flag. [[Rattkin]] are present in every Crown port even though the Crown's relationship with [[the Passage]] is adversarial — the [[Warren]] prefers it that way.
+The oldest colonial foothold in the Scatter. The majority population is [[human|human]] and came with the [[dravosi-crown]] flag. [[Rattkin]] are present in every Crown port even though the Crown's relationship with [[the Passage]] is adversarial — the [[warren]] prefers it that way.
 
 | Species | Presence | Notes |
 |---|---|---|
@@ -146,14 +146,14 @@ No colonial administration — only pilot families, producing a working meritocr
 | Orc | Common | Physical work in hard conditions. |
 | Tortle | Common | Long-lived, cold-resistant, comfortable at depth. Ideal salvage crew. |
 | Goliath | Common | Cliff-work, heavy salvage, cold-water diving. Tail communities have had Goliath pilot families for generations. |
-| [[sea-elf]] | Present | [[halythion]] contact. Surface occasionally near the [[Shelfworks]] approaches. |
+| [[sea-elf]] | Present | [[halythion]] contact. Surface occasionally near the [[shelfworks]] approaches. |
 | [[Aarakocra]] | Present | Sentinels of the Eyrie maintain watch presence here. |
 | Water Genasi | Present | Drawn to the Maw-adjacent water. |
 | Air Genasi | Present | Navigation in fog and bad weather. |
 | Fire Genasi | Rare | Occasionally drawn here by the Maw's elemental bleed. |
 | Halfling | Rare | Provisioning. The staging islands need someone to run the stores. |
 | Rattkin | Rare | No major Run. Individual operators working salvage information routes. |
-| Triton | Rare | Deep-water presence near the [[Shelfworks]]. Encounter rather than community. |
+| Triton | Rare | Deep-water presence near the [[shelfworks]]. Encounter rather than community. |
 
 **The Sunken Crown and Outer Reach.**
 

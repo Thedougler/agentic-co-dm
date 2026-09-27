@@ -32,7 +32,7 @@ relationships:
     type: related_to
   - target: "[[the-black-jaw-run]]"
     type: related_to
-  - target: "[[Warren]]"
+  - target: "[[warren]]"
     type: related_to
 ---
 # La Vasca
@@ -56,7 +56,7 @@ relationships:
 
 - **Approach by canal through the unmarked arch.** The channel widens into the covered basin. [[cobb]] tends the cradle and tool stock and escorts vouched vessels in.
 - **Put a ship into the cradle.** The established services are hull caulking and registry-plate removal. Timber and fittings come from rotating stock, and no prior markings are kept.
-- **Ask Cobb not to tell [[nona-black-jaw|Nona]].** He declines. Using the Basin is a known event reported up the chain. Proper channels send the report to the [[Warren]] within an hour.
+- **Ask Cobb not to tell [[nona-black-jaw|Nona]].** He declines. Using the Basin is a known event reported up the chain. Proper channels send the report to the [[warren]] within an hour.
 
 **Access password:** *garden*. Not confirmed spoken on-screen in the Session 3 Recap (Cobb had the cradle ready before the crew arrived, implying prior arrangement through [[perrin-black-jaw|Perrin]]).
 
@@ -75,7 +75,7 @@ relationships:
 - Inside, the covered basin is tall enough for a mast and long enough for patrol cutters. The space smells of old stone, bilge, and mineral damp. One oil lamp hangs over the cradle.
 - The cradle is iron and timber, hand-operated, left from when the building above was a tannery. The tannery has not operated in forty years. Outside, a rotted roof and a collapsed upper beam still show. The beam is real and not structural.
 - [[Rattkin]]-scale tools line the port wall: mallets, tacks, brushes, pigment. Spare timber, a hand pump, and old manifests clutter the starboard side.
-- A narrow aft passage leads to the [[Warren]]'s channels. Only low tide makes it passable on foot, and only for those already vouched.
+- A narrow aft passage leads to the [[warren]]'s channels. Only low tide makes it passable on foot, and only for those already vouched.
 
 ---
 
@@ -86,7 +86,7 @@ relationships:
 - **East:** [[tallow-row|Tallow Row]]
 - **South:** [[studio-orsini|Studio Orsini]]
 - **West:** [[al-fondale|Al Fondale]]
-- **Below / aft:** [[Warren]] channels at low tide for the already vouched.
+- **Below / aft:** [[warren]] channels at low tide for the already vouched.
 
 ---
 

@@ -30,7 +30,7 @@ region: "[[calven-and-calveno]]"
 ## Overview
 
 > [!narration] Narration
-> Le Paludi is a canal district of [[calven-and-calveno|Calveno]] where taverns, general-goods shops, and alchemy work sit close to the water. [[al-fondale|Al Fondale]] keeps a cellar route toward the [[Warren]], [[studio-orsini|Studio Orsini]] works without a public sign, and [[casa-lupo|Casa Lupo]] keeps specialized goods beneath its counter.
+> Le Paludi is a canal district of [[calven-and-calveno|Calveno]] where taverns, general-goods shops, and alchemy work sit close to the water. [[al-fondale|Al Fondale]] keeps a cellar route toward the [[warren]], [[studio-orsini|Studio Orsini]] works without a public sign, and [[casa-lupo|Casa Lupo]] keeps specialized goods beneath its counter.
 
 ## At a Glance
 
@@ -60,7 +60,7 @@ Named district operators include [[bice-riva|Bice Riva]] and [[aldo-riva|Aldo Ri
 **East:** Canon gap; no named neighboring district or route is established.  
 **South:** Canon gap; no named neighboring district or route is established.  
 **West:** Canon gap; no named neighboring district or route is established.  
-**Below:** The [[Warren]] channels and entrances documented by individual owner pages.
+**Below:** The [[warren]] channels and entrances documented by individual owner pages.
 
 ## Why
 

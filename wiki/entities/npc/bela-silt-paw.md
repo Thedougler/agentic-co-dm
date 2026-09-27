@@ -13,7 +13,7 @@ reveal: unrevealed
 campaign: shattered-sea
 status: alive
 role: scout
-location: "[[Warren]]"
+location: "[[warren]]"
 faction: none
 visibility: dm
 summary: "Rattkin scout trapped in the Warren's flooded sub-chamber, waiting for rescue."
@@ -34,17 +34,17 @@ flexGrow=2
 | **Role**   | Scout |
 | ---------- | ----- |
 | **Nature** | [[Rattkin]], 22 years old, on her first solo assignment |
-| **Home**   | [[Warren]] |
+| **Home**   | [[warren]] |
 | **Wants**  | Rescue from the flooded sub-chamber |
 
-> **DM thesis:** Bela is a young scout whose rescue clock is still running beneath the [[Warren]].
+> **DM thesis:** Bela is a young scout whose rescue clock is still running beneath the [[warren]].
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Bela Silt-Paw
-> *A young [[Rattkin]] scout waits in the flooded chamber beneath the [[Warren]], worn down by two or three days of confinement. Water clings to her gear and her breathing is tight with exhaustion, but she turns toward any sound of rescue. When help reaches her, gratitude comes before anything else.*
+> *A young [[Rattkin]] scout waits in the flooded chamber beneath the [[warren]], worn down by two or three days of confinement. Water clings to her gear and her breathing is tight with exhaustion, but she turns toward any sound of rescue. When help reaches her, gratitude comes before anything else.*
 ```
 ````
 
@@ -56,7 +56,7 @@ flexGrow=1
 ===
 ### First meeting
 
-Bela is discovered in the flooded sub-chamber beneath the [[Warren]]. She is exhausted but grateful when rescuers arrive.
+Bela is discovered in the flooded sub-chamber beneath the [[warren]]. She is exhausted but grateful when rescuers arrive.
 ```
 
 ```col-md
@@ -76,9 +76,9 @@ Bela speaks through exhaustion and keeps rescue, not combat, at the center of ev
 
 | Connection | Meaning |
 | ---------- | ------- |
-| [[Warren]] | Current location; Bela remains trapped in its flooded sub-chamber. |
+| [[warren]] | Current location; Bela remains trapped in its flooded sub-chamber. |
 | [[Rattkin]] | Bela's species. |
 | [[Warren - Bela Silt-Paw]] | Fuller quest-hook framing, including the reward. |
 | [[Weird]] | The Water Weird holding Bela in the chamber has AC 13 and 58 HP. |
 
-**Cache in the chamber:** 340 gp, two potions of water breathing, and a Faste dispatch worth approximately 500 gp. [[Warren]]'s Active Leads contains fuller dispatch details.
+**Cache in the chamber:** 340 gp, two potions of water breathing, and a Faste dispatch worth approximately 500 gp. [[warren]]'s Active Leads contains fuller dispatch details.

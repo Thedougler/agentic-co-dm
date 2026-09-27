@@ -11,10 +11,10 @@ tags: [faction, grung, verdant-teeth, theocracy, poison]
 > Three-foot amphibious people of the Verdant Teeth: leaping climbers with poisonous skin, a daily soak that seals diet into the body, and colors — gold, red, purple, blue, green — that show what a body currently carries. They trade at sanctioned beaches and keep the rainforest interior closed. The public story is protection, community, and serene gold decrees under the name Auralis.
 
 
-The Grung clans hold the interior of the [[Verdant Teeth]] behind a strict closed-interior rule. Their public story is protection: protect Grung communities, preserve the decrees of [[Auralis]], and keep outsiders from ground that belongs to the clans. Their water power is shrinking, so every beach, toxin shipment, captive, and raid now carries more pressure.
+The Grung clans hold the interior of the [[Verdant Teeth]] behind a strict closed-interior rule. Their public story is protection: protect Grung communities, preserve the decrees of [[auralis]], and keep outsiders from ground that belongs to the clans. Their water power is shrinking, so every beach, toxin shipment, captive, and raid now carries more pressure.
 
 ## Public goal
-Protect Grung communities, preserve the sealing order, and obey the public theocratic claim of [[Auralis]]. Outsiders may trade at sanctioned beaches; the interior is closed.
+Protect Grung communities, preserve the sealing order, and obey the public theocratic claim of [[auralis]]. Outsiders may trade at sanctioned beaches; the interior is closed.
 
 ## Secret goal
 Keep the caste-and-rite system intact while recovering lost ground on the water. Raids, the fighting-age levy, the captive pipeline, and toxin exports are not separate accidents: they are the means by which the clans try to remain sharp while their maritime position deteriorates.
@@ -49,7 +49,7 @@ See [[Grung Color and the Sealing Rite]] for DM truth and the boundaries of what
 ## Religion and theocracy
 The clans teach a gold-caste story: gold is the sacred authority, Auralis is the mandate, and serene decrees are to be obeyed. The private evidence is narrower and stranger. Authority comes from a serene, unanswerable presence manifest through gold, from the congregation gathered around it, and from sacred ground in the Teeth. That power thins outside the Verdant Teeth.
 
-The exact nature of the gold presence is **UNKNOWN**. The older vault called [[Auralis]] a constructed demigod; this ingest establishes only a public theocratic claim and a private apex presence through gold. Do not decide whether the presence is a god, construct, conduit, or deception.
+The exact nature of the gold presence is **UNKNOWN**. The older vault called [[auralis]] a constructed demigod; this ingest establishes only a public theocratic claim and a private apex presence through gold. Do not decide whether the presence is a god, construct, conduit, or deception.
 
 Fiction layer: [[Gold Caste Serene]]; existing encounter sheet: [[The Gold-Caste Serene]]. Keep the faith tap and unlookable body as fiction continuity, not new monster math.
 
@@ -90,7 +90,7 @@ Botukuri is a Sorn farming clan. Its flood-pulse lanes are seasonal occupation r
 
 
 ## Faces
-- Apex presence: [[Auralis]] — public mandate / private serene presence; exact nature UNKNOWN.
+- Apex presence: [[auralis]] — public mandate / private serene presence; exact nature UNKNOWN.
 - Sorn officer: [[simone]] — purple, stalled partial gold, toxin seller and Jean-Claude hunter.
 - Green operative: [[Felix Aho]].
 - Blue operative: [[Ruma Delacroix]].

@@ -60,7 +60,7 @@ Vel Orn is an older house of Umberlee on a small island in the [[sunken-crown]].
 - **East:** The Blue Hole rim; no named route or distance is established.
 - **South:** Reef-bound open water; the known approach appears only when the surge allows it.
 - **West:** The remaining [[sunken-crown]] islands; no named route or distance is established.
-- **Related sites:** [[drowned-maw]] and [[Shelfworks]] are connected in the regional record, but their exact direction and travel time from Vel Orn are not established.
+- **Related sites:** [[drowned-maw]] and [[shelfworks]] are connected in the regional record, but their exact direction and travel time from Vel Orn are not established.
 
 ## Why
 

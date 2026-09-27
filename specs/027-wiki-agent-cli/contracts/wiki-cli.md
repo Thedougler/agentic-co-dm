@@ -41,14 +41,14 @@ Default stdout is one issue per line, not the worklist JSON:
 
 ```text
 <file>:<line>: <rule>: <message>
-  fix: wiki lint fix <file>
+  fix: <repair_target or wiki lint fix <file>>
 ```
 
 `line` is 1-based. `fix:` is omitted when there is no repair hint; `human` means the finding is not auto-fixed. A clean run prints `clean`. `--json` emits the worklist object below. `--pretty` remains the human scoreboard.
 
-Required `--json` keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`, `unique`, `backlog`, and `files`.
+Required `--json` keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`, `unique`, `backlog`, `files`, and `findings`.
 
-Lint includes aggregate counts and every configured checker finding, including all Vale findings and every severity. `files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. There is no hard-only default or checker-suppression flag.
+Lint includes aggregate counts and every configured checker finding, including all Vale findings and every severity. `files` is an array of `{file, findings}` in argument / path order. Top-level `findings` is the concatenation of `files[].findings`; every finding `message` is non-empty; `repair_target` is present when the checker supplied one. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. There is no hard-only default or checker-suppression flag.
 
 No nested per-rule finding maps. `unique` values are already-deduped targets. Lint MUST NOT guess, alias-match, or invent owners.
 

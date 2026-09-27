@@ -24,7 +24,7 @@ visibility: dm
 ```col-md
 ## Scene ends when
 
-The beat ends when the party commits north toward the smoke and hands off to [[Session-11-05-Otter-Hole]], or leaves the bank south toward [[torn-crossing]], the beach, or the downstream terraces.
+The beat ends when the party commits north toward the smoke and hands off to [[session-11-05-otter-hole]], or leaves the bank south toward [[torn-crossing]], the beach, or the downstream terraces.
 
 This beat is thirty minutes.
 
@@ -39,7 +39,7 @@ flexGrow=2
 ## At a Glance
 
 - **Stakes:** Easy food lies on the ground. Blood marks only snapped living stems. Delay makes the smoke and fresh prints harder to follow.
-- **Goal / exit:** Take fallen fruit and follow the north prints to [[Session-11-05-Otter-Hole]], or leave the route south.
+- **Goal / exit:** Take fallen fruit and follow the north prints to [[session-11-05-otter-hole]], or leave the route south.
 - **Danger:** Plucking a living plant marks a [[taking-on-aruhe]] claim. Open valley air exposes a flyer to hawk sky.
 - **Silence:** Present the bank, then wait. If the party remains here through the round, thin the smoke once and return the choice.
 - **Situation magnets:** Any character still on the bank at round end.
@@ -109,7 +109,7 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taki
 | River-side pile and pole | 10 feet east of the prints, at the water. | Open sand around tawny fallen fruit, a wooden pole, baskets, and fish bones. | _The line taps the current beside the baskets. Fish bones and silver scales lie among the wet stones, while dark mud marks the living stems above them._ |
 | Downstream pile | 20 feet south along this same bank. | Open grass around pale-green fallen fruit and a second fruiting bush. | _Pale-green fruit and burst skins cover the sand below the second bush. The ground is clean until the living stems begin._ |
 | Inland pile | 25 feet west toward the jungle wall. | Thin cover as the grass thickens toward the trees. | _Rinds and whole fruit gather where the grass meets the trees. Sweet rot is strongest here, and blood-dark mud touches only living roots._ |
-| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | The trail leads to [[Session-11-05-Otter-Hole]]. | _Two parallel tracks leave the fruiting margin and cut north through the stems toward the inland smoke._ |
+| Upriver prints | The prints run 60 feet north up this bank, then off toward the smoke. | The trail leads to [[session-11-05-otter-hole]]. | _Two parallel tracks leave the fruiting margin and cut north through the stems toward the inland smoke._ |
 | Inland smoke | A thin column on the northern horizon in this same valley. | The smoke is not reachable on this card. | _Wind pulls the top of the inland column sideways. It still marks the northbound route._ |
 
 ## Be ready for
@@ -117,7 +117,7 @@ If anyone plucks living plants, traps, or kills to carry flesh here, mark [[taki
 | Intent | Approach | DC | Success | Partial | Failure |
 | --- | --- | --- | --- | --- | --- |
 | Assess the situation | **Wisdom (Perception)**, **Wisdom (Survival)**, or **Intelligence (Nature)** | `DC 10` | The party can sort the evidence: fallen fruit is already down, blood lies only under snapped living stems, and the pole, bones, and scales mark a used fishing stop. The prints and smoke point north, but their distance and the survivors' number remain unknown. | The looker identifies the three piles and northbound route but does not resolve the blood or the survivors' number. | The looker gains no additional read. The clock still waits for round end. |
-| Follow the north prints and smoke | Walk the crushed corridor north off the bank. | Commit | The party commits to the north trail and hands off to [[Session-11-05-Otter-Hole]]. Fallen fruit is not a claim; any existing living-plant claim remains applied. | Binary. | Binary. |
+| Follow the north prints and smoke | Walk the crushed corridor north off the bank. | Commit | The party commits to the north trail and hands off to [[session-11-05-otter-hole]]. Fallen fruit is not a claim; any existing living-plant claim remains applied. | Binary. | Binary. |
 | Search the pole, bones, and line | **Intelligence (Investigation)** or **Wisdom (Perception)** | `DC 10` | The searcher can take the pole, line, and baskets. The stop is recently used, but the bones and scales do not reveal the catch or the number of fishers. | The searcher confirms the visible evidence and remains at the pole. | The searcher finds nothing beyond the visible gear and remains at the line. |
 | Pick fruit | **Intelligence (Nature)** or **Wisdom (Survival)** to sort fallen fruit from living stems. **Utilize** if the character plucks without sorting. | `DC 10` | The character takes only fallen fruit. That is not a claim. A firm fallen fruit restores `8d4 + 8` hit points as a Bonus Action, as [[redheart-berry]]. | The character takes some living stems and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. | The character strips living fruit and marks [[taking-on-aruhe]]. The later hazards-table roll uses `2d8`, keeping the lower result. |
 | Look up-sun | **Wisdom (Perception)**, only if the party asks who the flyer is | `DC 27` | The looker sees [[talon-skarn]] up-sun as a man-sized peregrine body in the glare, then loses sight of him. | Sun glare gives no identity. The looker remains on the bank. | Sun glare gives no identity. The looker remains on the bank. |
@@ -136,20 +136,20 @@ For an unforeseen intent, keep the northbound prints and smoke as the route, and
 
 ## How the Scene Resolves
 
-The default north handoff is [[Session-11-05-Otter-Hole]]. Once the party commits, [[river-slack-basin]] comes into view. Apply any [[taking-on-aruhe]] claim already made.
+The default north handoff is [[session-11-05-otter-hole]]. Once the party commits, [[river-slack-basin]] comes into view. Apply any [[taking-on-aruhe]] claim already made.
 
 > [!narration] How the Scene Resolves
 > The fruiting margin falls behind as the northbound corridor follows the river. Stems rasp against your legs, and the current keeps pace to the east. Ahead, the water begins to slow.
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[Session-11-05-Otter-Hole]]. | _The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._ |
-| Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[Session-11-05-Otter-Hole]]. | _The print edges have softened and the smoke is thinner as you take the corridor north._ |
+| Fresh north commit | The party follows sharp prints toward [[river-slack-basin]]. Hand to [[session-11-05-otter-hole]]. | _The prints stay sharp in the wet ground, and the smoke still stands north as you take the corridor upriver._ |
+| Lingered north commit | The party follows softened prints toward [[river-slack-basin]] after the clock advances. Hand to [[session-11-05-otter-hole]]. | _The print edges have softened and the smoke is thinner as you take the corridor north._ |
 | Southbound break | The party leaves the bank toward [[torn-crossing]], the terrace line, the beach, or [[uncertainty]]. Rebuild from the route chosen. | _You turn south, leaving the smoke and northbound prints behind as the used bank opens toward the torn crossing and the beach._ |
 
 ## Backup
 
-[[line-bank]] · [[torn-crossing]] · [[landing-bank]] · [[river-slack-basin]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[redheart-berry]] · [[uncertainty]] · [[talon-skarn]] · [[young-bloodhawk]] · [[Session-11-03-Wolfrabbits]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-05-Otter-Hole]]
+[[line-bank]] · [[torn-crossing]] · [[landing-bank]] · [[river-slack-basin]] · [[session-11-00-random-tables]] · [[taking-on-aruhe]] · [[grasslands]] · [[the-river]] · [[redheart-berry]] · [[uncertainty]] · [[talon-skarn]] · [[young-bloodhawk]] · [[session-11-03-wolfrabbits]] · [[session-11-00-birds-of-a-feather]] · [[session-11-05-otter-hole]]
 
 ## Battlemap
 

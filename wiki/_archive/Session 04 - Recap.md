@@ -23,10 +23,10 @@ tags: [session, recap]
 >
 > Crissdalynn swept Delmar's legs for going to a goddess alone.
 >
-> Then the stone in [[Perrin Black-Jaw|Perrin]]'s hand spoke. *Bring your friends, especially the blue one.* Nona laid out six [[Grung]] in [[Warren|the Warren]] sewers, the first crossing of the Strait in living memory. She fed you a Hero's Feast and sent you down. You burned a powder boat. A purple called Jean-Claude a traitor before Jean-Claude ended it. You took [[Felix Aho]] alive. He told you they would hit under the festival crowds in two days, with six ships behind them. [[simone]]'s people kill leavers on sight. He asked for a month of protection. Nona set [[Ruk]] to guard him.
+> Then the stone in [[Perrin Black-Jaw|Perrin]]'s hand spoke. *Bring your friends, especially the blue one.* Nona laid out six [[Grung]] in [[warren|the Warren]] sewers, the first crossing of the Strait in living memory. She fed you a Hero's Feast and sent you down. You burned a powder boat. A purple called Jean-Claude a traitor before Jean-Claude ended it. You took [[Felix Aho]] alive. He told you they would hit under the festival crowds in two days, with six ships behind them. [[simone]]'s people kill leavers on sight. He asked for a month of protection. Nona set [[ruk]] to guard him.
 >
 > Two days until the festival bombs. Felix is under Nona. The Pearl is still outstanding.
 
 ## Highlights
 
-[[Jean-Claude Tabarnack]] sold the eggs. [[Delmar Fisk]] told you about the Fleet and the [[Pearl of Souls]]. [[Umberlee]] took [[Umberlee - Branca|Branca]] and named her price. You burned a powder boat in [[Warren|the Warren]] and took [[Felix Aho]] alive. Two days until the festival bombs.
+[[Jean-Claude Tabarnack]] sold the eggs. [[Delmar Fisk]] told you about the Fleet and the [[Pearl of Souls]]. [[Umberlee]] took [[Umberlee - Branca|Branca]] and named her price. You burned a powder boat in [[warren|the Warren]] and took [[Felix Aho]] alive. Two days until the festival bombs.

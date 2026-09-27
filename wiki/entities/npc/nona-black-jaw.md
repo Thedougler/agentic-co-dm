@@ -62,7 +62,7 @@ flexGrow=2
 flexGrow=1
 ===
 > [!narration] Nona Black-Jaw
-> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[enzo]] and [[Ruk]] between visitors and danger, and keeps the warm, thumb-polished [[sending-stone-nonas|sending stone]] close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
+> Nona is a broad, pale-furred Rattkin woman who stands near the kitchen fire with a guarded door behind her. She keeps [[enzo]] and [[ruk]] between visitors and danger, and keeps the warm, thumb-polished [[sending-stone-nonas|sending stone]] close enough to reach without looking. Her clipped questions make every favor sound like a route with a cost.
 ```
 ````
 
@@ -129,7 +129,7 @@ Nona protects people through a network whose survival requires transactional pre
 | [[the-black-jaw-run]] | The Calveno family Run she anchors at the Warren. |
 | [[perrin-black-jaw]] | Grandson and favor-debtor. He is part of the crew that arrived at Aruhe after the raid. |
 | [[madam-hino\|Madam Hino]] | One of the only people said to know Hino's true appearance; Nona is sworn to keep that secret. |
-| [[enzo]] · [[Ruk]] | Visible boundary of the safehouse. Ruk has guarded Passage witnesses for Nona. |
+| [[enzo]] · [[ruk]] | Visible boundary of the safehouse. Ruk has guarded Passage witnesses for Nona. |
 | [[delmar-fisk]] | Captain-facing talent. Ask him to choose which passage is safe. |
 | [[crissdalynn-khinriss]] | Map-reading asset. Invite her to compare Aruhe and Maw routes. |
 | [[jean-claude-tabarnack]] | Grung perspective on the taken. Ask what the Warren leads omit. |
@@ -164,7 +164,7 @@ This delta compiles the 2026-09-05 PC deep-dive. Legacy context file: `/Users/ni
 
 Use a low kitchen register. She does not shout until the tomato.
 
-I run a kitchen in the [[Warren]], under [[calven-and-calveno]], and if you have found your way to my table, someone you trust vouched for you first.
+I run a kitchen in the [[warren]], under [[calven-and-calveno]], and if you have found your way to my table, someone you trust vouched for you first.
 
 Black-Jaw is my husband's name and my family's name, and every soul who eats at this table wears it a little too, whether they know it yet or not.
 

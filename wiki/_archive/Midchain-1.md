@@ -108,4 +108,4 @@ Steep volcanic knots with terraced slopes and very short beaches. Landing is neg
 ### Eastern Midchain and thin water
 East of the Teeth the land thins except for [[Aruhe - Hungry Isle]], a mute country-scale island. Farther east, reef and soundings become less reliable; [[halythion]] lies under Teikhinos Reef outside colonial surveys. Compact index: [[Amberfall]] (amber with things frozen inside); [[Cambrey's Fold]] (returning path); [[Coeur Brisé]] (split arch and locked chest); [[corvenna]] (champion court); [[duskveil]] (permanent dusk); [[ferrymoor]] (unaffiliated fog crossing); [[Gullmoth Reach]] (fey-moth roost); [[lethys]] (griffon cliffs); [[Old Harrow's Bones]] (derelict island); [[Otel Karn]] (wounds that do not heal); [[Ash Caldera]] (black-glass cone with missing salvage).
 
-Near the Maw edge, [[fathomrush]] stages dives on [[Shelfworks]]. The Tail's unnamed staging island serves the same last-supplies/last-hands function under another name.
+Near the Maw edge, [[fathomrush]] stages dives on [[shelfworks]]. The Tail's unnamed staging island serves the same last-supplies/last-hands function under another name.

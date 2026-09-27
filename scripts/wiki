@@ -25,7 +25,7 @@ from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, sa
 from tools.wiki_ops.pretty import render_health, render_lint, render_lint_fix, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
-from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist, is_moc_page
+from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, attach_finding_text, build_worklist, is_moc_page
 
 
 SKIP_DIRS = frozenset({".obsidian", "_archive", "_archives", "_raw", "_readouts", "_meta", "templates", "attachments"})
@@ -135,13 +135,8 @@ def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
         "file": raw_file,
         "line": line,
         "severity": str(item.get("severity") or item.get("level") or "WARN"),
-        "message": str(item.get("message") or item.get("reason") or item.get("text") or ""),
     }
-    for key in ("evidence", "action", "owner", "code", "source", "repair_class", "repair_action", "repair_target", "target", "reason"):
-        value = item.get(key)
-        if value not in (None, ""):
-            result[key] = value
-    return result
+    return attach_finding_text(item, result)
 
 
 def _flatten(report: dict[str, Any], vault: Path) -> list[dict[str, Any]]:

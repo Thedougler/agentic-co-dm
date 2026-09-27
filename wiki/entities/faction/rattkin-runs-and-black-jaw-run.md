@@ -22,7 +22,7 @@ status: active
 kind: criminal
 scope: regional
 region: "[[Midchain]]"
-base: "[[Warren]]"
+base: "[[warren]]"
 invention: false
 relationships:
   - target: "[[nona-black-jaw]]"
@@ -74,7 +74,7 @@ Under pressure, the Run moves people first. It asks for proof through coded trus
 
 ## Assets
 
-Resources include the [[Warren]], [[Vestra]]'s legacy, courier ties, and family obligations that make the Runs readable to one another.
+Resources include the [[warren]], [[Vestra]]'s legacy, courier ties, and family obligations that make the Runs readable to one another.
 
 ## People & Structure
 
@@ -95,7 +95,7 @@ Resources include the [[Warren]], [[Vestra]]'s legacy, courier ties, and family 
 
 ## Territory & Touchpoints
 
-The network's deepest anchor is [[Warren]]. Its routes connect [[Vestra]], [[tangle]], [[the-black-jaw-run]], and the family courier network across the [[Midchain]].
+The network's deepest anchor is [[warren]]. Its routes connect [[Vestra]], [[tangle]], [[the-black-jaw-run]], and the family courier network across the [[Midchain]].
 
 ## Connections
 
@@ -125,4 +125,4 @@ The network's deepest anchor is [[Warren]]. Its routes connect [[Vestra]], [[tan
 
 ## History
 
-The Rattkin Runs grew from family ties, the [[Warren]], and [[Vestra]]'s legacy. [[the-black-jaw-run]] is the Calveno family expression of that wider network, now tied to the rescue of raid survivors and the fate of [[the-taken-314]].
+The Rattkin Runs grew from family ties, the [[warren]], and [[Vestra]]'s legacy. [[the-black-jaw-run]] is the Calveno family expression of that wider network, now tied to the rescue of raid survivors and the fate of [[the-taken-314]].

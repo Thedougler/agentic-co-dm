@@ -4,7 +4,7 @@ category: journal
 tags: [shattered-sea, session-prep]
 sources:
   - "[[session-11-00-birds-of-a-feather]]"
-  - "[[journal/sessions/shattered-sea/10/Session-10-Recap]]"
+  - "[[journal/sessions/shattered-sea/10/session-10-recap]]"
   - "[[bloodhawk]]"
   - "[[young-bloodhawk]]"
   - "[[crown-squid]]"
@@ -20,7 +20,7 @@ visibility: dm
 ---
 # Session 11 — Angry Birds
 
-![[journal/sessions/shattered-sea/10/Session-10-Recap#Recap]]
+![[journal/sessions/shattered-sea/10/session-10-recap#Recap]]
 
 ````col
 ```col-md
@@ -83,7 +83,7 @@ visibility: dm
 - **End condition.** End the action when the party reaches grass, river, terrace woods, or beach. Do not run the Bloodhawk or Crown Squid to 0 hit points as the hook's default endpoint.
 ## Handoff
 
-- **Next:** [[Session-11-02-Landing-Sign]] — **Development**.
+- **Next:** [[session-11-02-landing-sign]] — **Development**.
 - **Carry forward:** Any damage or conditions already applied. On the same bank, the party can see fresh tracks and a thin column of smoke inland in the valley.
 - **Continuity change:** The party is off the terrace line, in moving water and eight-foot grass, or crash-landed in terrace woods. The first grass-and-river valley is now in play.
 

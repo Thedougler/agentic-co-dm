@@ -48,7 +48,7 @@ The [[Chain Council]] thought it was buying [[Umberlee]]'s mercy and hired [[Del
 ## Containment and salvage
 After [[Fieschi]] confessed his Tessarine debt in public, the house contained the noise rather than argue it: factor silence, edited logs, moved witnesses, lawyers, patrols, and—if needed—a lockdown at [[kalowe]]. A second public confession would be worse than a stolen chest.
 
-The house wants the name and upper layout of [[Shelfworks]], not the deep city. [[sunkline]] at [[fathomrush]] is its pressure-rig shop, racing [[Voyvode]]; the rig has not passed a real deep trial, but its certificate has. Recovered Antheri lots become more paper, more holds, and more people who owe.
+The house wants the name and upper layout of [[shelfworks]], not the deep city. [[sunkline]] at [[fathomrush]] is its pressure-rig shop, racing [[Voyvode]]; the rig has not passed a real deep trial, but its certificate has. Recovered Antheri lots become more paper, more holds, and more people who owe.
 
 ## People under the pennant
 The [[passage]] uses Tessarine paper and commercial channels as cover, with no formal deal. Its law is never to move people as property. [[Grigori]] is not Tessarine: he threads both crowns and mishears Concordat fear of Drave as a warning about his own limit. [[Corbin Knighton]] was Tessarine-trained before becoming a Crown boarder. The house grows clerks and officers the way other houses grow cousins.

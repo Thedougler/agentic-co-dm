@@ -3,7 +3,7 @@ title: "Fathomrush"
 category: entities
 tags: [shattered-sea, place]
 sources: ["Fathomrush.md"]
-summary: "A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty."
+summary: "A boomtown staging dives on the [[shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty."
 provenance:
   extracted: 1.0
   inferred: 0.0
@@ -25,7 +25,7 @@ region: "eastern Midchain / Maw edge"
 
 
 ## At a Glance
-A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
+A boomtown staging dives on the [[shelfworks]], the Antheri salvage field above the Maw; feels temporary, lucrative, and one bad line from empty.
 
 ## Aspects
 `dive staging, salvage rush, last honest gossip`
@@ -37,10 +37,10 @@ A boomtown staging dives on the [[Shelfworks]], the Antheri salvage field above 
 
 ## Who is here
 - Salvage crews and Antheri claimants.
-- Dives heading to [[Shelfworks]].
+- Dives heading to [[shelfworks]].
 
 ## Connections
-- → [[Shelfworks]] · [[drowned-maw]] · [[tail]] · [[outer-reach]]
+- → [[shelfworks]] · [[drowned-maw]] · [[tail]] · [[outer-reach]]
 
 ## Hooks
 - Hire or sabotage a dive.

@@ -23,7 +23,7 @@ Family Runs, couriers, ships, and community obligations. Under pressure, the Run
 - Operative / successor: [[Perrin Black-Jaw]]
 
 ## Reach / resources
-The [[Warren]], [[Vestra]]'s legacy, courier ties, and the family obligations that keep the Runs legible to one another.
+The [[warren]], [[Vestra]]'s legacy, courier ties, and the family obligations that keep the Runs legible to one another.
 
 ## Relations
 - Ally: [[passage]]

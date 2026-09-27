@@ -6,7 +6,7 @@ status: ready
 date: 2026-09-06
 visibility: dm
 tags: [session-prep, run-guide]
-summary: Development watch-posting at Spoke Ring. Actual precautions lock fortified, paired, or thin before [[Session-11-09-Theft-on-the-Watch]]; an excellent watch still brings [[Talon Skarn]].
+summary: Development watch-posting at Spoke Ring. Actual precautions lock fortified, paired, or thin before [[session-11-09-theft-on-the-watch]]; an excellent watch still brings [[Talon Skarn]].
 ---
 # Session 11 — Night watch
 
@@ -16,7 +16,7 @@ summary: Development watch-posting at Spoke Ring. Actual precautions lock fortif
 ```col-md
 ## Scene ends when
 
-This beat ends when the party locks three things: fortified, paired, or thin; quiet or messy; and whether [[Crissdalynn Khinriss]] is on watch. Hand to [[Session-11-09-Theft-on-the-Watch]] when those terms are clear, or rebuild if the party leaves the fire.
+This beat ends when the party locks three things: fortified, paired, or thin; quiet or messy; and whether [[Crissdalynn Khinriss]] is on watch. Hand to [[session-11-09-theft-on-the-watch]] when those terms are clear, or rebuild if the party leaves the fire.
 
 Plan for about thirty minutes.
 
@@ -33,7 +33,7 @@ flexGrow=2
 ## At a Glance
 
 - **Stakes:** Isolation on this hub turns a person into prey. The watch they post determines how [[Talon Skarn]] gets his opening. A fortified watch still brings him, but it changes who controls that opening.
-- **Goal / exit:** Lock the watch terms, then hand to [[Session-11-09-Theft-on-the-Watch]], unless the party is already walking.
+- **Goal / exit:** Lock the watch terms, then hand to [[session-11-09-theft-on-the-watch]], unless the party is already walking.
 - **Danger:** A thin watch lets [[Talon Skarn]] start close with the first chain already set. A messy fire gives him cover. One person north is one person isolated.
 - **Silence:** Present the fire, the garden talk, and the need for a watch, then wait for the party to act.
 - **Situation magnets:** Anyone left alone can be taken. The marked person is exposed if that person takes a north trail alone. [[Crissdalynn Khinriss]] is exposed if she stands a thin watch.
@@ -60,8 +60,8 @@ The south trail reaches gold-green grass between the last trunks in 20 feet. The
 - **Knot:** Everyone stays awake around this fire. [[Talon Skarn]] still comes, and a messy camp gives him cover. Beat 9 stays at this fire.
 - **March:** Beat 9 is the column. Do not move them to [[Aruhe - Quiet Forest Star Cut]].
 - **Record:** Quiet or messy fire. Whether [[Crissdalynn Khinriss]] is on watch. Whether the [[Fate Spinner]] is in view.
-- **[[Talon Skarn]]:** He wants the carrier on a thin watch. He does not appear on this card. An excellent watch does not cancel [[Session-11-09-Theft-on-the-Watch]].
-- **[[Aruhe - Deerstalker]]:** It waits for another split. Keep it off this card and off [[Session-11-09-Theft-on-the-Watch]].
+- **[[Talon Skarn]]:** He wants the carrier on a thin watch. He does not appear on this card. An excellent watch does not cancel [[session-11-09-theft-on-the-watch]].
+- **[[Aruhe - Deerstalker]]:** It waits for another split. Keep it off this card and off [[session-11-09-theft-on-the-watch]].
 ```
 
 ```col-md
@@ -159,7 +159,7 @@ For an unforeseen intent, use the same opposition want: [[Talon Skarn]] wants th
 
 ## How the Scene Resolves
 
-Record the watch terms: fortified, paired, or thin; quiet or messy; and whether [[Crissdalynn Khinriss]] is on watch. The party posts that watch at [[Aruhe - Quiet Forest Star Cut]] or is already walking. Carry forward any RAW damage and conditions already applied, then hand to [[Session-11-09-Theft-on-the-Watch]]. Night has fallen.
+Record the watch terms: fortified, paired, or thin; quiet or messy; and whether [[Crissdalynn Khinriss]] is on watch. The party posts that watch at [[Aruhe - Quiet Forest Star Cut]] or is already walking. Carry forward any RAW damage and conditions already applied, then hand to [[session-11-09-theft-on-the-watch]]. Night has fallen.
 
 If the party sits awake in a knot, it remains on this hub. [[Talon Skarn]] still comes, and a messy camp gives him cover. Hand to beat 9 at this fire.
 
@@ -168,15 +168,15 @@ If the party sits awake in a knot, it remains on this hub. [[Talon Skarn]] still
 
 | If | Next | Narration |
 | --- | --- | --- |
-| They posted a fortified, paired, or thin watch | They post that watch at [[Aruhe - Quiet Forest Star Cut]]. Hand to [[Session-11-09-Theft-on-the-Watch]]. | ==_You leave this fire along a north trail. Packed dirt runs under the leaves toward a split of stars._== |
-| They sit awake in a knot | The party remains on this hub. [[Talon Skarn]] still comes, and a messy camp gives him cover. Hand to [[Session-11-09-Theft-on-the-Watch]] at this fire. | ==_You stay packed around these coals. The trails stay dark, and nobody here has gone to sleep._== |
-| They are already walking | Beat 9 is the column, still the carrier. Hand to [[Session-11-09-Theft-on-the-Watch]]. | ==_You are already walking, still in this valley. This fire sits behind you._== |
+| They posted a fortified, paired, or thin watch | They post that watch at [[Aruhe - Quiet Forest Star Cut]]. Hand to [[session-11-09-theft-on-the-watch]]. | ==_You leave this fire along a north trail. Packed dirt runs under the leaves toward a split of stars._== |
+| They sit awake in a knot | The party remains on this hub. [[Talon Skarn]] still comes, and a messy camp gives him cover. Hand to [[session-11-09-theft-on-the-watch]] at this fire. | ==_You stay packed around these coals. The trails stay dark, and nobody here has gone to sleep._== |
+| They are already walking | Beat 9 is the column, still the carrier. Hand to [[session-11-09-theft-on-the-watch]]. | ==_You are already walking, still in this valley. This fire sits behind you._== |
 
 Keep the people at this fire unnamed. Identify them only as garden mouths or ship mouths when the distinction matters.
 
 ## Backup
 
-[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · [[Matteo Scola]] · [[Aruhe - Deerstalker]] · [[uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[Session-11-07-False-Help]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]]
+[[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Quiet Forest Star Cut]] · [[Aruhe - Stonepear]] · [[Crissdalynn Khinriss]] · [[Fate Spinner]] · [[Talon Skarn]] · [[Taking on Aruhe]] · [[Matteo Scola]] · [[Aruhe - Deerstalker]] · [[uncertainty]] · [[Aruhe - Memorial Grove]] · [[Aruhe - Quiet Forest]] · [[Aruhe - River]] · [[session-11-07-false-help]] · [[session-11-09-theft-on-the-watch]] · [[session-11-00-birds-of-a-feather]]
 
 ## Battlemap
 

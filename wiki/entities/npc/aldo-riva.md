@@ -70,7 +70,7 @@ flexGrow=1
 
 Aldo talks warmly and without hurry, starting sentences with *allora* and calling people *amico*. He cannot give a short answer: every answer requires prior context, which itself has prior context. A patient listener gets two centuries of [[le-paludi]] history and, somewhere in the middle, whatever Aldo has been quietly turning over.
 
-He is not a member of [[the-passage]] and does not know the cellar arrangement details. Bice told him she agreed to something in the cellar with “the [[Rattkin]] woman from [[Warren|the Warren]],” confirmed elsewhere as [[nona-black-jaw]], and he should not look. If a PC gets him talking about canal history, the building, or anything unusual lately, the cellar panel surfaces mid-tangent. If both Bice and Aldo are present, Bice goes still in a way he does not notice.
+He is not a member of [[the-passage]] and does not know the cellar arrangement details. Bice told him she agreed to something in the cellar with “the [[Rattkin]] woman from [[warren|the Warren]],” confirmed elsewhere as [[nona-black-jaw]], and he should not look. If a PC gets him talking about canal history, the building, or anything unusual lately, the cellar panel surfaces mid-tangent. If both Bice and Aldo are present, Bice goes still in a way he does not notice.
 ```
 ````
 

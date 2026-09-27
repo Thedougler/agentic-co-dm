@@ -94,7 +94,7 @@ Use **Kusarigama Tempest** when two or more creatures are inside its `20-foot` E
 
 # Combat
 
-> **Encounter rule:** Use this block whenever [[Talon Skarn]] fights. His win condition is the current job, not a duel to 0 hit points. On [[Session-11-09-Theft-on-the-Watch]], that job is the [[Fate Spinner]] and a break down the star-cut.
+> **Encounter rule:** Use this block whenever [[Talon Skarn]] fights. His win condition is the current job, not a duel to 0 hit points. On [[session-11-09-theft-on-the-watch]], that job is the [[Fate Spinner]] and a break down the star-cut.
 
 ## Statblock
 

@@ -78,7 +78,7 @@ The party is still on [[Aruhe - Quiet Forest Star Cut]] unless beat 8 sent them 
 
 - **Default rolls:** `AC 19`. Use whatever hit points remained after beat 9. Walk `50 feet`. Fly `90 feet`.
 - **Want:** Keep the [[Fate Spinner]] and break contact inland. He does not turn this camp into a second theft.
-- **Hits:** Katana, sai, and kusarigama are still in hand. Use the compact numbers on [[Session-11-09-Theft-on-the-Watch]] if someone hits him.
+- **Hits:** Katana, sai, and kusarigama are still in hand. Use the compact numbers on [[session-11-09-theft-on-the-watch]] if someone hits him.
 ```
 
 ```col-md
@@ -213,7 +213,7 @@ Keep the people at this fire unnamed.
 
 ## Backup
 
-[[Aruhe - Quiet Forest Star Cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Aruhe - Young Bloodhawk]] · [[Aruhe - Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Matteo Scola]] · [[uncertainty]] · [[Aruhe - Memorial Grove]]
+[[Aruhe - Quiet Forest Star Cut]] · [[session-11-09-theft-on-the-watch]] · [[session-11-00-birds-of-a-feather]] · [[Crissdalynn Khinriss]] · [[Talon Skarn]] · [[Fate Spinner]] · [[Aruhe - Bloodhawk]] · [[Aruhe - Young Bloodhawk]] · [[Aruhe - Giant's Guava]] · [[Aruhe - Stonepear]] · [[Taking on Aruhe]] · [[Aruhe - Quiet Forest Spoke Ring]] · [[Aruhe - Deerstalker]] · [[Matteo Scola]] · [[uncertainty]] · [[Aruhe - Memorial Grove]]
 
 ## Battlemap
 

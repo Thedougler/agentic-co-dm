@@ -15,7 +15,7 @@ reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
-region: "[[Warren]] beneath Calveno"
+region: "[[warren]] beneath Calveno"
 summary: "Kin-only gathering house in the Warren, run by Essa Two-Tooth, where debts live in her memory and guests eat before business."
 provenance:
   extracted: 1.0
@@ -30,7 +30,7 @@ tier: supporting
 
 ## At a Glance
 
-The Low Lamp is the Warren's true social center for Kin. It is inside [[Warren]], under [[calven-and-calveno]]. [[essa-two-tooth]] runs it. Non-Kin do not use it as a public house.
+The Low Lamp is the Warren's true social center for Kin. It is inside [[warren]], under [[calven-and-calveno]]. [[essa-two-tooth]] runs it. Non-Kin do not use it as a public house.
 
 ## If the party
 
@@ -48,7 +48,7 @@ Worn bar, bottles, earthenware, lamp glow, and named teeth Essa introduces as Sc
 
 ## Where
 
-Inside [[Warren]]. This page does not name neighbors beyond the Warren descent.
+Inside [[warren]]. This page does not name neighbors beyond the Warren descent.
 
 ## Why
 

@@ -21,7 +21,7 @@ The deepest chamber held the [[Pearl of Souls]] above a tidal pool built for it.
 
 ## Connections
 - [[Pearl of Souls]] · [[waveservants]] · [[Umberlee]]
-- [[Sunken Crown]] · [[Blue Hole]] · [[Drowned Maw]] · [[Shelfworks]]
+- [[Sunken Crown]] · [[Blue Hole]] · [[Drowned Maw]] · [[shelfworks]]
 - [[Chain Council]] · [[Tessarine Concordat]] · [[Aldric Drave]]
 
 **Provenance:** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/location-umberlee-shrine-vel-orn.md` (canon path and site details).

@@ -39,7 +39,7 @@ The cluster loops by water and canopy routes, but every route has a different co
 
 ## Who is here
 - [[Grung clans]] — primary inhabitants, caste society, patrols, farms, fleet, and theology.
-- [[Auralis]] — public theocratic claim and private apex presence; exact nature UNKNOWN.
+- [[auralis]] — public theocratic claim and private apex presence; exact nature UNKNOWN.
 - [[simone]] and her Sorn garrison; [[Felix Aho]], [[Ruma Delacroix]], [[Solange Barret]], [[bazzoth]], [[Vashu the Weeping Veil]], and [[Ozzeth]] as named faces of varying certainty.
 - Beach traders, captives, and the 314+ taken fighting-age people move through the system without owning it.
 
@@ -52,8 +52,8 @@ The cluster loops by water and canopy routes, but every route has a different co
 Quiet → alert → contested → transformed. The fleet's water loss makes every approach more defensive. A broken beach rule closes a route; a captive witness opens a route but accelerates patrols; exposing gold farms risks caste fracture; losing a proa makes the remaining fleet more aggressive.
 
 ## Links
-- [[Grung clans]] · [[Auralis]] · [[The taken 314]] · [[Pursue the Grung raiding fleet]]
-- [[Aruhe - Hungry Isle]] · [[Grung and the Making of Aruhe]] · [[Warren]] · [[sparhold]]
+- [[Grung clans]] · [[auralis]] · [[The taken 314]] · [[Pursue the Grung raiding fleet]]
+- [[Aruhe - Hungry Isle]] · [[Grung and the Making of Aruhe]] · [[warren]] · [[sparhold]]
 
 ## Secrets (DM)
 The Grung clans' historical crime against a far-Midchain druid and her companion is the reason [[Aruhe - Hungry Isle]] exists as it does today. The full origin is in [[Grung and the Making of Aruhe]] and [[hinewai]]. Do not put the confession in the public narration.

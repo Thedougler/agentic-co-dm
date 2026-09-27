@@ -112,7 +112,7 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
     required = {
         "status", "counts", "hard_fail", "finding_total", "affected_pages",
         "next_page", "next", "cache", "files_checked", "scope", "ledger", "timing",
-        "unique", "backlog", "files",
+        "unique", "backlog", "files", "findings",
     }
     assert required <= data.keys()
     assert data["timing"]["command"] == "lint"
@@ -125,6 +125,9 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
         for group in data["files"]
         for item in group["findings"]
     )
+    assert isinstance(data["findings"], list)
+    assert data["findings"] == [item for group in data["files"] for item in group["findings"]]
+    assert all(isinstance(item["message"], str) and item["message"].strip() for item in data["findings"])
 
 
 
@@ -670,4 +673,78 @@ def test_missing_npc_role_is_agent_repair(tmp_path: Path):
     assert role[0]["repair_class"] == "agent_repair"
     run_cli(tmp_path, "lint", "fix", "--json", rel)
     assert "role:" not in path.read_text(encoding="utf-8")
+
+
+_REGION_TEMPLATE = """\
+---
+title: "{{title}}"
+type: region
+structure: ""
+as_of: ""
+---
+
+# Region
+"""
+
+
+def test_frontmatter_findings_are_actionable(tmp_path: Path):
+    _put(tmp_path / "templates" / "region.md", _REGION_TEMPLATE)
+    rel = "entities/region/karath.md"
+    _put(
+        tmp_path / rel,
+        "---\n"
+        "title: Karath\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-01-01\n"
+        "updated: 2026-01-01\n"
+        "type: region\n"
+        "reveal: unrevealed\n"
+        "---\n\n"
+        "# Karath\n",
+    )
+    shown = run_cli(tmp_path, "lint", rel)
+    assert shown.returncode == 1, shown.stderr
+    assert "missing_frontmatter" in shown.stdout
+    assert "structure" in shown.stdout
+    assert "as_of" in shown.stdout
+    assert "fix:" in shown.stdout
+    assert "wiki/templates/region.md" in shown.stdout
+
+    data = payload(run_cli(tmp_path, "lint", rel, "--json"))
+    missing = [
+        item for item in data["findings"]
+        if item["file"] == rel and item["rule"] == "missing_frontmatter"
+    ]
+    assert missing
+    assert "structure" in missing[0]["message"]
+    assert "as_of" in missing[0]["message"]
+    assert "wiki/templates/region.md" in missing[0]["repair_target"]
+
+    long_rel = "entities/region/the-quiet.md"
+    summary = "x" * 201
+    _put(
+        tmp_path / long_rel,
+        "---\n"
+        "title: The Quiet\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-01-01\n"
+        "updated: 2026-01-01\n"
+        "type: region\n"
+        "reveal: unrevealed\n"
+        f"summary: {summary}\n"
+        "structure: islands\n"
+        "as_of: 2026-01-01\n"
+        "---\n\n"
+        "# The Quiet\n",
+    )
+    long_data = payload(run_cli(tmp_path, "lint", long_rel, "--json"))
+    long_items = [item for item in long_data["findings"] if item["rule"] == "long_summary"]
+    assert long_items
+    assert "201" in long_items[0]["message"] or str(len(summary)) in long_items[0]["message"]
+    assert "200" in long_items[0]["message"]
+    assert long_items[0]["repair_target"] == "Shorten frontmatter summary to 200 characters or fewer."
 

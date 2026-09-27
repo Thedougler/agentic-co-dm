@@ -52,7 +52,7 @@ flexGrow=1
 
 ### First meeting
 
-Andriana is a minor contact who knows roughly where the [[Warren]] is. She can provide that broad location, but she will not name a Warren contact or lead anyone there.
+Andriana is a minor contact who knows roughly where the [[warren]] is. She can provide that broad location, but she will not name a Warren contact or lead anyone there.
 
 ### When posture changes
 
@@ -64,4 +64,4 @@ Andriana's voice is not established in the source. Her actionable boundary is cl
 
 ## Connections
 
-- [[Warren]]: Andriana knows its rough location but withholds a contact or escort.
+- [[warren]]: Andriana knows its rough location but withholds a contact or escort.

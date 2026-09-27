@@ -85,7 +85,7 @@ Letters of credit, route underwriting, salvage contracts, debt-recovery holds, a
 
 **Why.** A second public confession would threaten the Concordat more than a stolen chest, and its credit network depends on appearing reliable.
 
-**Planned action.** Keep the [[sunkline]] pressure-rig venture funded, bury the [[chain-council]] mail trail, and pursue the name and upper layout of [[Shelfworks]].
+**Planned action.** Keep the [[sunkline]] pressure-rig venture funded, bury the [[chain-council]] mail trail, and pursue the name and upper layout of [[shelfworks]].
 
 **Needs.** Counting houses, credit, Council obligations, sealed mail, and faces who can absorb blame.
 

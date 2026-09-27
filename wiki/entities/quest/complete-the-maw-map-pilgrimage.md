@@ -110,7 +110,7 @@ The Sentinels are watching and recording the Maw while Crissdalynn's pilgrimage 
 | --- | --- |
 | [[drowned-maw]] | The trench, storm, reversed currents, fissure, and boundary that the pilgrimage must map. |
 | [[high-eyrie]] | Sentinel headquarters holding the observation ledgers and founding documents. |
-| [[Shelfworks]] | A possible retreat or staging place connected to the Maw's salvage routes. |
+| [[shelfworks]] | A possible retreat or staging place connected to the Maw's salvage routes. |
 
 ## Useful things
 

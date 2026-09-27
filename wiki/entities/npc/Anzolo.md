@@ -32,7 +32,7 @@ flexGrow=2
 | **Role**   | Fixer and enforcer for the [[Black-Jaw Run]] |
 | ---------- | --------------------------------------------- |
 | **Nature** | A methodical veteran tortle who checks every variable and every exit before moving. |
-| **Home**   | The [[Warren]] and the broader Calveno underside |
+| **Home**   | The [[warren]] and the broader Calveno underside |
 | **Wants**  | To complete [[nona-black-jaw|Nona]]'s orders cleanly and return with everything she needs to know. |
 | **Leverage** | The Tangle trusts him, Passage contacts cooperate with him, and Nona backs his authority. |
 | **Limit**  | A Tessarine patrol trails him while he remains unaware that Nona called off his hunt for [[perrin-black-jaw|Perrin]]. |
@@ -56,7 +56,7 @@ flexGrow=1
 ===
 ### First meeting
 
-Anzolo arrives at the [[Warren]] seeking [[nona-black-jaw|Nona]] and speaks first: “I'm looking for Nona Black-Jaw. Has she come through here?” He is a fixer and enforcer trusted by The Tangle, and he handles whatever Nona needs found or handled outside the Warren.
+Anzolo arrives at the [[warren]] seeking [[nona-black-jaw|Nona]] and speaks first: “I'm looking for Nona Black-Jaw. Has she come through here?” He is a fixer and enforcer trusted by The Tangle, and he handles whatever Nona needs found or handled outside the Warren.
 ```
 
 ```col-md
@@ -98,7 +98,7 @@ Anzolo speaks plainly and practically, with the courtesy of someone accustomed t
 
 - [[nona-black-jaw]]: sends him when she needs something found or handled outside the Warren.
 - [[perrin-black-jaw]]: the person Nona dispatched him to locate; her call-off is in transit.
-- [[Warren|The Warren]]: his operating base in the Calveno underside.
+- [[warren|The Warren]]: his operating base in the Calveno underside.
 - [[tessarine-concordat]]: a patrol now has a partial description and his last known heading.
 - [[dravosi-crown]]: another power seeking him out.
 - [[The Tangle]]: trusts him and vouches for him with Passage contacts.

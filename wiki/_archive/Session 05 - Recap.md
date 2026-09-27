@@ -13,7 +13,7 @@ tags: [session, recap]
 # Session 05 - Recap
 
 > [!narration] Recap
-> Last time on the Shattered Sea, you brought the prize cutter into [[Calven and Calveno|Calveno]] and named her *[[uncertainty]]*. [[Delmar Fisk]] told you he had been an admiral, that his fleet stole the [[Pearl of Souls]], and that [[Drowned Maw|the Maw]] wrecked them for it. At the harbor shrine [[Umberlee]] took [[Umberlee - Branca|Branca]] and named her price: the Pearl. You burned a powder boat in [[Warren|the Warren]] and took [[Felix Aho]] alive. He said they would hit under the festival crowds in two days.
+> Last time on the Shattered Sea, you brought the prize cutter into [[Calven and Calveno|Calveno]] and named her *[[uncertainty]]*. [[Delmar Fisk]] told you he had been an admiral, that his fleet stole the [[Pearl of Souls]], and that [[Drowned Maw|the Maw]] wrecked them for it. At the harbor shrine [[Umberlee]] took [[Umberlee - Branca|Branca]] and named her price: the Pearl. You burned a powder boat in [[warren|the Warren]] and took [[Felix Aho]] alive. He said they would hit under the festival crowds in two days.
 >
 > After Felix's interrogation, with Felix still under [[Nona Black-Jaw]], you went back into the Calveno sewer magazines. Local artificer [[Catarina Da'Virelli]] assisted from her Calveno workshop during that push. Her cannon [[Ragnetto]] and owl Strix were part of the local defense.
 >

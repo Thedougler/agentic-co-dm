@@ -20,7 +20,7 @@ kind: organization
 status: active
 scope: regional
 region: "Calven and Calveno"
-base: "[[Warren]]"
+base: "[[warren]]"
 summary: "Seven Rattkin elders preserving the teachings and routes that keep the Calveno Run alive."
 ---
 
@@ -39,7 +39,7 @@ flexGrow=2
 | --- | --- |
 | **Nature** | Seven Rattkin elders preserving route knowledge and elder teaching. |
 | **Scope** | Regional, centered on the Calveno Run. |
-| **Base** | [[Warren]] |
+| **Base** | [[warren]] |
 | **Leader** | Seven elders of the Tangle; [[nona-black-jaw|Nona Black-Jaw]] leads the Warren's anchor Run. |
 | **Public purpose** | Keep Rattkin families, people, and messages moving through coded trust. |
 | **Signature method** | Family Runs, hidden routes, community obligations, and selective refusal. |
@@ -78,7 +78,7 @@ flexGrow=1
 
 **Planned action.** Compare available routes and open only the one whose coded trust can protect people and teaching together.
 
-**Needs.** The [[Warren]], trusted couriers, family obligations, and a party willing to accept limits on what the route can carry.
+**Needs.** The [[warren]], trusted couriers, family obligations, and a party willing to accept limits on what the route can carry.
 
 **Opposition.** Colonial authorities, hostile patrols, and any force that tries to replace the Tangle's authority with its own.
 
@@ -98,7 +98,7 @@ flexGrow=1
 
 | Asset | Type | Location | What it enables | Condition |
 | --- | --- | --- | --- | --- |
-| [[Warren]] | Access / Refuge | Beneath Calveno | Anchor Run, shelter, and elder teaching | Hidden |
+| [[warren]] | Access / Refuge | Beneath Calveno | Anchor Run, shelter, and elder teaching | Hidden |
 | Family Runs | Access / Information | Calven and Calveno | Movement by coded trust and obligation | Active |
 
 ## People & Structure
@@ -123,7 +123,7 @@ flexGrow=1
 
 | Place | Presence | What they control or need here | Current pressure |
 | --- | --- | --- | --- |
-| [[Warren]] | Headquarters / Hidden | The anchor Run, shelter, and elder teaching | Must remain outside colonial records. |
+| [[warren]] | Headquarters / Hidden | The anchor Run, shelter, and elder teaching | Must remain outside colonial records. |
 | Calveno Run | Strong / Hidden | Movement of people, messages, and useful cargo | Secrecy competes with the need to warn others. |
 
 ## Connections

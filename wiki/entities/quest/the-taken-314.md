@@ -110,7 +110,7 @@ The captive route is active and tied to the Grung fleet's movement toward Karath
 | ----- | ------------------ |
 | Festival ports | Starting points from which the captives were taken. |
 | [[karath]] | Destination toward which the captive route runs. |
-| [[Warren]] | Rattkin settlement and Passage anchor connected to the live case. |
+| [[warren]] | Rattkin settlement and Passage anchor connected to the live case. |
 
 ## Useful things
 

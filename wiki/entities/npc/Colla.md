@@ -32,7 +32,7 @@ tier: supporting
 
 **Opening move:** treating an injured patient · Colla speaks first · "Are you hurt?"
 
-**Lore Sheet:** runs [[The Splint]], the [[Warren]]'s only source of healing, accepting [[Rattkin|Kin]] at community rates and surface folk at five times that. Requires a Kin introduction for outsiders. Trained by her aunt Tetta over ten years. Treats injured combatants from opposing sides in the same room by policy, which no one has ever challenged. Her contact Dosia, an herbalist in [[le-paludi]], supplies ingredients she cannot source underground.
+**Lore Sheet:** runs [[The Splint]], the [[warren]]'s only source of healing, accepting [[Rattkin|Kin]] at community rates and surface folk at five times that. Requires a Kin introduction for outsiders. Trained by her aunt Tetta over ten years. Treats injured combatants from opposing sides in the same room by policy, which no one has ever challenged. Her contact Dosia, an herbalist in [[le-paludi]], supplies ingredients she cannot source underground.
 
 **Toy Chest**
 
@@ -42,7 +42,7 @@ tier: supporting
 | Consistent method | Treats all injuries with identical attention regardless of patron. Charges [[Rattkin\|Kin]] community rates and surface folk premium prices. |
 | Active problem | A Dravosi trade restriction has cut off her supplier. She has eleven days before her supply ends. |
 | Performance hooks | Underground healer vibe. Never looks up until she finishes closing each patient's wound. |
-| Link of relevance | Treats the [[Warren]]'s inhabitants, making her essential to any crew seeking to hold ground or gather allies below. |
+| Link of relevance | Treats the [[warren]]'s inhabitants, making her essential to any crew seeking to hold ground or gather allies below. |
 
 **Voice & Delivery:** direct and minimal, often working while speaking. She asks you to wait. She writes instructions instead of speaking, and her expression shows what she thinks of preventable wounds.
 

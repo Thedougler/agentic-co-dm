@@ -156,7 +156,7 @@ flexGrow=3
 
 ## How the Scene Resolves
 
-The party comes down in moving water and eight-foot grass on this bank, or crash-lands in the terrace woods. Fresh tracks and a thin inland smoke column are already visible. Beat 2 is [[Session-11-02-Landing-Sign]]. Carry forward any RAW damage and conditions already applied.
+The party comes down in moving water and eight-foot grass on this bank, or crash-lands in the terrace woods. Fresh tracks and a thin inland smoke column are already visible. Beat 2 is [[session-11-02-landing-sign]]. Carry forward any RAW damage and conditions already applied.
 
 **Scattered:** That party member lands 30 feet from the others.
 
@@ -169,8 +169,8 @@ If the party forced the beach, they are on the shingle. The hunt still crosses t
 
 | If | Next | Narration |
 | --- | --- | --- |
-| Quiet drop | The party is in grass and river on [[Aruhe - River Landing Bank]]. The adult [[Aruhe - Bloodhawk]] stays on the [[Aruhe - Crown Squid]]. Hand to [[Session-11-02-Landing-Sign]]. | ==_The adult hawk stays on the squid in the last trees. You stand in clear moving water with grass over your head, fresh footprints in the mud, and thin smoke inland._== |
-| Crash-landed | That party member is **Prone** in terrace woods after `2d6` bludgeoning. The grass beside the river is still open below the trees. Hand to [[Session-11-02-Landing-Sign]]. | ==_Terrace woods rush up. You hit mossy steps and split fruit. The tall grass beside the river is still open below the trees, and fresh footprints and inland smoke are already visible from this bank._== |
+| Quiet drop | The party is in grass and river on [[Aruhe - River Landing Bank]]. The adult [[Aruhe - Bloodhawk]] stays on the [[Aruhe - Crown Squid]]. Hand to [[session-11-02-landing-sign]]. | ==_The adult hawk stays on the squid in the last trees. You stand in clear moving water with grass over your head, fresh footprints in the mud, and thin smoke inland._== |
+| Crash-landed | That party member is **Prone** in terrace woods after `2d6` bludgeoning. The grass beside the river is still open below the trees. Hand to [[session-11-02-landing-sign]]. | ==_Terrace woods rush up. You hit mossy steps and split fruit. The tall grass beside the river is still open below the trees, and fresh footprints and inland smoke are already visible from this bank._== |
 
 ## Roster
 
@@ -188,7 +188,7 @@ If the party forced the beach, they are on the shingle. The hunt still crosses t
 
 ## Backup
 
-[[Aruhe - Old Gardens]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - River Landing Bank]] · [[Aruhe - Beach]] · [[uncertainty]] · [[Aruhe - Young Bloodhawk]] · [[Talon Skarn]] · [[session-11-00-birds-of-a-feather]] · [[Session-11-02-Landing-Sign]]
+[[Aruhe - Old Gardens]] · [[Aruhe - Grasslands]] · [[Aruhe - River]] · [[Aruhe - River Landing Bank]] · [[Aruhe - Beach]] · [[uncertainty]] · [[Aruhe - Young Bloodhawk]] · [[Talon Skarn]] · [[session-11-00-birds-of-a-feather]] · [[session-11-02-landing-sign]]
 
 ## Battlemap
 

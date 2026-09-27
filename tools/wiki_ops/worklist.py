@@ -4,6 +4,8 @@ from __future__ import annotations
 from collections.abc import Iterable, Mapping
 from pathlib import Path, PurePosixPath
 from typing import Any
+from tools.wiki_ops.pretty import _issue_message
+
 
 # Structural lint's hard rules. Callers may pass a narrower/current set.
 DEFAULT_HARD_KEYS = frozenset(
@@ -24,6 +26,25 @@ DEFAULT_HARD_KEYS = frozenset(
         "template_conformance",
     }
 )
+
+_FINDING_EXTRAS = (
+    "evidence", "action", "owner", "code", "source",
+    "repair_class", "repair_action", "repair_target", "target", "reason", "missing",
+)
+
+
+def attach_finding_text(finding: Mapping[str, Any], result: dict[str, Any]) -> dict[str, Any]:
+    """Set message and copy optional repair/evidence keys onto a public finding."""
+    message = finding.get("message") or finding.get("reason") or finding.get("issue") or finding.get("text") or ""
+    result["message"] = str(message)
+    if not result["message"].strip():
+        result["message"] = _issue_message(finding) or str(result.get("rule") or "")
+    for key in _FINDING_EXTRAS:
+        value = finding.get(key)
+        if value not in (None, ""):
+            result[key] = value
+    return result
+
 
 
 def is_moc_page(relative: str) -> bool:
@@ -69,24 +90,13 @@ def normalize_finding(
     severity = finding.get("severity")
     if severity is None:
         severity = "error" if name in DEFAULT_HARD_KEYS else "warn"
-    message = finding.get("message")
-    if message is None:
-        message = finding.get("reason", finding.get("issue", ""))
     result = {
         "rule": name,
         "file": _path(file_name, vault),
         "line": _line(finding.get("line", 1)),
         "severity": str(severity),
-        "message": str(message),
     }
-    for key in (
-        "evidence", "action", "owner", "code", "source",
-        "repair_class", "repair_action", "repair_target", "target", "reason",
-    ):
-        value = finding.get(key)
-        if value not in (None, ""):
-            result[key] = value
-    return result
+    return attach_finding_text(finding, result)
 
 
 def _is_record(value: Mapping[str, Any]) -> bool:
@@ -200,10 +210,7 @@ def build_worklist(
                 for key in ("rule", "file", "line", "severity", "message")
                 if key in item
             }
-            for key in (
-                "evidence", "action", "owner", "code", "source",
-                "repair_class", "repair_action", "repair_target", "target", "reason",
-            ):
+            for key in _FINDING_EXTRAS:
                 if key in item:
                     grouped_item[key] = item[key]
             grouped[page].append(grouped_item)
@@ -256,6 +263,7 @@ def build_worklist(
             "unique": unique,
             "backlog": backlog,
             "files": [{"file": page, "findings": grouped[page]} for page in ordered_files],
+            "findings": [item for page in ordered_files for item in grouped[page]],
         })
     return result
 
@@ -266,6 +274,7 @@ aggregate_worklist = build_worklist
 __all__ = [
     "DEFAULT_HARD_KEYS",
     "aggregate_worklist",
+    "attach_finding_text",
     "build_worklist",
     "is_moc_page",
     "normalize_finding",

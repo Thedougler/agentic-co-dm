@@ -84,7 +84,7 @@ Begin where beat 9 ended. The party is at [[star-cut]] unless beat 8 put them on
 
 - **Default rolls:** `AC 19`. Use whatever hit points remained after beat 9. Walk `50 feet`. Fly `90 feet`.
 - **Want:** Keep the [[fate-spinner]] and break contact inland. He does not turn this camp into a second theft.
-- **Hits:** Katana, sai, and kusarigama are still in hand. Use the compact numbers on [[Session-11-09-Theft-on-the-Watch]] if someone hits him.
+- **Hits:** Katana, sai, and kusarigama are still in hand. Use the compact numbers on [[session-11-09-theft-on-the-watch]] if someone hits him.
 ```
 
 ```col-md
@@ -212,7 +212,7 @@ Keep the people at this fire unnamed.
 
 ## Backup
 
-[[star-cut]] · [[Session-11-09-Theft-on-the-Watch]] · [[session-11-00-birds-of-a-feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[bloodhawk]] · [[young-bloodhawk]] · [[giants-guava]] · [[stonepear]] · [[taking-on-aruhe]] · [[spoke-ring]] · [[Deer-Stalker]] · [[matteo-scola]] · [[uncertainty]] · [[memorial-grove]]
+[[star-cut]] · [[session-11-09-theft-on-the-watch]] · [[session-11-00-birds-of-a-feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[bloodhawk]] · [[young-bloodhawk]] · [[giants-guava]] · [[stonepear]] · [[taking-on-aruhe]] · [[spoke-ring]] · [[Deer-Stalker]] · [[matteo-scola]] · [[uncertainty]] · [[memorial-grove]]
 
 ## Battlemap
 
