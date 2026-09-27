@@ -25,7 +25,10 @@ follow-ups, and accept “Skip” while recording it unanswered. Cover, in order
 origin; family; formative change; proud choice; regret/obligation; value; temptation; fear;
 desire; protector; distrust; authority; money/status/safety; worldview; misunderstanding; what
 would make them leave; what would make them stay; a useful play detail; and a question they want
-the world to ask. Then ask once for the player's username and class/level if known. Leave unknown mechanics
+the world to ask. When resuming, skip every topic the note already answers and build on it
+instead ("Besides [[their-sister]], who else…"), and name existing people, places, and items in
+questions with `[[links]]`. Then ask once for the player's username and class/level, only if the
+note lacks them. Leave unknown mechanics
 blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist

@@ -126,7 +126,7 @@ beat's trigger. The Hook is the session's only Hook. On the page:
 - every boundary, demand, or taboo the scene states has a row for breaking
   it, with the full consequence copied from its owner page.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 
 ## Named seams
 

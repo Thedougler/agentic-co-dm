@@ -132,7 +132,7 @@ next Cliffhanger's stakes are legible from it. On the page:
 - every question the scene sends the party away with names where its answer
   lives (who knows, where, at what price), and the DM layer holds the answer.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 
 ## Named seams
 
