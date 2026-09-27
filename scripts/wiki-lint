@@ -6,6 +6,7 @@ Invocations without a creative subcommand delegate unchanged to
 ``changed``, ``rule``, and ``candidate``.
 
 Examples:
+  ./scripts/wiki-lint --scope files:wiki/entities/npc/example.md
   ./scripts/wiki-lint --json
   ./scripts/wiki-lint file wiki/entities/npc/example.md --json
   ./scripts/wiki-lint corpus wiki --severity HARD
@@ -27,6 +28,7 @@ CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate", "
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 from tools.wiki_ops.cli import AgentParser, examples_epilog, resolve_vault, usage_error
+from tools.wiki_ops.pretty import render_lint_issues
 
 
 def _arg_fail(message: object, example: str) -> int:
@@ -108,10 +110,10 @@ def structural_main(argv: list[str]) -> int:
         description=__doc__,
         epilog=examples_epilog(
             "scripts/wiki-lint --json",
-            "scripts/wiki-lint wiki --verbose",
+            "scripts/wiki-lint --scope files:wiki/entities/npc/example.md",
             "wiki lint --help",
         ),
-        example="scripts/wiki-lint --json",
+        example="scripts/wiki-lint --scope files:wiki/entities/npc/example.md",
     )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
@@ -291,7 +293,7 @@ def structural_main(argv: list[str]) -> int:
         if args.json:
             print(json.dumps(report, sort_keys=True, separators=(",", ":")))
         else:
-            print(json.dumps(report, indent=2, sort_keys=True))
+            print(render_lint_issues(report))
         if ambiguous_identities:
             return 2
         if args.plan:

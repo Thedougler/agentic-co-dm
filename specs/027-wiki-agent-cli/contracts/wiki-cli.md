@@ -33,11 +33,20 @@ The checker backend is internal. Its structural, template, creative, and Vale fi
 
 ## Default stdout
 
-Exactly one compact JSON object, `sort_keys=True`, no indent. `status` always present. Successful/findings objects include `timing` (`command`, `duration_ms`, and `cache` when lint/health).
+`query`, `health`, `lint fix`, `mutate`, and `repair`: exactly one compact JSON object, `sort_keys=True`, no indent. `status` always present. Successful/findings objects include `timing` (`command`, `duration_ms`, and `cache` when lint/health).
 
 ### Lint
 
-Required keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`, `unique`, `backlog`, and `files`.
+Default stdout is one issue per line, not the worklist JSON:
+
+```text
+<file>:<line>: <rule>: <message>
+  fix: wiki lint fix <file>
+```
+
+`line` is 1-based. `fix:` is omitted when there is no repair hint; `human` means the finding is not auto-fixed. A clean run prints `clean`. `--json` emits the worklist object below. `--pretty` remains the human scoreboard.
+
+Required `--json` keys: `status`, `counts`, `hard_fail`, `finding_total`, `affected_pages`, `next_page`, `next`, `cache`, `files_checked`, `scope`, `ledger`, `timing`, `unique`, `backlog`, and `files`.
 
 Lint includes aggregate counts and every configured checker finding, including all Vale findings and every severity. `files` is an array of `{file, findings}` in argument / path order. `findings` is `{rule, file, line, severity, message}[]` with 1-based `line`. There is no hard-only default or checker-suppression flag.
 

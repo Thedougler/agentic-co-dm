@@ -63,6 +63,101 @@ def _render_findings(result: Mapping[str, Any]) -> list[str]:
     return ["", *findings] if findings else []
 
 
+def _issue_rows(result: Mapping[str, Any]):
+    """Yield (file, line, rule, message, finding) from a lint result."""
+    by_file = _value(result, "findings_by_file", {})
+    if isinstance(by_file, Mapping) and by_file:
+        for filename, items in by_file.items():
+            for finding in items if isinstance(items, (list, tuple)) else ():
+                if isinstance(finding, Mapping):
+                    yield (
+                        str(_value(finding, "file", filename) or filename),
+                        _value(finding, "line", 1),
+                        str(_value(finding, "rule", "")),
+                        str(_value(finding, "message", "") or _value(finding, "reason", "")),
+                        finding,
+                    )
+        return
+    groups = _value(result, "files", ())
+    if groups:
+        for group in groups:
+            if not isinstance(group, Mapping):
+                continue
+            group_file = str(_value(group, "file", ""))
+            for finding in _value(group, "findings", ()):
+                if isinstance(finding, Mapping):
+                    yield (
+                        str(_value(finding, "file", group_file) or group_file),
+                        _value(finding, "line", 1),
+                        str(_value(finding, "rule", "")),
+                        str(_value(finding, "message", "") or _value(finding, "reason", "")),
+                        finding,
+                    )
+        return
+    findings = _value(result, "findings", {})
+    if isinstance(findings, Mapping):
+        for rule, items in findings.items():
+            for finding in _flatten_finding_items(items):
+                yield (
+                    str(_value(finding, "file", "") or _value(finding, "page", "")),
+                    _value(finding, "line", 1),
+                    str(_value(finding, "rule", rule) or rule),
+                    str(
+                        _value(finding, "message", "")
+                        or _value(finding, "reason", "")
+                        or _value(finding, "target", "")
+                    ),
+                    finding,
+                )
+
+
+def _flatten_finding_items(value: Any) -> list[Mapping[str, Any]]:
+    if isinstance(value, Mapping):
+        if any(key in value for key in ("line", "page", "file", "rule", "message", "target", "reason")):
+            return [value]
+        rows: list[Mapping[str, Any]] = []
+        for child in value.values():
+            rows.extend(_flatten_finding_items(child))
+        return rows
+    if isinstance(value, (list, tuple)):
+        rows = []
+        for item in value:
+            if isinstance(item, Mapping):
+                rows.extend(_flatten_finding_items(item))
+            else:
+                rows.append({"message": str(item)})
+        return rows
+    return [{"message": str(value)}] if value not in (None, "") else []
+
+
+def _fix_hint(finding: Mapping[str, Any], file: str) -> str:
+    repair_class = str(_value(finding, "repair_class", ""))
+    action = finding.get("repair_action") if isinstance(finding, Mapping) else None
+    if repair_class == "deterministic_repair" or (isinstance(action, Mapping) and action.get("kind")):
+        return f"wiki lint fix {file}" if file else "wiki lint fix"
+    target = _value(finding, "repair_target", "")
+    if target:
+        return str(target)
+    if repair_class == "human_repair":
+        return "human"
+    return ""
+
+
+def render_lint_issues(result: Mapping[str, Any]) -> str:
+    """Agent-default lint stdout: file:line: rule: message, plus a fix hint."""
+    rows = list(_issue_rows(result))
+    if not rows:
+        return "clean"
+    lines = []
+    for file, line, rule, message, finding in rows:
+        text = f"{file}:{line}: {rule}: {message}".rstrip(": ")
+        hint = _fix_hint(finding, file)
+        if hint:
+            text += f"\n  fix: {hint}"
+        lines.append(text)
+    return "\n".join(lines)
+
+
 def render_query(result: Mapping[str, Any]) -> str:
     """Render query hits, one compact record per line."""
     hits = _value(result, "hits", ())

@@ -1,6 +1,6 @@
 # Contract: Wiki CLI surface (FR-027–FR-039)
 
-This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mutate`, `repair`), `scripts/luna-eval`, and `scripts/error-ledger.py`. It extends feature 027: default output is compact JSON on stdout, `--pretty` is for humans, and there are no fuzzy paths.
+This contract covers `scripts/wiki` (`lint`, `lint fix`, `query`, `health`, `mutate`, `repair`), `scripts/luna-eval`, and `scripts/error-ledger.py`. It extends feature 027: lint default stdout is `file:line: rule: message`; `--json` is the worklist; `--pretty` is for humans; there are no fuzzy paths.
 
 ## Discovery (FR-027)
 - There is one helper, `tools/wiki_ops/cli.py` (`repo_root`, `resolve_vault`), used by `scripts/wiki`, `scripts/wiki-lint`, `tools/lint_wiki.py`, `scripts/luna-eval`, and `scripts/error-ledger.py`. The repo root is found from the package location, so the command works from any working directory.
@@ -40,6 +40,7 @@ Required keys: `status`, `vault`, `changed` (paths or ids), `counts` (`before`/`
 
 ## Examples blocks (FR-032). The real invocations each `--help` shows:
 - `wiki lint entities/place/Belumara.md`
+- `wiki lint entities/place/Belumara.md --json`
 - `wiki lint dir:entities/place`
 - `wiki lint fix dir:entities/place --dry-run`
 - `wiki query "Belumara" -n 5`

@@ -40,6 +40,33 @@ def payload(result):
     return json.loads(result.stdout)
 
 
+def test_lint_default_prints_file_line_issue(tmp_path: Path):
+    target = tmp_path / "page.md"
+    target.write_text(
+        "---\n"
+        "title: Line fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-17\n"
+        "type: session-prep\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Line fixture\n\n"
+        "A broken edge: [[missing-owner]].\n",
+        encoding="utf-8",
+    )
+    result = run_cli(tmp_path, "lint", "page.md")
+    assert result.returncode == 1, result.stderr
+    assert "page.md:14:" in result.stdout, result.stdout
+    assert "broken_links" in result.stdout
+    assert not result.stdout.lstrip().startswith("{")
+    data = payload(run_cli(tmp_path, "lint", "page.md", "--json"))
+    broken = [item for group in data["files"] for item in group["findings"] if item["rule"] == "broken_links"]
+    assert broken and broken[0]["line"] == 14
+
+
 def test_lint_default_is_full_and_actionable(tmp_path: Path):
     page(tmp_path, "entities/npc/large.md", title="Large")
     page(tmp_path, "entities/npc/small.md", title="Small")
@@ -47,7 +74,7 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
         (tmp_path / "entities/npc/large.md").read_text(encoding="utf-8") + ("x" * 200),
         encoding="utf-8",
     )
-    bulk = run_cli(tmp_path, "lint")
+    bulk = run_cli(tmp_path, "lint", "--json")
     assert bulk.returncode in (0, 1), bulk.stderr
     data = payload(bulk)
     required = {
@@ -67,14 +94,14 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
         for item in group["findings"]
     )
 
-    compatibility = payload(run_cli(tmp_path, "lint", "--full"))
+    compatibility = payload(run_cli(tmp_path, "lint", "--full", "--json"))
     assert compatibility["finding_total"] == data["finding_total"]
     assert compatibility["files"]
 
 def test_multi_path_lint_includes_grouped_findings(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
-    result = payload(run_cli(tmp_path, "lint", "a.md", "b.md"))
+    result = payload(run_cli(tmp_path, "lint", "a.md", "b.md", "--json"))
     assert {item["file"] for item in result["files"]} == {"a.md", "b.md"}
 
 def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
@@ -96,14 +123,14 @@ def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
         "| **snake_case** |\n",
         encoding="utf-8",
     )
-    result = run_cli(tmp_path, "lint", "npc.md")
+    result = run_cli(tmp_path, "lint", "npc.md", "--json")
     assert result.returncode == 1, result.stderr
     data = payload(result)
     assert "snake_case_labels" in set(data["counts"])
     findings = [item for group in data["files"] for item in group["findings"]]
     assert any(item["rule"] == "snake_case_labels" for item in findings)
 
-    compatibility = payload(run_cli(tmp_path, "lint", "npc.md", "--full"))
+    compatibility = payload(run_cli(tmp_path, "lint", "npc.md", "--full", "--json"))
     compatibility_findings = [item for group in compatibility["files"] for item in group["findings"]]
     assert any(item["rule"] == "snake_case_labels" for item in compatibility_findings)
 
@@ -119,6 +146,7 @@ def test_two_named_files_are_separate_default_blocks(tmp_path: Path):
         "lint",
         "entities/npc/two.md",
         "entities/npc/one.md",
+        "--json",
     )
     data = payload(result)
     files = [group["file"] for group in data["files"]]
@@ -151,9 +179,9 @@ def test_cache_hits_and_byte_change(tmp_path: Path):
     assert second["cache"]["hits"] > 0
     assert second["cache"]["vale_skipped"] >= second["cache"]["hits"]
     (tmp_path / "one.md").write_text((tmp_path / "one.md").read_text(encoding="utf-8") + "x", encoding="utf-8")
-    changed = payload(run_cli(tmp_path, "lint"))
+    changed = payload(run_cli(tmp_path, "lint", "--json"))
     assert changed["cache"]["misses"] >= 1
-    unchanged = payload(run_cli(tmp_path, "lint"))
+    unchanged = payload(run_cli(tmp_path, "lint", "--json"))
     assert unchanged["cache"]["hits"] >= 1
     assert unchanged["cache"]["misses"] == 0
 
@@ -194,7 +222,7 @@ def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     page(tmp_path, "b.md")
     run_cli(tmp_path, "lint", "a.md")
     run_cli(tmp_path, "lint", "b.md")
-    again = payload(run_cli(tmp_path, "lint", "a.md"))
+    again = payload(run_cli(tmp_path, "lint", "a.md", "--json"))
     assert again["cache"]["hits"] >= 1
 
 
@@ -203,7 +231,9 @@ def test_pretty_default_lists_findings_and_full_is_compatible(tmp_path: Path):
     default = run_cli(tmp_path, "lint")
     pretty = run_cli(tmp_path, "lint", "--pretty")
     pretty_full = run_cli(tmp_path, "lint", "--pretty", "--full")
-    assert json.loads(default.stdout)
+    worklist = run_cli(tmp_path, "lint", "--json")
+    assert not default.stdout.lstrip().startswith("{")
+    assert json.loads(worklist.stdout)
     assert pretty.stdout.strip()
     assert not pretty.stdout.lstrip().startswith("{")
     assert "Next page:" in pretty.stdout
@@ -339,14 +369,14 @@ def test_lint_fix_escapes_table_wikilink_pipes(tmp_path: Path):
         "---\ntitle: Table\n---\n\n| Who |\n| --- |\n| [[keeper|The Keeper]] |\n\n[[keeper|prose link]]\n",
         encoding="utf-8",
     )
-    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md", "--json"))
     rules = {item["rule"] for group in before["files"] for item in group["findings"]}
     assert "table_wikilink_unescaped_pipe" in rules
     fixed = run_cli(tmp_path, "lint", "fix", "entities/npc/table.md")
     assert fixed.returncode in (0, 1), fixed.stderr
     assert "| [[keeper\\|The Keeper]] |" in table.read_text(encoding="utf-8")
     assert "[[keeper|prose link]]" in table.read_text(encoding="utf-8")
-    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md", "--json"))
     rules = {item["rule"] for group in after["files"] for item in group["findings"]}
     assert "table_wikilink_unescaped_pipe" not in rules
     assert "broken_links" not in rules
@@ -393,16 +423,16 @@ def test_discovery_from_any_cwd_and_vault_precedence(tmp_path: Path):
     finally:
         if old is not None:
             os.environ["OBSIDIAN_VAULT_PATH"] = old
-    result = run_cli(one, "lint", "a.md", "--vault", str(two))
+    result = run_cli(one, "lint", "a.md", "--vault", str(two), "--json")
     assert payload(result)["vault"] == str(two.resolve())
-    result = _bare("lint", "a.md", cwd=elsewhere, env={"OBSIDIAN_VAULT_PATH": str(one), "WIKI_TRACKER_ROOT": str(elsewhere)})
+    result = _bare("lint", "a.md", "--json", cwd=elsewhere, env={"OBSIDIAN_VAULT_PATH": str(one), "WIKI_TRACKER_ROOT": str(elsewhere)})
     assert payload(result)["vault"] == str(one.resolve())
 
 
 def test_stdin_and_paths_only(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
-    result = run_cli_stdin(tmp_path, "a.md\nb.md\n", "lint", "--stdin")
+    result = run_cli_stdin(tmp_path, "a.md\nb.md\n", "lint", "--stdin", "--json")
     assert payload(result)["files_checked"] == 2
     paths = run_cli_stdin(tmp_path, "a.md\n", "lint", "--stdin", "--paths-only")
     assert paths.stdout.split() == ["a.md"] or paths.stdout.split() == []

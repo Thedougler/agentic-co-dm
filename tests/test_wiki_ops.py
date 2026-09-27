@@ -190,7 +190,23 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         "--vault",
         tmp_path,
     )
-    report = assert_json(result, returncode=1)
+    assert result.returncode == 1, result.stderr
+    assert "page.md:14:" in result.stdout, result.stdout
+    assert "broken_links" in result.stdout
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--no-vale",
+            "--no-template",
+            "--all",
+            "--scope",
+            "files:page.md",
+            "--vault",
+            tmp_path,
+        ),
+        returncode=1,
+    )
     broken = report["findings"]["broken_links"][0]
     assert broken["page"] == "page.md"
     assert broken["line"] == 14
@@ -201,6 +217,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
 
     verbose = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--verbose",
         "--no-vale",
         "--no-template",
@@ -232,6 +249,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     (tmp_path / "index.md").write_text("- [[clean]]\n", encoding="utf-8")
     clean_result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--no-template",
         "--all",
@@ -502,6 +520,7 @@ def test_misplaced_entity_is_hard_and_skips_wrong_template(tmp_path: Path):
     )
     result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--scope",
         "files:entities/item/snakewood.md",
@@ -533,6 +552,7 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     )
     result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--scope",
         "files:entities/creature/_index.md",
@@ -541,6 +561,7 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     )
     report = assert_json(result, returncode=1)
     assert report["findings"].get("misplaced_entity", []) == []
+
 
 
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:

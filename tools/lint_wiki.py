@@ -20,6 +20,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.pretty import render_lint_issues
+
 
 DEFAULT_RELATIONSHIPS = {
     "extends", "implements", "contradicts", "derived_from", "uses", "replaces", "related_to"
@@ -969,18 +971,7 @@ def main() -> int:
     if args.json:
         print(json.dumps(result, indent=2, sort_keys=True))
     else:
-        if not has_findings:
-            print("clean")
-        else:
-            print(f"Wiki lint scope: {len(pages)} pages ({vault})")
-            for key, value in counts.items():
-                print(f"{key}: {value}")
-            for key in ("missing_frontmatter", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
-                items = findings.get(key, [])
-                if items:
-                    print(f"\n{key}")
-                    for item in items if isinstance(items, list) else items.values():
-                        print(f"- {item}")
+        print(render_lint_issues(result))
     if args.hard_only:
         return 1 if result["hard_fail"] else 0
     return 1 if has_findings else 0

@@ -22,7 +22,7 @@ from tools.wiki_ops.cli import SCOPE_KINDS, AgentParser, UsageError, configured_
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot, build_trends
 from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
-from tools.wiki_ops.pretty import render_health, render_lint, render_query, render_usage_error
+from tools.wiki_ops.pretty import render_health, render_lint, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
@@ -342,6 +342,7 @@ def _finish(
     renderer,
     cache: dict[str, Any] | None = None,
     extra_record: dict[str, Any] | None = None,
+    json_out: bool = False,
 ) -> int:
     duration = max(0, elapsed_ms(start))
     if result.get("status") != "error":
@@ -359,6 +360,8 @@ def _finish(
         return code
     if pretty:
         print(renderer(result))
+    elif command == "lint" and not json_out and result.get("status") != "error":
+        print(render_lint_issues(result))
     else:
         emit_json(result)
     return code
@@ -380,7 +383,10 @@ def _result_paths(command: str, result: dict[str, Any]) -> list[str]:
 
 def _lint(args: argparse.Namespace, vault: Path, start: float) -> int:
     result, code = _compute_lint(args, vault)
-    return _finish("lint", start, code, result, pretty=args.pretty, renderer=render_lint, cache=result.get("cache"))
+    return _finish(
+        "lint", start, code, result,
+        pretty=args.pretty, json_out=args.json, renderer=render_lint, cache=result.get("cache"),
+    )
 
 def _flatten_result_findings(result: dict[str, Any]) -> list[dict[str, Any]]:
     findings: list[dict[str, Any]] = []
@@ -780,7 +786,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
 
 
 SUBCOMMANDS = [
-    ("lint", "lint pages, a directory, or a kind:value scope; JSON worklist"),
+    ("lint", "lint; default file:line: rule: message; --json for the full worklist"),
     ("lint fix", "apply deterministic lint repairs (one correct output each); --dry-run plans"),
     ("query", "search the wiki collection through qmd (qmd query; qmd search if its local model fails)"),
     ("health", "facts: lint, remorph, layout, ledger, context load; next target"),
@@ -788,7 +794,12 @@ SUBCOMMANDS = [
     ("repair", "apply a typed repair plan; --dry-run previews"),
 ]
 EXAMPLES = {
-    "lint": ["wiki lint entities/place/Belumara.md", "wiki lint dir:entities/place", "printf 'a.md\\nb.md\\n' | wiki lint --stdin --paths-only"],
+    "lint": [
+        "wiki lint entities/place/Belumara.md",
+        "wiki lint entities/place/Belumara.md --json",
+        "wiki lint dir:entities/place",
+        "printf 'a.md\\nb.md\\n' | wiki lint --stdin --paths-only",
+    ],
     "lint fix": ["wiki lint fix entities/place/Belumara.md", "wiki lint fix dir:entities/place --dry-run"],
     "query": ['wiki query "Belumara" -n 5'],
     "health": ["wiki health", "wiki health entities/place/Belumara.md"],
@@ -815,9 +826,9 @@ def _sub_parser(name: str) -> argparse.ArgumentParser:
         parser.add_argument("paths", nargs="*", help=PATH_HELP)
         parser.add_argument("--scope", action="append", default=[], metavar="KIND:VALUE", help=f"scope ({SCOPE_KINDS})")
         parser.add_argument("--stdin", action="store_true", help="read newline-separated paths from stdin")
-        parser.add_argument("--paths-only", action="store_true", help="print one path per line instead of JSON")
-        parser.add_argument("--pretty", action="store_true", help="human-readable output")
-        parser.add_argument("--json", action="store_true", help="JSON output (the default)")
+        parser.add_argument("--paths-only", action="store_true", help="print one path per line")
+        parser.add_argument("--pretty", action="store_true", help="human-readable scoreboard")
+        parser.add_argument("--json", action="store_true", help="full JSON worklist")
     if name == "lint":
         parser.add_argument("--full", action="store_true", default=True, help="compatibility no-op; lint is always full")
     if name == "lint fix":
