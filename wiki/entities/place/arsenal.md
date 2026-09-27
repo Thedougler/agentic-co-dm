@@ -17,31 +17,24 @@ type: place
 ---
 # Arsenal
 
-## Overview
-
-> [!narration] Narration
+> [!narration] Arsenal
 > The canon records the Arsenal as a shipyard and dry-dock area. Its body-scale layout, sounds, and access points are not established in the current record.
 
 ## At a Glance
 
-[[Arsenal]] is Calveno's shipyard and dry-dock area, referenced by item and vehicle records.
+[[Arsenal]] is [[calveno|Calveno]]'s shipyard and dry-dock area, referenced by item and vehicle records.
 
-## If the party
+## Features
+
+- **Shipyard and dry dock.** The Arsenal contains shipyard and dry-dock facilities. No specific tools, vessels, or equipment are canonically assigned to this page.
+- **Staff.** No named Arsenal staff, crew, or official headcount is established in the current record.
+
+## At the Table
 
 - **Dock or repair.** The party can bring a vessel to the Arsenal for shipyard or dry-dock work; the current record does not establish its booking procedure.
+- **Current pressure.** The party comes here for vessel work or to connect vehicle and item records to a named shipyard. The current record does not establish an active local pressure.
 
-## Who
+## Connections
 
-No named Arsenal staff, crew, or official headcount is established in the current record.
-
-## What
-
-The Arsenal contains shipyard and dry-dock facilities. No specific tools, vessels, or equipment are canonically assigned to this page.
-
-## Where
-
-The Arsenal is in Calveno. [[Acqua Nera]] lies southwest of it at the outer harbour.
-
-## Why
-
-The party comes here for vessel work or to connect vehicle and item records to a named shipyard. The current record does not establish an active local pressure.
+- [[calveno|Calveno]] — the settlement containing the Arsenal.
+- [[acqua-nera|Acqua Nera]] — lies southwest of the Arsenal at the outer harbour.
