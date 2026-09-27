@@ -118,5 +118,8 @@ apply.
       run of short standalone sentences?
 - [ ] Is every rule, roll, and spell name turned into what it looked like?
 - [ ] Quote the last sentence: is it inside the cliffhanger (the blade
-      mid-reach, the water rising), or on where the party stands, and never
-      a line about the session or the night ending?
+      mid-reach, the water rising), or on where the party stands, with no
+      word in it about stopping, ending, the night, or the session?
+- [ ] Is every person and thing called what the players called it at the
+      table (the raw transcript), with a name only where the table heard it,
+      even when the DM's pages use the name?
