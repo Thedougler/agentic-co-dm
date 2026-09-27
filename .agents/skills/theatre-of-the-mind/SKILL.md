@@ -514,10 +514,11 @@ run the list again.
 - [ ] **Form.** (Situated first look) Is it a box when the first look is fixed
       at prep time, and bullets when the entrance, light, or who is present
       can still change?
-- [ ] **Shape.** Name the slot's recipe shape (Length table, scenes.md §
-      Owner-page moments) and count the output against it: blocks (one per
-      signature move or visible property where the recipe says so),
-      bullets, sentences. Does the count match?
+- [ ] **Shape.** Quote the recipe line for this slot word for word (the
+      Length table row, or its line in scenes.md § Owner-page moments), then
+      count the output against it: blocks (one per signature move or visible
+      property, each move its own block, where the line says so), bullets,
+      sentences. Does the count match?
 - [ ] **Descriptors.** For each subject named more than once, list every
       word that names it. Is each a different descriptor the table will
       recognize (Line edits)?
