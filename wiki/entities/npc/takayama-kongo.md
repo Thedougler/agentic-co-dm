@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Tokage-Island.md"]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,53 +25,34 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Leader of the Kento Clan |
-| **Home** | [[Kurogane-mura]] |
-| **Wants** | Keep ore mining, kilns, and smithing productive for Tokage. |
+Takayama Kongo leads the [[kento-clan|Kento Clan]] at the foot of [[Totemo Tokage]]'s central range, where the island's ore becomes its weapons.
 
-> **DM thesis:** Takayama Kongo connects mountain resources to every clan's ability to arm itself.
-
+- **Role.** Clan leader at [[Kurogane-mura]], working the mines, kilns, and smithies.
+- **Nature.** Brown-and-orange-scaled armadillo lizardfolk, built like the workers around the kilns.
+- **Wants.** Keep ore mining, kilns, and smithing productive for Tokage.
+- **Home.** [[Kurogane-mura]], the mining and smithing village at the mountain's base.
+- **Allegiance.** The Kento Clan.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Takayama Kongo
-> Takayama Kongo has brown-and-orange scales and the armadillo-like build associated with the Kento workers around the kilns. Smoke, metal heat, and mine work surround the clan leader.
+> Takayama Kongo has brown-and-orange scales and the armadillo-like build associated with the Kento workers around the kilns. Smoke, metal heat, and mine work surround the clan leader, and everything within sight of the village arrives as ore or leaves as edge.
 ```
 ````
 
-## Running Takayama Kongo
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-The party meets Kongo at Kurogane-mura through its mines, kilns, or weapons trade.
-
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Kongo's posture changes when access to ore, the mountain base, or the clan's weapons threatens the island's shared defense.
-```
-````
-
-## Voice
-
-Takayama Kongo's voice is not established in the source. The page establishes a practical clan leader responsible for mining, kilns, and weapons, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+- **First meeting.** The party meets Kongo at [[kurogane-mura|Kurogane-mura]], through the mines, the kilns, or the weapons trade.
+- **Opens up when.** The conversation is about ore, output, and what the island needs forged, rather than about clan standing.
+- **Shuts down when.** Access to ore, the mountain base, or the clan's weapons threatens the island's shared defense; the smithy then answers to the threat before it answers to a customer.
+- **Priority.** The furnaces and the ore line first: everything the six clans arm themselves with comes through this village.
+- **Shares.** What the mines are producing, what the kilns can make, and which clans are owed or waiting. Clan politics beyond the work is not his subject.
+- **Voice.** Not established in the source. The page records a practical clan leader responsible for mining, kilns, and weapons and no verbal habit or sample line; do not invent dialogue until the DM accepts one.
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[kento-clan\|Kento Clan]] | Kongo leads the mining and smithing clan. |
-| [[Kurogane-mura]] | Kongo's village and industrial base. |
-| [[Totemo Tokage]] | Kongo's weapons and armor supply the island's clans. |
+- [[kento-clan]] — the mining and smithing clan Kongo leads.
+- [[Kurogane-mura]] — his village and industrial base.
+- [[Totemo Tokage]] — the island whose clans' weapons and armour come from here.
