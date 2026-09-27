@@ -27,7 +27,7 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Development opening recipe): what the characters perceive, ending on a moment they can act on. -->
+> <!-- Spoken opening from theatre-of-the-mind (Development opening recipe): one paragraph of 50–70 words, the new information source as its anchor, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
 
 ````col
 ```col-md
@@ -50,7 +50,7 @@ flexGrow=1
 - **[[npc]].** Wants now; knows; offers; lies about, and the tell; price for help; what shifts their posture.
 
 > [!narration] {NPC}
-> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and one line of first words in their voice, about six seconds aloud. What they know beyond that line goes in Actors as separate points. Titled with their name; one per NPC. -->
 ```
 ````
 

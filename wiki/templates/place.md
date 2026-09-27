@@ -45,7 +45,7 @@ flexGrow=1
 - **Feature.** What it is and what the party can do with it.
 
 > [!narration] {Area}
-> <!-- Optional, one per `###` area: what the party perceives on entering it, "you" address, ending on the feature they can use. -->
+> <!-- Optional, one per `###` area: what the party perceives on entering it, "you" address, one to three sentences ending on the feature they can use, or immediate-fact bullets when the way in can still change. What a closer look uncovers stays in the area's DM prose. -->
 
 ## At the Table
 

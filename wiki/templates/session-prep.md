@@ -32,7 +32,7 @@ summary: ""
 > <!-- On the session's first beat only: the recap read aloud as play starts, from theatre-of-the-mind (Recap mode). -->
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
+> <!-- Spoken opening from theatre-of-the-mind (situated moment recipe): one paragraph of 50–70 words, "you" address, present tense, one sense beyond sight, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
 
 ````col
 ```col-md
@@ -96,7 +96,7 @@ flexGrow=2
 ![[creature#Statblock]]
 
 > [!narration] {Creature}
-> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe). One after each embed, titled with its name. -->
+> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe): what it was already doing, ending on its windup before contact; its response to the party goes in the DM prose. One after each embed, titled with its name. -->
 
 ## Backup
 

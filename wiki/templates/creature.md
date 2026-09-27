@@ -74,7 +74,7 @@ actions:
 - **Morale.** When it flees or surrenders, and where it goes.
 
 > [!narration] In action
-> <!-- Optional: the creature mid-fight, from theatre-of-the-mind (Creature in scene recipe), "you" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands. -->
+> <!-- Optional: the creature mid-fight, from theatre-of-the-mind (Outcome cell recipe), "you" address: one short block per signature move, read after the DM resolves it, showing how the move looks and sounds and the state it leaves, with each target's reaction left to its player. -->
 
 ## Behavior
 

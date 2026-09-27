@@ -50,7 +50,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -85,7 +85,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -120,7 +120,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -155,7 +155,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -285,7 +285,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -316,7 +316,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -370,7 +370,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -470,7 +470,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -501,7 +501,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -532,7 +532,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -567,7 +567,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -617,7 +617,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -701,7 +701,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -709,7 +709,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -721,7 +721,7 @@
   {
    "id": "creature-first-spatial",
    "prompt": "Write one player-facing first look from a dry ledge in a flooded vault. A large horned river drake crouches between the party and a brass key in a shallow stone basin; one foreclaw touches the basin rim and its head turns toward the party. One narrow dry approach, dark water below. The key has not been touched and no check has been resolved.",
-   "expected_output": "A creature-first spatial description where the drake IS the scene \u2014 its body and response are the primary subject, the key and approach are visible through the creature's position. The prose creates a drawable tactical picture without calling it tactical.",
+   "expected_output": "A creature-first spatial description where the drake IS the scene \u2014 its body and the current action the prompt gives are the primary subject, the key and approach are visible through the creature's position. The prose creates a drawable tactical picture without calling it tactical.",
    "assertions": [
     {
      "text": "Makes the drake the grammatical and attentional subject using crouch, foreclaw, and head turn as current action.",
@@ -740,7 +740,7 @@
      "type": "quality"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -748,7 +748,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -779,7 +779,7 @@
      "type": "quality"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -787,7 +787,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -795,7 +795,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the reaction point; no history or metadata the characters cannot perceive.",
      "type": "quality"
     }
    ]
@@ -822,7 +822,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -830,7 +830,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -838,7 +838,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "text": "Length fits the SKILL band for its surface: a scene opening is one paragraph of 50\u201370 words in two to four sentences, running toward 100 only for a first arrival, awe, horror, or a climax; cells 1\u20133 sentences; creature in scene 2\u20134; portrait 4\u20137.",
      "type": "structure"
     }
    ]
@@ -865,7 +865,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -873,7 +873,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -904,7 +904,7 @@
      "type": "structure"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -931,7 +931,7 @@
      "type": "quality"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -939,7 +939,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -947,7 +947,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "text": "Length fits the SKILL band for its surface: a scene opening is one paragraph of 50\u201370 words in two to four sentences, running toward 100 only for a first arrival, awe, horror, or a climax; cells 1\u20133 sentences; creature in scene 2\u20134; portrait 4\u20137.",
      "type": "structure"
     }
    ]
@@ -1035,7 +1035,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -1043,7 +1043,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -1074,11 +1074,11 @@
      "type": "guardrail"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
-     "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "text": "Length fits the SKILL band for its surface: a scene opening is one paragraph of 50\u201370 words in two to four sentences, running toward 100 only for a first arrival, awe, horror, or a climax; cells 1\u20133 sentences; creature in scene 2\u20134; portrait 4\u20137.",
      "type": "structure"
     },
     {
@@ -1086,7 +1086,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     }
    ]
@@ -1113,11 +1113,11 @@
      "type": "content"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
-     "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "text": "Length fits the SKILL band for its surface: a scene opening is one paragraph of 50\u201370 words in two to four sentences, running toward 100 only for a first arrival, awe, horror, or a climax; cells 1\u20133 sentences; creature in scene 2\u20134; portrait 4\u20137.",
      "type": "structure"
     },
     {
@@ -1125,7 +1125,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -1137,7 +1137,7 @@
   {
    "id": "stub-expansion",
    "prompt": "This Opening is too thin: 'You reach the camp. Survivors are there. They look at you.' The beat page establishes: a survivor camp under a rock overhang on Aruhe, a smoky fire of green wood, eleven survivors in salt-stained Grung gear, a boy mending a net, an older woman with a spear who steps forward, lean-tos of palm fronds, a stream beside the camp. Rewrite it.",
-   "expected_output": "A full 5\u20139 sentence opening using the supplied facts, with frame, focus, motion, handles, a sense beyond sight, and a live edge on the woman stepping forward.",
+   "expected_output": "A one-paragraph opening inside the 50\u201370-word band using the supplied facts, with frame, focus, motion, handles, a sense beyond sight, and a reaction point on the woman stepping forward.",
    "assertions": [
     {
      "text": "Uses only the supplied facts; invents no names, history, or hostility.",
@@ -1152,11 +1152,11 @@
      "type": "content"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
-     "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "text": "Length fits the SKILL band for its surface: a scene opening is one paragraph of 50\u201370 words in two to four sentences, running toward 100 only for a first arrival, awe, horror, or a climax; cells 1\u20133 sentences; creature in scene 2\u20134; portrait 4\u20137.",
      "type": "structure"
     },
     {
@@ -1164,7 +1164,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -1172,7 +1172,7 @@
      "type": "guardrail"
     },
     {
-     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the reaction point; no history or metadata the characters cannot perceive.",
      "type": "quality"
     }
    ]
@@ -1180,7 +1180,7 @@
   {
    "id": "redundancy-trim",
    "prompt": "Rewrite this narration so it plays at the table: 'You enter the chapel. The chapel was built two hundred years ago by the Order of the Lamp, who abandoned it after the plague. It is 60 feet long and 30 feet wide. There are pews. The pews are rotten. The pews face the altar. On the altar there is a silver bowl. The silver bowl is full of water that is somehow still clean. A sense of dread fills the air.'",
-   "expected_output": "A tighter, vivid block that keeps the pews, the altar, and the clean water in the silver bowl as the focus, cuts the unperceivable history and the dread sentence, gives size in speakable terms, and ends on a live edge.",
+   "expected_output": "A tighter, vivid block that keeps the pews, the altar, and the clean water in the silver bowl as the focus, cuts the unperceivable history and the dread sentence, gives size in speakable terms, and ends on a reaction point.",
    "assertions": [
     {
      "text": "Cuts the founding history and abandonment, which the characters cannot perceive.",
@@ -1199,7 +1199,7 @@
      "type": "content"
     },
     {
-     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a live edge.",
+     "text": "Situated block follows the scene spine: says where the party is, shows one striking focus, shows something already moving, gives at least two things to act on, and ends on a reaction point.",
      "type": "content"
     },
     {
@@ -1207,11 +1207,11 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
-     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
+     "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the reaction point; no history or metadata the characters cannot perceive.",
      "type": "quality"
     }
    ]
@@ -1219,7 +1219,7 @@
   {
    "id": "closing-image-resolution",
    "prompt": "Write the Closing image for a Resolution where the party saved the fishing village of Low Harrow from a flood by breaking the dam, but the old mill was swept away and the miller's family lost their home. Keep it to what the characters can see and hear the next morning.",
-   "expected_output": "A 3\u20136 sentence still image of the morning after: the village standing, the empty place where the mill stood, people reacting through what they do, and the cost visible.",
+   "expected_output": "A one-paragraph, 50\u201370-word still image of the morning after: the village standing, the empty place where the mill stood, people reacting through what they do, and the cost visible.",
    "assertions": [
     {
      "text": "The saved village and the lost mill are both visible in the image.",
@@ -1234,7 +1234,7 @@
      "type": "content"
     },
     {
-     "text": "3\u20136 sentences.",
+     "text": "One paragraph of 50\u201370 words in two to four sentences.",
      "type": "structure"
     },
     {
@@ -1242,7 +1242,7 @@
      "type": "content"
     },
     {
-     "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
+     "text": "No em dashes, no craft words from the skill (frame, focus, handle, reaction point, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
     },
     {
@@ -1254,7 +1254,7 @@
   {
    "id": "npc-in-beat-uses-page",
    "prompt": "Write the Opening for a development beat where the party walks into The Live Hold in Sparhold and meets Sabine Corvo for the first time. She wants them to escort a caged saltwater drake to Roka Sten's camp.",
-   "expected_output": "Situated second-person opening that seats Sabine using the face words from her NPC page portrait, adds only what this scene changes, gives her one line in the voice from her page that carries her want, and ends on a live edge.",
+   "expected_output": "Situated second-person opening that seats Sabine using the face words from her NPC page portrait, adds only what this scene changes, gives her one line in the voice from her page that carries her want, and ends on a reaction point.",
    "assertions": [
     {
      "text": "Reads wiki/entities/npc/sabine-corvo.md and the-live-hold.md before drafting",
@@ -1366,7 +1366,7 @@
      "type": "quality"
     },
     {
-     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "text": "Compact: one paragraph inside the 50\u201370-word band (toward 100 only for a first arrival, awe, horror, or a climax), three to five new details, with every sentence after the schema serving the situation",
      "type": "quality"
     },
     {
@@ -1378,8 +1378,20 @@
      "type": "quality"
     },
     {
-     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "text": "Ends on a reaction point (the pressure demanding a response) before contact and before 'What do you do?'",
      "type": "quality"
+    },
+    {
+     "text": "Withheld: every creature and person is shown as they were before the party arrived; their response to the party, closed contents, checks, and other approaches are in the withheld note, never in the block (unless the page fixes that the world acts first)",
+     "type": "quality"
+    },
+    {
+     "text": "One event: the block stops at the first moment a player would act, with no chain of events played to its end",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a point note (the one fact the block carries) and a withheld note alongside the art and handle notes",
+     "type": "process"
     },
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
@@ -1387,12 +1399,12 @@
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "hinewai-first-look",
    "prompt": "Write the NPC first look for the party's first sighting of Hinewai in her woman-in-the-woods form: she stands on a game trail in the rainforest near the Memorial Grove, at night, in the rain. She has not spoken yet. Source: wiki/entities/npc/Hinewai.md.",
-   "expected_output": "NPC first look: a first read, one feature, and one behavior, unnamed, ending as her attention lands on the party.",
+   "expected_output": "NPC first look: a first read, one feature, and one behavior, unnamed, ending on her behavior with her response to the party withheld.",
    "assertions": [
     {
      "text": "Searches for related art beyond the page embeds, opens it, and returns an art note naming the images and the details woven",
@@ -1423,7 +1435,7 @@
      "type": "quality"
     },
     {
-     "text": "Ends as her attention lands on the party",
+     "text": "Ends on her behavior at the reaction point; her response to the party (looking up, turning, speaking) is in the withheld note, since the prompt does not fix that she has seen them",
      "type": "quality"
     },
     {
@@ -1432,7 +1444,7 @@
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "session-11-recap",
@@ -1482,7 +1494,7 @@
    ],
    "core": true,
    "subject_skill": ".agents/skills/session-recap",
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "false-help-initial-narration",
@@ -1522,7 +1534,7 @@
      "type": "quality"
     },
     {
-     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "text": "Compact: one paragraph inside the 50\u201370-word band (toward 100 only for a first arrival, awe, horror, or a climax), three to five new details, with every sentence after the schema serving the situation",
      "type": "quality"
     },
     {
@@ -1534,7 +1546,7 @@
      "type": "quality"
     },
     {
-     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "text": "Ends on a reaction point (the pressure demanding a response) before contact and before 'What do you do?'",
      "type": "quality"
     },
     {
@@ -1542,12 +1554,24 @@
      "type": "quality"
     },
     {
+     "text": "Withheld: every creature and person is shown as they were before the party arrived; their response to the party, closed contents, checks, and other approaches are in the withheld note, never in the block (unless the page fixes that the world acts first)",
+     "type": "quality"
+    },
+    {
+     "text": "One event: the block stops at the first moment a player would act, with no chain of events played to its end",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a point note (the one fact the block carries) and a withheld note alongside the art and handle notes",
+     "type": "process"
+    },
+    {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "hook-open-on",
@@ -1587,7 +1611,7 @@
      "type": "quality"
     },
     {
-     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "text": "Compact: one paragraph inside the 50\u201370-word band (toward 100 only for a first arrival, awe, horror, or a climax), three to five new details, with every sentence after the schema serving the situation",
      "type": "quality"
     },
     {
@@ -1599,7 +1623,7 @@
      "type": "quality"
     },
     {
-     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "text": "Ends on a reaction point (the pressure demanding a response) before contact and before 'What do you do?'",
      "type": "quality"
     },
     {
@@ -1607,12 +1631,24 @@
      "type": "quality"
     },
     {
+     "text": "Withheld: every creature and person is shown as they were before the party arrived; their response to the party, closed contents, checks, and other approaches are in the withheld note, never in the block (unless the page fixes that the world acts first)",
+     "type": "quality"
+    },
+    {
+     "text": "One event: the block stops at the first moment a player would act, with no chain of events played to its end",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a point note (the one fact the block carries) and a withheld note alongside the art and handle notes",
+     "type": "process"
+    },
+    {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "development-initial-narration",
@@ -1652,7 +1688,7 @@
      "type": "quality"
     },
     {
-     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "text": "Compact: one paragraph inside the 50\u201370-word band (toward 100 only for a first arrival, awe, horror, or a climax), three to five new details, with every sentence after the schema serving the situation",
      "type": "quality"
     },
     {
@@ -1664,7 +1700,7 @@
      "type": "quality"
     },
     {
-     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "text": "Ends on a reaction point (the pressure demanding a response) before contact and before 'What do you do?'",
      "type": "quality"
     },
     {
@@ -1672,12 +1708,24 @@
      "type": "quality"
     },
     {
+     "text": "Withheld: every creature and person is shown as they were before the party arrived; their response to the party, closed contents, checks, and other approaches are in the withheld note, never in the block (unless the page fixes that the world acts first)",
+     "type": "quality"
+    },
+    {
+     "text": "One event: the block stops at the first moment a player would act, with no chain of events played to its end",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a point note (the one fact the block carries) and a withheld note alongside the art and handle notes",
+     "type": "process"
+    },
+    {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "climax-opening-image",
@@ -1717,7 +1765,7 @@
      "type": "quality"
     },
     {
-     "text": "Compact: short enough that the players still hold the first sentence when the DM stops, with every sentence after the schema serving the situation",
+     "text": "Compact: one paragraph inside the 50\u201370-word band (toward 100 only for a first arrival, awe, horror, or a climax), three to five new details, with every sentence after the schema serving the situation",
      "type": "quality"
     },
     {
@@ -1729,11 +1777,27 @@
      "type": "quality"
     },
     {
-     "text": "Ends on a live edge (the pressure demanding a response) before contact and before 'What do you do?'",
+     "text": "Ends on a reaction point (the pressure demanding a response) before contact and before 'What do you do?'",
      "type": "quality"
     },
     {
      "text": "An unseen attacker is shown only through what the characters sense",
+     "type": "quality"
+    },
+    {
+     "text": "Withheld: every creature and person is shown as they were before the party arrived; their response to the party, closed contents, checks, and other approaches are in the withheld note, never in the block (unless the page fixes that the world acts first)",
+     "type": "quality"
+    },
+    {
+     "text": "One event: the block stops at the first moment a player would act, with no chain of events played to its end",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a point note (the one fact the block carries) and a withheld note alongside the art and handle notes",
+     "type": "process"
+    },
+    {
+     "text": "The villain's speech stays out of the block; any taunt is routed to Actors as a short line",
      "type": "quality"
     },
     {
@@ -1742,7 +1806,7 @@
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "resolution-closing-image",
@@ -1787,7 +1851,7 @@
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "fate-spinner-portrait",
@@ -1828,19 +1892,19 @@
     }
    ],
    "core": true,
-   "outputs": "Write the finished narration block, plus the notes you would return with it (art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   },
   {
    "id": "spiguar-in-action",
    "prompt": "Write the optional `In action` narration under Tactics on wiki/entities/creature/spiguar.md: the Spiguar mid-fight against the party in its grassland.",
-   "expected_output": "A situated Creature in scene block in \"you\" address and present tense: how the Spiguar closes, strikes, and what each signature ability looks and sounds like when it lands, with no numbers.",
+   "expected_output": "Outcome-cell blocks for the `In action` slot in \"you\" address and present tense: one short block per signature move, read after the DM resolves it, showing how the move looks and sounds and the state it leaves, with no numbers and each target's reaction left to its player.",
    "assertions": [
     {
-     "text": "Uses the Creature in scene recipe in \"you\" address and present tense, not a third-person portrait",
+     "text": "Uses the Outcome cell recipe in \"you\" address and present tense, one short block per signature move, not a third-person portrait",
      "type": "quality"
     },
     {
-     "text": "Each signature ability on the page shows as what the characters see and hear when it lands, never as its rule or number",
+     "text": "Each signature ability on the page shows as what the characters see and hear when it resolves, and the state it leaves, never as its rule or number",
      "type": "quality"
     },
     {
@@ -1849,6 +1913,10 @@
     },
     {
      "text": "No DC, damage, HP, secret, or unearned name",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: no target's reaction, feeling, or bodily response is decided; the world acts on them and stops",
      "type": "quality"
     }
    ]
@@ -1871,6 +1939,133 @@
      "type": "quality"
     }
    ]
+  },
+  {
+   "id": "gust-casting-declared-action",
+   "prompt": "Write the optional `Casting` narration for wiki/entities/spell/gust.md, from the current spell template (wiki/templates/spell.md): the spell as a player character casts it.",
+   "expected_output": "A declared-action block of one to three sentences in \"you\" address: the caster's breath, gesture, and seed doing the chosen thing, the wind as something a listener can picture, ending with the wind in place before any creature's save resolves.",
+   "files": [
+    "wiki/entities/spell/gust.md",
+    "wiki/templates/spell.md"
+   ],
+   "assertions": [
+    {
+     "text": "Uses the Declared action recipe: \"you\" names only the caster's own body doing the cast (breath, hands, the seed), and the world does the rest",
+     "type": "quality"
+    },
+    {
+     "text": "One to three sentences, one paragraph",
+     "type": "quality"
+    },
+    {
+     "text": "The wind is a perceivable sensation (grit, cloth, fog tearing), placed where it settles",
+     "type": "quality"
+    },
+    {
+     "text": "Ends with the wind in place before any save, push, or held ground resolves; no creature is shoved or holds",
+     "type": "quality"
+    },
+    {
+     "text": "No numbers, line size, save, Concentration, or rule words (Strength, pushed 15 feet, Bonus Action)",
+     "type": "quality"
+    },
+    {
+     "text": "Hands off: no feeling, intention, or reaction is decided for the caster or anyone in the wind",
+     "type": "quality"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    }
+   ],
+   "outputs": "Write the finished narration, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+  },
+  {
+   "id": "yssenmoor-immediate-fact-bullets",
+   "prompt": "Write the `Opening` for the party's first arrival at Yssenmoor (wiki/entities/place/Yssenmoor.md). The party has not chosen how they come in: by boat along the flooded edge, on foot across the wet ground, or following Sir Quackers's calls through the fog. The DM wants one Opening that works for every approach.",
+   "expected_output": "Immediate-fact bullets, not a paragraph: three to five italic one-sentence bullets of what anyone arriving perceives at once, with Sir Quackers's response, the fate-spinner's reaction on study, and every approach-dependent fact withheld in DM prose outside the callout.",
+   "files": [
+    "wiki/entities/place/Yssenmoor.md",
+    "wiki/templates/place.md"
+   ],
+   "assertions": [
+    {
+     "text": "Classifies the first look as unfixed (the approach can still change) and files immediate-fact bullets instead of a box paragraph",
+     "type": "process"
+    },
+    {
+     "text": "Three to five bullets, each one complete italic sentence of something the characters perceive on arrival, in second person present tense where \"you\" appears",
+     "type": "quality"
+    },
+    {
+     "text": "No bullet assumes a boat, wading, or following the calls",
+     "type": "quality"
+    },
+    {
+     "text": "Withheld layer sits outside the callout in plain DM prose: what each approach changes, the fate-spinner's reaction on study, the ley line, and Sir Quackers's response to the party",
+     "type": "quality"
+    },
+    {
+     "text": "No ley line, Soul Incarnate, Talon, or reforming appears in the bullets",
+     "type": "quality"
+    },
+    {
+     "text": "Shows, not tells: fog, wet ground, and sound arriving before its source come as evidence, with no judgment words",
+     "type": "quality"
+    },
+    {
+     "text": "No echoes: no phrase of the old block, beat page, or owner pages reappears (quoted speech aside), and every color is one plain word or a comparison",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    }
+   ],
+   "outputs": "Write the finished narration, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
+  },
+  {
+   "id": "spiguar-freeze-frame-split",
+   "prompt": "Rewrite this Hook `Opening` so it plays at the table, using wiki/entities/creature/spiguar.md: 'The grass parts and the spiguar bursts out, knocks Delmar off his feet, drags him toward the thicket, and the otters scatter screaming into the reeds.'",
+   "expected_output": "One box stopped at the spiguar's windup in the grass, before it reaches anyone, with the knockdown, the drag, and the otters' flight routed to later slots in the notes. No PC is acted on.",
+   "files": [
+    "wiki/entities/creature/spiguar.md"
+   ],
+   "assertions": [
+    {
+     "text": "Names the source as a freeze-frame and keeps only its first event",
+     "type": "process"
+    },
+    {
+     "text": "Ends on the spiguar's windup before contact; nobody is knocked down, grabbed, or dragged",
+     "type": "quality"
+    },
+    {
+     "text": "The later events (the knockdown, the drag, the otters scattering) are routed in the notes to later slots such as tick or outcome cells",
+     "type": "process"
+    },
+    {
+     "text": "Delmar does nothing and nothing happens to him; no PC action, feeling, or bodily reaction",
+     "type": "quality"
+    },
+    {
+     "text": "The spiguar's look keeps the face from its page's header portrait: silhouette, movement, one dangerous part",
+     "type": "quality"
+    },
+    {
+     "text": "One paragraph inside the 50\u201370-word band, or shorter",
+     "type": "quality"
+    },
+    {
+     "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, or em dashes",
+     "type": "quality"
+    }
+   ],
+   "outputs": "Write the finished narration, plus the notes you would return with it (point note, withheld note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten."
   }
  ]
 }

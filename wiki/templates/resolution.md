@@ -27,7 +27,7 @@ summary: ""
 - **Reward.** What success or survival earned.
 
 > [!narration] Closing Image
-> <!-- Spoken closing image from theatre-of-the-mind (Resolution closing recipe). Add one per climax outcome when the climax could end more than one way. -->
+> <!-- Spoken closing image from theatre-of-the-mind (Resolution closing recipe): one paragraph of 50–70 words, the visible change and its cost, ending on a still image. Add one per climax outcome when the climax could end more than one way. -->
 
 ## Consequences
 

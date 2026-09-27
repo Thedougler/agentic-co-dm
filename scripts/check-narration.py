@@ -14,7 +14,8 @@ paths     subject outputs: files or directories; every `[!narration]` callout
 Prints each block, then one lead per line (long sentences, punctuation, paint-chip
 colors, grid distances, compass legends, labels, copied phrases), then sentence
 and word counts. Leads are for the grader to judge, not pass/fail gates: the
-skill sets no hard counts. Exit 1 when any lead remains, 0 when clean.
+skill sets a word band (50-70, toward 100 for a first arrival, awe, horror, or a
+climax), and a portrait, place packet, or recap may rightly run past it. Exit 1 when any lead remains, 0 when clean.
 """
 import argparse
 import re
@@ -27,7 +28,7 @@ NUMBER = (r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelv
           r"twenty|twenty-five|thirty|forty|fifty|sixty|hundred)")
 COMPASS = r"(?:north|south|east|west|northeast|northwest|southeast|southwest)"
 PC_PERCEIVE = r"\byou (?:see|notice|spot|realize|realise|feel|sense|recognize|understand)\b"
-LABELS = r"\b(?:hub|slack|magnet|live edge|windup|focus image|cold portrait)\b"
+LABELS = r"\b(?:hub|slack|magnet|live edge|reaction point|withheld layer|windup|focus image|cold portrait)\b"
 
 
 def narration_blocks(raw: str) -> list:
@@ -65,8 +66,11 @@ def check(body: str, sources: list) -> list:
     for p in paragraphs:
         if len(re.split(r"(?<=[.!?])\s+", p.strip())) == 1 and len(paragraphs) > 1:
             findings.append(f"one-sentence paragraph, merge it: {p.strip()[:70]}")
-    if len(paragraphs) > 2:
-        findings.append(f"{len(paragraphs)} paragraphs; a scene opening is one, two when loaded")
+    if len(paragraphs) > 1:
+        findings.append(f"{len(paragraphs)} paragraphs; a box is one paragraph (a place packet or recap may run longer)")
+    words = len(flat.split())
+    if words > 100:
+        findings.append(f"{words} words; a box is 50-70, toward 100 for a first arrival, awe, horror, or a climax")
     for ch, name in ((";", "semicolon"), (":", "colon"), ("—", "em dash")):
         if ch in flat:
             findings.append(f"{name} in spoken prose")

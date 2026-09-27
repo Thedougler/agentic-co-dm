@@ -28,7 +28,7 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): open on action, ending on a moment they can act on. -->
+> <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): one paragraph of 50–70 words or shorter, the threat in sentence one, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
 
 ## Actors
 
@@ -37,7 +37,7 @@ summary: ""
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): two to four sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
 
 ````col
 ```col-md
@@ -92,4 +92,4 @@ flexGrow=1
 **Carry forward.** Each state the next beat inherits: positions, injuries, resources, who holds what.
 
 > [!narration] If the session ends here
-> <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment. -->
+> <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment, one event, before anyone can act. -->
