@@ -49,6 +49,10 @@
     {
      "type": "process",
      "text": "Returns the point note, the withheld note (each fact with its slot), and the handle note routing every non-entry handle to its slot"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -104,6 +108,10 @@
     {
      "type": "process",
      "text": "Returns the point note, the withheld note (each fact with its slot), and the handle note routing every non-entry handle to its slot"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -159,6 +167,10 @@
     {
      "type": "process",
      "text": "Returns the point note, the withheld note (each fact with its slot), and the handle note routing every non-entry handle to its slot"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -218,6 +230,10 @@
     {
      "type": "process",
      "text": "Returns the point note, the withheld note (each fact with its slot), and the handle note routing every non-entry handle to its slot"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -265,6 +281,10 @@
     {
      "type": "process",
      "text": "Returns the point note and the withheld note"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -305,6 +325,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -344,6 +368,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -380,6 +408,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -415,6 +447,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -451,6 +487,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -487,6 +527,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -518,6 +562,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -553,6 +601,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -588,6 +640,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -623,6 +679,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -658,6 +718,10 @@
     {
      "type": "quality",
      "text": "Speakable and clean: every sentence fits one breath; no grid distances, compass directions, semicolons, colons, em dashes, craft labels, or slop-table phrases"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   },
@@ -704,6 +768,10 @@
     {
      "type": "quality",
      "text": "Clean page: past tense with 'you' address, breath-length sentences, no em dashes, semicolons, colons, or slop"
+    },
+    {
+     "type": "quality",
+     "text": "Varied descriptors: each return to the same person, creature, or thing uses a new recognizable descriptor that adds detail (the falcon, the peregrine, the monk), never one label repeated"
     }
    ]
   }

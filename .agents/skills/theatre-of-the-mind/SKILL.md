@@ -286,9 +286,7 @@ Done when a full pass of the final check changes nothing.
   be used, and its scale, named only when the characters would know it.
   Someone the table already knows (a returning villain, the enemy from last
   session's fight) needs no reintroduction: what they are doing now and the
-  one part about to be used. Refer to them by varied descriptors the table
-  will recognize (the falcon, the peregrine, the monk), each adding a little
-  detail, rather than one label repeated. Companions the players already know
+  one part about to be used, under varied descriptors (Line edits). Companions the players already know
   are already in their picture: one enters the block only by doing something
   that matters now, and a line of known faces is a **roll call**. One
   specific noun beats a stack of adjectives ("a burned-out watchtower").
@@ -487,6 +485,11 @@ matches it or has been rewritten to.
 - **Ordinary words for ordinary meanings.** Reaction, action, incapacitated,
   stunned, frightened, and magical appear only when the rules meaning is the
   one intended.
+- **Varied descriptors.** Each time the block returns to the same person,
+  creature, or thing, name it with a new descriptor the table will recognize
+  that adds a little detail (the falcon, then the peregrine, then the monk;
+  the otter, then the swimmer), with pronouns between. One label repeated
+  sounds robotic.
 - **"That" dropped** wherever the sentence still stands without it.
 
 ## Callouts and ingest
