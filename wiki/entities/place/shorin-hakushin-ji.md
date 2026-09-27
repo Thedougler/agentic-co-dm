@@ -18,25 +18,41 @@ tier: supporting
 ---
 # Shōrin Hakushin-ji
 
-> [!narration] Narration
-> Shōrin Hakushin-ji is carved into the stone at a snowy mountain summit. Thin air, freezing weather, and scarce food surround a small temple and village where the climb itself begins the test.
-
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
-Shōrin Hakushin-ji is the White Heart / Mind Temple and home of the [[yuki-no-kibo|Yuki no Kibo]] on central Tokage's highest snowy ground.
+The party comes here to attempt the open trials, seek the [[yuki-no-kibo|Yuki no Kibo]]'s help, or understand the survival doctrine of [[Semuanya]].
 
-## Who
+- **Who is here.** A small number of practicing monks live here under [[master-miki-trox|Master Miki Trox]].
+- **Danger.** The climb itself is the first test: thin air, freezing weather, and scarce food on the snowy summit.
+- **Draw.** Open trials of survival and mastery, plus the monks' help if the party earns it.
+```
 
-A small number of practicing monks live here under [[master-miki-trox|Master Miki Trox]].
+```col-md
+flexGrow=1
+===
+> [!narration] Shōrin Hakushin-ji
+> Shōrin Hakushin-ji is carved into the stone at a snowy mountain summit. Thin air, freezing weather, and scarce food surround a small temple and village where the climb itself begins the test.
+```
+````
 
-## What
+## Features
 
-The temple holds open trials. Few visitors pass them, and most monks never reach mastery, though students and masters are both considered very strong.
+- **White Heart / Mind Temple.** Home of the [[yuki-no-kibo|Yuki no Kibo]] on central Tokage's highest snowy ground.
+- **Open trials.** Few visitors pass them, and most monks never reach mastery, though students and masters are both considered very strong.
 
-## Where
+## At the Table
 
-The temple sits at the summit of the central mountain range of [[Totemo Tokage]]. [[Kurogane-mura]] lies at the mountain base.
+- **If the party** attempts the trials — the mountain's cold, thin air, and scarce food are the test; few complete it.
+- **If the party** seeks the monks' help — they live and train here under Master Miki Trox.
 
-## Why
+## Connections
 
-A party comes to attempt the trials, seek the monks' help, or understand the survival doctrine of [[Semuanya]].
+- [[Totemo Tokage]] — the temple sits at the summit of the island's central mountain range.
+- [[Kurogane-mura]] — Iron Village at the mountain base.
+- [[yuki-no-kibo|Yuki no Kibo]] — the mountain order based here.
+- [[master-miki-trox|Master Miki Trox]] — leads the monks at the summit.
+- [[Semuanya]] — the survival doctrine the trials make physical.
