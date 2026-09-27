@@ -164,9 +164,8 @@ def _fix_hint(finding: Mapping[str, Any], file: str) -> str:
     target = _value(finding, "repair_target", "")
     if target:
         return str(target)
-    if repair_class == "human_repair":
-        return "human"
     return ""
+
 
 
 def render_lint_issues(result: Mapping[str, Any]) -> str:

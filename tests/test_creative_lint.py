@@ -46,7 +46,7 @@ def test_bundle_resolution_caps_diagnostics():
     assert set(resolved) == {"WIKI001", "WIKI002", "RETRIEVAL001", "DIVERSITY001"}
 
 
-def test_vale_repo_local_style_is_human_repair(tmp_path):
+def test_vale_repo_local_style_is_agent_repair(tmp_path):
     registry = Registry.load(ROOT / "rules" / "registry.yml")
     findings = map_vale_output(
         {"wiki/example.md": [{"Check": "Deprecated.DMThesis", "Line": 15,
@@ -57,7 +57,7 @@ def test_vale_repo_local_style_is_human_repair(tmp_path):
     )
     assert findings[0].rule_id == "VALE_Deprecated.DMThesis"
     assert findings[0].severity == "REPAIR"
-    assert findings[0].repair_class == "human_repair"
+    assert findings[0].repair_class == "agent_repair"
     assert findings[0].repair_action is None
 
     from tools.wiki_ops.repair_plans import build_safe_fix_plan

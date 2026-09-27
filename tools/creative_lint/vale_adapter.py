@@ -77,7 +77,7 @@ def map_vale_output(payload: dict[str, Any], registry: Registry, *, root: Path |
                 evaluator="vale",
                 # Repo-local styles (e.g. Deprecated.*) need an agent's call under wiki-lint:
                 # removing or relocating the content has more than one correct output.
-                repair_class="human_repair" if is_custom else getattr(rule, "repair_class", "diagnostic"),
+                repair_class="agent_repair" if is_custom else getattr(rule, "repair_class", "diagnostic"),
                 repair_action=None,
             ))
     return findings

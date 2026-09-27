@@ -113,9 +113,51 @@ def _escape_table_pipe_op(vault: Path, finding: dict[str, Any]) -> tuple[Mutatio
     return MutationOp("escape_table_wikilink_pipes", target, selector={"content_hash": section_hash(text)}), None
 
 
+def _heading_level_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationOp | None, str | None]:
+    target = str(finding.get("file") or finding.get("page") or "").replace("\\", "/")
+    raw = finding.get("repair_action")
+    action: dict[str, Any] = raw if isinstance(raw, dict) else {}
+    heading = str(action.get("heading") or (action.get("selector") or {}).get("heading") or finding.get("section") or "")
+    level = action.get("level") or (action.get("payload") or {}).get("level") or action.get("expected_level")
+    path = vault / target
+    if not target or not heading or level is None or not path.is_file():
+        return None, "precondition_failed"
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return None, "target_unreadable"
+    return MutationOp(
+        "set_heading_level", target,
+        selector={"heading": heading, "content_hash": section_hash(text)},
+        payload={"level": int(level)},
+    ), None
+
+
+def _reorder_sections_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationOp | None, str | None]:
+    target = str(finding.get("file") or finding.get("page") or "").replace("\\", "/")
+    raw = finding.get("repair_action")
+    action: dict[str, Any] = raw if isinstance(raw, dict) else {}
+    order = action.get("order") or (action.get("payload") or {}).get("order") or []
+    path = vault / target
+    if not target or not isinstance(order, list) or not order or not path.is_file():
+        return None, "precondition_failed"
+    try:
+        text = path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError):
+        return None, "target_unreadable"
+    return MutationOp(
+        "reorder_sections", target,
+        selector={"content_hash": section_hash(text)},
+        payload={"order": [str(item) for item in order]},
+    ), None
+
+
+
+
 def _rename_page_op(vault: Path, finding: dict[str, Any]) -> tuple[MutationOp | None, str | None]:
     """noncanonical_basename: rename to the lowercase kebab basename lint computed, rewriting backlinks."""
-    action = finding.get("repair_action") if isinstance(finding.get("repair_action"), dict) else {}
+    raw = finding.get("repair_action")
+    action: dict[str, Any] = raw if isinstance(raw, dict) else {}
     source, target = str(action.get("from") or ""), str(action.get("to") or "")
     path = vault / source
     if not source or not target or not path.is_file():
@@ -134,11 +176,15 @@ _FIXERS: dict[str, Callable[[Path, dict[str, Any]], tuple[MutationOp | None, str
     "delete_redirect_stub": _delete_redirect_op,
     "escape_table_wikilink_pipe": _escape_table_pipe_op,
     "rename_page": _rename_page_op,
+    "set_heading_level": _heading_level_op,
+    "reorder_sections": _reorder_sections_op,
 }
 _APPLIED_RULE = {
     "delete_file": ("TMPL_redirect_stub", "delete_redirect_stub"),
     "escape_table_wikilink_pipes": ("table_wikilink_unescaped_pipe", "escape_table_wikilink_pipe"),
     "rename_page": ("noncanonical_basename", "rename_page"),
+    "set_heading_level": ("TMPL_wrong_level", "set_heading_level"),
+    "reorder_sections": ("TMPL003", "reorder_sections"),
 }
 
 

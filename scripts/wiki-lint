@@ -162,7 +162,6 @@ def structural_main(argv: list[str]) -> int:
             report["identity_ambiguous"] = True
         if args.template:
             started = time.monotonic()
-            from tools.creative_lint.template_profile import template_conformance as profile_conformance
             from tools.wiki_ops.template_contracts import check_conformance, contract_for_page
             paths = scope.resolved_files if scope else [
                 p.relative_to(vault).as_posix()
@@ -178,23 +177,11 @@ def structural_main(argv: list[str]) -> int:
                     text = page.read_text(encoding="utf-8")
                     contract = contract_for_page(vault, text) or contract_for_page(ROOT, text)
                     if contract:
-                        template_findings.extend(check_conformance(relative, text, contract))
-                    _, profile_findings = profile_conformance(page, root=ROOT)
-                    for finding in profile_findings:
-                        payload = finding.to_dict()
-                        location = payload.get("location") or {}
-                        template_findings.append({
-                            "rule_id": payload["rule_id"],
-                            "file": relative,
-                            "line": location.get("line", 1),
-                            "severity": payload["severity"],
-                            "reason": payload["reason"],
-                            "evidence": payload["evidence"],
-                            "repair_class": payload.get("repair_class", "human_repair"),
-                            "repair_target": payload.get("repair_target"),
-                        })
+                        for item in check_conformance(relative, text, contract):
+                            rule = str(item.get("rule_id") or item.get("rule") or "TMPL_error")
+                            template_findings.append({**item, "rule": rule, "rule_id": rule, "file": relative})
                 except (OSError, ValueError) as exc:
-                    template_findings.append({"rule_id": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
+                    template_findings.append({"rule_id": "TMPL_error", "rule": "TMPL_error", "file": relative, "severity": "BLOCK", "reason": str(exc)})
             source_paths = sorted((ROOT / "wiki" / "templates").glob("*.md")) + sorted((ROOT / ".agents" / "skills").glob("*/SKILL.md"))
             for source_path in source_paths:
                 if source_path.is_file() and re.search(r"\bfaction\s+clock\b|\bagenda\s+clock\b", source_path.read_text(encoding="utf-8"), re.I):
@@ -202,7 +189,7 @@ def structural_main(argv: list[str]) -> int:
                         "rule_id": "TMPL_deprecated_guidance",
                         "file": str(source_path.relative_to(ROOT)),
                         "severity": "BLOCK",
-                        "repair_class": "human_repair",
+                        "repair_class": "agent_repair",
                         "reason": "Deprecated faction-clock guidance remains in an authoritative source",
                     })
             if template_findings:

@@ -49,7 +49,7 @@ class RuleDefinition:
         if not isinstance(auto_repair, bool):
             raise ValueError(f"rule {value.get('id', '<unknown>')}: auto_repair must be boolean")
         repair_class = str(value.get("repair_class", "diagnostic"))
-        if repair_class not in {"diagnostic", "human_repair", "deterministic_repair"}:
+        if repair_class not in {"diagnostic", "agent_repair", "deterministic_repair"}:
             raise ValueError(f"rule {value.get('id', '<unknown>')}: invalid repair_class")
         return cls(
             id=str(value["id"]), title=str(value["title"]), category=str(value["category"]),

@@ -1,15 +1,21 @@
 ---
 name: wiki-lint
 description: >-
-  Lint and repair wiki pages — run the deterministic auto-fix once, then
-  manually repair every remaining finding one file at a time. Use for vault
-  health, page repair, audits, broken links, duplicate resolution, and cleanup.
-  A bare page path repairs that page; no path repairs the vault.
+  Lint and repair wiki pages — run wiki lint, apply one wiki lint fix for the
+  resolved scope, then repair remaining findings from next.path until that file
+  is clean and repeat. Use for vault health, page repair, audits, broken links,
+  duplicate resolution, and cleanup. A bare page path repairs that page; no path
+  repairs the vault.
 ---
 
 # Wiki Lint
 
 File what constitution X makes canon. Follow `docs/agents/work.md`.
+
+The operator is the agent. Run `wiki lint`, apply one `wiki lint fix` for the
+resolved scope, then close remaining findings from `next.path` until that file
+is clean and repeat. Flags live in `wiki lint --help` and `wiki lint fix --help`.
+
 
 ## Boundary
 
@@ -22,11 +28,15 @@ scope through every observation, repair, and rerun.
 
 ### Work
 
-Run `wiki lint` for the selected scope and expose every configured finding.
-Run the existing registered deterministic fixer through the current CLI
-contract once for that same resolved scope, then repair remaining semantic
-findings through the named artifact owner. Keep one active writer per page,
-and rerun the affected scope after each owner return.
+1. Run `wiki lint` for the resolved scope.
+2. Run `wiki lint fix` once for that same scope (opt-in subcommand; not the
+   default lint). It only transforms bytes already on the page.
+3. Repair remaining findings as the agent: start at `next.path`, edit that
+   file from each finding's `fix:` sentence until `wiki lint <path>` is clean,
+   then take the next `next.path`.
+
+Keep one active writer per page. Rerun the affected scope after each owner
+return. `wiki lint --help` owns flags.
 
 ### Done
 
@@ -48,8 +58,6 @@ Treat the lint profile, `wiki/templates/`, the applicable template contract, and
 
 The synchronized target is DM utility, complete-sentence readability, playable choices, and player fun without inventing canon. After any contract or owner-skill change, lint a representative page and the resolved scope, then reindex QMD before continuing. A clean structural result is necessary but not sufficient when the repair leaves an empty or unusable D&D job.
 
-
-
 ## Method
 
 Three phases: **sweep**, **reindex**, **repair**.
@@ -58,26 +66,25 @@ Three phases: **sweep**, **reindex**, **repair**.
 
 Resolve config, form the effective schema, and read `hot.md`.
 
-Run `wiki lint fix` with no path argument once. This applies every registered
-deterministic repair across the entire vault. Do not run the fixer per file.
+Run `wiki lint fix` once for the resolved scope. This applies every registered
+deterministic repair. Do not invent sections, frontmatter keys, or stubs.
 
 Commit the sweep: `wiki lint fix: bulk auto-repair`.
 
 ### 2. Reindex — QMD refresh
 
-Run `scripts/qmd-maintain.sh` immediately after the sweep. The manual repair
-phase reads pages through QMD; stale embeddings after bulk file changes produce
-wrong retrievals. Retry once on SQLite error. QMD failure does not block
-repair — note it and continue.
+Run `scripts/qmd-maintain.sh` immediately after the sweep. Repair reads pages
+through QMD; stale embeddings after bulk file changes produce wrong retrievals.
+Retry once on SQLite error. QMD failure does not block repair — note it and
+continue.
 
 ### 3. Repair — sequential file-by-file
 
-Run `wiki lint` to get the post-sweep full worklist. Every remaining finding is
-manual work.
+Run `wiki lint` to get the post-sweep full worklist. Remaining findings are
+agent repairs (`fix:` is an imperative sentence, not `wiki lint fix`).
 
-Start at `next.path`. Work on exactly one file until its full lint is clean,
-regardless of backlog size. Do not batch files, invoke another fixer, generate
-repair scripts, or replace this manual phase with automation.
+Start at `next.path`. Work on exactly one file until its full lint is clean.
+Do not batch files or replace this phase with another fixer.
 
 For the current file:
 
@@ -85,7 +92,7 @@ For the current file:
 2. Resolve identity before editing.
 3. Repair **every** finding in this file:
    - resolve links against existing owner filenames;
-   - add required frontmatter;
+   - set required frontmatter values from `wiki/templates/` and page facts;
    - correct type and filename;
    - apply the page template: keep the sections it marks `Required.` and
      the ones the page has facts for, and delete empty or fact-less lines

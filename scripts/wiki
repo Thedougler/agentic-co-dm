@@ -121,7 +121,7 @@ def _finding(rule: str, item: Any, vault: Path) -> dict[str, Any] | None:
     except (TypeError, ValueError):
         line = 1
     result = {
-        "rule": str(rule),
+        "rule": str(item.get("rule") or item.get("rule_id") or rule),
         "file": raw_file,
         "line": line,
         "severity": str(item.get("severity") or item.get("level") or "WARN"),
