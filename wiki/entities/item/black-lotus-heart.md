@@ -27,15 +27,21 @@ owner: "[[black-lotus]]"
 ---
 # Black Lotus Heart
 
-> [!narration] Narration
+> [!narration] Black Lotus Heart
 > Beneath the petals of a mature [[black-lotus|Black Lotus]], the sap has hardened into a dense knot. The crystalized heart is the last material left when the flower can no longer close, and it carries the plant's strange stillness without any visible bloom around it.
 
-Plot item (no mechanical effect until activated).
+## At a Glance
 
-**Current role.**
+*Plot item, rarity unknown.*
 
-The Black Lotus Heart is a harvested material from a mature Black Lotus. It becomes available only after the flower can no longer close; its use, value, and mechanical effect are not established.
+The Black Lotus Heart is a harvested material from a mature [[black-lotus|Black Lotus]]; it becomes available only after the flower can no longer close.
+
+- **Owner.** Harvested from a mature [[black-lotus|Black Lotus]].
+
+## Properties
+
+**Current effect.** The Heart has no mechanical effect until activated; its use and value are not established.
 
 ## At the Table
 
-Treat the heart as a plot material, not a ready-to-use magic item. The party can preserve, trade, study, or offer it, but no activation rule is established on this page.
+Treat the Heart as a plot material, not a ready-to-use magic item. The party can preserve, trade, study, or offer it, but no activation rule is established on this page.
