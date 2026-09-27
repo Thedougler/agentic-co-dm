@@ -99,8 +99,8 @@ makes the next Development's information urgent.
    opposition does, when, and what the party can see of it.
 4. **Threads.** Name three to five live threads — PC goals, faction agendas,
    mysteries, relationships under pressure, depleting resources — and for
-   each, the beats that plant, test, and harvest it.
-5. **Chart the beats.** Fill the Beat Map in play order. A charted slot is a
+   each, the beats where it is introduced, returns, and resolves.
+5. **Chart the beats.** Fill the Beats table in play order. A charted slot is a
    situation that reaches the party on its own trigger (a clock tick, an
    arrival, the opposition's next step, the last beat's consequence), and the
    party chooses how to answer it. A situation that fires only when the party
@@ -119,8 +119,8 @@ makes the next Development's information urgent.
    progress without gets three independent routes (Critical Routes). Write
    about ten floating Clues as true, concrete facts, each revealable through
    more than one interaction.
-8. **Spotlight.** Each PC gets at least one beat where their goal, bond, or
-   fear drives the scene (Spotlight), and a thread the Climax harvests.
+8. **PC hooks.** Each PC gets at least one beat where their goal, bond, or
+   fear drives the scene (PC Hooks), and a thread the Climax resolves.
 9. **Cast owners.** List every named actor, place, item, and creature the
    beats need. Cast each from the wiki first; mint with its owner skill only
    what nothing fits (`docs/agents/table-ready.md` § Cast before minting), one
@@ -141,7 +141,7 @@ makes the next Development's information urgent.
 
 ## Filed session plan
 
-After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. At a Glance carries the compass (spine, opening situation, session question, if nobody acts, now and on deck); the Beat Map carries each beat's form, card, thread, tier, trigger, and budget, with Floating Beats, Climax Candidates, Branches, and Critical Routes as `###` tables under it when they exist; then Threads, Pressure (opposition agenda), Spotlight (PC touchpoints), Clues (floating clues), and Toolkit. It links every typed beat page. The plan leaves Ends when, Stage, and Checks to the beat pages and run-guide cockpits.
+After accept, file one session plan at `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<number>-00-<Title>.md` copied from `wiki/templates/session-plan.md` with `type: session-prep` and `kind: session-plan`. The run lines under the title carry the opening situation and the current and next beat; the session question goes in frontmatter `question:`. The Beats table carries each beat's type, what starts it, what changes, and its minutes (each beat's card goes in that beat's frontmatter `card:`), with Floating Beats, Climax Candidates, Branches, and Critical Routes as `###` tables under it when they exist; then Threads, Opposition Plan, PC Hooks, Clues (floating clues), and Improv Kit. It links every typed beat page. The plan leaves Ends when, Terrain, and Checks to the beat pages and run-guide cockpits.
 
 Done when: the plan answers those jobs, links every live beat, has `type: session-prep` and `kind: session-plan`, and a cold read of it passes.
 
@@ -159,7 +159,7 @@ next Development interprets. Developments may chain (mentor → training →
 truth); break the chain with a Cliffhanger so each piece is tested.
 
 **Threads make a session.** Plant threads early, reveal new facets in
-Developments, test them under cost in Cliffhangers, harvest them in the
+Developments, test them under cost in Cliffhangers, resolve them in the
 Climax. A beat advancing no live thread is filler; a beat advancing an
 abandoned thread is a railroad.
 
@@ -217,13 +217,13 @@ Before filing, write `Hook → (D/C …) → Climax → Resolution` and check:
   one concrete answer (who, what, where), proposed where canon is silent.
 - **Drive:** every charted slot reaches the party on its own trigger; the
   opposition's agenda moves toward its goal whether or not the party engages.
-- **Threads:** every beat advances a live thread; the Climax harvests threads
+- **Threads:** every beat advances a live thread; the Climax resolves threads
   the middle planted; the Resolution shows their final state.
 - **Escalation:** tiers rise across the night; the Climax is the top tier and
   highest cost.
 - **Transitions:** each outcome row gives a visible trigger for the next
   beat — no teleports, time-skips, or forced options.
-- **Spotlight:** every PC has a beat and a harvested thread.
+- **PC hooks:** every PC has a beat and a thread that resolves.
 - **Pacing:** the budget sums to the night's usable time with cushion for
   breaks and rules lookups.
 

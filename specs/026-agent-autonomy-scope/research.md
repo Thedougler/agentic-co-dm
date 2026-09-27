@@ -118,8 +118,6 @@ Hottest surfaces:
 | Creative `SKILL.md` `## Work gate` | campaign-planning, cold-opens, dnd-5e-magic-item-design, dnd5e-mechanics, dungeon-design, encounter-prep, homebrew-monsters-5e, npc-design, pc-interview, place-design, reconciling-session-evidence, run-guide, sandbox-narrative, session-recap, theatre-of-the-mind, traps-trials, travel-events, visual-aids, visual-references, world-tick, writing-beats (plus any remaining `## Work gate` hit) |
 | `wiki-lint` / `wiki-ingest` | Align with file-it + green + done-summary; named ingest already files without a second ask |
 
-Skill-design class: `not` (established-file strips + AGENTS.md). No designated-writer dispatch.
-
 **Rationale**: FR-005. `luna-eval` Work-gate evals will fail until these are gone.
 
 **Alternatives considered**: Leave Work-gate headers as pointers to work.md (rejected: `luna-eval` Work-gate evals and FR-005). New skill (rejected: XIV, FR-007).

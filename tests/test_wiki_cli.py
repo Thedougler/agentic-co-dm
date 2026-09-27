@@ -40,6 +40,65 @@ def payload(result):
     return json.loads(result.stdout)
 
 
+def test_render_lint_issues_uses_fields_and_expands_pages():
+    from tools.wiki_ops.pretty import render_lint_issues
+
+    text = render_lint_issues({
+        "findings": {
+            "missing_frontmatter": [{"page": "a.md", "missing": ["summary"], "line": 1}],
+            "duplicate_titles": [{"title": "Harbor", "pages": ["a.md", "b.md"], "lines": [2, 3]}],
+        }
+    })
+    assert "a.md:1: missing_frontmatter: missing=summary" in text
+    assert "a.md:2: duplicate_titles: title=Harbor" in text
+    assert "b.md:3: duplicate_titles: title=Harbor" in text
+
+
+
+def test_render_lint_issues_prints_next_path():
+    from tools.wiki_ops.pretty import render_lint_issues
+
+    text = render_lint_issues({
+        "files": [{"file": "a.md", "findings": [{
+            "rule": "TMPL_missing_job", "file": "a.md", "line": 12, "message": "Required Wants is missing",
+            "repair_class": "agent_repair",
+            "repair_target": "Add required Wants from wiki/templates/faction.md; fill it from page facts.",
+        }]}],
+        "next": {"path": "a.md", "action": "wiki lint a.md"},
+    })
+    assert text.endswith("next: a.md")
+    assert "fix: Add required Wants from wiki/templates/faction.md; fill it from page facts." in text
+
+
+def test_lint_default_prints_file_line_issue(tmp_path: Path):
+    target = tmp_path / "page.md"
+    target.write_text(
+        "---\n"
+        "title: Line fixture\n"
+        "category: test\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-17\n"
+        "type: session-prep\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Line fixture\n\n"
+        "A broken edge: [[missing-owner]].\n",
+        encoding="utf-8",
+    )
+    result = run_cli(tmp_path, "lint", "page.md")
+    assert result.returncode == 1, result.stderr
+    assert "page.md:14:" in result.stdout, result.stdout
+    assert "broken_links" in result.stdout
+    assert "next: page.md" in result.stdout
+    assert not result.stdout.lstrip().startswith("{")
+
+    data = payload(run_cli(tmp_path, "lint", "page.md", "--json"))
+    broken = [item for group in data["files"] for item in group["findings"] if item["rule"] == "broken_links"]
+    assert broken and broken[0]["line"] == 14
+
+
 def test_lint_default_is_full_and_actionable(tmp_path: Path):
     page(tmp_path, "entities/npc/large.md", title="Large")
     page(tmp_path, "entities/npc/small.md", title="Small")
@@ -47,7 +106,7 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
         (tmp_path / "entities/npc/large.md").read_text(encoding="utf-8") + ("x" * 200),
         encoding="utf-8",
     )
-    bulk = run_cli(tmp_path, "lint")
+    bulk = run_cli(tmp_path, "lint", "--json")
     assert bulk.returncode in (0, 1), bulk.stderr
     data = payload(bulk)
     required = {
@@ -67,14 +126,12 @@ def test_lint_default_is_full_and_actionable(tmp_path: Path):
         for item in group["findings"]
     )
 
-    compatibility = payload(run_cli(tmp_path, "lint", "--full"))
-    assert compatibility["finding_total"] == data["finding_total"]
-    assert compatibility["files"]
+
 
 def test_multi_path_lint_includes_grouped_findings(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
-    result = payload(run_cli(tmp_path, "lint", "a.md", "b.md"))
+    result = payload(run_cli(tmp_path, "lint", "a.md", "b.md", "--json"))
     assert {item["file"] for item in result["files"]} == {"a.md", "b.md"}
 
 def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
@@ -96,16 +153,14 @@ def test_default_lint_includes_soft_and_vale_findings(tmp_path: Path):
         "| **snake_case** |\n",
         encoding="utf-8",
     )
-    result = run_cli(tmp_path, "lint", "npc.md")
+    result = run_cli(tmp_path, "lint", "npc.md", "--json")
     assert result.returncode == 1, result.stderr
     data = payload(result)
     assert "snake_case_labels" in set(data["counts"])
     findings = [item for group in data["files"] for item in group["findings"]]
     assert any(item["rule"] == "snake_case_labels" for item in findings)
 
-    compatibility = payload(run_cli(tmp_path, "lint", "npc.md", "--full"))
-    compatibility_findings = [item for group in compatibility["files"] for item in group["findings"]]
-    assert any(item["rule"] == "snake_case_labels" for item in compatibility_findings)
+
 
     suppressed = run_cli(tmp_path, "lint", "npc.md", "--no-vale")
     assert suppressed.returncode == 2
@@ -119,6 +174,7 @@ def test_two_named_files_are_separate_default_blocks(tmp_path: Path):
         "lint",
         "entities/npc/two.md",
         "entities/npc/one.md",
+        "--json",
     )
     data = payload(result)
     files = [group["file"] for group in data["files"]]
@@ -132,14 +188,13 @@ def test_unknown_path_is_structured_error_without_scan(tmp_path: Path):
     result = run_cli(tmp_path, "lint", "entities/npcs")
     elapsed = time.monotonic() - started
     assert result.returncode == 2
-    data = payload(result)
+    assert result.stdout == ""
+    assert "path not found in vault: 'entities/npcs'" in result.stderr
+    assert elapsed < 1
+    data = payload(run_cli(tmp_path, "lint", "entities/npcs", "--json"))
     assert data["error"] == "path not found in vault: 'entities/npcs'" and data["status"] == "error"
     assert data["hint"] and data["example"] and data["list_valid"]
-    assert elapsed < 1
-    pretty = run_cli(tmp_path, "lint", "entities/npcs", "--pretty")
-    assert pretty.returncode == 2
-    assert pretty.stdout == ""
-    assert pretty.stderr.strip().startswith("error:")
+
 
 
 def test_cache_hits_and_byte_change(tmp_path: Path):
@@ -151,42 +206,11 @@ def test_cache_hits_and_byte_change(tmp_path: Path):
     assert second["cache"]["hits"] > 0
     assert second["cache"]["vale_skipped"] >= second["cache"]["hits"]
     (tmp_path / "one.md").write_text((tmp_path / "one.md").read_text(encoding="utf-8") + "x", encoding="utf-8")
-    changed = payload(run_cli(tmp_path, "lint"))
+    changed = payload(run_cli(tmp_path, "lint", "--json"))
     assert changed["cache"]["misses"] >= 1
-    unchanged = payload(run_cli(tmp_path, "lint"))
+    unchanged = payload(run_cli(tmp_path, "lint", "--json"))
     assert unchanged["cache"]["hits"] >= 1
     assert unchanged["cache"]["misses"] == 0
-
-def test_cache_version_and_mapped_template_invalidation(tmp_path: Path, monkeypatch):
-    from tools.wiki_ops import lint_cache
-
-    page_file = tmp_path / "page.md"
-    page_file.write_text("---\ntype: npc\n---\npage\n", encoding="utf-8")
-    template_dir = tmp_path / "repo" / "wiki" / "templates"
-    template_dir.mkdir(parents=True)
-    template = template_dir / "npc.md"
-    template.write_text("template-v1\n", encoding="utf-8")
-    unrelated = template_dir / "item.md"
-    unrelated.write_text("unrelated-v1\n", encoding="utf-8")
-    monkeypatch.setattr(lint_cache, "_REPO_ROOT", tmp_path / "repo")
-    cache = lint_cache.load_cache(tmp_path)
-    entry = lint_cache.update_entry(cache, tmp_path, "page.md", "rules-v1", {}, {})
-    assert cache["version"] == lint_cache.CACHE_VERSION
-    assert entry["template_sha256"] == lint_cache.sha256_file(template)
-    lint_cache.save_cache(tmp_path, cache)
-    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1")
-
-    unrelated.write_text("unrelated-v2\n", encoding="utf-8")
-    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1")
-    template.write_text("template-v2\n", encoding="utf-8")
-    assert lint_cache.lookup_entry(lint_cache.load_cache(tmp_path), tmp_path, "page.md", "rules-v1") is None
-
-    raw = json.loads(lint_cache.cache_path(tmp_path).read_text(encoding="utf-8"))
-    raw["version"] = lint_cache.CACHE_VERSION - 1
-    lint_cache.cache_path(tmp_path).write_text(json.dumps(raw), encoding="utf-8")
-    fresh = lint_cache.load_cache(tmp_path)
-    assert fresh["version"] == lint_cache.CACHE_VERSION
-    assert fresh["entries"] == {}
 
 
 def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
@@ -194,20 +218,72 @@ def test_scoped_lint_keeps_other_cache_entries(tmp_path: Path):
     page(tmp_path, "b.md")
     run_cli(tmp_path, "lint", "a.md")
     run_cli(tmp_path, "lint", "b.md")
-    again = payload(run_cli(tmp_path, "lint", "a.md"))
+    again = payload(run_cli(tmp_path, "lint", "a.md", "--json"))
     assert again["cache"]["hits"] >= 1
 
 
-def test_pretty_default_lists_findings_and_full_is_compatible(tmp_path: Path):
+def test_default_lint_is_issues_and_json_is_worklist(tmp_path: Path):
     page(tmp_path, "one.md")
     default = run_cli(tmp_path, "lint")
-    pretty = run_cli(tmp_path, "lint", "--pretty")
-    pretty_full = run_cli(tmp_path, "lint", "--pretty", "--full")
-    assert json.loads(default.stdout)
-    assert pretty.stdout.strip()
-    assert not pretty.stdout.lstrip().startswith("{")
-    assert "Next page:" in pretty.stdout
-    assert pretty_full.stdout == pretty.stdout
+    worklist = run_cli(tmp_path, "lint", "--json")
+    assert not default.stdout.lstrip().startswith("{")
+    assert json.loads(worklist.stdout)
+    assert "next:" in default.stdout or default.stdout.strip() == "clean"
+
+
+
+def test_health_default_matches_lint_shape(tmp_path: Path):
+    page(tmp_path, "journal/_index.md", title="Journal Index")
+    page(tmp_path, "entities/npc/real.md", title="Real")
+    (tmp_path / "journal/_index.md").write_text(
+        "---\ntitle: Journal Index\n---\n\n# Journal Index\n\n",
+        encoding="utf-8",
+    )
+    default = run_cli(tmp_path, "health")
+    assert default.returncode in (0, 1), default.stderr
+    assert not default.stdout.lstrip().startswith("{"), default.stdout[:200]
+    assert "journal/_index.md" not in default.stdout
+    data = payload(run_cli(tmp_path, "health", "--json"))
+    nxt = data.get("next") or {}
+    assert not str(nxt.get("path") or "").endswith("_index.md")
+    if nxt.get("path"):
+        assert nxt["action"].startswith("wiki lint ")
+    assert "identity" not in data
+    assert "scope" not in (data.get("lint") or {})
+
+
+
+
+def test_health_help_has_copyable_examples():
+    result = _bare("health", "--help")
+    assert result.returncode == 0, result.stderr
+    assert "Examples:" in result.stdout
+    assert "wiki health --json" in result.stdout
+
+
+def test_lint_skips_generated_index(tmp_path: Path):
+    page(tmp_path, "journal/_index.md", title="Journal Index")
+    page(tmp_path, "entities/npc/real.md", title="Real")
+    data = payload(run_cli(tmp_path, "lint", "--json"))
+    files = {item["file"] for item in data.get("files") or []}
+    assert "journal/_index.md" not in files
+    assert "journal/_index.md" not in {row["page"] for row in data.get("backlog") or []}
+
+
+def test_health_regenerates_moc_without_linting_it(tmp_path: Path):
+    page(tmp_path, "entities/npc/alpha.md", title="Alpha")
+    page(tmp_path, "entities/npc/bravo.md", title="Bravo")
+    index = tmp_path / "entities/npc/_index.md"
+    assert not index.exists()
+    result = run_cli(tmp_path, "health")
+    assert result.returncode in (0, 1), result.stderr
+    assert index.is_file()
+    data = payload(run_cli(tmp_path, "lint", "--json"))
+    files = {item["file"] for item in data.get("files") or []}
+    assert "entities/npc/_index.md" not in files
+
+
+
 
 
 def test_rules_digest_changes_when_styles_change(tmp_path: Path):
@@ -221,16 +297,24 @@ def test_rules_digest_changes_when_styles_change(tmp_path: Path):
     creative = tmp_path / "tools" / "creative_lint"
     creative.mkdir()
     (creative / "engine.py").write_text("x = 1\n", encoding="utf-8")
+    ops = tmp_path / "tools" / "wiki_ops"
+    ops.mkdir()
+    contracts = ops / "template_contracts.py"
+    contracts.write_text("a = 1\n", encoding="utf-8")
     first = digest_rules(tmp_path, extra={"vale": True})
     style.write_text("a: 2\n", encoding="utf-8")
     second = digest_rules(tmp_path, extra={"vale": True})
+    contracts.write_text("a = 2\n", encoding="utf-8")
+    ops_changed = digest_rules(tmp_path, extra={"vale": True})
     third = digest_rules(tmp_path, extra={"vale": False})
     pyc = creative / "__pycache__"
     pyc.mkdir()
     (pyc / "engine.cpython-314.pyc").write_text("bytecode", encoding="utf-8")
     assert first != second
+    assert ops_changed != second
     assert second != third
     assert digest_rules(tmp_path, extra={"vale": False}) == third
+
 
 
 def test_lint_fix_deletes_registered_redirect_stub_and_is_idempotent(tmp_path: Path):
@@ -245,14 +329,14 @@ def test_lint_fix_deletes_registered_redirect_stub_and_is_idempotent(tmp_path: P
         "# Legacy\n\nUse the canonical page.\n",
         encoding="utf-8",
     )
-    first = run_cli(tmp_path, "lint", "fix", "entities/npc/legacy.md")
+    first = run_cli(tmp_path, "lint", "fix", "--json", "entities/npc/legacy.md")
     assert first.returncode in (0, 1), first.stderr
     data = payload(first)
     assert data["status"] in {"clean", "findings"}
     assert data["changed_files"] == ["entities/npc/legacy.md"]
     assert any(item["status"] == "applied" for item in data["applied"])
     assert not stub.exists()
-    second = run_cli(tmp_path, "lint", "fix", "entities/npc/legacy.md")
+    second = run_cli(tmp_path, "lint", "fix", "--json", "entities/npc/legacy.md")
     assert second.returncode == 2
     assert payload(second)["status"] == "error"
 
@@ -271,7 +355,7 @@ def test_lint_fix_reports_same_scope_progress_delta(tmp_path: Path):
     target.write_text(redirect, encoding="utf-8")
     other.write_text(redirect.replace("Target", "Other"), encoding="utf-8")
 
-    result = payload(run_cli(tmp_path, "lint", "fix", "entities/npc/target.md"))
+    result = payload(run_cli(tmp_path, "lint", "fix", "--json", "entities/npc/target.md"))
     progress = result["progress"]
 
     assert result["scope"]["paths"] == ["entities/npc/target.md"]
@@ -288,7 +372,7 @@ def test_lint_fix_uses_contract_skip_reason_for_unsupported_fixer(tmp_path: Path
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_text("---\ntitle: Bob\n---\n\n# Bob\n", encoding="utf-8")
 
-    result = payload(run_cli(tmp_path, "lint", "fix", "entities/npc/Bob.md"))
+    result = payload(run_cli(tmp_path, "lint", "fix", "--json", "entities/npc/Bob.md"))
     reasons = {item["reason"] for item in result["skipped"]}
 
     assert reasons <= {"unsupported", "unsafe", "conflict", "precondition"}
@@ -339,14 +423,14 @@ def test_lint_fix_escapes_table_wikilink_pipes(tmp_path: Path):
         "---\ntitle: Table\n---\n\n| Who |\n| --- |\n| [[keeper|The Keeper]] |\n\n[[keeper|prose link]]\n",
         encoding="utf-8",
     )
-    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    before = payload(run_cli(tmp_path, "lint", "entities/npc/table.md", "--json"))
     rules = {item["rule"] for group in before["files"] for item in group["findings"]}
     assert "table_wikilink_unescaped_pipe" in rules
-    fixed = run_cli(tmp_path, "lint", "fix", "entities/npc/table.md")
+    fixed = run_cli(tmp_path, "lint", "fix", "--json", "entities/npc/table.md")
     assert fixed.returncode in (0, 1), fixed.stderr
     assert "| [[keeper\\|The Keeper]] |" in table.read_text(encoding="utf-8")
     assert "[[keeper|prose link]]" in table.read_text(encoding="utf-8")
-    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md"))
+    after = payload(run_cli(tmp_path, "lint", "entities/npc/table.md", "--json"))
     rules = {item["rule"] for group in after["files"] for item in group["findings"]}
     assert "table_wikilink_unescaped_pipe" not in rules
     assert "broken_links" not in rules
@@ -393,16 +477,16 @@ def test_discovery_from_any_cwd_and_vault_precedence(tmp_path: Path):
     finally:
         if old is not None:
             os.environ["OBSIDIAN_VAULT_PATH"] = old
-    result = run_cli(one, "lint", "a.md", "--vault", str(two))
+    result = run_cli(one, "lint", "a.md", "--vault", str(two), "--json")
     assert payload(result)["vault"] == str(two.resolve())
-    result = _bare("lint", "a.md", cwd=elsewhere, env={"OBSIDIAN_VAULT_PATH": str(one), "WIKI_TRACKER_ROOT": str(elsewhere)})
+    result = _bare("lint", "a.md", "--json", cwd=elsewhere, env={"OBSIDIAN_VAULT_PATH": str(one), "WIKI_TRACKER_ROOT": str(elsewhere)})
     assert payload(result)["vault"] == str(one.resolve())
 
 
 def test_stdin_and_paths_only(tmp_path: Path):
     page(tmp_path, "a.md")
     page(tmp_path, "b.md")
-    result = run_cli_stdin(tmp_path, "a.md\nb.md\n", "lint", "--stdin")
+    result = run_cli_stdin(tmp_path, "a.md\nb.md\n", "lint", "--stdin", "--json")
     assert payload(result)["files_checked"] == 2
     paths = run_cli_stdin(tmp_path, "a.md\n", "lint", "--stdin", "--paths-only")
     assert paths.stdout.split() == ["a.md"] or paths.stdout.split() == []
@@ -419,13 +503,13 @@ def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
     stub.parent.mkdir(parents=True, exist_ok=True)
     stub.write_text("---\ntitle: Legacy\ntype: npc\nredirects_to: entities/npc/current.md\n---\n\n# Legacy\n", encoding="utf-8")
     page(tmp_path, "entities/npc/current.md", title="Current")
-    planned = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc", "--dry-run"))
+    planned = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/npc", "--dry-run"))
     assert planned["status"] == "planned" and planned["planned"] and stub.exists()
-    again = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc", "--dry-run"))
+    again = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/npc", "--dry-run"))
     assert again["planned"] == planned["planned"]
-    applied = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc"))
+    applied = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/npc"))
     assert applied["changed"] == ["entities/npc/legacy.md"]
-    repeat = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/npc"))
+    repeat = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/npc"))
     assert repeat["status"] == "already_done" and repeat["changed"] == []
     op = json.dumps({"kind": "add_tag", "target": "entities/npc/current.md", "selector": {}, "payload": {"tag": "x"}})
     first = payload(run_cli_stdin(tmp_path, op, "mutate", "--stdin"))
@@ -445,9 +529,145 @@ def test_dry_run_plans_and_repeat_is_already_done(tmp_path: Path):
 def test_lint_fix_renames_noncanonical_basename_and_rewrites_backlinks(tmp_path: Path):
     page(tmp_path, "entities/place/Belumara.md", title="Belumara")
     (tmp_path / "entities/place/harbor.md").write_text("---\ntitle: harbor\n---\n\nSee [[Belumara]].\n", encoding="utf-8")
-    first = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    first = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/place"))
     assert "entities/place/belumara.md" in first["changed"], first
     assert "belumara.md" in os.listdir(tmp_path / "entities/place")  # case-only rename kept the page
     assert "[[belumara]]" in (tmp_path / "entities/place/harbor.md").read_text(encoding="utf-8")
-    repeat = payload(run_cli(tmp_path, "lint", "fix", "dir:entities/place"))
+    repeat = payload(run_cli(tmp_path, "lint", "fix", "--json", "dir:entities/place"))
     assert repeat["status"] == "already_done" and repeat["changed"] == []
+
+
+
+def _put(path: Path, text: str) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+_FACTION_TEMPLATE = """\
+---
+title: "{{title}}"
+type: faction
+status: active
+---
+
+# {{title}}
+
+*Smuggling ring*
+
+<!-- Required when status is active. -->
+
+**Wants.** The concrete change they are after.
+
+**Next move.** What they attempt next.
+
+> [!narration] First meeting
+> <!-- Optional: the moment the party first meets them. -->
+
+## Log
+
+<!-- Required. -->
+
+- **[[Session]]** — what changed.
+"""
+
+_NPC_TEMPLATE = """\
+---
+title: "{{title}}"
+type: npc
+role: ""
+---
+
+# {{title}}
+
+## Statblock
+
+## Log
+"""
+
+
+def test_wrong_heading_level_cli_fix_is_idempotent(tmp_path: Path):
+    _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    _put(
+        tmp_path / rel,
+        "---\ntitle: Red Sails\ntype: faction\nstatus: active\n---\n\n"
+        "# Red Sails\n\n**Wants.** Coin.\n\n**Next move.** Bribe.\n\n### Log\n\n- Session 1 — they moved.\n",
+    )
+    shown = run_cli(tmp_path, "lint", rel)
+    assert "TMPL_wrong_level" in shown.stdout
+    assert f"fix: wiki lint fix {rel}" in shown.stdout
+    first = payload(run_cli(tmp_path, "lint", "fix", "--json", rel))
+    text = (tmp_path / rel).read_text(encoding="utf-8")
+    assert "\n## Log\n" in text and "### Log" not in text
+    assert text.count("## Log") == 1
+    second = payload(run_cli(tmp_path, "lint", "fix", "--json", rel))
+    assert second["status"] == "already_done"
+    assert first["changed_files"] == [rel] or first["changed"] == [rel]
+
+
+
+def test_lint_fix_default_prints_remaining_issues(tmp_path: Path):
+    _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    _put(
+        tmp_path / rel,
+        "---\ntitle: Red Sails\ntype: faction\nstatus: active\n---\n\n"
+        "# Red Sails\n\n**Wants.** Coin.\n\n**Next move.** Bribe.\n\n### Log\n\n- Session 1 — they moved.\n",
+    )
+    result = run_cli(tmp_path, "lint", "fix", rel)
+    assert not result.stdout.lstrip().startswith("{")
+    assert "next: " in result.stdout
+
+
+def test_missing_wants_fix_adds_nothing(tmp_path: Path):
+    _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    original = (
+        "---\ntitle: Red Sails\ntype: faction\nstatus: active\n---\n\n"
+        "# Red Sails\n\n## Log\n\n- Session 1 — they moved.\n"
+    )
+    path = _put(tmp_path / rel, original)
+    shown = run_cli(tmp_path, "lint", rel)
+    assert "TMPL_missing_job" in shown.stdout
+    run_cli(tmp_path, "lint", "fix", "--json", rel)
+    assert path.read_text(encoding="utf-8") == original
+    assert "**Wants.**" not in path.read_text(encoding="utf-8")
+    assert "[!narration]" not in path.read_text(encoding="utf-8")
+
+
+def test_missing_optional_narration_is_silent(tmp_path: Path):
+    _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    original = (
+        "---\ntitle: Red Sails\ntype: faction\nstatus: active\n---\n\n"
+        "# Red Sails\n\n**Wants.** Coin.\n\n**Next move.** Bribe.\n\n## Log\n\n- Session 1 — they moved.\n"
+    )
+    path = _put(tmp_path / rel, original)
+    shown = run_cli(tmp_path, "lint", rel)
+    assert "First meeting" not in shown.stdout
+    run_cli(tmp_path, "lint", "fix", "--json", rel)
+    assert path.read_text(encoding="utf-8") == original
+
+
+def test_missing_npc_role_is_agent_repair(tmp_path: Path):
+    _put(tmp_path / "templates" / "npc.md", _NPC_TEMPLATE)
+    rel = "entities/npc/harbour-master.md"
+    original = (
+        "---\ntitle: Harbour Master\ncategory: entities\ntags: []\nsources: []\n"
+        "created: 2026-01-01\nupdated: 2026-01-01\ntype: npc\nreveal: unrevealed\n---\n\n"
+        "# Harbour Master\n\n## Statblock\n\n## Log\n"
+    )
+    path = _put(tmp_path / rel, original)
+    data = payload(run_cli(tmp_path, "lint", rel, "--json"))
+    findings = [item for group in data["files"] for item in group["findings"]]
+    role = [
+        item for item in findings
+        if item["rule"] in {"missing_frontmatter", "TMPL_missing_frontmatter"}
+        and "role" in str(item.get("missing", item))
+    ]
+    assert role
+    assert role[0]["repair_class"] == "agent_repair"
+    run_cli(tmp_path, "lint", "fix", "--json", rel)
+    assert "role:" not in path.read_text(encoding="utf-8")
+

@@ -119,16 +119,16 @@ When Jean-Claude lifts or reads a seal, or after he has stood on the road for 10
 
 | If the party… | The situation changes… | Next |
 | ------------- | ---------------------- | ---- |
-| Follows the fruit piles up the road | At dusk, a side-trail of piles leads off the road to firelight under a great hanging vine. | [[session-12-05-consume]] |
-| Leaves the road and turns back | The Calveno stay hers; the column camps in the Quiet, and Skarn strikes there at dusk instead. | [[session-12-05-consume]] at the camp, without the Pantry's vine and responders |
-| Burns something or attacks the treeline | Vine-lash response as above; the voice withdraws; Luca and the civilians are terrified of the party. | [[session-12-05-consume]] |
+| Follows the fruit piles up the road | At dusk, a side-trail of piles leads off the road to firelight under a great hanging vine. | [[Session-12-05-consume]] |
+| Leaves the road and turns back | The Calveno stay hers; the column camps in the Quiet, and Skarn strikes there at dusk instead. | [[Session-12-05-consume]] at the camp, without the Pantry's vine and responders |
+| Burns something or attacks the treeline | Vine-lash response as above; the voice withdraws; Luca and the civilians are terrified of the party. | [[Session-12-05-consume]] |
 
 **Carry forward.**
 - **Knowledge:** the order chain; sealed Grung believed the order was their own; the Gold caste wants the curse broken.
 - **Hinewai:** has named Jean-Claude a kidnapper and seen no seal on him; she counts the Calveno as hers.
 - **Seals:** whether the party carries a spent seal.
 - **Time:** dusk at the Pantry.
-- **Column:** as [[session-12-03-terror-birds]] left it.
+- **Column:** as [[Session-12-03-terror-birds]] left it.
 
 ### After Play
 
@@ -138,5 +138,5 @@ When Jean-Claude lifts or reads a seal, or after he has stood on the road for 10
 - **NPC / faction posture changes.**
 - **Resources gained or lost.**
 - **World state changed.**
-- **Next active node.** [[session-12-05-consume]]
+- **Next active node.** [[Session-12-05-consume]]
 - **Unresolved thread.** [[two-grave-orders]]

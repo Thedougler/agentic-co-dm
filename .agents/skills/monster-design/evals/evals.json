@@ -89,6 +89,10 @@
         {
           "text": "Does not generate a decorative Sources consulted section.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -118,6 +122,10 @@
         {
           "text": "Does not present unsupported numbers or copied protected ability wording.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -147,6 +155,10 @@
           "text": "Counterplay names environmental or terrain factors the party can act on — not abstract resistances.",
           "type": "quality",
           "principle": "environmental-counterplay"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -172,6 +184,10 @@
         {
           "text": "Does not accept the full stack as balanced.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -202,6 +218,10 @@
         {
           "text": "Does not solve the problem by only raising the save DC.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -236,6 +256,10 @@
           "text": "Solo design includes a sensory tell before the strongest off-turn action.",
           "type": "quality",
           "principle": "sensory-tell"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -256,6 +280,10 @@
         {
           "text": "Preserves the broad function (stealth advantage in vegetation, hide as bonus action) with new expression.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -280,6 +308,10 @@
         {
           "text": "Does not accept the CR claim from attack bonus and HP alone.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -346,6 +378,10 @@
         {
           "type": "behavior",
           "text": "When the page carries Tactics, an optional `[!narration] In action` shows the creature mid-fight in \"you\" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -371,6 +407,10 @@
           "text": "Statblocks scale down in power as the NPC loses positional advantage.",
           "type": "quality",
           "principle": "trade-axis"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -412,6 +452,10 @@
         {
           "type": "behavior",
           "text": "Behavior's Group bullet states pack size, young, and leaders; Signs names the trace each signature ability leaves before anyone sees it."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -447,6 +491,10 @@
         {
           "text": "Statblock uses 2024 phrasing (Melee Attack Roll, Saving Throw: DC n, Failure/Success) inside a statblock fence",
           "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -474,6 +522,10 @@
         {
           "text": "No callout other than [!narration] appears on the page",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -497,6 +549,10 @@
         {
           "text": "Every tell matches a fact on the Bloodhawk page (At a Glance, Statblock, Behavior, or Secrets)",
           "type": "content"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -566,6 +622,10 @@
         {
           "type": "behavior",
           "text": "The page states every proposal as world fact in world voice; provenance, source contradictions, and the proposal list live in response.md, never as commentary on the page ('this proposal', 'is not established')"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

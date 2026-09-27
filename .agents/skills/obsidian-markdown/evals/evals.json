@@ -17,6 +17,14 @@
         {
           "type": "behavior",
           "text": "Does not invent a wiki/concepts tree."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -36,6 +44,14 @@
         {
           "type": "behavior",
           "text": "Uses type: monster and no WotC paste."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -55,6 +71,14 @@
         {
           "type": "behavior",
           "text": "Points to templates/ when creating."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -70,6 +94,14 @@
         {
           "type": "behavior",
           "text": "Leaves no parallel wiki/concepts tree and follows the current repository filing flow."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -89,6 +121,14 @@
         {
           "type": "behavior",
           "text": "Keeps run-guide/session/beat callouts open rather than collapsed."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -108,6 +148,14 @@
         {
           "type": "behavior",
           "text": "Retains open mechanic/secret callouts and real body newlines."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -131,6 +179,14 @@
         {
           "type": "behavior",
           "text": "Does not put the DC inside [!narration]."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -150,6 +206,14 @@
         {
           "type": "behavior",
           "text": "Does not split a table cell on an unescaped | inside [[...]]."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

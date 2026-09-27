@@ -2,6 +2,7 @@
 """Promote named wiki/_raw campaign drops without improvising the bookkeeping.
 
 Examples:
+  python3 scripts/ingest-raw.py wiki/_raw/source.md --dry-run
   python3 scripts/ingest-raw.py wiki/_raw/source.md
   python3 scripts/ingest-raw.py wiki/_raw/one.md wiki/_raw/two.md --wiki wiki --skip-qmd
 """
@@ -13,9 +14,14 @@ import json
 import re
 import shutil
 import subprocess
+import sys
 from datetime import date
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, emit_json, usage_error
 
 def frontmatter(text: str) -> tuple[dict[str, str], str]:
     if not text.startswith("---\n"):
@@ -41,12 +47,28 @@ def yaml_list(value: str) -> list[str]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    example = "python3 scripts/ingest-raw.py wiki/_raw/source.md --dry-run"
+    parser = AgentParser(description=__doc__, example=example)
     parser.add_argument("sources", nargs="+", type=Path)
     parser.add_argument("--wiki", type=Path, default=Path("wiki"))
     parser.add_argument("--skip-qmd", action="store_true")
+    parser.add_argument("--dry-run", action="store_true")
     args = parser.parse_args()
     wiki = args.wiki.resolve()
+    planned: list[str] = []
+    for source_arg in args.sources:
+        source = source_arg.resolve()
+        if not source.is_file() or source.parent != wiki / "_raw":
+            return usage_error(
+                f"source must be a file directly inside {wiki / '_raw'}: {source}",
+                hint="pass files that already live in wiki/_raw",
+                example=example,
+                list_valid="python3 scripts/ingest-raw.py --help",
+            )
+        planned.append(str(Path("entities") / source.name))
+    if args.dry_run:
+        emit_json({"status": "planned", "changed": planned})
+        return 0
     today = date.today().isoformat()
     manifest_path = wiki / ".manifest.json"
     manifest = json.loads(manifest_path.read_text())
@@ -56,8 +78,6 @@ def main() -> int:
 
     for source_arg in args.sources:
         source = source_arg.resolve()
-        if not source.is_file() or source.parent != wiki / "_raw":
-            raise SystemExit(f"source must be a file directly inside {wiki / '_raw'}: {source}")
         fields, body = frontmatter(source.read_text())
         title = title_from(source, fields, body)
         kind = {"location": "place", "monster": "creature", "lore": "item"}.get(

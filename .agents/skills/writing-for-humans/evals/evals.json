@@ -46,6 +46,26 @@
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
       ]
     },
@@ -89,6 +109,26 @@
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
       ]
     },
@@ -127,12 +167,32 @@
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
       ]
     },
     {
       "id": "beat-dm-layer",
-      "prompt": "Rewrite the DM-facing copy (not the [!narration] blocks) of wiki/journal/sessions/shattered-sea/12/Session-12-07-The-Guava-and-the-Spinner.md so a DM can run it mid-session. Keep its facts, links, and structure.",
+      "prompt": "Rewrite the DM-facing copy (not the [!narration] blocks) of wiki/journal/sessions/shattered-sea/12/session-12-01-dawn-strike.md onto the current hook template so a DM can run it mid-session. Keep every fact and link.",
       "expected_output": "The Climax page's DM layer reads as short, complete, named sentences; coaching lines in the Pressure table become world responses; narration blocks are untouched.",
       "assertions": [
         {
@@ -148,10 +208,6 @@
           "type": "guardrail"
         },
         {
-          "text": "No new facts, mechanics, or DCs are added; an undefined consequence (Aruhe's convergence) is reported as a gap rather than invented.",
-          "type": "guardrail"
-        },
-        {
           "text": "Frontmatter, wikilink targets, and required headings are unchanged.",
           "type": "guardrail"
         },
@@ -162,8 +218,46 @@
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Card, Key, Thread, Climax question, and Memorable element leave the body; the card goes in frontmatter `card:`",
+          "type": "structure"
+        },
+        {
+          "text": "Talon Skarn's statblock is embedded (`![[talon-skarn#Statblock]]`) under Statblocks; his numbers are not retyped, and Actors carries only his HP and resources this fight and his tactics",
+          "type": "structure"
+        },
+        {
+          "text": "His tactics and break point appear once, in Actors, and the threat ticks appear once, in Pressure",
+          "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
-      ]
+      ],
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-01-dawn-strike.md",
+        "wiki/templates/hook.md",
+        "wiki/entities/npc/talon-skarn.md"
+      ],
+      "outputs": "Write the rewritten page at its repo-relative path under {outputs}/, and in {outputs}/response.md the chat report to the DM plus your audit notes."
     },
     {
       "id": "cockpit-pass-2",
@@ -193,12 +287,32 @@
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
       ]
     },
     {
       "id": "owner-glance",
-      "prompt": "Rewrite the At a Glance of an owner page that currently reads: 'The Anchor & Line is a working tavern for general traffic in Calveno, with seating and drinks on offer. It is a popular social hub.' Use only facts on wiki/entities/place/anchor-and-line.md.",
+      "prompt": "The Anchor & Line page (wiki/entities/place/anchor-and-line.md) opens with: 'The Anchor & Line is a working tavern for general traffic in Calveno, with seating and drinks on offer. It is a popular social hub.' Rewrite that opening as the place template's italic identity line and the facts that follow it, using only facts on the page. Write only the new opening in response.md.",
       "expected_output": "Three to five bullets or two to four sentences giving what makes this tavern specific, why it matters now, and a hook, all from the owner page.",
       "assertions": [
         {
@@ -210,18 +324,43 @@
           "type": "content"
         },
         {
-          "text": "Three to five bullets or two to four sentences.",
-          "type": "structure"
-        },
-        {
           "text": "Most sentences are complete and under about 20 words; no telegram fragments or slash-stacks.",
           "type": "structure"
         },
         {
           "text": "Nothing from the SKILL cut table survives (default conditions, category descriptions, mood with no consequence, coaching lines, hedges, AI tells).",
           "type": "quality"
+        },
+        {
+          "text": "Opens with one italic identity line (kind of site, where, who holds it, what is unsettling it now) and adds only facts that change play, with no At a Glance heading",
+          "type": "structure"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/place/anchor-and-line.md",
+        "wiki/templates/place.md"
+      ],
+      "outputs": "Write the new opening in {outputs}/response.md. Leave the wiki page itself unwritten."
     },
     {
       "id": "chat-report",
@@ -243,6 +382,84 @@
         {
           "text": "No preamble, process narration, or closing pleasantries.",
           "type": "quality"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
+        }
+      ]
+    },
+    {
+      "id": "session-12-climax-hierarchy",
+      "prompt": "Session 12's climax page (wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md) buries what the DM needs under repeated facts, design notes, and a retyped statblock. Rewrite its DM-facing copy onto the current climax template so the DM finds each answer mid-session. Keep every fact, link, and [!narration] block as it is.",
+      "expected_output": "The climax on the current template: run lines, Party Assets, Actors with Skarn's state and tactics once, Terrain, Pressure, Final Battle, PC Hooks, Outcomes, and Statblocks with embeds; no duplicated facts or design reasoning.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md",
+        "wiki/templates/climax.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/creature/vine-lash.md"
+      ],
+      "outputs": "Write the rewritten page at its repo-relative path under {outputs}/, and in {outputs}/response.md the chat report to the DM plus your audit notes.",
+      "assertions": [
+        {
+          "text": "Uses the climax template's sections in order (run lines with no heading, Party Assets, Actors, Terrain, Pressure, Final Battle, PC Hooks, Outcomes, Statblocks); Thread harvest, Opposition, Assets, Tactics, Phases-as-separate-sections, and Live notes are folded into them or dropped",
+          "type": "structure"
+        },
+        {
+          "text": "Skarn's break point (97 HP) and his tactics appear once, in Actors; the round-by-round clock appears once, in Pressure",
+          "type": "quality"
+        },
+        {
+          "text": "Talon Skarn and the vine-lash statblocks are embedded under Statblocks; no AC, attack bonus, save DC, or damage from those owner pages is retyped in the body",
+          "type": "structure"
+        },
+        {
+          "text": "The 'why it hurts Skarn more than Perrin' argument is gone; the rulings it explained (grapple escape, Speed 0 ends flight, resistance halves damage) stay as rulings",
+          "type": "quality"
+        },
+        {
+          "text": "Card, Budget, and thread provenance (planted in, tested in) leave the body; the card goes in frontmatter",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every [!narration] block is unchanged",
+          "type": "guardrail"
+        },
+        {
+          "text": "Every line has a use at the table and each fact lives in one section; nothing the wiki already holds is retyped (it is embedded or linked)",
+          "type": "quality"
+        },
+        {
+          "text": "Each section opens on the answer to the question the DM brings to it, with one fact per line after it",
+          "type": "quality"
+        },
+        {
+          "text": "No summary section (At a Glance), no design labels (card, key, thread harvest, budget), and no design reasoning (why a ruling works) in the body",
+          "type": "guardrail"
+        },
+        {
+          "text": "No bold label or heading is repeated on the page, and none is a design label (card, key, action or cerebral hook, tier, budget, thread provenance, session question, stake)",
+          "type": "guardrail"
+        },
+        {
+          "text": "The audit notes list every number and named move, person, or item found in more than one section, and the page keeps each in one section (a later mention only points back to it)",
+          "type": "process"
         }
       ]
     }

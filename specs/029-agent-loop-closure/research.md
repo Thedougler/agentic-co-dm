@@ -13,7 +13,7 @@
 
 ## Decision 2: Put the invariant in the existing authority chain
 
-**Decision**: `docs/agents/hybrid-sdd.md` owns the complete cross-capability loop rule. `AGENTS.md` carries only the compact always-loaded invariant and pointer. `wiki/AGENTS.md` retains wiki semantics and points to the common rule. Individual owners state only local observation, progress, completion, and blocker details not supplied by the common authority.
+**Decision**: `AGENTS.md` carries the compact always-loaded loop invariant. `wiki/AGENTS.md` retains wiki semantics and points to the common rule. Individual owners state only local observation, progress, completion, and blocker details not supplied by the common authority.
 
 **Rationale**: This preserves feature 028 layering and avoids repeated instructions. Shared behavior has one owner; local craft stays local.
 

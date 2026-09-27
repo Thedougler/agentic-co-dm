@@ -7,8 +7,6 @@ description: Create new skills, modify and improve existing skills, and measure 
 
 A skill for creating new skills and iteratively improving them.
 
-Design-impact skill work: follow `docs/agents/skill-design-dispatch.md`.
-
 At a high level, the process of creating a skill goes like this:
 
 - Decide what you want the skill to do and roughly how it should do it

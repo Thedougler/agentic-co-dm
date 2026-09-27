@@ -70,7 +70,7 @@ flexGrow=2
 
 - [ ] **Route 1.** [[luca-ferrante]] points the way his uncle walked.
 - [ ] **Route 2.** The fruit-pile trail on broad leaves, north-east from Spoke Ring.
-- [ ] **Route 3.** [[the-burnt-road]], reached in [[session-12-04-orders-in-the-ash]], runs past the survivors' clearing.
+- [ ] **Route 3.** [[the-burnt-road]], reached in [[Session-12-04-orders-in-the-ash]], runs past the survivors' clearing.
 
 ## Actors
 
@@ -107,8 +107,8 @@ flexGrow=2
 
 | If the party… | The situation changes… | Next |
 | ------------- | ---------------------- | ---- |
-| Goes further in with the four | The column heads north-east on the fruit-pile trail; the Quiet's roof opens ahead onto grass. | [[session-12-03-terror-birds]] |
-| Sends the four south with Matteo | They walk back toward [[star-cut]] alone; without the party they reach the coast only if the party gives them a route and food. The party goes on lighter. | [[session-12-03-terror-birds]] with no civilians in the column |
+| Goes further in with the four | The column heads north-east on the fruit-pile trail; the Quiet's roof opens ahead onto grass. | [[Session-12-03-terror-birds]] |
+| Sends the four south with Matteo | They walk back toward [[star-cut]] alone; without the party they reach the coast only if the party gives them a route and food. The party goes on lighter. | [[Session-12-03-terror-birds]] with no civilians in the column |
 | Takes everyone back to the coast | The inland group stays Hinewai's; rebuild the rest of the night toward [[old-gardens]]. | Recompute with `session-beats` |
 
 **Carry forward.**
@@ -126,5 +126,5 @@ flexGrow=2
 - **NPC / faction posture changes.**
 - **Resources gained or lost.**
 - **World state changed.**
-- **Next active node.** [[session-12-03-terror-birds]]
+- **Next active node.** [[Session-12-03-terror-birds]]
 - **Unresolved thread.** The Calveno survivors

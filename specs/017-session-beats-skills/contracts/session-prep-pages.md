@@ -218,4 +218,4 @@ Fail if any of 32–37 use `type: beat`, `type: session-beat`, or `type: session
 
 ## Out of contract
 
-How the designated writer phrases a skill. Beat Chart assembly and skill routing ([beat-skill-routing.md](./beat-skill-routing.md)). Wiki kind pages ([wiki-kind-pages.md](./wiki-kind-pages.md)). Foundry staging. Cold opens. Rewriting Session 11 files.
+Beat Chart assembly and skill routing ([beat-skill-routing.md](./beat-skill-routing.md)). Wiki kind pages ([wiki-kind-pages.md](./wiki-kind-pages.md)). Foundry staging. Cold opens. Rewriting Session 11 files.

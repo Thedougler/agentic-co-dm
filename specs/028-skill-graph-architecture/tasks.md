@@ -194,7 +194,6 @@ description: "Implementation tasks for the skill graph architecture"
 ### Within Each User Story
 
 - Add the cold failing behavioral assertion before changing its owner guidance.
-- Design-impact skill batches use `docs/agents/skill-design-dispatch.md`; one designated writer owns each accepted skill/eval slice.
 - Shared files have one active writer. Disjoint skill/eval files may proceed concurrently.
 - Run the story's independent test before its checkpoint.
 

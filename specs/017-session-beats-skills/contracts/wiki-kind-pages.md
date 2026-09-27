@@ -76,14 +76,7 @@ Summary (objective, why now, deadline); Situation; Stakes including walk-away; W
 
 `type: region`. Spoken look; At a glance; Current state; geography/travel enough to choose a route; active powers; change log. Scale (macro / regional / local) omits extra headings. MUST NOT invent pressure. If a pressure is already stated, link that wiki note. Do not revive `type: front`.
 
-## Claude Code skill updates
-
-Claude Code only for novel `faction-design`, `lore-design`, `city-design`, `region-design`, `spell-design`, and a `narrative-islands` redesign (quest template; stop minting front/encounter). Dispatch: `claude -p --model claude-opus-4-6 --effort medium`. Prompt is minimal; names deliverables and a completion test. `session-beats` filling the session-plan draft is a composition redesign — see [beat-skill-routing.md](./beat-skill-routing.md).
-
-Session-agent work: templates; `wiki/AGENTS.md` type enum and Layout; `AGENTS.md` routing rows; delete `faction-prep` and retarget callers; `place-design` hub defer pointers; `world-tick` faction-turn log; wrapup/reconcile Canon Log pointers; `vehicle-design` sheet fill if not already done; type-skill template pointers; `run-guide` MUST NOT rewrite a typed beat into a Session 11 cockpit.
-
-Usage limit: defer the Claude job on `tasks.md`; complete independent tasks. Codex CLI at ChatGPT 5.5 medium MAY take the same prompt only when every remaining open task is blocked, no other work can be done, and the retry time is more than one hour away. Re-check those gates before each remaining blocked job. Session-agent last-resort write only when both Claude Code and Codex are usage-limited (constitution XI).
 
 ## Out of contract
 
-Foundry staging. How the designated writer phrases a skill. Beat Chart assembly (see [beat-skill-routing.md](./beat-skill-routing.md)).
+Foundry staging. Beat Chart assembly (see [beat-skill-routing.md](./beat-skill-routing.md)).

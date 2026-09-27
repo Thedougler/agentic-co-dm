@@ -16,50 +16,24 @@ region: ""
 era: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
-kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. The page opens on the truth, stated plainly; shape the rest to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Other facts only when they exist; delete unused comments and narration slots. A subject with a statblock or a persona is a creature or NPC page, not lore.
+kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-## At a Glance
+<!-- Required. The truth in one or two sentences, with its limits and exceptions and who knows it. The DM page carries the answer to every mystery. -->
 
-<!-- Required. Lead: the truth in one or two sentences. Then labelled facts, one bullet each. -->
+Anyone who takes a living thing from the island is marked until dawn, and the island's creatures hunt the marked.
 
-- **Why it matters.** The choice, danger, or opportunity it changes at the table.
-- **Where and when.** The scope, when it is not universal.
-- **Who knows.** [[npc]] or [[faction]] who know it, and what they believe.
-
-## The Tale
-
-<!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly, with its limits and exceptions; the DM page carries the answer to every mystery. -->
+<!-- Free-form. When the lore needs more than the truth above, one `##` section per part, named for what it holds (The Tale, Chronology, The Rite, Tenets, How It Works). A rule other pages embed lives under its own heading. -->
 
 > [!narration] Common telling
-> <!-- Optional: the version people in the world say aloud, as the DM would read it. -->
+> <!-- Optional: the version people in the world say aloud, in a teller's voice (theatre-of-the-mind: Handout). -->
 
-## At the Table
-
-<!-- How it enters play: what players notice, what it explains, what it lets them do, what it warns of. Clues that lead to hidden lore, each with where it is found. -->
-
-- **Players notice.** The sign, phrase, or custom they can see.
-- **It explains.** [[page]] — the event, mystery, or practice players would otherwise misread.
-- **It lets them.** A course of action the lore opens.
-- **It warns of.** The danger attentive characters can see coming.
-- **Party knows.** What the characters have established, what they suspect, and what they have wrong.
-- **If exposed.** What changes when the truth comes out, and who acts on it.
-- [ ] **Clue.** [[place]] — what can be found there.
+<!-- How it reaches play, as **Name.** paragraphs, each only when it exists: **Players notice.** (the sign, phrase, or custom they can see), **Clues.** ([[place]] and what can be found there), **Accounts.** (who believes something else, and how it differs from the truth), **If exposed.** (what changes when the truth comes out, and who acts on it). -->
 
 > [!narration] Found text
-> <!-- Optional: the words of an inscription, letter, song, or book the party can read or hear, verbatim, from theatre-of-the-mind (Handout recipe). One block per text, titled with what it is. -->
-
-## Accounts
-
-<!-- When people believe different things: each account, who holds it, and how it differs from the truth. -->
-
-- **[[faction]] believes** the claim — how it differs from the truth, and why they believe it.
-
-## Connections
-
-- [[page]] — what this tie does at the table.
+> <!-- Optional, one per text, titled with what it is: the words of an inscription, letter, song, or book, verbatim (theatre-of-the-mind: Handout). -->
 
 ## Log
 

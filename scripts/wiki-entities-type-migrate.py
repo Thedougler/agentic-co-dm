@@ -36,6 +36,11 @@ from collections import Counter
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, usage_error
+
 ALLOWED_ENTITY_TYPES = frozenset(
     {
         "npc",
@@ -402,7 +407,10 @@ def emit_report(moves: list[Move], mode: str) -> None:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = AgentParser(
+        description=__doc__,
+        example="python3 scripts/wiki-entities-type-migrate.py --dry-run --wiki wiki",
+    )
     mode = parser.add_mutually_exclusive_group(required=True)
     mode.add_argument(
         "--dry-run",
@@ -423,8 +431,12 @@ def main() -> int:
     args = parser.parse_args()
     wiki = args.wiki.resolve()
     if not wiki.is_dir():
-        print(f"wiki root not found: {wiki}", file=sys.stderr)
-        return 2
+        return usage_error(
+            f"wiki root not found: {wiki}",
+            hint="pass --wiki to an existing vault directory",
+            example="python3 scripts/wiki-entities-type-migrate.py --dry-run --wiki wiki",
+            list_valid="python3 scripts/wiki-entities-type-migrate.py --help",
+        )
 
     moves = plan_moves(wiki)
 

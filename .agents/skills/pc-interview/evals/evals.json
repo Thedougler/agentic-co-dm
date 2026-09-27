@@ -34,7 +34,12 @@
           "type": "behavior",
           "text": "Sheet, Combat Profile, Features, Spells, and Inventory are left untouched by the interview."
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/templates/pc.md"
+      ],
+      "outputs": "File the updated pc page with the interview round (questions only; the player has not answered yet), and put the questions you would ask in response.md."
     },
     {
       "id": 2,

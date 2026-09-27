@@ -17,6 +17,8 @@ Verify every item before finishing:
 * The page makes no assumption about session order or required route.
 * Persistent aftermath is stated.
 * Existing canon is linked rather than duplicated.
+* A hazard links every place and region page it grows in, not only the island or campaign.
+* A hazard that touches characters has `[!narration] On contact`: what the character feels and the others see, ending on the condition it leaves.
 * The human DM can run the content from the finished page alone.
 
 Revise until every applicable item passes.

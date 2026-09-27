@@ -106,7 +106,6 @@ scripts/wiki                                # only lint front door; per-subcomma
 scripts/wiki-lint                           # engine only: identity.compared; drop TMPL_inherited_deprecated_guidance; vault via cli.py; --help points at `wiki lint`; drop the `--allow-lifecycle` passthrough (lines 111, 129–130) (FR-047)
 scripts/manifest.py                         # reports manifest facts only (FR-029)
 scripts/luna-eval                           # root via cli.py; evals.json schema check in load; metrics.json; skill_selected grade (FR-012–FR-016)
-scripts/hybrid-sdd-check.py                 # new `diff` subcommand: SC-014 (a)/(c) mechanical checks
 scripts/check-current-commands              # also checks cited scripts/ and tests/ paths in specs/026 (SC-008)
 .agents/skills/skill-creator/SKILL.md       # invoke luna-eval; promotion decision rule lives here (FR-012, FR-044); drop description loop
 .agents/skills/skill-creator/references/schemas.md   # evals.json = repo schema; grading/metrics = run contract
@@ -118,7 +117,6 @@ AGENTS.md                                   # "Error ledger" (~196): fix first, 
 .agents/skills/wiki-lint/SKILL.md           # line ~47 reconcile first, record only if unresolved; Deprecated.* and identity judgments governed here
 .agents/skills/wiki-dedup/SKILL.md          # governs ambiguous-identity resolution (FR-024); no code picks a winner
 .agents/skills/{place-design,faction-design,session-beats,run-guide,wiki-query,wiki-lint}/SKILL.md   # five FR-040 answers; remove deterministic text moved into tools (FR-029, FR-040)
-docs/agents/hybrid-sdd.md                   # friction branch of the capability loop (FR-001)
 docs/creative-linting.md, docs/architecture.md, README.md   # point lint usage at `wiki lint`; README.md:105 `python3 tools/check_wiki_pages.py` -> `./scripts/wiki lint`
 package.json                                # lint:vale -> `./scripts/wiki lint` (run_vale already refreshes the vocab); scripts/vale-vocab deleted (FR-046)
 scripts/wiki-reveal                         # frontmatter from tools/lint_wiki.py; tools/check_wiki_pages.py deleted (FR-046)
@@ -135,7 +133,7 @@ tools/wiki_ops/template_contracts.py        # line 160 reads `status` (fixes dea
 tools/creative_lint/{evaluators/symbolic.py,engine.py,constants.py}, rules/{registry.yml,bundles.yml}   # drop CANON001, CANON002 and the empty `canon` category; WIKI002 lifecycle half; lifecycle exemptions
 tools/wiki_ops/{identity.py,worklist.py}, scripts/{wiki-reveal,wiki-bulk-ops,ingest-raw.py}   # stop reading or writing lifecycle/base_confidence
 .agents/skills/** (39 files), 10 evals.json   # delete machinery text; readers rewritten (research R9)
-docs/creative-linting.md, docs/architecture.md, docs/agents/{policy-owners.yml,wiki-maintenance-loop.md,context-waste-method.md,hybrid-sdd.md}   # CANON001/CANON002 and lifecycle mentions
+docs/creative-linting.md, docs/architecture.md, docs/agents/{policy-owners.yml,wiki-maintenance-loop.md,context-waste-method.md}   # CANON001/CANON002 and lifecycle mentions
 tests/** (29 lines in 6 files, plus the whole CANON test `test_creative_lint.py` 114–128; 27 fixture pages carry the fields: delete 10 (CANON001/ x3, CANON002/ x3, symbolic/{invalid_lifecycle,dead_reference,stale_reference}.md, WIKI002/ambiguous_proposed_state.md), strip 17)
 ```
 
@@ -163,7 +161,7 @@ tests/** (29 lines in 6 files, plus the whole CANON test `test_creative_lint.py`
 
 ### Phase 2: close the loop (US5–US7)
 
-- **Friction rule (FR-001/002/005)**: add one paragraph to `AGENTS.md` next to the capability loop: act → friction → identify cause → fix source → verify → continue. `docs/agents/hybrid-sdd.md` gains the branch. Skills link to it rather than restating it.
+- **Friction rule (FR-001/002/005)**: add one paragraph to `AGENTS.md` next to the capability loop: act → friction → identify cause → fix source → verify → continue. Skills link to it rather than restating it.
 - **Ledger (FR-006–FR-010)**: see [contracts/error-ledger.md](contracts/error-ledger.md). `append` needs `--source` (it must be an existing repo path or `external:<name>`, which is a deterministic check). It auto-attaches only when an open entry has the same `source` and identical whitespace-trimmed `cause`, and reports the matched id and occurrence index. `--attach e-N` is the agent's same-root-cause call and is refused across sources. `detach --id e-N --index k` is the one documented undo. `drain --id` removes the entry. `list` returns `{entries, recurrence, missing_sources}`, and `scripts/wiki`'s two `error list` callers read `entries`. Migration is a one-off, uncommitted conversion (same precedent as the eval conversion). Its merge groups and sources are agent-authored input data, recorded in research R3, and no group ids are hardcoded in `error-ledger.py`. Rewrite `AGENTS.md` "Error ledger" (~196) with the same-cause rule, and `wiki-lint/SKILL.md` line ~47.
 - **Regression per fix (FR-011)**: the owning skill's eval or a `tests/` case, landed in the same change as the fix.
 - **CLI (FR-027–FR-039)**: see [contracts/wiki-cli.md](contracts/wiki-cli.md). Discovery is the one `tools/wiki_ops/cli.py` helper (repo root from the package location; vault order `--vault` > `OBSIDIAN_VAULT_PATH` > repo `.env` > `<repo>/wiki` > `~/.obsidian-wiki/config`). `scripts/wiki-lint`, `tools/lint_wiki.py`, `scripts/luna-eval`, and `scripts/error-ledger.py` call it instead of computing cwd-relative or `git rev-parse` roots. Lint help and discovery live only in `scripts/wiki`. `scripts/wiki-lint` stays the engine that `wiki` calls, and its `--help` names `wiki lint --help`. `_tune`'s "Fix that checker this sitting." becomes a plain report (`wiki lint: slowest checker <script> <ms> ms; next <script> <ms> ms`). `wiki health` reports facts, and `next` is chosen by a fixed documented rule (data in contracts/wiki-cli.md), not a recommendation. SC-010 is checked from the cold-agent `luna-eval` runs: each run's `metrics.json` `invocation_errors` must be 0 (data-model §3), and each mutating command's second run must report `already_done`.
@@ -183,7 +181,6 @@ tests/** (29 lines in 6 files, plus the whole CANON test `test_creative_lint.py`
 | `tests/test_luna_eval.py` | the `tests/` suite | `scripts/luna-eval` has no test file. Putting its tests (schema check, `metrics.json`, `skill_selected`, `invocation_errors`, Work-gate wording) in another module's file would split ownership. | test |
 | `error detach --id e-N --index k` | `scripts/error-ledger.py` | FR-007 requires one documented undo for an attach. `drain` removes the whole entry, so it cannot serve. | deterministic fix |
 | `error append --source`, `--attach`, `--detail`, `--dry-run`; `error list --ids-only` | `scripts/error-ledger.py` | FR-006/FR-007/FR-033/FR-037 fields and flags on the existing subcommands | deterministic |
-| `hybrid-sdd-check.py diff --plan <plan.md> --base <ref>` | `scripts/hybrid-sdd-check.py` (existing deterministic SDD checker) | SC-014 (a)/(c) are mechanical: added files missing from this table, and deleted paths still referenced in maintained surfaces. There is no other checker for plan-vs-diff. | diagnostic |
 | `wiki lint fix` subparser; `--stdin`, `--paths-only`, `--dry-run` | `scripts/wiki` (replaces the positional `fix` token) | FR-033/FR-034/FR-037 | deterministic |
 | `metrics.json` in the run dir | `skill-creator/references/schemas.md` metrics file, now written by `luna-eval` | Not a new format. `luna-eval` fills the existing schema plus `retries`, `invocation_errors`, `model`, `effort`. | diagnostic |
 | `grading.json` fields `type`, `task_outcome`, `semantic_quality` | existing `grading.json` | FR-016 metrics. `semantic_quality` is the pass rate of `quality` assertions. | diagnostic |

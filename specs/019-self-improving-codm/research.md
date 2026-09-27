@@ -2,13 +2,13 @@
 
 ## Decision: No new skill
 
-**Rationale**: The loop is standing behavior plus one wrapup offer. A new skill would be standing load and a 016 design-impact create. IX: extra tokens for the same outcome.
+**Rationale**: The loop is standing behavior plus one wrapup offer. A new skill would be standing load. IX: extra tokens for the same outcome.
 
 **Alternatives considered**: A `self-improve` skill agents load every sitting. Rejected — it is wasted context when wrapup and `AGENTS.md` already run.
 
 ## Decision: Session-wrapup owns the required reflection; AGENTS.md owns the rest
 
-**Rationale**: FR-008 is wrapup-window Work. `session-wrapup` already owns that window. Adding a required chat reflection changes that skill’s workflow → design-impact (016). Table aim ask, gap-no-stall, token record, helpers, ledger, layout are standing and belong in `AGENTS.md` / `work.md` (session agent).
+**Rationale**: FR-008 is wrapup-window Work. `session-wrapup` already owns that window. Adding a required chat reflection changes that skill’s workflow. Table aim ask, gap-no-stall, token record, helpers, ledger, layout are standing and belong in `AGENTS.md` / `work.md` (session agent).
 
 **Alternatives considered**: Put reflection only in `AGENTS.md`. Rejected — wrapup agents that load the skill and skip `AGENTS.md` extras would drop FR-008. Put all of 019 into wrapup. Rejected — prep sittings need aim/token/helpers too.
 

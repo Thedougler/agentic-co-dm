@@ -127,8 +127,8 @@ party's visit can change it.
 5. **Swap test.** Put a neighbour's name, or a generic label, in place of this
    place's name. Every sentence that stays true is furniture; replace it with
    something from the inventory, the twist, or the rule. Then write one
-   sentence contrasting this place with its linked neighbours. It goes into
-   At a Glance.
+   sentence contrasting this place with its linked neighbours. It shapes the
+   identity line and the portrait.
 
 Done when the twist, rule, and signatures all fail the swap test, meaning each
 is true only here.
@@ -186,7 +186,7 @@ and links an NPC page.
 
 ### 6. Hand the look to theatre-of-the-mind
 
-The header `[!narration]` (titled with the place's name, beside At a Glance) is
+The `[!narration]` under the title (titled with the place's name) is
 the players' first look and the surface that carries every tell. Build the **narration packet** as fragments, each with its
 source:
 
@@ -199,38 +199,37 @@ source:
   fact only ("the bars of the end cage bend outward"), never its truth.
 - **Affordances:** at least one thing a visitor can use.
 - **Leave out:** every Truth, DC, and mechanic; names the players have not
-  earned; current inhabitants and events (they belong to Features and to
+  earned; current inhabitants and events (they belong to the key and to
   scenes).
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and
 give it the packet. Its place recipe owns how tells are written and how long
 the portrait runs. Two optional slots are situated moments ("you" address):
-one `{Area}` block per `###` area in Features, titled with the area's name,
+one `{Area}` block per `##` area in the key, titled with the area's name,
 for what the party perceives on entering it (zone-cell recipe, ending on the
-feature they can use); and `Returning` under At the Table, only once the party
-has been here (Return to a known place recipe).
+feature they can use, or immediate-fact bullets when the area has several
+ways in); and `Returning` after the key, only once the party has been here
+(Return to a known place recipe).
 
 Done when the returned narration passes theatre-of-the-mind's final check and
 contains every tell. A missing tell goes back to theatre-of-the-mind named.
 
 ### 7. File the page
 
-Copy `wiki/templates/place.md`. Keep a section only when you have facts for it
-(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
-owner page; numbers and stat blocks stay on their owner page ("resolve on
-[[owner]]").
+Copy `wiki/templates/place.md`: a keyed location, as a published adventure
+keys a site. Write complete sentences. Wikilink every owner page; numbers and
+statblocks stay on their owner page and are embedded (`![[owner#Statblock]]`).
 
-| Section | Carries |
+| Part | Carries |
 |---|---|
-| At a Glance | Why a party comes; what the place is now, the rule of the place, the present conflict by name and its trajectory with a time; Who is here, Danger, and Draw bullets |
 | Narration | The narration from step 6, nothing else |
-| Features | Who is here, how many, doing what, wanting what, and where they move on which trigger; then features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth and its find; `###` per area when there are several, each with its optional `{Area}` narration |
-| At the Table | Navigation verbs first (arrive, cross, climb, descend, leave by), then interaction verbs. Each entry: the changed situation, a 2024 check only when the outcome is uncertain, what they find, and what it costs; then `Returning` narration once the party has visited |
-| Secrets | Hidden truths, each with the clue that reveals it |
-| Connections | Each linked neighbour with direction and travel time |
+| Identity line | The italic line: kind of site, region, and who holds it now, with the present conflict and its trajectory when it has one |
+| The key | For a small site, `**Name.**` paragraphs; for several areas, one `##` per area opening with its optional `{Area}` narration. Who is here, how many, doing what, wanting what, and where they move on which trigger; then features, items, hazards, flora, and fauna. Each entry opens with its tell, quoting the narration phrase in italics, then states its truth, its find, the check when the outcome is uncertain, and what it costs |
+| Campaign facts | `**Name.**` paragraphs, each only when it exists: **Secret.** (each with the clue that reveals it), **Exits.** (each linked neighbour with route and travel time); then `Returning` narration once the party has visited |
+| Log | One bullet per change play made |
 
-The quoted phrase in Features is the **narration key**: when a player pulls on a
-detail from the spoken look, the DM finds its truth in one glance.
+The quoted phrase in the key is the **narration key**: when a player pulls on
+a detail from the spoken look, the DM finds its truth in one glance.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -247,10 +246,13 @@ line that carries it; a line with nothing beside it goes back on the page.
   with a reason.
 - The twist, rule of the place, and signatures fail the swap test.
 - Every secret, item, hazard, trace, and presence has a tell in the narration
-  and, in Features or At the Table, its truth and its find. Required secrets have
+  and, in the key, its truth and its find. Required secrets have
   three clue vectors.
 - The narration came from theatre-of-the-mind, passes its final check, and
   holds no truth, DC, or unearned name; its tells read as ordinary description.
+- With several areas, each `##` area in the key has its `{Area}` narration
+  ending on the feature the party can use; `Returning` appears only after a
+  visit and shows only what changed.
 - Topology offers real choices; every significant node passes the verb test;
   Where has four cardinal lines, each a neighbour with travel time or what
   lies that way.
@@ -259,8 +261,6 @@ line that carries it; a line with nothing beside it goes back on the page.
   with is named and links an NPC page.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
-  Fill the silence).
 - The enemies-vanished test passes; a revisited place keeps its history.
 - `[!narration]` is the only callout; the DM layer names who, what, and why.
 - Every owner was cast or minted first. User-said canon is filed; every

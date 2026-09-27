@@ -21,6 +21,7 @@ from typing import Callable, Iterable
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, examples_epilog
 from tools.wiki_ops.cli import resolve_vault as _resolve_shared_vault
 
 
@@ -1189,7 +1190,12 @@ def typed_transaction(args: argparse.Namespace) -> tuple[dict[str, object], int]
 
 
 def typed_parser(subparsers: argparse._SubParsersAction) -> None:
-    mutate = subparsers.add_parser("mutate", help="apply a typed semantic mutation", epilog="Examples: scripts/wiki-bulk-ops mutate set_frontmatter --file entities/npc/example.md --field status --value active --dry-run")
+    mutate = subparsers.add_parser(
+        "mutate",
+        help="apply a typed semantic mutation",
+        epilog=examples_epilog("scripts/wiki-bulk-ops mutate set_frontmatter --file entities/npc/example.md --field status --value active --dry-run"),
+        example="scripts/wiki-bulk-ops mutate set_frontmatter --file entities/npc/example.md --field status --value active --dry-run",
+    )
     mutate.add_argument("kind", choices=("replace_section", "delete_section", "insert_section", "set_frontmatter", "remove_frontmatter", "add_tag", "remove_tag", "repair_links", "rewrite_links", "replace_index_entry", "remove_index_entry", "insert_index_entry", "update_manifest_identity", "rename_page", "merge_page", "rename_or_merge_page"))
     mutate.add_argument("--vault", default=None)
     mutate.add_argument("--dry-run", action="store_true")
@@ -1221,7 +1227,12 @@ def typed_parser(subparsers: argparse._SubParsersAction) -> None:
     mutate.add_argument("--canonical-hash")
     mutate.add_argument("--identity-resolution")
     mutate.add_argument("--rewrite-backlinks", action=argparse.BooleanOptionalAction, default=None)
-    transact = subparsers.add_parser("transact", help="preview or apply a repair plan atomically", epilog="Examples: scripts/wiki-bulk-ops transact --plan-file repair.json --json")
+    transact = subparsers.add_parser(
+        "transact",
+        help="preview or apply a repair plan atomically",
+        epilog=examples_epilog("scripts/wiki-bulk-ops transact --plan-file repair.json --json"),
+        example="scripts/wiki-bulk-ops transact --plan-file repair.json --json",
+    )
     transact.add_argument("--plan-file", required=True)
     transact.add_argument("--approve", action="store_true")
     transact.add_argument("--vault", default=None)
@@ -1229,9 +1240,8 @@ def typed_parser(subparsers: argparse._SubParsersAction) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    class Parser(argparse.ArgumentParser):
-        def error(self, message: str) -> None:
-            raise CLIError(message)
+    class Parser(AgentParser):
+        pass
 
     def add_common(parser: argparse.ArgumentParser, *, suppress_defaults: bool = False) -> None:
         default = argparse.SUPPRESS if suppress_defaults else None
@@ -1241,43 +1251,43 @@ def build_parser() -> argparse.ArgumentParser:
         parser.add_argument("--glob", default=default)
         parser.add_argument("--directory", default=default)
 
-    parser = Parser(description=__doc__)
+    parser = Parser(description=__doc__, example="./scripts/wiki-bulk-ops orphan-report --vault wiki --json")
     add_common(parser)
     subparsers = parser.add_subparsers(dest="command", required=True, parser_class=Parser)
-    rename_parser = subparsers.add_parser("rename", epilog="Examples: scripts/wiki-bulk-ops rename --old old-slug --new new-slug --dry-run")
+    rename_parser = subparsers.add_parser("rename", epilog=examples_epilog("scripts/wiki-bulk-ops rename --old old-slug --new new-slug --dry-run"), example="scripts/wiki-bulk-ops rename --old old-slug --new new-slug --dry-run")
     add_common(rename_parser, suppress_defaults=True)
     rename_parser.add_argument("--old", required=True)
     rename_parser.add_argument("--new", required=True)
     rename_parser.add_argument("--old-title")
     rename_parser.add_argument("--new-title")
-    replace_parser = subparsers.add_parser("replace", epilog="Examples: scripts/wiki-bulk-ops replace --search old --replacement new --dry-run")
+    replace_parser = subparsers.add_parser("replace", epilog=examples_epilog("scripts/wiki-bulk-ops replace --search old --replacement new --dry-run"), example="scripts/wiki-bulk-ops replace --search old --replacement new --dry-run")
     add_common(replace_parser, suppress_defaults=True)
     replace_parser.add_argument("--search", required=True)
     replace_parser.add_argument("--replacement", required=True)
     replace_parser.add_argument("--regex", action="store_true")
     replace_parser.add_argument("--include-frontmatter", action="store_true")
     replace_parser.add_argument("--include-links", action="store_true")
-    fm_parser = subparsers.add_parser("frontmatter", epilog="Examples: scripts/wiki-bulk-ops frontmatter --action set --field status --value active --dry-run")
+    fm_parser = subparsers.add_parser("frontmatter", epilog=examples_epilog("scripts/wiki-bulk-ops frontmatter --action set --field status --value active --dry-run"), example="scripts/wiki-bulk-ops frontmatter --action set --field status --value active --dry-run")
     add_common(fm_parser, suppress_defaults=True)
     fm_parser.add_argument("--action", choices=("set", "rename", "remove"), required=True)
     fm_parser.add_argument("--field", required=True)
     fm_parser.add_argument("--value")
     fm_parser.add_argument("--new-field")
     fm_parser.add_argument("--filter", action="append", default=[])
-    repair_parser = subparsers.add_parser("link-repair", epilog="Examples: scripts/wiki-bulk-ops link-repair --mapping links.json --dry-run")
+    repair_parser = subparsers.add_parser("link-repair", epilog=examples_epilog("scripts/wiki-bulk-ops link-repair --mapping links.json --dry-run"), example="scripts/wiki-bulk-ops link-repair --mapping links.json --dry-run")
     add_common(repair_parser, suppress_defaults=True)
     repair_parser.add_argument("--mapping")
     repair_parser.add_argument("--no-git", action="store_true")
     repair_parser.add_argument("--no-aliases", action="store_true")
     repair_parser.add_argument("--no-fuzzy", action="store_true")
     repair_parser.add_argument("--fuzzy-threshold", type=int, default=2)
-    tag_parser = subparsers.add_parser("tag-normalize", epilog="Examples: scripts/wiki-bulk-ops tag-normalize --dry-run --json")
+    tag_parser = subparsers.add_parser("tag-normalize", epilog=examples_epilog("scripts/wiki-bulk-ops tag-normalize --dry-run --json"), example="scripts/wiki-bulk-ops tag-normalize --dry-run --json")
     add_common(tag_parser, suppress_defaults=True)
     tag_parser.add_argument("--taxonomy")
     tag_parser.add_argument("--remove-unknown", action="store_true")
-    moc_parser = subparsers.add_parser("moc-generate", epilog="Examples: scripts/wiki-bulk-ops moc-generate --vault wiki --dry-run --json")
+    moc_parser = subparsers.add_parser("moc-generate", epilog=examples_epilog("scripts/wiki-bulk-ops moc-generate --vault wiki --dry-run --json"), example="scripts/wiki-bulk-ops moc-generate --vault wiki --dry-run --json")
     add_common(moc_parser, suppress_defaults=True)
-    orphan_parser = subparsers.add_parser("orphan-report", epilog="Examples: scripts/wiki-bulk-ops orphan-report --vault wiki --json")
+    orphan_parser = subparsers.add_parser("orphan-report", epilog=examples_epilog("scripts/wiki-bulk-ops orphan-report --vault wiki --json"), example="scripts/wiki-bulk-ops orphan-report --vault wiki --json")
     add_common(orphan_parser, suppress_defaults=True)
     typed_parser(subparsers)
     return parser

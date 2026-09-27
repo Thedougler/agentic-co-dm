@@ -143,9 +143,11 @@ the quirk:
 - **Crew as fighters.** Size the crew to the craft's job and the party's
   level: the officers the party will cross blades with carry a statblock that
   makes a boarding a real fight for this party (a navy captain is a Veteran or
-  better). Everyone the party could fight aboard carries compact numbers: the captain's own statblock link or a named standard statblock
-  (AC, HP, Speed, the attacks or save DCs the DM will roll), the rank-and-file
-  crew by count and statblock, and any beast or guard aboard.
+  better). Everyone the party could fight aboard has a statblock on its own
+  owner page, embedded under **Crew.** (`![[owner#Statblock]]`): the captain,
+  the rank-and-file crew by count, and any beast or guard aboard. A standard
+  statblock with no page yet gets one through `monster-design`'s Reskin path
+  first.
 
 Done when every Statblock line holds a number, every fighter
 aboard has numbers, and each canon comparison is written in the working notes
@@ -159,10 +161,10 @@ as two numbers with this craft's ahead.
   swinging boom, powder kegs), and who stands there on watch.
 - **Crew.** Each station: who mans it now against the minimum, the
   action or check it runs, and what fails when it is empty.
-- **At the Table: handling.** Two to four manoeuvres or conditions that change a choice, each
+- **Handling.** Two to four manoeuvres or conditions that change a choice, each
   with its check (Ability (Skill) and DC) and its result: the quirk, wind and
   current, tight water, repairs underway.
-- **At the Table: chase and boarding.** How a pursuit with this craft runs, in **chase
+- **Handling: chase and boarding.** How a pursuit with this craft runs, in **chase
   turns** sized so the gap changes by a real step each turn and the chase ends
   in three to eight turns (a round when ships are close, a minute or ten when
   they are far, a watch across open sea): its speed against a typical pursuer
@@ -190,7 +192,7 @@ Build the **narration packet** as fragments, each with its source:
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, vehicle recipe, and
 give it the packet; this header look shows the craft at its berth. For the
-optional `Underway` block under At the Table, ask for a situated moment
+optional `Underway` block after the campaign facts, ask for a situated moment
 (Vehicle recipe): motion underfoot, its sound, the crew at work, what the rail
 shows.
 
@@ -204,17 +206,12 @@ with `type: vehicle` and a `kind` for the craft (ship, boat, or other). Keep a
 section only when you have facts for it (fact-only, `wiki/AGENTS.md` Layout).
 Write complete sentences. Wikilink every owner page.
 
-| Section | Carries |
+| Part | Carries |
 |---|---|
-| At a Glance | Why the party cares; the captain, berth, the errand and its next step, standing orders on meeting the party |
 | Narration | The narration from step 6, nothing else |
-| Statblock | The numbers from step 4: Size, Type, Speed, Movement (sails, oars, or engine with AC, HP, and what losing it costs), Crew, Hull, Helm, Weapons |
-| Decks | The areas from step 5, for a craft large enough to walk |
-| Crew | Stations, who mans them now, and the fighters' compact numbers |
-| At the Table | Manoeuvres, the quirk, the chase loop; initiative, boarding, ramming, component targeting, surrender, sinking; then the optional `Underway` narration |
-| Secrets | The hold and every other tell's truth, by name, with how it is found |
-| Connections | Each tie by owner link and what it does at the table |
-| History | Origin, former names, contested ownership |
+| Identity line | The italic line: size, type, captain, berth |
+| Statblock | The numbers from step 4: Speed, Movement (sails, oars, or engine with AC, HP, and what losing it costs), Crew, Hull, Helm, Weapons |
+| Campaign facts | `**Name.**` paragraphs, each only when it exists: **Current voyage.** (what it is doing this week, its next stop with a time, and standing orders on meeting the party), **Crew.** (stations, who mans them now, each fighter embedded from its owner page), **Decks.** (the areas from step 5, for a craft large enough to walk), **Handling.** (manoeuvres, the quirk, the chase loop, boarding, ramming, component targeting, surrender, sinking), **Secret.** (the hold and every other tell's truth, with how it is found); then the optional `Underway` narration |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -229,28 +226,27 @@ line that carries it; a line with nothing beside it goes back on the page.
 
 - The canon inventory is complete, including every page about each craft this
   one chases or is compared with; every established detail is kept.
-- The captain is named with a page; the errand, standing orders, and next step
-  with a time are in At a Glance.
+- The captain is named with a page in the identity line; the errand, standing
+  orders, and next step with a time are in **Current voyage.**
 - The signature, quirk, and hold fail the swap test; each tell in the narration
   has its truth and its find on the page.
 - Every Statblock line holds a number anchored on a 5e peer craft;
   every weapon has attack or DC, range, and damage; every canon comparison to
   another craft holds against that craft's numbers.
-- Every fighter aboard has compact numbers, and the officers make a boarding a
-  real fight for the party's level.
-- Decks, Crew, and the At the Table loop (handling, chase, boarding) let a DM run
+- Every fighter aboard has its statblock embedded from its owner page, and the
+  officers make a boarding a real fight for the party's level.
+- **Decks.**, **Crew.**, and **Handling.** (manoeuvres, chase, boarding) let a DM run
   pursuit, boarding, and a stowaway from the page alone; each check has
   Ability (Skill) and DC; the chase resolves in three to eight chase turns.
 - Every other page the work edits stays whole: one narration callout, its
   established sections and numbers kept; an edit there only fills blanks.
 - The narration came from theatre-of-the-mind and holds no truth, DC, or
-  unearned name.
+  unearned name; the header shows the craft at its berth, and
+  `[!narration] Underway` shows it in motion from its deck.
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

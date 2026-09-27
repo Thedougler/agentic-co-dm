@@ -5,11 +5,11 @@ draft is incomplete.
 
 ## Structure
 
-- `## At a Glance` is the first cockpit heading in Reading view, and its
-  first bullet, **Ends when**, states the end condition.
+- The run lines sit directly under the title with no heading, and the first,
+  **Ends when**, states the end condition.
 - Time budget present. Cut lines only when they change a pacing choice.
 - One named *procedure*; Checks failures never also tick Pressure. Checks is selective — no ordinary, boring, or redundant rows.
-- Beat identity: filename number matches its Beat Map row; purpose, dramatis
+- Beat identity: filename number matches its row in the session plan's Beats table; purpose, dramatis
   personae, and hand-off match that row.
 - This beat's opening follows from the previous beat's Outcomes —
   no state reset, teleport, or unexplained jump.
@@ -22,8 +22,8 @@ draft is incomplete.
   reinforcements) is defined on the card with its trigger, numbers, and what
   the players perceive (`docs/agents/table-ready.md` § Define every
   consequence).
-- Opposition that can fight has compact numbers and its loop: opening move,
-  adaptation, break point, exit.
+- Opposition that can fight has its statblock embedded in Statblocks and its
+  loop in Actors: opening move, adaptation, break point, exit.
 - Each PC present has a reason to act on this card.
 - Rewards and costs the beat can produce are named (owner links, amounts).
 - The `Previously` recap block appears only on the first beat.
@@ -36,10 +36,10 @@ draft is incomplete.
   Narration table columns is `_italic_`.
 - Column layout uses `col` / `col-md` codeblock fences (not `[!col]`);
   `flexGrow` ratios match the layout table. Spoken `[!narration]` callouts,
-  Stage, Checks, Outcomes, Backup, and Battlemap stay full
+  Terrain, Checks, Outcomes, Links, and Battlemap stay full
   width.
 - Optional sections stay absent unless this beat spends them at the table.
-- Secondary objective, Outcomes, Roster, and Backup use `##`
+- Secondary objective, Outcomes, Statblocks, and Links use `##`
   headings.
 - Existing overview or identity image embedded near the top when exact art
   exists.
@@ -69,7 +69,7 @@ draft is incomplete.
   `theatre-of-the-mind` not loaded. Empty callout stubs and empty Narration
   cells at the TotM slots this beat uses. Outcomes carries one
   unconditional stub plus an options table, not a stack of variant callouts.
-  Each option hands off to a Beat Map beat.
+  Each option hands off to a beat in the session plan's Beats table.
 - **Pass 2:** `writing-for-humans` loaded after pass 1 completes;
   `theatre-of-the-mind` not loaded. DM-facing copy is usable and signal-only.
   Every `[!narration]` body and Narration cell is still empty.

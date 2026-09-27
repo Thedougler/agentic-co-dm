@@ -42,8 +42,3 @@
 
 **Alternatives considered**: A new sidecar database or manifest schema. Rejected; the DM-facing report is the seam.
 
-## Decision: Skill edit is design-impact; validate with fixtures
-
-**Rationale**: Adding a required complete-context pass is a major change to `wiki-ingest`. Implement dispatches the designated writer with a scoped prompt. Tests observe compiled pages and the ingest record, not skill phrasing.
-
-**Alternatives considered**: Session-agent rewrite of the skill during plan. Rejected by XI. Grep-based skill snapshots. Rejected by IV.

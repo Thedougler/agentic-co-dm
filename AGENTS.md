@@ -11,11 +11,11 @@ Top-level paths, one purpose each; the vault itself is explored under "Vault map
 | `CONTEXT.md` | Domain glossary. Reach it for terminology, architecture, template, or beat-design decisions. |
 | `.agents/skills/<name>/` | Skill source (`SKILL.md`, `references/`, `evals/`). Edit here; imported skills are pinned in `skills-lock.json`. |
 | `.agents/skills/llm-wiki/` | The llm-wiki spec: three-layer architecture (raw sources → wiki → schema), page templates, provenance and trust model, wiki environment variables. The authority behind the vault map below and "Core Principles". |
-| `docs/agents/` | Procedure docs: Work, table-ready casting, hybrid SDD, maintenance loop, token and context measurement, harness and skill-design dispatch. |
+| `docs/agents/` | Procedure docs: Work, table-ready casting, maintenance loop, token and context measurement, harness dispatch. |
 | `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
 | `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template-derived checks), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
 | `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
-| `tests/` | Pytest suite for the wiki lint system only (constitution IV); skills are validated by evals. Run `./scripts/run-pytest`. |
+| `tests/` | Wiki lint pytest only (constitution IV); skills use evals. `.venv/bin/python -m pytest` |
 | `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
 | `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |
 | `wiki/` | The live vault, at the path `.env` `OBSIDIAN_VAULT_PATH` and `pyproject.toml` `[tool.agentic-co-dm]` both name. Campaign pages, templates, session journals, indexes. Load `wiki/AGENTS.md` before any read or write here. Expanded below. |
@@ -65,13 +65,13 @@ Before campaign architecture, session design, beat or skill guidance, template c
 
 Spec Kit auto-commit is enabled for the configured before/after hooks. The commit style is fixed (`commit_style: fixed`); use the configured `[Spec Kit] ...` messages rather than generating Conventional Commit messages. `.specify/extensions/git/git-config.yml` is the source of truth.
 
-## Hybrid SDD routing
+Keep the managed Spec Kit block below disposable.
 
-Before writing substantial engineering, agent-system, campaign-architecture, or creative-system work, classify it once and follow the full route in [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md). Routine established campaign content stays on its existing skill, template, and Work route; split mixed requests into their system-changing and routine-content slices. Keep the managed Spec Kit block below disposable.
+**Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker.
 
-**Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
+<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command or `wiki lint` — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
 
-<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command, `wiki lint`, or `scripts/check-current-commands` for a script path in a skill or AGENTS.md — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
+<a id="table-value-rule"></a>**Table-value rule:** A skill step, template field or heading, Done line, or eval assertion that serves no moment at the table is friction too: nothing the DM reads, rolls, rules, or says aloud mid-session depends on it. Find the table moment it was meant to protect and rewrite the source to that; when there is none, delete it. A field only agents use goes in frontmatter. A heading or label a careless reader could misread is renamed to plain words. Prove the fix by checking the output it shapes, then continue.
 
 ## Carve-outs
 
@@ -88,15 +88,18 @@ the failure on it.
 
 Canon: apply the rule in [`llm-wiki`](.agents/skills/llm-wiki/SKILL.md#canon) (constitution X) and file what it makes canon.
 
-Lint contract (constitution XXI): `wiki lint` runs every checker, Vale included, and every finding it reports is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is accepted as a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
+Lint contract (constitution XXI): `wiki lint` is the campaign-page linter (templates, layout, Vale). Every finding it reports on those pages is an issue to fix. Use `next.path`, then `wiki lint fix <next.path>` for deterministic repairs; rerun `wiki lint <next.path>` for the remaining issues. `--full` is a compatibility no-op. Iterate until clean: zero issues. Do not ask. Do not interrupt with findings.
 
-When clean, one short done-summary: what changed, where. No question. No wait.
+Prove each change on the surface it changed. Campaign pages: `wiki lint` clean. Skills, `AGENTS.md`, `docs/agents`, and other instruction files are a different surface — the command, test, or eval that covers that change.
 
-Mixed request: do every requested slice, then one done-summary when clean.
+When the requested surfaces are proven, one short done-summary: what changed, where. No question. No wait.
+
+Mixed request: do every requested slice, then one done-summary when those surfaces are proven.
 
 FR-002 repair, template conformance of existing content, named ingest, and bookkeeping run unattended. Dedup merge without a user ask still confirms (destructive, not a Work wait). User-asked merge files.
 
-**Done when:** requested work is filed; `wiki lint` is clean; every other checkable rule passes; one done-summary was emitted.
+**Done when:** requested work is filed; campaign-page slices are `wiki lint` clean; every other checkable rule passes on its own surface; one done-summary was emitted.
+
 
 ## Project identity
 
@@ -175,7 +178,8 @@ Cut wasted context without waiting. A change MUST NOT count as an improvement if
 
 ## Wiki writes
 
-Every wiki write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. Every file entering `wiki/` is complete only when `wiki lint` is clean for it.
+Every campaign-page write goes to its live path. `_raw/` remains the ingest inbox; `_archive/` holds promoted sources. A campaign page is complete only when `wiki lint` is clean for it.
+
 
 ## Edit discipline
 
@@ -189,7 +193,9 @@ Re-read the target file before a multi-hunk edit. Stale line numbers produce ove
 
 **Wiki maintenance loop:** weekday Layer A scans + fleet routing — `docs/agents/wiki-maintenance-loop.md` (issue #90). Quiet when clean. Never auto lore invent or craft cuts. Filename kebab / Aruhe / `00` remorph runs unattended. Dedup merge without a user ask still confirms.
 
-Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. Mixed sitting: split those two commits. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
+Wiki canon (`wiki/` campaign pages, ingest, recap, `hot.md`/`index.md`/`log.md`): commit on `main` and push `main`. Agent instructions (skills, `AGENTS.md`, `docs/agents`, harness, agent-facing scripts): feature branch and PR. After merges, `./scripts/git-sync-main` from a feature branch (`--force-clean` only for stranded dirt).
+
+**Dirty tree:** `git add -A` and commit. A revert is cheaper than agents negotiating staged vs unstaged files.
 
 If a job will repeat and no existing command does it, create an agent-shaped helper without being asked; load `cli-for-agents` first (constitution VI). Arguments in, text or JSON out, exit done vs failed. Use it on the next same-kind sitting. Keep it current or remove it. No helper for a one-off. No wrap of an existing command.
 
@@ -220,6 +226,14 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+### Verbatim examples
+
+When research into prose or language technique uses an example from the web, copy that example **verbatim**. The expert's wording is the technique. The agent's sentences around it carry the point, the use, and the citation.
+
+An example rewritten in the agent's words is not evidence. It discards the technique. File the source's words, or leave the example out.
+
+**Done when:** every example in the note is the source's words, and none is the agent's.
+
 ## Capability execution contract
 
 Root routing selects the existing owner capability directly from intent or
@@ -249,8 +263,7 @@ omissions for the current capability. Do not inherit unrelated artifact groups.
 Do not create a generic router, workflow engine, global DAG, second owner
 registry, or persistent execution ledger.
 
-Use `docs/agents/hybrid-sdd.md` for substantial cross-capability composition
-and `wiki/AGENTS.md` for wiki semantics. Neither duplicates owner procedure.
+Use `wiki/AGENTS.md` for wiki semantics. It does not duplicate owner procedure.
 
 ## Beat skill routing
 
@@ -279,25 +292,6 @@ Unknown typed-beat job → classify the type first; do not default to `session-b
 | Write, edit, or create a site place | `place-design` |
 
 `place-design` is the hub for all places. It defers to `city-design` for `kind: city` and to `region-design` for region jobs. Unknown kind → Skill Routing.
-
-## Skill design dispatch
-
-Classify before any in-scope instruction file changes. Class is `design-impact` | `not`. Length MUST NOT be the gate.
-
-Design-impact if the change is a novel skill, a skill redesign, or a major skill-file change. Creating a new skill or subagent is design-impact. Smaller edits to established files, Spec Kit pattern tweaks, and `AGENTS.md` are class `not`. Conserve Claude Code; use it only when necessary.
-
-| Class | Writer |
-|---|---|
-| `design-impact` | designated writer |
-| `not` | session agent |
-| owner explicitly skips dispatch | session agent |
-
-Writer is designated writer if design-impact (unless owner overrule), else session agent. Overrule is explicit owner skip only; silence is not overrule.
-
-In-scope: source skill; standing instruction / sticky rule; subagent definition; writing-for-agents.
-Out-of-scope: constitution; feature specs; generated Spec Kit adapters; campaign wiki.
-
-Design-impact work: `docs/agents/skill-design-dispatch.md`.
 
 ## Vault retrieval
 
@@ -382,7 +376,9 @@ Match the user's intent to the right skill. Beat-type routing and wiki-kind rout
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
 | "lint" / "lint <page>" / "fix broken links" / "audit" | `wiki lint` — full finding dump |
-| "wiki health" / "health check" | `wiki health`; act on `context.act`, then `next`, then remaining `focus` |
+| "wiki health" / "health check" | `wiki health` (`wiki health --help`) |
+
+
 | "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |
@@ -561,7 +557,7 @@ Spec Kit artifacts are the handoff protocol. When `specs/<feature>/{spec,plan,ta
 
 ## Validation
 
-- **Python runtime:** use `.venv/bin/python` for pytest and repository tooling — system `python3` may lack project dependencies. `python3 scripts/*.py` works because those scripts import only stdlib and local modules; test runs and library imports require the venv.
+- **Python runtime:** `.venv/bin/python -m pytest` for the wiki lint suite. System `python3` may lack project deps. `python3 scripts/*.py` is stdlib-only.
 - **Spec Kit availability:** Invoke `specify --version` before deciding the CLI
   is absent. If shell resolution fails, inspect the existing executable at
   `~/.local/bin/specify` and its resolved target; `uv tool list` is not

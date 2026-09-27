@@ -18,17 +18,15 @@ portent, and consequence structure when a pressure already exists.
 Theatre-of-the-mind first-travel look. Horizon, terrain, weather, movement,
 sound, one unmistakable feature. Keep secrets, save DCs, hidden history, secret
 coordinates, hive-mind claims, and unearned names out of `[!narration]`; place
-them in DM-facing sections (At a Glance, Secrets, Travel).
+them in DM-facing lines (the identity line, Travel, **Secret.** paragraphs).
 
-### At a Glance
+### Identity line
 
-The lead sentence is what the region is for at the table — route choices,
-established pressures, or the kind of exploration it enables — not a
-closed-history encyclopedia summary. Then Now (status quo and the latest
-change), Pressure (the live pressure by name and the next visible change with
-a time), Known for, and Anchor. Keep it current; fold obsolete states into Log.
+The kind of land, its parent region, and what is changing in it now: the live
+pressure by name, never a closed-history summary. Keep it current; fold
+obsolete states into Log.
 
-### Geography and Travel
+### Travel
 
 Answer "which way do you go?":
 
@@ -46,15 +44,15 @@ Preserve established entry character (e.g. observe-from-offshore skip,
 mangrove-wall-not-a-second-approach) and keyed places rather than collapsing
 them into a checklist path.
 
-### Key Places
+### Places
 
 Table-ready durable places only. Link durable places; keep temporary events in
-At a Glance, Powers, or Log. Promote a detailed site to
+the identity line, Factions and Threats, or Log. Promote a detailed site to
 its own `[[place]]` when it no longer fits here.
 
-### Powers
+### Factions and Threats
 
-The few groups and forces that can change the region now. Per power: hold or presence,
+The few groups and forces that can change the region now. Per faction: hold or presence,
 want now, next move, what reveals that move. Full faction agendas, clocks, and
 histories stay on faction pages.
 
@@ -69,16 +67,17 @@ objective links or proposes a quest; `type: front` stays retired.
 
 ### Omit by scale
 
-- **MACRO:** At a Glance, Geography (with subregions), major routes in Travel,
-  Powers, Log. Encounters, minor sites, and detailed finds usually live on the
-  subregion pages.
+- **MACRO:** major routes and subregions in Travel and Places, Factions and
+  Threats, Log. Random Encounters, minor sites, and detailed finds usually live on the subregion
+  pages.
 - **REGIONAL:** Default. Keep sections that create choices, signals, routes,
   powers, or table prep.
-- **LOCAL:** Travel, Key Places, immediate Powers, Rumors, Encounters, and
-  Secrets (discoveries). Subregions appear only when they add a choice.
+- **LOCAL:** Travel, Places, immediate Factions and Threats, Rumors, Random Encounters, and
+  **Secret.** paragraphs (discoveries). Subregions appear only when they add a
+  choice.
 
-Persistent geography → Geography, Travel, Key Places.
-Ephemeral events → At a Glance, Powers, or Log.
+Persistent geography → Travel and Places.
+Ephemeral events → the identity line, Factions and Threats, or Log.
 
 ### Log
 

@@ -27,6 +27,11 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, examples_epilog
 META = {"version", "stats", "last_updated", "projects"}
 PAGE_FIELDS = ("pages_produced", "pages_created", "pages_updated")
 
@@ -292,7 +297,8 @@ def cmd_upsert(args: argparse.Namespace) -> int:
         bucket[stored] = patch
     recount_stats(data)
     data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    write(vault, data)
+    if not args.dry_run:
+        write(vault, data)
     emit({"key": stored, "entry": find_rows(data, stored)[0][1]})
     return 0
 
@@ -375,7 +381,8 @@ def cmd_record(args: argparse.Namespace) -> int:
     sources[canonical] = entry
     recount_stats(data)
     data["last_updated"] = now
-    write(vault, data)
+    if not args.dry_run:
+        write(vault, data)
     emit({"key": canonical, "entry": entry, "rows_merged": len(rows)})
     return 0
 
@@ -426,7 +433,8 @@ def cmd_transition(args: argparse.Namespace) -> int:
         out = apply_transition(data, transition)
     except ValueError as exc:
         return fail(str(exc), 2)
-    write(args.vault, out)
+    if not args.dry_run:
+        write(args.vault, out)
     emit({"status": "applied", "page": args.page, "transition": transition.to_dict()})
     return 0
 
@@ -490,71 +498,82 @@ def cmd_tool_pages(args: argparse.Namespace) -> int:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = AgentParser(
+        description=__doc__,
+        epilog=examples_epilog(
+            "python3 scripts/manifest.py stats wiki",
+            "python3 scripts/manifest.py has wiki <source>",
+            "python3 scripts/manifest.py record wiki <source> --pages entities/npc/x.md --dry-run",
+        ),
+        example="python3 scripts/manifest.py stats wiki",
+    )
     parser.add_argument("--format", choices=("json", "tsv"), default="json")
-    sub = parser.add_subparsers(dest="cmd", required=True)
+    sub = parser.add_subparsers(dest="cmd", required=True, parser_class=AgentParser)
 
     def vault_arg(p: argparse.ArgumentParser) -> None:
         p.add_argument("vault", type=Path)
 
-    stats = sub.add_parser("stats", help="counts only")
+    stats = sub.add_parser("stats", help="counts only", epilog=examples_epilog("python3 scripts/manifest.py stats wiki"), example="python3 scripts/manifest.py stats wiki")
     vault_arg(stats)
     stats.set_defaults(func=cmd_stats)
 
-    has = sub.add_parser("has", help="exit 0 if source is tracked")
+    has = sub.add_parser("has", help="exit 0 if source is tracked", epilog=examples_epilog("python3 scripts/manifest.py has wiki <source>"), example="python3 scripts/manifest.py has wiki <source>")
     vault_arg(has)
     has.add_argument("source")
     has.set_defaults(func=cmd_has)
 
-    get = sub.add_parser("get", help="one entry")
+    get = sub.add_parser("get", help="one entry", epilog=examples_epilog("python3 scripts/manifest.py get wiki source-id"), example="python3 scripts/manifest.py get wiki source-id")
     vault_arg(get)
     get.add_argument("source")
     get.set_defaults(func=cmd_get)
 
-    lookup = sub.add_parser("lookup", help="sources that list a page")
+    lookup = sub.add_parser("lookup", help="sources that list a page", epilog=examples_epilog("python3 scripts/manifest.py lookup wiki --page entities/npc/example.md"), example="python3 scripts/manifest.py lookup wiki --page entities/npc/example.md")
     vault_arg(lookup)
     lookup.add_argument("--page", required=True)
     lookup.set_defaults(func=cmd_lookup)
 
-    listing = sub.add_parser("list", help="paths, last_ingested, page counts")
+    listing = sub.add_parser("list", help="paths, last_ingested, page counts", epilog=examples_epilog("python3 scripts/manifest.py list wiki --project campaign --limit 20"), example="python3 scripts/manifest.py list wiki --project campaign --limit 20")
     vault_arg(listing)
     listing.add_argument("--project")
     listing.add_argument("--since")
     listing.add_argument("--limit", type=int)
     listing.set_defaults(func=cmd_list)
 
-    delta = sub.add_parser("delta", help="which listed paths need ingest")
+    delta = sub.add_parser("delta", help="which listed paths need ingest", epilog=examples_epilog("python3 scripts/manifest.py delta wiki --paths-file -"), example="python3 scripts/manifest.py delta wiki --paths-file -")
     vault_arg(delta)
     delta.add_argument("--paths-file", required=True)
     delta.set_defaults(func=cmd_delta)
 
-    upsert = sub.add_parser("upsert", help="merge one entry")
+    upsert = sub.add_parser("upsert", help="merge one entry", epilog=examples_epilog("python3 scripts/manifest.py upsert wiki source-id --json '{\"status\":\"complete\"}' --dry-run"), example="python3 scripts/manifest.py upsert wiki source-id --json '{\"status\":\"complete\"}' --dry-run")
     vault_arg(upsert)
     upsert.add_argument("source")
     upsert.add_argument("--json", required=True)
+    upsert.add_argument("--dry-run", action="store_true")
     upsert.set_defaults(func=cmd_upsert)
 
-    record = sub.add_parser("record", help="hash and record one completed source atomically")
+    record = sub.add_parser("record", help="hash and record one completed source atomically", epilog=examples_epilog("python3 scripts/manifest.py record wiki <source> --pages entities/npc/x.md --dry-run"), example="python3 scripts/manifest.py record wiki <source> --pages entities/npc/x.md --dry-run")
     vault_arg(record)
     record.add_argument("source")
     record.add_argument("--pages", nargs="+", required=True)
     record.add_argument("--source-type")
     record.add_argument("--project")
+    record.add_argument("--dry-run", action="store_true")
     record.set_defaults(func=cmd_record)
 
-    transition = sub.add_parser("transition", help="record a page identity transition")
+    transition = sub.add_parser("transition", help="record a page identity transition", epilog=examples_epilog("python3 scripts/manifest.py transition wiki --page entities/npc/x.md --transition renamed_to --target entities/npc/y.md --dry-run"), example="python3 scripts/manifest.py transition wiki --page entities/npc/x.md --transition renamed_to --target entities/npc/y.md --dry-run")
     vault_arg(transition)
     transition.add_argument("--page", required=True)
     transition.add_argument("--transition", required=True, choices=("merged_into", "renamed_to", "archived"))
     transition.add_argument("--target")
     transition.add_argument("--reason")
+    transition.add_argument("--dry-run", action="store_true")
     transition.set_defaults(func=cmd_transition)
-    normalize = sub.add_parser("normalize", help="merge ~ vs absolute collisions")
+    normalize = sub.add_parser("normalize", help="merge ~ vs absolute collisions", epilog=examples_epilog("python3 scripts/manifest.py normalize wiki --dry-run"), example="python3 scripts/manifest.py normalize wiki --dry-run")
     vault_arg(normalize)
     normalize.add_argument("--dry-run", action="store_true")
     normalize.set_defaults(func=cmd_normalize)
 
-    tool_pages = sub.add_parser("tool-pages", help="compact tool\tpage rows for memory-bridge")
+    tool_pages = sub.add_parser("tool-pages", help="compact tool\tpage rows for memory-bridge", epilog=examples_epilog("python3 scripts/manifest.py tool-pages wiki --tool codex --limit 20"), example="python3 scripts/manifest.py tool-pages wiki --tool codex --limit 20")
     tool_pages.add_argument("vault", type=Path)
     tool_pages.add_argument("--tool", default=None, help="filter to one tool (claude, codex, ...)")
     tool_pages.add_argument("--limit", type=int, default=None)

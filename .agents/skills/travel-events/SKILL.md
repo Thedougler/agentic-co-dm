@@ -24,7 +24,7 @@ filler.
 
 Fill these in order: (1) **departure cost** — what going now leaves, spends, risks, or owes;
 (2) **landmark** — a named thing that can be approached, avoided, or exploited; (3) **events** —
-the smallest set of derived beats; (4) **toll** — a concrete cost in time, resources, position,
+the smallest set of derived beats; (4) **cost** — a concrete cost in time, resources, position,
 relationship, information, or danger; (5) **arrival changed** — how the party arrives different.
 Scale events from stated travel time, not distance bands: a short leg measured in minutes or
 hours usually needs 1 event; a multi-day leg may need 2; a route that is the session's subject
@@ -36,15 +36,13 @@ the measure of a route. Use compass direction and travel time instead.
 
 ```markdown
 ### Event: title — [combat | social | exploration | hybrid]
-**Derivation:** named PC/faction/resource pressure × route fact
-**Advances:** thread, relationship, resource, or knowledge
-**Spotlight:** named PC and available role
-**Before engagement:** independent pressure and visible clue
-**Choice surface:** approach, avoid, bargain, exploit, or endure
-**Resolution:** check/procedure only after selection; state source/DC and fail-forward
-**Toll:** what is spent, lost, owed, revealed, or delayed
-**If ignored:** one-step independent consequence
-**Loose end:** what remains in motion
+**PC hook:** the named PC it matters to, and the role they can take
+**Warning sign:** what the party sees or hears before it reaches them
+**Party choices:** approach, avoid, bargain, exploit, or endure, each with what happens
+**Resolution:** the check and DC once the party chooses, and what failure still moves forward
+**Cost:** what is spent, lost, owed, revealed, or delayed
+**If ignored:** the one next thing that happens without the party
+**Still in motion:** what continues after the event
 ```
 
 Offer real PCs roles on multi-event legs (scout/guide, lookout, quartermaster, or a

@@ -77,4 +77,4 @@ Identity, jobs, and layout: [session-prep-pages.md](./session-prep-pages.md).
 
 ## Out of contract
 
-How the designated writer phrases a skill. One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook). Wiki kind page jobs ([wiki-kind-pages.md](./wiki-kind-pages.md)). Session-prep page identity and jobs ([session-prep-pages.md](./session-prep-pages.md)).
+One skill per subtype card. Campaign OS `composing-beats` / `writing-*-beats`. The article skill `writing-beats`. Foundry staging. Cold opens (not a Hook). Wiki kind page jobs ([wiki-kind-pages.md](./wiki-kind-pages.md)). Session-prep page identity and jobs ([session-prep-pages.md](./session-prep-pages.md)).

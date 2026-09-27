@@ -21,14 +21,14 @@ Every wiki write must preserve vault wikilinks, `[!narration]` for spoken text, 
 - **Wikilinks in-vault:** `[[Note]]` / `[[Note|text]]` / `[[Note#Heading]]`. Markdown links only for external `https://` URLs. In a Markdown table cell, write the alias or size pipe as `\|` so the cell stays one cell: `[[Note\|text]]`, `![[image.png\|400]]`. Bare `[[Note]]` needs no escape.
 - **Frontmatter (`wiki/AGENTS.md`):** include `title`, `category`, `tags`, `sources`, `created`, `updated`, plus campaign `type`, `reveal`, `campaign`, and `visibility`. `type` enum: `wiki/AGENTS.md` § Frontmatter. `reveal`: `unrevealed` | `revealed`. `visibility` defaults to `dm` and is distinct from `reveal`. Prefer those fields over generic `title`-only notes.
 - **`summary` frontmatter:** one sentence — what the note is and anything non-obvious or unexpected. Use it to assess a note without reading the full file. Create on every new note; update whenever the note changes. Keep it concise, specific, and direct. Quote the value when it contains `: ` (colon-space) — unquoted `: ` breaks YAML.
-- **Player prose:** `[!narration]` is the only callout: words the DM reads aloud. Owner pages carry it in the header row beside At a Glance; beats open with `> [!narration] Opening`. A narration block appears once its spoken text exists. Conditional spoken lives in a table cell as `_italic_`. No secrets/DCs/unearned names inside `[!narration]` or those cells. Rules: [references/callouts.md](references/callouts.md).
+- **Player prose:** `[!narration]` is the only callout: words the DM reads aloud. Owner pages carry it full width under the title; beats open with `> [!narration] Opening`. Every narration block is full width, never inside a column. A narration block appears once its spoken text exists. Conditional spoken lives in a table cell as `_italic_`. No secrets/DCs/unearned names inside `[!narration]` or those cells. Rules: [references/callouts.md](references/callouts.md).
 - **Real body newlines:** Prose, lists, and callout bodies must use real line breaks, never a literal backslash followed by `n`. This is especially strict for run-guide, session-prep, session, and beat notes. The only exemptions are YAML frontmatter and fenced code/statblocks (including YAML string values inside a statblock fence); outside those regions, a literal `\n` is a FAIL.
 - **Complete sentences on live surfaces:** Every DM-facing line on a run guide, session prep, or beat card must be a **complete grammatical sentence** (or a short list of complete sentences). Telegram shorthand, letter-code-only clauses, and slash-stacks that need a decoder are presentation fails. Wikilinks, bold field labels, compact tables, and the **at-table check/save grammar** below are allowed when cells remain readable sentences or clear subject-bearing fragments.
-- **Owner-page section jobs (signal):** Each fact appears once across At a Glance / body / Secrets / Connections / History. At the Table is playable consequence only — not design diary or balance commentary. No agent-process asides on DM owner pages. Vehicle/item numbers live in one headed home.
+- **Owner-page section jobs (signal):** Each fact appears once on the page, in the part its template gives it; no summary section repeats the body. Campaign facts are playable consequence only — not design diary or balance commentary. No agent-process asides on DM owner pages. Vehicle/item numbers live in one headed home.
 - **Signal-only lines:** Every wiki line must earn table attention by changing a choice, ruling, risk, resource, route, clock, NPC response, or words to speak. Cut default, normal, and no-effect statements; mention safety, permission, ordinary water, weather, or light only when that fact changes play. Campaign and session notes state what to run, say, or know; agent-process bans stay in skills, AGENTS, and templates-for-agents.
 - **At-table scan:** each Markdown treatment has exactly one meaning (table under Syntax). `DC 15` is inline code. Private DM notes are prose under their heading (`Secrets`, `Checks`, `At the Table`).
 - **Creatures:** Fantasy Statblocks fence (```` ```statblock ````) after a single `## Statblock` heading so run cards can `![[Name#Statblock]]`. See `wiki/templates/creature.md`. File the page from `wiki/templates/creature.md`: header row, then `## Statblock` with at most one overview image immediately before the fence; remaining images go under Art role subsections. Never a prose AC/HP table instead of the fence. No WotC book paste. The fence keeps 5e YAML phrasing (`DC 15 Constitution saving throw`); at-table scan is for wiki body, not the fence. Pass…
-- **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Put default-mode compact numbers on the actor entries (`run-guide`). Do not retype the owner's full Multiattack/HP table into the card body. Do not embed the whole monster essay.
+- **Run-card roster:** embed the owner heading (`![[Bloodhawk#Statblock]]`) at the bottom. Actor entries carry only this scene's state and loop (`run-guide`); every number the owner holds arrives by the embed, never retyped into the page body. Do not embed the whole monster essay.
 - **Paths:** scratch → `inbox/`; **images/media** under `attachments/` (campaign subfolders ok). Embed with `![[attachments/…]]`; wikilink with `[[attachments/…]]`. See [[attachments/00 Attachments]] + [references/embeds.md](references/embeds.md). No parallel `wiki/` · `concepts/` · `sources/` tree.
 - **Surgical edits only:** Edit the elements in scope for the current pass. Preserve existing image embeds, wikilink paths, frontmatter fields, and structure unless that exact element is broken and verified broken. A copy pass edits copy; it does not rewrite embeds or paths.
 - **Lint:** Run `./scripts/wiki lint` (obsidian-markdown plus literal-newlines on session/beat bodies). The literal-newline check skips YAML frontmatter and fenced code/statblocks.
@@ -90,7 +90,7 @@ More: [references/embeds.md](references/embeds.md) · hub [[attachments/00 Attac
 > Beat scene-setting: what the characters perceive, ending on a moment they can act on.
 
 > [!narration] Matteo Scola
-> Owner-page player-safe look, in the header row beside At a Glance.
+> Owner-page player-safe look, full width under the title.
 ```
 
 `[!narration]` is the only callout on every page — [references/callouts.md](references/callouts.md).
@@ -193,7 +193,7 @@ Types and tags: [references/properties.md](references/properties.md).
 
 ### Columns (obsidian-columns plugin)
 
-`col` / `col-md` codeblock fences, in two patterns only: the owner-page header row (At a Glance beside the narration) and the beat pair (two short same-moment blocks). Statblocks, wide tables, and beat openings stay full width. Syntax and patterns: [references/columns.md](references/columns.md).
+`col` / `col-md` codeblock fences, in one pattern only: the beat pair (two short same-moment DM blocks). Every `[!narration]` callout, statblock, and wide table stays full width. Syntax and patterns: [references/columns.md](references/columns.md).
 
 ### Also supported (use when needed)
 
@@ -207,7 +207,7 @@ Types and tags: [references/properties.md](references/properties.md).
 | Wikilink alias or image-size pipe left raw in a table cell | `[[Note\|text]]` / `![[image.png\|400]]` |
 | Frontmatter with only `title`/`date` | AGENTS `type` + campaign fields |
 | Prose monster stats / fence not first | `## Statblock` then `statblock` fence, or fence first |
-| Owner's full Multiattack/HP table retyped above the embed | `![[Monster#Statblock]]` at the bottom plus action-card compact numbers (`run-guide`) |
+| Owner's numbers retyped onto the page | `![[Monster#Statblock]]` at the bottom; actor entries carry only this scene's state (`run-guide`) |
 | Secrets inside `[!narration]` | Prose under `## Secrets` |
 | `**DC 15**` or `**DC 15** *Perception*` | `**Wisdom (Perception) — \`DC 15\`**` |
 | `==highlight==` in any agent-written text | Prose under its heading. Conditional spoken in a table cell is `_italic_`. `==…==` is reserved for the DM's quality-error marker (constitution XIX) |

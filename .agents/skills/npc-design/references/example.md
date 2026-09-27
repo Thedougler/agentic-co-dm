@@ -88,18 +88,12 @@ Packet tells: the torn ledger, the fast abacus, the humming.
 - **Refusal:** "No. A closed page stays closed. That's the whole trade."
 - **Under pressure:** "A dozen things lighten a hold. Salt, rot, rats. Don't ask me which."
 
-## 7. Filed At a Glance and Secrets (excerpt)
+## 7. Filed identity line and what the DM plays (excerpt)
 
 ```markdown
-## At a Glance
+*Human tally clerk of [[gull-stair]] for forty years, sworn to the [[harbour-court]]*
 
-Ysolde has kept the harbour honest for forty years and broke that once, for family.
+**Wants.** Her tally book delivered to the [[harbour-court]] before the evening bell.
 
-- **Role.** Harbour tally clerk of [[gull-stair]] for forty years; exact about everything but one page.
-- **Wants.** Her tally book delivered to the [[harbour-court]] before the evening bell.
-- **Home.** [[gull-stair]]
-
-## Secrets
-
-She tore out the page showing [[the-gannet]] landing half its weighed catch, to hide her brother's smuggling from the [[saltwardens]]. The fresh tear in the ledger and her abacus speeding up at any mention of weights both point to it.
+**Secret.** She tore out the page showing [[the-gannet]] landing half its weighed catch, to hide her brother's smuggling from the [[saltwardens]]. The fresh tear in the ledger and her abacus speeding up at any mention of weights both point to it.
 ```

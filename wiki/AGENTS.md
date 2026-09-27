@@ -30,17 +30,8 @@ remain owned by their current CLI contracts.
 When ownership changes, hand off only the bounded artifact or operation to the
 named receiving skill and return its evidence to the parent. The parent retains
 the original objective; dependent spoken or presentation work waits for owner
-pages and contracts. Use `AGENTS.md` for global routing and
-`docs/agents/hybrid-sdd.md` for cross-capability composition.
+pages and contracts. Use `AGENTS.md` for global routing.
 
-### Capability convergence pointer
-
-Use the full owner-relative `observe → act → re-observe` rule in
-[`docs/agents/hybrid-sdd.md`](../docs/agents/hybrid-sdd.md) whenever wiki
-work has an incomplete boundary. Continue only on changed owner evidence or a
-passed owner guard; an unchanged observation requires a different sanctioned
-path or a blocker. This file keeps wiki mutation, scope, canon, and handoff
-semantics; it does not duplicate the common procedure.
 
 ## Frontmatter
 
@@ -71,20 +62,22 @@ Done when: required fields are present, body is complete sentences, related page
 
 Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` for session-prep beats and city pages). The template is the one source of truth for the page: its headings, their order, and its callouts. The comment under a template heading starts with `Required.` when every page carries that section, `Required when <key> is <value>.` when the page's frontmatter decides, and `Free-form.` when the page shapes its own headings there; every other section is optional. The linter reads the same template, so changing a template changes what it checks. Keep the template's frontmatter keys; delete its comments and every body section you have no facts for.
 
-**Fact-only.** Every line gives the DM a fact, ruling, or response they can use. A body section, glance bullet, table row, or callout with no fact stays off the page. Absence, uncertainty, and the source's silence are never written; where the table needs an answer and canon has none, decide it as a proposal (`docs/agents/table-ready.md` "Fill the silence"). Each fact appears once on the page. A stub is the lead sentence plus the glance bullets the source supports.
+**Fact-only.** Every line gives the DM a fact, ruling, or response they can use. A body section, bullet, table row, or callout with no fact stays off the page. Absence, uncertainty, and the source's silence are never written; where the table needs an answer and canon has none, decide it as a proposal (`docs/agents/table-ready.md` "Fill the silence"). Each fact appears once on the page. A stub is the portrait and the lines the source supports.
 
-**Owner page anatomy** (every `entities/` type), in this order:
+**Readable by shape.** A page shows what matters by its shape, the way a published 5e book entry does, with no summary section to find it: the relevant content comes first, and content with no use at the table is not written. A field only agents use (a beat's card, a session question) goes in frontmatter; a field no one uses is left out.
 
-1. `# Title`, then optional overview art.
-2. Header row (`col` codeblock): `## At a Glance` — one lead sentence on what the page is for at the table, then two to six `- **Label.** fact.` bullets — beside `> [!narration] Name`, the player-safe look.
-3. The type's core section: `Statblock` (creature, vehicle, fighting NPC), `Sheet` (PC), `Properties` (item), `Effect` (spell), `Hazard` (flora hazard), `Ruling` (Rules), `Situation` (quest), or the type's own sections in its template. Lore shapes its body to fit the lore, with headings named for what they hold.
-4. Shared sections, one meaning everywhere: `At the Table` (how to run it), `Secrets` (hidden truths and how each surfaces), `Connections` (`- [[page]] — what the tie does at the table`), `History` (past that changes a present choice), `Log` (newest first, one bullet per change play made), `Art`.
+**Owner page anatomy** (every `entities/` type) is its template, in the shape of its content: a creature is a Monster Manual entry, a spell a Player's Handbook entry, an item or hazard a Dungeon Master's Guide entry, a place a keyed location, a region or city a gazetteer. Most open with:
 
-**Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, objective, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Actors` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` (truths) or `Leads` (routes onward) → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
+1. `# Title`, then optional identity art.
+2. `> [!narration] Name`, the player-safe look, full width.
+3. The type's rules or core, where its template puts them: the italic classification line and `Statblock` (creature, vehicle, fighting NPC), the casting fields and effect (spell), what the item does (item), Trigger, Effect, and Countermeasures (hazard), the key (place), `Ruling` (rules), `Sheet` (PC). Lore opens on its truth.
+4. Campaign facts after the rules, as `**Name.**` paragraphs, only when they exist (Tactics, Secret, Ties), and `Log` (newest first, one bullet per change play made).
 
-**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or the At a Glance read). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing. A page carries one narration block per moment the players live through — the look, a creature's or NPC's entrance, a revelation, the closing line — at the slot its template gives it; a line that belongs to one branch is an `_italic_` cell in the table's Narration column.
+**Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): the run lines under the title with no heading (starting situation, what ends it, next beat) → `> [!narration] Opening` → `Situation` → `Actors` → `Terrain` → `Pressure` → `Party Choices` → `Checks` → `Clues` (truths) or `Leads` (routes onward) → `Outcomes` with carry-forward → `Statblocks`, as each type's template gives them. Headings name their content in words a careless reader cannot misread. `docs/agents/table-ready.md` is the completeness bar.
 
-**Columns.** `col` / `col-md` codeblocks only, for two patterns: the owner-page header row, and a beat pair of two short same-moment blocks. Statblocks, wide tables, and long narration stay full width.
+**Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, or unearned names). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing. A page carries one narration block per moment the players live through — the look, a creature's or NPC's entrance, a revelation, the closing line — at the slot its template gives it; a line that belongs to one branch is an `_italic_` cell in the table's Narration column.
+
+**Columns.** `col` / `col-md` codeblocks only, for one pattern: a beat pair of two short same-moment DM blocks. Every `[!narration]` callout, statblock, and wide table stays full width.
 
 Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `encounter.md`, `rules.md` (`type: lore` `kind: rules`), `campaign-state.md` (`type: lore` `kind: campaign-state`), and `dm-intelligence.md` (`type: work` `kind: dm-intelligence`). Flora hazards copy `hazard.md` (`type: item` `kind: flora hazard`). Cities copy `city.md` (`type: place` `kind: city`). `session-prep.md` is the run-guide cockpit; new beats and plans copy their typed template.
 
@@ -148,7 +141,7 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`. DM-visible labels use Title Case words (`One thing`, not `one_thing`); YAML keys may stay snake_case.
+Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`. Foundry `token` is YAML on creature/npc/pc, never a body embed. DM-visible labels use Title Case words (`One thing`, not `one_thing`); YAML keys may stay snake_case.
 
 ## Approval (FR-019)
 

@@ -31,7 +31,7 @@ Encounter math → `encounter-prep`. Multi-room site → `dungeon-design`. Place
 
 ### Done
 
-Use the existing `## Done Check` and workflow completion tests below.
+Every item in `## Done` below holds, checked by its written audit.
 Completion is observable when the named quest path, template/situation
 contract, agency and connectivity checks, and any child return evidence are
 reported.
@@ -42,17 +42,24 @@ the party chooses the route. Campaign situation pages use `type: quest`.
 
 ## Work Gate
 
-Prep only. Follow `docs/agents/work.md`.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD:
+entity-before-spoken** and **HARD: dm-facing-explicit**. Cast and invent per
+`docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
-Show a chat proposal; write a campaign wiki page only after DM accept. Reject
-leaves no page. Invention is required when the wiki lacks the fact: set
-`invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]`
-for wiki claims. Show the DM any contradiction with an existing page. Never
-present invention as a wiki fact. Never write silent canon. A craft `type`
-becomes `canon` only after DM accept.
-
-Done when: the page is inspectable Work, invention is
-flagged, and grounding is named.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  quest needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as canon under the rule in `llm-wiki`: one concrete answer (what
+  the hidden thing truly is, what the driver does next and when), stated on
+  the page as world fact, with the page marked `invention: true`. The response
+  lists each proposal with the `[[pages]]` it grows from and names any
+  contradiction it settles, so the DM picks the winner.
+- **Explicit DM layer.** **The truth.**, the walk-away steps, and
+  **Opposition.** state the truth by name: what is really happening, who acts
+  next and when, and what each sign and reversal turns out to be. "Unclear", "may", "for play to
+  establish", and lists of possibilities are silence left unfilled. The
+  player-facing narration withholds from players, never from the DM.
+- **Process stays off the page.** Provenance, contradictions, and the proposal
+  list live in the response.
 
 ## Ownership
 
@@ -107,101 +114,75 @@ pursuable situation, not a scripted episode.
 Complete when: the sentence names incompatible wants, the live pressure, and
 what can change if nobody interrupts it.
 
-### 3. Fill At a Glance
+### 3. Fill the offer
 
-Copy `wiki/templates/quest.md` and fill At a Glance and the frontmatter:
+Copy `wiki/templates/quest.md` and fill the frontmatter and the italic offer
+line under the portrait: who offers it, the reward, and the deadline (a date
+or the fictional event after which the situation changes, when one exists).
+The portrait is the player-facing brief, from what the characters know.
 
-- **Lead sentence:** the result the party could accomplish, not the method.
-- **Why now:** the pressure, opportunity, or danger that makes delay matter.
-- **Deadline:** a date or the fictional event after which the situation
-  changes, when one exists.
-- **Opposition:** who wants a different outcome, and what they want instead.
-- **Narration** (beside At a Glance): the player-facing brief, from what the characters know.
+Complete when: the offer line names the giver and the reward, and a deadline
+appears only when the situation has one.
 
-Complete when: objective and why now are explicit, and a deadline appears
-only when the situation has one.
+### 4. Write the truth
 
-### 4. Write the Situation
-
-Write the unstable present: what is really happening, the forces involved, and
-what each is already doing. What the party knows lives in the narration beside At a Glance.
-Do not prescribe the party's next action.
+**The truth.** is the unstable present: what is really happening, the forces
+involved, and what each is already doing. Do not prescribe the party's next
+action.
 
 Complete when: a DM can explain the current tension, involved forces, and
 visible hook without reading a plotted sequence.
 
-### 5. Write the Stakes
+### 5. Set the walk-away
 
-Fill success, failure, and walk-away, and the **Open question** bullet: who
-might change sides, survive, fall, or gain power, left for play to decide. The walk-away
-entry names what continues without the party.
+**If the party walks away.** names the driver, what it wants, and its moves
+if nobody interrupts, as visible steps that end in the state it wants.
+The steps advance on the driver's timeline: early arrival sees an earlier
+state than late arrival. If the prompt ties escalation only to party presence
+or arrival, convert it to an independent timeline the driver controls.
 
-Complete when: success, failure, and walk-away each change the world
-materially, and at least one question remains open for play.
+Complete when: the moves are concrete enough for the DM to advance the quest
+without `world-tick`, and they produce a different situation depending on
+when the party engages. `world-tick` does not advance quest steps.
 
-### 6. Set the Pressure
+### 6. Build leads
 
-Name the driver, what it wants, its current move, its next move if
-uninterrupted, and the end state if it gets what it wants. Progress portents are
-observable changes, not hidden bookkeeping. Portents advance on the driver's
-timeline — early arrival sees an earlier state than late arrival. If the prompt
-ties escalation only to party presence or arrival, convert it to an independent
-timeline the driver controls.
-
-Complete when: the driver and uninterrupted next move are concrete enough for
-the DM to advance the quest without `world-tick`, and portents produce a
-different situation depending on when the party engages. `world-tick` does not
-advance quest portents.
-
-### 7. Build Leads
-
-Write at least two independent leads, each a checkbox the DM ticks when the
-party finds it. Each lead points to useful progress from
-a different source, vector, or location. Losing one lead does not erase the
-quest. If the prompt prescribes a single approach, open alternatives — the
-prompt describes a possible route, not the only route.
+Write at least two independent leads in **Leads.**, each a checkbox the DM
+ticks when the party finds it, pointing to useful progress from a different
+source, vector, or location. Losing one lead does not erase the quest. If the
+prompt prescribes a single approach, open alternatives: the prompt describes a
+possible route, not the only route.
 
 Complete when: the party has at least two independent routes, no required
 sequence of actions, and no single method (combat, stealth, negotiation) is
 the only viable path.
 
-### 8. Fill Support Sections
+### 7. Add the paragraphs play needs
 
-Add Complications (a tradeoff, a reaction when the party interferes, a
-reversal and where it is found), Rewards (what play can earn beyond the promise), and Connections (each
-person, faction, place, or thing by link, with its role in the quest) only
-when they help the DM run the quest. Link detailed owners instead of restating
-them.
+Add **Opposition.** (who wants a different outcome, what they want instead,
+and how they react when the party interferes), **Stakes.** (what success and
+failure each change), and **Rewards.** (what play can earn beyond the
+promise) only when they help the DM run the quest. Link detailed owners
+instead of restating them.
 
-Complete when: every filled row helps the DM run, update, or adjudicate the
-quest.
+Complete when: every paragraph on the page helps the DM run, update, or
+adjudicate the quest.
 
-### 9. Handle Resolution
-
-Omit `## Resolution` while the quest is unresolved. Add it only when play or DM
-ruling creates a stable outcome: resolved, failed, expired, or transformed.
-State what actually happened, who gained or lost power, the lasting change to
-each linked page, and the loose threads.
-
-Complete when: unresolved quests have no Resolution section, and resolved
-quests record what actually happened plus lasting world changes and loose
-threads.
-
-### 10. Update an Existing Quest
+### 8. Update an existing quest
 
 After meaningful play, downtime, rolls, or DM ruling:
 
 - Change `status`, `last_advanced`, and `updated` when needed.
-- Rewrite Situation to the new present.
-- Advance, alter, or cancel the Pressure driver and portents.
-- Update found, invalidated, or new leads.
-- Update changed connections and rewards.
-- Add one Log bullet.
+- Rewrite **The truth.** to the new present.
+- Advance, alter, or cancel the walk-away steps.
+- Update found, invalidated, or new leads, and changed rewards.
+- Add one Log bullet; when the quest ends, that bullet records what actually
+  happened, who gained or lost power, and the loose threads.
 
 Complete when: the page reflects the current playable situation and the Log
 records what changed.
 
-### 11. Audit the Page
+### 9. Audit the Page
 
 Use `references/workflow-detail.md` for agency, causality, activity,
 connectivity, gravity, persistence, and vault integrity.
@@ -223,9 +204,26 @@ point to at least two independent leads.
   routes, and add redundant bridges. The prompt describes the DM's intent; the
   quest page must be playable.
 
-## Done Check
+## Done
 
-`NI: <objective + why now + deadline + walk-away + driver next move + two independent leads>`
+- The quest frame sentence names incompatible wants, the live pressure, and
+  what changes if nobody interrupts.
+- The offer line names the giver and the reward; **The truth.** names the
+  forces and what each is doing; the narration came from `theatre-of-the-mind`
+  and holds no secret or unearned name.
+- Every question, portent, and reversal the page raises has its DM answer on
+  the page; the driver's next move has a time or trigger.
+- The walk-away has visible steps on the driver's own timeline; at least two
+  independent leads are checkboxes pointing to different pages.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit.
+- User-said canon is filed; every invention is canon under the rule in
+  `llm-wiki`, marked on the page and listed in the response.
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.
+
+Finish with a written audit in working notes: each Done item beside the page
+line that satisfies it; fix the page where none does.
 
 ## References
 

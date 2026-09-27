@@ -3,30 +3,32 @@
 Weak → strong pairs for DM-facing copy. Match the quality and shape; write
 your own words from your own facts. Names here are illustrative and are never
 canon.
-
 ## Contents
 
-- Header lines: shorthand → sentences
+- Run lines: shorthand → sentences
 - Pressure table: coaching → what the world does
 - Actors row: coy → plain truth
-- Opposition: "see owner page" → numbers and tactics
+- Opposition: retyped statblock → embed, state, and tactics
+- Buried fact → point first, one fact per line
+- Design reasoning → the ruling
 - Ruling: bare → full consequence
 - Carry forward
-- At a Glance: category → this one
+- Owner page: summary and scattered facts → the book entry
+- Owner facts: category → this one
 - Owner facts: dead weight → signal
 - "Make it more dramatic"
 - Chat report
 
-## Header lines: shorthand → sentences
+## Run lines: shorthand → sentences
 
 Weak:
 
-> **Trigger.** Vash/relic grab; LR spent → stun break.
+> **Starts when.** Vash/relic grab; LR spent → stun break.
 > **Stakes.** relic, figs, Aldo.
 
 Strong:
 
-> **Trigger.** [[vash-the-chain|Vash]] spends his last Legendary Resistance to break the stun and reaches for the [[the-reliquary|reliquary]] on Ilsa's chest.
+> **Starts when.** [[vash-the-chain|Vash]] spends his last Legendary Resistance to break the stun and reaches for the [[the-reliquary|reliquary]] on Ilsa's chest.
 > **Stakes.** The party can lose the reliquary, their two [[healing-fig|healing figs]], or Brother Aldo, who cannot move on his own.
 
 ## Pressure table: coaching → what the world does
@@ -55,16 +57,46 @@ Strong:
 
 > **[[tobin-marr|Tobin]].** Wants the party gone before nightfall. He lies about the second grave: his brother is buried in it, and he fears the party will dig it up. If someone mentions a brother, he stops talking and walks to the tree line.
 
-## Opposition: "see owner page" → numbers and tactics
+## Opposition: retyped statblock → embed, state, and tactics
 
-Weak:
+Weak (the statblock retyped in Actors, the plan restated in three sections):
 
-> **Opposition.** Use the owner page for Vash's stats. He is dangerous and tricky.
+> **[[vash-the-chain|Vash]].** AC 17, HP 91, Speed 50 ft. Multiattack: two Kusarigama (+8, reach 20 ft, 11 slashing, pulls 10 ft) and one Sai (+8, 9 piercing). Stunning Strike: Constitution save `DC 18`. Deflect Attack reduces one hit by 1d10 + 5. Saves Dex +8, Con +6. Passive Perception 17. He opens on the reliquary and runs at half HP.
+>
+> *(Pressure:)* Each round he grabs for the reliquary, and at half HP he runs.
+>
+> *(Tactics:)* 1. Grab the reliquary. 2. Pull blockers aside. 3. Run at half HP.
 
 Strong:
 
-> **[[vash-the-chain|Vash]].** AC 17, HP 91, Speed 50 ft. Kusarigama reach 20 ft, pulls a hit target 10 ft toward him. Stunning Strike: Constitution save `DC 18`.
-> **Tactics.** He opens by grabbing for the reliquary. If blocked, he pulls the blocker out of the way with his chain. At half HP, or when three PCs are within 10 feet of him, he runs for the grass edge 40 feet inland.
+> **[[vash-the-chain|Vash]].** At 60 of 91 HP, one Legendary Resistance left. He opens by grabbing for the reliquary. If blocked, he pulls the blocker out of the way with his chain. At half HP, or when three PCs are within 10 feet of him, he runs for the grass edge 40 feet inland.
+>
+> *(Statblocks, at the bottom of the page:)* `![[vash-the-chain#Statblock]]`
+
+## Buried fact → point first, one fact per line
+
+Weak:
+
+> - **Starting situation.** Midnight in the chapel undercroft, and the candles are out except the two on the altar, and Brother Aldo is tied to the second pillar with a gag, and Vash is on the stair with the reliquary under his arm, and the party is at the far door, 40 feet from him, and the flood water is ankle-deep and rising.
+
+Strong:
+
+> - **Vash has the reliquary.** He is on the stair, 40 feet from the party at the far door.
+> - **Brother Aldo** is gagged and tied to the second pillar.
+> - **The water** is ankle-deep and rising.
+
+The weak bullet holds the one fact the DM needs first (Vash has the prize
+and is leaving) in its middle, behind candles nobody will act on.
+
+## Design reasoning → the ruling
+
+Weak:
+
+> **Why the flood favors the party.** Vash is Medium and fights on his feet, so deep water costs him his reach, while the halflings can climb the pews, which means the terrain rewards the party for luring him down.
+
+Strong:
+
+> **Deep water.** A creature in waist-deep water has Disadvantage on melee attacks; the pews rise above it and count as difficult terrain to climb.
 
 ## Ruling: bare → full consequence
 
@@ -92,7 +124,32 @@ Strong:
 > **Vash.** Fled inland, captured, or dead.
 > **Now true.** The party has chosen whether to chase Vash or protect the carrier, and Vash knows how they fight.
 
-## At a Glance: category → this one
+## Owner page: summary and scattered facts → the book entry
+
+Weak (a summary section, empty headings, and one sentence of rules buried in lore):
+
+> ## At a Glance
+> - **Held by.** The apothecary in the lower market.
+> - **What it changes.** Makes the drinker very strong for a while.
+>
+> ## Properties
+> Drinking it grants great strength.
+>
+> ## History
+> Brewed by giant-touched alchemists in the mountain holds, it was traded down the rivers for generations.
+>
+> ## Connections
+> - [[lower-market]] — sold here.
+
+Strong, a published entry: the classification, then the whole rule, then the one detail that makes it this potion.
+
+> Potion, Rare, ½ lb.
+>
+> When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
+>
+> This potion's transparent liquid has floating in it a sliver of fingernail from a stone giant.
+
+## Owner facts: category → this one
 
 Weak:
 

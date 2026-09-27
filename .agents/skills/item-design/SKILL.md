@@ -223,29 +223,17 @@ attunement, charges, the curse, the item's personality, and any name not
 written on the object.
 
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, item recipe, and give
-it the packet. When a property has a visible effect, also ask for the optional
-`In use` block under At the Table (Item in scene recipe): what the wielder and
-onlookers perceive when it activates, one block per such property, titled with
-the property's name when there are several.
+it the packet. When a property has a visible effect, also ask for an optional
+declared-action `[!narration]` after the portrait: the holder's use as "you",
+then what everyone perceives, titled with the property's name when there are
+several.
 
 Done when the portrait passes theatre-of-the-mind's final check and carries
 every tell.
 
 ### 8. File the page
 
-Copy `wiki/templates/item.md`. A consumable is At a Glance, narration, and
-Properties. Keep other sections only when you have facts for them (fact-only,
-`wiki/AGENTS.md` Layout); write complete sentences and wikilink every owner page.
-
-| Section | Carries |
-|---|---|
-| At a Glance | Classification line (kind, rarity, attunement); what it changes at the table; Held by and Wanted by bullets |
-| Narration | The portrait from step 7 |
-| Properties | The runnable rules from steps 4 and 5, plain paragraphs with bold labels |
-| At the Table | Presence from step 6; for a sentient item, its voice, sample lines, and what it wants from the bearer; then the optional `In use` narration |
-| Secrets | Curse, hidden power, and the truth behind every tell |
-| Connections | Each tie by wikilink and what it does at the table |
-| History | Maker, owners, and how it came to be where it is |
+Copy `wiki/templates/item.md`. Default page is the portrait, then italic classification, then what it does. Extra campaign facts only after the rules, only when they exist. Lore about the world goes on a lore page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
@@ -267,17 +255,13 @@ line that carries it; a line with nothing beside it goes back on the page.
   passed `dnd5e-mechanics`.
 - Curse, sentience, evolution, and artifact branches have tells, truths, and
   exits; a sentient item's personality came from `npc-design`.
-- Presence is filled, so a place or beat can place it seen or hidden; a
-  magic, plot, or artifact item has a named seeker who acts when it surfaces.
-- Every recorded unknown and every tell has its DM answer under Hidden
-  Properties.
+- Presence facts that a place or beat needs live on that place or beat; a seeker files on the NPC or faction page, not as empty item headings.
+- Every recorded unknown and every tell has its DM answer after the rules (**Curse.**, **Secret.**).
 - The portrait came from theatre-of-the-mind and carries every tell.
 - `[!narration]` is the only callout; each fact appears once.
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
-  Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

@@ -37,6 +37,10 @@
         {
           "type": "behavior",
           "text": "At a Glance carries a Nature bullet (ancestry, calling, and temperament in a phrase)."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -60,6 +64,10 @@
         {
           "text": "If proposing invention, cites grounding wiki pages and shows contradictions in process-notes.md, agent_report.md, or transcript.md",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -91,6 +99,10 @@
         {
           "text": "Function and role framing appear in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -122,6 +134,10 @@
         {
           "text": "Immediate want and leverage/need are playable in the next scene",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -141,6 +157,10 @@
         {
           "text": "Omits unused long-term history that does not affect the scene",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -160,6 +180,10 @@
         {
           "text": "Does not make the players a captive audience for unbroken faction exposition",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -179,6 +203,10 @@
         {
           "text": "Does not treat Persuasion as mind control that erases characterization",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -198,6 +226,10 @@
         {
           "text": "Gives the ally a want and cost rather than free competence",
           "type": "content"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -217,6 +249,10 @@
         {
           "text": "Does not gate the entire Countless arc behind one check or one clue",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -236,6 +272,10 @@
         {
           "text": "Keeps Skarn's presence consequential without erasing player agency",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -255,6 +295,10 @@
         {
           "text": "Gives characters meaningful responses after discovery",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -274,6 +318,10 @@
         {
           "text": "Does not leave the villain idle until a scripted boss fight",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -293,6 +341,10 @@
         {
           "text": "Hands detailed math to monster-design rather than bloating the NPC page with player-mastery features",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -312,6 +364,10 @@
         {
           "text": "Lets play decide among multiple conclusions",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -343,6 +399,10 @@
         {
           "text": "role is rival, patron, or contact, and [!narration] is the only callout",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -366,6 +426,10 @@
         {
           "text": "Any invented name is shown as a proposal before filing",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -447,6 +511,10 @@
         {
           "type": "behavior",
           "text": "The page stays an NPC page: no creature Tactics or Behavior sections."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

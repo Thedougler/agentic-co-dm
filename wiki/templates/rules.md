@@ -17,11 +17,7 @@ summary: ""
 
 # {{title}}
 
-## At a Glance
-
-<!-- Required. Lead: the ruling in one or two sentences. Then labelled facts, one bullet each. -->
-
-- **When it applies.** The situation that calls for it.
+**When it applies.** The situation that calls for it.
 
 ## Ruling
 

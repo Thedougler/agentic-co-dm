@@ -18,7 +18,7 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 # Session 12 — Consume
 
 **Card.** Final Battle.
-**Entry state.** Dusk. The column reaches [[the-pantry]] off [[the-burnt-road]], carrying whatever [[session-12-01-dawn-strike]] and [[session-12-03-terror-birds]] cost, with no long rest since last night. [[crissdalynn-khinriss]] (or whoever took the hand-off) carries the [[fate-spinner]]. [[talon-skarn]] is at **130 of 195 HP** after a day of short rests, with the Legendary Resistances the Hook left him and **Kusarigama Tempest** charged. He has the ghost plums he took from Matteo.
+**Entry state.** Dusk. The column reaches [[the-pantry]] off [[the-burnt-road]], carrying whatever [[Session-12-01-dawn-strike]] and [[Session-12-03-terror-birds]] cost, with no long rest since last night. [[crissdalynn-khinriss]] (or whoever took the hand-off) carries the [[fate-spinner]]. [[talon-skarn]] is at **130 of 195 HP** after a day of short rests, with the Legendary Resistances the Hook left him and **Kusarigama Tempest** charged. He has the ghost plums he took from Matteo.
 **Party goal.** Keep the Fate Spinner, and keep the Calveno alive.
 **Opposition goal.** Skarn takes the Spinner and leaves through the open sky over the channel.
 **Stakes.** Lose the Spinner to [[talon-vantyrus]] for good, or drive Skarn off with nothing left to try again with.
@@ -27,7 +27,7 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 **Memorable element.** A three-foot rat gorging on living fruit because a voice said so, and the whole vine turning on him while the invisible falcon gets tangled instead.
 **Budget.** About 60 minutes. **If behind:** skip phase 3's second Tempest; Skarn leaves at 110 HP instead of 97.
 
-**Next:** [[session-12-06-the-way-out]]
+**Next:** [[Session-12-06-the-way-out]]
 
 > [!narration] Opening image
 > By dusk Luca is walking out in front, counting aloud each pile of fallen fruit he passes. Where the piles turn off the road of charred flowers toward firelight, the trees open on a clearing roofed by a single vine as thick as a mast. It hangs so heavy with guavas and stonepears that the wood creaks whenever the air moves, and bundles of bare cords sway down between the fruit. Beneath it, around a small fire, seven thin men are getting to their feet. The tallest, a grey streak through his beard, looks straight past you to the man being carried in, and then he stops moving altogether. Behind the men a deep channel slides by with a deadwood raft tied to its bank, and along the treeline pale pollen drifts in the last light.
@@ -38,11 +38,11 @@ summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, 
 
 | Thread | Planted in | Tested in | Lever it gives here | Without it |
 | ------ | ---------- | --------- | ------------------- | ---------- |
-| Fate Spinner and Skarn | [[session-12-01-dawn-strike]] | [[session-12-01-dawn-strike]] | The party knows his read: hands, hips, straps. Hiding or handing off the Spinner works as it did at dawn. | He cuts gear blind and pulls whoever is nearest. |
-| Ghost plums | [[session-12-01-dawn-strike]] | — | The party knows Skarn can come invisible. The ghost-plum pollen drift at the treeline shows him as a shimmer while he is inside it. | His first strike comes out of nowhere. |
-| Perrin and [[auralis]] | [[session-12-01-dawn-strike]] (the glow) | This beat | If Perrin eats: Charisma 25 for 1 hour (spell save DC 18, spell attack +10), Resistance to all damage for 1 minute, and the island's responders tangle Skarn. | Skarn fights at full effect. |
-| The Calveno survivors | [[session-12-02-the-smoking-skylight]] | [[session-12-03-terror-birds]] | Steadied civilians obey orders; the island never targets [[hinewai]]'s Calveno. | Twelve frightened civilians in the fight. |
-| The grave orders and Hinewai | [[session-12-04-orders-in-the-ash]] | [[session-12-04-orders-in-the-ash]] | Jean-Claude knows a claim wakes the island's answer, and that the answer spares the Calveno. | — |
+| Fate Spinner and Skarn | [[Session-12-01-dawn-strike]] | [[Session-12-01-dawn-strike]] | The party knows his read: hands, hips, straps. Hiding or handing off the Spinner works as it did at dawn. | He cuts gear blind and pulls whoever is nearest. |
+| Ghost plums | [[Session-12-01-dawn-strike]] | — | The party knows Skarn can come invisible. The ghost-plum pollen drift at the treeline shows him as a shimmer while he is inside it. | His first strike comes out of nowhere. |
+| Perrin and [[auralis]] | [[Session-12-01-dawn-strike]] (the glow) | This beat | If Perrin eats: Charisma 25 for 1 hour (spell save DC 18, spell attack +10), Resistance to all damage for 1 minute, and the island's responders tangle Skarn. | Skarn fights at full effect. |
+| The Calveno survivors | [[Session-12-02-the-smoking-skylight]] | [[Session-12-03-terror-birds]] | Steadied civilians obey orders; the island never targets [[hinewai]]'s Calveno. | Twelve frightened civilians in the fight. |
+| The grave orders and Hinewai | [[Session-12-04-orders-in-the-ash]] | [[Session-12-04-orders-in-the-ash]] | Jean-Claude knows a claim wakes the island's answer, and that the answer spares the Calveno. | — |
 
 ````col
 ```col-md
@@ -148,7 +148,7 @@ flexGrow=2
 
 - **Objective achieved.** Skarn tears free and goes up over the channel with nothing: bloodied, both plums spent. He does not come back tonight.
 - **Opposition broken.** Grappled at 0 Speed and dropped to 0 HP, he is unconscious and can be taken; he never surrenders.
-- **Objective lost.** He leaves over the channel with the Spinner. [[session-12-06-the-way-out]] runs with the loss.
+- **Objective lost.** He leaves over the channel with the Spinner. [[Session-12-06-the-way-out]] runs with the loss.
 - **Escape / pursuit.** Over the channel sky, north-east over the canopy toward the coast. Pursuit in open sky over Aruhe is bloodhawk country.
 
 ## PC moments
@@ -171,7 +171,7 @@ flexGrow=2
 
 **Survivors / loose ends.** Skarn, if he fled. The vine-lashes go back into the canopy when their minute ends. Perrin's mark lasts until dawn.
 
-**Hand off to Resolution.** When Skarn is gone or down, stop, and move to [[session-12-06-the-way-out]].
+**Hand off to Resolution.** When Skarn is gone or down, stop, and move to [[Session-12-06-the-way-out]].
 
 ## Live notes
 

@@ -17,7 +17,7 @@ summary: "Skarn is gone. The survivors who want to leave set out behind the part
 
 # Session 12 — The Way Out
 
-**Follows:** [[session-12-05-consume]]
+**Follows:** [[Session-12-05-consume]]
 **Purpose.** Show the rescue paid off: the survivors who want out have a way out and know how to live through the trip.
 
 **Card.** Villain Escapes, then Happy Ending. Heroes-lost branch: the Spinner is gone.

@@ -33,6 +33,14 @@
         {
           "text": "At the Table entries use named player verbs that change the situation",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -56,6 +64,14 @@
         {
           "text": "If proposing invention, cites grounding pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -91,6 +107,14 @@
         {
           "text": "At a Glance states what this place is relative to its parent settlement and what skipping or bypassing it costs",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -122,6 +146,14 @@
         {
           "text": "Kernel or identity framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -153,6 +185,14 @@
         {
           "text": "Overview narration covers body-scale geography (tiers, canal, arch, crossing) without secrets, DCs, or unearned names",
           "type": "structure"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -180,6 +220,14 @@
         {
           "text": "Does not invent new creatures, named NPCs, or magical effects not already on the page or linked owner pages",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -199,6 +247,14 @@
         {
           "text": "If proposing a new stop, labels it as invention and does not write it as established fact into the live page",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -222,6 +278,14 @@
         {
           "text": "Does not drop established Where content (inland woods, downstream route, Spiguar hunting context)",
           "type": "content"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -244,6 +308,14 @@
         },
         {
           "text": "Output follows wiki/templates/place.md Where conventions: explicit cardinal lines with travel-day distances AND an explicit canon gap for any missing direction — a bare ## Where heading alone fails",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -268,6 +340,14 @@
         {
           "text": "Leaves dependent place work open and reports a specific blocker when the owner return is incomplete.",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "files": [
@@ -296,6 +376,14 @@
         {
           "text": "Names the place boundary and parent effect when the child is incomplete.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -331,6 +419,14 @@
         {
           "text": "The DM layer names the trafficking link to Roka Sten's Verdant Teeth expeditions concretely rather than as 'something shady'",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -358,6 +454,14 @@
         {
           "text": "Preserves every established fact: low-tide exposure, coral points, wreckage, the boat gap, Western Landing",
           "type": "content"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -385,6 +489,14 @@
         {
           "text": "Any new named NPC the stall needs is routed to npc-design to be minted first, or left out, never written as an unnamed stand-in",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -453,6 +565,14 @@
         {
           "type": "behavior",
           "text": "`[!narration] Returning` appears only when the party has been here before, and shows only what changed since their last visit."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -468,6 +588,14 @@
         {
           "type": "behavior",
           "text": "Improves Candlemere against wiki/templates/place.md."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

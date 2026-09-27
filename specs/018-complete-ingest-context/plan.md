@@ -46,7 +46,6 @@ Implementation is a focused change to the existing `wiki-ingest` workflow. No ne
 | VIII. Safe automation runs unattended | Pass — reuses existing QMD maintenance; adds no manual chore. |
 | IX. Design trends toward token efficiency | Pass — one owner skill; point at 004/009/015 instead of restating them. |
 | X. Agents act autonomously by default | Pass — no new human git/context ritual. |
-| XI. Designated writer bounded concurrency | Pass — skill edit is design-impact; implement dispatches one writer; this plan does not write the skill. |
 | XII. Prompt other agents with objectives | Pass — implement uses a scoped prompt (outcome, files, bounds, job). |
 | XIII. Wiki media filenames distinguish kind | Pass — media stays on the existing linked-art path; this feature is corroborating text sources. |
 | XIV. Use the simplest tool | Pass — `qmd` CLI for collection search; filesystem read for `_raw/`; no new launcher. |
@@ -74,7 +73,6 @@ specs/018-complete-ingest-context/
 
 **Structure Decision**: Keep `wiki-ingest` as the workflow owner. Add a complete-context pass inside the open primary (after the primary is read, before extract/compile). Do not create a second skill. Do not copy ingest-time search into query-time `AGENTS.md` retrieval. Progressive disclosure to `references/` only if the step would duplicate standing guidance; prefer one file.
 
-Implementation of that skill edit is **design-impact**. The session agent writes these Spec Kit artifacts only. The skill file is unmodified until `/speckit.implement` dispatches the designated writer.
 
 ## Complexity Tracking
 
@@ -86,7 +84,6 @@ None. Reuses existing skill, collections, sequential unit, and tracking surfaces
 - Confirm related reads are not a second sequential ingest unit (009).
 - Reconcile recency (018) with “newest source ≠ silent canon” (015).
 - Confirm discovery bound: primary content and subject, not a vault crawl.
-- Confirm designated-writer dispatch for the skill edit.
 
 ## Phase 1: Design
 

@@ -27,7 +27,7 @@ Customized combat mechanics serve a named narrative beat (lore, origin, stakes, 
 
 When the encounter has a named place (lair, site, battlefield), that place has at least one mechanical pressure that belongs to it and changes a choice. Flavor-only scenery is incomplete. No named place, or an explicit DM request for a featureless skirmish, does not require invented lair mechanics.
 
-Stock opposition used unchanged needs no custom features: name the standard statblock and copy the compact numbers the DM will roll onto the page. New or changed creatures get their statblocks from `monster-design` (its Reskin path covers a stock statblock with new fiction).
+Stock opposition used unchanged needs no custom features: embed its statblock from its owner page (`![[owner#Statblock]]`), and give a stock statblock with no page yet one through `monster-design`'s Reskin path first. New or changed creatures get their statblocks from `monster-design` (its Reskin path covers a stock statblock with new fiction).
 
 
 ## Ground and type
@@ -68,11 +68,11 @@ clock is only suspense when players can perceive and influence its direction.
 
 ## Output
 
-Use `wiki/templates/encounter.md` for reusable notes: the brief and if-ignored step go
-in At a Glance, the spoken opening in `Opening`, the opposition in Actors (an
-NPC's want, offer, and posture shift; a creature's numbers, tactics, and break
-point), one `{NPC}` or `{Creature}` block per actor the party meets, the
-responses in Handles, and the next states in Outcomes. Handles and Outcomes
+Use `wiki/templates/encounter.md` for reusable notes: where, the first threat, and
+the if-ignored step go in the run lines under the title, the spoken opening in
+`Opening`, the opposition in Actors (an NPC's want, offer, and posture shift; a
+creature's tactics and break point, its statblock embedded in Statblocks), one `{NPC}` or `{Creature}` block per actor the party meets, the
+responses in Party Choices, and the next states in Outcomes. Party Choices and Outcomes
 carry `_italic_` Narration cells from `theatre-of-the-mind`. A session-only scene that will be
 run tonight is a **cockpit** (`run-guide`); emit only the stock that cockpit
 inlines. Field order, lean section choice, image placement, and *procedure* live
@@ -81,13 +81,13 @@ in `run-guide`; this skill supplies table-useful stock:
 1. **Brief:** who, where, why now, visible pressure and fuse.
 2. **Situation / positions:** who starts where, in feet from cover; compass directions
    that matter; speeds that matter; what a move vs Dash reaches. The cockpit
-   writes this under Situation only when Glance would otherwise get crowded.
-3. **Actors:** opposition loop with named actions; compact default-mode
-   numbers the DM will roll. Missing owner → `monster-design`.
-4. **Roster embeds:** only for creatures or items the DM will roll or spend.
-5. **Stage:** named places with distances in feet and compass directions; same
+   writes this under Situation only when the run lines would otherwise get crowded.
+3. **Actors:** opposition loop with named actions and this scene's state;
+   the numbers come from the Statblocks embed. Missing owner → `monster-design`.
+4. **Statblocks embeds:** only for creatures or items the DM will roll or spend.
+5. **Terrain:** named places with distances in feet and compass directions; same
    numbers as Situation; features either side can use.
-6. **Procedure + threat clock:** one loop. Failures impose listed *rulings* and
+6. **Scene rules + threat clock:** one loop. Failures impose listed *rulings* and
    do not also tick. Clock ticks state what becomes visible, usable,
    threatened, blocked, or changed.
 7. **Images:** overview or identity art is a top anchor; battlemap art is a
@@ -138,7 +138,10 @@ PC when the fiction supports it, a strong/purposeful entry from the current
 cliffhanger or agreed plan, and a short hiccup/fallback note. Keep the encounter as a modular cockpit findable in under 30 seconds; do not
 script a sequence of player choices. Secrets remain DM-only and out of
 `[!narration]`. Hand the finished scene to `run-guide` for field order, empty
-TotM stubs, and OFM. TotM fill is a second pass.
+TotM stubs, and OFM. TotM fill is a second pass, and the page is not done
+until it runs: `Opening`, one `{NPC}` or `{Creature}` block per actor the party
+meets, and every Party Choices and Outcomes Narration cell are filled, and each NPC
+Actors entry carries its want, offer, and posture shift.
 
 ## Public-stakes roll gate
 

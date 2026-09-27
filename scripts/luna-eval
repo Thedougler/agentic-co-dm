@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run one Luna 6 (Codex CLI) behavioral test subject: a skill eval or any ad-hoc task.
+"""Run one Luna 5.6 (Codex CLI) behavioral test subject: a skill eval or any ad-hoc task.
 
 Policy (who grades, dispatch all at once, re-run only failures, stop on usage
 limit): CLAUDE.md § Behavioral Test Subject. This script owns the Codex command.
@@ -38,7 +38,8 @@ skill-creator grader adds the other assertion types.
 A rerun skips any run-<n>/ whose timing.json records exit 0, so after exit 3 or 5
 only the missing runs are dispatched again (completed runs are kept).
 
-Exit: 0 done (or already done); 2 bad arguments or eval; 3 usage-limit marker present (dispatch
+Exit: 0 done (or already done); 2 bad arguments or eval (including an input
+file that no longer exists); 3 usage-limit marker present (dispatch
 nothing until the limit resets, then delete <out>/../CODEX_LIMIT); 4 subject
 wrote no deliverable under outputs/; 5 this run hit the usage limit (every
 Luna run was stopped).
@@ -53,7 +54,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from tools.wiki_ops.cli import repo_root  # noqa: E402
+from tools.wiki_ops.cli import AgentParser, repo_root, usage_error  # noqa: E402
 
 REPO = repo_root(Path(__file__).resolve().parent)
 ASSERTION_TYPES = frozenset({
@@ -116,17 +117,26 @@ def load_eval(skill: Path, eval_id: str) -> dict:
     path = skill / "evals" / "evals.json"
     problems = validate_evals(path)
     if problems:
-        error = {"status": "error", "error": problems[0], "hint": "see data-model §2", "example": SCHEMA_EXAMPLE}
-        if len(problems) > 1:
-            error["problems"] = problems
-        print(json.dumps(error))
-        for problem in problems:
+        for problem in problems[1:]:
             print(problem, file=sys.stderr)
-        sys.exit(2)
+        raise SystemExit(usage_error(problems[0], hint="see data-model §2", example=SCHEMA_EXAMPLE, list_valid="scripts/luna-eval --help"))
     evals = json.loads(path.read_text())["evals"]
-    found = next((e for e in evals if str(e.get("id")) == eval_id), None)
+    found = next((e for e in evals if str(e.get("id")) == str(eval_id)), None)
     if found is None:
-        sys.exit(f"no eval '{eval_id}' in {path}")
+        raise SystemExit(usage_error(
+            f"no eval '{eval_id}' in {path}",
+            hint="pass an eval id from that skill's evals.json",
+            example=EXAMPLE,
+            list_valid="scripts/luna-eval --help",
+        ))
+    missing = [f for f in found.get("files", []) if not (REPO / f).exists()]
+    if missing:  # a stale input path wastes a whole run before it shows
+        raise SystemExit(usage_error(
+            f"eval {eval_id}: input files missing: {missing}",
+            hint=f"fix the eval's files[] in {path.relative_to(REPO)}",
+            example=EXAMPLE,
+            list_valid="scripts/luna-eval --help",
+        ))
     return found
 
 
@@ -148,8 +158,8 @@ def build_prompt(task: str, skill: Path | None, spec: dict, outputs: Path) -> st
                  f"inventories, drafts, audits) in {outputs}/notes.md.")
     if spec.get("context"):
         lines.append(f"- Context: {spec['context']}")
-    lines.append("- Staged files under outputs/ sit outside the vault, so `scripts/wiki lint` cannot check them; "
-                 "lint only live vault pages, and only when the task calls for lint.")
+    lines.append("- Do not run `scripts/wiki lint`: staged files under outputs/ sit outside the vault, "
+                 "and linting live pages rewrites repo caches. Skip any lint step a skill names.")
     lines += ["", f"Do not modify anything in the repo outside {outputs}/. Paths above are exact."]
     return "\n".join(lines)
 
@@ -251,20 +261,13 @@ def grade_skill_selected(assertions: list[dict], metrics: dict) -> list[dict]:
 EXAMPLE = "scripts/luna-eval --skill .agents/skills/place-design --eval 1 --out /tmp/pd/iteration-1"
 
 
-class _Parser(argparse.ArgumentParser):
-    """Report usage errors as the JSON error object (exit 2), plus the message on stderr."""
-
-    def error(self, message: str) -> None:  # type: ignore[override]
-        print(json.dumps({"status": "error", "error": message, "hint": "run scripts/luna-eval --help", "example": EXAMPLE}))
-        print(f"luna-eval: error: {message}", file=sys.stderr)
-        raise SystemExit(2)
 
 
 def main() -> int:
-    ap = _Parser(
+    ap = AgentParser(
         description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=f"Examples:\n  {EXAMPLE}\n  scripts/luna-eval --skill .agents/skills/place-design --eval 1 --config without_skill --no-skill --out /tmp/pd/iteration-1",
+        example=EXAMPLE,
     )
     src = ap.add_mutually_exclusive_group(required=True)
     src.add_argument("--eval", help="eval id in <skill>/evals/evals.json")
@@ -278,7 +281,7 @@ def main() -> int:
     ap.add_argument("--config", default="with_skill", help="with_skill, without_skill, old_skill, ...")
     ap.add_argument("--run", type=int, default=1, help="run number, for repeated runs")
     ap.add_argument("--context", help="extra instructions appended to the prompt")
-    ap.add_argument("--model", default="gpt-6-luna")
+    ap.add_argument("--model", default="gpt-5.6-luna", help="Codex model for the subject (default: gpt-5.6-luna, Luna 5.6)")
     ap.add_argument("--effort", default="high", help="Codex reasoning effort for the subject (default: high)")
     a = ap.parse_args()
 

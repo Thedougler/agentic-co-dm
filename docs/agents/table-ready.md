@@ -6,7 +6,7 @@ them. The type skills own *which* beat to build; this file owns *how complete*
 the built beat must be.
 
 A beat is **table-ready** when the DM can run it cold — mid-session, reading
-only this page and the operative lines it copies from linked owners — without
+only this page and what it embeds from its owners — without
 inventing a name, number, motive, consequence, or picture. Every moment where
 the players could act has an answer on the page: what the world does, what the
 roll is, what changes.
@@ -16,6 +16,43 @@ convergence" without ever saying what convergence does, sent the villain's AC
 and HP to his owner page, and spent its pressure table on advice to the DM
 ("do not make him immune") instead of what the villain does. The structure was
 right; the DM still had to invent the fight.
+
+## Moment of use
+
+Completeness is what the page answers, never how much it holds. A page that
+answers every moment but buries each answer under everything else true about
+the scene still fails the DM, who reads it mid-session with four players
+waiting.
+
+Every line on a beat page has a **moment of use**: the point at the table
+when the DM's eyes land on it and what they do next (read aloud, roll, rule,
+move an actor, advance a clock, hand off to the next beat). Build the page
+from those moments:
+
+- **Sort first.** Before writing, list each fact the beat needs with its
+  moment. A fact with no moment stays off the page, however true: design
+  reasoning (why this beat works, why a ruling favors one side, what made
+  this the climax), history that changes no choice, and anything the DM
+  already has on an owner page.
+- **One home.** Each fact lives once, in the section for its moment. The
+  opposition's plan is in Actors, its clock is in Pressure, its rulings are
+  in Checks; a fact written into a second section is noise the DM has to
+  compare against the first.
+- **Embed, never retype.** A fact that lives on an owner page is embedded or
+  linked, never copied: a fighter's statblock is `![[owner#Statblock]]` in
+  the page's `## Statblocks`, and a rule is `![[owner#Section]]` or a link. The
+  beat page carries only what this beat changes or decides: current HP,
+  spent resources, conditions, positions, and what the actor does here.
+- **Point first.** The run lines under the title say how the beat starts,
+  what ends it, and where it goes next; the Opening says what is happening.
+  Every section's first line answers the question the DM brings to it, and
+  detail follows. No summary section: a page that needs one to be found is
+  holding content it should cut.
+- **Design notes stay off the body.** A field only agents use (the card, the
+  session question, the memorable element) goes in frontmatter; a label no
+  one uses is not written.
+- **One fact per line.** A bullet that carries several facts buries the one
+  the DM came for; split it or cut the ones with no moment.
 
 ## Who owns what
 
@@ -38,22 +75,23 @@ reads the layers it depends on from the owner.
 Every beat carries these parts. A type skill says which parts it trims; a part
 this beat never spends at the table stays off the page.
 
-1. **Entry state.** The previous beat's carry-forward, restated as facts:
-   positions, conditions, HP or resources that matter, who holds what, what the
-   party knows, which clocks sit where. The first beat of a session reads the
-   last session's ending.
+1. **Starting situation.** The previous beat's carry-forward, in that run line: the
+   positions, conditions, HP or resources, holdings, knowledge, and clocks
+   that this beat's play depends on, one fact each. The first beat of a
+   session reads the last session's ending.
 2. **Actors.** Every actor on the page, named or rank-and-file, links its owner
-   page and states, for this beat:
-   what it wants now; what it does next if nobody interferes; what it offers,
-   withholds, or lies about; what shifts its posture. Every side the party could
-   choose to fight carries compact numbers copied from its owner statblock — AC, HP, Speed, the
-   one or two attacks or save DCs the DM will actually roll, the trait that
-   changes tactics — plus a tactics line: opening move → how it adapts when
-   countered → break point → exit or surrender. An owner with no statblock
-   gets one as a proposal (a named standard 5e statblock, adjusted, is fine),
-   filed on the owner before the beat depends on it. Opposition with no owner
-   at all is minted through `monster-design`'s Reskin path first.
-3. **Stage.** Where the beat happens, with distances in feet where position
+   page and states, for this beat, what it wants now and what it does next if
+   nobody interferes. What it offers, withholds, or lies about, and what shifts
+   its posture, go on the line only when the beat turns on them. Every side the
+   party could choose to fight has its owner statblock embedded in `## Statblocks`
+   (`![[owner#Statblock]]`), and its Actors line carries this beat's state (HP
+   when not full, spent resources, conditions) and a tactics line: opening move
+   → how it adapts when countered → break point → exit or surrender. An owner
+   with no statblock gets one as a proposal (a named standard 5e statblock,
+   adjusted, is fine), filed on the owner before the beat depends on it.
+   Opposition with no owner at all is minted through `monster-design`'s Reskin
+   path first.
+3. **Terrain.** Where the beat happens, with distances in feet where position
    matters; two or three interactive features, each with its obvious use and
    the ruling it produces (half cover, difficult terrain, a DC to climb, damage
    when it falls); one way the space changes during the beat.
@@ -62,10 +100,10 @@ this beat never spends at the table stays off the page.
    run on world time (rounds, hours, dusk) or on visible triggers; a tick that
    advances on table time says so. What
    happens if the party does nothing.
-5. **Handles.** At least two materially different approaches — fight, talk,
-   sneak, trade, trick, flee, protect, sacrifice — each with its concrete
-   upside and its cost. Handles are verbs the players can pick up from what
-   they can see.
+5. **Party Choices.** At least two materially different approaches — fight,
+   talk, sneak, trade, trick, flee, protect, sacrifice — each with its concrete
+   upside and its cost, as verbs the players can pick up from what they can
+   see.
 6. **Checks.** Each uncertain action worth rolling has Ability (Skill), DC,
    success, and failure, with partial when the fiction has a middle
    (`dnd5e-mechanics` sets these). Sensible actions with no real doubt succeed
@@ -130,12 +168,10 @@ proposal when the beat needs it. The unknown stays true for the people in the
 world (no appraiser can name the maker); the DM page carries the answer.
 
 The page states each proposal as world fact. The proposal list, its sources,
-and any contradiction it settles live in the response to the DM. **World-voice
-search:** search the finished page for *propos*, *establish*, *canon*,
-*unknown*, *unresolved*, *confirm*, *reading*, *page*, and *source*, and rewrite each hit as a world fact or
-cut it when play does not need it. Then search for *not know*, *no one*, and *nobody*: each
-hit about what people do not know keeps their ignorance and states, on the
-page, the truth they do not know.
+and any contradiction it settles live in the response to the DM. Write what
+is true in the world. Record-talk is silence. What people in the world do
+not know stays their ignorance; the page still states the DM answer.
+
 
 A fact the page leaves open hands the DM an invention job mid-session and
 fails **HARD: dm-facing-explicit**. Fill it with a proposal, and make each
@@ -150,8 +186,9 @@ ends or can be avoided, and what the players perceive. Phrases that name a
 system — *the island responds*, *convergence*, *the curse spreads*,
 *reinforcements arrive*, *the ritual advances*, *faction standing drops* —
 carry their operative effect on the page. When the rule lives on a lore or
-rules owner, link it and copy the lines this beat uses; when that owner points
-onward, follow it to the page that holds the numbers. When no owner defines
+rules owner, embed the section this beat uses (`![[owner#Section]]`) where
+the DM rules on it; when that owner points onward, follow it to the page that
+holds the numbers. When no owner defines
 it, decide it now (§ Fill the silence) and file it on its owner with the owner
 skill before the beat depends on it (**HARD: entity-before-spoken**).
 
@@ -160,7 +197,7 @@ skill before the beat depends on it (**HARD: entity-before-spoken**).
 Write what the world does, case by case: "If the party surrounds the smuggler, she
 cuts the lantern rope and swings 20 feet onto the barge." Every DM-facing
 sentence is a fact, a ruling, or a world response. Player agency lives in the
-coverage of the outcome and handle rows: every likely approach has a world
+coverage of the Outcomes and Party Choices rows: every likely approach has a world
 response, so the page speaks about the world and never about the DM's conduct.
 When a draft sentence addresses the DM's behavior, replace it with the world
 response it was protecting.
@@ -178,9 +215,9 @@ answer to every mystery the beat plants (**HARD: dm-facing-explicit**).
 Each beat informs (the table learns something), entertains (one memorable
 element: a striking image, a set-piece feature that transforms, an NPC with an
 edge, a reversal), and pushes the plot visibly forward (Pondsmith, *Scripting
-the Game*). Name the memorable element in the DM layer so it reaches play.
+the Game*). Name the memorable element in frontmatter `memorable:`, and land it in the Opening so it reaches play.
 
-## Spotlight
+## PC Hooks
 
 Each PC present has a reason to act in the beat: a personal tie, an obvious
 job their abilities fit, or a stake in an outcome. Across a session every PC
@@ -188,16 +225,14 @@ gets at least one beat where their tie drives the scene.
 
 ## Lean page
 
-The page carries what this beat spends. Owner essays, full statblocks, and
-history stay on owners and are linked or embedded; the operative numbers and
-facts the DM needs mid-play sit on the page. Cut a line when removing it
-changes no choice, roll, spoken picture, risk, route, clock, resource, or NPC
-response.
+The page carries what this beat spends (§ Moment of use). Cut a line when
+removing it changes no choice, roll, spoken picture, risk, route, clock,
+resource, or NPC response.
 
 ## Cold read (completion check)
 
 Read the finished page top to bottom as a DM who has never seen the prep.
-Stop at each moment the players could act — the opening, each handle, each
+Stop at each moment the players could act — the opening, each party choice, each
 tick, each outcome — and answer from the page alone: what happens, what the
 roll is, what changes. The beat is table-ready when:
 
@@ -205,7 +240,10 @@ roll is, what changes. The beat is table-ready when:
 - the pressure has named ticks, and hesitation advances it by one
   concrete, visible step;
 - every consequence term is defined;
-- every side the party could choose to fight has numbers and a tactics line;
+- every side the party could choose to fight has its statblock embedded in
+  Statblocks and a tactics line in Actors;
+- every line has a moment of use, each fact appears once, and nothing that
+  lives on an owner page is retyped;
 - every outcome resolves on this page or hands to a beat that exists or is
   charted; no row sends play to an encounter, statblock, or page not yet made;
 - every actor, creature, place, and item the page shows has an owner link,

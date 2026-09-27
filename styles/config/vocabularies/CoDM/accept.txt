@@ -114,7 +114,6 @@ Aruhe - Spiguar
 Aruhe - Spiritpollen
 Aruhe - Stillbloom
 Aruhe - Stonepear
-Aruhe - Strangler Fig
 Aruhe - Terror-Bird
 Aruhe - The Mangroves
 Aruhe - The Marshes
@@ -204,6 +203,9 @@ Belumara
 Bent
 Bent Offering Farthing
 bent-offering-farthing
+Beppe
+Beppe Sarti
+beppe-sarti
 Berry
 Berth
 Besko
@@ -271,6 +273,7 @@ Branca
 Branimir
 Branimir Karsovine
 branimir-karsovine
+Brasca
 Brass
 Breathing
 Brentino
@@ -285,6 +288,7 @@ Bris
 Broth
 Bruma
 Burn
+Burnt
 Cabinet
 cabinet-of-morsani
 Cache
@@ -325,6 +329,7 @@ campaign-timeline
 Canal
 Canal Ratter
 canal-ratter
+Canale
 Candlemere
 Cap'n
 Cap'n Gorgeous
@@ -337,6 +342,9 @@ Captain Dorian Bishop
 Captain's
 captain-dorian-bishop
 Captains
+Carlo
+Carlo Ferrante
+carlo-ferrante
 Carpenter's
 Carpenter's Shop
 Carpenter's Slip
@@ -349,7 +357,6 @@ casa-lupo
 Cass
 Cast
 Caste
-Castri
 Cat
 Cat's
 Cat's Curios
@@ -399,7 +406,6 @@ Chimney
 Chip
 Choice
 Chorewick
-Chosen
 Chronehall
 City
 Clan
@@ -435,6 +441,7 @@ Complete the Maw map pilgrimage
 complete-the-maw-map-pilgrimage
 Concordat
 Constancy
+Consume
 Contese
 Copperlight
 Corah
@@ -520,9 +527,11 @@ Dario
 Dario Vanni
 dario-vanni
 Dath-Mar
+dath-mar
 Davu
 Davu Kamu
 davu-kamu
+Dawn
 Dead
 Dead Lady
 Deadman's
@@ -654,7 +663,9 @@ Essa Two-Tooth
 essa-two-tooth
 Estratto
 Ettore
+Ettore Ferrante
 Ettore Lupo
+ettore-ferrante
 ettore-lupo
 Eye
 Eyrie
@@ -677,8 +688,8 @@ Fate Spinner
 fate-spinner
 Fathomrush
 Fathomrush Last Berth False Log
-Fathomrushs
-Fathomrushs Split Harbor
+Fathomrush's
+Fathomrush's Split Harbor
 fathomrushs-split-harbor
 Fear
 Feather
@@ -699,6 +710,7 @@ ferran-balt
 Ferrand's
 Ferrand's Wager
 ferrands-wager
+Ferrante
 Ferrymoor
 Feyroa
 Fid
@@ -707,7 +719,6 @@ Fifita
 Fifita's
 Fifita's Slip
 fifitas-slip
-Fig
 Findings
 Fio
 Fio's
@@ -782,6 +793,7 @@ Gale-Cut Storm Sail
 gale-cut-storm-sail
 Galewall
 Gallowmere
+Garden
 Gardens
 Gatta
 Gentle
@@ -807,6 +819,9 @@ Giacinto
 Giacomo
 Giacomo Moretti
 giacomo-moretti
+Gianni
+Gianni Moro
+gianni-moro
 Giant
 Giant Owl
 Giant's
@@ -842,7 +857,6 @@ Grandfather
 Grandfather's
 Grandfather's Course
 grandfathers-course
-Grass
 Grasslands
 Grease
 Greyteeth
@@ -1025,7 +1039,6 @@ Iron Prayer Tablet
 Iron Village
 iron-prayer-tablet
 Ironmantle
-Is
 Island
 Island Mimic
 Island Mimic Narration Narrator
@@ -1039,6 +1052,7 @@ It
 Items
 Items Index
 Ithera
+Its
 Jean-Claude
 Jean-Claude Tabarnack
 jean-claude-tabarnack
@@ -1055,14 +1069,14 @@ Kalowe Bad Receipt Cache
 Kalowe Merrow's Prize
 Kalowe Waveservant Shrine
 Kalowe — The Sawek Bounty
+Kalowe's
+Kalowe's Frozen Council
 Kalowe, The Bad Receipt's Cache
 Kalowe, The Captain's Map
 Kalowe, The Merrow's Prize
 kalowe-bad-receipt-cache
 kalowe-merrows-prize
 kalowe-the-sawek-bounty
-Kalowes
-Kalowes Frozen Council
 kalowes-frozen-council
 Kamu
 Karath
@@ -1074,6 +1088,7 @@ karsovines-working-log
 Kat's
 Kat's Curios
 kats-curios
+Keeps
 Kento
 Kento Clan
 kento-clan
@@ -1152,6 +1167,7 @@ Ledger
 Lenne
 Lenne Vor
 lenne-vor
+Lenzi
 Lesser
 lesser-black-lotus
 Lethys
@@ -1197,6 +1213,9 @@ Loud Argument
 Low
 Low Lamp
 low-lamp
+Luca
+Luca Ferrante
+luca-ferrante
 Lupo
 Macaw
 Madam
@@ -1219,6 +1238,9 @@ Mangroves
 Manifest
 Manta
 Map
+Marco
+Marco Lenzi
+marco-lenzi
 Maren
 Marenui
 Maret
@@ -1261,6 +1283,7 @@ Maw fissure and the tribute system
 Maw's
 maw-fissure-and-the-tribute-system
 Maws
+Meadow
 Meatball
 Memorial
 Memorial Grove
@@ -1271,7 +1294,9 @@ mercatura-and-otar
 Merchant's
 Merrow's
 Meth-Var
+meth-var
 Mid-Works
+mid-works
 Midchain
 Midchain West
 midchain-east
@@ -1300,6 +1325,7 @@ Moretti & Sons
 Moretti & Sons Chandlery
 Moretti and Sons
 moretti-and-sons
+Moro
 Morsani
 Moths
 Moucheron
@@ -1327,9 +1353,6 @@ Narration
 Narrator
 Narrow
 Necromaton
-Nello
-Nello Castri
-nello-castri
 Nemwe
 Nera
 Newt
@@ -1383,7 +1406,6 @@ norrington-kingsly
 Northern
 Northern Midchain
 Notes
-Obedience
 Offering
 Office
 Oil
@@ -1447,6 +1469,7 @@ Ottavia
 Ottavia Renzetti
 ottavia-renzetti
 Otter
+Out
 Outer
 Outer Reach
 outer-reach
@@ -1469,6 +1492,7 @@ Palio
 Paludi
 Palutai
 Pantheon
+Pantry
 Paolo
 Parel
 Party
@@ -1512,6 +1536,9 @@ petro-amaru
 Phoenix
 Pickpocket
 Pier
+Piero
+Piero Sorrentino
+piero-sorrentino
 Pirate
 Pirate Bosun
 pirate-bosun
@@ -1591,6 +1618,7 @@ Rael Corven
 rael-corven
 Raider
 Ral-Arn
+ral-arn
 Ranga
 Ranga Gex
 ranga-gex
@@ -1651,7 +1679,9 @@ reinforced-specimen-cage
 Relentless
 Remnis
 Renzetti
-Reprise
+Renzo
+Renzo Canale
+renzo-canale
 Rescue
 Resin-Sealed
 Resin-Sealed Kin-Tokens
@@ -1683,6 +1713,7 @@ River Landing Bank
 River Slack Basin
 river-otter
 river-slack-basin
+Road
 Roka
 Roka Sten
 Roka's
@@ -1751,6 +1782,9 @@ Salvage-Plate Harness
 salvage-plate-harness
 Samuel
 Sanctuary
+Sandrino
+Sandrino Vale
+sandrino-vale
 Sandro
 Sandtable
 Sandtable Shoal
@@ -1760,6 +1794,7 @@ Sanzio
 Sarn's
 Sarn's Landing
 sarns-landing
+Sarti
 Savia
 Savia Brentino
 savia-brentino
@@ -1851,23 +1886,21 @@ Session 11 — Theft on the watch
 Session 11 — Torn Crossing hunt
 Session 11 — What they ate
 Session 12 Index
-Session 12 — A Name for Matteo
-Session 12 — Grass Without Wind
-Session 12 — River Slack Reprise
-Session 12 — The Guava and the Spinner
-Session 12 — The Weight of Obedience
-Session 12 — The Wrong Tree
-Session 12 — Toward the Memorial
-Session 12 — Two-Grave Orders
-Session 12 — What Is Chosen
-Session-00-Prologue
+Session 12 — Consume
+Session 12 — Dawn Strike
+Session 12 — Orders in the Ash
+Session 12 — Terror-Birds
+Session 12 — The Garden Keeps Its Own
+Session 12 — The Smoking Skylight
+Session 12 — The Way Out
+session-00-prologue
 Session-01-Recap
-Session-02-Recap
-Session-03-Recap
+session-02-recap
+session-03-recap
 Session-04-Recap
-Session-05-Recap
-Session-06-Recap
-Session-07-Recap
+session-05-recap
+session-06-recap
+session-07-recap
 Session-08-Recap
 Session-09-Recap
 Session-10-Recap
@@ -1883,17 +1916,15 @@ Session-11-07-False-Help
 Session-11-08-Night-Watch
 Session-11-09-Theft-on-the-Watch
 Session-11-10-Aftermath
-Session-11-Recap
+session-11-recap
 Session-11-Transcript
-Session-12-00-The-Weight-of-Obedience
-Session-12-01-River-Slack-Reprise
-Session-12-02-A-Name-for-Matteo
-Session-12-03-Grass-Without-Wind
-Session-12-04-Two-Grave-Orders
-Session-12-05-The-Wrong-Tree
-Session-12-06-What-Is-Chosen
-Session-12-07-The-Guava-and-the-Spinner
-Session-12-08-Toward-the-Memorial
+Session-12-00-the-garden-keeps-its-own
+Session-12-01-dawn-strike
+Session-12-02-the-smoking-skylight
+Session-12-03-terror-birds
+Session-12-04-orders-in-the-ash
+Session-12-05-consume
+Session-12-06-the-way-out
 Sessions
 Sessions Index
 Sewer
@@ -1964,6 +1995,7 @@ Skulls
 Skyhook
 Skyhook Harness
 skyhook-harness
+Skylight
 Slaad
 Slaad Tadpole
 slaad-tadpole
@@ -1981,6 +2013,7 @@ Sliver
 Slow
 Slow Burn
 slow-burn
+Smoking
 Smoulder
 Snakewood
 Snap
@@ -2005,6 +2038,7 @@ Sorn
 Sorn Guarded Beach
 sorn-guarded-beach
 Sorrel
+Sorrentino
 Sorrowbell
 Soul
 Soul Incarnate
@@ -2083,9 +2117,8 @@ Story
 Story So Far
 story-so-far
 Strait
-Strangler
-strangler-fig
 Strider
+Strike
 Struck
 Strutt
 Studio
@@ -2186,6 +2219,7 @@ The Boomerang
 The Brass Cat
 The Bridge
 the Bridge
+The Burnt Road
 The Cabinet of Morsani
 the Cabinet of Morsani
 The Captain's Map
@@ -2220,6 +2254,7 @@ The Knife's Wake
 The Lava Tubes
 The Ledger Isle
 The Live Hold
+The Long Meadow
 The Long Toast
 The Long Wager
 The Loud Argument
@@ -2233,6 +2268,7 @@ The Narrow
 The Ninth Life
 The Northern Midchain
 The Open Midchain
+The Pantry
 The Passage
 The Petrified Court
 The Plumb Eye
@@ -2271,6 +2307,7 @@ the-bad-receipt
 the-black-jaw-run
 the-boomerang
 the-brass-cat
+the-burnt-road
 the-captains-map
 the-cast
 the-chained-lighter
@@ -2294,6 +2331,7 @@ the-kessen
 the-knifes-wake
 the-ledger-isle
 the-live-hold
+the-long-meadow
 the-long-toast
 the-long-wager
 the-loud-argument
@@ -2303,6 +2341,7 @@ the-marshes
 the-mud-pits
 the-narrow
 the-ninth-life
+the-pantry
 the-passage
 the-petrified-court
 the-plumb-eye
@@ -2364,6 +2403,9 @@ Tokage
 Tokage Island
 tokage-island
 Toll-Bead
+Tommaso
+Tommaso Brasca
+tommaso-brasca
 Tomo
 Tone
 Tooth
@@ -2378,19 +2420,14 @@ Totemo
 Totemo Tokage
 Totemo Tokage — Island of the Lizard-folk
 Tour
-Toward
 Track
 Trade
 Transcript
-Tree
 Trevisan
 Trivani
 Trox
 Truth
 Tubes
-Turned
-Turned Hollow
-turned-hollow
 Twiceborn
 Twineye
 Two
@@ -2431,6 +2468,7 @@ Ussamet
 Vaelspire
 Vafnar
 Vaka
+Vale
 Valkur
 Vance
 Vanni
@@ -2558,6 +2596,7 @@ Warren: Grung in the Sewers
 Warrior
 Watch
 Watches-the-Deck
+watches-the-deck
 Watchman's
 Watchman's Toll-Bead
 watchmans-toll-bead
@@ -2572,8 +2611,8 @@ Waveservant Shrine
 Waveservant shrine
 waveservant-shrine
 Waveservants
+Way
 Weeping
-Weight
 Weird
 Welak
 Wessa
@@ -2609,12 +2648,10 @@ Wild
 Wild Pearl of Power
 wild-pearl-of-power
 Winch
-Wind
 Winded
 Windfall
 Windrow
 Wirra
-Without
 Wolfrabbit
 Word
 Word from Halewick
@@ -2627,7 +2664,6 @@ Wrack's End
 wracks-end
 Wreck
 Wren
-Wrong
 Wule
 Yevgenia
 Yevgenia Sorrel

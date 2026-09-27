@@ -19,7 +19,7 @@ Extend feature 028's existing capability composition with an owner-relative obse
 
 **Language/Version**: Agent-facing Markdown/YAML/JSON; existing Python 3.12+ CLI, evaluation, and telemetry tooling
 
-**Primary Dependencies**: `AGENTS.md`, `CONTEXT.md`, `docs/agents/hybrid-sdd.md`, `wiki/AGENTS.md`, feature 028 contracts, `specs/027-wiki-agent-cli/contracts/wiki-cli.md`, `scripts/wiki`, `tools/wiki_ops`, named owner skills/evals, skill-creator grading, `scripts/efficiency-trace.py`, `scripts/token-count.py`, `config/efficiency.yaml`, pytest, tiktoken, PyYAML. No new package.
+**Primary Dependencies**: `AGENTS.md`, `CONTEXT.md`, `wiki/AGENTS.md`, feature 028 contracts, `specs/027-wiki-agent-cli/contracts/wiki-cli.md`, `scripts/wiki`, `tools/wiki_ops`, named owner skills/evals, skill-creator grading, `scripts/efficiency-trace.py`, `scripts/token-count.py`, `config/efficiency.yaml`, pytest, tiktoken, PyYAML. No new package.
 
 **Storage**: Existing repository guidance/contracts, owner eval JSON, gitignored redacted local efficiency/evaluation records, and wiki files. Capability execution remains ephemeral; no new database or ledger.
 
@@ -85,7 +85,6 @@ specs/029-agent-loop-closure/
 
 ```text
 AGENTS.md                              # compact always-loaded loop invariant and pointer
-docs/agents/hybrid-sdd.md              # canonical cross-capability loop semantics
 wiki/AGENTS.md                         # wiki semantic pointer; change only if contradiction remains
 
 .agents/skills/
@@ -113,20 +112,19 @@ tests/test_wiki_ops.py                  # only if extracted pure comparison logi
 .agents/skills/skill-creator/           # reuse grading schemas and cold workflow
 scripts/efficiency-trace.py             # reuse; extend only if trajectory fields cannot live in eval records
 config/efficiency.yaml                  # unchanged policy owner unless evidence requires governance change
-specs/021-hybrid-sdd-adaptation/         # existing telemetry contract/fixture; update only with trace schema change
 ```
 
-**Structure Decision**: This is a narrow extension of existing authority, owner skill, CLI, test, and evaluation surfaces. The implementation adds no module tree or orchestration component. `scripts/wiki lint fix` is the only runtime surface requiring new progress output because it already owns both observations. Shared authority files have one writer; disjoint owner skill/eval slices may follow their dispatch rules after the shared contract is fixed.
+**Structure Decision**: This is a narrow extension of existing authority, owner skill, CLI, test, and evaluation surfaces. The implementation adds no module tree or orchestration component. `scripts/wiki lint fix` is the only runtime surface requiring new progress output because it already owns both observations. Shared authority files have one writer.
 
 ## Ownership and Active Writers
 
 | Artifact group | Canonical owner | Active writer | Dependency |
 |---|---|---|---|
-| Common loop invariant | `docs/agents/hybrid-sdd.md`; compact pointer in `AGENTS.md` | Session agent (`class: not`) | First after accountability/baseline |
-| Wiki semantics | `wiki/AGENTS.md` | Session agent (`class: not`) | Only for confirmed contradiction/pointer coherence |
+| Common loop invariant | `AGENTS.md` | Session agent | First after accountability/baseline |
+| Wiki semantics | `wiki/AGENTS.md` | Session agent | Only for confirmed contradiction/pointer coherence |
 | CLI progress behavior | `scripts/wiki`, 027 CLI contract/data model | Runtime owner | After baseline; before consuming guidance |
 | CLI public behavior tests | `tests/test_wiki_cli.py` | Runtime owner | Red first, paired with CLI change |
-| Owner-local behavior | Each named `.agents/skills/<owner>/SKILL.md` | Skill-design dispatch determines writer | After common contract and guard fixes |
+| Owner-local behavior | Each named `.agents/skills/<owner>/SKILL.md` | Session agent | After common contract and guard fixes |
 | Owner trajectory cases | Matching `evals/evals.json` and skill-creator records | Same slice as owner change | Paired with owner behavior |
 | Evaluation/telemetry policy | Existing skill-creator, efficiency trace, and config owners | Existing owner; prefer unchanged | Change only if current records cannot carry required evidence |
 | Feature artifacts | `specs/029-agent-loop-closure/` | Session agent through Spec Kit | Plan now; tasks next |
@@ -135,7 +133,7 @@ specs/021-hybrid-sdd-adaptation/         # existing telemetry contract/fixture; 
 
 1. **Accountability and baseline**: link/create the issue; freeze comparable cold baseline cases and record current guard contradictions before edits.
 2. **Guard coherence**: repair query read isolation, lint selected scope, faction owner path, and immediate user-said canon filing; run focused coherence scenarios.
-3. **Shared loop authority**: add the canonical owner-relative invariant to hybrid SDD and its compact root pointer without duplicating owner procedure.
+3. **Shared loop authority**: add the canonical owner-relative invariant to `AGENTS.md` without duplicating owner procedure.
 4. **Deterministic proof**: add a failing public-seam test, implement lint-fix `progress` from existing same-scope worklists, update the 027 contract/data model, and verify idempotent skipped/unsupported behavior.
 5. **Read and write owners**: update query/context-pack retrieval convergence and ingest/capture/update bounded progress/exactly-once finalization; keep disjoint skill/eval files parallel only after contracts stabilize.
 6. **Campaign parents**: update session planning, place, and run-guide child-return/re-entry/blocker semantics while preserving specialized craft and dependency order.
@@ -144,7 +142,7 @@ specs/021-hybrid-sdd-adaptation/         # existing telemetry contract/fixture; 
 
 ## Context Boundaries
 
-**context_used**: Feature 029 spec; constitution v3.1.0; root and OMP agent context; `CONTEXT.md`; hybrid SDD; writing-for-agents; feature 028 spec/plan/research/data model/contract/quickstart; 027 CLI contract; named owner skills/evals; `scripts/wiki` and `tools/wiki_ops` observations; skill-creator grading; efficiency trace/policy and token method; bounded research results.
+**context_used**: Feature 029 spec; constitution v3.1.0; root and OMP agent context; `CONTEXT.md`, writing-for-agents; feature 028 spec/plan/research/data model/contract/quickstart; 027 CLI contract; named owner skills/evals; `scripts/wiki` and `tools/wiki_ops` observations; skill-creator grading; efficiency trace/policy and token method; bounded research results.
 
 **context_omitted**: Campaign entity/session bodies, full wiki index/log/manifest, unrelated skill craft, unrelated templates/Vale rules, generated Spec Kit adapters, historical error-ledger content, and harness internals beyond existing safety bounds. They do not govern this agent-system convergence change.
 

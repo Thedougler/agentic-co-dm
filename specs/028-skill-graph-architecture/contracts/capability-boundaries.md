@@ -4,10 +4,9 @@
 
 1. `AGENTS.md` selects the existing owner directly from user intent and artifact kind.
 2. The receiving capability owns its procedure, specialized craft, completion guard, and local handoffs.
-3. `docs/agents/hybrid-sdd.md` governs substantial system-changing work and cross-capability planning.
-4. `wiki/AGENTS.md` governs wiki semantics and output constraints for wiki writes.
-5. Templates/contracts and validation rules govern artifact shape and validity.
-6. `specs/027-wiki-agent-cli/contracts/wiki-cli.md` governs query, lint, and health observation results.
+3. `wiki/AGENTS.md` governs wiki semantics and output constraints for wiki writes.
+4. Templates/contracts and validation rules govern artifact shape and validity.
+5. `specs/027-wiki-agent-cli/contracts/wiki-cli.md` governs query, lint, and health observation results.
 
 Later layers do not duplicate earlier procedures. Strong pointers keep required safeguards available at their load boundary.
 

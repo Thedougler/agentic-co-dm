@@ -91,6 +91,10 @@
         {
           "type": "behavior",
           "text": "An optional `[!narration] When met` shows members at work as the party runs into them, in \"you\" address, ending on their first words."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -127,6 +131,10 @@
         {
           "text": "Identity sentence appears before the page draft",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -150,6 +158,10 @@
         {
           "text": "If proposing invention, cites wiki pages as grounding and shows contradictions",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -185,6 +197,10 @@
         {
           "text": "Frontmatter includes type: faction and required fields",
           "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -212,6 +228,10 @@
         {
           "text": "At the Table has actionable entries for met/helped/opposed/ignored",
           "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -231,6 +251,10 @@
         {
           "text": "Reports faction template completion and observable party handles.",
           "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -249,6 +273,10 @@
         },
         {
           "text": "Returns child artifact/section and completion evidence without replacing the faction deliverable.",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ],
@@ -274,6 +302,10 @@
         {
           "text": "States the returned faction evidence and how it advances the parent's objective.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -293,6 +325,10 @@
         {
           "text": "Reports a complete specific blocker when no sanctioned path remains.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -308,6 +344,10 @@
         {
           "type": "behavior",
           "text": "Fills Sunkline's public face, active agenda, and faction turn."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

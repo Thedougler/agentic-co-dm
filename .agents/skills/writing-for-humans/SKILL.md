@@ -2,8 +2,8 @@
 name: writing-for-humans
 description: >-
   Write and edit every DM-facing text: session-beat pages, session plans,
-  run-guide cockpit copy (pass 2), wiki owner pages (At a Glance, At the Table,
-  facts, secrets), recaps' DM sections, and reports or proposals to the DM in
+  run-guide cockpit copy (pass 2), wiki owner pages (identity line, rules,
+  campaign facts, secrets), recaps' DM sections, and reports or proposals to the DM in
   chat. Produces plain, complete, scannable sentences a DM can use mid-session
   in seconds. Reader `DM` or unknown → writing-for-humans. Spoken player text
   belongs to theatre-of-the-mind; agent instructions belong to
@@ -44,15 +44,15 @@ DM wants answered when their eyes land there. Every line you write answers it.
 
 | Surface | The DM's question |
 |---|---|
-| Beat page header lines (Card, Trigger, Stakes, Ends when…) | What is this beat and what do I need to know before it starts? |
-| Situation, Actors, Stage, Pressure | Who and what is here, what do they want, where are they? |
+| Beat run lines (Entry, Ends when, Next…) | What is this beat and what do I need to know before it starts? |
+| Beside a `[!narration]` block | What did that block hold back, and what happens when the party answers it? |
+| Situation, Actors, Terrain, Pressure | Who and what is here, what do they want, where are they? |
 | Rulings, checks, pressure, outcome tables | A player just did X. What happens? |
 | Carry forward / Handoff | What is true now, and where does play go next? |
 | Session plan | What happens tonight, in what order, and what is the opposition doing? |
 | Run-guide cockpit (pass 2) | What do I do and say right now? |
-| Owner page: At a Glance | What is this and why does it matter right now? |
-| Owner page: At the Table | How do I run it when the party meets it? |
-| Owner page: facts, Drive, Secrets | What is true, including what the players do not know? |
+| Owner page: identity line and rules | What is this, and what does it do at the table? |
+| Owner page: campaign facts, Secrets | What is true here, including what the players do not know? |
 | Chat report or proposal | What happened, what changed where, and what do you need from me? |
 
 Recipes for each surface: [references/surfaces.md](references/surfaces.md).
@@ -69,20 +69,41 @@ a missing number goes to `dnd5e-mechanics`.
 
 Done when every fact you will write has a source.
 
-### 3. Draft
+### 3. Sort by moment of use
 
-Write each line to answer the surface's question, using the rules below.
-Lead with the point, name everything, and put conditionals in tables. Read
+Beside each fact, write its **moment of use**: when at the table the DM's
+eyes land on it, and what they do next (read aloud, roll, rule, move an
+actor, advance a clock, hand off). A fact with no moment stays off the page,
+however true: design reasoning (why a beat works, why a ruling favors one
+side), history that changes no choice, and anything the DM already has on an
+owner page. Then give each fact its one home, the section for its moment.
+A fact that lives on an owner page is embedded or linked where the DM uses
+it, never retyped: a fighter's statblock is `![[owner#Statblock]]` in the
+page's Statblocks section, a rule is `![[owner#Section]]` or a link, and the page itself
+carries only what this scene changes or decides (current HP, spent
+resources, conditions, positions, what the actor does here).
+
+Done when every fact has one moment and one home, and nothing owned
+elsewhere is retyped.
+
+### 4. Draft
+
+Write each section so its first line answers the surface's question, and
+the detail follows in lines of one fact each. Name everything, and put
+conditionals in tables. Beside a `[!narration]` block, the DM layer carries
+what the block held back: each creature's response by how the party
+approaches, the other ways in, the checks, the secrets, and the true names;
+it never describes again what the block already says. Read
 [references/examples.md](references/examples.md) for the weak → strong pair
 closest to your job, and match its quality, never its words.
 
-### 4. Cut
+### 5. Cut
 
 Take each line out in your head. If no choice, ruling, risk, resource, route,
 clock, NPC response, or spoken picture changes, cut the line. Then remove
 everything in the cut table below.
 
-### 5. Cold read
+### 6. Cold read
 
 Read the page as a DM who has never seen it, mid-session, with players
 waiting. Find the answer to the surface's question. Name the three places you
@@ -91,27 +112,47 @@ slowed down, hunted, or had to guess, and fix each one.
 Done when the answer to each surface's question is findable in about five
 seconds for a glance section and about thirty seconds anywhere else.
 
-### 6. File
+### 7. File
 
 Format with `obsidian-markdown` (check and DC notation, wikilinks, tables,
-callouts). Report what changed and where, plus any gaps.
+callouts, embeds). Then audit: in your working notes, write one line per
+final-check item quoting, word for word, the page line that passes it, and
+fix the page wherever no line does. Two lines are evidence, not verdicts:
+
+- **Duplicates.** Search the page for every number (HP, DC, distance, count,
+  time) and every named move, person, and item. List each one found in more
+  than one section, then keep it in the one section the DM uses it in and cut
+  or link the rest. A second mention is allowed only where it points back
+  (`the break point in Actors`), never where it restates.
+- **Labels.** List every bold label and heading on the page. Each names what
+  it holds in plain words, appears once, and is none of: a design label (card,
+  key, action or cerebral, tier, budget, thread, harvest, planted, tested,
+  session question, stake), a summary section, or a label repeated to hold
+  more facts.
+
+Report what changed and where, plus any gaps.
 
 ## Rules
 
 1. **Lead with the point.** The first words of a line or section answer the
    reader's question. "The smuggler wants the ledger and will not trade blows
-   with four people" beats a paragraph that arrives there at the end.
+   with four people" beats a paragraph that arrives there at the end. A page
+   opens on what is happening and the choice it puts to the party.
 2. **Name it.** Proper names with wikilinks, exact numbers, exact places.
    "[[mara-quill|Mara]] is 5 feet from the ledger," never "the thief is
    nearby." Every pronoun has an obvious owner.
-3. **Short, complete sentences.** A subject and a verb, one idea each, about
-   8–20 words. A sentence that needs "and" three times is two sentences.
+3. **Short, complete sentences.** A subject and a verb, one idea each. A
+   sentence that needs "and" three times is two sentences. The actor does the
+   verb ("the guards bar the gate", not "the gate is barred"), and "there
+   is", "some", and "here and there" become the thing and its count.
    Fragments, slash-stacks, and chains of arrows with no subject are notes to
    yourself, not copy.
 4. **Scannable shape.** A bold label at the start of a line names what the DM
-   scans for (**Trigger.**, **If they flee.**). Parallel items go in a list.
-   If-then goes in a table. Nothing a DM needs mid-play hides inside a
-   paragraph.
+   scans for (**Starts when.**, **If they flee.**). Labels and headings say
+   plainly what they hold, in words a careless reader cannot misread. One fact per line: a bullet
+   that carries several facts buries the one the DM came for. Parallel items
+   go in a list. If-then goes in a table. Nothing a DM needs mid-play hides
+   inside a paragraph.
 5. **Say what the world does.** "If the party surrounds her, Mara cuts the
    lantern rope and swings onto the barge." State outcomes and
    responses; the DM runs the table (see `docs/agents/table-ready.md`
@@ -124,11 +165,13 @@ callouts). Report what changed and where, plus any gaps.
    high-water mark," not "a coastal trading town."
 8. **Kitchen-table words.** Common words a tired DM reads instantly. A
    campaign label gets its plain meaning the first time it appears on a page.
-9. **Each fact once.** One fact lives in the one section where the DM needs
-   it. Other sections link or refer to it.
-10. **Numbers where they are used.** DCs, damage, distances in feet, counts,
-    and times sit in the line where the DM rolls or rules, formatted per
-    `obsidian-markdown`.
+9. **Each fact once.** One fact lives in the one section for its moment of
+   use (step 3). A fact the wiki already holds is embedded or linked, never
+   retyped.
+10. **Numbers where they are used.** The DCs, damage, distances in feet,
+    counts, and times this page decides sit in the line where the DM rolls or
+    rules, formatted per `obsidian-markdown`. Numbers an owner page holds
+    arrive by embed.
 
 ## Cut table
 
@@ -139,8 +182,11 @@ callouts). Report what changed and where, plus any gaps.
 | Mood with no consequence ("a sense of unease") | Changes no ruling. Replace with the fact that causes it, or cut. |
 | Lines about the DM's conduct instead of the world | Replace with what the world does in that case. |
 | Hedges ("perhaps", "might want to", "consider") | State the fact or the ruling. |
-| Design diary, balance commentary, rules comparisons, agent-process notes | Not playable. Keep it off the page. |
-| The same fact in Glance, Situation, and narration | Keep it in the one place the DM uses it. |
+| Design diary, balance commentary, rules comparisons, agent-process notes, reasons a ruling works ("why this hurts him more") | Not playable. Keep the ruling, cut the argument. |
+| Design labels (card, key, tier, budget, thread names, harvest), where a thread was planted or tested, and empty live-play scaffolding (blank notes, unticked boxes) | The DM runs the scene, not the design. A label agents need goes in frontmatter; timing lives in the session plan. |
+| A summary section (At a Glance) or a heading for every possible field | The page's shape shows what matters; write the content that exists, where it is used. |
+| The same fact in Glance, Situation, and narration, or an actor's plan restated in Pressure, Tactics, and Outcomes | Keep it in the one place the DM uses it. |
+| A statblock, rule, or owner fact retyped onto the page | Embed it (`![[owner#Statblock]]`, `![[owner#Section]]`) or link it. |
 | AI tells ("tapestry of", "nestled", "it's worth noting", "delve", "the air is thick with") | Say the thing plainly. |
 | Placeholders ("TBD", "ingest pending", empty sections) | Fill from the sources, or decide it as canon under the rule in `llm-wiki` (`docs/agents/table-ready.md` § Fill the silence). |
 
@@ -167,7 +213,11 @@ callouts). Report what changed and where, plus any gaps.
 
 Fail and fix if any answer is no.
 
-- [ ] Does every section answer its surface's question, with the answer first?
+- [ ] Does every section answer its surface's question, with the answer in
+      its first line and one fact per line after it?
+- [ ] Does every line have a moment of use, does each fact live in one
+      section, and is everything the wiki already holds embedded or linked
+      rather than retyped?
 - [ ] Is every person, place, and item named and linked, and every number
       exact?
 - [ ] Is every line a complete sentence (or a clear table cell or labeled

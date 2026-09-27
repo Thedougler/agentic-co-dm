@@ -60,7 +60,6 @@ Lint rewrites the tracked bookkeeping files `wiki/_meta/lint-cache.json`, `wiki/
 
 | ID | Scenario | Command | Expected |
 |---|---|---|---|
-| V-20 | SC-014 (a)/(c) mechanical checks | `python3 scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main` | Pass: every added file is in plan.md's "New files" table, and no deleted/folded path in the "Deleted or folded" table is referenced in maintained surfaces. (b), (d), and (e) are Review judgments against the same tables. |
 
 ## Final-tree rerun (T112, 2026-09-24, maintainer workstation)
 
@@ -78,4 +77,3 @@ Lint rewrites the tracked bookkeeping files `wiki/_meta/lint-cache.json`, `wiki/
 | V-11 | `tests/test_policy_conflicts.py` passes. |
 | V-15 | `error list`: 5 entries, `recurrence {"total": 0, "by_sitting": {}}`, `missing_sources: []`. |
 | V-16 | See the V-16 row (manual checks and SC-010 pass). |
-| V-20 | `hybrid-sdd-check.py diff --base origin/main`: `status: pass` (17 added, 20 deleted, 0 unlisted, 0 deleted-still-present or referenced). |

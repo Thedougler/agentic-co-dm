@@ -20,6 +20,8 @@ from typing import Any
 ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.pretty import render_lint_issues
+
 
 DEFAULT_RELATIONSHIPS = {
     "extends", "implements", "contradicts", "derived_from", "uses", "replaces", "related_to"
@@ -474,7 +476,7 @@ def noncanonical_basenames(pages: dict[str, dict]) -> list[dict[str, object]]:
             "title": title,
             "expected": expected,
             "line": 1,
-            "repair_class": "human_repair" if collision else "deterministic_repair",
+            "repair_class": "agent_repair" if collision else "deterministic_repair",
             "repair_action": None if collision else {"kind": "rename_page", "from": rel, "to": expected},
             "collision": collision,
         })
@@ -500,7 +502,7 @@ def duplicate_slugs(pages: dict[str, dict]) -> list[dict[str, object]]:
             "slug": slug,
             "pages": pages_sorted,
             "lines": [1 for _ in pages_sorted],
-            "repair_class": "human_repair",
+            "repair_class": "agent_repair",
             "reason": "Multiple basenames collapse to one canonical wiki slug; resolve identity before renaming or merging.",
         })
     return out
@@ -521,7 +523,7 @@ def duplicate_stems(pages: dict[str, dict]) -> list[dict[str, object]]:
             "stem": Path(members[0]).stem,
             "pages": sorted(members),
             "lines": [1 for _ in members],
-            "repair_class": "human_repair",
+            "repair_class": "agent_repair",
             "reason": "Case-folded basenames collide; resolve identity before renaming or merging.",
         }
         for _key, members in sorted(groups.items())
@@ -613,7 +615,7 @@ def _literal_newline_target(rel: str) -> bool:
 
 
 def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: bool) -> dict[str, list[dict[str, object]]]:
-    human = {"repair_class": "human_repair", "repair_action": None}
+    agent_repair = {"repair_class": "agent_repair", "repair_action": None}
     found: dict[str, list[dict[str, object]]] = {
         key: [] for key in (
             "md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link",
@@ -624,7 +626,7 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
         for name in FORBIDDEN_TREES:
             if (vault.parent / name).is_dir():
                 found["forbidden_tree"].append({
-                    "tree": f"{name}/", "line": 1, **human,
+                    "tree": f"{name}/", "line": 1, **agent_repair,
                     "reason": f"parallel {name}/ tree next to the vault; use the vault structure",
                 })
     targets = {rel: item["text"] for rel, item in pages.items()}
@@ -640,26 +642,26 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
                     if pattern is MD_LINK_PATH and (target.lower().endswith(".md") or ".md#" in target.lower()):
                         continue
                     found["md_internal_link"].append({
-                        "page": rel, "line": _line_at(visible, m.start()), "text": m.group(0), **human,
+                        "page": rel, "line": _line_at(visible, m.start()), "text": m.group(0), **agent_repair,
                         "reason": f"[{m.group(1)}]({target}) is a Markdown link; use a [[wikilink]]",
                     })
             block = pages[rel]["block"]
             if rel.startswith("journal/") and block and TITLE_OR_DATE.search(block) and not TYPE_LINE.search(block):
                 found["title_only_frontmatter"].append({
-                    "page": rel, "line": 1, **human,
+                    "page": rel, "line": 1, **agent_repair,
                     "reason": "frontmatter has title/date but no type; add the owner fields",
                 })
             for m in NARRATION_BLOCK.finditer(text):
                 if DC_IN_TEXT.search(m.group(0)):
                     found["dc_in_narration"].append({
-                        "page": rel, "line": _line_at(text, m.start()), **human,
+                        "page": rel, "line": _line_at(text, m.start()), **agent_repair,
                         "reason": "DC or difficulty inside a [!narration] callout; the spoken text carries only what players perceive, so move the number to the DM prose beside it",
                     })
             for m in IMAGE_WIKI.finditer(visible):
                 target = m.group(1).strip()
                 if not _media_exists(vault, target):
                     found["broken_image_link"].append({
-                        "page": rel, "line": _line_at(visible, m.start()), "target": target, **human,
+                        "page": rel, "line": _line_at(visible, m.start()), "target": target, **agent_repair,
                         "reason": f"missing media target: {target} (expected under attachments/)",
                     })
             for number, line in enumerate(visible.splitlines(), 1):
@@ -681,7 +683,7 @@ def obsidian_markdown_findings(vault: Path, pages: dict[str, dict], *, scoped: b
             scanned = re.sub(r"```[\s\S]*?```", lambda m: " " * len(m.group(0)), scanned)
             for m in LITERAL_NEWLINE.finditer(scanned):
                 found["literal_newline"].append({
-                    "page": rel, "line": _line_at(text, m.start()), **human,
+                    "page": rel, "line": _line_at(text, m.start()), **agent_repair,
                     "reason": "literal \\n in prose; use a real newline (frontmatter and fences are fine)",
                 })
     return found
@@ -724,13 +726,33 @@ def main() -> int:
     }
     findings: dict[str, Any] = result["findings"]  # type: ignore[assignment]
 
-    missing = {rel: [key for key in REQUIRED + CAMPAIGN_REQUIRED if key not in item["fields"]]
-               for rel, item in pages.items()}
-    findings["missing_frontmatter"] = [
-        {"page": rel, "missing": fields, "line": 1}
-        for rel, fields in missing.items()
-        if fields and not pages[rel]["fields"].get("redirects_to")
-    ]
+    from tools.wiki_ops.template_contracts import contract_for_page
+
+    missing_records = []
+    for rel, item in pages.items():
+        if item["fields"].get("redirects_to"):
+            continue
+        keys: list[str] = list(REQUIRED + CAMPAIGN_REQUIRED)
+        contract = contract_for_page(vault, item["text"]) or contract_for_page(ROOT, item["text"])
+        if contract:
+            for key in contract.frontmatter:
+                if key not in keys:
+                    keys.append(key)
+        absent = [key for key in keys if key not in item["fields"]]
+        if not absent:
+            continue
+        template_name = contract.template if contract else ""
+        missing_records.append({
+            "page": rel,
+            "missing": absent,
+            "line": 1,
+            "repair_class": "agent_repair",
+            "repair_target": (
+                f"Set frontmatter {', '.join(absent)} from wiki/templates/{template_name}."
+                if template_name else f"Set frontmatter {', '.join(absent)}."
+            ),
+        })
+    findings["missing_frontmatter"] = missing_records
     findings["redirect_stubs"] = [
         {
             "page": rel,
@@ -748,7 +770,19 @@ def main() -> int:
         for rel, item in pages.items()
         if item["fields"].get("redirects_to")
     ]
-    findings["missing_summary"] = [{"page": rel, "line": 1} for rel, item in pages.items() if not item["fields"].get("summary")]
+    findings["missing_summary"] = [
+        {
+            "page": rel,
+            "line": 1,
+            "repair_class": "agent_repair",
+            "repair_target": (
+                f"Set frontmatter summary from wiki/templates/{contract.template}."
+                if (contract := (contract_for_page(vault, item["text"]) or contract_for_page(ROOT, item["text"])))
+                else "Set frontmatter summary."
+            ),
+        }
+        for rel, item in pages.items() if not item["fields"].get("summary")
+    ]
     findings["long_summary"] = [
         {"page": rel, "line": field_line(item["text"], "summary"), "chars": len(item["fields"]["summary"])}
         for rel, item in pages.items()
@@ -969,18 +1003,7 @@ def main() -> int:
     if args.json:
         print(json.dumps(result, indent=2, sort_keys=True))
     else:
-        if not has_findings:
-            print("clean")
-        else:
-            print(f"Wiki lint scope: {len(pages)} pages ({vault})")
-            for key, value in counts.items():
-                print(f"{key}: {value}")
-            for key in ("missing_frontmatter", "broken_links", "orphan_pages", "typed_relationships", "stale_pages"):
-                items = findings.get(key, [])
-                if items:
-                    print(f"\n{key}")
-                    for item in items if isinstance(items, list) else items.values():
-                        print(f"- {item}")
+        print(render_lint_issues(result))
     if args.hard_only:
         return 1 if result["hard_fail"] else 0
     return 1 if has_findings else 0

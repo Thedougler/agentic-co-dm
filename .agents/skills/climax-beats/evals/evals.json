@@ -61,6 +61,18 @@
         {
           "type": "behavior",
           "text": "Outcome table states what becomes true, costs paid, and thread states per row."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -84,6 +96,18 @@
         {
           "type": "behavior",
           "text": "Scale matches what the session's progression earned."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -107,6 +131,18 @@
         {
           "type": "behavior",
           "text": "Allows the session to recompute and rebudget if the Climax is not yet forming."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -130,6 +166,18 @@
         {
           "type": "behavior",
           "text": "A final battle is one shape among many; the Climax may be non-combat."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -153,6 +201,18 @@
         {
           "type": "behavior",
           "text": "The Climax presents the highest-stakes situation; the players choose how to engage it."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -176,6 +236,18 @@
         {
           "type": "behavior",
           "text": "The early Climax's consequences flow directly into Resolution."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -199,6 +271,18 @@
         {
           "type": "behavior",
           "text": "The avoided candidate produces its own consequence through the recompute loop."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -222,6 +306,18 @@
         {
           "type": "behavior",
           "text": "Threads from Developments and Cliffhangers converge in the highest-stakes confrontation."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -245,6 +341,18 @@
         {
           "type": "behavior",
           "text": "Each candidate has its own stakes, approaches, and costs — the choice between them is meaningful."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -288,6 +396,18 @@
         {
           "type": "behavior",
           "text": "At least two viable Climax shapes are available — confrontation and exposure are both valid paths."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -319,6 +439,18 @@
         {
           "type": "behavior",
           "text": "The party arrives at the choice equipped by what the session taught them — the Climax asks whether they can use it."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -358,6 +490,18 @@
         {
           "type": "behavior",
           "text": "Every named actor, place, and item links an existing owner page, or the output mints the owner before text depends on it."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -393,6 +537,18 @@
         {
           "type": "behavior",
           "text": "PC moments table gives each PC a call."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -490,6 +646,18 @@
         {
           "type": "quality",
           "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -574,6 +742,18 @@
         {
           "type": "behavior",
           "text": "Each creature kind and NPC the party meets has its own `{Creature}` or `{NPC}` narration block, titled with its name."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ],
       "files": [
@@ -589,6 +769,87 @@
         "wiki/entities/pc/perrin-black-jaw.md"
       ],
       "context": "Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
+      "id": "s12-05-refile",
+      "core": true,
+      "prompt": "Refile the Session 12 Climax (wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md) on the current climax template.",
+      "context": "Session 12 of the Shattered Sea campaign is planned and filed under wiki/journal/sessions/shattered-sea/12/ but has not been played. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "outputs": "File the one refiled beat page at its current path; mint no other page.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-00-the-garden-keeps-its-own.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-04-orders-in-the-ash.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/place/the-pantry.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/pc/perrin-black-jaw.md",
+        "wiki/entities/item/fate-spinner.md",
+        "wiki/templates/climax.md"
+      ],
+      "expected_output": "One climax page refiled on the current template from its plan row, keeping its canon.",
+      "assertions": [
+        {
+          "type": "process",
+          "text": "Written from the 05 Climax row of the filed Session 12 plan: its trigger, what changes, card, and memorable element hold on the page."
+        },
+        {
+          "type": "structure",
+          "text": "The page follows wiki/templates/climax.md; no section the current template dropped survives from the old page."
+        },
+        {
+          "type": "quality",
+          "text": "Keeps the old page's canon: every name, number, ruling, and consequence is carried or deliberately cut, and nothing contradicts it or the owner pages."
+        },
+        {
+          "type": "quality",
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and a DM who never saw the prep can run every moment from the page."
+        },
+        {
+          "type": "behavior",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance leads with the question the Climax settles, then Entry state, Party objective, Opposition wants, Stakes, If behind (the compression), and Next."
+        },
+        {
+          "type": "behavior",
+          "text": "An Opening narration callout exists with you-address and sensory grounding, and forecasts no consequence."
+        },
+        {
+          "type": "behavior",
+          "text": "Thread Harvest gives each live thread where it was planted, the concrete lever it gives here, and what happens without it."
+        },
+        {
+          "type": "behavior",
+          "text": "Skarn's Actors entry carries labelled sub-bullets: Numbers, Wants (and why now), Leverage, Plays, Line, and Morale, and names his exits."
+        },
+        {
+          "type": "behavior",
+          "text": "Each creature kind and NPC the party meets has its own `{Creature}` or `{NPC}` narration block, titled with its name."
+        },
+        {
+          "type": "behavior",
+          "text": "Phases and Outcomes rows carry spoken `_italic_` Narration cells; the Phases cell is the phase-shift signal the players perceive."
+        },
+        {
+          "type": "behavior",
+          "text": "Pressure names If it goes static (the move that breaks a stalemate), and Stage names Collateral: who or what nearby is lost if the fight spills over."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
+        }
+      ]
     }
   ]
 }

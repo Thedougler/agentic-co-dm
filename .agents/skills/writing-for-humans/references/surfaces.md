@@ -6,28 +6,31 @@ then run the final check in `SKILL.md`. The matching weak → strong pair is in
 
 ## Contents
 
-- Session-beat pages: header lines; Situation, Actors, Stage; rulings and checks;
-  pressure and outcome tables; carry forward
+- Session-beat pages: run lines; Situation, Actors, Terrain; beside a
+  narration block; rulings and checks; pressure and outcome tables; carry
+  forward
 - Session plan
 - Run-guide cockpit (pass 2)
-- Owner pages: At a Glance; At the Table; facts, Drive, Secrets
+- Owner pages: the identity line; the rules; campaign facts
 - Chat to the DM: reports and proposals
 
 ## Session-beat pages
 
 The beat's type skill decides what goes on the page; this is how it reads.
 
-### Header lines
+### Run lines
 
-The bold-labeled lines under the title (Card, Thread, Trigger, Stakes, Ends
-when, Memorable element, and so on).
+The bold-labelled lines under the title, with no heading (Entry, Trigger,
+Win, Ends when, If behind, Next: whichever the template gives).
 
-- One or two sentences per label. Lead with the fact.
+- One sentence per label, one fact per sentence. Lead with the fact.
+- Design notes (card, session question, memorable element) go in
+  frontmatter, never in the body.
 - Name the people, places, and items with wikilinks.
 - **Ends when** names an observable moment: "Ends when the party reaches the
   ladder or the second beam falls."
 
-### Situation, Actors, Stage, Pressure
+### Situation, Actors, Terrain, Pressure
 
 - One bullet per fact, each a complete sentence that starts with its subject
   or a bold label.
@@ -36,9 +39,22 @@ when, Memorable element, and so on).
   hidden part plainly.
 - Space: distances in feet, what blocks what, each feature with its ruling
   ("The crates give half cover").
-- Opposition: compact numbers on one line (AC, HP, Speed, the attack or save
-  DC the DM rolls), then the tactics as short sentences in order: opening
-  move, how it adapts, when it breaks, where it goes.
+- Opposition: its statblock embedded once in `## Statblocks`
+  (`![[owner#Statblock]]`). The Actors line carries only this scene's state
+  (HP when not full, spent resources, conditions), then the tactics as short
+  sentences in order: opening move, how it adapts, when it breaks, where it
+  goes. That plan lives here and nowhere else on the page.
+
+### Beside a narration block
+
+The DM lines that answer a `[!narration]` block: the Actors bullet under a
+`{Creature}` block, the area facts under an `{Area}` block, the Party Choices rows
+after an Opening.
+
+- What the block held back, stated plainly: each creature's response by how
+  the party approaches (loudly, quietly, after scouting), the other ways in,
+  the checks, the secrets, and the true names.
+- Nothing the block already says, told again.
 
 ### Rulings and checks
 
@@ -68,23 +84,24 @@ when, Memorable element, and so on).
 
 ## Session plan
 
-- **At a Glance** lines are one sentence each, stated as facts about tonight.
-- **Beat Map** cells are short statements, not fragments: "Mara's first
+- The run lines under the title are one sentence each, stated as facts about
+  tonight.
+- **Beats** table cells are short statements, not fragments: "Mara's first
   grab for the ledger ends; the party commits to a direction."
-- **Pressure** steps describe what the opposition does, in order, in the
+- **Opposition Plan** steps describe what the opposition does, in order, in the
   opposition's voice ("Mara follows the party to the docks and waits for
   the ledger's carrier to be alone").
-- **Spotlight** names the PC, what matters to them tonight, and the beat.
+- **PC Hooks** names the PC, what matters to them tonight, and the beat.
 - **Clues** are true facts, one sentence each.
 
 ## Run-guide cockpit (pass 2)
 
 Run-guide pass 1 built the cockpit; pass 2 makes its DM copy readable.
 
-- Edit At a Glance (Ends when first), Situation, Actors, Procedure, Pressure, Checks, and Outcomes.
+- Edit the run lines (Ends when first), Situation, Actors, Scene Rules, Pressure, Checks, and Outcomes.
 - **Ends when** starts with the end condition; the time budget follows.
-- **At a Glance** bullets: stakes, the objective, the danger, and what
-  pulls players in. Readable in five seconds.
+- **Objective** says what ends the slice and what it can win or lose.
+  The run lines read in five seconds.
 - **Situation** gives positions in feet and compass directions in one paragraph.
 - Keep every `[!narration]` body and narration cell empty; pass 3 fills them.
 - A structural gap (a missing section, wrong order) is fixed from
@@ -92,33 +109,35 @@ Run-guide pass 1 built the cockpit; pass 2 makes its DM copy readable.
 
 ## Owner pages
 
-Owner pages are reference the DM pulls up mid-improvisation. The page's kind
-decides its sections (`wiki/AGENTS.md` Layout); the `[!narration]` portrait
-belongs to `theatre-of-the-mind`.
+Owner pages are reference the DM pulls up mid-improvisation. Each reads like
+the published book entry for its kind (`wiki/AGENTS.md` Layout): the portrait,
+then what the thing is and does, then campaign facts only when they exist. The
+`[!narration]` portrait belongs to `theatre-of-the-mind`.
 
 House tone for campaign owner pages: deadly, political, weird, in that order.
 Attach the strange to a noun and a consequence.
 
-### At a Glance
+### The identity line
 
-- Three to five bullets or two to four sentences.
-- What it is, in this campaign's specifics; why it matters now; the hook a DM
-  can use tonight.
-- Test: a DM who reads only this section could improvise a scene with it.
+The italic line under the portrait, where the template has one (habitat and
+treasure, level and school, rarity and weight, kind and ruler).
 
-### At the Table
+- The facts a book entry prints there, matching the frontmatter, in one line.
 
-- How to run it when the party meets it: what it does first, what it wants,
-  how it reacts to common approaches, the rulings the DM will need.
-- Playable consequences only.
-- Bold labels index the procedures so the DM finds one in under thirty
-  seconds.
+### The rules
 
-### Owner pages: At a Glance, At the Table, Secrets
+What the thing does at the table: the statblock, the spell's effect, the
+item's effect, the hazard's Trigger, Effect, and Countermeasures, a place's key.
 
-- Each fact is a present-tense sentence about the entity that changes a DM
-  response.
-- Drive: what they want, what they fear, how they go about it.
+- Written in 2024 rules language, complete enough to run with no other page.
+- This is the bulk of the page. A page that is mostly description and a
+  sentence of rules has its weight in the wrong place.
+
+### Campaign facts
+
+The `**Name.**` paragraphs after the rules (Wants, Tactics, Secret, Ties).
+
+- Each only when it changes a DM response, as a present-tense sentence.
 - Secrets: the truth, stated plainly, and how it could come out in play.
 - History only where it explains something the party can meet now.
 

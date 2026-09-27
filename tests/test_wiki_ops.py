@@ -190,7 +190,23 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         "--vault",
         tmp_path,
     )
-    report = assert_json(result, returncode=1)
+    assert result.returncode == 1, result.stderr
+    assert "page.md:14:" in result.stdout, result.stdout
+    assert "broken_links" in result.stdout
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--no-vale",
+            "--no-template",
+            "--all",
+            "--scope",
+            "files:page.md",
+            "--vault",
+            tmp_path,
+        ),
+        returncode=1,
+    )
     broken = report["findings"]["broken_links"][0]
     assert broken["page"] == "page.md"
     assert broken["line"] == 14
@@ -201,6 +217,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
 
     verbose = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--verbose",
         "--no-vale",
         "--no-template",
@@ -225,6 +242,11 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
         "updated: 2026-09-17\n"
         "type: session-prep\n"
         "reveal: dm\n"
+        "campaign: test\n"
+        "session: 1\n"
+        "visibility: dm\n"
+        "status: draft\n"
+        "card: hook\n"
         "---\n\n"
         "# Clean fixture\n",
         encoding="utf-8",
@@ -232,6 +254,7 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     (tmp_path / "index.md").write_text("- [[clean]]\n", encoding="utf-8")
     clean_result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--no-template",
         "--all",
@@ -462,7 +485,7 @@ def test_repair_plan_contains_only_allowlisted_deterministic_actions(tmp_path: P
         tmp_path,
         {"findings": {"templates": [
             {"file": "old.md", "repair_class": "deterministic_repair", "repair_action": "delete_redirect_stub", "target": "new"},
-            {"file": "old.md", "repair_class": "human_repair", "repair_action": "invent_canon"},
+            {"file": "old.md", "repair_class": "agent_repair", "repair_action": "invent_canon"},
         ]}},
     )
     assert [item["action"] for item in plan["actions"]] == ["delete_redirect_stub"]
@@ -502,6 +525,7 @@ def test_misplaced_entity_is_hard_and_skips_wrong_template(tmp_path: Path):
     )
     result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--scope",
         "files:entities/item/snakewood.md",
@@ -533,6 +557,7 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     )
     result = run_cli(
         "scripts/wiki-lint",
+        "--json",
         "--no-vale",
         "--scope",
         "files:entities/creature/_index.md",
@@ -541,6 +566,7 @@ def test_moc_is_not_reported_as_misplaced_entity(tmp_path: Path):
     )
     report = assert_json(result, returncode=1)
     assert report["findings"].get("misplaced_entity", []) == []
+
 
 
 def _run_qmd_hook(temp: Path, *, body: str, extra_env: dict[str, str] | None = None) -> subprocess.CompletedProcess[str]:
@@ -712,7 +738,7 @@ def test_lint_reports_noncanonical_basenames_and_slug_collisions(tmp_path: Path)
     assert basename_findings["entities/faction/Bob.md"]["expected"] == "entities/faction/bob.md"
     assert basename_findings["entities/faction/Bob.md"]["repair_class"] == "deterministic_repair"
     assert basename_findings["entities/npc/Alice_Name.md"]["collision"] is True
-    assert basename_findings["entities/npc/Alice_Name.md"]["repair_class"] == "human_repair"
+    assert basename_findings["entities/npc/Alice_Name.md"]["repair_class"] == "agent_repair"
     assert basename_findings["entities/npc/Alice_Name.md"]["repair_action"] is None
 
     stem_collision = report["findings"]["duplicate_stems"][0]
@@ -721,7 +747,7 @@ def test_lint_reports_noncanonical_basenames_and_slug_collisions(tmp_path: Path)
         item for item in report["findings"]["duplicate_slugs"] if item["slug"] == "old-port"
     )
     assert slug_collision["pages"] == ["entities/place/old_port.md", "entities/region/old-port.md"]
-    assert slug_collision["repair_class"] == "human_repair"
+    assert slug_collision["repair_class"] == "agent_repair"
 
 
 def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
@@ -779,7 +805,7 @@ def test_lint_wiki_reports_folded_obsidian_markdown_rules(tmp_path: Path):
     assert pipes[0]["repair_class"] == "deterministic_repair"
     assert pipes[0]["repair_action"]["kind"] == "escape_table_wikilink_pipe"
     for rule in ("md_internal_link", "title_only_frontmatter", "dc_in_narration", "broken_image_link", "forbidden_tree", "literal_newline"):
-        assert all(item["repair_class"] == "human_repair" for item in only(rule)), rule
+        assert all(item["repair_class"] == "agent_repair" for item in only(rule)), rule
 
 
 def _identity_vault(root: Path) -> Path:
@@ -911,3 +937,427 @@ def test_identity_threshold_lists_candidates_without_choosing(tmp_path: Path):
     assert [item["path"] for item in keeper.candidates] == ["entities/npc/harbour-master.md"]
     assert "canonical_path" not in master.signals and "canonical_path" not in keeper.signals
     assert all(item.status == "resolved" for path, item in results.items() if "unrelated" in path)
+
+
+def _put(path: Path, text: str) -> Path:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+    return path
+
+
+def _rules(findings: list[dict]) -> list[str]:
+    return [str(item.get("rule_id") or item.get("rule")) for item in findings]
+
+
+_FACTION_TEMPLATE = """\
+---
+title: "{{title}}"
+type: faction
+status: active
+---
+
+# {{title}}
+
+*Smuggling ring*
+
+<!-- Required when status is active. -->
+
+**Wants.** The concrete change they are after.
+
+**Next move.** What they attempt next.
+
+> [!narration] First meeting
+> <!-- Optional: the moment the party first meets them. -->
+
+## Log
+
+<!-- Required. -->
+
+- **[[Session]]** — what changed.
+"""
+
+_NPC_TEMPLATE = """\
+---
+title: "{{title}}"
+type: npc
+role: ""
+---
+
+# {{title}}
+
+## Statblock
+
+## Log
+"""
+
+
+def _faction_page(*, status: str, wants: bool = False, log: str | None = "## Log") -> str:
+    wants_block = "**Wants.** Coin on the quay.\n\n**Next move.** Bribe the clerk.\n\n" if wants else ""
+    log_block = f"\n{log}\n\n- Session 1 — they moved.\n" if log else ""
+    return (
+        "---\n"
+        "title: Red Sails\n"
+        "type: faction\n"
+        f"status: {status}\n"
+        "---\n\n"
+        "# Red Sails\n\n"
+        f"{wants_block}"
+        f"{log_block}"
+    )
+
+
+def test_required_body_job_tracks_template_comment(tmp_path: Path):
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    active = _faction_page(status="active", wants=False)
+    dormant = _faction_page(status="dormant", wants=False)
+    contract = derive_contract(template)
+    active_findings = check_conformance("entities/faction/red-sails.md", active, contract)
+    assert "TMPL_missing_job" in _rules(active_findings)
+    wants = [item for item in active_findings if item.get("rule_id") == "TMPL_missing_job"]
+    assert any("Wants" in str(item.get("repair_target", "")) or "Wants" in str(item.get("reason", "")) for item in wants)
+    dormant_findings = check_conformance("entities/faction/red-sails.md", dormant, contract)
+    assert not any(
+        item.get("rule_id") == "TMPL_missing_job" and "Wants" in str(item)
+        for item in dormant_findings
+    )
+
+    template.write_text(_FACTION_TEMPLATE.replace("Required when status is active.", "Required."), encoding="utf-8")
+    required = derive_contract(template)
+    now_required = check_conformance("entities/faction/red-sails.md", dormant, required)
+    assert any(
+        item.get("rule_id") == "TMPL_missing_job" and "Wants" in str(item)
+        for item in now_required
+    )
+
+
+def test_placeholder_heading_is_not_extra(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import build_safe_fix_plan
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(
+        tmp_path / "templates" / "place.md",
+        "---\ntitle: \"{{title}}\"\ntype: place\n---\n\n# {{title}}\n\n## {Area}\n",
+    )
+    page = (
+        "---\ntitle: Keep\ntype: place\n---\n\n"
+        "# Keep\n\n## Gatehouse\n\nGuards.\n\n## Cellar\n\nStores.\n"
+    )
+    findings = check_conformance("entities/place/keep.md", page, derive_contract(template))
+    assert "TMPL002" not in _rules(findings)
+    _put(tmp_path / "entities/place/keep.md", page)
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": ["entities/place/keep.md"]})
+    for operation in ops:
+        apply_mutation(tmp_path, operation)
+    text = (tmp_path / "entities/place/keep.md").read_text(encoding="utf-8")
+    assert "{Area}" not in text
+    assert text.count("## ") == 2
+
+
+def test_improvised_heading_names_template_slots(tmp_path: Path):
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    page = (
+        "---\ntitle: Red Sails\ntype: faction\nstatus: active\n---\n\n"
+        "# Red Sails\n\n**Wants.** Coin.\n\n**Next move.** Bribe.\n\n"
+        "# Notes\n\nAside.\n\n## Agenda\n\nThey buy the quay.\n\n## Log\n\n- Session 1 — they moved.\n"
+    )
+    extras = [
+        item for item in check_conformance("entities/faction/red-sails.md", page, derive_contract(template))
+        if item.get("rule_id") == "TMPL002"
+    ]
+    names = {item["section"] for item in extras}
+    assert names == {"Notes", "Agenda"}
+    extra = extras[0]
+    assert extra["repair_class"] == "agent_repair"
+    assert extra["reason"].startswith("Heading '")
+    assert extra["reason"].endswith("is not in wiki/templates/faction.md")
+    target = extra["repair_target"]
+    assert target == "Conform headings to wiki/templates/faction.md; keep page facts."
+    assert "**Wants.**" not in target
+    assert "## Log" not in target
+
+
+
+
+
+def test_wrong_heading_level_is_deterministic_fix(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    page = _faction_page(status="active", wants=True, log="### Log")
+    _put(tmp_path / rel, page)
+    findings = check_conformance(rel, page, derive_contract(template))
+    level = next(item for item in findings if item.get("rule_id") == "TMPL_wrong_level")
+    assert level["repair_class"] == "deterministic_repair"
+    action = level["repair_action"]
+    assert (action.get("kind") if isinstance(action, dict) else action) == "set_heading_level"
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": [rel]})
+    assert ops
+    applied, _failed = apply_safe_fix_plan(tmp_path, ops)
+    assert applied
+    text = (tmp_path / rel).read_text(encoding="utf-8")
+    assert "\n## Log\n" in text
+    assert "### Log" not in text
+    assert text.count("## Log") == 1
+    again, _skipped = build_safe_fix_plan(
+        tmp_path,
+        check_conformance(rel, text, derive_contract(template)),
+        scope={"paths": [rel]},
+    )
+    assert again == []
+
+
+def test_section_reorder_is_deterministic_when_permutation(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "npc.md", _NPC_TEMPLATE)
+    rel = "entities/npc/harbour-master.md"
+    page = (
+        "---\ntitle: Harbour Master\ntype: npc\nrole: face\n---\n\n"
+        "# Harbour Master\n\n## Log\n\n- Session 1 — spoke.\n\n## Statblock\n\nAC 12.\n"
+    )
+    _put(tmp_path / rel, page)
+    findings = check_conformance(rel, page, derive_contract(template))
+    order = next(item for item in findings if item.get("rule_id") == "TMPL003")
+    assert order["repair_class"] == "deterministic_repair"
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": [rel]})
+    apply_safe_fix_plan(tmp_path, ops)
+    text = (tmp_path / rel).read_text(encoding="utf-8")
+    assert text.index("## Statblock") < text.index("## Log")
+    assert "# Harbour Master" in text
+    assert text.count("## Statblock") == 1 and text.count("## Log") == 1
+
+
+def test_missing_required_is_agent_repair_and_fix_adds_nothing(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    page = _faction_page(status="active", wants=True, log=None)
+    path = _put(tmp_path / rel, page)
+    before = path.read_bytes()
+    findings = check_conformance(rel, page, derive_contract(template))
+    missing = next(item for item in findings if item.get("rule_id") == "TMPL_missing_required")
+    assert missing["repair_class"] == "agent_repair"
+    assert "wiki/templates/faction.md" in str(missing.get("repair_target", ""))
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": [rel]})
+    apply_safe_fix_plan(tmp_path, ops)
+    assert path.read_bytes() == before
+    assert "## Log" not in path.read_text(encoding="utf-8")
+
+
+def test_missing_optional_is_not_a_finding_and_fix_adds_nothing(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
+    from tools.wiki_ops.template_contracts import check_conformance, derive_contract
+
+    template = _put(tmp_path / "templates" / "faction.md", _FACTION_TEMPLATE)
+    rel = "entities/faction/red-sails.md"
+    page = _faction_page(status="active", wants=True)
+    path = _put(tmp_path / rel, page)
+    before = path.read_bytes()
+    findings = check_conformance(rel, page, derive_contract(template))
+    blob = " ".join(str(item) for item in findings)
+    assert "First meeting" not in blob
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": [rel]})
+    apply_safe_fix_plan(tmp_path, ops)
+    assert path.read_bytes() == before
+    assert "[!narration] First meeting" not in path.read_text(encoding="utf-8")
+
+
+def test_template_frontmatter_keys_are_agent_repair(tmp_path: Path):
+    from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
+
+    _put(tmp_path / "templates" / "npc.md", _NPC_TEMPLATE)
+    rel = "entities/npc/harbour-master.md"
+    page = (
+        "---\ntitle: Harbour Master\ncategory: entities\ntags: []\nsources: []\n"
+        "created: 2026-01-01\nupdated: 2026-01-01\ntype: npc\nreveal: unrevealed\n---\n\n"
+        "# Harbour Master\n\n## Statblock\n\n## Log\n"
+    )
+    path = _put(tmp_path / rel, page)
+    report = assert_json(
+        run_cli("scripts/wiki-lint", "--json", "--no-vale", "--scope", f"files:{rel}", "--vault", tmp_path),
+        returncode=1,
+    )
+    missing = report["findings"].get("missing_frontmatter") or []
+    if not missing:
+        files = report.get("findings_by_file", {}).get(rel, [])
+        missing = [item for item in files if item.get("rule") in {"missing_frontmatter", "TMPL_missing_frontmatter"}]
+    assert missing
+    record = missing[0]
+    assert record.get("repair_class") == "agent_repair"
+    target = str(record.get("repair_target", ""))
+    assert "role" in str(record.get("missing", record)) or "role" in target
+    assert "wiki/templates/npc.md" in target
+    findings = []
+    for items in (report.get("findings") or {}).values():
+        if isinstance(items, list):
+            findings.extend(item for item in items if isinstance(item, dict))
+    ops, _skipped = build_safe_fix_plan(tmp_path, findings, scope={"paths": [rel]})
+    apply_safe_fix_plan(tmp_path, ops)
+    assert "role:" not in path.read_text(encoding="utf-8")
+
+
+def test_fix_hint_prints_repair_target():
+    from tools.wiki_ops.pretty import render_lint_issues
+
+    text = render_lint_issues({
+        "files": [{
+            "file": "entities/faction/red-sails.md",
+            "findings": [{
+                "rule": "TMPL_missing_job",
+                "file": "entities/faction/red-sails.md",
+                "line": 12,
+                "message": "Required Wants is missing",
+                "repair_class": "agent_repair",
+                "repair_target": "Add required Wants from wiki/templates/faction.md; fill it from page facts.",
+            }],
+        }],
+    })
+    assert "fix: Add required Wants from wiki/templates/faction.md; fill it from page facts." in text
+
+
+
+def test_next_action_skips_fix_when_only_agent_repair():
+    from tools.wiki_ops.worklist import build_worklist
+
+    result = build_worklist(
+        [{"rule": "TMPL_missing_job", "file": "a.md", "line": 1, "repair_class": "agent_repair",
+          "repair_target": "Add required Wants from wiki/templates/faction.md; fill it from page facts."}],
+        files_checked=1,
+        page_bytes={"a.md": 12},
+        full=True,
+    )
+    assert result["next"]["path"] == "a.md"
+    assert result["next"]["action"] == "wiki lint a.md"
+
+
+def test_next_action_names_fix_when_deterministic():
+    from tools.wiki_ops.worklist import build_worklist
+
+    result = build_worklist(
+        [{"rule": "TMPL_wrong_level", "file": "a.md", "line": 4, "repair_class": "deterministic_repair",
+          "repair_action": {"kind": "set_heading_level"}}],
+        files_checked=1,
+        page_bytes={"a.md": 12},
+        full=True,
+    )
+    assert result["next"]["action"] == "wiki lint fix a.md, then wiki lint a.md"
+
+
+
+def test_worklist_next_skips_generated_index():
+    from tools.wiki_ops.worklist import build_worklist
+
+    result = build_worklist(
+        [
+            {"rule": "TMPL002", "file": "journal/_index.md", "line": 1},
+            {"rule": "TMPL002", "file": "entities/npc/_index.md", "line": 1},
+            {"rule": "TMPL002", "file": "entities/npc/real.md", "line": 2},
+        ],
+        files_checked=3,
+        page_bytes={
+            "journal/_index.md": 10,
+            "entities/npc/_index.md": 11,
+            "entities/npc/real.md": 200,
+        },
+        full=True,
+    )
+    assert result["next"]["path"] == "entities/npc/real.md"
+    assert result["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert [row["page"] for row in result["backlog"]] == ["entities/npc/real.md"]
+
+
+def test_health_snapshot_is_compact_and_uses_lint_next():
+    from tools.wiki_ops.health import build_focus, build_health_snapshot
+
+    lint = {
+        "status": "findings",
+        "hard_fail": True,
+        "finding_total": 3,
+        "affected_pages": 2,
+        "counts": {"TMPL002": 3},
+        "next_page": "entities/npc/real.md",
+        "next": {
+            "path": "entities/npc/real.md",
+            "findings": 2,
+            "bytes": 200,
+            "action": "wiki lint entities/npc/real.md",
+        },
+        "backlog": [
+            {"page": "journal/_index.md", "findings": 1, "bytes": 10},
+            {"page": "entities/npc/real.md", "findings": 2, "bytes": 200},
+        ],
+        "scope": {"paths": [f"entities/npc/{i}.md" for i in range(20)]},
+        "identity": {"status": "ambiguous", "ambiguous": [{"path": "a.md"}]},
+        "files": [{"file": "entities/npc/real.md", "findings": []}],
+    }
+    focus = build_focus(lint)
+    snapshot = build_health_snapshot(
+        status="findings",
+        pages=2,
+        bytes=210,
+        tokens=None,
+        lint=lint,
+        waste={"hits": 1, "hard_hits": 0},
+        staging={"leftover_count": 0},
+        remorph={"plan_count": 0, "skip_count": 0, "error_count": 0},
+        policy={"ok": True, "conflict_count": 0},
+        trends=None,
+        focus=focus,
+    )
+    assert snapshot["next"]["path"] == "entities/npc/real.md"
+    assert snapshot["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert "identity" not in snapshot
+    assert "scope" not in snapshot.get("lint", {})
+    assert "files" not in snapshot.get("lint", {})
+
+    dumped = json.dumps(snapshot)
+    assert "journal/_index.md" not in dumped
+    assert len(dumped) < 4000
+
+
+def test_health_next_stays_none_when_lint_is_clean():
+    from tools.wiki_ops.health import build_focus, build_health_snapshot
+
+    lint = {"status": "clean", "finding_total": 0, "affected_pages": 0, "counts": {}, "next": None}
+    focus = build_focus(lint, remorph={"plans": [{"src": "entities/npc/Bob.md", "reason": "kebab"}]})
+    snapshot = build_health_snapshot(
+        status="clean",
+        pages=1,
+        bytes=10,
+        tokens=None,
+        lint=lint,
+        waste=None,
+        staging=None,
+        remorph={"plan_count": 1, "skip_count": 0, "error_count": 0},
+        policy=None,
+        trends=None,
+        focus=focus,
+    )
+    assert snapshot["next"] is None
+    assert snapshot["focus"]
+
+
+
+
+def test_render_health_matches_lint_next_shape():
+    from tools.wiki_ops.pretty import render_health
+
+    text = render_health({
+        "status": "findings",
+        "lint": {"finding_total": 3, "affected_pages": 2},
+        "next": {"path": "entities/npc/real.md", "action": "wiki lint entities/npc/real.md"},
+    })
+    assert not text.lstrip().startswith("{")
+    assert "3 findings on 2 pages" in text
+    assert "next: entities/npc/real.md" in text
+    assert "wiki lint entities/npc/real.md" in text
+

@@ -52,9 +52,11 @@ def test_file_missing_frontmatter_reports_wiki001(tmp_path):
 def test_unknown_bundle_and_invalid_severity_are_argument_errors():
     unknown = run_cli("task", "not-a-bundle", "--json")
     assert unknown.returncode == 2
-    assert "available" in unknown.stderr
+    data = json.loads(unknown.stdout)
+    assert "available" in json.dumps(data).casefold()
     invalid = run_cli("task", "session-prep", "--severity", "nope", "--json")
     assert invalid.returncode == 2
-    assert "severity" in invalid.stderr
+    assert "severity" in json.dumps(json.loads(invalid.stdout)).casefold()
+
 
 

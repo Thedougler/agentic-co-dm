@@ -78,7 +78,7 @@ RULE_FILES = (
     "rules/registry.yml",
     "rules/bundles.yml",
 )
-RULE_DIRS = ("styles", "wiki/templates", "tools/creative_lint")
+RULE_DIRS = ("styles", "wiki/templates", "tools/creative_lint", "tools/wiki_ops")
 RULE_SUFFIXES = {".ini", ".yml", ".yaml", ".py", ".md"}
 SKIP_DIR_NAMES = {"__pycache__", ".git"}
 

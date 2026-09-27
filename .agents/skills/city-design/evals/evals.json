@@ -92,6 +92,14 @@
         {
           "type": "behavior",
           "text": "The Street Life table carries a spoken `_italic_` Narration cell per row."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -132,6 +140,14 @@
         {
           "text": "The At a Glance lead sentence is one pressure-forward sentence about the city's function in play — must NOT be a Season-1 history summary of Otar, Solange, or the Mercatura bombs",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -155,6 +171,14 @@
         {
           "text": "If proposing invention, cites grounding wiki pages in process-notes.md, agent_report.md, or transcript.md and does not write silent canon",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -186,6 +210,14 @@
         {
           "text": "Header narration covers scale/silhouette/motion/sound without secrets or unearned names",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -237,6 +269,14 @@
         {
           "text": "Proposed districts/services are grounded in Calveno's harbour/credit/Passage function, not generic fantasy filler",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -264,6 +304,14 @@
         {
           "text": "Invented facts are canon under the rule in llm-wiki: the page carries invention: true and response.md lists each proposal with the pages it grows from",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -291,6 +339,14 @@
         {
           "text": "City page presents pressure and opportunity for play rather than narrating the party's finished civic decisions",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -314,6 +370,14 @@
         {
           "text": "States in process-notes.md, agent_report.md, or transcript.md that secrets/DCs stay out of player-facing narration",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -341,6 +405,14 @@
         {
           "text": "Any speculative situation cites grounding pages in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -364,6 +436,14 @@
         {
           "text": "Labels invention (invention: true or equivalent) and cites grounding pages when proposing new districts/pressure",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -387,6 +467,14 @@
         {
           "text": "If proposing combat pressure, marks it proposed/invention and keeps alternate approaches in process-notes.md, agent_report.md, or transcript.md",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -405,6 +493,14 @@
         },
         {
           "text": "Reports city template completion with observable header narration and Districts sections.",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -425,6 +521,14 @@
         {
           "text": "Returns child artifact/section and completion evidence while preserving the city deliverable.",
           "type": "structure"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -444,6 +548,14 @@
         {
           "text": "States which city sections and return evidence advance safe passage.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

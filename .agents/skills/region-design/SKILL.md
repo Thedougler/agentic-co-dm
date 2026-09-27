@@ -130,21 +130,22 @@ tradeoff against the others, and every key place links a page.
 
 ### 4. Set the powers moving
 
-- **Powers.** Two to four groups or creatures that can change the
-  region now, each a linked page: hold, want now, next move with a time, and
-  what reveals that move.
-- **Pressure** (under Powers). One or two fronts grown from the inventory (a power's want, a
-  hazard's season, a debt, a hunt), each a **Threat** bullet with what drives
-  it and what becomes true if it succeeds, a time, and three portents from
-  subtle to unmistakable as the First sign, Escalation, and Crisis checkboxes.
-- **Stakes** (under Powers). One to three questions that play will answer.
+- **Factions.** Two to four groups or creatures that can change the region
+  now, each a linked page: hold, want now, next move with a time, and what
+  reveals that move.
+- **Threats.** One or two threats grown from the inventory (a faction's want,
+  a hazard's season, a debt, a hunt), each with what drives it and what
+  becomes true if it succeeds, a time, and three visible signs from subtle to
+  unmistakable as First sign, Escalation, and Crisis checkboxes.
 
-Done when each power's next move has a time and a sign, and each front has
-three portents.
+Both go under Factions and Threats.
+
+Done when each faction's next move has a time and a sign, and each threat has
+three visible signs.
 
 ### 5. Fill the road
 
-- **Encounters.** A d6 or d8 table of who and what the party meets (creatures,
+- **Random Encounters.** A d6 or d8 table of who and what the party meets (creatures,
   crews, travellers, wonders that act; weather and terrain live in the weather
   table), each with its sign before contact spoken as an `_italic_` line in the
   Narration column, its source page, what it wants,
@@ -155,15 +156,14 @@ three portents.
   The truth is a fact about the world (the dragon is there, in this lair, or
   the dragon is a wreck's figurehead), never a note on what is confirmed or
   recorded.
-- **Finds** (under Secrets). A resource, a shelter with its cost, a wonder, a
-  hidden lore fact, and a shortcut: each a thing the party can take, use, or
-  visit. The wonder is a sight a traveller would sail out of the way for, and
-  it gives something back.
-- **History.** Past facts that leave evidence a traveller can
-  find.
+- **Finds** (as **Secret.** paragraphs). A resource, a shelter with its cost,
+  a wonder, a hidden lore fact, and a shortcut: each a thing the party can
+  take, use, or visit, and a past fact only when it leaves evidence a
+  traveller can find. The wonder is a sight a traveller would sail out of the
+  way for, and it gives something back.
 
 Done when every encounter has a sign and a source, every rumor has its truth,
-and every fightable encounter has numbers.
+and every fightable encounter links a creature page with a statblock.
 
 ### 6. Hand the travel look to theatre-of-the-mind
 
@@ -183,14 +183,14 @@ carries the regional rule's tell.
 
 Copy `wiki/templates/region.md` to `wiki/entities/region/<kebab-name>.md` with
 `type: region`, `scale`, and `kind`; add parent `region` only when it names a
-page. At a Glance opens with one sentence on the region's job at the table,
-then Now, Pressure, Known for, and Anchor. Step 3 fills Geography (a
-`[[region]]` bullet per neighbor or subregion with what changes across the
-border, a `[[place]]` bullet per landmark), Travel (routes table, travel
-procedure bullets, hidden routes, regional rule), and Key Places (each with
-how the party learns it exists); step 4 fills Powers (powers and fronts with
-portents); step 5 fills Encounters and Rumors, with finds under Secrets and
-past facts under History. Keep a section only when you have facts for it
+page. The italic identity line under the portrait gives the kind of land, its
+parent region, and what is changing in it now. Step 3 fills Travel (the routes
+table, including each neighbor and what changes across the border, then the
+travel rules that change a choice: navigation, weather, rest and supply,
+hidden routes, the regional rule) and Places (landmarks and sites, each with
+how the party learns it exists); step 4 fills Factions and Threats (each
+with its visible steps); step 5 fills Random Encounters and Rumors, then **Secret.**
+paragraphs for finds. Keep a section only when you have facts for it
 (fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
 owner page.
 
@@ -210,14 +210,16 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Two or more routes each carry days, a check with DC, a failure cost, and a
   tradeoff; the travel procedure covers navigation, supply, weather, and rest.
 - Every named place, power, and creature links a page.
-- Each active power has a next move with a time and a sign; each front has
-  three portents and a time.
+- Each active faction has a next move with a time and a sign; each threat has
+  three visible signs and a time.
 - Every edge names what lies beyond it.
 - Encounters are creatures, crews, or wonders that act, with signs, sources,
   and numbers where fightable; every canon creature or group of the region
   appears on the page.
-- Every rumor's truth is a world fact; the finds under Secrets list things the
+- Every rumor's truth is a world fact; the **Secret.** finds list things the
   party can take, use, or visit, and the wonder gives something back.
+- When the party will travel the region, `[!narration] On the road` under
+  Travel renders a stretch of the journey.
 - The narration came from theatre-of-the-mind and holds no truth, DC, or
   unearned name.
 - Every owner was cast or minted first. Each new mint names, in the response,
@@ -225,7 +227,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

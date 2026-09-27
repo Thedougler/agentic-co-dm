@@ -23,11 +23,12 @@ freshness, index, hot-cache, state, and notification maintenance.
 ### Work
 
 Keep the existing freshness → index → `hot.md` → state → validator → log
-sequence. When maintenance health is part of the run, consume `wiki health`
-`context.act`, `next.path`, and ordered `focus` exactly; do not add a second
-planner or rerank actions. A requested lint scope uses complete `wiki lint`
+sequence. When maintenance health is part of the run, run `wiki health`
+(`wiki health --help`). A requested lint scope uses complete `wiki lint`
 findings and the existing registered `wiki lint fix` path only. Semantic
 findings return to their artifact owner, then the affected scope is rerun.
+
+
 
 ### Done
 

@@ -43,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Resolution spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
+Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Resolution spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
 
 ## Fill a Resolution
 
@@ -53,24 +53,26 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    Done when each thread's final state and each cost paid are listed.
 2. **Choose the card per outcome.** Read
    [references/resolution-cards.md](references/resolution-cards.md). For each
-   Climax outcome the Resolution answers, pick the card that outcome produced.
+   Climax outcome the Resolution answers, pick the card that outcome produced. The card goes in the beat's frontmatter `card:`; the page body carries only what it produces.
 3. **Cast owners.** Every named person, place, item, or faction in the
    afterscene has an owner page before any text depends on it: cast from the
    wiki first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the afterscene spends, applying the Resolution craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rewards and rulings.** Name every reward and its owner; load
    `dnd5e-mechanics` for any check, and `item-design` for a new
    magic item.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill the
-   `Closing Image` for each outcome branch, and `Stinger` when one grows from
+   `[!narration] Closing Image` block under the Previous beat line for each
+   outcome branch (a callout per branch, titled with the outcome, not a table
+   column), and `Next Hook` when one grows from
    play: the arrival, sign, or message the characters perceive, ending before
    anyone can act. Delete a slot that has no spoken text.
-7. **Record the aftermath.** Fill At a Glance (new status quo, price, reward),
-   Consequences, Loose Ends, and Rewards so the next session's planner reads the changed world from
-   this page.
+7. **Record the aftermath.** Fill Consequences (what is different now, what
+   cannot be restored, and what each open thread becomes) and Rewards, so the
+   next session's planner reads the changed world from this page.
 8. **Cold read.** Run the cold read from `docs/agents/table-ready.md` and the
    completion test. Fix every gap before filing.
 
@@ -112,7 +114,9 @@ page:
   them, and a milestone or XP proposal. These are canon under the rule in `llm-wiki` where canon
   is silent; an outcome that earns nothing lists no reward row;
 - each actor's closing response is written, with what it changes;
-- At a Glance states values, not instructions to record them later.
+- Consequences states values, not instructions to record them later.
+
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears in the body (the card goes in frontmatter `card:`).
 
 ## Named seams
 

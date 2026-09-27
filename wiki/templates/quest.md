@@ -18,79 +18,25 @@ deadline: ""
 last_advanced: YYYY-MM-DD
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments.
-status: rumored | offered | active | stalled | resolved | failed | expired -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Default page is the portrait, the italic offer line, and the situation. Other facts only when they exist; delete unused comments and narration slots.
+status: rumored | offered | active | stalled | resolved | failed | expired. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
-## At a Glance
-
-<!-- Required. Lead sentence: what the party can accomplish, stated as the result. Then labelled facts, one bullet each. -->
-
-- **Why now.** What makes it urgent.
-- **Offered by.** [[npc]]
-- **Opposition.** [[npc]] or [[faction]], and what it wants instead.
-- **Reward.** What is promised.
-- **Deadline.** The event after which the situation changes.
-```
-
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-facing brief: the request, rumor, or visible problem, using only what the characters know. -->
-```
-````
+> <!-- What the characters know: the request, rumor, or visible problem as the party meets it (theatre-of-the-mind: Dialogue, or Handout when it is posted). -->
 
-## Situation
+<!-- Who offers it, the reward, and the deadline. Match YAML. -->
 
-<!-- Required. The truth behind the quest as it stands now: the forces involved and what each is already doing. -->
+*Offered by [[npc]] for 200 gp, before the spring tide*
 
-## Stakes
+<!-- Required. -->
 
-- **If the party succeeds.** What changes in the world.
-- **If the party fails.** What changes instead.
-- **If the party walks away.** What happens without them.
-- **Open question.** Who might change sides, survive, fall, or gain power; play decides.
+**The truth.** What is really happening, and what each force involved is already doing.
 
-## Leads
+**If the party walks away.** What happens without them, as the visible steps it takes.
 
-<!-- Places the party can push next. Give any conclusion the party must reach at least two independent leads. -->
-
-- [ ] **Lead.** How it enters play → [[page]]
-
-## Pressure
-
-<!-- The force that moves when the party does not: what it wants, what it does next, and the visible steps toward what it wants. -->
-
-- **Driver.** [[npc]] or [[faction]] — what it wants and its next move.
-- [ ] **First sign.** The first visible change.
-- [ ] **Escalation.** A change that closes options.
-- [ ] **End state.** The world changes even if the quest is never taken.
-
-## Complications
-
-<!-- Pressures that can enter play without dictating the party's answer. -->
-
-- **Tradeoff.** Something valuable that cannot be protected without cost.
-- **Reaction.** How a force changes tactics when the party interferes.
-- **Reversal.** A fact that reframes the situation if discovered, and where it is found.
-
-## Rewards
-
-<!-- What play can earn beyond the promise: items, coin, access, allies. -->
-
-## Connections
-
-- [[page]] — its role in the quest.
-
-## Resolution
-
-<!-- Only once the quest ends: outcome, what actually happened, who gained or lost power, lasting changes to [[page]]s, and loose threads. -->
+<!-- Further facts, as **Name.** paragraphs, each only when it exists: **Opposition.** ([[npc]] or [[faction]], what it wants instead, and how it reacts when the party interferes), **Leads.** (each with how it enters play → [[page]]; any conclusion the party must reach gets two independent leads), **Stakes.** (what changes if the party succeeds or fails), **Rewards.** (what play can earn beyond the promise). -->
 
 ## Log
 

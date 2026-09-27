@@ -17,18 +17,18 @@ Pick the shape the party's choices made inevitable:
   Negotiation Under Duress) wants a Cliffhanger before it.
 
 Each card: **Shape** — what the Climax is; **Build** — what the page must
-contain beyond the table-ready anatomy and the harvest table; **Fair play** —
+contain beyond the table-ready anatomy and Party Assets; **Fair play** —
 how the card keeps the outcome in the players' hands.
 
 ## Final Revelation
 - **Shape:** The party and the other actors gather in one place and, like the end of an Agatha Christie novel, must work out what is going on and expose the true facts. Everything is finally revealed — the plot, the murderer, the secret identity. The consequence of exposure is settled in advance: once the killer is named, the watch arrests them; once the Baron's business is uncovered, he slinks away disgraced. The confrontation is the uncovering.
-- **Build:** Why everyone is gathered here; the full truth (DM layer); the proof the party holds, beat by beat where they got it; who contests the truth, their best alternative story, and what breaks it; the settled consequence of a correct exposure; the consequence of accusing wrongly; the culprit's last move when cornered (flight, a hostage, a confession, a counter-accusation) with numbers if it turns violent.
+- **Build:** Why everyone is gathered here; the full truth (DM layer); the proof the party holds; who contests the truth, their best alternative story, and what breaks it; the settled consequence of a correct exposure; the consequence of accusing wrongly; the culprit's last move when cornered (flight, a hostage, a confession, a counter-accusation) with numbers if it turns violent.
 - **Fair play:** The verdict follows the evidence the party actually presents; a wrong accusation has a defined result, not a do-over.
 
 ## Final Battle
 - **Shape:** The big showdown between the party and the opposition. Bring in the villain, the henchmen, assorted minions, monsters — whatever the opposition can muster — on a stage built for destruction on a grand scale. The Final Battle wraps up the game: the villain beaten, the captive rescued, the kingdom saved — if the party wins.
-- **Build:** Forces by escalation tier with numbers (villain substantially stronger than any PC); a stage with three features that break, burn, flood, or collapse; two or three phases with triggers; what the villain's side accomplishes each round nobody stops them; the lever each harvested thread gives the party (the Hidden Weakness, the allies, the mastered skill); win and lose conditions beyond hit points.
-- **Fair play:** The party can win, just barely, with what the middle gave them; every harvested lever works as the page says.
+- **Build:** Forces by escalation tier with numbers (villain substantially stronger than any PC); a stage with three features that break, burn, flood, or collapse; two or three phases with triggers; what the villain's side accomplishes each round nobody stops them; what each party asset does here (the Hidden Weakness, the allies, the mastered skill); win and lose conditions beyond hit points.
+- **Fair play:** The party can win, just barely, with what the middle gave them; every party asset works as the page says.
 
 ## Extensions
 

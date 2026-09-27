@@ -695,6 +695,98 @@ def _update_manifest_identity(text: str, op: MutationOp) -> str:
     timestamp = op.payload.get("timestamp", op.selector.get("timestamp"))
     return _manifest_transition_text(text, page, transition, str(target) if target is not None else None, str(reason) if reason is not None else None, str(timestamp) if timestamp else None)
 
+
+def _set_heading_level(text: str, op: MutationOp) -> str:
+    heading = str(op.selector.get("heading") or op.payload.get("heading") or "")
+    level = int(op.payload.get("level") or op.selector.get("expected_level") or 0)
+    if not heading or level < 1:
+        _fail("precondition_failed", "set_heading_level requires heading and level")
+    _verify_hash(op, text, [], required=True)
+    newline = _newline(text)
+    lines = text.splitlines(keepends=True)
+    matches = []
+    for index, line in enumerate(lines):
+        match = HEADING_RE.match(_strip_eol(line))
+        if match and _heading_text(match.group(2)) == heading:
+            matches.append(index)
+    if len(matches) != 1:
+        _fail("precondition_failed", f"heading {heading!r} matches {len(matches)} times")
+    index = matches[0]
+    rest = lines[index][len(_strip_eol(lines[index])):]
+    lines[index] = f"{'#' * level} {heading}{rest or newline}"
+    return "".join(lines)
+
+
+def _reorder_sections(text: str, op: MutationOp) -> str:
+    order = op.payload.get("order") or op.selector.get("order") or []
+    if not isinstance(order, list) or not order:
+        _fail("precondition_failed", "reorder_sections requires order")
+    names = [str(item) for item in order]
+    named = set(names)
+    _verify_hash(op, text, [], required=True)
+    newline = _newline(text)
+    lines = text.splitlines(keepends=True)
+
+    def span_for(heading: str) -> tuple[int, int, int] | None:
+        for index, line in enumerate(lines):
+            found = HEADING_RE.match(_strip_eol(line))
+            if not found or _heading_text(found.group(2)) != heading:
+                continue
+            level = len(found.group(1))
+            end = len(lines)
+            for following, candidate in enumerate(lines[index + 1:], index + 1):
+                next_heading = HEADING_RE.match(_strip_eol(candidate))
+                if next_heading and len(next_heading.group(1)) <= level:
+                    end = following
+                    break
+            return index, end, level
+        return None
+
+    named_spans: dict[str, tuple[int, int, int]] = {}
+    for heading in names:
+        found_span = span_for(heading)
+        if found_span is None:
+            _fail("precondition_failed", f"heading {heading!r} is missing")
+        else:
+            named_spans[heading] = found_span
+    start = min(span[0] for span in named_spans.values())
+    end = max(span[1] for span in named_spans.values())
+    block_level = min(span[2] for span in named_spans.values())
+    slots: list[tuple[str | None, int, int]] = []
+    index = start
+    while index < end:
+        found = HEADING_RE.match(_strip_eol(lines[index]))
+        if found and len(found.group(1)) == block_level:
+            heading = _heading_text(found.group(2))
+            close = end
+            for following, candidate in enumerate(lines[index + 1:], index + 1):
+                next_heading = HEADING_RE.match(_strip_eol(candidate))
+                if next_heading and len(next_heading.group(1)) <= block_level:
+                    close = min(following, end)
+                    break
+            slots.append((heading if heading in named else None, index, close))
+            index = close
+            continue
+        index += 1
+    queue = list(names)
+    rebuilt: list[str] = []
+    for heading, slot_start, slot_end in slots:
+        if heading is None:
+            rebuilt.extend(lines[slot_start:slot_end])
+            continue
+        if not queue:
+            _fail("precondition_failed", "reorder_sections order is shorter than named headings")
+        nxt = queue.pop(0)
+        ns, ne, _level = named_spans[nxt]
+        rebuilt.extend(lines[ns:ne])
+    if queue:
+        _fail("precondition_failed", "reorder_sections left unused headings")
+    if rebuilt and not rebuilt[-1].endswith(("\n", "\r")):
+        rebuilt[-1] += newline
+    return "".join(lines[:start] + rebuilt + lines[end:])
+
+
+
 def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None) -> tuple[str, str]:
     root = Path(vault).resolve()
     path = _target(root, op.target)
@@ -736,6 +828,10 @@ def resolve_mutation(vault: str | Path, op: MutationOp, text: str | None = None)
 
         _verify_hash(op, current, [], required=True)
         result = escape_table_wikilink_pipes(current)
+    elif kind == "set_heading_level":
+        result = _set_heading_level(current, op)
+    elif kind == "reorder_sections":
+        result = _reorder_sections(current, op)
     elif kind in {"rename_page", "merge_page", "rename_or_merge_page"}:
         _fail("unsupported_context", f"{kind} requires apply_mutation for multi-file semantics")
     else:

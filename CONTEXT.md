@@ -124,10 +124,11 @@ Describe scale where it changes play, but do not treat it as universal frontmatt
 Every line on a wiki page gives the DM a fact, ruling, or response they can use. A body section, bullet, row, or callout with nothing to say stays off the page; where play needs an answer the wiki lacks, the answer is decided as a proposal.
 
 **Page anatomy**:
-The shared order of a wiki page: title, At a Glance beside the player-safe narration, the kind's core section, then the shared sections a page has facts for. Owner pages and session beats each have one anatomy, shown by their templates.
+The shape of a wiki page, set by its template and by what its content is: a creature reads like a Monster Manual entry, a spell like a Player's Handbook entry, a place like a keyed location, a beat like a published adventure scene. The relevant content comes first, and the page needs no summary section to find it.
+_Avoid_: At a Glance or any summary section; a heading for every possible field; fields only agents use written in the body (they go in frontmatter).
 
-**At a Glance**:
-The top of every page: one lead sentence on what the page is for at the table, then a few labelled facts.
+**Run lines**:
+The bold-labelled lines under a beat's title, with no heading, that the DM runs the beat by: how it starts, what ends it, and the next beat.
 
 DM-facing summaries state sourced campaign facts and runnable procedures; canon follows the rule in `.agents/skills/llm-wiki/SKILL.md`. In an answer to the DM, where the wiki is silent or contradicts itself, say so and name the sources; wiki pages stay fact-only.
 

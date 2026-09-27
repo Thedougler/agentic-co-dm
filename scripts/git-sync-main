@@ -50,7 +50,8 @@ fi
 
 if [[ -n "$(git status --porcelain --untracked-files=no)" ]]; then
   if [[ "$force_clean" -eq 0 ]]; then
-    echo "refuse: uncommitted changes present (pass --force-clean to discard)" >&2
+    echo "refuse: uncommitted changes present" >&2
+    echo "  ./scripts/git-sync-main --force-clean" >&2
     git status --short >&2
     exit 2
   fi

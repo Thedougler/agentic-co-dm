@@ -27,7 +27,7 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from tools.lint_wiki import frontmatter
-from tools.wiki_ops.cli import resolve_vault
+from tools.wiki_ops.cli import AgentParser, examples_epilog, resolve_vault
 from tools.wiki_ops.scope import SKIP_DIRS
 
 STATES = ("unrevealed", "revealed", "all")
@@ -87,9 +87,17 @@ def fail(message: str) -> int:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         description="List live wiki pages by reveal gate, filtered by content type.",
-        epilog="Examples: scripts/wiki-reveal | scripts/wiki-reveal unrevealed --type npc | scripts/wiki-reveal all --json",
+        epilog=examples_epilog(
+            "./scripts/wiki-reveal",
+            "./scripts/wiki-reveal revealed",
+            "./scripts/wiki-reveal all",
+            "./scripts/wiki-reveal unrevealed --type npc",
+            "./scripts/wiki-reveal all --type npc,place --json",
+            "./scripts/wiki-reveal unrevealed --count",
+        ),
+        example="./scripts/wiki-reveal unrevealed --type npc",
     )
     parser.add_argument(
         "state",

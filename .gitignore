@@ -29,6 +29,10 @@ wiki/.obsidian/plugins/*/data.json
 wiki/.obsidian/*.bak
 wiki/.obsidian/*.backup-*
 wiki/.trash/
+# Derived vault caches (rebuilt on lint/health)
+wiki/_meta/lint-cache.json
+wiki/_meta/identity-index.json
+
 
 # qmd local indexes
 **/.qmd/*.sqlite
