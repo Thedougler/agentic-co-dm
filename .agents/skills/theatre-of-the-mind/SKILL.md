@@ -558,7 +558,7 @@ run the list again.
       the thing the characters see or hear, with at most one impression
       riding a concrete detail, so the players draw every conclusion
       themselves? The first sentence may name the kind of place and what was
-      happening there (a fishing camp left mid-meal); who, why, and how
+      happening there (a camp left mid-meal); who, why, and how
       recently stay as evidence, never a verdict. Is every person called
       what the most recent
       narration the players heard calls them (the beat's Previously, the
