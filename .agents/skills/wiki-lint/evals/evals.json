@@ -116,7 +116,7 @@
     {
       "id": 1,
       "prompt": "Lint wiki/entities/npc/varn.md — it has broken wikilinks to [[High Eyrie]] and [[the-sentinels]], missing summary frontmatter, and the basename uses snake_case. Fix everything.",
-      "expected_output": "One lint repair loop: links resolved to existing owners, summary added, basename renamed to kebab-case, and any incomplete template work completed through the owner skill using grounded canon; when novel content is needed, ground it with wiki-query and wiki-context-pack before an appropriate task-specific subagent handles it.",
+      "expected_output": "One file: wiki lint on the named path, wiki query then qmd get before any content write, owner skill loaded and followed on this file, every finding closed, final lint clean.",
       "assertions": [
         {
           "text": "Named page: runs wiki lint on that path before making edits; looks up linked canon with wiki query then qmd get",
@@ -139,7 +139,7 @@
           "type": "quality"
         },
         {
-          "text": "Grounds novel content in established wiki fact with wiki-query and wiki-context-pack before delegation",
+          "text": "Queries the wiki (wiki query then qmd get; wiki-query / wiki-context-pack if needed) before any content write",
           "type": "process"
         },
         {
@@ -251,10 +251,10 @@
     {
       "id": 6,
       "prompt": "Lint wiki/entities/place/carpenters-slip.md. The page has valid frontmatter and a few linked canon references, but its required place sections are blank. Repair it completely.",
-      "expected_output": "Reads the linked canon, loads place-design, grounds novel content with wiki-query and wiki-context-pack, delegates the content work to an appropriate task-specific subagent, treats the completed delegated result as the source of truth, integrates it once, and reruns lint until clean. It does not leave empty headings, independently draft competing place prose while delegation is active, or report the page as repaired after structural edits alone.",
+      "expected_output": "One file: queries the wiki, loads place-design, writes required place jobs from retrieved canon, reruns wiki lint until this file is clean.",
       "assertions": [
         {
-          "text": "Reads linked entities and source material before writing",
+          "text": "Queries the wiki (wiki query then qmd get) before any content write",
           "type": "process"
         },
         {
@@ -262,12 +262,8 @@
           "type": "process"
         },
         {
-          "text": "Grounds novel content with wiki-query and wiki-context-pack before using a task-specific subagent",
+          "text": "Follows place-design on this file and writes the place jobs itself",
           "type": "process"
-        },
-        {
-          "text": "Does not independently draft competing place prose while the delegated content subagent is working; integrates the completed delegated result once as the source of truth",
-          "type": "guardrail"
         },
         {
           "text": "Leaves no blank required place sections",
@@ -296,81 +292,53 @@
     },
     {
       "id": 8,
-      "prompt": "Continue lint repair for wiki/entities/place/carpenters-slip.md after a place-design subagent was assigned the blank place sections. The subagent has not returned yet. Finish any disjoint structural findings now, but do not write competing place prose; when its result arrives, integrate that result once and rerun lint.",
-      "expected_output": "Keeps the delegated place-content handoff authoritative: performs only disjoint structural lint work while the subagent is active, waits for or reads the completed grounded result, integrates it once, and does not invent replacement place prose.",
+      "prompt": "Lint wiki/entities/place/carpenters-slip.md. Close every remaining finding on this file.",
+      "expected_output": "Stays on this file: wiki lint, query, load place-design, write, rerun until this file is clean.",
       "assertions": [
         {
-          "text": "Runs lint and identifies disjoint structural findings separately from the delegated place-content work",
+          "text": "Works only this named file",
           "type": "process"
         },
         {
-          "text": "Does not draft or overwrite competing place prose while the content subagent is active",
-          "type": "guardrail"
+          "text": "Queries the wiki before any content write",
+          "type": "process"
         },
         {
-          "text": "Treats the completed delegated result as the source of truth, integrates it once, and reruns scoped lint",
+          "text": "Loads and follows place-design on this file until wiki lint is clean",
           "type": "process"
         }
       ]
     },
     {
       "id": 9,
-      "prompt": "Run the lint maintenance loop on wiki/entities/place/Belumara.md. It has one registered deterministic finding (noncanonical_basename) and semantic Vale findings (for example VALE_ai-tells.SemicolonUsage) that belong to its owner skill.",
-      "expected_output": "Complete findings are reported; the registered fixer runs through the existing CLI, the semantic finding returns to its artifact owner, and the affected scope reruns until clean or a specific blocker is reported.",
+      "prompt": "Run lint on wiki/entities/place/Belumara.md. It has one registered deterministic finding (noncanonical_basename) and semantic Vale findings (for example VALE_ai-tells.SemicolonUsage).",
+      "expected_output": "One file: wiki lint fix on this path, then query, load place-design, close every remaining finding, rerun wiki lint until this file is clean.",
       "assertions": [
         {
-          "text": "Exposes every configured finding in the selected scope, including the deterministic and semantic findings",
-          "type": "structure"
-        },
-        {
-          "text": "Runs only the existing registered deterministic fixer through wiki lint fix and preserves its CLI scope contract",
+          "text": "Runs wiki lint fix on this file only",
           "type": "process"
         },
         {
-          "text": "Returns the semantic finding to the named artifact owner with bounded page, canon, and lint evidence",
-          "type": "handoff"
+          "text": "Queries the wiki before any content write",
+          "type": "process"
         },
         {
-          "text": "Reruns wiki lint on the affected scope after repair and closes only on a clean result or reports a path/rule/owner-specific blocker",
+          "text": "Loads and follows place-design on this file to close Vale and remaining findings",
+          "type": "process"
+        },
+        {
+          "text": "Reruns wiki lint on this file until clean",
           "type": "quality"
-        },
-        {
-          "text": "Does not report success merely because prose was written or structural edits completed",
-          "type": "guardrail"
         }
       ],
       "files": [
         "wiki/entities/place/Belumara.md"
-      ],
-      "outputs": "Run the deterministic step as `scripts/wiki lint fix entities/place/Belumara.md --dry-run`; change no vault file. Write only {outputs}/response.md: every finding, the fixer plan, the semantic handoff to the owner, and the rerun result or blocker."
-    },
-    {
-      "id": "progress-delta-and-stall-blocker",
-      "prompt": "Run `scripts/wiki lint fix entities/npc/target.md` for one deterministic redirect finding while an unrelated page remains dirty. Then re-observe the selected scope. For an unchanged unsupported or semantic finding, do not repeat the equivalent repair; report the owner-relative blocker.",
-      "expected_output": "The exact selected scope is preserved, the result includes truthful progress totals/resolved identities/changed files/next change/state change, and any unchanged finding ends with a specific blocker.",
-      "assertions": [
-        {
-          "text": "Observes and repairs only the selected path, then reruns lint on that same scope.",
-          "type": "process"
-        },
-        {
-          "text": "Emits before_total, after_total, resolved, changed_files, next_changed, and state_changed.",
-          "type": "structure"
-        },
-        {
-          "text": "Does not retry an unchanged skipped or unsupported repair against the same observation.",
-          "type": "guardrail"
-        },
-        {
-          "text": "Reports owner, boundary, evidence, attempted paths, reason, and parent effect for an intentional stall.",
-          "type": "quality"
-        }
       ]
     },
     {
       "id": "skill-selected-vault-health",
       "prompt": "Check the vault's health and repair the broken links and other findings.",
-      "expected_output": "Selects wiki-lint. Starts at wiki health, sweeps once with wiki lint fix, runs scripts/qmd-maintain.sh, then repairs next.path one file at a time with wiki lint and QMD reads.",
+      "expected_output": "Selects wiki-lint. Loops: wiki health → next.path only → wiki lint fix on that file → query → owner skill → close every finding → wiki health again until clean.",
       "assertions": [
         {
           "type": "skill_selected",
@@ -378,15 +346,15 @@
         },
         {
           "type": "process",
-          "text": "Starts unscoped vault health at wiki health (or wiki health --json) and uses next.path / context.act rather than dumping whole-vault wiki lint"
+          "text": "Starts at wiki health and works only the current next.path"
         },
         {
           "type": "process",
-          "text": "Runs wiki lint fix once for the resolved scope, then scripts/qmd-maintain.sh"
+          "text": "On that file: wiki lint fix, wiki query then qmd get, load and follow the owner skill, close every finding"
         },
         {
           "type": "behavior",
-          "text": "Repairs remaining findings one file at a time: wiki lint on next.path, wiki query then qmd get for linked canon, reruns wiki health after each clean page"
+          "text": "When the file is clean, wiki health again and takes the new next.path until wiki health is clean"
         }
       ]
     }
