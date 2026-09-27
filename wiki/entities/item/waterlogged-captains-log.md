@@ -25,8 +25,18 @@ provenance:
 tier: supporting
 ---
 # Waterlogged Captain's Log
+## At a Glance
 
-> [!narration] Narration
+*Document, mundane plot object.*
+
+- **Found in.** A driftbound strongbox in the Eastern Midchain reef shallows.
+- **Changes at the table.** The surviving entries may reveal an unfinished bearing for whoever can piece them together.
+
+
+> [!narration] Waterlogged Captain's Log
 > The pages have swollen and fused at the edges, damp and soft under a thumb, carrying a sour mildew smell that lingers on the fingers. Half the ink has bled into pale ghost-lines across the paper. What survives reads like a captain writing faster than the hand can manage, headings, bearings, one line about a reef that "wasn't on the chart yesterday." The last legible entry breaks off mid-word.
 
-*Document, Mundane.* No magical properties. A ship's log salvaged from wreckage, worth little as an object but potentially valuable to whoever can piece together its final, unfinished bearing.
+## Properties
+
+The log has no magical properties. Its surviving pages preserve partial headings, bearings, and a warning about a reef that was not on the chart yesterday; the final entry breaks off mid-word.
+
