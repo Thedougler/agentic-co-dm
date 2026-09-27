@@ -26,7 +26,15 @@ tier: supporting
 ---
 # Harbor Merchant's Chalk
 
-> [!narration] Narration
-> A small wood box holds sticks of thick white chalk, worn and blunt from use. Each stick carries a merchant's mark burned into it. Costin's initials mark most of them. This is [[sparhold]]'s market chalk, used on the slate boards outside every stall, carried in the pocket of every merchant dealing in wagers or tallies. The dust stains your fingers white and tastes bitter.
+## At a Glance
 
-*Material (Chalk), Mundane.* Essential for any merchant in Sparhold. Costin stocks this at 3 copper pieces per box.
+*Mundane durable item.*
+
+- **Use.** Merchants use this chalk to record prices, debts, wagers, and tallies in Sparhold's market.
+
+> [!narration] Harbor Merchant's Chalk
+> A small wood box holds sticks of thick white chalk, worn and blunt from use. Each stick carries a merchant's mark burned into it. Costin's initials mark most of them. The dust stains your fingers white and tastes bitter.
+
+## Properties
+
+**Price and availability.** Costin stocks one box for 3 copper pieces. The merchant's marks identify it as Sparhold market chalk, and Costin's initials mark most boxes.
