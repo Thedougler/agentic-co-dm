@@ -8,7 +8,7 @@ sources:
   - "wiki/_archive/common/bell-tone-draught.md"
   - "campaign-os:bell-tone-draught.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -27,9 +27,19 @@ tier: supporting
 ---
 # Bell-Tone Draught
 
-> [!narration] Narration
+> [!narration] Bell-Tone Draught
 > The vial is finger-thin and filled with clear liquor. A plug of bell-rope hemp, browned at the tip, stops it. Tap the glass and it answers with one note that lasts longer than glass should. The liquid does not move while the note holds. It goes down cold and tastes of chalk and rain. The note is still going after the empty vial is back on the table.
 
-Potion, Common
+## At a Glance
 
-Drink it as a Bonus Action. For 1 hour, add +5 to the first Constitution saving throw you make to maintain Concentration on a spell. That first save spends the bonus whether it succeeds or fails. A second draught drunk before the hour ends replaces the first; the bonuses do not stack. It does not help any other saving throw, does not raise spell attack rolls or save DCs, and cannot restore Concentration after it breaks. [[vashka-doru]] keeps four vials in a table drawer. 100 gp.
+*Potion, common.*
+
+The Bell-Tone Draught holds a spell together through its worst moment: one sip, one save, an hour of room to cast.
+
+- **Effect.** Add `+5` to the first Constitution saving throw made to maintain Concentration on a spell, within an hour of drinking.
+- **Price.** `100 gp` a vial. [[vashka-doru]] keeps four in a table drawer.
+- **Limit.** One save only, spent whether it succeeds or fails.
+
+## Properties
+
+Drink it as a Bonus Action. For 1 hour, add `+5` to the first Constitution saving throw you make to maintain Concentration on a spell. That first save spends the bonus whether it succeeds or fails. A second draught drunk before the hour ends replaces the first; the bonuses do not stack. It does not help any other saving throw, does not raise spell attack rolls or save DCs, and cannot restore Concentration after it breaks.
