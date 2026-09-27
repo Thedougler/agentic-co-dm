@@ -12,7 +12,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T07:30:00Z
-updated: 2026-09-13T07:30:00Z
+updated: 2026-09-27
 type: place
 reveal: revealed
 campaign: shattered-sea
@@ -21,32 +21,36 @@ kind: site
 region: "Northern Midchain"
 ---
 # Sparhold Isle
-> [!narration] Narration
+
+> [!narration] Sparhold Isle
 > Sparhold Isle is a half-mile cut-over islet at the southern lip of the Northern Midchain strip. Bare slopes drop to a harbour and walls facing Teethward water. Wet wood, pitch, and smoke hang over timber work and market calls.
-
-
 
 ## At a Glance
 
-Sparhold Isle is a half-mile cut-over islet at the southern lip of the Northern Midchain strip. It sits between the harbour, the fortress-market, and Teethward water; the islet can orient travelers toward [[sparhold]] without being mistaken for the settlement itself.
+Sparhold Isle is the half-mile landform the settlement of [[sparhold]] sits on: cut-over slopes, a harbour, and a fortress-market, at the southern lip of the Northern Midchain strip.
 
-## Who
+- **Who is here.** Sparhold crews and market workers on the harbour and fortress-market; pilots, traders, and watchers following the Grung trail at the Teeth fringe.
+- **Danger.** Teethward water beyond the walls, and a market whose founding and ownership nobody has settled.
+- **Draw.** The harbour, the fortress-market, and timber crews working toward the [[verdant-teeth|Teeth]] fringe.
 
-Sparhold crews and market workers operate the harbour and fortress-market. Pilots and traders use the islet, while watchers follow the Grung trail at the Teeth fringe. No other occupants are established.
+## Features
 
-## What
+- **Cut-over slopes.** Bare ground above the water: the local spar stand fell when the fortress walls went up, and the islet reads timber-poor because of it.
+- **The harbour.** Working water below the walls, handling Sparhold traffic.
+- **The fortress-market.** Walls facing Teethward water with timber work and market calls inside, which is what gives the islet its name and its purpose.
+- **The Grung trail.** The route watchers follow at the Teeth fringe.
 
-The islet has bare cut-over slopes, a harbour, fortress walls, timber work, and a market. Wet wood, pitch, salt, and smoke mark the place. The local spar stand fell when the fortress walls went up.
+## At the Table
 
-## Where
+- **Make landfall without mistaking it.** The islet is the landform; [[sparhold]] is the settlement on it. A party told to reach Sparhold arrives here either way, but the difference matters when someone is asked where they made port.
+- **Buy and sell at the fortress-market.** Timber, pitch, and provisions move through here, with the walls standing between the market and Teethward water.
+- **Talk to a timber crew.** Crews work the cut-over slopes and out toward the Teeth fringe, and they carry local knowledge of the strip.
+- **Follow the Grung trail.** Watchers track it at the Teeth fringe; the trail is how a party gets from the market toward Teethward trouble.
+- **Ask who owns the market.** The islet's market has no settled founder or owner, which is the kind of gap that gets decided the moment coin changes hands.
 
-* **North:** [[sparhold]], with the settlement distinct from the half-mile landform; distance is not recorded.
-* **East:** [[verdant-teeth]], toward the Teeth fringe; distance is not recorded.
-* **South:** [[aruhe]]; distance and direct route are not recorded.
-* **West:** [[murrat]]; distance and direct route are not recorded.
+## Connections
 
-The islet is a southern-lip approach to the Northern Midchain strip. Its market's exact founding and ownership are not fixed.
-
-## Why
-
-The party comes here to orient to the fortress-market, use the harbour, follow timber crews toward the Teeth fringe, or distinguish the landform from [[sparhold]]. The place matters because cut-over land, harbour traffic, and Teethward routes meet here without a settled account of who founded or owns the market.
+- [[sparhold]] — the settlement on the islet, distinct from the half-mile landform itself.
+- [[verdant-teeth]] — the Teeth fringe east of the islet.
+- [[aruhe]] — waters to the south.
+- [[murrat]] — land to the west.
