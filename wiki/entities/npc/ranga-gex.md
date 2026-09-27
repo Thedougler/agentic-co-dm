@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Tokage-Island.md"]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,53 +25,35 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Twin leader of the Ebony Scales |
-| **Home** | [[Totemo Tokage]] |
-| **Wants** | Live up to Don Gex's name while keeping the clan's trade and force useful. |
+Ranga Gex co-leads the [[ebony-scales|Ebony Scales]] with his twin, running the island's trade in drugs and hired force under a father's reputation neither brother has matched yet.
 
-> **DM thesis:** Ranga Gex carries the Ebony Scales' criminal business and inherited anti-slavery reputation.
-
+- **Role.** Co-leader of the Ebony Scales, the clan that does the most business with outsiders.
+- **Nature.** A muscular monitor lizardfolk with green-and-black scales, one of a pair.
+- **Wants.** Live up to [[don-gex|Don Gex]]'s name while keeping the clan's trade and force useful.
+- **Home.** [[Totemo Tokage]], where the clan's business runs across the island.
+- **Allegiance.** The Ebony Scales.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Ranga Gex
-> Ranga Gex is a muscular monitor lizardfolk with green-and-black scales. Ranga shares the Gex appearance with a twin, making the clan's leadership difficult to separate by sight alone.
+> Ranga Gex is a muscular monitor lizardfolk with green-and-black scales, and shares the Gex appearance with a twin, so the clan's leadership is difficult to tell apart by sight. The pair moves together through a business that sells force, drugs, and muscle to anyone who pays and kills slavers on sight.
 ```
 ````
 
-## Running Ranga Gex
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-The party meets Ranga through Ebony Scales trade, hired muscle, or a request involving the island's absolute hostility to slavers.
-
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Ranga's posture changes when an outside threat reaches Tokage or when someone tests the clan's anti-slavery line.
-```
-````
-
-## Voice
-
-Ranga Gex's voice is not established in the source. The page establishes a twin leader protecting the Ebony Scales' trade and anti-slavery reputation, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+- **First meeting.** The party meets Ranga through Ebony Scales trade, hired muscle, or a request that runs into the island's hostility to slavers.
+- **Opens up when.** Business is on the table: force, goods, a contract, or a name that is worth something.
+- **Shuts down when.** An outside threat reaches Tokage, or someone tests the clan's anti-slavery line. Both are the questions that turn the Gex brothers from dealers into something else.
+- **Priority.** The clan's standing first: the trade and the reputation are what the brothers inherited, and living up to their father's name is the pressure under both.
+- **Shares.** Terms, prices, and who on the island owes the clan. Which brother is speaking is a question the clan does not answer clearly, and the twins do not correct the confusion.
+- **Voice.** Not established in the source. The page records a twin leader protecting the Ebony Scales' trade and its anti-slavery reputation, and no verbal habit or sample line; do not invent dialogue until the DM accepts one.
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[ebony-scales\|Ebony Scales]] | Ranga co-leads the clan. |
-| [[rango-gex\|Rango Gex]] | Twin co-leader. |
-| [[don-gex\|Don Gex]] | Late father whose name Ranga is trying to live up to. |
+- [[ebony-scales]] — the clan Ranga co-leads.
+- [[rango-gex]] — his twin and co-leader.
+- [[don-gex]] — the late father whose name both brothers are measured against.
+- [[Totemo Tokage]] — the island the clan trades across.
