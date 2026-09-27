@@ -130,7 +130,7 @@ The highest-stakes confrontation resolves on the page's rulings; every live
 thread has a harvest row with its lever; and every outcome row states the
 changed world, the costs, and each thread's final state for the Resolution.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words. The Opening speaks to the party as "you".
 
 ## Named seams
 
