@@ -10,6 +10,7 @@ provenance:
   extracted: 0.65
   inferred: 0.35
   ambiguous: 0.0
+invention: true
 tier: supporting
 created: 2026-09-13T21:05:00Z
 updated: 2026-09-27
