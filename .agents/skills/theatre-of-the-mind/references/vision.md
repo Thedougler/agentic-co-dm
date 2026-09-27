@@ -101,6 +101,11 @@ fill in every drawable noun it leaves out.
 - Prose silent, pixels show it (a cloak color, a scar): add it.
 - Prose and pixels agree: keep the more specific drawable noun.
 - Prose and pixels conflict: keep the prose; flag the mismatch in the report.
+- Words printed on the art (a sheet's title, a species or style label) are
+  the artist's prompt, never canon. The subject's name and owner page decide
+  what kind of thing it is: a sheet titled "feline" does not make a creature
+  named for a rabbit a cat. When the owner prose contradicts its own name,
+  report it as a canon gap to the owner skill.
 - Owner art (reference, portrait, overview, token) gives **durable identity**
   only: body, face, coloring, marks, clothes, gear. Its pose, gesture,
   expression, action, and backdrop are the illustrator's moment and stay out
