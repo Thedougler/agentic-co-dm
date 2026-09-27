@@ -4,9 +4,9 @@ aliases:
   - Acqua Nera
 category: entities
 tags: [shattered-sea, place]
-sources: []
+sources: ["campaign-os:dario-vanni.md"]
 created: 2026-09-19
-updated: 2026-09-19
+updated: 2026-09-27
 type: place
 reveal: unrevealed
 campaign: shattered-sea
@@ -17,31 +17,39 @@ summary: "Dario Vanni's conversion and paint yard at Calveno's outer harbour."
 ---
 # Acqua Nera
 
-## Overview
-
-> [!narration] Narration
-> A hull rests on trestles in a yard at the outer harbour, with eleven paint pots open around it. The water beyond the work area has stopped being canal and started being sea; quiet workers move between the stacks while Dario mixes by weight and smell.
+> [!narration] Acqua Nera
+> A hull rests on trestles in a yard at the outer harbour, with eleven paint pots open around it and a strip of grey drying on the stem. The water beyond the work area has stopped being canal and started being sea. Quiet workers move between the stacks with their hands full, and Dario mixes by weight and smell with his eyes on the middle distance.
 
 ## At a Glance
 
-[[Acqua Nera]] is [[dario-vanni|Dario Vanni]]'s conversion and paint yard at Calveno's outer harbour, where stolen ships become locally built.
+Acqua Nera is [[dario-vanni|Dario Vanni]]'s conversion and paint yard at Calveno's outer harbour, where stolen ships are made to read as locally built.
 
-## If the party
+- **Who is here.** [[dario-vanni|Dario Vanni]], mixing paint by weight and nose, and quiet workers moving between the stacks; no names and no count are established.
+- **Danger.** The yard lives on not being noticed. A hull left on the trestles too long, or a customer who talks in the wrong tavern, is what brings the Canal Commission down on it.
+- **Draw.** Hull conversion and paint that make a prize look like a local boat, cash only, at a price Dario sets and does not discuss.
 
-- **Bring a hull.** The party can hire Dario for conversion or paint work by paying cash at his price; extra work costs double.
+## Features
 
-## Who
+- **The trestles.** One hull up at a time on the outer-harbour ground, with eleven paint pots open around it and greys drying on the stem and the rail.
+- **The paint to hand.** Dario is colourblind and mixes by weight and smell. His greys are matched to the harbour water and to the light on it, which is why a repainted hull sits in the outer harbour looking like it was launched there.
+- **The water line.** Acqua Nera stands where the water stops being canal and starts being sea, southwest of the [[arsenal|Arsenal]], so a hull can leave the yard without passing through the canal and its books.
+- **The workers.** Quiet hands who move between the stacks, load and scrape, and ask nothing about the hull they are working on.
+- **The dawn departure.** Hulls leave the yard before first light, and dark shapes moving past the point at dawn are the talk the yard cannot afford.
 
-[[dario-vanni|Dario Vanni]] is the proprietor and master craftsman. Quiet workers move between the stacks; the current record does not establish their number or names.
+## At the Table
 
-## What
+- **Bring a hull for conversion.** Dario names one price up front, takes cash only, and asks nothing about where the hull came from. Extra work beyond the agreed job costs double.
+- **Try to negotiate or explain.** He stands still, watches the face of whoever is talking, and repeats the price. Anyone who sounds unsure of the job is turned away without a second meeting.
+- **Buy the grey.** Paint is sold with the work, not as a separate line, and a customer who wants the colour without the job has to buy the yard's time instead.
+- **Ask about the dark shapes before dawn.** Dario says he could not name their colour if he were paid, which is true, and says nothing else about whose hulls they were.
+- **Bring the Canal Commission to the gate.** The yard goes quiet, the pots are closed, and the hull on the trestles is somebody else's the moment anyone official asks.
 
-The yard holds hulls on trestles, paint stacks, and eleven open pots. Dario mixes his own greys and converts stolen ships into locally built vessels while asking no questions.
+## Secrets
 
-## Where
+**Secret.** The dark shapes that passed the point before dawn were hulls Dario had already painted, leaving for other people's business. The grey he mixes sits against the outer-harbour water so a prize reads as a local boat, which is the whole service the yard sells and the whole reason the Canal Commission would close it. The tell is the drying strip of grey matched to the water line and the fact that hulls never leave here at midday.
 
-Acqua Nera is in Calveno's outer harbour, southwest of the [[Arsenal]], where the water changes from canal to sea.
+## Connections
 
-## Why
-
-The party comes for ship conversion, paint, or work other yards will not touch. Dario wants full capacity without drawing the attention of the Canal Commission, while dark shapes seen before dawn have started talk in the wrong taverns.
+- [[calven-and-calveno]] — the city and harbour the yard works out of.
+- [[arsenal]] — the official yard to its northeast; Acqua Nera is where the work the Arsenal would refuse gets done.
+- [[dario-vanni]] — the proprietor and master craftsman.
