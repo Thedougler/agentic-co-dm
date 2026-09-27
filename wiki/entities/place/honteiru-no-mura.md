@@ -25,18 +25,15 @@ tier: supporting
 
 Hōnteiru no Mura is the western settlement of the [[horntail-clan|Horntail Clan]] and a fortified approach to [[Totemo Tokage]].
 
-## Who
+## Features
 
-The [[horntail-clan|Horntail Clan]] lives and trains here under [[akibana-besko|Akibana Besko]].
+- **Horntail Clan.** The [[horntail-clan|Horntail Clan]] lives and trains here under [[akibana-besko|Akibana Besko]].
+- **Fortified village.** The defining features are fortified walls, a large Japanese-style village, archery, and samurai-style swordsmanship.
 
-## What
+## At the Table
 
-The defining features are fortified walls, a large Japanese-style village, archery, and samurai-style swordsmanship.
+- **Seek protection or training.** A party can come here to seek the Horntails' protection, skill, or open defense against an outside threat.
 
-## Where
+## Connections
 
-The village is in western [[Totemo Tokage]]. The source does not establish travel distances to other settlements.
-
-## Why
-
-A party comes here to seek the Horntails' protection, skill, or open defense against an outside threat.
+- [[Totemo Tokage]] — the island containing the village; the village stands in its western territory.
