@@ -179,8 +179,6 @@ If [[talon-skarn]] leaves with the [[fate-spinner]], the small quartz top is in 
 > [!narration] Talon Skarn
 > On this aisle, the peregrine ignores the sleepers. His eyes stay on Crissdalynn Khinriss's hands, hips, straps, and pouches.
 
-![[talon-skarn#Running Talon Skarn]]
-
 ## Backup
 
 [[star-cut]] · [[Session-11-08-Night-Watch]] · [[Session-11-10-Aftermath]] · [[session-11-00-birds-of-a-feather]] · [[crissdalynn-khinriss]] · [[talon-skarn]] · [[fate-spinner]] · [[giants-guava]] · [[uncertainty]] · [[spoke-ring]] · [[memorial-grove]] · [[talon-vantyrus]]
