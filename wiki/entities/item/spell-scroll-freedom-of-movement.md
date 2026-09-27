@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-freedom-of-movement.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 region: ""
@@ -26,18 +26,35 @@ tier: supporting
 ---
 # Spell Scroll (Freedom of Movement)
 
-> [!narration] Narration
+> [!narration] Spell Scroll (Freedom of Movement)
 > The scroll is a single tight roll of vellum, sealed with a plain wax disc pressed by no signet. Unrolled, the script inside shifts faintly at the edge of sight, like a leather strap tightening and slackening whenever your eyes drift off it. The paper itself is dry and cool, cooler than the room around it.
 
+## At a Glance
 
-_Scroll, Rare._ A _Spell Scroll_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
+*Scroll, rare.*
 
-If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
+The scroll holds one casting of *Freedom of Movement*, for anyone who has felt a grip close hard around an ankle in open water.
 
-For a 4th-level spell scroll, the spell uses a saving throw DC of **15** and has an attack bonus of **+7**.
+- **Effect.** One casting of *Freedom of Movement* (4th level) on a touched creature, for 1 hour.
+- **Save DC and attack.** `DC 15`, attack bonus `+7`, for the spell as written on this scroll.
+- **Found among.** A wreck lot hauled in by Vask's Reclaimed Goods in [[sparhold|Sparhold]].
 
-This scroll holds Freedom of Movement. Recommended by anyone who's felt a grip close hard around an ankle in open water and not been able to kick free.
+## Properties
 
-## Provenance
+**Reading it.** A *Spell Scroll* carries one spell in a mystical cipher. If the spell is on your spell list you can read the scroll and cast from it without providing material components; otherwise it is unintelligible to you. Casting from the scroll takes the spell's normal casting time, and the scroll crumbles to dust once the spell is cast. If the casting is interrupted, the scroll survives.
 
-This scroll came up in a lot pulled off a wreck, part of the salvage [[Vask's Reclaimed Goods]] hauls in whenever a prize ship gives up its hold.
+**Casting above your level.** If *Freedom of Movement* is on your list but of a higher level than you can cast, make an ability check with your spellcasting ability against `DC 10 + the spell's level`. On a failure the spell vanishes from the scroll with no other effect.
+
+**This copy.** A 4th-level scroll holding a single casting of *Freedom of Movement*, with a spell save DC of `15` and an attack bonus of `+7`.
+
+## At the Table
+
+- **Swim, walk, and climb freely.** For an hour the target's movement is not reduced by difficult ground or by water, and magic that would hold, restrain, or paralyse the target fails where the spell says it does.
+- **Break a hold.** A grip on the leg in open water, a net, a grapple, or a spell that pins the target: the casting is the counter, and it lasts the whole hour.
+- **Cast it before the wreck dive.** The scroll takes the spell's normal casting time, so it wants to be spent before anyone goes in, not while someone is drowning.
+- **Read it in the wrong hands.** A caster without the spell on their list reads cipher and nothing else.
+
+## Connections
+
+- [[sparhold]] — where the wreck lot surfaced.
+- [[magistrates-warding-chip]] — the same arms race from the other side.
