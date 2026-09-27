@@ -303,6 +303,15 @@ Done when a full pass of the final check changes nothing.
   their faces, mud sucking at their boots, heat off the forge on their skin):
   that is what turns a scene from seen into felt. The world acts; the
   reaction is the player's.
+- **Told, not listed.** A box is one telling, the way a good storyteller
+  says it at the table: each sentence hands off to the next, by cause (and
+  so, until), by motion (as, while), or by where the listener's eye goes
+  next, building toward the reaction point. A **fact list** is a string of
+  sentences that each start fresh with a new place or thing ("Behind you…
+  Ahead… Halfway across… Dust hops…"), any two of which could swap places
+  without loss; every fact can be true and the table still feels nothing.
+  Feeling comes from what the teller lingers on and from the verbs, never
+  from telling the listener what to feel.
 - **Evocative.** The box is something a DM is glad to read aloud. The place's
   mood reaches the table through what the light does, what the air carries,
   what the place sounds like, and how things feel underfoot and in the hand,
@@ -565,6 +574,10 @@ run the list again.
 - [ ] **Felt.** (Situated) Is one thing already moving, do two senses work
       with one of them nonvisual doing a second job, and does something land
       on the characters' bodies?
+- [ ] **Flow.** Read it aloud as one telling. Quote each pair of
+      neighbouring sentences that could swap places without loss: each pair
+      is a fact list, so join them by cause, motion, or where the eye goes
+      next, or cut one. Does the block build to its last sentence?
 - [ ] **Evocative.** Read aloud, would the table feel the place (its light,
       air, sound, and texture, each from a source), or does the block read
       like an accurate report? A dry block gets the texture its sources

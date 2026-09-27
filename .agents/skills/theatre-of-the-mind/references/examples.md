@@ -195,6 +195,16 @@ a closer look stays outside the callout.
 
 ## Weak → strong
 
+**Fact list → telling.** Weak (every fact true, and the table feels nothing;
+eight sentences that could be shuffled):
+
+> The ground jumps under your boots. Down the meadow, the mossy stump in the shade of the trees unfolds two scaled grey legs and rises, taller than a horse, ferns swinging from its shoulders. A hooked beak as long as a man's arm swings round toward you. Behind you the smoking hole gapes. Ahead, open grass runs a long stone's throw to the far wall of tall grass, where a grey channel slides past its foot. Halfway across, a knee-high patch of white blades glitters in the sun. Dust hops on the flattened turf. The bird drops its head.
+
+Strong (each sentence hands off to the next, and the telling builds to the
+charge):
+
+> The ground jumps under your boots, and down the meadow, in the shade of the trees, the mossy stump unfolds two scaled grey legs and stands up taller than a horse, ferns sliding off its shoulders as it rises. It is a bird, and a hooked beak as long as a man's arm swings round until it points at you. Between you lies a long stone's throw of flattened grass with only a knee-high glitter of white blades halfway across, and at your backs the smoking hole still gapes. Dust starts to dance around your feet as the great head drops low.
+
 **Stub → complete scene.**
 
 Weak:
