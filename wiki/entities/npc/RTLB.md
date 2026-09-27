@@ -11,7 +11,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T21:40:00Z
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -29,13 +29,13 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Contact |
-| ---------- | ------- |
-| **Nature** | Former wizard identified only by initials |
-| **Home**   | Unknown |
-| **Wants**  | Unknown; the source marks this as unresolved backstory, not a returning thread. |
+RTLB is the wizard in [[sir-quackers-the-fowl|Sir Quackers]]'s backstory: a set of initials, a familiar, and a release, and nothing else.
 
-> **DM thesis:** RTLB explains Sir Quackers's past but is not an active campaign thread; do not promote the initials into a villain or quest without new evidence.
+- **Role.** Former owner and binder of Sir Quackers; no role at the table is established.
+- **Nature.** Wizard, identified only by three letters.
+- **Wants.** Unknown. The source marks RTLB as unresolved backstory rather than a returning thread.
+- **Home.** Unknown.
+- **Allegiance.** None established.
 ```
 
 ```col-md
@@ -46,23 +46,16 @@ flexGrow=1
 ```
 ````
 
-## Running RTLB
+## At the Table
 
-### First meeting
-
-There is no established first meeting. If the DM later promotes RTLB from backstory, preserve the unknown identity and build the introduction from new evidence rather than treating this page as a prepared appearance.
-
-### When posture changes
-
-No posture change is established. The page changes only if play supplies evidence that RTLB is active, reachable, or connected to a current faction.
-### Voice
-
-No voice is established for RTLB. If the wizard ever becomes active, keep the initials and unknown identity intact. The ask is, “What did Sir Quackers tell you?” The refusal is, “You know the letters, not the person.” Under pressure, RTLB says, “You are trying to make a person out of a clue.”
-
+- **First meeting.** There is no established first meeting. Do not treat this page as a prepared appearance.
+- **Opens up when.** Unknown.
+- **Shuts down when.** Unknown. The page changes only if play supplies evidence that RTLB is active, reachable, or tied to a current faction.
+- **Priority.** Not established.
+- **Shares.** The initials, the binding, and the release. If the DM later promotes RTLB from backstory, build the introduction from new evidence rather than inventing one here.
+- **Voice.** Not established. Do not promote the initials into a villain or a quest without new evidence. If the wizard ever becomes active, keep the initials and the unknown identity intact: the ask is, "What did Sir Quackers tell you?" The refusal is, "You know the letters, not the person." Under pressure, "You are trying to make a person out of a clue."
 
 ## Connections
 
-| Connection | Meaning |
-| ---------- | ------- |
-| [[sir-quackers-the-fowl]] | RTLB used Sir Quackers as a familiar, then set him free. |
-| [[yssenmoor]] | Sir Quackers was freed on Yssenmoor; RTLB's current location is unknown. |
+- [[sir-quackers-the-fowl]] — RTLB used him as a familiar and then set him free.
+- [[yssenmoor]] — where Sir Quackers was freed; RTLB's current location is unknown.
