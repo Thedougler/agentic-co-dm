@@ -1,25 +1,49 @@
 ---
 name: qmd
-description: Bootstrap QMD search instructions from the installed qmd CLI. Use when users ask to find notes, retrieve documents, inspect a wiki, or answer from indexed local markdown.
+description: >-
+  Search and fetch indexed markdown with qmd. Use when retrieving wiki notes,
+  fetching documents after search, or answering from local markdown. Search
+  first; qmd multi-get every related hit before citing.
 license: MIT
-compatibility: Requires qmd CLI. Run `qmd skill show` for version-matched instructions.
+compatibility: Requires qmd CLI.
 allowed-tools: Bash(qmd:*), mcp__qmd__*
 ---
 
-# QMD - Query Markdown Documents
+# QMD
 
-This installed skill is intentionally a small bootstrap so it does not go stale
-when the qmd package updates.
+Search first. Fetch every related hit in one `qmd multi-get`. Answer from
+retrieved text, not snippets. `qmd --help`. Collection `wiki` when
+`QMD_WIKI_COLLECTION` is empty. Prefix `env -u CI` for `qmd query` /
+`qmd vsearch` / `qmd embed`.
 
-Load the full, version-matched QMD instructions from the CLI:
+## Fetch
 
-!`qmd skill show`
-
-If your agent does not support bang-command expansion, run:
+Identifiers come from the search result: the `#docid` or the source string.
+Do not construct, URL-encode, or infer a path from an Obsidian filename.
 
 ```bash
-qmd skill show
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
 ```
 
-Then follow those instructions. In short: search first, fetch full sources with
-`qmd get` or `qmd multi-get`, and answer from retrieved text rather than snippets.
+One hit: `qmd get` with that same identifier. Line range goes on the path:
+
+```bash
+# CORRECT
+qmd get "qmd://entities/faction/the-passage.md:1:20" --format md
+
+# WRONG — CLI rejects md:1:20
+qmd get "qmd://entities/faction/the-passage.md" --format md:1:20
+```
+
+If `multi-get` rejects an identifier, serial `qmd get` immediately. Do not
+retry with a different format.
+
+Done when every related hit you will cite or write from is in the fetch
+output, or the wiki is silent.

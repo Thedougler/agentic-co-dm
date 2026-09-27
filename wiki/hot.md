@@ -2,7 +2,8 @@
 updated: 2026-09-27T00:00:00Z
 ---
 ## Recent Activity
-- Refiled Session 12 to the current beat skills: Skarn is the whole of the dawn Hook, Matteo stays out of it, and Skarn gathers his own ghost plums in the Quiet for the dusk attempt. Every owner page Session 12 links was rebuilt to its template; the Pantry keeps one full NPC, [[renzo-canale]], and a six-name roster.
+- Refiled Session 12 to the current beat skills: Skarn is the whole of the dawn Hook, Matteo stays out of it, and Skarn gathers his own ghost plums in the Quiet for the dusk attempt. Every owner page Session 12 links was rebuilt to its template; the Pantry now has two full NPCs, [[renzo-canale]] and [[carlo-ferrante]], plus a roster of five names.
+- Improved the Session 12 beats for the table: every fight's statblocks now sit directly under Actors (Skarn's is right there in the Dawn Strike Hook), and the boxed text is fuller. Carlo's secret: on day two he walked back as far as the meadow, saw the smoke and the stump, and turned round.
 - Rebuilt [[bisou]], [[ket]], [[thunk]], and [[zort]] to the current npc page shape and kebab basenames, with ports, posture changes, voice lines, and connection tables; fight content sits in `[!mechanic]` callouts.
 - Rewrote [[story-so-far]] as one narrated telling of Sessions 01–11, from the boarding in the Saltwright's hold to the Aruhe river camp, ending inside the live fight. Open threads now sit under Wiki facts.
 - Session 00 prologue minted as a player-facing world primer, and the Session 01 and 02 spoken blocks rewritten to the theatre-of-the-mind recap standard.

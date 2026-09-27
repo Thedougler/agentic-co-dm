@@ -51,7 +51,7 @@ flexGrow=1
 - **The fallen fruit.** Guavas and stonepears drop from the vine every day, and the seven eat nothing else. Fallen fruit is safe to take.
 
 - **The survivors.** Seven thin Calveno in clothes retied with vine fibre. [[renzo-canale]] greets the party and speaks for all of them. The other six:
-  - **Carlo Ferrante.** A tall man with a grey streak through his dark beard, sitting at the south edge facing the way he came. He is [[ettore-ferrante]]'s older brother and [[luca-ferrante]]'s uncle. He rose first when the voice called at [[spoke-ring]], and he believes the two of them died in the dark.
+  - **[[carlo-ferrante|Carlo Ferrante]].** A tall man with a grey streak through his dark beard, sitting at the south edge facing the way he came. He is [[ettore-ferrante]]'s older brother and [[luca-ferrante]]'s uncle. He rose first when the voice called at [[spoke-ring]], and he believes the two of them died in the dark.
   - **Tommaso Brasca.** A young man with sawdust-pale hair and a length of cord always in his hands. He built the raft, and he knows which river stretches the [[river-otter]]s own.
   - **Sandrino Vale.** A broad-shouldered rigger with fine white scars across his left forearm. He wants to get home to his wife and daughter in Calveno.
   - **Ilario Pozzo.** A round-faced ship's cook who dries sliced fallen guava on flat stones by the fire. He means to feed the walk out.

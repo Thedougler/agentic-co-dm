@@ -346,9 +346,22 @@ For CLI transport, pick the command from `$QMD_CLI_SEARCH_MODE`:
   ${QMD_CLI:-qmd} vsearch "<topic or thesis of the source>" -c "$QMD_PAPERS_COLLECTION" -n 8 --files
   ```
 
-Use `${QMD_CLI:-qmd} get "#docid"` to retrieve a ranked source by docid when CLI output provides one.
+Fetch every related ranked source in one `qmd multi-get` before citing. Snippets are leads.
 
-Use the returned snippets to:
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob. `--format md`. One hit: `qmd get` with that identifier. Rejected id: serial `qmd get`.
+
+Use the returned sources to:
 1. **Surface related papers** you may not have thought to link — add them as cross-references in the wiki page
 2. **Identify recurring themes** across the corpus — these deserve their own concept pages
 3. **Find contradictions** between this source and indexed papers — flag with `^[ambiguous]`
@@ -401,7 +414,20 @@ Required on the distill path. Preserve and combatant-drops skip this step. Speed
 
 1. **Discover.** From this primary's content, collect candidates: links, embeds, explicit names, and the primary's own subject. Each identity once. Done when the list is only those items.
 2. **Search staging.** Look in `_raw/` for each candidate. Read each relevant hit. Origin: `staging`. Status: `read`, `missed`, or `unreadable`.
-3. **Search legacy.** Search legacy collections with `qmd` for the same subject and clearly related subjects. Fetch full sources (`qmd get` / `qmd multi-get`). Origin: `legacy`. A staging hit does not skip this search; a legacy hit does not skip staging. Ingest-time corroboration does not use query-time short-circuit (004).
+3. **Search legacy.** Search legacy collections with `qmd` for the same subject and clearly related subjects. Fetch every related hit in one `qmd multi-get`. Origin: `legacy`. A staging hit does not skip this search; a legacy hit does not skip staging. Ingest-time corroboration does not use query-time short-circuit (004).
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob. `--format md`. One hit: `qmd get` with that identifier. Rejected id: serial `qmd get`.
 4. **Rank recency.** Newest files among the primary and related sources are the latest decisions. Older versions are supporting context. Recency is which file is newer unless the content dates the decision more clearly.
 5. **Apply.** Keep the newest decision. Keep uncontradicted older detail. When an older source contradicts a newer decision, keep the newer decision and surface a proposal or unresolved item. Compiled wiki remains current canon against a legacy hit (004). Named ingest of an approved primary still follows 015. Do not file a legacy hit as a wiki page without DM accept. Ingest vs live canon conflict: stage with a visible conflict marker (autonomous); MUST NOT silently overwrite.
 

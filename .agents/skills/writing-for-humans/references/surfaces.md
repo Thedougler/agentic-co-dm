@@ -40,7 +40,7 @@ Win, Ends when, If behind, Next: whichever the template gives).
 - Space: distances in feet, what blocks what, each feature with its ruling
   ("The crates give half cover").
 - Opposition: its statblock embedded once in `## Statblocks`
-  (`![[owner#Statblock]]`). The Actors line carries only this scene's state
+  (`![[owner#Statblock]]`) directly under Actors. The Actors line carries only this scene's state
   (HP when not full, spent resources, conditions), then the tactics as short
   sentences in order: opening move, how it adapts, when it breaks, where it
   goes. That plan lives here and nowhere else on the page.

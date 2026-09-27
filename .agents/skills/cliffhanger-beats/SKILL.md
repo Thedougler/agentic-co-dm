@@ -71,7 +71,7 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
 5. **Set numbers and rulings.** `encounter-prep` sets the difficulty for the
    tier and the live party; `dnd5e-mechanics` sets every check, save, and DC.
    Embed each opponent's owner statblock in `## Statblocks`
-   (`![[owner#Statblock]]`). Done when everyone who could fight has its
+   (`![[owner#Statblock]]`) directly under Actors. Done when everyone who could fight has its
    statblock embedded, from the owner or from a proposed standard 5e
    statblock filed on the owner first.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`

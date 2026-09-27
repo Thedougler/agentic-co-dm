@@ -83,7 +83,22 @@ retrieval.
 1. Read the item page if it exists and every page that links to it:
    `grep -rliF "[[<name>" wiki/entities` for the slug, title, and each alias.
 2. Read where it is found, who made it, who owns or wants it, and the lore it
-   carries. `qmd get` every hit you will use.
+   carries. `qmd multi-get` every related hit you will use, in one call.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob.
+`--format md`. One hit: `qmd get` with that identifier. Rejected id: serial
+`qmd get`.
 3. Read the intended bearer's PC page (class, level, attuned items, signature
    tricks) and the rest of the party's gear, so the item fits a niche instead
    of taking one.

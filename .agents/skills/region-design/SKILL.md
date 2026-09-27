@@ -83,7 +83,20 @@ retrieval (`.agents/skills/qmd`).
    slug, the title, and each alias.
 2. Search QMD for the region, its landmarks, routes, hazards, creatures,
    powers, and every session set in or bound for it.
-3. `qmd get` every hit you will use. Snippets are leads, not facts.
+3. `qmd multi-get` every related hit you will use, in one call. Snippets are leads, not facts.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob. `--format md`. One hit: `qmd get` with that identifier. Rejected id: serial `qmd get`.
 
 Write the **canon inventory** in working notes, one line per owner page:
 `[[slug]]` · kind · the fact that puts it in this region.

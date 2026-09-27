@@ -14,7 +14,7 @@ paths     subject outputs: files or directories; every `[!narration]` callout
 Prints each block, then one lead per line (long sentences, punctuation, paint-chip
 colors, grid distances, compass legends, labels, copied phrases), then sentence
 and word counts. Leads are for the grader to judge, not pass/fail gates: the
-skill sets a word band (50-70, toward 100 for a first arrival, awe, horror, or a
+skill sets a word band (80-120, toward 150 for a first arrival, awe, horror, or a
 climax), and a portrait, place packet, or recap may rightly run past it. Exit 1 when any lead remains, 0 when clean.
 """
 import argparse
@@ -69,8 +69,8 @@ def check(body: str, sources: list) -> list:
     if len(paragraphs) > 1:
         findings.append(f"{len(paragraphs)} paragraphs; a box is one paragraph (a place packet or recap may run longer)")
     words = len(flat.split())
-    if words > 100:
-        findings.append(f"{words} words; a box is 50-70, toward 100 for a first arrival, awe, horror, or a climax")
+    if words > 150:
+        findings.append(f"{words} words; a box is 80-120, toward 150 for a first arrival, awe, horror, or a climax")
     for ch, name in ((";", "semicolon"), (":", "colon"), ("—", "em dash")):
         if ch in flat:
             findings.append(f"{name} in spoken prose")

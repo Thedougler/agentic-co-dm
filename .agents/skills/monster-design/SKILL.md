@@ -96,9 +96,25 @@ AGENTS.md § Vault retrieval. Read the creature page if it exists, every page
 that links to it (`grep -rliF "[[<name>" wiki/entities` for the slug, title,
 and each alias), its region, and the places it lives. Search for its prey and
 predators, the factions that hunt, fear, tame, or worship it, the items made
-from it, and its lore. `qmd get` every hit you will use. Write the **canon
-inventory**: `[[slug]]` · kind · the fact that ties it to this creature. List
-the other creatures in its region and the ecological niche each one fills.
+from it, and its lore. `qmd multi-get` every related hit you will use, in one
+call.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob.
+`--format md`. One hit: `qmd get` with that identifier. Rejected id: serial
+`qmd get`. Write the **canon inventory**: `[[slug]]` · kind · the fact that
+ties it to this creature. List the other creatures in its region and the
+ecological niche each one fills.
 
 Done when every PC has a filled row, the party totals are written, and every
 backlink and relevant search hit is in the inventory or dropped with a reason.

@@ -111,15 +111,15 @@ flexGrow=1
 - [ ] Nothing fruits along [[the-burnt-road]]. The island will not feed anyone along the burn.
 - [ ] Ghost-plum pollen at the Pantry's treeline shows an invisible creature as a pale shimmer while it is inside the drift.
 - [ ] [[terror-bird]]s will not follow prey into tall grass, deep water, or [[razer-grass]]. The four in the tube learned it too late.
-- [ ] Carlo Ferrante believes his brother and nephew died in the dark.
-- [ ] Tommaso Brasca's raft is built only from what fell, so the island lets it float. The coast is days away, so the survivors leave on foot with the party.
+- [ ] [[carlo-ferrante]] believes his brother and nephew died in the dark. On his second day at the Pantry he walked back to the meadow, saw the smoke and the stump at the rim, and turned round.
+- [ ] The Pantry's Tommaso Brasca built his raft only from what fell, so the island lets it float. The coast is days away, so the survivors leave on foot with the party.
 - [ ] In the first days after the wreck, the whole Calveno camp told [[matteo-scola]] he would die if he did not keep the woman's rule, and he left them rather than listen.
 - [ ] Skarn watched Matteo vanish at the otter hole in Session 11. That is how he knows what a ghost plum does.
 
 ## Improv Kit
 
 - **Places.** [[river-slack-basin]] · [[star-cut]] · [[lava-tubes]] · [[the-long-meadow]] · [[the-burnt-road]] · [[the-pantry]] · [[the-quiet]]
-- **People.** [[matteo-scola]] · [[ettore-ferrante]] · [[luca-ferrante]] · [[piero-sorrentino]] · [[gianni-moro]] · [[renzo-canale]] · the Pantry six on [[the-pantry]] · [[hinewai]]
+- **People.** [[matteo-scola]] · [[ettore-ferrante]] · [[luca-ferrante]] · [[piero-sorrentino]] · [[gianni-moro]] · [[renzo-canale]] · [[carlo-ferrante]] · the other five on [[the-pantry]] · [[hinewai]]
 - **Opposition.** [[talon-skarn]] · [[terror-bird]] · [[vine-lash]] · [[young-bloodhawk]]
 - **Things and rules.** [[fate-spinner]] · [[ghost-plum]] · [[giants-guava]] · [[stonepear]] · [[grung-authority-seal]] · [[solanges-authority-seal]] · [[taking-on-aruhe]]
 - **Spare names.** Calveno men: Bruno Tessa, Emilio Rocca, Fabio Serra, Nico Ferri.

@@ -4,6 +4,7 @@ title: Wiki Log
 
 # Wiki Log
 
+- [2026-09-27T12:00:00Z] UPDATE pages="journal/sessions/shattered-sea/12/*,entities/npc/carlo-ferrante.md" mode="improve" notes="Session 12 beats: statblocks under Actors, fuller narration, Carlo Ferrante minted for the Pantry reunion"
 - [2026-09-27T00:00:00Z] UPDATE pages="journal/sessions/shattered-sea/12/*,entities (44 owner pages linked from Session 12)" mode="refile" notes="Session 12 plan and beats refiled to the current beat skills and templates; linked lore, items, creatures, places, regions, NPCs, and PCs conformed; minted commoner; archived Carlo Ferrante, Tommaso Brasca, Beppe Sarti, Marco Lenzi, and Sandrino Vale into a roster on the-pantry; renamed Hinewai, Auralis, Karath to kebab basenames; beat templates gain optional Statblocks, session plan gains optional Floating Beats, Climax Candidates, Branches, and Critical Routes tables"
 - [2026-09-14T23:50:00Z] LAYOUT pages=476 mode=drop-remorph-stubs notes="Deleted spaced redirects_to stubs from kebab remorph; rewrote inbound links; remorph now deletes the old basename instead of leaving a stub"
 - [2026-09-15T00:00:00Z] RETCON target="Aruhe campaign state" pages_deleted=1 pages_updated=30 replacement="Calveno raid survivor rescue"

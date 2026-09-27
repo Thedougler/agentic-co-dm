@@ -1225,7 +1225,8 @@ def test_fix_hint_prints_repair_target():
         }],
     })
     assert text.startswith(
-        "skill: faction-design\ntemplate: wiki/templates/faction.md\n"
+        "Read the 'faction-design' skill prior to editing.\n"
+        "Read wiki/templates/faction.md prior to editing.\n"
         "entities/faction/red-sails.md:12:"
     )
     assert "fix: Add required Wants; fill it from page facts." in text

@@ -71,7 +71,7 @@ Strong:
 
 > **[[vash-the-chain|Vash]].** At 60 of 91 HP, one Legendary Resistance left. He opens by grabbing for the reliquary. If blocked, he pulls the blocker out of the way with his chain. At half HP, or when three PCs are within 10 feet of him, he runs for the grass edge 40 feet inland.
 >
-> *(Statblocks, at the bottom of the page:)* `![[vash-the-chain#Statblock]]`
+> *(Statblocks, directly under Actors:)* `![[vash-the-chain#Statblock]]`
 
 ## Buried fact → point first, one fact per line
 

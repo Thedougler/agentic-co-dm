@@ -34,7 +34,7 @@ Each field earns its place only when this beat spends it at the table.
 | **Secondary objective** | A second question runs in parallel and changes outcome or later consequence. | `## Secondary Objective`. One paragraph: beats required, ignore outcome, later consequence. |
 | **Outcomes** | Every live beat. | `## Outcomes`. Most likely options, usually one or two. Each option hands off to a beat in this session plan's Beats table. Next state, damage applied, relevant conditions, what follows. One empty `> [!narration] Outcomes` for the unconditional spoken state, plus an options table (`If` \| `Next` \| `Narration`). Narration cells: `_spoken_`. |
 | **Exit narration** | The next cockpit is already on this file. | Empty `> [!narration] Exit` on pass 1. Spoken transition on pass 3. |
-| **Statblocks** | The DM will roll a creature or item. | `## Statblocks`. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Creature}`, titled with the creature's name. Item embeds only if this slice spends charges or the item is the pressure. |
+| **Statblocks** | The DM will roll a creature or item. | `## Statblocks`, directly below Actors so a fight runs from the top of the card. `![[Monster#Statblock]]` for opposition in combat mode. At most two columns per row; a third monster starts a new row or sits full width. After each embed: empty `> [!narration] {Creature}`, titled with the creature's name. Item embeds only if this slice spends charges or the item is the pressure. |
 | **Links** | Extra owner links save table hunting. | `## Links`. Extra wikilinks only. |
 | **Previous-session recap** | Only the first beat of the session. | `> [!narration] Previously` before `Opening`, from `theatre-of-the-mind` Recap mode: last session's events, player-facing. |
 | **Battlemap** | Exact-scene battlemap art exists. | `## Battlemap` at the bottom. Embed from `attachments/`. Compass: top north, right east, bottom south, left west. |
@@ -50,9 +50,9 @@ appears only when both sides exist.
 |---|---|---|---|
 | Overview art | First overview/identity image | Second image | equal |
 | Situation | `## Situation` | `## Actors` | Actors `flexGrow=2` |
+| Statblocks | Monster `![[Name#Statblock]]` (two columns max) | Second monster, or omit | equal |
 | Mode | `## Scene Rules` | `## Secondary Objective` | Scene Rules `flexGrow=3` |
 | Pressure | `## Pressure` table | Bloodied / cover / thresholds | Pressure `flexGrow=3` |
-| Statblocks | Monster `![[Name#Statblock]]` (two columns max) | Second monster, or omit | equal |
 
 **Full width:** `[!narration]` callouts, Terrain table, Checks table,
 Outcomes body + options, Links, Battlemap.

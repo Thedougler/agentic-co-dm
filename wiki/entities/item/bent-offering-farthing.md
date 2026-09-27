@@ -26,7 +26,16 @@ tier: supporting
 ---
 # Bent Offering Farthing
 
-> [!narration] Narration
+> [!narration] Bent Offering Farthing
 > A farthing, bent long ago and pierced through the middle. The metal is dark, flattened where someone struck the fold hard. What was once a straight coin now curves at an angle no mint ever stamped. Someone ruined the currency on purpose to make a gesture. You can pass cord through the hole and carry it light as a prayer.
 
-*Mundane item, worth 1 sp as scrap metal.* No magical properties or mechanical effect, a small piece of maritime superstition: a bent coin that someone offered to [[Umberlee]] and the sea claimed instead.
+## At a Glance
+
+*Mundane plot item, worth `1 sp` as scrap metal.*
+
+- **Owner.** Unknown sailor.
+- **Meaning.** A piece of maritime superstition: a bent coin offered to [[umberlee|Umberlee]] and claimed by the sea.
+
+## Properties
+
+The farthing is bent and pierced through the middle. It has no magical properties or mechanical effect.

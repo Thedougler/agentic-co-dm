@@ -66,4 +66,4 @@ flexGrow=1
 
 ## History
 
-Nineteen days ago, a woman's voice spoke to the Calveno camp here each night. [[renzo-canale]] had already taught them her rule, to eat only what falls. One night Carlo Ferrante rose and followed the voice north-east, and the rest of the camp went with him, leaving piles of fallen fruit to mark the way. The four who refused followed by daylight the next morning, and a [[terror-bird]] drove them into a skylight of the [[lava-tubes]] in [[the-long-meadow]].
+Nineteen days ago, a woman's voice spoke to the Calveno camp here each night. [[renzo-canale]] had already taught them her rule, to eat only what falls. One night [[carlo-ferrante|Carlo Ferrante]] rose and followed the voice north-east, and the rest of the camp went with him, leaving piles of fallen fruit to mark the way. The four who refused followed by daylight the next morning, and a [[terror-bird]] drove them into a skylight of the [[lava-tubes]] in [[the-long-meadow]].

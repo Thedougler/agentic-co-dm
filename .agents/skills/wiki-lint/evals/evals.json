@@ -116,10 +116,10 @@
     {
       "id": 1,
       "prompt": "Lint wiki/entities/npc/varn.md — it has broken wikilinks to [[High Eyrie]] and [[the-sentinels]], missing summary frontmatter, and the basename uses snake_case. Fix everything.",
-      "expected_output": "One file: wiki lint on the named path, wiki query then qmd get before any content write, owner skill loaded and followed on this file, every finding closed, final lint clean.",
+      "expected_output": "One file: wiki lint on the named path, wiki query related named content then qmd multi-get before any content write, owner skill loaded and followed on this file, every finding closed, final lint clean.",
       "assertions": [
         {
-          "text": "Named page: runs wiki lint on that path before making edits; looks up linked canon with wiki query then qmd get",
+          "text": "Named page: runs wiki lint on that path before making edits; wiki query related names (High Eyrie, the-sentinels) then qmd multi-get those hits, not the FILE title",
           "type": "process"
         },
         {
@@ -139,7 +139,7 @@
           "type": "quality"
         },
         {
-          "text": "Queries the wiki (wiki query then qmd get; wiki-query / wiki-context-pack if needed) before any content write",
+          "text": "Queries related named content then qmd multi-get all hits (wiki-query / wiki-context-pack if needed) before any content write",
           "type": "process"
         },
         {
@@ -254,7 +254,7 @@
       "expected_output": "One file: queries the wiki, loads place-design, writes required place jobs from retrieved canon, reruns wiki lint until this file is clean.",
       "assertions": [
         {
-          "text": "Queries the wiki (wiki query then qmd get) before any content write",
+          "text": "Queries related named content then qmd multi-get all those hits (#docid list or brace glob, not qmd:// URIs) before any content write",
           "type": "process"
         },
         {
@@ -300,7 +300,7 @@
           "type": "process"
         },
         {
-          "text": "Queries the wiki before any content write",
+          "text": "Queries related named content then qmd multi-get all those hits before any content write",
           "type": "process"
         },
         {
@@ -319,7 +319,7 @@
           "type": "process"
         },
         {
-          "text": "Queries the wiki before any content write",
+          "text": "Queries related named content then qmd multi-get all those hits before any content write",
           "type": "process"
         },
         {
@@ -350,7 +350,7 @@
         },
         {
           "type": "process",
-          "text": "On that file: wiki lint fix, wiki query then qmd get, load and follow the owner skill, close every finding"
+          "text": "On that file: wiki lint fix, wiki query related names then qmd multi-get all hits (#docid or brace glob, not qmd:// URIs), load and follow the owner skill, close every finding"
         },
         {
           "type": "behavior",

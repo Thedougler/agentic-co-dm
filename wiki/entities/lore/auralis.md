@@ -56,7 +56,7 @@ Auralis is a deep machine the [[Antheri]] built on the trench floor beneath [[dr
 - **Party knows.** Perrin has seen the glowing whale and heard "Grow," "Not yet," and "CONSUME." The party suspects the presence is tied to his cloak and to something below the Maw. It may read him as a god, an [[Umberlee]] omen, or a willing patron, and he is none of these.
 - **If exposed.** The [[sentinels-of-the-eyrie]], the [[waveservants]], or other powers may try to reach the fissure, use it, or silence Auralis. The Crown's confirmation of Perrin's unwitting pact opens "Answer the Next Confirmed Heresy."
 
-- [ ] **The whale.** Perrin sees it around his cloak in Session 08 on the crossing toward [[calven-and-calveno]], and again at dawn in Session 12.
+- [ ] **The whale.** Perrin sees it around his cloak in Session 08 on the crossing toward [[calven-and-calveno]], and again at dusk in Session 12.
 - [ ] **The source.** Sages of the [[grung-clans]] keep a mandate naming a gold presence that holds the deep water shut beneath the Maw.
 - [ ] **The pact.** **Intelligence (Arcana)** `DC 15` on Perrin's magic finds that its source lies deep below the sea, not in the cloak.
 

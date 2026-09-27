@@ -71,6 +71,8 @@ Keep the managed Spec Kit block below disposable.
 
 <a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command or `wiki lint` — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
 
+<a id="first-report-rule"></a>**First-report rule:** A user report is the failure. Fix the named set completely this sitting — the source of truth, every caller, every copy — then prove it. Players must not meet the bug. A leftover "add when it fails", "when it hurts", or "when it ruins the session" is leaving the bug in. The next mention of the same report is a failed sitting.
+
 <a id="table-value-rule"></a>**Table-value rule:** A skill step, template field or heading, Done line, or eval assertion that serves no moment at the table is friction too: nothing the DM reads, rolls, rules, or says aloud mid-session depends on it. Find the table moment it was meant to protect and rewrite the source to that; when there is none, delete it. A field only agents use goes in frontmatter. A heading or label a careless reader could misread is renamed to plain words. Prove the fix by checking the output it shapes, then continue.
 
 ## Carve-outs
@@ -160,9 +162,18 @@ Problem: minting several new page types in one task blurs ownership and wastes c
 
 Applies to the same session-prep / TotM / recap / Session Architect surfaces. Pairs with entity-before-spoken — do **not** thin craft.
 
+### HARD: required-complete (Nick 2026-09-27)
+
+During lint or repair, missing `Required.` content is written now. Search
+the wiki; if it is not there, load the owner skill and put finished
+table-ready content on the live path before leaving the file. A missing
+Statblock is a `monster-design` statblock. That write is the work. Stub
+pages and stub sections are never a lint response. After that page's owner
+skill is Done and `wiki lint` is clean, `wiki health` and take `next:`.
+
 ### Gaps
 
-A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting — **except** the entity-before-spoken and dm-facing-explicit HARD gates above (missing owners for named production-session dependencies, and coy/vague DM layers, are not allowed gaps). When Work is offered despite a non-HARD gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
+A missing wiki fact or missing Co-DM practice MUST NOT prevent playable Work in that sitting — **except** the entity-before-spoken, dm-facing-explicit, and required-complete HARD gates above (missing owners for named production-session dependencies, coy/vague DM layers, and empty template `Required.` sections are not allowed gaps). When Work is offered despite a non-HARD gap, name the gap. A gap that is only wasted context is closed without a DM proposal — token cost, helpers, and layout below.
 
 ### Token cost
 
@@ -299,17 +310,18 @@ Unknown typed-beat job → classify the type first; do not default to `session-b
 
 Search is on by default against collection `wiki`. Empty `QMD_WIKI_COLLECTION` still means `wiki`.
 
-Load `.agents/skills/qmd` for query/get. Snippets are leads — `qmd get` / `qmd multi-get` before citing facts.
+Load `.agents/skills/qmd` for query/get. Snippets are leads. Fetch every related hit in one `qmd multi-get` before citing facts.
 
 ### Exact QMD retrieval
 
 Search the selected collection first, then pass the exact returned `#docid` or
-`qmd://` source to `qmd get` / `qmd multi-get` verbatim. Use collection `wiki`
-when `QMD_WIKI_COLLECTION` is empty. Never construct, URL-encode, or infer a
-QMD document path from an Obsidian filename; the search result is the identifier.
-`multi-get` takes comma-separated `#docid` values (`"#a,#b"`) or brace-expanded
-paths — not `qmd://` URIs, not percent-encoded strings. If `multi-get` rejects
-an identifier, fall back to serial `qmd get`.
+`qmd://` source to `qmd get` / `qmd multi-get` verbatim. Fetch every related
+hit in one `qmd multi-get`. Use collection `wiki` when `QMD_WIKI_COLLECTION`
+is empty. Never construct, URL-encode, or infer a QMD document path from an
+Obsidian filename; the search result is the identifier. `multi-get` takes
+comma-separated `#docid` values (`"#a,#b"`) or brace-expanded paths — not
+`qmd://` URIs, not percent-encoded strings. If `multi-get` rejects an
+identifier, fall back to serial `qmd get`.
 
 **`qmd get` line-range syntax:** the range goes on the path, not `--format`.
 
@@ -336,7 +348,7 @@ qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/anth
 
 When `multi-get` rejects an identifier, do not retry with a different format — fall back to serial `qmd get` immediately.
 
-**`qmd skill show` may time out** (~30s). If it does, skip it and use `qmd query` / `qmd get` directly — the bootstrap skill in `.agents/skills/qmd/SKILL.md` is sufficient.
+Skip `qmd skill show` (it times out). The invocations are in `.agents/skills/qmd/SKILL.md`.
 
 Order (`specs/004-qmd-search-default/contracts/retrieval-precedence.md`): `-c wiki` first; if silence `-c shattered-sea`; if silence `-c legacy-ss`; if still silence, say the wiki is silent. `-c archive` holds `wiki/_archive/` (not canon, out of default search): use it only for a page's history.
 

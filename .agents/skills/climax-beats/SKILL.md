@@ -70,7 +70,7 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
 6. **Set numbers and rulings.** `encounter-prep` sets difficulty for the
    villain tier and the live party; `dnd5e-mechanics` sets every check, save,
    and DC. Embed every combatant's owner statblock in `## Statblocks`
-   (`![[owner#Statblock]]`). Done when everyone who could fight has its
+   (`![[owner#Statblock]]`) directly under Actors. Done when everyone who could fight has its
    statblock embedded, from the owner or from a proposed standard 5e
    statblock filed on the owner first.
 7. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`;

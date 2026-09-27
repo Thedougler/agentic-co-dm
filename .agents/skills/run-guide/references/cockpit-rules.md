@@ -88,7 +88,8 @@ intent, opposition wants, and canon constraints are ordinary DM-facing facts —
 write them inline where they change a ruling or choice.
 
 Keep full `![[Name#Statblock]]` (optional `![[Name#At the table]]` or
-`![[Name#Tactics]]`) at the bottom under Statblocks. Owner Multiattack/HP tables
+`![[Name#Tactics]]`) under Statblocks, directly below Actors, so the DM runs a
+fight from the top of the card. Owner Multiattack/HP tables
 belong on the owner page, not retyped above the embed. Owner ecology essays
 stay on the owner. How the party already moves (flight, swim, mounts, boats)
 is not roster.

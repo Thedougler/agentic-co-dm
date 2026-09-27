@@ -29,7 +29,7 @@ Ettore is the man the others will not leave behind: he cannot walk, and getting 
 
 - **Role.** A wreck survivor on the ledge under the smoking skylight in the [[lava-tubes]].
 - **Nature.** A heavy, careful Calveno bridge-toll clerk, polite and endlessly sorry.
-- **Wants.** Not to be left behind, and to see his older brother Carlo Ferrante again.
+- **Wants.** Not to be left behind, and to see his older brother [[carlo-ferrante|Carlo Ferrante]] again.
 - **Home.** The lava-tube ledge. Before that, one of the four mats at [[spoke-ring]].
 - **Condition.** His left shin broke when they slid down into the tube, running from a terror-bird. He has 4 HP, Speed 0, and cannot stand.
 ```
@@ -67,7 +67,7 @@ Ettore uses the [[commoner]] statblock, at 4 HP and Speed 0 until his leg heals.
 ## Connections
 
 - [[luca-ferrante]] — his son, sixteen. Luca led them after Carlo by daylight.
-- Carlo Ferrante — his older brother, alive at [[the-pantry]], who thinks Ettore is dead.
+- [[carlo-ferrante]] — his older brother, alive at [[the-pantry]], who thinks Ettore is dead.
 - [[piero-sorrentino]] and [[gianni-moro]] — the other two on the ledge. They stayed with him.
 - [[delmar-fisk]] — the PC most likely to carry him, as he once carried Jean-Claude.
 

@@ -84,7 +84,7 @@ this beat never spends at the table stays off the page.
    nobody interferes. What it offers, withholds, or lies about, and what shifts
    its posture, go on the line only when the beat turns on them. Every side the
    party could choose to fight has its owner statblock embedded in `## Statblocks`
-   (`![[owner#Statblock]]`), and its Actors line carries this beat's state (HP
+   (`![[owner#Statblock]]`) directly under Actors, and its Actors line carries this beat's state (HP
    when not full, spent resources, conditions) and a tactics line: opening move
    → how it adapts when countered → break point → exit or surrender. An owner
    with no statblock gets one as a proposal (a named standard 5e statblock,

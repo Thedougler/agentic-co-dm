@@ -71,7 +71,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rulings.** Load `dnd5e-mechanics` for every check, save, and DC. When
    the Hook is a fight, embed each opponent's owner statblock in `## Statblocks`
-   (`![[owner#Statblock]]`); `encounter-prep` sets the difficulty when no
+   (`![[owner#Statblock]]`) directly under Actors; `encounter-prep` sets the difficulty when no
    encounter exists. Done when everyone who could fight has its statblock
    embedded, from the owner or from a proposed standard 5e statblock filed on
    the owner first.

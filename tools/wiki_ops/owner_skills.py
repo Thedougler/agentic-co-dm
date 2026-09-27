@@ -48,17 +48,17 @@ def template_ref(filename: str) -> str:
 
 
 def strip_template_ref(text: str) -> str:
-    """Drop 'from wiki/templates/...' once the page-level template: line owns it."""
+    """Drop 'from wiki/templates/...' once the page-level template line owns it."""
     cleaned = _TEMPLATE_FROM.sub("", text)
     return re.sub(r"\s+\.", ".", cleaned).strip()
 
 
 def prereq_lines(*, page_type: str = "", kind: str = "", skill: str = "", template: str = "") -> list[str]:
-    """skill: and template: lines printed before a dirty page's findings."""
+    """Read-before-edit lines printed before a dirty page's findings."""
     skill = skill or owner_skill(page_type, kind)
     lines: list[str] = []
     if skill:
-        lines.append(f"skill: {skill}")
+        lines.append(f"Read the '{skill}' skill prior to editing.")
     if template:
-        lines.append(f"template: {template}")
+        lines.append(f"Read {template} prior to editing.")
     return lines

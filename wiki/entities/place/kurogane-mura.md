@@ -18,25 +18,40 @@ tier: supporting
 ---
 # Kurogane-mura
 
-> [!narration] Narration
-> Smoke rises constantly from Kurogane-mura's kilns at the base of Tokage's central mountain. Mines, furnaces, and smithing floors fill the village with heat and the smell of worked metal.
-
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
 
-Kurogane-mura is the Iron Village of the [[kento-clan|Kento Clan]], which mines ore and makes weapons and armor for the other clans of [[Totemo Tokage]].
+The party comes here for equipment, ore, smithing, or a route toward the mountain temple.
 
-## Who
+- **Who is here.** Many armadillo-scaled lizard-folk and a small number of native Tortles work the mines. [[takayama-kongo|Takayama Kongo]] leads the [[kento-clan|Kento Clan]].
+- **Danger.** Kilns, mines, and smithing floors fill the village with heat and worked-metal smoke.
+- **Draw.** Ore, weapons, and armor made for the other clans of [[Totemo Tokage]].
+```
 
-The village holds many armadillo-scaled lizard-folk and a small number of native Tortles who work in the mines. [[takayama-kongo|Takayama Kongo]] leads the Kento Clan.
+```col-md
+flexGrow=1
+===
+> [!narration] Kurogane-mura
+> Smoke rises constantly from Kurogane-mura's kilns at the base of Tokage's central mountain. Mines, furnaces, and smithing floors fill the village with heat and the smell of worked metal.
+```
+````
 
-## What
+## Features
 
-The village's table-visible features are kilns, mines, smoke, ore, weapons, armor, and the heat-reflecting spiny scales of its workers.
+- **Iron Village.** Home of the [[kento-clan|Kento Clan]], which mines ore and makes weapons and armor for the other clans.
+- **Kilns, mines, and smithing floors.** Table-visible: smoke, ore, weapons, armor, and the heat-reflecting spiny scales of its workers.
 
-## Where
+## At the Table
 
-Kurogane-mura sits at the base of the central mountain. [[Shōrin Hakushin-ji]] is above it at the snowy summit.
+- **If the party** wants equipment or ore — the Kento Clan mines and smiths here under Takayama Kongo.
+- **If the party** heads for the mountain temple — [[Shōrin Hakushin-ji]] is above the village at the snowy summit.
 
-## Why
+## Connections
 
-A party comes here for equipment, ore, smithing, or a route toward the mountain temple.
+- [[Totemo Tokage]] — Kurogane-mura sits at the base of the island's central mountain.
+- [[Shōrin Hakushin-ji]] — the snowy summit temple above the village.
+- [[kento-clan|Kento Clan]] — mines and smiths from this village.
+- [[takayama-kongo|Takayama Kongo]] — leads the Kento Clan here.

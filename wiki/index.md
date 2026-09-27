@@ -77,6 +77,7 @@
 - [[cape-solitude]] — Wind-battered northern tip of Calder's Tooth with a ruined lighthouse whose light is dead.
 - [[capn-gorgeous]] — Rupert Knighton's son, a Dravosi Enforcer killed during the Saltwright boarding inspection.
 - [[captain-dorian-bishop]] — Crown captain commanding the HCS Tangent, sent when enforcement fails; CR 6, AC 17, HP 165, working the Crown Islands and Central Strait. Far more dangerous than Rook in single combat.
+- [[carlo-ferrante]] — Ettore's older brother at the Pantry, who rose first when the voice called and believes his brother and nephew died behind him.
 - [[catarina-davirelli]] — Calveno artificer and salvage engineer who remains in Calveno.
 - [[cave-bats]] — Dusk-exit cave bats whose mass flight warns of Blackrail country.
 - [[cecco-trivani]] — The apprentice at Il Preludio who can feel every musical number coming and has never once finished the first line of one.

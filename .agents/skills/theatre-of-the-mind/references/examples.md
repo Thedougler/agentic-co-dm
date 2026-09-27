@@ -9,7 +9,7 @@ copied into a page (`SKILL.md` hard line 5).
 
 ## Contents
 
-- Beat openings: compact default, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
+- Beat openings: default, compact, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
 - Immediate-fact bullets, with the withheld layer beside them
 - Closing image
 - Beat slots: zone and tick cells, creature in scene, Outcomes
@@ -21,13 +21,24 @@ copied into a page (`SKILL.md` hard line 5).
 - Weak → strong pairs: stub, inventory, conclusions, generic filler, assigned feelings, slop, rules, resolved attack, freeze-frame, useless facts
 - Published reference examples: bullets, a filed box, the freeze-frame, person, motion, cognitive notes, remote control, landmark history, line edits
 
-## Compact opening (the default shape)
+## Default opening (the default shape)
+
+> The shrine fills the lowest chamber of the sea caves, a dome of black rock so low at its edges that you would have to stoop to reach the walls. Every surface runs with salt water, beaded on the stone and dripping from the ceiling in slow, echoing taps, though the tide sits far below you and the air tastes of brine and old candle wax. Stubs of tallow crowd a stone basin in the middle, long since burned down to puddles. Three doors of fitted stone ring the chamber, and only the one on your left is dry, its sill pale with dust. From behind it comes the slow scrape of something heavy being dragged.
+
+Why it works: five sentences, 115 words. The schema (a sea-cave shrine) sized
+at body scale, the anchor (wet walls far above the tide), texture from sound,
+taste, and the drowned candles, the handles grouped (three doors, one dry), and
+a sound that is both atmosphere and threat ends it. The same facts in 60 words
+would be accurate and dry: the drips, the brine, and the wax are what make the
+table feel the cave.
+
+## Compact opening (danger and fast cuts)
 
 > The shrine fills the lowest chamber of the sea caves, and every surface is slick with salt water, though the tide sits far below you. Three stone doors ring the chamber, and only the one on your left is dry. From behind it comes the slow scrape of something heavy being dragged.
 
-Why it works: three sentences, 62 words. The schema (a sea-cave shrine), the
-anchor (wet walls far above the tide), the handles grouped (three doors, one
-dry), and a sound that is both atmosphere and threat ends it.
+Why it works here: three sentences, 62 words, for a moment when the party is
+already running or under attack and the table needs the routes now. Outside
+danger, this length reads as a report.
 
 ## Hook opening
 

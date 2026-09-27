@@ -67,7 +67,10 @@ def test_render_lint_issues_prints_next_path():
         }]}],
         "next": {"path": "a.md", "action": "wiki lint a.md"},
     })
-    assert text.startswith("skill: faction-design\ntemplate: wiki/templates/faction.md\n")
+    assert text.startswith(
+        "Read the 'faction-design' skill prior to editing.\n"
+        "Read wiki/templates/faction.md prior to editing.\n"
+    )
     assert text.endswith("next: a.md")
     assert "fix: Add required Wants; fill it from page facts." in text
     assert "from wiki/templates/faction.md; fill" not in text
@@ -94,7 +97,8 @@ def test_lint_prints_skill_and_template_for_place(tmp_path: Path):
     result = run_cli(tmp_path, "lint", "entities/place/harbor.md")
     assert result.returncode == 1, result.stderr
     assert result.stdout.startswith(
-        "skill: place-design\ntemplate: wiki/templates/place.md\n"
+        "Read the 'place-design' skill prior to editing.\n"
+        "Read wiki/templates/place.md prior to editing.\n"
     ), result.stdout
     data = payload(run_cli(tmp_path, "lint", "entities/place/harbor.md", "--json"))
     group = data["files"][0]
@@ -122,7 +126,8 @@ def test_lint_default_prints_file_line_issue(tmp_path: Path):
     result = run_cli(tmp_path, "lint", "page.md")
     assert result.returncode == 1, result.stderr
     assert result.stdout.startswith(
-        "skill: session-beats\ntemplate: wiki/templates/session-prep.md\n"
+        "Read the 'session-beats' skill prior to editing.\n"
+        "Read wiki/templates/session-prep.md prior to editing.\n"
     ), result.stdout
     assert "page.md:14:" in result.stdout, result.stdout
     assert "broken_links" in result.stdout

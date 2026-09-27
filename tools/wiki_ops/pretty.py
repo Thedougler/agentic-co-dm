@@ -190,7 +190,7 @@ def _file_prereqs(result: Mapping[str, Any]) -> dict[str, list[str]]:
 
 
 def render_lint_issues(result: Mapping[str, Any]) -> str:
-    """Agent-default lint stdout: skill and template first, then file:line issues."""
+    """Agent-default lint stdout: read-before-edit lines, then file:line issues."""
     rows = list(_issue_rows(result))
     if not rows:
         return "clean"

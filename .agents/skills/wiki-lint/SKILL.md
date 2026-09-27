@@ -2,19 +2,22 @@
 name: wiki-lint
 description: >-
   Lint and repair wiki pages in a loop, one file at a time. Run wiki health,
-  then on next.path: wiki lint fix, wiki lint, qmd query/search, qmd get, load
-  the owner skill, close every finding, wiki lint until clean, wiki health
-  again. A named page skips the first health and is that file. Use for vault
-  health, page repair, audits, broken links, duplicate resolution, and
-  cleanup.
+  then on next.path: wiki lint, Read the named skill and template if they
+  are not already in context, wiki lint fix, wiki query related content
+  named on the page then qmd multi-get, write every Required. section with
+  the owner skill (create it if the wiki has none), wiki lint until that
+  page is clean, wiki health, next dirty file. A named page skips the first
+  health and is that file. Use for vault health, page repair, audits, broken
+  links, duplicate resolution, and cleanup.
 ---
 
 # Wiki Lint
 
-The operator is the agent. **This file only — then the next.** Run the
-commands below in order. Substitute `FILE` with `next.path` (or the named
-page). Flags: `wiki health --help`, `wiki lint --help`, `wiki lint fix --help`,
-`wiki query --help`. QMD: `qmd query`, `qmd search`, `qmd get`.
+The operator is the agent. **This file only — then the next.** A created
+page runs this same loop until `wiki lint` is clean, then the next dirty
+file. Run the commands below in order. Substitute `FILE` with `next.path`
+(or the named page). Flags: `wiki health --help`, `wiki lint --help`,
+`wiki lint fix --help`, `wiki query --help`.
 
 ## Boundary
 
@@ -43,9 +46,8 @@ Once per sitting, after the first observe. Retry once on SQLite error.
 wiki lint entities/place/Belumara.md
 ```
 
-Worklist for `FILE`. When dirty, the first lines are `skill:` and
-`template:` — load that skill and that template before any edit. Then the
-findings. Each `fix:` is an imperative; it does not repeat the template.
+Worklist for `FILE`. When dirty, the first two lines name a skill and a
+template. Read each that is not already in this context, then the findings.
 `--json` when you need the structured worklist
 (`wiki lint entities/place/Belumara.md --json`).
 
@@ -56,27 +58,51 @@ wiki lint fix entities/place/Belumara.md
 Deterministic repairs on `FILE` only. Bytes already on the page.
 
 ```bash
-wiki query "Belumara" -n 5
-env -u CI qmd query "Belumara" -n 5 -c wiki
-qmd search "Belumara" -n 5 -c wiki
-qmd get "<verbatim #docid or qmd:// source>" --format md
-qmd multi-get "#abc123,#def456" --format md
+wiki query "The Passage"
 ```
 
-Before any content write, search then fetch (AGENTS.md Vault retrieval).
-`qmd query` is hybrid search; `qmd search` is keyword search when query cannot
-run. Collection `wiki` (`-c wiki`). Copy a hit's `#docid` or `qmd://` source
-verbatim into `qmd get`. Line range on the path:
-`qmd get "<id>:1:20" --format md`. `wiki query` wraps `qmd query` and clears
-`CI`; prefix `env -u CI` on direct `qmd query`. Named checks: `wiki-dedup`,
+Once, before a content write. FILE is already in hand. Query every name it
+mentions that the write needs — supporting, collaborating, related. Fetch
+all those hits in one `qmd multi-get`. Identifiers come from the query
+(AGENTS.md Exact QMD retrieval). `--format md`.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+One hit: `qmd get` with that same identifier. Line range goes on the path:
+
+```bash
+# CORRECT
+qmd get "qmd://entities/faction/the-passage.md:1:20" --format md
+
+# WRONG — CLI rejects md:1:20
+qmd get "qmd://entities/faction/the-passage.md" --format md:1:20
+```
+
+If `multi-get` rejects an identifier, serial `qmd get` immediately. Hits
+still thin: `wiki-query` / `wiki-context-pack`. Formatting and labels are
+already on the skill and template. Named checks: `wiki-dedup`,
 `cross-linker`, `tag-taxonomy`. Duplicate identity: [checks.md](checks.md)
 Check 14.
 
-Write on `FILE` from that context: resolve links to existing owner filenames;
-set required frontmatter from `wiki/templates/` and retrieved facts; correct
-type and filename; keep sections the template marks `Required.` and those with
-facts. Place pages: named areas, connections, inhabitants or pressures, and
-discoverable information
+Write on `FILE` with the loaded owner skill: resolve links to existing owner
+filenames; set required frontmatter from `wiki/templates/` and retrieved
+facts; correct type and filename; write every template `Required.` section
+as finished table-ready content before the next lint. Search first; if the
+wiki has no such content, the owner skill creates it on the live path now
+(Shea: "When you need a monster and don't have one handy, use the stat block
+for a bear and you'll probably be ok."
+[Just Use Bears](https://slyflourish.com/just_use_bears.html) — here that
+finished block is the owner skill's output). Place pages: named areas,
+connections, inhabitants or pressures, and discoverable information
 ([Designing Fantastic Locations](https://slyflourish.com/designing_fantastic_locations.html);
 [Prepping a Dungeon](https://slyflourish.com/prepping_a_dungeon.html)).
 
@@ -84,7 +110,10 @@ discoverable information
 wiki lint entities/place/Belumara.md
 ```
 
-Repeat until this command prints no findings. Commit `FILE`.
+Repeat until this command prints no findings. Commit `FILE`. If this pass
+created another page, that page is `FILE` now: Read its skill and template
+if they are not already in this context, run its owner skill to the skill's
+Done, `wiki lint` until clean, commit. Then:
 
 ```bash
 wiki health
@@ -96,8 +125,13 @@ that file. Named page: skip; that file already clean is Done.
 ### Done
 
 Unscoped: `wiki health` prints `clean`. Named page: `wiki lint <FILE>` prints
-no findings. Every finding on every file this loop touched was closed.
+no findings. Every finding on every file this loop touched was closed. Every
+`Required.` section on those files is finished table-ready content from the
+owner skill. A created page that is lint-clean is not Done while health
+still names a `next:` path.
 
 ### Capability Handoff
 
-Follow the owner skill on this file yourself.
+Follow the owner skill on this file yourself. An empty `Required.` section
+is that skill's work, done before this loop leaves the file. A stub is not
+a response.

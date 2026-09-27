@@ -29,7 +29,7 @@ Luca is the one who decides things on the ledge, and he knows the way to the res
 
 - **Role.** A wreck survivor in the [[lava-tubes]], and the guide to the fruit-pile trail.
 - **Nature.** A quick, practical Calveno boy of sixteen who counts to stay calm.
-- **Wants.** To get his father out alive, then to find his uncle Carlo Ferrante. In that order.
+- **Wants.** To get his father out alive, then to find his uncle [[carlo-ferrante|Carlo Ferrante]]. In that order.
 - **Home.** The lava-tube ledge. Before that, one of the four mats at [[spoke-ring]].
 ```
 
@@ -68,7 +68,7 @@ Luca uses the [[commoner]] statblock.
 ## Connections
 
 - [[ettore-ferrante]] — his father. His broken leg is why they are still in the hole.
-- Carlo Ferrante — his uncle, who walked toward the voice. Luca believes he is alive.
+- [[carlo-ferrante]] — his uncle, who walked toward the voice. Luca believes he is alive.
 - [[piero-sorrentino]] and [[gianni-moro]] — the other two in the tube. Luca and Piero held Gianni back from the voice.
 - [[terror-bird]] — it charged them in the Long Meadow, and they went over the edge of the skylight running from it.
 

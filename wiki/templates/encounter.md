@@ -25,7 +25,7 @@ summary: ""
 - **If ignored.** What the opposition or world does without the party.
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (situated moment recipe): one paragraph of 50–70 words, "you" address, present tense, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
+> <!-- Spoken opening from theatre-of-the-mind (situated moment recipe): one paragraph of 80–120 words with the texture that makes the place felt, "you" address, present tense, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
 
 ## Actors
 
@@ -36,7 +36,7 @@ summary: ""
 > <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and one line of first words in their voice, about six seconds aloud. What they know beyond that line goes in Actors as separate points. Titled with their name; one per NPC. -->
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): two to four sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): three to five sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
 
 ## Handles
 

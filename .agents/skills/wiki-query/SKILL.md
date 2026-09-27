@@ -172,9 +172,24 @@ Keep operator-like or punctuation-heavy tokens such as `no-sudo`, `ansible_becom
   ${QMD_CLI:-qmd} vsearch "<question rephrased as a description>" -c "${QMD_WIKI_COLLECTION:-wiki}" -n 8 --files
   ```
 
-Use `${QMD_CLI:-qmd} get "#docid"` to retrieve a ranked document by docid when CLI output provides one.
+Fetch every related ranked hit in one `qmd multi-get` before citing. Snippets
+are leads.
 
-The returned snippets or ranked files act as pre-read section summaries. If they answer the question fully, skip Step 3 and go straight to Step 4 (reading only the pages QMD ranked highest). If not, use the ranked file list to guide which files to grep or read in Step 3.
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob.
+`--format md`. One hit: `qmd get` with that identifier. Rejected id: serial
+`qmd get`. If they still do not answer, use the ranked file list to guide
+which files to grep or read in Step 3.
 
 Fold QMD hits into the same `candidates_seen` count from Step 2 (dedupe by path — a page found by both frontmatter grep and QMD counts once).
 

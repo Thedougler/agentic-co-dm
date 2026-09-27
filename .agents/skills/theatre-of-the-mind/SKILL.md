@@ -18,11 +18,13 @@ description: >-
 You write the words the DM says out loud. Every block you file is a **box**:
 the filed first look, spoken once, that gives the whole table one shared
 picture and one place to act. Narration is **compressed world simulation**:
-the fewest spoken words that say where they are, what stands out, what they
-can use, and what is pressing on them, and that make the place feel physical
-and lived in. It worked when the players start proposing actions without
-asking the DM to explain the scene again. It sounds like a confident DM
-talking, not a novel and not a list.
+every spoken word does work, saying where they are, what stands out, what
+they can use, and what is pressing on them, and making the place feel
+physical, lived in, and worth being in. It worked when the players lean in
+and start proposing actions without asking the DM to explain the scene again.
+It sounds like a confident DM telling a good story, not a novel, not a list,
+and not a report. A box that is accurate but dry has failed as surely as one
+that is padded.
 
 You are telling a **story**, not filing a **witness statement**. A witness
 lists height, clothes, and what the hands were doing, in the words they were
@@ -258,7 +260,7 @@ Done when a full pass of the final check changes nothing.
   it (the sailor hears the hull working), stated as what shows.
 - **Compress.** Choose words that imply many others: "a storm-battered
   fishing village" gives the nets and the gulls without a list. A box carries
-  three to five new details, almost never more than seven; more must form one
+  four to six new details, rarely more than eight; more must form one
   group (crates in lanes, three doors), and the features of one body are
   separate things, never a group. A person is a first read, one feature, and
   one behavior; the feature is the one a player would use to describe them to
@@ -285,6 +287,16 @@ Done when a full pass of the final check changes nothing.
   their faces, mud sucking at their boots, heat off the forge on their skin):
   that is what turns a scene from seen into felt. The world acts; the
   reaction is the player's.
+- **Evocative.** The box is something a DM is glad to read aloud. The place's
+  mood reaches the table through what the light does, what the air carries,
+  what the place sounds like, and how things feel underfoot and in the hand,
+  each tied to its source. A **dry** box lists true facts in plain order, the
+  way a report would, and nobody at the table feels anything; its fix is
+  texture the sources support (the sound the place makes, the smell on the
+  wind, the way the light falls, one striking comparison), never more
+  handles. Verbs carry motion and weight ("the river shoulders past",
+  "smoke leans off the chimney"), and the sentences vary in length so the box
+  has rhythm.
 - **Show, don't tell.** The schema says plainly what kind of place or
   situation this is, as anyone standing there would (a charcoal burners'
   camp, a toll gate, a shrine). Everything the players should work out for
@@ -343,14 +355,16 @@ Done when a full pass of the final check changes nothing.
 
 ## Length
 
-Length follows the job, inside a band. The default box is **50 to 70 words**
-in two to four sentences, one paragraph: short enough that the players still
-hold its first sentence when the DM stops talking. Ordinary flavor (a
-passing street, a changed sky) is one to three sentences. A first arrival at
-an important place, a major reveal, awe, horror, or a climax may run toward
-100 words, still one paragraph. A set piece the whole campaign turns on is
-the one exception past 100: draft it under 250 words, then cut about a
-quarter. Go shorter in danger, pursuit, and fast cuts. A block that only fits
+Length follows the job, inside a band. The default box is **80 to 120
+words** in three to five sentences, one paragraph: room enough for the
+situation, the anchor, the handles, and the texture that makes the place felt,
+and short enough that the players still hold its first sentence when the DM
+stops talking. Ordinary flavor (a passing street, a changed sky) is two to
+three sentences. A first arrival at an important place, a major reveal, awe,
+horror, or a climax may run toward 150 words, still one paragraph. A set
+piece the whole campaign turns on is the one exception past 150: draft it
+under 250 words, then cut about a quarter. Go shorter in danger, pursuit, and
+fast cuts, about 60 to 90 words. A block that only fits
 by stretching sentences past a breath is carrying too much entry; move
 handles down a layer.
 
@@ -359,11 +373,11 @@ handles down a layer.
 | Scene opening (`Opening`; older pages title it Open on, Open on Action, or Opening image) | The band: schema, anchor, entry handles, pressure, one paragraph |
 | Immediate-fact bullets | Three to five bullets, one sentence each |
 | Closing image (Resolution) | The band, letting the change land |
-| Creature entering a scene | Two to four sentences, ending before contact |
-| NPC first look | A few strokes, plus one line of speech if they talk |
+| Creature entering a scene | Three to five sentences, ending before contact |
+| NPC first look | Three or four sentences of strokes, plus one line of speech if they talk |
 | Declared action | One to three sentences |
 | Zone, tick, or outcome cell (`_italic_`) | A line or two; a turn in the fight earns a little more |
-| Outcomes / Exit / Stinger | Two to four sentences |
+| Outcomes / Exit / Stinger | Three to five sentences |
 | Wiki portrait | One full paragraph covering the whole subject |
 | Place portrait with a place-design packet | As long as every tell in the packet needs, folded onto owner nouns first |
 | Recap (read aloud, or the session recap page) | recaps.md |
@@ -487,7 +501,7 @@ the list again.
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
 - [ ] **Compress.** Does the first sentence give the situation or the
-      danger (a caption fails), is there one anchor, are there three to five
+      danger (a caption fails), is there one anchor, are there four to six
       new details, does each person and creature come across as one feature
       and one behavior (not a list of features, even one spread across
       sentences), does every known companion in the block act, and could any
@@ -508,6 +522,10 @@ the list again.
 - [ ] **Felt.** (Situated) Is one thing already moving, do two senses work
       with one of them nonvisual doing a second job, and does something land
       on the characters' bodies?
+- [ ] **Evocative.** Read aloud, would the table feel the place (its light,
+      air, sound, and texture, each from a source), or does the block read
+      like an accurate report? A dry block gets the texture its sources
+      support, not more handles.
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
       knows (no north, south, east, or west), no grid distance, no

@@ -89,7 +89,22 @@ retrieval.
    `grep -rliF "[[<name>" wiki/entities` for the slug, title, and each alias.
 2. Read their home place, their faction, and every person they are tied to.
    Search QMD for the name, their job in that place, and session recaps that
-   mention them. `qmd get` every hit you will use.
+   mention them. `qmd multi-get` every related hit you will use, in one call.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob.
+`--format md`. One hit: `qmd get` with that identifier. Rejected id: serial
+`qmd get`.
 3. Read each PC page in `wiki/entities/pc/` (History and Log) for backstory
    threads, debts, rivals, and goals this NPC could touch.
 

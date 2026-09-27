@@ -28,23 +28,32 @@ The bird that drove the four into the hole has been waiting at its rim, and now 
 - **Entry state.** Noon, straight on from the rescue. The column (the party, [[matteo-scola]], and the four) is bunched at the lip of the skylight, 10 feet out from the west band of tall grass in [[the-long-meadow]]'s Gap, with [[ettore-ferrante]] just hauled up. HP and resources are as the dawn fight left them.
 - **Party objective.** Get everyone across the Gap into the east band of tall grass, where the fruit-pile trail goes on.
 - **Opposition wants.** Each bird wants one body to swallow and carry back to its rim.
-- **Ends when.** The column is in the east band of tall grass, or both birds have fed or backed off: about four rounds.
+- **Ends when.** The column is in the east band of tall grass, or both birds have fed or backed off. About four rounds.
 - **Next.** [[Session-12-04-orders-in-the-ash]]
 
 > [!narration] Opening
-> Luca is still telling it, the bird, the running, the ground giving way, when the dirt under your boots begins to shudder. Down the meadow, the mossy stump at the treeline unfolds two scaled legs and rises taller than a horse, and its hooked beak opens on rows of teeth. Behind you gapes the smoking hole. Ahead, open grass runs to a far wall of tall grass, a patch of white blades glittering halfway. The stump lowers its head.
+> The ground jumps under your boots. Down the meadow, the mossy stump in the shade of the trees unfolds two scaled grey legs and rises, taller than a horse, ferns swinging from its shoulders. A hooked beak as long as a man's arm swings round toward you. Behind you the smoking hole gapes. Ahead, open grass runs a long stone's throw to the far wall of tall grass, where a grey channel slides past its foot. Halfway across, a knee-high patch of white blades glitters in the sun. Dust hops on the flattened turf. The bird drops its head.
 
 ## Actors
 
-- **[[terror-bird]] × 2.** AC 16, HP 200, Speed 60 ft. Multiattack: Serrated Beak `+12` (22 Piercing, Grappled, escape `DC 18`) and Talon Rake `+12` (17 Slashing). Swallow on a grappled Medium or smaller creature. **Straight Charge** and **Gag** change how they fight.
-  - **The South Bird.** Its rim is 60 feet south-west of the skylight. It is the bird that drove the four into the hole, and it charges on round 1.
-  - **The North Bird.** Its rim is 60 feet north-east of the Gap's east edge. It charges on round 3.
-- **Wants.** One body each, not a fight with everyone.
-- **Tactics.** Opening: a straight charge at the nearest creature in the open, then Multiattack. Countered: if its target reaches tall grass, the channel, or the razer-grass, it stops at the edge, rakes the nearest creature in the open, and charges again next turn. Break point: once it swallows someone, it turns and runs for its rim; at 140 HP or fewer, it backs off to its rim with nothing. Exit: its rim, where it stands still and digests. Following it there is a new fight.
-- **The civilians.** [[matteo-scola]], [[luca-ferrante]], [[piero-sorrentino]], and [[gianni-moro]] use the [[commoner]] statblock. Each round nobody steadies them, they run 30 feet toward the most open ground, straight into the charge lanes.
+- **[[terror-bird]] × 2.** Each hunts its own half of the Gap and wants one body, not a fight with everyone. **Straight Charge** and **Gag** are the traits that change the fight.
+  - **The South Bird (Fern-Back).** Ferns hang from its shoulders like a shawl. Its rim is 60 feet south-west of the skylight. It is the bird that drove the four into the hole, and it charges on round 1.
+  - **The North Bird (Split-Beak).** An old crack runs pale down the length of its beak. Its rim is 60 feet north-east of the Gap's east edge. It charges on round 3.
+- **Tactics.**
+  - **Opening.** A straight charge at the nearest creature in the open, then Multiattack.
+  - **Adapts.** If its target reaches tall grass, the channel, or the razer-grass, it stops at the edge, rakes the nearest creature still in the open, and charges again next turn.
+  - **Break point.** Once it swallows someone, it turns and runs for its rim. At 140 HP or fewer, it backs off to its rim with nothing.
+  - **Exit.** Its rim, where it stands still and digests. Following it there is a new fight.
+- **The civilians.** [[matteo-scola]], [[luca-ferrante]], [[piero-sorrentino]], and [[gianni-moro]] use the [[commoner]] statblock. Each round nobody steadies them, they run 30 feet toward the most open ground, straight into the charge lanes. [[ettore-ferrante]] (4 HP, Speed 0) goes where his carrier goes.
 
 > [!narration] Terror-Bird
-> Out on the open grass, a black bird taller than a horse strides forward on scaled grey legs. Moss and ferns hang off its feathers like a coat pulled from a pond. Its hooked beak is as long as a man's arm, and one yellow eye stays fixed on the huddle at the hole. It drops its head low, ragged wings held stiff at its sides, and every stride thumps up through the ground.
+> It comes at you straight as a thrown spear, head low and neck stretched flat, black feathers streaming moss and torn fern. Every stride thumps up through your heels a heartbeat before you hear it. The beak is the whole front of it, hooked like a gaff and lined with rows of small yellow teeth. One round yellow eye stays locked on the nearest body in the open. Its ragged wings snap wide for balance as it eats up the last few strides, and the beak begins to open.
+
+## Statblocks
+
+![[terror-bird#Statblock]]
+
+![[commoner#Statblock]]
 
 ````col
 ```col-md
@@ -68,10 +77,10 @@ flexGrow=1
 
 | Round | What happens | Narration |
 | ----- | ------------ | --------- |
-| 1 | The South Bird charges the creature at the edge of the huddle nearest to it. | _The stump at the rim is gone, and the ground is jumping._ |
-| 2 | Every civilian nobody has steadied runs 30 feet toward open ground, east and north, away from the South Bird. | _Piero and Gianni break for the middle of the grass again, exactly as they did nineteen days ago._ |
-| 3 | The North Bird charges the nearest creature in the north half of the Gap. | _At the far end of the meadow, a second stump stands up._ |
-| 4 | A bird holding a grappled creature swallows it and turns for its rim. | _The beak snaps shut, and the bird wheels away at a run._ |
+| 1 | Fern-Back charges the creature at the edge of the huddle nearest to it. | _The stump at the rim is gone, the ground is jumping, and the ferns on its shoulders stream out flat behind it._ |
+| 2 | Every civilian nobody has steadied runs 30 feet toward open ground, east and north, away from Fern-Back. | _Piero and Gianni break for the middle of the grass, arms pumping, exactly the way they ran nineteen days ago._ |
+| 3 | Split-Beak charges the nearest creature in the north half of the Gap. | _At the far end of the meadow a second stump stands up, the old crack down its beak catching the noon light, and the ground starts drumming from both ends at once._ |
+| 4 | A bird holding a grappled creature swallows it and turns for its rim. | _The beak snaps shut with a wet clack, the throat bulges, and the bird wheels away at a run._ |
 ```
 ````
 
@@ -102,10 +111,10 @@ flexGrow=1
 
 | Outcome | What changes | Next | Narration |
 | ------- | ------------ | ---- | --------- |
-| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and follow orders without argument from now on. | [[Session-12-04-orders-in-the-ash]] | _The grass closes behind the last of you, and out in the open the stump at the rim goes still again._ |
-| **Costly success** | Everyone is across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[Session-12-04-orders-in-the-ash]] | _He lies in the grass coughing up grey slime, skin blotched raw, and nobody lets go of his hand._ |
+| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and follow orders without argument from now on. | [[Session-12-04-orders-in-the-ash]] | _The tall grass closes behind the last of you, wet and whispering, and out in the open the stump at the rim goes still again._ |
+| **Costly success** | Everyone is across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[Session-12-04-orders-in-the-ash]] | _He lies in the grass coughing up grey slime, his skin blotched raw and steaming faintly, and nobody lets go of his hand._ |
 | **Lost** | A civilian is swallowed and carried to a rim. Saving them is a fight at the rim, and the second acid tick kills them. | [[Session-12-04-orders-in-the-ash]], with the loss carried | _At the far rim the bird stands perfectly still with its head up, and something moves in its throat._ |
-| **Broken off** | The column falls back into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached in late afternoon. | [[Session-12-04-orders-in-the-ash]] | _You come out of the channel dripping, a long way downstream, with the meadow silent behind you._ |
+| **Broken off** | The column falls back into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached in late afternoon. | [[Session-12-04-orders-in-the-ash]] | _You come out of the channel dripping and shivering a long way downstream, with the meadow silent behind you._ |
 
 **Whatever happens.** The birds never enter tall grass or deep water, and each wants one body.
 
@@ -117,10 +126,4 @@ flexGrow=1
 - **Trust.** If the crossing was won, the civilians follow the party's orders from here.
 
 > [!narration] If the session ends here
-> At the far rim, the bird settles back into the shade of the trees, feathers sagging until it is only a mossy stump again. One yellow eye stays open on the grass where you went in. Then the ground under your feet starts to shake a second time, from the other end of the meadow.
-
-## Statblocks
-
-![[terror-bird#Statblock]]
-
-![[commoner#Statblock]]
+> At the far rim the bird settles back into the shade, feathers sagging and ferns drooping until it is only a mossy stump again. One yellow eye stays open on the grass where you went in. Then the ground beneath your boots starts to shake a second time, from the other end of the meadow.

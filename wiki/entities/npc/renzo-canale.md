@@ -69,7 +69,7 @@ Renzo uses the [[commoner]] statblock.
 ## Connections
 
 - Tommaso Brasca — built the raft and wants out. They disagree without anger.
-- Carlo Ferrante — the first to rise and follow the voice from [[spoke-ring]].
+- [[carlo-ferrante]] — the first to rise and follow the voice from [[spoke-ring]].
 - [[matteo-scola]] — walked with him in the first days after the wreck and left when Renzo began to listen to the voice.
 - [[taking-on-aruhe]] — the rule he taught them all.
 

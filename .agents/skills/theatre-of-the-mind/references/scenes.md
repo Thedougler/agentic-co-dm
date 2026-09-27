@@ -211,7 +211,7 @@ optional slot with no such need is deleted, never padded:
 ### Creature in scene ({Creature} slot)
 
 - **Job:** This creature, here, now.
-- **Build:** Two to four sentences, in this order of attention: its
+- **Build:** Three to five sentences, in this order of attention: its
   silhouette, how it moves, its dangerous parts, its scale against something
   familiar, and what it is doing right now, placed on the stage. A creature
   plainly there is named in the box before any choice, as a still fact: what

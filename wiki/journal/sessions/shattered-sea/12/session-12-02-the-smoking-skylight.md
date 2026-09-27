@@ -31,7 +31,7 @@ Four Calveno are alive at the bottom of a hole, and they know where the rest wen
 - **Next.** [[Session-12-03-terror-birds]]
 
 > [!narration] Opening
-> The fruit piles bring you out of the trees into grass taller than your heads, and through its last stems the ground opens into a long meadow of short grass. A few strides out into the open, woodsmoke climbs straight up from a ragged hole in the earth, pale roots hanging over its lip. From deep inside it comes the sound of men arguing, and one young voice counting out loud.
+> All morning the fruit piles draw you deeper in under a roof of leaves so thick the light comes down green. A small heap of windfall waits every few hundred paces, and never a bird breaks the hush. Then the trail shoulders into grass taller than your heads, the blades slapping wet across your faces, and the forest simply stops. Beyond the last stems a long meadow lies open to the sky, its grass cropped short and pressed flat in wide circles that smell sour in the heat. A few strides out, woodsmoke climbs straight up from a ragged hole in the ground, pale roots dangling over its lip. Off to your left, in the shade where the trees begin again, a mossy stump stands taller than a man. From deep under your feet come men's voices arguing, and beneath them a young voice counting out loud.
 
 ````col
 ```col-md
@@ -42,7 +42,7 @@ flexGrow=1
 - **Where.** A skylight of the [[lava-tubes]], 10 feet out from the west band of tall grass into the open Gap of [[the-long-meadow]]: a 15-foot hole with sheer 40-foot walls down to a basalt ledge. On its north side a chute of loose roots and rubble drops steeply to the ledge. You can slide down it, but it crumbles under anyone climbing up.
 - **Hands on.** The ledge. Four fibre sleeping piles, a small fire, and a heap of [[ghost-plum]] and [[stonepear]] pits: the four live on fruit that falls through the hole. [[luca-ferrante]]'s knife has scratched a tally of nineteen days into the wall.
 - **Friction.** The four told Matteo, in the first days after the wreck, that he would die if he did not keep the woman's rule. He has not forgiven them, and he lets them know it. [[ettore-ferrante]] begs to be left behind, and the other three will not go without him.
-- **Pressure.** The South Bird, a [[terror-bird]], stands still as a mossy stump at its rim, 60 feet south-west in the shade of the treeline. It watches the hole. It charges the moment the column moves off into the open, and when the last of the four is up, it stops waiting.
+- **Pressure.** The mossy stump is the South Bird, a [[terror-bird]], standing still at its rim 60 feet south-west in the shade of the treeline. It watches the hole. It charges the moment the column moves off into the open, or when the last of the four is up, whichever comes first.
 - **If ignored.** The four stay on their ledge and live on what falls. Nobody else comes for them.
 ```
 
@@ -51,29 +51,33 @@ flexGrow=1
 ===
 ## Actors
 
-- **[[matteo-scola]].** He knows the four by their voices the moment he hears them. He wants them to know they were wrong. Once he has had his fun, he helps haul on the rope like anyone else.
+- **[[matteo-scola]].** He knows the four by their voices the moment he hears them. He wants them to know they were wrong. Once he has had his fun, he hauls on the rope like anyone else.
 - **[[piero-sorrentino]].** He wants a hull and the sea. He shouts back up at Matteo, then asks the party for a line.
 - **[[luca-ferrante]].** He wants his father out, then his uncle found. He knows the whole story and the direction, and gives both freely. Price: "Carry my father first." He shuts down if anyone calls Carlo dead.
 - **[[ettore-ferrante]].** He wants not to be a burden. He cannot stand (4 HP, Speed 0). He hides how much the leg hurts, and goes grey and silent when moved.
 - **[[gianni-moro]].** He wants to go home. He heard the voice and wanted to go, and he is ashamed of it.
-- **The South Bird.** A [[terror-bird]] at its rim. It does nothing yet.
-
-> [!narration] Matteo Scola
-> Matteo stops dead at the sound of the voices below. Then he is past you and out onto the grass at a run, grinning like a man who has won a bet. He skids to a stop at the lip of the hole. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." He starts unlacing his trousers.
-
-> [!narration] Piero Sorrentino
-> Down on the black rock, a wiry man with rope-scarred hands is on his feet, shaking a fist up at the hole. "Scola, you piss-rotten eel! You, beside him! Have you got a line? Tell me you've got a line."
-
-> [!narration] Luca Ferrante
-> A lanky boy sits by the fire with a notched knife in his fist, his lips still moving on a count. He looks straight up past Matteo at you. "Four of us. Three can walk. How many can you carry?"
-
-> [!narration] Ettore Ferrante
-> A heavy man lies propped against the rock with one leg splinted straight out on two sticks. He pushes himself up on his arms and sags back down. "Forgive me," he calls up. "I would stand."
-
-> [!narration] Gianni Moro
-> A broad man sits apart from the others, turning an iron band on his wrist, and does not look up. "Gianni," he says. "The cooper."
+- **The South Bird.** A [[terror-bird]] at its rim. It does nothing yet. Attacked or approached in the open, it charges, and [[Session-12-03-terror-birds]] starts at once, with anyone still on the ledge staying there.
 ```
 ````
+
+> [!narration] Matteo Scola
+> Matteo stops dead when the voices float up out of the ground. Then a slow grin splits his thin face. He is past you and out across the short grass at a run, one hand clamped over the lumpy sling at his hip. He skids to a halt at the lip of the hole, wet hair in his eyes, and leans right out over the drop. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." His fingers go to the laces of his trousers.
+
+> [!narration] Piero Sorrentino
+> Straight below the hole a wiry old man is already on his feet on the black rock. His face is creased like a sail left out too many summers, and his palms are burned shiny by rope. A twist of half-made vine cord hangs forgotten from one fist. He shakes it up at the light. "Scola, you piss-rotten eel! You, beside him! Have you got a line? Tell me you've got a line."
+
+> [!narration] Luca Ferrante
+> By the little fire a lanky boy sits cross-legged with a notched knife loose in one hand, his shirt knotted at the waist into a pouch of pits and peel. His lips are still moving on a count he has not finished, and he finishes it before he looks up, past Matteo, straight at you. "Four of us," he calls. "Three can walk. How many can you carry?"
+
+> [!narration] Ettore Ferrante
+> Against the far wall a heavy man lies propped on his elbows, his left leg bound straight out between two sticks and strips of sailcloth. Old ink still darkens his fingertips, and they keep patting at the splint, then at pockets with nothing in them, then at the splint again. He tries to sit up, gets halfway, and sinks back with a hiss through his teeth. "Forgive me," he calls up. "I would stand, but the leg has other opinions."
+
+> [!narration] Gianni Moro
+> A broad man with a cooper's heavy forearms sits apart from the others, his back to the rock and his eyes on the fire instead of the sky. His thumb turns a bracelet of bent barrel hoop round and round his wrist, and the iron has rubbed the skin under it pink. He glances up at you once and looks back at the flames. "Gianni," he says. "The cooper."
+
+## Statblocks
+
+![[terror-bird#Statblock]]
 
 ## Handles
 
@@ -96,20 +100,20 @@ With a rope and two people hauling, everyone is up in 10 minutes, and Ettore com
 
 ## Clues
 
-- [ ] **Core.** Nineteen days ago at [[spoke-ring]], a woman's voice spoke out of the dark each night. [[renzo-canale]] had already taught the camp her rule, to eat only what falls. When the voice invited them in, Carlo Ferrante, Ettore's older brother, rose first and followed it north-east, and the rest of the camp went with him. These four refused, because the voice asked them to walk strange ground at night. → surfaces through [[luca-ferrante]] and [[gianni-moro]].
-- [ ] **Core.** The next morning Luca led the four after Carlo by daylight, following the fruit piles. Crossing this meadow, the bird at the rim charged them. They ran, went over the root chute, and slid down onto the ledge, and Ettore's shin broke at the bottom. They have been here since, and the bird is still out there. → surfaces through Luca and Piero once they are up, in so many words: "We were running from the bird. It's still out there."
+- [ ] **Core.** Nineteen days ago at [[spoke-ring]], a woman's voice spoke out of the dark each night. [[renzo-canale]] had already taught the camp her rule, to eat only what falls. When the voice invited them in, [[carlo-ferrante]], Ettore's older brother, rose first and followed it north-east, and the rest of the camp went with him. These four refused, because the voice asked them to walk strange ground at night. → surfaces through [[luca-ferrante]] and [[gianni-moro]].
+- [ ] **Core.** The next morning Luca led the four after Carlo by daylight, following the fruit piles. Crossing this meadow, the bird at the rim charged them. They ran, went over the root chute, and slid down onto the ledge, and Ettore's shin broke at the bottom. They have lit their fire every day since so someone would see the smoke, and the bird is still out there. → surfaces through Luca and Piero once they are up, in so many words: "We were running from the bird. It's still out there."
 - [ ] **Support.** The voice's words, as Gianni remembers them: "Come and look upon my garden. You ate what my island gave you. You are already mine." It was [[hinewai]]. → surfaces through [[gianni-moro]].
 - [ ] **Support.** In the first days after the wreck, the whole camp told Matteo he would die if he did not keep the woman's rule, and Matteo left them rather than listen. → surfaces through Matteo at the hole, and the four's answers.
 
 > [!narration] Revelation
-> The boy taps the scratches on the black wall one by one, the way you would count coins. Nineteen marks, all the same length. Beside the last one, cut deeper than the rest, is an arrow pointing into the rock toward the far end of the meadow.
+> The boy walks you to the wall and taps the scratches in the black rock one at a time, the way a clerk counts coins onto a table. Nineteen marks, all the same length, cut through a vein of rust red in the stone. Beside the last one, cut deeper than the rest and still pale with fresh dust, an arrow points along the rock toward the far end of the meadow.
 
 ## Outcomes
 
 | If the party… | What changes | Next | Narration |
 | ------------- | ------------ | ---- | --------- |
-| Gets everyone up | The four are out, and the column gathers at the lip to go on north-east across the open meadow. | [[Session-12-03-terror-birds]] | _Luca is still telling you about the bird when the ground under your boots begins to shake._ |
-| Leaves the four and goes on | The party sets off across the open meadow alone. | [[Session-12-03-terror-birds]], with no civilians but Matteo | _Behind you, a voice in the hole shouts a warning you do not catch, and the ground begins to shake._ |
+| Gets everyone up | The four are out, and the column gathers at the lip to go on north-east across the open meadow. | [[Session-12-03-terror-birds]] | _Luca is still telling you about the bird, the running, the ground giving way, when the dirt under your boots begins to shudder._ |
+| Leaves the four and goes on | The party sets off across the open meadow alone. | [[Session-12-03-terror-birds]], with no civilians but Matteo | _Behind you a voice in the hole shouts a warning you do not catch, and the ground begins to shake._ |
 | Takes everyone back into the trees and toward the coast | The bird never charges anyone who stays in the tall grass. The camp at [[the-pantry]] stays Hinewai's. Skarn strikes at the coastal camp at dusk, and the rest of the night rebuilds toward [[old-gardens]]. | Recompute with `session-beats` | _The smoke thins behind you, and the tall grass closes over the way the others went._ |
 
 **Carry forward.**

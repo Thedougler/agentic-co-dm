@@ -249,9 +249,20 @@ explicit embedding mode only when requested:
 scripts/qmd-maintain.sh --embed
 ```
 
-Verify a created or materially updated page by following the exact QMD
-retrieval rule in AGENTS.md (Vault retrieval): search first, then pass
-the returned docid or source verbatim to `qmd get` / `qmd multi-get`.
+Verify a created or materially updated page: search, then `qmd multi-get` every related hit.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob. `--format md`. One hit: `qmd get` with that identifier. Rejected id: serial `qmd get`.
 
 Record QMD refresh in the final report as one of:
 - `QMD refreshed: update + verified; embeddings pending: N`

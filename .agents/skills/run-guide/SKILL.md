@@ -198,9 +198,9 @@ the session plan once at the top; the guide does not restate it.
 ## Untyped cockpit assembly
 
 When assembling from untyped or hard-to-scan prep (not a typed beat rewrite),
-jobs are: identity; optional first-beat `Previously` recap; overview art if it exists; run lines (Ends when first); Opening; Situation; Actors; Scene Rules +
-Secondary Objective if a second question exists; Terrain; Pressure + thresholds if a fuse exists; Checks; Outcomes; Statblocks if combat-mode
-sheets will be rolled; Links; Battlemap at bottom if art exists. Omit a job
+jobs are: identity; optional first-beat `Previously` recap; overview art if it exists; run lines (Ends when first); Opening; Situation; Actors; Statblocks if combat-mode
+sheets will be rolled; Scene Rules +
+Secondary Objective if a second question exists; Terrain; Pressure + thresholds if a fuse exists; Checks; Outcomes; Links; Battlemap at bottom if art exists. Omit a job
 only when it is absent.
 
 The card opens, under the title with no heading, on three run lines: Ends
@@ -208,7 +208,7 @@ when (the stop condition, a roughly thirty-minute budget, and behind/ahead
 cuts when pacing is not obvious), Objective (what ends the slice and what it
 can win or lose), and Next. Situation states positions in feet and compass
 directions where tactical distance matters. Actors carry this slice's state
-and loop; each fighter's statblock is embedded in Statblocks from its owner page,
+and loop; each fighter's statblock is embedded in Statblocks, directly below Actors, from its owner page,
 so the DM runs the encounter without opening another note and nothing is
 retyped. Each Outcomes option hands to a beat in this session plan's Beats table with
 an options table covering each resolution path's distinct world-state change.

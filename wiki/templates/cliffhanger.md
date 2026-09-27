@@ -28,16 +28,22 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): one paragraph of 50–70 words or shorter, the threat in sentence one, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
+> <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): one paragraph of 60–90 words, the threat in sentence one, ending on the reaction point. File immediate-fact bullets instead when the entrance, light, or who is present can still change. Responses to the party, other approaches, and checks go in the DM prose beside it. -->
 
 ## Actors
 
-- **[[creature]] × 4.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
+- **[[creature]] × 4.** This beat's state (HP when not full, spent resources) and the trait that changes tactics. Its numbers arrive by the Statblocks embed.
 - **Wants.** What the opposition is here to do, beyond killing the party.
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): two to four sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
+> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): three to five sentences of silhouette, movement, dangerous parts, scale, and what it was already doing, ending on its windup before contact. Its response to the party goes in Actors. Titled with its name; one per creature kind. -->
+
+## Statblocks
+
+<!-- Only when the party could fight someone here: every side's owner statblock, embedded, never retyped. It sits directly under Actors so the DM runs the fight from the top of the page. -->
+
+![[creature#Statblock]]
 
 ````col
 ```col-md
@@ -93,10 +99,3 @@ flexGrow=1
 
 > [!narration] If the session ends here
 > <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment, one event, before anyone can act. -->
-
-
-## Statblocks
-
-<!-- Only when the party could fight someone here: every side's owner statblock, embedded, never retyped. -->
-
-![[creature#Statblock]]

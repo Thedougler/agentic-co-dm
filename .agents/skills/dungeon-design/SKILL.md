@@ -108,10 +108,25 @@ If the intended use is a campaign, do not make one linear clear-the-site quest.
 Start with the **canon inventory**: read the site page if it exists and every
 page that links to it (`grep -rliF "[[<name>" wiki/entities` for the slug,
 title, and each alias), search QMD per AGENTS.md § Vault retrieval for its
-builders, occupants, factions, creatures, items, and sessions, and `qmd get`
-every hit you use. Write one working-note line per owner page: `[[slug]]` ·
-kind · the fact that puts it in this site. Each history layer, faction, and
-payoff below comes from the inventory before it is invented.
+builders, occupants, factions, creatures, items, and sessions, and `qmd
+multi-get` every related hit you use, in one call.
+
+```bash
+# CORRECT — comma-separated #docid values from search results
+qmd multi-get "#abc123,#def456" --format md
+
+# CORRECT — brace-expanded paths
+qmd multi-get 'entities/faction/{the-passage.md,antheri.md}' --format md
+
+# WRONG — qmd:// URIs (rejected with "File not found")
+qmd multi-get "qmd://entities/faction/the-passage.md,qmd://entities/faction/antheri.md"
+```
+
+Pass `#docid` values from the query, comma-separated, or a brace glob.
+`--format md`. One hit: `qmd get` with that identifier. Rejected id: serial
+`qmd get`. Write one working-note line per owner page: `[[slug]]` · kind ·
+the fact that puts it in this site. Each history layer, faction, and payoff
+below comes from the inventory before it is invented.
 
 1. **Write dungeon truth in five sentences:** Original purpose; Rupture;
    Current conflict; Immediate promise; Deep truth. Keep these as GM truth, not
