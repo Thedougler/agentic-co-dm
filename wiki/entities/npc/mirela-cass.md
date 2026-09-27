@@ -6,7 +6,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: []
 created: 2026-09-19
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -24,32 +24,30 @@ summary: "A named person whose name Reeve Sula Marn keeps strangers away from; Y
 flexGrow=2
 ===
 ## At a Glance
+
+Mirela Cass is a named person whose name [[sula-marn|Reeve Sula Marn]] keeps strangers away from.
+
+- **Role.** Not established. The current telling does not put Mirela on stage.
+- **Nature.** [[ysolde-cass|Ysolde Cass]]'s sister.
+- **Wants.** Not established.
+- **Home.** Unknown.
+- **Allegiance.** None recorded.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Mirela Cass
-> Mirela Cass is [[ysolde-cass|Ysolde Cass]]'s sister; [[sula-marn|Reeve Sula Marn]] keeps strangers away from Mirela's name.
+> Mirela Cass is [[ysolde-cass|Ysolde Cass]]'s sister. [[sula-marn|Reeve Sula Marn]] keeps strangers away from Mirela's name.
 ```
 ````
 
-## Running Mirela Cass
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-```
+- **First meeting.** The current telling does not put Mirela on stage, so no meeting is established.
+- **Voice.** No voice is canon for Mirela Cass. Do not invent dialogue.
 
-```col-md
-flexGrow=1
-===
-### When posture changes
-```
-````
- 
-## Voice
+## Connections
 
-No voice is canon for Mirela Cass. [[sula-marn|Reeve Sula Marn]] keeps strangers away from her name, and the current telling does not put Mirela on stage. Do not invent dialogue.
+- [[ysolde-cass|Ysolde Cass]] — Mirela's sister.
+- [[sula-marn|Reeve Sula Marn]] — keeps strangers away from Mirela's name.
