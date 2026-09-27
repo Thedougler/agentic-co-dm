@@ -34,7 +34,12 @@ berth: "Calveno cargo routes"
 
 [[amberreach]] is a reliable [[calven-and-calveno]] cargo galleon under [[tessarine-concordat]] craft. White sails with blue triangles speak Concordat writ.
 
-## Connections
+## Statblock
 
-- [[tessarine-concordat]]
-- [[calven-and-calveno]]
+- **Speed.** 65 miles/day in good wind; 30 miles/day in poor wind.
+- **Crew.** 22 minimum; 60 full; 217 tons rated cargo, with 185 tons available.
+- **Hull.** AC 13, 340 hull points.
+- **Movement.** Sails; speed follows the good-wind and poor-wind values above.
+- **Weapons.** Fourteen cannons and two swivel guns on 16 gun mounts.
+
+**Connections.** [[tessarine-concordat]] owns the craft, and [[calven-and-calveno]] is its home port.
