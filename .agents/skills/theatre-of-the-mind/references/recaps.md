@@ -17,7 +17,12 @@ from moments.
    transcript or play notes give the moments. The table marks its own
    moments: laughter, cheering, swearing, a gasp, a big roll, a line repeated,
    someone saying "that's amazing". Search the raw play for those reactions
-   and read what happened around each one.
+   and read about twenty lines before each hit; the moment is what set it
+   off:
+
+   ```bash
+   rg -n -i "laugh|haha|lol|oh my god|oh no|no way|holy|amazing|nat(ural)? ?(20|1)\b|crit" <raw-transcript>
+   ```
 2. **Rank them.** Write a private moment list before drafting: what happened,
    who did it, and how the table reacted. The biggest reactions lead. Every
    player character needs at least one moment of their own on the list.
