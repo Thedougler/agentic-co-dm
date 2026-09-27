@@ -26,13 +26,19 @@ tier: supporting
 ---
 # Oil of Still Water
 
-> [!narration] Narration
+## At a Glance
+
+*Mundane consumable, uncommon.*
+
+- **Source.** [[studio-orsini|Studio Orsini]] sells the oil in [[calven-and-calveno|Calven and Calveno]].
+
+> [!narration] Oil of Still Water
 > Oil of Still Water is a clear, light oil in a small wound-care container. It leaves a cool film on a surface wound and carries the clean smell of prepared medicine. The bottle has no established maker's mark.
 
-Consumable, Uncommon
+## Properties
 
 Apply to a surface wound as an action. It stops bleeding in 10 minutes and prevents scarring from the wound. It can save a creature dying from blood loss, but it does not heal damage, restore hit points, or help deep wounds.
 
-## Provenance
+## History
 
-Studio Orsini sells the oil in [[calven-and-calveno|Calven and Calveno]]. No maker or earlier history is known.
+No maker or earlier history is known.
