@@ -13,7 +13,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T20:30:00Z
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -31,13 +31,13 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Old fisher named in a non-canon draft. |
-| **Home** | [[sarns-landing|Sarn's Landing]] is named in the draft; current residence is not established. |
-| **Wants** | Unknown; no canon motive is established. |
+Halvard Oss is a source-trace, not a table fact: the name appears only in non-canon draft fiction about [[aleksander-malone|Malone]]'s release, and there is nothing else to run him from.
 
-> **DM thesis:** Halvard Oss is a source-trace, not a live table fact; use the name only if a later canon source establishes him.
+- **Role.** An old fisher named in the draft; no role at the table is established.
+- **Nature.** Nothing beyond the draft's single line.
+- **Wants.** Unknown; no canon motive exists.
+- **Home.** [[sarns-landing|Sarn's Landing]] in the draft; current residence not established.
+- **Allegiance.** None established.
 ```
 
 ```col-md
@@ -48,33 +48,16 @@ flexGrow=1
 ```
 ````
 
-## Running Halvard Oss
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-No canonical first meeting is established. Do not stage Halvard Oss from this page alone.
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-No canonical posture, limit, or reaction is established. Update this page only when a canon source or table event gives him one.
-```
-````
-
-## Voice
-
-No voice is established for Halvard Oss. This page identifies him only in non-canon draft fiction, so it supplies no verbal habit or sample line for play.
+- **First meeting.** No canonical first meeting is established. Do not stage Halvard Oss from this page alone.
+- **Opens up when.** Not established.
+- **Shuts down when.** Not established.
+- **Priority.** Not established.
+- **Shares.** Nothing. There is no canon content for him to share.
+- **Voice.** No voice is established, and the page supplies no verbal habit or sample line for play. Update only when a canon source or a table event gives him one.
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[sarns-landing]] | The non-canon draft places Halvard there as an old fisher. |
-| [[aleksander-malone]] | The non-canon draft names him in a telling of Malone's release. |
+- [[sarns-landing]] — the non-canon draft places him there as an old fisher.
+- [[aleksander-malone]] — the non-canon draft names him in a telling of Malone's release.
