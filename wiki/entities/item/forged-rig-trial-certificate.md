@@ -10,11 +10,11 @@ sources:
   - "campaign-os:forged-rig-trial-certificate.md"
   - "campaign-os:sunkline-company.md"
 created: 2026-09-13
-updated: 2026-09-19
+updated: 2026-09-27
 type: item
 kind: plot
 region: "Fathomrush"
-owner: "Sunkline Company"
+owner: "[[sunkline-company|Sunkline Company]]"
 rarity: ""
 attunement: false
 reveal: unrevealed
@@ -29,21 +29,39 @@ tier: supporting
 ---
 # Forged Rig-Trial Certificate
 
-> [!narration] Narration
-> A single folded sheet, company seal pressed sharp into the wax. The text certifies a mid-shelf pressure trial passed, depth and hull tolerances both signed off, dated three weeks back. The signatures read clean. The ink still sits a shade too dark for paper that's supposed to have spent three weeks folded in a damp boardinghouse.
+> [!narration] Forged Rig-Trial Certificate
+> A single folded sheet with the company seal pressed sharp into the wax. The text certifies a mid-shelf pressure trial passed, depth and hull tolerances both signed off, dated three weeks back. The signatures read clean, and the ink still sits a shade too dark for paper that is supposed to have spent three weeks folded in a damp boardinghouse.
 
-Plot item (no mechanical effect). The certificate claims that [[sunkline-company|Sunkline Company]] passed a mid-shelf pressure trial it never ran. It is also called the Last Berth False Log and is hidden under a loose floorboard at [[fathomrush|Fathomrush]]'s Last Berth.
+## At a Glance
+
+*Plot item (no mechanical effect).*
+
+The certificate is the paper that made [[sunkline-company|Sunkline Company]]'s pressure rig look tested: a clean mid-shelf pass, signed, for a trial the company never ran.
+
+- **What it is.** A forged rig-trial certificate, also called the Last Berth False Log.
+- **Where it is.** Under a loose floorboard at [[fathomrush|Fathomrush]]'s Last Berth.
+- **Who it protects.** Sunkline's pressure-rig venture, and the investors and divers who put money and lives against a trial result that was never earned.
+
+## Properties
+
+**A mundane forgery.** No magic, no attunement, and no effect on its own. The document is evidence, and the seal on it is the company's own.
+
+**What it certifies.** A mid-shelf pressure trial passed, with depth and hull tolerances signed off, dated three weeks before the sheet was hidden. The signatures read clean.
+
+**How it is caught.** The paper is the giveaway: ink three weeks old should be dry and faded on a sheet kept in a damp boardinghouse, and this ink is still too dark.
+
+**What it is worth.** Exposing the certificate collapses investor confidence in Sunkline's rig; keeping or trading it preserves leverage over the company, and over whoever signed the trial off.
 
 ## At the Table
 
-Finding the certificate gives the party evidence that Sunkline's trial results were forged. Exposing it can collapse investor confidence; keeping or trading it preserves leverage over the company.
+- **Find it under the floorboard.** The certificate is separate from the diver death list [[petera-ngata|Petera Ngata]] keeps at the Last Berth, so a party that finds one record does not have the other.
+- **Read the trial date against the paper.** The forgery holds until someone holds it up to the light and asks why three weeks of damp left the ink fresh.
+- **Expose it.** Sunkline's venture loses its footing with investors and recruits at once, which is a result that reaches past the boardinghouse.
+- **Trade it.** The certificate is leverage on the company for as long as it stays hidden, and the board is the only copy.
+- **Assume it is the only one.** The company that forged a trial certificate may have forged more; this is the copy that exists at the Last Berth.
 
 ## Connections
 
-- [[sunkline-company|Sunkline Company]] — The forged certificate protects its pressure-rig venture.
-- [[petera-ngata|Petera Ngata]] — Keeps the complete diver death list at the Last Berth; the certificate is a separate record.
-- [[fathomrush|Fathomrush]] — The certificate is hidden at the Last Berth boardinghouse.
-
-## Provenance
-
-The certificate was forged to convince investors and recruits that Sunkline's pressure rig cleared tests it never actually ran. Its hidden location beneath a loose floorboard is the Last Berth False Log clue.
+- [[sunkline-company]] — the company the certificate protects.
+- [[petera-ngata]] — keeps the separate diver death list at the Last Berth.
+- [[fathomrush]] — where the certificate is hidden, under a loose floorboard.
