@@ -28,6 +28,13 @@ NUMBER = (r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelv
           r"twenty|twenty-five|thirty|forty|fifty|sixty|hundred)")
 COMPASS = r"(?:north|south|east|west|northeast|northwest|southeast|southwest)"
 PC_PERCEIVE = r"\byou (?:see|notice|spot|realize|realise|feel|sense|recognize|understand)\b"
+COMMON = set("""that this with from into over under your their them they then than when while where
+there here have has had been were what which whose will would could should about above below
+beyond behind before after around across along against between through toward towards onto
+upon each every some more most much many other another only just still even also like
+same very once again back away down each both
+the and but for you its his her hers are was one two not all out off can may now new own
+yet nor too any who how why did does get got see way its ago""".split())
 LABELS = r"\b(?:hub|slack|magnet|live edge|reaction point|withheld layer|windup|focus image|cold portrait)\b"
 
 
@@ -81,6 +88,15 @@ def check(body: str, sources: list) -> list:
     words = len(flat.split())
     if words > 150:
         findings.append(f"{words} words; a box is 80-120, toward 150 for a first arrival, awe, horror, or a climax")
+    # ponytail: crude stem (drop -s/-es/-ing/-ed); catches "man"/"man's" and "worry"/"worrying"
+    stems = {}
+    for w in re.findall(r"[a-z]{3,}", flat.lower()):
+        if w in COMMON:
+            continue
+        stems.setdefault(re.sub(r"(?:'s|ing|ed|es|s)$", "", w), []).append(w)
+    for group in stems.values():
+        if len(group) > 1:
+            findings.append(f"'{group[0]}' used {len(group)} times; where it names the same subject, vary the descriptor")
     for ch, name in ((";", "semicolon"), (":", "colon"), ("—", "em dash")):
         if ch in flat:
             findings.append(f"{name} in spoken prose")
