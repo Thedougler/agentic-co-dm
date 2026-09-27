@@ -26,7 +26,15 @@ tier: supporting
 ---
 # Foreign Coin Packet
 
-> [!narration] Narration
+## At a Glance
+
+*Mundane durable item.*
+
+- **Value.** The packet is worth 40 gp after exchange at a local money-changer.
+
+> [!narration] Foreign Coin Packet
 > Wrapped in waxed paper, sealed with a knot of string, is a packet of foreign coin, currency from a port outside [[shattered-sea|the Shattered Sea's]] usual trade lanes. Someone else minted these coins, stamped them with a heraldry you don't recognize. Each one catches light from angles copper never reaches, and the edges cut if you're careless with them.
 
-*Mundane item, worth 40 gp once exchanged at a local money-changer.* No magical properties. A trade good that someone prepaid for and abandoned, the coins are clean and legitimate but only hold value once they're converted to local currency.
+## Properties
+
+The coins have no magical properties. They are clean and legitimate trade goods, but they hold value only after conversion to local currency. Someone prepaid for the packet and then abandoned it.
