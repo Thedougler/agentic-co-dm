@@ -26,7 +26,17 @@ tier: supporting
 ---
 # Unclaimed Delicacy Tin
 
-> [!narration] Narration
+> [!narration] Unclaimed Delicacy Tin
 > A sealed tin bearing a script label you don't read. The metal is clean and stamped with a port-mark from somewhere distant enough that the currency makes the price considerable. When you shake it gently, nothing shifts inside. The aroma that escapes from the seal is sharp with clove, ginger, heat strong enough to clear your sinuses. Someone ordered this, paid [[suryo-wibowo]] in advance, and never came back for it.
 
-*Mundane consumable item, worth 15 gp as a trade good.* A spiced delicacy from a distant port, sealed and preserved. No magical properties, a luxury import that holds value because supply is rare and demand is steady. Edible and intact: the spices are potent enough to flavor a galley's stores on a long passage or serve as a gift at a port where exotic imports are scarce.
+## At a Glance
+
+*Consumable, common; mundane trade good.*
+
+The Unclaimed Delicacy Tin is a sealed, preserved spiced delicacy from a distant port, worth 15 gp as a trade good.
+
+- **Claim.** [[suryo-wibowo]] was paid in advance, but the customer never returned.
+
+## Properties
+
+**Edible trade good.** The intact tin has no magical properties. Its potent clove, ginger, and heat can flavor a galley's stores on a long passage or serve as a gift where exotic imports are scarce.
