@@ -1362,11 +1362,14 @@ def test_render_health_matches_lint_next_shape():
 
     text = render_health({
         "status": "findings",
-        "lint": {"finding_total": 3, "affected_pages": 2},
-        "next": {"path": "entities/npc/real.md", "action": "wiki lint entities/npc/real.md"},
+        "lint": {"finding_total": 4435, "affected_pages": 718},
+        "waste": {"hits": 3, "hard_hits": 1},
+        "staging": {"leftover_count": 2},
+        "remorph": {"plan_count": 8, "error_count": 7},
+        "next": {"path": "entities/item/bell-tone-draught.md", "action": "wiki lint entities/item/bell-tone-draught.md"},
     })
-    assert not text.lstrip().startswith("{")
-    assert "3 findings on 2 pages" in text
-    assert "next: entities/npc/real.md" in text
-    assert "wiki lint entities/npc/real.md" in text
+    assert text == (
+        "next: entities/item/bell-tone-draught.md\n"
+        "  wiki lint entities/item/bell-tone-draught.md"
+    )
 

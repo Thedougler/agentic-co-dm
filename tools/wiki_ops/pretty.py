@@ -248,34 +248,22 @@ def render_query(result: Mapping[str, Any]) -> str:
 
 
 def render_health(result: Mapping[str, Any]) -> str:
-    """Default health stdout: finding counts and a copy-pasteable next command."""
+    """Default health stdout: clean, or next: path plus its action."""
+    nxt = _value(result, "next", None)
+    if isinstance(nxt, Mapping) and nxt.get("path"):
+        lines = [f"next: {nxt['path']}"]
+        action = nxt.get("action")
+        if action:
+            lines.append(f"  {action}")
+        return "\n".join(lines)
     lint = _value(result, "lint", {})
     if not isinstance(lint, Mapping):
         lint = {}
     total = _value(lint, "finding_total", _value(result, "finding_total", 0))
-    pages = _value(lint, "affected_pages", _value(result, "affected_pages", 0))
-    nxt = _value(result, "next", None)
-    if not total and not (isinstance(nxt, Mapping) and nxt.get("path")):
+    if not total:
         return "clean"
-    lines = [f"{total} findings on {pages} pages"]
-    waste = _value(result, "waste", {})
-    if isinstance(waste, Mapping) and _value(waste, "hits", 0):
-        lines.append(f"waste hits={_value(waste, 'hits', 0)} hard_hits={_value(waste, 'hard_hits', 0)}")
-    staging = _value(result, "staging", {})
-    if isinstance(staging, Mapping) and _value(staging, "leftover_count", 0):
-        lines.append(f"staging leftover_count={_value(staging, 'leftover_count', 0)}")
-    remorph = _value(result, "remorph", {})
-    if isinstance(remorph, Mapping) and _value(remorph, "plan_count", 0):
-        lines.append(
-            f"remorph plan_count={_value(remorph, 'plan_count', 0)} "
-            f"error_count={_value(remorph, 'error_count', 0)}"
-        )
-    if isinstance(nxt, Mapping) and nxt.get("path"):
-        lines.append(f"next: {nxt['path']}")
-        action = nxt.get("action")
-        if action:
-            lines.append(f"  {action}")
-    return "\n".join(lines)
+    pages = _value(lint, "affected_pages", _value(result, "affected_pages", 0))
+    return f"{total} findings on {pages} pages"
 
 
 

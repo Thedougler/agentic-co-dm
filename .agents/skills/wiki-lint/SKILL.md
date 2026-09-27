@@ -1,22 +1,24 @@
 ---
 name: wiki-lint
 description: >-
-  Lint and repair wiki pages in a loop, one file at a time. Run wiki health,
-  then on next.path: wiki lint, Read the named skill and template if they
-  are not already in context, wiki lint fix, wiki query related content
-  named on the page then qmd multi-get, write every Required. section with
-  the owner skill (create it if the wiki has none), wiki lint until that
-  page is clean, wiki health, next dirty file. A named page skips the first
-  health and is that file. Use for vault health, page repair, audits, broken
+  Lint and repair one wiki page, then the next. wiki health names next:.
+  That path is FILE. wiki lint FILE, Read the named skill and template if
+  they are not already in context, wiki lint fix, wiki query related
+  content named on the page then qmd multi-get, write every Required.
+  section with the owner skill (create it if the wiki has none), wiki lint
+  until FILE is clean, wiki health, next. A named page skips the first
+  health and is FILE. Use for vault health, page repair, audits, broken
   links, duplicate resolution, and cleanup.
 ---
 
 # Wiki Lint
 
-The operator is the agent. **This file only — then the next.** A created
-page runs this same loop until `wiki lint` is clean, then the next dirty
-file. Run the commands below in order. Substitute `FILE` with `next.path`
-(or the named page). Flags: `wiki health --help`, `wiki lint --help`,
+The operator is the agent. Health prints `clean` or `next: <path>`. That
+path is FILE. Close FILE. Health again.
+
+A created page is FILE until `wiki lint` is clean, then health names
+**next**. Named page skips the first health and is FILE. Run the commands
+below in order. Flags: `wiki health --help`, `wiki lint --help`,
 `wiki lint fix --help`, `wiki query --help`.
 
 ## Boundary
