@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:karsovines-working-log.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 region: "fathomrush"
@@ -26,19 +26,39 @@ tier: supporting
 ---
 # Karsovine's Working Log
 
-> [!narration] Narration
-> A salt-warped ledger, its cover lashed shut with waxed cord instead of a clasp. Every page inside carries hand-ruled columns (depth, hull strain, pump cycles), filled in a cramped engineer's hand that presses hard enough to dent the next page. A single flat line strikes out whole entries, no explanation, just a date and a name. The most recent page ends mid-column.
+> [!narration] Karsovine's Working Log
+> A salt-warped ledger, its cover lashed shut with waxed cord instead of a clasp. Every page inside carries hand-ruled columns — depth, hull strain, pump cycles — filled in a cramped engineer's hand that presses hard enough to dent the next page. A single flat line strikes out whole entries with no explanation, just a date and a name. The most recent page ends mid-column.
 
-*Document, Mundane.* No magical properties.
+## At a Glance
 
-| Field | Detail |
-|---|---|
-| One thing | Real (if incomplete) trial-dive data on hull-pressure tolerance and air-pump endurance, recorded from every dive Branimir has personally run, failures logged, not hidden. |
-| Rarity justification | Mundane, a document with no magical properties, same category as [[forged-rig-trial-certificate]]; its worth is informational, not mechanical, so no magic-item rarity benchmark applies. |
-| Attunement reason | None required. A mundane document grants no attack/damage/save/AC bonus and has no distinct powers to attune to. |
-| Current holder | [[branimir-karsovine]], who keeps it on his own person at [[voyvode-works]], never sold, displayed, or lent. |
-| Narrative hook | Earned, not bought or found: Branimir shares what's in it only with someone he's decided to trust, tied to Voyvode's "Earn It The Hard Way" Front. |
+*Document, mundane.*
 
-## Provenance
+Karsovine's Working Log is the real data behind Voyvode Works' pressure rigs: every dive Branimir has personally run, failures included, and it never leaves his person.
 
-Branimir's own working notebook, kept since Voyvode Works began trialing pressure rigs at [[fathomrush]]. He adds an entry after every personal dive, win or lose, and has never let it out of his own keeping.
+- **What it is.** A trial-dive notebook of hull-pressure tolerance and air-pump endurance, recorded dive by dive.
+- **Held by.** [[branimir-karsovine|Branimir Karsovine]], who keeps it on him at [[voyvode-works]] and never sells, displays, or lends it.
+- **Worth.** Informational, not mechanical. It grants no bonus and carries no magic, which is why no rarity benchmark applies.
+
+## Properties
+
+**Mundane.** No magical properties, and no attunement. A document grants no attack, damage, save, or AC bonus, and there is nothing on it to attune to.
+
+**What the columns hold.** Depth, hull strain, and pump cycles for every dive Branimir has personally run, entered in his own hand. The trial-dive data on hull-pressure tolerance and air-pump endurance is real, and incomplete only because the dives are unfinished.
+
+**Failures logged.** Entries are struck out with a single flat line and no explanation beyond a date and a name. Nothing has been hidden from the record, and nothing has been annotated either.
+
+**Custody.** Earned, not bought or found. Branimir shares what is in it only with someone he has decided to trust, which ties the log to [[voyvode-works]]' "Earn It The Hard Way" stance.
+
+## At the Table
+
+- **Ask for the numbers.** The log is the company's real trial record. Anyone planning a rig dive wants it, and Branimir knows exactly how much it is worth to them.
+- **Compare it to a forged certificate.** Held against [[forged-rig-trial-certificate|a forged rig-trial certificate]], the working log is what an honest trial record looks like: failures struck out and left in, columns ruled by hand, no seal.
+- **Read the struck-out lines.** They are the dives that went wrong, with a date and a name, and a party chasing a death list can match them.
+- **Ask to borrow it.** Refused. The log stays on his person, and the person who gets to read it is the person he has already decided to trust.
+
+## Connections
+
+- [[branimir-karsovine]] — the keeper and author.
+- [[voyvode-works]] — the company whose pressure rigs the log trials.
+- [[fathomrush]] — where the dives are run.
+- [[forged-rig-trial-certificate]] — the paper version of a trial that never happened.
