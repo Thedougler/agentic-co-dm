@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:sending-stone-nona.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: revealed
 campaign: shattered-sea
@@ -26,27 +26,37 @@ tier: supporting
 ---
 # Sending Stone (Nona's)
 
-> [!narration] Narration
-> A smooth grey river stone, warm to the touch and heavier than its size suggests. Years of rubbing have worn one face nearly flat, polished smooth by the same thumb. Its twin sits somewhere across the water in [[nona-black-jaw]]'s keeping. Speak to this one, and only that one hears.
+> [!narration] Sending Stone (Nona's)
+> A smooth grey river stone, warm to the touch and heavier than its size suggests. Years of rubbing have worn one face nearly flat, polished smooth by the same thumb. Its twin sits somewhere across the water in [[nona-black-jaw|Nona Black-Jaw]]'s keeping. Speak to this one, and only that one hears.
+
+## At a Glance
 
 *Wondrous item, common.*
 
-One stone of a paired *sending* stone set. Speaking to this stone reaches only its twin, held by [[nona-black-jaw]]. No charges, range limits, or activation rules are recorded on this page beyond that narrative pairing.
+Nona's Sending Stone is half of a paired set: a private line to [[nona-black-jaw|Nona Black-Jaw]] that exists so she can call in one favour.
 
+- **Effect.** Words spoken to this stone reach its twin and nothing else.
+- **Held by.** [[perrin-black-jaw|Perrin]], who carries it; Nona holds the twin.
+- **Price of the gift.** One favour, terms unheard. The stone is how the favour will arrive.
 
-[[perrin-black-jaw|Perrin]] holds this stone; Nona holds its twin. She gave it in exchange for a favor whose terms remain unheard — this stone is how she will collect.
+## Properties
+
+**Paired speech.** One stone of a paired *sending* stone set. Speaking to this stone reaches only its twin, held by [[nona-black-jaw|Nona]]. The page records no charges, range limits, or further activation rules beyond that pairing, and the pair is the whole of the item.
+
+**Held and heard.** [[perrin-black-jaw|Perrin]] carries the stone; Nona carries the twin. Anything said into it is said to her, and only to her.
+
+**The debt.** Nona gave the stone in exchange for a favour whose terms were never read out. When she calls for it, she calls through this.
 
 ## At the Table
 
-When Nona calls the debt, she reaches Perrin through this stone. Until then it sits as a quiet line open only to her.
+- **Wait for the call.** Until Nona uses the twin, the stone is silent, and Perrin carries an open line to a Passage matriarch wherever the party sails.
+- **Answer it.** Nona calling means a job, a warning, or both, and refusing is a decision made to her face rather than through a distance.
+- **Try to use it on someone else.** Nothing answers but the twin. The stone is not a general message service and cannot be retuned by anyone in the party.
+- **Lose it.** The favour does not disappear with the stone; Nona simply finds another way to collect, and she now knows the party loses her property.
 
 ## Connections
 
-- [[perrin-black-jaw]] — Current holder of this stone.
-- [[nona-black-jaw]] — Holds the paired twin; creditor on the unrevealed favor.
-- [[le-paludi]] — Where Nona gave the stone to Perrin.
+- [[perrin-black-jaw]] — the current holder.
+- [[nona-black-jaw]] — holds the twin and the unrevealed favour.
+- [[le-paludi]] — where she handed the stone over.
 - [[warren]] — Perrin agreed to end Dravosi attacks there as part of the exchange.
-
-## Provenance
-
-[[nona-black-jaw]] gave this stone to [[perrin-black-jaw|Perrin]] at [[le-paludi]]. Perrin agreed to end Dravosi attacks in the [[warren]] in exchange for owing Nona a favor. The terms remain unspecified. Nona will eventually collect that debt.
