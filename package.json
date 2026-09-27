@@ -12,14 +12,14 @@
     "lint:python": ".venv/bin/ruff check scripts tools tests",
     "format:python": ".venv/bin/ruff format scripts tools tests",
     "typecheck:python": ".venv/bin/pyright",
-    "test:python": "./scripts/run-pytest",
-    "test:python:coverage": "./scripts/run-pytest --cov=tools --cov=scripts --cov-report=term-missing",
+    "test:python": ".venv/bin/python -m pytest",
+    "test:python:coverage": ".venv/bin/python -m pytest --cov=tools --cov=scripts --cov-report=term-missing",
     "check:python": "npm run lint:python && npm run typecheck:python && npm run test:python",
     "lint:wiki": "./scripts/wiki lint",
     "lint:vale": "./scripts/wiki lint",
     "lint:markdown": "markdownlint-cli2",
     "maintain": "./scripts/wiki health",
     "verify": "./scripts/check-omp-baseline.sh",
-    "test": "./scripts/run-pytest"
+    "test": ".venv/bin/python -m pytest"
   }
 }

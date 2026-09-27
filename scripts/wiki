@@ -22,7 +22,7 @@ from tools.wiki_ops.cli import SCOPE_KINDS, AgentParser, UsageError, configured_
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot, build_trends
 from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
-from tools.wiki_ops.pretty import render_health, render_lint, render_lint_issues, render_query, render_usage_error
+from tools.wiki_ops.pretty import render_health, render_lint, render_lint_fix, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
 from tools.wiki_ops.repair_plans import apply_safe_fix_plan, build_safe_fix_plan
 from tools.wiki_ops.worklist import DEFAULT_HARD_KEYS, build_worklist
@@ -41,12 +41,13 @@ def _tracker_root() -> Path:
 
 
 
-def _machine_error(message: str, *, pretty: bool = False) -> int:
-    if pretty:
-        print(render_usage_error(message), file=sys.stderr)
-    else:
+def _machine_error(message: str, *, json_out: bool = False) -> int:
+    if json_out:
         emit_json({"error": message, "status": "error"})
+    else:
+        print(render_usage_error(message), file=sys.stderr)
     return 2
+
 
 
 def _live_files(vault: Path) -> list[Path]:
@@ -218,8 +219,11 @@ def _ledger() -> dict[str, Any]:
 
 
 def _progress(task: str, **fields: Any) -> None:
+    if not _ARGS_VAULT.get("pretty"):
+        return
     bits = " ".join(f"{key}={value}" for key, value in fields.items())
     print(f"wiki {task}: {bits}", file=sys.stderr, flush=True)
+
 
 
 def _tune(kind: str, ranked: list[tuple[str, int]]) -> None:
@@ -358,13 +362,18 @@ def _finish(
         for path in _result_paths(command, result):
             print(path)
         return code
-    if pretty:
+    if json_out:
+        emit_json(result)
+    elif pretty:
         print(renderer(result))
-    elif command == "lint" and not json_out and result.get("status") != "error":
+    elif command == "lint" and result.get("status") != "error":
         print(render_lint_issues(result))
+    elif command == "lint fix" and result.get("status") != "error":
+        print(render_lint_fix(result))
     else:
         emit_json(result)
     return code
+
 
 
 _ARGS_VAULT: dict[str, Any] = {}
@@ -385,7 +394,7 @@ def _lint(args: argparse.Namespace, vault: Path, start: float) -> int:
     result, code = _compute_lint(args, vault)
     return _finish(
         "lint", start, code, result,
-        pretty=args.pretty, json_out=args.json, renderer=render_lint, cache=result.get("cache"),
+        pretty=False, json_out=args.json, renderer=render_lint_issues, cache=result.get("cache"),
     )
 
 def _flatten_result_findings(result: dict[str, Any]) -> list[dict[str, Any]]:
@@ -436,8 +445,9 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
             start,
             2,
             {"status": "error", "error": "lint preflight failed"},
-            pretty=args.pretty,
-            renderer=render_lint,
+            pretty=False,
+            json_out=getattr(args, "json", False),
+            renderer=render_lint_fix,
         )
     operations, skipped = build_safe_fix_plan(
         vault,
@@ -451,11 +461,11 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
             "status": "planned" if planned else "already_done", "planned": planned, "skipped": skipped,
             "changed": [], "counts": {"before": before, "after": before}, "next": pre_result.get("next"),
             "cache": pre_result.get("cache", {}),
-        }, pretty=args.pretty, renderer=render_lint, cache=pre_result.get("cache", {}))
+        }, pretty=False, json_out=getattr(args, "json", False), renderer=render_lint_fix, cache=pre_result.get("cache", {}))
     applied, failed = apply_safe_fix_plan(vault, operations)
     skipped.extend(failed)
     post_args = argparse.Namespace(**vars(args))
-    post_args.full = bool(args.full)
+    post_args.full = bool(getattr(args, "full", True))
     post_result, post_code = _compute_lint(post_args, vault, resolved_paths)
     changed_files = sorted({path for item in applied for path in item.get("changed_files", [])})
     before_ids = _finding_identities(pre_result)
@@ -482,7 +492,7 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
         "applied": applied,
         "skipped": skipped,
         "remaining": post_result,
-        "full": bool(args.full),
+        "full": bool(getattr(args, "full", True)),
         "changed_files": changed_files,
         "progress": progress,
         "cache": post_result.get("cache", {}),
@@ -492,8 +502,9 @@ def _lint_fix(args: argparse.Namespace, vault: Path, start: float) -> int:
         start,
         post_code,
         result,
-        pretty=args.pretty,
-        renderer=render_lint,
+        pretty=False,
+        json_out=getattr(args, "json", False),
+        renderer=render_lint_fix,
         cache=result["cache"],
     )
 
@@ -511,13 +522,13 @@ def _query(args: argparse.Namespace, start: float) -> int:
         command = ["qmd", "search", args.phrase, "-c", args.collection, "-n", str(args.count), "--json"]
         proc = subprocess.run(command, cwd=ROOT, env=environment, capture_output=True, text=True)
     if proc.returncode:
-        code = _machine_error(proc.stderr.strip() or "qmd query and qmd search failed", pretty=args.pretty)
+        code = _machine_error(proc.stderr.strip() or "qmd query and qmd search failed", json_out=args.json)
         append_command_record("query", max(0, elapsed_ms(start)), code, trace_path=_trace_path())
         return code
     try:
         raw = json.loads(proc.stdout or "[]")
     except json.JSONDecodeError as exc:
-        code = _machine_error(f"qmd returned invalid JSON: {exc}", pretty=args.pretty)
+        code = _machine_error(f"qmd returned invalid JSON: {exc}", json_out=args.json)
         append_command_record("query", max(0, elapsed_ms(start)), code, trace_path=_trace_path())
         return code
     rows = raw.get("results", raw.get("hits", raw)) if isinstance(raw, dict) else raw
@@ -666,23 +677,6 @@ def _remorph_plan(vault: Path) -> dict[str, Any]:
     }
 
 
-def _policy_conflicts() -> dict[str, Any]:
-    proc = subprocess.run(
-        [sys.executable, str(ROOT / "scripts/check-policy-conflicts"), "--json"],
-        cwd=ROOT,
-        capture_output=True,
-        text=True,
-    )
-    try:
-        data = json.loads(proc.stdout or "{}")
-    except json.JSONDecodeError:
-        data = {}
-    conflicts = data.get("conflicts") if isinstance(data, dict) else None
-    return {
-        "ok": proc.returncode == 0,
-        "conflict_count": len(conflicts) if isinstance(conflicts, list) else 0,
-    }
-
 
 
 def _tokens(vault: Path, paths: list[str], args: argparse.Namespace) -> int | None:
@@ -715,7 +709,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     a2 = _timed("health.waste", lambda: _context_waste(vault), times)
     a5 = _timed("health.staging", lambda: _raw_staging(vault), times)
     a6 = _timed("health.remorph", lambda: _remorph_plan(vault), times)
-    policy = _timed("health.policy", lambda: _policy_conflicts(), times)
+    policy = None
     tracker = _tracker_root()
     sittings = _timed(
         "scripts/error-ledger.py:sitting",
@@ -800,22 +794,28 @@ EXAMPLES = {
         "wiki lint dir:entities/place",
         "printf 'a.md\\nb.md\\n' | wiki lint --stdin --paths-only",
     ],
-    "lint fix": ["wiki lint fix entities/place/Belumara.md", "wiki lint fix dir:entities/place --dry-run"],
+    "lint fix": [
+        "wiki lint fix entities/place/Belumara.md",
+        "wiki lint fix dir:entities/place --dry-run",
+    ],
     "query": ['wiki query "Belumara" -n 5'],
     "health": ["wiki health", "wiki health entities/place/Belumara.md"],
-    "mutate": ["wiki mutate --stdin --dry-run < op.json",
-               "wiki mutate add_tag --file entities/place/Belumara.md --tag harbor --dry-run"],
+    "mutate": [
+        "wiki mutate --stdin --dry-run < op.json",
+        "wiki mutate add_tag --file entities/place/Belumara.md --tag harbor --dry-run",
+    ],
     "repair": ["wiki repair --stdin --dry-run < plan.json", "wiki repair --plan-file repair-plan.json --approve"],
 }
-PATH_HELP = f"vault-relative page or directory, or a kind:value scope ({SCOPE_KINDS})"
+PATH_HELP = "page, directory, or dir:path / type:npc / files:a.md,b.md"
 
 
 class _Parser(AgentParser):
-    """Usage errors become UsageError for --pretty handling."""
+    """Usage errors become UsageError."""
 
     def __init__(self, *args, **kwargs):
         kwargs.setdefault("exit_on_usage", False)
         super().__init__(*args, **kwargs)
+
 
 def _sub_parser(name: str) -> argparse.ArgumentParser:
     summary = dict(SUBCOMMANDS)[name]
@@ -824,16 +824,14 @@ def _sub_parser(name: str) -> argparse.ArgumentParser:
     parser.add_argument("--vault", help="vault directory (default: OBSIDIAN_VAULT_PATH > repo .env > <repo>/wiki)")
     if name in {"lint", "lint fix", "health"}:
         parser.add_argument("paths", nargs="*", help=PATH_HELP)
-        parser.add_argument("--scope", action="append", default=[], metavar="KIND:VALUE", help=f"scope ({SCOPE_KINDS})")
         parser.add_argument("--stdin", action="store_true", help="read newline-separated paths from stdin")
         parser.add_argument("--paths-only", action="store_true", help="print one path per line")
-        parser.add_argument("--pretty", action="store_true", help="human-readable scoreboard")
-        parser.add_argument("--json", action="store_true", help="full JSON worklist")
-    if name == "lint":
-        parser.add_argument("--full", action="store_true", default=True, help="compatibility no-op; lint is always full")
+        parser.add_argument("--json", action="store_true", help="JSON worklist")
+        parser.set_defaults(full=True, pretty=False)
+    if name == "health":
+        parser.add_argument("--pretty", action="store_true", help="scoreboard")
     if name == "lint fix":
-        parser.add_argument("--dry-run", action="store_true", help="return the planned repairs; write nothing")
-        parser.set_defaults(full=True)
+        parser.add_argument("--dry-run", action="store_true", help="plan repairs; write nothing")
     if name == "query":
         parser.add_argument("phrase")
         parser.add_argument("--collection", default="wiki")
@@ -850,14 +848,14 @@ def _sub_parser(name: str) -> argparse.ArgumentParser:
 
 
 def _selected_paths(args: argparse.Namespace, vault: Path, command: str) -> list[str]:
-    """Paths, kind:value scopes, --scope, and --stdin lines, resolved in order; a bare 'fix' is refused."""
+    """Paths, kind:value tokens, and --stdin lines; a bare 'fix' is refused."""
     tokens = list(args.paths)
     if getattr(args, "stdin", False):
         tokens += [line.strip() for line in sys.stdin.read().splitlines() if line.strip()]
     if command == "lint" and "fix" in tokens:
         rest = " ".join(token for token in tokens if token != "fix") or "entities/place/Belumara.md"
         raise UsageError("'fix' is not a lint path", hint="lint fix is a subcommand", example=f"wiki lint fix {rest}")
-    scopes = list(args.scope)
+    scopes: list[str] = []
     plain: list[str] = []
     for token in tokens:
         head = token.split(":", 1)[0]
@@ -868,10 +866,16 @@ def _selected_paths(args: argparse.Namespace, vault: Path, command: str) -> list
             scope = parse_scope(raw if ":" in raw else f"{raw}")
             files = scope.resolve(vault).resolved_files if scope else []
         except ValueError as exc:
-            raise UsageError(str(exc), hint="a scope is kind:value", example=EXAMPLES[command][-1 if command == "lint fix" else 1 if command == "lint" else 0],
-                             list_valid=f"{SCOPE_KINDS} (wiki {command} --help)") from exc
+            raise UsageError(
+                str(exc),
+                hint="use dir:path, type:npc, or files:a.md,b.md",
+                example=EXAMPLES[command][0],
+                list_valid=f"{SCOPE_KINDS} (wiki {command} --help)",
+            ) from exc
         selected += [path for path in files if path not in selected]
     return selected
+
+
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -904,10 +908,11 @@ def main(argv: list[str] | None = None) -> int:
                 _ARGS_VAULT.update(vault=None, paths_only=args.paths_only)
                 return _query(args, start)
             vault = resolve_vault(args.vault or configured_vault())
-            _ARGS_VAULT.update(vault=vault, paths_only=getattr(args, "paths_only", False))
+            _ARGS_VAULT.update(vault=vault, paths_only=getattr(args, "paths_only", False), pretty=getattr(args, "pretty", False))
+
             if command in {"mutate", "repair"}:
                 return _bulk(command, args, vault, start)
-            args.requested = list(args.paths) + list(args.scope)
+            args.requested = list(args.paths)
             args.paths = _selected_paths(args, vault, command)
             if command == "lint fix":
                 return _lint_fix(args, vault, start)
@@ -915,16 +920,17 @@ def main(argv: list[str] | None = None) -> int:
                 return _lint(args, vault, start)
             return _health(args, vault, start)
     except UsageError as exc:
-        if pretty:
-            print(render_usage_error(str(exc)), file=sys.stderr)
-            code = 2
-        else:
-            code = usage_error(str(exc), hint=exc.hint, example=exc.example,
-                               list_valid=exc.list_valid or f"wiki {command if command in dict(SUBCOMMANDS) else ''} --help".replace("  ", " "))
+        code = usage_error(
+            str(exc),
+            hint=exc.hint,
+            example=exc.example,
+            list_valid=exc.list_valid or f"wiki {command if command in dict(SUBCOMMANDS) else ''} --help".replace("  ", " "),
+            json_out="--json" in rest,
+        )
         append_command_record(command, max(0, elapsed_ms(start)), code, trace_path=_trace_path())
         return code
     except (OSError, ValueError, RuntimeError) as exc:
-        code = _machine_error(str(exc), pretty=pretty)
+        code = _machine_error(str(exc), json_out="--json" in rest)
         append_command_record(command, max(0, elapsed_ms(start)), code, trace_path=_trace_path())
         return code
 

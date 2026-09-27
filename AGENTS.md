@@ -15,7 +15,7 @@ Top-level paths, one purpose each; the vault itself is explored under "Vault map
 | `docs/adr/`, `docs/*.md` | Decision records; human-facing documentation. |
 | `tools/` | Python implementation: `lint_wiki.py`, `wiki_ops/` (transactions, health, identity, template-derived checks), `creative_lint/` (Vale engine, rule registry, evaluators), `token_count.py`. |
 | `scripts/` | CLI entrypoints — `wiki`, `wiki-lint`, `wiki-bulk-ops`, `manifest.py`, `error-ledger.py`, `luna-eval`, `wiki-reveal`, plus focused `check-*` / `lint-*` / `remorph-*` helpers. Unknown command → list the directory; each is `--help`-able. |
-| `tests/` | Pytest suite for the wiki lint system only (constitution IV); skills are validated by evals. Run `./scripts/run-pytest`. |
+| `tests/` | Wiki lint pytest only (constitution IV); skills use evals. `.venv/bin/python -m pytest` |
 | `specs/<feature>/` | Spec, plan, tasks, contracts. Current feature: `029-agent-loop-closure`. |
 | `.specify/` | Constitution, templates, extensions, generated adapters (adapters disposable). |
 | `wiki/` | The live vault, at the path `.env` `OBSIDIAN_VAULT_PATH` and `pyproject.toml` `[tool.agentic-co-dm]` both name. Campaign pages, templates, session journals, indexes. Load `wiki/AGENTS.md` before any read or write here. Expanded below. |
@@ -71,7 +71,9 @@ Before writing substantial engineering, agent-system, campaign-architecture, or 
 
 **Capability loop:** For every incomplete owner boundary, `observe → act → re-observe`; continue only on owner-relative progress or a passed completion guard. An unchanged observation requires a materially different sanctioned path or a specific blocker. Use [`docs/agents/hybrid-sdd.md`](docs/agents/hybrid-sdd.md) for the full rule and blocker fields.
 
-<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command, `wiki lint`, or `scripts/check-current-commands` for a script path in a skill or AGENTS.md — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
+<a id="friction-rule"></a>**Friction rule:** Friction is a failing command, a stale path, or wrong or missing guidance, including an instruction you routed around because the command, path, or step it names does not exist. On friction, identify its cause, fix the authoritative source with the smallest change, then prove the fix by rerunning what failed — the command or `wiki lint` — then continue the original task. Friction is a branch of the capability loop, not a new workflow, command, or skill.
+
+<a id="table-value-rule"></a>**Table-value rule:** A skill step, template field or heading, Done line, or eval assertion that serves no moment at the table is friction too: nothing the DM reads, rolls, rules, or says aloud mid-session depends on it. Find the table moment it was meant to protect and rewrite the source to that; when there is none, delete it. A field only agents use goes in frontmatter. A heading or label a careless reader could misread is renamed to plain words. Prove the fix by checking the output it shapes, then continue.
 
 ## Carve-outs
 
@@ -569,7 +571,7 @@ Spec Kit artifacts are the handoff protocol. When `specs/<feature>/{spec,plan,ta
 
 ## Validation
 
-- **Python runtime:** use `.venv/bin/python` for pytest and repository tooling — system `python3` may lack project dependencies. `python3 scripts/*.py` works because those scripts import only stdlib and local modules; test runs and library imports require the venv.
+- **Python runtime:** `.venv/bin/python -m pytest` for the wiki lint suite. System `python3` may lack project deps. `python3 scripts/*.py` is stdlib-only.
 - **Spec Kit availability:** Invoke `specify --version` before deciding the CLI
   is absent. If shell resolution fails, inspect the existing executable at
   `~/.local/bin/specify` and its resolved target; `uv tool list` is not

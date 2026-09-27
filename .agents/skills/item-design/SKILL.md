@@ -263,7 +263,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   page and listed in the response.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
-  0 (`docs/agents/table-ready.md` § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.
