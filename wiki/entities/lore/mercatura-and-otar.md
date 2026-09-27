@@ -16,6 +16,7 @@ updated: 2026-09-20T00:00:00Z
 type: lore
 reveal: revealed
 campaign: shattered-sea
+region: "Calveno"
 visibility: dm
 kind: history
 truth: established
