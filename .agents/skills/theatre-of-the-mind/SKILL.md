@@ -587,8 +587,11 @@ run the list again.
       next, or cut one. Does the block build to its last sentence?
 - [ ] **Evocative.** Read aloud, would the table feel the place (its light,
       air, sound, and texture, each from a source), or does the block read
-      like an accurate report? A dry block gets the texture its sources
-      support, not more handles.
+      like an accurate report? Quote its one striking comparison, a likeness
+      from the characters' own world that makes the anchor easier to
+      picture (straight as a thrown spear, hooked like a gaff); a block with
+      none is usually dry. A dry block gets the texture its sources support,
+      not more handles.
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
       every place named as a stranger would, every direction one a body
       knows (no north, south, east, or west), no grid distance, no
