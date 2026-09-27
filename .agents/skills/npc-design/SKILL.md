@@ -253,7 +253,8 @@ line that carries it; a line with nothing beside it goes back on the page.
   its final check; the portrait keeps every face word the old page had.
 - At the Table gives Priority, Shares (what they tell freely and what they
   never tell), and Voice with the subject they avoid; when the party will meet
-  them, `[!narration] First meeting` ends on their first words.
+  them, `[!narration] First meeting` speaks to the party as "you" and ends on
+  their first words.
 - A villain has an active, interruptible front and several possible endings.
 - Every question the page raises has its DM answer; every likely move has
   an answer, a price, and a roll where the outcome is uncertain.
@@ -262,7 +263,8 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
   0 (`docs/agents/table-ready.md` § Fill the silence).
 - Each new owner page came from its owner skill, loaded and followed.
-- Every fighter in reach carries compact numbers, the NPC included; custom
+- Every fighter in reach carries compact numbers: the NPC, their guards, and
+  any animal on the page that could get loose; custom
   forms came from `monster-design`.
 - `role` is rival, patron, or contact; `[!narration]` is the only callout.
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
