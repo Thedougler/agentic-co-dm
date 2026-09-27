@@ -26,7 +26,27 @@ tier: supporting
 ---
 # Resin-Sealed Kin-Tokens
 
-> [!narration] Narration
-> Small wooden tokens sit sealed inside a lump of hardened amber resin, each about the size of a thumbnail. Every token carries its own carved mark. A leaf. A wave. A claw. Pressed close together, two smaller marks finish the set. The resin has gone cloudy with age, but every mark still shows through the murk.
+> [!narration] Resin-Sealed Kin-Tokens
+> Small wooden tokens sit sealed inside a lump of hardened amber resin, each about the size of a thumbnail. Every token carries its own carved mark: a leaf, a wave, a claw, and two smaller marks that complete the set. The resin has gone cloudy with age, but every mark still shows through the murk.
 
-*Mundane item, a curio worth nothing on any market.* Botukuri families seal a token like this for every member of a household during a naming ceremony, one mark per person, kept together until the family that made them scatters or ends. Whoever hid this set never came back for it.
+## At a Glance
+
+*Plot object, mundane, no attunement required.*
+
+- **Origin.** A Botukuri household naming ceremony.
+- **Current state.** The set was hidden, and whoever hid it never returned.
+- **Use.** The marks identify the members of one household when a Botukuri person who knows the family tradition interprets them.
+
+## Properties
+
+The set contains five hand-carved wooden tokens sealed together in resin. Each token marks one member of a Botukuri household. The tokens have no magical effect, grant no bonus, and require no action to inspect; they are evidence of family membership and a clue to a household that scattered or ended.
+
+## At the Table
+
+- **When found.** The party gains a physical clue connecting the hidden cache to a Botukuri family.
+- **When carried to Botukuri.** A knowledgeable Botukuri can identify the marks and tell the party which household they record, if that household is still remembered.
+
+## Connections
+
+- [[botukuri]] — The clan's naming customs give the tokens their meaning.
+- [[sorn]] — The tokens come from a Botukuri household in Sorn's farm heart.
