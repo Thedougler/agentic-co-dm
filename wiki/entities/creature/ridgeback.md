@@ -26,13 +26,20 @@ cr: ""
 ---
 # Ridgeback
 
-> [!narration] Narration
->
+> [!narration] Ridgeback
+> Ridgeback has flat-black skin and no eyes. It breathes water and senses its surroundings with blindsight.
 
-[[Ridgeback]] is named as the second entity through the [[drowned-maw]] fissure from the [[elemental-plane-of-water]]. Clyde's Bestiary documents it. Like [[Leviathan]] and [[Krakling]], it is described with flat-black skin, no eyes, blindsight, and water breathing. No fight sheet is established here.
+## At a Glance
+
+Ridgeback is the second named entity drawn through the [[drowned-maw|Drowned Maw]] fissure from the [[elemental-plane-of-water|Elemental Plane of Water]].
+
+- **Habitat.** The fissure at [[drowned-maw|Drowned Maw]] and the waters around it.
+- **Signature.** Flat-black skin, no eyes, blindsight, and water breathing.
 
 ## Statblock
 
+The current canon names Ridgeback but provides no combat chassis. Do not run a combat encounter from this page; use its appearance and water-breathing description as setting evidence until a tuned statblock is authored.
+
 ## Behavior
 
-## Tactics
+Clyde's Bestiary documents Ridgeback. Its known description places it among the flat-black, eyeless, water-breathing entities that crossed from the [[elemental-plane-of-water|Elemental Plane of Water]] through the [[drowned-maw|Drowned Maw]] fissure.
