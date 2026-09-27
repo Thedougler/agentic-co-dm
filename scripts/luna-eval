@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run one Luna 6 (Codex CLI) behavioral test subject: a skill eval or any ad-hoc task.
+"""Run one Luna 5.6 (Codex CLI) behavioral test subject: a skill eval or any ad-hoc task.
 
 Policy (who grades, dispatch all at once, re-run only failures, stop on usage
 limit): CLAUDE.md § Behavioral Test Subject. This script owns the Codex command.
@@ -284,7 +284,7 @@ def main() -> int:
     ap.add_argument("--config", default="with_skill", help="with_skill, without_skill, old_skill, ...")
     ap.add_argument("--run", type=int, default=1, help="run number, for repeated runs")
     ap.add_argument("--context", help="extra instructions appended to the prompt")
-    ap.add_argument("--model", default="gpt-6-luna")
+    ap.add_argument("--model", default="gpt-5.6-luna", help="Codex model for the subject (default: gpt-5.6-luna, Luna 5.6)")
     ap.add_argument("--effort", default="high", help="Codex reasoning effort for the subject (default: high)")
     a = ap.parse_args()
 

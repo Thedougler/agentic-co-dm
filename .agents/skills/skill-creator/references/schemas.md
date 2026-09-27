@@ -191,7 +191,7 @@ Derived from `events.jsonl` by `scripts/luna-eval`. Located at `<run-dir>/metric
   "transcript_chars": 3200,
   "retries": 1,
   "invocation_errors": 0,
-  "model": "gpt-6-luna",
+  "model": "gpt-5.6-luna",
   "effort": "high"
 }
 ```
