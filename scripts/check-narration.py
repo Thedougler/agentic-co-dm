@@ -48,6 +48,16 @@ def narration_text(raw: str) -> str:
     return narration_blocks(raw)[0][1]
 
 
+def sentence_units(body: str) -> list:
+    """Treat immediate-fact bullets as separate sentences for line checks."""
+    bullets = [line.strip()[2:].strip() for line in body.splitlines()
+               if re.match(r"\s*-\s+", line)]
+    if len(bullets) > 1:
+        return bullets
+    flat = " ".join(body.split())
+    return [s for s in re.split(r"(?<=[.!?”\"])\s+(?=[A-Z“\"])", flat) if s.strip()]
+
+
 def grams(text: str, n: int = 5) -> set:
     text = re.sub(r'["“][^"”]*["”]', " ", text)  # quoted speech stays verbatim
     words = re.findall(r"[a-z']+", text.lower())
@@ -57,7 +67,7 @@ def grams(text: str, n: int = 5) -> set:
 def check(body: str, sources: list) -> list:
     findings = []
     flat = " ".join(body.split())
-    sentences = [s for s in re.split(r"(?<=[.!?”\"])\s+(?=[A-Z“\"])", flat) if s.strip()]
+    sentences = sentence_units(body)
     paragraphs = [p for p in re.split(r"\n\s*\n", body) if p.strip()]
 
     for s in sentences:
@@ -78,9 +88,8 @@ def check(body: str, sources: list) -> list:
         findings.append(f"paint-chip color '{m}', use one plain word or a comparison")
     for m in re.findall(rf"\b{NUMBER}[- ](?:foot|feet)\b", flat, re.I):
         findings.append(f"grid distance '{m}', say it in body-scale words unless a player must act on the number now")
-    legend = re.findall(rf"(?:^|[.,;]\s+|\band\s+){COMPASS}\s*,", flat, re.I)
-    if len(legend) >= 2:
-        findings.append(f"directions read as a map legend ({len(legend)} compass-led clauses); hang routes on landmarks")
+    for m in re.findall(rf"\b{COMPASS}\w*", flat, re.I):  # the skill keeps every compass bearing out of speech
+        findings.append(f"compass direction '{m}', use one a body knows (ahead, upriver, to your left) or a landmark")
     for m in re.findall(PC_PERCEIVE, flat, re.I):
         findings.append(f"'{m}' tells the players what their characters perceive; show the thing instead")
     for m in re.findall(LABELS, flat, re.I):
@@ -108,7 +117,7 @@ def main() -> int:
             findings = check(body, a.source)
             total += len(findings)
             flat = " ".join(body.split())
-            sentences = [s for s in re.split(r"(?<=[.!?])\s+", flat) if s]
+            sentences = sentence_units(body)
             print(f"=== {f.name} :: {title} (sentences={len(sentences)} words={len(flat.split())})")
             print(body)
             for finding in findings:
