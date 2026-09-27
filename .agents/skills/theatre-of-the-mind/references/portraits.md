@@ -57,7 +57,9 @@ The matching example is in [examples.md](examples.md).
 - **Build:** Body plan and size compared to something familiar (the size of a
   plow horse, taller than a door); the feature that makes people stare; color,
   texture, and markings folded onto the body; one sound or smell that comes off
-  it; what it does when nothing is bothering it; where it lives, in one clause.
+  it; what it does when nothing is bothering it; where it lives, in one clause
+  folded into another sentence (circling over the reef channels), naming the
+  one or two places anyone would meet it, never a list of habitats.
 - **Response behavior:** When the parent states a stable reaction ("freezes
   when the rock shudders"), write the stimulus and the visible response, then
   stop. Leave out the cause, the meaning, and whatever the creature is reacting
