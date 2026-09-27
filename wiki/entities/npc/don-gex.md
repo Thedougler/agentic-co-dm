@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Tokage-Island.md"]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,53 +25,34 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Late former leader of the Ebony Scales |
-| **Home** | [[Totemo Tokage]] |
-| **Wants** | No present want is established; his legacy still shapes the clan. |
+Don Gex is the dead father the [[ebony-scales|Ebony Scales]] are still measured against: the man who built the clan's drug trade and then spent three years ending slavery on [[Totemo Tokage]].
 
-> **DM thesis:** Don Gex's contradictory legacy makes the Ebony Scales criminals whose opposition to slavery is absolute.
-
+- **Role.** Late leader of the Ebony Scales; no present role at the table.
+- **Nature.** Remembered through the fear and respect attached to the clan rather than through a present appearance.
+- **Wants.** No present want is established; his legacy still shapes the clan.
+- **Home.** [[Totemo Tokage]].
+- **Allegiance.** The Ebony Scales, which his sons now lead.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Don Gex
-> Don Gex is remembered through the fear and respect attached to the Ebony Scales rather than a present appearance. His name survives in the clan's trade and in the silence of slavers who no longer operate openly on Tokage.
+> Don Gex is remembered through the fear and respect attached to the Ebony Scales rather than through a present appearance. His name survives in the clan's trade and in the silence of slavers who no longer operate openly on Tokage.
 ```
 ````
 
-## Running Don Gex
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-Don Gex is encountered through the Ebony Scales' history: the drug trade he established and the war against slavers that made slavery effectively end on Tokage.
-
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-No living posture change is established. His legacy becomes active when the Ebony Scales decide whether a transaction crosses their anti-slavery line.
-```
-````
-### Voice
-
-Don Gex has no present voice; the clan remembers him in blunt, absolute terms about slavery. His ask was, “Name the price, and name who pays it.” His refusal was, “No trade that makes a slave.” Under pressure, his legacy answers, “The Ebony Scales do not bend on this.”
-
+- **First meeting.** He is met through the clan's history: the drug trade he established, and the three-year war against local and foreign slavers that ended slavery on the island in practice.
+- **Opens up when.** Not applicable; there is nobody to talk to.
+- **Shuts down when.** Not applicable as a living posture. His legacy becomes active whenever the Ebony Scales decide whether a transaction crosses their anti-slavery line.
+- **Priority.** The clan's trade and the anti-slavery rule, in that order, as his sons inherited them.
+- **Shares.** What the clan remembers, and what the island does not say out loud. His ask was, "Name the price, and name who pays it." His refusal was, "No trade that makes a slave."
+- **Voice.** No present voice. The clan remembers him in blunt, absolute terms about slavery, and his legacy answers under pressure with, "The Ebony Scales do not bend on this."
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[ebony-scales\|Ebony Scales]] | Don Gex founded the clan's main drug trade and former leadership. |
-| [[ranga-gex\|Ranga Gex]] · [[rango-gex\|Rango Gex]] | Twin sons trying to live up to his name. |
-| [[Totemo Tokage]] | Don Gex's three-year war ended slavery on the island. |
+- [[ebony-scales]] — the clan he led and whose trade he founded.
+- [[ranga-gex]] and [[rango-gex]] — his twin sons, trying to live up to the name.
+- [[Totemo Tokage]] — the island his three-year war cleared of slavery.
