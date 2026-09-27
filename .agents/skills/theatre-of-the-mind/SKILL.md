@@ -557,8 +557,10 @@ run the list again.
 - [ ] **Show.** Is every judgment word, mood, and page label replaced by
       the thing the characters see or hear, with at most one impression
       riding a concrete detail, so the players draw every conclusion
-      themselves (a first sentence that states what the later evidence
-      shows is a verdict), and is every person called what the most recent
+      themselves? The first sentence may name the kind of place and what was
+      happening there (a fishing camp left mid-meal); who, why, and how
+      recently stay as evidence, never a verdict. Is every person called
+      what the most recent
       narration the players heard calls them (the beat's Previously, the
       last spoken block), with a name only where that narration uses it?
 - [ ] **Layers.** (Situated) List the entry handles beside the first-minute
