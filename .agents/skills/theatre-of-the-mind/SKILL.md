@@ -547,12 +547,14 @@ run the list again.
       the thing the characters see or hear, with at most one impression
       riding a concrete detail, so the players draw every conclusion
       themselves (a first sentence that states what the later evidence
-      shows is a verdict), and is every person called what the characters
-      see unless a source shows the party learning the name (earlier
-      narration or a recap that uses it)?
+      shows is a verdict), and is every person called what the most recent
+      narration the players heard calls them (the beat's Previously, the
+      last spoken block), with a name only where that narration uses it?
 - [ ] **Layers.** (Situated) Is every entry handle in the block, and every
       other handle out of it and in the handle note?
-- [ ] **Withheld.** Is every creature and person in the block shown as they
+- [ ] **Withheld.** Quote every bag, pouch, box, or other closed thing the
+      block mentions: does the block say only its outside? Is every
+      creature and person in the block shown as they
       are at arrival, with their response to the party, the closed contents,
       the checks, and the other entrances on the page or in the withheld
       note?
