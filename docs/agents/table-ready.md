@@ -131,7 +131,7 @@ world (no appraiser can name the maker); the DM page carries the answer.
 
 The page states each proposal as world fact. The proposal list, its sources,
 and any contradiction it settles live in the response to the DM. **World-voice
-search:** search the finished page for *propos*, *establish*, *canon*,
+search:** run `scripts/check-world-voice <page>`, which searches the finished page for *propos*, *establish*, *canon*,
 *unknown*, *unresolved*, *confirm*, *reading*, *page*, and *source*, and rewrite each hit as a world fact or
 cut it when play does not need it. Then search for *not know*, *no one*, and *nobody*: each
 hit about what people do not know keeps their ignorance and states, on the

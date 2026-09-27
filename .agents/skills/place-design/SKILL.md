@@ -251,6 +251,9 @@ line that carries it; a line with nothing beside it goes back on the page.
   three clue vectors.
 - The narration came from theatre-of-the-mind, passes its final check, and
   holds no truth, DC, or unearned name; its tells read as ordinary description.
+- With several areas, each `###` under Features has its `{Area}` narration
+  ending on the feature the party can use; `Returning` appears only after a
+  visit and shows only what changed.
 - Topology offers real choices; every significant node passes the verb test;
   Where has four cardinal lines, each a neighbour with travel time or what
   lies that way.
@@ -259,8 +262,8 @@ line that carries it; a line with nothing beside it goes back on the page.
   with is named and links an NPC page.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md` §
-  Fill the silence).
+- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
+  0 (`docs/agents/table-ready.md` § Fill the silence).
 - The enemies-vanished test passes; a revisited place keeps its history.
 - `[!narration]` is the only callout; the DM layer names who, what, and why.
 - Every owner was cast or minted first. User-said canon is filed; every

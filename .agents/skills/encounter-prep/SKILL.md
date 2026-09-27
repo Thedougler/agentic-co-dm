@@ -138,7 +138,10 @@ PC when the fiction supports it, a strong/purposeful entry from the current
 cliffhanger or agreed plan, and a short hiccup/fallback note. Keep the encounter as a modular cockpit findable in under 30 seconds; do not
 script a sequence of player choices. Secrets remain DM-only and out of
 `[!narration]`. Hand the finished scene to `run-guide` for field order, empty
-TotM stubs, and OFM. TotM fill is a second pass.
+TotM stubs, and OFM. TotM fill is a second pass, and the page is not done
+until it runs: `Opening`, one `{NPC}` or `{Creature}` block per actor the party
+meets, and every Handles and Outcomes Narration cell are filled, and each NPC
+Actors entry carries its want, offer, and posture shift.
 
 ## Public-stakes roll gate
 

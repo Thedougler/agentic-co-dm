@@ -117,7 +117,7 @@ page:
 - each actor's closing response is written, with what it changes;
 - At a Glance states values, not instructions to record them later.
 
-Every section on the page is a section of the template; none is left over from an older layout.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map).
 
 ## Named seams
 

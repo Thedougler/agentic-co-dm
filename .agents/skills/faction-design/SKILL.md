@@ -207,7 +207,7 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits 0 (`docs/agents/table-ready.md`
   § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.
