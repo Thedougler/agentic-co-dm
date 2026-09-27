@@ -3,11 +3,10 @@
 ## Authority chain
 
 1. `AGENTS.md` selects the existing owner and carries the compact loop invariant.
-2. `docs/agents/hybrid-sdd.md` owns the complete cross-capability observe/act/re-observe rule.
-3. The active owner defines valid actions, evidence, completion guard, and local handoffs.
-4. `wiki/AGENTS.md` governs wiki semantics, canon, scope, and mutation boundaries.
-5. Existing CLI/contracts define deterministic result shapes and side effects.
-6. Evaluation and efficiency policy determine promotion, never runtime ownership.
+2. The active owner defines valid actions, evidence, completion guard, and local handoffs.
+3. `wiki/AGENTS.md` governs wiki semantics, canon, scope, and mutation boundaries.
+4. Existing CLI/contracts define deterministic result shapes and side effects.
+5. Evaluation and efficiency policy determine promotion, never runtime ownership.
 
 ## Iteration contract
 

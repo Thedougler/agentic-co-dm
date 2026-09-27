@@ -30,7 +30,7 @@ policies:
       - .agents/skills/wiki-ingest/SKILL.md
     reference: "User-said canon files on the live wiki path without a chat accept gate."
   capability_boundary:
-    owner: docs/agents/hybrid-sdd.md
+    owner: AGENTS.md
     consumers:
       - AGENTS.md
       - wiki/AGENTS.md

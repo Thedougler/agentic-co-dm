@@ -18,7 +18,7 @@ Refactor existing agent guidance into a shallow capability execution graph witho
 
 **Language/Version**: Agent-facing Markdown/YAML/JSON; existing Python 3.12+ repository and evaluation tooling
 
-**Primary Dependencies**: Existing `AGENTS.md`, `CONTEXT.md`, `docs/agents/hybrid-sdd.md`, `docs/agents/skill-design-dispatch.md`, `.agents/skills/skill-creator`, owner skills, `docs/agents/policy-owners.yml`, `specs/027-wiki-agent-cli/contracts/wiki-cli.md`, `scripts/wiki`, existing pytest and skill-eval tooling. No new package.
+**Primary Dependencies**: Existing `AGENTS.md`, `CONTEXT.md`, `.agents/skills/skill-creator`, owner skills, `docs/agents/policy-owners.yml`, `specs/027-wiki-agent-cli/contracts/wiki-cli.md`, `scripts/wiki`, existing pytest and skill-eval tooling. No new package.
 
 **Storage**: Existing repository guidance, skill eval JSON, templates/contracts, and wiki files. Capability execution state is ephemeral; no new database or ledger.
 
@@ -88,8 +88,6 @@ specs/028-skill-graph-architecture/
 AGENTS.md                              # canonical direct routing and global invariants
 CONTEXT.md                             # existing domain terms; change only if implementation clarifies a term
 docs/agents/
-├── hybrid-sdd.md                     # substantial cross-capability composition
-├── skill-design-dispatch.md          # designated-writer procedure; unchanged unless evidence requires
 ├── wiki-maintenance-loop.md          # health/lint maintenance composition
 └── policy-owners.yml                 # counterpart discovery; change only if ownership changes
 
@@ -115,16 +113,15 @@ rules/ and styles/                      # change only if validation behavior cha
 tests/                                  # targeted public-seam tests only for runtime contract changes
 ```
 
-**Structure Decision**: This is an authority and behavior refactor over existing files, not a new module. The live root routing tables define the named capability inventory. Implementation changes only owners whose boundary or duplicate procedure requires correction; every named capability still receives evaluation coverage. Design-impact skill changes follow `docs/agents/skill-design-dispatch.md` with a designated writer. Generated adapters remain untouched.
+**Structure Decision**: This is an authority and behavior refactor over existing files, not a new module. The live root routing tables define the named capability inventory. Implementation changes only owners whose boundary or duplicate procedure requires correction; every named capability still receives evaluation coverage. Generated adapters remain untouched.
 
 ## Ownership and Active Writers
 
 | Artifact group | Canonical owner | Active writer | Order |
 |---|---|---|---|
-| Global intent routing and invariants | `AGENTS.md` | Session agent (`class: not`) | First; establishes pointers |
-| Cross-capability substantial-work contract | `docs/agents/hybrid-sdd.md` | Session agent (`class: not`) | After root authority |
-| Wiki semantics/output rules | `wiki/AGENTS.md` | Session agent (`class: not`) | After root/docs authority; serial shared policy surface |
-| Owner skill boundary/craft text | Each `.agents/skills/<owner>/SKILL.md` | Designated writer for design-impact batches; session agent only for established small edits | After authority; disjoint skill files may be parallel |
+| Global intent routing and invariants | `AGENTS.md` | Session agent | First; establishes pointers |
+| Wiki semantics/output rules | `wiki/AGENTS.md` | Session agent | After root/docs authority; serial shared policy surface |
+| Owner skill boundary/craft text | Each `.agents/skills/<owner>/SKILL.md` | Session agent | After authority; disjoint skill files may be parallel |
 | Owner cold evaluations | Each owner `evals/evals.json` or existing skill-creator workspace | Same writer as the paired skill/eval slice | Paired with owner change; aggregate after all |
 | Beat route contract | `specs/017.../beat-skill-routing.md` | Session agent | Only after a demonstrated beat route change |
 | Observation behavior | 027 contract + `scripts/wiki`/`tools/wiki_ops` | Existing runtime owner | Expected unchanged; serial if evidence requires change |
@@ -137,8 +134,8 @@ Shared files have one writer and execute serially. Disjoint skill files may be d
 ## Dependency Waves
 
 1. **Accountability**: link/create the implementation issue; inventory the live root-routed capability set and policy counterparts.
-2. **Authority**: update root routing/invariants, then `hybrid-sdd.md`, then wiki semantic pointers. Do not prune safeguards before replacement pointers exist.
-3. **Capability boundaries**: update owner skills in disjoint design-impact batches. Preserve specialized craft and local subtype seams.
+2. **Authority**: update root routing/invariants, then wiki semantic pointers. Do not prune safeguards before replacement pointers exist.
+3. **Capability boundaries**: update owner skills in disjoint batches. Preserve specialized craft and local subtype seams.
 4. **Workflow reconciliation**: normalize read/write/ingest/maintenance feedback; remove query/log read ambiguity; make health the action-order owner.
 5. **Counterpart synchronization**: update only governing templates/contracts/rules and their tests if waves 2–4 changed artifact validity or validation behavior.
 6. **Cold evaluation**: run focused weakest-model scenarios and named-failure coverage; correct owners, not symptoms.
@@ -169,7 +166,7 @@ canon state, filing, and measured/estimated/inferred context results in
 
 ## Context Boundaries
 
-**context_used**: `spec.md`; constitution v3.1.0; root routing/context; `CONTEXT.md`; hybrid SDD; skill design dispatch; writing-for-agents; representative owner skills; wiki CLI contract; existing skill-creator evaluation patterns; policy-owner map.
+**context_used**: `spec.md`; constitution v3.1.0; root routing/context; `CONTEXT.md`, writing-for-agents; representative owner skills; wiki CLI contract; existing skill-creator evaluation patterns; policy-owner map.
 
 **context_omitted**: campaign entity/session bodies, unrelated skill craft bodies, full wiki index/log/manifest, generated Spec Kit adapters, and CLI implementation internals unless evaluation exposes a runtime contract defect.
 

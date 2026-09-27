@@ -13,7 +13,6 @@ description: "Task list for Self-Improving Co-DM"
 
 **Organization**: Tasks are grouped by user story so each story can be implemented and validated independently.
 
-**Writer**: Edits to `.agents/skills/session-wrapup/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent writes `AGENTS.md`, `docs/agents/work.md`, `errors.md`, `scripts/error-ledger.py`, `wiki/templates/{encounter,rules,campaign-state,dm-intelligence}.md`, `wiki/AGENTS.md` layout rows, and the current-skill cleanup. No new skill. No new campaign `type`. No layout-kind frontmatter.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -42,7 +41,6 @@ description: "Task list for Self-Improving Co-DM"
 
 - [X] T001 Review the Work gate and wiki-fact accept path in `docs/agents/work.md` and the Campaign Co-DM pointer in `AGENTS.md` against `specs/001-agentic-co-dm/` so 019 does not duplicate 001
 - [X] T002 [P] Review `specs/019-self-improving-codm/contracts/self-improving-codm.md` and `specs/019-self-improving-codm/data-model.md` (table aim, sitting, error entry, helper, layout kind, layout move, reflection)
-- [X] T003 [P] Review `docs/agents/skill-design-dispatch.md` for the wrapup design-impact edit; 012 does not gate reflection chat
 
 ---
 
@@ -102,7 +100,7 @@ description: "Task list for Self-Improving Co-DM"
 ### Implementation for User Story 3
 
 - [X] T014 [US3] In `docs/agents/work.md`: after wrapup, offer a reflection; after prep, offer a reflection only if the DM asks; do not run reflection or improvement during a session (FR-008, FR-009, FR-014)
-- [X] T015 [P] [US3] Dispatch the designated writer per `docs/agents/skill-design-dispatch.md` to add a required chat reflection step in `.agents/skills/session-wrapup/SKILL.md`: `observation` is "At least one concrete note about these players"; `next_change` optional; status `offered` → `accepted` | `edited` | `rejected`; "reject leaves wiki facts and campaign-facing practice unchanged"; instruct the writer to follow `.agents/skills/writing-for-agents`; do not run 012 blind-eval on reflection chat; session agent does not write that file
+- [X] T015 [P] [US3] Add a required chat reflection step in `.agents/skills/session-wrapup/SKILL.md`: `observation` is "At least one concrete note about these players"; `next_change` optional; status `offered` → `accepted` | `edited` | `rejected`; "reject leaves wiki facts and campaign-facing practice unchanged"; instruct the writer to follow `.agents/skills/writing-for-agents`; do not run 012 blind-eval on reflection chat; session agent does not write that file
 - [X] T016 [US3] In `docs/agents/work.md`: accepted reflection that needs a campaign fact change becomes a canon proposal and still waits for accept; accepted campaign-facing practice change becomes an improvement proposal and still waits for accept; later sittings of that kind of job follow the accepted change (FR-010–FR-013)
 
 **Checkpoint**: Wrapup always offers inspectable reflection Work; wiki facts and campaign-facing practice change only after accept.
@@ -225,7 +223,7 @@ T009 In docs/agents/work.md: file players + intent on the campaign hub under Cam
 
 ```text
 T014 In docs/agents/work.md: wrapup reflection required; prep only if asked
-T015 Dispatch designated writer for .agents/skills/session-wrapup/SKILL.md reflection step
+T015 Add .agents/skills/session-wrapup/SKILL.md reflection step
 ```
 
 ## Parallel Example: User Story 4
@@ -262,18 +260,12 @@ T033 wiki/templates/dm-intelligence.md type work
 1. Setup + Foundational → helper and no-new-skill pointer ready
 2. Add US1 → shared aim on hub (MVP)
 3. Add US2 → gaps do not stall
-4. Add US3 → wrapup reflection as Work (designated writer)
+4. Add US3 → wrapup reflection as Work
 5. Add US4 → sitting records and helpers
 6. Add US5 → ledger fill/drain
 7. Add US6 → layout kinds (wiki vs agent-facing) and four wiki templates
 8. Polish → fixture check covering quickstart 1–10
 
-### Dispatch
-
-- T015: designated writer only. Session agent writes the scoped prompt, leaves `.agents/skills/session-wrapup/SKILL.md` unmodified, then invokes `claude -p --model claude-opus-4-6 --effort medium` per `docs/agents/skill-design-dispatch.md`.
-- T030–T035: session agent. Follow writing-for-agents (D&D content guidance) for the four templates. 012 still binds.
-- All other tasks: session agent.
-- On usage-limit wait: leave T015 incomplete on this file with a retry time; complete independent tasks; do not write the wrapup skill in-session unless both designated writers are usage-limited.
 
 ---
 
@@ -295,4 +287,4 @@ T033 wiki/templates/dm-intelligence.md type work
 
 - [X] T039 Remove `scripts/after-write` and every reference to it from maintained skills and skill evaluations; retain current filing and check guidance (FR-049).
 - [X] T040 Run a repository-wide reference scan and the feature fixture check, confirming no maintained skill or evaluation retains the removed command and all existing scenarios still pass (SC-031).
-- [ ] T041 Dispatch the designated writer to reconcile explicit imperative wiki-file requests with the Work acceptance gate in `docs/agents/work.md` and the maintained prose skills; Claude usage-limit wait recorded 2026-09-13, retry at 16:10 America/Vancouver.
+- [ ] T041 Reconcile explicit imperative wiki-file requests with the Work acceptance gate in `docs/agents/work.md` and the maintained prose skills.

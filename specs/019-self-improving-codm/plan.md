@@ -8,7 +8,7 @@
 
 Close the Co-DM improvement loop around 001: shared table aim, no stall on gaps, wrapup reflection with DM-gated campaign changes, and agent-owned efficiency (token cost, helpers, `errors.md` fill/drain, file/folder layout including llm-wiki). Maintained skills contain only current, factual, actionable procedures; absent legacy commands are removed rather than preserved.
 
-No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapup skill add for the required reflection (design-impact). One agent-shaped helper for the repeating error-ledger job. Sitting cost is recorded as what was loaded and finished, not a tokenizer. Layout kinds are lookup grouping only: wiki Encounters, Rules, Campaign State, DM Intelligence; agent-facing System, Source Material. Existing campaign `type` stays. Table aim stays on the campaign hub, grouped under Campaign State. Four wiki copy-start templates exist for those wiki layout kinds (`session-prep`, `lore`, `lore`, `work`). Existing pages in those groups are rewritten onto the templates when facts stay the same.
+No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapup skill add for the required reflection. One agent-shaped helper for the repeating error-ledger job. Sitting cost is recorded as what was loaded and finished, not a tokenizer. Layout kinds are lookup grouping only: wiki Encounters, Rules, Campaign State, DM Intelligence; agent-facing System, Source Material. Existing campaign `type` stays. Table aim stays on the campaign hub, grouped under Campaign State. Four wiki copy-start templates exist for those wiki layout kinds (`session-prep`, `lore`, `lore`, `work`). Existing pages in those groups are rewritten onto the templates when facts stay the same.
 ## Technical Context
 
 **Language/Version**: Markdown standing instructions and skills executed by the host agent; Python 3 for one small CLI helper
@@ -45,7 +45,6 @@ No new skill. Standing rules in `AGENTS.md` and `docs/agents/work.md`. One wrapu
 | VIII. Safe automation runs unattended | Pass — no new human chore; ledger helper is agent-invoked. |
 | IX. Design trends toward token efficiency | Pass — this feature *is* IX. No new skill; point at 001/work.md instead of restating. |
 | X. Agents act autonomously by default | Pass — agents own token cost, helpers, ledger, layout, and structure-only template rewrites without waiting. |
-| XI. Designated writer bounded concurrency | Pass — `session-wrapup` reflection step is design-impact; implement dispatches one writer. `AGENTS.md` / `work.md` / `wiki/templates/` / `wiki/AGENTS.md` layout rows are session-agent. This plan does not write the wrapup skill. |
 | XII. Prompt other agents with objectives | Pass — implement uses a scoped prompt for the wrapup edit. |
 | XIII. Wiki media filenames distinguish kind | Pass — layout self-org does not drop kind-in-filename or reintroduce spaces. |
 | XIV. Use the simplest tool | Pass — one helper only where the job repeats and no command exists; otherwise Edit/Write. No wrapper around `qmd` or git. |
@@ -96,7 +95,6 @@ wiki/templates/dm-intelligence.md
 
 **Structure Decision**: Keep existing owners. Standing loop lives in `AGENTS.md` + `work.md`. Reflection is a required wrapup chat step, not a new skill. Error ledger is a repo-root Markdown file operated by one helper. Sitting records append beside it (same helper or a sibling command). Wiki layout self-org is a standing rule, not an ingest-engine rewrite. Layout kinds do not add frontmatter or a new `type`. The four wiki layout kinds get copy-start templates under `wiki/templates/` and layout-table rows in `wiki/AGENTS.md`. Existing pages in those groups are rewritten onto the templates when facts stay the same. Maintained skills are the current operational source; remove absent legacy procedures and compatibility guidance instead of adding shims.
 
-Implementation of the wrapup skill edit is **design-impact**. The session agent writes these Spec Kit artifacts, `AGENTS.md`, `work.md`, `errors.md`, the helper, the four templates, and the `wiki/AGENTS.md` layout rows. The wrapup skill is unmodified until `/speckit.implement` dispatches the designated writer.
 
 ## Complexity Tracking
 

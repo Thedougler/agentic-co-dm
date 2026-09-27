@@ -30,8 +30,6 @@
 
 ## Classification and Scope
 
-- **work_class**: `agent-system`
-- **route**: `full-sdd`
 - **Objective**: Normal owner work repairs the source of any friction it meets, proves the repair with the one existing evaluation path, and resumes the original task, so the repository gets easier for the next agent without a separate self-improvement system.
 - **User value**: The DM gets finished Work with fewer stalls, fewer repeated failures, and shorter trajectories; maintainers get one evaluator, one error surface, and commands that do their own bookkeeping.
 - **In scope**: The 20 sections of the request, reduced to one runtime loop, one ownership model, one friction rule, one error surface (`errors.md`), one evaluation system (`scripts/luna-eval` shared with `skill-creator`), one promotion rule, the three-rule wiki canon replacing page lifecycle, promotion, and confidence (FR-047), and fixes to the named existing commands, checkers, Vale configuration, and eval corpus.
@@ -42,7 +40,7 @@
 
 | Request names | Real path / state on `main` (2026-09-24) |
 |---|---|
-| Capability loop | `AGENTS.md` "Capability loop" (line 72) and "Capability execution contract"; full rule in `docs/agents/hybrid-sdd.md`; formalized by `specs/029-agent-loop-closure/spec.md` FR-001 |
+| Capability loop | `AGENTS.md` "Capability loop" (line 72) and "Capability execution contract"; formalized by `specs/029-agent-loop-closure/spec.md` FR-001 |
 | Owners | `.agents/skills/place-design/`, `faction-design/`, `session-beats/`, `run-guide/`, `wiki-query/`, `wiki-lint/` (all present, each with `evals/evals.json`) |
 | `scripts/luna-eval` | Present; reads `<skill>/evals/evals.json` fields `id`, `prompt`, `files`, `outputs`, `context`, `subject_skill`; writes `<out>/<name>/<config>/run-<n>/{outputs/, events.jsonl, final.txt, timing.json}` |
 | `skill-creator` | `.agents/skills/skill-creator/`; its `scripts/run-eval.py` expects `{"query", "should_trigger"}` entries and `references/schemas.md` uses `expectations[]` — incompatible with the repo corpus (open ledger entry e-210) |

@@ -42,13 +42,6 @@
 
 **Alternatives considered**: Routing only in skill descriptions (misses sessions that do not match). Duplicate table in `.omp/AGENTS.md` (Constitution IX). New `docs/agents/session-beats.md` procedure file (extra hop).
 
-## Decision: Claude Code only for novel or major skill work
-
-**Rationale**: FR-025 / constitution XI. New type skills, `spell-design`, and a `session-beats` or `vehicle-design` redesign are Claude Code jobs (`claude-opus-4-6 --effort medium`, minimal prompt). Session agent lands `AGENTS.md`, wiki templates, `wiki/AGENTS.md` Layout, pointer retargets, and Spec Kit pattern tweaks. Conserve Claude Code.
-
-This re-plan: filling the session-plan draft (instead of the Session 11-00 spine) is a `session-beats` redesign → designated writer. Type-skill "copy this template / fill these jobs" pointers and the `run-guide` "do not rewrite into Session 11" line are small established-file edits → session agent.
-
-**Alternatives considered**: Dispatch every standing-load edit (wastes quota). Session agent drafts new skills (016 fail for novel design). `opus` alias / `--effort high` (superseded).
 
 ## Decision: Quickstart observes routing, not file internals
 
@@ -68,19 +61,7 @@ This re-plan: filling the session-plan draft (instead of the Session 11-00 spine
 
 **Alternatives considered**: Keep “leave HP/speed blank” as a standing ban (contradicts the template). Extra exception lists instead of jobs.
 
-## Decision: Usage limit defers only the Claude job; Codex is a gated fallback; session-agent last-resort follows constitution XI
 
-**Rationale**: FR-026 / SC-016 / constitution 1.11.0. Restore Claude targets, record retry time on the feature `tasks.md`, complete remaining tasks that do not depend on that job. Completing other work MUST carry those deferred tasks forward. If every remaining open task is blocked, no other work can be done, and the retry time on the blocked task is more than one hour away, the session agent MAY invoke the Codex CLI at ChatGPT 5.5 medium with the same tightly scoped prompt. Re-check those gates before each remaining blocked skill job; prefer Claude Code if it is usable again.
-
-Named conflict: FR-026 says the session agent MUST NOT write the design-impact change itself. Constitution XI (Last Amended 2026-09-12) allows session-agent write when both Claude Code and Codex are usage-limited. Constitution wins for operating constraints. `docs/agents/skill-design-dispatch.md` already records that last-resort path.
-
-**Alternatives considered**: Halt the whole implement (leaves independent wiki/AGENTS.md work undone). Session agent writes the novel skill on first usage-limit (016 fail). Park usage limits as GitHub issues (owner rejected; Spec Kit `tasks.md` is the tracker). Always switch to Codex on first usage-limit (skips Claude when it returns inside the hour). Ignore constitution XI last-resort (operating-constraint miss).
-
-## Decision: Claude Code skill updates use a minimal prompt and Opus 4.6 medium
-
-**Rationale**: FR-025. When Claude Code runs, default model is `claude-opus-4-6` at `--effort medium`. Prompt names deliverables and a completion test.
-
-**Alternatives considered**: `--effort high` (superseded). `opus` alias (default Opus). Long pasted spec/plan in the writer prompt (IX).
 
 ## Decision: Add faction, lore, quest, city, and region wiki kinds
 

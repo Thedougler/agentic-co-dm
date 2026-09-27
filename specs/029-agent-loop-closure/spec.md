@@ -10,8 +10,6 @@
 
 ## Classification and Scope
 
-- **work_class**: `agent-system`
-- **route**: `full-sdd`
 - **Objective**: Ensure every repeated owner-capability iteration begins from a fresh observation, advances owner-relative evidence or state, and terminates at the owner's completion guard or a specific blocker.
 - **User value**: The DM receives complete, validated Work without wasted loops, lost objectives, read-route mutation, duplicate finalization, or false completion.
 - **In scope**: Completion-guard coherence; baseline and replay trajectories; common capability-loop semantics; deterministic progress evidence where an existing operation already owns both observations; convergence behavior for the named query, context-pack, lint, ingest, capture, update, session-planning, place, and run-guide owners; trajectory-focused evaluation; paired promotion evidence.
@@ -244,9 +242,9 @@ As a project owner, I want baseline and replay evidence for the same representat
 
 ## Dependencies and Authoritative Context
 
-- **context_used**: User-provided 029 direction; project constitution v3.1.0; root agent context; `CONTEXT.md`; hybrid SDD contract; feature 028 specification and established capability-boundary model; current extension configuration and specification template.
+- **context_used**: User-provided 029 direction; project constitution v3.1.0; root agent context; `CONTEXT.md`, feature 028 specification and established capability-boundary model; current extension configuration and specification template.
 - **context_omitted**: Campaign entity pages, session prose, unrelated skill bodies, unrelated templates, and full historical error-ledger content because this specification governs agent-system convergence rather than campaign canon or a general cleanup.
-- **Canonical owners**: Hybrid SDD capability-composition authority for common loop semantics; root agent context for the compact invariant and routing pointer; wiki agent context for wiki semantics; individual owner guidance for owner-relative observation, progress, and Done; existing CLI contracts for deterministic observation results; existing evaluation and efficiency infrastructure for trajectory evidence.
+- **Canonical owners**: Root agent context for the compact invariant and routing pointer; wiki agent context for wiki semantics; individual owner guidance for owner-relative observation, progress, and Done; existing CLI contracts for deterministic observation results; existing evaluation and efficiency infrastructure for trajectory evidence.
 - **Dependencies**: Accepted feature 028 behavior; current scoped query, lint, health, ingest, capture, update, session planning, place, and run-guide owner contracts; an accountable issue before implementation.
 
 ## Named Failure Modes and Evidence

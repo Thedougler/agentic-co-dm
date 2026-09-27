@@ -13,7 +13,6 @@ description: "Task list for Complete Ingest Context"
 
 **Organization**: Tasks are grouped by user story so each story can be implemented and validated independently.
 
-**Writer**: Edits to `.agents/skills/wiki-ingest/SKILL.md` are design-impact. `/speckit.implement` dispatches the designated writer with a scoped prompt (outcome, files, bounds, job) and `writing-for-agents`. Session agent does not write that file. Fixture and spec-artifact tasks are not design-impact.
 
 ## Format: `[ID] [P?] [Story] Description`
 
@@ -186,7 +185,6 @@ T005 Review specs/018-complete-ingest-context/contracts/complete-ingest-context.
 
 ### Dispatch
 
-Skill tasks T006–T021: designated writer only. Fixture T024 and artifact T022/T023: session agent.
 
 ---
 
