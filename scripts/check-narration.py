@@ -21,6 +21,11 @@ import re
 import sys
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser
+
 COLORS = (r"(?:gr[ae]y|black|white|green|brown|orange|red|blue|gold|golden|amber|silver|"
           r"pink|yellow|purple|violet|tawny|russet|crimson|scarlet|copper|bronze|teal|turquoise)")
 NUMBER = (r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|fifteen|"
@@ -92,7 +97,7 @@ def check(body: str, sources: list) -> list:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = AgentParser(description=__doc__, example="python3 scripts/check-narration.py output.md")
     ap.add_argument("paths", nargs="+", type=Path, help="files or directories (every .md inside)")
     ap.add_argument("--source", action="append", default=[], help="page or old block to check copying against")
     a = ap.parse_args()

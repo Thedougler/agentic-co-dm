@@ -220,6 +220,14 @@ Reader is `agent` | `DM` | `players`. Unknown reader → `DM`. Vault is `true` i
 | Working with visual references for a depiction | visual-references |
 | Producing (attach, ground, generate, promote, place) a visual aid | visual-aids |
 
+### Verbatim examples
+
+When research into prose or language technique uses an example from the web, copy that example **verbatim**. The expert's wording is the technique. The agent's sentences around it carry the point, the use, and the citation.
+
+An example rewritten in the agent's words is not evidence. It discards the technique. File the source's words, or leave the example out.
+
+**Done when:** every example in the note is the source's words, and none is the agent's.
+
 ## Capability execution contract
 
 Root routing selects the existing owner capability directly from intent or

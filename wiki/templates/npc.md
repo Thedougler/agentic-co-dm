@@ -14,15 +14,12 @@ role: ""
 location: ""
 faction: ""
 summary: ""
+token: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when you have facts for it; delete unused sections, glance bullets, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: what this person is about at the table. Then labelled facts, one bullet each. -->
@@ -32,15 +29,9 @@ flexGrow=2
 - **Wants.** The concrete thing they are after now.
 - **Home.** [[place]]
 - **Allegiance.** [[faction]]
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe portrait: build and age, two or three face details the players can repeat, clothing and gear, one sound or smell, what their hands do at rest, a visible tell for each secret. -->
-```
-````
+> <!-- One third-person paragraph, true every time they are met: build and age, two or three face details the players can repeat, clothing and gear, one sound or smell, what their hands do at rest, a visible tell for each secret (theatre-of-the-mind: Person portrait). -->
 
 ## At the Table
 
@@ -55,7 +46,7 @@ flexGrow=1
 - **Lines.** "The ask." · "The refusal." · "Under pressure."
 
 > [!narration] First meeting
-> <!-- Optional: the moment the party meets them, from theatre-of-the-mind (NPC first look and Dialogue recipes), "you" address: what they are doing, then their first words. -->
+> <!-- Optional: the moment the party first meets them, "you" address, what they are doing, then their first words (theatre-of-the-mind: NPC first look, Dialogue). -->
 
 ## Statblock
 
@@ -77,4 +68,3 @@ flexGrow=1
 
 - **[[Session]]** — what changed for them.
 
-## Art

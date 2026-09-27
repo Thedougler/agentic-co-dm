@@ -1,15 +1,13 @@
 <!--
 Sync Impact Report
-- Version change: 7.1.0 -> 8.0.0 (MAJOR: IV redefined)
-- Modified principles:
-  - IV. Behavioral Tests -> IV. Tests Cover the Linter; Evals Cover Skills. Code tests exist only
-    for the wiki lint system; skills and agent instructions are validated by skill evals; the
-    mandatory failing-test-first rule for every change is removed (Nick, 2026-09-26).
-- Added sections: none
-- Removed sections: none (the 7.1.0 Sync Impact Report is replaced; git holds amendment history)
-- Templates requiring updates: none (the tasks template already marks tests optional)
-- Follow-up: AGENTS.md friction rule proves fixes by rerunning what failed; tests/ pruned to the
-  lint system; the tdd skill is scoped to wiki lint code.
+- Version change: 8.0.0 -> 8.1.0 (MINOR: add XXVII)
+- Modified principles: none
+- Added sections:
+  - XXVII. Vault Notes Place Facts by Reader
+- Removed sections: none (the 8.0.0 Sync Impact Report is replaced; git holds amendment history)
+- Follow-up: campaign page templates in wiki/templates/ (not Spec Kit templates) must
+  standardize agent-only frontmatter; wiki lint line numbers on single-file lint is
+  implementation, not this amendment.
 -->
 
 # Agentic Co-DM Constitution
@@ -41,6 +39,7 @@ MAY land work but MUST NOT replace the issue as source of scope and ownership.
 System changes MUST have a specification with independently testable acceptance before
 implementation, connecting the change to an observable D&D improvement. Specs describe outcomes
 and constraints, not creative method. Campaign Work follows its owner skill.
+
 Filing a new named campaign page is Campaign Work: load and complete the
 owner skill for that kind before the page is filed.
 
@@ -258,6 +257,17 @@ capability or context. The `skill-creator` workflow MUST be used only when modif
 agent-facing or project changes MUST use their applicable workflow. This isolates instruction
 quality from model strength and keeps workflow selection bounded.
 
+### XXVII. Vault Notes Place Facts by Reader
+
+Every campaign vault note in `wiki/` places each fact by who needs it.
+
+The markdown body holds facts the DM uses at the table, and facts both the DM and preparing
+agents need. YAML frontmatter holds facts that exist only so agents can query, route, or
+validate. Page templates in `wiki/templates/` MUST name and standardize those agent-only fields.
+MUST NOT put a DM-needed fact only in frontmatter. MUST NOT put agent-only machinery in the body.
+Identity fields already required by llm-wiki (`title`, `category`, `tags`, `sources`, `created`,
+`updated`, and `type` where the page has it) stay in frontmatter.
+
 ## Operating Boundaries
 
 - The Co-DM works in prep and wrapup; the DM is sole runtime at the table.
@@ -285,4 +295,4 @@ Versioning: MAJOR (remove/redefine principle), MINOR (add principle/section), PA
 Compliance reviews check proposed work against this constitution before merge. Project context:
 `AGENTS.md`. Harness behavior: `.omp/AGENTS.md`, `CODEX.md`, `CLAUDE.md`, `GROK.md`.
 
-**Version**: 8.0.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-26
+**Version**: 8.1.0 | **Ratified**: 2026-09-11 | **Last Amended**: 2026-09-26

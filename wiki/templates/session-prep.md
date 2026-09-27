@@ -13,7 +13,7 @@ visibility: dm
 status: ready
 summary: ""
 ---
-<!-- Run-guide cockpit for one live slice; field rules live in run-guide references/lean-surface.md. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections, bullets, rows, narration slots, and these comments. -->
+<!-- Run-guide cockpit for one live slice; field rules live in run-guide references/lean-surface.md. New beats and plans copy hook, development, cliffhanger, climax, resolution, or session-plan instead. Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this slice spends it; delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -29,10 +29,10 @@ summary: ""
 - **Next.** [[Session-N-BB-label]]
 
 > [!narration] Previously
-> <!-- On the session's first beat only: the recap read aloud as play starts, from theatre-of-the-mind (Recap mode). -->
+> <!-- First beat of the session only: last session read aloud as play starts, one short paragraph ending on tonight's opening situation (theatre-of-the-mind: Recap, read aloud). -->
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (situated moment): "you" address, present tense, one sense beyond sight, ending on the moment they react. -->
+> <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: the beat type's opening). -->
 
 ````col
 ```col-md
@@ -48,7 +48,7 @@ flexGrow=2
 ===
 ## Actors
 
-**[[creature]] × 3.** The compact numbers the DM rolls this slice: AC, HP, one attack or save DC, the bloodied or break rule.
+**[[creature]] × 3.** HP or resources when not full, and the bloodied or break rule this slice; the statblock is in Roster.
 ```
 ````
 
@@ -62,11 +62,15 @@ flexGrow=2
 
 ## Stage
 
+<!-- Narration cells: a line or two in `_italic_` per place, the feature a player would act on there (theatre-of-the-mind: Zone cell). -->
+
 | Place | Distance | Cover | Narration |
 | ----- | -------- | ----- | --------- |
 |       |          |       | _…_       |
 
 ## Pressure
+
+<!-- Narration cells: a line or two in `_italic_` per tick of what the party sees and hears change (theatre-of-the-mind: Tick cell). -->
 
 | Tick | What happens | Narration |
 | ---- | ------------ | --------- |
@@ -85,7 +89,7 @@ flexGrow=2
 <!-- Required. The changed situation and the beat each likely option hands to. -->
 
 > [!narration] Outcomes
-> <!-- The changed situation in "you" address, present tense. -->
+> <!-- The ending true for every option, a few sentences; an ending for one option goes in its table row (theatre-of-the-mind: Outcomes). -->
 
 | If | Next | Narration |
 | -- | ---- | --------- |
@@ -96,10 +100,9 @@ flexGrow=2
 ![[creature#Statblock]]
 
 > [!narration] {Creature}
-> <!-- This creature as it appears in this slice, from theatre-of-the-mind (Creature in scene recipe). One after each embed, titled with its name. -->
+> <!-- One after each Roster embed, titled with its name: a few sentences; its response to the party stays in Actors (theatre-of-the-mind: Creature in scene). -->
 
 ## Backup
 
 [[owner]] · [[next beat]]
 
-## Battlemap

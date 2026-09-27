@@ -11,15 +11,19 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import sys
 from pathlib import Path
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, usage_error
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = AgentParser(description=__doc__, example="./scripts/check-policy-conflicts")
     parser.add_argument("--registry", default=str(ROOT / "docs/agents/policy-owners.yml"))
     parser.add_argument("--root", default=str(ROOT))
     parser.add_argument("--json", action="store_true")
@@ -46,8 +50,12 @@ def main(argv: list[str] | None = None) -> int:
                     conflicts.append({"policy": name, "owner": str(policy.get("owner")), "consumer": consumer_name, "reason": "owner_not_found"})
         payload = {"status": "conflicts" if conflicts else "clean", "policies": len(policies), "conflicts": conflicts}
     except (OSError, yaml.YAMLError, AttributeError) as exc:
-        print(json.dumps({"status": "error", "error": str(exc)}))
-        return 2
+        return usage_error(
+            str(exc),
+            hint="run check-policy-conflicts --help",
+            example="./scripts/check-policy-conflicts",
+            list_valid="./scripts/check-policy-conflicts --help",
+        )
     print(json.dumps(payload, indent=2, sort_keys=True) if args.json else json.dumps(payload, indent=2, sort_keys=True))
     return 1 if conflicts else 0
 

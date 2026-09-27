@@ -17,7 +17,7 @@ era: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. One page answers one durable question about the world. After At a Glance, shape the body to fit the lore: a history gets a chronology, a custom gets its procedure, a legend gets its tale, a doctrine gets its tenets. Keep a shared section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. A subject with a statblock or a persona is a creature or NPC page, not lore.
-kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy -->
+kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, prophecy. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -34,7 +34,7 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 <!-- Free-form. The lore itself, in one or more `##` sections named for what they hold: The Tale, Chronology, The Rite, Tenets, How It Works. Use as many as the lore needs and `###` for their parts. State the truth plainly, with its limits and exceptions; the DM page carries the answer to every mystery. -->
 
 > [!narration] Common telling
-> <!-- Optional: the version people in the world say aloud, as the DM would read it. -->
+> <!-- Optional: the version people in the world say aloud, a short paragraph in a teller's voice (theatre-of-the-mind: Handout). -->
 
 ## At the Table
 
@@ -49,7 +49,7 @@ kind examples: fact, history, belief, legend, doctrine, custom, law, cosmology, 
 - [ ] **Clue.** [[place]] — what can be found there.
 
 > [!narration] Found text
-> <!-- Optional: the words of an inscription, letter, song, or book the party can read or hear, verbatim, from theatre-of-the-mind (Handout recipe). One block per text, titled with what it is. -->
+> <!-- Optional, one per text, titled with what it is: the words of an inscription, letter, song, or book, verbatim (theatre-of-the-mind: Handout). -->
 
 ## Accounts
 

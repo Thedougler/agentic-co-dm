@@ -65,13 +65,14 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    path fits rank-and-file: a standard statblock with this fiction).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the contest spends, applying the Cliffhanger craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set numbers and rulings.** `encounter-prep` sets the difficulty for the
    tier and the live party; `dnd5e-mechanics` sets every check, save, and DC.
-   Copy the opposition's compact numbers from its owner statblock onto the
-   page. Done when everyone who could fight carries numbers: from the owner
-   statblock, or a proposed standard 5e statblock filed on the owner.
+   Embed each opponent's owner statblock in `## Roster`
+   (`![[owner#Statblock]]`). Done when everyone who could fight has its
+   statblock embedded, from the owner or from a proposed standard 5e
+   statblock filed on the owner first.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`
    to its Cliffhanger opening recipe; one `{Creature}` block per creature
    kind the party faces, titled with its name; the `_italic_` Narration cells
@@ -96,8 +97,8 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
   the idol, cross the bridge, drag the prisoner to the boat. The opposition's
   goes in Actors as **Wants**. Reaching an
   objective, breaking off, surrendering, or escaping each end the contest.
-- **Opposition plays to win.** Every opposing side has its compact numbers
-  and a tactics line: opening move, how it adapts when the party counters,
+- **Opposition plays to win.** Every opposing side has its statblock in
+  Roster and one tactics line in Actors: opening move, how it adapts when the party counters,
   its break point, and its exit (retreat route, escape trick, surrender
   terms). With several factions present, each has its own objective and
   ignores the party unless the party gets in its way.

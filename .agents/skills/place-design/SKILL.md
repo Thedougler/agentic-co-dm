@@ -186,7 +186,7 @@ and links an NPC page.
 
 ### 6. Hand the look to theatre-of-the-mind
 
-The header `[!narration]` (titled with the place's name, beside At a Glance) is
+The `[!narration]` after At a Glance (titled with the place's name) is
 the players' first look and the surface that carries every tell. Build the **narration packet** as fragments, each with its
 source:
 

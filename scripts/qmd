@@ -1,1 +1,23 @@
-qmd-cli
+#!/usr/bin/env bash
+# Run the qmd CLI from PATH. This repo used to ship a broken qmd-cli symlink.
+set -euo pipefail
+usage() {
+  cat <<'EOF'
+Usage: ./scripts/qmd <qmd-args>
+
+Examples:
+  ./scripts/qmd status
+  ./scripts/qmd query "Hinewai" -c wiki
+  ./scripts/qmd get "qmd://entities/faction/the-passage.md:1:20" --format md
+EOF
+}
+if [[ "${1:-}" == "--help" || "${1:-}" == "-h" ]]; then
+  usage
+  exit 0
+fi
+if ! command -v qmd >/dev/null 2>&1; then
+  echo "refuse: qmd missing from PATH" >&2
+  echo "  ./scripts/qmd status" >&2
+  exit 2
+fi
+exec qmd "$@"

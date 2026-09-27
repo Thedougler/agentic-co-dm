@@ -1,18 +1,21 @@
 # Examples
 
 Finished narration at the quality bar. Match the **quality, shape, and
-length**; write your own words from your own facts. Names and places here are
-made up for illustration and are never canon.
+length**; write your own words from your own facts. Names and places in the
+invented examples are made up and are never canon.
 
 ## Contents
 
 - Beat openings: compact default, Hook, Hook resuming mid-scene, Development, Cliffhanger, Climax
 - Closing image
 - Beat slots: zone and tick cells, creature in scene, Outcomes
+- Immediate-fact bullets
 - NPC first look with dialogue
 - Outcome cells
 - Travel, handout (recap examples: [recaps.md](recaps.md))
 - Portraits: creature, place, item, hazard, faction
+- Published boxed text: a box, open on the thing, freeze-frame, declared action, still → moving, unstated, impressions, remote control, history as color
+- Line edits
 - Weak → strong pairs: stub, inventory, conclusions, generic filler, assigned feelings, slop, rules, resolved attack, useless facts
 
 ## Compact opening (the default shape)
@@ -86,6 +89,18 @@ image is quiet and clear.
 
 > The column of light collapses into the reliquary with a sound like a door slamming a long way off. The rain keeps falling, ordinary and cold, and above the temple the clouds pull apart and drift east.
 
+## Immediate-fact bullets
+
+> - Water stands shin-deep across the whole pump room, black and still, with a skin of rust floating on it.
+> - A great iron wheel fills the far wall, taller than two people, its spokes furred with rust and one snapped clean off.
+> - Stone stairs climb out of the water beside the wheel to a door with no handle.
+> - Something under the water knocks against the wheel, slow and even, like a boot against a door.
+
+Why it works: each bullet is one sentence the DM can read or paraphrase, and
+each holds whichever door the party uses: routes hang on the wheel rather
+than on left and right, and no bullet assumes a light, a pace, or a step.
+The knocking is last, so reading straight down stops on the pressure.
+
 ## NPC first look with dialogue
 
 > The moneychanger is a gnome standing on an upturned crate to see over her own counter, and she is weighing silver on a brass scale with tweezers. She does not look up. "If you're selling, it goes on the scale," she says. "If you're buying, you're standing in my light."
@@ -140,6 +155,103 @@ player acts on.
 **Faction:**
 
 > The Lantern Keepers walk the city after dark in pairs, in long gray coats, each with a brass lantern hung from a pole over one shoulder. They carry no weapons anyone can see, only a small bell at the belt that they ring once at every corner. Shopkeepers leave a coin in a tin cup on the doorstep for them, and the Keepers take it without a word and press a thumbprint of soot onto the doorframe. Children trail them for a street or two and then run home. Most people just call them the Grays.
+
+## Published boxed text
+
+Published read-aloud text, quoted word for word. Each shows one move; a filed
+block still follows this skill's person, clean-page, and number rules.
+
+**A box.** One paragraph: the situation, the anchor, and a threat that ends
+still approaching.
+
+> The carrion crows in the field shriek and take flight, blood decorating their beaks. Their feast is gruesome: at least 30 human bodies are strewn across the hillside, muddy from the downpour earlier in the day. Cresting the top of the hill, near the entrance to the secret base, spiders as big as horses scuttle toward you. They move like others of their kind, but at the end of each leg is a hand, all clenching and opening reflexively as the spiders approach.
+
+**Open on the thing.** The first states the scene; the second spends its
+first words on an entrance and a glance nobody declared.
+
+> The bloated corpse of a headless dragon dominates the center of a clearing
+
+Weak:
+
+> As you enter the clearing, you notice the bloated corpse of a headless dragon
+
+**Freeze-frame (weak).** Four events play before anyone can answer the
+first. Filed as blocks, the vines are the opening, and the ox, the cart, and
+the guards are each a later tick or outcome cell.
+
+> Grasping weeds and vines erupt from the cobblestone street beneath the carriage at the head of the parade. The ox pulling the cart panics, causing the vehicle to careen into a post covered in decorations. The vegetation then wraps around the cart’s wheels and the closest bystanders. A pair of revelers produce weapons, revealing themselves to be guards protecting the Prince of Vice.
+
+**Declared action.** "You" names only the gesture the player declared;
+the magic does the rest in the world.
+
+> You flick holy water from your fingers, and it scatters into sparkling light that drifts against the wind toward those you protect. The blessing you grant settles about their shoulders like golden cloaks before vanishing.
+
+**Still → moving.** The same person, caught doing something.
+
+> The half-orc has shoulder-length hair the shade of charcoal
+
+> The half-orc brushes a lock of their shoulder-length, charcoal hair behind their ear
+
+Motion, manner, and expression:
+
+> He moves with the easy grace of a dancer.
+
+> She stands with a straight-backed rigidity borne of years as a soldier.
+
+> She speaks rapidly yet eloquently, her words laden with a natural curiosity.
+
+**Leave it unstated.** One emotive action and a little detail; the table
+fills in the rest.
+
+> A portly man with a pencil-thin mustache sweating with the effort of moving his luggage up the gangplank.
+
+**Impressions and hanging questions.** A memory, comparison, impression,
+word choice, or obvious inference pinned to the thing, and the limit of what
+the characters know.
+
+> . . . thinking about an old friend.
+
+> . . . teeth far too long.
+
+> . . . a distinct and unmistakable sight.
+
+> As it is, ‘unicorn’ must do.
+
+> . . . two hip pouches, each no doubt filled with spell components.
+
+> You can’t quite place their accent . . .
+
+> Another day passes on horseback, but the mountains seem just as high on the horizon
+
+> Thundering trip hammers, each big enough for a giant to wield, pound in a regular beat, powered by unknown means.
+
+**Remote control (weak).** Each decides a feeling, a step, or a thought the
+player owns ([boundary.md](boundary.md) § First looks has the creature
+sentence that also decides the entrance).
+
+> You look upon the devastation of the valley and are overwhelmed by sadness.
+
+> You step forward and return the king’s greeting with a deep bow.
+
+> As you return to Waterdeep, you smile, thinking fondly of the ale at Trollskull Manor.
+
+> Just one excruciating moment more, and you’d beg all the gods for death, but just then it stops . . .
+
+**History as color.** A past nobody can learn in play, told as color.
+
+> Masses of coral rise from the sea, forming a chain of islands that peek above the waterline just enough to expose it to sunlight. Creatures roam these wisps of land—perhaps found nowhere else.
+
+> The half-sunken waterwheel peeks out of the mire, off its spokes beside this once prosperous mill […]
+
+## Line edits
+
+Each pair is a before and after.
+
+- **Finished verbs.** "bodies lie here and there" → "bodies were strewn about"; "people walk here and there" → "people strode along . . ."; "some monster left tracks here" → "a monster left tracks here."
+- **Active subjects.** "The city was protected by an order of brave knights" → "An order of brave knights protected the city" or "An order of brave knights protects the city."; "The orcs were fighting" → "the orcs fought"; "the clerics are speaking" → "the clerics speak."
+- **One picture per fact.** "if a character’s hair is braided, it is unlikely to also be tousled, nor can clothing be simultaneously skimpy and protect every inch of skin." / "a creature cannot be standing at attention with arms by their side while rummaging in a backpack." / "boots ‘crunching’ in slush." / "the mountains hide the horizon, but there’s also a blizzard obscuring the view." / "the sky is blue but there’s a blizzard blowing (assuming that it’s not a spell over the players)."
+- **Each word once (each snags).** "he looked down at the gate down below him." / "Birds were singing in every tree. You walk a few paces listening to the birds singing." / "the hauberk is too large, and sweat mottles the red cloth ringing the squire’s neck." / "the bells ring out in a town ringed by a stone wall."
+- **Drop "that".** "Historical fantasy can be set in a world that is similar to our own, with cultures that are similar to real-world cultural groups" → "Historical fantasy exists in a world like our own, with cultures similar to real-world cultural groups."
 
 ## Weak → strong
 

@@ -13,34 +13,25 @@ region: ""
 role: ""
 cr: ""
 summary: ""
+token: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, Connections, or Art only when you have facts for them. Delete unused sections, bullets, rows, narration slots, and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. The default page is At a Glance, narration, and Statblock. Add Tactics, Behavior, Secrets, or Connections only when you have facts for them. Delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: what this creature is for at the table. Then labelled facts, one bullet each. -->
 
 - **Habitat.** [[place]] or terrain where it lives.
 - **Treasure.** What it carries or guards.
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe look: size and shape, its strangest feature, one sound or smell, what it does at rest, a visible tell for each signature ability. -->
-```
-````
+> <!-- One third-person paragraph, true every time it is met: size and shape, its strangest feature, one sound or smell, what it does at rest, a visible tell for each signature ability (theatre-of-the-mind: Creature portrait). -->
 
 ## Statblock
 
-<!-- Required. At most one overview image directly above the fence: ![[{subject-slug}-overview.png|{{title}}]] -->
+<!-- Required. At most one overview image directly above the fence: `![[attachments/{subject-slug}-overview.ext|{{title}}]]` -->
 ```statblock
 layout: Basic 5e Layout
 name: "{{title}}"
@@ -74,7 +65,7 @@ actions:
 - **Morale.** When it flees or surrenders, and where it goes.
 
 > [!narration] In action
-> <!-- Optional: the creature mid-fight, from theatre-of-the-mind (Creature in scene recipe), "you" address: how it closes, strikes, and what each signature ability looks and sounds like when it lands. -->
+> <!-- Optional: the creature mid-fight, "you" address, a few sentences showing each signature ability as it lands (theatre-of-the-mind: Creature in scene, In action). -->
 
 ## Behavior
 
@@ -95,8 +86,3 @@ actions:
 
 - [[page]] — what this tie does at the table.
 
-## Art
-
-### Token
-
-![[{subject-slug}-token.png|{{title}} token]]

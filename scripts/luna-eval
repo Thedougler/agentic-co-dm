@@ -54,7 +54,7 @@ from datetime import datetime
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from tools.wiki_ops.cli import repo_root  # noqa: E402
+from tools.wiki_ops.cli import AgentParser, repo_root, usage_error  # noqa: E402
 
 REPO = repo_root(Path(__file__).resolve().parent)
 ASSERTION_TYPES = frozenset({
@@ -117,22 +117,26 @@ def load_eval(skill: Path, eval_id: str) -> dict:
     path = skill / "evals" / "evals.json"
     problems = validate_evals(path)
     if problems:
-        error = {"status": "error", "error": problems[0], "hint": "see data-model §2", "example": SCHEMA_EXAMPLE}
-        if len(problems) > 1:
-            error["problems"] = problems
-        print(json.dumps(error))
-        for problem in problems:
+        for problem in problems[1:]:
             print(problem, file=sys.stderr)
-        sys.exit(2)
+        raise SystemExit(usage_error(problems[0], hint="see data-model §2", example=SCHEMA_EXAMPLE, list_valid="scripts/luna-eval --help"))
     evals = json.loads(path.read_text())["evals"]
-    found = next((e for e in evals if str(e.get("id")) == eval_id), None)
+    found = next((e for e in evals if str(e.get("id")) == str(eval_id)), None)
     if found is None:
-        sys.exit(f"no eval '{eval_id}' in {path}")
+        raise SystemExit(usage_error(
+            f"no eval '{eval_id}' in {path}",
+            hint="pass an eval id from that skill's evals.json",
+            example=EXAMPLE,
+            list_valid="scripts/luna-eval --help",
+        ))
     missing = [f for f in found.get("files", []) if not (REPO / f).exists()]
     if missing:  # a stale input path wastes a whole run before it shows
-        print(json.dumps({"status": "error", "error": f"eval {eval_id}: input files missing: {missing}",
-                          "hint": f"fix the eval's files[] in {path.relative_to(REPO)}"}))
-        sys.exit(2)
+        raise SystemExit(usage_error(
+            f"eval {eval_id}: input files missing: {missing}",
+            hint=f"fix the eval's files[] in {path.relative_to(REPO)}",
+            example=EXAMPLE,
+            list_valid="scripts/luna-eval --help",
+        ))
     return found
 
 
@@ -257,20 +261,13 @@ def grade_skill_selected(assertions: list[dict], metrics: dict) -> list[dict]:
 EXAMPLE = "scripts/luna-eval --skill .agents/skills/place-design --eval 1 --out /tmp/pd/iteration-1"
 
 
-class _Parser(argparse.ArgumentParser):
-    """Report usage errors as the JSON error object (exit 2), plus the message on stderr."""
-
-    def error(self, message: str) -> None:  # type: ignore[override]
-        print(json.dumps({"status": "error", "error": message, "hint": "run scripts/luna-eval --help", "example": EXAMPLE}))
-        print(f"luna-eval: error: {message}", file=sys.stderr)
-        raise SystemExit(2)
 
 
 def main() -> int:
-    ap = _Parser(
+    ap = AgentParser(
         description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=f"Examples:\n  {EXAMPLE}\n  scripts/luna-eval --skill .agents/skills/place-design --eval 1 --config without_skill --no-skill --out /tmp/pd/iteration-1",
+        example=EXAMPLE,
     )
     src = ap.add_mutually_exclusive_group(required=True)
     src.add_argument("--eval", help="eval id in <skill>/evals/evals.json")

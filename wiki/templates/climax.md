@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Climax spends it at the table; keep Final Battle or Final Revelation for the shape in play. Delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Climax spends it at the table; keep Final Battle or Final Revelation for the shape in play. Delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -29,7 +29,7 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Climax opening recipe). -->
+> <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: Climax opening). -->
 
 ## Thread Harvest
 
@@ -39,20 +39,17 @@ summary: ""
 
 ## Actors
 
-- **[[npc]].** The primary opposition.
-  - **Numbers.** AC, HP, Speed, attacks, save DCs, legendary or lair actions.
-  - **Wants.** What they are trying to make true, and why now.
-  - **Leverage.** What they hold over the party or the stakes.
-  - **Plays.** Opening move → response when countered → desperation.
-  - **Line.** What they will not do, even to win.
-  - **Morale.** When they surrender, bargain, or flee, and where.
-- **[[creature]] × 4.** Role (henchman, minion, or hazard) and numbers.
+<!-- Statblocks live in Roster; each line here carries only this fight's state (HP when not full, spent resources) and what the actor does. Add Wants, Leverage, or Line only when it changes what they do at the table. -->
+
+- **[[npc]].** The primary opposition, at its HP and resources this fight.
+  - **Plays.** Opening move → response when countered → desperation → exit, and how the party can close the exit.
+- **[[creature]] × 4.** Role (henchman, minion, or hazard) and what they do.
 
 > [!narration] {NPC}
-> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
+> <!-- Optional, one per NPC, titled with their name, in the order the party meets them: their first look and first words (theatre-of-the-mind: NPC first look, Dialogue). -->
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
+> <!-- Optional, one per creature kind, titled with its name, in the order the party meets them: a few sentences; its response to the party stays in Actors (theatre-of-the-mind: Creature in scene). -->
 
 ````col
 ```col-md
@@ -90,6 +87,8 @@ flexGrow=1
 - **Win by.** The objective beyond dropping every enemy.
 - **Lose when.** The opposition gets what it wants.
 
+<!-- Narration cells: a line or two in `_italic_` per phase of what the party sees and hears change (theatre-of-the-mind: Tick cell). -->
+
 | Phase | Trigger | What changes | Narration |
 | ----- | ------- | ------------ | --------- |
 | 1     | Opening |              | _…_       |
@@ -102,7 +101,7 @@ flexGrow=1
 - **Wrong accusation.** What happens if the party names the wrong culprit.
 
 > [!narration] Revelation
-> <!-- The moment the truth lands, from theatre-of-the-mind (Revelation recipe): what the characters see or hear that makes it undeniable. -->
+> <!-- Only with Final Revelation: the moment the truth lands, one short paragraph (theatre-of-the-mind: Revelation). -->
 
 ## Spotlight
 
@@ -110,7 +109,7 @@ flexGrow=1
 
 ## Outcomes
 
-<!-- Required. One row per way the climax can end: what becomes true and the cost paid. -->
+<!-- Required. One row per way the climax can end: what becomes true and the cost paid. Narration cells: a line or two in `_italic_` that lets that ending land (theatre-of-the-mind: Outcome cell). -->
 
 | If the climax ends with… | What becomes true | Cost paid | Narration |
 | ------------------------ | ----------------- | --------- | --------- |
@@ -119,3 +118,9 @@ flexGrow=1
 | **Opposition wins**      |                   |           | _…_       |
 
 **Carry forward.** Who and what remains active, and each state the Resolution inherits.
+
+## Roster
+
+<!-- One embed per fighter kind the party could face, from its owner page. -->
+
+![[creature#Statblock]]

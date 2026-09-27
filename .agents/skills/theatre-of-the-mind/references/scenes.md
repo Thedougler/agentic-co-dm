@@ -10,14 +10,38 @@ Each recipe gives: **Job** (what the block must do), **Build** (what goes in),
 
 ## Contents
 
-- Handles, Layers, Spine (every situated block)
+- Box or bullets, Handles, Layers, Spine (every situated block)
 - Beat openings: Hook, Development, Cliffhanger, Climax, Resolution
 - Beat slots: zone cell, tick cell, outcome cell, creature in scene, Outcomes, Exit
-- People and things: NPC first look, dialogue, item in scene
+- People and things: NPC first look, dialogue, item in scene, declared action
 - Action: combat opening state
 - Moments: social scene, suspense, revelation, return to a known place
 - Movement: travel, transition, vehicle
 - Other: business, handout, vision (recaps: [recaps.md](recaps.md))
+
+## Box or bullets
+
+A **box** is the filed first look: one spoken paragraph, written when the
+first look is fixed at prep time. When the entrance, the light, or who is
+present can still change, file **immediate-fact bullets** instead
+(`SKILL.md` step 1). The convention:
+
+> Whenever the players’ characters enter a new area, the place is first described in bullet points.
+>
+> - *Bullet points written in italic type are details the characters are aware of as soon as they enter or get near the area. These bullet points can be read aloud or paraphrased.*
+> - (Bullet points contained in parentheses are hidden from the characters until they investigate further or overcome an obstacle.)
+
+In this vault the `[!narration]` callout already separates the two layers, so
+the callout holds only the aware-now bullets, and the parenthesized layer is
+the page's DM prose (Features, At the Table, Secrets, Actors, Checks).
+
+- **Build:** The situation or the danger first, then the anchor, then one
+  entry handle per bullet (routes, occupants, what can be grabbed), then the
+  sense. Each bullet is one complete speakable sentence in second person,
+  present tense, true however the party arrives: no "as you enter", no
+  light the party may not carry, no occupant play may have removed.
+- **End:** The pressure bullet last, so a DM who reads straight down stops on
+  it.
 
 ## Handles
 
@@ -84,7 +108,9 @@ is immediate, lead with it.
    standing still.
 6. **Live edge.** End on the pressure that demands a response: the arrival,
    the demand, the windup, the thing that just changed. The last image is the
-   one still ringing when the DM stops talking.
+   one still ringing when the DM stops talking. It is the first moment a
+   player would act, so every event after it belongs to a later block
+   (`SKILL.md` hard line 3, freeze-frame).
 
 ## Beat openings
 
@@ -155,7 +181,9 @@ what leads.
 ## Beat slots
 
 On beat pages and run-guide cockpits, these `[!narration]` slots together carry
-every handle, each in its layer (§ Layers):
+every handle, each in its layer (§ Layers). The template comment on each slot
+sets its purpose there, its shape, how many the page carries, and where it
+sits; this list names the recipe that sets its quality:
 
 - **Previously**: the session's first beat only; the recap read aloud as play
   starts ([recaps.md](recaps.md)).
@@ -206,7 +234,13 @@ every handle, each in its layer (§ Layers):
   moves, its dangerous parts, its scale against something familiar, and what
   it is doing right now, placed on the stage. Name its kind only when the
   characters would recognize it; let behavior show the threat. Use the owner
-  page and art for its look; the scene decides its pose.
+  page and art for its look; the scene decides its pose. When the party
+  comes upon it, "what it is doing" is what it does before it notices
+  anyone (feeding, circling, guarding the basin), and its response to being
+  seen, to a quiet entry, or to being scouted goes to the handle note for
+  the DM layer (Actors, Tactics, a Handles row). When it starts the scene
+  (an ambush, a charge already underway, the Hook's disturbance), its move
+  on the party is the windup.
 - **End:** The next thing it is about to do, before contact.
 
 ### Outcomes
@@ -242,7 +276,9 @@ every handle, each in its layer (§ Layers):
 ## Owner-page moments
 
 Owner pages carry optional situated slots below the header portrait, each
-"you" address and present tense, each from the recipe named here:
+"you" address and present tense. The template comment sets each slot's
+purpose, shape, count, and place on the page; the recipe named here sets its
+quality:
 
 - `In action` (creature) → Creature in scene, mid-fight: it closes and
   strikes, and each signature ability on the owner page lands as what the
@@ -250,12 +286,14 @@ Owner pages carry optional situated slots below the header portrait, each
   not before contact.
 - `First meeting` (npc) → NPC first look, then Dialogue for the first words.
 - `When met` (faction) → Social scene, with members at work.
-- `In use` (item) → Item in scene, one block per visible property.
+- `In use` (item) → Declared action, one block per visible property.
+- `When cast` (spell) → Declared action.
 - `On contact` (hazard) → Outcome cell: what the character feels and the
   others see, ending on the condition it leaves.
 - `Underway` (vehicle) → Vehicle.
 - `{Area}` (place) → Zone cell, one block per `###` area, ending on the
-  feature they can use.
+  feature they can use; immediate-fact bullets when the area can be entered
+  from more than one side or who is there depends on play (§ Box or bullets).
 - `Returning` (place) → Return to a known place.
 - `On the road` (region) → Travel.
 - `Common telling` and `Found text` (lore) → Handout; the words verbatim.
@@ -299,6 +337,10 @@ Owner pages carry optional situated slots below the header portrait, each
   choice, rhythm, verbal habit, and the subject they avoid), matching its
   sample lines in manner, not words. The line serves what they want in this
   beat, and their posture follows what the page's At the Table says opens and closes them.
+- **Villain in the arrival:** the arrival block carries the arrival. The
+  plan was filed where the party learns it on the way in, and the villain's
+  words are short lines filed for the fight, each one said in the time of a
+  single turn.
 - **End:** After that line. A second point waits for the players' reply.
 
 ### Item in scene
@@ -320,6 +362,20 @@ Owner pages carry optional situated slots below the header portrait, each
 - **Sentient item:** it speaks only in the voice on its page, and only to the
   one who can hear it.
 - **End:** On the scene's live edge, never on the item unless it is the anchor.
+
+### Declared action (`When cast`, `In use`)
+
+- **Job:** Show a spell, item property, or ability the prep already treats
+  as chosen, the moment it happens.
+- **Build:** "You" names the body doing only what the player declared: the
+  gesture, the word, the component, the grip on the item. Then what the
+  magic or mechanism does in the world, seen, heard, and felt, and where it
+  goes. The target's feeling and the caster's belong to their players. The
+  sign is what shows (light, sound, cold, motion), never the rule, number,
+  or duration. A declared action with a roll still to come stops before
+  the roll's result: the bolt leaving the hand, the effect settling over
+  its targets.
+- **End:** The effect settled in place, or the windup before it strikes.
 
 ## Action
 

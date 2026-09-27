@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -28,10 +28,10 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Previously
-> <!-- On the session's first beat only: the recap read aloud as play starts, from theatre-of-the-mind (Recap mode). -->
+> <!-- First beat of the session only: last session read aloud as play starts, one short paragraph ending on tonight's opening situation (theatre-of-the-mind: Recap, read aloud). -->
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Hook opening recipe): what the characters perceive, ending on a moment they can act on. -->
+> <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: Hook opening). -->
 
 ````col
 ```col-md
@@ -50,17 +50,19 @@ flexGrow=1
 ## Actors
 
 - **[[npc]].** What they want and what they do next if nobody interferes.
-- **[[creature]] × 3.** AC, HP, Speed, the attack or save DC the DM rolls; opening move → adapts → break point → exit.
-
-> [!narration] {NPC}
-> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
-
-> [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
+- **[[creature]] × 3.** Opening move → adapts → break point → exit; HP or resources only when not full. The statblock is in Roster.
 ```
 ````
 
+> [!narration] {NPC}
+> <!-- Optional, one per NPC, titled with their name, in the order the party meets them: their first look and first words (theatre-of-the-mind: NPC first look, Dialogue). -->
+
+> [!narration] {Creature}
+> <!-- Optional, one per creature kind, titled with its name, in the order the party meets them: a few sentences; its response to the party stays in Actors (theatre-of-the-mind: Creature in scene). -->
+
 ## Handles
+
+<!-- Narration cells: a line or two in `_italic_` of what the party sees change (theatre-of-the-mind: Outcome cell). -->
 
 | If the party… | The world responds | Narration |
 | ------------- | ------------------ | --------- |
@@ -86,10 +88,16 @@ flexGrow=1
 
 ## Outcomes
 
-<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. Narration cells: a line or two in `_italic_` of the changed state (theatre-of-the-mind: Outcome cell). -->
 
 | Outcome | What changes | Next | Narration |
 | ------- | ------------ | ---- | --------- |
 |         |              | [[Session-{{session}}-BB-label]] | _…_ |
 
 **Carry forward.** Each state the next beat inherits: who holds what, who is hurt, where the opposition went, what the party committed to.
+
+## Roster
+
+<!-- Only when the Hook can become a fight: one embed per fighter kind, from its owner page. -->
+
+![[creature#Statblock]]

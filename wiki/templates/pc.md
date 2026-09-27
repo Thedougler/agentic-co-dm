@@ -19,15 +19,12 @@ init_mod:
 pp:
 speed: ""
 summary: ""
+token: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: how this character plays at the table and what pulls them into a scene. Then labelled facts, one bullet each. -->
@@ -36,15 +33,9 @@ flexGrow=2
 - **Class.** Rogue 5 (Soulknife)
 - **Home.** [[vehicle]] or [[place]], and their station there.
 - **Voice.** How the player plays them: manner, catchphrase, what they reach for first.
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe portrait: face, build, clothing, posture, and one detail beyond sight (voice, gait, smell, habit). -->
-```
-````
+> <!-- One third-person paragraph: face, build, clothing, posture, and one detail beyond sight (voice, gait, smell, habit) (theatre-of-the-mind: Person portrait). -->
 
 ## Sheet
 
@@ -107,4 +98,3 @@ flexGrow=1
 
 - **[[Session]]** — what changed for this character.
 
-## Art

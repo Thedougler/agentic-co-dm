@@ -17,6 +17,26 @@
     {
      "text": "Leaves cutting, tasting, opening, or another inspection as a player-declared next action.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
     }
    ]
   },
@@ -52,6 +72,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -87,6 +119,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -122,6 +166,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -157,6 +213,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -176,6 +244,26 @@
     {
      "text": "Does not state an exact radius, DC, condition, HP, or hidden ability before the table earns or resolves it.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
     }
    ]
   },
@@ -214,6 +302,18 @@
     {
      "text": "Materially rephrases the parent rather than copying its sentence wording or distinctive phrasing.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -233,6 +333,18 @@
     {
      "text": "Does not invent a current camera, party, encounter, mechanics, or hidden cause.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -255,6 +367,18 @@
     },
     {
      "text": "The prose conveys disorientation and scale \u2014 a reader should feel the tubes go deeper and wider than any visitor has mapped.",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -287,6 +411,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -318,6 +454,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -372,6 +520,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -390,6 +550,18 @@
     },
     {
      "text": "The ordinariness of the caterpillar is the point \u2014 the prose should not telegraph danger.",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -414,6 +586,18 @@
     {
      "text": "The strike-past-wingspan is stated as a stable fact, not resolved as a current action.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -436,6 +620,18 @@
     },
     {
      "text": "The carry manner suggests significance through physicality, not biography.",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -472,6 +668,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -503,6 +711,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -534,6 +754,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -569,6 +801,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -587,6 +831,18 @@
     },
     {
      "text": "Stops on stable geography or a usable affordance.",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -619,6 +875,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -638,6 +906,26 @@
     {
      "text": "Does not invent a viewer, party action, hidden meaning, mechanics, or unsupported detail.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
     }
    ]
   },
@@ -657,6 +945,26 @@
     {
      "text": "Does not expand into a full creature portrait or purple combat poetry.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
     }
    ]
   },
@@ -675,6 +983,18 @@
     },
     {
      "text": "Avoids purple padding that adds no new drawable noun \u2014 every sentence earns its place.",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -715,6 +1035,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -754,6 +1098,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -797,6 +1165,30 @@
     {
      "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -840,6 +1232,30 @@
     {
      "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
      "type": "structure"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -879,6 +1295,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -906,6 +1346,18 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -948,6 +1400,30 @@
     },
     {
      "text": "Length fits the SKILL table for its surface (scene opening 5\u20139 sentences; cells 1\u20133; creature in scene 2\u20134; portrait 4\u20137).",
+     "type": "structure"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
      "type": "structure"
     }
    ]
@@ -995,6 +1471,18 @@
     {
      "text": "The four outputs differ in shape and natural stop \u2014 not a universal camera/staging template.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ]
   },
@@ -1014,6 +1502,30 @@
     {
      "text": "Stops at the service opening or a natural customer handoff \u2014 does not turn the vehicle into a generic tavern.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1049,6 +1561,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1088,6 +1624,30 @@
     {
      "text": "No em dashes, no craft words from the skill (frame, focus, handle, live edge, windup, telegraph), and no slop-table phrases.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1131,6 +1691,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1174,6 +1758,30 @@
     {
      "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1213,6 +1821,30 @@
     {
      "text": "Each fact appears once and every sentence adds a picture, a handle, a threat, or the live edge; no history or metadata the characters cannot perceive.",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1248,6 +1880,30 @@
     {
      "text": "Never states a PC's action, speech, thought, feeling, decision, or bodily reaction.",
      "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1275,6 +1931,30 @@
     {
      "text": "Second person, present tense, ends before 'What do you do?'",
      "type": "structure"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ]
   },
@@ -1297,6 +1977,30 @@
     },
     {
      "text": "Second person, present tense, two or more handles, ends before 'What do you do?'",
+     "type": "structure"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
      "type": "structure"
     }
    ]
@@ -1324,6 +2028,18 @@
     },
     {
      "text": "No em dashes in the narration",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]
@@ -1384,6 +2100,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1428,6 +2168,26 @@
     },
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
      "type": "quality"
     }
    ],
@@ -1477,6 +2237,14 @@
     },
     {
      "text": "Felt professional quality: an engaging retelling the players would enjoy reading aloud and that makes them want to play the next session",
+     "type": "quality"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ],
@@ -1544,6 +2312,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1609,6 +2401,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1674,6 +2490,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1739,6 +2579,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1784,6 +2648,30 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
     }
    ],
    "core": true,
@@ -1825,6 +2713,18 @@
     {
      "text": "Felt professional quality: a DM could read it aloud unchanged and the table would picture it and want to act",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
     }
    ],
    "core": true,
@@ -1850,6 +2750,26 @@
     {
      "text": "No DC, damage, HP, secret, or unearned name",
      "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
     }
    ]
   },
@@ -1868,6 +2788,196 @@
     },
     {
      "text": "No DC, secret, or unearned name",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Stops at the first moment a player would act: no later event plays in the block, and no creature responds to an entrance the party has not made; those go to the handle note",
+     "type": "quality"
+    }
+   ]
+  },
+  {
+   "id": "area-bullets-root-well",
+   "prompt": "Aruhe Caves (wiki/entities/place/aruhe-caves.md) gets a `### Daylight Hole` area under Features. Write its `{Area}` narration. The party may reach it two ways: climbing down the roots from the surface, or walking up the tube from below.",
+   "expected_output": "Immediate-fact bullets true from both ways in, situation first and pressure last, with hidden truths and any creature response routed to the DM layer.",
+   "files": [
+    "wiki/entities/place/aruhe-caves.md",
+    "wiki/entities/creature/cave-bats.md",
+    "wiki/templates/place.md"
+   ],
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point, check note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten.",
+   "assertions": [
+    {
+     "text": "Files immediate-fact bullets rather than a paragraph, and names the reason: the area has two ways in",
+     "type": "structure"
+    },
+    {
+     "text": "Every bullet is one speakable sentence true from both approaches: no 'as you enter', no left, right, ahead, or behind that depends on the way in, and no light the party may not carry",
+     "type": "quality"
+    },
+    {
+     "text": "The first bullet gives what is happening here now, and the pressure bullet comes last",
+     "type": "quality"
+    },
+    {
+     "text": "Hidden truths (flow rules, Dead Air, Drumstone, Blackrail's identity, DCs) stay out of the bullets, and the ones the DM needs are routed in the handle note",
+     "type": "guardrail"
+    },
+    {
+     "text": "No creature responds to the party: anything alive here is shown doing what it does before anyone arrives",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    }
+   ]
+  },
+  {
+   "id": "spiguar-comes-upon",
+   "prompt": "Write the `{Creature}` narration for a Hook beat: the party crests a rise in the grassland and comes upon the Spiguar (wiki/entities/creature/spiguar.md) at a kill. The beat does not fix whether they come up quietly or noisily.",
+   "expected_output": "The Spiguar at its kill as a still fact, ending on a live edge; its response to being seen or heard is routed to Actors.",
+   "files": [
+    "wiki/entities/creature/spiguar.md",
+    "wiki/templates/hook.md"
+   ],
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point, check note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten.",
+   "assertions": [
+    {
+     "text": "The Spiguar is shown doing what it does before it notices anyone; in the block it does not look up, turn toward the party, charge, or flee",
+     "type": "quality"
+    },
+    {
+     "text": "The handle note routes its response to being seen or heard, by approach, to Actors",
+     "type": "process"
+    },
+    {
+     "text": "Ends on a live edge with no contact and no 'What do you do?'",
+     "type": "quality"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    }
+   ]
+  },
+  {
+   "id": "gust-when-cast",
+   "prompt": "Add the optional `When cast` narration to wiki/entities/spell/gust.md. A player character can learn the spell.",
+   "expected_output": "A declared-action block: the caster's gesture, word, and component as 'you', then the wind acting in the world, with no rule or number.",
+   "files": [
+    "wiki/entities/spell/gust.md",
+    "wiki/templates/spell.md"
+   ],
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point, check note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten.",
+   "assertions": [
+    {
+     "text": "Titled `When cast` and placed after the Effect block, full width",
+     "type": "structure"
+    },
+    {
+     "text": "'You' names only the caster's gesture, word, and material component; nothing past the declared casting is decided for the caster",
+     "type": "quality"
+    },
+    {
+     "text": "The magic acts in the world: what the wind does to fog, grit, cloth, and whatever stands in its line, seen, heard, and felt",
+     "type": "quality"
+    },
+    {
+     "text": "No save, DC, feet, push distance, duration, or Concentration, and no target's feeling or result before a roll resolves",
+     "type": "guardrail"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
+     "type": "quality"
+    }
+   ]
+  },
+  {
+   "id": "great-bore-freeze-frame",
+   "prompt": "Write the `Opening` for a Cliffhanger in the Great Bore of the Aruhe Caves (wiki/entities/place/aruhe-caves.md). The party is walking the tube with lanterns. The DM's notes list what happens, in order: root roaches pour out of the wall cracks, dust jumps in rings on the floor, the leg-rattle arrives, the Blackrail's head (wiki/entities/creature/blackrail.md) comes sideways along the wall, it strikes the rearmost lantern-bearer, and the floor behind them gives way.",
+   "expected_output": "A one-paragraph box that stops at the first moment a player would act; the strike and the collapse are routed to Pressure rounds or outcome cells.",
+   "files": [
+    "wiki/entities/place/aruhe-caves.md",
+    "wiki/entities/creature/blackrail.md",
+    "wiki/templates/cliffhanger.md"
+   ],
+   "outputs": "Write the finished narration block, plus the notes you would return with it (point, check note, art note, handle note), in {outputs}/response.md. Leave the wiki page itself unwritten.",
+   "assertions": [
+    {
+     "text": "The block stops at the first moment a player would act: the strike does not land and the floor does not give way in the block",
+     "type": "quality"
+    },
+    {
+     "text": "Every event after the stop is routed in the handle note to a Pressure round or an outcome cell",
+     "type": "process"
+    },
+    {
+     "text": "The threat is in the first sentence, and the routes and cover the party can use are in the block",
+     "type": "quality"
+    },
+    {
+     "text": "The box is one paragraph, or immediate-fact bullets when the arrival is open; a second beat goes to its own slot",
+     "type": "structure"
+    },
+    {
+     "text": "Opens on the thing itself: no sentence spends its start on the party noticing it ('you see', 'you notice', 'as you enter')",
+     "type": "quality"
+    },
+    {
+     "text": "Returns the point outside the narration: one sentence naming the single thing the block carries, and the point never appears in the narration",
+     "type": "process"
+    },
+    {
+     "text": "Returns a check note with one line per final-check item, each quoting the words that pass it or naming the rewrite it forced",
+     "type": "process"
+    },
+    {
+     "text": "Clean lines: no two details contradict, no word repeats within one breath or does two jobs, verbs are finished (no 'here and there', 'there are'), and rules words (action, reaction, stunned, frightened, incapacitated, magical) appear only in their rules sense",
      "type": "quality"
     }
    ]

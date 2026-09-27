@@ -61,8 +61,8 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
    only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the scene spends, applying the Development craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rulings.** Load `dnd5e-mechanics` for Influence, Search, Study,
    Insight, and every other check, save, and DC.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`;

@@ -24,6 +24,11 @@ import sys
 from pathlib import Path
 from typing import Any
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser
+
 VERSION = 1
 
 # S3: oversized skill lead (~24KB) — investigate, do not shorten-for-bytes
@@ -315,13 +320,17 @@ def emit_text(hits: list[dict[str, Any]]) -> None:
 
 
 def build_parser() -> argparse.ArgumentParser:
-    p = argparse.ArgumentParser(
+    p = AgentParser(
         description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
+            "Examples:\n"
+            "  python3 scripts/context-waste-scan.py\n"
+            "  python3 scripts/context-waste-scan.py --vault wiki --skills .agents/skills\n"
+            "  python3 scripts/context-waste-scan.py --text\n\n"
             "S3/S4 size hits are investigation leads (redundancy/conflict/infra), "
             "not shorten mandates. No HARD size gates."
         ),
+        example="python3 scripts/context-waste-scan.py",
     )
     p.add_argument(
         "root",

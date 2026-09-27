@@ -26,8 +26,11 @@ LINT = ROOT / "tools" / "lint_wiki.py"
 CREATIVE_COMMANDS = {"task", "file", "corpus", "changed", "rule", "candidate", "queue", "template"}
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
-from tools.wiki_ops.cli import resolve_vault
+from tools.wiki_ops.cli import AgentParser, examples_epilog, resolve_vault, usage_error
 
+
+def _arg_fail(message: object, example: str) -> int:
+    return usage_error(str(message), hint="run wiki-lint --help", example=example, list_valid="wiki-lint --help")
 
 def run_lint(vault: Path, extra: list[str]) -> tuple[int, dict]:
     cmd = [sys.executable, str(LINT), "--json", str(vault), *extra]
@@ -101,10 +104,14 @@ def _iter_grouped_findings(rule: str, value: Any):
 
 
 def structural_main(argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         description=__doc__,
-        formatter_class=argparse.RawDescriptionHelpFormatter,
-        epilog="Examples:\n  scripts/wiki-lint --json\n  scripts/wiki-lint wiki --verbose\n  wiki lint --help",
+        epilog=examples_epilog(
+            "scripts/wiki-lint --json",
+            "scripts/wiki-lint wiki --verbose",
+            "wiki lint --help",
+        ),
+        example="scripts/wiki-lint --json",
     )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
@@ -291,8 +298,7 @@ def structural_main(argv: list[str]) -> int:
             return 2 if report.get("actions") else 0
         return 1 if any((report.get("counts") or {}).values()) or report.get("hard_fail") else 0
     except (OSError, ValueError, json.JSONDecodeError) as exc:
-        print(f"wiki-lint: {exc}", file=sys.stderr)
-        return 2
+        return _arg_fail(exc, "scripts/wiki-lint --json")
 
 
 def _paths(values: list[str], *, default: Path) -> list[Path]:
@@ -338,9 +344,10 @@ def _snapshot(vault: Path, report: dict[str, Any]) -> str:
 
 
 def consolidate_main(argv: list[str]) -> int:
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         prog="wiki-lint --consolidate",
-        epilog="Examples: scripts/wiki-lint --consolidate wiki --json",
+        epilog=examples_epilog("scripts/wiki-lint --consolidate wiki --json"),
+        example="scripts/wiki-lint --consolidate wiki --json",
     )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
@@ -349,13 +356,11 @@ def consolidate_main(argv: list[str]) -> int:
     try:
         vault = resolve_vault(args.vault)
     except ValueError as exc:
-        print(f"wiki-lint: {exc}", file=sys.stderr)
-        return 2
+        return usage_error(str(exc), hint="run wiki-lint --help", example="scripts/wiki-lint --consolidate wiki --json", list_valid="wiki-lint --help")
     try:
         _, report = run_lint(vault, ["--hard-only"])
     except (SystemExit, json.JSONDecodeError) as exc:
-        print(f"wiki-lint: unable to build consolidation plan: {exc}", file=sys.stderr)
-        return 2
+        return _arg_fail(f"unable to build consolidation plan: {exc}", "scripts/wiki-lint --consolidate wiki --json")
     # Structural findings do not contain enough information to safely invent
     # canon or judgment repairs. The initial safe plan is therefore empty;
     # future deterministic repair kinds may be added without changing schema.
@@ -382,20 +387,19 @@ def creative_main(argv: list[str]) -> int:
     try:
         engine, registry, bundles = _load_engine()
     except (OSError, ValueError, KeyError) as exc:
-        print(f"wiki-lint: {exc}", file=sys.stderr)
-        return 2
+        return _arg_fail(exc, "scripts/wiki-lint --json")
     if command == "rule":
-        parser = argparse.ArgumentParser(
+        parser = AgentParser(
             prog="wiki-lint rule",
-            epilog="Examples: scripts/wiki-lint rule narration-wordcount",
+            epilog=examples_epilog("scripts/wiki-lint rule narration-wordcount"),
+            example="scripts/wiki-lint rule narration-wordcount",
         )
         parser.add_argument("rule_id")
         args = parser.parse_args(argv[1:])
         try:
             rule = registry.get(args.rule_id)
         except KeyError:
-            print(f"Unknown rule ID: {args.rule_id}", file=sys.stderr)
-            return 2
+            return _arg_fail(f"Unknown rule ID: {args.rule_id}", "scripts/wiki-lint rule narration-wordcount")
         print(f"{rule.id}: {rule.title}")
         print(f"Category:  {rule.category}")
         print(f"Severity:  {rule.severity}")
@@ -416,23 +420,24 @@ def creative_main(argv: list[str]) -> int:
     if command == "candidate":
         return candidate_main(argv[1:], registry)
     if command == "queue":
-        parser = argparse.ArgumentParser(
+        parser = AgentParser(
             prog="wiki-lint queue",
-            epilog="Examples: scripts/wiki-lint queue --json",
+            epilog=examples_epilog("scripts/wiki-lint queue --json"),
+            example="scripts/wiki-lint queue --json",
         )
         parser.add_argument("--json", action="store_true")
         args = parser.parse_args(argv[1:])
         try:
             data = engine.dirty_queue()
         except (ValueError, KeyError) as exc:
-            print(f"wiki-lint: {exc}", file=sys.stderr)
-            return 2
+            return _arg_fail(exc, "scripts/wiki-lint queue --json")
         print(json.dumps(data, indent=2, sort_keys=True) if args.json else render_queue(data))
         return 0
     if command == "template":
-        parser = argparse.ArgumentParser(
+        parser = AgentParser(
             prog="wiki-lint template",
-            epilog="Examples: scripts/wiki-lint template wiki/entities/npc/example.md --json",
+            epilog=examples_epilog("scripts/wiki-lint template wiki/entities/npc/example.md --json"),
+            example="scripts/wiki-lint template wiki/entities/npc/example.md --json",
         )
         parser.add_argument("path")
         parser.add_argument("--json", action="store_true")
@@ -441,16 +446,13 @@ def creative_main(argv: list[str]) -> int:
         if not page.is_absolute():
             page = (ROOT / page).resolve()
         if not page.is_file():
-            print(f"wiki-lint: page not found: {page}", file=sys.stderr)
-            return 2
+            return _arg_fail(f"page not found: {page}", "scripts/wiki-lint template wiki/entities/npc/example.md --json")
         try:
             selected, findings = template_conformance(page, root=ROOT)
         except (OSError, ValueError) as exc:
-            print(f"wiki-lint: {exc}", file=sys.stderr)
-            return 2
+            return _arg_fail(exc, "scripts/wiki-lint template wiki/entities/npc/example.md --json")
         if selected is None:
-            print(f"wiki-lint: no template resolved for {page}", file=sys.stderr)
-            return 2
+            return _arg_fail(f"no template resolved for {page}", "scripts/wiki-lint template wiki/entities/npc/example.md --json")
         def display_path(path: Path) -> str:
             try:
                 return str(path.relative_to(ROOT))
@@ -464,9 +466,10 @@ def creative_main(argv: list[str]) -> int:
             print(render_human(LintResult("repair_required" if findings else "clean", None, 1, 5, findings,
                                           {"REPAIR": len(findings)}, []), command="template"))
         return 1 if findings else 0
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         prog=f"wiki-lint {command}",
-        epilog=f"Examples: scripts/wiki-lint {command} wiki --json",
+        epilog=examples_epilog(f"scripts/wiki-lint {command} wiki --json"),
+        example=f"scripts/wiki-lint {command} wiki --json",
     )
     if command == "task":
         parser.add_argument("bundle")
@@ -493,8 +496,7 @@ def creative_main(argv: list[str]) -> int:
             files = [ROOT / line.strip() for line in changed.stdout.splitlines() if line.strip().endswith(".md")]
             result = engine.run(bundle="corpus", paths=files, severity_filter=severity, state=state)
     except (ValueError, KeyError) as exc:
-        print(f"wiki-lint: {exc}", file=sys.stderr)
-        return 2
+        return _arg_fail(exc, f"scripts/wiki-lint {command} wiki --json")
     if args.json:
         print(json.dumps(result.to_dict(), indent=2, sort_keys=True))
     else:
@@ -503,9 +505,10 @@ def creative_main(argv: list[str]) -> int:
 
 
 def candidate_main(argv: list[str], registry) -> int:
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         prog="wiki-lint candidate",
-        epilog="Examples: scripts/wiki-lint candidate 'Avoid vague placeholder names' --json",
+        epilog=examples_epilog("scripts/wiki-lint candidate 'Avoid vague placeholder names' --json"),
+        example="scripts/wiki-lint candidate 'Avoid vague placeholder names' --json",
     )
     parser.add_argument("correction", nargs="+")
     parser.add_argument("--json", action="store_true")

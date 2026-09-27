@@ -16,14 +16,10 @@ region: ""
 base: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. The page answers: what do they want, what will they do next, what changes if they succeed, and how can the party notice or interfere. Keep a section only when you have facts for it; delete unused sections, rows, and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. The page answers: what do they want, what will they do next, what changes if they succeed, and how can the party notice or interfere. Keep a section only when you have facts for it; delete unused sections, rows, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: what this faction is about and the pressure it brings to the campaign. Then labelled facts, one bullet each. -->
@@ -35,15 +31,9 @@ flexGrow=2
 - **Strength.** The capability that lets them shape events.
 - **Vulnerability.** The dependency or exposure that can stop them.
 - **Posture.** Watching, acting, mobilized, or fractured, and why.
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe look of their public face: garb, marks, method footprint, territory, and reputation a character meets before learning the name. -->
-```
-````
+> <!-- One third-person paragraph of their public face: garb, marks, method footprint, territory, reputation, ending on the name people use (theatre-of-the-mind: Faction portrait). -->
 
 ## Agenda
 
@@ -75,7 +65,7 @@ flexGrow=1
 - **Party standing.** Where the party stands, why, and what would change it.
 
 > [!narration] When met
-> <!-- Optional: members at work as the party runs into them, "you" address: what they are doing, how they carry themselves, and their first words. -->
+> <!-- Optional: members at work as the party runs into them, "you" address, ending on their first words (theatre-of-the-mind: Social scene). -->
 
 ## People
 
@@ -109,4 +99,3 @@ flexGrow=1
 
 - **[[Session]]** — move made, result, what it collided with, and who felt it.
 
-## Art

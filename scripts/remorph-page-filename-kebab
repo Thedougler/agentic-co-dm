@@ -27,6 +27,11 @@ import sys
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser
+
 SKIP_DIRS = {
     ".obsidian",
     "_archive",
@@ -337,7 +342,10 @@ def apply_plans(wiki: Path, plans: list[Plan]) -> dict:
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = AgentParser(
+        description=__doc__,
+        example="./scripts/remorph-page-filename-kebab --dry-run --wiki wiki",
+    )
     parser.add_argument("--wiki", type=Path, default=None, help="wiki root (alias of --vault)")
     parser.add_argument("--vault", type=Path, default=None, help="wiki root (alias of --wiki)")
     parser.add_argument("--json", action="store_true")

@@ -75,6 +75,14 @@
         {
           "type": "behavior",
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -119,6 +127,14 @@
         {
           "text": "Effect block is runnable in 2024 terms (saves/attacks, targets/area, duration end, scaling when applicable) and peer-anchored",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -146,6 +162,14 @@
         {
           "text": "A proposed spell page marks invention: true and response.md cites its grounding wiki pages",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -184,6 +208,14 @@
         },
         {
           "text": "Runnable effect states what sealing does, how long, how it fails/ends, and any save or check — not vague 'protects the document'",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
         }
       ]
@@ -224,6 +256,14 @@
         {
           "text": "Does not treat spell-scroll items as the spell page being fleshed",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -246,6 +286,14 @@
         },
         {
           "text": "If a stronger effect is desired, raises level (or marks as higher-level invention) rather than stuffing nova into a cantrip",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
         }
       ]
@@ -270,6 +318,14 @@
         {
           "text": "Offers alternatives that support a climax (info, leverage, risky gambit) without replacing play",
           "type": "content"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -293,6 +349,14 @@
         {
           "text": "Homebrew drafted instead marks invention: true and lists its proposals in response.md",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -316,6 +380,14 @@
         {
           "text": "Keeps dm-facing-explicit: concrete DM facts exist, just not inside spoken narration",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     },
@@ -335,6 +407,14 @@
         {
           "text": "Labels invention (invention: true or equivalent) and cites grounding pages when proposing new material",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
+        },
+        {
+          "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
+          "type": "quality"
         }
       ]
     }

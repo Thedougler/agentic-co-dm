@@ -67,12 +67,14 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the Hook spends, applying the Hook craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rulings.** Load `dnd5e-mechanics` for every check, save, and DC. When
-   the Hook is a fight, pull the opposition's numbers from its owner
-   statblock; `encounter-prep` sets the difficulty when no encounter exists. Done when everyone who could fight carries numbers: from the owner
-   statblock, or a proposed standard 5e statblock filed on the owner.
+   the Hook is a fight, embed each opponent's owner statblock in `## Roster`
+   (`![[owner#Statblock]]`); `encounter-prep` sets the difficulty when no
+   encounter exists. Done when everyone who could fight has its statblock
+   embedded, from the owner or from a proposed standard 5e statblock filed on
+   the owner first.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill every
    slot the Hook spends: `Previously` on the session's first beat (Recap
    mode); `Opening`, which starts inside the changed moment and ends on
@@ -124,7 +126,8 @@ beat's trigger. The Hook is the session's only Hook. On the page:
 - hesitation advances that motion once, concretely, with what the party sees;
 - the Hook plants at least one piece a later beat uses;
 - every boundary, demand, or taboo the scene states has a row for breaking
-  it, with the full consequence copied from its owner page.
+  it, with the full consequence embedded from its owner page
+  (`![[owner#Section]]`) or stated where the owner has none.
 
 Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 

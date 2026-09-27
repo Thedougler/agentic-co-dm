@@ -43,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Climax spends; keep **Final Battle** or **Final Revelation** for the shape in play and delete the other (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Climax spends; keep **Final Battle** or **Final Revelation** for the shape in play and delete the other (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter statblocks into Roster embeds, tactics into Actors, pressure into Pressure), and a fact the old page wrote twice keeps one home.
 
 ## Fill a Climax
 
@@ -65,12 +65,14 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
    anything else; the stage, forces, and phases grow from it.
 5. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the Climax spends, applying the Climax craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 6. **Set numbers and rulings.** `encounter-prep` sets difficulty for the
    villain tier and the live party; `dnd5e-mechanics` sets every check, save,
-   and DC. Copy compact numbers for every combatant onto the page. Done when everyone who could fight carries numbers: from the owner
-   statblock, or a proposed standard 5e statblock filed on the owner.
+   and DC. Embed every combatant's owner statblock in `## Roster`
+   (`![[owner#Statblock]]`). Done when everyone who could fight has its
+   statblock embedded, from the owner or from a proposed standard 5e
+   statblock filed on the owner first.
 7. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill `Opening`;
    one `{NPC}` or `{Creature}` block per actor the party meets here, titled
    with its name (the villain's entrance first); the `_italic_` Narration
@@ -104,12 +106,13 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
   that transforms the fight when it breaks, floods, burns, or falls.
   **Collateral** names who or what nearby is lost if the fight spills over.
 - **The opposition's plan runs.** The primary opposition's Actors entry
-  carries its labelled sub-bullets: **Numbers**, **Wants** (and why now),
-  **Leverage**, **Plays** (opening → response → desperation), **Line** it will
-  not cross, and **Morale** (surrender, bargain, or flight, and where). State
-  what it accomplishes each round or tick nobody stops it, and every exit it
-  holds — plus how the party can close each exit. **If it goes static**
-  under Pressure names the move that breaks a stalemate.
+  carries its state this fight (HP when not full, spent resources) and its
+  **Plays**: opening → response → desperation → exit, with how the party can
+  close each exit. **Wants**, **Leverage**, or a **Line** it will not cross
+  earn a line only when they change what it does at the table. What it
+  accomplishes each round nobody stops it lives once, in Pressure, with
+  **If it goes static** naming the move that breaks a stalemate. Its
+  statblock is embedded in Roster, never retyped.
 - **Win and lose conditions.** Name what wins besides the last hit point
   (seize the idol, break the ritual circle, hold until dawn) and what
   loses without a total party kill (the villain escapes with the prize, the

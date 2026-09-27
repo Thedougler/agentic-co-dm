@@ -49,7 +49,7 @@ while [[ "$#" -gt 0 ]]; do
       ;;
     *)
       usage >&2
-      fail "unknown option: $1"
+      exit 2
       ;;
   esac
 done

@@ -6,8 +6,9 @@ then run the final check in `SKILL.md`. The matching weak → strong pair is in
 
 ## Contents
 
-- Session-beat pages: header lines; Situation, Actors, Stage; rulings and checks;
-  pressure and outcome tables; carry forward
+- Session-beat pages: At a Glance; Situation, Actors, Stage; beside a
+  narration block; rulings and checks; pressure and outcome tables; carry
+  forward
 - Session plan
 - Run-guide cockpit (pass 2)
 - Owner pages: At a Glance; At the Table; facts, Drive, Secrets
@@ -17,12 +18,16 @@ then run the final check in `SKILL.md`. The matching weak → strong pair is in
 
 The beat's type skill decides what goes on the page; this is how it reads.
 
-### Header lines
+### At a Glance
 
-The bold-labeled lines under the title (Card, Thread, Trigger, Stakes, Ends
-when, Memorable element, and so on).
+The lead sentence and bold-labeled lines under the title (Entry state,
+Stakes, Memorable, Ends when, Next, and so on).
 
-- One or two sentences per label. Lead with the fact.
+- The lead sentence says what is happening and the choice it puts to the
+  party.
+- One sentence per label, one fact per sentence. Lead with the fact.
+- Design labels (card, key, tier, budget, thread names) stay in the session
+  plan.
 - Name the people, places, and items with wikilinks.
 - **Ends when** names an observable moment: "Ends when the party reaches the
   ladder or the second beam falls."
@@ -36,9 +41,22 @@ when, Memorable element, and so on).
   hidden part plainly.
 - Space: distances in feet, what blocks what, each feature with its ruling
   ("The crates give half cover").
-- Opposition: compact numbers on one line (AC, HP, Speed, the attack or save
-  DC the DM rolls), then the tactics as short sentences in order: opening
-  move, how it adapts, when it breaks, where it goes.
+- Opposition: its statblock embedded once in `## Roster`
+  (`![[owner#Statblock]]`). The Actors line carries only this scene's state
+  (HP when not full, spent resources, conditions), then the tactics as short
+  sentences in order: opening move, how it adapts, when it breaks, where it
+  goes. That plan lives here and nowhere else on the page.
+
+### Beside a narration block
+
+The DM lines that answer a `[!narration]` block: the Actors bullet under a
+`{Creature}` block, the area facts under an `{Area}` block, the Handles rows
+after an Opening.
+
+- What the block held back, stated plainly: each creature's response by how
+  the party approaches (loudly, quietly, after scouting), the other ways in,
+  the checks, the secrets, and the true names.
+- Nothing the block already says, told again.
 
 ### Rulings and checks
 

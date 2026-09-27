@@ -33,6 +33,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from tools.wiki_ops.cli import AgentParser, examples_epilog  # noqa: E402
 from tools.token_count import (  # noqa: E402
     DEFAULT_ENCODING,
     count_file,
@@ -121,9 +122,14 @@ def build_payload(
 
 
 def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(
+    parser = AgentParser(
         description="Objective tiktoken counts (JSON). See docs/agents/token-measurement.md",
-        epilog="Examples: scripts/token-count.py README.md docs/ | scripts/token-count.py --sum wiki | printf 'text' | scripts/token-count.py --stdin",
+        epilog=examples_epilog(
+            "python3 scripts/token-count.py README.md",
+            "python3 scripts/token-count.py --sum wiki",
+            "printf 'text' | python3 scripts/token-count.py --stdin",
+        ),
+        example="python3 scripts/token-count.py README.md",
     )
     parser.add_argument(
         "paths",

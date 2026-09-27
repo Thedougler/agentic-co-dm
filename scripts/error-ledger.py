@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from tools.wiki_ops.cli import repo_root  # noqa: E402
+from tools.wiki_ops.cli import AgentParser, examples_epilog, repo_root, usage_error  # noqa: E402
 
 REPO_ROOT = repo_root(Path(__file__).resolve().parent)
 APPEND_EXAMPLE = 'python3 scripts/error-ledger.py error append --source .vale.ini --cause "…" --sitting "lint: …"'
@@ -26,6 +26,8 @@ EXAMPLES = f"""Examples:
   python3 scripts/error-ledger.py error detach --id e-212 --index 1
   python3 scripts/error-ledger.py error drain --id e-212
   python3 scripts/error-ledger.py error list
+  python3 scripts/error-ledger.py sitting record --kind prep --job "…" --helper error-ledger
+  python3 scripts/error-ledger.py sitting list
 """
 KINDS = ("prep", "wrapup")
 TOKEN_COST_NOTE = (
@@ -85,12 +87,6 @@ def emit(data: Any, fmt: str) -> None:
     print(json.dumps(data, indent=2, sort_keys=True))
 
 
-def refuse(error: str, hint: str, example: str) -> int:
-    """The FR-035 error object: JSON on stdout, the message on stderr, exit 2, nothing written."""
-    print(json.dumps({"status": "error", "error": error, "hint": hint, "example": example}, sort_keys=True))
-    print(f"error-ledger: {error}", file=sys.stderr)
-    return 2
-
 
 def fail(msg: str, code: int = 2) -> int:
     print(msg, file=sys.stderr)
@@ -106,18 +102,27 @@ def source_ok(source: str) -> bool:
 
 def cmd_error_append(args: argparse.Namespace) -> int:
     if not source_ok(args.source):
-        return refuse(f"source not found: {args.source}", "--source is a repo-relative path that exists, or external:<name>",
-                      APPEND_EXAMPLE)
+        return usage_error(
+            f"source not found: {args.source}",
+            hint="--source is a repo-relative path that exists, or external:<name>",
+            example=APPEND_EXAMPLE,
+            list_valid="python3 scripts/error-ledger.py --help",
+        )
     entries = load_errors(args.root)
     occurrence = {"sitting": args.sitting, "detail": args.detail or args.cause.strip()}
     if args.attach:
         target = next((e for e in entries if e.get("id") == args.attach), None)
         if target is None or target.get("source") != args.source:
             have = target.get("source") if target else "none (unknown id)"
-            return refuse(f"source mismatch: {args.attach} has source {have}, got {args.source}",
-                          "attach only within one source; omit --attach to create an entry",
-                          f'python3 scripts/error-ledger.py error append --source {have if target else "<X>"} '
-                          f'--cause "…" --sitting "…" --attach {args.attach}')
+            return usage_error(
+                f"source mismatch: {args.attach} has source {have}, got {args.source}",
+                hint="attach only within one source; omit --attach to create an entry",
+                example=(
+                    f'python3 scripts/error-ledger.py error append --source {have if target else "<X>"} '
+                    f'--cause "…" --sitting "…" --attach {args.attach}'
+                ),
+                list_valid="python3 scripts/error-ledger.py --help",
+            )
     else:  # the only automatic match: same source, identical trimmed cause (FR-007)
         target = next((e for e in entries if e.get("source") == args.source
                        and str(e.get("cause", "")).strip() == args.cause.strip()), None)
@@ -166,8 +171,12 @@ def cmd_error_detach(args: argparse.Namespace) -> int:
         emit({"status": "already_done", "id": args.id, "occurrences": len(evidence)}, args.format)
         return 0
     if len(evidence) == 1:
-        return refuse(f"{args.id} has only one occurrence", "use drain to remove the entry",
-                      f"python3 scripts/error-ledger.py error drain --id {args.id}")
+        return usage_error(
+            f"{args.id} has only one occurrence",
+            hint="use drain to remove the entry",
+            example=f"python3 scripts/error-ledger.py error drain --id {args.id}",
+            list_valid="python3 scripts/error-ledger.py --help",
+        )
     result = {"status": "detached", "id": args.id, "occurrences": len(evidence) - 1}
     if args.dry_run:
         result = {"status": "planned", "planned": [result], "id": args.id}
@@ -236,15 +245,8 @@ def cmd_sitting_list(args: argparse.Namespace) -> int:
     return 0
 
 
-class _Parser(argparse.ArgumentParser):
-    """Usage errors print the FR-035 error object (exit 2) plus the message on stderr."""
-
-    def error(self, message: str) -> None:  # type: ignore[override]
-        raise SystemExit(refuse(message, f"run {self.prog} --help", APPEND_EXAMPLE))
-
-
 def build_parser() -> argparse.ArgumentParser:
-    parser = _Parser(description=__doc__, epilog=EXAMPLES, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser = AgentParser(description=__doc__, epilog=EXAMPLES, example=APPEND_EXAMPLE)
     parser.add_argument(
         "--root",
         type=Path,
@@ -257,14 +259,13 @@ def build_parser() -> argparse.ArgumentParser:
         default="json",
         help="JSON or Markdown out",
     )
-    sub = parser.add_subparsers(dest="group", required=True, parser_class=_Parser)
+    sub = parser.add_subparsers(dest="group", required=True, parser_class=AgentParser)
 
-    error = sub.add_parser("error", help="Fill or drain errors.md", epilog=EXAMPLES,
-                           formatter_class=argparse.RawDescriptionHelpFormatter)
-    error_sub = error.add_subparsers(dest="action", required=True, parser_class=_Parser)
+    error = sub.add_parser("error", help="Fill or drain errors.md", epilog=EXAMPLES, example=APPEND_EXAMPLE)
+    error_sub = error.add_subparsers(dest="action", required=True, parser_class=AgentParser)
 
     append = error_sub.add_parser("append", help="Record an occurrence: attach to the matching entry or create one",
-                                  epilog=EXAMPLES, formatter_class=argparse.RawDescriptionHelpFormatter)
+                                  epilog=EXAMPLES, example=APPEND_EXAMPLE)
     append.add_argument("--source", required=True, help="repo-relative path the fix lands in, or external:<name>")
     append.add_argument("--cause", required=True, help="root cause; never rewritten once recorded")
     append.add_argument("--sitting", required=True, help="sitting label, as in sittings.jsonl")
@@ -273,25 +274,53 @@ def build_parser() -> argparse.ArgumentParser:
     append.add_argument("--dry-run", action="store_true")
     append.set_defaults(func=cmd_error_append)
 
-    drain = error_sub.add_parser("drain", help="Remove an entry, in the same commit as its verified fix")
+    drain = error_sub.add_parser(
+        "drain",
+        help="Remove an entry, in the same commit as its verified fix",
+        epilog=examples_epilog("python3 scripts/error-ledger.py error drain --id e-212"),
+        example="python3 scripts/error-ledger.py error drain --id e-212",
+    )
     drain.add_argument("--id", required=True)
     drain.add_argument("--dry-run", action="store_true")
     drain.set_defaults(func=cmd_error_drain)
 
-    detach = error_sub.add_parser("detach", help="Undo an attach: remove occurrence k from e-N")
+    detach = error_sub.add_parser(
+        "detach",
+        help="Undo an attach: remove occurrence k from e-N",
+        epilog=examples_epilog("python3 scripts/error-ledger.py error detach --id e-212 --index 1"),
+        example="python3 scripts/error-ledger.py error detach --id e-212 --index 1",
+    )
     detach.add_argument("--id", required=True)
     detach.add_argument("--index", type=int, required=True, help="occurrence_index that append reported")
     detach.add_argument("--dry-run", action="store_true")
     detach.set_defaults(func=cmd_error_detach)
 
-    listed = error_sub.add_parser("list", help="Open entries, recurrence, and entries whose source is gone")
+    listed = error_sub.add_parser(
+        "list",
+        help="Open entries, recurrence, and entries whose source is gone",
+        epilog=examples_epilog("python3 scripts/error-ledger.py error list"),
+        example="python3 scripts/error-ledger.py error list",
+    )
     listed.add_argument("--ids-only", action="store_true")
     listed.set_defaults(func=cmd_error_list)
 
-    sitting = sub.add_parser("sitting", help="Record finished prep/wrapup sittings")
-    sitting_sub = sitting.add_subparsers(dest="action", required=True, parser_class=_Parser)
+    sitting = sub.add_parser(
+        "sitting",
+        help="Record finished prep/wrapup sittings",
+        epilog=examples_epilog(
+            'python3 scripts/error-ledger.py sitting record --kind prep --job "…" --helper error-ledger',
+            "python3 scripts/error-ledger.py sitting list",
+        ),
+        example='python3 scripts/error-ledger.py sitting record --kind prep --job "…" --helper error-ledger',
+    )
+    sitting_sub = sitting.add_subparsers(dest="action", required=True, parser_class=AgentParser)
 
-    record = sitting_sub.add_parser("record", help="Append a recorded sitting")
+    record = sitting_sub.add_parser(
+        "record",
+        help="Append a recorded sitting",
+        epilog=examples_epilog('python3 scripts/error-ledger.py sitting record --kind prep --job "…" --helper error-ledger'),
+        example='python3 scripts/error-ledger.py sitting record --kind prep --job "…" --helper error-ledger',
+    )
     record.add_argument("--kind", required=True, choices=KINDS)
     record.add_argument("--job", action="append", dest="job")
     record.add_argument("--path-read", action="append", dest="path_read")
@@ -301,7 +330,12 @@ def build_parser() -> argparse.ArgumentParser:
     record.add_argument("--error", action="append", dest="error")
     record.set_defaults(func=cmd_sitting_record)
 
-    sitting_list = sitting_sub.add_parser("list", help="List recorded sittings")
+    sitting_list = sitting_sub.add_parser(
+        "list",
+        help="List recorded sittings",
+        epilog=examples_epilog("python3 scripts/error-ledger.py sitting list"),
+        example="python3 scripts/error-ledger.py sitting list",
+    )
     sitting_list.set_defaults(func=cmd_sitting_list)
 
     return parser
@@ -331,8 +365,12 @@ def _hoist_parent_flags(argv: list[str]) -> list[str]:
 def main(argv: list[str] | None = None) -> int:
     raw = list(sys.argv[1:] if argv is None else argv)
     if any(arg == "--cause-fixed" or arg.startswith("--cause-fixed=") for arg in raw):
-        return refuse("--cause-fixed was removed", "drain removes the entry; no flag needed",
-                      "python3 scripts/error-ledger.py error drain --id e-212")
+        return usage_error(
+            "--cause-fixed was removed",
+            hint="drain removes the entry; no flag needed",
+            example="python3 scripts/error-ledger.py error drain --id e-212",
+            list_valid="python3 scripts/error-ledger.py --help",
+        )
     args = build_parser().parse_args(_hoist_parent_flags(raw))
     args.root = args.root.resolve()
     args.root.mkdir(parents=True, exist_ok=True)

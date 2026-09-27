@@ -30,8 +30,7 @@ page's image.
 **Attach** an existing file under `attachments/<campaign>/` (or the established attachment bucket),
 link with `![[attachments/...]]`, and list it on the owner only when the identity is truly shared
 because the file depicts that exact owner.
-Do not mark player-safe by default. On a location, embed the identity image immediately after the
-title. Battlemaps and other non-identity art go under **Art**.
+Do not mark player-safe by default. Embed next to what it shows; token in `token:` YAML; no `## Art`; generate only for next-session prep when the agent has native image gen.
 
 **Mint identity** only when a supplied look exists, no identity file is listed, and an authorized
 current task needs one. Keep provisional until DM approval. PC images require player-supplied or

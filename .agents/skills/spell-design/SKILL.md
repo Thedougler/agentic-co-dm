@@ -163,7 +163,10 @@ Build the **narration packet**: what a bystander sees, hears, and feels during
 the casting and the effect; the signature from step 3; leave out DCs, names
 not earned, and the truth of the tradition. Load
 `.agents/skills/theatre-of-the-mind`, portrait mode, technique recipe, and
-give it the packet.
+give it the packet. When a player character can learn the spell, also ask
+for the optional `When cast` block after Effect (Declared action recipe): the
+caster's gesture, word, and component as "you", then what the magic does in
+the world, ending before any roll resolves.
 
 Copy `wiki/templates/spell.md` to `wiki/entities/spell/<kebab-name>.md` with
 `type: spell`, `level`, and `school` (`ritual: true` only for rituals). Keep a
@@ -174,7 +177,7 @@ Write complete sentences. Wikilink every owner page.
 |---|---|
 | At a Glance | Level, school, ritual on one italic line; what the spell does in this campaign; Taught by (source, access price, clue) |
 | Narration | The narration, nothing else |
-| Effect | The four casting fields, then the runnable effect block and scaling |
+| Effect | The four casting fields, then the runnable effect block and scaling, then the optional `When cast` narration |
 | At the Table | Likely tricks with answers; counterplay; how enemies use it; who notices a casting |
 | History | The tradition, its casters, and history that changes a present choice |
 
@@ -200,7 +203,9 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Discovery names one specific source whose link resolves under
   `wiki/entities/npc/`, `item/`, or `place/`, with its reason to deal, a concrete access price, a clue that says where to meet it,
   and who notices a casting.
-- The narration came from theatre-of-the-mind and holds no DC or unearned name.
+- The narration came from theatre-of-the-mind and holds no DC or unearned name;
+  a spell a player character can learn carries a `When cast` block that names
+  only the declared gesture as "you".
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §
   Cast before minting).

@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. A short afterscene, about 10–25 minutes: show what the climax changed, pay off the stakes, let the characters react, and end on one image. Keep a section only when this Resolution spends it; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. A short afterscene, about 10–25 minutes: show what the climax changed, pay off the stakes, let the characters react, and end on one image. Keep a section only when this Resolution spends it; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -27,7 +27,7 @@ summary: ""
 - **Reward.** What success or survival earned.
 
 > [!narration] Closing Image
-> <!-- Spoken closing image from theatre-of-the-mind (Resolution closing recipe). Add one per climax outcome when the climax could end more than one way. -->
+> <!-- The adventure's last picture, one short paragraph; add one per climax outcome when the climax could end more than one way (theatre-of-the-mind: Resolution closing image). -->
 
 ## Consequences
 
@@ -58,4 +58,4 @@ summary: ""
 <!-- Only when it grows from play: one new fact, arrival, or threat; why the adventure caused it; the [[page]] it points toward. -->
 
 > [!narration] Stinger
-> <!-- What the characters perceive of it, spoken after the Closing Image: the arrival, sign, or message, ending before anyone can act. -->
+> <!-- What the characters perceive of the Stinger, a few sentences read after the Closing Image (theatre-of-the-mind: Stinger). -->

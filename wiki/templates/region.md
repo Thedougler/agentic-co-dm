@@ -17,14 +17,10 @@ as_of: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. A site that needs its own key gets its own place page. `region` is the parent region.
-scale: macro | regional | local. kind examples: realm, frontier, wilderness, forest, mountains, archipelago, sea. -->
+scale: macro | regional | local. kind examples: realm, frontier, wilderness, forest, mountains, archipelago, sea. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: the kind of adventure and choices this region creates. Then labelled facts, one bullet each. -->
@@ -33,15 +29,9 @@ flexGrow=2
 - **Pressure.** What is getting worse, and what people will notice next.
 - **Known for.** What travelers expect.
 - **Anchor.** [[place]]
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe look as a traveler first meets it: horizon, terrain, weather, footing, sound, and one feature that sets it apart from its neighbors. -->
-```
-````
+> <!-- One third-person paragraph as a traveler first meets it: horizon, terrain, weather, footing, sound, the one feature that sets it apart from its neighbors (theatre-of-the-mind: Region portrait). -->
 
 ## Geography
 
@@ -65,7 +55,7 @@ flexGrow=1
 - **Regional rule.** One unusual rule that matters at the table.
 
 > [!narration] On the road
-> <!-- Optional: a stretch of travel here, from theatre-of-the-mind (Travel recipe): the ground underfoot, the weather, what the day's march shows, ending at camp or arrival. -->
+> <!-- Optional: a stretch of travel here, "you" address, a short paragraph ending at camp, arrival, or the thing on the road (theatre-of-the-mind: Travel). -->
 
 ## Key Places
 
@@ -94,7 +84,7 @@ flexGrow=1
 
 ## Encounters
 
-<!-- A d6 table of encounters drawn from creatures and factions on this page, each with its warning sign spoken in the Narration cell. -->
+<!-- A d6 table of encounters drawn from creatures and factions on this page, each with its warning sign spoken in the Narration cell: one `_italic_` line (theatre-of-the-mind: Tick cell). -->
 
 | d6 | Encounter | Narration |
 | -: | --------- | --------- |
@@ -116,4 +106,3 @@ flexGrow=1
 
 - **[[Session]]** — what changed here and why.
 
-## Art

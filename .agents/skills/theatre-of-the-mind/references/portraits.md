@@ -13,7 +13,9 @@ The matching example is in [examples.md](examples.md).
   still be true next session.
 - **Public look only.** What anyone meeting the subject can see, hear, smell,
   or touch. Abilities, tactics, stats, secrets, history, lore, and what the
-  subject "really" is stay in the page's other sections. When the user
+  subject "really" is stay in the page's other sections; history enters only
+  as a landmark's public color that no play depends on
+  ([boundary.md](boundary.md) § Known history). When the user
   explicitly asks for identified properties, write them as a separate short
   paragraph after the portrait.
 - **Lead with what sets it apart.** Open with the whole subject in familiar

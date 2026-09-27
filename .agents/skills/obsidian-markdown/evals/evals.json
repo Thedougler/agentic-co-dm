@@ -17,6 +17,10 @@
         {
           "type": "behavior",
           "text": "Does not invent a wiki/concepts tree."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -36,6 +40,10 @@
         {
           "type": "behavior",
           "text": "Uses type: monster and no WotC paste."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -55,6 +63,10 @@
         {
           "type": "behavior",
           "text": "Points to templates/ when creating."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -70,6 +82,10 @@
         {
           "type": "behavior",
           "text": "Leaves no parallel wiki/concepts tree and follows the current repository filing flow."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -89,6 +105,10 @@
         {
           "type": "behavior",
           "text": "Keeps run-guide/session/beat callouts open rather than collapsed."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -108,6 +128,10 @@
         {
           "type": "behavior",
           "text": "Retains open mechanic/secret callouts and real body newlines."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -131,6 +155,10 @@
         {
           "type": "behavior",
           "text": "Does not put the DC inside [!narration]."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -150,6 +178,10 @@
         {
           "type": "behavior",
           "text": "Does not split a table cell on an unescaped | inside [[...]]."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     }

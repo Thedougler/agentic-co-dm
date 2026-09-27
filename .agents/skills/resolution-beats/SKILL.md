@@ -59,8 +59,8 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    wiki first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
 4. **Read the bar.** Read `docs/agents/table-ready.md`, then build every
    anatomy part the afterscene spends, applying the Resolution craft below.
-   Write every DM-facing line with `writing-for-humans`: lead with the
-   point, name everything, conditionals in tables, secrets stated plainly.
+   Write every DM-facing line with `writing-for-humans`: each fact on the
+   page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rewards and rulings.** Name every reward and its owner; load
    `dnd5e-mechanics` for any check, and `item-design` for a new
    magic item.

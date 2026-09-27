@@ -11,7 +11,7 @@
     },
     {
       "id": "no-restatement",
-      "description": "Each fact appears once. No section restates the item text. At the Table adds only non-obvious play consequences.",
+      "description": "Each fact appears once. No section restates the item text.",
       "exemplars": [
         "Chain-Coil Python: Mechanics owns rules, Provenance owns origin — no overlap",
         "Salvage-Plate Harness: Mechanics owns the crit-blunt rule, no At a Glance repeating it"
@@ -103,6 +103,14 @@
         {
           "text": "Writes the page without asking first and lists any invention in the response to the DM.",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -126,6 +134,14 @@
         {
           "text": "Surfaces existing Fate Spinner facts rather than overwriting them.",
           "type": "content"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -161,6 +177,14 @@
         {
           "text": "Does not grant unbounded always-on detection without a spend, tell, or exposure cost.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -190,6 +214,14 @@
           "text": "No design diary, comparator matrix, or balance commentary on the wiki page.",
           "type": "structure",
           "principle": "item-text-primacy"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -216,6 +248,14 @@
           "text": "Edge cases and limitations live inside the item text block.",
           "type": "structure",
           "principle": "edge-cases-inline"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -241,6 +281,14 @@
           "text": "Edge cases (Extra Attack, TWF, reactions, opportunity attacks) addressed inline in item text.",
           "type": "structure",
           "principle": "edge-cases-inline"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -262,6 +310,14 @@
           "text": "Final item text block is runnable with the trimmed mechanics.",
           "type": "content",
           "principle": "runnable-tonight"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -282,6 +338,14 @@
         {
           "text": "Offers a safer alternative that preserves counterplay.",
           "type": "process"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -303,6 +367,14 @@
           "text": "Tells arrive before the worst consequence lands.",
           "type": "quality",
           "principle": "narration-grounded"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -323,6 +395,14 @@
         {
           "text": "Checks ranger/rogue/scout niches rather than replacing them.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -342,6 +422,14 @@
         },
         {
           "text": "Runs a comparator audit against the combined power.",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
           "type": "quality"
         }
       ]
@@ -389,6 +477,14 @@
         {
           "text": "The only callout on the page is [!narration]; the item text is plain paragraphs with bold labels.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -411,6 +507,14 @@
         },
         {
           "text": "The rarity is supported by the comparator matrix rather than asserted",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
           "type": "quality"
         }
       ]
@@ -439,6 +543,14 @@
         {
           "text": "At the Table carries the dagger's voice and sample lines; Secrets states the curse plainly",
           "type": "structure"
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     },
@@ -501,6 +613,14 @@
         {
           "type": "behavior",
           "text": "Each property with a visible effect gets an `[!narration] In use` block under At the Table (titled with the property when there are several): what the wielder and onlookers perceive when it activates, with no numbers."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look full width after the title",
+          "type": "structure"
+        },
+        {
+          "text": "When a property has a visible effect and an `In use` block is written, it names only the holder's declared use as 'you', then what everyone perceives, with no rule or number",
+          "type": "quality"
         }
       ]
     }

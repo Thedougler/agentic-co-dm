@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Cliffhanger spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Cliffhanger spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -28,16 +28,16 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Cliffhanger opening recipe): open on action, ending on a moment they can act on. -->
+> <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: Cliffhanger opening). -->
 
 ## Actors
 
-- **[[creature]] × 4.** AC, HP, Speed; the attack or save DC the DM rolls; the trait that changes tactics.
+- **[[creature]] × 4.** How many, and HP or resources when not full; the statblock is in Roster.
 - **Wants.** What the opposition is here to do, beyond killing the party.
 - **Tactics.** Opening move → adapts when countered → break point → exit, and how the party can close it.
 
 > [!narration] {Creature}
-> <!-- Optional: the creature as the party meets it here, from theatre-of-the-mind (Creature in scene recipe): silhouette, movement, dangerous parts, scale, what it is doing now, ending before contact. Titled with its name; one per creature kind. -->
+> <!-- Optional, one per creature kind, titled with its name, in the order the party meets them: a few sentences; its response to the party stays in Actors (theatre-of-the-mind: Creature in scene). -->
 
 ````col
 ```col-md
@@ -55,6 +55,8 @@ flexGrow=1
 flexGrow=1
 ===
 ## Pressure
+
+<!-- Narration cells: a line or two in `_italic_` per round of what the party sees and hears change (theatre-of-the-mind: Tick cell). -->
 
 | Round | What happens | Narration |
 | ----- | ------------ | --------- |
@@ -80,7 +82,7 @@ flexGrow=1
 
 ## Outcomes
 
-<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. Narration cells: a line or two in `_italic_` of the changed state (theatre-of-the-mind: Outcome cell). -->
 
 | Outcome | What changes | Next | Narration |
 | ------- | ------------ | ---- | --------- |
@@ -92,4 +94,10 @@ flexGrow=1
 **Carry forward.** Each state the next beat inherits: positions, injuries, resources, who holds what.
 
 > [!narration] If the session ends here
-> <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment. -->
+> <!-- The last words of the night if play stops on this beat, a few sentences (theatre-of-the-mind: If the session ends here). -->
+
+## Roster
+
+<!-- One embed per fighter kind the party could face, from its owner page. -->
+
+![[creature#Statblock]]

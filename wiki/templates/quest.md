@@ -19,14 +19,10 @@ last_advanced: YYYY-MM-DD
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. Track the situation as it is now, not a plotted sequence. Keep a section only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments.
-status: rumored | offered | active | stalled | resolved | failed | expired -->
+status: rumored | offered | active | stalled | resolved | failed | expired. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: what the party can accomplish, stated as the result. Then labelled facts, one bullet each. -->
@@ -36,15 +32,9 @@ flexGrow=2
 - **Opposition.** [[npc]] or [[faction]], and what it wants instead.
 - **Reward.** What is promised.
 - **Deadline.** The event after which the situation changes.
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-facing brief: the request, rumor, or visible problem, using only what the characters know. -->
-```
-````
+> <!-- One short paragraph of what the characters know: the request, rumor, or visible problem as the party meets it (theatre-of-the-mind: Dialogue, or Handout when it is posted). -->
 
 ## Situation
 

@@ -13,7 +13,7 @@ session: ""
 visibility: dm
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Development spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Development spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
@@ -27,7 +27,7 @@ summary: ""
 - **Next.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Opening
-> <!-- Spoken opening from theatre-of-the-mind (Development opening recipe): what the characters perceive, ending on a moment they can act on. -->
+> <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: Development opening). -->
 
 ````col
 ```col-md
@@ -48,11 +48,11 @@ flexGrow=1
 ## Actors
 
 - **[[npc]].** Wants now; knows; offers; lies about, and the tell; price for help; what shifts their posture.
-
-> [!narration] {NPC}
-> <!-- Optional: the person as the party meets them here, from theatre-of-the-mind (NPC first look recipe): their face from the NPC page, what they are doing, and their first words in their voice. Titled with their name; one per NPC. -->
 ```
 ````
+
+> [!narration] {NPC}
+> <!-- Optional, one per NPC, titled with their name, in the order the party meets them: their first look and first words (theatre-of-the-mind: NPC first look, Dialogue). -->
 
 ## Handles
 
@@ -77,11 +77,11 @@ flexGrow=1
 - [ ] **Support.** A fact about motive, stakes, or history → surfaces through [[page]].
 
 > [!narration] Revelation
-> <!-- The moment the Core clue lands, from theatre-of-the-mind (Revelation recipe): what the characters see or hear that makes the truth undeniable. -->
+> <!-- Once, after Clues: the moment the Core clue lands, one short paragraph (theatre-of-the-mind: Revelation). -->
 
 ## Outcomes
 
-<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. -->
+<!-- Required. One row per outcome the beat can plausibly produce: what changes and the beat it hands to. Narration cells: a line or two in `_italic_` of the changed state (theatre-of-the-mind: Outcome cell). -->
 
 | If the party… | What changes | Next | Narration |
 | ------------- | ------------ | ---- | --------- |

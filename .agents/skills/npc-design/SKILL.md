@@ -181,16 +181,18 @@ the NPC's posture changes, and every likely move from the page alone.
 
 A likely move that goes wrong ends in a fight: anyone the party could attack,
 rob, or arrest can fight back, and so can whatever the NPC would loose or call
-(guards, beasts, a crew). Each of them carries compact numbers in the Combat
-section: AC, HP, Speed, the attacks or save DCs the DM will roll, and what they
-do when violence starts (fight, flee, call the watch, loose the animals). A
-standard statblock used unchanged needs no custom features: name it and copy
-those numbers. New or changed combat forms come from `monster-design`, given
+(guards, beasts, a crew). The NPC's own statblock lives on this page. Each
+other fighter's statblock lives on its own owner page and is embedded here
+(`![[owner#Statblock]]`), with a line for what it does when violence starts
+(fight, flee, call the watch, loose the animals). A standard statblock with
+no page yet gets one through `monster-design`'s Reskin path first. New or
+changed combat forms come from `monster-design`, given
 the NPC's concept, face, tells, and brief; it returns statblocks tuned to the
 live party and an encounter rule (the fiction that picks a form).
 
-Done when every fighter the page puts in the party's reach carries numbers,
-the NPC included: someone who flees can still be grabbed, chased, or struck.
+Done when every fighter the page puts in the party's reach has a statblock,
+the NPC's on this page and every other one embedded from its owner: someone
+who flees can still be grabbed, chased, or struck.
 
 ### 6. Hand the look and voice to theatre-of-the-mind
 
@@ -263,8 +265,8 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
   0 (`docs/agents/table-ready.md` § Fill the silence).
 - Each new owner page came from its owner skill, loaded and followed.
-- Every fighter in reach carries compact numbers: the NPC, their guards, and
-  any animal on the page that could get loose; custom
+- Every fighter in reach has a statblock: the NPC's on this page, and their
+  guards' and any loose animal's embedded from their owner pages; custom
   forms came from `monster-design`.
 - `role` is rival, patron, or contact; `[!narration]` is the only callout.
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the

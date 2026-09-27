@@ -18,6 +18,9 @@ from pathlib import Path
 from typing import Any, Iterable, NoReturn
 
 ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, examples_epilog
 POLICY_PATH = ROOT / "config" / "efficiency.yaml"
 SUPPORTED_SCHEMA = 1
 SITTING_CLASSES = {"prep", "wrapup"}
@@ -310,19 +313,23 @@ def report(records: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description=__doc__)
-    sub = parser.add_subparsers(dest="command", required=True)
-    record = sub.add_parser("record", epilog="Examples: scripts/efficiency-trace.py record --input trace.json")
+    parser = AgentParser(
+        description=__doc__,
+        example="python3 scripts/efficiency-trace.py record --input trace.json",
+    )
+    sub = parser.add_subparsers(dest="command", required=True, parser_class=AgentParser)
+    record = sub.add_parser("record", epilog=examples_epilog("scripts/efficiency-trace.py record --input trace.json"), example="scripts/efficiency-trace.py record --input trace.json")
     record.add_argument("--input", required=True, type=Path)
     record.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
     record.add_argument("--quarantine", type=Path, default=ROOT / ".local/efficiency/quarantine/rejected.jsonl")
-    report_cmd = sub.add_parser("report", epilog="Examples: scripts/efficiency-trace.py report --trace .local/efficiency/traces.jsonl")
+    report_cmd = sub.add_parser("report", epilog=examples_epilog("scripts/efficiency-trace.py report --trace .local/efficiency/traces.jsonl"), example="scripts/efficiency-trace.py report --trace .local/efficiency/traces.jsonl")
     report_cmd.add_argument("--input", type=Path)
     report_cmd.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
-    retain = sub.add_parser("retain", epilog="Examples: scripts/efficiency-trace.py retain --days 30")
+    retain = sub.add_parser("retain", epilog=examples_epilog("scripts/efficiency-trace.py retain --days 30 --dry-run"), example="scripts/efficiency-trace.py retain --days 30 --dry-run")
     retain.add_argument("--trace", type=Path, default=ROOT / ".local/efficiency/traces.jsonl")
     retain.add_argument("--days", type=int)
-    promote = sub.add_parser("promote", epilog="Examples: scripts/efficiency-trace.py promote --input trace.json --risk low")
+    retain.add_argument("--dry-run", action="store_true")
+    promote = sub.add_parser("promote", epilog=examples_epilog("scripts/efficiency-trace.py promote --input trace.json --risk low"), example="scripts/efficiency-trace.py promote --input trace.json --risk low")
     promote.add_argument("--input", required=True, type=Path)
     promote.add_argument("--risk", required=True, choices=("low", "moderate", "high"))
     promote.add_argument("--canary", type=float, default=0.0)
@@ -369,9 +376,12 @@ def main() -> int:
                     kept.append(record)
                 else:
                     removed += 1
-            args.trace.parent.mkdir(parents=True, exist_ok=True)
-            args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept), encoding="utf-8")
-            print(json.dumps({"status": "retained", "removed": removed, "days": retention_days}))
+            if args.dry_run:
+                print(json.dumps({"status": "planned", "removed": removed, "days": retention_days}))
+            else:
+                args.trace.parent.mkdir(parents=True, exist_ok=True)
+                args.trace.write_text("".join(json.dumps(record, sort_keys=True) + "\n" for record in kept), encoding="utf-8")
+                print(json.dumps({"status": "retained", "removed": removed, "days": retention_days}))
         elif args.command == "promote":
             settings = policy()
             records = [validate_record(record) for record in records_from(read_json(args.input)) if record.get("record_kind") != "command"]

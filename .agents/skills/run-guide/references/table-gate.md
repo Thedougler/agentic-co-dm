@@ -22,8 +22,8 @@ draft is incomplete.
   reinforcements) is defined on the card with its trigger, numbers, and what
   the players perceive (`docs/agents/table-ready.md` § Define every
   consequence).
-- Opposition that can fight has compact numbers and its loop: opening move,
-  adaptation, break point, exit.
+- Opposition that can fight has its statblock embedded in Roster and its
+  loop in Actors: opening move, adaptation, break point, exit.
 - Each PC present has a reason to act on this card.
 - Rewards and costs the beat can produce are named (owner links, amounts).
 - The `Previously` recap block appears only on the first beat.

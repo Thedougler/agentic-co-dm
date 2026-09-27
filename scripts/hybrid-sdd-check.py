@@ -15,6 +15,11 @@ import sys
 from pathlib import Path
 from typing import Any, NoReturn
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+from tools.wiki_ops.cli import AgentParser, examples_epilog
+
 CLASSES = {"engineering", "agent-system", "campaign-architecture", "creative-system"}
 ROUTES = {"full-sdd", "existing-skill"}
 ROUTINE_SKILLS = {"npc-design", "place-design", "item-design", "spell-design", "monster-design"}
@@ -627,17 +632,21 @@ def check_diff(plan: Path, base: str, root: Path) -> dict[str, Any]:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    sub = parser.add_subparsers(dest="command", required=True)
+    parser = AgentParser(
+        description=__doc__,
+        example="python3 scripts/hybrid-sdd-check.py classify --fixtures fixtures.json",
+    )
+    sub = parser.add_subparsers(dest="command", required=True, parser_class=AgentParser)
     for name in ("classify", "agency", "canon", "topology", "plan", "verify"):
         command = sub.add_parser(
             name,
-            epilog=f"Examples: scripts/hybrid-sdd-check.py {name} --fixtures fixtures.json",
+            epilog=examples_epilog(f"scripts/hybrid-sdd-check.py {name} --fixtures fixtures.json"),
+            example=f"scripts/hybrid-sdd-check.py {name} --fixtures fixtures.json",
         )
         command.add_argument("--fixtures", required=True, type=Path)
-    preset = sub.add_parser("preset", epilog="Examples: scripts/hybrid-sdd-check.py preset --package package.json")
+    preset = sub.add_parser("preset", epilog=examples_epilog("scripts/hybrid-sdd-check.py preset --package package.json"), example="scripts/hybrid-sdd-check.py preset --package package.json")
     preset.add_argument("--package", required=True, type=Path)
-    diff = sub.add_parser("diff", help="diagnostic: plan New files / Deleted or folded tables against a git diff", epilog="Examples: scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main")
+    diff = sub.add_parser("diff", help="diagnostic: plan New files / Deleted or folded tables against a git diff", epilog=examples_epilog("scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main"), example="scripts/hybrid-sdd-check.py diff --plan specs/030-self-improving-architecture/plan.md --base main")
     diff.add_argument("--plan", required=True, type=Path)
     diff.add_argument("--base", required=True)
     args = parser.parse_args()

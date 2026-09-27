@@ -13,28 +13,18 @@ kind: flora hazard
 region: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
 ## At a Glance
 
 <!-- Required. Lead sentence: where the party meets this hazard and what it costs them. Then labelled facts, one bullet each. -->
 
 - **Found in.** [[place]] or terrain.
-```
 
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe look: form, material, scale, and at least one warning sense beyond sight. -->
-```
-````
+> <!-- One third-person paragraph of what a careful traveler sees before touching it: form, material, scale, and a warning sense beyond sight (theatre-of-the-mind: Hazard portrait). -->
 
 ## Hazard
 
@@ -47,7 +37,7 @@ flexGrow=1
 - **Counterplay.** Other honest answers: cover, reach, fire, a tool.
 
 > [!narration] On contact
-> <!-- What the character feels and the others see when the hazard hits, "you" address, ending on the condition it leaves. -->
+> <!-- Optional: what the character feels and the others see when it hits, "you" address, a few sentences (theatre-of-the-mind: On contact). -->
 
 ## Secrets
 
@@ -57,4 +47,3 @@ flexGrow=1
 
 - [[page]] — what this tie does at the table.
 
-## Art

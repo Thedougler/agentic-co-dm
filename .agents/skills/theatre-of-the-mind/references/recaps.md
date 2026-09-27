@@ -99,9 +99,10 @@ Read aloud as a session starts:
 
 ## Final check for recaps
 
-Run this in place of the Picture, Compress, Layers, Art, Felt, and Size
-items of the `SKILL.md` final check. Echo, Show, Hands off, Hard lines, and
-Speakable (apart from its paragraph count) still apply.
+Run this in place of the Filing, Point, Picture, Compress, Layers, Art,
+Felt, and Size items of the `SKILL.md` final check. Echo, Show, Clean lines,
+Hands off, Hard lines, and Speakable (apart from its paragraph count) still
+apply.
 
 - [ ] Does every moment on the list appear as its concrete action, with more
       words than the routine events around it?

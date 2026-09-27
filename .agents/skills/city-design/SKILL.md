@@ -178,7 +178,7 @@ silhouette from the approach, movement at the gate or harbour, one sound and
 one smell with sources, the landmark a newcomer steers by, and the tells of the
 situations a newcomer could see. Leave out truths, DCs, and names not earned.
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give
-it the packet. The result is the header `[!narration]` beside At a Glance,
+it the packet. The result is the `[!narration]` after At a Glance,
 titled with the city's name. The Districts and Street Life Narration cells are
 situated lines from the same skill (zone-cell recipe).
 

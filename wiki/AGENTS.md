@@ -76,15 +76,15 @@ Copy the matching `wiki/templates/` scaffold for the page's `type` (and `kind` f
 **Owner page anatomy** (every `entities/` type), in this order:
 
 1. `# Title`, then optional overview art.
-2. Header row (`col` codeblock): `## At a Glance` — one lead sentence on what the page is for at the table, then two to six `- **Label.** fact.` bullets — beside `> [!narration] Name`, the player-safe look.
+2. `## At a Glance` — one lead sentence on what the page is for at the table, then two to six `- **Label.** fact.` bullets — followed by `> [!narration] Name`, the player-safe look, full width.
 3. The type's core section: `Statblock` (creature, vehicle, fighting NPC), `Sheet` (PC), `Properties` (item), `Effect` (spell), `Hazard` (flora hazard), `Ruling` (Rules), `Situation` (quest), or the type's own sections in its template. Lore shapes its body to fit the lore, with headings named for what they hold.
-4. Shared sections, one meaning everywhere: `At the Table` (how to run it), `Secrets` (hidden truths and how each surfaces), `Connections` (`- [[page]] — what the tie does at the table`), `History` (past that changes a present choice), `Log` (newest first, one bullet per change play made), `Art`.
+4. Shared sections, one meaning everywhere: `At the Table` (how to run it), `Secrets` (hidden truths and how each surfaces), `Connections` (`- [[page]] — what the tie does at the table`), `History` (past that changes a present choice), `Log` (newest first, one bullet per change play made).
 
 **Beat anatomy** (hook, development, cliffhanger, climax, resolution, session plan, session-prep, encounter): `At a Glance` (lead sentence, entry state, objective, ends when, next beat) → `> [!narration] Opening` → `Situation` → `Actors` → `Stage` → `Pressure` → `Handles` → `Checks` → `Clues` (truths) or `Leads` (routes onward) → `Outcomes` with carry-forward, plus the type's own sections in its template. `docs/agents/table-ready.md` is the completeness bar.
 
 **Callouts.** `[!narration]` is the only callout: words the DM reads aloud, player-safe (no secrets, DCs, unearned names, or the At a Glance read). Mechanics and secrets are plain prose under their heading; the whole page is DM-facing. A page carries one narration block per moment the players live through — the look, a creature's or NPC's entrance, a revelation, the closing line — at the slot its template gives it; a line that belongs to one branch is an `_italic_` cell in the table's Narration column.
 
-**Columns.** `col` / `col-md` codeblocks only, for two patterns: the owner-page header row, and a beat pair of two short same-moment blocks. Statblocks, wide tables, and long narration stay full width.
+**Columns.** `col` / `col-md` codeblocks only, for one pattern: a beat pair of two short same-moment DM blocks. Every `[!narration]` callout, statblock, and wide table stays full width.
 
 Layout kinds Encounters, Rules, Campaign State, and DM Intelligence copy `encounter.md`, `rules.md` (`type: lore` `kind: rules`), `campaign-state.md` (`type: lore` `kind: campaign-state`), and `dm-intelligence.md` (`type: work` `kind: dm-intelligence`). Flora hazards copy `hazard.md` (`type: item` `kind: flora hazard`). Cities copy `city.md` (`type: place` `kind: city`). `session-prep.md` is the run-guide cockpit; new beats and plans copy their typed template.
 
@@ -148,7 +148,7 @@ No separate `recaps/` tree; no flat `wiki/journal/Session-…`.
 
 Structural context waste (multi-H1 satellites, Foundry dump-copy beside Sheet, empty sections left in place) is a token bug — see `docs/agents/context-waste-method.md`. Not a prose-quality score.
 
-Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`. DM-visible labels use Title Case words (`One thing`, not `one_thing`); YAML keys may stay snake_case.
+Image assets use flat `wiki/attachments/{subject-slug}-{role}.{ext}` paths with roles `banner`\|`portrait`\|`token`\|`battlemap`\|`overview`\|`reference`\|`handout`\|`teaser`\|`recording`; see `wiki/attachments/README.md`. Foundry `token` is YAML on creature/npc/pc, never a body embed. DM-visible labels use Title Case words (`One thing`, not `one_thing`); YAML keys may stay snake_case.
 
 ## Approval (FR-019)
 

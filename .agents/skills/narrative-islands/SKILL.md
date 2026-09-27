@@ -123,7 +123,7 @@ Copy `wiki/templates/quest.md` and fill At a Glance and the frontmatter:
 - **Deadline:** a date or the fictional event after which the situation
   changes, when one exists.
 - **Opposition:** who wants a different outcome, and what they want instead.
-- **Narration** (beside At a Glance): the player-facing brief, from what the characters know.
+- **Narration** (after At a Glance): the player-facing brief, from what the characters know.
 
 Complete when: objective and why now are explicit, and a deadline appears
 only when the situation has one.
@@ -131,7 +131,7 @@ only when the situation has one.
 ### 4. Write the Situation
 
 Write the unstable present: what is really happening, the forces involved, and
-what each is already doing. What the party knows lives in the narration beside At a Glance.
+what each is already doing. What the party knows lives in the narration after At a Glance.
 Do not prescribe the party's next action.
 
 Complete when: a DM can explain the current tension, involved forces, and

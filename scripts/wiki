@@ -18,7 +18,7 @@ if _VENV_PY.is_file() and Path(sys.executable).resolve() != _VENV_PY.resolve():
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from tools.wiki_ops.cli import SCOPE_KINDS, configured_vault, emit_json, resolve_vault, usage_error
+from tools.wiki_ops.cli import SCOPE_KINDS, AgentParser, UsageError, configured_vault, emit_json, resolve_vault, usage_error
 from tools.wiki_ops.scope import parse_scope
 from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot, build_trends
 from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
@@ -39,13 +39,6 @@ def _tracker_root() -> Path:
     raw = os.environ.get("WIKI_TRACKER_ROOT")
     return Path(raw) if raw else ROOT
 
-
-class UsageError(ValueError):
-    """Invalid input: reported as the FR-035 error object (exit 2)."""
-
-    def __init__(self, error: str, *, hint: str, example: str, list_valid: str | None = None):
-        super().__init__(error)
-        self.hint, self.example, self.list_valid = hint, example, list_valid
 
 
 def _machine_error(message: str, *, pretty: bool = False) -> int:
@@ -806,18 +799,17 @@ EXAMPLES = {
 PATH_HELP = f"vault-relative page or directory, or a kind:value scope ({SCOPE_KINDS})"
 
 
-class _Parser(argparse.ArgumentParser):
-    """Usage errors become the FR-035 error object."""
+class _Parser(AgentParser):
+    """Usage errors become UsageError for --pretty handling."""
 
-    def error(self, message: str) -> None:  # type: ignore[override]
-        raise UsageError(message, hint=f"run {self.prog} --help", example=EXAMPLES[self.prog[5:]][0])
-
+    def __init__(self, *args, **kwargs):
+        kwargs.setdefault("exit_on_usage", False)
+        super().__init__(*args, **kwargs)
 
 def _sub_parser(name: str) -> argparse.ArgumentParser:
     summary = dict(SUBCOMMANDS)[name]
     examples = "Examples:\n" + "\n".join(f"  {line}" for line in EXAMPLES[name])
-    parser = _Parser(prog=f"wiki {name}", description=summary, epilog=examples,
-                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser = _Parser(prog=f"wiki {name}", description=summary, epilog=examples, example=EXAMPLES[name][0])
     parser.add_argument("--vault", help="vault directory (default: OBSIDIAN_VAULT_PATH > repo .env > <repo>/wiki)")
     if name in {"lint", "lint fix", "health"}:
         parser.add_argument("paths", nargs="*", help=PATH_HELP)
@@ -876,6 +868,9 @@ def main(argv: list[str] | None = None) -> int:
     if not raw or raw[0] in {"-h", "--help"}:
         width = max(len(name) for name, _ in SUBCOMMANDS)
         print("\n".join(f"{name.ljust(width)}  {summary}" for name, summary in SUBCOMMANDS))
+        print("\nExamples:")
+        print(f"  {EXAMPLES['lint'][0]}")
+        print(f"  {EXAMPLES['query'][0]}")
         if raw:
             print("\nwiki <subcommand> --help shows that subcommand's options and examples.")
         return 0

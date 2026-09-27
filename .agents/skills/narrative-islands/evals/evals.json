@@ -41,6 +41,10 @@
         {
           "type": "behavior",
           "text": "At a Glance leads with the result the party can accomplish, then Why now, Offered by, Opposition, Reward, and Deadline bullets."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -64,6 +68,10 @@
         {
           "type": "behavior",
           "text": "NPCs and locations used are from the wiki, not invented for the linear path."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -99,6 +107,10 @@
         {
           "type": "behavior",
           "text": "Vault integrity: Mave Sorn, Velvet Noose, Magistrate's Warding Chip, and Central Strait resolve to existing wiki pages."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -126,6 +138,10 @@
         {
           "type": "behavior",
           "text": "The quest frame sentence names incompatible wants, live pressure, and what changes if nobody interrupts."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -153,6 +169,10 @@
         {
           "type": "behavior",
           "text": "Persistence: the unchosen ports continue on their own timelines."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -180,6 +200,10 @@
         {
           "type": "behavior",
           "text": "The quest page has Situation, Stakes, and Pressure sections, not a history article."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -207,6 +231,10 @@
         {
           "type": "behavior",
           "text": "Walk-away names what continues without the party — the quest is not a one-shot gate."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -234,6 +262,10 @@
         {
           "type": "behavior",
           "text": "Multiple leads exist — the party is not locked into investigate → discover → defeat → confront."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -261,6 +293,10 @@
         {
           "type": "behavior",
           "text": "The quest page has a Pressure section with a driver, its next move, and an end state."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -296,6 +332,10 @@
         {
           "type": "behavior",
           "text": "Persistence: the page reflects accumulated play, not just the original prep."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ]
     },
@@ -347,6 +387,10 @@
         {
           "type": "behavior",
           "text": "DM layers answer what they raise: the seal's true nature, the driver's next move with a time or trigger, and every portent and reversal are stated as world fact, with no 'unclear', 'may', 'not established', or 'for play to establish' on the page."
+        },
+        {
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "type": "structure"
         }
       ],
       "files": [

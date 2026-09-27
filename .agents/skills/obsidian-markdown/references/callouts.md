@@ -9,7 +9,7 @@
 
 A page carries one narration block per moment the players live through, at the slot its template gives it. Titles in use:
 
-- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look, in the header row. Moment slots below it: `In action` (creature), `First meeting` (npc), `When met` (faction), `In use` (item), `On contact` (hazard), `Underway` (vehicle), `{Area}` and `Returning` (place), `On the road` (region), `Common telling` and `Found text` (lore).
+- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look, full width after At a Glance. Moment slots below it: `In action` (creature), `First meeting` (npc), `When met` (faction), `In use` (item), `When cast` (spell), `On contact` (hazard), `Underway` (vehicle), `{Area}` and `Returning` (place), `On the road` (region), `Common telling` and `Found text` (lore).
 - Beats, encounters, and session-prep: `Previously` (the session's first beat), `Opening`, `{Creature}` and `{NPC}` (titled with the name, as each enters), `Revelation`, `Outcomes`, `Exit`, `If the session ends here` (cliffhanger), `Closing Image` and `Stinger` (resolution).
 - Recaps: `Recap`.
 

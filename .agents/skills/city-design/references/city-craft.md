@@ -15,7 +15,7 @@ practice that tracks current deltas instead of rewriting the whole setting.
 
 ### Narration
 
-The header row's `[!narration]`: a theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
+The `[!narration]` after At a Glance: a theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
 silhouette, motion, sound, smell, one unmistakable landmark. Keep secrets,
 hidden history, DCs, and unearned names out of player-facing prose.
 

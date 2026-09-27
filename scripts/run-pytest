@@ -13,6 +13,12 @@ REPAIR = "pytest is missing from .venv. Restore the locked environment: uv sync"
 
 
 def main() -> int:
+    extra = sys.argv[1:]
+    if not extra or extra[0] in {"-h", "--help"}:
+        sys.stdout.write(
+            "Examples:\n  ./scripts/run-pytest\n  ./scripts/run-pytest -k test_wiki_cli\n"
+        )
+        sys.stdout.flush()
     if not PYTHON.is_file():
         sys.stderr.write(f"Missing {PYTHON}. Restore the locked environment: uv sync\n")
         return 1
@@ -30,7 +36,7 @@ def main() -> int:
         return 1
     os.execve(
         str(PYTHON),
-        [str(PYTHON), "-m", "pytest", *sys.argv[1:]],
+        [str(PYTHON), "-m", "pytest", *extra],
         env,
     )
     return 1

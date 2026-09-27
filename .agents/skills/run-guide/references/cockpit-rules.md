@@ -81,7 +81,9 @@ cockpit.
 
 ## Actors and embeds
 
-Default-mode compact numbers live in the first section that needs them. Hidden
+Numbers stay on the owner and arrive by the Roster embed; an actor entry
+carries only this slice's state (HP when not full, spent resources, the
+bloodied or break rule) and its loop. Hidden
 intent, opposition wants, and canon constraints are ordinary DM-facing facts —
 write them inline where they change a ruling or choice.
 

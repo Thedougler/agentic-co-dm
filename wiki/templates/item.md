@@ -16,54 +16,17 @@ attunement: false
 owner: ""
 summary: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. A consumable is At a Glance, narration, and Properties; stop there. Magic, plot, and durable items add other sections only when they have facts. Each fact appears once: Properties owns the numbers. Delete unused sections, bullets, rows, narration slots, and these comments.
-kind: consumable | magic | plot | durable. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. Default page is the portrait, then italic classification, then what it does. Extra campaign facts only after the rules, only when they exist. Lore about the world goes on a lore page. Delete unused comments. kind: consumable | magic | plot | durable. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-````col
-```col-md
-flexGrow=2
-===
-## At a Glance
-
-<!-- Required. The classification line in italics, then one lead sentence on what the item changes at the table. Then labelled facts, one bullet each. -->
-
-*Wondrous item, rare (requires attunement)*
-
-- **Held by.** [[npc]] or [[place]]
-- **Wanted by.** [[npc]] or [[faction]], and why.
-```
-
-```col-md
-flexGrow=1
-===
 > [!narration] {{title}}
-> <!-- Player-safe look: plain noun, size against a hand, material, wear, marks, one sense beyond sight, a visible tell for each hidden property. -->
-```
-````
+> <!-- Item portrait: the object as seen, true every time (theatre-of-the-mind). -->
 
-## Properties
+<!-- Classification: type, rarity, attunement, cost, weight. Match YAML. Weapon or armor: damage or AC on the next line (`1d8` slashing; AC +2). -->
 
-<!-- Required. The runnable rules text in 2024 language: trigger, action cost, uses and recovery, range, targets, saves, damage, duration, limits. Simple items take one to three sentences; complex items use one bold-labelled paragraph per property. -->
+*Potion, rare, ½ lb.*
 
-## At the Table
+<!-- What it does. 2024 rules: trigger, action, uses, range, targets, save, damage, duration, limits. One to three sentences. Further properties as **Name.** paragraphs after that block, still before any lore. -->
 
-<!-- How the item shows up in play and which choice it changes tonight. A sentient item's voice and sample lines go here. -->
-
-> [!narration] In use
-> <!-- Optional: what the wielder and onlookers perceive when a property activates, from theatre-of-the-mind (Item in scene recipe). One block per property with a visible effect, titled with the property's name when there are several. -->
-
-## Secrets
-
-<!-- Curses, hidden properties, or concealed history the party has not learned, each with how they can learn it. -->
-
-## Connections
-
-- [[page]] — what this tie does at the table.
-
-## History
-
-<!-- Who made it, who held it, and any contested claim to it. -->
-
-## Art
+When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.

@@ -2,13 +2,27 @@
 name: writing-for-agents
 description: >
   Write text an agent will follow: a skill, standing instruction, pointed-at
-  procedure, spec, or constitution. Reader `agent` → writing-for-agents.
-  When that document is D&D content guidance, research experts then integrate
-  outcomes. Ordinary wiki content jobs are not this entity. Does not own DM
-  Work, wiki prose, or player-facing text.
+  procedure, spec, constitution, or CLI --help / errors / success output.
+  Reader `agent` → writing-for-agents. When that document is D&D content
+  guidance, research experts then integrate outcomes. Ordinary wiki content
+  jobs are not this entity. Does not own DM Work, wiki prose, player-facing
+  text, or command flags (those are cli-for-agents).
 ---
 
 Reference for writing any document an agent consumes: a skill, an `AGENTS.md` / `CLAUDE.md`, a doc reached by a pointer. The packaging differs; the writing does not: the same levers make each one predictable, since the agent takes the same _process_ every run rather than producing the same output.
+
+## One rule
+
+Write **one rule** the agent applies with judgment. A per-type, per-section, or per-exception table belongs only when those cases truly diverge in procedure — not when they share a rule and differ by a lookup (README roles, filenames, `--help`). Optional beats required. Local beats exhaustive. Test: if the next agent can only obey by walking your table instead of thinking, the table is the bug.
+
+## CLI output
+
+`--help`, usage errors, and success lines are environment documents. `cli-for-agents` owns flags, stdin, dry-run, and command shape. This skill owns the sentences.
+
+- **Help.** Each program and each subcommand prints its own `--help`. That help includes an `Examples:` block of real invocations the agent can copy. Root help lists subcommands one line each; it does not dump every flag.
+- **Usage errors.** Missing or invalid input stops. The message names the failure, then one correct example invocation. Python CLIs use `tools.wiki_ops.cli.usage_error`.
+- **Success.** Name what happened in machine-useful keys or one line (`status`, ids, paths, `next`). Decorative banners are not output.
+- **Pointers.** Skills and `AGENTS.md` name `prog --help` (or `prog <subcommand> --help`). They do not restate flags that `--help` already owns.
 
 When the document you're writing is a skill, read [`skill-mechanics.md`](skill-mechanics.md) for frontmatter, invocation choice, and router skills.
 

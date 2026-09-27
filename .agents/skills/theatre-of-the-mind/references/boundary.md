@@ -48,12 +48,30 @@ can actually perceive ("the scratches look fresh").
 Narration uses layers 1 and 2. A danger shows itself through buildup and
 signs; the players learn the rule by testing it or paying for it.
 
-## First looks stop before contact
+## First looks stop at the windup
 
 A first look at a threat ends on the windup: the tentacle snapping taut, the
 wings folding for the dive, the cart tipping on the slope. The grab, the bite,
 the steal, and the explosion happen after players act, in the DM's live
 narration.
+
+**A creature the party comes upon** is a still fact inside the block and a
+response outside it. The block holds what it is doing before it notices
+anyone. Whether it notices, raises the alarm, flees, or attacks depends on
+how the party enters (loudly, quietly, after scouting), so that response is
+filed in the DM layer (Actors, Tactics, a Handles row) and named on the
+handle note. A sentence that has already played the creature's reaction has
+assumed an entrance the prep does not have:
+
+> You see a strange creature crouching upon the boulder. As you step into the room, it looks up with wide, yellow eyes, gives a deafening call of alarm, and then scurries away.
+
+The creature on the boulder is the block. The step into the room is the
+player's, and the look, the call, and the flight are three responses for the
+DM layer.
+
+When the creature starts the scene (it springs the ambush, it is already
+charging, it is the Hook's disturbance), its move on the party is the
+situation, and the block ends on that move's windup.
 
 ## Hidden things
 
@@ -71,6 +89,22 @@ speech, thought, feeling, memory, conclusion, or bodily reaction, and never
 says what the table understands ("before anyone realizes"). The world can act
 on them: rain soaks cloaks, the deck lurches, smoke stings. Their response is
 theirs.
+
+## Known history
+
+History the characters could not know enters the block only when that past
+is color: nothing in play depends on finding it out. When the past is a clue
+the adventure expects play to find, the block states what shows now and the
+history waits in the DM layer. Two filings of the same lake:
+
+> In years past, a falling body smashed its way through the upper atmosphere and in its violence gouged out this enormous bowl shape into the earth before you. In the years since, a roving glacier or record rainfall has filled the crater with crystal-clear water, shimmering like mithral along its perfectly serene surface, protected as it is from the wind.
+
+> An enormous bowl-shaped depression stretches out across the land. It is half-filled with crystal-clear water that shimmers like mithral along a perfectly serene surface, protected as it is from the wind.
+
+The first is the landmark whose past is color. The second is the filing
+when that past is a clue. Contents behind a closed lid, and the truth a check
+would separate from appearance, are outside the block either way: the block
+states the fact as the characters have it.
 
 ## When the sources are silent
 
