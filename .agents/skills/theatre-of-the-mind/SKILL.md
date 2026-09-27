@@ -606,9 +606,11 @@ run the list again.
       one event's reaction point?
 - [ ] **Better.** (Rewrite of an existing block) Read beside the old block,
       is yours more vivid, more exact in its nouns (the gear, materials, and
-      names the sources give), and tighter, with every fact the table needs
-      kept and nothing that contradicts the page? Name the one thing yours
-      does that the old block does not. A rewrite that only rephrases fails.
+      names the sources give), and tighter, with nothing that contradicts
+      the page? List every fact in the old block beside the words of yours
+      that keep it, or the note that moves it to another slot; a fact with
+      neither was lost. Name the one thing yours does that the old block
+      does not. A rewrite that only rephrases fails.
 - [ ] **Size.** Name the band from Length (a threat present or a fight under
       way is danger, 60 to 90 words). Is the block inside it, counted by the
       checker, with nothing from the slop table left in it?
