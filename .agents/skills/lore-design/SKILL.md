@@ -191,7 +191,9 @@ line that carries it; a line with nothing beside it goes back on the page.
 - When the truth is live in the campaign, a named NPC or faction moves on it on
   their own clock, and the stakes name what the party can win and lose, with
   numbers sized for their level.
-- Accounts name their holders; each needed conclusion has three clues from
+- Accounts name each holder, why they believe it, and how it is wrong; a
+  tavern version is a `[!narration] Common telling` block and readable words a
+  `[!narration] Found text` block; each needed conclusion has three clues from
   different linked sources; uncertain clues carry Ability (Skill) and DC.
 - At the Table says how the lore enters play; every line on the page is
   fact-only; `reveal` stays `unrevealed` until play reveals the lore.

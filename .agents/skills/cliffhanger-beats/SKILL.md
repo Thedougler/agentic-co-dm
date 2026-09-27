@@ -44,7 +44,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Cliffhanger spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
+Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Cliffhanger spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
 
 ## Fill a Cliffhanger
 
@@ -122,6 +122,8 @@ The contest's result is decided by the party's tactics, choices, and rolls on
 the page's rulings; every outcome row changes the physical situation; and the
 page states the next beat's trigger for each row. A result fixed before the
 party acts is narration — rewrite it as a contest.
+
+Every section on the page is a section of the template; none is left over from an older layout.
 
 ## Named seams
 

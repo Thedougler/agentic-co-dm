@@ -251,6 +251,9 @@ line that carries it; a line with nothing beside it goes back on the page.
   tell.
 - The portrait and three sample lines came from theatre-of-the-mind and pass
   its final check; the portrait keeps every face word the old page had.
+- At the Table gives Priority, Shares (what they tell freely and what they
+  never tell), and Voice with the subject they avoid; when the party will meet
+  them, `[!narration] First meeting` ends on their first words.
 - A villain has an active, interruptible front and several possible endings.
 - Every question the page raises has its DM answer; every likely move has
   an answer, a price, and a roll where the outcome is uncertain.

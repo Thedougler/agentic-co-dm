@@ -343,8 +343,19 @@
         {
           "type": "behavior",
           "text": "Complications give a Tradeoff, a Reaction when the party interferes, and a Reversal with where it is found, only when each has facts."
+        },
+        {
+          "type": "behavior",
+          "text": "DM layers answer what they raise: the seal's true nature, the driver's next move with a time or trigger, and every portent and reversal are stated as world fact, with no 'unclear', 'may', 'not established', or 'for play to establish' on the page."
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/quest/countless-through-the-maw-seal.md",
+        "wiki/entities/faction/countless.md",
+        "wiki/entities/place/drowned-maw.md",
+        "wiki/templates/quest.md"
+      ],
+      "outputs": "File the one quest page; mint no other page."
     }
   ]
 }

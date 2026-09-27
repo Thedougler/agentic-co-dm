@@ -453,26 +453,6 @@
         {
           "type": "guardrail",
           "text": "Writes no wiki page"
-        },
-        {
-          "type": "behavior",
-          "text": "`[!narration] Previously` appears before `Opening`, because this is the session's first beat, and retells last session's ending in Recap mode."
-        },
-        {
-          "type": "behavior",
-          "text": "Each NPC or creature the party meets in the Hook has its own `{NPC}` or `{Creature}` narration block, titled with its name, and the NPC's block ends on their first words."
-        },
-        {
-          "type": "behavior",
-          "text": "Handles and Outcomes rows carry a spoken `_italic_` Narration cell for the branch they describe."
-        },
-        {
-          "type": "behavior",
-          "text": "At a Glance's Memorable names the one image, object, or line the players carry out of the beat, and the Opening lands it."
-        },
-        {
-          "type": "quality",
-          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
         }
       ],
       "files": [
@@ -482,6 +462,66 @@
         "wiki/entities/place/memorial-grove.md"
       ],
       "outputs": "Write only {outputs}/response.md: your reply to the DM. Write no wiki page."
+    },
+    {
+      "id": "s12-01-refile",
+      "core": true,
+      "prompt": "Refile the Session 12 Hook (wiki/journal/sessions/shattered-sea/12/session-12-01-dawn-strike.md) on the current hook template.",
+      "context": "Session 12 of the Shattered Sea campaign is planned and filed under wiki/journal/sessions/shattered-sea/12/ but has not been played. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "outputs": "File the one refiled beat page at its current path; mint no other page.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-00-the-garden-keeps-its-own.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-01-dawn-strike.md",
+        "wiki/journal/sessions/shattered-sea/11/session-11-recap.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/npc/matteo-scola.md",
+        "wiki/entities/item/fate-spinner.md",
+        "wiki/entities/place/river-slack-basin.md",
+        "wiki/templates/hook.md"
+      ],
+      "expected_output": "One hook page refiled on the current template from its plan row, keeping its canon.",
+      "assertions": [
+        {
+          "type": "process",
+          "text": "Written from the 01 Hook row of the filed Session 12 plan: its trigger, what changes, card, and memorable element hold on the page."
+        },
+        {
+          "type": "structure",
+          "text": "The page follows wiki/templates/hook.md; no section the current template dropped survives from the old page."
+        },
+        {
+          "type": "quality",
+          "text": "Keeps the old page's canon: every name, number, ruling, and consequence is carried or deliberately cut, and nothing contradicts it or the owner pages."
+        },
+        {
+          "type": "quality",
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and a DM who never saw the prep can run every moment from the page."
+        },
+        {
+          "type": "behavior",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
+        },
+        {
+          "type": "behavior",
+          "text": "`[!narration] Previously` appears before `Opening`, because this is the session's first beat, and retells Session 11's ending in Recap mode."
+        },
+        {
+          "type": "behavior",
+          "text": "Each NPC or creature the party meets in the Hook has its own `{NPC}` or `{Creature}` narration block, titled with its name, and an NPC's block ends on their first words."
+        },
+        {
+          "type": "behavior",
+          "text": "Handles and Outcomes rows carry a spoken `_italic_` Narration cell for the branch they describe."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance's Memorable names the plan's memorable element (Skarn's hook-blade cutting Matteo's sling), and the page delivers it."
+        },
+        {
+          "type": "behavior",
+          "text": "Outcomes name the next beat per row, and Carry forward states each state variable the next beat inherits."
+        }
+      ]
     }
   ]
 }

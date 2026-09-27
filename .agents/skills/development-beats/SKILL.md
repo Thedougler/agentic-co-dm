@@ -42,7 +42,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Development spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
+Copy `wiki/templates/development.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Development spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
 
 ## Fill a Development
 
@@ -54,7 +54,7 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
 2. **Choose the card.** Read
    [references/development-cards.md](references/development-cards.md) and pick
    the card the fiction calls for. Name the live thread it advances and the
-   **turn**: the one fact or change that sets the new direction.
+   **turn**: the one fact or change that sets the new direction. The card and thread go in the session plan's Beat Map; the page carries what they produce.
 3. **Cast owners.** Every named NPC, place, item, faction, or lore fact the
    scene needs has an owner page before any text depends on it: cast from the
    wiki first, and mint with its owner skill (`npc-design` for a new speaker)
@@ -131,6 +131,8 @@ next Cliffhanger's stakes are legible from it. On the page:
 - a physical anchor surfaces at least one revelation;
 - every question the scene sends the party away with names where its answer
   lives (who knows, where, at what price), and the DM layer holds the answer.
+
+Every section on the page is a section of the template; none is left over from an older layout.
 
 ## Named seams
 

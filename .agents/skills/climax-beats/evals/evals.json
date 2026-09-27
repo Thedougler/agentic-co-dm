@@ -589,6 +589,75 @@
         "wiki/entities/pc/perrin-black-jaw.md"
       ],
       "context": "Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
+    },
+    {
+      "id": "s12-05-refile",
+      "core": true,
+      "prompt": "Refile the Session 12 Climax (wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md) on the current climax template.",
+      "context": "Session 12 of the Shattered Sea campaign is planned and filed under wiki/journal/sessions/shattered-sea/12/ but has not been played. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "outputs": "File the one refiled beat page at its current path; mint no other page.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-00-the-garden-keeps-its-own.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-05-consume.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-04-orders-in-the-ash.md",
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/place/the-pantry.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/pc/perrin-black-jaw.md",
+        "wiki/entities/item/fate-spinner.md",
+        "wiki/templates/climax.md"
+      ],
+      "expected_output": "One climax page refiled on the current template from its plan row, keeping its canon.",
+      "assertions": [
+        {
+          "type": "process",
+          "text": "Written from the 05 Climax row of the filed Session 12 plan: its trigger, what changes, card, and memorable element hold on the page."
+        },
+        {
+          "type": "structure",
+          "text": "The page follows wiki/templates/climax.md; no section the current template dropped survives from the old page."
+        },
+        {
+          "type": "quality",
+          "text": "Keeps the old page's canon: every name, number, ruling, and consequence is carried or deliberately cut, and nothing contradicts it or the owner pages."
+        },
+        {
+          "type": "quality",
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and a DM who never saw the prep can run every moment from the page."
+        },
+        {
+          "type": "behavior",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance leads with the question the Climax settles, then Entry state, Party objective, Opposition wants, Stakes, If behind (the compression), and Next."
+        },
+        {
+          "type": "behavior",
+          "text": "An Opening narration callout exists with you-address and sensory grounding, and forecasts no consequence."
+        },
+        {
+          "type": "behavior",
+          "text": "Thread Harvest gives each live thread where it was planted, the concrete lever it gives here, and what happens without it."
+        },
+        {
+          "type": "behavior",
+          "text": "Skarn's Actors entry carries labelled sub-bullets: Numbers, Wants (and why now), Leverage, Plays, Line, and Morale, and names his exits."
+        },
+        {
+          "type": "behavior",
+          "text": "Each creature kind and NPC the party meets has its own `{Creature}` or `{NPC}` narration block, titled with its name."
+        },
+        {
+          "type": "behavior",
+          "text": "Phases and Outcomes rows carry spoken `_italic_` Narration cells; the Phases cell is the phase-shift signal the players perceive."
+        },
+        {
+          "type": "behavior",
+          "text": "Pressure names If it goes static (the move that breaks a stalemate), and Stage names Collateral: who or what nearby is lost if the fight spills over."
+        }
+      ]
     }
   ]
 }

@@ -244,7 +244,8 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Every other page the work edits stays whole: one narration callout, its
   established sections and numbers kept; an edit there only fills blanks.
 - The narration came from theatre-of-the-mind and holds no truth, DC, or
-  unearned name.
+  unearned name; the header shows the craft at its berth, and
+  `[!narration] Underway` under At the Table shows it in motion from its deck.
 - Every owner was cast or minted first. Each new mint names, in the response,
   the candidates considered and why none fit (`docs/agents/table-ready.md` §
   Cast before minting).

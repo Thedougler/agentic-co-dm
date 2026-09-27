@@ -38,7 +38,13 @@
           "type": "behavior",
           "text": "An optional `[!narration] On contact` shows what the character feels and the others see when the grass cuts, ending on the condition it leaves; the hidden mechanism stays under Secrets."
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/item/razer-grass.md",
+        "wiki/entities/region/aruhe.md",
+        "wiki/templates/hazard.md"
+      ],
+      "outputs": "File the one razer-grass hazard page; mint no other page."
     },
     {
       "id": 2,

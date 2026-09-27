@@ -43,7 +43,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Climax spends; keep **Final Battle** or **Final Revelation** for the shape in play and delete the other (fact-only, `wiki/AGENTS.md` Layout).
+Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Climax spends; keep **Final Battle** or **Final Revelation** for the shape in play and delete the other (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
 
 ## Fill a Climax
 
@@ -55,7 +55,7 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
 2. **Choose the shape.** Read
    [references/climax-cards.md](references/climax-cards.md) and pick the shape
    the party's choices earned. When the party negotiated, exposed, or fled
-   their way here, that shape is the Climax.
+   their way here, that shape is the Climax. The card goes in the session plan's Beat Map; the page carries what it produces.
 3. **Cast owners.** Every creature, NPC, place, item, or rule the Climax
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting); a creature the
@@ -129,6 +129,8 @@ Copy `wiki/templates/climax.md`. File after accept to `wiki/journal/sessions/<ca
 The highest-stakes confrontation resolves on the page's rulings; every live
 thread has a harvest row with its lever; and every outcome row states the
 changed world, the costs, and each thread's final state for the Resolution.
+
+Every section on the page is a section of the template; none is left over from an older layout.
 
 ## Named seams
 

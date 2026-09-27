@@ -45,7 +45,7 @@ Cast and invent per `docs/agents/table-ready.md` § Cast before minting and § F
 
 ## Copy-start
 
-Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Hook spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout).
+Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<campaign-slug>/<session-number>/Session-<n>-<BB>-<Label>.md`; when the request names no session, list `wiki/journal/sessions/<campaign-slug>/`, take the next session to be played, and say so. Keep the sections the template marks `Required.` and every section this Hook spends at the table; delete the rest (fact-only, `wiki/AGENTS.md` Layout). Add no section the template lacks: refiling an older page moves each old section's facts into the template section that owns them (fighter numbers and tactics into Actors, pressure into Situation or Pressure where the template has it).
 
 ## Fill a Hook
 
@@ -125,6 +125,8 @@ beat's trigger. The Hook is the session's only Hook. On the page:
 - the Hook plants at least one piece a later beat uses;
 - every boundary, demand, or taboo the scene states has a row for breaking
   it, with the full consequence copied from its owner page.
+
+Every section on the page is a section of the template; none is left over from an older layout.
 
 ## Named seams
 

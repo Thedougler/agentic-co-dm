@@ -218,6 +218,8 @@ line that carries it; a line with nothing beside it goes back on the page.
   appears on the page.
 - Every rumor's truth is a world fact; the finds under Secrets list things the
   party can take, use, or visit, and the wonder gives something back.
+- When the party will travel the region, `[!narration] On the road` under
+  Travel renders a stretch of the journey.
 - The narration came from theatre-of-the-mind and holds no truth, DC, or
   unearned name.
 - Every owner was cast or minted first. Each new mint names, in the response,

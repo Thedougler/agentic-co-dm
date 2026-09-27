@@ -99,6 +99,14 @@
         {
           "text": "The Bloodhawk's stoop and Crown Squid's hookline tactics reference their wiki owner pages, not invented mechanics.",
           "type": "content"
+        },
+        {
+          "type": "structure",
+          "text": "Because this Hook is the session's first beat, its cockpit carries `[!narration] Previously` before `Opening`."
+        },
+        {
+          "type": "structure",
+          "text": "Each combat-mode Roster embed is followed by a `{Creature}` narration block titled with that creature's name."
         }
       ]
     },

@@ -271,7 +271,9 @@ line that carries it; a line with nothing beside it goes back on the page.
   magic, plot, or artifact item has a named seeker who acts when it surfaces.
 - Every recorded unknown and every tell has its DM answer under Hidden
   Properties.
-- The portrait came from theatre-of-the-mind and carries every tell.
+- The portrait came from theatre-of-the-mind and carries every tell; each
+  property with a visible effect has its `[!narration] In use` block under At
+  the Table.
 - `[!narration]` is the only callout; each fact appears once.
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.

@@ -531,6 +531,70 @@
         "wiki/templates/development.md",
         "wiki/entities/lore/taking-on-aruhe.md"
       ]
+    },
+    {
+      "id": "s12-04-refile",
+      "core": true,
+      "prompt": "Refile the Session 12 Development (wiki/journal/sessions/shattered-sea/12/session-12-04-orders-in-the-ash.md) on the current development template.",
+      "context": "Session 12 of the Shattered Sea campaign is planned and filed under wiki/journal/sessions/shattered-sea/12/ but has not been played. Everything you need is in the input files and the documents the skill points to. Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review.",
+      "outputs": "File the one refiled beat page at its current path; mint no other page.",
+      "files": [
+        "wiki/journal/sessions/shattered-sea/12/session-12-00-the-garden-keeps-its-own.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-04-orders-in-the-ash.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-03-terror-birds.md",
+        "wiki/entities/npc/Hinewai.md",
+        "wiki/entities/lore/two-grave-orders.md",
+        "wiki/entities/place/the-burnt-road.md",
+        "wiki/entities/place/the-pantry.md",
+        "wiki/templates/development.md"
+      ],
+      "expected_output": "One development page refiled on the current template from its plan row, keeping its canon.",
+      "assertions": [
+        {
+          "type": "process",
+          "text": "Written from the 04 Development row of the filed Session 12 plan: its trigger, what changes, card, and memorable element hold on the page."
+        },
+        {
+          "type": "structure",
+          "text": "The page follows wiki/templates/development.md; no section the current template dropped survives from the old page."
+        },
+        {
+          "type": "quality",
+          "text": "Keeps the old page's canon: every name, number, ruling, and consequence is carried or deliberately cut, and nothing contradicts it or the owner pages."
+        },
+        {
+          "type": "quality",
+          "text": "DM layers are explicit: each actor's want, truth, and next move is stated plainly, and a DM who never saw the prep can run every moment from the page."
+        },
+        {
+          "type": "behavior",
+          "text": "Every narration slot filled holds only what the characters perceive: no secret, DC, or unearned name."
+        },
+        {
+          "type": "behavior",
+          "text": "At a Glance leads with the turn, then Entry state, Trigger, New direction, and Next; the card and thread stay in the plan's Beat Map, not on the page."
+        },
+        {
+          "type": "behavior",
+          "text": "Situation gives Where, Hands on (the physical anchor), Friction, Pressure, and If ignored, and a Handles Cost line names what the best version of the information costs."
+        },
+        {
+          "type": "behavior",
+          "text": "Each Actors bullet gives the NPC's want now, what they know, offer, lie and its tell, price, and what shifts their posture."
+        },
+        {
+          "type": "behavior",
+          "text": "Hinewai's `{NPC}` narration block, titled with her name, shows how the party first meets her (her voice from the trees) and ends on her first words."
+        },
+        {
+          "type": "behavior",
+          "text": "A `[!narration] Revelation` block renders the moment the Core clue lands, as what the characters see or hear that makes it undeniable."
+        },
+        {
+          "type": "behavior",
+          "text": "Outcomes cover following the clearest lead, refusing or delaying, and changing the situation, each with its Next beat and a spoken `_italic_` Narration cell."
+        }
+      ]
     }
   ]
 }

@@ -287,7 +287,9 @@ line that carries it; a line with nothing beside it goes back on the page.
 - Every check and save passed `dnd5e-mechanics`; the statblock uses 2024
   phrasing with no hidden arithmetic.
 - Every signature ability has a sign in the world and a tell in the narration.
-- The narration came from theatre-of-the-mind and passes its final check.
+- The narration came from theatre-of-the-mind and passes its final check;
+  when the page carries Tactics, `[!narration] In action` shows it closing and
+  each signature ability landing.
 - `[!narration]` is the only callout; the DM layer states the truth by name.
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.

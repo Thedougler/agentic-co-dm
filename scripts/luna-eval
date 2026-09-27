@@ -38,7 +38,8 @@ skill-creator grader adds the other assertion types.
 A rerun skips any run-<n>/ whose timing.json records exit 0, so after exit 3 or 5
 only the missing runs are dispatched again (completed runs are kept).
 
-Exit: 0 done (or already done); 2 bad arguments or eval; 3 usage-limit marker present (dispatch
+Exit: 0 done (or already done); 2 bad arguments or eval (including an input
+file that no longer exists); 3 usage-limit marker present (dispatch
 nothing until the limit resets, then delete <out>/../CODEX_LIMIT); 4 subject
 wrote no deliverable under outputs/; 5 this run hit the usage limit (every
 Luna run was stopped).
@@ -127,6 +128,11 @@ def load_eval(skill: Path, eval_id: str) -> dict:
     found = next((e for e in evals if str(e.get("id")) == eval_id), None)
     if found is None:
         sys.exit(f"no eval '{eval_id}' in {path}")
+    missing = [f for f in found.get("files", []) if not (REPO / f).exists()]
+    if missing:  # a stale input path wastes a whole run before it shows
+        print(json.dumps({"status": "error", "error": f"eval {eval_id}: input files missing: {missing}",
+                          "hint": f"fix the eval's files[] in {path.relative_to(REPO)}"}))
+        sys.exit(2)
     return found
 
 

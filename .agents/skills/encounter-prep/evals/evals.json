@@ -50,7 +50,16 @@
           "type": "behavior",
           "text": "Handles and Outcomes rows carry spoken `_italic_` Narration cells."
         }
-      ]
+      ],
+      "files": [
+        "wiki/entities/npc/talon-skarn.md",
+        "wiki/entities/pc/crissdalynn-khinriss.md",
+        "wiki/entities/item/fate-spinner.md",
+        "wiki/entities/place/river-slack-basin.md",
+        "wiki/journal/sessions/shattered-sea/12/session-12-00-the-garden-keeps-its-own.md",
+        "wiki/templates/encounter.md"
+      ],
+      "outputs": "File the one encounter page; mint no other page."
     },
     {
       "id": 2,

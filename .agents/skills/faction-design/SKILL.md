@@ -198,6 +198,8 @@ line that carries it; a line with nothing beside it goes back on the page.
   helped, opposed, ignored, and broken; the hidden truth changes the deal and
   has three in-world clues of different kinds.
 - Every fighter the party could face has compact numbers or a statblock link.
+- When the party can run into members, `[!narration] When met` under At the
+  Table shows them at work and ends on their first words.
 - The public face came from theatre-of-the-mind and holds no secret or
   unearned name.
 - Every owner was cast or minted first. Each new mint names, in the response,

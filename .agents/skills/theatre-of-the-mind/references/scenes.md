@@ -244,7 +244,10 @@ every handle, each in its layer (§ Layers):
 Owner pages carry optional situated slots below the header portrait, each
 "you" address and present tense, each from the recipe named here:
 
-- `In action` (creature) → Creature in scene, mid-fight.
+- `In action` (creature) → Creature in scene, mid-fight: it closes and
+  strikes, and each signature ability on the owner page lands as what the
+  characters see and hear (never its rule or number). End on its next move,
+  not before contact.
 - `First meeting` (npc) → NPC first look, then Dialogue for the first words.
 - `When met` (faction) → Social scene, with members at work.
 - `In use` (item) → Item in scene, one block per visible property.

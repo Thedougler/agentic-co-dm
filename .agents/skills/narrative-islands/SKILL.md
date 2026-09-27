@@ -31,7 +31,7 @@ Encounter math → `encounter-prep`. Multi-room site → `dungeon-design`. Place
 
 ### Done
 
-Use the existing `## Done Check` and workflow completion tests below.
+Every item in `## Done` below holds, checked by its written audit.
 Completion is observable when the named quest path, template/situation
 contract, agency and connectivity checks, and any child return evidence are
 reported.
@@ -42,17 +42,24 @@ the party chooses the route. Campaign situation pages use `type: quest`.
 
 ## Work Gate
 
-Prep only. Follow `docs/agents/work.md`.
+Prep only. Follow `docs/agents/work.md`. Follow AGENTS.md **HARD:
+entity-before-spoken** and **HARD: dm-facing-explicit**. Cast and invent per
+`docs/agents/table-ready.md` § Cast before minting and § Fill the silence.
 
-Show a chat proposal; write a campaign wiki page only after DM accept. Reject
-leaves no page. Invention is required when the wiki lacks the fact: set
-`invention: true` and ground in wiki pages and/or D&D 5e rules. Cite `[[pages]]`
-for wiki claims. Show the DM any contradiction with an existing page. Never
-present invention as a wiki fact. Never write silent canon. A craft `type`
-becomes `canon` only after DM accept.
-
-Done when: the page is inspectable Work, invention is
-flagged, and grounding is named.
+- **Canon.** User-said facts file immediately on the live path. Whatever the
+  quest needs that canon leaves silent, records as unknown, or contradicts,
+  decide now as canon under the rule in `llm-wiki`: one concrete answer (what
+  the hidden thing truly is, what the driver does next and when), stated on
+  the page as world fact, with the page marked `invention: true`. The response
+  lists each proposal with the `[[pages]]` it grows from and names any
+  contradiction it settles, so the DM picks the winner.
+- **Explicit DM layer.** Situation, Pressure, and Complications state the
+  truth by name: what is really happening, who acts next and when, and what
+  each portent and reversal turns out to be. "Unclear", "may", "for play to
+  establish", and lists of possibilities are silence left unfilled. The
+  player-facing narration withholds from players, never from the DM.
+- **Process stays off the page.** Provenance, contradictions, and the proposal
+  list live in the response.
 
 ## Ownership
 
@@ -223,9 +230,28 @@ point to at least two independent leads.
   routes, and add redundant bridges. The prompt describes the DM's intent; the
   quest page must be playable.
 
-## Done Check
+## Done
 
-`NI: <objective + why now + deadline + walk-away + driver next move + two independent leads>`
+- The quest frame sentence names incompatible wants, the live pressure, and
+  what changes if nobody interrupts.
+- At a Glance names the objective, why now, the Opposition and what it wants
+  instead, and the reward; the narration came from `theatre-of-the-mind` and
+  holds no secret or unearned name.
+- Every question, portent, and reversal the page raises has its DM answer on
+  the page; the driver's next move has a time or trigger.
+- Stakes cover success, failure, walk-away, and an Open question; at least two
+  independent leads are checkboxes pointing to different pages.
+- Every owner was cast or minted first. Each new mint names, in the response,
+  the candidates considered and why none fit.
+- User-said canon is filed; every invention is canon under the rule in
+  `llm-wiki`, marked on the page and listed in the response.
+- Every page filed passes the world-voice search (`docs/agents/table-ready.md`
+  § Fill the silence).
+- `wiki lint <path>` is green, and one done-summary names the page and what
+  changed.
+
+Finish with a written audit in working notes: each Done item beside the page
+line that satisfies it; fix the page where none does.
 
 ## References
 
