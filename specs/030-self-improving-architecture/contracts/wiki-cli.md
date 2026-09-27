@@ -35,7 +35,7 @@ Cases that must produce this error: an unknown path, a `wiki/`-prefixed path, a 
 - No confirmation prompt exists. If one is ever added, `--yes` bypasses it.
 
 ## Success output (FR-038)
-Required keys: `status`, `vault`, `changed` (paths or ids), `counts` (`before`/`after` where applicable), `timing.duration_ms`, and `next` (the next actionable target, or `null`). `health` reports facts only. `focus` lists up to 5 existing paths in the fixed order lint → remorph → layout → open ledger entries (`tools/wiki_ops/health.py` `build_focus`), and `next` is the first `focus` row. It is a fact, not a recommendation; choosing the work is the agent's call under `wiki-lint` or the owning skill.
+Required keys: `status`, `vault`, `changed` (paths or ids), `counts` (`before`/`after` where applicable), `timing.duration_ms`, and `next` (the next actionable target, or `null`). `health --json` names `status` and `next` (`path`, `action`); vault lint totals live on `wiki lint --json`. `focus` lists up to 5 existing paths in the fixed order lint → remorph → layout → open ledger entries (`tools/wiki_ops/health.py` `build_focus`), and `next` is the lint `next` when present. It is a fact, not a recommendation; `wiki-lint` takes that path as FILE.
 - Slow-checker notice (stderr, plain report): `wiki lint: slowest checker <script> <ms> ms; next <script> <ms> ms`. It gives no instruction.
 
 ## Examples blocks (FR-032). The real invocations each `--help` shows:

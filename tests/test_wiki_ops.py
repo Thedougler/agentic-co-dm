@@ -1311,25 +1311,25 @@ def test_health_snapshot_is_compact_and_uses_lint_next():
     focus = build_focus(lint)
     snapshot = build_health_snapshot(
         status="findings",
-        pages=2,
-        bytes=210,
-        tokens=None,
         lint=lint,
-        waste={"hits": 1, "hard_hits": 0},
-        staging={"leftover_count": 0},
-        remorph={"plan_count": 0, "skip_count": 0, "error_count": 0},
-        policy={"ok": True, "conflict_count": 0},
-        trends=None,
         focus=focus,
     )
     assert snapshot["next"]["path"] == "entities/npc/real.md"
     assert snapshot["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert "findings" not in snapshot["next"]
+    assert "finding_total" not in snapshot
+    assert "finding_total" not in snapshot["lint"]
+    assert "counts" not in snapshot["lint"]
+    assert "affected_pages" not in snapshot["lint"]
+    assert "remorph" not in snapshot
+    assert "waste" not in snapshot
     assert "identity" not in snapshot
     assert "scope" not in snapshot.get("lint", {})
     assert "files" not in snapshot.get("lint", {})
 
     dumped = json.dumps(snapshot)
     assert "journal/_index.md" not in dumped
+    assert "finding_total" not in dumped
     assert len(dumped) < 4000
 
 
@@ -1340,15 +1340,7 @@ def test_health_next_stays_none_when_lint_is_clean():
     focus = build_focus(lint, remorph={"plans": [{"src": "entities/npc/Bob.md", "reason": "kebab"}]})
     snapshot = build_health_snapshot(
         status="clean",
-        pages=1,
-        bytes=10,
-        tokens=None,
         lint=lint,
-        waste=None,
-        staging=None,
-        remorph={"plan_count": 1, "skip_count": 0, "error_count": 0},
-        policy=None,
-        trends=None,
         focus=focus,
     )
     assert snapshot["next"] is None

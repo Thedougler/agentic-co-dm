@@ -833,15 +833,7 @@ def build_context_load(
 def build_health_snapshot(
     *,
     status: str,
-    pages: int,
-    bytes: int,
-    tokens: int | None,
     lint: Mapping[str, Any],
-    waste: Mapping[str, Any] | None,
-    staging: Mapping[str, Any] | None,
-    remorph: Mapping[str, Any] | None,
-    policy: Mapping[str, Any] | None,
-    trends: Mapping[str, Any] | None,
     focus: Sequence[Mapping[str, Any]] | None = None,
     context: Mapping[str, Any] | None = None,
 ) -> dict[str, Any]:

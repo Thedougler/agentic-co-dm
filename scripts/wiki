@@ -768,18 +768,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     dirty = lint.get("status") == "findings" or bool(core.get("issues")) or open_ledger
     result = build_health_snapshot(
         status="findings" if dirty else "clean",
-        pages=len(pages),
-        bytes=bytes_total,
-        tokens=tokens,
         lint=lint,
-        waste=a2.get("metric") if isinstance(a2, dict) else a2,
-        staging=a5.get("metric") if isinstance(a5, dict) else a5,
-        remorph=a6.get("metric") if isinstance(a6, dict) else a6,
-        policy={
-            "ok": bool(policy.get("ok", True)) if isinstance(policy, dict) else True,
-            "conflict_count": len((policy or {}).get("conflicts") or []) if isinstance(policy, dict) else 0,
-        },
-        trends=trends,
         focus=focus,
         context=context,
     )

@@ -296,6 +296,13 @@ def test_health_default_matches_lint_shape(tmp_path: Path):
     assert not str(nxt.get("path") or "").endswith("_index.md")
     if nxt.get("path"):
         assert nxt["action"].startswith("wiki lint ")
+        assert "findings" not in nxt
+    assert "finding_total" not in data
+    assert "finding_total" not in (data.get("lint") or {})
+    assert "affected_pages" not in (data.get("lint") or {})
+    assert "counts" not in (data.get("lint") or {})
+    assert "remorph" not in data
+    assert "waste" not in data
     assert "identity" not in data
     assert "scope" not in (data.get("lint") or {})
 
