@@ -26,9 +26,15 @@ tier: supporting
 ---
 # Fish Broth
 
-> [!narration] Narration
-> A bowl of hot fish stock arrives with a soft clink of pottery. The steam carries a sharp, salty aroma of fish and broth. It's cheap, hot, and reliable. The house serves it at canal-side taverns, always with bread at [[the Ponte Bassa]] in [[calven-and-calveno]].
+> [!narration] Fish Broth
+> A bowl of hot fish stock arrives with a soft clink of pottery. The steam carries a sharp, salty aroma of fish and broth. It is cheap, hot, and reliable. The house serves it at canal-side taverns, always with bread at [[the Ponte Bassa]] in [[calven-and-calveno]].
 
-Consumable, common.
+## At a Glance
 
-A common meal. No cost, weight, or consumable-effect numbers are recorded on this page. Served at canal-side taverns across [[shattered-sea]], including the Ponte Bassa in [[calven-and-calveno]].
+*Consumable, common.*
+
+Fish broth is a cheap, hot, reliable common meal served at canal-side taverns across [[shattered-sea]], including [[the Ponte Bassa]] in [[calven-and-calveno]].
+
+## Properties
+
+Fish broth is ordinary food with no recorded special mechanical effect, cost, weight, or other consumable rule.
