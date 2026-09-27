@@ -8,7 +8,7 @@ sources:
   - "wiki/_archive/homebrew/grung-resistant-climbing-harness.md"
   - "campaign-os:grung-resistant-climbing-harness.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -27,21 +27,36 @@ tier: supporting
 ---
 # Grung-Resistant Climbing Harness
 
-> [!narration] Narration
-> Dark treated cordage wraps the ribs. The knots are the same over-and-back a thousand damp-stone climbs would teach. Oil sheen sits on the leather backing, cross-hatched so a venom smear has somewhere to run off. Copper-colored thread is thick at every seam. Cured hemp is wrapped over those seams so tension or burn does not split them. Hip pockets are deep enough for a coil. The buckles are built to let go fast.
+> [!narration] Grung-Resistant Climbing Harness
+> Dark treated cordage wraps the ribs, its knots tied in the same over-and-back the hands of anyone used to damp stone tie without thinking. An oil sheen sits on the leather backing, cross-hatched so a venom smear has somewhere to run off. Copper-coloured thread runs thick at every seam, and cured hemp wraps those seams so tension or burn does not split them. Hip pockets are deep enough for a coil, and the buckles are built to let go fast.
 
-Durable gear, Common
+## At a Glance
 
-While climbing forest canopy or wet stone with scarce handholds, you have Advantage on Dexterity (Acrobatics) checks. The treated leather reduces poison damage from climbing surfaces or from rope-work contact with a venomous opponent by 2, to a maximum reduction of 1 damage.^[ambiguous] To jam the quick-release buckles, make a **Dexterity** check — `DC 8`. Success: the buckles seize and will not open. Failure: they still work.
+*Tool, common.*
 
+The Grung-Resistant Climbing Harness is wet-stone and canopy gear: it keeps a climber on the face and keeps venom off the skin it is wrapped around.
 
-Expedition harness with sewn anchor points and hip pockets for rope coils. Priced at 35 gp.
+- **Effect.** Advantage on Dexterity (Acrobatics) checks made climbing forest canopy or wet stone with scarce handholds.
+- **Worth.** `35 gp` from [[spar-and-snare-outfitters|Spar & Snare Outfitters]].
+- **Made for.** [[verdant-teeth]] expeditions, where footing fails and the air itself stings.
+
+## Properties
+
+**Climb (worn).** While climbing [[verdant-teeth|Verdant Teeth]] forest canopy or wet stone with scarce handholds, the wearer has Advantage on Dexterity (Acrobatics) checks.
+
+**Treated leather.** The oil-treated, cross-hatched backing reduces poison damage taken from climbing surfaces, or from rope-work contact with a venomous opponent, by `2`. This is the whole of the protection: the harness stops contact venom, not a bite or a sprayed cloud.
+
+**Quick-release buckles.** The harness drops fast when a climber needs out of it. Making the buckles seize so they cannot be opened takes a **Dexterity check — `DC 8`**; on a success they jam until reset by hand, which is what a climber does when something is pulling on the harness. On a failure they still work normally.
 
 ## At the Table
 
-Wear it when the climb is wet stone or canopy. The poison-reduction line is internally inconsistent (minus 2, cap 1); do not invent a third number.^[ambiguous]
+- **Wear it on the climb.** Advantage on the Acrobatics checks that keep the party on the face, in exactly the terrain the harness was cut for.
+- **Rope through Grung country.** The treated backing shaves `2` off poison damage from surfaces and from contact with a venomous creature during rope work. It does nothing against a swallowed dose or a thrown cloud.
+- **Jam the buckles before a fight on a line.** A success means the harness cannot be pulled open by anything but the wearer's hands on the reset.
+- **Drop the kit.** When a climber has to let go and fall clean, the quick-release is the reason the harness is worth wearing over a plain rope loop.
 
 ## Connections
 
-- [[verdant-teeth]] — Terrain this harness was cut for.
-- [[Grung]] — Venom scoring the leather is treated to shed.
+- [[verdant-teeth]] — the terrain the harness was cut for.
+- [[spar-and-snare-outfitters]] — the shop that stocks and sells it.
+- [[grung-clans]] — the venom the treated leather is built to shed.
