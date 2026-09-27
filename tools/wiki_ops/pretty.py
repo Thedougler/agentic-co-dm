@@ -180,7 +180,36 @@ def render_lint_issues(result: Mapping[str, Any]) -> str:
         if hint:
             text += f"\n  fix: {hint}"
         lines.append(text)
+    nxt = _value(result, "next", None)
+    if isinstance(nxt, Mapping) and nxt.get("path"):
+        lines.append(f"next: {nxt['path']}")
     return "\n".join(lines)
+
+
+def render_lint_fix(result: Mapping[str, Any]) -> str:
+    """Default lint-fix stdout: remaining issues, or a dry-run plan."""
+    status = str(result.get("status") or "")
+    if status == "planned":
+        lines = [
+            f"planned: {op.get('kind', '')} {op.get('target', '')}".rstrip()
+            for op in result.get("planned") or []
+            if isinstance(op, Mapping)
+        ] or ["already_done"]
+        nxt = result.get("next")
+        if isinstance(nxt, Mapping) and nxt.get("path"):
+            lines.append(f"next: {nxt['path']}")
+        return "\n".join(lines)
+    remaining = result.get("remaining")
+    if isinstance(remaining, Mapping):
+        return render_lint_issues(remaining)
+    lines = [status or "already_done"]
+    nxt = result.get("next")
+    if isinstance(nxt, Mapping) and nxt.get("path"):
+        lines.append(f"next: {nxt['path']}")
+    return "\n".join(lines)
+
+
+
 
 
 

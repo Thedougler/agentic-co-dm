@@ -78,7 +78,7 @@ The containment has weakened. [[pearl-of-souls]] destabilizes the fissure, and [
 
 **Misunderstood.** The party may read the presence as a god, an [[Umberlee]] omen, or a willing patron. Auralis is Antheri machinery, and the bond was not knowingly accepted.
 
-**Last changed.** [[session-12-05-consume]]
+**Last changed.** [[Session-12-05-consume]]
 
 ## Accounts
 
@@ -132,5 +132,5 @@ The containment has weakened. [[pearl-of-souls]] destabilizes the fissure, and [
 ## Sources
 
 * [[session-03-recap]]. Records Auralis's first known contact with Perrin and the word “Grow.”
-* [[session-12-05-consume]]. Auralis tells Perrin to CONSUME the living [[giants-guava]] and [[stonepear]], with no reason given, as a test of faith.
+* [[Session-12-05-consume]]. Auralis tells Perrin to CONSUME the living [[giants-guava]] and [[stonepear]], with no reason given, as a test of faith.
 * [[grung-clans]]. Preserves the public mandate associated with Auralis.

@@ -53,7 +53,7 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    Done when each thread's final state and each cost paid are listed.
 2. **Choose the card per outcome.** Read
    [references/resolution-cards.md](references/resolution-cards.md). For each
-   Climax outcome the Resolution answers, pick the card that outcome produced. Cards go in the session plan's Beat Map; the page carries what they produce.
+   Climax outcome the Resolution answers, pick the card that outcome produced. The card goes in the beat's frontmatter `card:`; the page body carries only what it produces.
 3. **Cast owners.** Every named person, place, item, or faction in the
    afterscene has an owner page before any text depends on it: cast from the
    wiki first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting).
@@ -65,15 +65,14 @@ Copy `wiki/templates/resolution.md`. File after accept to `wiki/journal/sessions
    `dnd5e-mechanics` for any check, and `item-design` for a new
    magic item.
 6. **Fill the spoken layer.** Load `theatre-of-the-mind` and fill the
-   `[!narration] Closing Image` block under At a Glance for each outcome
-   branch (a callout per branch, titled with the outcome, not a table
-   column), and `Stinger` when one grows from
+   `[!narration] Closing Image` block under the Previous beat line for each
+   outcome branch (a callout per branch, titled with the outcome, not a table
+   column), and `Next Hook` when one grows from
    play: the arrival, sign, or message the characters perceive, ending before
    anyone can act. Delete a slot that has no spoken text.
-7. **Record the aftermath.** Fill At a Glance (its lead sentence says what is
-   true now because of what the party did; then new status quo, price, reward),
-   Consequences, Loose Ends, and Rewards so the next session's planner reads the changed world from
-   this page.
+7. **Record the aftermath.** Fill Consequences (what is different now, what
+   cannot be restored, and what each open thread becomes) and Rewards, so the
+   next session's planner reads the changed world from this page.
 8. **Cold read.** Run the cold read from `docs/agents/table-ready.md` and the
    completion test. Fix every gap before filing.
 
@@ -115,9 +114,9 @@ page:
   them, and a milestone or XP proposal. These are canon under the rule in `llm-wiki` where canon
   is silent; an outcome that earns nothing lists no reward row;
 - each actor's closing response is written, with what it changes;
-- At a Glance states values, not instructions to record them later.
+- Consequences states values, not instructions to record them later.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map).
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears in the body (the card goes in frontmatter `card:`).
 
 ## Named seams
 

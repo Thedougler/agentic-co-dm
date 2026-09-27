@@ -56,8 +56,9 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    [references/cliffhanger-cards.md](references/cliffhanger-cards.md). Pick the
    card the fiction calls for and the escalation tier this slot holds on the
    session's ladder. Name the thread under test — what the last Development
-   revealed that this contest proves or disproves. Card, tier, and thread go
-   in the session plan's Beat Map; the page carries what they produce.
+   revealed that this contest proves or disproves. The card goes in the
+   beat's frontmatter `card:`, the tier in `tier:`, and the thread in the session plan's Threads
+   table; the page body carries only what they produce.
 3. **Cast owners.** Every creature, NPC, place, vehicle, or item the contest
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint only what nothing fits (`docs/agents/table-ready.md` § Cast before minting); a creature the
@@ -69,7 +70,7 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
    page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set numbers and rulings.** `encounter-prep` sets the difficulty for the
    tier and the live party; `dnd5e-mechanics` sets every check, save, and DC.
-   Embed each opponent's owner statblock in `## Roster`
+   Embed each opponent's owner statblock in `## Statblocks`
    (`![[owner#Statblock]]`). Done when everyone who could fight has its
    statblock embedded, from the owner or from a proposed standard 5e
    statblock filed on the owner first.
@@ -98,7 +99,7 @@ Copy `wiki/templates/cliffhanger.md`. File after accept to `wiki/journal/session
   goes in Actors as **Wants**. Reaching an
   objective, breaking off, surrendering, or escaping each end the contest.
 - **Opposition plays to win.** Every opposing side has its statblock in
-  Roster and one tactics line in Actors: opening move, how it adapts when the party counters,
+  Statblocks and one tactics line in Actors: opening move, how it adapts when the party counters,
   its break point, and its exit (retreat route, escape trick, surrender
   terms). With several factions present, each has its own objective and
   ignores the party unless the party gets in its way.
@@ -124,7 +125,7 @@ the page's rulings; every outcome row changes the physical situation; and the
 page states the next beat's trigger for each row. A result fixed before the
 party acts is narration — rewrite it as a contest.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears in the body (the card goes in frontmatter `card:`). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 
 ## Named seams
 

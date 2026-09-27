@@ -11,24 +11,22 @@ reveal: unrevealed
 campaign: "{{campaign}}"
 session: ""
 visibility: dm
+card: ""
+memorable: ""
 summary: ""
 ---
 <!-- Fact-only: every line gives the DM a fact, ruling, or response. Keep a section only when this Hook spends it at the table; delete unused sections, bullets, rows, narration slots, and these comments. Completeness bar: docs/agents/table-ready.md. File as Session-<n>-<BB>-<label>.md. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-## At a Glance
+<!-- Required. The lines the DM runs the beat by, one fact each. The card and the memorable element are design notes for agents: they go in the frontmatter, never the body. -->
 
-<!-- Required. Lead sentence: what happens right now and the choice it puts in front of the party. Then labelled facts, one bullet each. -->
-
-- **Entry state.** Where everyone is and what they carry in from last session.
-- **Stakes.** What changes if the party acts, and what changes if it does not.
-- **Memorable.** The one image, object, or line the players will carry out of this beat.
-- **Ends when.** The commitment that ends the beat: they give chase, take the job, flee.
-- **Next.** [[Session-{{session}}-BB-label]]
+**Starting situation.** Where everyone is and what they carry in from last session.
+**Ends when.** The commitment that ends the beat: they give chase, take the job, flee.
+**Next beat.** [[Session-{{session}}-BB-label]]
 
 > [!narration] Previously
-> <!-- First beat of the session only: last session read aloud as play starts, one short paragraph ending on tonight's opening situation (theatre-of-the-mind: Recap, read aloud). -->
+> <!-- First beat of the session only: last session's events in order, read aloud as play starts to remind the players what happened, one paragraph ending where play stopped (theatre-of-the-mind: Recap, read aloud). -->
 
 > [!narration] Opening
 > <!-- Read first: one paragraph, or immediate-fact bullets when the arrival is not fixed (theatre-of-the-mind: Hook opening). -->
@@ -50,7 +48,7 @@ flexGrow=1
 ## Actors
 
 - **[[npc]].** What they want and what they do next if nobody interferes.
-- **[[creature]] × 3.** Opening move → adapts → break point → exit; HP or resources only when not full. The statblock is in Roster.
+- **[[creature]] × 3.** Opening move → adapts → break point → exit; HP or resources only when not full. The statblock is in Statblocks.
 ```
 ````
 
@@ -60,9 +58,9 @@ flexGrow=1
 > [!narration] {Creature}
 > <!-- Optional, one per creature kind, titled with its name, in the order the party meets them: a few sentences; its response to the party stays in Actors (theatre-of-the-mind: Creature in scene). -->
 
-## Handles
+## Party Choices
 
-<!-- Narration cells: a line or two in `_italic_` of what the party sees change (theatre-of-the-mind: Outcome cell). -->
+<!-- What the world does for each way the party can respond. Narration cells: a line or two in `_italic_` of what the party sees change (theatre-of-the-mind: Outcome cell). -->
 
 | If the party… | The world responds | Narration |
 | ------------- | ------------------ | --------- |
@@ -76,7 +74,7 @@ flexGrow=1
 | ------ | -------- | -- | ------- | ------- |
 |        | **Wisdom (Perception)** | `DC 13` |  |  |
 
-## Spotlight
+## PC Hooks
 
 - **[[pc]].** Why this matters to them now, or their obvious first job.
 
@@ -96,7 +94,7 @@ flexGrow=1
 
 **Carry forward.** Each state the next beat inherits: who holds what, who is hurt, where the opposition went, what the party committed to.
 
-## Roster
+## Statblocks
 
 <!-- Only when the Hook can become a fight: one embed per fighter kind, from its owner page. -->
 

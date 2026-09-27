@@ -84,6 +84,10 @@
         {
           "type": "behavior",
           "text": "Accounts give each holder and why they believe it."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -128,6 +132,10 @@
         {
           "text": "What the world has not tested (shaking a living tree) stays untested for people in the world, and the page body carries the DM answer as a proposal",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -155,6 +163,10 @@
         {
           "text": "response.md lists the proposal with its grounding pages; no Open Canon section is left on the page",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -190,6 +202,10 @@
         {
           "text": "Durable question / framing appears in process-notes.md, agent_report.md, or transcript.md before the page draft",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -225,6 +241,10 @@
         {
           "text": "At the Table gives players a usable handle without requiring a lore monologue",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -252,6 +272,10 @@
         {
           "text": "Shows the rumour-vs-truth contradiction in process-notes.md, agent_report.md, or transcript.md rather than writing silent canon",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -279,6 +303,10 @@
         {
           "text": "Shows contradictions with taking-on-aruhe / Session-11 sources in process-notes.md, agent_report.md, or transcript.md instead of silent overwrite",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -302,6 +330,10 @@
         {
           "text": "response.md lists the shaking-tree ruling as a proposal with the pages it grows from",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -325,6 +357,10 @@
         {
           "text": "Refuses bundling unrelated encyclopedia truths into one lore page — or splits to one durable question and labels invention",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -352,6 +388,10 @@
         {
           "text": "Clearly distinguishes established stub facts from proposed invention throughout",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

@@ -249,20 +249,15 @@ contains every tell.
 
 ### 8. File the page
 
-Copy `wiki/templates/creature.md`. The default page is At a Glance, narration,
-and Statblock; add the other sections only when you have facts for them
-(fact-only, `wiki/AGENTS.md` Layout). Statblock format:
+Copy `wiki/templates/creature.md`: a Monster Manual entry. Statblock format:
 [references/statblock.md](references/statblock.md).
 
-| Section | Carries |
+| Part | Carries |
 |---|---|
-| At a Glance | What the creature is for at the table; Habitat and Treasure bullets |
-| Narration | The prose from step 7 |
-| Statblock | At most one overview image just before the fence, then the `statblock` fence in 2024 phrasing |
-| Tactics | Opening, Signature, Adapts, Weaknesses, Morale bullets; then the optional `In action` narration |
-| Behavior | Habits, Diet, Group, Body, Signs, Aftermath bullets |
-| Secrets | Origin and hidden truths, each with how the party learns it |
-| Art | Remaining images, each under its role subsection |
+| Narration | The portrait from step 7 |
+| Habitat line | The italic *Habitat: …; Treasure: …* line |
+| Statblock | At most one overview image just before the fence, then the `statblock` fence in 2024 phrasing; every rule the creature runs on |
+| Campaign facts | Only what the statblock does not say, as `**Name.**` paragraphs, each only when it exists: **Tactics.** (opening, signature tell, what it does when countered, what shuts it down, when it flees), **Tracks and signs.**, **Secret.**, **Connections.**; then the optional `In action` narration |
 
 Write complete sentences and wikilink every owner page.
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
@@ -295,7 +290,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   page and listed in the response.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
-  0 (`docs/agents/table-ready.md` § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

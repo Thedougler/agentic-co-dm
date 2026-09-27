@@ -77,12 +77,16 @@
           "text": "Working notes (process.md or response.md) show a written Done audit: each Done item paired with the page line that satisfies it"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -129,12 +133,16 @@
           "type": "quality"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -164,12 +172,16 @@
           "type": "process"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -211,12 +223,16 @@
           "type": "quality"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -258,12 +274,16 @@
           "type": "guardrail"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -289,12 +309,16 @@
           "type": "quality"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -320,12 +344,16 @@
           "type": "content"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -351,12 +379,16 @@
           "type": "process"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -382,12 +414,16 @@
           "type": "process"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -409,12 +445,16 @@
           "type": "guardrail"
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
           "type": "structure"
         },
         {
           "text": "A spell a player character can learn carries a `When cast` block after Effect that names only the caster's gesture, word, and component as 'you', with no DC, distance, or duration",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

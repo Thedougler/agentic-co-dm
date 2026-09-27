@@ -28,12 +28,12 @@ Ruling convention — not text for the card:
 Table cells assume this. A row may say "binary — no partial" when the fiction
 has no middle.
 
-## Procedure
+## Scene Rules
 
 Name the mode. Default for a hunt/chase/escape slice is *escape mode*:
 
 1. Failures impose the Checks *ruling* only. They never advance the clock.
-2. After everyone has acted, if anyone remains exposed (the card's magnets), advance the threat clock **once** and resolve that tick.
+2. After everyone has acted, if anyone remains where the threat can reach them, advance the threat clock **once** and resolve that tick.
 3. Several failed checks in one round still produce **one** tick.
 
 Write this slice's trigger (who counts as exposed) and the combat-mode switch.
@@ -81,14 +81,14 @@ cockpit.
 
 ## Actors and embeds
 
-Numbers stay on the owner and arrive by the Roster embed; an actor entry
+Numbers stay on the owner and arrive by the Statblocks embed; an actor entry
 carries only this slice's state (HP when not full, spent resources, the
 bloodied or break rule) and its loop. Hidden
 intent, opposition wants, and canon constraints are ordinary DM-facing facts —
 write them inline where they change a ruling or choice.
 
 Keep full `![[Name#Statblock]]` (optional `![[Name#At the table]]` or
-`![[Name#Tactics]]`) at the bottom under Roster. Owner Multiattack/HP tables
+`![[Name#Tactics]]`) at the bottom under Statblocks. Owner Multiattack/HP tables
 belong on the owner page, not retyped above the embed. Owner ecology essays
 stay on the owner. How the party already moves (flight, swim, mounts, boats)
 is not roster.

@@ -4,131 +4,134 @@ category: journal
 tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
-  - "journal/sessions/shattered-sea/11/Session-11-Recap.md"
+  - "journal/sessions/shattered-sea/11/session-11-recap.md"
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-26
 type: session-prep
 kind: hook
 reveal: unrevealed
 campaign: "shattered-sea"
 session: "12"
 visibility: dm
+card: "Play a Cliffhanger"
+memorable: "Skarn's hook-blade cuts Matteo's sling on his way into the sky, and two ghost plums go up the chain with him."
 summary: "Play resumes mid-theft at dawn: Skarn works Crissdalynn's straps for the Fate Spinner, breaks off bloodied, and cuts Matteo's ghost-plum sling on his way out."
 ---
 
 # Session 12 — Dawn Strike
 
-**Card.** Play a Cliffhanger (Confrontation card, played as a fight already in progress).
-**Key.** Action (next beat: Development).
-**Thread.** [[fate-spinner]] and [[talon-skarn]].
-**Climax question.** Can the party keep the Fate Spinner from Skarn for good?
-**Something happens.** [[talon-skarn]] is five feet from [[crissdalynn-khinriss]] at first light, cutting at her straps for the [[fate-spinner]], and the camp is waking up around him.
-**Why it matters.** The Spinner is the thing [[talon-vantyrus]] wants most, and Skarn only needs one clean pull.
-**Decision.** How to break his read on Crissdalynn: fight him, hide or hand off the Spinner, ground him, or drive him up.
-**Hook lands when.** Skarn breaks off and takes the sky, and the party turns to the survivors' prints north.
-**Memorable element.** Skarn's hook-blade flicks past Crissdalynn on his way out and cuts [[matteo-scola]]'s sling, and two [[ghost-plum]]s go up the chain.
+**Starting situation.** Dawn on the last watch at [[river-slack-basin]]: [[talon-skarn]] is 5 feet from [[crissdalynn-khinriss]], cutting at her straps for the [[fate-spinner]].
+**Ends when.** Skarn takes the sky or is pinned and dropped, and the party turns to the survivors' prints leading north.
+**Next beat.** [[Session-12-02-the-smoking-skylight]]
 
-> [!narration] Prologue
-> Last time, Aruhe showed you what it does to anyone who takes from it. Crissdalynn ate a fallen berry and her wounds closed, so she picked a second one off a living stem. The grass around you burst with wolfrabbits, and young hawks came diving in after them. Farther downriver you hauled a thin man out of the water while three huge otters batted him between them for sport. He was Matteo Scola, and he swore by the same rule, fallen fruit is yours and living fruit is not. He warned you about a woman in the woods with orange eyes, then bit into a ghost plum and vanished in front of you. You slept at his camp, and on the last watch a falcon dropped out of the dark at Crissdalynn. She hit him with a blow that should have ended it. He came through it anyway, his blade already reaching past her for the pack where the dreidel might be.
+> [!narration] Previously
+> Last time, you dropped off the terraces while a hawk with four wings smashed down on the squid behind you, and Jean-Claude went slack and silent, so Delmar carried him bundled in his own coat. Smoke over the river drew you inland to a cold fire ring, where Crissdalynn ate a berry off the dirt and watched her cuts seal, then plucked a second one from its stem, and the grass erupted with wolfrabbits while young hawks dove in after them until an enormous fat illusion of Perrin led the whole hunt off. A cat with eight legs and a coat of wet leaves sprang at Delmar, took his arrow and Perrin on its back, and bolted. At the next quiet stretch of river, three otters as long as boats were tossing a thin man back and forth, so Crissdalynn hauled him out and you played tricks on the otters until they swam off bored. He was Matteo Scola, and he told you the rule you had just paid for, that whatever lies on the ground is yours and whatever still hangs on the branch is not. He warned you about a woman in the woods with orange eyes, bit into a ghost plum, and vanished where he sat. You bedded down at his camp beside the still pool, where a black flower set Perrin laughing until it floated off downstream and a voice in the dark asked you to admire its garden. Then on the last watch a falcon fell out of the night onto Crissdalynn. She hit him hard enough to end most fights, and he stayed on her anyway, his blade already reaching for the pack that might hold the dreidel.
 
-> [!narration] Open on
-> Dawn comes up grey over the river, and the falcon is still on Crissdalynn. Crissdalynn, he has pressed so close that his wing feathers brush your chest, and his eyes keep dropping to your hands and belt. His sword holds you where you stand while the sickle blade in his other fist swings on its chain, ticking against his forearm as it dips toward your pouches.
->
-> The ring of steel carries across the coals to where Delmar, Perrin, and Jean-Claude lie under blankets beaded with river mist. As it reaches them, a thread of pale blue light runs once around Perrin's cloak and is gone. Matteo sits frozen on his mat with both hands clamped over the knotted sling at his hip. Beyond the falcon, dark-smeared footprints climb out of the water into the trees, and a short run the other way the grass stands taller than a man. His red crown feathers lift in the first light, and he steps in.
+> [!narration] Opening
+> Grey light spreads over the river, and the falcon still stands chest to chest with Crissdalynn, red crown feathers raised, his eyes on her belt and straps and never her face. His long sword pins her where she stands while the hooked blade in his other fist swings on its chain, clicking against the wraps on his forearm each time it dips toward her pouches. The ring of steel carries over the coals to the bedrolls, where river mist beads the blankets, and a thread of pale blue light runs once around Perrin's cloak and fades. Matteo sits rigid on his mat with both hands clamped over the knotted sling at his hip. Behind the falcon, reddish mud prints climb out of the pool into the tangled roots, and off to one side the grass stands taller than a man. The sky above the open water is brightening, and he turns the hooked blade toward the next strap.
 
 ````col
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
 ## Situation
 
-- **Entry state.** Dawn, the last watch at the [[river-slack-basin]] camp. [[crissdalynn-khinriss]] stands at the fire's north edge with the [[fate-spinner]] on her. [[talon-skarn]] is 5 feet north of her, at **150 of 195 HP**, with **2 Legendary Resistances left** and **Kusarigama Tempest** charged. [[delmar-fisk]], [[perrin-black-jaw]], and [[jean-claude-tabarnack]] are on their bedrolls 25 feet south of the fire, and they wake and act on their first turn, starting Prone. Jean-Claude is awake and whole; his Session 11 stillness has passed. [[matteo-scola]] sits on his mat 15 feet west of the fire, awake, with two [[ghost-plum]]s in the knotted sailcloth sling on his hip. Everyone else is at full HP after the long rest.
-- **Where.** [[river-slack-basin]]: a packed dirt bank above the still pool, open to the sky. Eight-foot grass walls the bank 30 feet east. The bloody-bank prints climb north into the trees toward [[cutoff-lip]].
-- **Who.** [[talon-skarn]] wants the Spinner off Crissdalynn and nothing else. If nobody stops him, he cuts one strap or pouch a round until the Spinner shows, then pulls it with the chain and flies. [[matteo-scola]] wants to live; he stays on his mat clutching the sling and never fights.
-- **What changed.** The sun is up. Skarn has open sky above him and a stoop lane over the pool.
-- **Pressure.** Each round the Spinner stays hidden, Skarn cuts one more strap (Threat ticks below). If it shows, he goes for it at once.
-- **Open question.** Whether the party keeps the Spinner, and whether anyone guards Matteo's sling.
+- **Where.** [[river-slack-basin]]: a packed dirt bank above a still pool, open to the sky.
+- **Positions.** Crissdalynn stands at the fire's north edge with the Spinner; Skarn is 5 feet north of her.
+- **The others.** [[delmar-fisk]], [[perrin-black-jaw]], and [[jean-claude-tabarnack]] lie on bedrolls 25 feet south of the fire. They start Prone and act on their first turn.
+- **Jean-Claude.** He is awake and whole; his Session 11 stillness has passed.
+- **Matteo.** [[matteo-scola]] sits on his mat 15 feet west of the fire with two [[ghost-plum]]s in the sling on his hip.
+- **Party health.** Everyone except Skarn is at full HP after the long rest.
+- **Features.** Eight-foot grass walls the bank 30 feet east. The treeline stands 20 feet north. The pool lies 10 feet below the bank's lip.
+- **What changed.** The sun is up, so Skarn has open sky and a straight-down lane over the pool.
+- **Round 3.** The sun clears the grass, and the whole bank loses cover from above.
+- **Pressure.** Each round the Spinner stays hidden, Skarn cuts one more strap; the moment it shows, he goes for it.
+  1. He cuts a strap or pouch on the carrier; leather parts and a pouch hangs by a thread.
+  2. He pulls the carrier 10 feet with his chain, away from her nearest ally.
+  3. If the Spinner has shown, he uses **Chain Snap** on it: Kusarigama `+11` against AC 10 for a loose object, or a contest against the carrier's **Strength (Athletics)** if it is in her hand.
+  4. At 97 HP or fewer, or after three rounds without the Spinner showing, he takes the sky. Rising past Matteo, he uses **Chain Snap** on the sling (Kusarigama `+11` against AC 10), and both plums go up the chain with him.
 ```
 
 ```col-md
-## Run the hook
+flexGrow=1
+===
+## Actors
 
-| If the party… | World response |
-| ------------- | -------------- |
-| **Engages** | Skarn fights for the job, not for kills: he cuts gear before throats, pulls Crissdalynn away from her helpers with the chain, and uses **Stunning Strike** on whoever grabs him. At 97 HP or fewer he finishes the steal if the Spinner is visible and in reach, then leaves (Tick 4). |
-| **Hesitates** | The next tick lands: a strap parts, a pouch spills on the dirt, and the Spinner is one cut from showing. |
-| **Rejects / leaves** | Anyone who runs leaves Crissdalynn alone with him; Skarn ignores the runner. The Spinner falls to him in two rounds if she stands alone. |
-| **Anything else** | The Spinner is not stolen this morning. The worst case is that it shows and Skarn's pull misses it or someone recovers it from the dirt. Skarn always tries for Matteo's sling on his way out. |
+- **[[talon-skarn]].** He wants the Spinner and nothing else, and he cuts gear before throats.
+  - **State.** 150 of 195 HP, 2 Legendary Resistances left, **Kusarigama Tempest** charged.
+  - **Opening.** Katana and Sai cut gear on the carrier; Kusarigama pulls her 10 feet from whoever helps her.
+  - **Against a grappler.** **Stunning Strike**, then he spends his action escaping with **Dexterity (Acrobatics)** `+16`.
+  - **Against a crowd.** When two or more creatures are within 20 feet of him, **Kusarigama Tempest** knocks them Prone.
+  - **Break point.** At 97 HP or fewer, he finishes the steal if the Spinner is visible and in reach, then leaves.
+  - **Exit.** **Step of the Falcon** straight up into open sky, cutting Matteo's sling on the way (Pressure 4). He never fights to the death.
+- **[[matteo-scola]].** He wants to live and keep his plums. He stays on his mat clutching the sling and never fights.
+- **[[river-otter]] family.** They own the pool and ignore the bank. Anyone in the water at the end of the next round becomes their game: they use **Tug Toy** on gear and grab the swimmer to play, with no damage unless someone hurts one of them.
 ```
 ````
 
-## Character pull
+> [!narration] Talon Skarn
+> The falcon does not look up from the straps. Chains wound over his wrappings chime as he flicks the hooked blade under a buckle, and he speaks low, in a voice like a blade being drawn. "Open your hands, spinner-keeper. I am only here for the toy."
 
-| PC | Why this matters to them now, or their obvious first job |
-| -- | -------------------------------------------------------- |
-| [[crissdalynn-khinriss]] | She carries the Spinner, and Skarn is working her straps. Keep it hidden, hand it off, or hit him hard enough to end his read. |
-| [[delmar-fisk]] | He is first up with a weapon. His obvious job is to get between Skarn and Crissdalynn, or to shoot Skarn off her. |
-| [[perrin-black-jaw]] | His control magic and Cutting Words can spoil Skarn's attacks and pulls. As Skarn closes on the camp, the blue-white glow of [[auralis]] flickers once around Perrin's cloak, with no word; this plants the CONSUME test in [[session-12-05-consume]]. |
-| [[jean-claude-tabarnack]] | He is awake and fresh, and his bow can keep Skarn from settling on the bank. He is also the PC nearest Matteo, so guarding the sling is his to take. |
+> [!narration] Matteo Scola
+> Matteo's shirt still hangs in wet tatters from yesterday, and both his fists are knotted into the sailcloth sling where two dark purple plums bulge through the weave. He rocks forward on his heels without getting up. "He wants what you carry. Don't let him. Don't let him."
 
-## Decision handles
+## Party Choices
 
-- **Hide the Spinner.** **Dexterity (Sleight of Hand) — `DC 15`** keeps it out of sight for the round; Skarn keeps cutting and does not know which pouch holds it.
-- **Hand it off.** Passing it to another carrier costs Crissdalynn her action. The pass hides from Skarn only if a **Dexterity (Sleight of Hand)** check beats his passive Perception of 20; otherwise he switches to the new carrier.
-- **Ground him.** A Grapple holds him on the bank; at Speed 0 he has no **Peregrine Dive**, no Dash, and no flight out. He spends his action escaping with **Dexterity (Acrobatics)** at +16 against the grappler's DC.
-- **Deny the stoop.** Anyone under the treeline to the north or in the eight-foot grass east is out of his 30-foot straight-down lane.
-- **Guard the sling.** A PC who takes Matteo's sling or stands within 5 feet of him with a Readied action can stop the parting cut (Tick 4).
-- **Environment / leverage.** The slack pool is deep water 10 feet below the lip; a creature knocked in lands in otter water and must climb out with **Strength (Athletics) — `DC 12`**.
-
-## Leads
-
-| Lead | How it enters play | Points to |
-| ---- | ------------------ | --------- |
-| **1** | The bloody-bank prints climb north into the trees. Several people left them, days ago. | [[cutoff-lip]] → [[spoke-ring]] |
-| **2** | [[matteo-scola]] says the others went "inland, toward her," past a ring of stones. | [[spoke-ring]] |
-| **3** | A thin line of smoke stands up from the forest to the north when the sun clears the grass. | [[session-12-02-the-smoking-skylight]] |
+| If the party… | The world responds | Narration |
+| ------------- | ------------------ | --------- |
+| **Fights Skarn** | He fights for the job, not for kills, as his Actors entry says. | _Steel skids off his sword, and his next cut still goes for a buckle._ |
+| **Hesitates** | The next Pressure step lands: a strap parts, a pouch spills on the dirt, and the Spinner is one cut from showing. | _A pouch splits, and coins and cord spill across the dirt at Crissdalynn's feet._ |
+| **Runs** | Skarn ignores the runner. A carrier left alone loses the Spinner to him in two rounds. | _The chain swings once, lazily, and the falcon does not even turn his head._ |
+| **Hides the Spinner** | A **Dexterity (Sleight of Hand)** check (Checks) keeps it out of sight for the round, and he cuts blind at the wrong pouch. | _His blade parts a strap and finds only bandages and flint._ |
+| **Hands it off** | Passing it costs the carrier her action. It stays hidden only if the check beats his passive Perception 20; otherwise he switches to the new carrier. | _His eyes follow the pass, and his wings tilt toward the new hands._ |
+| **Grapples him** | A grappled Skarn has Speed 0: no **Peregrine Dive**, no Dash, and no flight out. | _His wings beat once against the hold and go nowhere._ |
+| **Gets out of his dive lane** | Anyone under the treeline or inside the eight-foot grass is out of his straight-down lane, so **Peregrine Dive** cannot reach them. | _Branches close overhead, and the sky above you is only leaves._ |
+| **Guards Matteo's sling** | A PC holding the sling, or standing within 5 feet of Matteo with a Readied action, can stop the parting cut in Pressure 4. | _The chain snaps toward the sling and rings off a raised blade._ |
+| **Knocks someone into the pool** | The fall is 10 feet into deep water. Climbing out is a check (Checks), and the otters arrive at the end of the next round. | _Water shuts over the fallen, and far out on the pool a sleek brown head lifts._ |
 
 ## Checks
 
-| Trigger | Ability (Skill) | DC | Success | Failure / cost |
-| ------- | --------------- | -- | ------- | -------------- |
-| Keep the Spinner hidden this round | Dexterity (Sleight of Hand) | 15 | Hidden; Skarn cuts blind. | It shows; Skarn's next Kusarigama pull can take it (Tick 3). |
-| Read what he is after | Wisdom (Insight) | 10 | He watches her hands, hips, and straps, not her face. He wants an object, not a kill. | The reader takes him for an assassin trying to kill her, and learns nothing about the object. |
-| Snatch a spilled Spinner from the dirt | Dexterity (Acrobatics), or a free object interaction when adjacent | 12 | In hand before his chain. | His Chain Snap reaches it first; roll his Kusarigama at +11 against AC 10 for the object. |
-| Climb out of the slack pool | Strength (Athletics) | 12 | Out onto the bank. | Still in the water; the [[river-otter]] family notices at the end of the next round. |
+| Intent | Approach | DC | Success | Failure |
+| ------ | -------- | -- | ------- | ------- |
+| Keep the Spinner hidden this round | **Dexterity (Sleight of Hand)** | `DC 15` | Hidden; Skarn cuts blind. | It shows, and Pressure 3 can take it. |
+| Pass the Spinner unseen | **Dexterity (Sleight of Hand)** against Skarn's passive Perception | `DC 20` | Skarn keeps cutting at the old carrier. | Skarn switches to the new carrier. |
+| Read what he is after | **Wisdom (Insight)** | `DC 10` | He watches her hands, hips, and straps, not her face: he wants an object, not a kill. | The reader takes him for an assassin sent to kill her. |
+| Snatch a spilled Spinner from the dirt | **Dexterity (Acrobatics)**, or a free object interaction when adjacent | `DC 12` | In hand before his chain reaches it. | **Chain Snap** reaches it first: Kusarigama `+11` against AC 10 for the object. |
+| Climb out of the slack pool | **Strength (Athletics)** | `DC 12` | Out onto the bank. | Still in the water when the otters arrive. |
 
-## Action setup
+## PC Hooks
 
-- **Objective.** Skarn: take the Spinner and leave. Party: keep it. Matteo: keep his plums.
-- **Opposition.** [[talon-skarn]] — **AC 19**, **150/195 HP**, Speed 50 ft, fly 90 ft. Multiattack: three of Katana (+11, 17 slashing, reach 5 ft), Kusarigama (+11, 15 slashing, reach 20 ft, pulls Large or smaller 10 ft), Sai (+11, 13 piercing, the target has Disadvantage on its next attack). **Stunning Strike** once per turn: **Constitution save — `DC 18`** or Stunned until his next turn. **Peregrine Dive:** +13 (3d8) slashing and **Strength save — `DC 18`** or Prone after a 30-foot straight-down flight. **Kusarigama Tempest** (Recharge 5–6): each chosen creature in 20 feet makes a **Dexterity save — `DC 19`**, taking 27 (6d8) slashing and a 15-foot pull or Prone on a failure, half on a success. **Deflect Attack** reaction reduces one hit by 2d10 + 7. **Evasion.** Saves: Dex +11, Con +9, Wis +10. Passive Perception 20. **Legendary Resistance** 2 left. Legendary actions (3): Chain Snap, Crossing Sai, Wingbeat Step.
-- **Tactics.**
-  - **Opening.** He cuts gear on Crissdalynn with Katana and Sai, then uses Kusarigama to pull her 10 feet away from whoever helps her.
-  - **Against a grappler.** He uses Stunning Strike, then spends his action to escape.
-  - **Against a crowd.** When two or more creatures are within 20 feet of him, he uses **Kusarigama Tempest** to knock them Prone.
-  - **Break point.** 97 HP or fewer.
-  - **Exit.** Step of the Falcon (Dash) straight up into open sky, taking the Chain Snap at Matteo's sling on the way.
-- **Terrain.** Open sky over the pool is his stoop lane. The treeline north and the eight-foot grass 30 feet east block stoops; grass is Difficult Terrain and heavily obscures beyond 10 feet.
-- **Escalation.** Round 3: the sun clears the grass and the whole bank is in full light; no one on the bank has cover from above.
-- **End condition.** Skarn leaves (break point or Tick 4), or he is Grappled and dropped. He never fights to the death.
+- **[[crissdalynn-khinriss]].** She carries the Spinner, and Skarn is working her straps: hide it, hand it off, or hit him hard enough to break his read.
+- **[[delmar-fisk]].** He is first up with a weapon: get between Skarn and Crissdalynn, or shoot Skarn off her.
+- **[[perrin-black-jaw]].** His control magic and Cutting Words spoil Skarn's attacks and pulls. The blue-white glow of [[auralis]] around his cloak comes back at the Pantry with a word.
+- **[[jean-claude-tabarnack]].** He is fresh, his bow keeps Skarn from settling, and he lies nearest Matteo, so guarding the sling is his to take.
 
-**Threat ticks.**
+## Leads
 
-| Tick | What Skarn does | What the party sees |
-| ---- | --------------- | ------------------- |
-| 1 | Cuts a strap or pouch on Crissdalynn. | Leather parts; a pouch hangs by a thread. |
-| 2 | Pulls her with the chain, away from her nearest ally. | She is dragged 10 feet across the dirt. |
-| 3 | If the Spinner has shown, Chain Snap for it (Kusarigama +11 against AC 10 for a loose object, or a contested grab against her Strength (Athletics) if it is in her hand). | A small quartz top on a black chain, or her hand white-knuckled on it. |
-| 4 | At 97 HP or fewer, or after three rounds without the Spinner showing, he takes the sky. As he rises past Matteo, Chain Snap cuts the sling (Kusarigama +11 against AC 10). | The sling parts, and the two ghost plums go up the chain with him. |
+- **The bloody-bank prints.** Several people left them days ago, climbing north into the trees → [[cutoff-lip]] → [[spoke-ring]].
+- **Matteo.** He says the others went "inland, toward her," past a ring of stones → [[spoke-ring]].
+- **Smoke.** When the sun clears the grass, a thin line of smoke stands up from the forest to the north → [[Session-12-02-the-smoking-skylight]].
 
-## Handoff
+## Outcomes
 
-**Next.** [[session-12-02-the-smoking-skylight]] — **Development**
+| Outcome | What changes | Next | Narration |
+| ------- | ------------ | ---- | --------- |
+| **Driven off with the plums** | Skarn flies off bloodied with both ghost plums. The party keeps the Spinner. | [[Session-12-02-the-smoking-skylight]] | _The falcon climbs into the glare, Matteo's cut sling fluttering from his chain, and is gone over the river._ |
+| **Driven off empty-handed** | The sling was guarded, so Skarn leaves with no plums. At the Pantry he comes in visible, out of the treeline pollen. | [[Session-12-02-the-smoking-skylight]] | _He climbs away with nothing on his chain, and Matteo hugs the sling to his chest._ |
+| **Skarn takes the Spinner** | Skarn flies to [[talon-vantyrus]] with it and does not come back. The Pantry climax runs without him. | [[Session-12-02-the-smoking-skylight]] | _A small quartz top glints once at the end of his chain, then shrinks into the bright sky._ |
+| **Skarn captured** | Grappled and dropped to 0 HP, he is taken alive. The Pantry climax runs without him. | [[Session-12-02-the-smoking-skylight]] | _The falcon lies on the dirt with his wings splayed, chain slack across the coals._ |
+
+**Whatever happens.** Skarn never fights to the death, the otters never leave the water, and Matteo never fights.
 
 **Carry forward.**
-- **Fate Spinner:** Held by Crissdalynn, or by whoever took the hand-off.
-- **Skarn:** gone into the sky bloodied (97 HP or less), or Grappled and captured (then [[session-12-05-consume]] runs without him).
-- **Ghost plums:** Skarn has both (default), one, or none if the party guarded the sling. His Climax invisibility needs at least one.
-- **Party:** HP and spent resources from this fight; no long rest today.
-- **Matteo:** with the party, frightened, without his plums if Skarn got them; he still wants the ship.
+- **Fate Spinner.** Held by Crissdalynn, by whoever took the hand-off, or by Skarn.
+- **Skarn.** Gone into the sky at 97 HP or fewer, or captured.
+- **Ghost plums.** Skarn has two (default), one, or none.
+- **Party.** HP and spent resources from this fight; no long rest today.
+- **Matteo.** With the party, frightened, and without his plums if Skarn took them; he still wants the ship.
 
-**Continuity change.** Skarn has failed once in the open and knows he needs to come back unseen.
+## Statblocks
+
+![[talon-skarn#Statblock]]
+
+![[river-otter#Statblock]]

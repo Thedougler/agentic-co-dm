@@ -20,7 +20,7 @@ summary: "The column must cross a 100-foot open gap in the Long Meadow where two
 **Card.** Monster.
 **Tier.** Horror.
 **Thread under test.** Whether the party can actually bring the survivors through Aruhe, now that it has taken them on.
-**Entry state.** Early afternoon. The column (the party, [[matteo-scola]], and the four from [[session-12-02-the-smoking-skylight]]) follows the fruit-pile trail north-east into [[the-long-meadow]], with [[ettore-ferrante]] carried. HP and resources as the Hook left them.
+**Entry state.** Early afternoon. The column (the party, [[matteo-scola]], and the four from [[Session-12-02-the-smoking-skylight]]) follows the fruit-pile trail north-east into [[the-long-meadow]], with [[ettore-ferrante]] carried. HP and resources as the Hook left them.
 **Trigger.** The trail runs up the west band of eight-foot grass and then stops at the Gap: 100 feet of open short grass to the east band. When the first person steps out of the grass, the ground starts to shake.
 **PC objective.** Get every member of the column across the Gap and into the east grass band.
 **Opposition objective.** Each [[terror-bird]] wants one body to swallow and carry back to its rim.
@@ -105,10 +105,10 @@ flexGrow=1
 
 | Outcome | What changes | Next |
 | ------- | ------------ | ---- |
-| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and they now follow orders without argument. | [[session-12-04-orders-in-the-ash]] |
-| **Costly success** | Everyone across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[session-12-04-orders-in-the-ash]] |
-| **Lost** | A civilian is swallowed and carried to a rim. A rescue there is a fight at the rim: the bird stands still and digests, and the second acid tick kills the civilian. | [[session-12-04-orders-in-the-ash]], with the loss carried |
-| **Broken off** | The column retreats into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached at dusk rather than mid-afternoon. | [[session-12-04-orders-in-the-ash]] |
+| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and they now follow orders without argument. | [[Session-12-04-orders-in-the-ash]] |
+| **Costly success** | Everyone across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[Session-12-04-orders-in-the-ash]] |
+| **Lost** | A civilian is swallowed and carried to a rim. A rescue there is a fight at the rim: the bird stands still and digests, and the second acid tick kills the civilian. | [[Session-12-04-orders-in-the-ash]], with the loss carried |
+| **Broken off** | The column retreats into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached at dusk rather than mid-afternoon. | [[Session-12-04-orders-in-the-ash]] |
 | **Anything else** | The birds never enter eight-foot grass or deep water, and each wants one body. | Open node |
 
 **Carry forward.**

@@ -72,10 +72,12 @@ weight is a **chronicle**: accurate, and nobody wants to read it.
 
 ### Recap (read aloud as a session starts)
 
-- **Job:** Bring the table back to where they stopped.
-- **Build:** A short paragraph: the one or two moments the table will
-  remember, then the spot where play stopped. Then switch to present tense
-  for tonight's opening situation.
+- **Job:** Remind the players what happened last session, so the table
+  comes back to where they stopped.
+- **Build:** Last session's events in order, one paragraph, told through the
+  moments the table will remember; routine stretches pass in a clause. End on
+  the spot where play stopped. Then switch to present tense for tonight's
+  opening situation.
 - **End:** The live pressure that starts tonight.
 
 ## Examples

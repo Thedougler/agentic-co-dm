@@ -85,6 +85,10 @@
         {
           "type": "behavior",
           "text": "The header narration shows the craft at its berth; an optional `[!narration] Underway` under At the Table shows it in motion from its deck: motion underfoot, its sound, the crew at work, what the rail shows."
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ],
       "context": "Search the wiki when a role, a rule the input pages point to, or the filing path needs it. Skip art and image review."
@@ -133,6 +137,10 @@
         {
           "text": "At the Table states route and identity choices (keep moving, merchant cover, Crown approach) once, with no duplicate run loop elsewhere on the page",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -160,6 +168,10 @@
         {
           "text": "Does not alter the ship's established prize-cutter / merchant-cover role solely to accommodate the additions as fact",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -199,6 +211,10 @@
         {
           "text": "Narration gives silhouette, scale, and body-scale access without secrets, DCs, or unearned names",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -234,6 +250,10 @@
         {
           "text": "Proposed sheet numbers are grounded in a sighted-hull / patrol-pressure role, not a generic ship-of-the-line reskin presented as canon",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -257,6 +277,10 @@
         {
           "text": "Does not invent a full combat profile to justify the page",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -280,6 +304,10 @@
         {
           "text": "Identity sentence still reflects the craft's actual role and player pressure if redesigned as proposal",
           "type": "quality"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -299,6 +327,10 @@
         {
           "text": "Any Weapons battery is canon under the rule in llm-wiki consistent with Thunk's cannon debt, and the debt stays crew pressure",
           "type": "content"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -322,6 +354,10 @@
         {
           "text": "Redesigns any example play into DM-facing contingencies (if they flee / if they bluff / if they fight) rather than a scripted outcome",
           "type": "process"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     },
@@ -345,6 +381,10 @@
         {
           "text": "Preserves established strait-sighting / Crown-patrol-break linkage without inventing a full conspiracy as canon",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
+          "type": "structure"
         }
       ]
     }

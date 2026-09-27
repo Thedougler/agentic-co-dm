@@ -46,7 +46,9 @@ A loose stone or shed shell can mark a route. Taking a living plant, animal, or 
 
 Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fallen [[redheart-berry]] with no hunt. When she pulled fruit from a living stem, [[wolfrabbit]]s broke the grass. [[matteo-scola]] had already watched people die for picking, and he will only eat what the ground already holds.
 
-**Claim response.** This procedure is Session 12 prep invention (proposed). It turns "surrounding life converges" into a ruling a DM can run.
+### Claim response
+
+What the island does when someone takes from it, step by step.
 
 1. **Claim.** A creature makes a living claim when it picks fruit from a living stem, cuts living growth to take it, digs living ground, or traps or kills an animal to carry off its flesh.
 2. **Not a claim.** Eating or carrying fallen fruit is receiving. Fighting back against something that attacked you or someone with you is not a claim, even when the attacker is a plant. Taking its wood, fruit, or flesh afterward is.

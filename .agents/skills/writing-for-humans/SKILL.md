@@ -2,8 +2,8 @@
 name: writing-for-humans
 description: >-
   Write and edit every DM-facing text: session-beat pages, session plans,
-  run-guide cockpit copy (pass 2), wiki owner pages (At a Glance, At the Table,
-  facts, secrets), recaps' DM sections, and reports or proposals to the DM in
+  run-guide cockpit copy (pass 2), wiki owner pages (identity line, rules,
+  campaign facts, secrets), recaps' DM sections, and reports or proposals to the DM in
   chat. Produces plain, complete, scannable sentences a DM can use mid-session
   in seconds. Reader `DM` or unknown → writing-for-humans. Spoken player text
   belongs to theatre-of-the-mind; agent instructions belong to
@@ -44,16 +44,15 @@ DM wants answered when their eyes land there. Every line you write answers it.
 
 | Surface | The DM's question |
 |---|---|
-| Beat page At a Glance (lead sentence, Entry state, Stakes, Ends when…) | What is this beat and what do I need to know before it starts? |
+| Beat run lines (Entry, Ends when, Next…) | What is this beat and what do I need to know before it starts? |
 | Beside a `[!narration]` block | What did that block hold back, and what happens when the party answers it? |
-| Situation, Actors, Stage, Pressure | Who and what is here, what do they want, where are they? |
+| Situation, Actors, Terrain, Pressure | Who and what is here, what do they want, where are they? |
 | Rulings, checks, pressure, outcome tables | A player just did X. What happens? |
 | Carry forward / Handoff | What is true now, and where does play go next? |
 | Session plan | What happens tonight, in what order, and what is the opposition doing? |
 | Run-guide cockpit (pass 2) | What do I do and say right now? |
-| Owner page: At a Glance | What is this and why does it matter right now? |
-| Owner page: At the Table | How do I run it when the party meets it? |
-| Owner page: facts, Drive, Secrets | What is true, including what the players do not know? |
+| Owner page: identity line and rules | What is this, and what does it do at the table? |
+| Owner page: campaign facts, Secrets | What is true here, including what the players do not know? |
 | Chat report or proposal | What happened, what changed where, and what do you need from me? |
 
 Recipes for each surface: [references/surfaces.md](references/surfaces.md).
@@ -80,7 +79,7 @@ side), history that changes no choice, and anything the DM already has on an
 owner page. Then give each fact its one home, the section for its moment.
 A fact that lives on an owner page is embedded or linked where the DM uses
 it, never retyped: a fighter's statblock is `![[owner#Statblock]]` in the
-page's Roster, a rule is `![[owner#Section]]` or a link, and the page itself
+page's Statblocks section, a rule is `![[owner#Section]]` or a link, and the page itself
 carries only what this scene changes or decides (current HP, spent
 resources, conditions, positions, what the actor does here).
 
@@ -117,8 +116,21 @@ seconds for a glance section and about thirty seconds anywhere else.
 
 Format with `obsidian-markdown` (check and DC notation, wikilinks, tables,
 callouts, embeds). Then audit: in your working notes, write one line per
-final-check item quoting the page line that passes it, and fix the page
-wherever no line does. Report what changed and where, plus any gaps.
+final-check item quoting, word for word, the page line that passes it, and
+fix the page wherever no line does. Two lines are evidence, not verdicts:
+
+- **Duplicates.** Search the page for every number (HP, DC, distance, count,
+  time) and every named move, person, and item. List each one found in more
+  than one section, then keep it in the one section the DM uses it in and cut
+  or link the rest. A second mention is allowed only where it points back
+  (`the break point in Actors`), never where it restates.
+- **Labels.** List every bold label and heading on the page. Each names what
+  it holds in plain words, appears once, and is none of: a design label (card,
+  key, action or cerebral, tier, budget, thread, harvest, planted, tested,
+  session question, stake), a summary section, or a label repeated to hold
+  more facts.
+
+Report what changed and where, plus any gaps.
 
 ## Rules
 
@@ -136,7 +148,8 @@ wherever no line does. Report what changed and where, plus any gaps.
    Fragments, slash-stacks, and chains of arrows with no subject are notes to
    yourself, not copy.
 4. **Scannable shape.** A bold label at the start of a line names what the DM
-   scans for (**Trigger.**, **If they flee.**). One fact per line: a bullet
+   scans for (**Starts when.**, **If they flee.**). Labels and headings say
+   plainly what they hold, in words a careless reader cannot misread. One fact per line: a bullet
    that carries several facts buries the one the DM came for. Parallel items
    go in a list. If-then goes in a table. Nothing a DM needs mid-play hides
    inside a paragraph.
@@ -170,7 +183,8 @@ wherever no line does. Report what changed and where, plus any gaps.
 | Lines about the DM's conduct instead of the world | Replace with what the world does in that case. |
 | Hedges ("perhaps", "might want to", "consider") | State the fact or the ruling. |
 | Design diary, balance commentary, rules comparisons, agent-process notes, reasons a ruling works ("why this hurts him more") | Not playable. Keep the ruling, cut the argument. |
-| Design labels (card, key, tier, budget, thread names) and empty live-play scaffolding (blank notes, unticked boxes) | The DM runs the scene, not the design. |
+| Design labels (card, key, tier, budget, thread names, harvest), where a thread was planted or tested, and empty live-play scaffolding (blank notes, unticked boxes) | The DM runs the scene, not the design. A label agents need goes in frontmatter; timing lives in the session plan. |
+| A summary section (At a Glance) or a heading for every possible field | The page's shape shows what matters; write the content that exists, where it is used. |
 | The same fact in Glance, Situation, and narration, or an actor's plan restated in Pressure, Tactics, and Outcomes | Keep it in the one place the DM uses it. |
 | A statblock, rule, or owner fact retyped onto the page | Embed it (`![[owner#Statblock]]`, `![[owner#Section]]`) or link it. |
 | AI tells ("tapestry of", "nestled", "it's worth noting", "delve", "the air is thick with") | Say the thing plainly. |

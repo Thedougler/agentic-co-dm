@@ -59,8 +59,8 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    and pick the card the fiction calls for. A session that stopped mid-action
    resumes as **Play a Cliffhanger** at the recorded state — the tension is
    already there. Done when the card, its key (action or cerebral), and the
-   thread it opens are named; they go in the session plan's Beat Map, not on
-   the Hook page.
+   thread it opens are named; the card goes in the Hook's frontmatter `card:`,
+   the thread in the session plan's Threads table, never in the page body.
 3. **Cast owners.** Every named actor, place, item, or creature the Hook
    needs has an owner page before any text depends on it: cast from the wiki
    first, and mint with its owner skill only what nothing fits
@@ -70,7 +70,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    Write every DM-facing line with `writing-for-humans`: each fact on the
    page has a moment of use and one home, and what the wiki holds is embedded.
 5. **Set rulings.** Load `dnd5e-mechanics` for every check, save, and DC. When
-   the Hook is a fight, embed each opponent's owner statblock in `## Roster`
+   the Hook is a fight, embed each opponent's owner statblock in `## Statblocks`
    (`![[owner#Statblock]]`); `encounter-prep` sets the difficulty when no
    encounter exists. Done when everyone who could fight has its statblock
    embedded, from the owner or from a proposed standard 5e statblock filed on
@@ -80,7 +80,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
    mode); `Opening`, which starts inside the changed moment and ends on
    something a player can act on; one `{NPC}` or `{Creature}` block for each
    actor the party meets, titled with its name; and the `_italic_` Narration
-   cells in Handles and Outcomes. Delete a slot that has no spoken text.
+   cells in Party Choices and Outcomes. Delete a slot that has no spoken text.
 7. **Write the handoff.** Action Hook → next Development; cerebral Hook → next
    Cliffhanger. The carry-forward names each state variable the next beat
    inherits, one line per variable with its possible values.
@@ -91,13 +91,13 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 
 - **Start in motion.** The first spoken sentence is already inside the
   trouble: the grab, the scream, the stranger with the letter. Nothing happens
-  before it except an optional one-to-three-sentence `Previously` block — the
-  only recap the session gets.
+  before it except the `Previously` block on the session's first beat: last
+  session's events read aloud, the only recap the session gets.
 - **Everyone moves in five minutes.** Each PC present has an obvious first
-  thing to do or a personal pull (Spotlight). A PC with nothing to
+  thing to do or a personal pull (PC Hooks). A PC with nothing to
   do in the opening becomes a spectator for the whole beat.
-- **One memorable thing.** At a Glance's **Memorable** names the image,
-  object, or line the players carry out of the beat; the Opening lands it.
+- **One memorable thing.** Frontmatter `memorable:` names the image, object,
+  or line the players carry out of the beat; the Opening lands it.
 - **Show the night.** The Hook demonstrates the session's tone and pace and
   introduces at least one piece the session uses later: the opposition, an
   ally, the object, the question the Climax answers. A self-contained Hook
@@ -105,7 +105,7 @@ Copy `wiki/templates/hook.md`. File after accept to `wiki/journal/sessions/<camp
 - **Obvious and interesting moves.** Build one obvious first move and at least
   one non-obvious move the space or cast rewards (a feature to exploit, an NPC
   to bargain with, a thing to grab).
-- **Short and committed.** The Hook resolves fast. At a Glance's "Ends when" names the
+- **Short and committed.** The Hook resolves fast. The **Ends when** run line names the
   observable commitment — the party gives chase, accepts the job, flees the
   city — and the beat cuts there. Longer stretches of travel or investigation
   are the next beat.
@@ -129,7 +129,7 @@ beat's trigger. The Hook is the session's only Hook. On the page:
   it, with the full consequence embedded from its owner page
   (`![[owner#Section]]`) or stated where the owner has none.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears in the body (the card and memorable element go in frontmatter). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 
 ## Named seams
 

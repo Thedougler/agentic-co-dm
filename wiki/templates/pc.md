@@ -21,21 +21,18 @@ speed: ""
 summary: ""
 token: ""
 ---
-<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; every facet of the character lives on this page under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
+<!-- Fact-only: every line gives the DM a fact, ruling, or response. One H1; the portrait, the italic class line, and how they play come first, then every facet under its H2. Numbers live here; other pages link. Keep a section, row, or bullet only when you have facts for it; delete unused sections, bullets, rows, narration slots, and these comments. Inline image: optional `![[attachments/{slug}-{role}.ext|{{title}}]]` immediately next to what it shows (after `# title` for identity; directly above a creature `statblock` fence for overview). Role from wiki/attachments/README.md (`overview` `portrait` `banner` `reference` `handout` `teaser` `battlemap`). Keep the embed only if the file exists, or this is next-session prep and this agent can generate images (then generate the file; missing look still stops — no invented faces). Never inside `[!narration]` or `col`. No `## Art`. Foundry token is YAML `token`, never a body embed. -->
 
 # {{title}}
 
-## At a Glance
-
-<!-- Required. Lead sentence: how this character plays at the table and what pulls them into a scene. Then labelled facts, one bullet each. -->
-
-- **Player.** Name.
-- **Class.** Rogue 5 (Soulknife)
-- **Home.** [[vehicle]] or [[place]], and their station there.
-- **Voice.** How the player plays them: manner, catchphrase, what they reach for first.
-
 > [!narration] {{title}}
-> <!-- One third-person paragraph: face, build, clothing, posture, and one detail beyond sight (voice, gait, smell, habit) (theatre-of-the-mind: Person portrait). -->
+> <!-- Person portrait: face, build, clothing, posture, and one detail beyond sight (theatre-of-the-mind). -->
+
+<!-- Class and level, player, and home. Match YAML. -->
+
+*Rogue 5 (Soulknife), played by Name, crew of [[vehicle]]*
+
+**Playstyle.** How the player runs them at the table: manner, catchphrase, what they reach for first.
 
 ## Sheet
 
@@ -81,10 +78,6 @@ token: ""
 - **Carried.** [[item]], [[item]]
 - **Stowed.** Where, and what.
 - **Coin.** 120 gp
-
-## Connections
-
-- [[page]] — what this tie does at the table.
 
 ## History
 

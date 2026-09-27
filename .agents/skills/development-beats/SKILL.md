@@ -54,7 +54,7 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
 2. **Choose the card.** Read
    [references/development-cards.md](references/development-cards.md) and pick
    the card the fiction calls for. Name the live thread it advances and the
-   **turn**: the one fact or change that sets the new direction. The card and thread go in the session plan's Beat Map; the page carries what they produce.
+   **turn**: the one fact or change that sets the new direction. The card goes in the beat's frontmatter `card:` and the thread in the session plan's Threads table; the page body carries only what they produce.
 3. **Cast owners.** Every named NPC, place, item, faction, or lore fact the
    scene needs has an owner page before any text depends on it: cast from the
    wiki first, and mint with its owner skill (`npc-design` for a new speaker)
@@ -97,15 +97,15 @@ Copy `wiki/templates/development.md`. File after accept to `wiki/journal/session
   scene from these rows without improvising motive.
 - **Something to do with your hands.** Give talk and investigation scenes a
   physical anchor: a site to search, a body to examine, a map to read, a meal
-  to share, a ritual to witness. It goes in Situation's **Hands on**, and a
-  place the party can search or watch gets its own Handles line. Each anchor
+  to share, a ritual to witness. It goes in Situation's **Evidence**, and a
+  place the party can search or watch gets its own Party Choices line. Each anchor
   surfaces at least one clue.
 - **Truths with routes.** The Clues list states each truth as fact with
   where it surfaces. A conclusion the session depends on has three
   independent routes (person, place, object).
 - **Information costs.** Getting the good part costs something — a favor, a
   promise, time on the clock, exposure, a check with a cost on failure. The
-  Handles **Cost** line names it.
+  Party Choices **Cost** line names it.
 - **The truth waits for no one.** Situation's **If ignored** says what happens
   to the truth or the lead if the party walks past it.
 - **Stall breaker.** Name what ends the beat if talk circles: an actor's
@@ -132,7 +132,7 @@ next Cliffhanger's stakes are legible from it. On the page:
 - every question the scene sends the party away with names where its answer
   lives (who knows, where, at what price), and the DM layer holds the answer.
 
-Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears on the page (they stay in the session plan's Beat Map). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
+Every section on the page is a section of the template; none is left over from an older layout, and no card, tier, or thread label appears in the body (the card goes in frontmatter `card:`). Each actor the party meets has its own `{NPC}` or `{Creature}` narration block, titled with its name; an NPC's block ends on their first words.
 
 ## Named seams
 

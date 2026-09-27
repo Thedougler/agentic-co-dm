@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
-"""Grading aid for any eval whose output carries player-facing `[!narration]` prose
-(scene openings, beat pages, portraits, recaps). For the grader only, never the subject.
+"""Check player-facing `[!narration]` prose (scene openings, beat pages, portraits,
+recaps). The writer runs it in theatre-of-the-mind's final check; the grader runs it
+on eval outputs.
 
 Examples:
-  python3 scripts/check-narration.py output.md
+  python3 scripts/check-narration.py draft.md
+  python3 scripts/check-narration.py draft.md --source wiki/entities/item/fate-spinner.md
   python3 scripts/check-narration.py output/ --source wiki/entities/npc/example.md
 
-paths     subject outputs: files or directories; every `[!narration]` callout
-          in every .md is checked (a file with none is checked whole)
---source  each page or old block the facts came from; copied five-word phrases
-          are reported against all of them (quoted speech exempt)
+paths     files or directories; every `[!narration]` callout in every .md is
+          checked (a file with none is checked whole)
+--source  each page or old block the facts came from; copied five-word phrases,
+          and sentences that keep a source sentence's content words in the same
+          order, are reported against all of them (quoted speech exempt)
 
 Prints each block, then one lead per line (long sentences, punctuation, paint-chip
-colors, grid distances, compass legends, labels, copied phrases), then sentence
-and word counts. Leads are for the grader to judge, not pass/fail gates: the
-skill sets no hard counts. Exit 1 when any lead remains, 0 when clean.
+colors, grid distances, compass legends, labels, copied phrases, same-order echoes,
+words repeated in a sentence or the next), then sentence and word counts. Leads are
+to judge, not pass/fail gates: the skill sets no hard counts. Rewrite each lead that
+holds and run it again. Exit 1 when any lead remains, 0 when clean.
 """
 import argparse
 import re
@@ -52,6 +56,45 @@ def narration_text(raw: str) -> str:
     return narration_blocks(raw)[0][1]
 
 
+STOP = set("""about above across after again against along also among around away back
+because been before behind being below beneath beside between both down each even every
+from have here into just like more most much only onto other over same some such than that
+their them then there these they this those through under until upon very were what when
+where which while with within without would your yours""".split())
+
+
+def sentences_of(text: str, keep_quotes: bool = False) -> list:
+    """Sentences, with each bullet its own item; quoted speech dropped unless kept."""
+    out = []
+    for item in re.split(r"\n\s*[-*]\s+", "\n" + text):
+        if not keep_quotes:
+            item = re.sub(r'["“][^"”]*["”]', " ", item)
+        flat = " ".join(item.split())
+        out += [s for s in re.split(r"(?<=[.!?”\"])\s+(?=[A-Z“\"])", flat) if s.strip()]
+    return out
+
+
+def content_words(sentence: str, skip_names: bool = False) -> list:
+    words = re.findall(r"[A-Za-z']+", sentence)
+    out = []
+    for i, w in enumerate(words):
+        if skip_names and i and w[0].isupper():
+            continue
+        w = re.sub(r"'s?$", "", w.lower())
+        if len(w) >= 4 and w not in STOP:
+            out.append(w)
+    return out
+
+
+def lcs(a: list, b: list) -> list:
+    """Longest common subsequence of two word lists."""
+    table = [[[] for _ in range(len(b) + 1)] for _ in range(len(a) + 1)]
+    for i in range(len(a) - 1, -1, -1):
+        for j in range(len(b) - 1, -1, -1):
+            table[i][j] = ([a[i]] + table[i + 1][j + 1]) if a[i] == b[j] else max(table[i + 1][j], table[i][j + 1], key=len)
+    return table[0][0]
+
+
 def grams(text: str, n: int = 5) -> set:
     text = re.sub(r'["“][^"”]*["”]', " ", text)  # quoted speech stays verbatim
     words = re.findall(r"[a-z']+", text.lower())
@@ -61,7 +104,7 @@ def grams(text: str, n: int = 5) -> set:
 def check(body: str, sources: list) -> list:
     findings = []
     flat = " ".join(body.split())
-    sentences = [s for s in re.split(r"(?<=[.!?”\"])\s+(?=[A-Z“\"])", flat) if s.strip()]
+    sentences = sentences_of(body, keep_quotes=True)
     paragraphs = [p for p in re.split(r"\n\s*\n", body) if p.strip()]
 
     for s in sentences:
@@ -70,8 +113,8 @@ def check(body: str, sources: list) -> list:
     for p in paragraphs:
         if len(re.split(r"(?<=[.!?])\s+", p.strip())) == 1 and len(paragraphs) > 1:
             findings.append(f"one-sentence paragraph, merge it: {p.strip()[:70]}")
-    if len(paragraphs) > 2:
-        findings.append(f"{len(paragraphs)} paragraphs; a scene opening is one, two when loaded")
+    if len(paragraphs) > 1:
+        findings.append(f"{len(paragraphs)} paragraphs; a box is one paragraph (a place portrait may run two)")
     for ch, name in ((";", "semicolon"), (":", "colon"), ("—", "em dash")):
         if ch in flat:
             findings.append(f"{name} in spoken prose")
@@ -93,6 +136,25 @@ def check(body: str, sources: list) -> list:
         copied = sorted(mine & grams(Path(src).read_text()))
         for g in copied:
             findings.append(f"copied phrase from {Path(src).name}: '{g}'")
+    own = sentences_of(body)
+    for src in sources:
+        src_sentences = [s for _, text in narration_blocks(Path(src).read_text()) for s in sentences_of(text)]
+        for s in own:
+            mine_words = content_words(s)
+            best = max((lcs(mine_words, content_words(t)) for t in src_sentences), key=len, default=[])
+            if len(best) >= 4:
+                findings.append(f"same-order echo of {Path(src).name} ({', '.join(best)}); say the fact through a new detail: {s[:70]}")
+    words = [content_words(s, skip_names=True) for s in own]
+    every = [w for ws in words for w in ws]
+    seen = set()
+    for i, ws in enumerate(words):
+        nxt = words[i + 1] if i + 1 < len(words) else []
+        for w in ws:
+            if w in seen:
+                continue
+            if ws.count(w) > 1 or w in nxt or every.count(w) >= 3:
+                seen.add(w)
+                findings.append(f"'{w}' used {every.count(w)} times, close together or often; keep one")
     return findings
 
 

@@ -213,18 +213,17 @@ links in [references/sources.md](references/sources.md).
 Copy `wiki/templates/place.md` to `wiki/entities/place/<kebab-name>.md` (or
 improve the existing page) with `type: place` and `kind: dungeon`. Fill:
 
-| Section | Carries |
+| Part | Carries |
 |---|---|
-| At a Glance | The promise, why a party comes and what they leave with, the present conflict by name, the pressure and what happens if nobody intervenes (with a time), and the site's scale and session count |
 | Narration | The approach, from `theatre-of-the-mind`: what the party perceives where they first reach the site, with a tell for each entrance and for the pressure; room contents stay in their keys |
-| Features | Each occupant or faction by page, with want, fear, offer, response, and what they do between visits (fighters with compact numbers or statblock links); treasure, items, hazards, and clues, each by owner link or with its numbers. Treasure fits the party's level and the danger: coin by amount and at least one magic item, cast from existing item pages first (`item-design` mints one when none fits). Then the decision graph as a node list with edges (route, cost, what it reveals), and one `###` keyed area each in the keying order: first impression, current activity, interactives, hidden information, mechanics |
-| At the Table | The approaches and big choices (each entrance, the bargain, the bypass, the retreat); the pressure procedure (site turn, alert states, advance triggers, the clock with its ticks), rest safety, and restocking after a visit |
-| Secrets | Hidden information that spans areas, each with the clue that reveals it |
-| Connections | The neighbours and what lies outside each exit |
+| Identity line | The italic line: kind of site, region, who holds it now, and the present conflict by name |
+| Running it | `**Name.**` paragraphs before the key: **Approaches.** (each entrance, the bargain, the bypass, the retreat), **Routes.** (the decision graph as a node list with edges: route, cost, what it reveals), **Pressure.** (site turn, alert states, advance triggers, the clock with its ticks, and what happens if nobody intervenes, with a time), **Rest.** (rest safety and restocking after a visit) |
+| The key | One `##` area each in the keying order, each opening with its `{Area}` narration: first impression, current activity, interactives, hidden information, mechanics. Occupants and factions by page, with want, fear, offer, response, and what they do between visits, fighters embedded from their owner pages; treasure, items, hazards, and clues by owner link or with the numbers this page decides. Treasure fits the party's level and the danger: coin by amount and at least one magic item, cast from existing item pages first (`item-design` mints one when none fits) |
+| Campaign facts | **Secret.** paragraphs for hidden information that spans areas, each with the clue that reveals it; **Exits.** for the neighbours and what lies outside each exit |
 
 Each keyed area names its size in feet where position matters, carries every
-check as Ability (Skill) and DC, and every creature by count, page link, and
-compact numbers. Encounters carry their job, 2024 difficulty for the party's
+check as Ability (Skill) and DC, and every creature by count and page link,
+its statblock embedded from its owner page. Encounters carry their job, 2024 difficulty for the party's
 level, and an off-ramp.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
@@ -275,7 +274,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits 0 (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

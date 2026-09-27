@@ -79,11 +79,17 @@ def emit_error(message: str, *, code: int = EXIT_ERROR) -> int:
     return code
 
 
-def usage_error(error: str, *, hint: str, example: str, list_valid: str) -> int:
-    """The FR-035 error object: JSON on stdout, the same message on stderr, exit 2."""
-    emit_json({"status": "error", "error": error, "hint": hint, "example": example, "list_valid": list_valid})
-    print(f"error: {error}", flush=True, file=sys.stderr)
+def usage_error(error: str, *, hint: str, example: str, list_valid: str, json_out: bool | None = None) -> int:
+    """Exit 2. Default: stderr. --json: one JSON object on stdout."""
+    if json_out is None:
+        json_out = "--json" in sys.argv
+    if json_out:
+        emit_json({"status": "error", "error": error, "hint": hint, "example": example, "list_valid": list_valid})
+    else:
+        print(f"error: {error}", flush=True, file=sys.stderr)
+        print(f"  {example}", flush=True, file=sys.stderr)
     return EXIT_REJECTED
+
 
 
 class UsageError(ValueError):

@@ -114,7 +114,7 @@ page.
   three **Landmark** bullets a newcomer steers by; one **Getting around**
   bullet: how long crossing takes, what changes after dark, and where movement
   is restricted and by whom.
-- **Gazetteer.** Arrive and leave (who meets a ship, what it costs, what
+- **Services.** Arrive and leave (who meets a ship, what it costs, what
   papers), stay, buy supplies, sell cargo and loot (a named buyer and the rate
   they pay, and a fence for goods with a history), services: each entry a named
   place and its keeper, a price, and one detail that makes it this city's.
@@ -157,10 +157,10 @@ piece; and every faction in Power has a named local face.
 ### 5. Fill the street
 
 - **Rumors.** What people say, each with its truth on the DM layer.
-- **Street Life.** A d6 or d8 table of street moments, each tied to a
-  situation, a district, or a faction, with what happens if the party engages
+- **Random Encounters.** A d6 or d8 table of street moments, each tied to a
+  conflict, a district, or a faction, with what happens if the party engages
   and a spoken `_italic_` line in the Narration column.
-- **Names.** Under Street Life, six to ten names in the city's naming style, for
+- **Names.** Under Random Encounters, six to ten names in the city's naming style, for
   improvised people.
 - **Faces.** Everyone who drives a situation, holds power, or keeps a gazetteer
   place the party will use this arc is a named NPC page, cast first; a person no
@@ -178,8 +178,8 @@ silhouette from the approach, movement at the gate or harbour, one sound and
 one smell with sources, the landmark a newcomer steers by, and the tells of the
 situations a newcomer could see. Leave out truths, DCs, and names not earned.
 Load `.agents/skills/theatre-of-the-mind`, portrait mode, place recipe, and give
-it the packet. The result is the `[!narration]` after At a Glance,
-titled with the city's name. The Districts and Street Life Narration cells are
+it the packet. The result is the `[!narration]` under the title,
+titled with the city's name. The Districts and Random Encounters Narration cells are
 situated lines from the same skill (zone-cell recipe).
 
 Done when the returned narration passes theatre-of-the-mind's final check and
@@ -189,15 +189,15 @@ carries the situations' visible signs.
 
 Copy `wiki/templates/city.md` to `wiki/entities/place/<kebab-name>.md` with
 `type: place` and `kind: city`; add region, population, government, ruler, and
-controlling_faction only when they have values. At a Glance opens with one
-sentence on the city's job in play, then the feel, power, current pressure, and
-opportunity. Step 3 fills Districts (getting around under the table), Gazetteer,
-and Local Rules; step 4 fills Power and Situations (one `###` each); step 5
-fills Rumors and Street Life. Connections ends with **Depends on**: the food,
-water, fuel, and trade the city cannot make itself, and what happens when that
-route fails. Keep a section only when you have facts for it
-(fact-only, `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every
-owner page.
+controlling_faction only when they have values. The italic identity line
+under the portrait gives size, who rules, and the current pressure. Step 3
+fills Districts (getting around under the table) and Services; step 4 fills
+Factions (its table, then the local rules that differ from what players
+assume) and Conflicts (one `###` each); step 5 fills Random Encounters, then **Rumors.**
+and **Secret.** paragraphs. A city that depends on outside food, water, fuel,
+or trade says so in a **Depends on.** paragraph, with what happens when that
+route fails. Keep a section only when you have facts for it (fact-only,
+`wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every owner page.
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -233,7 +233,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits 0 (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

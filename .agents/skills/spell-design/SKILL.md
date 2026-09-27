@@ -173,13 +173,14 @@ Copy `wiki/templates/spell.md` to `wiki/entities/spell/<kebab-name>.md` with
 section only when you have facts for it (fact-only, `wiki/AGENTS.md` Layout).
 Write complete sentences. Wikilink every owner page.
 
-| Section | Carries |
+A Player's Handbook entry:
+
+| Part | Carries |
 |---|---|
-| At a Glance | Level, school, ritual on one italic line; what the spell does in this campaign; Taught by (source, access price, clue) |
-| Narration | The narration, nothing else |
-| Effect | The four casting fields, then the runnable effect block and scaling, then the optional `When cast` narration |
-| At the Table | Likely tricks with answers; counterplay; how enemies use it; who notices a casting |
-| History | The tradition, its casters, and history that changes a present choice |
+| Narration | The portrait, nothing else |
+| Level line | Level, school, ritual, and the classes that learn it, in one italic line |
+| Casting fields and effect | Casting Time, Range, Components, Duration, then the runnable effect and **Using a Higher-Level Spell Slot.**; then the optional `When cast` narration |
+| Campaign facts | `**Name.**` paragraphs, each only when it exists: **Rulings.** (likely tricks with answers, counterplay, how enemies use it, who notices a casting), **Learned from.** (source, access price, clue) |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>` for deterministic repairs,
 and rerun until green.
@@ -211,7 +212,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits 0 (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

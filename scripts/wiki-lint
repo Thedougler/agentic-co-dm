@@ -1,16 +1,11 @@
 #!/usr/bin/env python3
-"""Structural wiki lint plus the creative-lint rule engine.
-
-Invocations without a creative subcommand delegate unchanged to
-``tools/lint_wiki.py``. Creative commands are ``task``, ``file``, ``corpus``,
-``changed``, ``rule``, and ``candidate``.
+"""Internal structural lint. Agents use `wiki lint --help`.
 
 Examples:
-  ./scripts/wiki-lint --scope files:wiki/entities/npc/example.md
-  ./scripts/wiki-lint --json
-  ./scripts/wiki-lint file wiki/entities/npc/example.md --json
-  ./scripts/wiki-lint corpus wiki --severity HARD
+  wiki lint entities/npc/example.md
+  wiki lint --json
 """
+
 from __future__ import annotations
 
 import argparse
@@ -109,11 +104,12 @@ def structural_main(argv: list[str]) -> int:
     parser = AgentParser(
         description=__doc__,
         epilog=examples_epilog(
-            "scripts/wiki-lint --json",
-            "scripts/wiki-lint --scope files:wiki/entities/npc/example.md",
+            "wiki lint entities/npc/example.md",
+            "wiki lint --json",
             "wiki lint --help",
         ),
-        example="scripts/wiki-lint --scope files:wiki/entities/npc/example.md",
+        example="wiki lint entities/npc/example.md",
+
     )
     parser.add_argument("vault", nargs="?", default=None)
     parser.add_argument("--json", action="store_true")
@@ -264,7 +260,9 @@ def structural_main(argv: list[str]) -> int:
                             filename = path.resolve().relative_to(vault.resolve()).as_posix()
                         except ValueError:
                             filename = path.as_posix()
-                    grouped.setdefault(filename, []).append({"rule": grouped_rule, **item})
+                    elif path.parts[:1] == ("wiki",) and (vault / Path(*path.parts[1:])).is_file():
+                        filename = Path(*path.parts[1:]).as_posix()
+                    grouped.setdefault(filename, []).append({**item, "rule": grouped_rule, "file": filename})
         report["findings_by_file"] = {key: grouped[key] for key in sorted(grouped)}
         backlog = []
         for filename, items in grouped.items():
@@ -277,10 +275,12 @@ def structural_main(argv: list[str]) -> int:
         backlog.sort(key=lambda item: (item["bytes"], item["page"]))
         report["backlog"] = backlog
         report["next_page"] = backlog[0]["page"] if backlog else None
+        report["next"] = {"path": report["next_page"]} if report["next_page"] else None
         if args.json:
             print(json.dumps(report, sort_keys=True, separators=(",", ":")))
         else:
             print(render_lint_issues(report))
+
         if ambiguous_identities:
             return 2
         if args.plan:

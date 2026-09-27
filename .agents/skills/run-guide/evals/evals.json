@@ -49,6 +49,18 @@
         {
           "type": "behavior",
           "text": "At a Glance scans Ends when, Stakes, Objective, Danger, Magnets, and Next; Secondary Objective appears only when a second question runs in parallel; Dials sit under the Pressure table when thresholds change the scene."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -68,6 +80,18 @@
         {
           "text": "Densify/WIP/archive material does not appear on the run surface.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -107,6 +131,18 @@
         {
           "type": "structure",
           "text": "Each combat-mode Roster embed is followed by a `{Creature}` narration block titled with that creature's name."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -126,6 +162,18 @@
         {
           "text": "The writing-for-humans earn-it test is applied: lines that change no ruling, risk, or spoken picture are cut.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -165,6 +213,18 @@
         {
           "text": "Pass boundary: dnd5e-mechanics loaded on pass 1; writing-for-humans only on pass 2; theatre-of-the-mind only on pass 3.",
           "type": "process"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -200,6 +260,18 @@
         {
           "text": "No threat clock in combat-round form — talk-mode uses a social or time-pressure clock if any.",
           "type": "guardrail"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -223,6 +295,18 @@
         {
           "text": "Preserves the parent session objective through every handoff.",
           "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -250,6 +334,18 @@
         {
           "text": "The table gate checks that each PC present has a reason to act.",
           "type": "content"
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     },
@@ -265,6 +361,18 @@
         {
           "type": "behavior",
           "text": "Builds the cockpit from existing prep and the pages it links, without composing new beats."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     }

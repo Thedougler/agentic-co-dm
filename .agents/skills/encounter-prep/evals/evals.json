@@ -49,6 +49,18 @@
         {
           "type": "behavior",
           "text": "Handles and Outcomes rows carry spoken `_italic_` Narration cells."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ],
       "files": [
@@ -81,6 +93,18 @@
         {
           "type": "behavior",
           "text": "Does not strip the encounter of its narrative context to make it a simple combat."
+        },
+        {
+          "text": "When the output files a beat page, it opens on run lines under the title with no heading (starting situation, what ends it, next beat); it has no At a Glance, and its card, session question, or memorable element sit in frontmatter, never the body",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files a beat page, every line has a use at the table and each fact lives in one section: the opposition's plan in Actors, its clock in Pressure, its rulings in Checks, with no design reasoning, thread provenance, or empty live-play scaffolding",
+          "type": "quality"
+        },
+        {
+          "text": "When the output files a beat page, every fighter's statblock is embedded from its owner page in `## Statblocks` (`![[owner#Statblock]]`) and no owner numbers are retyped beyond this beat's state",
+          "type": "structure"
         }
       ]
     }

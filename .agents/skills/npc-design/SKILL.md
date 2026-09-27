@@ -54,9 +54,9 @@ File what constitution X makes canon. Follow `docs/agents/work.md`.
   predate this skill. The bar is the steps and `## Done` below.
 - **Role.** Frontmatter `role` is exactly `rival`, `patron`, or `contact`,
   chosen from how the NPC stands toward the party. Their job (gatekeeper,
-  informant, smith) goes in Nature.
+  informant, smith) goes in the identity line.
 - **One callout.** `[!narration] {Name}` is the only callout. Secrets and
-  truths are plain complete sentences in At a Glance, Running, or Connections.
+  truths are plain complete sentences in the **Name.** paragraphs.
 - **Explicit DM layer** (AGENTS.md **HARD: dm-facing-explicit**). Every tell
   has its truth on the page, by name: what they hide, from whom, and what
   happens if it comes out.
@@ -90,8 +90,8 @@ retrieval.
 2. Read their home place, their faction, and every person they are tied to.
    Search QMD for the name, their job in that place, and session recaps that
    mention them. `qmd get` every hit you will use.
-3. Read each PC page in `wiki/entities/pc/` (At a Glance, Connections, Session
-   Log) for backstory threads, debts, rivals, and goals this NPC could touch.
+3. Read each PC page in `wiki/entities/pc/` (History and Log) for backstory
+   threads, debts, rivals, and goals this NPC could touch.
 
 Write the **canon inventory** in working notes: `[[slug]]` · kind · the fact
 that ties it to this NPC. Add one line per PC: the thread this NPC could pull.
@@ -205,13 +205,13 @@ Build the **packet** as fragments, each with its source:
 - **At rest:** what their hands do when nothing is happening.
 - **Tells:** every tell from step 3, as plain appearance, never its meaning.
 - **Voice:** the voice notes from step 3 and what they want from the party.
-- **Leave out:** the secret, the At a Glance lead, mechanics, and names the players
+- **Leave out:** the secret, what they want, mechanics, and names the players
   have not earned.
 
 Load `.agents/skills/theatre-of-the-mind` and give it the packet twice: in
 portrait mode, person recipe, for the `[!narration] {Name}` block; and in the
 dialogue recipe, for three sample lines (the ask, the refusal, the line under
-pressure). When the page carries At the Table, also ask for the optional
+pressure) for the **Voice.** paragraph. When the party will meet them, also ask for the optional
 `First meeting` block (NPC first look, then Dialogue recipe, "you" address):
 what they are doing when the party arrives, then their first words.
 
@@ -220,18 +220,17 @@ face and every tell, and the three lines sound like one person.
 
 ### 7. File the page
 
-Copy `wiki/templates/npc.md`. Keep a section only when you have facts for it
-(fact-only, `wiki/AGENTS.md` Layout); write complete sentences and wikilink
-every owner page.
+Copy `wiki/templates/npc.md`. Write complete sentences and wikilink every
+owner page; a paragraph with no facts is not written (fact-only, `wiki/AGENTS.md`
+Layout).
 
-| Section | Carries |
+| Part | Carries |
 |---|---|
-| At a Glance | The lead sentence on what this person is about; Role, Nature, Wants, Home, Allegiance bullets |
 | Narration | The portrait from step 6 |
-| At the Table | First meeting, Opens up when, Shuts down when, Priority (what they protect first), Shares (what they tell freely and never tell), Voice (with the subject they avoid), Lines; then the optional `First meeting` narration |
-| Statblock | Numbers for every fighter in reach from step 5, and the encounter rule for custom forms |
-| Secrets | What they hide, with the truth behind each open question and how the party learns it |
-| Connections | Each tie by wikilink and what it does at the table, including each PC thread |
+| Identity line | The italic line: ancestry and calling, where the party meets them, allegiance |
+| What the DM plays | `**Name.**` paragraphs, each only when it exists: **Wants.**, **Voice.** (with a line they would say and the subject they avoid), **What they share.** (what they tell freely, what opens or shuts them, what they never tell, what they protect first), **Secret.** (the truth behind each open question and how the party learns it), **Connections.** (each by wikilink, including each PC thread); then the optional `First meeting` narration |
+| Statblock | Their statblock, and every other fighter in reach from step 5 embedded from its owner page, with the encounter rule for custom forms |
+| Log | One bullet per change play made |
 
 Run `wiki lint <path>`, then `wiki lint fix <path>`, and rerun until green.
 
@@ -253,8 +252,8 @@ line that carries it; a line with nothing beside it goes back on the page.
   tell.
 - The portrait and three sample lines came from theatre-of-the-mind and pass
   its final check; the portrait keeps every face word the old page had.
-- At the Table gives Priority, Shares (what they tell freely and what they
-  never tell), and Voice with the subject they avoid; when the party will meet
+- **What they share.** gives what they protect first, what they share freely, and what
+  they never tell; **Voice.** gives the subject they avoid; when the party will meet
   them, `[!narration] First meeting` speaks to the party as "you" and ends on
   their first words.
 - A villain has an active, interruptible front and several possible endings.
@@ -262,8 +261,6 @@ line that carries it; a line with nothing beside it goes back on the page.
   an answer, a price, and a roll where the outcome is uncertain.
 - Each new mint names, in the response, the candidates considered and why none
   fit (`docs/agents/table-ready.md` § Cast before minting).
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits
-  0 (`docs/agents/table-ready.md` § Fill the silence).
 - Each new owner page came from its owner skill, loaded and followed.
 - Every fighter in reach has a statblock: the NPC's on this page, and their
   guards' and any loose animal's embedded from their owner pages; custom

@@ -79,7 +79,7 @@ situated moments with the party as "you".
 whether it is fixed at prep time:
 
 - A **box**, one spoken paragraph, when the arrival is settled (the beat's
-  Entry state fixes how the party comes in, what light they carry, and who is
+  starting situation fixes how the party comes in, what light they carry, and who is
   there), when the action it shows is already declared, or when the look does
   not depend on the approach at all.
 - **Immediate-fact bullets** when the entrance, the light, or who is present
@@ -203,16 +203,17 @@ Repeat until every answer is yes.
 Return the block with, outside the narration:
 
 - the point (step 5);
-- the check note: one line per final-check item, quoting the words in the
-  block that pass it, or naming the rewrite that item forced;
+- the check note: one line per final-check item, in the form each item asks
+  for, quoting words copied exactly from the final block;
 - the art note (vision.md § Report);
 - for a situated block, the handle note: each attention- or interaction-layer
   handle, and each withheld fact from step 4, with the slot or DM section it
-  belongs in (`lantern hooks under the eaves → Stage: Porch`, `the hounds
+  belongs in (`lantern hooks under the eaves → Terrain: Porch`, `the hounds
   charge whoever enters first → Actors`), or "all handles in the block".
 
-Done when a full pass of the final check changes nothing and the check note
-has a line for every item.
+Done when a full pass of the final check changes nothing, the check note
+has a line for every item, and every phrase it quotes appears word for word
+in the final block or its sources.
 
 ## Craft rules
 
@@ -424,21 +425,27 @@ passes the final check, keeping their facts and meaning.
 Each item is a fresh read of the whole block. Rewrite on every "no", then run
 the list again, and write the check note (step 7) from the final pass.
 
-- [ ] **Echo.** Held beside the parent page, the old block, and each owner
-      page, does no phrase of the block appear in them (quoted speech aside),
-      and is every color one plain word or a comparison?
+- [ ] **Echo.** Save the block to a file and run
+      `python3 scripts/check-narration.py <file> --source <page>` once per
+      parent, owner, or old-block page. Is every copied-phrase and same-order
+      echo lead rewritten through a new detail, until the run shows none, with
+      its final output copied into the check note, and is every color one
+      plain word or a comparison?
 - [ ] **Filing.** (Situated) Is it a box when the arrival is fixed at prep
       time, and bullets when the entrance, light, or occupants can still
       change, with every bullet true from every approach?
 - [ ] **Point.** Is the point one sentence outside the block, and does every
       sentence serve it or carry a handle?
-- [ ] **Picture.** (Situated) Hearing it once, could the players say where
-      they are, what stands out, where they can go, what they can use, what
-      matters right now, and what has changed? (Portrait) Does every Build
+- [ ] **Picture.** (Situated) Copy into the check note the exact words that
+      give where the party is, one way they can go, one thing they can use,
+      and what presses now. Is each one there, so that hearing it once the
+      players could say where they are, what stands out, and what matters
+      right now? (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
-- [ ] **Compress.** Does the first sentence give the situation or the
-      danger (a caption fails), is there one anchor, does each person and
+- [ ] **Compress.** Copy the first sentence into the check note. Does it
+      give the situation or the danger (a terrain caption fails, and so does
+      a warning sign that leaves the danger for later), is there one anchor, does each person and
       creature come across as one feature and one behavior (not a list of
       features, even one spread across sentences), does every known companion
       in the block act, and could any sentence go without losing anything?
@@ -459,8 +466,10 @@ the list again, and write the check note (step 7) from the final pass.
       every direction one a body knows (no north, south, east, or west), no
       grid distance, no semicolon, colon, or em dash (search the block for
       each), and a box of one paragraph that moves the eye?
-- [ ] **Clean lines.** Does each fact give one picture, does no word repeat
-      in one breath or do two jobs, are the verbs finished and the nouns
+- [ ] **Clean lines.** In that same run, is every repeated-word lead
+      rewritten so the word appears once (an idiom that needs it stays, named
+      in the check note), does each fact give one picture, does no word do
+      two jobs, are the verbs finished and the nouns
       specific, and does every rules word mean its rule?
 - [ ] **Hands off.** Does the block open on the thing rather than on the
       party noticing it, does every "you" place the characters, let the world

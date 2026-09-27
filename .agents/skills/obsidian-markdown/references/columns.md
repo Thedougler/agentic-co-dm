@@ -34,8 +34,8 @@ Columns work like a published adventure's sidebar: they sit two short, same-mome
 
 | Pattern | Where | Left | Right |
 |---|---|---|---|
-| **Beat pair** | Beats, encounters, session plans | One short block (`Situation`, `Stage`, `Pressure`) | Its same-moment partner (`Actors`, `Pressure`, `Spotlight`), equal width |
+| **Beat pair** | Beats, encounters, session plans | One short block (`Situation`, `Terrain`, `Opposition Plan`) | Its same-moment partner (`Actors`, `Pressure`, `PC Hooks`), equal width |
 
-Everything else stays full width: every `[!narration]` callout (owner-page looks, beat openings, first looks, closing images), statblocks, and wide tables (Checks, Handles, Outcomes, Beat Map, Gazetteer). A narration block is words the DM reads aloud, so it gets the page's full width and its own place in the reading order.
+Everything else stays full width: every `[!narration]` callout (owner-page looks, beat openings, first looks, closing images), statblocks, and wide tables (Checks, Party Choices, Outcomes, Beats, Services). A narration block is words the DM reads aloud, so it gets the page's full width and its own place in the reading order.
 
 A run-card roster may pair two `![[Name#Statblock]]` embeds in one row; a third monster starts a new row.

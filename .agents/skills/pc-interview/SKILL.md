@@ -33,8 +33,8 @@ blank and never fill `pc-state` from prose.
 
 ## Synthesize and persist
 
-Map only stated answers onto `wiki/templates/pc.md`: At a Glance (the lead sentence and stated
-facts, including Voice), narration when appearance is supplied, Connections, History (the stated backstory), and a dated `###` round under `## Interview` containing the questions actually asked and
+Map only stated answers onto `wiki/templates/pc.md`: the italic class line and **Playstyle.** (stated
+facts, including voice), narration when appearance is supplied, History (the stated backstory and ties), and a dated `###` round under `## Interview` containing the questions actually asked and
 answers as given. Sheet, Combat Profile, Features, Spells, and Inventory are not interview-owned. Preserve prior rounds. Link existing entities; do not mint NPC/item/place notes
 inside the interview. Contradictions with protected canon are a DM gate, not a silent overwrite.
 Do not set player audience, combat statistics, inventory, or unstated feelings.

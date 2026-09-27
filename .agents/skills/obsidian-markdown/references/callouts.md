@@ -9,15 +9,15 @@
 
 A page carries one narration block per moment the players live through, at the slot its template gives it. Titles in use:
 
-- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look, full width after At a Glance. Moment slots below it: `In action` (creature), `First meeting` (npc), `When met` (faction), `In use` (item), `When cast` (spell), `On contact` (hazard), `Underway` (vehicle), `{Area}` and `Returning` (place), `On the road` (region), `Common telling` and `Found text` (lore).
-- Beats, encounters, and session-prep: `Previously` (the session's first beat), `Opening`, `{Creature}` and `{NPC}` (titled with the name, as each enters), `Revelation`, `Outcomes`, `Exit`, `If the session ends here` (cliffhanger), `Closing Image` and `Stinger` (resolution).
+- Owner pages: the subject's name (`> [!narration] Matteo Scola`), the player-safe look, full width under the title. Moment slots below it: `In action` (creature), `First meeting` (npc), `When met` (faction), `In use` (item), `When cast` (spell), `On contact` (hazard), `Underway` (vehicle), `{Area}` and `Returning` (place), `On the road` (region), `Common telling` and `Found text` (lore).
+- Beats, encounters, and session-prep: `Previously` (the session's first beat), `Opening`, `{Creature}` and `{NPC}` (titled with the name, as each enters), `Revelation`, `Outcomes`, `Exit`, `If the session ends here` (cliffhanger), `Closing Image` and `Next Hook` (resolution).
 - Recaps: `Recap`.
 
 Rules:
 
 - Write a narration block only when it has its spoken text; delete an empty slot.
 - Keep it open (never the collapsed `-` form) and outside table cells. Spoken text for one branch goes in the table's Narration column as `_italic_`.
-- Nothing the players must not hear goes inside it: no secrets, DCs, unearned names, or the DM's At a Glance read.
+- Nothing the players must not hear goes inside it: no secrets, DCs, or unearned names.
 - Columns use the `col` / `col-md` codeblock syntax ([columns.md](columns.md)).
 
 ## Body line breaks

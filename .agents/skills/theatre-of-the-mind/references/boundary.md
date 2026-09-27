@@ -59,7 +59,7 @@ narration.
 response outside it. The block holds what it is doing before it notices
 anyone. Whether it notices, raises the alarm, flees, or attacks depends on
 how the party enters (loudly, quietly, after scouting), so that response is
-filed in the DM layer (Actors, Tactics, a Handles row) and named on the
+filed in the DM layer (Actors, Tactics, a Party Choices row) and named on the
 handle note. A sentence that has already played the creature's reaction has
 assumed an entrance the prep does not have:
 

@@ -45,7 +45,7 @@ The matching example is in [examples.md](examples.md).
 - **Tells:** Every tell in the packet appears as plain appearance or habit
   (a fresh tear in the ledger under her arm), at the same weight as the
   details around it, with no signal word and never its meaning.
-- **Leave out:** their secret, the At a Glance lead, what they want from the party,
+- **Leave out:** their secret, what they want from the party,
   mechanics, and any name the players have not earned. The callout title
   carries their name.
 

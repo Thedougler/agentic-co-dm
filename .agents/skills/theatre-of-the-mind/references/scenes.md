@@ -49,7 +49,7 @@ A **handle** is anything the players can act on in this scene. The block's
 handle list draws on every source below; the beat page is where it starts,
 never where it ends, because beats routinely miss things:
 
-- the beat's Situation, Actors, and Stage;
+- the beat's Situation, Actors, and Terrain;
 - the place and region pages: landmarks, routes, water, flora, fauna,
   hazards, and every tell in their weave;
 - each person, creature, and item page: what they carry, wear, and do, and
@@ -198,9 +198,9 @@ sits; this list names the recipe that sets its quality:
 - **Exit**: the transition into the next beat on the same page.
 - **If the session ends here**: a Cliffhanger's last words of the night.
 - **Closing Image**: the Resolution's final picture.
-- **Stinger**: the new arrival or sign after the Closing Image, ending before
-  anyone can act.
-- **Narration columns** in Handles, Stage, Pressure, Phases, and outcome
+- **Next Hook**: the new arrival or sign after the Closing Image, ending
+  before anyone can act.
+- **Narration columns** in Party Choices, Terrain, Pressure, Phases, and outcome
   tables: short conditional lines written as `_italic_` inside the table cell
   (attention and interaction layers; state changes).
 
@@ -238,7 +238,7 @@ sits; this list names the recipe that sets its quality:
   comes upon it, "what it is doing" is what it does before it notices
   anyone (feeding, circling, guarding the basin), and its response to being
   seen, to a quiet entry, or to being scouted goes to the handle note for
-  the DM layer (Actors, Tactics, a Handles row). When it starts the scene
+  the DM layer (Actors, Tactics, a Party Choices row). When it starts the scene
   (an ambush, a charge already underway, the Hook's disturbance), its move
   on the party is the windup.
 - **End:** The next thing it is about to do, before contact.
@@ -257,7 +257,7 @@ sits; this list names the recipe that sets its quality:
   the threat or question at its sharpest, nothing resolved.
 - **End:** The unanswered moment, cut before anyone can act.
 
-### Stinger
+### Next hook
 
 - **Job:** After the Closing Image, show the one new thing the adventure
   caused.

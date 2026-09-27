@@ -5,7 +5,7 @@ your own words from your own facts. Names here are illustrative and are never
 canon.
 ## Contents
 
-- At a Glance labels: shorthand → sentences
+- Run lines: shorthand → sentences
 - Pressure table: coaching → what the world does
 - Actors row: coy → plain truth
 - Opposition: retyped statblock → embed, state, and tactics
@@ -13,21 +13,22 @@ canon.
 - Design reasoning → the ruling
 - Ruling: bare → full consequence
 - Carry forward
-- At a Glance: category → this one
+- Owner page: summary and scattered facts → the book entry
+- Owner facts: category → this one
 - Owner facts: dead weight → signal
 - "Make it more dramatic"
 - Chat report
 
-## At a Glance labels: shorthand → sentences
+## Run lines: shorthand → sentences
 
 Weak:
 
-> **Trigger.** Vash/relic grab; LR spent → stun break.
+> **Starts when.** Vash/relic grab; LR spent → stun break.
 > **Stakes.** relic, figs, Aldo.
 
 Strong:
 
-> **Trigger.** [[vash-the-chain|Vash]] spends his last Legendary Resistance to break the stun and reaches for the [[the-reliquary|reliquary]] on Ilsa's chest.
+> **Starts when.** [[vash-the-chain|Vash]] spends his last Legendary Resistance to break the stun and reaches for the [[the-reliquary|reliquary]] on Ilsa's chest.
 > **Stakes.** The party can lose the reliquary, their two [[healing-fig|healing figs]], or Brother Aldo, who cannot move on his own.
 
 ## Pressure table: coaching → what the world does
@@ -70,13 +71,13 @@ Strong:
 
 > **[[vash-the-chain|Vash]].** At 60 of 91 HP, one Legendary Resistance left. He opens by grabbing for the reliquary. If blocked, he pulls the blocker out of the way with his chain. At half HP, or when three PCs are within 10 feet of him, he runs for the grass edge 40 feet inland.
 >
-> *(Roster, at the bottom of the page:)* `![[vash-the-chain#Statblock]]`
+> *(Statblocks, at the bottom of the page:)* `![[vash-the-chain#Statblock]]`
 
 ## Buried fact → point first, one fact per line
 
 Weak:
 
-> - **Entry state.** Midnight in the chapel undercroft, and the candles are out except the two on the altar, and Brother Aldo is tied to the second pillar with a gag, and Vash is on the stair with the reliquary under his arm, and the party is at the far door, 40 feet from him, and the flood water is ankle-deep and rising.
+> - **Starting situation.** Midnight in the chapel undercroft, and the candles are out except the two on the altar, and Brother Aldo is tied to the second pillar with a gag, and Vash is on the stair with the reliquary under his arm, and the party is at the far door, 40 feet from him, and the flood water is ankle-deep and rising.
 
 Strong:
 
@@ -123,7 +124,32 @@ Strong:
 > **Vash.** Fled inland, captured, or dead.
 > **Now true.** The party has chosen whether to chase Vash or protect the carrier, and Vash knows how they fight.
 
-## At a Glance: category → this one
+## Owner page: summary and scattered facts → the book entry
+
+Weak (a summary section, empty headings, and one sentence of rules buried in lore):
+
+> ## At a Glance
+> - **Held by.** The apothecary in the lower market.
+> - **What it changes.** Makes the drinker very strong for a while.
+>
+> ## Properties
+> Drinking it grants great strength.
+>
+> ## History
+> Brewed by giant-touched alchemists in the mountain holds, it was traded down the rivers for generations.
+>
+> ## Connections
+> - [[lower-market]] — sold here.
+
+Strong, a published entry: the classification, then the whole rule, then the one detail that makes it this potion.
+
+> Potion, Rare, ½ lb.
+>
+> When you drink this potion, your Strength score changes to 23 for 1 hour. The potion has no effect on you if your Strength is equal to or greater than that score.
+>
+> This potion's transparent liquid has floating in it a sliver of fingernail from a stone giant.
+
+## Owner facts: category → this one
 
 Weak:
 

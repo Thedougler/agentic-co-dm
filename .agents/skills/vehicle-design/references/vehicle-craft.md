@@ -80,9 +80,9 @@ runs, and what fails when it is empty. The captain and any officer the party
 will deal with are NPC pages; rank-and-file crew are a count and a statblock
 (Bandit, Guard, Veteran, Scout, Commoner, or a campaign creature page).
 
-### At the Table
+### Handling
 
-One play loop for running the craft: handling, then chase and boarding.
+One play loop for running the craft: manoeuvres, then chase and boarding.
 
 **Handling.** Manoeuvres and conditions that change a choice: the quirk,
 tacking and wind, current, reefs and shallows, tight channels, repairs
@@ -112,11 +112,11 @@ Ownership and rename history as world facts.
 
 ## Audit questions
 
-- Does At a Glance name the captain, the errand, standing orders on meeting the
-  party, and the next step with a time?
+- Does the identity line name the captain, and **Current voyage.** the errand,
+  standing orders on meeting the party, and the next step with a time?
 - Is narration sensory-only, with every truth elsewhere?
 - Does every Statblock line hold a number anchored on a peer?
-- Does every fighter aboard carry compact numbers?
+- Does every fighter aboard have its statblock embedded from its owner page?
 - Can the DM run a chase, a boarding, and a stowaway from the page alone?
 - Is every invention canon under the rule in `llm-wiki`, stated as world fact and listed in the
   response?

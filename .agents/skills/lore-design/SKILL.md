@@ -156,8 +156,8 @@ Copy `wiki/templates/lore.md` to `wiki/entities/lore/<kebab-name>.md` with
 have values. Keep a section only when you have facts for it (fact-only,
 `wiki/AGENTS.md` Layout). Write complete sentences. Wikilink every owner page.
 
-At a Glance carries the truth in one or two sentences, why it matters now, its
-scope, and who knows it. Then shape the body to fit the lore, with `##`
+The page opens on the truth in one or two sentences, with its limits and who
+knows it. Then shape the body to fit the lore, with `##`
 sections named for what they hold: a history gets a Chronology, a custom gets
 its procedure (The Rite, How It Runs), a legend gets The Tale, a doctrine gets
 its Tenets. The truth from step 2, the actors from step 3, and their next move
@@ -202,7 +202,5 @@ line that carries it; a line with nothing beside it goes back on the page.
   Cast before minting).
 - User-said canon is filed; every invention is canon under the rule in `llm-wiki`, marked on the
   page and listed in the response.
-- Every page filed passes the world-voice search: `scripts/check-world-voice <page>` exits 0 (`docs/agents/table-ready.md`
-  § Fill the silence).
 - `wiki lint <path>` is green, and one done-summary names the page and what
   changed.

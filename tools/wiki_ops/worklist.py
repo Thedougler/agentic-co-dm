@@ -151,6 +151,12 @@ def _cache(cache: Mapping[str, Any] | None) -> dict[str, int]:
     }
 
 
+def _next_action(path: str, findings: list[dict[str, Any]]) -> str:
+    if any(item.get("repair_class") == "deterministic_repair" for item in findings):
+        return f"wiki lint fix {path}, then wiki lint {path}"
+    return f"wiki lint {path}"
+
+
 def build_worklist(
     findings: Any,
     *,
@@ -228,10 +234,7 @@ def build_worklist(
                 "path": next_item["page"],
                 "findings": next_item["findings"],
                 "bytes": next_item["bytes"],
-                "action": (
-                    f"Run wiki lint fix {next_item['page']}, rerun the affected scope, "
-                    f"then use wiki lint {next_item['page']} for remaining findings."
-                ),
+                "action": _next_action(next_item["page"], grouped.get(next_item["page"], [])),
             }
             if next_item
             else None

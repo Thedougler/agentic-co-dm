@@ -29,7 +29,7 @@ current pass's job before it is done.
 ### Boundary contract
 
 - **Input:** A named session or 30-minute beat cockpit, its existing prep and
-  owner pages, the session plan's Beat Map and entry state, and the evidence
+  owner pages, the session plan's Beats table and starting situation, and the evidence
   needed to run this slice.
 - **Session plan:** the guide renders the complete planned session from its
   filed plan and beat pages.
@@ -73,7 +73,7 @@ and parent session objective. Never advance a later pass from an assertion.
    a tactics line, or an outcome with no world response is `missing prep` —
    define it in pass 1 from the owner that already states it, otherwise route
    the beat back to its type skill. Identify the central element — the
-   Beat Map row and the beat page's purpose name it. That element and its
+   session plan's Beats row and the beat page's purpose name it. That element and its
    dramatis personae have owners before the card is written; create via the
    appropriate craft skill (`npc-design`, `place-design`, `vehicle-design`).
    Missing chart → `session-beats`. Missing live beat of a type → that type
@@ -119,8 +119,8 @@ partial, procedure, and position conventions.
 
 **Load:** `writing-for-humans`.
 
-This pass edits the DM-facing text that pass 1 wrote — Ends when,
-Glance, Situation, Procedure, Checks, clocks, actor entries, Outcomes — for usability, readability, and signal density. The `[!narration]`
+This pass edits the DM-facing text that pass 1 wrote — the run lines,
+Situation, Scene Rules, Checks, clocks, actor entries, Outcomes — for usability, readability, and signal density. The `[!narration]`
 stubs stay empty. `writing-for-humans` owns the prose quality bar; this skill
 owns the cockpit structure. If a structural gap surfaces (missing section,
 wrong field order), fix it before polishing copy.
@@ -128,8 +128,8 @@ wrong field order), fix it before polishing copy.
 5. **Edit DM copy.** Read the mechanical cockpit end-to-end, then edit every
    DM-facing heading and body for table usefulness. Apply the earn-it test:
    remove a line; if no choice, ruling, risk, resource, route, clock, NPC
-   response, or spoken picture changes, cut it. Completion: Ends when,
-   Glance, Situation, Procedure, Checks, clocks, and Outcomes
+   response, or spoken picture changes, cut it. Completion: the run lines,
+   Situation, Scene Rules, Checks, clocks, and Outcomes
    are complete sentences the DM can scan and use without inventing missing
    rulings. Every `[!narration]` body and Narration column cell is still empty.
 
@@ -181,7 +181,7 @@ places slots only for outcomes the beat can produce.
 - `Exit` — only when the next cockpit is already on this file.
 
 **Table Narration columns** (conditional spoken as `_italic_`, not a callout):
-- Stage table — one cell per zone row.
+- Terrain table — one cell per zone row.
 - Pressure table — one cell per tick row.
 - Outcomes options table — one cell per likely option.
 
@@ -198,21 +198,21 @@ the session plan once at the top; the guide does not restate it.
 ## Untyped cockpit assembly
 
 When assembling from untyped or hard-to-scan prep (not a typed beat rewrite),
-jobs are: identity; optional first-beat `Previously` recap; overview art if it exists; At a Glance (Ends when first); Opening; Situation; Actors; Procedure +
-Secondary Objective if a second question exists; Stage; Pressure + dials if a fuse exists; Checks; Outcomes; Roster if combat-mode
-sheets will be rolled; Backup; Battlemap at bottom if art exists. Omit a job
+jobs are: identity; optional first-beat `Previously` recap; overview art if it exists; run lines (Ends when first); Opening; Situation; Actors; Scene Rules +
+Secondary Objective if a second question exists; Terrain; Pressure + thresholds if a fuse exists; Checks; Outcomes; Statblocks if combat-mode
+sheets will be rolled; Links; Battlemap at bottom if art exists. Omit a job
 only when it is absent.
 
-At a Glance scans as Ends when, stakes, objective, danger, magnets, next.
-Ends when states the stop condition, a roughly thirty-minute budget, and
-behind/ahead cuts when pacing is not obvious. Situation states positions in feet and
-compass directions where tactical distance matters. Actors carry the
-creature's or NPC's stat numbers (AC, HP, key attacks, saves) from their wiki
-owner page — enough for the DM to run the encounter without opening another
-note. Each Outcomes option hands to a beat on this session's Beat Map with
+The card opens, under the title with no heading, on three run lines: Ends
+when (the stop condition, a roughly thirty-minute budget, and behind/ahead
+cuts when pacing is not obvious), Objective (what ends the slice and what it
+can win or lose), and Next. Situation states positions in feet and compass
+directions where tactical distance matters. Actors carry this slice's state
+and loop; each fighter's statblock is embedded in Statblocks from its owner page,
+so the DM runs the encounter without opening another note and nothing is
+retyped. Each Outcomes option hands to a beat in this session plan's Beats table with
 an options table covering each resolution path's distinct world-state change.
-Default-mode action-card numbers MAY sit on the beat; the beat stays a cockpit,
-never a second full owner page.
+The beat stays a cockpit, never a second full owner page.
 
 ## Handoffs
 

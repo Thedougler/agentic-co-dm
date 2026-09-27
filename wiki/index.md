@@ -483,13 +483,13 @@
 - [[serafina-windfall-fisk]] — An Aasimar fortune-teller compelled by precognition to wander the Verdant Scatter.
 - [[serena-cottle]] — Halfling co-owner of Il Preludio who finishes her business partner's sentences a fourth higher, then lands them flat as inventory talk. She actually runs the shop.
 - [[serin-haut]] — Dravosi Crown spy operating in Calveno as a Tessarine trade-assessor.
-- [[session-12-00-the-garden-keeps-its-own]] — Four-hour inland rescue: Skarn fails at dawn, the party follows the Calveno into Hinewai's garden, and Perrin gorges on faith before Skarn's last strike.
-- [[session-12-01-dawn-strike]] — Play resumes mid-theft at dawn; Skarn breaks off bloodied and cuts Matteo's ghost-plum sling on the way out.
-- [[session-12-02-the-smoking-skylight]] — Four Calveno hiding in a lava tube are lifted out and point further in, where Ettore's brother walked toward the voice.
-- [[session-12-03-terror-birds]] — The column crosses the Long Meadow's open Gap between two terror-birds with a carried man and three frightened civilians.
-- [[session-12-04-orders-in-the-ash]] — On the Burnt Road Jean-Claude reads the Gold caste's orders on eleven dead, and Hinewai's voice names him kidnapper.
-- [[session-12-05-consume]] — At the Pantry, Auralis tells Perrin to CONSUME the living fruit, and invisible Skarn makes his last try for the Spinner.
-- [[session-12-06-the-way-out]] — Nine Calveno walk out behind the party toward the ship with the rules for Aruhe; three stay under the vine.
+- [[Session-12-00-the-garden-keeps-its-own]] — Four-hour inland rescue: Skarn fails at dawn, the party follows the Calveno into Hinewai's garden, and Perrin gorges on faith before Skarn's last strike.
+- [[Session-12-01-dawn-strike]] — Play resumes mid-theft at dawn; Skarn breaks off bloodied and cuts Matteo's ghost-plum sling on the way out.
+- [[Session-12-02-the-smoking-skylight]] — Four Calveno hiding in a lava tube are lifted out and point further in, where Ettore's brother walked toward the voice.
+- [[Session-12-03-terror-birds]] — The column crosses the Long Meadow's open Gap between two terror-birds with a carried man and three frightened civilians.
+- [[Session-12-04-orders-in-the-ash]] — On the Burnt Road Jean-Claude reads the Gold caste's orders on eleven dead, and Hinewai's voice names him kidnapper.
+- [[Session-12-05-consume]] — At the Pantry, Auralis tells Perrin to CONSUME the living fruit, and invisible Skarn makes his last try for the Spinner.
+- [[Session-12-06-the-way-out]] — Nine Calveno walk out behind the party toward the ship with the rules for Aruhe; three stay under the vine.
 - [[shattered-sea]] — Roughly 60,000 square miles south of Chult; Season 2 pressure sits at Aruhe after Sparhold while major powers claim the sea.
 - [[shattered-sea-pantheon]] — Regional Index of the Shattered Sea's divine landscape, linking each deity's own page.
 - [[shattered-sea-tone-guide]] — DM/agent-facing craft guidance: six-pillar tone doctrine for the Shattered Sea, defaulting to the npc guide's and vault/refs/craft/'s generic construction techniques.

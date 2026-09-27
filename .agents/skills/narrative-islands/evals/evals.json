@@ -43,7 +43,11 @@
           "text": "At a Glance leads with the result the party can accomplish, then Why now, Offered by, Opposition, Reward, and Deadline bullets."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -70,7 +74,11 @@
           "text": "NPCs and locations used are from the wiki, not invented for the linear path."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -109,7 +117,11 @@
           "text": "Vault integrity: Mave Sorn, Velvet Noose, Magistrate's Warding Chip, and Central Strait resolve to existing wiki pages."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -140,7 +152,11 @@
           "text": "The quest frame sentence names incompatible wants, live pressure, and what changes if nobody interrupts."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -171,7 +187,11 @@
           "text": "Persistence: the unchosen ports continue on their own timelines."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -202,7 +222,11 @@
           "text": "The quest page has Situation, Stakes, and Pressure sections, not a history article."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -233,7 +257,11 @@
           "text": "Walk-away names what continues without the party — the quest is not a one-shot gate."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -264,7 +292,11 @@
           "text": "Multiple leads exist — the party is not locked into investigate → discover → defeat → confront."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -295,7 +327,11 @@
           "text": "The quest page has a Pressure section with a driver, its next move, and an end state."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -334,7 +370,11 @@
           "text": "Persistence: the page reflects accumulated play, not just the original prep."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ]
@@ -389,7 +429,11 @@
           "text": "DM layers answer what they raise: the seal's true nature, the driver's next move with a time or trigger, and every portent and reversal are stated as world fact, with no 'unclear', 'may', 'not established', or 'for play to establish' on the page."
         },
         {
-          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly after At a Glance",
+          "text": "When the output files a page, every `[!narration]` callout on it sits full width, outside any column: the owner-page look directly under the title",
+          "type": "structure"
+        },
+        {
+          "text": "When the output files an owner page, it follows its template's shape: portrait, then the type's rules or core, then campaign facts as `**Name.**` paragraphs only when they exist; no At a Glance, no empty headings, no field that only agents use in the body",
           "type": "structure"
         }
       ],

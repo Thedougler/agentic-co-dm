@@ -15,15 +15,14 @@ practice that tracks current deltas instead of rewriting the whole setting.
 
 ### Narration
 
-The `[!narration]` after At a Glance: a theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
+The `[!narration]` under the title: a theatre-of-the-mind entry or overlook. Say what the party perceives: scale,
 silhouette, motion, sound, smell, one unmistakable landmark. Keep secrets,
 hidden history, DCs, and unearned names out of player-facing prose.
 
-### At a Glance
+### Identity line
 
-The lead sentence is the city's function in play — not a closed-history
-summary. Then feel, visible power, **current pressure**, and opportunity.
-Pressure is what makes the city unstable **right now**.
+Size, who visibly rules, and the **current pressure**: what makes the city
+unstable **right now**, never a closed-history summary.
 
 ### Districts
 
@@ -36,14 +35,14 @@ Answer where the party goes next:
 Keep ≥2 viable responses (and ignore/fail/redirect costs). Refuse single
 mandatory scene rails and combat-only district stacks.
 
-### Gazetteer
+### Services
 
 Intentional seek without inventing the basic city interface at the table:
 arrive/leave, stay, buy/sell/commission, services when they matter. Link durable
 places, NPCs, districts, routes; leave incidental entries unlinked until play
 makes them durable.
 
-### Local Rules
+### Local rules (under Factions)
 
 Only local realities that can change a choice: law, weapons, magic, violence,
 status, commerce, rest, death, or other city-specific constraints. Generic laws
@@ -55,9 +54,9 @@ City-local posture only. Per faction: public position, local objective,
 leverage, current move **in this city now**. Histories, full agendas, and clocks
 live on faction pages.
 
-### Situations
+### Conflicts
 
-A situation is active when a named actor wants a concrete change, visible signs
+A conflict is active when a named actor wants a concrete change, visible signs
 can surface it, opposition exists, and the city changes if the party never
 interferes. Each entry needs:
 
@@ -75,9 +74,9 @@ clue-less single-lever traps. Link quest pages for pursuable objectives;
 propose missing quests rather than burying a full quest in the city note.
 
 Pressure clocks and upcoming events sit on the situation they drive. Hidden
-places and people go under Secrets with the clue that exposes each; rumors,
-street encounters, and names on demand go under Rumors and Street Life; routes
-and dependencies go under Connections.
+places and people go in **Secret.** paragraphs with the clue that exposes
+each; street encounters and names on demand go under Random Encounters and rumors in
+**Rumors.**; routes and dependencies go in **Depends on.**
 
 ### Log
 
@@ -103,7 +102,7 @@ it into the section it changed and drop the Log bullet.
 | Closed canon reopened as live crisis | Keep as history; find live pressure elsewhere |
 | Secrets/DCs in narration | Move to DM-facing sections |
 | Faction agendas on city page | Point to faction pages; keep local posture only |
-| Single plot rail / combat-only stack | Restore Districts/Gazetteer choice space |
+| Single plot rail / combat-only stack | Restore Districts/Services choice space |
 | PC civic outcomes as established fact | Present pressure; leave outcomes to play |
 | Clue-less single lever | Add visible signs + ≥2 approaches or costly bypass |
 | Unmarked invention | `invention: true`; list the proposal in the response |
