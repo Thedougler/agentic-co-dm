@@ -160,7 +160,9 @@ from where they stand, and anything that depends on how play arrives:
   quiet entry, to being scouted, to a greeting. The box holds them as they are
   at arrival; the response is a later beat, unless the prep fixes that the
   world acts first;
-- other entrances and approaches, and what each changes.
+- other entrances and approaches, and what each changes;
+- what anything the characters carry does (an item that hums, spins, or
+  glows), until a player takes it out or uses it.
 
 A landmark's past the characters could not know stays in the box only as
 color no play turns on (a crater a falling star gouged out, now a lake). When
@@ -475,7 +477,8 @@ matches it or has been rewritten to.
   when the object should dominate or the actor is rightly hidden.
 - **One picture per fact.** Braided hair is not also tousled; a guard at
   attention is not also rummaging in a pack; slush does not crunch;
-  mountains hiding the horizon need no blizzard hiding it too.
+  mountains hiding the horizon need no blizzard hiding it too. Each fact is
+  said once in the block, never again in another sentence or bullet.
 - **One use of a word.** No word twice in a breath ("he looks down at the
   gate down below him"), no homophones side by side, and no word in two jobs
   ("the bells ring out in a town ringed by a wall").
