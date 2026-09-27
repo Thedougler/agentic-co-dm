@@ -285,9 +285,10 @@ Done when a full pass of the final check changes nothing.
   A creature is its silhouette, how it moves, the one dangerous part about to
   be used, and its scale, named only when the characters would know it.
   Someone the table already knows (a returning villain, the enemy from last
-  session's fight) needs no reintroduction: their name, or what earlier
-  narration already calls them (the falcon), with "the", what they are doing
-  now, and the one part about to be used. Companions the players already know
+  session's fight) needs no reintroduction: what they are doing now and the
+  one part about to be used. Refer to them by varied descriptors the table
+  will recognize (the falcon, the peregrine, the monk), each adding a little
+  detail, rather than one label repeated. Companions the players already know
   are already in their picture: one enters the block only by doing something
   that matters now, and a line of known faces is a **roll call**. One
   specific noun beats a stack of adjectives ("a burned-out watchtower").
