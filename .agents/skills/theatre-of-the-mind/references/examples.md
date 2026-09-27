@@ -203,7 +203,7 @@ eight sentences that could be shuffled):
 Strong (each sentence hands off to the next, and the telling builds to the
 one thing about to happen):
 
-> The door grinds open on a long hall lit by candles on every step, and at its far end a figure kneels before a stone altar, so still it could be carved there. Water drips from the ceiling into the open coffins along the wall, each drop loud in the quiet, while the stairs you came down climb back toward the street. Then the kneeling figure spreads one long grey hand flat on the altar and begins to push itself up.
+> The door grinds open on a long, low hall, and every candle along its steps leans away from the draft you let in. At the far end, past a row of open coffins with water dripping into them, a figure kneels before a stone altar, so still it might have been carved with it. Each drop rings in the quiet. Then one long grey hand spreads flat on the altar, and the thing begins to rise.
 
 **Stub → complete scene.**
 
