@@ -216,7 +216,7 @@ The default escape ends when the [[spiguar]] drags its kill into the bank-woods 
 ![[Wolfrabbit#Statblock]]
 
 > [!narration] Wolfrabbit
-> A wolf-sized, tawny cat bounds low across the mud, its torn left ear pinned back and dark stripes breaking across its coat. Red eyes stay fixed on the river.
+> A tawny rabbit the size of a wolf bounds low across the mud, its torn left ear pinned back and dark stripes breaking across its coat. Red eyes stay fixed on the river.
 
 ![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe.jpg|Wolfrabbit of Aruhe]]
 

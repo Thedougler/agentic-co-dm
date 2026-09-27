@@ -18,7 +18,7 @@ visibility: dm
 region: aruhe
 role: skirmisher
 cr: 4
-summary: "A CR 4 pack-hunting cat with long ears that knocks prey down with a long bound and tears it apart with its packmates; two answer a claim in Aruhe's grass."
+summary: "A CR 4 pack-hunting rabbit the size of a wolf that knocks prey down with a long bound and tears it apart with its packmates; two answer a claim in Aruhe's grass."
 ---
 # Wolfrabbit
 
@@ -41,7 +41,7 @@ Wolfrabbits are the island's answer in the grass: a pack that bounds in from cov
 flexGrow=1
 ===
 > [!narration] Wolfrabbit
-> A wolfrabbit is a hunting cat the size of a wolf, long-legged and low in the body, with upright ears as long as a forearm. Its tawny coat is broken by dark stripes and spots, and its muzzle and throat are pale. Red-orange eyes sit over a twitching wet nose, and a long banded tail flicks behind it. A pack lies flat along terrace walls and in the long grass, ears turning, ready to spring.
+> A wolfrabbit is a rabbit grown to the size of a wolf, with upright ears as long as a forearm and heavy haunches built for the long bound. Its tawny coat is barred with dark stripes and pales at the muzzle and throat, and hooked black claws curl from forepaws where a hare's would be soft. Red-orange eyes sit over a twitching wet nose. A pack lies flat along terrace walls and in the long grass, ears turning, ready to spring.
 ```
 ````
 
