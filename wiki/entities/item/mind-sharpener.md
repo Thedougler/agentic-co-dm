@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:mind-sharpener.md"
 created: 2026-09-13
-updated: 2026-09-20
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -26,19 +26,37 @@ tier: supporting
 ---
 # Mind Sharpener
 
-> [!narration] Narration
-> A small metal clip with gears. It shifts color when light hits it.
->
-> It brings a faint warmth to the scalp, barely felt under hair.
->
-> *(low)* Thin grooves circle its edge. One dims each time it spends a charge.
+> [!narration] Mind Sharpener
+> A small metal clip with gears, and a surface that shifts colour when the light moves across it. It brings a faint warmth to the scalp, barely felt under hair. Thin grooves circle its edge, and one of the four dims each time the clip spends a charge.
 
-*Wondrous Item, Uncommon.*
+## At a Glance
 
-**Effect.** Wearing this item grants a power to its wearer. When they fail a Constitution save to hold concentration on a spell, they can use their Reaction to succeed instead. This costs one charge. The item has 4 charges and regains them at dawn.
+*Wondrous item, uncommon.*
 
-**Limitations.** It works only when the wearer fails a Constitution save to hold concentration on a spell. It does not work on other Constitution saves. Crissdalynn once tried it to break through a magical barrier; it did not work.
+The Mind Sharpener keeps a spell standing when its caster's focus would break: one failed Concentration save, bought back with a charge.
 
-## Provenance
+- **Effect.** Spend a charge as a Reaction to turn a failed Constitution saving throw to maintain Concentration into a success.
+- **Charges.** 4 charges, all regained at dawn.
+- **Held by.** [[crissdalynn-khinriss]], who carries it.
+- **Price.** `300 gp` from [[kats-curios|Kat's Curios]] where such a piece could be bought at all.
 
-[[catarina-davirelli]] crafted and infused this item. She gave it to [[crissdalynn-khinriss]] during a fight in the [[Calveno sewer magazines]]. Catarina had noticed Crissdalynn struggling to keep concentration under fire. Crissdalynn holds it now. [[journal/sessions/shattered-sea/06/session-06-recap]]'s transcript documents this exchange.
+## Properties
+
+**Concentration ward (4 charges).** While worn, the clip catches a caster's faltering focus. When the wearer fails a Constitution saving throw to maintain Concentration on a spell, they can take a Reaction to make that save succeed instead, spending one charge.
+
+**Recovery.** The clip regains all expended charges at dawn. It cannot be forced to spend a charge it does not have.
+
+**Limits.** It answers Concentration saves only. Any other Constitution saving throw is unaffected, and the clip does nothing to help the wearer concentrate on something that is not a spell. [[crissdalynn-khinriss]] once tried it against a magical barrier and the clip did nothing.
+
+## At the Table
+
+- **Break a caster's concentration.** The holder needs the save to fail first, so a party that forces several save-or-lose moments in one fight burns through the four charges and then has an ordinary caster.
+- **Count the grooves.** The four grooves dim one at a time, and a player who watches the clip knows exactly how much protection is left.
+- **Try it on a wall.** Nothing happens, and the wasted attempt tells the holder what the clip does not do.
+
+## Connections
+
+- [[crissdalynn-khinriss]] — the current holder, who wears it in her hair.
+- [[catarina-davirelli]] — the artificer who made and infused the clip.
+- [[calveno-sewer-magazines]] — where Catarina passed it over mid-fight.
+- [[journal/sessions/shattered-sea/06/session-06-recap]] — the transcript that records the handover.
