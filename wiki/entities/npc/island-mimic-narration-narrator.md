@@ -7,7 +7,7 @@ tags: ["shattered-sea", "npc"]
 sources:
   - "campaign-os:island-mimic-narration-narrator.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -31,13 +31,13 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Contact |
-| ---------- | ------- |
-| **Nature** | Narration handle for the island's first visible approach; not a separately established person |
-| **Home**   | Unknown |
-| **Wants**  | Not applicable; the page preserves the island's first-look narration. |
+This page is a narration handle, not a person: the first sight of the island as it comes up out of the haze, ready to read aloud.
 
-> **DM thesis:** Use this handle to present the island's deceptive welcome before the party understands what it is.
+- **Role.** Player-facing first-look narration for the [[island-mimic]]'s approach. It is not a separately established speaker.
+- **Nature.** Sensory description only: a green hill, a white beach, and a bay mouth like a bite.
+- **Wants.** Not applicable. Do not give the island a demand, a refusal, or a threat.
+- **Home.** Unknown; the page carries the approach, not a person.
+- **Allegiance.** None.
 ```
 
 ```col-md
@@ -48,26 +48,16 @@ flexGrow=1
 ```
 ````
 
-## Running Island Mimic Narration Narrator
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+- **First meeting.** Read the narration when the party first sees the island emerging from haze. Do not add a speaker, and do not imply this page is a person.
+- **Opens up when.** Not applicable; there is nothing here to talk to.
+- **Shuts down when.** Stop using this first-look narration once the party has a later, more informed view of the [[island-mimic]] or the island's interior.
+- **Priority.** Not applicable.
+- **Shares.** The sensory first look only. Anything the island is and does lives on [[island-mimic]].
+- **Voice.** None. This handle is player-facing narration rather than a speaker, so it keeps to observation and never speaks for the island.
 
-Use the narration when the party first sees the island emerging from haze. Do not add a speaker or imply that this page is a separate person.
-```
+## Connections
 
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Stop using this first-look narration once the party has a later, more informed view of the [[island-mimic]] or the island's interior.
-```
-````
-
-### Voice
-
-This handle has no character voice; it is a player-facing first-look narration, not a speaker. Keep the delivery sensory and observational rather than giving the island a demand, refusal, or threat.
+- [[island-mimic]] — the creature the narration presents, and the owner of everything it does.
+- [[the-unplotted]] — the named island this first look belongs to.
