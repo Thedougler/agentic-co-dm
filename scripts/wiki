@@ -802,7 +802,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
 
 
 SUBCOMMANDS = [
-    ("lint", "lint; default file:line: rule: message; --json for the full worklist"),
+    ("lint", "lint; dirty pages print skill: and template: first, then file:line: rule: message"),
     ("lint fix", "apply deterministic lint repairs (one correct output each); --dry-run plans"),
     ("query", "search the wiki collection through qmd (qmd query; qmd search if its local model fails)"),
     ("health", "counts and next dirty page; --json for the snapshot"),

@@ -40,17 +40,20 @@ that path; skip this command.
 Once per sitting, after the first observe. Retry once on SQLite error.
 
 ```bash
+wiki lint entities/place/Belumara.md
+```
+
+Worklist for `FILE`. When dirty, the first lines are `skill:` and
+`template:` — load that skill and that template before any edit. Then the
+findings. Each `fix:` is an imperative; it does not repeat the template.
+`--json` when you need the structured worklist
+(`wiki lint entities/place/Belumara.md --json`).
+
+```bash
 wiki lint fix entities/place/Belumara.md
 ```
 
 Deterministic repairs on `FILE` only. Bytes already on the page.
-
-```bash
-wiki lint entities/place/Belumara.md
-```
-
-Worklist for `FILE`. Each `fix:` is an imperative. `--json` when you need the
-structured worklist (`wiki lint entities/place/Belumara.md --json`).
 
 ```bash
 wiki query "Belumara" -n 5
@@ -65,9 +68,7 @@ Before any content write, search then fetch (AGENTS.md Vault retrieval).
 run. Collection `wiki` (`-c wiki`). Copy a hit's `#docid` or `qmd://` source
 verbatim into `qmd get`. Line range on the path:
 `qmd get "<id>:1:20" --format md`. `wiki query` wraps `qmd query` and clears
-`CI`; prefix `env -u CI` on direct `qmd query`. Then load this page's owner
-skill (Wiki kind routing / Skill Routing: `place-design`, `npc-design`,
-`faction-design`, …) and follow it on `FILE`. Named checks: `wiki-dedup`,
+`CI`; prefix `env -u CI` on direct `qmd query`. Named checks: `wiki-dedup`,
 `cross-linker`, `tag-taxonomy`. Duplicate identity: [checks.md](checks.md)
 Check 14.
 
@@ -89,7 +90,7 @@ Repeat until this command prints no findings. Commit `FILE`.
 wiki health
 ```
 
-`clean` → Done. Else `FILE` is the new `next:` path; go to `wiki lint fix` on
+`clean` → Done. Else `FILE` is the new `next:` path; go to `wiki lint` on
 that file. Named page: skip; that file already clean is Done.
 
 ### Done

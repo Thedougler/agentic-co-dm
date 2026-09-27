@@ -1211,6 +1211,9 @@ def test_fix_hint_prints_repair_target():
     text = render_lint_issues({
         "files": [{
             "file": "entities/faction/red-sails.md",
+            "type": "faction",
+            "skill": "faction-design",
+            "template": "wiki/templates/faction.md",
             "findings": [{
                 "rule": "TMPL_missing_job",
                 "file": "entities/faction/red-sails.md",
@@ -1221,7 +1224,11 @@ def test_fix_hint_prints_repair_target():
             }],
         }],
     })
-    assert "fix: Add required Wants from wiki/templates/faction.md; fill it from page facts." in text
+    assert text.startswith(
+        "skill: faction-design\ntemplate: wiki/templates/faction.md\n"
+        "entities/faction/red-sails.md:12:"
+    )
+    assert "fix: Add required Wants; fill it from page facts." in text
 
 
 
@@ -1237,6 +1244,7 @@ def test_next_action_skips_fix_when_only_agent_repair():
     )
     assert result["next"]["path"] == "a.md"
     assert result["next"]["action"] == "wiki lint a.md"
+    assert result["findings"][0]["repair_target"] == "Add required Wants; fill it from page facts."
 
 
 def test_next_action_names_fix_when_deterministic():

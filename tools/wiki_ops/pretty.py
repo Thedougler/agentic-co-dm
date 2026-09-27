@@ -4,6 +4,8 @@ from __future__ import annotations
 from collections.abc import Mapping
 from typing import Any
 
+from tools.wiki_ops.owner_skills import prereq_lines, strip_template_ref
+
 
 def _value(data: Mapping[str, Any], key: str, default: Any = "") -> Any:
     value = data.get(key, default)
@@ -163,18 +165,42 @@ def _fix_hint(finding: Mapping[str, Any], file: str) -> str:
         return f"wiki lint fix {file}" if file else "wiki lint fix"
     target = _value(finding, "repair_target", "")
     if target:
-        return str(target)
+        return strip_template_ref(str(target))
     return ""
+
+
+def _file_prereqs(result: Mapping[str, Any]) -> dict[str, list[str]]:
+    prereqs: dict[str, list[str]] = {}
+    for group in _value(result, "files", ()) or ():
+        if not isinstance(group, Mapping):
+            continue
+        file = str(group.get("file") or "")
+        if not file:
+            continue
+        lines = prereq_lines(
+            page_type=str(group.get("type") or ""),
+            kind=str(group.get("kind") or ""),
+            skill=str(group.get("skill") or ""),
+            template=str(group.get("template") or ""),
+        )
+        if lines:
+            prereqs[file] = lines
+    return prereqs
 
 
 
 def render_lint_issues(result: Mapping[str, Any]) -> str:
-    """Agent-default lint stdout: file:line: rule: message, plus a fix hint."""
+    """Agent-default lint stdout: skill and template first, then file:line issues."""
     rows = list(_issue_rows(result))
     if not rows:
         return "clean"
-    lines = []
+    prereqs = _file_prereqs(result)
+    lines: list[str] = []
+    last = None
     for file, line, rule, message, finding in rows:
+        if file != last:
+            lines.extend(prereqs.get(file, ()))
+            last = file
         text = f"{file}:{line}: {rule}: {message}".rstrip(": ")
         hint = _fix_hint(finding, file)
         if hint:

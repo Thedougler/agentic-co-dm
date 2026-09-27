@@ -4,7 +4,11 @@ from __future__ import annotations
 from collections.abc import Iterable, Mapping
 from pathlib import Path, PurePosixPath
 from typing import Any
+from tools.wiki_ops.cli import repo_root
+from tools.wiki_ops.owner_skills import owner_skill, strip_template_ref, template_ref
 from tools.wiki_ops.pretty import _issue_message
+from tools.wiki_ops.scope import _frontmatter
+from tools.wiki_ops.template_contracts import template_for
 
 
 # Structural lint's hard rules. Callers may pass a narrower/current set.
@@ -42,6 +46,8 @@ def attach_finding_text(finding: Mapping[str, Any], result: dict[str, Any]) -> d
     for key in _FINDING_EXTRAS:
         value = finding.get(key)
         if value not in (None, ""):
+            if key == "repair_target" and isinstance(value, str):
+                value = strip_template_ref(value)
             result[key] = value
     return result
 
@@ -173,6 +179,37 @@ def _next_action(path: str, findings: list[dict[str, Any]]) -> str:
     return f"wiki lint {path}"
 
 
+def _page_fields(vault: str | Path | None, page: str) -> dict[str, str]:
+    if vault is None or not page:
+        return {}
+    path = Path(vault) / page
+    try:
+        return _frontmatter(path.read_text(encoding="utf-8"))
+    except OSError:
+        return {}
+
+
+def _file_group(page: str, findings: list[dict[str, Any]], vault: str | Path | None) -> dict[str, Any]:
+    entry: dict[str, Any] = {"file": page, "findings": findings}
+    fields = _page_fields(vault, page)
+    page_type = (fields.get("type") or "").strip()
+    kind = (fields.get("kind") or "").strip()
+    if page_type:
+        entry["type"] = page_type
+    skill = owner_skill(page_type, kind)
+    if skill:
+        entry["skill"] = skill
+    chosen = None
+    if page_type:
+        if vault is not None:
+            chosen = template_for(vault, page_type, kind)
+        if chosen is None:
+            chosen = template_for(repo_root(), page_type, kind)
+    if chosen is not None:
+        entry["template"] = template_ref(chosen.name)
+    return entry
+
+
 def build_worklist(
     findings: Any,
     *,
@@ -262,7 +299,7 @@ def build_worklist(
         result.update({
             "unique": unique,
             "backlog": backlog,
-            "files": [{"file": page, "findings": grouped[page]} for page in ordered_files],
+            "files": [_file_group(page, grouped[page], vault) for page in ordered_files],
             "findings": [item for page in ordered_files for item in grouped[page]],
         })
     return result

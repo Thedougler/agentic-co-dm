@@ -59,16 +59,48 @@ def test_render_lint_issues_prints_next_path():
     from tools.wiki_ops.pretty import render_lint_issues
 
     text = render_lint_issues({
-        "files": [{"file": "a.md", "findings": [{
+        "files": [{"file": "a.md", "type": "faction", "skill": "faction-design",
+                   "template": "wiki/templates/faction.md", "findings": [{
             "rule": "TMPL_missing_job", "file": "a.md", "line": 12, "message": "Required Wants is missing",
             "repair_class": "agent_repair",
             "repair_target": "Add required Wants from wiki/templates/faction.md; fill it from page facts.",
         }]}],
         "next": {"path": "a.md", "action": "wiki lint a.md"},
     })
+    assert text.startswith("skill: faction-design\ntemplate: wiki/templates/faction.md\n")
     assert text.endswith("next: a.md")
-    assert "fix: Add required Wants from wiki/templates/faction.md; fill it from page facts." in text
+    assert "fix: Add required Wants; fill it from page facts." in text
+    assert "from wiki/templates/faction.md; fill" not in text
 
+
+def test_lint_prints_skill_and_template_for_place(tmp_path: Path):
+    target = tmp_path / "entities/place/harbor.md"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(
+        "---\n"
+        "title: Harbor\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-01-01\n"
+        "updated: 2026-01-01\n"
+        "type: place\n"
+        "reveal: unrevealed\n"
+        "---\n\n"
+        "# Harbor\n\n"
+        "A broken edge: [[missing-owner]].\n",
+        encoding="utf-8",
+    )
+    result = run_cli(tmp_path, "lint", "entities/place/harbor.md")
+    assert result.returncode == 1, result.stderr
+    assert result.stdout.startswith(
+        "skill: place-design\ntemplate: wiki/templates/place.md\n"
+    ), result.stdout
+    data = payload(run_cli(tmp_path, "lint", "entities/place/harbor.md", "--json"))
+    group = data["files"][0]
+    assert group["type"] == "place"
+    assert group["skill"] == "place-design"
+    assert group["template"] == "wiki/templates/place.md"
 
 def test_lint_default_prints_file_line_issue(tmp_path: Path):
     target = tmp_path / "page.md"
@@ -89,6 +121,9 @@ def test_lint_default_prints_file_line_issue(tmp_path: Path):
     )
     result = run_cli(tmp_path, "lint", "page.md")
     assert result.returncode == 1, result.stderr
+    assert result.stdout.startswith(
+        "skill: session-beats\ntemplate: wiki/templates/session-prep.md\n"
+    ), result.stdout
     assert "page.md:14:" in result.stdout, result.stdout
     assert "broken_links" in result.stdout
     assert "next: page.md" in result.stdout
@@ -97,6 +132,9 @@ def test_lint_default_prints_file_line_issue(tmp_path: Path):
     data = payload(run_cli(tmp_path, "lint", "page.md", "--json"))
     broken = [item for group in data["files"] for item in group["findings"] if item["rule"] == "broken_links"]
     assert broken and broken[0]["line"] == 14
+    assert data["files"][0]["type"] == "session-prep"
+    assert data["files"][0]["template"] == "wiki/templates/session-prep.md"
+    assert data["files"][0]["skill"] == "session-beats"
 
 
 def test_lint_default_is_full_and_actionable(tmp_path: Path):
@@ -711,6 +749,7 @@ def test_frontmatter_findings_are_actionable(tmp_path: Path):
     assert "as_of" in shown.stdout
     assert "fix:" in shown.stdout
     assert "wiki/templates/region.md" in shown.stdout
+    assert "from wiki/templates/region.md" not in shown.stdout
 
     data = payload(run_cli(tmp_path, "lint", rel, "--json"))
     missing = [
@@ -720,7 +759,10 @@ def test_frontmatter_findings_are_actionable(tmp_path: Path):
     assert missing
     assert "structure" in missing[0]["message"]
     assert "as_of" in missing[0]["message"]
-    assert "wiki/templates/region.md" in missing[0]["repair_target"]
+    assert "wiki/templates/region.md" not in missing[0]["repair_target"]
+    group = next(item for item in data["files"] if item["file"] == rel)
+    assert group["skill"] == "region-design"
+    assert group["template"] == "wiki/templates/region.md"
 
     long_rel = "entities/region/the-quiet.md"
     summary = "x" * 201
