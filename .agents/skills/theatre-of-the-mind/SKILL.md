@@ -589,7 +589,7 @@ run the list again.
       air, sound, and texture, each from a source), or does the block read
       like an accurate report? Quote its one striking comparison, a likeness
       from the characters' own world that makes the anchor easier to
-      picture (straight as a thrown spear, hooked like a gaff); a block with
+      picture (teeth like a row of nails, a hull as long as a street); a block with
       none is usually dry. A dry block gets the texture its sources support,
       not more handles.
 - [ ] **Speakable.** Read aloud, does every sentence fit one breath, with
