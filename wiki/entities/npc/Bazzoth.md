@@ -11,7 +11,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-12T00:00:00Z
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -34,40 +34,33 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Grung operative of unknown color |
-| **Home** | Unknown |
-| **Wants** | Unknown |
+Bazzoth is a name on the [[grung-clans|Grung clans]]' current roster and nothing more until a source gives him a face.
 
-> **DM thesis:** Bazzoth is a named Grung operative whose current function and agenda are not established beyond appearing among the clans' current faces.
+- **Role.** A Grung operative named among the clans' current faces; no function is established.
+- **Nature.** Unknown, including his colour, which in Grung terms is rank.
+- **Wants.** Unknown.
+- **Home.** Unknown.
+- **Allegiance.** The [[grung-clans]], by the roster.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Bazzoth
-> Bazzoth is a Grung operative named among the current faces of the [[grung-clans]]. The source does not establish Bazzoth's color, appearance, voice, or equipment.
+> Bazzoth is a Grung operative named among the current faces of the [[grung-clans]]. The source does not establish Bazzoth's colour, appearance, voice, or equipment.
 ```
 ````
 
-## Running Bazzoth
+## At the Table
 
-### First meeting
-
-The source does not record a first meeting, opening posture, or sample line for Bazzoth. Resolve those from the scene where this contact appears.
-
-### When posture changes
-
-The source does not establish Bazzoth's want, limit, leverage, or posture-change trigger. Keep those Unknown until a source or play event supplies them.
-
-## Voice
-
-Bazzoth's voice is not established in the source. The page explicitly leaves Bazzoth's color, appearance, voice, and equipment unknown; do not invent a verbal habit or sample line.
+- **First meeting.** Not recorded. Resolve it from the scene where this contact appears.
+- **Opens up when.** Not established.
+- **Shuts down when.** Not established.
+- **Priority.** Not established.
+- **Shares.** Nothing is established. The page carries the name and its roster link, and no content to run.
+- **Voice.** Not established. The source leaves colour, appearance, voice, and equipment unknown, so invent no verbal habit or sample line until a source or play supplies one.
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[grung-clans]] | Bazzoth is named among the clans' current faces. |
-| [[calven-and-calveno]] | The existing record links Bazzoth to Calveno, but does not state the nature of the connection. |
+- [[grung-clans]] — Bazzoth is named among the clans' current faces.
+- [[calven-and-calveno]] — the record links Bazzoth to Calveno without stating the nature of the connection.
