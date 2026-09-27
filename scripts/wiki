@@ -20,7 +20,7 @@ if str(ROOT) not in sys.path:
 
 from tools.wiki_ops.cli import SCOPE_KINDS, AgentParser, UsageError, configured_vault, emit_json, resolve_vault, usage_error
 from tools.wiki_ops.scope import parse_scope
-from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot, build_trends
+from tools.wiki_ops.health import build_context_load, build_core_files, build_focus, build_health_snapshot
 from tools.wiki_ops.lint_cache import digest_rules, load_cache, lookup_entry, save_cache, update_entry
 from tools.wiki_ops.pretty import render_health, render_lint, render_lint_fix, render_lint_issues, render_query, render_usage_error
 from tools.wiki_ops.timing import ProgressHeartbeat, append_command_record, elapsed_ms, now_ms, timing_payload
@@ -723,22 +723,8 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
     _timed("health.moc", lambda: _moc_generate(vault), times)
     lint, lint_code = _timed("health.lint", lambda: _compute_lint(lint_args, vault), times)
 
-    paths = _resolve_paths(vault, args.paths)
-    pages = [vault / relative for relative in paths]
-    bytes_total = sum(path.stat().st_size for path in pages if path.is_file())
-    a2 = _timed("health.waste", lambda: _context_waste(vault), times)
-    a5 = _timed("health.staging", lambda: _raw_staging(vault), times)
     a6 = _timed("health.remorph", lambda: _remorph_plan(vault), times)
-    policy = None
     tracker = _tracker_root()
-    sittings = _timed(
-        "scripts/error-ledger.py:sitting",
-        lambda: _run_json(
-            [sys.executable, str(ROOT / "scripts/error-ledger.py"), "--root", str(tracker), "--format", "json", "sitting", "list"],
-            tracker if tracker.exists() else ROOT,
-        ),
-        times,
-    )
     errors = _timed(
         "scripts/error-ledger.py:error",
         lambda: _run_json(
@@ -748,9 +734,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
         times,
     )
     traces = _load_jsonl(_trace_path() or (ROOT / ".local/efficiency/traces.jsonl"))
-    trends = build_trends(sittings if sittings is not None else [], errors if errors is not None else {}, traces)
     focus = build_focus(lint, remorph=a6, open_errors=(errors or {}).get("entries") if isinstance(errors, dict) else None, cap=5)
-    tokens = _timed("scripts/token-count.py", lambda: _tokens(vault, paths, args), times)
 
     context = _timed(
         "health.context",
