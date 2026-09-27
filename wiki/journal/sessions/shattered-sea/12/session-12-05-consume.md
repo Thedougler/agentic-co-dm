@@ -35,7 +35,7 @@ Tonight decides whether the [[fate-spinner]] stays with the party: [[talon-skarn
 - **Next.** [[Session-12-06-the-way-out]]
 
 > [!narration] Opening
-> The last fruit pile turns you off the black road, and a quarter mile of narrow trail brings you into firelight. The clearing lies under one enormous vine, its trunk thicker than a mainmast, looping from tree to tree overhead and bowed low with fruit. Ribbed guavas the size of a man's head hang there in pink and gold beside grey pears armored like little stone walls. Between them pale cords dangle without a twitch. Around a small fire beneath it, seven gaunt men are scrambling to their feet. A dark channel slides past beyond the fire, and pollen hangs glowing along the treeline where the last sun catches it. One guava hangs a hand's width from Perrin's nose, sweet and musky. Pale blue light gathers around his cloak in the shape of a whale, and a voice with no mouth behind it speaks inside his skull. **CONSUME.**
+> The final offering turns you off the black road, and a narrow trail brings you into firelight. The clearing lies under one enormous vine, its trunk thicker than a mainmast, looping through the canopy and bowed heavy over the camp. Huge ribbed bulbs blush pink and gold beside grey pears armored like little stone walls, and bare cords dangle between them without a twitch. Seven gaunt men scramble to their feet around a small fire. Beyond them a dark channel slides past, and pollen glows along the treeline in the late sun. One guava hangs a hand's width from Perrin's nose, sweet and musky, as blue whale-light gathers around his cloak. A voice with no mouth behind it speaks one word inside his skull, **CONSUME.**
 
 ## Thread Harvest
 
@@ -50,23 +50,23 @@ Tonight decides whether the [[fate-spinner]] stays with the party: [[talon-skarn
 - **[[talon-skarn]].** The primary opposition. He walks in on foot through the treeline, invisible, and goes for the Spinner's carrier.
   - **State.** 130 of 195 HP after a day of short rests, whatever Legendary Resistances the dawn left him (2 if he spent none), **Kusarigama Tempest** charged. He is Invisible for 1 hour from a [[ghost-plum]] he gathered in the Quiet: attacks against him have Disadvantage unless the attacker can see him, and his attacks have Advantage against anyone who cannot see him.
   - **Wants.** The Spinner, for Vantyrus, tonight. This is his last clean try before the party knows every trick he has.
-  - **Plays.** Opening: he lands 5 feet behind the carrier and cuts gear, three attacks at Advantage. Countered: a grappler gets Stunning Strike, then he escapes with **Dexterity (Acrobatics)** `+16`; a crowd gets Kusarigama Tempest. Desperation: at 97 HP or fewer he makes one last Kusarigama pull at a visible Spinner, then goes for the channel sky.
+  - **Plays.** Opening: he lands 5 feet behind the carrier and cuts gear, three attacks at Advantage. Countered: a grappler gets Stunning Strike, then he escapes with **Dexterity (Acrobatics)** `+16`; a crowd gets Kusarigama Tempest. Desperation: at 97 HP or fewer his **Last Stoop** takes him up through the gap over the channel. The vine's canopy blocks a Stoop on a carrier under it, so he makes one last Kusarigama pull instead, then goes.
   - **Line.** He never attacks a civilian. They are cover, not targets.
   - **Morale.** He leaves at 97 HP or fewer, or once the Spinner is in his hand, up through the open sky over the channel, 40 feet east of the fire. A grapple, a vine lash, or someone Readied on the bank stops him going.
 - **[[vine-lash]] × 3.** The island's answer, coiled in the great vine's canopy. Each fruit Perrin picks wakes one, at the end of his next turn. Each attacks Perrin with its first Tendril and puts its second on the nearest creature in reach that is not one of the Calveno. Near the fire and the carrier, that is usually Skarn, and their Blindsight finds him invisible. They go back into the canopy after 1 minute, or when Perrin is more than 60 feet from the vine; one reduced to 26 HP withdraws.
 - **Twelve civilians.** The seven of the Pantry and the column's five, all [[commoner]]s. [[renzo-canale]] and [[carlo-ferrante]] speak first. [[ettore-ferrante]] cannot move himself, and Carlo covers him in a fight.
 
 > [!narration] Renzo Canale
-> At the foot of the great vine an old man with grey hair cropped close sets down the fruit he was sorting. His big clean hands stay open on his knees. His eyes go past all of you to the splinted leg on the litter, and he reads it the way a smith reads a cracked blade. "Bring him here, to the fire," he says. "I set bones."
+> Beside the fruit piles under the vine, a lean grey-haired elder lowers a guava to the ground. His broad clean hands stay open on his knees as his gaze finds the litter. He looks at the splinted leg the way a smith judges a cracked blade and says, "Bring him here, to the fire. I set bones."
 
 > [!narration] Carlo Ferrante
-> A tall man with a grey streak through his beard is already on his feet at the edge of the firelight, a docker's hook swinging forgotten at his belt. He stares past you at the litter. He takes one step, then another, his big hands open and trembling at his sides, and his mouth works twice before any sound comes out. "Brother," he says.
+> At firelight's edge, a big dock foreman with one pale streak in his beard rises so fast the hook at his belt swings. His gaze fixes on the litter, and he crosses the ground with both hands shaking open. His mouth works twice before sound comes out. "Brother," he says.
 
 > [!narration] Talon Skarn
-> In the middle of it all, something heavy lands on the packed dirt behind Crissdalynn, and nobody is standing there to have made the sound. Dust puffs up around two clawed prints pressed deep into the ground. A chain ticks softly in the empty air at the height of a man's wrist, the way it ticked at dawn. Then a strap on her harness draws tight, pulled by nothing at all.
+> In the middle of it all, something heavy lands on the packed dirt behind Crissdalynn, and nobody is standing there to have made the sound. Dust puffs around two clawed prints pressed deep into the ground, and a chain gives one soft click in empty air where a wrist should be. Then a strap on her harness draws tight, pulled by nothing at all.
 
 > [!narration] Vine Lash
-> Overhead, every pale cord in the great vine goes stiff at once, and the fruit sways though no wind is moving. The strands uncoil with a sound like wet line paying out over a rail, their frayed root tips feeling through the air as they lower toward the fire. One swings toward Perrin. Another stops above an empty patch of dirt beside the carrier, twitching, as if it has touched something standing there.
+> Overhead, every pale cord in the great vine goes stiff at once, and the fruit sways though no wind moves. The strands uncoil with a sound like wet line paying out over a rail, their frayed root tips feeling through the air as they lower toward the fire. One swings toward Perrin. Another stops above an empty patch of dirt beside the carrier, twitching as if it has touched something standing there.
 
 ## Statblocks
 
@@ -119,7 +119,7 @@ flexGrow=1
 | ----- | ------- | ------------ | --------- |
 | 1 | CONSUME. Perrin eats or refuses, and initiative is rolled. | Invisible Skarn is working the carrier. Perrin's whisker Blindsight (5 ft.) or the pollen drift can find him. | _A pouch on the carrier's harness splits open and spills into the dirt, and there is nobody behind it._ |
 | 2 | The end of Perrin's next turn, if he picked fruit. | The vine lashes wake, grab Perrin, and reach for whoever is near the vine. A tangled Skarn has Speed 0 and cannot fly. | _The bare cords lash down all at once, and one of them wraps twice around nothing at all, and holds it, and the nothing thrashes._ |
-| 3 | Skarn at 97 HP or fewer. | He makes his last pull and breaks for the channel sky. A grapple or a vine lash on him closes the way out. | _The chain goes still in the air, then snaps out once more toward the Spinner, and wingbeats you cannot see whip the pollen into a swirl._ |
+| 3 | Skarn at 97 HP or fewer. | **Last Stoop**: he climbs over the channel. A carrier in the open takes a Stoop next turn; a carrier under the vine takes one last Kusarigama pull. Then he goes. A grapple or a vine lash on him before he climbs closes the way out. | _The chain goes still in the air, then snaps out once more toward the Spinner, and wingbeats you cannot see whip the pollen into a swirl._ |
 
 ## Spotlight
 

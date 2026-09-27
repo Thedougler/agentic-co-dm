@@ -31,10 +31,10 @@ summary: "Play resumes where Session 11 stopped: Talon Skarn is on Crissdalynn a
 - **Next.** [[Session-12-02-the-smoking-skylight]]
 
 > [!narration] Previously
-> Last time, Jean-Claude went silent in the air above the terraces and slid down Delmar's back, just as a hawk with four wings dropped out of the sun and broke the trees around the squid. You flew low and inland, with Jean-Claude bundled in Delmar's own coat. At a cold ring of stones Crissdalynn ate a berry off the dirt and watched her cuts close, so she picked a second one from its stem. The grass burst open with long-eared hunting cats, until an enormous, very fat illusion of Perrin led the whole hunt away. A cat with eight legs and a coat of wet leaves dropped on Delmar, took Delmar's Blunderbuss to the shoulder and Perrin's sword in its back, and bolted. Where the river slackened, three otters as long as boats were tossing a thin man between them, so Crissdalynn dragged him out and you all played the otters to boredom. He was Matteo Scola. He told you the rule you had already paid for, that nothing comes off a living plant, then shared a shimmering plum and vanished where he sat. You slept at his camp. A black flower set Perrin laughing in the shallows until it drifted away, and a voice in the dark asked you to admire its garden. Then on the last watch a falcon came out of the night at Crissdalynn. She hit him hard enough to end most fights, and he stayed up, his blade reaching for the pack that might hold the dreidel.
+> Last time, Jean-Claude went silent over the terraces as a four-winged hawk smashed down through the trees, and you carried him inland in Delmar's coat. At a cold ring of stones, Crissdalynn ate a fallen berry, then plucked another from the stem. Long-eared cats burst from the grass, and Perrin's fat illusion drew the hunt away. Where the river stilled, three boat-sized otters tossed Matteo Scola between them until you bored the family into swimming off. The rescued sailor taught you Aruhe's law, bit into a shimmering plum, and vanished. After dark, a voice asked you to admire its garden. On the final watch, a falcon came for her pack.
 
 > [!narration] Opening
-> Grey light is creeping across the still pool, and river mist lies knee-deep over the camp, cold and wet against every face still on the ground. At the dead fire the falcon is chest to chest with Crissdalynn, his katana bearing down on her staff so hard the ironwood creaks.  Across the cold coals the rest of you lie in blankets heavy with dew. Beyond the bank the river roars white past the rock lip. 
+> Grey light creeps across the still pool, and mist lies knee-deep over the camp, wet against every face still on the ground. At the dead fire the falcon crowds Crissdalynn, his katana bearing down on her staff until the ironwood creaks. Across the coals the rest of you lie in blankets heavy with dew, while rapids hammer below the rock lip. His chain lifts from the ash toward her harness.
 
 ````col
 ```col-md
@@ -52,8 +52,8 @@ flexGrow=1
 - **Pressure.** Skarn works the pack, one step at the end of each round:
   1. He cuts a strap, and a pouch hangs by a thread.
   2. **Kusarigama** pulls Crissdalynn 10 feet away from whoever is helping her.
-  3. The Spinner shows. **Chain Snap** goes for it: a Kusarigama attack `+11` against AC 10 if it is loose, or, if it is in a hand, the holder makes a **Strength** or **Dexterity** save `DC 18` or loses it into his fist.
-  4. At 97 HP or fewer, or after three rounds without the Spinner showing, he leaves straight up with **Step of the Falcon**.
+  3. The Spinner shows. **Chain Snap** goes for it: a Kusarigama attack `+11` against AC 10 if it is loose, or, if it is in a hand, the holder makes a **Strength** or **Dexterity** save `DC 19` or loses it into his fist.
+  4. At 97 HP or fewer he takes his **Last Stoop**: straight up, then a Stoop on the carrier next turn if open sky lets him, then gone. After three rounds without the Spinner showing, he leaves straight up with **Step of the Falcon**.
 ```
 
 ```col-md
@@ -65,8 +65,8 @@ flexGrow=1
   - **State.** 150 of 195 HP, 2 Legendary Resistances left, **Kusarigama Tempest** charged.
   - **Opening move.** Katana and Sai on Crissdalynn's straps and pouches. Kusarigama pulls her away from anyone who comes to help.
   - **Adapts.** A grappler gets **Stunning Strike**, then he spends his action escaping with **Dexterity (Acrobatics)** `+16`. Two or more creatures within 20 feet of him get **Kusarigama Tempest**.
-  - **Break point.** 97 HP or fewer. He grabs the Spinner if it is visible and in reach, then leaves.
-  - **Exit.** Straight up into the sky with **Step of the Falcon**. He never fights to the death.
+  - **Break point.** 97 HP or fewer. **Last Stoop** takes him straight up, and everyone gets one round before he dives on the carrier. The treeline 20 feet north is the nearest cover overhead.
+  - **Exit.** Straight up into the sky the turn after his Last Stoop. He never fights to the death.
   - **If spoken to.** He answers one question a round without stopping work: who sent him ("My master"), what he wants ("The toy"). He says nothing else.
 - **[[river-otter]]s, three.** They ignore the bank. Anyone in the pool at the end of the next round becomes their game: **Tug Toy** on gear and dunks that deal no damage, unless someone hurts one of them.
 
@@ -74,7 +74,7 @@ flexGrow=1
 ````
 
 > [!narration] Talon Skarn
-> Up close the falcon is a peregrine in a monk's dark robe, broad through the chest, his wings half raised behind him like a cloak caught in a gust. Red crown feathers lie flat against his skull, and his amber eyes never once lift to Crissdalynn's face. They follow her hands, her hips, and every buckle on her harness. Cloth wraps and loose chain bind his forearms, and the links tick together whenever he shifts his grip. "Open your hands, spinner-keeper," he says, low and even. "I am only here for the toy."
+> Up close the falcon is a peregrine in a monk's dark robe, broad through the chest, his wings half raised like a cloak caught in wind. Red crown feathers lie flat against his skull, and his amber eyes never rise to Crissdalynn's face. They track her fingers, her hips, and every buckle on her harness. Cloth wraps and loose chain cover his arms, ticking softly whenever his grip changes. "Open your hands, spinner-keeper," he says, low and even. "I am only here for the toy."
 
 
 ## Statblocks

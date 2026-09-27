@@ -30,7 +30,7 @@ The Gold caste sent these Grung, each sure the order was their own wish, to dest
 - **Next.** [[Session-12-05-consume]]
 
 > [!narration] Opening
-> After an hour under trees so close you walk with one hand on the pack ahead of you, the forest opens. A road runs dead straight through it, wide enough to drive two carts side by side. Every trunk along its edges has healed around a heart of charcoal, black showing through the new bark like a burn under skin. Black flowers smother the road, spongy underfoot, and each step squeezes out a smell like a purse of damp coppers left to rot. Nothing sings here, and nothing hums. A short walk up the road the next pile of fallen fruit sits on its leaf. Beside it lies a small body, half swallowed by the flowers, pale roots laced through the cage of its ribs. Something gold winks between them.
+> After an hour beneath trees so close you keep one hand on the pack ahead, the forest opens onto a straight charred scar. Charcoal shows through the healed bark along both edges like burns under skin. Black flowers smother the path, spongy underfoot, and every step wrings up the smell of damp coppers left to rot. No birds sing here, and no insects hum. Farther along, the next pile of fallen fruit sits on its leaf beside a small body half swallowed by roots and petals, with something gold winking between its ribs.
 
 ````col
 ```col-md
@@ -57,7 +57,7 @@ flexGrow=1
 ````
 
 > [!narration] Hinewai
-> Between two charred trunks a stone's throw off the road, the shade is darker than it has any right to be at this hour. Two eyes open in it at the height of a tall woman's face, orange as coals when you blow on them, and settle on Jean-Claude. No body stands around them, and not a leaf stirs where a body should be. "Another one," says a low voice, very calm. "Invader. Where are you taking mine, kidnapper?"
+> Between two charred trunks a stone's throw off the road, the shade darkens beyond the hour. Two eyes open at Jean-Claude's height, orange as coals when you blow on them, and settle on him. No shape stands around them, and not a leaf stirs where flesh should be. "Another one," says a low voice, very calm, "invader. Where are you taking mine, kidnapper?"
 
 ## Statblocks
 
@@ -101,7 +101,7 @@ Jean-Claude reads any seal with no roll, and anyone can see that the dead are Gr
 - [ ] **Support.** The Gold caste wants the graves destroyed because its reports taught it that the island's curse is anchored there, and breaking it reopens Aruhe to the Grung of [[karath]]. → surfaces through the History check, or the voice, if asked what the Grung want: "My graves. They always want my graves."
 
 > [!narration] Revelation
-> The disc is cracked through and crusted with black earth, but the gold under the dirt is still bright. The curling script pressed into it is the same Jean-Claude learned as a child, neat and patient and old. The lines stack one above another, each a little fresher than the one before, as if someone kept coming back to add to it. The newest line sits at the bottom, pressed so deep the metal has buckled around the letters. It tells its bearer to burn the forest.
+> The disc is cracked through and crusted with black earth, but the gold under the dirt is still bright. The curling script pressed into it is the same Jean-Claude learned as a child, neat and patient and old. The lines stack one above another, each a little fresher than the one before, as if someone kept coming back to add to it. The newest line sits at the bottom, driven so deep the metal has buckled around the letters. It tells its bearer to burn the forest.
 
 ## Outcomes
 

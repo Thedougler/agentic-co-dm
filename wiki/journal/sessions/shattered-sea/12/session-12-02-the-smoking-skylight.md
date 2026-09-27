@@ -31,7 +31,7 @@ Four Calveno are alive at the bottom of a hole, and they know where the rest wen
 - **Next.** [[Session-12-03-terror-birds]]
 
 > [!narration] Opening
-> All morning the fruit piles draw you deeper in under a roof of leaves so thick the light comes down green. A small heap of windfall waits every few hundred paces, and never a bird breaks the hush. Then the trail shoulders into grass taller than your heads, the blades slapping wet across your faces, and the forest simply stops. Beyond the last stems a long meadow lies open to the sky, its grass cropped short and pressed flat in wide circles that smell sour in the heat. A few strides out, woodsmoke climbs straight up from a ragged hole in the ground, pale roots dangling over its lip. Surrounding the hole tree's have partially fallen in and broken into jagged moss covered stumps, some taller than a man. From deep under your feet come men's voices arguing, and beneath them a young voice counting out loud.
+> All morning the fruit piles draw you deeper under leaves so thick the light comes down green. Windfall waits every few hundred paces, and no bird breaks the hush. Then the trail shoulders through grass taller than your heads, wet blades slapping your faces, and the forest simply stops. The meadow beyond lies bitten close, flattened into sour circles under the sun. Just outside the stems, woodsmoke climbs from a ragged hole in the ground, with pale roots dangling over its lip and broken mossy trunks hunched around it. Men's voices argue under your feet, and beneath them a boy counts out loud.
 
 ````col
 ```col-md
@@ -61,19 +61,19 @@ flexGrow=1
 ````
 
 > [!narration] Matteo Scola
-> Matteo stops dead when the voices float up out of the ground. Then a slow grin splits his thin face. He is past you and out across the short grass at a run, one hand clamped over the lumpy sling at his hip. He skids to a halt at the lip of the hole, wet hair in his eyes, and leans right out over the drop. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." His fingers go to the laces of his trousers.
+> Matteo stops dead when the voices float up out of the ground. A slow grin splits his thin face, and he is past you at a run, one hand clamped over the lumpy sling at his hip. He skids to the lip of the hole, wet hair in his eyes, and leans over the drop. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." His fingers go to the laces of his trousers.
 
 > [!narration] Piero Sorrentino
-> Straight below the hole a wiry old man is already on his feet on the black rock. His face is creased like a sail left out too many summers, and his palms are burned shiny by rope. A twist of half-made vine cord hangs forgotten from one fist. He shakes it up at the light. "Scola, you piss-rotten eel! You, beside him! Have you got a line? Tell me you've got a line."
+> On the ledge below, a wiry old man braces himself on the black rock, face creased like weathered sailcloth. His rope-burned palms shake a twist of half-made vine cord at the light as he shouts, "Scola, you piss-rotten eel! You beside him, have you got a line?"
 
 > [!narration] Luca Ferrante
-> By the little fire a lanky boy sits cross-legged with a notched knife loose in one hand, his shirt knotted at the waist into a pouch of pits and peel. His lips are still moving on a count he has not finished, and he finishes it before he looks up, past Matteo, straight at you. "Four of us," he calls. "Three can walk. How many can you carry?"
+> By the little fire, a lanky boy sits cross-legged with a notched knife loose in one hand and his shirt knotted into a pouch of pits and peel. His lips keep moving through a tally, and he reaches the end before he looks past Matteo to you. "Four of us," he calls, "three can walk, and you tell me how many you can carry."
 
 > [!narration] Ettore Ferrante
-> Against the far wall a heavy man lies propped on his elbows, his left leg bound straight out between two sticks and strips of sailcloth. Old ink still darkens his fingertips, and they keep patting at the splint, then at pockets with nothing in them, then at the splint again. He tries to sit up, gets halfway, and sinks back with a hiss through his teeth. "Forgive me," he calls up. "I would stand, but the leg has other opinions."
+> Against the far wall, a heavy man props himself on his elbows, his left shin fixed between two sticks and sailcloth strips. Ink darkens his fingertips as they pat the binding, then pockets with nothing in them, then the hurt place again. He tries to sit up, gets halfway, and sinks back with a hiss through his teeth. "Forgive me," he calls up. "I would stand, but the leg has other opinions."
 
 > [!narration] Gianni Moro
-> A broad man with a cooper's heavy forearms sits apart from the others, his back to the rock and his eyes on the fire instead of the sky. His thumb turns a bracelet of bent barrel hoop round and round his wrist, and the iron has rubbed the skin under it pink. He glances up at you once and looks back at the flames. "Gianni," he says. "The cooper."
+> A broad barrel-maker with heavy forearms sits away from the others, planted against the rock and watching the fire instead of the sky. His thumb turns a bracelet of bent hoop around his wrist, the iron rubbing the skin beneath it pink. He glances up once and looks back at the flames. "Gianni," he says, "the cooper."
 
 ## Statblocks
 
@@ -106,7 +106,7 @@ With a rope and two people hauling, everyone is up in 10 minutes, and Ettore com
 - [ ] **Support.** In the first days after the wreck, the whole camp told Matteo he would die if he did not keep the woman's rule, and Matteo left them rather than listen. → surfaces through Matteo at the hole, and the four's answers.
 
 > [!narration] Revelation
-> The boy walks you to the wall and taps the scratches in the black rock one at a time, the way a clerk counts coins onto a table. Nineteen marks, all the same length, cut through a vein of rust red in the stone. Beside the last one, cut deeper than the rest and still pale with fresh dust, an arrow points along the rock toward the far end of the meadow.
+> The boy walks you to the rock face and taps the scratches in the black basalt one at a time, the way a clerk counts coins onto a table. Nineteen marks, all the same length, score a vein of rust red in the stone. Beside the last one, deeper than the rest and still pale with fresh dust, an arrow points along the tunnel wall toward the open meadow.
 
 ## Outcomes
 

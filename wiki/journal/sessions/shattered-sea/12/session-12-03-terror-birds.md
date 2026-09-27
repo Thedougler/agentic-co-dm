@@ -32,7 +32,7 @@ The bird that drove the four into the hole has been waiting at its rim, and now 
 - **Next.** [[Session-12-04-orders-in-the-ash]]
 
 > [!narration] Opening
-> The ground jumps under your boots. Down the meadow, the mossy stump in the shade of the trees unfolds two scaled grey legs and rises, taller than a horse, ferns swinging from its shoulders. A hooked beak as long as a man's arm swings round toward you. Behind you the smoking hole gapes. Ahead, open grass runs a long stone's throw to the far wall of tall grass, where a grey channel slides past its foot. Halfway across, a knee-high patch of white blades glitters in the sun. Dust hops on the flattened turf. The bird drops its head.
+> The ground bucks under your boots. The mossy stump in the tree shade unfolds two scaled slate legs and rises taller than a horse, ferns swinging from its shoulders. Its hooked beak sweeps toward you like a pickaxe. The smoking hole gapes at your backs, while an open strip runs to the far wall of tall blades and a dark channel slides along its foot. Halfway there, a low stand of white razer-grass catches the sun. Dust skips on the flattened earth as the bird drops its head.
 
 ## Actors
 
@@ -47,7 +47,7 @@ The bird that drove the four into the hole has been waiting at its rim, and now 
 - **The civilians.** [[matteo-scola]], [[luca-ferrante]], [[piero-sorrentino]], and [[gianni-moro]] use the [[commoner]] statblock. Each round nobody steadies them, they run 30 feet toward the most open ground, straight into the charge lanes. [[ettore-ferrante]] (4 HP, Speed 0) goes where his carrier goes.
 
 > [!narration] Terror-Bird
-> It comes at you straight as a thrown spear, head low and neck stretched flat, black feathers streaming moss and torn fern. Every stride thumps up through your heels a heartbeat before you hear it. The beak is the whole front of it, hooked like a gaff and lined with rows of small yellow teeth. One round yellow eye stays locked on the nearest body in the open. Its ragged wings snap wide for balance as it eats up the last few strides, and the beak begins to open.
+> It comes at you straight as a thrown spear, head low and neck stretched flat, black feathers streaming moss and torn fern. Every stride thumps up through your heels a heartbeat before you hear it. The hooked front of its skull is lined with small yellow teeth, while one round eye locks on the closest body in bare ground. Ragged wings snap wide for balance as it eats up the last strides, and the jaws begin to part.
 
 ## Statblocks
 
