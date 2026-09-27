@@ -41,26 +41,11 @@ flexGrow=1
 ```
 ````
 
-## Running Varn
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+- **First meeting.** Varn is at the inner lock, not the outer docks.
+- **Shuts down when.** Anyone treating him as a mere dock runner, or trying to take the lock from him, ends the welcome.
+- **Voice.** Varn speaks in short possessive statements about the inner lock. His only established line is, “This gate is mine.” No refusal or pressure line is established.
 
-He is at the inner lock, not the outer docks. "This gate is mine."
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Anyone treating him as a mere dock runner, or trying to take the lock from him, ends the welcome.
-```
-````
- 
-## Voice
-
-Varn speaks in short possessive statements about the inner lock. His only established line is, “This gate is mine.” No refusal or pressure line is canon; do not invent either.
+> [!narration] First meeting
+> You find Varn at the inner lock, not the outer docks. "This gate is mine."
