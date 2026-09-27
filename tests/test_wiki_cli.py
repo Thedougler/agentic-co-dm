@@ -288,6 +288,8 @@ def test_health_default_matches_lint_shape(tmp_path: Path):
     default = run_cli(tmp_path, "health")
     assert default.returncode in (0, 1), default.stderr
     assert not default.stdout.lstrip().startswith("{"), default.stdout[:200]
+    out = default.stdout.strip()
+    assert out == "clean" or out.startswith("next:"), out[:200]
     assert "journal/_index.md" not in default.stdout
     data = payload(run_cli(tmp_path, "health", "--json"))
     nxt = data.get("next") or {}

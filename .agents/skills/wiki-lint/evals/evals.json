@@ -338,7 +338,7 @@
     {
       "id": "skill-selected-vault-health",
       "prompt": "Check the vault's health and repair the broken links and other findings.",
-      "expected_output": "Selects wiki-lint. Loops: wiki health → next.path only → wiki lint fix on that file → query → owner skill → close every finding → wiki health again until clean.",
+      "expected_output": "Selects wiki-lint. wiki health names next:. That path is FILE. Close FILE (lint fix, query, owner skill). wiki health. Repeat until clean.",
       "assertions": [
         {
           "type": "skill_selected",
@@ -346,15 +346,15 @@
         },
         {
           "type": "process",
-          "text": "Starts at wiki health and works only the current next.path"
+          "text": "wiki health names next:; that path is FILE; close FILE before wiki health again"
         },
         {
           "type": "process",
-          "text": "On that file: wiki lint fix, wiki query related names then qmd multi-get all hits (#docid or brace glob, not qmd:// URIs), load and follow the owner skill, close every finding"
+          "text": "On FILE: wiki lint fix, wiki query related names then qmd multi-get all hits (#docid or brace glob, not qmd:// URIs), load and follow the owner skill, close every finding"
         },
         {
           "type": "behavior",
-          "text": "When the file is clean, wiki health again and takes the new next.path until wiki health is clean"
+          "text": "When FILE is clean, wiki health again; the new next: is FILE until wiki health prints clean"
         }
       ]
     }
