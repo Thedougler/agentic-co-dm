@@ -119,7 +119,7 @@
       "expected_output": "One lint repair loop: links resolved to existing owners, summary added, basename renamed to kebab-case, and any incomplete template work completed through the owner skill using grounded canon; when novel content is needed, ground it with wiki-query and wiki-context-pack before an appropriate task-specific subagent handles it.",
       "assertions": [
         {
-          "text": "Runs wiki lint before making edits",
+          "text": "Named page: runs wiki lint on that path before making edits; looks up linked canon with wiki query then qmd get",
           "type": "process"
         },
         {
@@ -370,15 +370,23 @@
     {
       "id": "skill-selected-vault-health",
       "prompt": "Check the vault's health and repair the broken links and other findings.",
-      "expected_output": "Selects wiki-lint to run the deterministic auto-fix once and then repair the remaining findings one file at a time.",
+      "expected_output": "Selects wiki-lint. Starts at wiki health, sweeps once with wiki lint fix, runs scripts/qmd-maintain.sh, then repairs next.path one file at a time with wiki lint and QMD reads.",
       "assertions": [
         {
           "type": "skill_selected",
           "text": "wiki-lint"
         },
         {
+          "type": "process",
+          "text": "Starts unscoped vault health at wiki health (or wiki health --json) and uses next.path / context.act rather than dumping whole-vault wiki lint"
+        },
+        {
+          "type": "process",
+          "text": "Runs wiki lint fix once for the resolved scope, then scripts/qmd-maintain.sh"
+        },
+        {
           "type": "behavior",
-          "text": "Runs the deterministic auto-fix once, then repairs the remaining findings one file at a time."
+          "text": "Repairs remaining findings one file at a time: wiki lint on next.path, wiki query then qmd get for linked canon, reruns wiki health after each clean page"
         }
       ]
     }
