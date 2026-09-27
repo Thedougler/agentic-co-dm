@@ -4,7 +4,7 @@ category: entities
 tags: [shattered-sea, npc]
 sources: ["Tokage-Island.md"]
 created: 2026-09-20
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -25,53 +25,35 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Contact |
-| --- | --- |
-| **Nature** | Leader of the Yuki no Kibo |
-| **Home** | [[Shōrin Hakushin-ji]] |
-| **Wants** | Preserve the mountain order and its survival trials. |
+Master Miki Trox leads the [[yuki-no-kibo|Yuki no Kibo]], the Shaolin-style mountain order whose temple sits at the snowy summit of [[Totemo Tokage]]'s central range.
 
-> **DM thesis:** Master Miki Trox makes the summit's harsh conditions into a living discipline.
-
+- **Role.** Master of [[Shōrin Hakushin-ji]], the White Heart temple, and the person who decides what the trials mean.
+- **Nature.** Albino-scaled skink-type lizardfolk: the colour marks long residence on the mountain rather than age.
+- **Wants.** Preserve the mountain order and its survival trials.
+- **Home.** [[Shōrin Hakushin-ji]] and the village carved into the stone beside it.
+- **Allegiance.** The Yuki no Kibo, and through them [[semuanya|Semuanya]].
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Master Miki Trox
-> Master Miki Trox is an albino-scaled skink-type lizardfolk whose appearance marks long residence in the mountain environment. The summit's cold and thin air are part of the setting around the master, not a distant hardship.
+> Master Miki Trox is an albino-scaled skink-type lizardfolk whose appearance marks long residence in the mountain environment. The summit's cold and thin air are part of the setting around the master, not a distant hardship, and the temple's few practising monks keep the same discipline.
 ```
 ````
 
-## Running Master Miki Trox
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
-
-The party meets Miki at the summit temple or after attempting the dangerous climb toward it.
-
-```
-
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-Miki's posture changes when visitors treat the trials as a performance instead of a test of survival.
-```
-````
-
-## Voice
-
-Master Miki Trox's voice is not established in the source. The page establishes a disciplined leader who treats survival as instruction, but it records no verbal habit or sample line. Do not invent dialogue until the DM accepts one.
+- **First meeting.** The party meets Miki at the summit temple, or after attempting the dangerous climb toward it. Many lizard-folk attempt the ascent; many do not come back down.
+- **Opens up when.** A visitor treats the trials as a test of survival rather than a performance, and takes the mountain's conditions seriously.
+- **Shuts down when.** Visitors treat the trials as theatre or expect the order to prove itself to them.
+- **Priority.** The order and its disciples first, then the summit itself: the temple's survival is the trial's whole point.
+- **Shares.** The path and its dangers, the order's teaching of [[semuanya|Semuanya]], and the common belief about why long residents turn albino. What no one knows — the actual cause — is left as it is.
+- **Voice.** Not established in the source. The page records a disciplined leader who treats survival as instruction and carries no verbal habit or sample line; do not invent dialogue until the DM accepts one.
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[yuki-no-kibo\|Yuki no Kibo]] | Miki leads the mountain order. |
-| [[Shōrin Hakushin-ji]] | Summit temple and village. |
-| [[Semuanya]] | Deity worshipped by the order. |
+- [[yuki-no-kibo]] — the mountain order Miki leads.
+- [[Shōrin Hakushin-ji]] — the summit temple and the village beside it.
+- [[semuanya]] — the deity the order worships.
+- [[Totemo Tokage]] — the island whose central peak holds the temple.
