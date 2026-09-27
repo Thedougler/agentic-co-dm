@@ -48,7 +48,7 @@ uid: 81f8fe51-25cb-44c8-a28c-596750a57b56
 VIEW[{reference_image}][image(class(reference-image-view))]
 ```
 
-## Stats & Combat
+## Statblock
 
 ```statblock
 layout: Basic 5e Layout

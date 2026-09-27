@@ -7,14 +7,14 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-sending.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 region: ""
 kind: magic
 rarity: uncommon
 attunement: false
-owner: "[[The Shelf Instrument Dealer]]"
+owner: "[[shelf-instrument-dealer|The Shelf Instrument Dealer]]"
 campaign: shattered-sea
 visibility: dm
 summary: "A minor magic scroll that carries a single Sending spell, a short message across any distance."
@@ -26,18 +26,37 @@ tier: supporting
 ---
 # Spell Scroll (Sending)
 
-> [!narration] Narration
+> [!narration] Spell Scroll (Sending)
 > The scroll is a single curl of oiled parchment, no longer than a forearm, bound with a strip of waxed copper wire. Unrolled, the script inside shifts faintly in the light, looping sigils that never sit still on the page. Brine and hot wax cling to the parchment, as if someone sealed it beside a forge or a ship's galley. The wire binding is warm.
 
+## At a Glance
 
-_Scroll, Uncommon._ A _Spell Scroll_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
+*Scroll, uncommon.*
 
-If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
+The scroll carries one casting of *Sending*: one short message to a distant listener, with nothing owed afterwards.
 
-For this 3rd-level spell scroll, the spell uses a saving throw DC of **15** and has an attack bonus of **+7**. The scroll holds Sending.
+- **Effect.** One casting of *Sending* (3rd level), then the scroll crumbles to dust.
+- **Save DC and attack.** `DC 15`, attack bonus `+7`, for the spell as written on this scroll.
+- **Sold at.** [[shelf-instrument-dealer|The Shelf Instrument Dealer]], kept behind the counter for ships putting out past reliable courier range.
 
-To a sailor who can't afford a paired sending stone and its monthly upkeep, a scroll like this is the cheaper answer, one message sent to a distant listener on the strength of a single spent scroll, nothing else owed.
+## Properties
 
-## Provenance
+**Reading it.** A *Spell Scroll* carries one spell in a mystical cipher. If the spell is on your spell list you can read the scroll and cast from it without providing material components; otherwise it is unintelligible to you. Casting from the scroll takes the spell's normal casting time, and the scroll crumbles to dust once the spell is cast. If the casting is interrupted, the scroll survives.
 
-Kept behind the counter at [[The Shelf Instrument Dealer]] for ships putting out past reliable courier range, a signal option no chart or chronometer can replace.
+**Casting above your level.** If *Sending* is on your list but of a higher level than you can cast, make an ability check with your spellcasting ability against `DC 10 + the spell's level`. On a failure the spell vanishes from the scroll with no other effect.
+
+**This copy.** A 3rd-level scroll holding a single casting of *Sending*, with a spell save DC of `15` and an attack bonus of `+7`.
+
+**Cheaper than a stone.** To a sailor who cannot afford a paired sending stone and its upkeep, the scroll is the affordable answer: one message, one spent scroll, nothing else owed.
+
+## At the Table
+
+- **Call home from open water.** One message of a few dozen words to a known person, sent across any distance on the same plane, and a reply is possible within the spell's limits.
+- **Send a warning before a fight.** The casting takes the spell's normal time, so it is a plan made in advance rather than something done mid-ambush.
+- **Replace a sending stone.** A party without a paired stone keeps one of these for the day the fleet needs to be told something.
+- **Spend it carefully.** Once cast, the scroll is gone, and there is no second message in it.
+
+## Connections
+
+- [[shelf-instrument-dealer]] — the dealer that keeps the scrolls behind the counter.
+- [[sending-stone-nonas]] — the paired-stone answer the scroll replaces for a cheaper price.
