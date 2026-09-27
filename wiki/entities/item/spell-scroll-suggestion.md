@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-suggestion.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -26,16 +26,34 @@ tier: supporting
 ---
 # Spell Scroll (Suggestion)
 
-> [!narration] Narration
+> [!narration] Spell Scroll (Suggestion)
 > Someone rolled the parchment tight and sealed it with a drop of wax, a thumbprint pressed into it before it cooled. Unrolled, the script wanders in looping, honeyed lines that lean toward the reader's ear instead of sitting still on the page. It smells faintly of clover.
 
+## At a Glance
 
-_Scroll, Uncommon._ A _Spell Scroll_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
+*Scroll, uncommon.*
 
-If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
+The scroll holds one casting of *Suggestion*, for the party that would rather talk a faction agent past the door than fight one through it.
 
-For this 2nd-level spell scroll, the spell uses a saving throw DC of **13** and has an attack bonus of **+5**. This scroll carries Suggestion. It's quietly popular with anyone who'd sooner talk their way past a faction agent than fight one.
+- **Effect.** One casting of *Suggestion* (2nd level), then the scroll crumbles to dust.
+- **Save DC and attack.** `DC 13`, attack bonus `+5`, for the spell as written on this scroll.
+- **Sold at.** [[shelf-instrument-dealer|The Shelf Instrument Dealer]], tucked among the charts and almanacs, to a captain who asks quietly enough not to need an explanation.
 
-## Provenance
+## Properties
 
-Tucked in among the charts and almanacs at [[The Shelf Instrument Dealer]], sold to whichever captain asks quietly enough not to need an explanation.
+**Reading it.** A *Spell Scroll* carries one spell in a mystical cipher. If the spell is on your spell list you can read the scroll and cast from it without providing material components; otherwise it is unintelligible to you. Casting from the scroll takes the spell's normal casting time, and the scroll crumbles to dust once the spell is cast. If the casting is interrupted, the scroll survives.
+
+**Casting above your level.** If *Suggestion* is on your list but of a higher level than you can cast, make an ability check with your spellcasting ability against `DC 10 + the spell's level`. On a failure the spell vanishes from the scroll with no other effect.
+
+**This copy.** A 2nd-level scroll holding a single casting of *Suggestion*, with a spell save DC of `13` and an attack bonus of `+5`.
+
+## At the Table
+
+- **Talk past a guard or an agent.** One sentence the target finds reasonable, and the scroll is spent. It buys an afternoon's detour, not obedience.
+- **Choose the sentence before the scroll.** The spell takes a course of action described in a sentence or two; a party that has not decided what it wants wasted the casting.
+- **Use it under the target's nose.** The casting is verbal and the target must hear and understand the caster, so a crowded room hears the incantation even when only one person succumbs.
+- **Carry the insurance.** A quiet scroll in a coat is worth carrying for exactly the negotiation the party expects to fail.
+
+## Connections
+
+- [[shelf-instrument-dealer]] — the Calders' Tooth dealer that keeps the scroll among its charts.
