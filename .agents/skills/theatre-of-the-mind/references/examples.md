@@ -198,12 +198,12 @@ a closer look stays outside the callout.
 **Fact list → telling.** Weak (every fact true, and the table feels nothing;
 eight sentences that could be shuffled):
 
-> The ground jumps under your boots. Down the meadow, the mossy stump in the shade of the trees unfolds two scaled grey legs and rises, taller than a horse, ferns swinging from its shoulders. A hooked beak as long as a man's arm swings round toward you. Behind you the smoking hole gapes. Ahead, open grass runs a long stone's throw to the far wall of tall grass, where a grey channel slides past its foot. Halfway across, a knee-high patch of white blades glitters in the sun. Dust hops on the flattened turf. The bird drops its head.
+> The door grinds open. Inside, a long hall runs to a stone altar. Candles burn on every step. Behind you the stairs climb to the street. To your left, a row of coffins lies open. Water drips from the ceiling. A figure kneels at the altar. Its hand is on the stone.
 
 Strong (each sentence hands off to the next, and the telling builds to the
-charge):
+one thing about to happen):
 
-> The ground jumps under your boots, and down the meadow the mossy stump unfolds two scaled grey legs and stands up taller than a horse, ferns sliding off its shoulders. It is a bird, and a hooked beak as long as a man's arm swings round until it points at you. Between you lies a stone's throw of flattened grass, with only a knee-high glitter of white blades halfway across and the smoking hole gaping at your backs. Dust starts to dance around your feet as the great head drops low.
+> The door grinds open on a long hall lit by candles on every step, and at its far end a figure kneels before a stone altar, so still it could be carved there. Water drips from the ceiling into the open coffins along the wall, each drop loud in the quiet, while the stairs you came down climb back toward the street. Then the kneeling figure spreads one long grey hand flat on the altar and begins to push itself up.
 
 **Stub → complete scene.**
 
