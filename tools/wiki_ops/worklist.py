@@ -28,6 +28,7 @@ DEFAULT_HARD_KEYS = frozenset(
         "duplicate_slugs",
         "redirect_stubs",
         "template_conformance",
+        "archive_link",
     }
 )
 

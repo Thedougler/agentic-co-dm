@@ -269,6 +269,64 @@ def test_default_lint_output_includes_source_line_numbers(tmp_path: Path):
     assert clean_report["counts"] == {}
 
 
+def test_archive_link_is_hard_and_sources_yaml_is_not(tmp_path: Path):
+    (tmp_path / "entities" / "npc").mkdir(parents=True)
+    (tmp_path / "entities" / "npc" / "nona.md").write_text(
+        "---\n"
+        "title: Nona\n"
+        "category: entities\n"
+        "tags: []\n"
+        "sources:\n"
+        "  - wiki/_archive/Nona.md\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-27\n"
+        "type: npc\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "# Nona\n\n"
+        "See [[bloodhawk]].\n",
+        encoding="utf-8",
+    )
+    (tmp_path / "journal").mkdir()
+    (tmp_path / "journal" / "beat.md").write_text(
+        "---\n"
+        "title: Beat\n"
+        "category: journal\n"
+        "tags: []\n"
+        "sources: []\n"
+        "created: 2026-09-01\n"
+        "updated: 2026-09-27\n"
+        "type: session-prep\n"
+        "reveal: dm\n"
+        "---\n\n"
+        "![[_archive/Session 10 - Recap#Recap]]\n"
+        "Then [[_archive/Nona]].\n",
+        encoding="utf-8",
+    )
+    report = assert_json(
+        run_cli(
+            "scripts/wiki-lint",
+            "--json",
+            "--no-vale",
+            "--no-template",
+            "--all",
+            "--scope",
+            "files:journal/beat.md,entities/npc/nona.md",
+            "--vault",
+            tmp_path,
+        ),
+        returncode=1,
+    )
+    rows = report["findings"]["archive_link"]
+    assert {item["page"] for item in rows} == {"journal/beat.md"}
+    targets = {item["target"] for item in rows}
+    assert "_archive/Session 10 - Recap" in targets
+    assert "_archive/Nona" in targets
+    assert report["hard_fail"] is True
+    grouped = report["findings_by_file"]["journal/beat.md"]
+    assert any(item["rule"] == "archive_link" for item in grouped)
+
+
 def test_scoped_lint_keeps_default_vale_in_acceptance_gate(tmp_path: Path):
     page = tmp_path / "page.md"
     page.write_text(

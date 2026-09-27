@@ -6,5 +6,8 @@
   "alwaysUpdateLinks": true,
   "promptDelete": false,
   "propertiesInDocument": "hidden",
-  "showInlineTitle": false
+  "showInlineTitle": false,
+  "userIgnoreFilters": [
+    "_archive/"
+  ]
 }

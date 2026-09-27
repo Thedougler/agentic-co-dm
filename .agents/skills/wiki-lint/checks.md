@@ -2,15 +2,15 @@
 
 Reference for checks 1–14, run during full-vault lint and bulk repair. The deterministic script handles detection for HARD/soft keys; checks below add what it cannot detect. Run in order, report findings as you go.
 
-**Scope:** skip `_archives/`, `_raw/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) are skipped in orphan, frontmatter, and content checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
+**Scope:** skip `_archive/`, `_archives/`, `_raw/`, `_readouts/`, `.obsidian/`. Redirect stubs (`redirects_to`) are skipped in orphan, frontmatter, and content checks. Reserved `README.md`, `AGENTS.md`, `index.md`, `log.md`, `hot.md` are operational, not content pages.
 
 ### 1. Orphaned Pages
 
 Find pages with zero incoming wikilinks (except reserved operational files). Glob `.md` files, skip redirect stubs. Grep vault for `[[page-name]]` references. Fix: add wikilinks from existing pages that should reference the orphan.
 
-### 2–3. Broken Wikilinks / Missing Frontmatter
+### 2–3. Broken Wikilinks / Missing Frontmatter / Archive Links
 
-Script detects via `broken_links` and `missing_frontmatter` keys. Repair in Page-Scoped step 4.
+Script detects via `broken_links`, `missing_frontmatter`, and `archive_link` keys. Repair in Page-Scoped step 4. `archive_link`: a live page wikilink, embed, or markdown link whose target path includes `_archive/` or `_archives/`. Wikilink the live owner path.
 
 ### 3a. Missing Summary (soft)
 

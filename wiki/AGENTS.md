@@ -113,7 +113,7 @@ Example: `title: Jean-Claude Tabarnack` → `wiki/entities/pc/jean-claude-tabarn
 
 **Uniqueness:** vault-wide unique stem (no two live `.md` files share the same basename across folders). Prefer clearer titles/slugs over folder shadowing.
 
-**Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move the file to the new kebab stem and rewrite inbound wikilinks/embeds in the same pass so the old basename is gone. The old file is deleted in that pass, not kept as a `redirects_to` stub.
+**Wikilinks:** bare `[[Display Title]]` resolves via `title` / `aliases` / path (lint already). Prefer putting the human name in `title` and former spaced stems in `aliases:` after rename. On rename: move the file to the new kebab stem and rewrite inbound wikilinks/embeds in the same pass so the old basename is gone. The old file is deleted in that pass, not kept as a `redirects_to` stub. Wikilink and embed the live owner path (`entities/{type}/…`, `journal/sessions/…`). `wiki lint` HARD `archive_link` flags a live page that targets `_archive/`.
 
 **Case-only rename** (`Bisou.md` → `bisou.md`; hit 2026-09-24). This volume is case-insensitive, so both spellings name one file: a Write to the lowercase path lands in the same inode and leaves the old spelling on disk, and a later `rm Bisou.md` takes the page with it. Move the file twice:
 

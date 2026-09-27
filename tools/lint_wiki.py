@@ -49,6 +49,7 @@ HARD_KEYS = (
     "duplicate_slugs",
     "redirect_stubs",
     "template_conformance",
+    "archive_link",
 )
 PC_ROLE = re.compile(r"^(pc|player character|player)$", re.I)
 TOKEN = re.compile(r"`([^`]+)`")
@@ -307,6 +308,54 @@ def link_occurrences(text: str) -> list[tuple[str, int]]:
 
 def links(text: str) -> list[str]:
     return [target for target, _line in link_occurrences(text)]
+
+
+
+_ARCHIVE_WIKILINK = re.compile(r"!??\[\[([^\]]+)\]\]")
+_ARCHIVE_MARKDOWN = re.compile(r"\[[^\]]*?\]\(([^)]+)\)")
+
+
+def _archive_target(raw: str) -> str | None:
+    page = raw.split("|", 1)[0].split("#", 1)[0].strip().strip("<>").replace("\\", "/")
+    parts = [part for part in Path(page).parts if part not in {".", ".."}]
+    if any(part in {"_archive", "_archives"} for part in parts):
+        return page
+    return None
+
+
+def archive_links(documents: dict[str, str], pages: dict[str, dict]) -> list[dict[str, object]]:
+    """HARD: live pages wikilink the live owner path, not _archive/."""
+    live_by_stem: dict[str, list[str]] = collections.defaultdict(list)
+    for rel in pages:
+        live_by_stem[Path(rel).stem.casefold()].append(rel.removesuffix(".md"))
+    out: list[dict[str, object]] = []
+    for rel, body in documents.items():
+        if Path(rel).name in RESERVED_FILES:
+            continue
+        scrubbed = TOKEN.sub(lambda m: " " * len(m.group(0)), body)
+        seen: set[tuple[int, str]] = set()
+        for match in (*_ARCHIVE_WIKILINK.finditer(scrubbed), *_ARCHIVE_MARKDOWN.finditer(scrubbed)):
+            target = _archive_target(match.group(1))
+            if not target:
+                continue
+            line = body.count("\n", 0, match.start()) + 1
+            key = (line, target)
+            if key in seen:
+                continue
+            seen.add(key)
+            stem = Path(target).stem.casefold()
+            live = live_by_stem.get(stem) or []
+            owner = live[0] if len(live) == 1 else ""
+            item: dict[str, object] = {
+                "page": rel,
+                "target": target,
+                "line": line,
+                "message": "Wikilink the live owner path.",
+                "repair_class": "agent_repair",
+                "repair_target": owner or "Wikilink the live owner path.",
+            }
+            out.append(item)
+    return out
 
 
 def parse_args() -> argparse.Namespace:
@@ -892,6 +941,10 @@ def main() -> int:
                 if named:
                     missing_owners.append(item)
     findings["broken_links"] = broken
+    findings["archive_link"] = [
+        item for item in archive_links(documents, pages)
+        if scoped_documents is None or item["page"] in scoped_documents
+    ]
     findings["missing_owner"] = missing_owners
     findings["orphan_pages"] = [{"page": rel, "line": 1} for rel in pages if incoming[rel] == 0]
     index_targets = set()
