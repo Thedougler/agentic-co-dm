@@ -9,7 +9,7 @@ sources:
   - "wiki/journal/sessions/shattered-sea/05/Session-05-Recap.md"
   - "wiki/journal/sessions/shattered-sea/06/Session-06-Recap.md"
 created: 2026-09-16
-updated: 2026-09-16
+updated: 2026-09-27
 type: npc
 reveal: revealed
 campaign: shattered-sea
@@ -21,42 +21,40 @@ visibility: dm
 summary: "Artificer and salvage engineer who remains in Calveno; her completed work is already with its recipients."
 ---
 # Catarina Da'Virelli
+
 ````col
 ```col-md
 flexGrow=2
 ===
-> [!narration] Catarina Da'Virelli
-> A white-haired artificer in a worked breastplate, with tool marks on her gloves and the sharp workshop smell of oil, brass, and hot wire.
+## At a Glance
+
+Catarina Da'Virelli is a Calveno artificer and salvage engineer who works on mechanisms and Antheri salvage, and who will not move her workshop for anyone.
+
+- **Role.** Artificer and salvage engineer, based at her own workshop in Calveno.
+- **Nature.** White-haired human in a worked breastplate, with tool marks on her gloves and a workshop smell of oil, brass, and hot wire.
+- **Wants.** Keep the workshop operating and continue her private salvage research.
+- **Home.** [[calven-and-calveno]].
+- **Allegiance.** None established.
+
+> **DM thesis:** Catarina is a local Calveno artificer and salvage engineer. Her workshop stays in Calveno, and so does the work she does in it.
 ```
 
 ```col-md
 flexGrow=1
 ===
-## At a Glance
-
-| **Role** | Calveno artificer and salvage engineer |
-|---|---|
-| **Nature** | Human artificer who studies mechanisms and Antheri salvage |
-| **Home** | Calveno |
-| **Wants** | Keep her workshop operating and continue private salvage research |
-
-> **DM thesis:** Catarina is a local Calveno artificer and salvage engineer. Her workshop remains in Calveno.
+> [!narration] Catarina Da'Virelli
+> A white-haired artificer in a worked breastplate, with tool marks on her gloves and the sharp workshop smell of oil, brass, and hot wire.
 ```
 ````
 
-## Running Catarina Da'Virelli
+## At the Table
 
-### First meeting
-
-She receives visitors at her Calveno workshop and keeps the conversation practical. She opens with a question about the object or repair in front of her.
-
-### When posture changes
-
-She ends the meeting when a visitor asks her to leave Calveno or treats her workshop as the party's standing resource.
-### Voice
-
-Catarina speaks in practical workshop terms and avoids treating her shop as a resource that travels with the party. Her ask is, “Show me the mechanism before you tell me the story.” Her refusal is, “The work stays here.” Under pressure, she says, “You are asking me to abandon the one place that makes this possible.”
-
+- **First meeting.** She receives visitors at her Calveno workshop and keeps the conversation practical, opening with a question about the object or repair in front of her.
+- **Opens up when.** Someone brings her a mechanism worth her attention. Her ask is, "Show me the mechanism before you tell me the story."
+- **Shuts down when.** A visitor asks her to leave Calveno, or treats her workshop as the party's standing resource. Her refusal is, "The work stays here."
+- **Priority.** The workshop and her own research, ahead of any commission.
+- **Shares.** Practical answers on what a mechanism is and what it would take to fix or copy, on her own terms and in her own shop.
+- **Voice.** Practical workshop terms. Under pressure, "You are asking me to abandon the one place that makes this possible."
 
 ## Connections
 
