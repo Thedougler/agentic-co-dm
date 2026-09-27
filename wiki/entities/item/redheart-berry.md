@@ -32,11 +32,21 @@ relationships:
 
 ![[attachments/shattered-sea/items/aruhe-redheart-berry.jpg|Redheart berry]]
 
-> [!narration] Narration
+> [!narration] Redheart Berry
 > A glossy red berry hangs heavy on a short, thick stem, its round body pulled into deep ridges beneath curled leaves. Clear water beads across the tight skin. Dark juice bursts out when the fruit splits.
 
-Consumable, Rare.
+## At a Glance
 
-As a Bonus Action, eat this berry to regain `8d4 + 8` hit points.
+*Consumable, rare.*
 
-Session 11. [[crissdalynn-khinriss]] ate a fallen berry and regained `30` hit points. She is carrying five more.
+A rare Aruhe berry for rapid healing in a fight.
+
+- **Held by.** [[crissdalynn-khinriss]], who is carrying five berries.
+
+## Properties
+
+As a Bonus Action, eat this berry to regain `8d4 + 8` hit points. The berry is consumed when eaten.
+
+## At the Table
+
+During Session 11, [[crissdalynn-khinriss]] ate a fallen berry and regained `30` hit points.
