@@ -528,8 +528,10 @@ run the list again.
 - [ ] **Show.** Is every judgment word, mood, and page label replaced by
       the thing the characters see or hear, with at most one impression
       riding a concrete detail, so the players draw every conclusion
-      themselves, and is every person the party has not yet learned the name
-      of called what the characters see?
+      themselves (a first sentence that states what the later evidence
+      shows is a verdict), and is every person called what the characters
+      see unless a source shows the party learning the name (earlier
+      narration or a recap that uses it)?
 - [ ] **Layers.** (Situated) Is every entry handle in the block, and every
       other handle out of it and in the handle note?
 - [ ] **Withheld.** Is every creature and person in the block shown as they
@@ -559,5 +561,6 @@ run the list again.
       for them?
 - [ ] **Hard lines.** Do all six hold, one by one, and does the block end on
       one event's reaction point?
-- [ ] **Size.** Is the block inside its band (Length), counted in words, with
-      nothing from the slop table left in it?
+- [ ] **Size.** Name the band from Length (a threat present or a fight under
+      way is danger, 60 to 90 words). Is the block inside it, counted by the
+      checker, with nothing from the slop table left in it?
