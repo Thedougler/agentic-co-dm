@@ -93,6 +93,13 @@ def check(body: str, sources: list) -> list:
     alone = [s for s in sents if not re.search(r"\b(?:and|as|while|until|till|so|when|before|after|then|but|because|where|which|whose|until|though|if)\b", s, re.I)]
     if len(sents) >= 4 and len(alone) * 2 > len(sents):
         findings.append(f"{len(alone)} of {len(sents)} sentences stand alone; this reads as a fact list, so join them into one telling")
+    for a, b in zip(sents, sents[1:]):
+        if a in alone and b in alone:
+            findings.append(f"two standalone sentences in a row, join them into the telling: {a[:40]}... {b[:40]}...")
+    placed = [s for s in sents if re.match(r"(?:behind|ahead|beyond|beside|below|above|across|halfway|to (?:your|the) (?:left|right)|on (?:your|the) (?:left|right)|down the|up the|past)\b", s, re.I)
+              or re.search(r"\b(?:behind you|ahead|to your (?:left|right)|on your (?:left|right)|at your back)\b", s, re.I)]
+    if len(placed) >= 2:
+        findings.append(f"{len(placed)} sentences hang on a place ({' / '.join(s[:25] for s in placed)}); that is a map legend, so let the routes arrive inside the telling")
     # ponytail: crude stem (drop -s/-es/-ing/-ed); catches "man"/"man's" and "worry"/"worrying"
     stems = {}
     for w in re.findall(r"[a-z]{3,}", flat.lower()):

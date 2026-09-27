@@ -538,7 +538,9 @@ run the list again.
       that sentence on the page or in the point note?
 - [ ] **Picture.** (Situated) Hearing it once, could the players say where
       they are, what stands out, where they can go, what they can use, what
-      matters right now, and what has changed? (Portrait) Does every Build
+      matters right now, and what has changed? Routes and cover arrive
+      inside the telling (what lies between you and it), never as a run
+      of Behind…, Ahead…, To your left… sentences. (Portrait) Does every Build
       item the sources give and every tell appear, so a player could sketch
       and handle the whole subject, with no party, scene, or event?
 - [ ] **Compress.** Quote the first sentence and name, in its own words,
@@ -577,7 +579,9 @@ run the list again.
 - [ ] **Felt.** (Situated) Is one thing already moving, do two senses work
       with one of them nonvisual doing a second job, and does something land
       on the characters' bodies?
-- [ ] **Flow.** Read it aloud as one telling. Quote each pair of
+- [ ] **Flow.** Every fact-list, standalone-pair, and map-legend lead the
+      checker reported is rewritten. Then read it aloud as one telling.
+      Quote each pair of
       neighbouring sentences that could swap places without loss: each pair
       is a fact list, so join them by cause, motion, or where the eye goes
       next, or cut one. Does the block build to its last sentence?
