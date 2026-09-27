@@ -7,7 +7,7 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:spell-scroll-scrying.md"
 created: 2026-09-13
-updated: 2026-09-13
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -26,13 +26,38 @@ tier: supporting
 ---
 # Spell Scroll (Scrying)
 
-> [!narration] Narration
+> [!narration] Spell Scroll (Scrying)
 > Age and salt stiffen the parchment, rolled tight around a core of dark lacquered wood and sealed with a disc of wax stamped with an eye inside a circle. Unrolled, the writing shifts faintly in the light, a cipher of interlocking sigils that seems to rearrange itself the longer you look at it. It smells faintly of the sea, and colder than the room around it.
 
-Scroll, rare. Among unclaimed prize-goods on [[Vask's Reclaimed Goods]]'s shelves.
+## At a Glance
 
-A _Spell Scroll_ bears the words of a single spell, written in a mystical cipher. If the spell is on your spell list, you can read the scroll and cast its spell without Material components. Otherwise, the scroll is unintelligible. Casting the spell by reading the scroll requires the spell's normal casting time. Once you cast the spell, the scroll crumbles to dust. If something interrupts the casting, the scroll isn't lost.
+*Scroll, rare.*
 
-If the spell is on your spell list but of a higher level than you can normally cast, you make an ability check using your spellcasting ability to determine whether you cast the spell. The DC equals 10 plus the spell's level. On a failed check, the spell disappears from the scroll with no other effect.
+The scroll carries one casting of *Scrying*: a sensor placed near a chosen creature, seen and heard through from anywhere on the same plane.
 
-This 5th-level scroll holds a single casting of Scrying (save DC 17, attack bonus +9). Casting it forces the target to make a Wisdom saving throw against DC 17. On a failed save, an invisible sensor appears near the target, and the caster sees and hears through it for the spell's duration. On a success, the target resists, and the caster can't target it again for 24 hours. A picture, possession, or body part from the target improves the odds, exactly as the spell text specifies.
+- **Effect.** One casting of *Scrying* (5th level), concentrating for up to 10 minutes on the target's surroundings.
+- **Save DC and attack.** `DC 17`, attack bonus `+9`, for the spell as written on this scroll.
+- **Sold at.** [[Vask's Reclaimed Goods]], among the unclaimed prize-goods on the shelves.
+
+## Properties
+
+**Reading it.** A *Spell Scroll* carries one spell in a mystical cipher. If the spell is on your spell list you can read the scroll and cast from it without providing material components; otherwise it is unintelligible to you. Casting from the scroll takes the spell's normal casting time, and the scroll crumbles to dust once the spell is cast. If the casting is interrupted, the scroll survives.
+
+**Casting above your level.** If *Scrying* is on your list but of a higher level than you can cast, make an ability check with your spellcasting ability against `DC 10 + the spell's level`. On a failure the spell vanishes from the scroll with no other effect.
+
+**This copy.** A 5th-level scroll holding a single casting of *Scrying*, with a spell save DC of `17` and an attack bonus of `+9`. Casting it forces the target to make a **Wisdom saving throw — `DC 17`**. On a failure an invisible sensor appears near the target and the caster sees and hears through it for the duration. On a success the target resists and cannot be targeted again by that casting for 24 hours.
+
+**Borrowed from the target.** A picture, possession, or body part from the target improves the odds, exactly as the spell text specifies.
+
+## At the Table
+
+- **Watch someone from another island.** Ten minutes of seeing and hearing through the sensor, which is enough to catch a meeting, a shipment, or a conversation the party was not invited to.
+- **Use something of theirs.** The save is easier to fail with a picture, a possession, or a body part in hand, and the party usually has to get one of those first.
+- **Fail the save once.** A resisted target is off-limits to that casting for 24 hours, and the scroll is spent either way.
+- **Stay on the same plane.** *Scrying* does not reach across planes, so a target that slips elsewhere is simply gone.
+- **Buy it off a prize shelf.** The scroll is unclaimed prize-goods, which means someone else may have a claim on it before the shelves are cleared.
+
+## Connections
+
+- [[Vask's Reclaimed Goods|Vask's]] — the Kalowe shop holding the scroll among its prize-goods.
+- [[kalowe]] — the city the shop operates in.
