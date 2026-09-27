@@ -13,7 +13,7 @@ provenance:
   ambiguous: 0.0
 tier: supporting
 created: 2026-09-13T21:40:00Z
-updated: 2026-09-20
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -31,13 +31,13 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Contact |
-| ---------- | ------- |
-| **Nature** | Draft-only grove-dweller and willowbark trader |
-| **Home**   | Sandy Grove, past the last field of [[penance-bar|Penance Bar]] |
-| **Wants**  | Not established beyond the draft's trade and complaint about the grove. |
+Halda Wren is a draft-only voice for Sandy Grove: the person who says out loud that the grove was never asked into town.
 
-> **DM thesis:** Halda is a non-canon draft voice for Sandy Grove; do not treat her as a settled Penance Bar NPC without DM acceptance.
+- **Role.** Grove-dweller and willowbark trader, in the draft fiction for the [[penance-bar-siege|Penance Bar siege]].
+- **Nature.** Plain, unhurried, and protective of the grove's boundary.
+- **Wants.** Not established beyond the draft's trade and her complaint about the grove.
+- **Home.** Sandy Grove, past the last field of [[penance-bar|Penance Bar]].
+- **Allegiance.** None established.
 ```
 
 ```col-md
@@ -48,22 +48,16 @@ flexGrow=1
 ```
 ````
 
-## Running Halda Wren
+## At the Table
 
-### First meeting
-
-In the draft, the party hears Halda's voice at Sandy Grove and can trade salt fish for willowbark. Her answer to why the grove stands apart is the only established social handle.
-
-### When posture changes
-
-No posture change is established. Keep Halda's trade, kindling, and complaint about the grove as draft material until the DM accepts the scene as Work.
-### Voice
-
-Halda's draft voice is plain, unhurried, and protective of the grove's boundary. Her ask is, “Bring salt fish if you want willowbark.” Her refusal is, “The grove was never asked into town.” Under pressure, she says, “Do not mistake quiet for permission.”
-
+- **First meeting.** In the draft, the party hears Halda's voice at Sandy Grove and can trade salt fish for willowbark.
+- **Opens up when.** Someone asks why the grove stands apart; her answer is the only established social handle and she gives it plainly.
+- **Shuts down when.** Not established. Keep her trade, her kindling, and her complaint about the grove as draft material until the DM accepts the scene as Work.
+- **Priority.** The grove's boundary.
+- **Shares.** The trade and the complaint. Do not treat her as a settled Penance Bar NPC without the DM's acceptance.
+- **Voice.** Plain, unhurried, and protective. Her ask is, "Bring salt fish if you want willowbark." Her refusal is, "The grove was never asked into town." Under pressure she says, "Do not mistake quiet for permission."
 
 ## Connections
 
-| Connection | Meaning |
-| ---------- | ------- |
-| [[penance-bar]] | Halda is placed past the last field of Penance Bar in the draft fiction. |
+- [[penance-bar]] — the draft places her past its last field.
+- [[penance-bar-siege]] — the live situation her draft scene sits inside.
