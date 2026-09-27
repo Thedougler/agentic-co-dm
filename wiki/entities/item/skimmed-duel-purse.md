@@ -26,7 +26,16 @@ tier: supporting
 ---
 # Skimmed Duel Purse
 
-> [!narration] Narration
-> A drawstring purse, worn soft at the seams from handling. The coin inside doesn't match — different mints, different weights, stamped by more than one family's hand. A scrap of tally-slate chalk still clings to the leather where someone marked it before hiding it away.
+> [!narration] Skimmed Duel Purse
+> A drawstring purse, worn soft at the seams from handling. The coin inside does not match—different mints, different weights, stamped by more than one family's hand. A scrap of tally-slate chalk still clings to the leather where someone marked it before hiding it away.
 
-*Mundane item, worth 65 gp in mixed coin.* No magical properties. A bookmaker's skimmed cut of a challenge-bell duel's betting stakes, held back before the payout was called and never reclaimed.
+## At a Glance
+
+*Mundane item, worth 65 gp in mixed coin.*
+
+- **Origin.** A bookmaker's skimmed cut of a challenge-bell duel's betting stakes, held back before the payout was called and never reclaimed.
+- **Owner.** Unknown bookmaker.
+
+## Properties
+
+The purse contains mixed coins worth `65 gp`. It has no magical properties.
