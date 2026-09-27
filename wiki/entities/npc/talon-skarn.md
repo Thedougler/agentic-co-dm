@@ -2,37 +2,28 @@
 title: Talon Skarn
 aliases:
   - Talon Skarn
+  - Skarn
 category: entities
 tags: [shattered-sea, npc]
 sources:
   - "campaign-os:talon-skarn.md"
   - "wiki/_archive/Talon Skarn.md"
-  - "Talon Skarn"
-summary: "Talon Skarn is a Countless peregrine apprentice caught mid-theft on Aruhe. He has spent one Legendary Resistance and remains in Crissdalynn's face."
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
-created: 2026-09-12T06:23:47Z
-updated: 2026-09-24
+  - "wiki/entities/quest/rule-of-two.md"
+  - "wiki/entities/faction/countless.md"
+  - "journal/sessions/shattered-sea/11/Session-11-Recap.md"
+created: 2026-09-12
+updated: 2026-09-27
 type: npc
 reveal: revealed
 campaign: shattered-sea
 status: alive
 role: rival
-location: Aruhe - River Slack Basin
-faction: Countless
+location: "[[river-slack-basin]]"
+faction: "[[Countless]]"
 visibility: dm
-relationships:
-  - target: "[[talon-vantyrus]]"
-    type: related_to
+summary: "Talon Vantyrus's peregrine apprentice in the Countless, a CR 13 flying monk hunting the Fate Spinner; under the Rule of Two he will one day try to kill his master."
 ---
 # Talon Skarn
-
-## Now
-
-Session 11. He stooped on [[crissdalynn-khinriss]] during last watch at [[river-slack-basin]]. The stunning strike missed. He reached for the pack that might hold the [[fate-spinner]]. She stunned him. He spent one Legendary Resistance and stayed up. Play stopped there. The job is still the object, not a duel to 0 hit points.
 
 ![[talon-skarn-reference-sheet.jpg|Talon Skarn character reference sheet]]
 
@@ -42,82 +33,36 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**      | Countless apprentice and CR `13` flying skirmisher                    |
-| ------------- | ---------------------------------------------------------------------- |
-| **Nature**    | Living expression of the [[rule-of-two]]                               |
-| **Home**      | Midchain                                                               |
-| **Wants**     | The [[fate-spinner]] for [[talon-vantyrus]] now; to kill him once trained enough (an open secret between them) |
-| **Arrival**   | Enters only when the party physically reaches Midchain                |
-| **Fight**     | Pursues the current job; he does not stay for a duel to `0` hit points |
-| **Kit**       | Katana, two sai, and two kusarigama                                    |
-| **Signature** | A `30-foot` stoop, `20-foot` chain reach, and forced movement           |
-| **Weakness**  | No damage resistances; ground him, deny the stoop lane, and spread out |
+Skarn is the Countless's blade on the party: he hunts the [[fate-spinner]] for [[talon-vantyrus]], and he wants the object, not a duel.
 
-> **DM thesis:** Skarn is Vantyrus's standing threat made flesh. For now he is loyal and hunts the [[fate-spinner]] for his master; both know that under the [[rule-of-two]] Skarn will try to kill Vantyrus once he has trained well enough.
+- **Role.** Vantyrus's apprentice in the [[Countless]], and a CR 13 flying skirmisher.
+- **Nature.** A peregrine aarakocra monk, the living expression of the [[rule-of-two]].
+- **Wants.** The Fate Spinner for Vantyrus now. Vantyrus's death once he has trained well enough.
+- **Home.** The Midchain.
+- **Allegiance.** Vantyrus and the Countless. He is loyal for now.
+- **Kit.** Katana, two sai, and two kusarigama.
+- **Now.** In [[crissdalynn-khinriss]]'s face at the [[river-slack-basin]], one Legendary Resistance spent, with the Fate Spinner still on her.
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Talon Skarn
-> A broad peregrine aarakocra stands about five feet tall, heavy wings lifted behind a dark robe. Pale chest feathers climb into a black-and-cream face; red-orange crown feathers flare above steady amber-gold eyes and a yellow beak tipped in black. The robe hangs in dark layers over wrapped ankles and bare talons, with patterned trim catching along the collar and down the front.
->
-> Cloth wraps and loose metal chains cover his forearms. One hand holds a long straight sword, the other a curved hook-blade on a dangling chain. When he shifts his grip, the chain links click once and settle against the wraps.
+> Talon Skarn is a broad peregrine aarakocra about five feet tall, heavy wings lifted behind a dark robe. Pale chest feathers climb into a black and cream face, red-orange crown feathers flare above steady amber-gold eyes, and his yellow beak is tipped in black. The robe hangs in dark layers over wrapped ankles and bare talons. Cloth wraps and loose chains cover his forearms, and the links click once and settle whenever he shifts his grip on the long straight sword in one hand and the hooked blade on its chain in the other.
 ```
 ````
 
-## Running Talon Skarn
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### Opening
-
-Wings lift and chains click. If Skarn has a `30-foot` straight-down lane, open with **Peregrine Dive**. Otherwise, use **Kusarigama** to set the distance.
-
-### Default turn
-
-Use **Stunning Strike** once on his turn. Follow with **Kusarigama** to pull a target clear of its partner, or **Sai** to blunt the watcher's next attack.
-
-### Legendary actions
-
-After another creature's turn, use **Chain Snap** to reopen a pull, **Crossing Sai** to punish a watcher, or **Wingbeat Step** to change the lane. Use each option at most once before Skarn's next turn.
-
-### Stoop lane
-
-**Peregrine Dive** needs `30 feet` of straight-down movement. Use it from a roof-break, terrace, or open sky. A tight aisle under leaves is chain work, not a stoop.
-```
-
-```col-md
-flexGrow=1
-===
-### If pressured
-
-Use **Step of the Falcon** to Disengage, **Wingbeat Step** to change the lane, and **Deflect Attack** on the first solid hit. At `97` hit points or fewer, finish the current job if he can; otherwise, leave.
-
-### Target priority
-
-Take the object if one is at stake. Otherwise, attack the creature blocking the job, then the carrier, then anyone between Skarn and it. He cuts gear before throats.
-
-### Counterplay
-
-Ground him with Grapple or Restrain, or deny a `30-foot` straight-down lane. Beat the **Constitution save — `DC 18`** to avoid **Stunning Strike**. His AC is `19` and he has no damage resistances. Spread out against **Kusarigama Tempest**, deny clean pulls, or make him spend movement.
-
-### Kusarigama Tempest
-
-Use **Kusarigama Tempest** when two or more creatures are inside its `20-foot` Emanation and a pull or **Prone** condition changes the fight. On a failed save, choose pull or **Prone** for each creature; on a success, deal damage only.
-```
-````
-
-### Difficulty knobs
-
-- **Easier.** Remove **Legendary Resistance** and start **Kusarigama Tempest** uncharged.
-- **Harder.** Start him in the air with a stoop lane without raising his AC.
-
-# Combat
-
-> **Encounter rule.** Use this block whenever [[talon-skarn]] fights. His win condition is the current job, not a duel to 0 hit points. On [[Session-11-09-Theft-on-the-Watch]], that job is the [[fate-spinner]] and a break down the star-cut.
+- **The job.** His win condition is the current job, not a duel to 0 hit points. He takes the object if one is at stake. Otherwise he attacks the creature blocking the job, then the carrier, then anyone between him and it. He cuts gear before throats.
+- **Opening.** Wings lift and chains click. He drops out of the sky with **Peregrine Dive**, or sets the distance with **Kusarigama**.
+- **Default turn.** **Stunning Strike** once on his turn, then **Kusarigama** to pull a target clear of its partner, or **Sai** to blunt the watcher's next attack.
+- **Legendary actions.** After another creature's turn: **Chain Snap** to reopen a pull, **Crossing Sai** to punish a watcher, or **Wingbeat Step** to change his lane, each at most once before his next turn.
+- **Kusarigama Tempest.** When two or more creatures are inside its 20-foot Emanation and a pull or the Prone condition changes the fight. On a failed save he chooses pull or Prone for each creature; on a success, damage only.
+- **If pressured.** **Step of the Falcon** to Disengage, **Wingbeat Step** to change lane, and **Deflect Attack** on the first solid hit. At 97 HP or fewer, he finishes the current job if he can, and otherwise leaves.
+- **Counterplay.** Ground him with a grapple or restraint. **Constitution** save `DC 18` resists Stunning Strike. He has AC 19 and no damage resistances. Spread out against the Tempest, deny clean pulls, and make him spend movement.
+- **Easier.** Remove Legendary Resistance and start Kusarigama Tempest uncharged.
+- **Harder.** Start him in the air, without raising his AC.
 
 ## Statblock
 
@@ -137,15 +82,15 @@ hit_dice: "23d8 + 92"
 speed: "50 ft., fly 90 ft."
 stats: [14, 22, 18, 12, 20, 14]
 saves:
-  - Dex: +11
-  - Con: +9
-  - Wis: +10
+  - dexterity: 11
+  - constitution: 9
+  - wisdom: 10
 skillsaves:
-  - Acrobatics: +16
-  - Insight: +10
-  - Perception: +10
-  - Stealth: +11
-senses: "passive Perception 20"
+  - acrobatics: 16
+  - insight: 10
+  - perception: 10
+  - stealth: 11
+senses: "Passive Perception 20"
 languages: "Auran, Common"
 cr: 13
 traits:
@@ -163,12 +108,12 @@ actions:
   - name: Multiattack
     desc: "Talon makes three attacks, using Katana, Kusarigama, or Sai in any combination."
   - name: Katana
-    desc: "Melee Attack Roll: +11, reach 5 ft., one target. Hit: 17 (2d10 + 6) Slashing damage."
+    desc: "Melee Attack Roll: +11, reach 5 ft. Hit: 17 (2d10 + 6) Slashing damage."
   - name: Kusarigama
-    desc: "Melee Attack Roll: +11, reach 20 ft., one target. Hit: 15 (2d8 + 6) Slashing damage. If the target is Large or smaller, Talon can pull it up to 10 feet toward himself."
+    desc: "Melee Attack Roll: +11, reach 20 ft. Hit: 15 (2d8 + 6) Slashing damage. If the target is Large or smaller, Talon can pull it up to 10 feet toward himself."
   - name: Sai
-    desc: "Melee Attack Roll: +11, reach 5 ft., one target. Hit: 13 (2d6 + 6) Piercing damage, and the target has Disadvantage on the next attack roll it makes before the start of Talon's next turn."
-  - name: Kusarigama Tempest (Recharge 5-6)
+    desc: "Melee Attack Roll: +11, reach 5 ft. Hit: 13 (2d6 + 6) Piercing damage, and the target has Disadvantage on the next attack roll it makes before the start of Talon's next turn."
+  - name: Kusarigama Tempest (Recharge 5–6)
     desc: "Talon whirls both chained sickles around himself. Each creature of his choice in a 20-foot Emanation must make a DC 19 Dexterity saving throw. Failure: 27 (6d8) Slashing damage, and Talon either pulls the creature up to 15 feet toward himself or gives it the Prone condition. Success: Half damage only."
 bonus_actions:
   - name: Step of the Falcon
@@ -187,7 +132,22 @@ legendary_actions:
     desc: "Talon moves up to half his Speed without provoking Opportunity Attacks. He can't use Wingbeat Step again until the start of his next turn."
 ```
 
-## Alt Art
+## Secrets
+
+- **The Rule of Two.** It is an open secret between Skarn and Vantyrus that Skarn will try to kill his master once he has trained well enough. Until then he serves. Vantyrus treats the attempt as a standing threat, and Skarn has no reason to stop after one failed approach. The winner takes control of the Countless ([[rule-of-two]]).
+
+## Connections
+
+- [[talon-vantyrus]] — his master, and his eventual target.
+- [[Countless]] — the order he serves; he and the one-job contacts interpret Vantyrus's orders.
+- [[crissdalynn-khinriss]] — the Fate Spinner's carrier.
+- [[rule-of-two]] — the contest for the Countless.
+
+## Log
+
+- **[[Session-11-Recap]]** — On Crissdalynn's last watch at the Slack Basin, he dropped out of the dark. His first strike missed her, and he went for the pack that might hold the Fate Spinner. She hit him hard enough to stun him; he spent one Legendary Resistance and stayed on her. Play stopped there, with the Spinner still on her.
+
+## Art
 
 ![[talon-skarn-portrait.jpg|Talon Skarn portrait]]
-![[talon-skarn-token.png|Talon Skarn FoundryVTT token]]
+![[talon-skarn-token.png|Talon Skarn token]]

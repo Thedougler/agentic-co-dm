@@ -27,7 +27,7 @@ base: "[[verdant-teeth]]"
 relationships:
   - target: "[[verdant-teeth]]"
     type: related_to
-  - target: "[[Auralis]]"
+  - target: "[[auralis|Auralis]]"
     type: related_to
   - target: "[[dravosi-crown]]"
     type: related_to
@@ -50,7 +50,7 @@ flexGrow=2
 | **Nature** | Political clans organized around color, sealing rites, and a gold-caste theocracy. |
 | **Scope** | Regional. |
 | **Base** | [[verdant-teeth]]. |
-| **Leader** | The gold presence associated with [[Auralis]]; no complete command hierarchy is established. |
+| **Leader** | The gold presence associated with [[auralis|Auralis]]; no complete command hierarchy is established. |
 | **Public purpose** | Protect Grung communities and preserve the sealing order. |
 | **Signature method** | Toxin, closed beaches, reef patrols, and raids for captives. |
 | **Current posture** | Acting under shrinking water reach. |
@@ -115,7 +115,7 @@ flexGrow=1
 
 | Person / group | Role | Wants | Loyalty / fracture |
 | --- | --- | --- | --- |
-| [[Auralis]] | Public mandate and private apex presence | Continued obedience to the gold authority. | Exact nature unknown. |
+| [[auralis|Auralis]] | Public mandate and private apex presence | Continued obedience to the gold authority. | Exact nature unknown. |
 | [[simone]] | Purple officer and Sorn garrison holder | Toxin sales, control, and the hunt for [[jean-claude-tabarnack]]. | Her position is exposed by substitute-gold trade. |
 | [[felix-aho]], [[ruma-delacroix]], [[solange-barret]], [[bazzoth]], [[vashu-the-weeping-veil]], [[Ozzeth]] | Named operatives | Carry out clan work in different colors and roles. | The source does not establish a complete hierarchy. |
 | [[Botukuri]] | Sorn farming clan | Maintain seasonal flood-pulse agriculture. | The source does not establish its full government. |
@@ -185,7 +185,7 @@ flexGrow=1
 
 **Hidden truth.** The public story of protection conceals a caste-and-rite system under strain. Raids, the fighting-age levy, toxin exports, and the captive pipeline are one attempt to keep the clans sharp while their maritime position deteriorates.
 
-**Gold presence.** The exact nature of the presence associated with [[Auralis]] is unknown. It may be a god, construct, conduit, creature, or story made effective by congregation; this source does not decide among them.
+**Gold presence.** The exact nature of the presence associated with [[auralis|Auralis]] is unknown. It may be a god, construct, conduit, creature, or story made effective by congregation; this source does not decide among them.
 
 **Unknowns.**
 

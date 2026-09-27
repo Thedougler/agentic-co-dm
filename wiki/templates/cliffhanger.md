@@ -93,3 +93,10 @@ flexGrow=1
 
 > [!narration] If the session ends here
 > <!-- The last words of the night when the session stops on this beat: one concrete image that makes the changed situation unmistakable, ending on the unanswered moment, one event, before anyone can act. -->
+
+
+## Statblocks
+
+<!-- Only when the party could fight someone here: every side's owner statblock, embedded, never retyped. -->
+
+![[creature#Statblock]]

@@ -4,12 +4,13 @@ aliases:
   - Bloodhawk
   - Aruhe - Bloodhawk
 category: entities
-tags: [shattered-sea, aruhe, creature, apex-predator, aerial]
+tags: [shattered-sea, aruhe, creature]
 sources:
   - "wiki/_archive/Aruhe - Bloodhawk.md"
   - "wiki/_raw/Aruhe - Bloodhawk.md"
-created: 2026-09-12T05:40:07Z
-updated: 2026-09-19T18:00:00Z
+  - "Session 12 refile (2026-09-27)"
+created: 2026-09-12
+updated: 2026-09-27
 type: creature
 reveal: revealed
 campaign: shattered-sea
@@ -17,12 +18,29 @@ visibility: dm
 region: aruhe
 role: skirmisher
 cr: 11
-summary: CR 11 adult aerial skirmisher. Its stoop targets exposed prey and ends when cover denies the dive.
+summary: "A CR 11 four-winged hawk big enough to lift a whale; it owns Aruhe's open sky and stoops on anything exposed, and cover breaks its dive."
 ---
 # Bloodhawk
 
-> [!narration] Narration
-> The grass lies still under the wind. An adult circles too high to see. Then: **THUMP-thump.** Wind brushes the grass as the sound pauses. **THUMP-thump.** The shadow sweeps over you before the bird appears. A broad charcoal body appears overhead, wings folded tight against a frame large enough to lift a whale.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+The bloodhawk makes open ground and open sky on Aruhe deadly: anything exposed can be struck from above, and cover is the only answer.
+
+- **Habitat.** The open sky over [[aruhe]]: sea channels, lake bowls, reef gaps, river mouths, cliff faces, canopy breaks, and grassland rims. Its young ([[young-bloodhawk]]) trail it.
+- **Treasure.** None. Its kills lie where no ground trail leads.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Bloodhawk
+> A bloodhawk is a hawk big enough to carry off a whale, with four wings instead of two, the lower pair broad and slow and the upper pair narrow. Its feathers are black shot through with crimson, brightest under the wings and along its raised crest. Rows of teeth line the inside of its pale hooked beak, and its black talons curl like meat hooks. It rides the wind in wide circles too high to see, and when it drops, its paired wingbeats thud like a heartbeat, thump-thump, thump-thump.
+```
+````
 
 ## Statblock
 
@@ -43,8 +61,8 @@ saves:
   - constitution: 9
   - wisdom: 7
 skillsaves:
-  - Perception: 11
-senses: passive Perception 21
+  - perception: 11
+senses: "Passive Perception 21"
 languages: "—"
 cr: 11
 traits:
@@ -56,9 +74,9 @@ actions:
   - name: Multiattack
     desc: "The bloodhawk makes two attacks: one Serrated Beak attack and one Hook Talons attack."
   - name: Serrated Beak
-    desc: "Melee Attack Roll: +13, reach 10 feet, one target. Hit: 28 (3d12 + 9) Piercing damage. If the target is Grappled by the bloodhawk, the attack deals an extra 7 (2d6) Slashing damage as the recurved teeth inside the beak saw through the held prey."
+    desc: "Melee Attack Roll: +13, reach 10 ft., one target. Hit: 28 (3d12 + 9) Piercing damage. If the target is Grappled by the bloodhawk, the attack deals an extra 7 (2d6) Slashing damage as the recurved teeth inside the beak saw through the held prey."
   - name: Hook Talons
-    desc: "Melee Attack Roll: +13, reach 10 feet, one target. Hit: 23 (4d6 + 9) Slashing damage. If the target is a Gargantuan or smaller creature, it has the Grappled condition (escape DC 19). Until the grapple ends, the target has the Restrained condition, and the bloodhawk can't use Hook Talons against another target."
+    desc: "Melee Attack Roll: +13, reach 10 ft., one target. Hit: 23 (4d6 + 9) Slashing damage. If the target is a Gargantuan or smaller creature, it has the Grappled condition (escape DC 19). Until the grapple ends, the target has the Restrained condition, and the bloodhawk can't use Hook Talons against another target."
   - name: Terminal Stoop (Recharge 5–6)
     desc: "The bloodhawk flies up to its Fly Speed in a straight line toward one creature it can see at least 60 feet below it. This movement doesn't provoke Opportunity Attacks. At the end of this movement, the bloodhawk makes one Hook Talons attack against that creature with Advantage. On a hit, the attack deals an extra 27 (6d8) Bludgeoning damage from the impact. The target must then succeed on a DC 17 Constitution saving throw or have the Stunned condition until the start of the bloodhawk's next turn."
 bonus_actions:
@@ -69,41 +87,24 @@ reactions:
     desc: "Trigger: The bloodhawk is hit by an attack it can see while flying. Response: The bloodhawk adds 3 to its AC against the triggering attack, potentially causing it to miss. If the attack misses, the bloodhawk can fly up to 30 feet without provoking Opportunity Attacks."
 ```
 
----
+## Tactics
 
-## Visual reference
-
-
-The adult is a whale-scale hawk: a charcoal body, crimson undersides and primaries, a red crest, a pale hooked beak, a red eye, and black hook talons. Four wings share the work. The lower pair carries the climb. The upper pair rolls the dive. Recurved teeth sit behind the pale beak.
-
-## Biology
-
-
-Bloodhawks are four-winged Aruhe predators with hawk silhouettes and older, uglier hardware. Recurved teeth hide behind the pale beak, and black talons close around prey like hooks. The lower wing-pair bears the bird's weight during the climb, while the second pair lets an adult roll hard in a dive despite its size. A full adult can lift a whale clear of the water. The same grip can seize one body from open ground or open sky.
-
----
+- **Opening.** It starts high, outside weapon range, and waits for exposed movement, noise, or prey already flushed from cover.
+- **Signature.** Terminal Stoop. Its tell is the paired thump-thump of its wingbeats, then its shadow crossing the ground before its body arrives. Answers: get under closed canopy, into grass taller than a person, beneath an overhang or rigging, or into otter water; or Ready an attack for the committed pass.
+- **Adapts.** Once it holds prey, it uses Haul Aloft to make the height the danger, then tears into the held body or drops it.
+- **Weaknesses.** Any hard break in its line of sight ends the dive. Its walking speed is poor, and Break Turn cannot answer a second hit once its reaction is spent. It will not put its feet into water an [[river-otter]] family holds.
+- **Morale.** It breaks off when its target vanishes under cover, and it climbs away once Bloodied.
 
 ## Behavior
 
-
-- **Habitat.** Bloodhawks own the open sky above [[Aruhe - Hungry Isle]], especially sea channels, lake bowls, reef gaps, river mouths, cliff faces, canopy breaks, and grassland rims.
-- **Behavior.** At altitude, an adult rides lift in wide, quiet circles. When it commits, the two wing-pairs strike the air out of phase, and the paired **thump-thump** reaches the ground before the body does.
-- **Diet.** Bloodhawks prefer whales along the coast. Inland adults take [[Aruhe - Bear-Elk|Bear-Elk]], [[Aruhe - Terror-Bird|terror-birds]], large reptiles, and anything flushed into the open. Canoes and small boats count as prey.
-- **Social Structure.** Solitary adults hold enormous sky lanes. Juveniles sometimes shadow an adult hunt and drop on whatever the first strike drives out of cover.
----
-
-## Tactics
-
-
-- **Signs.** Use a moving wing-shadow with no call, crushed grass circles with no exit trail, bear-elk bones on terrace stone with no approach tracks, whale blood spreading in open water, crimson primary feathers, or the paired **thump-thump** during an active chase.
-- **Instincts.** It keys on height, noise, exposed movement, open water, and prey already flushed from cover. It breaks off when the target disappears under closed canopy, deep grass, rigging, overhang, or protected water.
-- **Tactics.** Start high and outside ordinary weapon range. Let the table hear the **thump-thump** before Terminal Stoop. The Bloodhawk stoops on the most exposed large target, seizes it with Hook Talons, then uses Haul Aloft to make altitude the danger. On the next turn, it tears into the held body with Serrated Beak or drops the body to regain distance.
-- **Weaknesses.** Break the dive line with closed canopy, tall grass, a cliff overhang, rigging, or any hard sightline break. Force low altitude, ready attacks for the committed pass, or ground it; its land speed is poor, and Break Turn cannot answer a second hit after it spends its reaction. It will not put its feet into occupied [[Aruhe - River Otter|otter]] water.
-- **Aftermath.** A Bloodhawk strike leaves torn feathers, falling blood, cracked branches, nest fiber dropped from high canopy, and sometimes a carcass placed where no ground trail leads.
-
----
+- **Habits.** An adult rides lift in wide, quiet circles, too high to see from the ground.
+- **Diet.** Whales along the coast. Inland it takes [[bear-elk]], [[terror-bird]]s, large reptiles, and anything flushed into the open. Canoes and small boats count as prey.
+- **Group.** Solitary adults hold enormous sky lanes. Juveniles shadow an adult hunt and drop on whatever the first strike drives out of cover.
+- **Signs.** A wing shadow with no call, crushed grass circles with no trail leading out, bear-elk bones on terrace stone with no tracks leading in, whale blood spreading in open water, and crimson primary feathers.
+- **Aftermath.** Torn feathers, falling blood, cracked branches, nest fibre dropped from high canopy, and carcasses where no ground trail leads.
 
 ## Art
 
 ### Token
-![[bloodhawk-of-aruhe-token.jpg|Bloodhawk FoundryVTT token]]
+
+![[bloodhawk-of-aruhe-token.jpg|Bloodhawk token]]

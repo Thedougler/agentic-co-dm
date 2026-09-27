@@ -24,7 +24,7 @@ visibility: dm
 relationships:
   - target: "[[grung-clans]]"
     type: related_to
-  - target: "[[Auralis]]"
+  - target: "[[auralis|Auralis]]"
     type: related_to
   - target: "[[verdant-teeth]]"
     type: related_to
@@ -132,12 +132,12 @@ lair_actions:
 
 **Life.**
 
-Associated with the [[grung-clans]]' gold authority, **Gold Caste Serene** names the fiction-layer presence through which the clans frame their decrees, while the sheet leaves its identity relative to [[Auralis]] unsettled. Its habitat is [[verdant-teeth]]. The sheet gives no habits, diet, or social detail beyond the unlookable gold presence.
+Associated with the [[grung-clans]]' gold authority, **Gold Caste Serene** names the fiction-layer presence through which the clans frame their decrees, while the sheet leaves its identity relative to [[auralis|Auralis]] unsettled. Its habitat is [[verdant-teeth]]. The sheet gives no habits, diet, or social detail beyond the unlookable gold presence.
 
 **Connections.**
 
 - [[grung-clans]]
-- [[Auralis]]
+- [[auralis|Auralis]]
 - [[verdant-teeth]]
 
 ## Tactics

@@ -4,180 +4,131 @@ category: journal
 tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-27
 type: session-prep
 kind: climax
 reveal: unrevealed
 campaign: "shattered-sea"
 session: "12"
 visibility: dm
-summary: "Dusk at the Pantry. Auralis tells Perrin to CONSUME the living fruit, then invisible Skarn strikes for the Fate Spinner, and the island's answer to Perrin's claim tangles Skarn worse than Perrin."
+card: "Final Battle"
+tier: "Villain"
+question: "Does the Fate Spinner survive Skarn's last attempt, and does Perrin eat on faith?"
+memorable: "A three-foot rat gorging on living fruit because a voice said so, and the whole vine turning on him while the invisible falcon gets tangled instead."
+summary: "Dusk at the Pantry: Auralis tells Perrin to CONSUME the vine's fruit, invisible Skarn comes for the Spinner, and the island's answer to Perrin's claim tangles the falcon."
 ---
 
 # Session 12 — Consume
 
-**Card.** Final Battle.
-**Entry state.** Dusk. The column reaches [[the-pantry]] off [[the-burnt-road]], carrying whatever [[Session-12-01-dawn-strike]] and [[Session-12-03-terror-birds]] cost, with no long rest since last night. [[crissdalynn-khinriss]] (or whoever took the hand-off) carries the [[fate-spinner]]. [[talon-skarn]] is at **130 of 195 HP** after a day of short rests, with the Legendary Resistances the Hook left him and **Kusarigama Tempest** charged. He has the ghost plums he took from Matteo.
-**Party goal.** Keep the Fate Spinner, and keep the Calveno alive.
-**Opposition goal.** Skarn takes the Spinner and leaves through the open sky over the channel.
-**Stakes.** Lose the Spinner to [[talon-vantyrus]] for good, or drive Skarn off with nothing left to try again with.
-**Pressure.** Skarn's plum gives him one hour Invisible, and he means to finish before full dark.
-**End when.** Skarn is driven off, captured, or dead, or he leaves with the Spinner.
-**Memorable element.** A three-foot rat gorging on living fruit because a voice said so, and the whole vine turning on him while the invisible falcon gets tangled instead.
-**Budget.** About 60 minutes. **If behind:** skip phase 3's second Tempest; Skarn leaves at 110 HP instead of 97.
+## At a Glance
 
-**Next:** [[Session-12-06-the-way-out]]
+Tonight decides whether the [[fate-spinner]] stays with the party: [[talon-skarn]] walks into [[the-pantry]] invisible for his last try, and [[perrin-black-jaw]]'s patron has just told him to eat the island's living fruit.
 
-> [!narration] Opening image
-> By dusk Luca is walking out in front, counting aloud each pile of fallen fruit he passes. Where the piles turn off the road of charred flowers toward firelight, the trees open on a clearing roofed by a single vine as thick as a mast. It hangs so heavy with guavas and stonepears that the wood creaks whenever the air moves, and bundles of bare cords sway down between the fruit. Beneath it, around a small fire, seven thin men are getting to their feet. The tallest, a grey streak through his beard, looks straight past you to the man being carried in, and then he stops moving altogether. Behind the men a deep channel slides by with a deadwood raft tied to its bank, and along the treeline pale pollen drifts in the last light.
->
-> Perrin, the vine dips so low where you stand that a guava and a stonepear sway a hand's width from your nose. Their sweet, musky smell fills your whiskers. Then pale blue light gathers around your cloak in the shape of a whale, and a voice fills your skull with a single word. **CONSUME.**
+- **Entry state.** Dusk. The column reaches the Pantry off [[the-burnt-road]], carrying whatever the dawn fight and the meadow cost, with no long rest since last night. [[crissdalynn-khinriss]], or whoever took the hand-off, carries the Spinner.
+- **Party objective.** Keep the Spinner, and keep the Calveno alive.
+- **Opposition wants.** Skarn takes the Spinner and leaves by the open sky over the channel, before his plum wears off and before full dark.
+- **Stakes.** Keep it, and Skarn goes home empty-handed with nothing left to try again with. Lose it, and [[talon-vantyrus]] has Crissdalynn's Spinner.
+- **If Skarn is out of play.** If he took the Spinner or was captured at dawn, run only Perrin's choice and the island's answer, and hand straight to the Resolution.
+- **If behind.** Cut phase 3's second Tempest. Skarn leaves at 110 HP instead of 97.
+- **Next.** [[Session-12-06-the-way-out]]
 
-## Thread harvest
+> [!narration] Opening
+> The fruit piles lead you off the black road toward firelight, into a clearing roofed by a single vine as thick as a ship's mast, sagging with fruit. Seven thin men are getting to their feet around a small fire. The tallest, a grey streak through his beard, stares past you at the man on the litter and stops moving. Perrin, a guava and a stonepear hang a hand's width from your nose, their smell sweet and musky in your whiskers. Pale blue light gathers around your cloak in the shape of a whale, and a voice fills your skull with one word. **CONSUME.**
 
-| Thread | Planted in | Tested in | Lever it gives here | Without it |
-| ------ | ---------- | --------- | ------------------- | ---------- |
-| Fate Spinner and Skarn | [[Session-12-01-dawn-strike]] | [[Session-12-01-dawn-strike]] | The party knows his read: hands, hips, straps. Hiding or handing off the Spinner works as it did at dawn. | He cuts gear blind and pulls whoever is nearest. |
-| Ghost plums | [[Session-12-01-dawn-strike]] | — | The party knows Skarn can come invisible. The ghost-plum pollen drift at the treeline shows him as a shimmer while he is inside it. | His first strike comes out of nowhere. |
-| Perrin and [[auralis]] | [[Session-12-01-dawn-strike]] (the glow) | This beat | If Perrin eats: Charisma 25 for 1 hour (spell save DC 18, spell attack +10), Resistance to all damage for 1 minute, and the island's responders tangle Skarn. | Skarn fights at full effect. |
-| The Calveno survivors | [[Session-12-02-the-smoking-skylight]] | [[Session-12-03-terror-birds]] | Steadied civilians obey orders; the island never targets [[hinewai]]'s Calveno. | Twelve frightened civilians in the fight. |
-| The grave orders and Hinewai | [[Session-12-04-orders-in-the-ash]] | [[Session-12-04-orders-in-the-ash]] | Jean-Claude knows a claim wakes the island's answer, and that the answer spares the Calveno. | — |
+## Thread Harvest
+
+- **The Fate Spinner and Skarn** — the party has seen his read at dawn: hands, hips, and straps. Hiding or handing off the Spinner works exactly as it did then.
+- **Ghost plums** — the party saw [[matteo-scola]] vanish after eating one. The pale pollen drift at the treeline shows an invisible creature as a shimmer while it is inside it.
+- **Perrin and [[auralis]]** — if he eats, a [[giants-guava]] sets his Charisma to 25 for 1 hour (spell save DC 18, spell attack `+10`) and a [[stonepear]] gives him Resistance to all damage for 1 minute. The vine lashes his claim wakes also find and tangle the invisible Skarn.
+- **The Calveno** — steadied civilians obey orders, and the island's lashes never touch one of [[hinewai]]'s Calveno.
+- **The grave orders and Hinewai** — Jean-Claude knows a claim wakes the island's answer, and that the answer spares the Calveno.
+
+## Actors
+
+- **[[talon-skarn]].** The primary opposition. He walks in on foot through the treeline, invisible, and goes for the Spinner's carrier.
+  - **Numbers.** 130 of 195 HP after a day of short rests, the Legendary Resistances the dawn left him, **Kusarigama Tempest** charged. He is Invisible for 1 hour from a [[ghost-plum]] he gathered in the Quiet: attacks against him have Disadvantage unless the attacker can see him, and his attacks have Advantage against anyone who cannot see him. His statblock is below.
+  - **Wants.** The Spinner, for Vantyrus, tonight. This is his last clean try before the party knows every trick he has.
+  - **Plays.** Opening: he lands 5 feet behind the carrier and cuts gear, three attacks at Advantage. Countered: a grappler gets Stunning Strike, then he escapes with **Dexterity (Acrobatics)** `+16`; a crowd gets Kusarigama Tempest. Desperation: at 97 HP or fewer he makes one last Kusarigama pull at a visible Spinner, then goes for the channel sky.
+  - **Line.** He never attacks a civilian. They are cover, not targets.
+  - **Morale.** He leaves at 97 HP or fewer, or once the Spinner is in his hand, up through the open sky over the channel, 40 feet east of the fire. A grapple, a vine lash, or someone Readied on the bank stops him going.
+- **[[vine-lash]] × 3.** The island's answer, coiled in the great vine's canopy. Each fruit Perrin picks wakes one, at the end of his next turn. Each attacks Perrin with its first Tendril and puts its second on the nearest creature in reach that is not one of the Calveno. Near the fire and the carrier, that is usually Skarn, and their Blindsight finds him invisible. They go back into the canopy after 1 minute, or when Perrin is more than 60 feet from the vine; one reduced to 26 HP withdraws.
+- **Twelve civilians.** The seven of the Pantry and the column's five, all [[commoner]]s. [[ettore-ferrante]] cannot move himself.
+
+> [!narration] Renzo Canale
+> An old man with close-cropped grey hair sets down the fruit he was sorting and looks straight at the man on the litter, not at any of you. "Bring him to the fire," he says. "I set bones."
+
+> [!narration] Carlo Ferrante
+> The tall man with the grey streak in his beard takes one step toward the litter, then another, his hands open and shaking at his sides. "Brother," he says.
 
 ````col
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
-## Situation
+## Stage
 
-- **What is true now.** Dusk at [[the-pantry]]. Seven Calveno live here: [[renzo-canale]], [[tommaso-brasca]], [[carlo-ferrante]], and four others (Beppe Sarti, Marco Lenzi, Sandrino Vale, Ilario Pozzo). With the column's five ([[matteo-scola]] and the four from the tube), twelve civilians are in the clearing. [[carlo-ferrante]] has just seen his brother carried in.
-- **If nobody interferes.** Skarn eats a plum at the treeline, walks in unseen, and takes the Spinner from its carrier in three rounds (Pressure).
-- **What made this the climax.** Skarn failed at dawn in the open and has spent the day waiting for the party to stop among civilians under a roof, where he can come in unseen.
-- **What the characters know.** Skarn has Matteo's plums; the island answers a claim; the island spares the Calveno.
-- **What remains uncertain.** Whether Perrin eats, and whether the Spinner stays.
+| Feature | What characters can do | Ruling |
+| ------- | ---------------------- | ------ |
+| The great vine | Pick its fruit, climb it, hide in its hanging fruit | Picking is a claim that wakes a vine lash. Climbing is **Strength (Athletics)** `DC 10`. |
+| The fire and sleeping ground | Kick coals at a shimmer, light a torch, herd civilians behind the fire | Kicked coals show an Invisible creature's square to anyone watching until the end of the next turn. |
+| The channel and raft | Wade in, pole the raft out, stand on the bank | Deep water, 20 feet wide; 30 feet of movement per 5 feet. Its open sky is Skarn's way out. Cut the mooring cord and the raft drifts downstream. |
+| The pollen drift | Stand in it, fight in it, drive Skarn into it | Inside the drift, Skarn shows as a pale shimmer, and anyone who looks can see and target him normally. |
+
+**Space.** The clearing is 90 feet across. The fire is at its center under the vine. The channel bank is 40 feet east of the fire, the pollen drift starts 45 feet north and west, and the sleeping ground is 20 feet south.
+
+**Collateral.** Twelve civilians. Ettore cannot move himself.
 ```
 
 ```col-md
-### Visible levers
+flexGrow=1
+===
+## Pressure
 
-- **The great vine's fruit.** Picking living fruit is a claim ([[taking-on-aruhe]]). Each fruit picked is a free object interaction; eating one is a Bonus Action. A [[giants-guava]] sets the eater's primary ability to 25 for 1 hour; a [[stonepear]] gives Resistance to all damage for 1 minute.
-- **Ghost-plum pollen drift.** Pale pollen hangs at the treeline, 30 feet deep along the clearing's north and west edges. An Invisible creature inside it shows as a pale shimmer, and anyone who looks can see and target it normally.
-- **Perrin's whisker Blindsight.** 5 feet. He perceives invisible Skarn whenever Skarn is within 5 feet of him with nothing in between.
+- [ ] **1. Warning.** Before round 1, if Perrin picked fruit, the plants lean toward him and every insect stops for one breath. In that breath, something heavy lands on the packed dirt behind the carrier.
+- [ ] **2. Escalation.** Skarn cuts straps and pouches on the carrier, unseen.
+- [ ] **3. Crisis.** The Spinner shows, or the carrier is pulled 10 feet toward the channel.
+- [ ] **4. Consequence.** Kusarigama pulls the Spinner free, and he goes for the channel sky.
+
+**Ticks when.** At the end of each round Skarn is still working on the carrier.
+
+**If it goes static.** Skarn uses **Kusarigama Tempest** on the thickest knot of PCs, then goes back to the carrier.
 ```
 ````
 
-## Pressure
-
-**Tick when.** Tick one step at the end of each round in which Skarn is still working on the Spinner's carrier.
-
-- [ ] **1. Warning.** Before round 1: the plants lean toward Perrin if he picked fruit, and every insect in the clearing stops for one breath. In that breath, something heavy lands on the packed ground behind the carrier.
-- [ ] **2. Escalation.** Skarn cuts straps and pouches on the carrier, unseen.
-- [ ] **3. Crisis.** The Spinner shows, or the carrier is pulled 10 feet toward the channel.
-- [ ] **4. Consequence.** Kusarigama pull on the Spinner, and he goes for the open sky over the channel.
-
-**When the scene goes static.** Skarn uses **Kusarigama Tempest** on the densest knot of PCs, then goes back to the carrier.
-
-## Opposition
-
-### Primary opposition
-
-**[[talon-skarn]]**
-
-- **Numbers.** **AC 19**, **130/195 HP**, Speed 50 ft, fly 90 ft. **Invisible** for 1 hour from a [[ghost-plum]]: attacks against him have Disadvantage unless the attacker can see him (pollen drift, Blindsight), and his attacks have Advantage against anyone who cannot see him. Multiattack: three of Katana (+11, 17 slashing, reach 5 ft), Kusarigama (+11, 15 slashing, reach 20 ft, pull 10 ft), Sai (+11, 13 piercing, the target has Disadvantage on its next attack). **Stunning Strike** once per turn: **Constitution save — `DC 18`** or Stunned. **Kusarigama Tempest** (Recharge 5–6): **Dexterity save — `DC 19`**, 27 (6d8) slashing plus a 15-foot pull or Prone, half on a success. **Deflect Attack** reduces one hit by 2d10 + 7. **Evasion.** Saves Dex +11, Con +9, Wis +10; Acrobatics +16; passive Perception 20. Legendary actions (3): Chain Snap, Crossing Sai, Wingbeat Step. **Peregrine Dive** is unavailable: the vine roof gives him no 30-foot straight-down lane except over the channel.
-- **Wants.** The Spinner, for Vantyrus.
-- **Why now.** This is his second plum and his last clean try; after tonight the party knows every trick he has.
-- **Leverage.** Invisibility, reach, and civilians everywhere for cover.
-- **Opening move.** Lands 5 feet behind the carrier and cuts gear (Multiattack at Advantage).
-- **Response.** Against a grappler, Stunning Strike, then escape with Acrobatics +16 as his action. Against a crowd, Tempest.
-- **Desperation.** At 97 HP or fewer he makes one last Kusarigama pull at the Spinner if it is visible, then flies for the channel sky.
-- **Line he will not cross.** He never attacks a civilian; they are cover, not targets.
-- **Morale / exit.** He leaves at 97 HP or fewer, or once the Spinner is in his hand. His exit is the open sky over the channel, 40 feet from the fire. The party closes it by keeping him Grappled (a PC's grapple, or a vine-lash's) or by standing on the bank with a Readied action.
-
-### Assets
-
-**The island's answer, only if Perrin picked fruit.**
-
-- **[[vine-lash]] × 3**, coiled in the great vine's canopy. Each fruit Perrin picks is a claim that wakes one vine-lash, up to three. They wake at the end of Perrin's next turn. **AC 12**, **52 HP**, Speed 10 ft, climb 10 ft. Multiattack: two **Tendril** (+4, reach 15 ft, 7 bludgeoning and Grappled, escape DC 12; each vine-lash holds two creatures at most), or one Tendril and **Constrict** (9 bludgeoning to a grappled creature). A grasping bundle has AC 12 and 8 HP; destroying it frees its captive.
-- **How the island targets.** A woken vine-lash attacks the marked creature (Perrin) with its first Tendril. Its second Tendril goes to the nearest creature within reach of the vine that is not one of the Calveno, since the island never attacks [[hinewai]]'s own. Near the fire and the carrier, that creature is usually Skarn. Tendrils find what touches or moves through the vine's reach by feel, so they have no Disadvantage against an Invisible creature.
-- **Why it hurts Skarn more than Perrin.** Perrin is Small, and his **Scurry** trait lets him Disengage through Large or smaller occupied spaces without Opportunity Attacks. He escapes a grapple with Acrobatics +10 against DC 12, and his stonepear Resistance halves the damage. Skarn is Medium and has no resistances. A tendril grapple drops his Speed to 0, which shuts off flight, **Step of the Falcon**, and his exit over the channel, and every escape costs him his action and so his Multiattack.
-- **End of the answer.** The response ends after 1 minute (10 rounds), or when Perrin is more than 60 feet from the vine. A vine-lash reduced to half its HP (26) withdraws. Perrin stays marked until dawn.
-
-## Stage
-
-| Feature | What characters can do with it | Ruling / what changes |
-| ------- | ------------------------------ | --------------------- |
-| **The great vine** | Pick its fruit; climb it (Athletics DC 12); hide in its hanging fruit | A claim wakes the vine-lashes (above). Its canopy blocks every stoop lane. |
-| **The fire and sleeping ground** | Kick coals at Skarn's shimmer, light a torch, herd civilians behind the fire | Kicked coals reveal an Invisible creature's square to anyone watching until the end of the next turn. |
-| **The channel and raft** | Wade in, pole the raft out, stand on the bank | Deep water, 20 feet wide, 30 feet of movement per 5 feet. The sky over it is Skarn's only exit and his only stoop lane. If the raft's mooring cord is cut, the raft drifts downstream. |
-| **The pollen drift (north and west treeline)** | Stand in it, fight in it, drive Skarn into it | Transforms the fight: inside the drift, Skarn is fully visible to anyone who looks. |
-
-**Movement / zones.** The clearing is 90 feet across. The fire is at the centre, under the vine. The channel bank is 40 feet east of the fire, the drift 45 feet north and west, and the sleeping ground 20 feet south.
-
-**Collateral stakes.** Twelve civilians. [[ettore-ferrante]] cannot move himself.
-
 ## Final Battle
 
-**Win by.** Keeping the Spinner until Skarn breaks (97 HP or fewer), or grounding and capturing him.
+- **Win by.** Keeping the Spinner until Skarn breaks at 97 HP or fewer, or grounding him and taking him.
+- **Lose when.** Skarn reaches the channel sky with the Spinner.
 
-**Lose when.** Skarn reaches the channel sky with the Spinner.
+| Phase | Trigger | What changes | Narration |
+| ----- | ------- | ------------ | --------- |
+| 1 | CONSUME. Perrin eats or refuses, and initiative is rolled. | Invisible Skarn is working the carrier. Perrin's whisker Blindsight (5 ft.) or the pollen drift can find him. | _A pouch on the carrier's harness splits open, and there is nobody behind it._ |
+| 2 | The end of Perrin's next turn, if he picked fruit. | The vine lashes wake, grab Perrin, and reach for whoever is near the vine. A tangled Skarn has Speed 0 and cannot fly. | _The bare cords in the vine uncoil all at once and lash down, and one of them wraps around nothing at all, and holds it._ |
+| 3 | Skarn at 97 HP or fewer. | He makes his last pull and breaks for the channel sky. A grapple or a vine lash on him closes the way out. | _His chain goes still, then snaps out once more toward the Spinner._ |
 
-**Battlefield pressure.** Skarn cuts one strap a round on the carrier. If Perrin ate, the vines grow as he picks more fruit.
+## Spotlight
 
-### Forces
+- **[[perrin-black-jaw]].** CONSUME: eat on faith, or refuse. At Charisma 25 he casts at DC 18, and his Blindsight is the one sure way to find Skarn.
+- **[[crissdalynn-khinriss]].** The carrier, again: keep the Spinner through his last attempt.
+- **[[delmar-fisk]].** Between Skarn and the civilians. Ettore is his to protect.
+- **[[jean-claude-tabarnack]].** A Gloom Stalker at dusk: Umbral Sight hides him from darkvision. He knows the island spares the Calveno and answers a claim.
 
-- **Villain.** [[talon-skarn]], Invisible, numbers above.
-- **Henchmen.** None. Skarn works alone.
-- **Minions / other pressure.** Up to three [[vine-lash]]es, hostile to Perrin first and to anyone else near the vine who is not Calveno. Twelve civilians.
+## Outcomes
 
-### Tactics
+| If the climax ends with… | What becomes true | Cost paid | Narration |
+| ------------------------ | ----------------- | --------- | --------- |
+| **Victory** | Skarn tears free and goes up over the channel with nothing. His hunt is over for now. | HP and spells. Perrin is marked until dawn if he ate. | _A shape you cannot see beats up through the gap over the water, and a few pale feathers turn slowly down onto the channel._ |
+| **Costly victory** | As victory, but a PC is down or a civilian was caught by a Tempest the island did not stop. | A PC at 0 HP, or a dead civilian. | _The fire lights a Calveno lying very still beside it, and nobody else moves._ |
+| **Opposition wins** | Skarn has the Spinner and flies it to [[talon-vantyrus]]. Getting it back becomes Crissdalynn's thread. | The Spinner. | _Something small glints once above the channel, turning at the end of a chain, and then there is only sky._ |
+| **Skarn captured or killed** | Vantyrus loses his apprentice, and the [[rule-of-two]] contest ends early. | Whatever it took. | _The falcon hangs in the vine's cords, wings bound, visible again as the plum's hour runs out._ |
 
-1. **Opening.** Lands invisible behind the carrier; three attacks at Advantage on straps and pouches.
-2. **Control.** Kusarigama pulls the carrier toward the channel, away from allies.
-3. **Punish.** Anyone who clusters eats a Tempest; anyone who grapples him eats a Stunning Strike.
-4. **Desperation.** At 97 HP or fewer, one last pull at a visible Spinner, then the channel sky.
+**Carry forward.** Skarn, if he fled. The Spinner's holder. Perrin's mark until dawn if he ate. The vine lashes are back in the canopy. Ettore and Carlo are together, and the Calveno are deciding who leaves.
 
-### Phases
+## Statblocks
 
-| Phase | Trigger | Signal the players see | What changes | New opportunity |
-| ----- | ------- | ---------------------- | ------------ | --------------- |
-| 1 | CONSUME; Perrin eats or refuses; roll initiative | If he picks: plants lean toward Perrin and every insect stops for one breath. Then a thump behind the carrier. | Invisible Skarn is working the carrier. | Perrin's Blindsight or the pollen drift finds him. |
-| 2 | End of Perrin's next turn, if he picked fruit | The vine's hanging cords uncoil and lash down. | The vine-lashes wake and grab Perrin and whoever else is near the vine; Skarn gets tangled. | A tangled Skarn cannot fly; the party can pile on. |
-| 3 | Skarn at 97 HP or fewer | His chain goes still, then snaps for the Spinner one last time. | He breaks for the channel sky. | A grapple or a vine-lash on him closes the exit; capture is possible. |
+![[talon-skarn#Statblock]]
 
-### Ending the fight
+![[vine-lash#Statblock]]
 
-- **Objective achieved.** Skarn tears free and goes up over the channel with nothing: bloodied, both plums spent. He does not come back tonight.
-- **Opposition broken.** Grappled at 0 Speed and dropped to 0 HP, he is unconscious and can be taken; he never surrenders.
-- **Objective lost.** He leaves over the channel with the Spinner. [[Session-12-06-the-way-out]] runs with the loss.
-- **Escape / pursuit.** Over the channel sky, north-east over the canopy toward the coast. Pursuit in open sky over Aruhe is bloodhawk country.
-
-## PC moments
-
-| PC | Thread, foe, or feature that calls on them here |
-| -- | ----------------------------------------------- |
-| [[perrin-black-jaw]] | CONSUME: eat on faith or refuse. At Charisma 25 he casts at DC 18, and his Blindsight is the one sure way to find Skarn. |
-| [[crissdalynn-khinriss]] | The carrier, as at dawn: keep the Spinner through his last attempt. |
-| [[delmar-fisk]] | Between Skarn and the civilians; his shot turns a close fight. Ettore is his to protect. |
-| [[jean-claude-tabarnack]] | Gloom Stalker in the dusk: Umbral Sight hides him from darkvision, and he knows the island spares the Calveno and answers a claim. |
-
-## Outcome
-
-| If the climax ends with… | What becomes true | Costs paid | Thread states |
-| ------------------------ | ----------------- | ---------- | ------------- |
-| **Victory** | Skarn gone empty-handed with both plums spent. The Spinner stays. | HP and spells; Perrin marked until dawn if he ate. | Spinner kept; Skarn's hunt ends for now; Perrin's faith proven or refused. |
-| **Costly victory** | As victory, but a PC is down or a civilian was caught by a Tempest the island did not stop. | A PC at 0 HP, or a civilian dead. | Same, with the loss carried. |
-| **Opposition wins** | Skarn takes the Spinner to [[talon-vantyrus]]. | The Spinner. | Countless holds a second Spinner; Crissdalynn's thread becomes getting it back. |
-| **Withdrawal / reframed** | Skarn is captured or killed. | Whatever it took. | Vantyrus loses his apprentice; the Rule of Two contest ends early. |
-
-**Survivors / loose ends.** Skarn, if he fled. The vine-lashes go back into the canopy when their minute ends. Perrin's mark lasts until dawn.
-
-**Hand off to Resolution.** When Skarn is gone or down, stop, and move to [[Session-12-06-the-way-out]].
-
-## Live notes
-
-- **Current pressure:** ☐ 1 ☐ 2 ☐ 3 ☐ 4
-- **Opposition status:**
-- **Objective status:**
-- **Changed terrain / assets:**
-- **Promises / consequences created in play:**
-- **Carry into Resolution:**
+![[commoner#Statblock]]

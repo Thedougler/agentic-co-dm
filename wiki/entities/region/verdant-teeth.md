@@ -53,7 +53,7 @@ The cluster loops by water and canopy routes, but every route has a different co
 
 ## Who is here
 - [[grung-clans]] — primary inhabitants, caste society, patrols, farms, fleet, and theology.
-- [[Auralis]] — public theocratic claim and private apex presence; exact nature UNKNOWN.
+- [[auralis|Auralis]] — public theocratic claim and private apex presence; exact nature UNKNOWN.
 - [[simone]] and her Sorn garrison; [[felix-aho]], [[ruma-delacroix]], [[solange-barret]], [[bazzoth]], [[vashu-the-weeping-veil]], and [[Ozzeth]] as named faces of varying certainty.
 - Beach traders, captives, and the 314+ taken fighting-age people move through the system without owning it.
 
@@ -66,7 +66,7 @@ The cluster loops by water and canopy routes, but every route has a different co
 Quiet → alert → contested → transformed. The fleet's water loss makes every approach more defensive. A broken beach rule closes a route; a captive witness opens a route but accelerates patrols; exposing gold farms risks caste fracture; losing a proa makes the remaining fleet more aggressive.
 
 ## Connections
-- [[grung-clans]] · [[Auralis]] · [[the-taken-314]] · [[pursue-the-grung-raiding-fleet]]
+- [[grung-clans]] · [[auralis|Auralis]] · [[the-taken-314]] · [[pursue-the-grung-raiding-fleet]]
 - [[aruhe]] · [[grung-and-the-making-of-aruhe]] · [[Warren]] · [[sparhold]]
 
 ## Secrets

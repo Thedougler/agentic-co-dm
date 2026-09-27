@@ -42,8 +42,8 @@ The Deep Works are the deepest Antheri tier, past 500 feet, between [[mid-works|
 ## If the party
 
 - **Descends.** The party enters the Deep Works past 500 feet, where water-breathing is insufficient: elemental water harms bodies, Constitution gives out, exhaustion accumulates, spells falter, and instruments lie. Resolve planar exposure as the active danger, not ordinary depth sickness.
-- **Searches the clean stone.** The party finds pale channels, black water, and a soul-pledge chamber that appears built for repeated use. Whether any minds besides [[Auralis]] remain active is unknown.
-- **Approaches [[Auralis]].** The Antheri machine cannot leave the trench floor and is losing ground while holding the fissure. The party can speak, investigate, assist, or interfere; the page does not establish which choice will succeed.
+- **Searches the clean stone.** The party finds pale channels, black water, and a soul-pledge chamber that appears built for repeated use. Whether any minds besides [[auralis|Auralis]] remain active is unknown.
+- **Approaches [[auralis|Auralis]].** The Antheri machine cannot leave the trench floor and is losing ground while holding the fissure. The party can speak, investigate, assist, or interfere; the page does not establish which choice will succeed.
 - **Takes the fissure route.** The party reaches the terminus where the fissure leaks the [[elemental-plane-of-water]]. This is planar exposure, not a safe passage.
 - **Retreats.** The party can return toward [[mid-works|Mid-Works]], but the page records no alternative exit or safe bypass.
 
@@ -51,7 +51,7 @@ The Deep Works are the deepest Antheri tier, past 500 feet, between [[mid-works|
 
 ## Who
 
-[[Auralis]] is the known active presence: an Antheri machine holding the fissure from the trench floor and losing ground. No other active minds are established. The chamber's apparent repeated-use design leaves open whether any additional minds remain, but that is unknown rather than an occupant to stage.
+[[auralis|Auralis]] is the known active presence: an Antheri machine holding the fissure from the trench floor and losing ground. No other active minds are established. The chamber's apparent repeated-use design leaves open whether any additional minds remain, but that is unknown rather than an occupant to stage.
 
 ---
 
@@ -79,4 +79,4 @@ The Deep Works are the deepest Antheri tier, past 500 feet, between [[mid-works|
 
 ## Why
 
-The party comes here to reach the deepest Antheri tier, investigate the soul-pledge chamber, understand or alter the fissure, or interact with [[Auralis]]. They stay because the clean stone, repeated-use chamber, and leaking elemental water hold answers unavailable in the salvaged upper tiers. They care because planar exposure is already harming bodies and the machine holding the fissure is losing ground. The site remains interesting without a fight: descent, evidence, route choice, rescue, interference, and retreat all change what the party can learn or survive.
+The party comes here to reach the deepest Antheri tier, investigate the soul-pledge chamber, understand or alter the fissure, or interact with [[auralis|Auralis]]. They stay because the clean stone, repeated-use chamber, and leaking elemental water hold answers unavailable in the salvaged upper tiers. They care because planar exposure is already harming bodies and the machine holding the fissure is losing ground. The site remains interesting without a fight: descent, evidence, route choice, rescue, interference, and retreat all change what the party can learn or survive.

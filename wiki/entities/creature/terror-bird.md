@@ -1,21 +1,17 @@
 ---
-title: Aruhe - Terror-Bird
+title: Terror-Bird
 aliases:
   - Aruhe - Terror-Bird
   - Terror-Birds
+  - Terror-Bird
 category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "house (wiki creature.terror-bird; living-stock 2026-09-05)"
   - "campaign-os:terror-birds.md"
-summary: CR 13 Blight-corrupted axebeak apex predator on Aruhe whose ground-shaking charge ends in a beak clamp and swallow.
-provenance:
-  extracted: 0.90
-  inferred: 0.08
-  ambiguous: 0.02
-tier: supporting
-created: 2026-09-12T05:40:07Z
-updated: 2026-09-18T06:59:22Z
+  - "Session 12 refile (2026-09-27)"
+created: 2026-09-12
+updated: 2026-09-27
 type: creature
 reveal: unrevealed
 campaign: shattered-sea
@@ -23,21 +19,34 @@ visibility: dm
 region: aruhe
 role: bruiser
 cr: 13
-relationships:
-  - target: "[[grasslands]]"
-    type: related_to
-  - target: "[[the-river]]"
-    type: related_to
-  - target: "[[crown-squid]]"
-    type: related_to
+invention: true
+summary: "A CR 13 flightless ambush bird on Aruhe that stands at a shaded rim like a mossy stump, charges in a straight line, and swallows one body whole."
 ---
-# Aruhe - Terror-Bird
+# Terror-Bird
 
-> [!narration] Narration
-> Taller than a horse, a black Terror-Bird tears through the jungle with ragged wings spread for balance. Moss clings to its feathers. A yellow eye, serrated beak, hooked talons, and teeth inside that beak identify the predator. Each talon is as long as a forearm. Dust jumps beneath each stride as it bears down the path. The ground shakes before it reaches you.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+A terror-bird does not want a fight. It wants one body, and it will charge across open ground to take it and carry it home to its rim.
+
+- **Habitat.** Shaded rims above open grass cuts around [[grasslands]], [[the-river]], and [[the-long-meadow]]. Each adult holds about a quarter mile of edge.
+- **Treasure.** None. Its rim holds bone scraps and sour, pressed-flat feeding circles.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Terror-Bird
+> A terror-bird is a flightless bird taller than a horse, black-feathered and draped in moss and ferns until it looks more like a stump than an animal. Its hooked beak is as long as a man's arm and lined inside with rows of teeth. Scaled grey legs end in talons as long as a forearm, and ragged wings hang half-open at its sides. It stands at the edge of the trees for hours, still as a trunk, with one yellow eye open.
+```
+````
 
 ## Statblock
 
+![[attachments/shattered-sea/creatures/terror-bird-of-aruhe-v4.jpg|Terror-Bird overview]]
 ```statblock
 layout: Basic 5e Layout
 name: "Terror-Bird"
@@ -50,44 +59,50 @@ hit_dice: "16d12 + 96"
 speed: "60 ft."
 stats: [24, 14, 22, 3, 16, 8]
 saves:
-  - Con: +10
-  - Wis: +7
+  - constitution: 10
+  - wisdom: 7
 skillsaves:
-  - Perception: +7
-  - Stealth: +6
-senses: "passive Perception 17"
+  - perception: 7
+  - stealth: 6
+senses: "Passive Perception 17"
 languages: "—"
 cr: 13
 traits:
   - name: "Tremor Stride"
-    desc: "Any creature within 30 feet of the terror-bird that is touching the ground can feel it approaching. The terror-bird cannot surprise creatures that have tremorsense or that are touching the ground."
-  - name: "Blight-Grown"
-    desc: "Moss and vegetation grow directly from the terror-bird's feathers. The terror-bird has advantage on Dexterity (Stealth) checks made in forested or jungle terrain."
+    desc: "Any creature within 30 feet of the terror-bird that is touching the ground feels it coming. The terror-bird can't surprise a creature that is touching the ground or has Tremorsense."
+  - name: "Moss-Grown"
+    desc: "The terror-bird has Advantage on Dexterity (Stealth) checks made in forest or jungle, where it passes for a mossy stump."
+  - name: "Straight Charge"
+    desc: "When the terror-bird moves at least 20 feet toward a target on its turn, it moves in a straight line and can't turn more than 45 degrees. It will not move into grass taller than itself, into deep water, or through a stand of razer-grass, and its turn ends at the edge of any of them."
+  - name: "Gag"
+    desc: "If the terror-bird takes 25 damage or more on a single turn from a creature inside it, or 40 damage or more on a single turn from outside it, it makes a DC 18 Constitution saving throw at the end of that turn. Failure: it regurgitates each swallowed creature, which lands in an unoccupied space within 10 feet with the Prone condition."
 actions:
   - name: "Multiattack"
-    desc: "The terror-bird makes two attacks: one with its Serrated Beak and one with its Talon Rake."
+    desc: "The terror-bird makes one Serrated Beak attack and one Talon Rake attack."
   - name: "Serrated Beak"
-    desc: "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 7) piercing damage, and the target is grappled (escape DC 18). Until this grapple ends, the target is restrained, and the terror-bird can't use its Serrated Beak on another target."
+    desc: "Melee Attack Roll: +12, reach 10 ft. Hit: 22 (3d10 + 7) Piercing damage, and the target has the Grappled condition (escape DC 18). Until the grapple ends, the target has the Restrained condition and the terror-bird can't use Serrated Beak on another target. The grapple ends if the terror-bird takes 20 damage or more on a single turn."
   - name: "Talon Rake"
-    desc: "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (3d6 + 7) slashing damage."
+    desc: "Melee Attack Roll: +12, reach 10 ft. Hit: 17 (3d6 + 7) Slashing damage."
   - name: "Swallow"
-    desc: "The terror-bird makes one Serrated Beak attack against a Medium or smaller creature it is grappling. If the attack hits, the target is swallowed, and the grapple ends. The swallowed creature is Blinded and Restrained, has total cover against attacks and other effects outside the terror-bird, and takes 14 (4d6) acid damage at the start of each of the terror-bird's turns. If the terror-bird takes 25 damage or more on a single turn from a creature inside it, it must succeed on a DC 18 Constitution saving throw at the end of that turn or regurgitate the creature, which falls Prone within 10 feet. If the terror-bird dies, a swallowed creature is no longer Restrained and can escape from the corpse."
+    desc: "The terror-bird makes one Serrated Beak attack against a Medium or smaller creature it is grappling. Hit: the target is swallowed and the grapple ends. A swallowed creature has the Blinded and Restrained conditions, has Total Cover against attacks and effects from outside, and takes 14 (4d6) Acid damage at the start of each of the terror-bird's turns. If the terror-bird dies, a swallowed creature can escape the corpse using 5 feet of movement, exiting Prone."
 ```
-
-## Behavior
-
-
-- **Habitat.** Terror-Birds occupy shaded rims, grass cuts, and hard-running lanes around [[grasslands|the Grasslands]] and [[the-river|the River]]. Each adult claims about a quarter-mile of edge territory where open ground gives it room for one committed charge. It ranges from the Rot toward the Hunger in the deep interior and appears on the approach to the central grove.
-- **Behavior.** A still Terror-Bird reads as a mossed trunk with one yellow eye until it chooses to move. It does not fly. Its ragged wings provide balance and threat display around the charge.
-- **Diet.** It runs down exposed prey and swallows smaller bodies whole. Feeding leaves flattened digest-circles, bone, and sour bolus. Its hunger remains animal rather than commanded by the Blight gardens. ^[inferred]
-- **Social Structure.** It is solitary. Each bird claims a quarter-mile territory and avoids other large Aruhe predators by instinct. [[bear-elk|Bear-Elk]] routes get room, while [[crown-squid|crown squid]] and [[bloodhawk|bloodhawks]] take a Terror-Bird only when terrain gives them a cleaner angle.
-- **Blight Growth.** Moss and vegetation have grown through its feathers for decades. The island is reclaiming the bird as it reclaimed the terraces, and the bird does not notice or resist it. ^[inferred]
 
 ## Tactics
 
+- **Opening.** It waits at its rim until prey steps into the open, then charges the nearest body in the open, up to 60 feet, and uses Multiattack.
+- **Signature.** The charge. Its tell is the ground shaking underfoot before the bird is seen, and a stump at the rim unfolding its legs. Answers: get into tall grass, deep water, or razer-grass; step aside or strike it from beside its line so it overruns its target; or hit it for 20 damage in one turn to open the beak.
+- **Adapts.** If its target reaches cover it will not enter, it stops at the edge, rakes the nearest creature still in the open, and charges again on its next turn.
+- **Weaknesses.** It cannot turn sharply, and it will not follow prey into grass taller than itself, deep water, or razer-grass.
+- **Morale.** Once it has swallowed one creature, it turns and runs to its rim and stands still to digest. It backs off to its rim without prey once it has 140 hit points or fewer.
 
-- **Signs.** A yellow eye inside mossed black feathers, trunk-like stillness at a shaded rim, dust hopping on the path, tremors underfoot, talon prints deeper than a person's hand, and a sour feeding circle pressed flat in the grass.
-- **Instincts.** It waits as cover. When prey breaks into the open, the ground-shake gives away its charge. It commits to one straight rush. Eight-foot grass, deep water, or a white [[razer-grass|razer-grass]] stand ends the hunt.
-- **Tactics.** It opens with a visible charge and closes fast. It clamps with Serrated Beak and rakes anything nearby. When it isolates one body, it uses Swallow on a Medium or smaller grappled target.
-- **Weaknesses.** Its strength is commitment, not turning. It is bad at sharp changes of direction, dense grass, deep water, razer-grass barriers, and prey that refuses the open lane it wants.
-- **Aftermath.** An encounter leaves torn moss, claw furrows, churned dust, crushed grass, sour bolus, bone scraps, and a lane through the jungle where smaller creatures no longer approach.
+> [!narration] In action
+> The ground jumps under your boots a heartbeat before the stump at the rim stands up on two scaled legs. It comes straight at you, head low, wings stiff, every stride thudding up through the soles of your feet.
+
+## Behavior
+
+- **Habits.** It stands at a shaded rim for hours, still as a trunk, with one yellow eye open on the open ground. It does not fly. Its ragged wings keep its balance in the charge and spread wide in threat.
+- **Diet.** It runs down whatever crosses the open and swallows smaller bodies whole. It digests standing at its rim.
+- **Group.** Solitary. Two adults' territories can meet at one stretch of open ground, and each hunts only its own half. It gives [[bear-elk]] room, and [[crown-squid]] and [[bloodhawk]]s take a terror-bird only when the ground favors them.
+- **Body.** Moss and ferns grow straight out of its feathers, and it has carried them for decades without noticing.
+- **Signs.** Dust hopping on the path, tremors underfoot, talon prints deeper than a hand, and flattened sour feeding circles with bone in them.
+- **Aftermath.** Torn moss, claw furrows, churned dust, crushed grass, sour bolus, and a lane through the grass that smaller animals stop using.

@@ -1,47 +1,32 @@
 ---
-title: Aruhe - Razer-Grass
+title: Razer-Grass
 aliases:
   - Aruhe - Razer-Grass
+  - Razer-Grass
 category: entities
 tags: [shattered-sea, aruhe, item]
 sources:
   - "house (wiki hazard.razer-grass)"
-summary: Pale glass-edged grass that cuts movers. It explodes when shattered and fills the air with choking mineral dust.
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-13
+  - "Session 12 refile (2026-09-27)"
+created: 2026-09-12
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
-region: aruhe
 kind: flora hazard
-relationships:
-  - target: "[[old-gardens]]"
-    type: related_to
-  - target: "[[Deer-Stalker]]"
-    type: related_to
-  - target: "[[Wolfrabbit]]"
-    type: related_to
+region: aruhe
+summary: "Pale glass-edged grass that cuts anyone moving through it and explodes into slashing shards and choking dust when shattered."
 ---
-# Aruhe - Razer-Grass
+# Razer-Grass
 
 ![[attachments/shattered-sea/hazards/aruhe-razer-grass.jpg|Razer-Grass stand]]
 
-> [!narration] Narration
-> A stand of pale white grass grows in a hard patch among the green blades, each stalk broad and clear-edged like thin glass. Sunlight catches on fixed points along the leaves, bright enough that from farther off the patch could pass for dew or frost. The path bends around the stand, and old reddish smears mark a few lower stalks. The white blades tick against each other with a small glass sound.
+> [!narration] Razer-Grass
+> A stand of razer-grass is a knee-high patch of white blades as broad as knife blades and as clear as thin glass, growing hard among the gold meadow grass. Bright points of light sit fixed along the blades and do not move when the wind does, so from a bowshot off the patch looks frosted. The blades tick against each other with a small glass sound, and old red smears stain the lowest stalks where the path bends around them.
 
-## Hazard
+*Flora hazard, found in [[old-gardens]] and [[the-long-meadow]]*
 
-- **Trigger.** A creature touches, enters, or violently disturbs a stand.
-- **Notice.** Make **Wisdom (Perception) — `DC 14`** or **Wisdom (Survival) — `DC 14`**. Success recognizes the fixed glitter, glassy tinkle, old blood, and trails bending around it. Beyond `30 feet`, it resembles frost or dew.
-- **Contact.** Moving through intact Razer-Grass deals `1d4` slashing damage per 5 feet and counts as Difficult Terrain.
-- **Careful Passage.** Spend an Action to move up to 5 feet through it without taking damage.
-- **Counterplay.** Avoid the stand or move through carefully. Push intact stalks aside without breaking them, cover the mouth and nose before disturbing the grass, or avoid placing weight on the stand.
-- **Shatter.** Dashing, falling, being shoved, smashing, or burning the stand causes it to explode. Each creature caught in the blast makes a DC 14 Dexterity saving throw, taking `2d6` slashing damage on a failure or half as much on a success.
-- **Mineral Dust.** Breathing the glittering dust forces a DC 14 Constitution saving throw. A failed save applies Glass-Choked to the creature until a Short or Long Rest: the condition reduces its Speed by 10 feet and imposes Disadvantage on Constitution saving throws against environmental hazards.
-- **Noise.** A shattered stand produces a loud crystalline crash. Nearby predators may investigate because they associate the sound with injured or dead prey.
+**Trigger.** A creature enters a stand, touches a blade, or disturbs the stand violently.
+**Effect.** Moving through intact razer-grass is Difficult Terrain and deals `1d4` slashing damage for every 5 feet moved. Dashing, falling, or being shoved into a stand, or smashing or burning it, shatters it: each creature within 10 feet makes a **Dexterity** saving throw `DC 14`, taking `2d6` slashing damage on a failure or half as much on a success. Each creature that breathes the glittering dust makes a **Constitution** saving throw `DC 14`. On a failure it is Glass-Choked until it finishes a Short or Long Rest: its Speed drops by 10 feet, and it has Disadvantage on Constitution saving throws against environmental hazards. The crash of a shattering stand carries a quarter mile, and nearby predators come to it, because the sound means hurt prey.
+**Countermeasures.** **Wisdom (Perception)** or **Wisdom (Survival)** `DC 14` recognizes a stand by its fixed glitter, glass sound, old blood, and the trails that bend around it; past 30 feet it passes for frost or dew. A creature that spends its action moves 5 feet through a stand without damage. Parting stalks without breaking them, covering mouth and nose, and keeping weight off the stand prevent the shatter and the dust. Charging animals, [[terror-bird]]s among them, will not run through a stand.

@@ -28,7 +28,7 @@ relationships:
     type: related_to
   - target: "[[drowned-maw]]"
     type: related_to
-  - target: "[[Auralis]]"
+  - target: "[[auralis|Auralis]]"
     type: related_to
 ---
 # Antheri
@@ -89,13 +89,13 @@ flexGrow=1
 
 **Why.** The breach may explain current Maw pressure. It may also explain the tribute system and the [[pearl-signal-across-the-boundary]] signal.
 
-The next move follows the evidence from [[Shelfworks]] through [[mid-works]] toward [[deep-works]], then compares it with [[Auralis]] and the fissure it contains.
+The next move follows the evidence from [[Shelfworks]] through [[mid-works]] toward [[deep-works]], then compares it with [[auralis|Auralis]] and the fissure it contains.
 
 **Needs.** The agenda needs access to all three tiers and a safe descent. Records or components must remain intact for comparison.
 
 **Opposition.** Maw pressure and competing salvage interests at [[Shelfworks]] complicate the descent.
 
-**Next signal.** An Antheri component can signal progress. So can a change in the [[pearl-of-souls]] signal or evidence that [[Auralis]] is losing ground at the fissure.
+**Next signal.** An Antheri component can signal progress. So can a change in the [[pearl-of-souls]] signal or evidence that [[auralis|Auralis]] is losing ground at the fissure.
 
 **Player opening.** The party can investigate, salvage, preserve, expose, or conceal the evidence.
 
@@ -110,13 +110,13 @@ The next move follows the evidence from [[Shelfworks]] through [[mid-works]] tow
 | [[Shelfworks]] | Access / Information | Above [[drowned-maw]] | Salvage, records, and descent | Contested |
 | [[mid-works]] | Access / Information | 200 to 500 feet below [[Shelfworks]] | A second-tier route and soul-pledge evidence | Sealed |
 | [[deep-works]] | Information / Magic | Below 500 feet | The fissure terminus and soul-pledge chamber | Planar exposure |
-| [[Auralis]] | Machine | Trench floor | Contains the fissure | Losing ground |
+| [[auralis|Auralis]] | Machine | Trench floor | Contains the fissure | Losing ground |
 
 ---
 
 ## People & Structure
 
-The Antheri were builders rather than a presently organized people. No living leader is known. Their surviving structure is the three-tier descent from [[Shelfworks]] through [[mid-works]] to [[deep-works]]. Their architecture indicates that soul-pledge could bind minds into artificial frames. The surviving record leaves open whether any minds besides [[Auralis]] remain active.
+The Antheri were builders rather than a presently organized people. No living leader is known. Their surviving structure is the three-tier descent from [[Shelfworks]] through [[mid-works]] to [[deep-works]]. Their architecture indicates that soul-pledge could bind minds into artificial frames. The surviving record leaves open whether any minds besides [[auralis|Auralis]] remain active.
 ### Chain of Action
 
 **Who decides.** No living Antheri leader is known, so no current decision-maker issues orders.
@@ -144,7 +144,7 @@ The Antheri were builders rather than a presently organized people. No living le
 
 ## Connections
 
-- The Antheri machine [[Auralis]] contains the fissure, and the Antheri record does not confirm that Auralis is a sea-god.
+- The Antheri machine [[auralis|Auralis]] contains the fissure, and the Antheri record does not confirm that Auralis is a sea-god.
 - [[drowned-maw]] is the environment that preserves, threatens, and gives current stakes to the Antheri remains.
 - [[waveservants]] and [[sentinels-of-the-eyrie]] each have a stake in what the Maw means.
 - [[pearl-of-souls]] and [[pearl-signal-across-the-boundary]] may show the breach's present consequences.

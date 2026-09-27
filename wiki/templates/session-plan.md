@@ -35,7 +35,31 @@ summary: ""
 | 04 | [[Session-{{session}}-04-label]] | Climax |  |  |  |
 | 05 | [[Session-{{session}}-05-label]] | Resolution | The climax resolves |  |  |
 
-<!-- Optional under Beats, each as a `###` table only when it exists: Floating Beats (bring in when… / drop when…), Climax Candidates, Branches (if the party… then surface…), Critical Routes (a conclusion and its three independent routes). -->
+<!-- Optional under Beats: keep each `###` table only when it exists. -->
+
+### Floating Beats
+
+| Beat | Bring in when | Drop when |
+| ---- | ------------- | --------- |
+|      |               |           |
+
+### Climax Candidates
+
+| Candidate | Earned when | What it settles |
+| --------- | ----------- | --------------- |
+| [[beat]]  |             |                 |
+
+### Branches
+
+| Beat | If the party… | Then |
+| ---- | ------------- | ---- |
+| [[beat]] |           |      |
+
+### Critical Routes
+
+| Conclusion | Route 1 | Route 2 | Route 3 |
+| ---------- | ------- | ------- | ------- |
+|            |         |         |         |
 
 ## Threads
 

@@ -10,9 +10,10 @@ sources:
   - "wiki/_archive/perrin-black-jaw.md"
   - "wiki/_archive/combat-profile/perrin-black-jaw-combat-profile.md"
   - "wiki/_archive/perrin-black-jaw.png"
-summary: Warlock 2 / Lore Bard 3 who baited Aruhe hunts with illusions and took Tasha's laughter from a lesser black lotus.
+  - "Session 12 refile (2026-09-27)"
+summary: "Warlock 2 / Lore Bard 3 rattkin, the party's voice and force multiplier, bound without knowing it to Auralis, the deep machine beneath the Drowned Maw."
 created: 2026-09-12
-updated: 2026-09-16
+updated: 2026-09-27
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -28,188 +29,81 @@ pp: 13
 senses: "blindsight 5 ft.; passive Perception 13"
 speed: "30 ft.; swim equal to walk"
 foundry_id: J9CeWsMCOahlafjx
+token: ""
 ---
 # Perrin Black-Jaw
 
-> [!narration] Narration
-> A three-foot fancy-rat Rattkin with a black head, white body, and a long pink tail. Shortest on the crew, he still fills a room with volume, charm, and nerve.
+![[attachments/shattered-sea/character-references/perrin-black-jaw-reference.png|Perrin Black-Jaw character reference sheet]]
 
-## At a Glance
+> [!narration] Perrin Black-Jaw
+> Perrin is a rattkin three feet tall, a fancy rat with a black head, a white body, warm brown ears, large dark eyes, and a long pink tail. He wears an olive-green hooded cloak over an off-white tunic and dark trousers, with a brown leather harness, a sword at his hip, and a round shield marked with a dark emblem. His whiskers never stop moving. He is the shortest of the crew and still fills a room with volume, charm, and nerve.
 
-| **Role**          | PC |
-| ----------------- | -- |
-| **Class / Level** | Warlock 2 / Bard 3 (College of Lore) |
-| **Player**        | Kaden |
-| **Home ship**     | [[uncertainty]] |
+*Warlock 2 / Bard 3 (College of Lore), played by Kaden, crew of the [[uncertainty]]*
 
-> **DM thesis:** Party force multiplier through Bardic Inspiration and control magic. Reads exits first. Owes [[nona-black-jaw]] an Aruhe survey while the chase toward [[Vestra]] stays partly unshared.
-
-## Connections
-
-- [[nona-black-jaw]] — Grandmother, sending-stone contact, owed a survey of Aruhe as a tangle anchor.
-- [[rattkin-runs-and-black-jaw-run]] · [[passage]] — Family and rescue network.
-- [[Vestra]] — Unshared chase; family heirloom ship lost deep below.
-- [[uncertainty]] — Aboard at [[aruhe]].
-- [[crissdalynn-khinriss]] — She blocked him before he killed Ket.
-- [[delmar-fisk]] — Passed flying boots to Delmar; backs him in spars with Healing Word.
+**Playstyle.** He leads with charm and volume, in the gangster cadence he kept from his grandfather Vincenzo. He finds the nearest exit first, not to run, only to know it exists. At the table he is the party's force multiplier through Bardic Inspiration and control magic.
 
 ## Sheet
 
-Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `J9CeWsMCOahlafjx`. Shattered Sea Rattkin Warlock 2 / Bard 3 (College of Lore). Proficiency Bonus +3. Hit Point Die d8 on both classes. Current HP **49/49**. Size Small.
+**AC** `19` · **HP** `49` · **Initiative** `+4` · **Passive Perception** `13` · **Speed** 30 ft., swim 30 ft.
 
-| Ability | Score | Mod | Save |
-| ------- | ----- | --- | ---- |
-| STR     | 6     | -2  | -2   |
-| DEX     | 18    | +4  | +7   |
-| CON     | 15    | +2  | +2   |
-| INT     | 11    | +0  | +0   |
-| WIS     | 11    | +0  | +3   |
-| CHA     | 20    | +5  | +8   |
+| STR | DEX | CON | INT | WIS | CHA |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 6 (−2) | 18 (+4) | 15 (+2) | 11 (+0) | 11 (+0) | 20 (+5) |
 
-**Skills.** Acrobatics +10 (expertise), Arcana +3 (proficient), History +3 (proficient), Insight +3 (proficient), Investigation +3 (proficient), Perception +3 (proficient), Persuasion +11 (expertise), Stealth +7 (proficient). Jack of All Trades (+1) on the rest: Animal Handling +1, Athletics -1, Deception +6, Intimidation +6, Medicine +1, Nature +1, Performance +6, Religion +1, Sleight of Hand +5, Survival +1. Saves: Dexterity and Charisma from Bard, Wisdom and Charisma from Warlock. Cloak of Protection adds +1 to saves while worn. Background text lists Deception, Sleight of Hand, War Caster, Skittercant, and Aquan; Foundry skill numbers do not show Deception or Sleight of Hand as full proficiency.
-
-| Combat skim | Value |
-| ----------- | ----- |
-| AC          | 19 (Cloak of Protection +1; active effect AC Override 18; shield unequipped) |
-| HP max      | 49 |
-| Init        | +4 |
-| PP          | 13 |
-| Speed       | 30 ft. Swim equal to walk (Swimmer). Boneless: treat spaces as Tiny, Speed halved while doing so. |
-
-Spell save DC 16. Spell attack +8. Charisma casting.
+- **Saves.** Str −2, Dex +7, Con +2, Int +0, Wis +3, Cha +8, and +1 to all saves from the Cloak of Protection.
+- **Skills.** Acrobatics +10, Persuasion +11, Stealth +7, Arcana +3, History +3, Insight +3, Investigation +3, Perception +3. Jack of All Trades on the rest: Deception +6, Intimidation +6, Performance +6, Sleight of Hand +5, Athletics −1, the others +1.
+- **Size and senses.** Small. Blindsight 5 ft. from his whiskers: it finds an Invisible creature within 5 feet when nothing solid is between them, and does not see through Total Cover.
+- **AC.** Studded leather with Cloak of Protection +1; his shield is unequipped.
+- **Languages.** Skittercant and Aquan among them.
 
 ## Combat Profile
 
-### Fast Read
+- **Fast read.** Support and control caster with a Pact Blade. AC 19, HP 49. Bardic Inspiration is the party's multiplier.
+- **Hard counters.** Grapples and shoves against his Strength −2, and focus fire that takes the Inspiration away.
+- **Soft counters.** Ranged focus fire, Wisdom saves, and area damage.
+- **Depends on.** Allies within 60 ft. for Inspiration and Cutting Words, and ally sources of Advantage for his own damage.
 
-Support and control caster with a Pact Blade option — Bardic Inspiration is the party multiplier · AC 19 · HP 49 · Achilles heel is a fragile frame (Strength -2) and focus fire on him or the drum.
+## Features
 
-For Session 12, this close-range sense is the reliable counter to [[talon-skarn]]'s invisibility: Perrin must stay within 5 feet of [[crissdalynn-khinriss|Crissdalynn]] to detect Skarn before he reaches the [[fate-spinner]].
-
-This is a narrow table rule, not a replacement for Perception at range or a way to see through the island's cover.
-
-### Counters & Synergy
-
-- **Hard counters.** Wrestling and shove lines against Strength -2; focus fire that removes the Inspiration multiplier.
-- **Soft counters.** Ranged focus; middling Wisdom saves; area damage with no Evasion.
-- **Amplifies / Depends on.** Allies within 60 ft for Bardic Inspiration and Cutting Words. Ally advantage sources such as Faerie Fire for his own nova line.
-
-## Abilities
-
-### Traits
-
-| Trait | Effect |
-| ----- | ------ |
-| Scurry | Disengage lets him move through Large or smaller occupied spaces without Opportunity Attacks from those creatures. |
-| Pack Tactics | When a creature he can see within 5 ft is hit by another creature, Reaction one weapon attack, Proficiency Bonus times per Short or Long Rest. |
-| Survivor | Advantage on saves against poisoned and disease; Resistance to Poison. |
-| Boneless | Move through Tiny spaces at half Speed; Advantage to escape Grapple or restrained. |
-| Whisker Blindsense | Perrin has Blindsight out to 5 feet. This sense does not see through Total Cover and cannot perceive beyond 5 feet. It can detect an Invisible creature within that range if there is an unobstructed path between them. |
-| Rattkin Variety (Swimmer) | Swim speed equal to walk. |
-
-### Features
-
-| Feature | Source | Effect | Uses | Recovery |
-| ------- | ------ | ------ | ---- | -------- |
-| Pact of the Blade | Warlock | Bonus Action conjure or bond a melee weapon; Charisma for attack and damage; can deal Necrotic, Psychic, or Radiant. | — | — |
-| Pact Magic / Magical Cunning | Warlock | Two 1st-level pact slots. One-minute rite regains half the maximum pact slots, once per Long Rest. | 2 pact slots | Short Rest (slots); Magical Cunning 1/Long Rest |
-| Bardic Inspiration | Bard | d6, Charisma-modifier times (5) per Long Rest. Bonus Action, 60 ft. | 5 | Long Rest |
-| Cutting Words | College of Lore | Reaction spends Bardic Inspiration to subtract the die from a damage roll or a successful check or attack within 60 ft. | shares Inspiration | — |
-| Jack of All Trades | Bard | Half Proficiency Bonus on untrained skill checks. | — | — |
-
-### Actions
-
-| Action | To-Hit / DC | Damage / Effect | Uses | Notes |
-| ------ | ----------- | --------------- | ---- | ----- |
-| Longsword (Sap) | Charisma (Pact) | Melee | — | Equipped |
-| Eldritch Blast / cantrips | +8 | See Spells | — | — |
-
-### Bonus Actions
-
-| Bonus Action | Trigger / Cost | Effect | Uses | Recovery |
-| ------------ | -------------- | ------ | ---- | -------- |
-| Bardic Inspiration | — | Grant d6 within 60 ft | 5 | Long Rest |
-| Pact of the Blade | — | Conjure or bond melee weapon | — | — |
-| Healing Word | Spell slot | Healing | slots | — |
-
-### Reactions
-
-| Reaction | Trigger | Effect | Uses | Recovery |
-| -------- | ------- | ------ | ---- | -------- |
-| Cutting Words | Damage roll or successful check/attack within 60 ft | Subtract Bardic Inspiration die | shares Inspiration | — |
-| Pack Tactics | Ally hit on a creature within 5 ft | One weapon attack | PB / Short or Long Rest | Short or Long Rest |
+- **Action.** Longsword (Sap) as his pact weapon, using Charisma for attack and damage, and dealing Necrotic, Psychic, or Radiant if he chooses. *Eldritch Blast* `+8`.
+- **Bonus Action.** Bardic Inspiration — a d6 to a creature within 60 ft., 5 times per Long Rest.
+- **Bonus Action.** Pact of the Blade — conjure or bond his melee weapon.
+- **Bonus Action.** *Healing Word*.
+- **Reaction.** Cutting Words — spend a Bardic Inspiration die to subtract it from a damage roll, a successful check, or a successful attack within 60 ft.
+- **Reaction.** Pack Tactics — when a creature he can see within 5 ft. is hit by another creature, he makes one weapon attack, 3 times per Short or Long Rest.
+- **Passive.** Scurry — when he Disengages, he can move through the spaces of Large or smaller creatures without their Opportunity Attacks.
+- **Passive.** Boneless — he can squeeze through Tiny spaces at half Speed, and has Advantage to escape a grapple or restraint.
+- **Passive.** Survivor — Advantage on saves against poison and disease, and Resistance to Poison damage.
+- **Passive.** Magical Cunning — a one-minute rite regains half his pact slots, once per Long Rest.
 
 ## Spells
 
-### Spellcasting
+**Spellcasting.** Charisma · save `DC 16` · attack `+8` · Bard slots 1st ◻◻◻◻ 2nd ◻◻ · Pact slots (1st) ◻◻, regained on a Short Rest
 
-Charisma. Save DC 16. Attack +8. Bard slots L1 4/4, L2 2/2. Pact Magic 2/2 (Warlock 2, 1st-level slots, regain on Short Rest). All listed as always prepared on the Foundry sheet.
-
-### Cantrips
-
-| Cantrip | Notes |
-| ------- | ----- |
-| Eldritch Blast | — |
-| Green-Flame Blade | — |
-| Mage Hand | — |
-| Minor Illusion | — |
-
-### Prepared
-
-| Spell | Level | Notes |
-| ----- | ----- | ----- |
-| Armor of Agathys | 1 | — |
-| Cure Wounds | 1 | — |
-| Healing Word | 1 | — |
-| Hex | 1 | — |
-| Protection from Evil and Good | 1 | — |
-| Silent Image | 1 | — |
-| Tasha's Hideous Laughter | 1 | — |
-| Invisibility | 2 | — |
-| Mirror Image | 2 | — |
-
-### Slots
-
-| Level | Slots |
-| ----- | ----- |
-| 1st (Bard) | 4 |
-| 2nd (Bard) | 2 |
-| Pact (1st) | 2 (Short Rest) |
+- **Cantrips.** *Eldritch Blast*, *Green-Flame Blade*, *Mage Hand*, *Minor Illusion*.
+- **1st level.** *Armor of Agathys*, *Cure Wounds*, *Healing Word*, *Hex*, *Protection from Evil and Good*, *Silent Image*, *Tasha's Hideous Laughter*.
+- **2nd level.** *Invisibility*, *Mirror Image*.
 
 ## Inventory
 
-### Attuned
+- **Attuned.** Cloak of Protection — +1 AC and saves.
+- **Carried.** Studded leather, Longsword (Sap), shield (unequipped), 2 daggers (Nick), backpack.
+- **Stowed.** A book, a drum, an orb, 10 flasks of oil, 10 sheets of parchment, a tinderbox, a lamp, an ink pen, and ink.
 
-| Item | Notes |
-| ---- | ----- |
-| Cloak of Protection | Equipped; +1 AC and saves |
+## History
 
-### Carried
+- **[[auralis|Auralis]].** His warlock patron, though he does not know what it is. Auralis kept him alive when the [[Vestra]] went down, and Perrin credits his cloak. It has spoken to him three times: "Grow," "Not yet," and, at the Pantry in Session 12, "CONSUME."
+- **[[nona-black-jaw]].** His grandmother, reached by [[sending-stone-nonas|sending stone]]. He owes her a survey of Aruhe.
+- **[[rattkin-runs-and-black-jaw-run]] and [[passage]].** His family and its rescue network.
+- **[[Vestra]].** The family ship lost deep below the Drowned Maw. He is chasing it and has not told the whole crew.
+- **[[delmar-fisk]].** He passed Delmar the flying boots, and backs him in spars with *Healing Word*.
+- **[[crissdalynn-khinriss]].** She stopped him before he killed Ket.
 
-| Item | Qty | Notes |
-| ---- | --- | ----- |
-| Studded leather | 1 | Equipped |
-| Longsword (Sap) | 1 | Equipped |
-| Shield | 1 | Unequipped |
-| Daggers (Nick) | 2 | Unequipped |
-| Backpack | 1 | Equipped |
-| Book, drum, orb, oil, parchment, tinderbox, lamp, ink pen, ink | — | Oil 10, parchment 10 |
+## Log
 
-## Session Log
-
-| Session | Encounter | Note |
-| ------- | --------- | ---- |
-| 01 | Saltwright boarding | Minor Illusion on the hold doorway; resisted Grung toxin gas. |
-| 04 | Kyzil spar / sewers | Healing Word and Inspiration support; invisible sewer scout with Jean Claude; warned Nona. |
-| 06 | Primary Chamber | Dropped to 0 HP; patron voice on the stabilizing death save; came back Bard 3 / Warlock 2. |
-| 11 | Aruhe inland | Illusion bait on bloodhawks and wolfrabbits. Mage Handed the lesser black lotus into the river; it hit him with Tasha's Hideous Laughter. Middle watch with Matteo. |
-
-## Voice
-
-Leads through charm and volume. Finds the nearest exit first — not to run, only to confirm it exists. Prohibition-era gangster cadence kept from grandfather Vincenzo, decorative and distinct.
-
-## Art
-
-![[attachments/shattered-sea/character-references/perrin-black-jaw-reference.png|Perrin Black-Jaw character reference sheet]]
-
-The supplied reference sheet fixes Perrin as a small black-and-white ratkin with warm brown ears, large dark eyes, and a long pink tail. He wears an olive-green hooded cloak over an off-white tunic and dark trousers, with a brown leather harness, belt, backpack, sword, and round shield marked by a dark central emblem. His compact silhouette is quick and expressive; the sheet shows him talking, inspecting the shield, and moving with it ready.
+- **Session 01** — Hid the hold doorway with *Minor Illusion* and shrugged off Grung toxin gas.
+- **Session 03** — Heard his patron for the first time, in an abyss vision: "Grow."
+- **Session 04** — Kept Kyzil's spar going with *Healing Word* and Inspiration, scouted the sewers invisible with Jean-Claude, and warned Nona.
+- **Session 06** — Dropped to 0 HP. His patron answered his stabilizing death save with one word, "Not yet." He came back as Bard 3 / Warlock 2.
+- **Session 08** — Saw the glowing whale on the crossing toward Calveno.
+- **[[Session-11-Recap]]** — Drew the Aruhe hunts off the party with bird calls and an enormous fat illusion of himself. Lifted a black flower over the river with *Mage Hand*, and it left him laughing helplessly until it drifted away. Stood the middle watch with Matteo.

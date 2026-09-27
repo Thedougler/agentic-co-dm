@@ -7,49 +7,59 @@ tags: [shattered-sea, item]
 sources:
   - "campaign-os:solanges-authority-seal.md"
   - "DM statement 2026-09-24 (Session 12 planning)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-13
-updated: 2026-09-24
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: magic
 rarity: rare
-attunement: false
 region: "[[calven-and-calveno]]"
+attunement: false
 owner: "[[jean-claude-tabarnack]]"
-summary: "An unused Grung authority seal that binds one Grung's will forever. Jean-Claude took it from Solange Barret."
-provenance:
-  extracted: 0.85
-  inferred: 0.10
-  ambiguous: 0.05
-tier: supporting
 invention: true
+summary: "An unused Grung authority seal that compels one Grung's will forever; Jean-Claude took it from Solange Barret and carries it in his pack."
 ---
 # Solange's Authority Seal
 
-> [!narration] Narration
-> A gold seal the size of a palm, heavier than gold should be. The script cut into its face is whole and unbroken, sharp-edged where the seals on Aruhe's dead are torn.
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
 
-*Wondrous item, rare, single use.*
+*Wondrous item, rare (single use)*
 
-This is a [[grung-authority-seal]] that has never been applied. It is whole and ready.
+Jean-Claude carries a way to take one Grung's will for the rest of their life.
 
-**Apply the seal.** As an action, press the seal against a [[Grung]] within 5 feet that is Grappled, Restrained, Incapacitated, or willing, and speak one order of up to twenty-five words. There is no saving throw. The seal fuses to the target's skin as a gold disc, and the order permanently replaces the target's will, much like a permanent *modify memory*. The bearer believes the order is their own original, core conviction. They argue for it in their own words and pursue it with all their ordinary wit for the rest of their life. Only the bearer's death ends it: the seal then goes inert. The seal has no effect on a creature that is not a Grung, and it is spent once applied.
+- **Held by.** [[jean-claude-tabarnack]], in his pack. He knows what it is and what it does.
+- **Wanted by.** No one knows he has it. Nothing on Aruhe can see it while it stays in the pack, [[hinewai]] included.
+```
 
-The Gold caste made these seals to force Grung onto [[aruhe]], an island every Grung is taught from birth to avoid. This seal was never used for that.
+```col-md
+flexGrow=1
+===
+> [!narration] Solange's Authority Seal
+> Solange's seal is a gold disc the size of a palm and heavier than gold has any right to be. Curling script covers its face, every stroke whole and sharp-edged. Its back is smooth and faintly warm, as if it had just been lifted from skin.
+```
+````
+
+## Properties
+
+**Apply the seal.** As an action, the holder presses the seal against a [[Grung]] within 5 feet that is Grappled, Restrained, Incapacitated, or willing, and speaks one order of up to twenty-five words. There is no saving throw. The seal fuses to the target's skin as a gold disc, and the order replaces the target's will for good, like a permanent *modify memory*. The compelled Grung believes the order is their own deepest conviction, argues for it in their own words, and pursues it with all their wit for the rest of their life. Only their death ends it, and the seal then goes inert. The seal does nothing to a creature that is not a Grung, and it is spent once applied.
 
 ## At the Table
 
-Jean-Claude holds a way to take one Grung's will forever. Nothing on Aruhe can see the seal while it stays in his pack, including [[hinewai]].
+- **Matching mark.** Its script and authority mark match every spent [[grung-authority-seal]] on [[the-burnt-road]], which proves to Jean-Claude that the dead there were compelled by the same Gold caste ([[two-grave-orders]]).
+- **Hinewai's blind spot.** Hinewai looks for gold on a Grung's skin. She cannot see this seal in his pack, so to her Jean-Claude carries no seal at all.
 
 ## Connections
 
-- [[jean-claude-tabarnack]] — Carries it, unused.
-- [[solange-barret]] — Carried it until she became [[otar-the-foul]].
-- [[grung-authority-seal]] — What this seal becomes after its bearer dies: spent.
-- [[Grung]] — The only creatures a seal can bind.
+- [[solange-barret]] carried it until she became [[otar-the-foul]].
+- [[grung-authority-seal]] is what this seal becomes once its bearer dies: spent.
 
-## Provenance
+## History
 
-[[solange-barret]] carried it willingly, at the command of her master [[ozzeth-the-twiceborn]]. When she transformed into [[otar-the-foul]], [[jean-claude-tabarnack]] took the seal from her. He carries it in his pack. He knows he has it and what it does.
+The Gold caste makes authority seals to compel Grung to believe whatever it needs them to. [[solange-barret]] carried this one willingly, at the command of her master [[ozzeth-the-twiceborn]]. When she transformed into [[otar-the-foul]], Jean-Claude took it from her.

@@ -17,14 +17,10 @@ sources:
   - "wiki/_archive/jean-claude-tabarnack.png"
   - "wiki/_raw/Grung clans.md"
   - "Foundry VTT Shattered-Sea actor Jean Claude Tabarnack 2026-09-13"
+  - "Session 12 refile (2026-09-27)"
 summary: Level 5 Gloom Stalker Grung, awake at the Aruhe river camp as Session 12 opens; his Session 11 catatonia was only his player's absence.
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
 created: 2026-09-12
-updated: 2026-09-16
+updated: 2026-09-27
 type: pc
 reveal: revealed
 campaign: shattered-sea
@@ -39,185 +35,75 @@ init_mod: 7
 pp: 16
 speed: "25 ft. walk; climb equal to walk"
 foundry_id: kS3wQ76uMq1QgDCw
+token: ""
 ---
 # Jean-Claude Tabarnack
 
-> [!narration] Narration
-> Electric-blue skin marked by black patches on a small, scarred, three-foot frame. Ranger gear, a red beret, and a false moustache he calls Corto di Velo. Wary eyes. What you see is what he is.
+![[attachments/shattered-sea/character-references/jean-claude-tabarnack-reference.png|Jean-Claude Tabarnack character reference sheet]]
 
-## At a Glance
+> [!narration] Jean-Claude Tabarnack
+> Jean-Claude is a Grung barely three feet tall, his electric-blue skin marked with black patches and old scars, with large gold eyes and a long dark moustache he calls Corto di Velo. He wears a red beret over a layered dark hood and scarf, a ragged dark cloak, and a brown leather harness hung with pouches, with a quiver on his back and a bow in his hand. A cigarette usually sits at the corner of his mouth, and his wary eyes move before the rest of him does.
 
-| **Role**          | PC |
-| ----------------- | -- |
-| **Class / Level** | Ranger 5 (Gloom Stalker) |
-| **Player**        | Chad |
-| **Also called**   | Jean Claude |
-| **Home ship**     | [[uncertainty]] |
+*Ranger 5 (Gloom Stalker), played by Chad, crew of the [[uncertainty]]*
 
-> **DM thesis:** Darkness ambush striker and ceiling scout. Concentration is the heel. Slavery or abuse snaps calm into violence.
-
-## Connections
-
-- [[simone]] — Sister who still hunts him from the Sorn garrison.
-- [[Botukuri]] · [[grung-clans]] · [[grung-color-and-the-sealing-rite|Twiceborn]] — Origin, blue caste signals, and censure read through the red beret.
-- [[solanges-authority-seal]] — Unused and ready, taken from Solange Barret after she became Otar the Foul. It stays in his pack.
-- [[uncertainty]] — Aboard at [[aruhe]].
-- [[crissdalynn-khinriss]] — Ally; crow Aarakocra who tests his bird phobia most directly.
-- [[perrin-black-jaw]] · [[delmar-fisk]] — Crew allies.
-
-- [[two-grave-orders]] — His Grung upbringing give him the strongest route to recognizing how the old orders changed from reporting to replacing the dead and finally targeting two graves.
+**Playstyle.** He reads first, then acts, unless slavery or abuse is in view, and then instinct takes the wheel. Under the Mortis curse he cannot lie or hide his intentions. Birds are a bred-in terror for him, and he and Crissdalynn have never once talked about it. He opens fights from darkness and from above.
 
 ## Sheet
 
-Live Foundry snapshot from world Shattered-Sea on 2026-09-13. Actor `kS3wQ76uMq1QgDCw` (Jean Claude Tabarnack). Shattered Sea Grung Ranger 5, Gloom Stalker, Guide. Proficiency Bonus +3. Hit Point Die d10. Current HP **51/51**. Vault title stays Jean-Claude Tabarnack; table display prefers Jean Claude.
+**AC** `16` · **HP** `51` · **Initiative** `+7` · **Passive Perception** `16` · **Speed** 25 ft., climb 25 ft.
 
-| Ability | Score | Mod | Save |
-| ------- | ----- | --- | ---- |
-| STR     | 12    | +1  | +4   |
-| DEX     | 19    | +4  | +7   |
-| CON     | 14    | +2  | +2   |
-| INT     | 11    | +0  | +0   |
-| WIS     | 16    | +3  | +3   |
-| CHA     | 8     | -1  | -1   |
+| STR | DEX | CON | INT | WIS | CHA |
+| :-: | :-: | :-: | :-: | :-: | :-: |
+| 12 (+1) | 19 (+4) | 14 (+2) | 11 (+0) | 16 (+3) | 8 (−1) |
 
-**Skills.** Animal Handling +6 (proficient), Athletics +4 (proficient), Insight +6 (proficient), Perception +6 (proficient), Stealth +10 (expertise), Survival +6 (proficient). Untrained: Acrobatics +4, Arcana +0, Deception -1, History +0, Intimidation -1, Investigation +0, Medicine +3, Nature +0, Performance -1, Persuasion -1, Religion +0, Sleight of Hand +4. Tools: Cartographer's Tools, Poisoner's Kit from Poisonous Skin. Saves: Strength and Dexterity. Spell save DC 14. Spell attack +6.
-
-| Combat skim | Value |
-| ----------- | ----- |
-| AC          | 16 (studded leather) |
-| HP max      | 51 |
-| Init        | +7 (Dexterity +4 plus Wisdom +3 from Dread Ambusher) |
-| PP          | 16 |
-| Speed       | Walk 25 ft. Climb equal to walk. Long Jump 25 ft, High Jump 15 ft with or without a run. Must submerge 1 hour every 24 hours or gain Exhaustion. |
-| Darkvision  | 60 ft from Umbral Sight. While entirely in Darkness, invisible to creatures that rely on Darkvision to see him. |
+- **Saves.** Str +4, Dex +7, Con +2, Int +0, Wis +3, Cha −1
+- **Skills.** Animal Handling +6, Athletics +4, Insight +6, Perception +6, Stealth +10, Survival +6. Untrained: Acrobatics +4, Sleight of Hand +4, Medicine +3, Deception −1, Intimidation −1, Performance −1, Persuasion −1, the rest +0.
+- **Tools.** Cartographer's Tools, Poisoner's Kit.
+- **Movement.** Long jump 25 ft. and high jump 15 ft., with or without a run.
+- **Senses.** Darkvision 60 ft. (Umbral Sight). While entirely in Darkness, he is invisible to creatures that rely on Darkvision to see him.
+- **Initiative.** Dexterity +4 plus Wisdom +3 from Dread Ambusher.
+- **Grung.** Immune to Poison damage and the Poisoned condition. He breathes air and water, and must submerge for 1 hour every 24 hours or gain a level of Exhaustion.
 
 ## Combat Profile
 
-### Fast Read
+- **Fast read.** Ranged ambush striker and darkness scout. AC 16, HP 51, immune to poison.
+- **Hard counters.** Bright light, open ground, Blindsight, and Tremorsense.
+- **Soft counters.** Sustained damage that breaks his Concentration, and social combat.
+- **Depends on.** Dim light or darkness, and allies holding the front while he shoots from above.
 
-Ranged ambush striker and darkness scout · AC 16 · HP 51 · poison-immune · Achilles heel is Concentration; bright light and open ground strip the ambush edge.
+## Features
 
-### Counters & Synergy
-
-- **Hard counters.** Bright light, open ground, blindsight, and tremorsense.
-- **Soft counters.** Sustained damage that breaks Concentration; social combat.
-- **Amplifies / Depends on.** Dim light or darkness for peak output. Allies holding the front line while he opens from above.
-
-## Abilities
-
-### Traits
-
-| Trait | Effect |
-| ----- | ------ |
-| Poisonous Skin | Immunity to Poison damage and the poisoned condition. Bonus Action coats one melee weapon or up to five pieces of ammunition, Proficiency Bonus times per Long Rest. |
-| Sticky Tongue | 10 ft reach. Bonus Action Snatch an unattended object of his size or smaller. Lash can replace an attack. |
-| Arboreal / Aquatic Nature / Standing Leap | Climb speed; air and water breathing with the soak requirement; fixed jump distances. |
-
-### Features
-
-| Feature | Source | Effect | Uses | Recovery |
-| ------- | ------ | ------ | ---- | -------- |
-| Extra Attack | Ranger | Attack twice. | — | — |
-| Archery | Fighting Style | +2 to attack rolls with Ranged weapons. | — | — |
-| Bracers of Archery | Item | Longbow and Shortbow proficiency, +2 damage with those weapons. | — | — |
-| Dread Ambusher | Gloom Stalker | First turn of combat, Speed +10 ft. Initiative adds Wisdom (+3). Once per turn on a weapon hit, extra Psychic damage Wisdom-modifier times (3) per Long Rest. | 3 Psychic riders | Long Rest |
-| Favored Enemy | Ranger | *Hunter's Mark* always prepared; cast twice without a slot per Long Rest. | 2 free casts | Long Rest |
-| Gloom Stalker Spells | Gloom Stalker | Always prepared: *Disguise Self*, *Rope Trick*. | — | — |
-| Magic Initiate (Druid) | Feat | Cantrips *Druidcraft* and *Mending*. Level 1 *Jump* always prepared on the sheet. | — | — |
-| Umbral Sight | Gloom Stalker | Darkvision 60 ft; invisible in Darkness to Darkvision-reliant creatures. | — | — |
-
-### Actions
-
-| Action | To-Hit / DC | Damage / Effect | Uses | Notes |
-| ------ | ----------- | --------------- | ---- | ----- |
-| Shortbow (Vex) | Archery + Bracers | Ranged | — | Equipped |
-| Shortsword (Vex) | — | Melee | — | Equipped |
-| Scimitar (Nick) | — | Melee | — | Unequipped |
-
-### Bonus Actions
-
-| Bonus Action | Trigger / Cost | Effect | Uses | Recovery |
-| ------------ | -------------- | ------ | ---- | -------- |
-| Poisonous Skin coat | — | Coat melee weapon or up to five pieces of ammunition | PB / Long Rest | Long Rest |
-| Sticky Tongue Snatch | — | Snatch unattended object within 10 ft | — | — |
-| Hunter's Mark | Slot or free cast | Mark prey | slots / 2 free | Long Rest (free) |
-
-### Feats
-
-| Feat | Source | Effect |
-| ---- | ------ | ------ |
-| Magic Initiate (Druid) | — | Druidcraft, Mending, Jump |
+- **Action.** Extra Attack — two attacks. Shortbow (Vex) with Archery (+2 to hit) and [[cursed-bracers-of-archery|Bracers of Archery]] (+2 damage). Shortsword (Vex). Scimitar (Nick), unequipped.
+- **Action.** Sticky Tongue — a lash with 10 ft. reach can replace an attack.
+- **Bonus Action.** Poisonous Skin — coat one melee weapon or up to five pieces of ammunition, 3 times per Long Rest.
+- **Bonus Action.** Sticky Tongue Snatch — grab an unattended object his size or smaller within 10 ft.
+- **Bonus Action.** *Hunter's Mark* — with a slot, or free twice per Long Rest (Favored Enemy).
+- **Passive.** Dread Ambusher — +10 ft. Speed on his first turn of combat. Three times per Long Rest, once per turn, a weapon hit deals extra Psychic damage.
+- **Passive.** Umbral Sight — as under Senses.
 
 ## Spells
 
-### Spellcasting
+**Spellcasting.** Wisdom · save `DC 14` · attack `+6` · slots 1st ◻◻◻◻ 2nd ◻◻
 
-Wisdom. Save DC 14. Attack +6. Slots L1 4/4, L2 2/2. DDB dumped the full Ranger list; only prepared or always-prepared spells are kept here.
-
-### Cantrips
-
-| Cantrip | Notes |
-| ------- | ----- |
-| Druidcraft | Always (Magic Initiate) |
-| Mending | Always (Magic Initiate) |
-
-### Prepared
-
-| Spell | Level | Notes |
-| ----- | ----- | ----- |
-| Cure Wounds | 1 | Prepared |
-| Disguise Self | 1 | Always (Gloom Stalker) |
-| Ensnaring Strike | 1 | Prepared |
-| Hunter's Mark | 1 | Always |
-| Jump | 1 | Always (Magic Initiate; three copies on the sheet) |
-| Cordon of Arrows | 2 | Prepared |
-| Pass without Trace | 2 | Prepared |
-| Rope Trick | 2 | Always (Gloom Stalker) |
-| Spike Growth | 2 | Prepared |
-
-### Slots
-
-| Level | Slots |
-| ----- | ----- |
-| 1st   | 4 |
-| 2nd   | 2 |
+- **Cantrips.** *Druidcraft*, *Mending* (Magic Initiate).
+- **1st level.** *Cure Wounds*, *Disguise Self* (always), *Ensnaring Strike*, *Hunter's Mark* (always), *Jump* (always).
+- **2nd level.** *Cordon of Arrows*, *Pass without Trace*, *Rope Trick* (always), *Spike Growth*.
 
 ## Inventory
 
-### Attuned
+- **Attuned.** [[cursed-bracers-of-archery|Bracers of Archery]], cursed: a natural 1 turns him neon and leaves a permanent mark, and a natural 20 compels a loud boast. Cloak of Elvenkind — Perception checks to notice him have Disadvantage, and he has Advantage on Stealth.
+- **Carried.** Studded leather, Shortbow (Vex), Shortsword (Vex), Scimitar (Nick), Eyes of the Eagle (Advantage on sight-based Perception), 40 arrows, backpack, quiver.
+- **In his pack.** [[solanges-authority-seal]], unused and ready.
+- **Stowed.** Cartographer's Tools, 2 bedrolls, tent, sprig of mistletoe, traveler's clothes, 2 flasks of oil, 10 rations, rope, tinderbox, 10 torches, waterskin.
 
-| Item | Notes |
-| ---- | ----- |
-| Bracers of Archery | Equipped |
-| Cloak of Elvenkind | Equipped; Perception to notice him has Disadvantage; he has Advantage on Stealth |
+## History
 
-### Carried
+- **[[grung-clans]].** Born blue caste among the Grung of [[Botukuri]], and read as censured through his red beret ([[grung-color-and-the-sealing-rite]]). His upbringing lets him read Gold-caste authority script, and the order chains on spent seals ([[two-grave-orders]]).
+- **[[simone]].** His sister, who still hunts him from the Sorn garrison ([[simones-hunters]]).
+- **[[solange-barret]].** He took her unused authority seal when she became [[otar-the-foul]].
+- **[[crissdalynn-khinriss]].** A bird, and an ally. She tests his terror of birds most directly.
 
-| Item | Qty | Notes |
-| ---- | --- | ----- |
-| Studded leather | 1 | Equipped |
-| Shortbow (Vex) | 1 | Equipped |
-| Shortsword (Vex) | 1 | Equipped |
-| Scimitar (Nick) | 1 | Unequipped |
-| Eyes of the Eagle | 1 | Equipped; Advantage on sight-based Perception; no attunement listed |
-| Backpack, quiver | 1 | Equipped |
-| Arrows | 40 | 20 equipped plus 20 carried |
-| [[solanges-authority-seal]] | 1 | Carried in pack; unused, single use |
-| Cartographer's Tools, bedrolls, tent, sprig of mistletoe, traveler's clothes, oil, rations, rope, tinderbox, torches, waterskin | — | Bedrolls 2, oil 2, rations 10, torches 10 |
+## Log
 
-## Session Log
-
-| Session | Encounter | Note |
-| ------- | --------- | ---- |
-| 04 | Sewers | Invisible with Perrin; crew delivery after Crissdalynn's dive-seize. Kyzil heard a voucher for him. |
-| 11 | Aruhe inland | Went catatonic when the adult bloodhawk stooped. Conscious, stiff, silent. Carried in Delmar's coat swaddle. |
-
-## Voice
-
-Reads first, then acts — unless slavery or abuse is in view, then instinct takes the wheel. Cannot lie or mask intention under the Mortis curse already on the sheet. Birds are a genetic terror; he and Crissdalyn have never once discussed it.
-
-## Art
-
-![[attachments/shattered-sea/character-references/jean-claude-tabarnack-reference.png|Jean-Claude Tabarnack character reference sheet]]
-
-The supplied reference sheet fixes Jean-Claude as a small blue amphibian with dark spots, large gold eyes, a long dark moustache, and a red beret. He wears a layered dark hood and scarf, brown leather harness and pouches, a ragged dark cloak, and a back quiver; a bow and splayed amphibian feet complete the lean, athletic silhouette. The sheet repeatedly depicts a cigarette at the corner of his mouth.
+- **Session 04** — Went invisible with Perrin in the sewers. Kyzil heard someone vouch for him.
+- **[[Session-11-Recap]]** — When the adult bloodhawk stooped over the terraces, he went still and silent, and Delmar carried him inland wrapped in his coat. His player was absent. He is awake and whole when Session 12 opens.

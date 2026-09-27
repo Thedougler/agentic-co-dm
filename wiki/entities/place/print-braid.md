@@ -2,78 +2,70 @@
 title: Print Braid
 aliases:
   - Aruhe - Grasslands - Print Braid
+  - Print Braid
 category: entities
 tags: [shattered-sea, aruhe, place]
 sources:
   - "Aruhe - Grasslands - Print Braid.md"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-12
-updated: 2026-09-12
+updated: 2026-09-27
 type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
-summary: Forest-edge grassland braid where inland prints split toward Spoke Ring, fruiting wood, and a cold river cobble ring.
+invention: true
+summary: "A braid of packed paths through tall grass along the Quiet's edge, where the Calveno trail holds hard to one strand north while side paths drop to the river and into fruiting wood."
 ---
 # Print Braid
+
 ![[aruhe-grasslands-print-braid.jpg|Print Braid, packed dirt strands through tall Aruhe grass beside river cobbles and fruiting jungle forks]]
-## Overview
-> [!narration] Narration
-> A packed dirt path crosses the tall gold-green grass, with one hard strand printed deep enough to follow and thinner strands peeling away on both sides. To the southwest, turquoise river water runs over pale stone beside a ring of wet cobbles. To the east, dark jungle forks open under hanging roots, pink-gold guavas bend over the grass, and pale oval fruit hangs back under wet leaves. Seed heads rasp in the open sky above the trail, the river keeps talking below it, and each wood fork takes the small grass-sounds as soon as the path enters shade.
 
----
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
-Print Braid is a forest-edge stretch of [[grasslands]], north of [[cutoff-lip|Cutoff Lip]], with [[the-river]] on the southwest bank and [[the-quiet]] as the jungle wall. Unlike Cutoff Lip's packed sleep-shelf and knee palisade, or Line Bank's used fishing margin, this site is a choice of strands through grass: one inland track holds hard prints toward [[spoke-ring|Spoke Ring]], side braids slide down to a cold cobble ring at the river, and darker forks enter fruiting wood with no matching feet. Stay on a ridge or turn back to Cutoff Lip and the braid can be skipped; walk the packed inland line and it remains prints through eight-foot grass, wood forks, and a river-side cobble ring that was used but not camped.
 
----
-## If the party
+Print Braid is where the Calveno trail could be lost: the path splits into strands, and only one of them carries the prints north.
 
-- **Follow the packed inland prints:** The hard strand keeps north through the grass onto [[spoke-ring|Spoke Ring]]. That walk is beat 8.
-- **Walk back south:** [[cutoff-lip|Cutoff Lip]].
-- **Stay on a ridge or turn back and skip the braid:** The wood forks, grass, cobble ring, and print line are lost.
-- **Walk the eight-foot grass:** Difficult Terrain. It heavily obscures beyond 10 feet, and movement leaves a crushed corridor.
-- **Walk a wood fork off the prints:** Wet leaf and hanging roots are Difficult Terrain. The wood heavily obscures beyond 10 feet, and a body there is isolated from anyone who stayed on the inland strand in the grass.
-- **Shout into a wood fork:** The same word comes back stretched from that fork. No new information answers. The packed prints still do not enter the fork.
-- **Search the cobble ring:** An Intelligence (Investigation) or Wisdom (Perception) check at DC 12 finds wet river stones in a ring on the southwest bank, with no coals and no kit. Searching them does not identify who stacked them or why the inland group left the water strand.
-- **Take fruit along the braid:** Fallen fruit is receiving. Plucking a living plant makes surrounding life converge, hostile. [[taking-on-aruhe]] An Intelligence (Nature) check at DC 13 identifies the broad function; DC 15 or *Identify* reveals that [[giants-guava]] sets a Primary Ability score to 25 for 1 hour and [[ghost-plum]] grants the **Invisible** condition for 1 hour.
-- **Fish, trap, or kill to carry flesh:** Surrounding life converges, hostile. [[taking-on-aruhe]] That water still belongs farther downslope; this braid is not [[river-slack-basin]].
+- **Who is here.** An [[unsaid-macaw]] in the nearest wood fork, and [[deer-stalker]]s working the edge.
+- **Danger.** A body that wanders alone down a wood fork is the Deer-Stalker's.
+- **Draw.** The right strand, fallen [[giants-guava]] at the forest rim, and [[ghost-plum]]s under the leaves in the forks.
+```
 
----
-## Who
+```col-md
+flexGrow=1
+===
+> [!narration] Print Braid
+> Print Braid is a knot of packed dirt paths running through grass taller than a man, along the edge of a dark forest. One strand is pressed hard with footprints and keeps straight ahead, while thinner strands peel away on either side. Down one, turquoise water runs over pale stones beside a ring of wet cobbles. Down the others, dark paths duck under hanging roots into the trees, where heavy pink and gold fruit bows over the grass and clear round fruit hangs back under wet leaves. Seed heads rasp overhead, and every sound drops away where a path enters the shade.
+```
+````
 
-- [[Deer-Stalker|Deer-Stalkers]] work this grassland edge. They use a wood fork that has no matching prints, and they retreat from a grouped line on the inland strand. They will not walk [[razer-grass]].
-- No one from the inland group is here now. Packed prints keep the inland strand through the grass toward the smoke. The wood forks and cobble ring show no camp.
+## Features
 
----
-## What
+- **The inland strand.** *One strand is pressed hard with footprints.* The Calveno walked it nineteen days ago. It leads north to [[spoke-ring]].
+- **The eight-foot grass.** *Grass taller than a man.* Difficult Terrain. It hides anyone inside beyond 10 feet, and walking through it leaves a crushed corridor.
+- **The cobble ring.** *A ring of wet cobbles beside the water.* The Calveno stacked it as a fire ring on their first night inland and found the wood too wet to light. Fish bones and fruit rinds lie in the grass beside it.
+- **The wood forks.** *Dark paths duck under hanging roots.* Wet leaf and roots are Difficult Terrain, and the wood hides anyone more than 10 feet in. No human prints go in.
+- **The echo.** A word shouted into the nearest fork comes back stretched, in the shouter's own voice. It is an [[unsaid-macaw]] perched above the fork mouth, repeating what it hears.
+- **The fruit.** *Heavy pink and gold fruit* is [[giants-guava]]; *clear round fruit under wet leaves* is [[ghost-plum]]. Fallen fruit lies in the grass under both. **Intelligence (Nature)** `DC 13` knows the fruit is safe to eat; `DC 15` or *Identify* names what each does.
 
-- Eight-foot gold-green grass hides a standing body. A braid of packed dirt paths cuts through it along the jungle wall, narrow enough that each strand feels chosen. The inland strand is hard with crushed prints.
-- Wood forks drop off the print line into [[the-quiet]]. Wet leaf and hanging roots close in, and the darkness begins at the fork mouth rather than deeper inside. Those forks hold no matching feet.
-- [[giants-guava]] bows over the grass at the jungle rim, with pink-gold fruit visible from the open strand.
-- [[ghost-plum]] hangs under wet leaves in the wood forks, hard to place until pollen catches its edge.
-- A ring of wet cobbles sits on the southwest river bank where one side braid reaches the water. There is no fire and no kit.
-- Open sky sits over the grass, while the jungle wall takes the small sounds as soon as a path enters the wood. The sound break is part of the place's identity, not proof of a creature.
-- The inland strand keeps toward [[spoke-ring|Spoke Ring]]. That hub is not on this braid.
+## At the Table
 
----
-## Where
+- **If the party follows the hard strand.** They reach [[spoke-ring]] in about half an hour.
+- **If someone wanders a wood fork alone.** The Deer-Stalker takes them from behind and drags them deeper in; it breaks off when two or more people come after it.
+- **If anyone picks, cuts, fishes, or kills to carry off flesh.** It is a claim under [[taking-on-aruhe]], and two [[wolfrabbit]]s come out of the grass.
 
-- **North:** Packed prints follow the inland strand through this grassland edge onto [[spoke-ring|Spoke Ring]]. This is the same valley, not a day's travel.
-- **East:** More [[grasslands]] opens where the grass stands highest. No established next named grassland site is on that opening.
-- **South:** The packed line returns to [[cutoff-lip|Cutoff Lip]], then the bloody-bank detour toward [[river-slack-basin|Slack Basin]].
-- **West:** Wood forks enter [[the-quiet]]. The river bank and cobble ring sit southwest on [[the-river]].
+## Connections
 
----
-## Why
+- [[spoke-ring]] — north along the inland strand, half an hour's walk.
+- [[the-quiet]] — east, down the wood forks.
+- [[cutoff-lip]] — south along the shelf, a quarter hour's walk.
+- [[the-river]] — west, past the cobble ring, with open [[grasslands]] between the strand and the water.
 
-- The packed prints keep going toward [[spoke-ring|Spoke Ring]].
-- The braid offers grass, wood, and water as soon as the inland line splits.
-- Fallen fruit hangs at the jungle rim and in the wood forks.
-
----
 ## Art
-- ![[aruhe-grasslands-print-braid.jpg|Print Braid identity image]]
-- ![[session-11-07-false-help-base.jpg|Print Braid battlemap, packed inland strand through grass, wood forks, and river cobbles]]
-- The identity image owns the public first look: a packed dirt braid through eight-foot gold-green grass, one hard inland print strand, side paths to dark fruiting wood, pink-gold guava over the trail, pale ghost plums under wet leaves, and a cold cobble ring beside free-flowing river water.
-- The battlemap owns this stretch: top is north, right is east, bottom is south, and left is west. The river sits southwest. The open grass sits northeast. The packed inland strand runs north along the jungle wall.
+
+![[session-11-07-false-help-base.jpg|Print Braid battlemap, packed inland strand through grass, wood forks, and river cobbles]]

@@ -46,7 +46,7 @@ relationships:
 
 [[Leviathan]] is named as the first entity through. [[Ridgeback]] is the second, documented in Clyde's Bestiary. [[Krakling]] is the third, a juvenile arm-predator reported near [[Midchain]]. All three are described with flat-black skin, no eyes, blindsight, and water breathing.
 
-[[Antheri]] ruins and the [[Shelfworks]] sit above the breach. [[Auralis]] is named as aware of the incursion.
+[[Antheri]] ruins and the [[Shelfworks]] sit above the breach. [[auralis|Auralis]] is named as aware of the incursion.
 ### Limits
 
 * **Exception.** This page names the cosmology; detailed geography and the breach remain on [[drowned-maw]].
@@ -84,7 +84,7 @@ relationships:
 ## If This Is Changing
 
 * **Current pressure.** The fissure is widening and the [[pearl-of-souls]] continues pulling entities through.
-* **Actors.** [[Auralis]] is aware of the incursion; entities from the plane answer the Pearl's signal; [[Shelfworks]] activity occurs above the breach.
+* **Actors.** [[auralis|Auralis]] is aware of the incursion; entities from the plane answer the Pearl's signal; [[Shelfworks]] activity occurs above the breach.
 * **Their aims.** Auralis maintains containment, while the arriving entities follow the signal or press toward the breach.
 * **Without interference.** The breach admits larger or more numerous entities as the fissure widens.
 * **Visible sign.** Flat-black, eyeless creatures with blindsight and water breathing appear near the Maw or [[Midchain]].
@@ -103,7 +103,7 @@ relationships:
 | --- | --- | --- |
 | [[drowned-maw]] | Fissure and breach site | Grounds the cosmology in a playable location. |
 | [[pearl-of-souls]] | Signal that pulls entities through | Provides the current incursion pressure. |
-| [[Auralis]] | Guardian aware of the incursion | Connects ancient machinery to the plane boundary. |
+| [[auralis|Auralis]] | Guardian aware of the incursion | Connects ancient machinery to the plane boundary. |
 | [[Leviathan]] | First named entity through | Establishes the scale of the threat. |
 | [[Istishia]] | Cosmology pointer | Supplies the plane's in-world name. |
 

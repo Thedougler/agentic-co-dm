@@ -99,7 +99,7 @@ The northern and southern arcs pinch together into the [[tail]] before the Maw. 
 - Antheri tiers descend through [[Shelfworks]] (60 to 200 ft), [[mid-works]] (200 to 500 ft), and [[deep-works]] (past 500 ft). The Pearl wreck lies on the eastern Shelfworks below the line where Umberlee's water becomes elemental.
 - Heat pulses shrink the working depth. The Shelfworks gold rush can die without the party. Deeper containment failure covers upper ruins and drives crews out.
 - The Deep Works are elemental exposure, not ordinary depth sickness: water-breathing is insufficient; constitution gives out, exhaustion stacks, spells falter, and instruments lie.
-- [[Auralis]] is the Antheri machine holding the fissure and is losing ground. [[Welak]] patrols the bore; reef sharks work upper halls, hunter sharks the edge, and giant squid deeper channels. The displaced [[Leviathan]] occupies the retrieval zone.
+- [[auralis|Auralis]] is the Antheri machine holding the fissure and is losing ground. [[Welak]] patrols the bore; reef sharks work upper halls, hunter sharks the edge, and giant squid deeper channels. The displaced [[Leviathan]] occupies the retrieval zone.
 - [[fathomrush]] stages dives. [[high-eyrie]] watches since 1295 DR. [[calders-tooth-and-port-tidefall|Calder's Tooth / Port Tidefall]] has sealed staging orders. [[outer-reach]] begins past the door with no map or resupply.
 
 **Provenance.** Dump source 2026-09-05; legacy `/Users/nick/shattered-sea/wiki/shattered-sea/region-drowned-maw.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/season-01.md`, `/Users/nick/shattered-sea/wiki/shattered-sea/pearl-and-the-maw/index.md`.

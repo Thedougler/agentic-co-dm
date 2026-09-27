@@ -1,10 +1,11 @@
 ---
 title: Piero Sorrentino
+aliases: [Piero Sorrentino]
 category: entities
 tags: [shattered-sea, npc]
-sources: ["Session 12 plan (DM-approved 2026-09-24)"]
+sources: ["Session 12 plan (DM-approved 2026-09-24)", "Session 12 refile (2026-09-27)"]
 created: 2026-09-24
-updated: 2026-09-24
+updated: 2026-09-27
 type: npc
 reveal: unrevealed
 campaign: shattered-sea
@@ -14,7 +15,7 @@ location: "[[lava-tubes]]"
 faction: none
 visibility: dm
 invention: true
-summary: Sailor-blunt Calveno net-mender who wants the sea and a hull. He refused the voice because it asked them to walk at night.
+summary: "A weathered Calveno net-mender trapped in the lava tube, who watches the skylight and wants nothing but salt water and a working hull."
 ---
 # Piero Sorrentino
 
@@ -24,56 +25,48 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role**   | Wreck survivor hiding in the lava tubes |
-| ---------- | --- |
-| **Nature** | Weathered net-mender, blunt, all about water and hulls |
-| **Home**   | A lava-tube shelf under a smoking skylight north of [[star-cut]] ([[lava-tubes]]); before that, one of the four mats at [[spoke-ring]] |
-| **Wants**  | Salt water and a working hull; off [[aruhe]] |
+Piero is the first voice the party hears from the lava tube, and he wants one thing from them: a way to water.
 
-> **DM thesis:** Piero keeps the island's rule because it is concrete, and he refused the voice because it told them to walk strange ground at night, which no fisherman does. He keeps watch under the skylight and reads what crosses it.
+- **Role.** A wreck survivor on the ledge in the [[lava-tubes]], who keeps watch under the skylight.
+- **Nature.** A wiry, blunt Calveno net-mender who talks about everything in boat words.
+- **Wants.** Salt water, a working hull, and to be off [[aruhe]].
+- **Home.** The lava-tube ledge. Before that, one of the four mats at [[spoke-ring]].
 ```
 
 ```col-md
 flexGrow=1
 ===
 > [!narration] Piero Sorrentino
-> A wiry, weathered man with rope-burned palms and a net-mender's needle-scars across his fingers. He sits under the skylight watching the strip of sky, twisting shed vine fibre into cord without looking at it.
+> Piero is a wiry man past fifty with a face creased like old sailcloth and palms rope-burned shiny. Pale needle scars cover his fingers from a lifetime of mending nets. His hands twist loose vine fibre into cord without his eyes ever leaving the strip of sky above him.
 ```
 ````
 
-## Running Piero Sorrentino
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+- **First meeting.** He sees the party first, because he watches the skylight. He calls up before they call down, asking whether they have a line.
+- **Opens up when.** The party has a ship, or a way to one.
+- **Shuts down when.** The party talks about going further inland instead of to the coast. He goes quiet, then comes along anyway if there is water at the end of it.
+- **Priority.** Getting to the sea.
+- **Shares.** That the voice asked them to walk strange ground at night, which no fisherman does, and that's why he refused. He will mend any net, sail, or rope the party owns.
+- **Voice.** Fisherman-blunt. The tube is the hold, the skylight the hatch, the party the rescue boat.
+- **Lines.** "You on the hatch! Have you got a line?" · "I do not walk at night. Not for her, not for you." · "Get me to water, and I will mend anything you own."
+- **Matteo.** He calls [[matteo-scola]] a piss-rotten eel, and means it, after what Matteo does at the hole.
 
-Piero is the first to see the party, because he is watching the skylight. He calls up before they call down: who are they, and is there a boat.
+> [!narration] First meeting
+> Far below, a wiry man is already on his feet on the black rock, rope-scarred hands cupped to his mouth. "You, on the hatch," he calls up. "Have you got a line? Tell me you've got a line."
 
-Sample: "You have a hull? Then I am yours. Tell me where to row."
-```
+## Statblock
 
-```col-md
-flexGrow=1
-===
-### When posture changes
+Piero uses the [[commoner]] statblock.
 
-If the party talks about going further inland instead of to the coast, he goes quiet and does the arithmetic of leaving alone. He comes along if the party has a way to water at the end of it.
-```
-````
-
-### Voice
-
-Fisherman-blunt, and he uses boat words for everything: the tube is the hold, the skylight the hatch.
-
-- **The ask:** "Get me to water. I will mend anything you own."
-- **Under pressure:** "I do not walk at night. Not for her, not for you."
+![[commoner#Statblock]]
 
 ## Connections
 
-| Connection | Meaning |
-| --- | --- |
-| [[ettore-ferrante]] · [[luca-ferrante]] · [[gianni-moro]] | The others in the tube. |
-| [[matteo-scola]] | Another who wanted the ship; Piero would get on with him. |
-| [[taking-on-aruhe]] | The rule he trusts because it is concrete. |
+- [[ettore-ferrante]], [[luca-ferrante]], and [[gianni-moro]] — the others on the ledge.
+- [[matteo-scola]] — another who wants the ship. The two of them get on at once.
+- [[the-pantry]] — its channel and raft are the first open water he sees in nineteen days.
+
+## Log
+
+- **Session 12 prep** — Lifted out of the lava tube. He walks out with the party toward the ship.

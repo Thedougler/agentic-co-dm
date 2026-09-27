@@ -4,39 +4,33 @@ category: journal
 tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-27
 type: session-prep
 kind: development
 reveal: unrevealed
 campaign: "shattered-sea"
 session: "12"
 visibility: dm
-summary: "The trail meets the Burnt Road, where eleven sealed Grung died trying to burn a way to the graves. Jean-Claude reads their orders, and Hinewai's voice names him kidnapper."
+card: "Revelation"
+memorable: "Eleven Grung sunk to the shoulders in a road of black flowers, and a voice from the trees calling Jean-Claude a kidnapper."
+summary: "The trail meets the Burnt Road, where eleven compelled Grung died burning a way to Hinewai's graves; Jean-Claude reads their orders, and her voice calls him kidnapper."
 ---
 
 # Session 12 — Orders in the Ash
 
-**Card.** Revelation.
-**Thread advanced.** The Gold caste's grave orders, and [[hinewai]]'s view of the Grung.
-**Entry state.** Mid-afternoon (late afternoon if the column went around the meadow). The column has crossed [[the-long-meadow]] with whatever it cost and follows the fruit-pile trail through deep Quiet, where sight dies in a few paces.
-**Trigger.** The trail comes out onto [[the-burnt-road]], and the next fruit pile sits on the road itself, fifty feet up it.
-**Turn.** The Gold caste sent sealed Grung, each sure the order was their own wish, to destroy Hinewai's graves and break the island's curse. To the island's keeper, Jean-Claude is one more of them, a kidnapper leading her Calveno away.
-**New direction.** North-east up the road to the Calveno, knowing the island's keeper counts them as hers.
-**Memorable element.** Eleven Grung sunk in a road of black flowers, and a voice from the trees saying "kidnapper."
-**Target.** ~30 minutes.
+## At a Glance
+
+The Gold caste sent these Grung, each sure the order was their own wish, to destroy [[hinewai]]'s graves, and to the island's keeper [[jean-claude-tabarnack]] is one more of them, stealing her Calveno away.
+
+- **Entry state.** Mid-afternoon, or late afternoon if the column went around the meadow. The column comes out of deep Quiet, where sight dies in a few paces, following the fruit piles.
+- **Trigger.** The trail comes out onto [[the-burnt-road]], and the next fruit pile sits on the road itself, fifty feet up it.
+- **New direction.** North-east up the road to [[the-pantry]], knowing the island's keeper counts the Calveno as hers.
+- **Next.** [[Session-12-05-consume]]
 
 > [!narration] Opening
-> Past the meadow the fruit piles lead back under the trees, and for an hour the forest presses so close you can barely see the back in front of you. Then all at once the trees fall away, and a straight road wide as a village street opens ahead. Charred flowers carpet it so thickly that they give under your boots, and each step squeezes out a smell of rot and old coins. Where bark has split on the trunks along its edges, charcoal shows underneath. The only sound is the soft crush of flowers underfoot, and the branches over the road carry leaves alone.
->
-> The fruit piles you have been following lead on up it. A short walk ahead, the next pile of guavas sits on a broad leaf. Beside it a small body lies sunk to the shoulders in flowers, roots threaded through its ribs. Past it lies another, and another beyond that, each one a Grung about Jean-Claude's size. The roots in the nearest ribcage have closed around a cracked gold disc whose curling script catches the light. By the dead one's hand lies a broken clay pot, its lip still black with soot.
-
-## Run the Beat
-
-1. **Present the situation.** After an hour of forest where they could barely see, the column comes out on an open road. The survivors' trail runs up it, and Grung dead lie along it.
-2. **Let them engage.** The anchor is the dead: eleven Grung, cracked clay fire pots, and a spent [[grung-authority-seal]] in each ribcage. [[jean-claude-tabarnack]] reads them.
-3. **Make the turn.** When Jean-Claude handles a seal or reads it aloud, [[hinewai]]'s voice comes out of the treeline.
-4. **Hand back the choice.** The road runs on toward the Calveno. The voice has named Jean-Claude a kidnapper and gone quiet. Ask what they do.
+> After an hour of forest so close you can barely see the back in front of you, the trees fall away onto a straight road as wide as a village street. Black flowers carpet it, giving underfoot like wet moss. A short walk up it, the next pile of fruit sits on its leaf. Beside it, a small body lies sunk to the shoulders in the flowers, with roots threaded through its ribs. Caught in those roots is a cracked gold disc, and its curling script catches the light.
 
 ````col
 ```col-md
@@ -44,99 +38,82 @@ flexGrow=1
 ===
 ## Situation
 
-- **Where.** [[the-burnt-road]]: 20 feet wide, two miles north-east through the Quiet toward the [[memorial-grove]]. Black flowers floor it; the forest walls on both sides are Difficult Terrain and heavily obscure beyond 10 feet.
-- **Present.** Eleven Grung dead. [[hinewai]]'s voice. The column.
-- **Physical anchor.** The seals in the ribcages, which carry the whole order chain, and the fire pots beside the bodies.
-- **Friction.** The civilians do not want to stand near Grung dead: every Calveno here was taken by Grung raiders.
-- **Pressure.** The light is going. [[luca-ferrante]] wants to follow the fruit piles while he can still see them, and after 20 minutes on the road he starts walking on alone.
-- **If ignored.** The dead stay where they are, and the voice speaks anyway if Jean-Claude walks the road.
+- **Where.** [[the-burnt-road]]: 20 feet wide, running two miles north-east through [[the-quiet]] toward [[memorial-grove]]. The forest on both sides is Difficult Terrain and hides anyone more than 10 feet in.
+- **Hands on.** The dead: eleven Grung, each with a spent [[grung-authority-seal]] loose in its ribs and a cracked clay fire pot by its hand.
+- **Friction.** The civilians will not stand near Grung dead. Every Calveno on Aruhe was taken by Grung raiders, and they watch Jean-Claude the same way.
+- **Pressure.** The light is going. [[luca-ferrante]] wants to follow the fruit piles while he can still see them, and after 20 minutes on the road he walks on alone.
+- **If ignored.** The dead stay where they lie, and the voice speaks anyway if Jean-Claude walks the road.
 ```
 
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
-## Revelations
+## Actors
 
-- [ ] **Core.** Each seal carries its whole order chain, written in Gold-caste script from oldest to newest: "Report what lies inland." "Replace the parties that stopped reporting." "Find the two graves beneath the memorial tree and destroy them." On these eleven: "If the forest stands between, burn it." → **Surfaces through:** Jean-Claude reading any seal with no roll; anyone else with **Intelligence (Investigation) — `DC 13`**.
-- [ ] **Core.** A sealed Grung believes the order is their own conviction. These eleven died sure they wanted to burn this forest. → **Surfaces through:** Jean-Claude, who knows what seals do; [[solanges-authority-seal]] in his pack is the same script, whole and unused.
-- [ ] **Support.** Burning living growth was a claim; the island took all eleven, pulled them into the soil, and refuses to grow fruit along the scar. → **Surfaces through:** the roots through the bones; **Intelligence (Nature) — `DC 12`** notes that nothing on the road fruits.
-- [ ] **Support.** The Gold caste wants the graves destroyed because sealed reports taught them the island's curse is anchored there; breaking it reopens Aruhe to the Grung of [[karath]]. → **Surfaces through:** Jean-Claude, from Gold-caste doctrine he grew up around, on **Intelligence (History) — `DC 12`**; or the voice, if asked what the Grung want.
-- [ ] **Optional.** Every Grung the keeper has seen on Aruhe wore a gold seal on the skin. Jean-Claude wears none. → **Surfaces through:** the voice.
+- **[[hinewai]], as a voice.** She wants her graves safe and her Calveno kept. She takes Jean-Claude for another compelled Grung. She answers questions about the Grung, the graves, and her Calveno, never about herself: "Ask your gold masters." She does not come out, and nothing attacks unless someone burns or takes.
+- **[[luca-ferrante]].** He wants to reach his uncle before dark and counts the fruit piles out loud.
+- **[[matteo-scola]].** He wants to be anywhere else. When the voice speaks he says, "That's her. That's her," and gets behind the nearest PC.
+
+> [!narration] Hinewai
+> A stone's throw off, between two charred trunks, the dark is deeper than the shade around it. Two orange eyes open in it at the height of a tall woman's face. There is no body, only the eyes, fixed on Jean-Claude. "Another one," says a low voice. "Invader. Where are you taking mine, kidnapper?"
 ```
 ````
 
-**The voice.**
+**The voice.** When Jean-Claude lifts or reads a seal, or after he has stood on the road for 10 minutes, [[hinewai]] speaks from the treeline:
 
-When Jean-Claude lifts or reads a seal, or after he has stood on the road for 10 minutes, a voice comes out of the treeline 30 feet away. Anyone who looks sees a darker shadow between the trunks and two orange eyes, and no body. The voice is [[hinewai]]. She does not come out, and nothing attacks.
+| Moment | What she says | What changes | Narration |
+| ------ | ------------- | ------------ | --------- |
+| She speaks | "Another one. Invader. Where are you taking mine, kidnapper?" | She means the Calveno. She takes him for a compelled Grung sent for her graves. | _The orange eyes do not blink._ |
+| He answers, whatever he says | "Manipulator. Murderer. They all said it was their own wish." | Every compelled Grung argued with her too, so words alone move nothing. | _The dark between the trunks leans closer._ |
+| She looks for his seal | Silence. | She sees no gold on his skin. She cannot see the unused seal in his pack ([[solanges-authority-seal]]). | _The eyes move over him slowly, from his feet to his beret._ |
+| She goes quiet | A long silence, then: "…Where is your gold?" If he says he has none, or says nothing, she does not reply. | The shadow is gone. For the first time, a Grung on her island is not what she knows. | _Between the trunks there is only shade again._ |
+| Anyone threatens the treeline or burns anything | "Burn, then. Like them." | She withdraws. A fire is a claim ([[taking-on-aruhe]]): the nearest [[vine-lash]] wakes at the end of the burner's next turn and attacks the burner. | _A rope of pale vine uncoils from the branches over the road._ |
 
-| Moment | What she says | What changes |
-| ------ | ------------- | ------------ |
-| She speaks | "Another one. Invader. Where are you taking mine, kidnapper?" | She means the Calveno. She assumes he is sealed and sent for her graves. |
-| He answers, whatever he says | "Manipulator. Murderer. They all said it was their own wish." | Sealed Grung argued with her too; words alone do not convince her. |
-| She looks for his seal | The orange eyes move over him, slowly. Then nothing. | She sees no gold on his skin. She cannot see the seal in his pack. |
-| She goes quiet | A long silence, then: "…Where is your gold?" If he answers that he has none, or says nothing, she does not reply. | The shadow is gone. For the first time, a Grung on her island is not what she knows. |
-| Anyone threatens the treeline or burns anything | "Burn, then. Like them." | She withdraws. A fire on the road is a claim: the nearest [[vine-lash]] wakes at the end of the burner's next turn and attacks the marked burner (**AC 12, 52 HP**, two Tendrils +4, reach 15 ft, 7 bludgeoning and Grappled, escape DC 12). |
+## Handles
 
-### Required conclusion
+- **[[hinewai]]** can be questioned about the Grung, the graves, and her Calveno. Jean-Claude can tell her he wants nothing of her graves. She does not reply, and she does not forget it.
+- **A spent seal** can be carried off: it is dead metal, not a claim.
+- **A body** can be pulled from the roots, at the cost of a claim.
+- **The road** runs straight on toward the Pantry's side trail, where the fruit piles turn off after a mile.
+- **Cost.** Reading every seal and hearing the voice out takes 20 minutes of the last light. The column reaches the Pantry at dusk instead of before it.
 
-**Conclusion.** The Gold caste sent sealed Grung to destroy the graves, and each believed the order was their own.
+## Checks
 
-- [ ] **Route 1.** Jean-Claude reads a seal with no roll.
-- [ ] **Route 2.** Anyone reads a seal with **Intelligence (Investigation) — `DC 13`**.
-- [ ] **Route 3.** The voice: "They all said it was their own wish."
+| Intent | Approach | DC | Success | Failure |
+| ------ | -------- | -- | ------- | ------- |
+| Read a seal's orders (anyone but Jean-Claude) | **Intelligence (Investigation)** | `DC 13` | The full order chain (Clues). | The script is Grung, and the reader can make out only "graves." |
+| Read a fire pot | **Intelligence (Investigation)** | `DC 11` | Oil residue and a Gold-caste mark stamped in the clay: the pots were issued. | Soot and broken clay. |
+| Know why Karath wants the graves | **Intelligence (History)** (Jean-Claude) | `DC 12` | Gold-caste teaching calls Aruhe cursed and wants it reopened to Karath's Grung. | He knows only that every Grung child is taught to stay away from Aruhe. |
+| Notice the road bears no fruit | **Intelligence (Nature)** | `DC 12` | Nothing on the road or over it has fruited since the fire. | The trees look like any others. |
+| Pull a body out of the roots | **Strength (Athletics)** | `DC 16` | It comes free, and the taker is marked (a claim). | The roots hold. |
 
-## Actors
+Jean-Claude reads any seal with no roll, and anyone can see that the dead are Grung who have lain here for seasons.
 
-| Actor | Wants now | Knows (true) | Offers | Withholds / lies about — and the tell | Price for help | Posture shifts when |
-| ----- | --------- | ------------ | ------ | ------------------------------------- | -------------- | ------------------- |
-| [[hinewai]] (voice) | Her graves safe; her Calveno kept | The Gold caste wants her graves; every Grung she has seen was sealed | Contempt, and the truth about the graves if asked | Her history; she answers "why" with "ask your gold masters" | — | Jean-Claude shows no seal: she falls silent. |
-| [[luca-ferrante]] | To reach his uncle before dark | The fruit piles lead on | Keeping count of piles | — | — | 20 minutes pass: he walks on alone up the road. |
-| [[matteo-scola]] | Not to be here | The voice is the woman who took the others | "That's her. That's her." | — | — | The voice speaks: he gets behind a PC. |
+## Clues
 
-## Checks & Costs
+- [ ] **Core.** Every seal carries its whole order chain in Gold-caste script, oldest line first: "Report what lies inland." "Replace the parties that stopped reporting." "Find the two graves beneath the memorial tree and destroy them." On these eleven: "If the forest stands between, burn it." → surfaces through Jean-Claude reading any seal, or the Investigation check ([[two-grave-orders]]).
+- [ ] **Core.** A compelled Grung believes the order is their own conviction. These eleven died sure they wanted to burn this forest. → surfaces through Jean-Claude, who knows what seals do, and the [[solanges-authority-seal]] in his pack, the same script whole and unused.
+- [ ] **Support.** Burning living growth was a claim. The island took all eleven, pulled them into the soil, and refuses to fruit along the scar. → surfaces through the roots in the bones, and the Nature check.
+- [ ] **Support.** The Gold caste wants the graves destroyed because its reports taught it that the island's curse is anchored there, and breaking it reopens Aruhe to the Grung of [[karath]]. → surfaces through the History check, or the voice, if asked what the Grung want: "My graves. They always want my graves."
 
-- **Automatic.** Jean-Claude reads any seal. Anyone sees the dead are Grung and have been there for seasons.
-- **Action.** **Intelligence (Investigation) — `DC 11`** on a fire pot: oil residue and a Gold-caste mark stamped in the clay; the pots were issued, not improvised.
-- **Action.** Pulling a body free of the roots is **Strength (Athletics) — `DC 16`** and a claim under [[taking-on-aruhe]]; the nearest vine-lash answers as above.
-- **Cost of the good part.** Reading every seal and hearing the voice out takes 20 minutes of fading light. The column reaches [[the-pantry]] at dusk rather than before it.
+> [!narration] Revelation
+> The script on the disc is the same Jean-Claude learned as a child, neat and patient and old. The lines stack one above another, each a little newer than the last. The newest one, pressed deep into the gold, tells its bearer to burn the forest.
 
-## Player Levers
+## Outcomes
 
-- **Person.** The voice answers questions about the Grung, the graves, and her Calveno, and nothing about herself.
-- **Thing.** A spent seal can be carried off; it is dead metal, not a claim.
-- **Place.** The road runs straight on to the Pantry's side-trail; the fruit piles turn off it after a mile.
-- **Promise / problem.** Jean-Claude can tell her he wants nothing of her graves. She does not reply, and she does not forget it.
-
-### Preparation states
-
-| If the party prepares… | The Climax opens with… |
-| ---------------------- | -------------------- |
-| Reads every seal and hears the voice out | Reaches the Pantry at dusk with the whole order chain. |
-| Reads one seal and moves on | Reaches the Pantry before full dusk with the core order. |
-| Walks straight past | Reaches the Pantry in the last light; the voice still speaks if Jean-Claude is on the road. |
-
-## Exits
-
-| If the party… | The situation changes… | Next |
-| ------------- | ---------------------- | ---- |
-| Follows the fruit piles up the road | At dusk, a side-trail of piles leads off the road to firelight under a great hanging vine. | [[Session-12-05-consume]] |
-| Leaves the road and turns back | The Calveno stay hers; the column camps in the Quiet, and Skarn strikes there at dusk instead. | [[Session-12-05-consume]] at the camp, without the Pantry's vine and responders |
-| Burns something or attacks the treeline | Vine-lash response as above; the voice withdraws; Luca and the civilians are terrified of the party. | [[Session-12-05-consume]] |
+| If the party… | What changes | Next | Narration |
+| ------------- | ------------ | ---- | --------- |
+| Follows the fruit piles up the road | At dusk a side trail of piles leads off the road toward firelight under a great hanging vine. | [[Session-12-05-consume]] | _A mile on, the piles turn off the road, and through the trees there is firelight._ |
+| Leaves the road and turns back | The Calveno stay Hinewai's. The column camps in the Quiet, and Skarn strikes there at dusk instead. | [[Session-12-05-consume]], at the camp, without the vine and its lashes | _The black road falls behind, and the forest closes in grey._ |
+| Burns something or attacks the treeline | A vine lash answers, the voice withdraws, and the civilians are terrified of the party. | [[Session-12-05-consume]] | _Luca pulls his father's litter back from you, and the others follow him._ |
 
 **Carry forward.**
-- **Knowledge:** the order chain; sealed Grung believed the order was their own; the Gold caste wants the curse broken.
-- **Hinewai:** has named Jean-Claude a kidnapper and seen no seal on him; she counts the Calveno as hers.
-- **Seals:** whether the party carries a spent seal.
-- **Time:** dusk at the Pantry.
-- **Column:** as [[Session-12-03-terror-birds]] left it.
+- **Knowledge.** The order chain, that compelled Grung believed the order was their own, and that the Gold caste wants the curse broken.
+- **Hinewai.** She has called Jean-Claude a kidnapper and seen no seal on him. She counts the Calveno as hers.
+- **Seals.** Whether the party carries a spent seal.
+- **Time.** Dusk at the Pantry.
+- **Column.** As the meadow left it.
 
-### After Play
+## Statblocks
 
-- **What actually happened.**
-- **Revelations learned.**
-- **Decision made.**
-- **NPC / faction posture changes.**
-- **Resources gained or lost.**
-- **World state changed.**
-- **Next active node.** [[Session-12-05-consume]]
-- **Unresolved thread.** [[two-grave-orders]]
+![[vine-lash#Statblock]]

@@ -89,3 +89,10 @@ flexGrow=1
 | Refuses or delays |  | [[Session-{{session}}-BB-label]] | _…_ |
 
 **Carry forward.** Each state the next beat inherits: new knowledge, direction, who is where, what they prepared.
+
+
+## Statblocks
+
+<!-- Only when the party could fight someone here: every side's owner statblock, embedded, never retyped. -->
+
+![[creature#Statblock]]

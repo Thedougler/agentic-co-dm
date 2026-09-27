@@ -25,7 +25,7 @@ status: active
 
 **Status.** Active
 **Objective.** Stop the [[pearl-of-souls]] signal across the Maw boundary, or decide what may keep answering it.
-**Why now.** The [[Leviathan]] already followed the signal. [[Auralis]] woke when it crossed. Something larger still presses.
+**Why now.** The [[Leviathan]] already followed the signal. [[auralis|Auralis]] woke when it crossed. Something larger still presses.
 **Deadline.** The next fissure answer. Delay keeps the call live.
 
 ## Situation
@@ -65,7 +65,7 @@ The Maw Entanglement is a local puncture in the Border Ethereal. [[Antheri]] bre
 | --- | --- | --- | --- |
 | Eastern Shelfworks wreck and Maw puncture | [[drowned-maw]] | No | Available |
 | Antheri salvage that points at the trench | [[Antheri]] | No | Available |
-| Auralis waking when the signal crossed | [[Auralis]] | No | Available |
+| Auralis waking when the signal crossed | [[auralis|Auralis]] | No | Available |
 
 ## Connections
 
@@ -73,7 +73,7 @@ The Maw Entanglement is a local puncture in the Border Ethereal. [[Antheri]] bre
 - [[drowned-maw]]
 - [[elemental-plane-of-water]]
 - [[Leviathan]]
-- [[Auralis]]
+- [[auralis|Auralis]]
 - [[Antheri]]
 - [[maw-fissure-and-the-tribute-system]]
 - [[shattered-sea]]

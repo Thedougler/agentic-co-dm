@@ -49,6 +49,6 @@ Read aloud before [[session-01-recap]]. The context a table needs to follow the 
 
 Player-facing primer for Season 1, read before [[session-01-recap]] alongside the chart at `attachments/shattered-sea-overview-map.jpg`. It states only what a table may know at Session 01.
 
-Held back and left for play. The Pearl of Souls is with [[delmar-fisk]], not lost with the fleet, so the primer states the theft and the sinking without saying where it went. [[Auralis]] and the [[leviathan]] go unnamed, and "something came up through the seal" is the table-level version of what [[campaign-timeline]] records for Day -5. [[simone-tabarnack]] and the [[grung-clans|Grung]] unit hunting [[jean-claude-tabarnack]] stay unnamed, as do [[nona-black-jaw]] and the Black-Jaw line that [[perrin-black-jaw]] has not yet claimed at this table.
+Held back and left for play. The Pearl of Souls is with [[delmar-fisk]], not lost with the fleet, so the primer states the theft and the sinking without saying where it went. [[auralis|Auralis]] and the [[leviathan]] go unnamed, and "something came up through the seal" is the table-level version of what [[campaign-timeline]] records for Day -5. [[simone-tabarnack]] and the [[grung-clans|Grung]] unit hunting [[jean-claude-tabarnack]] stay unnamed, as do [[nona-black-jaw]] and the Black-Jaw line that [[perrin-black-jaw]] has not yet claimed at this table.
 
 Next: [[session-01-recap]].

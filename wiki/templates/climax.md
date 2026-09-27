@@ -119,3 +119,10 @@ flexGrow=1
 | **Opposition wins**      |                   |           | _…_       |
 
 **Carry forward.** Who and what remains active, and each state the Resolution inherits.
+
+
+## Statblocks
+
+<!-- Only when the party could fight someone here: every side's owner statblock, embedded, never retyped. -->
+
+![[creature#Statblock]]

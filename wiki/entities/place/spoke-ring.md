@@ -1,68 +1,69 @@
 ---
 title: Spoke Ring
+aliases: [Spoke Ring, Quiet Forest Spoke Ring, Aruhe - Quiet Forest Spoke Ring]
 category: entities
 tags: [shattered-sea, aruhe, place]
-aliases: [Spoke Ring, Quiet Forest Spoke Ring, Aruhe - Quiet Forest Spoke Ring]
 sources:
   - "wiki/_archive/Aruhe - Quiet Forest Spoke Ring.md"
-summary: Radial Quiet fire hub — survivor mats, fallen stonepears, and spokes splitting toward grass, river root-cut, and Star Cut.
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
+  - "Session 12 plan (DM-approved 2026-09-24)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-13
-updated: 2026-09-14
+updated: 2026-09-27
 type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
+invention: true
+summary: "The Calveno survivors' last camp under the Quiet: a round fire hub where trails leave like spokes; nineteen days ago the camp walked from here toward Hinewai's voice, and four refused."
 ---
 # Spoke Ring
+
 ![[aruhe-spoke-ring.jpg|Spoke Ring, radial fire hub under Quiet leaves]]
-## Overview
-> [!narration] Narration
-> Under Quiet leaves a round packed hub waits, fire-wide, with narrow trails cutting out through buttress trunks like spokes from a river-stone ring. [[stonepear]] hang in grey-green scales, heavy enough to bow mossed limbs; fallen fruit lies by the coals as if set there. One south spoke opens onto a hot gold-green grass slice. A west spoke drops through hanging roots to a strip of clear water — heard, not wide enough for a river camp. North spokes darken under leaf where smoke cannot rise and grassland noise dies at the trail mouths.
 
----
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
-First Quiet hub north of [[print-braid]] on the seam of [[the-quiet]], [[grasslands]], and a root-cut of [[the-river]]. Unlike Print Braid's grass braid or [[cutoff-lip]]'s sleep-shelf, identity is the radial fire and spoke choices. Skip the hub and lose ring, mats, fruit, and split.
 
----
-## If the party
+Spoke Ring is the camp the Calveno survivors left nineteen days ago, and the place where the trail to the rest of them begins.
 
-- **South spoke:** Back through last gold-green onto [[print-braid]].
-- **North spoke:** Onto [[star-cut]]; garden talk still points past that aisle — not yet [[memorial-grove]].
-- **Skip hub:** Lose fire ring, mats, stonepears, split.
-- **Walk packed hub:** Ordinary ground at the fire; wood beyond trail mouths is Difficult Terrain, heavily obscures beyond 10 feet.
-- **Walk a spoke:** Wet leaf and hanging roots Difficult Terrain; heavy obscure beyond 10 feet.
-- **Search fire, mats, fruit:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 10`** → Four sleeping mats by the ring; fallen [[stonepear]] placed, not growing; coals cold enough to read prior watch.
-- **Take fruit:** Fallen = receiving. Living plant = [[taking-on-aruhe]].
-  - **Intelligence (Nature):** `DC 10` edible; `DC 15` or *Identify* → fallen [[stonepear]] Bonus Action, **Resistance to all damage** for 1 minute.
-- **Fish/trap/kill for flesh:** [[taking-on-aruhe]]; west spoke water still belongs to the river.
+- **Who is here.** Nobody.
+- **Danger.** None by day. After dark, [[hinewai]]'s voice speaks here to anyone who has eaten Aruhe's fallen fruit.
+- **Draw.** The first fallen-fruit pile the walking camp left, marking its way north-east, and fallen [[stonepear]]s by the fire.
+```
 
----
-## Who
+```col-md
+flexGrow=1
+===
+> [!narration] Spoke Ring
+> Spoke Ring is a round clearing of packed earth under the forest roof, no wider than a big campfire and its sleepers, with narrow trails leaving it between buttressed trunks like spokes from a wheel. At its center is a ring of river stones around cold ash. Four woven sleeping mats lie around the ring, and grey-green [[stonepear]]s lie beside the ash in a neat row as if someone set them there. More stonepears hang in the branches above, heavy enough to bow them. Down one trail, a thin stream trickles over roots, and the other trails fade into dark leaves.
+```
+````
 
-- Empty of living campers; mats and fruit placement show prior survivors.
-- Quiet predators may watch from spoke mouths — do not invent named occupants beyond sourced ecology.
+## Features
 
----
-## What
+- **The fire ring.** *River stones around cold ash.* The Calveno camp's fire. The ash has been cold for nineteen days.
+- **The four mats.** *Four woven sleeping mats.* They belong to [[luca-ferrante]], [[ettore-ferrante]], [[piero-sorrentino]], and [[gianni-moro]], the four who refused the voice. The others took their mats when they walked. **Intelligence (Investigation)** or **Wisdom (Perception)** `DC 10` counts room around the ring for about a dozen more sleepers.
+- **The stonepear row.** *Set there as if on purpose.* Fallen fruit the camp gathered and laid out. It is safe to take.
+- **The north-east trail.** A few hundred feet up the north-east spoke, a pile of fallen fruit sits on a broad leaf: the first mark the walking camp left for anyone who followed. **Wisdom (Survival)** `DC 12` finds it. A pile lies every few hundred feet after that, all the way to [[the-pantry]].
+- **The stream.** *A thin stream trickles over roots.* It runs west to [[the-river]]. Drinking is safe; fishing it is a claim.
 
-- River-stone fire ring; four mats; hanging and fallen [[stonepear]]; radial spokes to grass, river root-cut, and deeper Quiet.
+## At the Table
 
----
-## Where
+- **If the party searches the camp.** The four mats and the room for a dozen more tell them most of the camp left together, and four people did not.
+- **If the party stays past dark.** A woman's voice comes out of the dark: "Come and look upon my garden. You ate what my island gave you. You are already mine." It is [[hinewai]]. She invites, and she does not come closer.
+- **If anyone takes from the island here.** Picking, cutting, or killing to carry off flesh is a claim under [[taking-on-aruhe]], and the nearest [[vine-lash]] answers.
 
-- **North:** [[star-cut]].
-- **East:** More [[the-quiet]] along jungle wall.
-- **South:** [[print-braid]] → [[cutoff-lip]].
-- **West:** Root-cut to [[the-river]] (not [[river-slack-basin]]).
+## Connections
 
----
-## Why
+- [[star-cut]] — north up the north spoke, a quarter hour's walk.
+- [[the-quiet]] — east and north-east, where the fruit-pile trail leads.
+- [[print-braid]] — south, back through the last of the grass, half an hour's walk.
+- [[the-river]] — west, down the stream trail.
 
-- First choice-node under Quiet leaves — which spoke, and whether fallen fruit is enough.
+## History
+
+Nineteen days ago, a woman's voice spoke to the Calveno camp here each night. [[renzo-canale]] had already taught them her rule, to eat only what falls. One night Carlo Ferrante rose and followed the voice north-east, and the rest of the camp went with him, leaving piles of fallen fruit to mark the way. The four who refused followed by daylight the next morning, and a [[terror-bird]] drove them into a skylight of the [[lava-tubes]] in [[the-long-meadow]].

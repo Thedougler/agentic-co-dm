@@ -1,67 +1,63 @@
 ---
 title: Cutoff Lip
+aliases: [Cutoff Lip, Quiet Forest Cutoff Lip, Aruhe - Quiet Forest Cutoff Lip]
 category: entities
 tags: [shattered-sea, aruhe, place]
-aliases: [Cutoff Lip, Quiet Forest Cutoff Lip, Aruhe - Quiet Forest Cutoff Lip]
 sources:
   - "wiki/_archive/Aruhe - Quiet Forest Cutoff Lip.md"
-summary: Dry packed shelf on the Quiet–grassland seam — knee-root wall, downslope seep, Deer-Stalker signs, and the first silent wood.
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-13
-updated: 2026-09-14
+updated: 2026-09-27
 type: place
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: site
 region: aruhe
+invention: true
+summary: "A packed dirt shelf where the grass slope meets the first trees of the Quiet, fenced by hollow knee-roots; the Calveno trail from the Slack Basin runs along it, and a Deer-Stalker marks its trees."
 ---
 # Cutoff Lip
+
 ![[aruhe-cutoff-lip.jpg|Cutoff Lip, hollow knee-roots at the Quiet grassland seam]]
-## Overview
-> [!narration] Narration
-> A sleep-wide packed shelf sits between gold-green grass slope and the first dark Quiet trunks. Hollow knee-roots stand chest-high along the wood like a pale open-mouthed fence. Crushed prints hug that lip instead of falling back to water. Downslope, a rock seep flashes between black stones in the grass. Past the knees, small grassland noise dies; only leaf-drip onto dirt remains.
 
----
+````col
+```col-md
+flexGrow=2
+===
 ## At a Glance
-First Quiet shelf inland of [[river-slack-basin]]: seam of [[the-quiet]], [[grasslands]], and [[the-river]]. Identity is the narrow lip — grass and water fall west, knee-roots wall east, usable path between. Ridge or river skip loses the shelf; camp the packed dirt and keep prints, knees, seep, and Deer-Stalker sign.
 
----
-## If the party
+Cutoff Lip is the first stretch of the Calveno trail after the Slack Basin, where the grass ends and the Quiet begins.
 
-- **Follow prints north along the lip:** Onto [[print-braid]], then [[spoke-ring]].
-- **Walk back south:** [[river-slack-basin]].
-- **Skip the shelf (ridge or drop to river):** Lose knee palisade, packed camp, root-bowl.
-- **Stand watch at the knee palisade:** Post is 15 feet into the wood from the shelf — dim light, foliage; isolated from the packed camp.
-- **Step through knees into Quiet:** Palisade is Difficult Terrain; wood heavily obscures beyond 10 feet.
-- **Search knees, bark, root-bowl:** **Intelligence (Investigation) or Wisdom (Perception) — `DC 12`** → White wood at shoulder height, scraped bark, a root bowl with old blood and small bone — [[deer-stalker]] sign, not a fresh kill scene inventable beyond sourced marks.
-- **Take flesh / pluck living plant / fish downslope river:** Hostile converge ([[taking-on-aruhe]]). Downslope water still belongs farther down; this lip is not the claim.
+- **Who is here.** Nobody. A [[deer-stalker]] marks the trees here as its ground and hunts the edge at night.
+- **Danger.** The Deer-Stalker takes anyone who sleeps or stands watch alone past the root fence after dark.
+- **Draw.** The Calveno prints, clear and easy to follow north.
+```
 
----
-## Who
+```col-md
+flexGrow=1
+===
+> [!narration] Cutoff Lip
+> Cutoff Lip is a shelf of packed dirt no wider than a bedroll, running between a steep grass slope and the first dark trees of the forest. Along the forest side stands a fence of hollow knee-roots, pale and chest-high, open at the top like empty jars. Above them the bark on two great trunks is torn away in long white strips, with tufts of dark fur caught in the splinters. Below the shelf, a spring spills over black stones into the grass, and the river shines past the foot of the slope. Past the roots, the grass sounds stop and only dripping leaves remain.
+```
+````
 
-- No campers now. Prints climb from Slack Basin's bloody bank.
-- [[deer-stalker]] sign on the knee wall; the Quiet beyond holds silence.
+## Features
 
----
-## What
+- **The shelf.** *No wider than a bedroll.* Packed dirt, dry, and flat enough to sleep on. Muddy prints run along it: the Calveno who climbed out of the [[river-slack-basin]] nineteen days ago.
+- **The knee-root fence.** *Hollow knee-roots, pale and chest-high.* Difficult Terrain to cross. Beyond it the forest heavily obscures anything more than 10 feet away. A watch post 15 feet inside the roots is dim and cut off from the shelf.
+- **The stripped trunks.** *Bark torn away in long white strips, with tufts of dark fur.* A [[deer-stalker]] scrapes these trees to mark its ground. **Intelligence (Investigation)** or **Wisdom (Perception)** `DC 12` also finds a bowl between the roots with old blood and small bones, where it feeds.
+- **The spring.** *Spills over black stones into the grass.* Clean drinking water. It is running water, not the otters' pool.
 
-- Packed sleep-shelf; chest-high hollow knee-roots; downslope rock seep; crushed print trail.
-- First silence line of [[the-quiet]].
+## At the Table
 
----
-## Where
+- **If the party follows the prints.** They lead north along the shelf to [[print-braid]], a short walk.
+- **If the party camps here.** The Deer-Stalker comes at night for whoever sits alone past the roots. It retreats from a group that stands together.
+- **If anyone takes from the island here.** Picking, cutting, or killing to carry off flesh is a claim under [[taking-on-aruhe]]; two [[wolfrabbit]]s come out of the grass.
 
-- **North:** [[print-braid]] → [[spoke-ring]] (same valley).
-- **East:** [[the-quiet]] past the palisade.
-- **South:** Bloody-bank return to [[river-slack-basin]].
-- **West:** Downslope [[grasslands]] / [[the-river]] seep; Slack Basin is the claimed water behind this lip, not the shelf.
+## Connections
 
----
-## Why
-
-- Mark the first Quiet edge after the river claim — choose silence wood versus grass/river road.
+- [[print-braid]] — north along the shelf, a quarter hour's walk.
+- [[the-quiet]] — east, past the root fence.
+- [[river-slack-basin]] — south, down the bloody-bank trail, a quarter hour's climb.
+- [[grasslands]] and [[the-river]] — west, down the grass slope.

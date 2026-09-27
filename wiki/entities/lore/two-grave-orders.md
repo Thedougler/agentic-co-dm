@@ -1,6 +1,6 @@
 ---
 title: "Two-Grave Orders"
-category: entities
+category: lore
 tags: [shattered-sea, aruhe, lore]
 sources:
   - "wiki/entities/item/grung-authority-seal.md"
@@ -9,122 +9,66 @@ sources:
   - "wiki/entities/lore/taking-on-aruhe.md"
   - "Session 12 concept (accepted 2026-09-16)"
   - "Session 12 plan (DM-approved 2026-09-24)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-16
-updated: 2026-09-24
+updated: 2026-09-27
 type: lore
 reveal: unrevealed
 campaign: shattered-sea
 visibility: dm
 kind: history
-truth: partial
+truth: established
 scope: "Gold-caste expeditions sent inland through Aruhe"
 region: aruhe
-era: "Before the current Calveno wreck"
+era: "Generations of expeditions before the Calveno wreck"
 invention: true
-summary: "The spent Authority Seals preserve a partial order trail from inland reporting to replacement expeditions and finally a command to find and destroy two graves."
+summary: "Karath's Gold caste compelled generations of Grung onto Aruhe: first to report, then to replace the lost, finally to destroy the two graves under the memorial tree."
 ---
 # Two-Grave Orders
 
 ![[two-grave-orders-overview.png|Two-Grave Orders overview: report, replacement, destroy]]
 
-## At a Glance
+For generations the Gold caste of [[karath]] has compelled lower-caste Grung with [[grung-authority-seal]]s ([[grung-color-and-the-sealing-rite]]) and sent them inland on [[aruhe]]. Every compelled Grung believed the order was their own wish. The orders moved from reporting, to replacing the parties that stopped reporting, to finding and destroying the two graves beneath the memorial tree at [[memorial-grove]]. The Gold caste wants the graves gone because reports from compelled Grung taught it that the island's curse is anchored there. It is right. The graves are part of the Death Bloom, [[hinewai]]'s body and phylactery, and destroying them would end her law and reopen Aruhe to Karath's Grung.
 
-**Core truth.** Old Gold-caste orders sent lower-caste Grung inland through [[aruhe]]. The records move from reporting duties to replacement parties and then to a command to find and destroy two graves.
+## Chronology
 
-**Why it matters.** The dead did not represent one failed expedition. Each loss produced another command. The page frames the party's choice as a conflict between carrying that logic forward and rejecting it after exposing who used it.
+Each seal carries its whole order chain in Gold-caste script, oldest line first. The lines a seal holds date its bearer's expedition.
 
-**Scope.** This order trail belongs to the Grung expeditions whose spent [[grung-authority-seal]]s lie along the inland routes. It does not prove that every Grung obeyed or that Aruhe caused every death.
+1. **Report.** "Report what lies inland." Red-caste and lower Grung walked inland and returned their findings to Gold-caste authority. The earliest parties came back.
+2. **Replace.** "Replace the parties that stopped reporting." Once parties stopped returning, the caste sent more, and treated each lost party as a staffing problem.
+3. **Destroy.** "Find the two graves beneath the memorial tree and destroy them." Returned reports had described the tree, the graves, and a place where the island's hunger stops, and the caste concluded the curse lived there.
+4. **Burn.** "If the forest stands between, burn it." The last expedition, eleven Grung, cut [[the-burnt-road]] toward the Grove with oil and clay fire pots. The island pulled all eleven into the soil and has refused to grow fruit along the scar ever since.
 
-## Current Truth
+No compelled Grung is on Aruhe now. No seal carries an officer's name. Gold-caste orders go out under the caste's single authority mark, because the caste issues orders as one voice.
 
-The oldest seal fragments repeat an inland reporting duty. They direct red-caste and lower-caste Grung into Aruhe and require them to return their findings to Gold-caste authority. This extends the existing evidence on [[grung-authority-seal]] without changing the seal's spent status.
+## What the Graves Are
 
-Later fragments record replacement parties after earlier groups stopped reporting. The wording treats missing Grung as a staffing problem rather than as a reason to stop. The next layer changes the objective. It identifies two graves beneath the memorial tree and orders their destruction. The last expedition's seals add one line: "If the forest stands between, burn it." That expedition cut [[the-burnt-road]] toward the Grove, and the island took all eleven of them.
+The two graves are the heart of the Death Bloom at [[memorial-grove]]. One holds Hinewai's drowned companion, and it is the reason for the island's law. The other is Hinewai's own, and it is the mechanism. Together with the fruit tree, the black-flower ring, and the bound soil, they are her place-bound phylactery ([[hinewai#The Death Bloom]]). Destroy the graves and the law of [[taking-on-aruhe]] fades over weeks and months, Hinewai's next death is permanent, and Aruhe is open to Karath.
 
-The Gold caste wants the graves destroyed because sealed reports taught them that the island's curse is anchored there. Breaking it would reopen Aruhe to the Grung of neighboring [[karath]]. It does not name [[hinewai]], identify the [[memorial-grove|Death Bloom]], or reveal the full mechanism that joins the graves to Aruhe.
-
-Every Grung sent inland wore a seal and believed its order was their own conviction. None of them experienced the order as a command, which is why the expeditions kept coming.
-
-## Limits
-
-* **Established boundary.** The seal fragments support the progression from reporting to replacement to the two-grave objective. They do not provide a complete translation of every Gold-caste line.
-* **Unknown to the world.** No fragment names the officer who issued the final order.
-* **Forbidden conclusion.** Do not reveal the full Death Bloom or phylactery logic from these scraps alone. The session should establish that two graves matter without solving why they matter.
+The seals carry the objective, not this explanation. Nothing written on a seal names Hinewai or the Death Bloom.
 
 ## At the Table
 
-* **Players notice:** spent seals lie beside different generations of Grung dead. The scraps grow more urgent as the bodies become newer, culminating in a command about the graves.
-* **This explains:** why Aruhe contains multiple eras of Grung dead, and why [[hinewai]] assumes every Grung on her island is sealed and sent for the graves.
-* **This enables:** [[jean-claude-tabarnack]] reads Gold-caste authority script without a roll. Anyone else reads a spent seal with **Intelligence (Investigation) — `DC 13`**.
-* **This warns of:** an old official command may still be wrong when it treats people, memorials, or living places as objectives.
-* **Relevant now:** The spent seals of the burn expedition lie along [[the-burnt-road]], on the party's way further in.
+- **Players notice.** Spent gold seals lie with Grung dead of different ages along the inland routes, and the newer the bones, the more urgent the order on the seal.
+- **It explains.** Why Aruhe holds several eras of Grung dead, why the burn scar runs straight at the Grove, and why [[hinewai]] assumes every Grung on her island is compelled and sent for her graves.
+- **It lets them.** Read the order chain from any seal, and learn exactly what Karath wants before they reach the Grove.
+- **It warns of.** Karath has sent expedition after expedition and will send another. Jean-Claude is the first Grung on Aruhe who carries no order at all.
+- **Party knows.** Nothing yet. The seals of the burn expedition lie on [[the-burnt-road]], on the party's way inland in Session 12.
+- **If exposed.** A party that tells Hinewai what the orders say confirms her fear and earns her attention. A party that tells Karath the graves are the anchor hands the Gold caste its target.
 
-## Who Knows
+- [ ] **The order chain.** Any seal on [[the-burnt-road]] carries all four lines. [[jean-claude-tabarnack]] reads Gold-caste script with no roll; anyone else reads it with **Intelligence (Investigation)** `DC 13`.
+- [ ] **One command system.** Jean-Claude's own [[solanges-authority-seal]], whole and unused, carries the same authority mark as every spent seal.
+- [ ] **Why the graves.** Jean-Claude knows from Gold-caste doctrine he grew up around that Karath calls Aruhe cursed and wants it reopened, with **Intelligence (History)** `DC 12`. Hinewai, asked what the Grung want, says "My graves. They always want my graves."
+- [ ] **The compelled believed it.** Hinewai's voice: "They all said it was their own wish."
 
-| Knower | Knowledge | Certainty | Basis |
-| ------ | -------- | --------- | ----- |
-| [[jean-claude-tabarnack]] | Can recognize Grung authority marks and may connect the scraps to the order structure, but does not yet know the complete sequence. | suspects | His Grung upbringing, [[solanges-authority-seal]], and the fragments' repeated marks. |
-| [[hinewai]] | Knows the graves matter and will not explain her whole history unless the party presses toward [[memorial-grove]]. | knows | The graves are part of her body and law. |
-### Party Knowledge
+## Accounts
 
-**Known.** The party can inspect spent seals and has evidence that multiple Grung expeditions entered Aruhe.
+| Account | Held by | How it differs from the truth |
+| ------- | ------- | ----------------------------- |
+| "First they sent us to report. Then they sent more. At the end, they sent us to break the graves." | Grung who hear the seals read | True as far as the seals go. It leaves out that every bearer wanted it. |
+| Every Grung on Aruhe is compelled and sent for the graves. | [[hinewai]] | True of every Grung she has seen. Jean-Claude is the exception. |
+| Aruhe is cursed, and breaking the curse frees the island for Karath. | The Gold caste of [[karath]] | True. The caste does not know the curse is a grieving woman. |
 
-**Suspected.** The order trail changed from reporting, to replacement, to a command concerning two graves.
+## Log
 
-**Misunderstood.** The scraps do not yet reveal why the graves matter or identify the officer who issued the final order.
-
-**Last changed.** Session 12 concept (accepted 2026-09-16).
-
-## Common telling
-
-> First they sent us to report. Then they sent more. At the end, they sent us to break the graves.
-## Discovery
-
-
-### Revelation
-
-**The expeditions changed objective.**
-
-**Conclusion.** The Grung were first ordered to report, then repeatedly replaced, and finally ordered to find and destroy two graves.
-
-**Importance.** structural
-
-**Status.** unrevealed
-
-* [ ] **[[grung-authority-seal]].** Spent seals near different generations of bones preserve the repeated reporting and replacement pattern.
-* [ ] **[[jean-claude-tabarnack]].** Jean-Claude can compare the authority marks on the scraps with the unused [[solanges-authority-seal]] in his pack. This confirms that the fragments belong to one command system.
-* [ ] **[[the-burnt-road]].** The burn expedition's eleven dead and their seals lie along the scar, carrying the newest layer: "If the forest stands between, burn it."
-
-
-## If This Is Changing
-
-* **Current pressure.** The spent seals and grave order are turning old expedition losses into a present moral and investigative problem.
-* **Their aims.** The Gold caste wants the curse broken; Hinewai protects the graves; [[jean-claude-tabarnack]] is the first Grung on Aruhe who carries no order at all.
-* **Without interference.** The fragments remain partial evidence while the party approaches [[memorial-grove]] without a complete explanation.
-* **Visible sign.** Another seal fragment or a clearer line naming the graves turns the old order into an immediate choice.
-
-## Consequences
-
-* **Because this is true,** the party can treat the spent seals as a layered command record rather than isolated debris.
-* **If exposed,** the Grung order system becomes evidence that repeated expeditions treated casualties as replaceable.
-* **If disproved,** the fragments would still establish multiple expeditions but not a deliberate progression toward the graves.
-* **If changed,** [[memorial-grove]] and the records of [[grung-authority-seal]] would need synchronized updates.
-* **If exploited,** a false order or forged seal could redirect survivors toward the graves or against the party.
-
-## Connections
-
-| Page | Relationship | Table relevance |
-| ---- | ------------ | --------------- |
-| [[grung-authority-seal]] | Physical evidence of the order trail | Gives the party an inspectable object and a repeatable clue. |
-| [[grung-color-and-the-sealing-rite]] | Cultural context for why current color and authority can feel inherited without proving permanent rank | Keeps inherited obedience distinct from biological destiny. |
-| [[the-gold-caste-serene]] | The gold authority associated with the surviving order language | Points toward responsibility without inventing a named officer. |
-| [[memorial-grove]] | The fragments refer to this place without naming it | Makes the Grove the next route without exposing the Death Bloom's full truth. |
-| [[hinewai]] | Guardian of the graves and source of the island's law | Turns evidence into a moral encounter rather than a treasure map. |
-| [[taking-on-aruhe]] | Chosen survivor practice for those who follow Aruhe's law | Gives the party a present-tense alternative to imposed orders. |
-
-## Sources
-
-* [[grung-authority-seal]]: existing evidence for spent seals and inland reporting. Session 12 accepts the layered sequence as invention.
-* [[grung-color-and-the-sealing-rite]]: existing context for Grung color, role, and the sealing rite.
-* [[memorial-grove]] and [[hinewai]]: existing two-grave boundary and the unrevealed Death Bloom truth.
-* Session 12 concept (accepted 2026-09-16): requested progression from report orders toward the two-grave objective.
+- **Session 12 prep** — The four-line order chain, the burn expedition on [[the-burnt-road]], and the Gold caste's reason for wanting the graves were set.

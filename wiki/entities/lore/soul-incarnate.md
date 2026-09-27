@@ -30,7 +30,7 @@ scope: "Linked to ley-line phenomena at Yssenmoor"
 
 **Core truth.** The Soul Incarnate is a sealed, observing ki-form beneath [[high-eyrie|the High Eyrie]], bound to a mummified body and a two-century record of the [[drowned-maw]].
 
-**Why it matters.** Its observation, trigger conditions, and incomplete understanding of [[Auralis]] turn the High Eyrie archive into a live information pressure.
+**Why it matters.** Its observation, trigger conditions, and incomplete understanding of [[auralis|Auralis]] turn the High Eyrie archive into a live information pressure.
 
 **Scope.** This page combines the established lore, combat expression, ecology, and prepared reveals of the named entity.
 
@@ -116,7 +116,7 @@ The Soul Incarnate's body has not moved since the seal closed over it two centur
 |---|---|---|---|
 | Bring it a complete, uninterpreted account of the current Maw crisis, delivered by someone trained in the order's own doctrine | The account comes from [[crissdalynn-khinriss]], the one living Sentinel whose pilgrimage has drawn her closest to its attention | It weighs the account against two centuries of its own record and may share a fragment of that record in answer, the first exchange it has permitted since the seal closed | [[crissdalynn-khinriss]] |
 | Damage or expose the sealed, mummified body beneath [[high-eyrie\|the High Eyrie]] | Someone breaches the seal itself, not merely the chamber around it | It abandons pure observation and intervenes directly for the first time in two centuries, an act the order's own founding claim cannot survive once anyone sees it happen | [[sentinels-of-the-eyrie]], via the Soul Incarnate's Watch Front |
-| Ask it directly what it has recorded of [[Auralis]] | The crew of the *[[uncertainty]]* can already prove they know the Soul Incarnate exists as a conscious entity, not merely an old founding document | It confirms two centuries of surface observation have found no trace of Auralis at all, though both watch the Maw from opposite sides, each unaware of the other | [[Auralis]] |
+| Ask it directly what it has recorded of [[auralis|Auralis]] | The crew of the *[[uncertainty]]* can already prove they know the Soul Incarnate exists as a conscious entity, not merely an old founding document | It confirms two centuries of surface observation have found no trace of Auralis at all, though both watch the Maw from opposite sides, each unaware of the other | [[auralis|Auralis]] |
 
 **Prepped Reveals.**
 

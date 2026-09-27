@@ -36,15 +36,15 @@ flexGrow=2
 ===
 ## At a Glance
 
-| **Role** | Rival and master of [[countless|the Countless]] |
-| --- | --- |
-| **Nature** | Aged snowy-owl aarakocra, once a senior master of the [[high-eyrie|High Eyrie]] and teacher of [[master-kyzil]] |
-| **Home** | Unknown; he moves along the Countless's Midchain routes |
-| **Wants** | The [[soul-incarnate|Soul Incarnate]]'s transformation technique, and the crack he means to use is [[crissdalynn-khinriss]]'s own unexplained gift |
+Vantyrus is the hand behind Skarn: the master of the [[Countless]], who sent his apprentice for Crissdalynn's [[fate-spinner]] and has not yet shown himself.
+
+- **Role.** Master of [[Countless|the Countless]], and the party's rival.
+- **Nature.** An aged snowy-owl aarakocra, once a senior master of the [[high-eyrie|High Eyrie]] and teacher of [[master-kyzil]].
+- **Wants.** The [[soul-incarnate|Soul Incarnate]]'s transformation technique. The crack he means to use is [[crissdalynn-khinriss]]'s unexplained gift.
+- **Home.** None fixed. He moves along the Countless's Midchain routes.
 
 **Identity.** [[osset]] is his original name. He now goes by Talon Vantyrus as leader of [[Countless|the Countless]], and **Talon** is a title his agents share.
 
-> **DM thesis:** Vantyrus treats every death he could have foreseen as a death he permitted, so he has stopped recording and started intervening, and the party only ever meets the intervention.
 ```
 ```col-md
 flexGrow=1
@@ -54,32 +54,16 @@ flexGrow=1
 ```
 ````
 
-## Running Talon Vantyrus
+## At the Table
 
-````col
-```col-md
-flexGrow=1
-===
-### First meeting
+- **First meeting.** He arrives as Talon Vantyrus, master of the Countless, and opens on the work in front of them, never on himself. He never offers his original name. If someone says "Osset" aloud, he stops deciding whether to answer and starts deciding whether to stay.
+- **Opens up when.** A plea stops immediate harm, or an argument accepts the cost of acting.
+- **Shuts down when.** Anyone appeals to patience, procedure, tradition, or doctrine instead of action, or the talk turns into an interrogation. He leaves.
+- **Shares.** His doctrine, freely. Never his name, [[talon-skarn]]'s real standing, or how he means to reach [[crissdalynn-khinriss]].
+- **Lines.** "You may sit. You already know what I am asking, or you would not be here." · "Nothing had to happen. Something happened, and afterward you invented inevitability so you could survive having done nothing." · "Tell me the difference between a preventable death and a permitted one."
+- **He has not yet appeared.** He stays off-screen until the party can learn that he is Osset.
 
-Vantyrus arrives as Talon Vantyrus, master of the Countless, and opens on the work in front of them rather than on himself. He keeps his original name out of the room entirely, not hiding it so much as never offering it. If someone says the name Osset aloud, he stops deciding whether to answer and starts deciding whether to stay.
-
-* "You may sit. You already know what I am asking, or you would not be here."
-```
-```col-md
-flexGrow=1
-===
-### When posture changes
-
-A plea that stops immediate harm can move him, and so can an argument that accepts the cost of acting. An appeal to patience, procedure, tradition, or doctrine instead of action ends the conversation, and he repeats a demand only when he has already decided the answer.
-
-He will not name himself, describe [[talon-skarn]]'s real standing in the order, or explain how he means to reach [[crissdalynn-khinriss]]. A conversation that turns into an interrogation is one he leaves.
-```
-````
-
-### Voice
-
-Composed, quiet, and precise. He never raises his voice and rarely repeats himself, and he speaks like a teacher who expects the student to eventually understand.
+**Voice.** Composed, quiet, and precise. He never raises his voice and rarely repeats himself, and he speaks like a teacher who expects the student to eventually understand.
 
 He does not describe his foresight as destiny. His vocabulary is *avoidable*, *preventable*, *consequence*, *probability*, *intervention*, and *waste*, and he despises any claim that something "had to happen."
 
@@ -99,6 +83,8 @@ He does not describe his foresight as destiny. His vocabulary is *avoidable*, *p
 Countless erases names, passes orders through intermediaries, and hands hired blades one task each, so losses disappear from the ledger. Vantyrus believes knowledge creates responsibility and states the principle without softening it: "If you knew enough to record the death, you knew enough to try."
 
 His corruption lies in how far he carries that principle. Given enough foresight, every choice becomes something to optimize. Chance becomes negligence. Freedom becomes another variable capable of producing unacceptable outcomes.
+
+## Statblock
 
 **Combat.** Vantyrus's build is [[master-kyzil]]'s disciplined Kensei form carried toward prediction, interruption, and control, and the two share that lineage from before their break. His win condition is a decision he can make for the party, not a body count, and he withdraws rather than stands when the exchange turns against him.
 
@@ -182,7 +168,7 @@ legendary_actions:
 5. Answer weapon pressure with **Absent Feather** and a key spell with **Sever the Gesture**.
 6. Spend **Five Futures Cut** once the party spreads out or believes distance has made them safe.
 
-**The Fatespinner.** The [[fate-spinner]] does not show him a single predetermined future. It exposes nearby possibilities, and he uses it to find the moments where several outcomes remain possible and then forces one branch to become real. At the table that is the **Fatespinner** trait above. Describe his effects as impossible prediction, wing-assisted footwork, temporal afterimages, strikes intercepted before they begin, movements selected from several possible futures, and the Fatespinner rotating as outcomes collapse; do not call them spellcasting unless another creature is explicitly identifying their magical mechanics.
+**The Fatespinner.** The [[fate-spinner]] does not show him a single predetermined future. It exposes nearby possibilities, and he uses it to find the moments where several outcomes remain possible and then forces one branch to become real. At the table that is the **Fatespinner** trait above. Describe his effects as impossible prediction, wing-assisted footwork, temporal afterimages, strikes intercepted before they begin, movements selected from several possible futures, and the Fatespinner rotating as outcomes collapse. None of them is spellcasting.
 
 * **Absent Feather.** The attack passes through the version of Vantyrus the attacker expected to hit.
 * **Fatespinner.** The dreidel turns once and an already-rolled possibility becomes real.
@@ -190,19 +176,18 @@ legendary_actions:
 * **Binding Grasp.** Every direction the target tries to move briefly produces the same image of Vantyrus already waiting there.
 * **Sever the Gesture.** He strikes the wrist, wing, breath, focus, or exact moment required to complete the spell.
 
-**Weakness of Long Sight.** Vantyrus does not see an authored future. He sees probable ones, and his read weakens whenever people act without preparation, irrationally, for reasons he does not understand, against their own obvious interests, through genuine self-sacrifice, or in deliberate coordination with chaos and uncertainty. A creature who willingly accepts a terrible consequence to preserve another person's freedom violates the premise beneath his whole philosophy, and he has trouble predicting it. His greatest blind spot is treating people as solvable systems.
-
-**Goals and fronts.** Vantyrus wants the transformation technique of the [[soul-incarnate|Soul Incarnate]], and his route runs through [[crissdalynn-khinriss]]. Exactly how he intends to read, extract, reproduce, or exploit her [[long-sight|Long Sight]] is not yet established. He anchors the [[rule-of-two]], the [[long-sight-hunt]], [[countless-through-the-maw-seal]], [[sentinels-and-countless]], [[schisms-third-name]], and [[soul-incarnates-watch]].
-
-* **Front: The Rule of Two.** *Lifecycle:* active. *Aim:* stay ahead of [[talon-skarn]]'s open contest to kill him long enough to pry the transformation technique loose from the order that raised him, whatever it costs the people still inside it. *Approach:* he gives Skarn access to every technique and treats each lesson as a live weapon aimed back at him, never announces the test, and never deliberately teaches Skarn anything wrong. If Skarn cannot eventually threaten him, Vantyrus considers himself to have failed as a master. Every other task runs through hired blades and paid contacts who learn one job each and never who gave the order. *Off-screen move if unopposed:* keeps testing Skarn's reach while advancing the Countless's hunt for that gift, the shared operation on [[long-sight-hunt]]. *Closes when:* Skarn's move against him becomes more pressing than one fight, or Kyzil realizing what Crissdalynn is holding closes the one crack Vantyrus is counting on. *Clock:* 4 segments, fast-moving once Skarn commits. Filled: 0. *Consequence at fill:* the contest resolves, and Vantyrus falls to his own apprentice or breaks Skarn decisively and preserves the Rule of Two for a generation. *Possible outcomes:* Skarn strikes and loses, proving Vantyrus's doctrine again; Skarn strikes and wins and the Countless gains a new master; or the fight turns against Vantyrus directly and he escapes through **Unchosen Step**, leaving a hired hand or Skarn to cover the gap while the contest continues another day. *PC connection:* runs through [[crissdalynn-khinriss]] directly, because his whole plan is to read what she is carrying before Kyzil or the order realize what she holds. *Quest link:* none yet.
-
 ## Secrets
 
-**Secrets and future form.** **Osset is Talon Vantyrus.** The party does not know it, and [[master-kyzil]] believes his old master died decades ago.
+- **Osset is Talon Vantyrus.** The party does not know it, and [[master-kyzil]] believes his old master died decades ago. Vantyrus still counts Kyzil his greatest student. His only admitted fear is that [[talon-skarn]] may be right.
+- **Why he wants the Spinner.** Kyzil gave Crissdalynn her [[fate-spinner]], and it bonded to her. Through it, Vantyrus means to read what Kyzil taught her, and what Kyzil refused to teach her, and so find the way into the Soul Incarnate's technique. That is why he sent Skarn.
+- **Where he is.** Somewhere on the Countless's Midchain routes. The Countless probe through the [[drowned-maw]] seal failed, and he is planning another.
+- **If he gains the technique.** He gets a second statblock, in which he moves from seeing several possible futures to existing across several at once. His current statblock carries no Soul Incarnate abilities.
 
-Vantyrus still considers Kyzil his greatest student, and his only admitted fear is that [[talon-skarn]] may be right. His current physical location is unknown, and whether the Countless probe through the [[drowned-maw]] seal succeeded is unestablished. Do not reveal him physically until the identity connection can matter.
+**Weakness of Long Sight.** Vantyrus does not see an authored future. He sees probable ones, and his read weakens whenever people act without preparation, irrationally, for reasons he does not understand, against their own obvious interests, through genuine self-sacrifice, or in deliberate coordination with chaos and uncertainty. A creature who willingly accepts a terrible consequence to preserve another person's freedom violates the premise beneath his whole philosophy, and he has trouble predicting it. His greatest blind spot is treating people as solvable systems.
 
-Do not add Soul Incarnate abilities to this stat block. If he acquires the transformation technique, write a second stat block, and let that form move from **seeing several possible futures** to **existing across several possible futures at once**.
+**Goals and fronts.** Vantyrus wants the transformation technique of the [[soul-incarnate|Soul Incarnate]], and his route runs through [[crissdalynn-khinriss]]. He anchors the [[rule-of-two]], the [[long-sight-hunt]], [[countless-through-the-maw-seal]], [[sentinels-and-countless]], [[schisms-third-name]], and [[soul-incarnates-watch]].
+
+* **Front: The Rule of Two.** *Lifecycle:* active. *Aim:* stay ahead of [[talon-skarn]]'s open contest to kill him long enough to pry the transformation technique loose from the order that raised him, whatever it costs the people still inside it. *Approach:* he gives Skarn access to every technique and treats each lesson as a live weapon aimed back at him, never announces the test, and never deliberately teaches Skarn anything wrong. If Skarn cannot eventually threaten him, Vantyrus considers himself to have failed as a master. Every other task runs through hired blades and paid contacts who learn one job each and never who gave the order. *Off-screen move if unopposed:* keeps testing Skarn's reach while advancing the Countless's hunt for that gift, the shared operation on [[long-sight-hunt]]. *Closes when:* Skarn's move against him becomes more pressing than one fight, or Kyzil realizing what Crissdalynn is holding closes the one crack Vantyrus is counting on. *Clock:* 4 segments, fast-moving once Skarn commits. Filled: 0. *Consequence at fill:* the contest resolves, and Vantyrus falls to his own apprentice or breaks Skarn decisively and preserves the Rule of Two for a generation. *Possible outcomes:* Skarn strikes and loses, proving Vantyrus's doctrine again; Skarn strikes and wins and the Countless gains a new master; or the fight turns against Vantyrus directly and he escapes through **Unchosen Step**, leaving a hired hand or Skarn to cover the gap while the contest continues another day. *PC connection:* runs through [[crissdalynn-khinriss]] directly, because his whole plan is to read what she is carrying before Kyzil or the order realize what she holds. *Quest link:* none yet.
 
 ## Connections
 

@@ -27,7 +27,7 @@
 - [[ashwall-islands]] — Cold volcanic spires at the Galewall edge: last solid ground heading west and first safe lee returning east, with vent fauna and arclight phoenix hatch signs.
 
 - [[assets]] — Drop map for Session 11 summary, transcript, and recording.
-- [[Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown.
+- [[auralis|Auralis]] — Public Grung mandate and name associated with a serene gold presence whose exact nature remains unknown.
 - [[bala-tane]] — Pit boss of The Mud Pits on Kalowe's third island, orc woman, mid-forties, has run the fights for fifteen years.
 - [[barb-line-harpoon]] — A forged harpoon on sixty feet of light chain: it sets a barb in something swimming and holds it inside the chain's reach of whatever the far end shackles to.
 - [[barnaby-rook]] — Boarded the Crown cutter Surety during the Saltwright fight.
@@ -55,7 +55,8 @@
 - [[blade-of-the-lost-grip]] — A sentient +1 rapier that hurls itself at the nearest foe the instant a fight begins, lodges in the target, and won't stop insulting everyone nearby.
 - [[Blight]] — A druid lich whose phylactery is a place, the Death Bloom in Aruhe's interior. Its combat numbers degrade in stages as the Bloom takes damage.
 - [[blind-hood-and-jesses]] — A graded set of leather hoods and ankle straps from The Live Hold, cut to blind and quiet a captured beast so it can be moved without a fight.
-- [[bloodhawk]] — CR 11 adult aerial skirmisher. Its stoop targets exposed prey and ends when cover denies the dive.
+- [[commoner]] — Standard statblock for an ordinary person with no fighting training, used by the Calveno survivors.
+- [[bloodhawk]] — CR 11 four-winged hawk that owns Aruhe's open sky and stoops on anything exposed.
 - [[boarding-raider]] — CR 1 pirate bruiser who charges to knock targets prone and shoves defenders out of the cutpurses' path.
 - [[bosuns-reach]] — A consumable arrow that anchors itself in stone or timber and pays out sixty feet of climbable silk line for problems where no rope can reach.
 - [[Botukuri]] — Sorn farming clan that occupies seasonal flood-pulse lanes rather than a permanent town.
@@ -76,7 +77,6 @@
 - [[cape-solitude]] — Wind-battered northern tip of Calder's Tooth with a ruined lighthouse whose light is dead.
 - [[capn-gorgeous]] — Rupert Knighton's son, a Dravosi Enforcer killed during the Saltwright boarding inspection.
 - [[captain-dorian-bishop]] — Crown captain commanding the HCS Tangent, sent when enforcement fails; CR 6, AC 17, HP 165, working the Crown Islands and Central Strait. Far more dangerous than Rook in single combat.
-- [[carlo-ferrante]] — Ettore's older brother, who followed the voice to the Pantry and believes his family died in the dark.
 - [[catarina-davirelli]] — Calveno artificer and salvage engineer who remains in Calveno.
 - [[cave-bats]] — Dusk-exit cave bats whose mass flight warns of Blackrail country.
 - [[cecco-trivani]] — The apprentice at Il Preludio who can feel every musical number coming and has never once finished the first line of one.
@@ -618,7 +618,6 @@
 - [[the-taken-314]] — Captive pipeline clock tracking more than 314 fighting-age people moved from festival ports toward Karath.
 - [[the-tallow-bell]] — A Tier 1 Waveservant Shrine sloop that moves clergy, tribute records, and sealed offerings between Shattered Sea ports.
 - [[the-tarahs]] — Calveno-area ship faction that takes Rattkin; Nona assumed they had Perrin when he missed check-in.
-- [[tommaso-brasca]] — Boatwright's son who built the Pantry's deadfall raft from what fell, and knows the river.
 - [[the-understudy]] — A folded canvas figure that unfolds into a convincing double of its owner, takes one attack meant for them, and collapses at the owner's feet.
 - [[the-unnamed-companion]] — The drowned man Hinewai buried on Aruhe; his grave became the reason for the island's law.
 - [[the-unplotted]] — Never in the same place on two charts; yet ships always find it exactly where they need it.

@@ -2,140 +2,73 @@
 title: Taking on Aruhe
 aliases:
   - Taking on Aruhe
-category: entities
+category: lore
 tags: [shattered-sea, aruhe, lore]
-sources: ["Aruhe - Beach.md", "session-11-transcript.md", "Session 12 rebuild (DM request 2026-09-22)"]
-summary: Fallen fruit on Aruhe can be taken; pulling living fruit draws predators.
-provenance:
-  extracted: 1.0
-  inferred: 0.0
-  ambiguous: 0.0
-tier: supporting
-created: 2026-09-13T06:41:34Z
-updated: 2026-09-22
+sources: ["Aruhe - Beach.md", "session-11-transcript.md", "Session 12 rebuild (DM request 2026-09-22)", "Session 12 refile (2026-09-27)"]
+created: 2026-09-13
+updated: 2026-09-27
 type: lore
 reveal: revealed
 campaign: shattered-sea
 visibility: dm
-region: aruhe
 kind: law
 truth: established
-scope: "All of Aruhe's living bands"
+scope: "Everything that grows, lives, or lies in fresh water on Aruhe"
+region: aruhe
 era: "Since Hinewai bound herself to the island"
-relationships:
-  - target: "[[aruhe]]"
-    type: related_to
-  - target: "[[western-landing]]"
-    type: related_to
+invention: true
+summary: "On Aruhe, whatever lies on the ground may be received; taking anything still living marks the taker until dawn, and the island's creatures hunt the marked."
 ---
 # Taking on Aruhe
 
 ![[taking-on-aruhe-overview.png|Taking on Aruhe overview: receiving fallen fruit or claiming the living]]
 
-## At a Glance
+On [[aruhe]], anything already on the ground may be eaten, carried, or built with, and nothing happens. Anyone who takes something still living from the island (picks fruit, cuts growth, digs living ground, or kills an island animal to carry off its flesh) is marked until the next dawn, and the island's creatures come for the marked. The law is [[hinewai]]'s grief made into the island's reflex, and it holds for as long as the Death Bloom at [[memorial-grove]] stands.
 
-**Core truth.** On [[aruhe]], taking a living plant, animal, or other living claim draws surrounding life into hostility. Fruit already on the ground is not that claim.
+## The Claim Response
 
-**Why it matters.** Harvest choices decide whether the next minute is food or a hunt.
+What the island does when someone takes from it, in order.
 
-**Scope.** Witnessed inland along the river in Session 11, and already used at [[western-landing|Western Landing]].
+1. **A claim.** A creature makes a claim when it picks fruit from a living stem, shakes a living plant until fruit drops, cuts living growth, digs living ground, pulls a body out of roots that have closed around it, or traps or kills an island animal to carry off its flesh. Fish and animals from fresh water are the island's. Fish from the sea below the tideline are not.
+2. **Not a claim.** Eating or carrying fallen fruit, deadwood, shed fibre, loose stone, or shed shell is receiving, and a loose stone or shell can mark a route. Fighting back against something that attacked you, or someone with you, is not a claim, even when the attacker is a plant. Taking its wood, fruit, or flesh afterward is. Carrying away a body lying loose on the ground is not a claim.
+3. **The tell.** The moment a claim is made, living plants within 30 feet lean toward the taker, and every bird and insect within 60 feet goes silent for one breath. Everyone nearby sees and hears it.
+4. **The mark.** The taker is marked until the next dawn. The island's responders find a marked creature within 60 feet by scent and root-touch, even when it is Invisible, and they attack marked creatures before anyone else.
+5. **Responders.** A place page names its own responders. Where it names none, use the band's default: two [[wolfrabbit]]s in grassland and on the terraces, the nearest [[vine-lash]] on Quiet trails, and the [[river-otter]] family in fresh water. In combat, responders arrive or wake at the end of the taker's next turn. Out of combat, they arrive within 1 minute.
+6. **Targets.** Responders attack the marked creature first. Their other attacks go to the nearest creature within reach that has not received Hinewai's fruit. They never attack a person who has eaten fallen fruit on Aruhe and made no claim since.
+7. **The end.** The response ends after 1 minute, or when no marked creature is within 60 feet. Any single responder reduced to half its hit points withdraws. A marked creature more than 30 feet in the air is out of reach of ground responders, but the open sky over Aruhe belongs to the [[bloodhawk]]s.
 
-## Current Truth
+## Who Acts on It
 
-A loose stone or shed shell can mark a route. Taking a living plant, animal, or other living claim draws surrounding life into hostility. [[western-landing|Western Landing]] uses this ruling when a landing aid might still be alive.
-
-Session 11 confirmed the split at the table. [[crissdalynn-khinriss]] ate a fallen [[redheart-berry]] with no hunt. When she pulled fruit from a living stem, [[wolfrabbit]]s broke the grass. [[matteo-scola]] had already watched people die for picking, and he will only eat what the ground already holds.
-
-### Claim response
-
-What the island does when someone takes from it, step by step.
-
-1. **Claim.** A creature makes a living claim when it picks fruit from a living stem, cuts living growth to take it, digs living ground, or traps or kills an animal to carry off its flesh.
-2. **Not a claim.** Eating or carrying fallen fruit is receiving. Fighting back against something that attacked you or someone with you is not a claim, even when the attacker is a plant. Taking its wood, fruit, or flesh afterward is.
-3. **Tell.** The moment a claim is made, living plants within 30 feet lean toward the taker, and every bird and insect within 60 feet stops for one breath. The taker and everyone near them can see and hear this.
-4. **Mark.** The taker is marked until the next dawn. Aruhe's responders can find a marked creature within 60 feet by scent and root-touch, even when it is Invisible, and they attack marked creatures before anyone else.
-5. **Responders.** The place page lists its responders. Where a place page names none, use the band default: two [[wolfrabbit]]s in grassland and terraces, the nearest [[vine-lash]] on Quiet trails, and the [[river-otter]] family in claimed water. In combat, responders arrive or wake at the end of the taker's next turn. Out of combat, they arrive within 1 minute.
-6. **Targeting.** Responders attack the marked creature first. If no marked creature is within their reach, they attack whoever is nearest to where the claim was made, then leave when the 1 minute ends.
-7. **End.** The response ends after 1 minute, when no marked creature is within 60 feet, or for any single responder reduced to half its hit points, which withdraws. A marked creature that flies higher than 30 feet is out of reach of ground responders, but open sky over Aruhe belongs to the [[bloodhawk]]s.
-
-### Limits
-
-* **Exception.** Fallen fruit, fish taken from water, and other unclaimed leavings have not drawn that hostility in play.
-* **Exception.** Fighting back is not a claim; the Claim response procedure above draws that line for the DM.
-* **Unknown.** Whether shaking a living tree counts as a claim has not been tested.
-* **Impossible or forbidden.** Matteo treats picking living fruit as a death rule, not a maybe.
+- **[[hinewai]].** She hears every claim through the island's roots. She wants takers punished and leaves the punishing to the responders.
+- **[[talon-skarn]].** He does not know the law. A claim made near him turns the responders onto whoever stands closest, and they find him even while he is Invisible.
+- **The Calveno survivors.** They live by the law. [[renzo-canale]] and Tommaso Brasca teach it to anyone who asks, as five rules: eat only what has fallen; build only from what has fallen; never walk at night; stay out of still water; keep off open grass.
+- **Without interference.** The law holds unchanged while the Death Bloom at [[memorial-grove]] stands. Destroying it ends the law over weeks and months, and the Gold caste of [[karath]] wants exactly that ([[two-grave-orders]]).
 
 ## At the Table
 
-* **Players notice:** Half-eaten fruit set down at a cold fire; blood under snapped living stems; wolfrabbits when someone pulls from a tree.
-* **This explains:** Why beach survivors lived on fish, and why Matteo left the inland group.
-* **This enables:** Carry fallen [[redheart-berry]], [[ghost-plum]], and [[stonepear]] without starting a claim, if they were already down.
-* **This exposes:** A marked taker cannot hide from responders. Roots and hunters find an Invisible thief who made a claim, so a claim can reveal a hidden enemy as surely as it endangers the taker.
-* **This warns of:** Picking living fruit starts a hunt. The island is still taking.
+- **Players notice.** Half-eaten fruit set down at cold fires, blood under snapped living stems, and wolfrabbits breaking the grass the moment someone pulls fruit from a tree.
+- **It explains.** Why the beach survivors lived on sea fish, why [[western-landing]] leaves alone any landing aid that might still be alive, and why [[matteo-scola]] left the inland group rather than pick.
+- **It lets them.** Carry fallen [[redheart-berry]], [[ghost-plum]], [[stonepear]], and [[giants-guava]] safely. Bait an enemy into a claim, or make a claim beside a hidden enemy so the responders find and tangle them, at the cost of being marked first.
+- **It warns of.** A marked taker cannot hide. Picking living fruit starts a hunt that lasts until dawn.
+- **Party knows.** Fallen fruit is safe to eat, and picking living fruit brought wolfrabbits in Session 11. They suspect the island punishes takers on purpose. They do not know that fighting back is allowed, or that the responders spare anyone who has eaten fallen fruit.
+- **If exposed.** Anyone who understands the mark can turn the responders on an enemy. Survivors who stopped believing the law would strip the island, and the hunts would start everywhere at once.
 
-## Who Knows
-
-| Knower | Knowledge | Certainty | Basis |
-| ------ | --------- | --------- | ----- |
-| [[matteo-scola]] | Picking living fruit kills people; fallen fruit is safe. | knows | He watched survivors die for picking. |
-| [[oren-vask]] | Fallen food is safe and living claims bring the island down on the taker. He wrongly believes any cut to a living thing, even in self-defense, is a claim. | knows / misunderstands | Months of walking the safe edges. |
-| [[celia-parel]] | The rule keeps people alive, and she follows it as respect rather than worship. | knows | Survivor practice. |
-| [[hinewai]] | The law is her grief made into the island's reflex. | knows | She is its source. |
-
-### Party Knowledge
-
-**Known.** Fallen fruit is safe to eat, and picking living fruit drew wolfrabbits in Session 11.
-
-**Suspected.** That the island is punishing takers on purpose.
-
-**Misunderstood.** Whether fighting back counts as taking, and whether the response cares who it hits.
-
-**Last changed.** [[Session-11-Recap]]
+- [ ] **The split is real.** [[crissdalynn-khinriss]] ate a fallen [[redheart-berry]] with no hunt, then pulled one from its stem and drew the wolfrabbits (Session 11).
+- [ ] **Survivors keep it.** [[matteo-scola]] and the Calveno at [[the-pantry]] eat only fallen fruit and say so when asked.
+- [ ] **The tell shows the law.** Anyone who watches a claim sees the plants lean and hears the insects stop; **Intelligence (Nature)** `DC 12` recognizes that the island is reacting to the taking, not the taker.
 
 ## Accounts
 
-| Account | Held by | Relation to truth | Why they believe it |
-| ------- | ------- | ----------------- | ------------------- |
-| The listeners are mad and she is leading them to die. | [[matteo-scola]] | partial | He refused her and lived, but only by keeping her rule anyway. |
+| Account | Held by | How it differs from the truth |
+| ------- | ------- | ----------------------------- |
+| "The listeners are mad, and she is leading them to die." | [[matteo-scola]] | Partial. He refused her and lived, but only by keeping her rule. |
+| Any cut to a living thing, even in self-defense, is a claim. | [[oren-vask]] | Wrong. Months of walking the safe edges made him more careful than the law. |
+| The rule is respect, not worship. | [[celia-parel]] | True as far as it goes. She follows it and does not ask who made it. |
 
-### Common telling
-
+> [!narration] Common telling
 > "Eat what the ground gives you. Don't pick it. Don't pick it."
 
-## If This Is Changing
+## Log
 
-* **Current pressure.** The party, Skarn, and the survivors are all moving inland toward [[memorial-grove]], where the law is strongest.
-* **Actors.** [[hinewai]], [[talon-skarn]], and the Calveno survivors.
-* **Their aims.** Hinewai wants takers punished; Skarn wants the Spinner and may use the law as a weapon; the survivors want to live by it.
-* **Without interference.** The law stays as it is while the Death Bloom at [[memorial-grove]] holds.
-* **Visible sign.** Plants leaning toward a taker and birds falling silent for a breath.
-
-## Consequences
-
-* **Because this is true,** foraging on Aruhe is a choice between receiving and taking.
-* **If exposed,** anyone who understands the mark can make a hidden enemy a target by baiting them into a claim.
-* **If disproved,** survivors would strip the island and the hunts would start everywhere at once.
-* **If changed,** [[memorial-grove]] would be the cause: ruining the Death Bloom ends the law over weeks and months.
-* **If exploited,** a taker can deliberately draw responders onto a place where enemies stand, at the cost of being marked first.
-
-## Connections
-
-| Page | Relationship | Table relevance |
-| ---- | ------------ | --------------- |
-| [[aruhe]] | The island the law covers | Every band has responders. |
-| [[hinewai]] | Source of the law | Her grief is why the island answers takers. |
-| [[memorial-grove]] | Where the law is anchored | Destroying the Death Bloom ends the law. |
-| [[wolfrabbit]] | Default grassland responder | Two arrive for a claim in grass or terraces. |
-
-**Open canon.**
-
-* [ ] **Unknown.** Whether shaking a living tree counts as a claim.
-* [ ] **Contradiction.** This page lets fish taken from water pass, while [[grasslands]] treats fishing to carry flesh as a claim.
-* [ ] **Decide when needed.** Whether carrying the dead out of a place counts as carrying off a kill.
-
-## Canon Log
-
-| Session / Date | Change | Type | Cause / Source |
-| -------------- | ------ | ---- | -------------- |
-| [[Session-11-Recap]] | Fallen fruit is safe to eat; picking living fruit drew wolfrabbits. | expanded | session-11-transcript.md |
-| Session 12 prep (proposed) | Claim response procedure: mark until dawn, responders by place, fighting back is not a claim. | expanded | Session 12 rebuild (DM request 2026-09-22) |
+- **[[Session-11-Recap]]** — Fallen fruit proved safe to eat, and picking living fruit drew wolfrabbits.
+- **Session 12 prep** — The claim response procedure was set: a mark until dawn, responders by place, fighting back allowed, and Hinewai's fed spared. Sea fish, shaking, and loose bodies were decided.

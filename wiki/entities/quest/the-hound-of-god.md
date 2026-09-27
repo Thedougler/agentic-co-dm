@@ -33,7 +33,7 @@ tier: supporting
 - [[shepherd-grigori]] covers the quarry's own page, CR 19 [[Hierarch]] statblock, and the [[khlysty-the-flock|Khlysty]] thread he advances.
 - [[dravosi-crown]] holds the institutional authority that keeps Malone on a long leash. The leash is long by design: [[sarns-landing]] showed the Crown what happens when the leash is short.
 - [[blackrule]] is the chapterhouse where Malone returns between pursuits.
-- [[perrin-black-jaw]] carries the dormant heresy thread. "Answer the Next Confirmed Heresy" waits on the Crown confirming his unwitting pact with [[Auralis]].
+- [[perrin-black-jaw]] carries the dormant heresy thread. "Answer the Next Confirmed Heresy" waits on the Crown confirming his unwitting pact with [[auralis|Auralis]].
 
 ## Beat Chart
 

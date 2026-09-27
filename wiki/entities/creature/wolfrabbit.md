@@ -1,18 +1,16 @@
 ---
 title: Wolfrabbit
+aliases:
+  - Wolfrabbit
+  - Wolfrabbits
 category: entities
 tags: [shattered-sea, aruhe, creature]
 sources:
   - "campaign-os:wolfrabbits.md"
   - "house (wiki creature.wolfrabbit; living-stock 2026-09-05; 2024 CR 4 conversion)"
-summary: "CR 5 pack hunter that knocks targets prone and rends them with nearby packmates before feeding on fallen members."
-provenance:
-  extracted: 0.98
-  inferred: 0.02
-  ambiguous: 0.0
-tier: supporting
-created: 2026-09-12T00:00:00Z
-updated: 2026-09-12T10:30:00Z
+  - "Session 12 refile (2026-09-27)"
+created: 2026-09-12
+updated: 2026-09-27
 type: creature
 reveal: revealed
 campaign: shattered-sea
@@ -20,22 +18,35 @@ visibility: dm
 region: aruhe
 role: skirmisher
 cr: 4
-relationships:
-  - target: "[[old-gardens]]"
-    type: related_to
-  - target: "[[razer-grass]]"
-    type: related_to
-  - target: "[[grubnade]]"
-    type: related_to
+summary: "A CR 4 pack-hunting cat with long ears that knocks prey down with a long bound and tears it apart with its packmates; two answer a claim in Aruhe's grass."
 ---
 # Wolfrabbit
 
-> [!narration] Narration
-> A dark-striped hunting cat crouches over the boat, its enormous ears pricked above a broad, furred head. Red eyes track you through the terrace brush. A twitching nose glistens with saliva while hooked claws grip the rim. Wolf-sized and built to spring, it can cross the gap before the boat clears the bank.
+![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-reference-sheet.jpg|Wolfrabbit reference sheet]]
+![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-v2.jpg|Wolfrabbit of Aruhe]]
+
+````col
+```col-md
+flexGrow=2
+===
+## At a Glance
+
+Wolfrabbits are the island's answer in the grass: a pack that bounds in from cover, knocks one body flat, and closes around it.
+
+- **Habitat.** The collapsed first terraces of [[old-gardens]] and Aruhe's grassland, hunting at dawn and dusk. Two answer a claim made in grass or on the terraces ([[taking-on-aruhe]]).
+- **Treasure.** None. Their warrens honeycomb the terrace stone.
+```
+
+```col-md
+flexGrow=1
+===
+> [!narration] Wolfrabbit
+> A wolfrabbit is a hunting cat the size of a wolf, long-legged and low in the body, with upright ears as long as a forearm. Its tawny coat is broken by dark stripes and spots, and its muzzle and throat are pale. Red-orange eyes sit over a twitching wet nose, and a long banded tail flicks behind it. A pack lies flat along terrace walls and in the long grass, ears turning, ready to spring.
+```
+````
 
 ## Statblock
 
-![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-token.jpg|Wolfrabbit of Aruhe Foundry VTT token]]
 ```statblock
 layout: Basic 5e Layout
 name: "Wolfrabbit"
@@ -48,9 +59,9 @@ hit_dice: "8d10 + 24"
 speed: "50 ft."
 stats: [20, 20, 16, 4, 16, 6]
 skillsaves:
-  - Perception: 5
-  - Stealth: 7
-senses: "darkvision 60 ft., passive Perception 15"
+  - perception: 5
+  - stealth: 7
+senses: "Darkvision 60 ft., Passive Perception 15"
 languages: "—"
 cr: 4
 traits:
@@ -64,9 +75,9 @@ actions:
   - name: "Multiattack"
     desc: "The wolfrabbit makes two attacks: one with its Bite and one with its Raking Claws."
   - name: "Bite"
-    desc: "Melee Attack Roll: +7, reach 5 feet, one target. Hit: 14 (2d8 + 5) Piercing damage."
+    desc: "Melee Attack Roll: +7, reach 5 ft., one target. Hit: 14 (2d8 + 5) Piercing damage."
   - name: "Raking Claws"
-    desc: "Melee Attack Roll: +7, reach 5 feet, one target. Hit: 12 (2d6 + 5) Slashing damage."
+    desc: "Melee Attack Roll: +7, reach 5 ft., one target. Hit: 12 (2d6 + 5) Slashing damage."
   - name: "Pouncing Bound"
     desc: "The wolfrabbit jumps up to 30 feet, without needing a running start, to an unoccupied space it can see, then makes one Raking Claws attack against one creature within 5 feet of where it lands. If it moved at least 20 feet straight toward the target and the attack hits, the target must succeed on a DC 15 Strength saving throw or have the Prone condition. On a successful save, the wolfrabbit can move up to 10 feet without provoking Opportunity Attacks from the target."
 bonus_actions:
@@ -77,29 +88,24 @@ reactions:
     desc: "Trigger: Another wolfrabbit the wolfrabbit can see within 30 feet drops to 0 Hit Points. Response: The wolfrabbit moves up to 15 feet toward that creature's space without provoking Opportunity Attacks."
 ```
 
-## Visual reference
+## Tactics
 
-
-The supplied reference sheet establishes the Wolfrabbit as a tall, serval-like feline with large upright ears, a tawny coat broken by dark stripes and spots, a pale muzzle and throat, red-orange eyes, dark nose and claws, and a long banded tail. Its low torso and long legs keep the silhouette spring-built rather than like a rabbit.
-
-![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-reference-sheet.jpg|Wolfrabbit character reference sheet]]
-![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-v2.jpg|Wolfrabbit of Aruhe]]
-![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-token-stand.jpg|Wolfrabbit of Aruhe token stand]]
+- **Opening.** From a wall, a boat rim, or the edge of long grass, one uses Pouncing Bound to knock a target Prone, and the rest close in so Pack Rend applies.
+- **Signature.** The pounce. Its tell is a launch line: a wolfrabbit flattening with its ears back, 20 to 30 feet away. Answers: stand in tight spaces with no landing room, keep packmates apart so Pack Rend fails, or stand behind [[razer-grass]].
+- **Adapts.** When a packmate falls, the others leap toward it with Frenzy Toward the Fallen, and the first to reach the corpse devours it and surges back in.
+- **Weaknesses.** Separation, tight spaces, razer-grass, broken launch lines, and the smell of a mature [[grubnade]], which breaks a pounce.
+- **Morale.** A pack breaks off once half its members are down, carrying nothing.
 
 ## Behavior
 
+- **Habits.** Packs of four to six hunt at dawn and dusk and den in warrens between fallen terrace blocks. They will not den past the Old Mouth once daylight leaves the tube.
+- **Diet.** Anything bleeding. When one falls, the others eat it from hunger.
+- **Group.** A pack hunts as one body, and each member reacts to a fallen packmate.
+- **Signs.** Paired claw marks in terrace stone, dark fur caught on wall edges, small warrens between fallen blocks, and tracks that break into long launch lines.
+- **Aftermath.** Claw marks in stone, torn fur on terrace edges, blood drawn toward a warren, and packmate remains too mangled for other scavengers.
 
-- **Habitat.** Packs of four to six hunt the collapsed first terraces of [[old-gardens]] at dawn and dusk. Their warrens honeycomb the terrace stone, and a bound from a terrace wall can cover 30 feet.
-- **Behavior.** A Wolfrabbit is a wolf-sized, dark-striped hunting cat with long ears and a body built to spring. When one falls, the others eat it from hunger rather than spite. They will not den past the Old Mouth once daylight dies in the tube. Something below drives them away.
-- **Diet.** They avoid [[razer-grass]] and break a pounce for the smell of a mature [[grubnade|Grubnade]]. They drive prey toward [[snakewood]] strike-lanes.
-- **Social Structure.** Packs hunt as one body, but each member reacts to a fallen packmate. Corpse-eating is hunger, not spite.
+## Art
 
-## Tactics
+### Token
 
-
-- **Signs.** Paired claw marks in terrace stone, dark fur caught on wall edges, small warrens opening between fallen blocks, and fresh tracks that break into long launch lines mark a pack's ground.
-- **Instincts.** The pack isolates anything bleeding and knocks it down with a long bound. It closes around a creature that has lost its footing. It avoids razer-grass and abandons a pounce when it smells a mature Grubnade.
-- **Tactics.** A Wolfrabbit begins from a wall, boat rim, or terrace break with Pouncing Bound, then uses Multiattack against a Prone target while another packmate stays close enough to trigger Pack Rend. When a packmate falls, the others leap toward it. A packmate finding the corpse safely devours it and surges back into the hunt.
-- **Weaknesses.** Separation removes Pack Rend. Tight spaces or a creature that stands its ground can deny the pounce. Razer-Grass, mature Grubnades, and broken launch lines turn the preferred approach into a liability.
-- **Aftermath.** An encounter leaves paired claw marks in stone, torn fur on terrace edges, fresh blood drawn toward a warren, and packmate remains too mangled for ordinary scavengers. The Blight pressures the garden but does not ride the pack.
-
+![[attachments/shattered-sea/creatures/wolfrabbit-of-aruhe-token.jpg|Wolfrabbit token]]

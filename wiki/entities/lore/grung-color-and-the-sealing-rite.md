@@ -56,7 +56,7 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[karath]]. [[Ozz
 * **This explains.** Why [[jean-claude-tabarnack]]'s red beret is read as a censure sign and why [[Ozzeth]] and [[simone]] remain incompletely sealed.
 * **This enables.** Characters can read status, recognize Gold-caste authority, and investigate the source of a rare toxin.
 * **This warns of.** Color is evidence of role or censure, not proof of ancestry, virtue, or permanent rank.
-* **Relevant now.** [[karath]], [[Auralis]], and the Grung conflict make the status signals actionable rather than decorative.
+* **Relevant now.** [[karath]], [[auralis|Auralis]], and the Grung conflict make the status signals actionable rather than decorative.
 
 ## Who Knows
 
@@ -107,7 +107,7 @@ Gold-tier color requires a rare toxin grown on hidden farms in [[karath]]. [[Ozz
 | [[karath]] | Hidden source of the rare Gold-tier toxin. | Gives investigation a concrete direction. |
 | [[Ozzeth]] | Twiceborn figure whose inward rite never finishes. | Shows the rite's personal cost and boundary. |
 | [[simone]] | Independent bearer of the same incomplete inward rite. | Confirms the result is not unique to Ozzeth. |
-| [[Auralis]] | Named connection in the source record. | Keeps the doctrine tied to the current Aruhe conflict. |
+| [[auralis|Auralis]] | Named connection in the source record. | Keeps the doctrine tied to the current Aruhe conflict. |
 
 **Open canon.**
 

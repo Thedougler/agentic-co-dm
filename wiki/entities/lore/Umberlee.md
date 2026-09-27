@@ -74,7 +74,7 @@ The [[the-tithe-of-the-bitch-queen]] is a separate Sunken Crown hoard in tidal c
 
 - [[Valkur]]. Muttered sailor courage without basin or booklet. Sailors still pay Umberlee.
 - [[tyr]]. Land-and-paper counterweight behind Dravosi warrants. He does not own the wave.
-- [[Auralis]]. Constructed or publicly divinized Antheri authority, a different kind of power problem.
+- [[auralis|Auralis]]. Constructed or publicly divinized Antheri authority, a different kind of power problem.
 - [[sentinels-of-the-eyrie]]. Monastic counter to Waveservant collection.
 
 ## Who Knows
@@ -111,7 +111,7 @@ The [[the-tithe-of-the-bitch-queen]] is a separate Sunken Crown hoard in tidal c
 ## If This Is Changing
 
 * **Current pressure.** The [[pearl-of-souls]] continues broadcasting across the Maw boundary while something larger presses at the fissure.
-* **Actors.** Umberlee's [[waveservants]] collect tribute; [[red-lady-dead-lady]] carries that collection; [[sentinels-of-the-eyrie]] watch the boundary; [[Auralis]] guards the older containment.
+* **Actors.** Umberlee's [[waveservants]] collect tribute; [[red-lady-dead-lady]] carries that collection; [[sentinels-of-the-eyrie]] watch the boundary; [[auralis|Auralis]] guards the older containment.
 * **Their aims.** The Waveservants want payment, the Dead Lady wants to complete its collection route, the Sentinels want the Maw watched, and Auralis wants the fissure held shut.
 * **Without interference.** The Pearl's signal and the widening fissure keep increasing pressure on the boundary while tribute continues to mask the danger.
 * **Visible sign.** The Dead Lady's red wake, unusual Maw activity, or a harbour shrine demanding tribute for reasons beyond ordinary custom.
@@ -137,4 +137,4 @@ The [[the-tithe-of-the-bitch-queen]] is a separate Sunken Crown hoard in tidal c
 - [[the-tithe-of-the-bitch-queen]]
 - [[delmar-fisk]]
 
-Umberlee's claim is categorical over material-plane water. As the Maw fissure widens, elemental water replaces trench water she can no longer feel as hers. She cannot complain without giving mortals a reason to stop paying. She never admits the fear. [[Auralis]] was never her rival. Antheri containment predates her Maw claim, not her godhood.
+Umberlee's claim is categorical over material-plane water. As the Maw fissure widens, elemental water replaces trench water she can no longer feel as hers. She cannot complain without giving mortals a reason to stop paying. She never admits the fear. [[auralis|Auralis]] was never her rival. Antheri containment predates her Maw claim, not her godhood.

@@ -4,39 +4,34 @@ category: journal
 tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
+  - "DM direction 2026-09-27 (Matteo at the hole; the four fell in fleeing a terror-bird)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-27
 type: session-prep
 kind: development
 reveal: unrevealed
 campaign: "shattered-sea"
 session: "12"
 visibility: dm
-summary: "Four Calveno hiding in a lava tube are lifted out and point further in, where Ettore's brother walked toward the voice."
+card: "Rescuers"
+memorable: "Matteo, grinning, relieving himself down a smoking hole onto the people who told him he would die, and a boy's tally of nineteen days scratched into black rock below."
+summary: "At the Long Meadow's edge, Matteo spitefully greets four old campmates trapped in a lava tube; lifted out, they point north-east after the rest and warn of the bird that put them there."
 ---
 
 # Session 12 — The Smoking Skylight
 
-**Card.** Rescuers, turning into a Warning.
-**Thread advanced.** The Calveno survivors: four are found, and the rest are further in.
-**Entry state.** Morning after the Hook. The party walks the bloody-bank prints north from [[river-slack-basin]] through [[cutoff-lip]], [[print-braid]], and [[spoke-ring]] (four mats, fallen stonepears) to [[star-cut]], with [[matteo-scola]] and whatever the Hook cost them.
-**Trigger.** Half a mile past Star Cut's north mouth, a thin line of smoke stands straight up out of the forest floor.
-**Turn.** The four in the tube refused the voice, but Ettore's brother Carlo and the rest of the camp walked north-east toward it, and they are alive in there somewhere.
-**New direction.** Further into the Quiet, north-east, with four civilians, one of them carried.
-**Memorable element.** Smoke coming out of the ground, and a boy's tally of nineteen days scratched on the basalt below.
-**Target.** ~30 minutes.
+## At a Glance
+
+Four Calveno are alive at the bottom of a hole, and they know where the rest went: nineteen days ago the camp followed a woman's voice north-east, so the survivors the party came for are further in, not back at the coast.
+
+- **Entry state.** Late morning. The party has walked the old prints north from the [[river-slack-basin]] through [[cutoff-lip]] and [[print-braid]] to [[spoke-ring]], then the fruit-pile trail north-east, with [[matteo-scola]] and whatever the dawn fight cost.
+- **Trigger.** The trail comes out of the trees into the west band of tall grass at [[the-long-meadow]], and woodsmoke rises out of the open ground just beyond it, with voices under it.
+- **New direction.** North-east across the meadow, deeper into [[the-quiet]], after the rest of the camp, with four civilians and one of them carried.
+- **Next.** [[Session-12-03-terror-birds]]
 
 > [!narration] Opening
-> The falcon is a speck over the river by the time the camp is packed, and Matteo keeps close at your heels, his cut sling knotted empty. All morning the prints lead you inland, past a ring of four empty sleeping mats, until a line of smoke rises straight out of the forest floor ahead. It is climbing from a ragged hole wide enough to drop a wagon through, where pale roots hang over the lip like a torn curtain. Warm air breathes up past your faces with woodsmoke in it, and under the smoke, the sweetness of fruit gone soft.
->
-> Far below, four men sit around a small fire on a shelf of black rock, and the moment your shadows cross the hole, three faces turn up to you. A lanky boy keeps counting under his breath even as he stares. Beside him, a man with his leg lashed straight to two sticks tries to push himself up on his arms and sags back. The broad one sitting apart against the rock keeps staring into the flames. It is the wiry man who is already on his feet, cupping rope-scarred hands to his mouth. "You, on the hatch," he calls. "Have you got a line? Tell me you've got a line."
-
-## Run the Beat
-
-1. **Present the situation.** Four Calveno men on a basalt ledge forty feet down, calling up. [[piero-sorrentino]] talks first.
-2. **Let them engage.** The party gets down, gets the four up, and hears their story. The anchor is the ledge itself: four sleeping piles of fibre, a pile of fallen [[ghost-plum]] and [[stonepear]] pits, and [[luca-ferrante]]'s knife-scratch tally on the wall.
-3. **Make the turn.** Asked why they are down here, or why only four when the ring had four mats and the camp had more, [[luca-ferrante]] tells it: the voice, the night his uncle walked, the direction.
-4. **Hand back the choice.** The four are out and alive. Carlo and the others went north-east toward her. Take the four back south, or go further in with them.
+> The fruit piles bring you out of the trees into grass taller than your heads, and through its last stems the ground opens into a long meadow of short grass. A few strides out into the open, woodsmoke climbs straight up from a ragged hole in the earth, pale roots hanging over its lip. From deep inside it comes the sound of men arguing, and one young voice counting out loud.
 
 ````col
 ```col-md
@@ -44,87 +39,82 @@ flexGrow=1
 ===
 ## Situation
 
-- **Where.** A [[lava-tubes]] skylight half a mile north of [[star-cut]]: a 15-foot hole with a 40-foot vertical drop to a basalt ledge. The tube runs off into the dark east and west.
-- **Present.** [[ettore-ferrante]] (broken left shin, 4 HP, Speed 0), [[luca-ferrante]], [[piero-sorrentino]], [[gianni-moro]]. All four are Commoners (AC 10, 10 HP apart from Ettore).
-- **Physical anchor.** The ledge: the fruit-pit pile shows they live on what falls through the skylight; the tally shows nineteen days; four fibre beds match [[spoke-ring]]'s four mats.
-- **Friction.** Ettore insists they leave him, and the other three will not go without him.
-- **Pressure.** A young [[bloodhawk]] circles the smoke column at noon. The four do not want to come up while it is overhead; it leaves after 10 minutes or when the fire is put out.
-- **If ignored.** The four stay on the ledge. The fruit through the skylight keeps them alive; nobody comes for them.
+- **Where.** A skylight of the [[lava-tubes]], 10 feet out from the west band of tall grass into the open Gap of [[the-long-meadow]]: a 15-foot hole with sheer 40-foot walls down to a basalt ledge. On its north side a chute of loose roots and rubble drops steeply to the ledge. You can slide down it, but it crumbles under anyone climbing up.
+- **Hands on.** The ledge. Four fibre sleeping piles, a small fire, and a heap of [[ghost-plum]] and [[stonepear]] pits: the four live on fruit that falls through the hole. [[luca-ferrante]]'s knife has scratched a tally of nineteen days into the wall.
+- **Friction.** The four told Matteo, in the first days after the wreck, that he would die if he did not keep the woman's rule. He has not forgiven them, and he lets them know it. [[ettore-ferrante]] begs to be left behind, and the other three will not go without him.
+- **Pressure.** The South Bird, a [[terror-bird]], stands still as a mossy stump at its rim, 60 feet south-west in the shade of the treeline. It watches the hole. It charges the moment the column moves off into the open, and when the last of the four is up, it stops waiting.
+- **If ignored.** The four stay on their ledge and live on what falls. Nobody else comes for them.
 ```
 
 ```col-md
-flexGrow=2
+flexGrow=1
 ===
-## Revelations
+## Actors
 
-- [ ] **Core.** Nineteen days ago at [[spoke-ring]], a woman's voice spoke out of the dark each night. The camp's eldest, [[renzo-canale]], had already taught them her rule: eat only what falls. The voice invited them in. [[carlo-ferrante]], Ettore's older brother, got up and followed it with the rest of the camp. These four refused, because it asked them to walk strange ground at night, and hid underground from the bloodhawks. → **Surfaces through:** [[luca-ferrante]], [[gianni-moro]]
-- [ ] **Support.** What the voice said, in Gianni's memory: "Come and look upon my garden. You ate what my island gave you. You are already mine." → **Surfaces through:** [[gianni-moro]]
-- [ ] **Support.** The camp that walked left piles of fallen fruit on broad leaves every few hundred feet to mark the way for anyone who followed, heading north-east. → **Surfaces through:** [[luca-ferrante]] · the trail itself (**Wisdom (Survival) — `DC 12`** to find the first pile).
-- [ ] **Optional.** [[matteo-scola]] knew Renzo and [[tommaso-brasca]] in the first days after the wreck and split from them when Renzo chose the voice. → **Surfaces through:** Matteo, when the names come up.
+- **[[matteo-scola]].** He knows the four by their voices the moment he hears them. He wants them to know they were wrong. Once he has had his fun, he helps haul on the rope like anyone else.
+- **[[piero-sorrentino]].** He wants a hull and the sea. He shouts back up at Matteo, then asks the party for a line.
+- **[[luca-ferrante]].** He wants his father out, then his uncle found. He knows the whole story and the direction, and gives both freely. Price: "Carry my father first." He shuts down if anyone calls Carlo dead.
+- **[[ettore-ferrante]].** He wants not to be a burden. He cannot stand (4 HP, Speed 0). He hides how much the leg hurts, and goes grey and silent when moved.
+- **[[gianni-moro]].** He wants to go home. He heard the voice and wanted to go, and he is ashamed of it.
+- **The South Bird.** A [[terror-bird]] at its rim. It does nothing yet.
+
+> [!narration] Matteo Scola
+> Matteo stops dead at the sound of the voices below. Then he is past you and out onto the grass at a run, grinning like a man who has won a bet. He skids to a stop at the lip of the hole. "HAH! And you said I'd die if I didn't listen to your looney woman in the woods! You look thirsty." He starts unlacing his trousers.
+
+> [!narration] Piero Sorrentino
+> Down on the black rock, a wiry man with rope-scarred hands is on his feet, shaking a fist up at the hole. "Scola, you piss-rotten eel! You, beside him! Have you got a line? Tell me you've got a line."
+
+> [!narration] Luca Ferrante
+> A lanky boy sits by the fire with a notched knife in his fist, his lips still moving on a count. He looks straight up past Matteo at you. "Four of us. Three can walk. How many can you carry?"
+
+> [!narration] Ettore Ferrante
+> A heavy man lies propped against the rock with one leg splinted straight out on two sticks. He pushes himself up on his arms and sags back down. "Forgive me," he calls up. "I would stand."
+
+> [!narration] Gianni Moro
+> A broad man sits apart from the others, turning an iron band on his wrist, and does not look up. "Gianni," he says. "The cooper."
 ```
 ````
 
-### Required conclusion
+## Handles
 
-**Conclusion.** The rest of the survivors went north-east, further into the Quiet, and can be found.
+- **[[matteo-scola]]** can be stopped, shamed, or laughed along with. Stopped before he starts, he sulks and hauls rope. Let go, the four curse him, and Piero will not take his hand at the top.
+- **[[luca-ferrante]]** leads if the party lets him. He knows the way his uncle walked, and he counts the fruit piles aloud.
+- **[[gianni-moro]]** can be asked what the voice said, because he nearly obeyed it.
+- **The party's rope** gets everyone up. [[jean-claude-tabarnack]] carries some.
+- **The stump at the rim** can be watched, or spotted for what it is (Checks).
+- **Cost.** Going further in means carrying Ettore: one Medium PC, or two civilians taking turns. His carrier's hands are full in the next contest. Luca asks the party to promise to carry his father, and the four follow a party that promises.
 
-- [ ] **Route 1.** [[luca-ferrante]] points the way his uncle walked.
-- [ ] **Route 2.** The fruit-pile trail on broad leaves, north-east from Spoke Ring.
-- [ ] **Route 3.** [[the-burnt-road]], reached in [[Session-12-04-orders-in-the-ash]], runs past the survivors' clearing.
+## Checks
 
-## Actors
+| Intent | Approach | DC | Success | Failure |
+| ------ | -------- | -- | ------- | ------- |
+| Climb the 40-foot wall without rope | **Strength (Athletics)** | `DC 15` | Down or up. | The climber slides back to the ledge and takes `1d6` Bludgeoning damage. |
+| Set Ettore's leg properly | **Wisdom (Medicine)** | `DC 13` | He can be carried at a walk without screaming. | He screams whenever he is moved, and the column crawls. Each hour, his carrier makes a **Constitution** save `DC 10` or gains one level of Exhaustion. |
+| See what the stump at the rim is | **Wisdom (Perception)** or **Wisdom (Survival)** | `DC 12` | A bird taller than a horse, standing still with one yellow eye open, watching the hole. | A mossy stump in the shade. |
 
-| Actor | Wants now | Knows (true) | Offers | Withholds / lies about — and the tell | Price for help | Posture shifts when |
-| ----- | --------- | ------------ | ------ | ------------------------------------- | -------------- | ------------------- |
-| [[luca-ferrante]] | Out, with his father; then his uncle | Everything in Core, and the direction | The trail and the story | Nothing | "Carry my father first." | Anyone calls Carlo dead: he shuts up. |
-| [[ettore-ferrante]] | Not to be a burden | His brother walked | His thanks and his apologies | That he can't stand the pain; he goes grey when moved | — | Carried out: he weeps once and stops apologizing. |
-| [[piero-sorrentino]] | A hull and the sea | The voice asked them to walk at night | To mend nets, sails, rope | — | A way to water at the end | The party turns inland: he goes quiet and comes anyway if they have a way to water. |
-| [[gianni-moro]] | Home | What the voice sounded like, and that he wanted to go | The voice's words | His shame; he looks at the floor | Nobody laughs at him | Treated gently: he walks in the middle of the column so someone can grab him. |
+With a rope and two people hauling, everyone is up in 10 minutes, and Ettore comes up in a rope sling. [[crissdalynn-khinriss]] can fly one person up at a time.
 
-## Checks & Costs
+## Clues
 
-- **Automatic.** With rope and two people hauling, everyone comes up in 10 minutes; Ettore comes up in a rope sling. [[crissdalynn-khinriss]] can fly anyone up one at a time.
-- **Action.** Climbing the 40-foot break without rope: **Strength (Athletics) — `DC 15`** per climber. **Failure:** the climber slides back to the ledge and takes `1d6` bludgeoning damage.
-- **Action.** Setting Ettore's leg properly: **Wisdom (Medicine) — `DC 13`**. **Success:** he can be carried without screaming, so the column moves at normal pace. **Failure:** Ettore screams whenever he is moved, and the column slows to a crawl. For every hour he is carried, his carrier makes a **Constitution save — `DC 10`** and gains one level of Exhaustion on a failure.
-- **Cost of the good part.** Going further in means carrying Ettore: one PC or two civilians at a time, and that carrier's hands are full in the next contest.
+- [ ] **Core.** Nineteen days ago at [[spoke-ring]], a woman's voice spoke out of the dark each night. [[renzo-canale]] had already taught the camp her rule, to eat only what falls. When the voice invited them in, Carlo Ferrante, Ettore's older brother, rose first and followed it north-east, and the rest of the camp went with him. These four refused, because the voice asked them to walk strange ground at night. → surfaces through [[luca-ferrante]] and [[gianni-moro]].
+- [ ] **Core.** The next morning Luca led the four after Carlo by daylight, following the fruit piles. Crossing this meadow, the bird at the rim charged them. They ran, went over the root chute, and slid down onto the ledge, and Ettore's shin broke at the bottom. They have been here since, and the bird is still out there. → surfaces through Luca and Piero once they are up, in so many words: "We were running from the bird. It's still out there."
+- [ ] **Support.** The voice's words, as Gianni remembers them: "Come and look upon my garden. You ate what my island gave you. You are already mine." It was [[hinewai]]. → surfaces through [[gianni-moro]].
+- [ ] **Support.** In the first days after the wreck, the whole camp told Matteo he would die if he did not keep the woman's rule, and Matteo left them rather than listen. → surfaces through Matteo at the hole, and the four's answers.
 
-## Player Levers
+> [!narration] Revelation
+> The boy taps the scratches on the black wall one by one, the way you would count coins. Nineteen marks, all the same length. Beside the last one, cut deeper than the rest, is an arrow pointing into the rock toward the far end of the meadow.
 
-- **Person.** [[luca-ferrante]] leads if given the chance; he counts the fruit piles out loud.
-- **Thing.** The party's rope; [[jean-claude-tabarnack]] carries some.
-- **Place.** The tube runs east and west in the dark. It is a dead end for this session, and the four do not know where it goes.
-- **Promise / problem.** Luca asks the party to promise they will carry his father. The four will follow a party that makes that promise.
+## Outcomes
 
-### Preparation states
-
-| If the party prepares… | The next Cliffhanger opens with… |
-| ---------------------- | -------------------------------- |
-| Ettore's leg set and a named carrier | The column moves at walking pace; the carrier has one hand free. |
-| Carrier named, leg not set | The column crawls; the carrier has no free hands. |
-| Nothing | Two civilians carry Ettore by turns and drop him when the ground shakes. |
-
-## Exits
-
-| If the party… | The situation changes… | Next |
-| ------------- | ---------------------- | ---- |
-| Goes further in with the four | The column heads north-east on the fruit-pile trail; the Quiet's roof opens ahead onto grass. | [[Session-12-03-terror-birds]] |
-| Sends the four south with Matteo | They walk back toward [[star-cut]] alone; without the party they reach the coast only if the party gives them a route and food. The party goes on lighter. | [[Session-12-03-terror-birds]] with no civilians in the column |
-| Takes everyone back to the coast | The inland group stays Hinewai's; rebuild the rest of the night toward [[old-gardens]]. | Recompute with `session-beats` |
+| If the party… | What changes | Next | Narration |
+| ------------- | ------------ | ---- | --------- |
+| Gets everyone up | The four are out, and the column gathers at the lip to go on north-east across the open meadow. | [[Session-12-03-terror-birds]] | _Luca is still telling you about the bird when the ground under your boots begins to shake._ |
+| Leaves the four and goes on | The party sets off across the open meadow alone. | [[Session-12-03-terror-birds]], with no civilians but Matteo | _Behind you, a voice in the hole shouts a warning you do not catch, and the ground begins to shake._ |
+| Takes everyone back into the trees and toward the coast | The bird never charges anyone who stays in the tall grass. The camp at [[the-pantry]] stays Hinewai's. Skarn strikes at the coastal camp at dusk, and the rest of the night rebuilds toward [[old-gardens]]. | Recompute with `session-beats` | _The smoke thins behind you, and the tall grass closes over the way the others went._ |
 
 **Carry forward.**
-- **Column:** the party, [[matteo-scola]], and the four (default), or the party alone.
-- **Ettore:** carried by a named PC, or by two civilians taking turns; leg set or not.
-- **Direction:** north-east on the fruit-pile trail.
-- **Knowledge:** the voice claims those who ate what fell; Carlo and the rest walked toward it.
-- **Time:** about noon.
-
-### After Play
-
-- **What actually happened.**
-- **Revelations learned.**
-- **Decision made.**
-- **NPC / faction posture changes.**
-- **Resources gained or lost.**
-- **World state changed.**
-- **Next active node.** [[Session-12-03-terror-birds]]
-- **Unresolved thread.** The Calveno survivors
+- **Column.** The party, [[matteo-scola]], and the four, bunched at the lip of the hole in the open.
+- **Ettore.** Out of the hole, carried by a named PC or two civilians; leg set or not.
+- **Matteo and the four.** Friendly, or not speaking, depending on how the hole went.
+- **Knowledge.** The voice claims whoever ate what fell. Carlo and the rest walked north-east toward it. A bird is waiting at the rim.
+- **Time.** About noon.

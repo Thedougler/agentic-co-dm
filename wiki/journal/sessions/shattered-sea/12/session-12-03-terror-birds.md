@@ -4,126 +4,123 @@ category: journal
 tags: ["shattered-sea", session-prep]
 sources:
   - "Session 12 plan (DM-approved 2026-09-24)"
+  - "Session 12 refile (2026-09-27)"
 created: 2026-09-24
-updated: 2026-09-25
+updated: 2026-09-27
 type: session-prep
 kind: cliffhanger
 reveal: unrevealed
 campaign: "shattered-sea"
 session: "12"
 visibility: dm
-summary: "The column must cross a 100-foot open gap in the Long Meadow where two terror-birds' territories meet, with a carried man and three frightened civilians who run for the open."
+card: "Monster"
+tier: "Horror"
+memorable: "Two mossy stumps at the far ends of a meadow, each opening one yellow eye, and the ground shaking under a charge you feel before you see it."
+summary: "As the four come up out of the hole, the bird that put them there charges, and the column must cross the open Gap of the Long Meadow with a carried man and panicking civilians."
 ---
 
 # Session 12 — Terror-Birds
 
-**Card.** Monster.
-**Tier.** Horror.
-**Thread under test.** Whether the party can actually bring the survivors through Aruhe, now that it has taken them on.
-**Entry state.** Early afternoon. The column (the party, [[matteo-scola]], and the four from [[Session-12-02-the-smoking-skylight]]) follows the fruit-pile trail north-east into [[the-long-meadow]], with [[ettore-ferrante]] carried. HP and resources as the Hook left them.
-**Trigger.** The trail runs up the west band of eight-foot grass and then stops at the Gap: 100 feet of open short grass to the east band. When the first person steps out of the grass, the ground starts to shake.
-**PC objective.** Get every member of the column across the Gap and into the east grass band.
-**Opposition objective.** Each [[terror-bird]] wants one body to swallow and carry back to its rim.
-**Stakes.** A civilian can be swallowed and die, and a swallowed PC takes acid damage every round.
-**Ends when.** The column is in the east band (the birds will not enter eight-foot grass), or both birds have fed or broken off, about four rounds.
-**Memorable element.** Two mossed trunks at the rims, each with one yellow eye, and the ground shaking under a charge you can feel before you see it.
+## At a Glance
 
-> [!narration] Open on Action
-> Through the afternoon the fruit piles lead the column on, Ettore's splint bumping against your back, until the trail breaks into a long meadow. Gianni steps out of the tall grass first, and the dirt under his feet begins to tremble. Down the meadow to your right, a mossy stump at the edge of the shade unfolds two long scaly legs and rises until its head stands higher than a rider's. Its yellow eye finds Gianni and its hooked beak opens on rows of teeth, and then it is coming at him, head low and ragged wings held stiff. Every footfall thumps up through the soles of your boots.
->
-> Ahead, the short grass runs open to the far wall of tall grass, with deep grey water sliding along its foot. Halfway across, a stand of white blades glitters like broken glass. Behind you, Luca says, very quietly, "There's another one." He is looking left, to the far end of the open ground, where a second mossy stump has opened one yellow eye.
+The bird that drove the four into the hole has been waiting at its rim, and now the whole column is standing in the open: two [[terror-bird]]s, and each wants one body.
 
-## Run the Beat
+- **Entry state.** Noon, straight on from the rescue. The column (the party, [[matteo-scola]], and the four) is bunched at the lip of the skylight, 10 feet out from the west band of tall grass in [[the-long-meadow]]'s Gap, with [[ettore-ferrante]] just hauled up. HP and resources are as the dawn fight left them.
+- **Party objective.** Get everyone across the Gap into the east band of tall grass, where the fruit-pile trail goes on.
+- **Opposition wants.** Each bird wants one body to swallow and carry back to its rim.
+- **Ends when.** The column is in the east band of tall grass, or both birds have fed or backed off: about four rounds.
+- **Next.** [[Session-12-04-orders-in-the-ash]]
 
-| Need at the table | Prep |
-| ----------------- | ---- |
-| **Opposition** | Two [[terror-bird]]s, the South Bird (west rim) and the North Bird (east rim). Each wants one body to swallow. |
-| **Default motion** | Each round nobody steadies them, frightened civilians run 30 feet toward the most open ground, which is straight into the lanes. |
-| **Pressure** | The South Bird charges round 1; the North Bird joins round 3 (ticks below). |
-| **Leverage** | Eight-foot grass, the east channel, and the white [[razer-grass]] stand all end a bird's hunt. The birds turn badly. |
-| **Danger** | Beak +12, 22 piercing and Grappled; a grappled Medium creature is swallowed the next turn. |
-| **Ways out** | Cross with the civilians steadied; wade the channel; use the razer stand as a shield; turn a bird's charge. |
+> [!narration] Opening
+> Luca is still telling it, the bird, the running, the ground giving way, when the dirt under your boots begins to shudder. Down the meadow, the mossy stump at the treeline unfolds two scaled legs and rises taller than a horse, and its hooked beak opens on rows of teeth. Behind you gapes the smoking hole. Ahead, open grass runs to a far wall of tall grass, a patch of white blades glittering halfway. The stump lowers its head.
+
+## Actors
+
+- **[[terror-bird]] × 2.** AC 16, HP 200, Speed 60 ft. Multiattack: Serrated Beak `+12` (22 Piercing, Grappled, escape `DC 18`) and Talon Rake `+12` (17 Slashing). Swallow on a grappled Medium or smaller creature. **Straight Charge** and **Gag** change how they fight.
+  - **The South Bird.** Its rim is 60 feet south-west of the skylight. It is the bird that drove the four into the hole, and it charges on round 1.
+  - **The North Bird.** Its rim is 60 feet north-east of the Gap's east edge. It charges on round 3.
+- **Wants.** One body each, not a fight with everyone.
+- **Tactics.** Opening: a straight charge at the nearest creature in the open, then Multiattack. Countered: if its target reaches tall grass, the channel, or the razer-grass, it stops at the edge, rakes the nearest creature in the open, and charges again next turn. Break point: once it swallows someone, it turns and runs for its rim; at 140 HP or fewer, it backs off to its rim with nothing. Exit: its rim, where it stands still and digests. Following it there is a new fight.
+- **The civilians.** [[matteo-scola]], [[luca-ferrante]], [[piero-sorrentino]], and [[gianni-moro]] use the [[commoner]] statblock. Each round nobody steadies them, they run 30 feet toward the most open ground, straight into the charge lanes.
+
+> [!narration] Terror-Bird
+> Out on the open grass, a black bird taller than a horse strides forward on scaled grey legs. Moss and ferns hang off its feathers like a coat pulled from a pond. Its hooked beak is as long as a man's arm, and one yellow eye stays fixed on the huddle at the hole. It drops its head low, ragged wings held stiff at its sides, and every stride thumps up through the ground.
 
 ````col
 ```col-md
 flexGrow=1
 ===
-### Opposition
+## Stage
 
-- **[[terror-bird]] × 2.** **AC 16**, **HP 200**, Speed 60 ft. Multiattack: **Serrated Beak** (+12, reach 10 ft, 22 piercing, target Grappled with escape DC 18 and Restrained) and **Talon Rake** (+12, reach 10 ft, 17 slashing). **Swallow:** a Beak attack against a Medium or smaller creature it is grappling; on a hit the target is swallowed (Blinded, Restrained, total cover) and takes 4d6 acid at the start of each of the bird's turns. **Tremor Stride:** anyone touching the ground within 30 feet feels it coming, so it cannot surprise them. Passive Perception 17.
-- **Intent.** Each bird wants one body to eat, not a fight with everyone.
-- **Opening move.** Charge: a straight line up to 60 feet at the nearest creature in the open, then Multiattack. A charge cannot turn more than 45 degrees along its line.
-- **Adapts.** If its target reaches grass, water, or the razer stand, it stops at the edge, rakes the nearest creature in the open, and charges again next turn.
-- **Breaking point.** After it swallows one creature, it turns and runs back to its rim. At 140 HP or fewer (60 damage taken), it backs off to its rim without prey.
-- **Exit.** The rim, 60 feet from the Gap. A bird that reaches its rim with a swallowed creature stands still as a trunk and digests; chasing it there is a new fight at its rim.
+- **Space.** The Gap is 100 feet of open short grass, east to west, and 60 feet north to south. The column stands at the skylight, 10 feet out from the west band. The fruit-pile trail leaves the Gap into the east band.
+- **The skylight.** The 15-foot hole behind the column drops 40 feet to the ledge. A creature knocked or charged into it falls and takes `4d6` Bludgeoning damage, unless it goes over the north side's root chute and slides down for `1d6`. A bird will not charge across it.
+- **Tall grass.** Both bands: Difficult Terrain, hides anyone inside beyond 10 feet, and ends a bird's charge at its edge.
+- **The channel.** It runs along the Gap's east edge, deep water 20 feet wide. Crossing costs 30 feet of movement for every 5 feet. A creature in the current makes **Strength (Athletics)** `DC 12` or is carried 20 feet downstream. A bird will not enter it. Ettore cannot swim.
+- **The razer-grass stand.** 15 feet across, in the middle of the Gap. A bird will not charge through it. The [[razer-grass]] page holds the contact and shatter rules; a charge that ends against the stand, or a shove into it, shatters it.
+- **Hazard.** Swallowing: a swallowed creature takes 14 (4d6) Acid damage at the start of each of the bird's turns. A swallowed civilian drops to 1 HP at the first tick instead of dying, and dies at the second.
+- **Change.** On round 3 the North Bird joins, and the whole Gap is inside one charge lane or the other.
 ```
 
 ```col-md
 flexGrow=1
 ===
-### Pressure
+## Pressure
 
-| Round / trigger | What happens | What the party sees |
-| --------------- | ------------ | ------------------- |
-| 1 | The South Bird charges the first person in the open (Gianni, unless a PC went first). | A trunk stands up at the west rim and the ground shakes. |
-| 2 | Unsteadied civilians run 30 feet toward open ground, east and north, away from the South Bird. | Piero and Gianni break for the middle of the Gap. |
-| 3 | The North Bird charges the nearest person in the north half of the Gap. | A second trunk stands up at the east rim. |
-| 4 | Any bird holding a grappled creature uses Swallow and turns for its rim. | A beak closes, and a body is gone. |
+| Round | What happens | Narration |
+| ----- | ------------ | --------- |
+| 1 | The South Bird charges the creature at the edge of the huddle nearest to it. | _The stump at the rim is gone, and the ground is jumping._ |
+| 2 | Every civilian nobody has steadied runs 30 feet toward open ground, east and north, away from the South Bird. | _Piero and Gianni break for the middle of the grass again, exactly as they did nineteen days ago._ |
+| 3 | The North Bird charges the nearest creature in the north half of the Gap. | _At the far end of the meadow, a second stump stands up._ |
+| 4 | A bird holding a grappled creature swallows it and turns for its rim. | _The beak snaps shut, and the bird wheels away at a run._ |
 ```
 ````
 
-### Battlefield / Chase / Hazard
-
-- **Space.** The Gap is 100 feet east to west and 60 feet north to south. The South Bird's rim is 60 feet south-west of the Gap's west edge; the North Bird's rim is 60 feet north-east of its east edge. The east channel runs along the Gap's east edge.
-- **Hazard.** Swallowing. A swallowed civilian drops to 1 HP at the first acid tick instead of dying and dies at the second; a swallowed PC takes the damage normally. A bird regurgitates its prey (Prone within 10 feet) if it takes 25 damage in one turn from inside it, or if it takes 40 damage in one turn from outside and fails a **Constitution save — `DC 18`**.
-- **Interactive features.**
-  - **Eight-foot grass (both bands).** A bird's hunt ends at the edge; anyone inside is safe from charges. Difficult Terrain; heavily obscures beyond 10 feet.
-  - **East channel.** Deep water, 20 feet wide, 30 feet of movement per 5 feet crossed; a bird will not enter it. Anyone swept by the current: **Strength (Athletics) — `DC 12`** or carried 20 feet downstream. Ettore cannot swim.
-  - **White [[razer-grass]] stand, mid-Gap.** 15 feet across. A bird will not charge through it. Moving through it deals 1d4 slashing per 5 feet (an action moves 5 feet safely). A charge that ends against it, or a shove into it, shatters it: each creature within 10 feet makes a **Dexterity save — `DC 14`**, taking 2d6 slashing, half on a success.
-- **Change.** Round 3: the North Bird enters, so the whole Gap is inside one lane or the other.
-
-## Character jobs
-
-| PC | Job or stake in this contest |
-| -- | ---------------------------- |
-| [[delmar-fisk]] | Carrying Ettore, or covering whoever is; his first shot can turn a charge (below). |
-| [[crissdalynn-khinriss]] | Fastest mover; can fly a civilian over the Gap, 60 feet at a time, with Speed halved while carrying. |
-| [[perrin-black-jaw]] | Control magic: a well-placed effect that slows, restrains, or frightens a bird ends its charge. |
-| [[jean-claude-tabarnack]] | Gloom Stalker ambusher; he and Matteo know how Aruhe predators hunt edges. |
-
-**Rulings.**
+## Checks
 
 | Intent | Approach | DC | Success | Failure |
 | ------ | -------- | -- | ------- | ------- |
-| Steady the civilians | An action (no roll) steadies two civilians within 30 feet; a bonus action with **Charisma (Persuasion or Intimidation)** steadies one. | 12 for the bonus action | Steadied civilians move where told on their turn. | That civilian runs 30 feet toward open ground. |
-| Turn a charge | Hit the charging bird with an attack or a shove from beside its line, or step out of it at the last moment. | Attack vs AC 16; or **Dexterity (Acrobatics) — `DC 14`** for the target | The charge overruns 20 feet past its target and ends facing away. | The charge lands. |
-| Break a beak grip | Damage the beak: 20 or more damage to the bird in one turn while it grapples. | — | It opens its beak; the grappled creature drops Prone within 10 feet. | The grip holds; Swallow comes next turn. |
-| Escape the beak | The grappled creature uses **Strength (Athletics)** or **Dexterity (Acrobatics)**. | 18 | Free and Prone. | Still held. |
-| Read the birds | **Wisdom (Survival) — `DC 12`**, before stepping out | 12 | The two dead trunks at the rims are birds; they charge only in straight lines, and grass, water, and razer grass end the hunt. | The first charge is a surprise to the reader, though tremors still warn anyone on the ground. |
+| Steady the civilians | An action steadies two civilians within 30 feet with no roll. A Bonus Action steadies one with **Charisma (Persuasion)** or **Charisma (Intimidation)**. | `DC 12` for the Bonus Action | Steadied civilians move where they are told on their turn. | That civilian runs 30 feet toward open ground. |
+| Turn a charge | Hit the charging bird from beside its line, or the target steps aside at the last moment with **Dexterity (Acrobatics)**. | Attack against AC 16, or `DC 14` | The charge overruns 20 feet past its target and ends facing away. | The charge lands. |
+| Break a beak grip | 20 or more damage to the bird in one turn. | — | The beak opens, and the grappled creature drops Prone within 10 feet. | The grip holds, and Swallow comes next turn. |
+| Escape the beak | **Strength (Athletics)** or **Dexterity (Acrobatics)** | `DC 18` | Free and Prone. | Still held. |
+| Get a swallowed creature out | 25 damage in one turn from inside, or 40 from outside, then the bird's **Constitution** save `DC 18` (**Gag**). | — | The bird retches the creature out Prone within 10 feet. | It keeps digesting. |
+| Read the birds | **Wisdom (Survival)** | `DC 12` | They charge in straight lines, and tall grass, deep water, and razer-grass end the hunt. | The birds seem to come from everywhere at once. |
 
-## Resolution
+## Spotlight
 
-| Outcome | What changes | Next |
-| ------- | ------------ | ---- |
-| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and they now follow orders without argument. | [[Session-12-04-orders-in-the-ash]] |
-| **Costly success** | Everyone across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[Session-12-04-orders-in-the-ash]] |
-| **Lost** | A civilian is swallowed and carried to a rim. A rescue there is a fight at the rim: the bird stands still and digests, and the second acid tick kills the civilian. | [[Session-12-04-orders-in-the-ash]], with the loss carried |
-| **Broken off** | The column retreats into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached at dusk rather than mid-afternoon. | [[Session-12-04-orders-in-the-ash]] |
-| **Anything else** | The birds never enter eight-foot grass or deep water, and each wants one body. | Open node |
+- **[[delmar-fisk]].** Carrying Ettore, or covering whoever is. One good shot from beside a bird's line turns its charge.
+- **[[crissdalynn-khinriss]].** The fastest mover. She can fly one civilian across 60 feet at a time, at half Speed while carrying.
+- **[[perrin-black-jaw]].** A spell that slows, restrains, or frightens a bird ends its charge.
+- **[[jean-claude-tabarnack]].** Two birds taller than horses, and every instinct he was born with says run. His Gloom Stalker ambush and a Survival read of the rims are the party's best warning.
+
+## Clues
+
+- **[[terror-bird]]s will not follow prey into tall grass, deep water, or [[razer-grass]].** Surfaced by the Survival read, or by watching the first charge stop at the edge.
+- **The walking camp crossed here.** A fallen-fruit pile sits on its leaf at the east band's edge, where the trail goes back into the grass. Surfaced when anyone reaches the east band.
+
+## Outcomes
+
+| Outcome | What changes | Next | Narration |
+| ------- | ------------ | ---- | --------- |
+| **Objective gained** | Everyone reaches the east band. The civilians saw the party get them through, and follow orders without argument from now on. | [[Session-12-04-orders-in-the-ash]] | _The grass closes behind the last of you, and out in the open the stump at the rim goes still again._ |
+| **Costly success** | Everyone is across, but someone was swallowed and cut out: hurt, acid-burned, and shaking. | [[Session-12-04-orders-in-the-ash]] | _He lies in the grass coughing up grey slime, skin blotched raw, and nobody lets go of his hand._ |
+| **Lost** | A civilian is swallowed and carried to a rim. Saving them is a fight at the rim, and the second acid tick kills them. | [[Session-12-04-orders-in-the-ash]], with the loss carried | _At the far rim the bird stands perfectly still with its head up, and something moves in its throat._ |
+| **Broken off** | The column falls back into the west band and goes around through the channel: an hour lost, everyone soaked, and the Burnt Road reached in late afternoon. | [[Session-12-04-orders-in-the-ash]] | _You come out of the channel dripping, a long way downstream, with the meadow silent behind you._ |
+
+**Whatever happens.** The birds never enter tall grass or deep water, and each wants one body.
 
 **Carry forward.**
-- **Column:** who crossed, who was hurt, and who is dead, if anyone.
-- **Ettore:** still carried, by whom.
-- **Party:** HP and resources after the Hook and this fight; no long rest.
-- **Time:** mid-afternoon (or late afternoon if they went around).
-- **Trust:** the civilians follow the party's orders from here if the crossing was won.
+- **Column.** Who crossed, who was hurt, and who is dead, if anyone.
+- **Ettore.** Still carried, and by whom.
+- **Party.** HP and resources after the dawn fight and this one. No long rest.
+- **Time.** Mid-afternoon, or late afternoon if they went around.
+- **Trust.** If the crossing was won, the civilians follow the party's orders from here.
 
-**Immediate question.** Past the east band the fruit-pile trail runs into the deep Quiet, where sight dies in a few paces, until it meets a straight black scar through the trees.
+> [!narration] If the session ends here
+> At the far rim, the bird settles back into the shade of the trees, feathers sagging until it is only a mossy stump again. One yellow eye stays open on the grass where you went in. Then the ground under your feet starts to shake a second time, from the other end of the meadow.
 
-**If the session ends here.** A mossed trunk at the far rim stands perfectly still, with one yellow eye closed.
+## Statblocks
 
-## References
+![[terror-bird#Statblock]]
 
-- [[the-long-meadow]]. The site.
-- [[terror-bird]]. Statblock and behavior.
-- [[razer-grass]]. Contact and shatter numbers.
+![[commoner#Statblock]]

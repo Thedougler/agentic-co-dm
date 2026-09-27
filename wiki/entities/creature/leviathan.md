@@ -35,7 +35,7 @@ cr: ""
 
 ![[leviathan-banner]]
 
-**Wants:** to hunt the open water the breach pulled it into and force any threat back toward that same breach, though [[Auralis]] holds it short of that, and every ship it corners is really that older fight spilling over.
+**Wants:** to hunt the open water the breach pulled it into and force any threat back toward that same breach, though [[auralis|Auralis]] holds it short of that, and every ship it corners is really that older fight spilling over.
 **Morale:** breaks off and submerges the moment its HP drops below half. It hunts for the kill, never the grudge, and never fights to the death.
 
 ![[leviathan-narration-appearance]]
@@ -105,11 +105,11 @@ Sailors who've seen it and lived describe a shape "longer than two ships," flat 
 
 The Leviathan crossed from the Elemental Plane of Water when the [[pearl-of-souls]] turned the breach under [[drowned-maw]] into an attractor and pulled it through the fissure, the first of at least three entities that same pull has drawn across, alongside Ridgeback and Krakling (see Notable Individuals). All three share the same flat-black, eyeless hide, blindsight in place of sight, and full water breathing, marking them as one displaced kind, not three unrelated horrors. [[elemental-plane-of-water|The Elemental Plane of Water]] itself stays undocumented past the breach. What still pushes and scrapes at the fissure from the far side is bigger than anything that's come through yet.
 
-It now ranges The Drowned Maw's lower depths and the open water of [[outer-reach|the Outer Reach]] beyond it, sharing that lightless range with the kraken and dragon-turtle-class predators already established there. [[Auralis]], the demigod construct bound to hold the fissure shut, reads it as a parasitic invader trespassing in the realm that is his alone to Guard.
+It now ranges The Drowned Maw's lower depths and the open water of [[outer-reach|the Outer Reach]] beyond it, sharing that lightless range with the kraken and dragon-turtle-class predators already established there. [[auralis|Auralis]], the demigod construct bound to hold the fissure shut, reads it as a parasitic invader trespassing in the realm that is his alone to Guard.
 
 [[perrin-black-jaw]]'s account is the closest thing to firsthand testimony: something massive rose under the *[[Vestra]]*, the water boiled, lightning cracked a clear sky, and then there was nothing. He never said no one else survived. [[nona-black-jaw]] understood anyway when he tried to tell her in her kitchen. He named it "the Leviathan" only afterward, never at the table, once he needed a word for what took his family's ship.
 
-Whether it actually sank the *Vestra* stays the open question the table hasn't closed: it's the leading account, medium confidence, with [[Umberlee]]'s own motive against Fisk's fleet running as the strongest counter-theory (full case notes in `Inbox/situations/active/what-sunk-the-vestra.md`). The table has settled one fact under that question, not theory: [[Auralis]], not the cloak Perrin credits, actually kept him alive in the wreck, forging an unwitting warlock pact between them that the table doesn't have yet (see [[perrin-black-jaw]] § Arc Notes). He washed up alone on [[keth-naar]] afterward, the only *Vestra* survivor anyone's found.
+Whether it actually sank the *Vestra* stays the open question the table hasn't closed: it's the leading account, medium confidence, with [[Umberlee]]'s own motive against Fisk's fleet running as the strongest counter-theory (full case notes in `Inbox/situations/active/what-sunk-the-vestra.md`). The table has settled one fact under that question, not theory: [[auralis|Auralis]], not the cloak Perrin credits, actually kept him alive in the wreck, forging an unwitting warlock pact between them that the table doesn't have yet (see [[perrin-black-jaw]] § Arc Notes). He washed up alone on [[keth-naar]] afterward, the only *Vestra* survivor anyone's found.
 
 This convergence (the Pearl of Souls, Perrin's Leviathan encounter, and [[crissdalynn-khinriss|Crissdalynn]]'s unfinished mapping of the Maw) all trace back to the same stretch of water, making it one of the highest-value threads the whole crew is already tangled in, not just Perrin's grudge.
 

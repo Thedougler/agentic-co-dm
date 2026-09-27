@@ -49,7 +49,7 @@ Season 1's key recovery target. The Pearl rests with the wreck at the Red Lady s
 
 ## At the Table
 
-The Pearl holds raw, untapped soul-power and sends a signal across the planar boundary to the [[elemental-plane-of-water]] (the Maw Entanglement). The [[Leviathan]] found the fissure by following that signal. [[Auralis]] woke when the signal crossed the boundary. Recovering the Pearl stops the signal and renders the fissure normal again. If left in place, the signal keeps calling and will draw something larger to the next fissure. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
+The Pearl holds raw, untapped soul-power and sends a signal across the planar boundary to the [[elemental-plane-of-water]] (the Maw Entanglement). The [[Leviathan]] found the fissure by following that signal. [[auralis|Auralis]] woke when the signal crossed the boundary. Recovering the Pearl stops the signal and renders the fissure normal again. If left in place, the signal keeps calling and will draw something larger to the next fissure. Before whoever reaches the wreck gets there, decide what the Pearl does when recovered and who accesses the souls. This artifact is a tool of power, never neutral.
 
 ## Connections
 
@@ -59,7 +59,7 @@ The Pearl holds raw, untapped soul-power and sends a signal across the planar bo
 - [[fisks-fleet]]. Stole the Pearl under Chain Council direction before Aldric could claim it.
 - [[drowned-maw]]. Wreck site below the planar boundary. Umberlee cannot retrieve her Pearl here.
 - [[Leviathan]]. Drawn to the fissure by the Pearl's signal, and counted among the drowned souls it already contains.
-- [[Auralis]]. Woke when the signal crossed the boundary.
+- [[auralis|Auralis]]. Woke when the signal crossed the boundary.
 - [[elemental-plane-of-water]]. Far side of the Maw Entanglement signal.
 - [[tessarine-concordat]]. Fears what [[aldric-drave]] could do with the Pearl. Used the [[chain-council]] to arrange the theft for control, not protection.
 - [[aldric-drave]]. Could expand power beyond his bloodline, gather drowned souls for stability, or turn mass drowning into phylactery material.

@@ -36,7 +36,7 @@ tier: supporting
 
 ## Current Truth
 
-The dates and events below are the campaign's established chronological index. The two unresolved threads at its final entry are [[jean-claude-tabarnack|Jean-Claude]]'s pursuit by [[simone]]'s hunters and the combined pressure of [[Auralis]]'s waking and Umberlee's unresolved wrath against [[delmar-fisk]].
+The dates and events below are the campaign's established chronological index. The two unresolved threads at its final entry are [[jean-claude-tabarnack|Jean-Claude]]'s pursuit by [[simone]]'s hunters and the combined pressure of [[auralis|Auralis]]'s waking and Umberlee's unresolved wrath against [[delmar-fisk]].
 
 ### Limits
 
@@ -78,7 +78,7 @@ The dates and events below are the campaign's established chronological index. T
 
 **The Age of the Antheri.**
 
-- **-2000 DR**, [[Antheri|The Antheri]] build into the western wall of [[drowned-maw]], expanding toward the [[elemental-plane-of-water]]. [[Auralis]] first appears during this age.
+- **-2000 DR**, [[Antheri|The Antheri]] build into the western wall of [[drowned-maw]], expanding toward the [[elemental-plane-of-water]]. [[auralis|Auralis]] first appears during this age.
 - **-495 DR**, The Antheri vanish. The planar breach widens beyond what the Antheri city can survive.
 
 **The Shattered Sea Takes Shape.**
@@ -103,7 +103,7 @@ The dates and events below are the campaign's established chronological index. T
 
 - **Day -35 (approx.)**, [[Admiral Fisk]] assembles his five-ship fleet ([[red-lady]] flagship, [[the-narrow]], [[Heft]], [[fernen]], [[Loud Argument]]) to steal the [[pearl-of-souls]] from Umberlee's shrine on [[vel-orn]].
 - **Day -6**, The fleet steals the Pearl without alerting the [[waveservants]].
-- **Day -5**, Umberlee strikes the fleet over The Drowned Maw. All five ships sink. The Pearl's signal pulls [[Leviathan|The Leviathan]] through the planar fissure from the Elemental Plane of Water. [[Auralis]] wakes at last.
+- **Day -5**, Umberlee strikes the fleet over The Drowned Maw. All five ships sink. The Pearl's signal pulls [[Leviathan|The Leviathan]] through the planar fissure from the Elemental Plane of Water. [[auralis|Auralis]] wakes at last.
 - **Day -4**, The Leviathan sinks the [[Vestra]]. [[perrin-black-jaw]] washes up on [[keth-naar]]. He sneaks aboard the [[Saltwright]].
 - **Day -3**, [[beaumont-sel|Beaumont]] finds Delmar and Crissdalynn adrift and gives them free passage west aboard the Saltwright.
 - **Day -1**, [[jean-claude-tabarnack|Jean-Claude]] is one island ahead of [[simone]]'s hunters in [[Midchain|the Midchain]], four months after his escape.
@@ -134,7 +134,7 @@ The dates and events below are the campaign's established chronological index. T
 | --- | --- | --- |
 | [[drowned-maw]] | Antheri construction and later catastrophe | Anchors the oldest and most dangerous timeline events. |
 | [[pearl-of-souls]] | The theft that triggers the opening crisis | Connects the fleet's final days to the current Maw threat. |
-| [[Auralis]] | Guardian awakened by the Pearl's signal | Connects ancient history to the party's present. |
+| [[auralis|Auralis]] | Guardian awakened by the Pearl's signal | Connects ancient history to the party's present. |
 | [[delmar-fisk]] | Survivor carrying the unresolved captain debt | Gives the timeline a living witness. |
 
 ## Sources
