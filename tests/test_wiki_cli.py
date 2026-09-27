@@ -40,6 +40,20 @@ def payload(result):
     return json.loads(result.stdout)
 
 
+def test_render_lint_issues_uses_fields_and_expands_pages():
+    from tools.wiki_ops.pretty import render_lint_issues
+
+    text = render_lint_issues({
+        "findings": {
+            "missing_frontmatter": [{"page": "a.md", "missing": ["summary"], "line": 1}],
+            "duplicate_titles": [{"title": "Harbor", "pages": ["a.md", "b.md"], "lines": [2, 3]}],
+        }
+    })
+    assert "a.md:1: missing_frontmatter: missing=summary" in text
+    assert "a.md:2: duplicate_titles: title=Harbor" in text
+    assert "b.md:3: duplicate_titles: title=Harbor" in text
+
+
 def test_lint_default_prints_file_line_issue(tmp_path: Path):
     target = tmp_path / "page.md"
     target.write_text(

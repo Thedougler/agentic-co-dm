@@ -65,19 +65,6 @@ def _render_findings(result: Mapping[str, Any]) -> list[str]:
 
 def _issue_rows(result: Mapping[str, Any]):
     """Yield (file, line, rule, message, finding) from a lint result."""
-    by_file = _value(result, "findings_by_file", {})
-    if isinstance(by_file, Mapping) and by_file:
-        for filename, items in by_file.items():
-            for finding in items if isinstance(items, (list, tuple)) else ():
-                if isinstance(finding, Mapping):
-                    yield (
-                        str(_value(finding, "file", filename) or filename),
-                        _value(finding, "line", 1),
-                        str(_value(finding, "rule", "")),
-                        str(_value(finding, "message", "") or _value(finding, "reason", "")),
-                        finding,
-                    )
-        return
     groups = _value(result, "files", ())
     if groups:
         for group in groups:
@@ -86,34 +73,73 @@ def _issue_rows(result: Mapping[str, Any]):
             group_file = str(_value(group, "file", ""))
             for finding in _value(group, "findings", ()):
                 if isinstance(finding, Mapping):
-                    yield (
-                        str(_value(finding, "file", group_file) or group_file),
-                        _value(finding, "line", 1),
-                        str(_value(finding, "rule", "")),
-                        str(_value(finding, "message", "") or _value(finding, "reason", "")),
-                        finding,
-                    )
+                    yield from _rows_for_finding(finding, str(_value(finding, "rule", "")), group_file)
         return
     findings = _value(result, "findings", {})
-    if isinstance(findings, Mapping):
+    if isinstance(findings, Mapping) and findings:
         for rule, items in findings.items():
             for finding in _flatten_finding_items(items):
-                yield (
-                    str(_value(finding, "file", "") or _value(finding, "page", "")),
-                    _value(finding, "line", 1),
-                    str(_value(finding, "rule", rule) or rule),
-                    str(
-                        _value(finding, "message", "")
-                        or _value(finding, "reason", "")
-                        or _value(finding, "target", "")
-                    ),
-                    finding,
-                )
+                yield from _rows_for_finding(finding, str(rule), "")
+        return
+    by_file = _value(result, "findings_by_file", {})
+    if isinstance(by_file, Mapping):
+        for filename, items in by_file.items():
+            for finding in items if isinstance(items, (list, tuple)) else ():
+                if isinstance(finding, Mapping):
+                    yield from _rows_for_finding(
+                        finding, str(_value(finding, "rule", "")), str(filename),
+                    )
+
+
+_LOCATION_KEYS = {"file", "page", "path", "line", "lines", "rule"}
+_META_KEYS = {"severity", "level", "repair_class", "repair_action", "repair_target", "message", "reason"}
+
+
+def _fmt_value(value: Any) -> str:
+    if isinstance(value, list) and all(not isinstance(item, (dict, list)) for item in value):
+        return ",".join(str(item) for item in value)
+    return str(value)
+
+
+def _issue_message(finding: Mapping[str, Any]) -> str:
+    parts: list[str] = []
+    primary = _value(finding, "message", "") or _value(finding, "reason", "") or _value(finding, "target", "")
+    if primary:
+        parts.append(str(primary))
+    pages = finding.get("pages")
+    skip_pages = isinstance(pages, list) and pages and isinstance(pages[0], str)
+    for key, value in finding.items():
+        if key in _LOCATION_KEYS or key in _META_KEYS:
+            continue
+        if key == "target" and primary:
+            continue
+        if key == "pages" and skip_pages:
+            continue
+        if value in (None, "", [], {}):
+            continue
+        parts.append(f"{key}={_fmt_value(value)}")
+    return " ".join(parts)
+
+
+def _rows_for_finding(finding: Mapping[str, Any], rule: str, default_file: str):
+    name = str(_value(finding, "rule", rule) or rule)
+    message = _issue_message(finding)
+    pages = finding.get("pages")
+    lines = finding.get("lines")
+    if isinstance(pages, list) and pages and isinstance(pages[0], str):
+        line_list = lines if isinstance(lines, list) else []
+        for index, page in enumerate(pages):
+            line = line_list[index] if index < len(line_list) else _value(finding, "line", 1)
+            yield str(page), line, name, message, finding
+        return
+    file = str(_value(finding, "file", "") or _value(finding, "page", "") or default_file)
+    line = _value(finding, "line", 1)
+    yield file, line, name, message, finding
 
 
 def _flatten_finding_items(value: Any) -> list[Mapping[str, Any]]:
     if isinstance(value, Mapping):
-        if any(key in value for key in ("line", "page", "file", "rule", "message", "target", "reason")):
+        if any(key in value for key in ("line", "page", "file", "rule", "message", "target", "reason", "pages", "lines")):
             return [value]
         rows: list[Mapping[str, Any]] = []
         for child in value.values():
@@ -156,6 +182,7 @@ def render_lint_issues(result: Mapping[str, Any]) -> str:
             text += f"\n  fix: {hint}"
         lines.append(text)
     return "\n".join(lines)
+
 
 
 def render_query(result: Mapping[str, Any]) -> str:
