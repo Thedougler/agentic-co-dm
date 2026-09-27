@@ -8,7 +8,7 @@ sources:
   - "campaign-os:preserved-eel.md"
   - "wiki/entities/place/low-lamp.md"
 created: 2026-09-13
-updated: 2026-09-20
+updated: 2026-09-27
 type: item
 reveal: unrevealed
 campaign: shattered-sea
@@ -17,7 +17,7 @@ region: "[[warren]] beneath [[calven-and-calveno|Calveno]]"
 kind: consumable
 rarity: common
 attunement: false
-owner: "[[Low Lamp]]"
+owner: "[[low-lamp]]"
 summary: "Salt-cured eel, a common staple at the Low Lamp."
 provenance:
   extracted: 0.95
@@ -27,9 +27,15 @@ tier: supporting
 ---
 # Preserved Eel
 
-> [!narration] Narration
+> [!narration] Preserved Eel
 > A strip of eel cured in salt, firm enough to hold in one hand and dark with oil. It smells of brine and smoke, and the first bite is sharply salty before the rich fish settles in.
 
-Consumable, Common.
+## At a Glance
 
-Eat it as ordinary food. It costs 4 cp and has no special effect.
+*Consumable, common.*
+
+- **Stored at.** [[low-lamp|The Low Lamp]], where preserved eel is a common staple.
+
+## Properties
+
+Eat it as ordinary food. It costs `4 cp` and has no special effect.
