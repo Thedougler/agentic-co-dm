@@ -232,6 +232,34 @@ def test_default_lint_is_issues_and_json_is_worklist(tmp_path: Path):
 
 
 
+def test_health_default_matches_lint_shape(tmp_path: Path):
+    page(tmp_path, "journal/_index.md", title="Journal Index")
+    page(tmp_path, "entities/npc/real.md", title="Real")
+    (tmp_path / "journal/_index.md").write_text(
+        "---\ntitle: Journal Index\n---\n\n# Journal Index\n\n",
+        encoding="utf-8",
+    )
+    default = run_cli(tmp_path, "health")
+    assert default.returncode in (0, 1), default.stderr
+    assert not default.stdout.lstrip().startswith("{"), default.stdout[:200]
+    assert "next: entities/npc/real.md" in default.stdout
+    assert "journal/_index.md" not in default.stdout
+    data = payload(run_cli(tmp_path, "health", "--json"))
+    assert data["next"]["path"] == "entities/npc/real.md"
+    assert data["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert "identity" not in data
+    assert "scope" not in (data.get("lint") or {})
+
+
+
+def test_health_help_has_copyable_examples():
+    result = _bare("health", "--help")
+    assert result.returncode == 0, result.stderr
+    assert "Examples:" in result.stdout
+    assert "wiki health --json" in result.stdout
+
+
+
 def test_rules_digest_changes_when_styles_change(tmp_path: Path):
     from tools.wiki_ops.lint_cache import digest_rules
 

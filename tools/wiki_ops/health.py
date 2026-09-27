@@ -16,6 +16,9 @@ from collections.abc import Iterable, Mapping, Sequence
 from pathlib import Path, PurePosixPath
 from typing import Any, TypeAlias
 
+from tools.wiki_ops.worklist import is_moc_page
+
+
 JsonObject: TypeAlias = dict[str, Any]
 TrackerInput: TypeAlias = Mapping[str, Any] | Sequence[Mapping[str, Any]] | None
 
@@ -430,10 +433,11 @@ def _lint_reason(lint: Mapping[str, Any], page: str) -> str:
 
 def _focus_action(source: str, path: str, reason: str) -> str:
     if source == "lint":
-        return f"Repair {reason} in {path}, then rerun wiki health."
+        return f"wiki lint {path}"
     if source == "tracker":
         return f"Resolve the open error for {path}, then rerun wiki health."
     return f"Apply the {source} plan for {path}, then rerun wiki health."
+
 
 
 def _error_path(row: Any) -> str | None:
@@ -469,23 +473,32 @@ def build_focus(
     items: list[dict[str, str]] = []
     seen: set[str] = set()
 
-    def add(path: Any, reason: Any, source: str, fallback: str) -> None:
+    def add(path: Any, reason: Any, source: str, fallback: str, action: Any = None) -> None:
         if len(items) >= limit:
             return
         relative = _relative_path(path)
-        if relative is None or relative in seen:
+        if relative is None or relative in seen or is_moc_page(relative):
             return
         seen.add(relative)
         objective = _reason(reason, fallback)
+        command = action.strip() if isinstance(action, str) and action.strip() else _focus_action(source, relative, objective)
         items.append({
             "path": relative,
             "reason": objective,
             "source": source,
-            "action": _focus_action(source, relative, objective),
+            "action": command,
         })
 
     if isinstance(lint, Mapping):
-        add(lint.get("next_page"), _lint_reason(lint, str(lint.get("next_page", ""))), "lint", "lint findings")
+        nxt = lint.get("next") if isinstance(lint.get("next"), Mapping) else {}
+        path = nxt.get("path") or lint.get("next_page")
+        add(path, _lint_reason(lint, str(path or "")), "lint", "lint findings", action=nxt.get("action"))
+        backlog = lint.get("backlog")
+        if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray)):
+            for row in backlog:
+                if isinstance(row, Mapping):
+                    add(row.get("page") or row.get("path"), _lint_reason(lint, str(row.get("page") or "")), "lint", "lint findings")
+
 
     plans = _plan_items(remorph)
     for plan in plans:
@@ -534,11 +547,6 @@ def build_focus(
 def _compact_lint(lint: Any) -> dict[str, Any]:
     if not isinstance(lint, Mapping):
         return {}
-    result = {
-        key: _clone(value)
-        for key, value in lint.items()
-        if key not in {"findings", "findings_by_file", "files"}
-    }
     raw_counts = lint.get("counts")
     counts = raw_counts if isinstance(raw_counts, Mapping) else {}
     finding_total = _int(lint.get("finding_total")) or sum(_int(value) for value in counts.values())
@@ -550,37 +558,26 @@ def _compact_lint(lint: Any) -> dict[str, Any]:
         affected_pages = (
             len(backlog)
             if isinstance(backlog, Sequence) and not isinstance(backlog, (str, bytes, bytearray))
-            else len({
-                target
-                for values in (lint.get("unique"),)
-                if isinstance(values, Mapping)
-                for targets in values.values()
-                if isinstance(targets, Sequence) and not isinstance(targets, (str, bytes, bytearray))
-                for target in targets
-            })
+            else 0
         )
-    blocking = [
-        {"rule": str(rule), "findings": _int(count)}
-        for rule, count in sorted(counts.items(), key=lambda item: str(item[0]))
-        if _int(count) > 0
-    ]
-    hard_fail = bool(lint.get("hard_fail"))
-    result.update({
+    nxt = lint.get("next") if isinstance(lint.get("next"), Mapping) else None
+    if nxt and is_moc_page(str(nxt.get("path") or "")):
+        nxt = None
+    result = {
+        "status": lint.get("status") or ("findings" if finding_total else "clean"),
+        "counts": {str(rule): _int(count) for rule, count in counts.items() if _int(count) > 0},
+        "hard_fail": bool(lint.get("hard_fail")),
         "finding_total": finding_total,
         "affected_pages": affected_pages,
-        "blocking": blocking if hard_fail else [],
-        "meaning": (
-            f"{finding_total:,} blocking lint findings remain across {affected_pages:,} pages."
-            if hard_fail
-            else "No blocking lint findings remain."
-        ),
-        "action": (
-            "Repair the blocking findings, then rerun wiki health."
-            if hard_fail
-            else "No blocking lint repair is required."
-        ),
-    })
+        "next_page": nxt.get("path") if nxt else None,
+        "next": _clone(nxt) if nxt else None,
+        "files_checked": _int(lint.get("files_checked")),
+    }
+    cache = lint.get("cache")
+    if isinstance(cache, Mapping):
+        result["cache"] = _clone(cache)
     return result
+
 
 
 
@@ -887,21 +884,10 @@ def build_health_snapshot(
         "policy": _layer_object(policy, ("ok", "conflict_count")),
         "trends": _clone(trends) if isinstance(trends, Mapping) else build_trends(None, None, None),
         "focus": focus_rows,
-        "next": _clone(focus_rows[0]) if focus_rows else None,
-        "context": _clone(context) if isinstance(context, Mapping) else {
-            "encoding": "cl100k_base",
-            "first_turn": {"total_tokens": 0, "files": []},
-            "skills": [],
-            "skills_total": 0,
-            "efficiency": {
-                "first_turn_tokens": 0,
-                "previous_first_turn_tokens": None,
-                "delta_tokens": None,
-                "trend": "new",
-            },
-            "act": [],
-        },
+        "next": _clone(compact_lint.get("next")),
+
     }
-    if isinstance(lint.get("identity"), Mapping):
-        snapshot["identity"] = _clone(lint["identity"])
+    if isinstance(context, Mapping):
+        snapshot["context"] = _clone(context)
+
     return snapshot

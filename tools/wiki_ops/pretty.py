@@ -222,51 +222,35 @@ def render_query(result: Mapping[str, Any]) -> str:
 
 
 def render_health(result: Mapping[str, Any]) -> str:
-    """Render the short health scoreboard, context act, and ordered focus queue."""
+    """Default health stdout: finding counts and a copy-pasteable next command."""
     lint = _value(result, "lint", {})
-    lint_counts = _value(lint, "counts", {})
-    hard = sum(v for k, v in lint_counts.items() if str(k).lower() in {"hard", "error"})
-    if not hard:
-        hard_value = _value(lint, "hard_fail", 0)
-        hard = sum(hard_value.values()) if isinstance(hard_value, Mapping) else int(hard_value or 0)
-    trends = _value(result, "trends", {})
-    slowest = _value(trends, "slowest_commands", ())
-    heaviest = _value(trends, "token_heaviest", ())
-    context = _value(result, "context", {})
-    first_turn = _value(context, "first_turn", {})
-    lines = [
-        "Health: " + str(_value(result, "status", "unknown")),
-        "Metrics: " + " ".join(
-            f"{key}={_value(result, key, 'n/a')}" for key in ("pages", "bytes", "tokens")
-        ) + f" lint_hard={hard}",
-        f"First-turn: {_value(first_turn, 'total_tokens', 0)} tokens",
-        f"Slowest: {slowest[0] if slowest else 'none'}",
-        f"Token-heaviest: {heaviest[0] if heaviest else 'none'}",
-    ]
-    for row in _value(first_turn, "files", ()):
-        lines.append(f"  {_value(row, 'path', '')}  {_value(row, 'tokens', 0)}")
-    skills = _value(context, "skills", ())
-    coverage = _value(context, "eval_coverage", {})
-    if skills:
-        lines.append(
-            "Skills: "
-            f"with={_value(coverage, 'with', 0)} without={_value(coverage, 'without', 0)}"
-        )
-        lines.extend(
-            f"  {_value(row, 'name', '')}  {_value(row, 'tokens', 0)}  {_value(row, 'coverage', '')}  evals={_value(row, 'evals', 0)}  criteria={_value(row, 'criteria', 0)}"
-            for row in skills[:10]
-        )
-    act = _value(context, "act", ())
-    if act:
-        lines.append("Act:")
-        lines.extend(f"- {step}" for step in act)
+    if not isinstance(lint, Mapping):
+        lint = {}
+    total = _value(lint, "finding_total", _value(result, "finding_total", 0))
+    pages = _value(lint, "affected_pages", _value(result, "affected_pages", 0))
     nxt = _value(result, "next", None)
-    lines.append("Next: " + (str(_value(nxt, "path", "")) if isinstance(nxt, Mapping) else (str(nxt) if nxt else "none")))
-    focus = _value(result, "focus", ())
-    if focus:
-        lines.append("Focus:")
-        lines.extend(f"{_value(item, 'path', '')}  {_value(item, 'source', '')}  {_value(item, 'reason', '')}" for item in focus)
+    if not total and not (isinstance(nxt, Mapping) and nxt.get("path")):
+        return "clean"
+    lines = [f"{total} findings on {pages} pages"]
+    waste = _value(result, "waste", {})
+    if isinstance(waste, Mapping) and _value(waste, "hits", 0):
+        lines.append(f"waste hits={_value(waste, 'hits', 0)} hard_hits={_value(waste, 'hard_hits', 0)}")
+    staging = _value(result, "staging", {})
+    if isinstance(staging, Mapping) and _value(staging, "leftover_count", 0):
+        lines.append(f"staging leftover_count={_value(staging, 'leftover_count', 0)}")
+    remorph = _value(result, "remorph", {})
+    if isinstance(remorph, Mapping) and _value(remorph, "plan_count", 0):
+        lines.append(
+            f"remorph plan_count={_value(remorph, 'plan_count', 0)} "
+            f"error_count={_value(remorph, 'error_count', 0)}"
+        )
+    if isinstance(nxt, Mapping) and nxt.get("path"):
+        lines.append(f"next: {nxt['path']}")
+        action = nxt.get("action")
+        if action:
+            lines.append(f"  {action}")
     return "\n".join(lines)
+
 
 
 

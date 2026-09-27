@@ -1251,3 +1251,113 @@ def test_next_action_names_fix_when_deterministic():
     )
     assert result["next"]["action"] == "wiki lint fix a.md, then wiki lint a.md"
 
+
+
+def test_worklist_next_skips_generated_index():
+    from tools.wiki_ops.worklist import build_worklist
+
+    result = build_worklist(
+        [
+            {"rule": "TMPL002", "file": "journal/_index.md", "line": 1},
+            {"rule": "TMPL002", "file": "entities/npc/_index.md", "line": 1},
+            {"rule": "TMPL002", "file": "entities/npc/real.md", "line": 2},
+        ],
+        files_checked=3,
+        page_bytes={
+            "journal/_index.md": 10,
+            "entities/npc/_index.md": 11,
+            "entities/npc/real.md": 200,
+        },
+        full=True,
+    )
+    assert result["next"]["path"] == "entities/npc/real.md"
+    assert result["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert [row["page"] for row in result["backlog"]] == ["entities/npc/real.md"]
+
+
+def test_health_snapshot_is_compact_and_uses_lint_next():
+    from tools.wiki_ops.health import build_focus, build_health_snapshot
+
+    lint = {
+        "status": "findings",
+        "hard_fail": True,
+        "finding_total": 3,
+        "affected_pages": 2,
+        "counts": {"TMPL002": 3},
+        "next_page": "entities/npc/real.md",
+        "next": {
+            "path": "entities/npc/real.md",
+            "findings": 2,
+            "bytes": 200,
+            "action": "wiki lint entities/npc/real.md",
+        },
+        "backlog": [
+            {"page": "journal/_index.md", "findings": 1, "bytes": 10},
+            {"page": "entities/npc/real.md", "findings": 2, "bytes": 200},
+        ],
+        "scope": {"paths": [f"entities/npc/{i}.md" for i in range(20)]},
+        "identity": {"status": "ambiguous", "ambiguous": [{"path": "a.md"}]},
+        "files": [{"file": "entities/npc/real.md", "findings": []}],
+    }
+    focus = build_focus(lint)
+    snapshot = build_health_snapshot(
+        status="findings",
+        pages=2,
+        bytes=210,
+        tokens=None,
+        lint=lint,
+        waste={"hits": 1, "hard_hits": 0},
+        staging={"leftover_count": 0},
+        remorph={"plan_count": 0, "skip_count": 0, "error_count": 0},
+        policy={"ok": True, "conflict_count": 0},
+        trends=None,
+        focus=focus,
+    )
+    assert snapshot["next"]["path"] == "entities/npc/real.md"
+    assert snapshot["next"]["action"] == "wiki lint entities/npc/real.md"
+    assert "identity" not in snapshot
+    assert "scope" not in snapshot.get("lint", {})
+    assert "files" not in snapshot.get("lint", {})
+
+    dumped = json.dumps(snapshot)
+    assert "journal/_index.md" not in dumped
+    assert len(dumped) < 4000
+
+
+def test_health_next_stays_none_when_lint_is_clean():
+    from tools.wiki_ops.health import build_focus, build_health_snapshot
+
+    lint = {"status": "clean", "finding_total": 0, "affected_pages": 0, "counts": {}, "next": None}
+    focus = build_focus(lint, remorph={"plans": [{"src": "entities/npc/Bob.md", "reason": "kebab"}]})
+    snapshot = build_health_snapshot(
+        status="clean",
+        pages=1,
+        bytes=10,
+        tokens=None,
+        lint=lint,
+        waste=None,
+        staging=None,
+        remorph={"plan_count": 1, "skip_count": 0, "error_count": 0},
+        policy=None,
+        trends=None,
+        focus=focus,
+    )
+    assert snapshot["next"] is None
+    assert snapshot["focus"]
+
+
+
+
+def test_render_health_matches_lint_next_shape():
+    from tools.wiki_ops.pretty import render_health
+
+    text = render_health({
+        "status": "findings",
+        "lint": {"finding_total": 3, "affected_pages": 2},
+        "next": {"path": "entities/npc/real.md", "action": "wiki lint entities/npc/real.md"},
+    })
+    assert not text.lstrip().startswith("{")
+    assert "3 findings on 2 pages" in text
+    assert "next: entities/npc/real.md" in text
+    assert "wiki lint entities/npc/real.md" in text
+

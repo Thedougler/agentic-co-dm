@@ -18,7 +18,9 @@ You are computing the current state of the wiki: what's been ingested, what's ne
 
 1. **Resolve config** — follow the Config Resolution Protocol in AGENTS.md (inline `@name` override → walk up CWD for `.env` → `~/.obsidian-wiki/config` → prompt setup). This gives `OBSIDIAN_VAULT_PATH`, `OBSIDIAN_SOURCES_DIR`, `CLAUDE_HISTORY_PATH`, and `CODEX_HISTORY_PATH`.
 2. Use `python3 scripts/manifest.py stats "$OBSIDIAN_VAULT_PATH"` (then `list`/`has`/`get`/`lookup` as needed) — do **not** read whole `.manifest.json`
-3. Vault fitness: run `wiki health` once, then consume `context.act`, `next.path`, and ordered `focus` without reranking. The first-turn load is named and `next.path` is acted on.
+3. Vault fitness: run `wiki health` (`wiki health --help`).
+
+
 
 ## Boundary
 
@@ -30,12 +32,12 @@ reclassify an explicit owner request.
 
 ### Work
 
-Run `wiki health` as the maintenance observation surface before rendering
-actions. Consume its exact `context.act`, `next.path`, and ordered `focus`
-values. Report status and delta evidence alongside that order; never construct
-a second priority planner, rerank the focus list, or create a maintenance
-ledger. Standard status is read-only; insights may only rewrite the
-regenerable `_insights.md` output.
+Run `wiki health` before rendering actions (`wiki health --help`). Report status
+and delta alongside that result; do not construct a second planner.
+Standard status is read-only; insights may only rewrite the regenerable
+`_insights.md` output.
+
+
 
 ### Done
 
@@ -254,9 +256,8 @@ ordering.
 
 ### 4b: Render health order
 
-Render `context.act`, then `next.path`, then the ordered `focus` list exactly as
-returned by `wiki health`. Attach the gathered raw/stale/orphan/synthesis/delta
-details to the relevant health action without sorting those actions again.
+Print the `wiki health` `next` command first, then remaining `focus` paths.
+Attach gathered raw/stale/orphan/synthesis/delta details without reranking.
 Cap the displayed list at 6 entries; if more remain, append:
 `_(N more items available — run /wiki-status --full to see all)_`.
 The `--full` flag is not yet implemented; this is forward-looking copy only.
@@ -264,11 +265,11 @@ The `--full` flag is not yet implemented; this is forward-looking copy only.
 ```markdown
 ## What to Do Next
 
-Health action: <context.act>
-Next: <next.path> — <next.reason>
-1. <focus[0].action> — <raw/stale/orphan/synthesis/delta evidence>
+Health action: <next.action>
+1. <focus[0].action> — <evidence, if present>
 2. <focus[1].action> — <evidence, if present>
 ```
+
 
 Do not replace the health order with the former fixed category ranking. If all
 signals and health findings are empty, output:

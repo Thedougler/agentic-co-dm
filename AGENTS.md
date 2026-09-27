@@ -394,7 +394,9 @@ Match the user's intent to the right skill. Beat-type routing and wiki-kind rout
 | "use my vault as context" / "context pack for X" / "bounded context" | `wiki-context-pack` |
 | "narrate" / "briefing" / "explain this topic" | `wiki-narrate` |
 | "lint" / "lint <page>" / "fix broken links" / "audit" | `wiki lint` — full finding dump |
-| "wiki health" / "health check" | `wiki health`; act on `context.act`, then `next`, then remaining `focus` |
+| "wiki health" / "health check" | `wiki health` (`wiki health --help`) |
+
+
 | "dedup my wiki" / "merge duplicates" / "identity resolution" | `wiki-dedup` (standalone deep identity-resolution scan; wiki-lint Check 14 handles dedup in normal lint flow) |
 | "rebuild" / "start over" / "archive" / "restore" | `wiki-rebuild` |
 | "link my pages" / "cross-reference" / "connect my wiki" | `cross-linker` |

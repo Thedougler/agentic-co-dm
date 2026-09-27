@@ -370,8 +370,11 @@ def _finish(
         print(render_lint_issues(result))
     elif command == "lint fix" and result.get("status") != "error":
         print(render_lint_fix(result))
+    elif command == "health" and result.get("status") != "error":
+        print(render_health(result))
     else:
         emit_json(result)
+
     return code
 
 
@@ -772,6 +775,7 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
         1 if lint_code or dirty else 0,
         result,
         pretty=args.pretty,
+        json_out=args.json,
         renderer=render_health,
         cache=cache,
         extra_record=extra,
@@ -779,11 +783,13 @@ def _health(args: argparse.Namespace, vault: Path, start: float) -> int:
 
 
 
+
 SUBCOMMANDS = [
     ("lint", "lint; default file:line: rule: message; --json for the full worklist"),
     ("lint fix", "apply deterministic lint repairs (one correct output each); --dry-run plans"),
     ("query", "search the wiki collection through qmd (qmd query; qmd search if its local model fails)"),
-    ("health", "facts: lint, remorph, layout, ledger, context load; next target"),
+    ("health", "counts and next dirty page; --json for the snapshot"),
+
     ("mutate", "apply one typed semantic mutation; --dry-run plans"),
     ("repair", "apply a typed repair plan; --dry-run previews"),
 ]
@@ -799,7 +805,13 @@ EXAMPLES = {
         "wiki lint fix dir:entities/place --dry-run",
     ],
     "query": ['wiki query "Belumara" -n 5'],
-    "health": ["wiki health", "wiki health entities/place/Belumara.md"],
+    "health": [
+        "wiki health",
+        "wiki health --json",
+        "wiki health entities/place/Belumara.md",
+        "wiki health --paths-only",
+    ],
+
     "mutate": [
         "wiki mutate --stdin --dry-run < op.json",
         "wiki mutate add_tag --file entities/place/Belumara.md --tag harbor --dry-run",
@@ -826,10 +838,15 @@ def _sub_parser(name: str) -> argparse.ArgumentParser:
         parser.add_argument("paths", nargs="*", help=PATH_HELP)
         parser.add_argument("--stdin", action="store_true", help="read newline-separated paths from stdin")
         parser.add_argument("--paths-only", action="store_true", help="print one path per line")
-        parser.add_argument("--json", action="store_true", help="JSON worklist")
+        parser.add_argument(
+            "--json",
+            action="store_true",
+            help="JSON snapshot" if name == "health" else "JSON worklist",
+        )
         parser.set_defaults(full=True, pretty=False)
     if name == "health":
-        parser.add_argument("--pretty", action="store_true", help="scoreboard")
+        parser.add_argument("--pretty", action="store_true", help="same as default text")
+
     if name == "lint fix":
         parser.add_argument("--dry-run", action="store_true", help="plan repairs; write nothing")
     if name == "query":

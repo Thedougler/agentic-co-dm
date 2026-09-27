@@ -26,6 +26,12 @@ DEFAULT_HARD_KEYS = frozenset(
 )
 
 
+def is_moc_page(relative: str) -> bool:
+    """Generated Map of Content pages are regenerated, not agent-repaired."""
+    name = Path(relative).name
+    return name == "_index.md" or name.endswith("-index.md")
+
+
 def _path(value: Any, vault: str | Path | None = None) -> str:
     """Return a stable vault-relative spelling without resolving owners."""
     text = str(value or "").replace("\\", "/")
@@ -211,7 +217,9 @@ def build_worklist(
     backlog = [
         {"page": page, "findings": number, "bytes": sizes.get(page, 0)}
         for page, number in pages.items()
+        if not is_moc_page(page)
     ]
+
     backlog.sort(key=lambda item: (item["bytes"], item["page"]))
     next_item = backlog[0] if backlog else None
     hard = set(hard_keys) if hard_keys is not None else DEFAULT_HARD_KEYS
@@ -259,5 +267,7 @@ __all__ = [
     "DEFAULT_HARD_KEYS",
     "aggregate_worklist",
     "build_worklist",
+    "is_moc_page",
     "normalize_finding",
 ]
+
