@@ -260,8 +260,10 @@ Owner pages carry optional situated slots below the header portrait, each
 "you" address and present tense, each from the recipe named here:
 
 - `In action` (creature) → Outcome cell, one short block per signature move:
-  the move as it lands on the world and the state it leaves, with each
-  target's reaction left to its player.
+  inside the one callout, a separate paragraph of one to three sentences
+  for each move on the page (three moves, three paragraphs), each the move
+  as it lands on the world and the state it leaves, with each target's
+  reaction left to its player.
 - `First meeting` (npc) → NPC first look, then Dialogue for the first words.
 - `When met` (faction) → Social scene, with members at work.
 - `In use` (item) → Declared action, one block per visible property.
