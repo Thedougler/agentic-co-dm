@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Grading aid for any eval whose output carries player-facing `[!narration]` prose
-(scene openings, beat pages, portraits, recaps). For the grader only, never the subject.
+(scene openings, beat pages, portraits, recaps). The subject runs it on its draft (theatre-of-the-mind step 7); the grader runs it on the output.
 
 Examples:
   python3 scripts/check-narration.py output.md

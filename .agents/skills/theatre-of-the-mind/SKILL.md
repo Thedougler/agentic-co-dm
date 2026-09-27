@@ -228,11 +228,25 @@ Done when the whole block exists, it ends on its reaction point, and
 
 Read the draft once aloud, as speech, and rewrite every sentence that snags:
 a tongue-twister, alliteration nobody meant, a name that will not say. Then
-apply the Line edits. Then run the final check at the bottom of this file as
-a revision: each item is a fresh read of the whole block, and each "no" gets
-rewritten before the next item. An **echo** never looks wrong from inside the
-draft, so the echo item is read against the sources, never from memory.
-Repeat until every answer is yes.
+apply the Line edits.
+
+Save the draft to a file and run the checker against every page the facts
+came from, the old block's page included:
+
+```bash
+python3 scripts/check-narration.py <draft.md> --source <parent.md> --source <owner.md>
+```
+
+Rewrite until every copied phrase, compass word, grid distance, colon,
+semicolon, and em dash it reports is gone. An **echo** never looks wrong from
+inside the draft; the checker sees it.
+
+Then run the final check at the bottom of this file as a revision, written
+in your notes. For each item, **quote** the words of the block that answer
+it (the first sentence for the schema, each new detail numbered, each
+feature a person or creature is given). An item you answer without quoting
+the block is unchecked, and an item whose quote shows the fault gets
+rewritten before the next item. Repeat until every answer is yes.
 
 Return the block with, outside the narration:
 
@@ -484,8 +498,9 @@ passes the final check, keeping their facts and meaning.
 
 ## Final check
 
-Each item is a fresh read of the whole block. Rewrite on every "no", then run
-the list again.
+Each item is a fresh read of the whole block, written in your notes with the
+block's own words quoted as the evidence (step 7). Rewrite on every "no", then
+run the list again.
 
 - [ ] **Form.** (Situated first look) Is it a box when the first look is fixed
       at prep time, and bullets when the entrance, light, or who is present
